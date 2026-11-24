@@ -2,11 +2,12 @@
 import numpy as np
 
 from .geometry import FINGERS
+from modules.arx_core.arms import get_arm
 
 
-def classify_contact(profile, *, finger, is_table, stage, points, eef, table, tip_plane):
+def classify_contact(profile, *, finger, is_table, stage, points, eef, table, tip_plane, arm='right'):
     result = {'allowed': False, 'contact_depth_m': 0., 'reason': 'nonlocal_table_contact'}
-    if not profile.enabled or finger not in FINGERS or not is_table or stage not in ['approach', 'close', 'lift']:
+    if not profile.enabled or finger not in get_arm(arm).finger_links or not is_table or stage not in ['approach', 'close', 'lift']:
         return result
     eef = np.asarray(eef, dtype=float)
     center, dims = np.asarray(table['center']), np.asarray(table['dims'])

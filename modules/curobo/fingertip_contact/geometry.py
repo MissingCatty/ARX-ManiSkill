@@ -81,7 +81,7 @@ def box_depth(spheres, box):
     return np.where(spheres[..., 3] > 0, spheres[..., 3] - signed_distance, -np.inf)
 
 
-def collision_meshes(asset):
+def collision_meshes(asset, arm='right'):
     """Actual exported convex parts, kept separate to avoid closing mesh gaps."""
     import trimesh
     asset = Path(asset)
@@ -89,8 +89,14 @@ def collision_meshes(asset):
     meshes, paths = {}, [asset / 'robot.urdf']
     for link in tree.findall('link'):
         name = link.get('name')
-        if not name.startswith('right_link2'):
+        prefix = 'right_link2' if arm == 'right' else 'left_link1' if arm == 'left' else None
+        if prefix is None:
+            raise ValueError('Unknown collision arm: '+str(arm))
+        if not name.startswith(prefix) or not name.removeprefix('right_link' if arm == 'right' else 'left_link').isdigit():
             continue
+        # Solver names remain right_*; use the selected physical arm's actual
+        # collider parts. Left fingers have a different convex decomposition.
+        canonical = name if arm == 'right' else 'right_link'+str(int(name.removeprefix('left_link'))+10)
         parts = []
         for collision in link.findall('collision'):
             mesh = collision.find('geometry/mesh')
@@ -102,7 +108,7 @@ def collision_meshes(asset):
             t = origin(collision.find('origin'))
             parts.append(vertices @ t[:3, :3].T + t[:3, 3])
         if parts:
-            meshes[name] = parts
+            meshes[canonical] = parts
     return meshes, paths
 
 

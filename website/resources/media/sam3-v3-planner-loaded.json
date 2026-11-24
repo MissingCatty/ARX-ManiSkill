@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "arms": [
+    "right",
+    "left"
+  ],
+  "shared_solver_loads": {
+    "open": 1,
+    "closed": 1
+  },
+  "kinematics": {
+    "paired_states": 32,
+    "maximum_transform_error": 1.6653345369377348e-16,
+    "joint_axes_and_limits_equal": true,
+    "mount_translation_y_m": 0.5,
+    "source_urdf_sha256": "0ac9f20f13bd2a194d9f5c2002856a84ba406a4a3906ef9ed5ec182002569704"
+  },
+  "collision_spheres": {
+    "profile_id": "arx_refined_871_v1",
+    "right_total": 871,
+    "left_total": 871,
+    "per_link": [
+      {
+        "right": "right_link21",
+        "left": "left_link11",
+        "spheres_each": 26
+      },
+      {
+        "right": "right_link22",
+        "left": "left_link12",
+        "spheres_each": 115
+      },
+      {
+        "right": "right_link23",
+        "left": "left_link13",
+        "spheres_each": 97
+      },
+      {
+        "right": "right_link24",
+        "left": "left_link14",
+        "spheres_each": 36
+      },
+      {
+        "right": "right_link25",
+        "left": "left_link15",
+        "spheres_each": 24
+      },
+      {
+        "right": "right_link26",
+        "left": "left_link16",
+        "spheres_each": 89
+      },
+      {
+        "right": "right_link27",
+        "left": "left_link17",
+        "spheres_each": 258
+      },
+      {
+        "right": "right_link28",
+        "left": "left_link18",
+        "spheres_each": 226
+      }
+    ],
+    "right_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+    "normalized_left_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+    "local_centers_and_radii_identical": true,
+    "fk_test_states": 16,
+    "maximum_world_center_error_m": 2.220446049250313e-16,
+    "source_sha256": "0888753f7335f63b35737eab04dfe2081c199e471c7d0ba5a6afbc944f6b791e"
+  },
+  "parked_arm_is_world_obstacle": true,
+  "physical_motions": 0
+}

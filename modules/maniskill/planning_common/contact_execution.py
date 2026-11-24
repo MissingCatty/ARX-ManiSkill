@@ -7,6 +7,7 @@ import numpy as np
 from arx_project.layout import ROOT, read_json, write_json
 from modules.curobo.fingertip_contact.physical_contact import classify_contact, ReleaseEnvelope
 from modules.curobo.fingertip_contact.geometry import FINGERS
+from modules.arx_core.arms import get_arm
 
 
 def execution_class(parent, profile, snapshot):
@@ -19,15 +20,17 @@ def execution_class(parent, profile, snapshot):
             self.tip_contacts = []
             self.frame_eef = None
             calibration = read_json(ROOT/'simulation/robots/arx/runtime/action_tcp.json')
-            self.tip_planes = calibration['authored_tip_axial_position_eef_z_m']
+            arm = get_arm(getattr(env, 'grasp_arm', 'right'))
+            self.tip_planes = dict(zip(arm.finger_links,
+                [calibration['authored_tip_axial_position_eef_z_m'][name] for name in FINGERS]))
             self.table_box = snapshot(env)['scene_cuboids']['table']
             self.table_entity = env.table._objs[0]
-            self.finger_entities = {env.agent.robot.links_map[name]._objs[0].entity: name for name in FINGERS}
+            self.finger_entities = {env.agent.robot.links_map[name]._objs[0].entity: name for name in arm.finger_links}
             super().__init__(env, out)
             mapping = {'target': env.obj._objs[0].name, 'table': self.table_entity.name,
                        'fingers': {entity.name: name for entity, name in self.finger_entities.items()},
                        'table_geometry': self.table_box, 'tip_planes': self.tip_planes,
-                       'profile_id': profile.profile_id}
+                       'profile_id': profile.profile_id, 'arm': arm.name}
             write_json(self.out/'contact_entities.json', mapping)
 
         def contact_event(self, robot_link, other, contact, original_allowed):
@@ -40,7 +43,7 @@ def execution_class(parent, profile, snapshot):
             finger = self.finger_entities.get(robot_link)
             decision = classify_contact(self.profile, finger=finger, is_table=other == self.table_entity,
                 stage=self.label, points=points, eef=self.frame_eef, table=self.table_box,
-                tip_plane=self.tip_planes.get(finger, 0.))
+                tip_plane=self.tip_planes.get(finger, 0.), arm=self.arm.name)
             local = decision['allowed']
             depth = decision['contact_depth_m']
             if local:
@@ -72,10 +75,11 @@ def execution_class(parent, profile, snapshot):
             self.env.fingertip_contact_state = {'profile_id': self.profile.profile_id,
                 'stage': self.label, 'tick': self.tick, 'depth_m': depth,
                 'qpos': self.env.agent.robot.qpos.cpu().numpy()[0].tolist(),
-                'valid': not self.forbidden}
+                'valid': not self.forbidden, 'arm': self.arm.name}
 
         def extra_trace_fields(self):
-            return {'eef_world': self.frame_eef.tolist(), 'contact_policy_id': self.profile.profile_id,
+            return {'eef_world': self.frame_eef.tolist(), 'execution_arm': self.arm.name,
+                    'contact_policy_id': self.profile.profile_id,
                     'release_ceiling_m': self.release.ceiling}
 
         def segment(self, label, *args, **kwargs):
@@ -103,6 +107,8 @@ def verify_trial(directory, profile):
     entities = read_json(directory/'contact_entities.json')
     if entities['profile_id'] != profile.profile_id:
         raise ValueError('Execution contact profile changed')
+    if result.get('selected_arm') and entities.get('arm') != result['selected_arm']:
+        raise ValueError('Execution contact entities belong to the other arm')
     box = entities['table_geometry']; top = box['center'][2]+box['dims'][2]/2
     center, half = np.asarray(box['center']), np.asarray(box['dims'])/2
     origin = read_json(directory/'execution_origin.json')['object_initial_z_m']
@@ -110,6 +116,8 @@ def verify_trial(directory, profile):
     max_depth = 0.; release = None; bilateral = set(); holds = []
     for line in (directory/'execution.jsonl').open():
         row = json.loads(line); stage = row['stage']; eef = np.asarray(row['eef_world'])
+        if result.get('selected_arm') and row.get('execution_arm') != result['selected_arm']:
+            raise ValueError('Trace arm changed after selection')
         if eef.shape != (4, 4) or not np.isfinite(eef).all():
             raise ValueError('Invalid recorded tool pose')
         depths = []
@@ -157,6 +165,8 @@ def verify_trial(directory, profile):
     settled = all(name in stages and stages[name]['settled'] and stages[name]['joint_error_rad'] < .005
                   for name in ['pregrasp', 'approach', 'close', 'lift', 'hold'])
     success = bool(holds and min(holds) >= .01 and len(holds)/120 >= 3 and settled and bad == 0 and len(bilateral) == 2)
+    if result.get('selected_arm'):
+        success &= bool(stages.get('open', {}).get('finger_opening_passed'))
     if success != result['success']:
         raise RuntimeError('Independent physical success disagrees')
     result.update(success_v1=bool(success and strict_bad == 0), success_v2=success,

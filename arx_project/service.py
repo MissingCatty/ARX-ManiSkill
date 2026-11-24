@@ -8,7 +8,7 @@ import sys
 import time
 import traceback
 from .layout import ROOT,ensure_run_path,now,write_json
-from .registry import create_worker
+from .registry import create_worker, module_records
 
 
 def read_message(stream):
@@ -21,11 +21,23 @@ def serve(args,worker=None):
     started=time.perf_counter()
     args.root=ensure_run_path(args.root);args.root.mkdir(parents=True,exist_ok=True)
     worker=create_worker(args.kind,args) if worker is None else worker
-    if args.kind!='curobo':
+    if module_records().get(args.kind, {}).get('role') != 'motion_planning':
         warm=worker.request(ensure_run_path(args.warmup_trial))
         if not warm.get('success') or not warm.get('target_found',True):raise RuntimeError('Module warmup failed: '+str(warm))
+    memory = None
+    torch = sys.modules.get('torch')
+    if torch is not None and torch.cuda.is_initialized():
+        torch.cuda.synchronize()
+        memory = {'allocated_bytes': torch.cuda.memory_allocated(),
+                  'reserved_before_release_bytes': torch.cuda.memory_reserved()}
+        # Release unused warmup buffers before the shared-device admission gate.
+        # Live model tensors and captured CUDA graph allocations stay resident.
+        torch.cuda.empty_cache()
+        memory.update(reserved_after_release_bytes=torch.cuda.memory_reserved(),
+                      device_free_bytes=torch.cuda.mem_get_info()[0])
     ready={'status':'ready','kind':args.kind,'pid':os.getpid(),'gpu':os.environ.get('CUDA_VISIBLE_DEVICES'),
-        'startup_seconds':time.perf_counter()-started,'model_load_count':1,'requests_completed':0,'warmup_passed':True,'at':now()}
+        'startup_seconds':time.perf_counter()-started,'model_load_count':1,'requests_completed':0,'warmup_passed':True,'at':now(),
+        'cuda_memory': memory}
     args.socket=Path(args.socket);ensure_run_path(args.socket)
     args.socket.parent.mkdir(parents=True,exist_ok=True)
     with socket.socket(socket.AF_UNIX,socket.SOCK_STREAM) as server:

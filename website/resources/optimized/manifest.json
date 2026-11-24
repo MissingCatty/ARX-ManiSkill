@@ -15373,8 +15373,457 @@
           "frames_checked": 402
         }
       ]
+    },
+    "media/sam3-v3-dual-arm-workspace.png": {
+      "kind": "image",
+      "source_sha256": "3b40509824fb079ba927b6d1f142adbbe03dbdd857785157ddbcbeca3ecc1693",
+      "source_bytes": 539553,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "width": 2550,
+      "height": 2040,
+      "variants": [
+        {
+          "file": "optimized/media/sam3-v3-dual-arm-workspace-3b40509824fb-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 384,
+          "bytes": 12968,
+          "sha256": "405f65ce837c7afcbbb6e76197e89b42c64a0829804026e5a3a9f3bca30755bc"
+        },
+        {
+          "file": "optimized/media/sam3-v3-dual-arm-workspace-3b40509824fb-fc16be0e-w960.webp",
+          "width": 960,
+          "height": 768,
+          "bytes": 33802,
+          "sha256": "935884437a58b77301dab5f76b9bbe8abd2a2883b2750d049547aa2ba2fe9657"
+        },
+        {
+          "file": "optimized/media/sam3-v3-dual-arm-workspace-3b40509824fb-fc16be0e-w1440.webp",
+          "width": 1440,
+          "height": 1152,
+          "bytes": 56712,
+          "sha256": "531ed3c9d083e581a025c6df6198b4b84d436ef453342fc4640594c9986a743b"
+        },
+        {
+          "file": "optimized/media/sam3-v3-dual-arm-workspace-3b40509824fb-fc16be0e-w2550.webp",
+          "width": 2550,
+          "height": 2040,
+          "bytes": 114360,
+          "sha256": "2f50696290388889210e90dc337a64171085f45980c34a51824895334892ca3c"
+        }
+      ],
+      "files": [
+        {
+          "file": "optimized/media/sam3-v3-dual-arm-workspace-3b40509824fb-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 384,
+          "bytes": 12968,
+          "sha256": "405f65ce837c7afcbbb6e76197e89b42c64a0829804026e5a3a9f3bca30755bc"
+        },
+        {
+          "file": "optimized/media/sam3-v3-dual-arm-workspace-3b40509824fb-fc16be0e-w960.webp",
+          "width": 960,
+          "height": 768,
+          "bytes": 33802,
+          "sha256": "935884437a58b77301dab5f76b9bbe8abd2a2883b2750d049547aa2ba2fe9657"
+        },
+        {
+          "file": "optimized/media/sam3-v3-dual-arm-workspace-3b40509824fb-fc16be0e-w1440.webp",
+          "width": 1440,
+          "height": 1152,
+          "bytes": 56712,
+          "sha256": "531ed3c9d083e581a025c6df6198b4b84d436ef453342fc4640594c9986a743b"
+        },
+        {
+          "file": "optimized/media/sam3-v3-dual-arm-workspace-3b40509824fb-fc16be0e-w2550.webp",
+          "width": 2550,
+          "height": 2040,
+          "bytes": 114360,
+          "sha256": "2f50696290388889210e90dc337a64171085f45980c34a51824895334892ca3c"
+        }
+      ],
+      "pillow_version": "13.0.0"
+    },
+    "media/sam3-v3-r1-d0001-initial.png": {
+      "kind": "image",
+      "source_sha256": "60eaa310102274c1a0b06aefb3f0d3c95043b6e34835c779c728951bf61f820a",
+      "source_bytes": 292045,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "width": 640,
+      "height": 480,
+      "variants": [
+        {
+          "file": "optimized/media/sam3-v3-r1-d0001-initial-60eaa3101022-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 17756,
+          "sha256": "a5a8222fe1a1391f644232461c52e2afcc3584bb6f3fed326f14eca9e9b804c4"
+        },
+        {
+          "file": "optimized/media/sam3-v3-r1-d0001-initial-60eaa3101022-fc16be0e-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28402,
+          "sha256": "c89cbc374503098063a183ae5eef8bf47be73fac9f4f373a9fed12186b48c79e"
+        }
+      ],
+      "files": [
+        {
+          "file": "optimized/media/sam3-v3-r1-d0001-initial-60eaa3101022-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 17756,
+          "sha256": "a5a8222fe1a1391f644232461c52e2afcc3584bb6f3fed326f14eca9e9b804c4"
+        },
+        {
+          "file": "optimized/media/sam3-v3-r1-d0001-initial-60eaa3101022-fc16be0e-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28402,
+          "sha256": "c89cbc374503098063a183ae5eef8bf47be73fac9f4f373a9fed12186b48c79e"
+        }
+      ],
+      "pillow_version": "13.0.0"
+    },
+    "media/sam3-v3-r1-d0011-initial.png": {
+      "kind": "image",
+      "source_sha256": "60081300d9d3e1bbc216323afe0aa2463917c8446aaf8f22072a21ff0be8d67f",
+      "source_bytes": 292479,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "width": 640,
+      "height": 480,
+      "variants": [
+        {
+          "file": "optimized/media/sam3-v3-r1-d0011-initial-60081300d9d3-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 17818,
+          "sha256": "c9f3039e0a2e58729e40f68c15c37163b97d65e0e7094a24931d2e7aeef3372e"
+        },
+        {
+          "file": "optimized/media/sam3-v3-r1-d0011-initial-60081300d9d3-fc16be0e-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28556,
+          "sha256": "530352f02d6b49675531999b9d1f79b299971102ec5a28a3178221eefb7298c6"
+        }
+      ],
+      "files": [
+        {
+          "file": "optimized/media/sam3-v3-r1-d0011-initial-60081300d9d3-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 17818,
+          "sha256": "c9f3039e0a2e58729e40f68c15c37163b97d65e0e7094a24931d2e7aeef3372e"
+        },
+        {
+          "file": "optimized/media/sam3-v3-r1-d0011-initial-60081300d9d3-fc16be0e-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28556,
+          "sha256": "530352f02d6b49675531999b9d1f79b299971102ec5a28a3178221eefb7298c6"
+        }
+      ],
+      "pillow_version": "13.0.0"
+    },
+    "media/sam3-v3-r2-d0039-initial.png": {
+      "kind": "image",
+      "source_sha256": "a9304d805e2760c5f6a71d3a2e76bdf9f4e1089b2402b9863e5665963744837a",
+      "source_bytes": 291069,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "width": 640,
+      "height": 480,
+      "variants": [
+        {
+          "file": "optimized/media/sam3-v3-r2-d0039-initial-a9304d805e27-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 17842,
+          "sha256": "a65af4d4fa74bf4cc26eb33c68fe0f12b7a47f0ef79a62c8539ac04af8825aee"
+        },
+        {
+          "file": "optimized/media/sam3-v3-r2-d0039-initial-a9304d805e27-fc16be0e-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28330,
+          "sha256": "779724ce81105e93cd6c61f99d9a00a7ee13839f3c91d4dc2ff233da8bbd64cf"
+        }
+      ],
+      "files": [
+        {
+          "file": "optimized/media/sam3-v3-r2-d0039-initial-a9304d805e27-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 17842,
+          "sha256": "a65af4d4fa74bf4cc26eb33c68fe0f12b7a47f0ef79a62c8539ac04af8825aee"
+        },
+        {
+          "file": "optimized/media/sam3-v3-r2-d0039-initial-a9304d805e27-fc16be0e-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28330,
+          "sha256": "779724ce81105e93cd6c61f99d9a00a7ee13839f3c91d4dc2ff233da8bbd64cf"
+        }
+      ],
+      "pillow_version": "13.0.0"
+    },
+    "media/sam3-v3-r1-d0039-initial.png": {
+      "kind": "image",
+      "source_sha256": "a9304d805e2760c5f6a71d3a2e76bdf9f4e1089b2402b9863e5665963744837a",
+      "source_bytes": 291069,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "width": 640,
+      "height": 480,
+      "variants": [
+        {
+          "file": "optimized/media/sam3-v3-r1-d0039-initial-a9304d805e27-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 17842,
+          "sha256": "a65af4d4fa74bf4cc26eb33c68fe0f12b7a47f0ef79a62c8539ac04af8825aee"
+        },
+        {
+          "file": "optimized/media/sam3-v3-r1-d0039-initial-a9304d805e27-fc16be0e-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28330,
+          "sha256": "779724ce81105e93cd6c61f99d9a00a7ee13839f3c91d4dc2ff233da8bbd64cf"
+        }
+      ],
+      "files": [
+        {
+          "file": "optimized/media/sam3-v3-r1-d0039-initial-a9304d805e27-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 17842,
+          "sha256": "a65af4d4fa74bf4cc26eb33c68fe0f12b7a47f0ef79a62c8539ac04af8825aee"
+        },
+        {
+          "file": "optimized/media/sam3-v3-r1-d0039-initial-a9304d805e27-fc16be0e-w640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28330,
+          "sha256": "779724ce81105e93cd6c61f99d9a00a7ee13839f3c91d4dc2ff233da8bbd64cf"
+        }
+      ],
+      "pillow_version": "13.0.0"
+    },
+    "media/sam3-v3-r1-d0001-head.mp4": {
+      "kind": "video",
+      "source_sha256": "da2e1b9bc2ac45ae5b1344f0a6cd3a61ecef4cf39ec677acae5107c48ca94ed4",
+      "source_bytes": 1166220,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v3-r1-d0001-head-da2e1b9bc2ac-fc16be0e.mp4",
+          "bytes": 436846,
+          "sha256": "ac6807107b09126eef10c8cc0b3a5b942e132f6720e5f49d93c7f98d3959efa4"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v3-r1-d0001-head-da2e1b9bc2ac-fc16be0e.mp4",
+        "bytes": 436846,
+        "sha256": "ac6807107b09126eef10c8cc0b3a5b942e132f6720e5f49d93c7f98d3959efa4"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 20.0,
+        "duration": 25.15
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 436846,
+          "mean_ssim": 0.992196,
+          "minimum_frame_ssim": 0.984823,
+          "frames_checked": 503
+        }
+      ]
+    },
+    "media/sam3-v3-r1-d0001-overview.mp4": {
+      "kind": "video",
+      "source_sha256": "b964a6ff575bf9b4e966cace46c1dc59bc534a98463f3360546662e8b4f05c4a",
+      "source_bytes": 2951477,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v3-r1-d0001-overview-b964a6ff575b-fc16be0e.mp4",
+          "bytes": 1392490,
+          "sha256": "d70364822999838953e17dbc517f76acf328d2871cc3752d59bcdcc6c5679a8c"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v3-r1-d0001-overview-b964a6ff575b-fc16be0e.mp4",
+        "bytes": 1392490,
+        "sha256": "d70364822999838953e17dbc517f76acf328d2871cc3752d59bcdcc6c5679a8c"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 25.15
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 1392490,
+          "mean_ssim": 0.994287,
+          "minimum_frame_ssim": 0.98306,
+          "frames_checked": 503
+        }
+      ]
+    },
+    "media/sam3-v3-r1-d0039-head.mp4": {
+      "kind": "video",
+      "source_sha256": "71e5d0404eae114f104d49ba70493047eb4edc963a8e56eeee60e69b6b9e34dd",
+      "source_bytes": 1301297,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v3-r1-d0039-head-71e5d0404eae-fc16be0e.mp4",
+          "bytes": 463948,
+          "sha256": "96e09a20d38161bb962edd7408464aa381600969ad64e482aa09568061af33e6"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v3-r1-d0039-head-71e5d0404eae-fc16be0e.mp4",
+        "bytes": 463948,
+        "sha256": "96e09a20d38161bb962edd7408464aa381600969ad64e482aa09568061af33e6"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 20.0,
+        "duration": 25.15
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 463948,
+          "mean_ssim": 0.991802,
+          "minimum_frame_ssim": 0.985897,
+          "frames_checked": 503
+        }
+      ]
+    },
+    "media/sam3-v3-r1-d0039-overview.mp4": {
+      "kind": "video",
+      "source_sha256": "7e8dd76a879fa35a0335c3ad2b71ab55ceb73a52e9663b8cd7e733d866ff8006",
+      "source_bytes": 2965720,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v3-r1-d0039-overview-7e8dd76a879f-fc16be0e.mp4",
+          "bytes": 1411250,
+          "sha256": "126b0a1f17d38df5ab23e9a8714d26a684a436da6655239e40cd2be340edc8cb"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v3-r1-d0039-overview-7e8dd76a879f-fc16be0e.mp4",
+        "bytes": 1411250,
+        "sha256": "126b0a1f17d38df5ab23e9a8714d26a684a436da6655239e40cd2be340edc8cb"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 25.15
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 1411250,
+          "mean_ssim": 0.994308,
+          "minimum_frame_ssim": 0.983124,
+          "frames_checked": 503
+        }
+      ]
+    },
+    "media/sam3-v3-r2-d0039-head.mp4": {
+      "kind": "video",
+      "source_sha256": "0c976072b5d8cb568c6bc1dfa6075c9ab9b1533818a7a1c93f0ed1a39417ac08",
+      "source_bytes": 696055,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v3-r2-d0039-head-0c976072b5d8-fc16be0e.mp4",
+          "bytes": 260274,
+          "sha256": "8675edd7c3dfb2f7dc9df57116e2588f3e405ad4b80bf022be5f1c5044472e10"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v3-r2-d0039-head-0c976072b5d8-fc16be0e.mp4",
+        "bytes": 260274,
+        "sha256": "8675edd7c3dfb2f7dc9df57116e2588f3e405ad4b80bf022be5f1c5044472e10"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 20.0,
+        "duration": 17.05
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 260274,
+          "mean_ssim": 0.991652,
+          "minimum_frame_ssim": 0.987516,
+          "frames_checked": 341
+        }
+      ]
+    },
+    "media/sam3-v3-r2-d0039-overview.mp4": {
+      "kind": "video",
+      "source_sha256": "ec244ec35a0909085f2ffdb249c801629ddca2f230f5ef525dc5585b965d6def",
+      "source_bytes": 2394792,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v3-r2-d0039-overview-ec244ec35a09-fc16be0e.mp4",
+          "bytes": 1188268,
+          "sha256": "2002cfcdef27a9e4ede3f9bf2e05ae32d5f9f37596b9c63264f30df924e4e587"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v3-r2-d0039-overview-ec244ec35a09-fc16be0e.mp4",
+        "bytes": 1188268,
+        "sha256": "2002cfcdef27a9e4ede3f9bf2e05ae32d5f9f37596b9c63264f30df924e4e587"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 17.05
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 1188268,
+          "mean_ssim": 0.993593,
+          "minimum_frame_ssim": 0.992222,
+          "frames_checked": 341
+        }
+      ]
     }
   },
   "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
-  "source_count": 322
+  "source_count": 333
 }

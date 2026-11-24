@@ -3,7 +3,7 @@
   "intro": "点击同一张流程图中的卡片查看模块接口、实施方案与当前进度。",
   "directory": "SAM3点云GraspGenX步骤",
   "diagram": "/media/sam3-graspgenx-workflow.svg",
-  "note": "当前统一使用头部向下45°、TCP43、固定45.2厘米和871球模型，配置核验见V2。",
+  "note": "当前使用头部向下45°、TCP43、固定45.2厘米。V2记录871球与局部近桌规则，V3接入左右臂选择。",
   "legend": [
     {
       "class": "vision",
@@ -123,8 +123,8 @@
     {
       "id": "planning",
       "number": "05",
-      "title": "坐标适配与 cuRobo",
-      "summary": "TCP43、871球、六轴，检查IK、场景碰撞和完整轨迹。",
+      "title": "cuRobo规划与选臂",
+      "summary": "同一候选池分别检查左右臂，保留871球、停放臂避碰和完整轨迹检查。",
       "status": "已接入",
       "kind": "geometry",
       "file": "05_坐标适配与规划.md"
@@ -133,8 +133,8 @@
       "id": "execution",
       "number": "06",
       "title": "ARX 抓取与评测",
-      "summary": "接近、闭爪、抬升与保持，记录双视角录像。",
-      "status": "新配置待抓取登记",
+      "summary": "按选中臂接近、闭合与抬升，记录实测接触、手指和双视角录像。",
+      "status": "V3四项联调已登记",
       "kind": "execute",
       "file": "06_抓取执行与评测.md"
     }

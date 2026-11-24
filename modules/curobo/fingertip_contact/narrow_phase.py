@@ -50,11 +50,12 @@ class ConvexFingerPolicy:
     tolerance_m: float
     asset: object
     distal_length_m: float = .010
+    collision_arm: str = 'right'
 
     def __post_init__(self):
         if not (0 <= self.tolerance_m <= .002 and 0 < self.distal_length_m <= .010):
             raise ValueError('Unregistered local tolerance or fingertip region')
-        meshes, self.source_paths = collision_meshes(self.asset)
+        meshes, self.source_paths = collision_meshes(self.asset, self.collision_arm)
         self.parts = {name: [extreme_points(p) for p in meshes[name]] for name in FINGERS}
         self.tip, self.per_finger_tip = tip_plane(self.geometry, meshes)
         self.center = np.asarray(self.table['center'], dtype=float)

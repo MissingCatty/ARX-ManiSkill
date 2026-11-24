@@ -147,6 +147,25 @@
       "asset_resources": [
         "curobo_v090_assets"
       ]
+    },
+    "curobo_dual_arm": {
+      "source": "modules/curobo/dual_arm",
+      "role": "motion_planning",
+      "environment": "environments/curobo",
+      "adapter": "modules/curobo/dual_arm/adapter.py",
+      "inputs": [
+        "state.json",
+        "candidates/candidate_pool.json"
+      ],
+      "outputs": [
+        "plan_result.json",
+        "arms/right/plan_result.json",
+        "arms/left/plan_result.json"
+      ],
+      "policies": [
+        "configs/policies/fingertip_table.json",
+        "configs/experiments/sam3_graspgenx_v3.json"
+      ]
     }
   }
 }

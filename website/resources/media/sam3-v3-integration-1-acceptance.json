@@ -1,0 +1,212 @@
+{
+  "at": "2026-11-25T01:50:02.252475+08:00",
+  "passed": true,
+  "version": "V3",
+  "registered": 3,
+  "completed": 3,
+  "not_executed": 0,
+  "planning_passes": 2,
+  "physical_attempts": 2,
+  "grasp_successes": 2,
+  "all_record_checks_passed": true,
+  "sphere_comparison": {
+    "profile_id": "arx_refined_871_v1",
+    "right_total": 871,
+    "left_total": 871,
+    "per_link": [
+      {
+        "right": "right_link21",
+        "left": "left_link11",
+        "spheres_each": 26
+      },
+      {
+        "right": "right_link22",
+        "left": "left_link12",
+        "spheres_each": 115
+      },
+      {
+        "right": "right_link23",
+        "left": "left_link13",
+        "spheres_each": 97
+      },
+      {
+        "right": "right_link24",
+        "left": "left_link14",
+        "spheres_each": 36
+      },
+      {
+        "right": "right_link25",
+        "left": "left_link15",
+        "spheres_each": 24
+      },
+      {
+        "right": "right_link26",
+        "left": "left_link16",
+        "spheres_each": 89
+      },
+      {
+        "right": "right_link27",
+        "left": "left_link17",
+        "spheres_each": 258
+      },
+      {
+        "right": "right_link28",
+        "left": "left_link18",
+        "spheres_each": 226
+      }
+    ],
+    "right_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+    "normalized_left_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+    "local_centers_and_radii_identical": true,
+    "fk_test_states": 16,
+    "maximum_world_center_error_m": 2.220446049250313e-16,
+    "source_sha256": "0888753f7335f63b35737eab04dfe2081c199e471c7d0ba5a6afbc944f6b791e"
+  },
+  "registration_sha256": "720c20e096fd6971c8829d460b98a24e15c9283cb785125ea7cd46602d5f78b4",
+  "acceptance_source_sha256": "8298215d24925e46b0fe79bd7dff9138f11610a71338ef16c30e3884de3f288e",
+  "results": [
+    {
+      "id": "D0001_S1_open_lemon",
+      "target": "lemon",
+      "forced_arm": "right",
+      "selected_arm": "right",
+      "planning_success": true,
+      "physical_attempt": true,
+      "success": true,
+      "reason": "success",
+      "arm_results": {
+        "right": {
+          "success": true,
+          "reason": "success",
+          "candidate_index": 1,
+          "score": 0.7562868595123291,
+          "rejected": {
+            "grasp_ik": 1,
+            "pre_or_lift_ik": 0,
+            "path": 0,
+            "local_approach": 0
+          },
+          "wall_seconds": 2.660222213002271,
+          "receipt_directory": "tmp/dual_arm_grasp/v3_integration_20261125_05/trials/D0001_S1_open_lemon/arms/right"
+        }
+      },
+      "minimum_hold_lift_m": 0.03004559688270092,
+      "hold_seconds": 3.025,
+      "opening": {
+        "joint_error_rad": 1.979060471057892e-09,
+        "settled": true,
+        "planned_seconds": 2.0,
+        "finger_positions_m": [
+          0.04399987682700157,
+          0.043999653309583664
+        ],
+        "finger_error_m": 3.46451997756958e-07,
+        "finger_opening_passed": true
+      },
+      "independent_physical_arm_fk": {
+        "position_error_m": 2.1988759112162646e-07,
+        "rotation_error_rad": 2.27813030815295e-07
+      },
+      "videos": {
+        "execution.mp4": {
+          "decoded": true,
+          "sha256": "b964a6ff575bf9b4e966cace46c1dc59bc534a98463f3360546662e8b4f05c4a",
+          "bytes": 2951477
+        },
+        "head.mp4": {
+          "decoded": true,
+          "sha256": "da2e1b9bc2ac45ae5b1344f0a6cd3a61ecef4cf39ec677acae5107c48ca94ed4",
+          "bytes": 1166220
+        }
+      },
+      "result_sha256": "b532f7e15291752585f6285c30dc817002021a0df13249fee66a1f391c5dc2b9"
+    },
+    {
+      "id": "D0011_S1_open_tomato",
+      "target": "tomato",
+      "forced_arm": "left",
+      "selected_arm": null,
+      "planning_success": false,
+      "physical_attempt": false,
+      "success": false,
+      "reason": "sam3_no_target_mask",
+      "arm_results": {},
+      "minimum_hold_lift_m": null,
+      "hold_seconds": null,
+      "opening": null,
+      "independent_physical_arm_fk": null,
+      "videos": {},
+      "result_sha256": "400d9dd18ad26d6ae46a45e4b5c7023c1c112adb82506a529e94aea1fad9b9cc"
+    },
+    {
+      "id": "D0039_S1_open_mango",
+      "target": "mango",
+      "forced_arm": null,
+      "selected_arm": "right",
+      "planning_success": true,
+      "physical_attempt": true,
+      "success": true,
+      "reason": "success",
+      "arm_results": {
+        "right": {
+          "success": true,
+          "reason": "success",
+          "candidate_index": 6,
+          "score": 0.7314867377281189,
+          "rejected": {
+            "grasp_ik": 6,
+            "pre_or_lift_ik": 0,
+            "path": 0,
+            "local_approach": 0
+          },
+          "wall_seconds": 3.678675367998949,
+          "receipt_directory": "tmp/dual_arm_grasp/v3_integration_20261125_05/trials/D0039_S1_open_mango/arms/right"
+        },
+        "left": {
+          "success": true,
+          "reason": "success",
+          "candidate_index": 7,
+          "score": 0.7296309471130371,
+          "rejected": {
+            "grasp_ik": 6,
+            "pre_or_lift_ik": 1,
+            "path": 0,
+            "local_approach": 0
+          },
+          "wall_seconds": 3.5665773739965516,
+          "receipt_directory": "tmp/dual_arm_grasp/v3_integration_20261125_05/trials/D0039_S1_open_mango/arms/left"
+        }
+      },
+      "minimum_hold_lift_m": 0.03043084591627121,
+      "hold_seconds": 3.025,
+      "opening": {
+        "joint_error_rad": 1.979060471057892e-09,
+        "settled": true,
+        "planned_seconds": 2.0,
+        "finger_positions_m": [
+          0.04399987682700157,
+          0.043999653309583664
+        ],
+        "finger_error_m": 3.46451997756958e-07,
+        "finger_opening_passed": true
+      },
+      "independent_physical_arm_fk": {
+        "position_error_m": 2.2077971796020671e-07,
+        "rotation_error_rad": 8.756681234788794e-08
+      },
+      "videos": {
+        "execution.mp4": {
+          "decoded": true,
+          "sha256": "7e8dd76a879fa35a0335c3ad2b71ab55ceb73a52e9663b8cd7e733d866ff8006",
+          "bytes": 2965720
+        },
+        "head.mp4": {
+          "decoded": true,
+          "sha256": "71e5d0404eae114f104d49ba70493047eb4edc963a8e56eeee60e69b6b9e34dd",
+          "bytes": 1301297
+        }
+      },
+      "result_sha256": "b845e3220021c4d7829c589f23edd1a8c1ef439a1f5362283e968ecb12351845"
+    }
+  ]
+}

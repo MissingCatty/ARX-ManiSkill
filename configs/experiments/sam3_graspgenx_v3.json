@@ -1,0 +1,16 @@
+{
+  "profile_id": "sam3_graspgenx_v3_dual_arm",
+  "version": "V3",
+  "parent_version": "V2",
+  "base_configuration": "configs/experiments/active_experiment.json",
+  "planner_module": "curobo_dual_arm",
+  "arms": ["right", "left"],
+  "execution": "one_selected_arm_per_target",
+  "selection": "native_candidate_order_then_joint_displacement",
+  "parked_arm": "measured_original_collision_mesh_in_world",
+  "parked_joint_tolerance": 0.005,
+  "automatic_retries": false,
+  "scene_resampling": false,
+  "full_200_scene_batch_authorized": false,
+  "user_request": "2026-11-25：接上双臂抓取，作为SAM3＋RGB-D点云＋GraspGenX＋cuRobo主实验的V3版本。"
+}

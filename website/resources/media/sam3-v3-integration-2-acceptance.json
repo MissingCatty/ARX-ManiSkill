@@ -1,0 +1,125 @@
+{
+  "at": "2026-11-25T01:50:04.346724+08:00",
+  "passed": true,
+  "version": "V3",
+  "registered": 1,
+  "completed": 1,
+  "not_executed": 0,
+  "planning_passes": 1,
+  "physical_attempts": 1,
+  "grasp_successes": 0,
+  "all_record_checks_passed": true,
+  "sphere_comparison": {
+    "profile_id": "arx_refined_871_v1",
+    "right_total": 871,
+    "left_total": 871,
+    "per_link": [
+      {
+        "right": "right_link21",
+        "left": "left_link11",
+        "spheres_each": 26
+      },
+      {
+        "right": "right_link22",
+        "left": "left_link12",
+        "spheres_each": 115
+      },
+      {
+        "right": "right_link23",
+        "left": "left_link13",
+        "spheres_each": 97
+      },
+      {
+        "right": "right_link24",
+        "left": "left_link14",
+        "spheres_each": 36
+      },
+      {
+        "right": "right_link25",
+        "left": "left_link15",
+        "spheres_each": 24
+      },
+      {
+        "right": "right_link26",
+        "left": "left_link16",
+        "spheres_each": 89
+      },
+      {
+        "right": "right_link27",
+        "left": "left_link17",
+        "spheres_each": 258
+      },
+      {
+        "right": "right_link28",
+        "left": "left_link18",
+        "spheres_each": 226
+      }
+    ],
+    "right_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+    "normalized_left_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+    "local_centers_and_radii_identical": true,
+    "fk_test_states": 16,
+    "maximum_world_center_error_m": 2.220446049250313e-16,
+    "source_sha256": "0888753f7335f63b35737eab04dfe2081c199e471c7d0ba5a6afbc944f6b791e"
+  },
+  "registration_sha256": "66196a4b0a31603d41518b5540692074bb85237ae7d708eaa663b4756e9d9fbb",
+  "acceptance_source_sha256": "8298215d24925e46b0fe79bd7dff9138f11610a71338ef16c30e3884de3f288e",
+  "results": [
+    {
+      "id": "D0039_S1_open_mango",
+      "target": "mango",
+      "forced_arm": "left",
+      "selected_arm": "left",
+      "planning_success": true,
+      "physical_attempt": true,
+      "success": false,
+      "reason": "approach_not_converged",
+      "arm_results": {
+        "left": {
+          "success": true,
+          "reason": "success",
+          "candidate_index": 6,
+          "score": 0.752877950668335,
+          "rejected": {
+            "grasp_ik": 6,
+            "pre_or_lift_ik": 0,
+            "path": 0,
+            "local_approach": 0
+          },
+          "wall_seconds": 3.5739894219950656,
+          "receipt_directory": "tmp/dual_arm_grasp/v3_left_execution_20261125_01/trials/D0039_S1_open_mango/arms/left"
+        }
+      },
+      "minimum_hold_lift_m": null,
+      "hold_seconds": null,
+      "opening": {
+        "joint_error_rad": 1.6391277313232422e-07,
+        "settled": true,
+        "planned_seconds": 2.0,
+        "finger_positions_m": [
+          0.043999653309583664,
+          0.043999671936035156
+        ],
+        "finger_error_m": 3.46451997756958e-07,
+        "finger_opening_passed": true
+      },
+      "independent_physical_arm_fk": {
+        "position_error_m": 5.842823103826734e-08,
+        "rotation_error_rad": 7.897340565956068e-08
+      },
+      "videos": {
+        "execution.mp4": {
+          "decoded": true,
+          "sha256": "ec244ec35a0909085f2ffdb249c801629ddca2f230f5ef525dc5585b965d6def",
+          "bytes": 2394792
+        },
+        "head.mp4": {
+          "decoded": true,
+          "sha256": "0c976072b5d8cb568c6bc1dfa6075c9ab9b1533818a7a1c93f0ed1a39417ac08",
+          "bytes": 696055
+        }
+      },
+      "result_sha256": "1400342bf9f125e5fecbbbdc8977204e02919a8b02888b153b37487c0aa10b3e"
+    }
+  ]
+}

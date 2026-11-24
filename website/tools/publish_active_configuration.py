@@ -142,6 +142,8 @@ def publish_contact_validation(config):
 
 def publish():
     config=load_current(verify_dataset=True);profile=load_profile()
+    if config.get('version') == 'V3':
+        raise RuntimeError('V3使用website/tools/publish_dual_arm_v3.py发布；此V2工具不覆盖V3页面与登记。')
     content=SITE/'内容';assets=content/'资源';site=read(content/'网站.json')
     records=PROJECT/'experiments/current_configuration/records'
     validation=records/'validation_20261124_01'

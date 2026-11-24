@@ -15,17 +15,26 @@ class LocalContactValidator:
         self.other_checker = other_checker
         self.geometry = Geometry(context.model, state)
         self.profile = profile or load_profile()
+        self.asset = asset
         if tolerance_m is not None:
             self.profile = replace(self.profile, maximum_penetration_m=tolerance_m)
-        self.policy = ConvexFingerPolicy(self.geometry, state['scene_cuboids']['table'],
-                                        self.profile.maximum_penetration_m, asset, self.profile.distal_length_m)
+        self.policies = {}
+        self.select_policy(state)
         self.receipts = []
+
+    def select_policy(self, state):
+        arm = state.get('planning_arm', 'right')
+        if arm not in self.policies:
+            self.policies[arm] = ConvexFingerPolicy(self.geometry, state['scene_cuboids']['table'],
+                self.profile.maximum_penetration_m, self.asset, self.profile.distal_length_m, arm)
+        self.policy = self.policies[arm]
 
     def update(self, context, state):
         self.context = context
         self.geometry.base = np.asarray(state['links']['body4'], dtype=float)
         measured = dict(zip(state['joint_names'], state['qpos']))
         self.geometry.locked = {name: measured[name] for name in self.geometry.locked}
+        self.select_policy(state)
         self.policy.table = state['scene_cuboids']['table']
         self.policy.center = np.asarray(self.policy.table['center'], dtype=float)
         self.policy.half = np.asarray(self.policy.table['dims'], dtype=float)/2

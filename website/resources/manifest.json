@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T16:12:34.103Z",
+  "generatedAt": "2026-11-24T17:53:51.981Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -531,7 +531,7 @@
     },
     {
       "file": "media/active-configuration.json",
-      "sha256": "8c927609e61b7337e356d0b64fee2c4366fc7bf22111c9c478d671d14bfceca3"
+      "sha256": "b5e4e81cef131d0c14974bc4ad0315e94d8d27689651643cb1c4d052d2fb6d4b"
     },
     {
       "file": "media/active-configuration-verification.json",
@@ -596,6 +596,70 @@
     {
       "file": "media/table-tolerance-review.json",
       "sha256": "0f6f4b869295807903fae52bbaacc396c8e9a85459381ff441a6af4f85e0fb35"
+    },
+    {
+      "file": "media/sam3-v3-dual-arm-workspace.png",
+      "sha256": "3b40509824fb079ba927b6d1f142adbbe03dbdd857785157ddbcbeca3ecc1693"
+    },
+    {
+      "file": "media/sam3-v3-sphere-comparison.json",
+      "sha256": "2dc95e733e0afc79787159771b679c19f6f734af9cc5194278a113d8be3baced"
+    },
+    {
+      "file": "media/sam3-v3-integration-1-acceptance.json",
+      "sha256": "6e1658ac3f5f17b83d8c5646f12e4bc4c1a0c9367fa1f794e6bc791d56dce497"
+    },
+    {
+      "file": "media/sam3-v3-r1-d0001-initial.png",
+      "sha256": "60eaa310102274c1a0b06aefb3f0d3c95043b6e34835c779c728951bf61f820a"
+    },
+    {
+      "file": "media/sam3-v3-r1-d0001-overview.mp4",
+      "sha256": "b964a6ff575bf9b4e966cace46c1dc59bc534a98463f3360546662e8b4f05c4a"
+    },
+    {
+      "file": "media/sam3-v3-r1-d0001-head.mp4",
+      "sha256": "da2e1b9bc2ac45ae5b1344f0a6cd3a61ecef4cf39ec677acae5107c48ca94ed4"
+    },
+    {
+      "file": "media/sam3-v3-r1-d0011-initial.png",
+      "sha256": "60081300d9d3e1bbc216323afe0aa2463917c8446aaf8f22072a21ff0be8d67f"
+    },
+    {
+      "file": "media/sam3-v3-r1-d0039-initial.png",
+      "sha256": "a9304d805e2760c5f6a71d3a2e76bdf9f4e1089b2402b9863e5665963744837a"
+    },
+    {
+      "file": "media/sam3-v3-r1-d0039-overview.mp4",
+      "sha256": "7e8dd76a879fa35a0335c3ad2b71ab55ceb73a52e9663b8cd7e733d866ff8006"
+    },
+    {
+      "file": "media/sam3-v3-r1-d0039-head.mp4",
+      "sha256": "71e5d0404eae114f104d49ba70493047eb4edc963a8e56eeee60e69b6b9e34dd"
+    },
+    {
+      "file": "media/sam3-v3-integration-2-acceptance.json",
+      "sha256": "e14591bf78eaf62c8fbfbc3435cac1a0346c7d6b10d886f106b5c66a4e6153b1"
+    },
+    {
+      "file": "media/sam3-v3-r2-d0039-initial.png",
+      "sha256": "a9304d805e2760c5f6a71d3a2e76bdf9f4e1089b2402b9863e5665963744837a"
+    },
+    {
+      "file": "media/sam3-v3-r2-d0039-overview.mp4",
+      "sha256": "ec244ec35a0909085f2ffdb249c801629ddca2f230f5ef525dc5585b965d6def"
+    },
+    {
+      "file": "media/sam3-v3-r2-d0039-head.mp4",
+      "sha256": "0c976072b5d8cb568c6bc1dfa6075c9ab9b1533818a7a1c93f0ed1a39417ac08"
+    },
+    {
+      "file": "media/sam3-v3-planner-loaded.json",
+      "sha256": "6700c954f709fb91fa36d4efee4594badde16a1c9932bcd3b110fa9cf8020347"
+    },
+    {
+      "file": "media/sam3-v3-left-approach-diagnosis.json",
+      "sha256": "9068091542ba6caf1d06a536df76d9b89ac0e6431a3c48c5cd0b96a6f99182b0"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
@@ -1615,7 +1679,7 @@
     },
     {
       "file": "optimized/manifest.json",
-      "sha256": "d1a4178671153707f104457184bf4628859a54f52f572b53d397d548dc4d6361"
+      "sha256": "7c950ec4a2d3e3746d9af27a77255865e2720d24f1fe036001d924bb2b502d5b"
     }
   ]
 }

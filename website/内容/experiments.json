@@ -67,8 +67,8 @@
     },
     {
       "id": "sam3-graspgenx",
-      "objective": "以头部SAM3、RaySt3R目标点云补全、GraspGenX和cuRobo完成ARX抓取，分版本记录完整链路、距离与夹指近桌抓取的改进。",
-      "current": "V2",
+      "objective": "以头部SAM3、RaySt3R目标点云、GraspGenX和cuRobo完成ARX抓取，分版本记录感知、近桌接触与左右臂选择。",
+      "current": "V3",
       "iterations": [
         {
           "code": "V1",
@@ -153,6 +153,76 @@
             ]
           },
           "batches": []
+        },
+        {
+          "code": "V3",
+          "parent": "V2",
+          "sourceId": "sam3-graspgenx",
+          "title": "左右臂选择与抓取",
+          "date": "2026-11-25",
+          "status": "双臂规划已接通，左臂接近未到位",
+          "resultSummary": "4项联调：规划通过3项，实际执行3项，成功2项。",
+          "change": "同一原生候选池分别检查左右臂，按候选排名和关节位移选臂；停放臂真实网格进入规划场景。",
+          "pipeline": "头部D405 → SAM3 → RaySt3R → GraspGenX → cuRobo左右臂规划 → 选臂抓取",
+          "scenes": "沿用冻结200场景，本轮先做限定场景的接口联调。",
+          "settings": [
+            [
+              "选臂",
+              "原生抓姿排名优先，同一抓姿比较关节位移。"
+            ],
+            [
+              "球模型",
+              "左右臂各871球，对应球心和半径逐项一致。"
+            ],
+            [
+              "执行",
+              "原地张开后执行选中臂轨迹，停放臂真实网格进入规划场景。"
+            ],
+            [
+              "本轮结果",
+              "4项联调：规划通过3项，实际执行3项，成功2项。"
+            ]
+          ],
+          "contentFile": "sam3-graspgenx-v3.md",
+          "reportLayout": true,
+          "authorization": {
+            "kind": "explicit-user-request",
+            "request": "2026-11-25用户要求接上双臂抓取，作为SAM3＋RGB-D点云＋GraspGenX＋cuRobo主实验的V3版本。"
+          },
+          "batches": [
+            {
+              "id": "v3_integration_20261125_05",
+              "title": "三项抓取联调",
+              "date": "2026-11-25",
+              "status": "已完成",
+              "summary": "登记3项，规划通过2项，实际执行2项，成功2项。",
+              "outputs": [
+                "tmp/dual_arm_grasp/v3_integration_20261125_05"
+              ],
+              "artifacts": [
+                {
+                  "label": "独立验收与视频记录",
+                  "url": "/media/sam3-v3-integration-1-acceptance.json"
+                }
+              ]
+            },
+            {
+              "id": "v3_left_execution_20261125_01",
+              "title": "左臂芒果执行联调",
+              "date": "2026-11-25",
+              "status": "已完成",
+              "summary": "登记1项，规划通过1项，实际执行1项，成功0项。",
+              "outputs": [
+                "tmp/dual_arm_grasp/v3_left_execution_20261125_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "独立验收与视频记录",
+                  "url": "/media/sam3-v3-integration-2-acceptance.json"
+                }
+              ]
+            }
+          ]
         }
       ]
     },

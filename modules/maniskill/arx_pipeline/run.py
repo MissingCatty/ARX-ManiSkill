@@ -17,6 +17,7 @@ from scipy.spatial.transform import Rotation
 from environment import (make, ROOT, ARM, FINGERS, BASE_POSE, META, ALIGNMENT,
                          PERCEPTION_CAMERA, INITIAL_SOURCE, CONTROLLERS_SOURCE, RUNTIME_SOURCE)
 from environment import SCENE_CUBOIDS, TABLE_HEIGHT, alignment_for_camera, RECORDING_VIEW
+from modules.arx_core.arms import get_arm, select_execution_arm
 
 ARX = ROOT.parent / "arx_core"
 CODE = Path(__file__).parent
@@ -42,9 +43,11 @@ def snapshot(env, obs=None):
              "qpos": robot.qpos.cpu().numpy()[0].tolist(),
              "joint_limits": robot.qlimits.cpu().numpy()[0].tolist(),
              "links": {n: robot.links_map[n].pose.to_transformation_matrix().cpu().numpy()[0].tolist()
-                       for n in ["base_link", "body4", "right_eef_link"]},
+                       for n in ["base_link", "body4", "right_eef_link", "left_eef_link"]},
              "object_world": obj.tolist(), "object_center": (obj[:3, :3] @ center + obj[:3, 3]).tolist(),
              "scene_cuboids": SCENE_CUBOIDS, "table_height_m": TABLE_HEIGHT}
+    if hasattr(env, 'grasp_arm'):
+        state['execution_arm'] = env.grasp_arm
     if env.scene_spec is not None:
         from scene_tools import mesh_state
         state['scene_meshes']=mesh_state(env)
@@ -99,9 +102,13 @@ class Execution:
     def __init__(self, env, out):
         self.env, self.out = env, out
         self.names = [j.name for j in env.agent.robot.active_joints]
-        self.arm_indices = [self.names.index(n) for n in ARM]
-        self.finger_indices = [self.names.index(n) for n in FINGERS]
+        self.arm = get_arm(getattr(env, 'grasp_arm', 'right'))
+        self.arm_indices = [self.names.index(n) for n in self.arm.joints]
+        self.finger_indices = [self.names.index(n) for n in self.arm.finger_joints]
+        self.active_finger_entities = {env.agent.robot.links_map[n]._objs[0].entity: n for n in self.arm.finger_links}
+        self.fixed_indices = [i for i in range(len(self.names)) if i not in self.arm_indices+self.finger_indices]
         self.command = env.agent.robot.qpos.cpu().numpy()[0].copy()
+        self.fixed_reference = self.command[self.fixed_indices].copy()
         self.tick, self.label = 0, "setup"
         self.initial_z = float(env.obj.pose.p[0, 2])
         save(out/'execution_origin.json',{'object_initial_z_m':self.initial_z,'reference':'After initial settling, before any commanded execution stage'})
@@ -133,13 +140,16 @@ class Execution:
             if a not in robot_entities and b not in robot_entities:
                 continue
             if a in robot_entities and b in robot_entities:
-                continue
+                opposite = (('right_' in a.name and 'left_' in b.name) or
+                            ('left_' in a.name and 'right_' in b.name))
+                if not (getattr(self.env, 'check_inter_arm_contacts', False) and opposite):
+                    continue
             impulse = sum(float(np.linalg.norm(p.impulse)) for p in c.points)
             if not c.points or impulse <= 1e-8:
                 continue
             robot_link = a if a in robot_entities else b
             other = b if a in robot_entities else a
-            allowed = self.label!='observe' and other == target and any(n in robot_link.name for n in ["right_link27", "right_link28"])
+            allowed = self.label!='observe' and other == target and robot_link in self.active_finger_entities
             event = {"a": a.name, "b": b.name, "impulse_ns": impulse,
                      **self.contact_event(robot_link, other, c, allowed)}
             allowed = event['allowed']
@@ -147,7 +157,7 @@ class Execution:
             if not allowed:
                 self.forbidden.append({"tick": self.tick, "stage": self.label, **event})
             if allowed and other == target and self.label == "close":
-                self.bilateral.add("right_link27" if "right_link27" in robot_link.name else "right_link28")
+                self.bilateral.add(self.active_finger_entities[robot_link])
         z = float(self.env.obj.pose.p[0, 2])
         if self.label == "hold":
             self.heights.append(z)
@@ -161,6 +171,10 @@ class Execution:
 
     def step(self):
         self.env._step_action(torch.tensor(self.command[None], device=self.env.device))
+        if getattr(self.env, 'check_inter_arm_contacts', False):
+            fixed = self.env.agent.robot.qpos[0, self.fixed_indices].cpu().numpy()
+            if np.max(np.abs(fixed-self.fixed_reference)) >= .005:
+                raise RuntimeError('parked_robot_joint_drift')
         self.control_ticks += 1
         if self.control_ticks % 2 == 0:
             self.writer.append_data(self.env.render().cpu().numpy()[0])
@@ -200,6 +214,19 @@ class Execution:
         save(self.out / "stages.json", self.stages)
         if not stage["settled"]:
             raise RuntimeError(label + "_not_converged")
+
+    def open_gripper(self, opening):
+        if opening != .044:
+            raise ValueError('V3 opening must match the registered planned finger locks')
+        q = self.env.agent.robot.qpos[0, self.arm_indices].cpu().numpy()
+        self.segment('open', [q, q], [0., 2.], finger=opening)
+        actual = self.env.agent.robot.qpos[0, self.finger_indices].cpu().numpy()
+        error = float(np.max(np.abs(actual-opening)))
+        self.stages['open'].update(finger_positions_m=actual.tolist(), finger_error_m=error,
+                                  finger_opening_passed=error < .001)
+        save(self.out/'stages.json', self.stages)
+        if error >= .001:
+            raise RuntimeError('gripper_open_not_converged')
 
     def finish(self):
         self.env.trace_callback = None
@@ -278,10 +305,18 @@ def trial(entry, out, neural_gpu, planner_gpu, perception_camera=PERCEPTION_CAME
             result["reason"] = plan["reason"]
             return result
         result["planning_success"] = True
+        selected = plan["selected"]
+        if 'arm' in selected:
+            if execution is not None:
+                raise RuntimeError('Cannot change arm after execution has started')
+            select_execution_arm(env, selected['arm'])
+            result['selected_arm'] = selected['arm']
         if execution is None:
             execution = Execution(env, out)
         result["physical_attempt"] = True
-        selected = plan["selected"]
+        if 'arm' in selected:
+            execution.open_gripper(selected['open_finger_m'])
+            save(out/'opened_state.json', snapshot(env))
         path = plan["paths"]["pregrasp"]
         execution.segment("pregrasp", path["q"], path["times"], goal_world=selected["pregrasp_world"])
         save(out / "pregrasp_state.json", snapshot(env))
