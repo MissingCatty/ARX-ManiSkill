@@ -1,0 +1,14 @@
+{
+  "name": "backup_tools",
+  "type": "native_tools",
+  "installed_at": "2026-11-24T14:07:06.544974+08:00",
+  "tools": {
+    "rclone": {
+      "version": "1.60.1+dfsg-3ubuntu0.24.04.6",
+      "source": "pool/universe/r/rclone/rclone_1.60.1+dfsg-3ubuntu0.24.04.6_amd64.deb",
+      "provider": "Ubuntu package repository",
+      "archive_sha256": "f887e086389fa079b5e5b8f5832e140872cef2c808adc11c0a9047a989698e7d",
+      "binary_sha256": "dc1ec3109000e4d36c8d14efac6d4c4158d1b860853cb75c09dcc9f6dded420b"
+    }
+  }
+}
