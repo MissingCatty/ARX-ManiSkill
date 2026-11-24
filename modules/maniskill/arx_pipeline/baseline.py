@@ -22,9 +22,12 @@ from environment import make, ROOT, INITIAL_JOINTS, ARM, BASE_POSE, SCENE_CUBOID
 from scene_tools import DB, corners, ArmFK, visibility, export_geometry
 from run import trial, snapshot, save, sha, CHECKPOINT, ARX, META
 
-PLAN=ROOT/'plans/arx_grasp_baseline_v1'
+from arx_project.assets import AssetStore, CATALOG as ASSET_CATALOG
+from arx_project.scenes import current_dataset, current_schedule
+PLAN=current_dataset()
 LAYOUTS=['S1_open','S2_edge','S3_sparse','S4_clutter','S5_occluded']
-CATALOG=json.loads((PLAN/'object_catalog.json').read_text())
+_store=AssetStore()
+CATALOG=[{**_store.model(name),'family':row['semantic_class']} for name,row in _store.data['models'].items()]
 MODEL_IDS=[o['model_id'] for o in CATALOG]
 CODE=Path(__file__).parent
 TABLE_MIN=np.array([-.7245,-1.209]);TABLE_MAX=np.array([.4845,1.209])
@@ -89,25 +92,7 @@ def near_duplicate(a,b):
 
 
 def queue():
-    old=list(csv.DictReader((PLAN/'planned_slots.csv').open()))
-    source=[x for x in old if x['layout'] in LAYOUTS]
-    lookup={(x['target_model_id'],x['layout']):x for x in source}
-    result=[];previous=None
-    for round_index in range(5):
-        for attempt in range(1000):
-            rng=random.Random(20261116+round_index*1000+attempt);pool=list(enumerate(CATALOG));rows=[];last=previous
-            while pool:
-                counts=Counter(v['family'] for _,v in pool)
-                valid=[(i,v) for i,v in pool if last is None or (v['family']!=last['family'] and v['model_id']!=last['model_id'] and LAYOUTS[(i+round_index)%5]!=last['layout'])]
-                if not valid:break
-                rng.shuffle(valid);i,v=max(valid,key=lambda t:counts[t[1]['family']]+rng.random()*.8)
-                layout=LAYOUTS[(i+round_index)%5];s=lookup[v['model_id'],layout]
-                entry={'id':s['slot_id']+'_'+layout+'_'+v['model_id'],'model_id':v['model_id'],'family':v['family'],'layout':layout,'seed':int(s['layout_seed'])}
-                rows.append(entry);pool.remove((i,v));last=entry
-            if not pool:result+=rows;previous=last;break
-        else:raise RuntimeError('Queue ordering failed')
-    assert len(result)==200 and len({(e['model_id'],e['layout']) for e in result})==200
-    return result
+    return deepcopy(current_schedule())
 
 
 def settle(env):
@@ -234,7 +219,7 @@ def isolated_admit(entry,out):
 
 
 def guarded_sources():
-    files=list(CODE.glob('*.py'))+[CHECKPOINT,ROOT/'assets/arx/manifest.json',PLAN/'object_catalog.json',PLAN/'planned_slots.csv',
+    files=list(CODE.glob('*.py'))+[CHECKPOINT,ROOT/'assets/arx/manifest.json',PLAN/'object_catalog.json',PLAN/'manifest.json',ASSET_CATALOG,
             ROOT/'assets/data/assets/mani_skill2_ycb/info_pick_v0.json']
     files += [Path(META['source'])]+[ROOT/'assets/arx'/name for name in META['files']]
     package=ARX/'servers/zerograsp/vendor/zerograsp_mainline_minimal'
@@ -242,9 +227,7 @@ def guarded_sources():
     files += [ARX/'servers/zerograsp/coolas_zerograsp/grasp.py',ARX/'shared/arx_shared/schemas.py']
     files += [ARX/p for p in ['arx-sim/config/controllers.yaml','arx-sim/config/runtime.yaml','scripts/curobo_arx/optimize_path.py','scripts/curobo_arx/environment.sh','scripts/curobo_arx/static_pick/reference/historical_reference/initial_setup.json']]
     for kind in ['model','model_closed']:files+=list((ARX/'scripts/curobo_arx/static_pick/reference'/kind).glob('arx.*'))
-    for model in MODEL_IDS:
-        d=ROOT/'assets/data/assets/mani_skill2_ycb/models'/model
-        files += [p for p in d.iterdir() if p.is_file() and (p.name in ['collision.ply','textured.obj'] or p.suffix.lower() in ['.mtl','.png','.jpg','.jpeg'])]
+    for record in CATALOG:files += [Path(p) for p in record['source_hashes']]
     return {str(p):sha(p) for p in set(files)}
 
 

@@ -1,4 +1,5 @@
 """Verify and hash-freeze geometry-only scenes before any diagnostic runs."""
+from arx_project.assets import load_object_catalog
 import argparse
 from collections import Counter
 from datetime import datetime
@@ -16,7 +17,7 @@ from verify_dataset import LABELS
 
 def verify(root):
     reg, manifest = read(root / 'registration.json'), read(root / 'manifest.json')
-    catalog = read(root / 'object_catalog.json')
+    catalog = load_object_catalog(root / 'object_catalog.json')
     db = catalog['models']
     assert reg['construction_independent_of_ik'] and reg['source_identity_fields_only']
     assert not reg['source_positions_used'] and not reg['admission']['IK_selection']

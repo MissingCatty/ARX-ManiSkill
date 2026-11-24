@@ -1,4 +1,5 @@
 """Validate diverse assets and construct a balanced, fixed-head 200-scene dataset."""
+from arx_project.assets import load_object_catalog
 import argparse
 from collections import Counter
 from copy import deepcopy
@@ -14,8 +15,10 @@ from scipy.spatial.transform import Rotation
 
 from asset_catalog import HERE, PROJECT, MS, CATALOG, read, save, sha, transformed
 
-DEFAULT=HERE/'datasets/diverse200_20261122_01'
-SELECTED=HERE/'assets/selected_catalog.json'
+from arx_project.scenes import current_dataset
+from arx_project.assets import CATALOG as SHARED_CATALOG
+DEFAULT=current_dataset()
+SELECTED=SHARED_CATALOG
 LEGACY=PROJECT/'experiments/head_perception_scenes'
 sys.path.insert(0,str(LEGACY))
 import scene_builder as scenes
@@ -23,7 +26,8 @@ LAYOUTS=scenes.LAYOUTS
 
 def now():return datetime.now().astimezone().isoformat()
 
-def runtime(db):
+def runtime(db=None):
+ if db is None:db=load_object_catalog(current_dataset()/'object_catalog.json')['models']
  os.environ.setdefault('MS_ASSET_DIR',str(MS/'assets'))
  sys.path[:0]=[str(MS),str(MS/'arx_pipeline'),str(PROJECT/'experiments/pointcloud_benchmark')]
  import arx_runtime_imports
@@ -145,7 +149,7 @@ def distractors(entry,reg,baseline,rng):
  return available[:count]
 
 def prepare(root):
- assert not root.exists();selected=read(SELECTED);db=selected['models'];categories=selected['categories'];assert len(db)==80 and len(categories)==40
+ assert not root.exists();selected=load_object_catalog(SELECTED);db=selected['models'];categories=selected['categories'];assert len(db)==80 and len(categories)==40
  rows=[]
  for layout_index,layout in enumerate(LAYOUTS):
   rng=np.random.default_rng(2026112201+layout_index);order=list(categories);rng.shuffle(order)
@@ -172,7 +176,7 @@ def prepare(root):
  save(root/'registration.json',reg);save(root/'progress.json',{'phase':'registered','completed':0,'registered':200,'physical_grasps':0})
 
 def build(root,resume=False):
- reg=read(root/'registration.json');selected=read(root/'object_catalog.json');db=selected['models']
+ reg=read(root/'registration.json');selected=load_object_catalog(root/'object_catalog.json');db=selected['models']
  for path,digest in reg['source_hashes'].items():assert sha(path)==digest,path
  assert sha(root/'object_catalog.json')==reg['object_catalog_sha256']
  environment,baseline,run,sapien,torch,make,profile,convert,get_maps=runtime(db);maps=get_maps(profile)

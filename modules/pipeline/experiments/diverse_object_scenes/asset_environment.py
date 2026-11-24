@@ -5,11 +5,12 @@ import sapien
 from asset_catalog import MS, read, CATALOG
 import environment as original
 from mani_skill.utils.registration import register_env
-from mani_skill.utils.scene_builder.table import scene_builder as table_source
+from arx_project.assets import AssetStore, resource_path
 from mani_skill.utils.building.ground import build_ground
 
 def candidate_db():
- return {r['model_id']:r for rows in read(CATALOG)['candidate_models'].values() for r in rows}
+ store=AssetStore()
+ return {name:store.model(name) for name in store.data['models']}
 
 def make_builder(scene,record):
  builder=scene.create_actor_builder()
@@ -32,7 +33,7 @@ class ARXPickCatalog(original.ARXPickYCB):
   builder=self.scene.create_actor_builder()
   height=original.TABLE_HEIGHT
   builder.add_box_collision(pose=sapien.Pose([0,0,height/2]),half_size=[2.418/2,1.209/2,height/2])
-  table_file=original.Path(table_source.__file__).parent/'assets/table.glb'
+  table_file=resource_path('workspace_table')
   builder.add_visual_from_file(str(table_file),scale=[1.75,1.75,1.75*height/original.ORIGINAL_TABLE_HEIGHT],
     pose=sapien.Pose(q=[np.sqrt(.5),0,0,np.sqrt(.5)]))
   builder.initial_pose=sapien.Pose([-.12,0,-height],[np.sqrt(.5),0,0,np.sqrt(.5)])

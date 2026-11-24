@@ -1,0 +1,4969 @@
+{
+  "id": "diverse200_geometry_20261122_01",
+  "at": "2026-11-22T23:15:03.681987+08:00",
+  "schedule": [
+    {
+      "id": "D0001_S1_open_lemon",
+      "model_id": "robocasa__lemon__lemon_10",
+      "semantic_class": "lemon",
+      "family": "lemon",
+      "target_text": "lemon",
+      "layout": "S1_open",
+      "seed": 405262598,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__lemon__lemon_10"
+        }
+      ]
+    },
+    {
+      "id": "D0002_S1_open_bottled_water",
+      "model_id": "robocasa__bottled_water__bottled_water_1",
+      "semantic_class": "bottled_water",
+      "family": "bottled_water",
+      "target_text": "water bottle",
+      "layout": "S1_open",
+      "seed": 3746949395,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        }
+      ]
+    },
+    {
+      "id": "D0003_S1_open_mushroom",
+      "model_id": "robocasa__mushroom__mushroom_1",
+      "semantic_class": "mushroom",
+      "family": "mushroom",
+      "target_text": "mushroom",
+      "layout": "S1_open",
+      "seed": 243120141,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mushroom__mushroom_1"
+        }
+      ]
+    },
+    {
+      "id": "D0004_S1_open_carrot",
+      "model_id": "robocasa__carrot__carrot_1",
+      "semantic_class": "carrot",
+      "family": "carrot",
+      "target_text": "carrot",
+      "layout": "S1_open",
+      "seed": 3302741116,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__carrot__carrot_1"
+        }
+      ]
+    },
+    {
+      "id": "D0005_S1_open_potato",
+      "model_id": "robocasa__potato__potato_10",
+      "semantic_class": "potato",
+      "family": "potato",
+      "target_text": "potato",
+      "layout": "S1_open",
+      "seed": 2247346757,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__potato__potato_10"
+        }
+      ]
+    },
+    {
+      "id": "D0006_S1_open_bell_pepper",
+      "model_id": "robocasa__bell_pepper__bell_pepper_0",
+      "semantic_class": "bell_pepper",
+      "family": "bell_pepper",
+      "target_text": "bell pepper",
+      "layout": "S1_open",
+      "seed": 1717922498,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bell_pepper__bell_pepper_0"
+        }
+      ]
+    },
+    {
+      "id": "D0007_S1_open_banana",
+      "model_id": "robocasa__banana__banana_10",
+      "semantic_class": "banana",
+      "family": "banana",
+      "target_text": "banana",
+      "layout": "S1_open",
+      "seed": 3900172059,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__banana__banana_10"
+        }
+      ]
+    },
+    {
+      "id": "D0008_S1_open_teapot",
+      "model_id": "robocasa__teapot__teapot_10",
+      "semantic_class": "teapot",
+      "family": "teapot",
+      "target_text": "teapot",
+      "layout": "S1_open",
+      "seed": 1764295514,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__teapot__teapot_10"
+        }
+      ]
+    },
+    {
+      "id": "D0009_S1_open_milk",
+      "model_id": "robocasa__milk__milk_1",
+      "semantic_class": "milk",
+      "family": "milk",
+      "target_text": "milk",
+      "layout": "S1_open",
+      "seed": 824496148,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__milk__milk_1"
+        }
+      ]
+    },
+    {
+      "id": "D0010_S1_open_croissant",
+      "model_id": "robocasa__croissant__croissant_0",
+      "semantic_class": "croissant",
+      "family": "croissant",
+      "target_text": "croissant",
+      "layout": "S1_open",
+      "seed": 1433417965,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__croissant__croissant_0"
+        }
+      ]
+    },
+    {
+      "id": "D0011_S1_open_tomato",
+      "model_id": "robocasa__tomato__tomato_0",
+      "semantic_class": "tomato",
+      "family": "tomato",
+      "target_text": "tomato",
+      "layout": "S1_open",
+      "seed": 3282749588,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__tomato__tomato_0"
+        }
+      ]
+    },
+    {
+      "id": "D0012_S1_open_spatula",
+      "model_id": "robocasa__spatula__spatula_1",
+      "semantic_class": "spatula",
+      "family": "spatula",
+      "target_text": "spatula",
+      "layout": "S1_open",
+      "seed": 3632683484,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__spatula__spatula_1"
+        }
+      ]
+    },
+    {
+      "id": "D0013_S1_open_onion",
+      "model_id": "robocasa__onion__onion_0",
+      "semantic_class": "onion",
+      "family": "onion",
+      "target_text": "onion",
+      "layout": "S1_open",
+      "seed": 2930760449,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__onion__onion_0"
+        }
+      ]
+    },
+    {
+      "id": "D0014_S1_open_scissors",
+      "model_id": "robocasa__scissors__scissors_0",
+      "semantic_class": "scissors",
+      "family": "scissors",
+      "target_text": "scissors",
+      "layout": "S1_open",
+      "seed": 3209359430,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__scissors__scissors_0"
+        }
+      ]
+    },
+    {
+      "id": "D0015_S1_open_remote_control",
+      "model_id": "ai2thor__remote_control__Remote_2",
+      "semantic_class": "remote_control",
+      "family": "remote_control",
+      "target_text": "remote control",
+      "layout": "S1_open",
+      "seed": 1213288814,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__remote_control__Remote_2"
+        }
+      ]
+    },
+    {
+      "id": "D0016_S1_open_peach",
+      "model_id": "robocasa__peach__peach_0",
+      "semantic_class": "peach",
+      "family": "peach",
+      "target_text": "peach",
+      "layout": "S1_open",
+      "seed": 3431333545,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__peach__peach_0"
+        }
+      ]
+    },
+    {
+      "id": "D0017_S1_open_candle",
+      "model_id": "robocasa__candle__candle_0",
+      "semantic_class": "candle",
+      "family": "candle",
+      "target_text": "candle",
+      "layout": "S1_open",
+      "seed": 2450555673,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__candle__candle_0"
+        }
+      ]
+    },
+    {
+      "id": "D0018_S1_open_boxed_food",
+      "model_id": "robocasa__boxed_food__boxed_food_4",
+      "semantic_class": "boxed_food",
+      "family": "boxed_food",
+      "target_text": "food box",
+      "layout": "S1_open",
+      "seed": 520286703,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__boxed_food__boxed_food_4"
+        }
+      ]
+    },
+    {
+      "id": "D0019_S1_open_avocado",
+      "model_id": "robocasa__avocado__avocado_4",
+      "semantic_class": "avocado",
+      "family": "avocado",
+      "target_text": "avocado",
+      "layout": "S1_open",
+      "seed": 1119061506,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__avocado__avocado_4"
+        }
+      ]
+    },
+    {
+      "id": "D0020_S1_open_eggplant",
+      "model_id": "robocasa__eggplant__eggplant_1",
+      "semantic_class": "eggplant",
+      "family": "eggplant",
+      "target_text": "eggplant",
+      "layout": "S1_open",
+      "seed": 1364682767,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__eggplant__eggplant_1"
+        }
+      ]
+    },
+    {
+      "id": "D0021_S1_open_apple",
+      "model_id": "robocasa__apple__apple_0",
+      "semantic_class": "apple",
+      "family": "apple",
+      "target_text": "apple",
+      "layout": "S1_open",
+      "seed": 90746634,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__apple__apple_0"
+        }
+      ]
+    },
+    {
+      "id": "D0022_S1_open_yogurt",
+      "model_id": "robocasa__yogurt__yogurt_1",
+      "semantic_class": "yogurt",
+      "family": "yogurt",
+      "target_text": "yogurt",
+      "layout": "S1_open",
+      "seed": 4201366817,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__yogurt__yogurt_1"
+        }
+      ]
+    },
+    {
+      "id": "D0023_S1_open_baguette",
+      "model_id": "robocasa__baguette__baguette_1",
+      "semantic_class": "baguette",
+      "family": "baguette",
+      "target_text": "baguette",
+      "layout": "S1_open",
+      "seed": 1445408919,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__baguette__baguette_1"
+        }
+      ]
+    },
+    {
+      "id": "D0024_S1_open_pear",
+      "model_id": "robocasa__pear__pear_1",
+      "semantic_class": "pear",
+      "family": "pear",
+      "target_text": "pear",
+      "layout": "S1_open",
+      "seed": 3384998538,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__pear__pear_1"
+        }
+      ]
+    },
+    {
+      "id": "D0025_S1_open_book",
+      "model_id": "ai2thor__book__Book_10",
+      "semantic_class": "book",
+      "family": "book",
+      "target_text": "book",
+      "layout": "S1_open",
+      "seed": 3962887859,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__book__Book_10"
+        }
+      ]
+    },
+    {
+      "id": "D0026_S1_open_sponge",
+      "model_id": "robocasa__sponge__sponge_1",
+      "semantic_class": "sponge",
+      "family": "sponge",
+      "target_text": "sponge",
+      "layout": "S1_open",
+      "seed": 1214087648,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__sponge__sponge_1"
+        }
+      ]
+    },
+    {
+      "id": "D0027_S1_open_keychain",
+      "model_id": "ai2thor__keychain__Keychain_2",
+      "semantic_class": "keychain",
+      "family": "keychain",
+      "target_text": "keychain",
+      "layout": "S1_open",
+      "seed": 3101060116,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__keychain__Keychain_2"
+        }
+      ]
+    },
+    {
+      "id": "D0028_S1_open_cucumber",
+      "model_id": "robocasa__cucumber__cucumber_1",
+      "semantic_class": "cucumber",
+      "family": "cucumber",
+      "target_text": "cucumber",
+      "layout": "S1_open",
+      "seed": 1927983611,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__cucumber__cucumber_1"
+        }
+      ]
+    },
+    {
+      "id": "D0029_S1_open_broccoli",
+      "model_id": "robocasa__broccoli__broccoli_1",
+      "semantic_class": "broccoli",
+      "family": "broccoli",
+      "target_text": "broccoli",
+      "layout": "S1_open",
+      "seed": 3519507597,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__broccoli__broccoli_1"
+        }
+      ]
+    },
+    {
+      "id": "D0030_S1_open_corn",
+      "model_id": "robocasa__corn__corn_0",
+      "semantic_class": "corn",
+      "family": "corn",
+      "target_text": "corn",
+      "layout": "S1_open",
+      "seed": 1416353570,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__corn__corn_0"
+        }
+      ]
+    },
+    {
+      "id": "D0031_S1_open_bread",
+      "model_id": "robocasa__bread__bread_0",
+      "semantic_class": "bread",
+      "family": "bread",
+      "target_text": "bread",
+      "layout": "S1_open",
+      "seed": 2000582038,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bread__bread_0"
+        }
+      ]
+    },
+    {
+      "id": "D0032_S1_open_mug",
+      "model_id": "robocasa__mug__mug_1",
+      "semantic_class": "mug",
+      "family": "mug",
+      "target_text": "mug",
+      "layout": "S1_open",
+      "seed": 2857482868,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mug__mug_1"
+        }
+      ]
+    },
+    {
+      "id": "D0033_S1_open_bowl",
+      "model_id": "robocasa__bowl__bowl_0",
+      "semantic_class": "bowl",
+      "family": "bowl",
+      "target_text": "bowl",
+      "layout": "S1_open",
+      "seed": 3818740865,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bowl__bowl_0"
+        }
+      ]
+    },
+    {
+      "id": "D0034_S1_open_soap_dispenser",
+      "model_id": "robocasa__soap_dispenser__soap_dispenser_2",
+      "semantic_class": "soap_dispenser",
+      "family": "soap_dispenser",
+      "target_text": "soap dispenser",
+      "layout": "S1_open",
+      "seed": 644835932,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        }
+      ]
+    },
+    {
+      "id": "D0035_S1_open_donut",
+      "model_id": "robocasa__donut__donut_1",
+      "semantic_class": "donut",
+      "family": "donut",
+      "target_text": "donut",
+      "layout": "S1_open",
+      "seed": 3669179004,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__donut__donut_1"
+        }
+      ]
+    },
+    {
+      "id": "D0036_S1_open_cell_phone",
+      "model_id": "ai2thor__cell_phone__Cellphone_1",
+      "semantic_class": "cell_phone",
+      "family": "cell_phone",
+      "target_text": "cell phone",
+      "layout": "S1_open",
+      "seed": 2854198270,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__cell_phone__Cellphone_1"
+        }
+      ]
+    },
+    {
+      "id": "D0037_S1_open_bar_soap",
+      "model_id": "robocasa__bar_soap__bar_soap_0",
+      "semantic_class": "bar_soap",
+      "family": "bar_soap",
+      "target_text": "bar of soap",
+      "layout": "S1_open",
+      "seed": 3445141622,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bar_soap__bar_soap_0"
+        }
+      ]
+    },
+    {
+      "id": "D0038_S1_open_canned_food",
+      "model_id": "robocasa__canned_food__canned_food_0",
+      "semantic_class": "canned_food",
+      "family": "canned_food",
+      "target_text": "canned food",
+      "layout": "S1_open",
+      "seed": 412906867,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__canned_food__canned_food_0"
+        }
+      ]
+    },
+    {
+      "id": "D0039_S1_open_mango",
+      "model_id": "robocasa__mango__mango_1",
+      "semantic_class": "mango",
+      "family": "mango",
+      "target_text": "mango",
+      "layout": "S1_open",
+      "seed": 254538114,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mango__mango_1"
+        }
+      ]
+    },
+    {
+      "id": "D0040_S1_open_orange",
+      "model_id": "robocasa__orange__orange_0",
+      "semantic_class": "orange",
+      "family": "orange",
+      "target_text": "orange",
+      "layout": "S1_open",
+      "seed": 2773558153,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__orange__orange_0"
+        }
+      ]
+    },
+    {
+      "id": "D0041_S2_edge_cell_phone",
+      "model_id": "ai2thor__cell_phone__Cellphone_3",
+      "semantic_class": "cell_phone",
+      "family": "cell_phone",
+      "target_text": "cell phone",
+      "layout": "S2_edge",
+      "seed": 1147193374,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__cell_phone__Cellphone_3"
+        }
+      ]
+    },
+    {
+      "id": "D0042_S2_edge_lemon",
+      "model_id": "robocasa__lemon__lemon_1",
+      "semantic_class": "lemon",
+      "family": "lemon",
+      "target_text": "lemon",
+      "layout": "S2_edge",
+      "seed": 1543547189,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__lemon__lemon_1"
+        }
+      ]
+    },
+    {
+      "id": "D0043_S2_edge_book",
+      "model_id": "ai2thor__book__Book_11",
+      "semantic_class": "book",
+      "family": "book",
+      "target_text": "book",
+      "layout": "S2_edge",
+      "seed": 2583915195,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__book__Book_11"
+        }
+      ]
+    },
+    {
+      "id": "D0044_S2_edge_bar_soap",
+      "model_id": "robocasa__bar_soap__bar_soap_1",
+      "semantic_class": "bar_soap",
+      "family": "bar_soap",
+      "target_text": "bar of soap",
+      "layout": "S2_edge",
+      "seed": 16442685,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bar_soap__bar_soap_1"
+        }
+      ]
+    },
+    {
+      "id": "D0045_S2_edge_onion",
+      "model_id": "robocasa__onion__onion_1",
+      "semantic_class": "onion",
+      "family": "onion",
+      "target_text": "onion",
+      "layout": "S2_edge",
+      "seed": 2913715846,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__onion__onion_1"
+        }
+      ]
+    },
+    {
+      "id": "D0046_S2_edge_teapot",
+      "model_id": "robocasa__teapot__teapot_0",
+      "semantic_class": "teapot",
+      "family": "teapot",
+      "target_text": "teapot",
+      "layout": "S2_edge",
+      "seed": 2247187472,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__teapot__teapot_0"
+        }
+      ]
+    },
+    {
+      "id": "D0047_S2_edge_mango",
+      "model_id": "robocasa__mango__mango_10",
+      "semantic_class": "mango",
+      "family": "mango",
+      "target_text": "mango",
+      "layout": "S2_edge",
+      "seed": 1663530331,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mango__mango_10"
+        }
+      ]
+    },
+    {
+      "id": "D0048_S2_edge_avocado",
+      "model_id": "robocasa__avocado__avocado_2",
+      "semantic_class": "avocado",
+      "family": "avocado",
+      "target_text": "avocado",
+      "layout": "S2_edge",
+      "seed": 1816468068,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__avocado__avocado_2"
+        }
+      ]
+    },
+    {
+      "id": "D0049_S2_edge_soap_dispenser",
+      "model_id": "robocasa__soap_dispenser__soap_dispenser_0",
+      "semantic_class": "soap_dispenser",
+      "family": "soap_dispenser",
+      "target_text": "soap dispenser",
+      "layout": "S2_edge",
+      "seed": 1003412535,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        }
+      ]
+    },
+    {
+      "id": "D0050_S2_edge_bell_pepper",
+      "model_id": "robocasa__bell_pepper__bell_pepper_1",
+      "semantic_class": "bell_pepper",
+      "family": "bell_pepper",
+      "target_text": "bell pepper",
+      "layout": "S2_edge",
+      "seed": 2958059679,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bell_pepper__bell_pepper_1"
+        }
+      ]
+    },
+    {
+      "id": "D0051_S2_edge_pear",
+      "model_id": "robocasa__pear__pear_0",
+      "semantic_class": "pear",
+      "family": "pear",
+      "target_text": "pear",
+      "layout": "S2_edge",
+      "seed": 344271739,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__pear__pear_0"
+        }
+      ]
+    },
+    {
+      "id": "D0052_S2_edge_milk",
+      "model_id": "robocasa__milk__milk_0",
+      "semantic_class": "milk",
+      "family": "milk",
+      "target_text": "milk",
+      "layout": "S2_edge",
+      "seed": 3370816161,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__milk__milk_0"
+        }
+      ]
+    },
+    {
+      "id": "D0053_S2_edge_banana",
+      "model_id": "robocasa__banana__banana_1",
+      "semantic_class": "banana",
+      "family": "banana",
+      "target_text": "banana",
+      "layout": "S2_edge",
+      "seed": 985142494,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__banana__banana_1"
+        }
+      ]
+    },
+    {
+      "id": "D0054_S2_edge_bowl",
+      "model_id": "robocasa__bowl__bowl_1",
+      "semantic_class": "bowl",
+      "family": "bowl",
+      "target_text": "bowl",
+      "layout": "S2_edge",
+      "seed": 1785456882,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bowl__bowl_1"
+        }
+      ]
+    },
+    {
+      "id": "D0055_S2_edge_potato",
+      "model_id": "robocasa__potato__potato_0",
+      "semantic_class": "potato",
+      "family": "potato",
+      "target_text": "potato",
+      "layout": "S2_edge",
+      "seed": 3353010797,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__potato__potato_0"
+        }
+      ]
+    },
+    {
+      "id": "D0056_S2_edge_scissors",
+      "model_id": "robocasa__scissors__scissors_1",
+      "semantic_class": "scissors",
+      "family": "scissors",
+      "target_text": "scissors",
+      "layout": "S2_edge",
+      "seed": 2259667105,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__scissors__scissors_1"
+        }
+      ]
+    },
+    {
+      "id": "D0057_S2_edge_eggplant",
+      "model_id": "robocasa__eggplant__eggplant_2",
+      "semantic_class": "eggplant",
+      "family": "eggplant",
+      "target_text": "eggplant",
+      "layout": "S2_edge",
+      "seed": 2916680483,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        }
+      ]
+    },
+    {
+      "id": "D0058_S2_edge_corn",
+      "model_id": "robocasa__corn__corn_1",
+      "semantic_class": "corn",
+      "family": "corn",
+      "target_text": "corn",
+      "layout": "S2_edge",
+      "seed": 27392900,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__corn__corn_1"
+        }
+      ]
+    },
+    {
+      "id": "D0059_S2_edge_mushroom",
+      "model_id": "robocasa__mushroom__mushroom_0",
+      "semantic_class": "mushroom",
+      "family": "mushroom",
+      "target_text": "mushroom",
+      "layout": "S2_edge",
+      "seed": 974948058,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mushroom__mushroom_0"
+        }
+      ]
+    },
+    {
+      "id": "D0060_S2_edge_yogurt",
+      "model_id": "robocasa__yogurt__yogurt_2",
+      "semantic_class": "yogurt",
+      "family": "yogurt",
+      "target_text": "yogurt",
+      "layout": "S2_edge",
+      "seed": 2904751446,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__yogurt__yogurt_2"
+        }
+      ]
+    },
+    {
+      "id": "D0061_S2_edge_croissant",
+      "model_id": "robocasa__croissant__croissant_1",
+      "semantic_class": "croissant",
+      "family": "croissant",
+      "target_text": "croissant",
+      "layout": "S2_edge",
+      "seed": 4038854693,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__croissant__croissant_1"
+        }
+      ]
+    },
+    {
+      "id": "D0062_S2_edge_broccoli",
+      "model_id": "robocasa__broccoli__broccoli_0",
+      "semantic_class": "broccoli",
+      "family": "broccoli",
+      "target_text": "broccoli",
+      "layout": "S2_edge",
+      "seed": 685549562,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__broccoli__broccoli_0"
+        }
+      ]
+    },
+    {
+      "id": "D0063_S2_edge_peach",
+      "model_id": "robocasa__peach__peach_1",
+      "semantic_class": "peach",
+      "family": "peach",
+      "target_text": "peach",
+      "layout": "S2_edge",
+      "seed": 1448659139,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__peach__peach_1"
+        }
+      ]
+    },
+    {
+      "id": "D0064_S2_edge_baguette",
+      "model_id": "robocasa__baguette__baguette_0",
+      "semantic_class": "baguette",
+      "family": "baguette",
+      "target_text": "baguette",
+      "layout": "S2_edge",
+      "seed": 3684604481,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__baguette__baguette_0"
+        }
+      ]
+    },
+    {
+      "id": "D0065_S2_edge_mug",
+      "model_id": "robocasa__mug__mug_0",
+      "semantic_class": "mug",
+      "family": "mug",
+      "target_text": "mug",
+      "layout": "S2_edge",
+      "seed": 1401922164,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mug__mug_0"
+        }
+      ]
+    },
+    {
+      "id": "D0066_S2_edge_spatula",
+      "model_id": "robocasa__spatula__spatula_0",
+      "semantic_class": "spatula",
+      "family": "spatula",
+      "target_text": "spatula",
+      "layout": "S2_edge",
+      "seed": 3399178758,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__spatula__spatula_0"
+        }
+      ]
+    },
+    {
+      "id": "D0067_S2_edge_apple",
+      "model_id": "robocasa__apple__apple_1",
+      "semantic_class": "apple",
+      "family": "apple",
+      "target_text": "apple",
+      "layout": "S2_edge",
+      "seed": 2485281268,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__apple__apple_1"
+        }
+      ]
+    },
+    {
+      "id": "D0068_S2_edge_orange",
+      "model_id": "robocasa__orange__orange_1",
+      "semantic_class": "orange",
+      "family": "orange",
+      "target_text": "orange",
+      "layout": "S2_edge",
+      "seed": 3114248444,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__orange__orange_1"
+        }
+      ]
+    },
+    {
+      "id": "D0069_S2_edge_remote_control",
+      "model_id": "ai2thor__remote_control__Remote_1",
+      "semantic_class": "remote_control",
+      "family": "remote_control",
+      "target_text": "remote control",
+      "layout": "S2_edge",
+      "seed": 3172295733,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__remote_control__Remote_1"
+        }
+      ]
+    },
+    {
+      "id": "D0070_S2_edge_cucumber",
+      "model_id": "robocasa__cucumber__cucumber_0",
+      "semantic_class": "cucumber",
+      "family": "cucumber",
+      "target_text": "cucumber",
+      "layout": "S2_edge",
+      "seed": 837448643,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__cucumber__cucumber_0"
+        }
+      ]
+    },
+    {
+      "id": "D0071_S2_edge_candle",
+      "model_id": "robocasa__candle__candle_1",
+      "semantic_class": "candle",
+      "family": "candle",
+      "target_text": "candle",
+      "layout": "S2_edge",
+      "seed": 3515742077,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__candle__candle_1"
+        }
+      ]
+    },
+    {
+      "id": "D0072_S2_edge_bread",
+      "model_id": "robocasa__bread__bread_1",
+      "semantic_class": "bread",
+      "family": "bread",
+      "target_text": "bread",
+      "layout": "S2_edge",
+      "seed": 3028125100,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bread__bread_1"
+        }
+      ]
+    },
+    {
+      "id": "D0073_S2_edge_sponge",
+      "model_id": "robocasa__sponge__sponge_0",
+      "semantic_class": "sponge",
+      "family": "sponge",
+      "target_text": "sponge",
+      "layout": "S2_edge",
+      "seed": 1383254918,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__sponge__sponge_0"
+        }
+      ]
+    },
+    {
+      "id": "D0074_S2_edge_bottled_water",
+      "model_id": "robocasa__bottled_water__bottled_water_10",
+      "semantic_class": "bottled_water",
+      "family": "bottled_water",
+      "target_text": "water bottle",
+      "layout": "S2_edge",
+      "seed": 3328682549,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        }
+      ]
+    },
+    {
+      "id": "D0075_S2_edge_donut",
+      "model_id": "robocasa__donut__donut_0",
+      "semantic_class": "donut",
+      "family": "donut",
+      "target_text": "donut",
+      "layout": "S2_edge",
+      "seed": 2906520467,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__donut__donut_0"
+        }
+      ]
+    },
+    {
+      "id": "D0076_S2_edge_tomato",
+      "model_id": "robocasa__tomato__tomato_1",
+      "semantic_class": "tomato",
+      "family": "tomato",
+      "target_text": "tomato",
+      "layout": "S2_edge",
+      "seed": 4171262340,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__tomato__tomato_1"
+        }
+      ]
+    },
+    {
+      "id": "D0077_S2_edge_canned_food",
+      "model_id": "robocasa__canned_food__canned_food_1",
+      "semantic_class": "canned_food",
+      "family": "canned_food",
+      "target_text": "canned food",
+      "layout": "S2_edge",
+      "seed": 85284520,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        }
+      ]
+    },
+    {
+      "id": "D0078_S2_edge_carrot",
+      "model_id": "robocasa__carrot__carrot_0",
+      "semantic_class": "carrot",
+      "family": "carrot",
+      "target_text": "carrot",
+      "layout": "S2_edge",
+      "seed": 2778740996,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__carrot__carrot_0"
+        }
+      ]
+    },
+    {
+      "id": "D0079_S2_edge_boxed_food",
+      "model_id": "robocasa__boxed_food__boxed_food_0",
+      "semantic_class": "boxed_food",
+      "family": "boxed_food",
+      "target_text": "food box",
+      "layout": "S2_edge",
+      "seed": 2445831754,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__boxed_food__boxed_food_0"
+        }
+      ]
+    },
+    {
+      "id": "D0080_S2_edge_keychain",
+      "model_id": "ai2thor__keychain__Keychain_1",
+      "semantic_class": "keychain",
+      "family": "keychain",
+      "target_text": "keychain",
+      "layout": "S2_edge",
+      "seed": 2658186263,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__keychain__Keychain_1"
+        }
+      ]
+    },
+    {
+      "id": "D0081_S3_sparse_soap_dispenser",
+      "model_id": "robocasa__soap_dispenser__soap_dispenser_2",
+      "semantic_class": "soap_dispenser",
+      "family": "soap_dispenser",
+      "target_text": "soap dispenser",
+      "layout": "S3_sparse",
+      "seed": 836912478,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bread__bread_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__lemon__lemon_10"
+        }
+      ]
+    },
+    {
+      "id": "D0082_S3_sparse_cell_phone",
+      "model_id": "ai2thor__cell_phone__Cellphone_1",
+      "semantic_class": "cell_phone",
+      "family": "cell_phone",
+      "target_text": "cell phone",
+      "layout": "S3_sparse",
+      "seed": 3280382311,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__cell_phone__Cellphone_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__mushroom__mushroom_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__avocado__avocado_2"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__teapot__teapot_10"
+        }
+      ]
+    },
+    {
+      "id": "D0083_S3_sparse_lemon",
+      "model_id": "robocasa__lemon__lemon_10",
+      "semantic_class": "lemon",
+      "family": "lemon",
+      "target_text": "lemon",
+      "layout": "S3_sparse",
+      "seed": 3997973484,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__lemon__lemon_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__peach__peach_0"
+        }
+      ]
+    },
+    {
+      "id": "D0084_S3_sparse_pear",
+      "model_id": "robocasa__pear__pear_1",
+      "semantic_class": "pear",
+      "family": "pear",
+      "target_text": "pear",
+      "layout": "S3_sparse",
+      "seed": 598916230,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__pear__pear_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__broccoli__broccoli_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__cucumber__cucumber_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        }
+      ]
+    },
+    {
+      "id": "D0085_S3_sparse_keychain",
+      "model_id": "ai2thor__keychain__Keychain_2",
+      "semantic_class": "keychain",
+      "family": "keychain",
+      "target_text": "keychain",
+      "layout": "S3_sparse",
+      "seed": 953578348,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__keychain__Keychain_2"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__orange__orange_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__spatula__spatula_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__bell_pepper__bell_pepper_1"
+        }
+      ]
+    },
+    {
+      "id": "D0086_S3_sparse_peach",
+      "model_id": "robocasa__peach__peach_0",
+      "semantic_class": "peach",
+      "family": "peach",
+      "target_text": "peach",
+      "layout": "S3_sparse",
+      "seed": 3960057610,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__peach__peach_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__broccoli__broccoli_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__baguette__baguette_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__onion__onion_1"
+        }
+      ]
+    },
+    {
+      "id": "D0087_S3_sparse_bowl",
+      "model_id": "robocasa__bowl__bowl_0",
+      "semantic_class": "bowl",
+      "family": "bowl",
+      "target_text": "bowl",
+      "layout": "S3_sparse",
+      "seed": 1280658410,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bowl__bowl_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__donut__donut_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__book__Book_10"
+        }
+      ]
+    },
+    {
+      "id": "D0088_S3_sparse_avocado",
+      "model_id": "robocasa__avocado__avocado_4",
+      "semantic_class": "avocado",
+      "family": "avocado",
+      "target_text": "avocado",
+      "layout": "S3_sparse",
+      "seed": 2029090638,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__avocado__avocado_4"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__mug__mug_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bowl__bowl_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__banana__banana_1"
+        }
+      ]
+    },
+    {
+      "id": "D0089_S3_sparse_tomato",
+      "model_id": "robocasa__tomato__tomato_0",
+      "semantic_class": "tomato",
+      "family": "tomato",
+      "target_text": "tomato",
+      "layout": "S3_sparse",
+      "seed": 3557539304,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__tomato__tomato_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__mango__mango_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__onion__onion_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__yogurt__yogurt_1"
+        }
+      ]
+    },
+    {
+      "id": "D0090_S3_sparse_canned_food",
+      "model_id": "robocasa__canned_food__canned_food_0",
+      "semantic_class": "canned_food",
+      "family": "canned_food",
+      "target_text": "canned food",
+      "layout": "S3_sparse",
+      "seed": 632354585,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__canned_food__canned_food_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__potato__potato_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__donut__donut_0"
+        }
+      ]
+    },
+    {
+      "id": "D0091_S3_sparse_carrot",
+      "model_id": "robocasa__carrot__carrot_1",
+      "semantic_class": "carrot",
+      "family": "carrot",
+      "target_text": "carrot",
+      "layout": "S3_sparse",
+      "seed": 501681136,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__carrot__carrot_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__onion__onion_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bread__bread_1"
+        }
+      ]
+    },
+    {
+      "id": "D0092_S3_sparse_remote_control",
+      "model_id": "ai2thor__remote_control__Remote_2",
+      "semantic_class": "remote_control",
+      "family": "remote_control",
+      "target_text": "remote control",
+      "layout": "S3_sparse",
+      "seed": 4214388561,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__remote_control__Remote_2"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__pear__pear_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mug__mug_0"
+        }
+      ]
+    },
+    {
+      "id": "D0093_S3_sparse_mushroom",
+      "model_id": "robocasa__mushroom__mushroom_1",
+      "semantic_class": "mushroom",
+      "family": "mushroom",
+      "target_text": "mushroom",
+      "layout": "S3_sparse",
+      "seed": 4276998532,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mushroom__mushroom_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__potato__potato_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__cucumber__cucumber_0"
+        }
+      ]
+    },
+    {
+      "id": "D0094_S3_sparse_onion",
+      "model_id": "robocasa__onion__onion_0",
+      "semantic_class": "onion",
+      "family": "onion",
+      "target_text": "onion",
+      "layout": "S3_sparse",
+      "seed": 1858881091,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__onion__onion_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bell_pepper__bell_pepper_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        }
+      ]
+    },
+    {
+      "id": "D0095_S3_sparse_bottled_water",
+      "model_id": "robocasa__bottled_water__bottled_water_1",
+      "semantic_class": "bottled_water",
+      "family": "bottled_water",
+      "target_text": "water bottle",
+      "layout": "S3_sparse",
+      "seed": 781299378,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__mushroom__mushroom_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__boxed_food__boxed_food_4"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__keychain__Keychain_2"
+        }
+      ]
+    },
+    {
+      "id": "D0096_S3_sparse_teapot",
+      "model_id": "robocasa__teapot__teapot_10",
+      "semantic_class": "teapot",
+      "family": "teapot",
+      "target_text": "teapot",
+      "layout": "S3_sparse",
+      "seed": 3431431355,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__teapot__teapot_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__corn__corn_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__spatula__spatula_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__donut__donut_1"
+        }
+      ]
+    },
+    {
+      "id": "D0097_S3_sparse_corn",
+      "model_id": "robocasa__corn__corn_0",
+      "semantic_class": "corn",
+      "family": "corn",
+      "target_text": "corn",
+      "layout": "S3_sparse",
+      "seed": 1835582978,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__corn__corn_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "ai2thor__cell_phone__Cellphone_3"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__candle__candle_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__teapot__teapot_10"
+        }
+      ]
+    },
+    {
+      "id": "D0098_S3_sparse_banana",
+      "model_id": "robocasa__banana__banana_10",
+      "semantic_class": "banana",
+      "family": "banana",
+      "target_text": "banana",
+      "layout": "S3_sparse",
+      "seed": 653502362,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__banana__banana_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__pear__pear_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mango__mango_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__baguette__baguette_0"
+        }
+      ]
+    },
+    {
+      "id": "D0099_S3_sparse_candle",
+      "model_id": "robocasa__candle__candle_0",
+      "semantic_class": "candle",
+      "family": "candle",
+      "target_text": "candle",
+      "layout": "S3_sparse",
+      "seed": 3902054561,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__candle__candle_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__lemon__lemon_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__tomato__tomato_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__croissant__croissant_1"
+        }
+      ]
+    },
+    {
+      "id": "D0100_S3_sparse_baguette",
+      "model_id": "robocasa__baguette__baguette_1",
+      "semantic_class": "baguette",
+      "family": "baguette",
+      "target_text": "baguette",
+      "layout": "S3_sparse",
+      "seed": 1671787093,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__baguette__baguette_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__milk__milk_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__spatula__spatula_1"
+        }
+      ]
+    },
+    {
+      "id": "D0101_S3_sparse_boxed_food",
+      "model_id": "robocasa__boxed_food__boxed_food_4",
+      "semantic_class": "boxed_food",
+      "family": "boxed_food",
+      "target_text": "food box",
+      "layout": "S3_sparse",
+      "seed": 1964334982,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__boxed_food__boxed_food_4"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__mushroom__mushroom_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__orange__orange_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        }
+      ]
+    },
+    {
+      "id": "D0102_S3_sparse_donut",
+      "model_id": "robocasa__donut__donut_1",
+      "semantic_class": "donut",
+      "family": "donut",
+      "target_text": "donut",
+      "layout": "S3_sparse",
+      "seed": 2958406939,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__donut__donut_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__teapot__teapot_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__pear__pear_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__apple__apple_0"
+        }
+      ]
+    },
+    {
+      "id": "D0103_S3_sparse_milk",
+      "model_id": "robocasa__milk__milk_1",
+      "semantic_class": "milk",
+      "family": "milk",
+      "target_text": "milk",
+      "layout": "S3_sparse",
+      "seed": 996438200,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__milk__milk_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__scissors__scissors_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__donut__donut_0"
+        }
+      ]
+    },
+    {
+      "id": "D0104_S3_sparse_orange",
+      "model_id": "robocasa__orange__orange_0",
+      "semantic_class": "orange",
+      "family": "orange",
+      "target_text": "orange",
+      "layout": "S3_sparse",
+      "seed": 3466726218,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__orange__orange_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__broccoli__broccoli_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__banana__banana_10"
+        }
+      ]
+    },
+    {
+      "id": "D0105_S3_sparse_cucumber",
+      "model_id": "robocasa__cucumber__cucumber_1",
+      "semantic_class": "cucumber",
+      "family": "cucumber",
+      "target_text": "cucumber",
+      "layout": "S3_sparse",
+      "seed": 1368072356,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__cucumber__cucumber_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bar_soap__bar_soap_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__donut__donut_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__remote_control__Remote_1"
+        }
+      ]
+    },
+    {
+      "id": "D0106_S3_sparse_book",
+      "model_id": "ai2thor__book__Book_10",
+      "semantic_class": "book",
+      "family": "book",
+      "target_text": "book",
+      "layout": "S3_sparse",
+      "seed": 1954300523,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__book__Book_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__spatula__spatula_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__carrot__carrot_0"
+        }
+      ]
+    },
+    {
+      "id": "D0107_S3_sparse_broccoli",
+      "model_id": "robocasa__broccoli__broccoli_1",
+      "semantic_class": "broccoli",
+      "family": "broccoli",
+      "target_text": "broccoli",
+      "layout": "S3_sparse",
+      "seed": 1407280256,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__broccoli__broccoli_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__banana__banana_1"
+        }
+      ]
+    },
+    {
+      "id": "D0108_S3_sparse_croissant",
+      "model_id": "robocasa__croissant__croissant_0",
+      "semantic_class": "croissant",
+      "family": "croissant",
+      "target_text": "croissant",
+      "layout": "S3_sparse",
+      "seed": 3361995542,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__croissant__croissant_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__spatula__spatula_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__yogurt__yogurt_2"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__book__Book_10"
+        }
+      ]
+    },
+    {
+      "id": "D0109_S3_sparse_scissors",
+      "model_id": "robocasa__scissors__scissors_0",
+      "semantic_class": "scissors",
+      "family": "scissors",
+      "target_text": "scissors",
+      "layout": "S3_sparse",
+      "seed": 2538686092,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__scissors__scissors_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__carrot__carrot_1"
+        }
+      ]
+    },
+    {
+      "id": "D0110_S3_sparse_mug",
+      "model_id": "robocasa__mug__mug_1",
+      "semantic_class": "mug",
+      "family": "mug",
+      "target_text": "mug",
+      "layout": "S3_sparse",
+      "seed": 1390698892,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mug__mug_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__croissant__croissant_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__bell_pepper__bell_pepper_1"
+        }
+      ]
+    },
+    {
+      "id": "D0111_S3_sparse_sponge",
+      "model_id": "robocasa__sponge__sponge_1",
+      "semantic_class": "sponge",
+      "family": "sponge",
+      "target_text": "sponge",
+      "layout": "S3_sparse",
+      "seed": 608787837,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__sponge__sponge_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__avocado__avocado_4"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__candle__candle_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__tomato__tomato_0"
+        }
+      ]
+    },
+    {
+      "id": "D0112_S3_sparse_bread",
+      "model_id": "robocasa__bread__bread_0",
+      "semantic_class": "bread",
+      "family": "bread",
+      "target_text": "bread",
+      "layout": "S3_sparse",
+      "seed": 986404071,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bread__bread_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__scissors__scissors_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__broccoli__broccoli_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__croissant__croissant_0"
+        }
+      ]
+    },
+    {
+      "id": "D0113_S3_sparse_bell_pepper",
+      "model_id": "robocasa__bell_pepper__bell_pepper_0",
+      "semantic_class": "bell_pepper",
+      "family": "bell_pepper",
+      "target_text": "bell pepper",
+      "layout": "S3_sparse",
+      "seed": 902451034,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bell_pepper__bell_pepper_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__tomato__tomato_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__carrot__carrot_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__teapot__teapot_10"
+        }
+      ]
+    },
+    {
+      "id": "D0114_S3_sparse_yogurt",
+      "model_id": "robocasa__yogurt__yogurt_1",
+      "semantic_class": "yogurt",
+      "family": "yogurt",
+      "target_text": "yogurt",
+      "layout": "S3_sparse",
+      "seed": 659952253,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__yogurt__yogurt_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__corn__corn_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        }
+      ]
+    },
+    {
+      "id": "D0115_S3_sparse_mango",
+      "model_id": "robocasa__mango__mango_1",
+      "semantic_class": "mango",
+      "family": "mango",
+      "target_text": "mango",
+      "layout": "S3_sparse",
+      "seed": 466600987,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mango__mango_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__candle__candle_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__donut__donut_0"
+        }
+      ]
+    },
+    {
+      "id": "D0116_S3_sparse_eggplant",
+      "model_id": "robocasa__eggplant__eggplant_1",
+      "semantic_class": "eggplant",
+      "family": "eggplant",
+      "target_text": "eggplant",
+      "layout": "S3_sparse",
+      "seed": 4182242418,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__eggplant__eggplant_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__scissors__scissors_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__banana__banana_10"
+        }
+      ]
+    },
+    {
+      "id": "D0117_S3_sparse_spatula",
+      "model_id": "robocasa__spatula__spatula_1",
+      "semantic_class": "spatula",
+      "family": "spatula",
+      "target_text": "spatula",
+      "layout": "S3_sparse",
+      "seed": 3974253698,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__spatula__spatula_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__tomato__tomato_1"
+        }
+      ]
+    },
+    {
+      "id": "D0118_S3_sparse_potato",
+      "model_id": "robocasa__potato__potato_10",
+      "semantic_class": "potato",
+      "family": "potato",
+      "target_text": "potato",
+      "layout": "S3_sparse",
+      "seed": 3236764455,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__potato__potato_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__milk__milk_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__peach__peach_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__mug__mug_0"
+        }
+      ]
+    },
+    {
+      "id": "D0119_S3_sparse_apple",
+      "model_id": "robocasa__apple__apple_0",
+      "semantic_class": "apple",
+      "family": "apple",
+      "target_text": "apple",
+      "layout": "S3_sparse",
+      "seed": 3195006588,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__apple__apple_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bowl__bowl_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        }
+      ]
+    },
+    {
+      "id": "D0120_S3_sparse_bar_soap",
+      "model_id": "robocasa__bar_soap__bar_soap_0",
+      "semantic_class": "bar_soap",
+      "family": "bar_soap",
+      "target_text": "bar of soap",
+      "layout": "S3_sparse",
+      "seed": 454076517,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bar_soap__bar_soap_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__apple__apple_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__croissant__croissant_1"
+        }
+      ]
+    },
+    {
+      "id": "D0121_S4_clutter_cell_phone",
+      "model_id": "ai2thor__cell_phone__Cellphone_3",
+      "semantic_class": "cell_phone",
+      "family": "cell_phone",
+      "target_text": "cell phone",
+      "layout": "S4_clutter",
+      "seed": 285024429,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__cell_phone__Cellphone_3"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__broccoli__broccoli_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__keychain__Keychain_2"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__remote_control__Remote_2"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        }
+      ]
+    },
+    {
+      "id": "D0122_S4_clutter_teapot",
+      "model_id": "robocasa__teapot__teapot_0",
+      "semantic_class": "teapot",
+      "family": "teapot",
+      "target_text": "teapot",
+      "layout": "S4_clutter",
+      "seed": 604293300,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__teapot__teapot_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__onion__onion_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__cell_phone__Cellphone_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__scissors__scissors_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__candle__candle_0"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__lemon__lemon_1"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__canned_food__canned_food_0"
+        }
+      ]
+    },
+    {
+      "id": "D0123_S4_clutter_mushroom",
+      "model_id": "robocasa__mushroom__mushroom_0",
+      "semantic_class": "mushroom",
+      "family": "mushroom",
+      "target_text": "mushroom",
+      "layout": "S4_clutter",
+      "seed": 184261492,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mushroom__mushroom_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "ai2thor__book__Book_11"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mango__mango_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__scissors__scissors_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__candle__candle_0"
+        }
+      ]
+    },
+    {
+      "id": "D0124_S4_clutter_candle",
+      "model_id": "robocasa__candle__candle_1",
+      "semantic_class": "candle",
+      "family": "candle",
+      "target_text": "candle",
+      "layout": "S4_clutter",
+      "seed": 3223856770,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__candle__candle_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__yogurt__yogurt_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mug__mug_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__corn__corn_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__onion__onion_1"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__bar_soap__bar_soap_1"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__mushroom__mushroom_1"
+        }
+      ]
+    },
+    {
+      "id": "D0125_S4_clutter_bar_soap",
+      "model_id": "robocasa__bar_soap__bar_soap_1",
+      "semantic_class": "bar_soap",
+      "family": "bar_soap",
+      "target_text": "bar of soap",
+      "layout": "S4_clutter",
+      "seed": 207028829,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bar_soap__bar_soap_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__eggplant__eggplant_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__onion__onion_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__pear__pear_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__bowl__bowl_1"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "ai2thor__remote_control__Remote_2"
+        }
+      ]
+    },
+    {
+      "id": "D0126_S4_clutter_bell_pepper",
+      "model_id": "robocasa__bell_pepper__bell_pepper_1",
+      "semantic_class": "bell_pepper",
+      "family": "bell_pepper",
+      "target_text": "bell pepper",
+      "layout": "S4_clutter",
+      "seed": 1785157431,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bell_pepper__bell_pepper_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__banana__banana_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__lemon__lemon_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__bar_soap__bar_soap_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__bowl__bowl_0"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__spatula__spatula_0"
+        }
+      ]
+    },
+    {
+      "id": "D0127_S4_clutter_bottled_water",
+      "model_id": "robocasa__bottled_water__bottled_water_10",
+      "semantic_class": "bottled_water",
+      "family": "bottled_water",
+      "target_text": "water bottle",
+      "layout": "S4_clutter",
+      "seed": 3278875957,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__teapot__teapot_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__tomato__tomato_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__boxed_food__boxed_food_4"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__peach__peach_0"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__broccoli__broccoli_1"
+        }
+      ]
+    },
+    {
+      "id": "D0128_S4_clutter_lemon",
+      "model_id": "robocasa__lemon__lemon_1",
+      "semantic_class": "lemon",
+      "family": "lemon",
+      "target_text": "lemon",
+      "layout": "S4_clutter",
+      "seed": 595042743,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__lemon__lemon_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__potato__potato_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__spatula__spatula_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__donut__donut_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__bar_soap__bar_soap_0"
+        }
+      ]
+    },
+    {
+      "id": "D0129_S4_clutter_mug",
+      "model_id": "robocasa__mug__mug_0",
+      "semantic_class": "mug",
+      "family": "mug",
+      "target_text": "mug",
+      "layout": "S4_clutter",
+      "seed": 2327544500,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mug__mug_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__banana__banana_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__milk__milk_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__croissant__croissant_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        }
+      ]
+    },
+    {
+      "id": "D0130_S4_clutter_milk",
+      "model_id": "robocasa__milk__milk_0",
+      "semantic_class": "milk",
+      "family": "milk",
+      "target_text": "milk",
+      "layout": "S4_clutter",
+      "seed": 814371779,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__milk__milk_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__sponge__sponge_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__scissors__scissors_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__carrot__carrot_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__mango__mango_1"
+        }
+      ]
+    },
+    {
+      "id": "D0131_S4_clutter_bowl",
+      "model_id": "robocasa__bowl__bowl_1",
+      "semantic_class": "bowl",
+      "family": "bowl",
+      "target_text": "bowl",
+      "layout": "S4_clutter",
+      "seed": 811301937,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bowl__bowl_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bell_pepper__bell_pepper_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mango__mango_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__peach__peach_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__baguette__baguette_1"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__candle__candle_0"
+        }
+      ]
+    },
+    {
+      "id": "D0132_S4_clutter_onion",
+      "model_id": "robocasa__onion__onion_1",
+      "semantic_class": "onion",
+      "family": "onion",
+      "target_text": "onion",
+      "layout": "S4_clutter",
+      "seed": 2087515266,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__onion__onion_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__cucumber__cucumber_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__pear__pear_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__yogurt__yogurt_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__mug__mug_0"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__avocado__avocado_2"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        }
+      ]
+    },
+    {
+      "id": "D0133_S4_clutter_soap_dispenser",
+      "model_id": "robocasa__soap_dispenser__soap_dispenser_0",
+      "semantic_class": "soap_dispenser",
+      "family": "soap_dispenser",
+      "target_text": "soap dispenser",
+      "layout": "S4_clutter",
+      "seed": 1050200531,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__yogurt__yogurt_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__milk__milk_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__cell_phone__Cellphone_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__bread__bread_0"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__bar_soap__bar_soap_0"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__banana__banana_10"
+        }
+      ]
+    },
+    {
+      "id": "D0134_S4_clutter_pear",
+      "model_id": "robocasa__pear__pear_0",
+      "semantic_class": "pear",
+      "family": "pear",
+      "target_text": "pear",
+      "layout": "S4_clutter",
+      "seed": 3970510118,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__pear__pear_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__milk__milk_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mango__mango_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__banana__banana_10"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__onion__onion_0"
+        }
+      ]
+    },
+    {
+      "id": "D0135_S4_clutter_baguette",
+      "model_id": "robocasa__baguette__baguette_0",
+      "semantic_class": "baguette",
+      "family": "baguette",
+      "target_text": "baguette",
+      "layout": "S4_clutter",
+      "seed": 4286396421,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__baguette__baguette_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__sponge__sponge_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mug__mug_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__bowl__bowl_1"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        }
+      ]
+    },
+    {
+      "id": "D0136_S4_clutter_tomato",
+      "model_id": "robocasa__tomato__tomato_1",
+      "semantic_class": "tomato",
+      "family": "tomato",
+      "target_text": "tomato",
+      "layout": "S4_clutter",
+      "seed": 2294122156,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__tomato__tomato_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__mango__mango_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "ai2thor__keychain__Keychain_1"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__cucumber__cucumber_0"
+        }
+      ]
+    },
+    {
+      "id": "D0137_S4_clutter_remote_control",
+      "model_id": "ai2thor__remote_control__Remote_1",
+      "semantic_class": "remote_control",
+      "family": "remote_control",
+      "target_text": "remote control",
+      "layout": "S4_clutter",
+      "seed": 1387349531,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__remote_control__Remote_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__sponge__sponge_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mug__mug_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__scissors__scissors_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__broccoli__broccoli_0"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__spatula__spatula_0"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        }
+      ]
+    },
+    {
+      "id": "D0138_S4_clutter_cucumber",
+      "model_id": "robocasa__cucumber__cucumber_0",
+      "semantic_class": "cucumber",
+      "family": "cucumber",
+      "target_text": "cucumber",
+      "layout": "S4_clutter",
+      "seed": 617864652,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__cucumber__cucumber_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__corn__corn_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__pear__pear_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__onion__onion_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__yogurt__yogurt_1"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__bar_soap__bar_soap_1"
+        }
+      ]
+    },
+    {
+      "id": "D0139_S4_clutter_apple",
+      "model_id": "robocasa__apple__apple_1",
+      "semantic_class": "apple",
+      "family": "apple",
+      "target_text": "apple",
+      "layout": "S4_clutter",
+      "seed": 615581344,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__apple__apple_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__sponge__sponge_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__avocado__avocado_4"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__donut__donut_0"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        }
+      ]
+    },
+    {
+      "id": "D0140_S4_clutter_bread",
+      "model_id": "robocasa__bread__bread_1",
+      "semantic_class": "bread",
+      "family": "bread",
+      "target_text": "bread",
+      "layout": "S4_clutter",
+      "seed": 458558864,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bread__bread_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__tomato__tomato_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__broccoli__broccoli_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__bar_soap__bar_soap_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__boxed_food__boxed_food_4"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__orange__orange_0"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__yogurt__yogurt_1"
+        }
+      ]
+    },
+    {
+      "id": "D0141_S4_clutter_boxed_food",
+      "model_id": "robocasa__boxed_food__boxed_food_0",
+      "semantic_class": "boxed_food",
+      "family": "boxed_food",
+      "target_text": "food box",
+      "layout": "S4_clutter",
+      "seed": 1064804135,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__boxed_food__boxed_food_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__candle__candle_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__book__Book_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__tomato__tomato_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__pear__pear_0"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__potato__potato_10"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__baguette__baguette_0"
+        }
+      ]
+    },
+    {
+      "id": "D0142_S4_clutter_croissant",
+      "model_id": "robocasa__croissant__croissant_1",
+      "semantic_class": "croissant",
+      "family": "croissant",
+      "target_text": "croissant",
+      "layout": "S4_clutter",
+      "seed": 3459304855,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__croissant__croissant_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__boxed_food__boxed_food_4"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__pear__pear_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__onion__onion_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__scissors__scissors_1"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__lemon__lemon_10"
+        }
+      ]
+    },
+    {
+      "id": "D0143_S4_clutter_eggplant",
+      "model_id": "robocasa__eggplant__eggplant_2",
+      "semantic_class": "eggplant",
+      "family": "eggplant",
+      "target_text": "eggplant",
+      "layout": "S4_clutter",
+      "seed": 4051038467,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__mango__mango_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__onion__onion_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__avocado__avocado_2"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__banana__banana_1"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__peach__peach_0"
+        }
+      ]
+    },
+    {
+      "id": "D0144_S4_clutter_avocado",
+      "model_id": "robocasa__avocado__avocado_2",
+      "semantic_class": "avocado",
+      "family": "avocado",
+      "target_text": "avocado",
+      "layout": "S4_clutter",
+      "seed": 268164365,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__avocado__avocado_2"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__orange__orange_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__spatula__spatula_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__broccoli__broccoli_0"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__donut__donut_1"
+        }
+      ]
+    },
+    {
+      "id": "D0145_S4_clutter_corn",
+      "model_id": "robocasa__corn__corn_1",
+      "semantic_class": "corn",
+      "family": "corn",
+      "target_text": "corn",
+      "layout": "S4_clutter",
+      "seed": 3897618015,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__corn__corn_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__candle__candle_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__book__Book_11"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__lemon__lemon_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__yogurt__yogurt_2"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "ai2thor__cell_phone__Cellphone_1"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__spatula__spatula_0"
+        }
+      ]
+    },
+    {
+      "id": "D0146_S4_clutter_keychain",
+      "model_id": "ai2thor__keychain__Keychain_1",
+      "semantic_class": "keychain",
+      "family": "keychain",
+      "target_text": "keychain",
+      "layout": "S4_clutter",
+      "seed": 1589078853,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__keychain__Keychain_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__pear__pear_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__potato__potato_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "ai2thor__book__Book_11"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__tomato__tomato_1"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__yogurt__yogurt_2"
+        }
+      ]
+    },
+    {
+      "id": "D0147_S4_clutter_orange",
+      "model_id": "robocasa__orange__orange_1",
+      "semantic_class": "orange",
+      "family": "orange",
+      "target_text": "orange",
+      "layout": "S4_clutter",
+      "seed": 2187680782,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__orange__orange_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__donut__donut_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__candle__candle_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__yogurt__yogurt_1"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__broccoli__broccoli_0"
+        }
+      ]
+    },
+    {
+      "id": "D0148_S4_clutter_carrot",
+      "model_id": "robocasa__carrot__carrot_0",
+      "semantic_class": "carrot",
+      "family": "carrot",
+      "target_text": "carrot",
+      "layout": "S4_clutter",
+      "seed": 3186152923,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__carrot__carrot_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__mushroom__mushroom_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__keychain__Keychain_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__mug__mug_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__onion__onion_1"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__spatula__spatula_0"
+        }
+      ]
+    },
+    {
+      "id": "D0149_S4_clutter_donut",
+      "model_id": "robocasa__donut__donut_0",
+      "semantic_class": "donut",
+      "family": "donut",
+      "target_text": "donut",
+      "layout": "S4_clutter",
+      "seed": 1688920408,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__donut__donut_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bell_pepper__bell_pepper_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bread__bread_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__banana__banana_10"
+        }
+      ]
+    },
+    {
+      "id": "D0150_S4_clutter_banana",
+      "model_id": "robocasa__banana__banana_1",
+      "semantic_class": "banana",
+      "family": "banana",
+      "target_text": "banana",
+      "layout": "S4_clutter",
+      "seed": 3866333373,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__banana__banana_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__avocado__avocado_4"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__canned_food__canned_food_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__carrot__carrot_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "ai2thor__cell_phone__Cellphone_3"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__teapot__teapot_10"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__orange__orange_1"
+        }
+      ]
+    },
+    {
+      "id": "D0151_S4_clutter_spatula",
+      "model_id": "robocasa__spatula__spatula_0",
+      "semantic_class": "spatula",
+      "family": "spatula",
+      "target_text": "spatula",
+      "layout": "S4_clutter",
+      "seed": 3666698955,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__spatula__spatula_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__canned_food__canned_food_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__onion__onion_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__keychain__Keychain_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "ai2thor__cell_phone__Cellphone_3"
+        }
+      ]
+    },
+    {
+      "id": "D0152_S4_clutter_mango",
+      "model_id": "robocasa__mango__mango_10",
+      "semantic_class": "mango",
+      "family": "mango",
+      "target_text": "mango",
+      "layout": "S4_clutter",
+      "seed": 539487261,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mango__mango_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__teapot__teapot_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__carrot__carrot_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__eggplant__eggplant_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__potato__potato_10"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__avocado__avocado_2"
+        }
+      ]
+    },
+    {
+      "id": "D0153_S4_clutter_potato",
+      "model_id": "robocasa__potato__potato_0",
+      "semantic_class": "potato",
+      "family": "potato",
+      "target_text": "potato",
+      "layout": "S4_clutter",
+      "seed": 1382606125,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__potato__potato_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bowl__bowl_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__keychain__Keychain_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        }
+      ]
+    },
+    {
+      "id": "D0154_S4_clutter_broccoli",
+      "model_id": "robocasa__broccoli__broccoli_0",
+      "semantic_class": "broccoli",
+      "family": "broccoli",
+      "target_text": "broccoli",
+      "layout": "S4_clutter",
+      "seed": 923444872,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__broccoli__broccoli_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bowl__bowl_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__teapot__teapot_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__banana__banana_10"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "ai2thor__remote_control__Remote_1"
+        }
+      ]
+    },
+    {
+      "id": "D0155_S4_clutter_canned_food",
+      "model_id": "robocasa__canned_food__canned_food_1",
+      "semantic_class": "canned_food",
+      "family": "canned_food",
+      "target_text": "canned food",
+      "layout": "S4_clutter",
+      "seed": 3526464305,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__canned_food__canned_food_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__croissant__croissant_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__book__Book_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__peach__peach_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__lemon__lemon_1"
+        }
+      ]
+    },
+    {
+      "id": "D0156_S4_clutter_peach",
+      "model_id": "robocasa__peach__peach_1",
+      "semantic_class": "peach",
+      "family": "peach",
+      "target_text": "peach",
+      "layout": "S4_clutter",
+      "seed": 2961400464,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__peach__peach_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__yogurt__yogurt_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__croissant__croissant_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__carrot__carrot_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__candle__candle_1"
+        }
+      ]
+    },
+    {
+      "id": "D0157_S4_clutter_sponge",
+      "model_id": "robocasa__sponge__sponge_0",
+      "semantic_class": "sponge",
+      "family": "sponge",
+      "target_text": "sponge",
+      "layout": "S4_clutter",
+      "seed": 4065189796,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__sponge__sponge_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__banana__banana_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__avocado__avocado_2"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__milk__milk_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        }
+      ]
+    },
+    {
+      "id": "D0158_S4_clutter_yogurt",
+      "model_id": "robocasa__yogurt__yogurt_2",
+      "semantic_class": "yogurt",
+      "family": "yogurt",
+      "target_text": "yogurt",
+      "layout": "S4_clutter",
+      "seed": 1785761147,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__yogurt__yogurt_2"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__canned_food__canned_food_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__keychain__Keychain_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__corn__corn_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__lemon__lemon_1"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__avocado__avocado_4"
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__pear__pear_0"
+        }
+      ]
+    },
+    {
+      "id": "D0159_S4_clutter_scissors",
+      "model_id": "robocasa__scissors__scissors_1",
+      "semantic_class": "scissors",
+      "family": "scissors",
+      "target_text": "scissors",
+      "layout": "S4_clutter",
+      "seed": 121562251,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__scissors__scissors_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__mug__mug_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__remote_control__Remote_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__corn__corn_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__carrot__carrot_0"
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__onion__onion_0"
+        }
+      ]
+    },
+    {
+      "id": "D0160_S4_clutter_book",
+      "model_id": "ai2thor__book__Book_11",
+      "semantic_class": "book",
+      "family": "book",
+      "target_text": "book",
+      "layout": "S4_clutter",
+      "seed": 3735845639,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__book__Book_11"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__lemon__lemon_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__keychain__Keychain_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__spatula__spatula_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__onion__onion_0"
+        }
+      ]
+    },
+    {
+      "id": "D0161_S5_occluded_mushroom",
+      "model_id": "robocasa__mushroom__mushroom_1",
+      "semantic_class": "mushroom",
+      "family": "mushroom",
+      "target_text": "mushroom",
+      "layout": "S5_occluded",
+      "seed": 961578268,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mushroom__mushroom_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__lemon__lemon_10"
+        }
+      ]
+    },
+    {
+      "id": "D0162_S5_occluded_lemon",
+      "model_id": "robocasa__lemon__lemon_10",
+      "semantic_class": "lemon",
+      "family": "lemon",
+      "target_text": "lemon",
+      "layout": "S5_occluded",
+      "seed": 1403858550,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__lemon__lemon_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__cell_phone__Cellphone_1"
+        }
+      ]
+    },
+    {
+      "id": "D0163_S5_occluded_orange",
+      "model_id": "robocasa__orange__orange_0",
+      "semantic_class": "orange",
+      "family": "orange",
+      "target_text": "orange",
+      "layout": "S5_occluded",
+      "seed": 2826153855,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__orange__orange_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__sponge__sponge_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__teapot__teapot_10"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__baguette__baguette_0"
+        }
+      ]
+    },
+    {
+      "id": "D0164_S5_occluded_cell_phone",
+      "model_id": "ai2thor__cell_phone__Cellphone_1",
+      "semantic_class": "cell_phone",
+      "family": "cell_phone",
+      "target_text": "cell phone",
+      "layout": "S5_occluded",
+      "seed": 3683425678,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__cell_phone__Cellphone_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__remote_control__Remote_2"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__boxed_food__boxed_food_4"
+        }
+      ]
+    },
+    {
+      "id": "D0165_S5_occluded_pear",
+      "model_id": "robocasa__pear__pear_1",
+      "semantic_class": "pear",
+      "family": "pear",
+      "target_text": "pear",
+      "layout": "S5_occluded",
+      "seed": 972543458,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__pear__pear_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__donut__donut_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__banana__banana_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "ai2thor__remote_control__Remote_2"
+        }
+      ]
+    },
+    {
+      "id": "D0166_S5_occluded_book",
+      "model_id": "ai2thor__book__Book_10",
+      "semantic_class": "book",
+      "family": "book",
+      "target_text": "book",
+      "layout": "S5_occluded",
+      "seed": 2703833,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__book__Book_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__baguette__baguette_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__milk__milk_0"
+        }
+      ]
+    },
+    {
+      "id": "D0167_S5_occluded_onion",
+      "model_id": "robocasa__onion__onion_0",
+      "semantic_class": "onion",
+      "family": "onion",
+      "target_text": "onion",
+      "layout": "S5_occluded",
+      "seed": 3955892131,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__onion__onion_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__baguette__baguette_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mug__mug_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__teapot__teapot_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__milk__milk_0"
+        }
+      ]
+    },
+    {
+      "id": "D0168_S5_occluded_peach",
+      "model_id": "robocasa__peach__peach_0",
+      "semantic_class": "peach",
+      "family": "peach",
+      "target_text": "peach",
+      "layout": "S5_occluded",
+      "seed": 1436344620,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__peach__peach_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__baguette__baguette_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mug__mug_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__milk__milk_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__teapot__teapot_10"
+        }
+      ]
+    },
+    {
+      "id": "D0169_S5_occluded_bottled_water",
+      "model_id": "robocasa__bottled_water__bottled_water_1",
+      "semantic_class": "bottled_water",
+      "family": "bottled_water",
+      "target_text": "water bottle",
+      "layout": "S5_occluded",
+      "seed": 2691950488,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__tomato__tomato_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__peach__peach_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__scissors__scissors_0"
+        }
+      ]
+    },
+    {
+      "id": "D0170_S5_occluded_candle",
+      "model_id": "robocasa__candle__candle_0",
+      "semantic_class": "candle",
+      "family": "candle",
+      "target_text": "candle",
+      "layout": "S5_occluded",
+      "seed": 1655485621,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__candle__candle_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__mug__mug_1"
+        }
+      ]
+    },
+    {
+      "id": "D0171_S5_occluded_avocado",
+      "model_id": "robocasa__avocado__avocado_4",
+      "semantic_class": "avocado",
+      "family": "avocado",
+      "target_text": "avocado",
+      "layout": "S5_occluded",
+      "seed": 1818399965,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__avocado__avocado_4"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__boxed_food__boxed_food_4"
+        }
+      ]
+    },
+    {
+      "id": "D0172_S5_occluded_spatula",
+      "model_id": "robocasa__spatula__spatula_1",
+      "semantic_class": "spatula",
+      "family": "spatula",
+      "target_text": "spatula",
+      "layout": "S5_occluded",
+      "seed": 2358349523,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__spatula__spatula_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+        }
+      ]
+    },
+    {
+      "id": "D0173_S5_occluded_milk",
+      "model_id": "robocasa__milk__milk_1",
+      "semantic_class": "milk",
+      "family": "milk",
+      "target_text": "milk",
+      "layout": "S5_occluded",
+      "seed": 888788095,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__milk__milk_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bell_pepper__bell_pepper_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__donut__donut_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__teapot__teapot_10"
+        }
+      ]
+    },
+    {
+      "id": "D0174_S5_occluded_mug",
+      "model_id": "robocasa__mug__mug_1",
+      "semantic_class": "mug",
+      "family": "mug",
+      "target_text": "mug",
+      "layout": "S5_occluded",
+      "seed": 776744533,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mug__mug_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__apple__apple_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__bowl__bowl_0"
+        }
+      ]
+    },
+    {
+      "id": "D0175_S5_occluded_keychain",
+      "model_id": "ai2thor__keychain__Keychain_2",
+      "semantic_class": "keychain",
+      "family": "keychain",
+      "target_text": "keychain",
+      "layout": "S5_occluded",
+      "seed": 3210943285,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__keychain__Keychain_2"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__apple__apple_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__tomato__tomato_0"
+        }
+      ]
+    },
+    {
+      "id": "D0176_S5_occluded_donut",
+      "model_id": "robocasa__donut__donut_1",
+      "semantic_class": "donut",
+      "family": "donut",
+      "target_text": "donut",
+      "layout": "S5_occluded",
+      "seed": 413241488,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__donut__donut_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__lemon__lemon_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__orange__orange_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__broccoli__broccoli_1"
+        }
+      ]
+    },
+    {
+      "id": "D0177_S5_occluded_cucumber",
+      "model_id": "robocasa__cucumber__cucumber_1",
+      "semantic_class": "cucumber",
+      "family": "cucumber",
+      "target_text": "cucumber",
+      "layout": "S5_occluded",
+      "seed": 2785282356,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__cucumber__cucumber_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__teapot__teapot_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__remote_control__Remote_2"
+        }
+      ]
+    },
+    {
+      "id": "D0178_S5_occluded_boxed_food",
+      "model_id": "robocasa__boxed_food__boxed_food_4",
+      "semantic_class": "boxed_food",
+      "family": "boxed_food",
+      "target_text": "food box",
+      "layout": "S5_occluded",
+      "seed": 3365921196,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__boxed_food__boxed_food_4"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__yogurt__yogurt_2"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__remote_control__Remote_1"
+        }
+      ]
+    },
+    {
+      "id": "D0179_S5_occluded_potato",
+      "model_id": "robocasa__potato__potato_10",
+      "semantic_class": "potato",
+      "family": "potato",
+      "target_text": "potato",
+      "layout": "S5_occluded",
+      "seed": 1828189283,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__potato__potato_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__banana__banana_1"
+        }
+      ]
+    },
+    {
+      "id": "D0180_S5_occluded_teapot",
+      "model_id": "robocasa__teapot__teapot_10",
+      "semantic_class": "teapot",
+      "family": "teapot",
+      "target_text": "teapot",
+      "layout": "S5_occluded",
+      "seed": 2056754192,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__teapot__teapot_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__carrot__carrot_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__keychain__Keychain_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__orange__orange_1"
+        }
+      ]
+    },
+    {
+      "id": "D0181_S5_occluded_eggplant",
+      "model_id": "robocasa__eggplant__eggplant_1",
+      "semantic_class": "eggplant",
+      "family": "eggplant",
+      "target_text": "eggplant",
+      "layout": "S5_occluded",
+      "seed": 2720827543,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__eggplant__eggplant_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__lemon__lemon_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__cucumber__cucumber_1"
+        }
+      ]
+    },
+    {
+      "id": "D0182_S5_occluded_soap_dispenser",
+      "model_id": "robocasa__soap_dispenser__soap_dispenser_2",
+      "semantic_class": "soap_dispenser",
+      "family": "soap_dispenser",
+      "target_text": "soap dispenser",
+      "layout": "S5_occluded",
+      "seed": 1028894004,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bread__bread_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__cell_phone__Cellphone_1"
+        }
+      ]
+    },
+    {
+      "id": "D0183_S5_occluded_scissors",
+      "model_id": "robocasa__scissors__scissors_0",
+      "semantic_class": "scissors",
+      "family": "scissors",
+      "target_text": "scissors",
+      "layout": "S5_occluded",
+      "seed": 542312353,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__scissors__scissors_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mango__mango_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__cell_phone__Cellphone_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__avocado__avocado_4"
+        }
+      ]
+    },
+    {
+      "id": "D0184_S5_occluded_bowl",
+      "model_id": "robocasa__bowl__bowl_0",
+      "semantic_class": "bowl",
+      "family": "bowl",
+      "target_text": "bowl",
+      "layout": "S5_occluded",
+      "seed": 1248883300,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bowl__bowl_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__banana__banana_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__book__Book_10"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__pear__pear_1"
+        }
+      ]
+    },
+    {
+      "id": "D0185_S5_occluded_banana",
+      "model_id": "robocasa__banana__banana_10",
+      "semantic_class": "banana",
+      "family": "banana",
+      "target_text": "banana",
+      "layout": "S5_occluded",
+      "seed": 3890975989,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__banana__banana_10"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mushroom__mushroom_0"
+        }
+      ]
+    },
+    {
+      "id": "D0186_S5_occluded_bell_pepper",
+      "model_id": "robocasa__bell_pepper__bell_pepper_0",
+      "semantic_class": "bell_pepper",
+      "family": "bell_pepper",
+      "target_text": "bell pepper",
+      "layout": "S5_occluded",
+      "seed": 308697103,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bell_pepper__bell_pepper_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__eggplant__eggplant_2"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__croissant__croissant_0"
+        }
+      ]
+    },
+    {
+      "id": "D0187_S5_occluded_mango",
+      "model_id": "robocasa__mango__mango_1",
+      "semantic_class": "mango",
+      "family": "mango",
+      "target_text": "mango",
+      "layout": "S5_occluded",
+      "seed": 730352006,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__mango__mango_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__potato__potato_0"
+        }
+      ]
+    },
+    {
+      "id": "D0188_S5_occluded_remote_control",
+      "model_id": "ai2thor__remote_control__Remote_2",
+      "semantic_class": "remote_control",
+      "family": "remote_control",
+      "target_text": "remote control",
+      "layout": "S5_occluded",
+      "seed": 2091436595,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "ai2thor__remote_control__Remote_2"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bar_soap__bar_soap_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__cell_phone__Cellphone_3"
+        }
+      ]
+    },
+    {
+      "id": "D0189_S5_occluded_croissant",
+      "model_id": "robocasa__croissant__croissant_0",
+      "semantic_class": "croissant",
+      "family": "croissant",
+      "target_text": "croissant",
+      "layout": "S5_occluded",
+      "seed": 1312356917,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__croissant__croissant_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bell_pepper__bell_pepper_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__orange__orange_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__tomato__tomato_1"
+        }
+      ]
+    },
+    {
+      "id": "D0190_S5_occluded_sponge",
+      "model_id": "robocasa__sponge__sponge_1",
+      "semantic_class": "sponge",
+      "family": "sponge",
+      "target_text": "sponge",
+      "layout": "S5_occluded",
+      "seed": 598622261,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__sponge__sponge_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__orange__orange_0"
+        }
+      ]
+    },
+    {
+      "id": "D0191_S5_occluded_canned_food",
+      "model_id": "robocasa__canned_food__canned_food_0",
+      "semantic_class": "canned_food",
+      "family": "canned_food",
+      "target_text": "canned food",
+      "layout": "S5_occluded",
+      "seed": 2940952020,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__canned_food__canned_food_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__sponge__sponge_0"
+        }
+      ]
+    },
+    {
+      "id": "D0192_S5_occluded_tomato",
+      "model_id": "robocasa__tomato__tomato_0",
+      "semantic_class": "tomato",
+      "family": "tomato",
+      "target_text": "tomato",
+      "layout": "S5_occluded",
+      "seed": 2846737734,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__tomato__tomato_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bread__bread_0"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__baguette__baguette_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__donut__donut_1"
+        }
+      ]
+    },
+    {
+      "id": "D0193_S5_occluded_carrot",
+      "model_id": "robocasa__carrot__carrot_1",
+      "semantic_class": "carrot",
+      "family": "carrot",
+      "target_text": "carrot",
+      "layout": "S5_occluded",
+      "seed": 4283645201,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__carrot__carrot_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        }
+      ]
+    },
+    {
+      "id": "D0194_S5_occluded_yogurt",
+      "model_id": "robocasa__yogurt__yogurt_1",
+      "semantic_class": "yogurt",
+      "family": "yogurt",
+      "target_text": "yogurt",
+      "layout": "S5_occluded",
+      "seed": 1832668657,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__yogurt__yogurt_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__lemon__lemon_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__avocado__avocado_2"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__carrot__carrot_0"
+        }
+      ]
+    },
+    {
+      "id": "D0195_S5_occluded_broccoli",
+      "model_id": "robocasa__broccoli__broccoli_1",
+      "semantic_class": "broccoli",
+      "family": "broccoli",
+      "target_text": "broccoli",
+      "layout": "S5_occluded",
+      "seed": 2756470956,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__broccoli__broccoli_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "ai2thor__book__Book_10"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__yogurt__yogurt_2"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__teapot__teapot_10"
+        }
+      ]
+    },
+    {
+      "id": "D0196_S5_occluded_bar_soap",
+      "model_id": "robocasa__bar_soap__bar_soap_0",
+      "semantic_class": "bar_soap",
+      "family": "bar_soap",
+      "target_text": "bar of soap",
+      "layout": "S5_occluded",
+      "seed": 814827178,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bar_soap__bar_soap_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__broccoli__broccoli_1"
+        }
+      ]
+    },
+    {
+      "id": "D0197_S5_occluded_apple",
+      "model_id": "robocasa__apple__apple_0",
+      "semantic_class": "apple",
+      "family": "apple",
+      "target_text": "apple",
+      "layout": "S5_occluded",
+      "seed": 1610257813,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__apple__apple_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bottled_water__bottled_water_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__mug__mug_1"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__donut__donut_0"
+        }
+      ]
+    },
+    {
+      "id": "D0198_S5_occluded_baguette",
+      "model_id": "robocasa__baguette__baguette_1",
+      "semantic_class": "baguette",
+      "family": "baguette",
+      "target_text": "baguette",
+      "layout": "S5_occluded",
+      "seed": 1174083904,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__baguette__baguette_1"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__mushroom__mushroom_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__sponge__sponge_0"
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__onion__onion_0"
+        }
+      ]
+    },
+    {
+      "id": "D0199_S5_occluded_corn",
+      "model_id": "robocasa__corn__corn_0",
+      "semantic_class": "corn",
+      "family": "corn",
+      "target_text": "corn",
+      "layout": "S5_occluded",
+      "seed": 2005016599,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__corn__corn_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bell_pepper__bell_pepper_1"
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__donut__donut_1"
+        }
+      ]
+    },
+    {
+      "id": "D0200_S5_occluded_bread",
+      "model_id": "robocasa__bread__bread_0",
+      "semantic_class": "bread",
+      "family": "bread",
+      "target_text": "bread",
+      "layout": "S5_occluded",
+      "seed": 2008934542,
+      "actor_identities": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bread__bread_0"
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10"
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__avocado__avocado_4"
+        }
+      ]
+    }
+  ],
+  "source_dataset": "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/diverse_object_scenes/datasets/diverse200_20261122_01",
+  "source_manifest_sha256": "855570a992c8463ab08f2c0721b4ffa774709eaad30b42c30d0a8d2e03a538ed",
+  "source_identity_fields_only": true,
+  "source_positions_used": false,
+  "master_seed": 2026112223,
+  "seed_rule": "SHA256(master_seed:scene_id), first four bytes little-endian",
+  "target_models": [
+    "robocasa__apple__apple_0",
+    "robocasa__apple__apple_1",
+    "robocasa__banana__banana_1",
+    "robocasa__banana__banana_10",
+    "robocasa__orange__orange_0",
+    "robocasa__orange__orange_1",
+    "robocasa__pear__pear_0",
+    "robocasa__pear__pear_1",
+    "robocasa__peach__peach_0",
+    "robocasa__peach__peach_1",
+    "robocasa__lemon__lemon_1",
+    "robocasa__lemon__lemon_10",
+    "robocasa__mango__mango_1",
+    "robocasa__mango__mango_10",
+    "robocasa__avocado__avocado_2",
+    "robocasa__avocado__avocado_4",
+    "robocasa__bell_pepper__bell_pepper_0",
+    "robocasa__bell_pepper__bell_pepper_1",
+    "robocasa__carrot__carrot_0",
+    "robocasa__carrot__carrot_1",
+    "robocasa__corn__corn_0",
+    "robocasa__corn__corn_1",
+    "robocasa__cucumber__cucumber_0",
+    "robocasa__cucumber__cucumber_1",
+    "robocasa__eggplant__eggplant_1",
+    "robocasa__eggplant__eggplant_2",
+    "robocasa__mushroom__mushroom_0",
+    "robocasa__mushroom__mushroom_1",
+    "robocasa__onion__onion_0",
+    "robocasa__onion__onion_1",
+    "robocasa__potato__potato_0",
+    "robocasa__potato__potato_10",
+    "robocasa__tomato__tomato_0",
+    "robocasa__tomato__tomato_1",
+    "robocasa__broccoli__broccoli_0",
+    "robocasa__broccoli__broccoli_1",
+    "robocasa__bread__bread_0",
+    "robocasa__bread__bread_1",
+    "robocasa__baguette__baguette_0",
+    "robocasa__baguette__baguette_1",
+    "robocasa__croissant__croissant_0",
+    "robocasa__croissant__croissant_1",
+    "robocasa__donut__donut_0",
+    "robocasa__donut__donut_1",
+    "robocasa__canned_food__canned_food_0",
+    "robocasa__canned_food__canned_food_1",
+    "robocasa__boxed_food__boxed_food_0",
+    "robocasa__boxed_food__boxed_food_4",
+    "robocasa__bottled_water__bottled_water_1",
+    "robocasa__bottled_water__bottled_water_10",
+    "robocasa__milk__milk_0",
+    "robocasa__milk__milk_1",
+    "robocasa__yogurt__yogurt_1",
+    "robocasa__yogurt__yogurt_2",
+    "robocasa__mug__mug_0",
+    "robocasa__mug__mug_1",
+    "robocasa__bowl__bowl_0",
+    "robocasa__bowl__bowl_1",
+    "robocasa__soap_dispenser__soap_dispenser_0",
+    "robocasa__soap_dispenser__soap_dispenser_2",
+    "robocasa__bar_soap__bar_soap_0",
+    "robocasa__bar_soap__bar_soap_1",
+    "robocasa__spatula__spatula_0",
+    "robocasa__spatula__spatula_1",
+    "robocasa__scissors__scissors_0",
+    "robocasa__scissors__scissors_1",
+    "robocasa__teapot__teapot_0",
+    "robocasa__teapot__teapot_10",
+    "robocasa__candle__candle_0",
+    "robocasa__candle__candle_1",
+    "robocasa__sponge__sponge_0",
+    "robocasa__sponge__sponge_1",
+    "ai2thor__book__Book_10",
+    "ai2thor__book__Book_11",
+    "ai2thor__remote_control__Remote_1",
+    "ai2thor__remote_control__Remote_2",
+    "ai2thor__cell_phone__Cellphone_1",
+    "ai2thor__cell_phone__Cellphone_3",
+    "ai2thor__keychain__Keychain_1",
+    "ai2thor__keychain__Keychain_2"
+  ],
+  "semantic_classes": [
+    "apple",
+    "banana",
+    "orange",
+    "pear",
+    "peach",
+    "lemon",
+    "mango",
+    "avocado",
+    "bell_pepper",
+    "carrot",
+    "corn",
+    "cucumber",
+    "eggplant",
+    "mushroom",
+    "onion",
+    "potato",
+    "tomato",
+    "broccoli",
+    "bread",
+    "baguette",
+    "croissant",
+    "donut",
+    "canned_food",
+    "boxed_food",
+    "bottled_water",
+    "milk",
+    "yogurt",
+    "mug",
+    "bowl",
+    "soap_dispenser",
+    "bar_soap",
+    "spatula",
+    "scissors",
+    "teapot",
+    "candle",
+    "sponge",
+    "book",
+    "remote_control",
+    "cell_phone",
+    "keychain"
+  ],
+  "layouts": {
+    "S1_open": 40,
+    "S2_edge": 40,
+    "S3_sparse": 40,
+    "S4_clutter": 40,
+    "S5_occluded": 40
+  },
+  "distractor_counts": {
+    "S1_open": [
+      0,
+      0
+    ],
+    "S2_edge": [
+      0,
+      0
+    ],
+    "S3_sparse": [
+      2,
+      3
+    ],
+    "S4_clutter": [
+      4,
+      6
+    ],
+    "S5_occluded": [
+      2,
+      4
+    ]
+  },
+  "object_catalog_sha256": "bfdbb7eaa15e68de6fde8db63458213020fcd7bb71f0092d879e46c858ff17c6",
+  "sampling_region": {
+    "center_roi_min_xy_m": [
+      -0.7245,
+      -0.4
+    ],
+    "center_roi_max_xy_m": [
+      -0.12,
+      0.4
+    ],
+    "table_min_xy_m": [
+      -0.7245,
+      -1.209
+    ],
+    "table_max_xy_m": [
+      0.48450000000000004,
+      1.209
+    ],
+    "region_rule": "Robot-side half of the physical table, central 80 cm lateral strip",
+    "shoulder_world_m": [
+      -0.8959328960769634,
+      0.00100669295956482,
+      0.24649998019038405
+    ],
+    "eef_length_upper_bound_m": 0.8678315935273658,
+    "contact_offset_m": 0.043,
+    "contact_length_upper_bound_m": 0.9108315935273659,
+    "table_clearance_m": 0.012,
+    "head_border_px": 12,
+    "near_edge_gap_m": [
+      0.09,
+      0.11
+    ],
+    "numeric_tolerance_m": 0.002
+  },
+  "sampling_region_sha256": "c664136044fcecd20a0825c9de8615f87283bd9d4e52bf338c200a568711f112",
+  "lift_joint_m": 0.452,
+  "camera": "unchanged downward head D405",
+  "physical_grasp_budget": 0,
+  "grasp_tests_authorized": false,
+  "construction_independent_of_ik": true,
+  "admission": {
+    "maximum_variants": 80,
+    "maximum_target_proposals": 10000,
+    "target_yaw": "continuous uniform [-pi, pi), same rule for all five layouts",
+    "position_sampling": "uniform within the predeclared tabletop region; S2 uses near edge",
+    "minimum_target_pixels": 64,
+    "valid_depth_fraction": 0.98,
+    "occlusion_S5": [
+      0.2,
+      0.4
+    ],
+    "occlusion_others_max": 0.15,
+    "all_actors_fully_in_head_frame": true,
+    "initial_robot_contacts_allowed": false,
+    "IK_selection": false,
+    "planning_selection": false,
+    "SAM3_or_grasp_model_selection": false,
+    "physical_grasp_success_selection": false
+  },
+  "source_hashes": {
+    "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/diverse_object_scenes/geometric_dataset.py": "a26a376dea5cc845c017873ce0f4e84ef929497e4db9256afe1dec019a95dddb",
+    "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/diverse_object_scenes/geometric_sampling.py": "82991fa797342ab03416a09c342deb30cd6d8f6bd9d9f8fe0716381f5a84caea",
+    "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/diverse_object_scenes/workspace_geometry.py": "9e4da24a8f2af728ab1392070a9b5c26f9729eb24b6e539a24b4156e6c454099",
+    "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/diverse_object_scenes/verify_geometric_dataset.py": "dbc678dee6b511ef72a4ba7d9f4409b0094a30c6aa5c7bfa18d1be43d423c63a",
+    "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/diverse_object_scenes/test_geometric_sampling.py": "4ecb607186d3b3a5d9edc07aa7e82da6ebb6964cbe576e2b3b86f9696365cfe6",
+    "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/diverse_object_scenes/pipeline.py": "1532c6dab716b2b616349e54990eb851401b370666edb7f70be5519ca7217818",
+    "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/diverse_object_scenes/asset_environment.py": "9fd064f43f3afb3b043007b3a118136887edb1e6be82335dd3ecf98bdb4b1163",
+    "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/diverse_object_scenes/asset_catalog.py": "4eb9a5a3628e1cc8d55fe693b8aec9df0fd7e5bab158aef6ea3be3a83dceb8b1",
+    "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/head_perception_scenes/scene_builder.py": "e7623a87f3579d863f58077dad32c0c58410b675389d0ea16add25100b733e27",
+    "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/configs/head_camera_mount.json": "ada03a39dbc8182a034710d011c91229b0be01a404e682a111246610f4e002c6",
+    "/home/zhaoyechong/projects/ManiSkill/arx_pipeline/environment.py": "51bf09d34ec006a3acd9a5493cd6f7993858a56103f79775ec2453a1e3c9ee01",
+    "/home/zhaoyechong/projects/ManiSkill/arx_pipeline/baseline.py": "e7b315ce5d6cdaf113ab23b14728b0967134101bd92c93a7ef96baaa2ee56737",
+    "/home/zhaoyechong/projects/ManiSkill/arx_pipeline/scene_tools.py": "6093d961b7b844bc8f3d88b7d21a7f5b447933e662744e6da6425a67a05fefdb",
+    "/home/zhaoyechong/projects/COOLAS-ARX/scripts/curobo_arx/static_pick/reference/model/arx.urdf": "05116a83104b73128743e5c4b3de0338642be0a9fe607a79681e358495aebb3f"
+  },
+  "post_freeze_diagnosis": "Only after complete geometry verification and file-hash freezing; every slot retained regardless of IK result.",
+  "authorization": "User approved fixed-region independent sampling after rejecting IK-conditioned placements.",
+  "asset_storage_revision": {
+    "at": "2026-11-24T13:28:06.431767+08:00",
+    "catalog": "simulation/assets/catalog.json",
+    "parent_registration_sha256": "034a11509eb7b1b0871b013e098ef439163b9248104a9c3abe42720ad63a3a0a",
+    "scene_positions_and_asset_physics_changed": false
+  }
+}

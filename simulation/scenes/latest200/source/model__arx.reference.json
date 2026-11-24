@@ -1,0 +1,6 @@
+{
+  "kind": "shared_robot_reference",
+  "catalog_ref": "simulation/assets/catalog.json",
+  "resource": "arx_kinematic_reference",
+  "sha256": "05116a83104b73128743e5c4b3de0338642be0a9fe607a79681e358495aebb3f"
+}
