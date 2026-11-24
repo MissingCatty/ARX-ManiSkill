@@ -1,0 +1,72 @@
+[
+  {
+    "name": "curobo",
+    "python": "environments/curobo/bin/python",
+    "version": "Python 3.11.17",
+    "requirements_exported": true,
+    "exporter": "importlib.metadata"
+  },
+  {
+    "name": "curobo_v090",
+    "python": "environments/curobo_v090/bin/python",
+    "version": "Python 3.11.17",
+    "requirements_exported": true,
+    "exporter": "pip freeze"
+  },
+  {
+    "name": "graspcl",
+    "python": "environments/graspcl/bin/python",
+    "version": "Python 3.11.17",
+    "requirements_exported": true,
+    "exporter": "pip freeze"
+  },
+  {
+    "name": "graspgenx",
+    "python": "environments/graspgenx/bin/python",
+    "version": "Python 3.11.17",
+    "requirements_exported": true,
+    "exporter": "pip freeze"
+  },
+  {
+    "name": "graspgenx_eval_env",
+    "python": "environments/graspgenx_eval_env/bin/python",
+    "version": "Python 3.12.8",
+    "requirements_exported": true,
+    "exporter": "pip freeze"
+  },
+  {
+    "name": "graspgenx_generator_env",
+    "python": "environments/graspgenx_generator_env/bin/python",
+    "version": "Python 3.12.8",
+    "requirements_exported": true,
+    "exporter": "pip freeze"
+  },
+  {
+    "name": "reconstruction",
+    "python": "environments/reconstruction/bin/python",
+    "version": "Python 3.11.17",
+    "requirements_exported": true,
+    "exporter": "pip freeze"
+  },
+  {
+    "name": "sam3",
+    "python": "environments/sam3/bin/python",
+    "version": "Python 3.11.17",
+    "requirements_exported": true,
+    "exporter": "importlib.metadata"
+  },
+  {
+    "name": "simulation",
+    "python": "environments/simulation/bin/python",
+    "version": "Python 3.12.3",
+    "requirements_exported": true,
+    "exporter": "pip freeze"
+  },
+  {
+    "name": "runtime_bundle",
+    "python": "environments/runtime_bundle/env/bin/python",
+    "version": "Python 3.11.17",
+    "requirements_exported": true,
+    "exporter": "importlib.metadata"
+  }
+]

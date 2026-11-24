@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "path": "modules/curobo/source",
+      "origin": "https://github.com/NVlabs/curobo.git",
+      "commit": "8e734f3ced1df898990bcd92de40abce475907db"
+    },
+    {
+      "path": "modules/curobo_adapter/source",
+      "origin": "https://github.com/NVlabs/curobo.git",
+      "commit": "42498cf4e7d0d6fbd4ef9fbcec1243c00c888a83"
+    },
+    {
+      "path": "modules/dinov2",
+      "origin": "https://github.com/facebookresearch/dinov2.git",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8"
+    },
+    {
+      "path": "modules/graspcl",
+      "origin": "https://github.com/giuschio/graspcl-model-public",
+      "commit": "a70396107067d3894624b359107b17470cbb97ef"
+    },
+    {
+      "path": "modules/graspgenx",
+      "origin": "https://github.com/NVlabs/GraspGenX.git",
+      "commit": "b9429097728cb1c430dd78b92edf17ba318aad03"
+    },
+    {
+      "path": "modules/graspgenx/ext/graspgenx_checkpoints",
+      "origin": "https://huggingface.co/adithyamurali/GraspGenXModel",
+      "commit": "7c834043c11a11417e31d6d5ea9355801e40a2c1"
+    },
+    {
+      "path": "modules/graspgenx/ext/gripper_descriptions",
+      "origin": "https://huggingface.co/datasets/adithyamurali/gripper_descriptions",
+      "commit": "19a03c00d19aeaf052d0f6801f0041982d676e8a"
+    },
+    {
+      "path": "modules/maniskill/source",
+      "origin": "https://github.com/mani-skill/ManiSkill.git",
+      "commit": "a4a4f9272ad64b1564035874b605ceb687b63ed8"
+    },
+    {
+      "path": "modules/rayst3r",
+      "origin": "https://github.com/Duisterhof/rayst3r.git",
+      "commit": "2c93f81b696909695c6dd5367b81753225b7254e"
+    },
+    {
+      "path": "modules/research_dependencies/anygrasp_MinkowskiEngine",
+      "origin": "https://github.com/chenxi-wang/MinkowskiEngine.git",
+      "commit": "35862757e2586abc3b1528e012b6d80ce758a92c"
+    },
+    {
+      "path": "modules/research_dependencies/graspness_unofficial",
+      "origin": "https://github.com/graspnet/graspness_unofficial.git",
+      "commit": "b5abf5aaaf3a797514f89161d8ccc8dfc2ec0eca"
+    },
+    {
+      "path": "modules/sam3",
+      "origin": "https://github.com/facebookresearch/sam3.git",
+      "commit": "31cb7e624e4fe95301b1be1d4e809111593d2e45"
+    }
+  ]
+}
