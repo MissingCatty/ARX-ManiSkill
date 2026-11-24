@@ -1,0 +1,68 @@
+right_ee_camera:
+  convention: "T_ee_camera, row-major 4x4"
+  matrix:
+    - [0.000000000, -0.515038075, 0.857167301, 0.071000000]
+    - [-1.000000000, 0.000000000, 0.000000000, -0.001000000]
+    - [0.000000000, -0.857167301, -0.515038075, 0.071000000]
+    - [0.0, 0.0, 0.0, 1.0]
+
+left_ee_camera:
+  convention: "T_ee_camera, row-major 4x4"
+  source: "temporary mirrored from right_ee_camera; replace after real left hand-eye calibration"
+  matrix:
+    - [0.000000000, -0.515038075, 0.857167301, 0.071000000]
+    - [-1.000000000, 0.000000000, 0.000000000, 0.001000000]
+    - [0.000000000, -0.857167301, -0.515038075, 0.071000000]
+    - [0.0, 0.0, 0.0, 1.0]
+
+tcp_gripper:
+  convention: "T_ee_gripper"
+  xyz_m: [0.14, 0.0, 0.0]
+  rpy_rad: [0.0, 0.0, 0.0]
+
+right_tcp_gripper:
+  convention: "T_ee_gripper"
+  xyz_m: [0.14, 0.0, 0.0]
+  rpy_rad: [0.0, 0.0, 0.0]
+
+left_tcp_gripper:
+  convention: "T_ee_gripper"
+  source: "temporary mirrored from right_tcp_gripper/tcp_gripper; replace after real left TCP calibration"
+  xyz_m: [0.14, 0.0, 0.0]
+  rpy_rad: [0.0, 0.0, 0.0]
+
+ee_pair:
+  convention: "fixed relation between left/right EE origins"
+  distance_m: 0.505
+  left_origin_in_right_ee_xyz_m: [0.0, -0.505, 0.0]
+  right_origin_in_left_ee_xyz_m: [0.0, 0.505, 0.0]
+
+T_right_ee_left_ee:
+  convention: "p_right_ee = T_right_ee_left_ee * p_left_ee"
+  matrix:
+    - [1.0, 0.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0, 0.505]
+    - [0.0, 0.0, 1.0, 0.0]
+    - [0.0, 0.0, 0.0, 1.0]
+
+T_left_ee_right_ee:
+  convention: "p_left_ee = T_left_ee_right_ee * p_right_ee"
+  matrix:
+    - [1.0, 0.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0, -0.505]
+    - [0.0, 0.0, 1.0, 0.0]
+    - [0.0, 0.0, 0.0, 1.0]
+
+head_camera_relative_to_ee_mid:
+  convention: "T_ee_mid_head_camera, row-major 4x4; p_mid_ee = T_ee_mid_head_camera * p_head_camera"
+  fixed: true
+  translation_xyz_m: [0.0, 0.02, 0.16]
+  axis_mapping:
+    left_right_axis: "x"
+    forward_axis: "y"
+    up_axis: "z"
+  matrix:
+    - [1.0, 0.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0, 0.02]
+    - [0.0, 0.0, 1.0, 0.16]
+    - [0.0, 0.0, 0.0, 1.0]

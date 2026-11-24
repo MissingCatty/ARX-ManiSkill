@@ -1,0 +1,26 @@
+{
+  "initial_setup.json": {
+    "source": "runs/tabletop_trials/initial_setup.json",
+    "original_sha256": "aa52dc17e576422d7aa9f679d1085464623cf4aed05835dab3831ca6b0801768",
+    "sha256": "aa52dc17e576422d7aa9f679d1085464623cf4aed05835dab3831ca6b0801768",
+    "original_bytes": 20814
+  },
+  "catalog.json": {
+    "source": "runs/lilo_egad49_20261026_eval01/runtime/historical_reference/catalog.json",
+    "original_sha256": "2c818cf1bd8d65def0d364a067a27b83aef023378083d5b121be4ebbedbb2594",
+    "sha256": "2c818cf1bd8d65def0d364a067a27b83aef023378083d5b121be4ebbedbb2594",
+    "original_bytes": 112932
+  },
+  "setup.json.gz": {
+    "source": "runs/lilo_egad49_20261026_eval01/runtime/historical_reference/setup.json",
+    "original_sha256": "3da6733b9e7456004e37b5ef67b3c7ab825ba964f0f3dc75b81f1cd990d2dfe1",
+    "sha256": "6b61380813bb58f4ea68bf2425c3044a4641a9980db118dfe2da6a9782ad6c63",
+    "original_bytes": 8038362
+  },
+  "viewport_initial.json": {
+    "source": "runs/lilo_egad49_20261026_eval01/original_viewport.json",
+    "original_sha256": "14d9b524d17198b632557e0085173afc2d7960e8347c33b37aba2da82ef09cad",
+    "sha256": "14d9b524d17198b632557e0085173afc2d7960e8347c33b37aba2da82ef09cad",
+    "original_bytes": 1237
+  }
+}

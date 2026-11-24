@@ -1,0 +1,1035 @@
+{
+  "joint_names": [
+    "base_footprint_x_joint",
+    "base_footprint_y_joint",
+    "base_footprint_z_joint",
+    "base_footprint_rx_joint",
+    "base_footprint_ry_joint",
+    "base_footprint_rz_joint",
+    "joint4",
+    "left_joint11",
+    "right_joint21",
+    "left_joint12",
+    "right_joint22",
+    "left_joint13",
+    "right_joint23",
+    "left_joint14",
+    "right_joint24",
+    "left_joint15",
+    "right_joint25",
+    "left_joint16",
+    "right_joint26",
+    "left_joint17",
+    "left_joint18",
+    "right_joint27",
+    "right_joint28"
+  ],
+  "joint_positions": [
+    0.21291469037532806,
+    -0.15797434747219086,
+    0.01656128093600273,
+    -0.0002682883059605956,
+    -0.000531112658791244,
+    0.005310367792844772,
+    0.21999916434288025,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "objects": {
+    "blue_cylinder": {
+      "path": "/World/Task/blue_cylinder",
+      "position": [
+        4.33,
+        1.79,
+        0.76
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "green_sphere": {
+      "path": "/World/Task/green_sphere",
+      "position": [
+        4.46,
+        1.96,
+        0.76
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "red_cube": {
+      "path": "/World/Task/red_cube",
+      "position": [
+        4.22,
+        1.75,
+        0.73
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:rubiks_cube": {
+      "path": "/World/Task/assets/asset_rubiks_cube",
+      "position": [
+        10.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:005_tomato_soup_can": {
+      "path": "/World/Task/assets/asset_005_tomato_soup_can",
+      "position": [
+        10.4,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:raisin_box": {
+      "path": "/World/Task/assets/asset_raisin_box",
+      "position": [
+        10.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:butter": {
+      "path": "/World/Task/assets/asset_butter",
+      "position": [
+        11.2,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:yogurt_cup": {
+      "path": "/World/Task/assets/asset_yogurt_cup",
+      "position": [
+        11.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:bbq_sauce_bottle": {
+      "path": "/World/Task/assets/asset_bbq_sauce_bottle",
+      "position": [
+        4.048,
+        2.08,
+        0.7651644948720933
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:lemon_01": {
+      "path": "/World/Task/assets/asset_lemon_01",
+      "position": [
+        12.4,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:remote_control": {
+      "path": "/World/Task/assets/asset_remote_control",
+      "position": [
+        12.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:mustard_bottle": {
+      "path": "/World/Task/assets/asset_mustard_bottle",
+      "position": [
+        13.2,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:salad_dressing_bottle": {
+      "path": "/World/Task/assets/asset_salad_dressing_bottle",
+      "position": [
+        13.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:whitepackerbottle_a01": {
+      "path": "/World/Task/assets/asset_whitepackerbottle_a01",
+      "position": [
+        14.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:bagel_00": {
+      "path": "/World/Task/assets/asset_bagel_00",
+      "position": [
+        14.4,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:apple_01": {
+      "path": "/World/Task/assets/asset_apple_01",
+      "position": [
+        14.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:smartphone": {
+      "path": "/World/Task/assets/asset_smartphone",
+      "position": [
+        15.2,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:dry_erase_marker": {
+      "path": "/World/Task/assets/asset_dry_erase_marker",
+      "position": [
+        15.600000000000001,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:ceramic_mug": {
+      "path": "/World/Task/assets/asset_ceramic_mug",
+      "position": [
+        16.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:ycb_056_tennis_ball": {
+      "path": "/World/Task/assets/asset_ycb_056_tennis_ball",
+      "position": [
+        16.4,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:bowl": {
+      "path": "/World/Task/assets/asset_bowl",
+      "position": [
+        16.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_A0": {
+      "path": "/World/Task/assets/asset_egad_A0",
+      "position": [
+        17.2,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_A1": {
+      "path": "/World/Task/assets/asset_egad_A1",
+      "position": [
+        17.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_A2": {
+      "path": "/World/Task/assets/asset_egad_A2",
+      "position": [
+        18.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_A3": {
+      "path": "/World/Task/assets/asset_egad_A3",
+      "position": [
+        18.4,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_A4": {
+      "path": "/World/Task/assets/asset_egad_A4",
+      "position": [
+        18.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_A5": {
+      "path": "/World/Task/assets/asset_egad_A5",
+      "position": [
+        19.200000000000003,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_A6": {
+      "path": "/World/Task/assets/asset_egad_A6",
+      "position": [
+        19.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_B0": {
+      "path": "/World/Task/assets/asset_egad_B0",
+      "position": [
+        20.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_B1": {
+      "path": "/World/Task/assets/asset_egad_B1",
+      "position": [
+        20.4,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_B2": {
+      "path": "/World/Task/assets/asset_egad_B2",
+      "position": [
+        20.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_B3": {
+      "path": "/World/Task/assets/asset_egad_B3",
+      "position": [
+        21.200000000000003,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_B4": {
+      "path": "/World/Task/assets/asset_egad_B4",
+      "position": [
+        21.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_B5": {
+      "path": "/World/Task/assets/asset_egad_B5",
+      "position": [
+        22.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_B6": {
+      "path": "/World/Task/assets/asset_egad_B6",
+      "position": [
+        22.4,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_C0": {
+      "path": "/World/Task/assets/asset_egad_C0",
+      "position": [
+        22.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_C1": {
+      "path": "/World/Task/assets/asset_egad_C1",
+      "position": [
+        23.200000000000003,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_C2": {
+      "path": "/World/Task/assets/asset_egad_C2",
+      "position": [
+        23.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_C3": {
+      "path": "/World/Task/assets/asset_egad_C3",
+      "position": [
+        24.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_C4": {
+      "path": "/World/Task/assets/asset_egad_C4",
+      "position": [
+        24.4,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_C5": {
+      "path": "/World/Task/assets/asset_egad_C5",
+      "position": [
+        24.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_C6": {
+      "path": "/World/Task/assets/asset_egad_C6",
+      "position": [
+        25.200000000000003,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_D0": {
+      "path": "/World/Task/assets/asset_egad_D0",
+      "position": [
+        25.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_D1": {
+      "path": "/World/Task/assets/asset_egad_D1",
+      "position": [
+        26.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_D2": {
+      "path": "/World/Task/assets/asset_egad_D2",
+      "position": [
+        26.400000000000002,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_D3": {
+      "path": "/World/Task/assets/asset_egad_D3",
+      "position": [
+        26.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_D4": {
+      "path": "/World/Task/assets/asset_egad_D4",
+      "position": [
+        27.2,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_D5": {
+      "path": "/World/Task/assets/asset_egad_D5",
+      "position": [
+        27.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_D6": {
+      "path": "/World/Task/assets/asset_egad_D6",
+      "position": [
+        28.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_E0": {
+      "path": "/World/Task/assets/asset_egad_E0",
+      "position": [
+        28.400000000000002,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_E1": {
+      "path": "/World/Task/assets/asset_egad_E1",
+      "position": [
+        28.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_E2": {
+      "path": "/World/Task/assets/asset_egad_E2",
+      "position": [
+        29.200000000000003,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_E3": {
+      "path": "/World/Task/assets/asset_egad_E3",
+      "position": [
+        29.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_E4": {
+      "path": "/World/Task/assets/asset_egad_E4",
+      "position": [
+        30.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_E5": {
+      "path": "/World/Task/assets/asset_egad_E5",
+      "position": [
+        30.400000000000002,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_E6": {
+      "path": "/World/Task/assets/asset_egad_E6",
+      "position": [
+        30.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_F0": {
+      "path": "/World/Task/assets/asset_egad_F0",
+      "position": [
+        31.200000000000003,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_F1": {
+      "path": "/World/Task/assets/asset_egad_F1",
+      "position": [
+        31.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_F2": {
+      "path": "/World/Task/assets/asset_egad_F2",
+      "position": [
+        32.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_F3": {
+      "path": "/World/Task/assets/asset_egad_F3",
+      "position": [
+        32.400000000000006,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_F4": {
+      "path": "/World/Task/assets/asset_egad_F4",
+      "position": [
+        32.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_F5": {
+      "path": "/World/Task/assets/asset_egad_F5",
+      "position": [
+        33.2,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_F6": {
+      "path": "/World/Task/assets/asset_egad_F6",
+      "position": [
+        33.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_G0": {
+      "path": "/World/Task/assets/asset_egad_G0",
+      "position": [
+        34.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_G1": {
+      "path": "/World/Task/assets/asset_egad_G1",
+      "position": [
+        34.400000000000006,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_G2": {
+      "path": "/World/Task/assets/asset_egad_G2",
+      "position": [
+        34.8,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_G3": {
+      "path": "/World/Task/assets/asset_egad_G3",
+      "position": [
+        35.2,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_G4": {
+      "path": "/World/Task/assets/asset_egad_G4",
+      "position": [
+        35.6,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_G5": {
+      "path": "/World/Task/assets/asset_egad_G5",
+      "position": [
+        36.0,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "asset:egad_G6": {
+      "path": "/World/Task/assets/asset_egad_G6",
+      "position": [
+        36.400000000000006,
+        10.0,
+        0.4
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "linear_and_angular_velocities": "All reset objects zero; all robot DOF velocities zero"
+}

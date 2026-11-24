@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="1430" viewBox="0 0 660 1430" role="img" aria-labelledby="sgx-title sgx-description">
+<title id="sgx-title">SAM3、RGB-D点云与GraspGenX主线流程</title>
+<desc id="sgx-description">六个可点击步骤，新主线尚待完整联调。</desc>
+<rect width="660" height="1430" fill="#fbfcff"/>
+<defs><marker id="sgx-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#969dab"/></marker></defs>
+<text x="330" y="30" text-anchor="middle" fill="#263a59" font-size="18" font-family="sans-serif">SAM3＋点云＋GraspGenX 独立主线</text>
+<path d="M330 233 V283" fill="none" stroke="#969dab" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#sgx-arrow)"/>
+<a href="/iterations/sam3-graspgenx/steps/observation/" aria-label="步骤01 头部同步 RGB-D，查看详情"><rect x="190" y="65" width="280" height="168" rx="12" fill="#fff" stroke="#b9c5d5"/><text x="208" y="92" fill="#52657e" font-size="12">01 · 待头部接口接入</text><text x="208" y="125" fill="#233955" font-size="17">头部同步 RGB-D</text>
+<text x="208" y="153" fill="#53647b" font-size="13">保存同帧图像、深度、标定与机器人状</text>
+<text x="208" y="173" fill="#53647b" font-size="13">态。</text>
+<text x="208" y="213" fill="#386083" font-size="12">查看模块实施方案 ↗</text></a>
+<path d="M330 463 V513" fill="none" stroke="#969dab" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#sgx-arrow)"/>
+<a href="/iterations/sam3-graspgenx/steps/segmentation/" aria-label="步骤02 SAM3 语义分割，查看详情"><rect x="190" y="295" width="280" height="168" rx="12" fill="#fff" stroke="#b9c5d5"/><text x="208" y="322" fill="#52657e" font-size="12">02 · 组件已有，待新接口</text><text x="208" y="355" fill="#233955" font-size="17">SAM3 语义分割</text>
+<text x="208" y="383" fill="#53647b" font-size="13">目标文本生成预测掩码，绑定具体实例</text>
+<text x="208" y="403" fill="#53647b" font-size="13">。</text>
+<text x="208" y="443" fill="#386083" font-size="12">查看模块实施方案 ↗</text></a>
+<path d="M330 693 V743" fill="none" stroke="#969dab" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#sgx-arrow)"/>
+<a href="/iterations/sam3-graspgenx/steps/point-cloud/" aria-label="步骤03 RGB-D 点云感知，查看详情"><rect x="190" y="525" width="280" height="168" rx="12" fill="#fff" stroke="#b9c5d5"/><text x="208" y="552" fill="#52657e" font-size="12">03 · 契约已定义，待核验</text><text x="208" y="585" fill="#233955" font-size="17">RGB-D 点云感知</text>
+<text x="208" y="613" fill="#53647b" font-size="13">反投影目标与场景可见点，统一坐标。</text>
+<text x="208" y="673" fill="#386083" font-size="12">查看模块实施方案 ↗</text></a>
+<path d="M330 923 V973" fill="none" stroke="#969dab" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#sgx-arrow)"/>
+<a href="/iterations/sam3-graspgenx/steps/grasp-generation/" aria-label="步骤04 GraspGenX 抓取生成，查看详情"><rect x="190" y="755" width="280" height="168" rx="12" fill="#fff" stroke="#b9c5d5"/><text x="208" y="782" fill="#52657e" font-size="12">04 · 组件已有，待接入</text><text x="208" y="815" fill="#233955" font-size="17">GraspGenX 抓取生成</text>
+<text x="208" y="843" fill="#53647b" font-size="13">夹爪条件生成六维抓法、原生评分与候</text>
+<text x="208" y="863" fill="#53647b" font-size="13">选。</text>
+<text x="208" y="903" fill="#386083" font-size="12">查看模块实施方案 ↗</text></a>
+<path d="M330 1153 V1203" fill="none" stroke="#969dab" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#sgx-arrow)"/>
+<a href="/iterations/sam3-graspgenx/steps/planning/" aria-label="步骤05 坐标适配与 cuRobo，查看详情"><rect x="190" y="985" width="280" height="168" rx="12" fill="#fff" stroke="#b9c5d5"/><text x="208" y="1012" fill="#52657e" font-size="12">05 · 待新输入联调</text><text x="208" y="1045" fill="#233955" font-size="17">坐标适配与 cuRobo</text>
+<text x="208" y="1073" fill="#53647b" font-size="13">核对 EEF／TCP43，再检查运</text>
+<text x="208" y="1093" fill="#53647b" font-size="13">动学、碰撞和路径。</text>
+<text x="208" y="1133" fill="#386083" font-size="12">查看模块实施方案 ↗</text></a>
+<a href="/iterations/sam3-graspgenx/steps/execution/" aria-label="步骤06 ARX 抓取与评测，查看详情"><rect x="190" y="1215" width="280" height="168" rx="12" fill="#fff" stroke="#b9c5d5"/><text x="208" y="1242" fill="#52657e" font-size="12">06 · 待新主线验证</text><text x="208" y="1275" fill="#233955" font-size="17">ARX 抓取与评测</text>
+<text x="208" y="1303" fill="#53647b" font-size="13">执行接近、闭合、抬升，独立核验物理</text>
+<text x="208" y="1323" fill="#53647b" font-size="13">结果。</text>
+<text x="208" y="1363" fill="#386083" font-size="12">查看模块实施方案 ↗</text></a>
+</svg>

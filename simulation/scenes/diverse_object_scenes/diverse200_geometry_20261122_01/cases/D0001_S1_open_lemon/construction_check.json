@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "construction_independent_of_ik": true,
+  "IK_queries": 0,
+  "actors": {
+    "target": {
+      "passed": true,
+      "inside_registered_roi": true,
+      "inside_table": true,
+      "fully_in_head_frame": true,
+      "not_clearly_beyond_link_length": true,
+      "center_world_m": [
+        -0.45048732950025866,
+        0.1725794714049078,
+        0.030650866529607187
+      ],
+      "center_distance_m": 0.5238795767678286,
+      "nearest_bbox_distance_m": 0.4633718078375255,
+      "bbox_world_min_m": [
+        -0.4982841434756762,
+        0.13389513904658057,
+        -0.0008138941991160109
+      ],
+      "bbox_world_max_m": [
+        -0.40269051552484114,
+        0.21126380376323506,
+        0.062115627258330385
+      ],
+      "near_table_edge_gap_m": 0.22621585652432386
+    }
+  },
+  "physical_grasps": 0,
+  "at": "2026-11-22T23:15:46.914121+08:00"
+}

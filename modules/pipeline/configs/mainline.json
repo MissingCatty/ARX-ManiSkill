@@ -1,0 +1,49 @@
+{
+  "id": "sam3-graspgenx",
+  "branch_type": "main",
+  "parent": null,
+  "status": "configuration_verified",
+  "end_to_end_verified": false,
+  "perception": {
+    "camera_role": "head",
+    "sensor_name": "head",
+    "camera_profile_config": "configs/camera_profiles.json",
+    "head_mount_config": "configs/head_camera_mount.json",
+    "synchronized_rgbd_required": true,
+    "depth_unit": "meter_after_scaling",
+    "extrinsics": "optical_to_world_per_observation",
+    "target_mask_source": "SAM3_text_prediction",
+    "target_ground_truth_input": false
+  },
+  "segmentation": {
+    "model": "SAM3",
+    "source": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/claro/依赖/SAM3源码",
+    "checkpoint": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/claro/权重/sam3.pt",
+    "python": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/claro/.venv/bin/python"
+  },
+  "grasp_generation": {
+    "model": "GraspGenX",
+    "source": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/research_dependencies/GraspGenX",
+    "checkpoint_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/research_dependencies/graspgenx_checkpoints/release",
+    "python": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/.venv-graspgenx/bin/python",
+    "planner_mode": "graspmoe",
+    "candidate_budget": 512,
+    "arx_conditioning": "derive_from_current_robot_geometry",
+    "inherit_old_topdown_constraint": false,
+    "virtual_origin_back_m": 0.1
+  },
+  "planning": {
+    "model": "cuRobo",
+    "tcp_eef_z_m": 0.043,
+    "robot_configuration": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/scripts/curobo_arx/static_pick/reference/model/arx.yml",
+    "physical_settings_changed": false,
+    "implicit_research_modules_enabled": false,
+    "collision_profile": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/configs/collision/arx_refined_871.json",
+    "lift_joint_m": 0.452
+  },
+  "zerograsp_runtime_required": false,
+  "zerograsp_fallback_allowed": false,
+  "physical_trials_registered": 0,
+  "scene_dataset_config": "configs/scene_dataset.json",
+  "active_configuration": "configs/active_experiment.json"
+}

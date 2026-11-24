@@ -1,0 +1,24 @@
+{
+  "task": "User-requested fresh recording of historical bottle grasp without added obstacles",
+  "registered_unix": 1792677975.2590253,
+  "scenario": {
+    "target": "test_object",
+    "asset": "bbq_sauce_bottle",
+    "placement": {
+      "position": [
+        4.048,
+        2.08,
+        0.7651644948720933
+      ]
+    }
+  },
+  "historical_source": "/home/zhaoyechong/projects/COOLAS-ARX/runs/weight_comparison_20261015/06_bbq_sauce_bottle_w100/01_bbq_sauce_bottle",
+  "main_research": "paused",
+  "original_configuration": "frozen; only remove side-task pole/rack as explicitly requested",
+  "success_gate": "original five-stage convergence, bilateral closure and >6cm hold for >=3s",
+  "weight_multiplier": 100,
+  "fresh_zerograsp": true,
+  "webrtc_signal_port": 49210,
+  "webrtc_stream_port": 49211,
+  "transport_change_reason": "49200 is occupied by another session; no physics change"
+}

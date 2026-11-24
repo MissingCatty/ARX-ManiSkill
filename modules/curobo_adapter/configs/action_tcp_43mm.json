@@ -1,0 +1,76 @@
+{
+  "profile_id": "arx_action_tcp_43mm_v1",
+  "status": "selected_runtime_profile",
+  "relative_to": "right_eef_link",
+  "T_eef_action": [
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.043
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "translation_eef_m": [
+    0.0,
+    0.0,
+    0.043
+  ],
+  "baseline_T_eef_action": [
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.04
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "forward_shift_from_true_baseline_m": 0.0029999999999999957,
+  "authored_tip_axial_position_eef_z_m": {
+    "right_link27": 0.044970005750656156,
+    "right_link28": 0.0449700057506561
+  },
+  "axial_gap_before_m": 0.004970005750656099,
+  "axial_gap_after_m": 0.0019700057506561036,
+  "gap_definition": "Axial gap to distal tip plane, not Euclidean distance to each open finger",
+  "axes": "Unchanged: action X=EEF Y, action Y=-EEF X, action Z=EEF Z",
+  "source_geometry": "Original existing source convex parts, measured finger joint positions",
+  "robot_kinematics_or_calibration_modified": false,
+  "runtime_default_switched": true,
+  "activation_scope": "Independent curobo_v090_arx/live EASG route; physical EEF and G/H mapping unchanged",
+  "selection_authorization": "User approved reviewed new TCP on 2026-11-17"
+}

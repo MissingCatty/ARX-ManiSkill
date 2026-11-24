@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "entry": {
+    "id": "D0182_S5_occluded_soap_dispenser",
+    "model_id": "robocasa__soap_dispenser__soap_dispenser_2",
+    "semantic_class": "soap_dispenser",
+    "family": "soap_dispenser",
+    "target_text": "soap dispenser",
+    "layout": "S5_occluded",
+    "seed": 1028894004,
+    "actor_identities": [
+      {
+        "name": "target",
+        "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__bottled_water__bottled_water_10"
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__bread__bread_1"
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "ai2thor__cell_phone__Cellphone_1"
+      }
+    ],
+    "scene": {
+      "layout": "S5_occluded",
+      "actors": [
+        {
+          "name": "target",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2",
+          "pose": [
+            -0.15587155520915985,
+            -0.19996528327465057,
+            0.07750394195318222,
+            0.5297077894210815,
+            -0.0002494870568625629,
+            8.497809176333249e-06,
+            0.8481801748275757
+          ]
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10",
+          "pose": [
+            -0.15238666534423828,
+            -0.11561823636293411,
+            0.07990111410617828,
+            0.3084379732608795,
+            0.0001403498463332653,
+            5.7884230045601726e-05,
+            0.9512444734573364
+          ]
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bread__bread_1",
+          "pose": [
+            -0.2355392873287201,
+            -0.15456120669841766,
+            0.03598923236131668,
+            1.0,
+            2.2363383322954178e-07,
+            6.885966286063194e-07,
+            2.42842361330986e-07
+          ]
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__cell_phone__Cellphone_1",
+          "pose": [
+            -0.5214881300926208,
+            0.02312556467950344,
+            0.0007569710724055767,
+            0.3055100739002228,
+            4.262547008693218e-07,
+            -1.3794247024634387e-06,
+            -0.9521889090538025
+          ]
+        }
+      ],
+      "perception_camera": "head"
+    },
+    "admission": {
+      "target_mask_pixels": 1429,
+      "isolated_mask_pixels": 1794,
+      "occlusion_fraction": 0.2034559643255296,
+      "projected_bbox_uv": [
+        [
+          519.827446894148,
+          120.08950673174465
+        ],
+        [
+          589.7332150956978,
+          206.4063494051714
+        ]
+      ],
+      "fully_in_frame": true,
+      "admitted_view": true,
+      "valid_target_depth_fraction": 1.0,
+      "target_depth_median_m": 0.719,
+      "visible_pixels": 1429,
+      "border_clear": true
+    },
+    "camera": "head",
+    "robot_initial_q": [
+      0.4519999921321869,
+      -1.0728319921327056e-06,
+      -0.00020593733643181622,
+      2.5863868359010667e-05,
+      2.7094700271845795e-05,
+      0.0,
+      0.0,
+      -0.24871869385242462,
+      -0.24505318701267242,
+      -0.0005250244867056608,
+      0.00040246330900117755,
+      -0.0027694408781826496,
+      -0.0016749418573454022,
+      6.499443770735525e-06,
+      0.00048274517757818103,
+      0.043999914079904556,
+      0.04397093132138252
+    ],
+    "base_pose": [
+      -1.0499999523162842,
+      0.2499999850988388,
+      -0.5000001192092896,
+      1.0000001192092896,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "observation": null,
+    "physical_grasp_attempts": 0
+  },
+  "camera_input_sha256": {
+    "color.png": "183812039069b1d2b98aba0703ebde5a3ef85ae35209680a55f5fc93396037b4",
+    "depth.png": "9cf390afd0bca72ea97de670492002124cf9c1618cc837fb783d7970e7397621",
+    "params.json": "b352abd8dac97ffc0c9b7570c968400ea1e9769089a4524b3f621f4e9e99f47e"
+  },
+  "ground_truth_mask_is_evaluation_only": true
+}

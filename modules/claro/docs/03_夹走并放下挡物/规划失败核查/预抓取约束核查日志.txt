@@ -1,0 +1,170 @@
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 4090" (24 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /home/zhaoyechong/.cache/warp/1.18.0
+Module curobo._src.geom.transform e63256c load on device 'cuda:0' took 1.36 ms  (cached)
+Module curobo._src.cost.wp_cspace_position 720cc8f load on device 'cuda:0' took 0.70 ms  (cached)
+Module curobo._src.geom.collision.wp_collision_kernel c21139e load on device 'cuda:0' took 2.52 ms  (cached)
+Module curobo._src.geom.collision.wp_collision_kernel 088fc58 load on device 'cuda:0' took 2.53 ms  (cached)
+Module goalset_pose_distance_1_0_dceffa2f dceffa2 load on device 'cuda:0' took 0.60 ms  (cached)
+Module _lm_solve_tiled_6_12_2a7debec 98fbcb3 load on device 'cuda:0' took 259.93 ms  (cached)
+Module curobo._src.cost.wp_torch_cspace_dist 131408b load on device 'cuda:0' took 3.02 ms  (cached)
+TRAJOPT_ATTEMPT resident_startup_warmup {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Module curobo._src.cost.wp_cspace_state 9ea9a53 load on device 'cuda:0' took 0.78 ms  (cached)
+Module curobo._src.geom.collision.wp_sweep_collision_kernel 99c2e3d load on device 'cuda:0' took 0.76 ms  (cached)
+Module curobo._src.geom.collision.wp_sweep_collision_kernel b3974db load on device 'cuda:0' took 1.05 ms  (cached)
+Module curobo._src.geom.collision.wp_speed_metric 14ade1f load on device 'cuda:0' took 0.86 ms  (cached)
+TRAJOPT_ATTEMPT resident_startup_warmup {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_00_70a8171c95e4ccadbccb
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_00_70a8171c95e4ccadbccb
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+COUNTERFACTUAL I0069 [('native_08', 1), ('native_06', 1), ('native_04', 1), ('native_02', 1), ('flip_08', 0)] PLAN native_08
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_00_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_00_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+COUNTERFACTUAL I0038 [('native_08', 0), ('native_06', 0), ('native_04', 1), ('native_02', 1), ('flip_08', 0)] PLAN native_04
+COUNTERFACTUAL I0018 [('native_08', 0), ('native_06', 0), ('native_04', 0), ('native_02', 0), ('flip_08', 0)] PLAN None
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+COUNTERFACTUAL I0015 [('native_08', 0), ('native_06', 0), ('native_04', 0), ('native_02', 1), ('flip_08', 0)] PLAN native_02
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+COUNTERFACTUAL I0044 [('native_08', 0), ('native_06', 0), ('native_04', 1), ('native_02', 1), ('flip_08', 0)] PLAN native_04
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+COUNTERFACTUAL I0063 [('native_08', 0), ('native_06', 0), ('native_04', 1), ('native_02', 1), ('flip_08', 0)] PLAN native_04
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+COUNTERFACTUAL I0119 [('native_08', 0), ('native_06', 0), ('native_04', 0), ('native_02', 0), ('flip_08', 0)] PLAN None
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+COUNTERFACTUAL I0130 [('native_08', 0), ('native_06', 1), ('native_04', 1), ('native_02', 1), ('flip_08', 0)] PLAN native_06

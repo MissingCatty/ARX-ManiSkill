@@ -1,0 +1,142 @@
+{
+  "title": "SAM3点云GraspGenX主线流程",
+  "intro": "点击同一张流程图中的卡片查看模块接口、实施方案与当前进度。",
+  "directory": "SAM3点云GraspGenX步骤",
+  "diagram": "/media/sam3-graspgenx-workflow.svg",
+  "note": "当前统一使用头部向下45°、TCP43、固定45.2厘米和871球模型，配置核验见V2。",
+  "legend": [
+    {
+      "class": "vision",
+      "label": "当前已接入的视觉模块"
+    },
+    {
+      "class": "fixed",
+      "label": "已接通的规划与执行链路"
+    }
+  ],
+  "graph": {
+    "positions": {
+      "observation": [
+        190,
+        0
+      ],
+      "segmentation": [
+        190,
+        230
+      ],
+      "point-cloud": [
+        190,
+        460
+      ],
+      "grasp-generation": [
+        190,
+        690
+      ],
+      "planning": [
+        190,
+        920
+      ],
+      "execution": [
+        190,
+        1150
+      ]
+    },
+    "edges": [
+      {
+        "source": "observation",
+        "target": "segmentation",
+        "kind": "fixed"
+      },
+      {
+        "source": "segmentation",
+        "target": "point-cloud",
+        "kind": "fixed"
+      },
+      {
+        "source": "point-cloud",
+        "target": "grasp-generation",
+        "kind": "fixed"
+      },
+      {
+        "source": "grasp-generation",
+        "target": "planning",
+        "kind": "fixed"
+      },
+      {
+        "source": "planning",
+        "target": "execution",
+        "kind": "fixed"
+      }
+    ]
+  },
+  "groups": [
+    {
+      "title": "独立主线：从目标观测到抓取",
+      "layout": "sequence",
+      "steps": [
+        "observation",
+        "segmentation",
+        "point-cloud",
+        "grasp-generation",
+        "planning",
+        "execution"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "observation",
+      "number": "01",
+      "title": "头部同步 RGB-D",
+      "summary": "保存640×480头部D405图像、深度、标定与机器人状态。",
+      "status": "已接入",
+      "kind": "input",
+      "file": "01_头部同步观测.md"
+    },
+    {
+      "id": "segmentation",
+      "number": "02",
+      "title": "SAM3 语义分割",
+      "summary": "目标文本生成预测掩码，按模型分数选实例。",
+      "status": "已接入",
+      "kind": "vision",
+      "file": "02_SAM3语义分割.md"
+    },
+    {
+      "id": "point-cloud",
+      "number": "03",
+      "title": "RaySt3R 目标点云",
+      "summary": "根据头部RGB-D和目标掩码补全三维点云。",
+      "status": "已接入",
+      "kind": "geometry",
+      "file": "03_RGBD点云感知.md"
+    },
+    {
+      "id": "grasp-generation",
+      "number": "04",
+      "title": "GraspGenX 抓取生成",
+      "summary": "原生GraspMoE扩散与OBB候选，原生分数排序。",
+      "status": "已接入",
+      "kind": "geometry",
+      "file": "04_GraspGenX抓取生成.md"
+    },
+    {
+      "id": "planning",
+      "number": "05",
+      "title": "坐标适配与 cuRobo",
+      "summary": "TCP43、871球、六轴，检查IK、场景碰撞和完整轨迹。",
+      "status": "已接入",
+      "kind": "geometry",
+      "file": "05_坐标适配与规划.md"
+    },
+    {
+      "id": "execution",
+      "number": "06",
+      "title": "ARX 抓取与评测",
+      "summary": "接近、闭爪、抬升与保持，记录双视角录像。",
+      "status": "新配置待抓取登记",
+      "kind": "execute",
+      "file": "06_抓取执行与评测.md"
+    }
+  ]
+}

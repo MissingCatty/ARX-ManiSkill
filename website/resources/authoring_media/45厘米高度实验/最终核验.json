@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "final": true,
+  "source": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01",
+  "time": "2026-11-21T00:56:48.401471+08:00",
+  "trace_recomputed": 360,
+  "dual_videos_present": 360,
+  "claims_complete": 360,
+  "unchanged_memory_receipts": 320,
+  "source_and_asset_hashes_checked": 3009,
+  "registration_sha256": {
+    "collection": "311d8f3b14829a8086c5628eabc9238c3b9b3d05cc143f3b56bb5f5cacb3eee0",
+    "fixed_zerograsp": "2e9c59c5232dc653a109cfdfaf712c0ad041ed158a63b7d08a9dcd0a183a123e",
+    "fixed_graspcl": "96351875f91f8dbc46cc669baef177e8b3f0bb9d9e7d6888b1af606acd5a4bce"
+  },
+  "bank_sha256": "4bf44bd994bf78f15ee2d43d434085805de4e7368278355dc98103696efe3cd8",
+  "training_test_overlap": 0,
+  "test_feedback_updates": 0,
+  "owned_services_exited_normally": true,
+  "systemd": [
+    "MainPID=0",
+    "ExecMainStatus=0",
+    "ActiveState=inactive"
+  ],
+  "new_robot_actions": 0,
+  "video_scope": "All 360 available dual-video pairs checked for presence; the 20 selected arm videos are decoded to extract screenshots. Not a full-frame audit of all videos."
+}

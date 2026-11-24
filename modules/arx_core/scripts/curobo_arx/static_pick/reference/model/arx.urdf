@@ -1,0 +1,127 @@
+<robot name="arx_usd_right_arm">
+  <link name="body4" />
+  <link name="right_link21" />
+  <link name="right_link22" />
+  <link name="right_link23" />
+  <link name="right_link24" />
+  <link name="right_link25" />
+  <link name="right_link26" />
+  <link name="right_link27" />
+  <link name="right_link28" />
+  <link name="right_eef_link" />
+  <link name="right_link21_joint_frame" />
+  <joint name="right_joint21" type="revolute">
+    <parent link="body4" />
+    <child link="right_link21_joint_frame" />
+    <origin xyz="0.05994899943470955 -0.25 0.02449999935925007" rpy="0.0 0.0 0.0" />
+    <axis xyz="0.0 0.0 1.0" />
+    <limit lower="-2.0940000224454822" upper="3.1415998441247366" effort="100" velocity="1.5" />
+  </joint>
+  <joint name="right_link21_frame_offset" type="fixed">
+    <parent link="right_link21_joint_frame" />
+    <child link="right_link21" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+  <link name="right_link22_joint_frame" />
+  <joint name="right_joint22" type="revolute">
+    <parent link="right_link21" />
+    <child link="right_link22_joint_frame" />
+    <origin xyz="0.019999999552965164 0.0 0.03999999910593033" rpy="0.0 0.0 0.0" />
+    <axis xyz="0.0 1.0 0.0" />
+    <limit lower="0.0" upper="3.6649996815896064" effort="100" velocity="1.5" />
+  </joint>
+  <joint name="right_link22_frame_offset" type="fixed">
+    <parent link="right_link22_joint_frame" />
+    <child link="right_link22" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+  <link name="right_link23_joint_frame" />
+  <joint name="right_joint23" type="revolute">
+    <parent link="right_link22" />
+    <child link="right_link23_joint_frame" />
+    <origin xyz="-0.2639999985694885 2.9999999242136255e-05 0.0" rpy="3.141592653589793 0.0 0.0" />
+    <axis xyz="0.0 1.0 0.0" />
+    <limit lower="0.0" upper="3.239999917977638" effort="100" velocity="1.5" />
+  </joint>
+  <joint name="right_link23_frame_offset" type="fixed">
+    <parent link="right_link23_joint_frame" />
+    <child link="right_link23" />
+    <origin xyz="0.0 -0.0 -0.0" rpy="3.141592653589793 0.0 0.0" />
+  </joint>
+  <link name="right_link24_joint_frame" />
+  <joint name="right_joint24" type="revolute">
+    <parent link="right_link23" />
+    <child link="right_link24_joint_frame" />
+    <origin xyz="0.24500000476837158 -2.9999999242136255e-05 0.0560000017285347" rpy="3.141592653589793 0.0 0.0" />
+    <axis xyz="0.0 1.0 0.0" />
+    <limit lower="-1.670999893338" upper="1.670999893338" effort="100" velocity="1.5" />
+  </joint>
+  <joint name="right_link24_frame_offset" type="fixed">
+    <parent link="right_link24_joint_frame" />
+    <child link="right_link24" />
+    <origin xyz="0.0 -0.0 -0.0" rpy="3.141592653589793 0.0 0.0" />
+  </joint>
+  <link name="right_link25_joint_frame" />
+  <joint name="right_joint25" type="revolute">
+    <parent link="right_link24" />
+    <child link="right_link25_joint_frame" />
+    <origin xyz="0.0677499994635582 0.0 0.08449999988079071" rpy="3.141592653589793 0.0 3.141592653589793" />
+    <axis xyz="0.0 0.0 1.0" />
+    <limit lower="-1.670999893338" upper="1.670999893338" effort="100" velocity="1.5" />
+  </joint>
+  <joint name="right_link25_frame_offset" type="fixed">
+    <parent link="right_link25_joint_frame" />
+    <child link="right_link25" />
+    <origin xyz="-0.0 0.0 -0.0" rpy="3.141592653589793 0.0 3.141592653589793" />
+  </joint>
+  <link name="right_link26_joint_frame" />
+  <joint name="right_joint26" type="revolute">
+    <parent link="right_link25" />
+    <child link="right_link26_joint_frame" />
+    <origin xyz="0.028950000181794167 0.0 -0.08449999988079071" rpy="0.0 0.0 0.0" />
+    <axis xyz="1.0 0.0 0.0" />
+    <limit lower="-2.0940000224454822" upper="2.0940000224454822" effort="100" velocity="1.5" />
+  </joint>
+  <joint name="right_link26_frame_offset" type="fixed">
+    <parent link="right_link26_joint_frame" />
+    <child link="right_link26" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+  <link name="right_link27_joint_frame" />
+  <joint name="right_joint27" type="prismatic">
+    <parent link="right_link26" />
+    <child link="right_link27_joint_frame" />
+    <origin xyz="0.08397000283002853 0.027210000902414322 -0.00627020001411438" rpy="0.0 0.0 0.0" />
+    <axis xyz="0.0 1.0 0.0" />
+    <limit lower="0.0" upper="0.04399999976158142" effort="100" velocity="1.5" />
+  </joint>
+  <joint name="right_link27_frame_offset" type="fixed">
+    <parent link="right_link27_joint_frame" />
+    <child link="right_link27" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+  <link name="right_link28_joint_frame" />
+  <joint name="right_joint28" type="prismatic">
+    <parent link="right_link26" />
+    <child link="right_link28_joint_frame" />
+    <origin xyz="0.08397000283002853 -0.023638000711798668 -0.006270300131291151" rpy="3.141592653589793 0.0 0.0" />
+    <axis xyz="0.0 1.0 0.0" />
+    <limit lower="0.0" upper="0.04399999976158142" effort="100" velocity="1.5" />
+  </joint>
+  <joint name="right_link28_frame_offset" type="fixed">
+    <parent link="right_link28_joint_frame" />
+    <child link="right_link28" />
+    <origin xyz="0.0 -0.0 -0.0" rpy="3.141592653589793 0.0 0.0" />
+  </joint>
+  <link name="right_eef_link_joint_frame" />
+  <joint name="right_link26_right_eef_link_joint" type="fixed">
+    <parent link="right_link26" />
+    <child link="right_eef_link_joint_frame" />
+    <origin xyz="0.10999999940395355 0.0 -0.006000000052154064" rpy="-0.0 1.5707963267948966 0.0" />
+  </joint>
+  <joint name="right_eef_link_frame_offset" type="fixed">
+    <parent link="right_eef_link_joint_frame" />
+    <child link="right_eef_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+</robot>

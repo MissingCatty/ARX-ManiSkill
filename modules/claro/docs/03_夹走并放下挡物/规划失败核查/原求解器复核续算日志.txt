@@ -1,0 +1,196 @@
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 4090" (24 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /home/zhaoyechong/.cache/warp/1.18.0
+Module curobo._src.geom.transform e63256c load on device 'cuda:0' took 1.00 ms  (cached)
+Module curobo._src.cost.wp_cspace_position 720cc8f load on device 'cuda:0' took 1.07 ms  (cached)
+Module curobo._src.geom.collision.wp_collision_kernel c21139e load on device 'cuda:0' took 0.96 ms  (cached)
+Module curobo._src.geom.collision.wp_collision_kernel 088fc58 load on device 'cuda:0' took 1.03 ms  (cached)
+Module goalset_pose_distance_1_0_dceffa2f dceffa2 load on device 'cuda:0' took 0.96 ms  (cached)
+Module _lm_solve_tiled_6_12_2a7debec 98fbcb3 load on device 'cuda:0' took 272.89 ms  (cached)
+Module curobo._src.cost.wp_torch_cspace_dist 131408b load on device 'cuda:0' took 0.89 ms  (cached)
+TRAJOPT_ATTEMPT resident_startup_warmup {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Module curobo._src.cost.wp_cspace_state 9ea9a53 load on device 'cuda:0' took 2.50 ms  (cached)
+Module curobo._src.geom.collision.wp_sweep_collision_kernel 99c2e3d load on device 'cuda:0' took 0.84 ms  (cached)
+Module curobo._src.geom.collision.wp_sweep_collision_kernel b3974db load on device 'cuda:0' took 0.82 ms  (cached)
+Module curobo._src.geom.collision.wp_speed_metric 14ade1f load on device 'cuda:0' took 0.73 ms  (cached)
+TRAJOPT_ATTEMPT resident_startup_warmup {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_00_70a8171c95e4ccadbccb
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_00_70a8171c95e4ccadbccb
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_00_70a8171c95e4ccadbccb
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_00_70a8171c95e4ccadbccb
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_00_70a8171c95e4ccadbccb
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_00_70a8171c95e4ccadbccb
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+Mesh already in cache, reusing existing instance: target_0d2b54b029c2b4f60204
+Mesh already in cache, reusing existing instance: distractor_01_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: distractor_02_6fe8d7fb22155c2a8357
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+ORIGINAL_IK I0069 [(8, True), (8, True)] FULL_PLAN True
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_00_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_00_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_26f02d765b836d8068dc
+Mesh already in cache, reusing existing instance: distractor_01_fe2a204b0460c464c686
+Mesh already in cache, reusing existing instance: distractor_02_7579196b33dad6e74859
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+ORIGINAL_IK I0038 [(8, False), (4, True)] FULL_PLAN True
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+Mesh already in cache, reusing existing instance: target_14881b8bb78c8f0dca18
+Mesh already in cache, reusing existing instance: distractor_01_feaddbb11fb6af0735fd
+Mesh already in cache, reusing existing instance: distractor_02_10d3be4642bb26b9eca4
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+ORIGINAL_IK I0015 [(8, False), (2, True)] FULL_PLAN True
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+Mesh already in cache, reusing existing instance: target_0d36eb28653d22c9715c
+Mesh already in cache, reusing existing instance: distractor_01_73a2321c188aace4cefd
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_03_7579196b33dad6e74859
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+ORIGINAL_IK I0044 [(8, False), (4, True)] FULL_PLAN True
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+ORIGINAL_IK I0063 [(8, False), (4, True)] FULL_PLAN True
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_00_6d039e99ba2218adfeb9
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+TRAJOPT_ATTEMPT pregrasp {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+Mesh already in cache, reusing existing instance: target_014fafd2262c258ba7f8
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_02_0108273eeb46bc520b3b
+TRAJOPT_ATTEMPT approach {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+ORIGINAL_IK I0130 [(8, False), (6, True)] FULL_PLAN True
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: distractor_01_a365e65c831143ef4d9d
+CPU_WITNESS I0063 pregrasp checker True bounds 0.0 scene 0.0 ik_metrics True
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+CPU_WITNESS I0119 grasp checker True bounds 0.0 scene 0.0 ik_metrics True

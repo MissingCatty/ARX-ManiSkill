@@ -1,0 +1,320 @@
+{
+  "scope": "Recorded ARX bottle_clear_00 results; videos and full raw attempts remain external under runs/. A passing planning benchmark is not physical execution.",
+  "normal_execution": {
+    "source_run": "runs/bottle_normal_run_20261026_144441",
+    "verification": {
+      "physical_grasp_success": true,
+      "historical_physics_matched_before_execution": true,
+      "configuration_audit_enabled": false,
+      "current_configuration_unchanged": null,
+      "changed_protected_sources": null,
+      "no_added_obstacles": null,
+      "forbidden_contact_events": 0,
+      "contacting_fingers": [
+        "right_link27",
+        "right_link28"
+      ],
+      "command_max_joint_limit_violation_rad": 0.0,
+      "fresh_zerograsp_inference": true,
+      "command_trajectory_count": 5,
+      "executed_trajectory_count": 5,
+      "held_min_rise_m": 0.11708247661590576,
+      "error": null,
+      "execution_pass": true,
+      "configuration_audit_pass": null,
+      "pass": true,
+      "pass_scope": "execution; runtime configuration audit disabled"
+    },
+    "compute_assignment": {
+      "neural_gpu": "GPU-89b73e7c-4a57-5097-f090-6319f453eab9",
+      "planner_gpu": "GPU-c28703d5-5487-1100-18bc-3ac15fd42c94",
+      "simulation_gpu_index": 3,
+      "neural_python": "/home/zhaoyechong/projects/ARX-ManiSkill/environments/runtime_bundle/env/bin/python",
+      "curobo_python": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/.venv/bin/python"
+    },
+    "grasp": {
+      "success": true,
+      "planner": "cuRobo IK + PRM + trajectory optimization",
+      "selected_grasp_index": 11,
+      "stage_convergence": {
+        "pregrasp": {
+          "accepted": true,
+          "strict_joint_settled": true,
+          "bounded_stationary_pose": false,
+          "endpoint_max_error_rad": 0.002251148223876953,
+          "tool_position_error_m": 0.0014610657474796566,
+          "tool_orientation_error_rad": 0.00498723924707459,
+          "last_second_joint_drift_rad": 0.024328947067260742,
+          "settled": true
+        },
+        "approach": {
+          "accepted": true,
+          "strict_joint_settled": true,
+          "bounded_stationary_pose": false,
+          "endpoint_max_error_rad": 0.0025606006383895874,
+          "tool_position_error_m": 0.0017422690366098847,
+          "tool_orientation_error_rad": 0.005676529440291867,
+          "last_second_joint_drift_rad": 0.01114189624786377,
+          "settled": true
+        },
+        "close": {
+          "accepted": true,
+          "strict_joint_settled": true,
+          "bounded_stationary_pose": false,
+          "endpoint_max_error_rad": 0.0043730586767196655,
+          "tool_position_error_m": 0.00226877571401771,
+          "tool_orientation_error_rad": 0.008085072187862575,
+          "last_second_joint_drift_rad": 0.0006811022758483887,
+          "settled": true
+        },
+        "lift": {
+          "accepted": true,
+          "strict_joint_settled": true,
+          "bounded_stationary_pose": false,
+          "endpoint_max_error_rad": 0.004580020904541016,
+          "tool_position_error_m": 0.002956320255525109,
+          "tool_orientation_error_rad": 0.009676417895133684,
+          "last_second_joint_drift_rad": 0.015182971954345703,
+          "settled": true
+        },
+        "hold": {
+          "accepted": true,
+          "strict_joint_settled": true,
+          "bounded_stationary_pose": false,
+          "endpoint_max_error_rad": 0.004631638526916504,
+          "tool_position_error_m": 0.0029898622873812306,
+          "tool_orientation_error_rad": 0.009786143049441249,
+          "last_second_joint_drift_rad": 0.0012153387069702148,
+          "settled": true
+        }
+      },
+      "lift_m": 0.1201176643371582,
+      "warmup_seconds": 66.31525784591213,
+      "stage_timing": {
+        "pregrasp": {
+          "wall_duration_s": 7.598187516909093,
+          "sim_duration_s": 6.000000312924385
+        },
+        "approach": {
+          "wall_duration_s": 5.847255467902869,
+          "sim_duration_s": 5.000000260770321
+        },
+        "close": {
+          "wall_duration_s": 5.871267892885953,
+          "sim_duration_s": 3.0000001564621925
+        },
+        "lift": {
+          "wall_duration_s": 12.329914245987311,
+          "sim_duration_s": 6.000000312924385
+        },
+        "hold": {
+          "wall_duration_s": 5.829673391068354,
+          "sim_duration_s": 3.0000001564621925
+        }
+      },
+      "execution_wall_seconds": 42.05133209889755
+    },
+    "video": {
+      "video": "/home/zhaoyechong/projects/COOLAS-ARX/runs/bottle_normal_run_20261026_144441/bottle_grasp_no_obstacle_full.mp4",
+      "recording_start_view_verified": true,
+      "original_view_verified": true,
+      "source_frames": 133,
+      "wall_elapsed_s": 43.074486845871434,
+      "sim_elapsed_s": 26.400001376867294,
+      "playback_timing": "recorded wall-time; no acceleration",
+      "text_added": false,
+      "audio_added": false,
+      "full_decode": "PASS"
+    }
+  },
+  "packaged_entrypoint_execution": {
+    "source_run": "runs/curobo_usage_packaging_check_20261026",
+    "verification": {
+      "physical_grasp_success": true,
+      "historical_physics_matched_before_execution": true,
+      "configuration_audit_enabled": false,
+      "current_configuration_unchanged": null,
+      "changed_protected_sources": null,
+      "no_added_obstacles": null,
+      "forbidden_contact_events": 0,
+      "contacting_fingers": [
+        "right_link27",
+        "right_link28"
+      ],
+      "command_max_joint_limit_violation_rad": 0.0,
+      "fresh_zerograsp_inference": true,
+      "command_trajectory_count": 5,
+      "executed_trajectory_count": 5,
+      "held_min_rise_m": 0.1170891523361206,
+      "error": null,
+      "execution_pass": true,
+      "configuration_audit_pass": null,
+      "pass": true,
+      "pass_scope": "execution; runtime configuration audit disabled"
+    },
+    "compute_assignment": {
+      "neural_gpu": "GPU-89b73e7c-4a57-5097-f090-6319f453eab9",
+      "planner_gpu": "GPU-c28703d5-5487-1100-18bc-3ac15fd42c94",
+      "simulation_gpu_index": 3,
+      "neural_python": "/home/zhaoyechong/projects/ARX-ManiSkill/environments/runtime_bundle/env/bin/python",
+      "curobo_python": "/home/zhaoyechong/projects/COOLAS-ARX/../curobo/.venv/bin/python"
+    },
+    "grasp": {
+      "success": true,
+      "planner": "cuRobo IK + PRM + trajectory optimization",
+      "selected_grasp_index": 22,
+      "stage_convergence": {
+        "pregrasp": {
+          "accepted": true,
+          "strict_joint_settled": true,
+          "bounded_stationary_pose": false,
+          "endpoint_max_error_rad": 0.0027420520782470703,
+          "tool_position_error_m": 0.0014350567757691567,
+          "tool_orientation_error_rad": 0.005815181348082271,
+          "last_second_joint_drift_rad": 0.04118764400482178,
+          "settled": true
+        },
+        "approach": {
+          "accepted": true,
+          "strict_joint_settled": true,
+          "bounded_stationary_pose": false,
+          "endpoint_max_error_rad": 0.0031815767288208008,
+          "tool_position_error_m": 0.001899000359665004,
+          "tool_orientation_error_rad": 0.007060265278077651,
+          "last_second_joint_drift_rad": 0.02039390802383423,
+          "settled": true
+        },
+        "close": {
+          "accepted": true,
+          "strict_joint_settled": true,
+          "bounded_stationary_pose": false,
+          "endpoint_max_error_rad": 0.004370272159576416,
+          "tool_position_error_m": 0.0023105407794291525,
+          "tool_orientation_error_rad": 0.009881425083064263,
+          "last_second_joint_drift_rad": 0.0009409785270690918,
+          "settled": true
+        },
+        "lift": {
+          "accepted": true,
+          "strict_joint_settled": false,
+          "bounded_stationary_pose": true,
+          "endpoint_max_error_rad": 0.0052793025970458984,
+          "tool_position_error_m": 0.0031198553623770844,
+          "tool_orientation_error_rad": 0.011607883575258226,
+          "last_second_joint_drift_rad": 1.3887882232666016e-05,
+          "settled": true
+        },
+        "hold": {
+          "accepted": true,
+          "strict_joint_settled": false,
+          "bounded_stationary_pose": true,
+          "endpoint_max_error_rad": 0.005278110504150391,
+          "tool_position_error_m": 0.0031204397412463655,
+          "tool_orientation_error_rad": 0.011600074188649051,
+          "last_second_joint_drift_rad": 9.47713851928711e-06,
+          "settled": true
+        }
+      },
+      "lift_m": 0.12000447511672974,
+      "warmup_seconds": 63.4386751241982,
+      "stage_timing": {
+        "pregrasp": {
+          "wall_duration_s": 7.352927249856293,
+          "sim_duration_s": 6.000000312924385
+        },
+        "approach": {
+          "wall_duration_s": 6.6501754228957,
+          "sim_duration_s": 5.000000260770321
+        },
+        "close": {
+          "wall_duration_s": 7.495707101887092,
+          "sim_duration_s": 3.0000001564621925
+        },
+        "lift": {
+          "wall_duration_s": 20.58014329103753,
+          "sim_duration_s": 10.000000521540642
+        },
+        "hold": {
+          "wall_duration_s": 13.174487002193928,
+          "sim_duration_s": 7.000000365078449
+        }
+      },
+      "execution_wall_seconds": 59.59722740901634
+    },
+    "video": {
+      "video": "/home/zhaoyechong/projects/COOLAS-ARX/runs/curobo_usage_packaging_check_20261026/bottle_grasp_no_obstacle_full.mp4",
+      "recording_start_view_verified": true,
+      "original_view_verified": true,
+      "source_frames": 171,
+      "wall_elapsed_s": 60.513943494996056,
+      "sim_elapsed_s": 34.00000177323818,
+      "playback_timing": "recorded wall-time; no acceleration",
+      "text_added": false,
+      "audio_added": false,
+      "full_decode": "PASS"
+    }
+  },
+  "planning_model_microbenchmark": {
+    "request": "Fresh IK + PRM + original PRM dense checks + trajectory optimization + original trajectory dense checks",
+    "device": "NVIDIA A100-PCIE-40GB",
+    "visible_device": "GPU-89b73e7c-4a57-5097-f090-6319f453eab9",
+    "warm_cases": 12,
+    "warm_min_ms": 159.91495992057025,
+    "warm_median_ms": 175.69150705821812,
+    "warm_max_ms": 192.37463106401265,
+    "per_stage": {
+      "pregrasp": {
+        "median_ms": 176.14850995596498,
+        "max_ms": 192.37463106401265
+      },
+      "approach": {
+        "median_ms": 163.0188844865188,
+        "max_ms": 168.57552505098283
+      },
+      "lift": {
+        "median_ms": 177.83659999258816,
+        "max_ms": 185.3095639962703
+      }
+    },
+    "cold_calls_seconds": [
+      {
+        "stage": "pregrasp",
+        "seconds": 6.016851213062182
+      },
+      {
+        "stage": "approach",
+        "seconds": 0.1794852081220597
+      },
+      {
+        "stage": "lift",
+        "seconds": 2.7892816471867263
+      }
+    ],
+    "artifact_flush_seconds": [
+      0.00011288607493042946,
+      7.33458437025547e-05
+    ],
+    "scope": "Returned validated trajectory; initialization, neural perception, simulator execution and final evidence flush measured separately",
+    "all_evidence_matches_completed_reports": true,
+    "all_frozen_models_unchanged": true
+  },
+  "paired_checks": {
+    "swept_open": "/home/zhaoyechong/projects/COOLAS-ARX/runs/bottle_latency_ms_20261026_122156/final_swept_paired_4090_collision.json",
+    "swept_closed": "/home/zhaoyechong/projects/COOLAS-ARX/runs/bottle_latency_ms_20261026_122156/final_closed_paired_collision.json",
+    "discrete_and_hard_validity": "/home/zhaoyechong/projects/COOLAS-ARX/runs/bottle_latency_ms_20261026_122156/discrete_shadow_collision.json",
+    "unknown_bounds_bypass_checked": true,
+    "numeric_tolerance": "1e-6 relative and 1e-6 absolute; unchanged during paired verification",
+    "initial_cross_compilation_check": {
+      "result": "numeric comparison failed; retained",
+      "file": "/home/zhaoyechong/projects/COOLAS-ARX/runs/bottle_latency_ms_20261026_122156/swept_bounds_equivalence.json",
+      "followup": "Same-kernel on/off tests isolate broad-phase behavior and pass the original numeric threshold. No tolerance was widened."
+    }
+  },
+  "limitations": [
+    "Different GPUs for A100 planning timing and RTX4090 physical execution; not a universal end-to-end latency claim.",
+    "Packaged simulator entrypoint passed installation/asset preflight; full cold container launch has not been rerun in this packaging check. Physical replay reused the already-running same-scene simulator mailbox.",
+    "Original 610-source historical guard and historical checkpoint SHA256 unavailable; retain unverified status.",
+    "Cross-compilation numeric comparison failed; same-kernel on/off comparison passed original threshold.",
+    "No per-stage configuration audits in normal mode; unevaluated audit fields remain null."
+  ]
+}

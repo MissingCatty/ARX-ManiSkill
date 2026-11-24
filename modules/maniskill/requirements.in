@@ -1,0 +1,7 @@
+# Core pins for the NVIDIA 580 driver / CUDA 12.8 installation.
+# Install torch from https://download.pytorch.org/whl/cu128 first.
+torch==2.7.1+cu128
+mani-skill==3.0.1
+sapien==3.0.3
+numpy==1.26.4
+opencv-python==4.11.0.86

@@ -1,0 +1,94 @@
+.experiment-introduction { padding: 24px; border: 1px solid #e0e6f4; border-radius: 14px; background: #fff; }
+.experiment-introduction h2,.experiment-section h2 { font-size: 1.24rem; margin-bottom: 14px; }
+.experiment-introduction p,.experiment-section > p { line-height: 1.9; font-size: .94rem; color: #56637a; }
+.experiment-overview-stats { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-top: 20px; margin-top: 20px; border-top: 1px solid #edf0f6; font-size: .82rem; color: #7b879b; }
+.experiment-overview-stats b { color: #344b83; font-size: 1rem; margin-right: 4px; }
+.experiment-overview-stats a { margin-left: auto; text-decoration: none; }
+.experiment-section { margin-block: 28px; }
+.experiment-context { color: #7b879b; font-size: .83rem !important; }
+.experiment-section .experiment-context { margin-top: 10px; }
+.experiment-tree { margin-top: 16px; border: 1px solid #e0e6f2; background: #fff; border-radius: 12px; }
+.experiment-tree summary { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 17px 20px; cursor: pointer; color: #405477; font-size: .9rem; list-style: none; }
+.experiment-tree summary::-webkit-details-marker { display: none; }
+.experiment-tree summary::before { content: '›'; font: 1.3rem system-ui,sans-serif; }
+.experiment-tree[open] summary::before { transform: rotate(90deg); }
+.experiment-tree summary > span { margin-right: auto; }
+.experiment-tree summary small { color: #8793a8; font-size: .75rem; }
+.experiment-tree > nav { padding: 0 20px 20px; }
+.experiment-tree-root { border-left: 3px solid #6580cf; padding: 7px 12px; color: #4c5f83; font-size: .9rem; margin: 4px 0 16px; }
+.experiment-branches { list-style: none; padding: 0 0 0 15px; margin: 0 0 0 9px; display: grid; gap: 12px; border-left: 1px solid #dce3f1; }
+.experiment-branches li { position: relative; min-width: 0; }
+.experiment-branches li::before { content: ''; position: absolute; width: 15px; height: 1px; background: #dce3f1; left: -15px; top: 28px; }
+.experiment-branches ul { list-style: none; padding: 14px 0 0 20px; display: grid; gap: 12px; }
+.experiment-node { display: block; text-decoration: none; padding: 16px 18px; border: 1px solid #e2e7f1; border-radius: 10px; background: #fbfcff; color: #344562; }
+.experiment-node:hover { border-color: #aabce9; background: #f3f6ff; }
+.experiment-node-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 9px; }
+.experiment-node-top > :last-child { color: #8792a6; font-size: .75rem; }
+.experiment-code { display: inline-block; font-family: system-ui,sans-serif; color: #4660b6; background: #edf1fd; padding: 3px 8px; border-radius: 6px; font-size: .77rem; font-weight: 650; white-space: nowrap; }
+.experiment-node strong { display: block; font-size: .94rem; }
+.experiment-node p { margin-top: 7px; font-size: .81rem; color: #738097; line-height: 1.8; }
+.experiment-node-archived { background: #f3f4f7; border-color: #e0e3e9; }
+.experiment-node-archived:hover { background: #edf0f5; border-color: #c7ceda; }
+.experiment-node-archived strong { color: #6c778c; }
+.experiment-node-top .experiment-node-archive-label { padding: 3px 8px; border-radius: 5px; color: #737e91; background: #e7eaf0; }
+.experiment-comparison table { min-width: 620px; }
+.experiment-comparison th,.experiment-comparison td { padding: 14px; font-size: .84rem; line-height: 1.8; }
+.experiment-comparison tbody th { width: 32%; }
+.experiment-comparison tbody th a { text-decoration: none; }
+.experiment-batches { display: grid; gap: 12px; }
+.experiment-batch { display: block; border: 1px solid #e4e9f3; border-radius: 11px; padding: 17px 19px; text-decoration: none; background: #fff; }
+.experiment-batch:hover { border-color: #bdcbed; background: #fcfdff; }
+.experiment-batch > div { display: flex; align-items: center; gap: 10px; color: #3e5278; }
+.experiment-batch strong { font-size: .9rem; font-weight: 600; }
+.experiment-batch > div > :last-child { margin-left: auto; }
+.experiment-batch p { color: #738097; font-size: .84rem; margin-top: 9px; line-height: 1.8; }
+.experiment-batch small { display: block; color: #98a1b2; font-size: .72rem; margin-top: 9px; overflow-wrap: anywhere; }
+.experiment-empty { padding: 20px; border: 1px dashed #dce3f0; border-radius: 10px; font-size: .88rem; color: #8390a6; }
+.experiment-version-switch { display: flex; flex-wrap: wrap; gap: 8px; margin-block: 16px 26px; }
+.experiment-version-switch a { display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px; border-radius: 8px; border: 1px solid #e0e6f2; font: 600 .82rem system-ui,'Site Chinese',sans-serif; text-decoration: none; background: #fff; }
+.experiment-version-switch a span { font: 400 .8rem 'Site Chinese',sans-serif; color: #7f8a9e; }
+.experiment-version-switch a[aria-current] { border-color: #b4c4f0; background: #eef3ff; }
+.experiment-archive-notice { display: flex; align-items: flex-start; gap: 16px; border: 1px solid #e4cda7; border-left: 4px solid #b78543; background: #fff8ed; border-radius: 11px; padding: 22px; margin-bottom: 24px; }
+.experiment-archive-icon { display: grid; place-items: center; flex: 0 0 40px; height: 40px; color: #946322; background: #f5e8d0; border-radius: 10px; }
+.experiment-archive-icon svg { width: 23px; height: 23px; }
+.experiment-archive-notice > div { min-width: 0; }
+.experiment-archive-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.experiment-archive-notice h2 { margin: 0; font-size: 1.05rem; color: #674a24; }
+.experiment-archive-badge { padding: 4px 8px; border: 1px solid #dfc69f; border-radius: 5px; color: #855d29; font-size: .73rem; line-height: 1.4; white-space: nowrap; }
+.experiment-archive-notice p { margin: 12px 0 0; color: #795f3d; font-size: .9rem; line-height: 1.9; }
+.experiment-archived-content { margin-block: 22px; border: 1px solid #dce1e9; border-radius: 12px; background: #f6f7f9; overflow: clip; }
+.experiment-archived-content > summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 22px; cursor: pointer; list-style: none; }
+.experiment-archived-content > summary::-webkit-details-marker { display: none; }
+.experiment-archived-content > summary:hover { background: #eef1f5; }
+.experiment-archived-content > summary:focus-visible { outline: 2px solid #536ac0; outline-offset: -4px; border-radius: 11px; }
+.experiment-archived-content > summary strong { display: block; color: #526077; font-size: .95rem; }
+.experiment-archived-content > summary small { display: block; margin-top: 6px; color: #707e93; font-size: .8rem; line-height: 1.7; }
+.experiment-archive-toggle { display: inline-flex; align-items: center; gap: 10px; flex-shrink: 0; color: #536481; font-size: .82rem; }
+.experiment-archive-toggle svg { width: 18px; height: 18px; }
+.experiment-archived-content:not([open]) .archive-collapse,.experiment-archived-content[open] .archive-expand { display: none; }
+.experiment-archived-content[open] .experiment-archive-toggle svg { transform: rotate(90deg); }
+.experiment-archived-body { padding: 24px 22px; border-top: 1px solid #e0e5ed; background: #fff; }
+.experiment-archived-body > :first-child { margin-top: 0; }
+.experiment-archived-body > :last-child { margin-bottom: 0; }
+.experiment-archives { margin-top: 24px; border-top: 1px solid #e5e9f1; padding-top: 18px; }
+.experiment-archives summary { cursor: pointer; font-size: .88rem; color: #7a859a; }
+.experiment-archives > .version-list { margin-top: 14px; }
+.experiment-result { padding: 18px; background: #f0f4fd; border-left: 3px solid #8298d8; border-radius: 6px; color: #405683 !important; }
+.experiment-evidence { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 20px; font-size: .86rem; }
+.experiment-output-paths { padding-left: 20px; font-size: .85rem; color: #6d7890; overflow-wrap: anywhere; line-height: 1.9; }
+.experiment-summary-separator { margin: 32px 0 22px; padding-top: 24px; border-top: 1px solid #e3e8f1; }
+@media(max-width:600px) {
+ .experiment-introduction { padding: 20px; }
+ .experiment-tree summary { padding-inline: 14px; }
+ .experiment-tree > nav { padding-inline: 12px; }
+ .experiment-overview-stats { gap: 12px 18px; }
+ .experiment-overview-stats a { margin-left: 0; }
+ .experiment-batch { padding: 14px; }
+ .experiment-version-switch a span { display: none; }
+ .experiment-archive-notice { padding: 18px 16px; gap: 12px; }
+ .experiment-archive-icon { flex-basis: 34px; height: 34px; border-radius: 8px; }
+ .experiment-archive-notice h2 { font-size: 1rem; }
+ .experiment-archived-content > summary { padding: 18px 16px; gap: 10px; }
+ .experiment-archive-toggle { gap: 5px; font-size: .75rem; }
+ .experiment-archived-body { padding: 20px 16px; }
+}

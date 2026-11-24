@@ -1,0 +1,86 @@
+{
+  "id": "D0022_S1_open_yogurt",
+  "model_id": "robocasa__yogurt__yogurt_1",
+  "semantic_class": "yogurt",
+  "family": "yogurt",
+  "target_text": "yogurt",
+  "layout": "S1_open",
+  "seed": 4201366817,
+  "actor_identities": [
+    {
+      "name": "target",
+      "model_id": "robocasa__yogurt__yogurt_1"
+    }
+  ],
+  "scene": {
+    "layout": "S1_open",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__yogurt__yogurt_1",
+        "pose": [
+          -0.4197115898132324,
+          0.03179997578263283,
+          0.02553393691778183,
+          0.7660054564476013,
+          1.0788440704345703e-05,
+          -1.5987548977136612e-05,
+          -0.6428340077400208
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 2477,
+    "isolated_mask_pixels": 2477,
+    "occlusion_fraction": 0.0,
+    "projected_bbox_uv": [
+      [
+        423.4012359700217,
+        261.51429850834785
+      ],
+      [
+        501.09810932217954,
+        329.32903752930633
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.5740000000000001,
+    "visible_pixels": 2477,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "observation": null,
+  "physical_grasp_attempts": 0
+}

@@ -1,0 +1,100 @@
+{
+  "batch": "arx_physical_table_parallel_20261118_01",
+  "created_at": "2026-11-18T16:36:43.698175+08:00",
+  "source_directory": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01",
+  "source_files": [
+    {
+      "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/independent_case_metrics.json",
+      "sha256": "d98795ed4d71ced0520ebf4fcf048e32fb1d9b40a44b9f22d448b8555ba3f89f"
+    },
+    {
+      "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/independent_metrics.json",
+      "sha256": "1e170fe26d4aa115bf8d7bb2a9ae0124a96817d23797b5dd1ffe63e5519ac3be"
+    },
+    {
+      "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/final_verification.json",
+      "sha256": "e8981b70f0a8de329a23912b7e85b90c5cedb893c7cecfb9ca49dacee9ef815b"
+    },
+    {
+      "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/fixed_zerograsp/summary.json",
+      "sha256": "fa06956702249fa0d695658aec6a3a70a143fc8a169b79fdc6ad42f672e802f7"
+    },
+    {
+      "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/fixed_graspcl/summary.json",
+      "sha256": "eabcf0172d96be36e58e46dd529bd2f9d11f626df7770c3d50d779d5295d4f88"
+    }
+  ],
+  "checks": {
+    "both_arms_complete": true,
+    "each_arm_unique_cases": 200,
+    "same_scene_model_seed_for_each_pair": true,
+    "all_400_success_labels_match_independent_evaluation": true,
+    "final_verification_passed": true,
+    "repeated_validation_cases_included": false
+  },
+  "successes": {
+    "fixed_zerograsp": 105,
+    "fixed_graspcl": 127
+  },
+  "by_layout": {
+    "S1_open": {
+      "name": "开阔桌面",
+      "registered": 40,
+      "zerograsp_successes": 20,
+      "graspcl_successes": 28,
+      "paired": {
+        "仅GraspCL成功": 12,
+        "两者都失败": 8,
+        "两者都成功": 16,
+        "仅ZeroGrasp成功": 4
+      }
+    },
+    "S2_edge": {
+      "name": "靠近桌边",
+      "registered": 40,
+      "zerograsp_successes": 32,
+      "graspcl_successes": 32,
+      "paired": {
+        "两者都成功": 29,
+        "两者都失败": 5,
+        "仅GraspCL成功": 3,
+        "仅ZeroGrasp成功": 3
+      }
+    },
+    "S3_sparse": {
+      "name": "稀疏混放",
+      "registered": 40,
+      "zerograsp_successes": 23,
+      "graspcl_successes": 29,
+      "paired": {
+        "两者都失败": 8,
+        "两者都成功": 20,
+        "仅ZeroGrasp成功": 3,
+        "仅GraspCL成功": 9
+      }
+    },
+    "S4_clutter": {
+      "name": "中度杂乱",
+      "registered": 40,
+      "zerograsp_successes": 26,
+      "graspcl_successes": 31,
+      "paired": {
+        "两者都成功": 24,
+        "仅GraspCL成功": 7,
+        "两者都失败": 7,
+        "仅ZeroGrasp成功": 2
+      }
+    },
+    "S5_occluded": {
+      "name": "部分遮挡",
+      "registered": 40,
+      "zerograsp_successes": 4,
+      "graspcl_successes": 7,
+      "paired": {
+        "两者都失败": 33,
+        "仅GraspCL成功": 3,
+        "两者都成功": 4
+      }
+    }
+  }
+}

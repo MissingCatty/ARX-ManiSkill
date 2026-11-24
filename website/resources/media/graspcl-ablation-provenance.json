@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "registered_collection_scenes": 50,
+  "clean_feedback_points": 41,
+  "positive": 39,
+  "negative": 2,
+  "excluded_without_clean_label": 9,
+  "same_pretrained_encoder_and_offline_memory": true,
+  "historical_arx_feedback": 0,
+  "test_images_clouds_feedback_or_templates_added": 0,
+  "category_model_mesh_intersections": 0,
+  "banks": {
+    "no_experience": "e2d9ca7d4e96874014bc908b31d19ca286baae2a5b8d72182e29eadf15c6210d",
+    "experience50": "95076d232f5be84a7a2ee09a089456223c7f8142333d9eecf678b14318e35d0d"
+  }
+}

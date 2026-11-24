@@ -1,0 +1,16 @@
+[Unit]
+Description=CLARO-ARX 内网进度与成果网站
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/zhaoyechong/projects/ARX-ManiSkill/website
+Environment=CLARO_PORT=8786
+Environment=CLARO_MDNS_NAME=claro-arx.local
+ExecStart=/home/zhaoyechong/.nvm/versions/node/v22.23.2/bin/node server.mjs
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/graspnet/anygrasp_sdk",
+  "revision": "b8eaafc9eca7babd5208e7a5ade3c561060be4c5",
+  "files_sha256": {
+    "README.md": "7cfc75a709d250b6bf5ac0e3972725ab0d068d88312e2902cef80bea39f7d187",
+    "grasp_detection/README.md": "27c81595e846ae5f8d877a7dda77725425e23ea713e0b6d8ef36a930f6c90564",
+    "grasp_detection/USAGE.md": "326c588e03af3b65928c13be720263c5349409babf427717d3df26069ea69322",
+    "grasp_detection/demo.py": "5a58b8ff470bfb03234b851375911de7ddb2a8c1777caea98e902e24b9df3e2a",
+    "grasp_detection/demo.sh": "3545bc17bb9a03f3d219e0423dd7a524748cb3dcb5ae64dbec16b8f2e407b0e2",
+    "grasp_detection/gsnet_versions/gsnet.cpython-311-x86_64-linux-gnu.so": "b22b0c358b6be28fe3dac07b45f7c1458bb917acda6f5b56bab52d8208704b91",
+    "license_registration/README.md": "0cac1f6d72873f5337cc475fe680ecbb72ebc150c4f942221f134baf9603a936",
+    "requirements.txt": "68d3e9030de58d3c9efe37bed07d6e517d7c997e76ece9d1fa3b7aa48dca6511",
+    "pointnet2/setup.py": "d1b9195a46a6bc5a81fe5570c40f6d00768c69d0123e69940b174ae209b03c69"
+  },
+  "license_included": false,
+  "weights_included": false
+}

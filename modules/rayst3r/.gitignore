@@ -1,0 +1,14 @@
+*.out
+slurm/
+*.pyc
+*.png
+!assets/*.png
+!example_scene/*.png
+*.mtl
+*.obj
+*.ply
+*.pth
+**/build/**
+*.so
+wandb**
+logs

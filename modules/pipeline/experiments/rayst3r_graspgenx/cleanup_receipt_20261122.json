@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-22T17:53:58.121662+08:00",
+  "authorization": "User requested deletion of this 160-case batch results and reconstruction of 5x40 scenes for the current head perception pipeline.",
+  "deleted": [
+    {
+      "path": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/rayst3r_graspgenx/runs/fixed452_160_20261122_01",
+      "files": 175,
+      "bytes": 2305591
+    },
+    {
+      "path": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/rayst3r_graspgenx/runs/fixed452_160_20261122_02",
+      "files": 9120,
+      "bytes": 1760548350
+    }
+  ],
+  "deleted_bytes": 1762853941,
+  "kept": [
+    "source code",
+    "weights",
+    "earlier historical benchmarks",
+    "completed five-model pointcloud comparison"
+  ],
+  "new_grasp_trials_started": 0
+}

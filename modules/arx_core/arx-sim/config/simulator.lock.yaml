@@ -1,0 +1,4 @@
+simulator:
+  product: Isaac Sim
+  version_prefix: 6.0.1
+  version_file: VERSION

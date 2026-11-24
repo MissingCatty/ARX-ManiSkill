@@ -1,0 +1,56 @@
+category: grasping
+experiences:
+- id: green_cuboid_zerograsp_success_single_sample_1
+  title: green cuboid 单次成功抓取：ZeroGrasp 方案通过安全检查后可执行并保持回 home 稳定夹持
+  description: 在一次成功样本中，目标 green cuboid 在初始 RGB/分割中可见，ZeroGrasp 为其生成了抓取方案；规划中的 safety_passed=true，未记录安全失败项。该方案使用了一个带姿态约束的接近位姿与目标位姿，advance_depth_m
+    为 0.01650407910346985 m，抓取评分 score 为 0.13126502931118011，目标夹爪宽度相关值 width_m 为 0.026773769408464432。执行后评估通过：抓取后返回
+    home 前图像中目标已位于夹爪之间并被明显夹持，返回 home 后图像中夹爪仍夹着同一绿色长方体，说明该次抓取在回 home 后保持了稳定夹持。该经验仅表示此类条件下曾成功，不代表固定最优或必要参数。
+  tags:
+  - grasping
+  - zerograsp
+  - green_cuboid
+  - safety_passed
+  - home_stable
+  - single_sample
+  references:
+    run_id: 1b1597fe0ec6
+    report_path: /home/arx/workspace/xufangjin/COOLAS-ARX/runs/brain/run_1b1597fe0ec6/artifacts/step_01_brain_grasp_1b1597fe0ec6/run_report.json
+  applicability:
+    platform_model: ARX-LIFT2
+    arm_model: ARX-X5
+    object: green cuboid
+    context: 目标在 RGB 图像中清晰可见、分割覆盖正确、无明显遮挡时的单次成功抓取样本
+    limits: 仅有一次成功样本；不应外推为固定最佳抓取深度、评分阈值或位姿参数
+  evidence:
+  - result: SUCCEEDED
+    observation:
+      zero_grasp:
+        score: 0.13126502931118011
+        width_m: 0.026773769408464432
+        depth_m: 0.01650407910346985
+        target_gripper: -3.2
+        fixed_open_gripper: true
+      safety:
+        passed: true
+        failures: []
+      poses:
+        approach_pose:
+        - 0.39384396446012676
+        - -0.003642085592857014
+        - 0.15434542273826413
+        - 0.3292078356842906
+        - 1.0239962892832808
+        - 0.2682008060055881
+        target_pose:
+        - 0.4021185646363703
+        - -0.0013680426417288982
+        - 0.1402477582881832
+        - 0.3292078356842906
+        - 1.0239962892832808
+        - 0.2682008060055881
+      execution:
+        pre_home_capture: 夹爪之间已明显夹持绿色长方体
+        post_home_capture: 返回 home 后仍由夹爪夹持同一绿色长方体
+    run_id: 1b1597fe0ec6
+  confidence: 0.86
+  updated_at: '2026-07-02T02:54:22.444937+00:00'

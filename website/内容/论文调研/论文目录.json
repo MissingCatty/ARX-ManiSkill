@@ -1,0 +1,232 @@
+{
+  "modules": [
+    {
+      "id": "grasp-generation",
+      "title": "抓取生成",
+      "description": "从 RGB-D 与目标几何产生六自由度抓取候选。"
+    },
+    {
+      "id": "grasp-learning",
+      "title": "示教与经验学习",
+      "description": "通过示教召回和执行经验扩充、重排候选。"
+    },
+    {
+      "id": "perception",
+      "title": "感知与实例定位",
+      "description": "将物体描述与图像中的具体实例绑定。"
+    },
+    {
+      "id": "task-planning",
+      "title": "任务编排与移障",
+      "description": "根据场景变化选择操作、重新观测和重抓。"
+    },
+    {
+      "id": "motion-planning",
+      "title": "运动规划与控制",
+      "description": "根据机器人运动学、场景碰撞与测量状态生成和跟踪轨迹。"
+    }
+  ],
+  "papers": [
+    {
+      "id": "zerograsp",
+      "name": "ZeroGrasp",
+      "title": "ZeroGrasp: Zero-Shot Shape Reconstruction Enabled Robotic Grasping",
+      "authors": "Shun Iwase 等",
+      "year": 2025,
+      "venue": "CVPR 2025",
+      "modules": [
+        "grasp-generation"
+      ],
+      "versions": [
+        "baseline",
+        "graspcl",
+        "mpc",
+        "claro",
+        "lift452",
+        "joint7",
+        "pointcloud-models"
+      ],
+      "status": "已接入",
+      "summary": "联合重建物体形状与预测抓取，通过重建几何细化候选。",
+      "source": "https://arxiv.org/abs/2504.10857",
+      "fulltext": "https://arxiv.org/html/2504.10857v1",
+      "verifiedAt": "2026-11-19",
+      "file": "ZeroGrasp方法.md"
+    },
+    {
+      "id": "curobo",
+      "name": "cuRobo",
+      "title": "cuRobo: Parallelized Collision-Free Minimum-Jerk Robot Motion Generation",
+      "authors": "Balakumar Sundaralingam 等",
+      "year": 2023,
+      "venue": "技术报告",
+      "modules": [
+        "motion-planning"
+      ],
+      "versions": [
+        "baseline",
+        "graspcl",
+        "mpc",
+        "claro",
+        "lift452",
+        "joint7",
+        "sam3-graspgenx",
+        "pointcloud-models"
+      ],
+      "status": "已接入",
+      "summary": "在 GPU 上并行求解逆运动学、碰撞检查和轨迹优化，将末端目标转换为机械臂运动。",
+      "source": "https://arxiv.org/abs/2310.17274",
+      "fulltext": "https://arxiv.org/html/2310.17274v2",
+      "verifiedAt": "2026-11-20",
+      "file": "cuRobo方法.md"
+    },
+    {
+      "id": "graspcl",
+      "name": "GraspCL",
+      "title": "Continual Learning for 6-DoF Grasp Synthesis via Experience and Demonstrations",
+      "authors": "Giulio Schiavi、Andrei Cramariuc、Michael Pantic、Roland Siegwart",
+      "year": 2026,
+      "venue": "CoRL 2026",
+      "modules": [
+        "grasp-learning",
+        "grasp-generation"
+      ],
+      "versions": [
+        "graspcl",
+        "mpc",
+        "lift452",
+        "joint7"
+      ],
+      "status": "已接入",
+      "summary": "在学习到的嵌入空间中积累成功与失败证据，并迁移示教抓法。",
+      "source": "https://arxiv.org/abs/2610.01301",
+      "fulltext": "https://arxiv.org/html/2610.01301v1",
+      "verifiedAt": "2026-11-19",
+      "file": "GraspCL方法.md"
+    },
+    {
+      "id": "sam3",
+      "name": "SAM 3",
+      "title": "SAM 3: Segment Anything with Concepts",
+      "authors": "Nicolas Carion 等",
+      "year": 2025,
+      "venue": "ICLR 2026 · 预印本 2025",
+      "modules": [
+        "perception"
+      ],
+      "versions": [
+        "claro",
+        "sam3-graspgenx",
+        "pointcloud-models"
+      ],
+      "status": "阶段验证",
+      "summary": "利用概念或视觉提示生成实例掩码，并支持跨帧身份跟踪。",
+      "source": "https://arxiv.org/abs/2511.16719",
+      "fulltext": "https://arxiv.org/html/2511.16719v1",
+      "verifiedAt": "2026-11-19",
+      "file": "SAM3方法.md"
+    },
+    {
+      "id": "claro",
+      "name": "CLARO",
+      "title": "CLARO: Clutter Aware Robot Orchestrator for Open-Vocabulary Grasping using VLM Agents",
+      "authors": "Sungsu Kim、Vineet Bhat、Prashanth Krishnamurthy、Ramesh Karri、Farshad Khorrami",
+      "year": 2026,
+      "venue": "WACV 2027 · 预印本 2026",
+      "modules": [
+        "task-planning",
+        "perception"
+      ],
+      "versions": [
+        "claro"
+      ],
+      "status": "阶段验证",
+      "summary": "以场景图、操作历史和工具回执驱动移障、重新感知与任务重规划。",
+      "source": "https://arxiv.org/abs/2610.24016v2",
+      "fulltext": "https://arxiv.org/html/2610.24016v2",
+      "verifiedAt": "2026-11-19",
+      "file": "CLARO方法.md"
+    },
+    {
+      "id": "graspgenx",
+      "name": "GraspGenX",
+      "title": "GraspGen-X: Cross-Embodiment 6-DOF Diffusion-based Grasping",
+      "authors": "Beining Han 等",
+      "year": 2026,
+      "venue": "CVPR 2026",
+      "modules": [
+        "grasp-generation"
+      ],
+      "versions": [
+        "sam3-graspgenx",
+        "pointcloud-models"
+      ],
+      "status": "已有组件 · 新主线待联调",
+      "summary": "用夹爪闭合扫掠体表示条件，基于目标点云生成并评分跨夹爪六自由度抓法。",
+      "source": "https://graspgenx.github.io/",
+      "fulltext": "https://arxiv.org/html/2606.00998v1",
+      "verifiedAt": "2026-11-22",
+      "file": "GraspGenX方法.md"
+    },
+    {
+      "id": "rayst3r",
+      "name": "RaySt3R",
+      "title": "RaySt3R: Predicting Novel Depth Maps for Zero-Shot Object Completion",
+      "authors": "Bardienus P. Duisterhof、Jan Oberst、Bowen Wen、Stan Birchfield、Deva Ramanan、Jeffrey Ichnowski",
+      "year": 2025,
+      "venue": "NeurIPS 2025",
+      "source": "https://rayst3r.github.io/",
+      "fulltext": "https://arxiv.org/html/2506.05285",
+      "file": "RaySt3R.md",
+      "summary": "根据单帧目标RGB-D预测多个新视角的深度、掩码和置信度，融合生成完整物体点云。",
+      "modules": [
+        "perception"
+      ],
+      "versions": [
+        "pointcloud-models"
+      ],
+      "status": "已接入离线重建评测",
+      "verifiedAt": "2026-11-22"
+    },
+    {
+      "id": "hunyuan3d-2",
+      "name": "Hunyuan3D-2",
+      "title": "Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation",
+      "authors": "Tencent Hunyuan3D Team",
+      "year": 2025,
+      "venue": "技术报告",
+      "source": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+      "fulltext": "https://arxiv.org/html/2501.12202",
+      "file": "Hunyuan3D-2.md",
+      "summary": "单图条件扩散生成形状，再生成纹理；本实验比较Mini-Turbo和Turbo的形状分支。",
+      "modules": [
+        "perception"
+      ],
+      "versions": [
+        "pointcloud-models"
+      ],
+      "status": "已接入离线重建评测",
+      "verifiedAt": "2026-11-22"
+    },
+    {
+      "id": "spar3d",
+      "name": "SPAR3D",
+      "title": "SPAR3D: Stable Point-Aware Reconstruction of 3D Objects from Single Images",
+      "authors": "Zixuan Huang、Mark Boss、Aaryaman Vasishta、James M. Rehg、Varun Jampani",
+      "year": 2025,
+      "venue": "技术报告",
+      "source": "https://spar3d.github.io/",
+      "fulltext": "https://arxiv.org/html/2501.04689",
+      "file": "SPAR3D.md",
+      "summary": "先生成稀疏点云，再结合图像和点云恢复网格，用中间几何条件辅助单图重建。",
+      "modules": [
+        "perception"
+      ],
+      "versions": [
+        "pointcloud-models"
+      ],
+      "status": "已接入离线重建评测",
+      "verifiedAt": "2026-11-22"
+    }
+  ]
+}

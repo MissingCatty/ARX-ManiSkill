@@ -1,0 +1,4 @@
+FROM nvcr.io/nvidia/isaac-sim:6.0.1
+ENV ACCEPT_EULA=Y OMNI_KIT_ALLOW_ROOT=1
+COPY arx-sim/requirements.txt /tmp/arx-sim-requirements.txt
+RUN /isaac-sim/python.sh -m pip install --no-cache-dir -r /tmp/arx-sim-requirements.txt

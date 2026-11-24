@@ -1,0 +1,224 @@
+diff --git a/curobo/_src/geom/collision/wp_collision_common.py b/curobo/_src/geom/collision/wp_collision_common.py
+index 428b2a5..eb84d1d 100644
+--- a/curobo/_src/geom/collision/wp_collision_common.py
++++ b/curobo/_src/geom/collision/wp_collision_common.py
+@@ -1,8 +1,13 @@
+ # SPDX-FileCopyrightText: Copyright (c) 2023-2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+ # SPDX-License-Identifier: Apache-2.0
++# Standard Library
++from typing import Any
++
+ # Third Party
+ import warp as wp
+ 
++from curobo._src.geom.data.data_mesh import MeshDataWarp
++
+ # =============================================================================
+ # Collision Activation Function
+ # =============================================================================
+@@ -128,3 +133,35 @@ def process_collision_result(
+         weighted_grad = weight * activation_result[1] * grad_world
+         accumulate_collision(sph_flat_idx, weighted_cost, weighted_grad, distance, gradient)
+ 
++
++
++@wp.func
++def swept_bounds_overlap(
++    obs: Any, env_idx: int, obs_idx: int, current: wp.vec3,
++    previous: wp.vec3, following: wp.vec3, radius: float,
++) -> bool:
++    """Keep the existing narrow phase for obstacle types without mesh bounds."""
++    return True
++
++
++@wp.func
++def swept_bounds_overlap(
++    obs: MeshDataWarp, env_idx: int, obs_idx: int, current: wp.vec3,
++    previous: wp.vec3, following: wp.vec3, radius: float,
++) -> bool:
++    """Reject only when both entire neighbor segments miss the expanded mesh AABB."""
++    if obs.use_swept_bounds == 0:
++        return True
++    idx = env_idx * obs.max_n + obs_idx
++    # Outward padding absorbs float32 transform/interpolation roundoff. It only
++    # retains extra narrow-phase queries; collision margins remain unchanged.
++    padding = wp.max(radius, 0.0) + 0.00001
++    for axis in range(3):
++        lower = wp.min(current[axis], wp.min(previous[axis], following[axis]))
++        upper = wp.max(current[axis], wp.max(previous[axis], following[axis]))
++        roundoff = 0.000001 * wp.max(wp.abs(lower), wp.abs(upper))
++        if upper < obs.bounds_lower[idx, axis] - padding - roundoff:
++            return False
++        if lower > obs.bounds_upper[idx, axis] + padding + roundoff:
++            return False
++    return True
+diff --git a/curobo/_src/geom/collision/wp_collision_kernel.py b/curobo/_src/geom/collision/wp_collision_kernel.py
+index 0b0ec92..f466303 100644
+--- a/curobo/_src/geom/collision/wp_collision_kernel.py
++++ b/curobo/_src/geom/collision/wp_collision_kernel.py
+@@ -40,6 +40,7 @@ from curobo._src.geom.collision.wp_collision_common import (
+     accumulate_collision,
+     apply_collision_activation,
+     load_sphere_query,
++    swept_bounds_overlap,
+ )
+ from curobo._src.geom.data.registry import OBSTACLE_SDF_MODULES
+ 
+@@ -144,6 +145,10 @@ def sphere_obstacle_collision_kernel(
+ 
+     # Transform sphere center to local frame
+     local_pt = wp.transform_point(inv_t, query.center)
++    if not swept_bounds_overlap(
++        obs_set, env_idx, obs_local_idx, local_pt, local_pt, local_pt, radius_adjusted
++    ):
++        return
+ 
+     # Compute local SDF and gradient
+     local_result = compute_local_sdf_with_grad(
+diff --git a/curobo/_src/geom/collision/wp_sweep_collision_kernel.py b/curobo/_src/geom/collision/wp_sweep_collision_kernel.py
+index 1f3a55f..8db1c84 100644
+--- a/curobo/_src/geom/collision/wp_sweep_collision_kernel.py
++++ b/curobo/_src/geom/collision/wp_sweep_collision_kernel.py
+@@ -46,6 +46,7 @@ from curobo._src.geom.collision.wp_collision_common import (
+     accumulate_collision,
+     apply_collision_activation,
+     load_sphere_query,
++    swept_bounds_overlap,
+ )
+ from curobo._src.geom.data.registry import OBSTACLE_SDF_MODULES
+ 
+@@ -173,6 +174,23 @@ def swept_sphere_obstacle_collision_kernel(
+     # After this, query.center is no longer needed - sweep distances
+     # are computed in local frame (rigid transforms preserve distances).
+     local_current = wp.transform_point(inv_t, query.center)
++    local_previous = local_current
++    local_following = local_current
++    if h_idx > 0:
++        previous_sphere = spheres[sph_flat_idx - num_spheres]
++        local_previous = wp.transform_point(
++            inv_t, wp.vec3(previous_sphere[0], previous_sphere[1], previous_sphere[2])
++        )
++    if h_idx < horizon - 1:
++        following_sphere = spheres[sph_flat_idx + num_spheres]
++        local_following = wp.transform_point(
++            inv_t, wp.vec3(following_sphere[0], following_sphere[1], following_sphere[2])
++        )
++    if not swept_bounds_overlap(
++        obs, env_idx, obs_local_idx, local_current, local_previous,
++        local_following, radius_adjusted,
++    ):
++        return
+ 
+     # Process current timestep
+     current_sdf_result = compute_local_sdf_with_grad(
+@@ -191,10 +209,7 @@ def swept_sphere_obstacle_collision_kernel(
+     # 1. Avoid per-step quaternion rotations (lerp in local space)
+     # 2. Free query.center registers (rigid transforms preserve distances)
+     if h_idx > 0 and SWEEP_STEPS > 0:
+-        prev_sphere = spheres[sph_flat_idx - num_spheres]
+-        local_prev = wp.transform_point(
+-            inv_t, wp.vec3(prev_sphere[0], prev_sphere[1], prev_sphere[2])
+-        )
++        local_prev = local_previous
+         half_dist = wp.length(local_prev - local_current) * 0.5
+         inv_half_dist = 1.0 / wp.max(half_dist, 0.001)
+         jump = wp.float32(0.0)
+@@ -228,10 +243,7 @@ def swept_sphere_obstacle_collision_kernel(
+ 
+     # Sweep toward h+1 (next timestep)
+     if h_idx < horizon - 1 and SWEEP_STEPS > 0:
+-        next_sphere = spheres[sph_flat_idx + num_spheres]
+-        local_next = wp.transform_point(
+-            inv_t, wp.vec3(next_sphere[0], next_sphere[1], next_sphere[2])
+-        )
++        local_next = local_following
+         half_dist = wp.length(local_next - local_current) * 0.5
+         inv_half_dist = 1.0 / wp.max(half_dist, 0.001)
+         jump = wp.float32(0.0)
+diff --git a/curobo/_src/geom/data/data_mesh.py b/curobo/_src/geom/data/data_mesh.py
+index fcf9811..bca4b8d 100644
+--- a/curobo/_src/geom/data/data_mesh.py
++++ b/curobo/_src/geom/data/data_mesh.py
+@@ -14,6 +14,7 @@ from __future__ import annotations
+ 
+ # Standard Library
+ from dataclasses import dataclass, field
++import os
+ from typing import Dict, List, Optional, Tuple
+ 
+ # Third Party
+@@ -126,11 +127,24 @@ class MeshData:
+     #: Maximum query distance for mesh SDF computation.
+     max_dist: float = 0.1
+ 
++    #: Derived local mesh bounds for conservative swept-query broad phase.
++    bounds_lower: Optional[torch.Tensor] = None
++    #: Upper local bounds; unknown external geometry uses infinite bounds.
++    bounds_upper: Optional[torch.Tensor] = None
++    #: Opt-in for immutable cached mesh geometry; dynamic external handles bypass it.
++    use_swept_bounds: bool = field(
++        default_factory=lambda: os.environ.get("CUROBO_SWEPT_MESH_BOUNDS", "0") == "1"
++    )
++
+     #: Warp device for mesh loading.
+     _wp_device: wp.context.Device = field(repr=False, default=None)
+ 
+     def __post_init__(self):
+         """Initialize Warp device after dataclass creation."""
++        if self.bounds_lower is None:
++            self.bounds_lower = torch.full_like(self.dims[..., :3], -torch.inf)
++        if self.bounds_upper is None:
++            self.bounds_upper = torch.full_like(self.dims[..., :3], torch.inf)
+         if self._wp_device is None:
+             object.__setattr__(
+                 self, "_wp_device", wp.device_from_torch(self.device_cfg.device)
+@@ -322,6 +336,8 @@ class MeshData:
+             # Compute bounding box dimensions from mesh bounds
+             lower, upper = mesh_data.get_bounds()
+             dims_list[i] = upper - lower
++            self.bounds_lower[env_idx, i] = lower
++            self.bounds_upper[env_idx, i] = upper
+ 
+         pose_buffer = Pose.from_batch_list(pose_list, self.device_cfg)
+         inv_pose_buffer = pose_buffer.inverse()
+@@ -361,6 +377,8 @@ class MeshData:
+ 
+         self.mesh_ids[env_idx, current_count] = mesh_data.mesh_id
+         self.dims[env_idx, current_count, :3] = mesh_dims
++        self.bounds_lower[env_idx, current_count] = lower
++        self.bounds_upper[env_idx, current_count] = upper
+         self.inv_pose[env_idx, current_count, :7] = obj_w_pose.get_pose_vector()
+         self.enable[env_idx, current_count] = 1
+         self.names[env_idx][current_count] = mesh_data.name
+@@ -437,6 +455,10 @@ class MeshData:
+                 self.count[env_idx] = mesh_idx + 1
+ 
+         self.mesh_ids[env_idx, mesh_idx] = warp_mesh_id
++        # External mesh handles can replace geometry without supplying bounds.
++        # Disable the broad phase for this slot rather than reuse stale bounds.
++        self.bounds_lower[env_idx, mesh_idx] = -torch.inf
++        self.bounds_upper[env_idx, mesh_idx] = torch.inf
+         self.inv_pose[env_idx, mesh_idx, :7] = obj_w_pose.get_pose_vector()
+         self.enable[env_idx, mesh_idx] = 1
+         self.names[env_idx][mesh_idx] = name
+@@ -511,6 +533,9 @@ class MeshData:
+ 
+         s = MeshDataWarp()
+         s.mesh_ids = wp.from_torch(self.mesh_ids.view(-1), dtype=wp.uint64)
++        s.use_swept_bounds = int(self.use_swept_bounds)
++        s.bounds_lower = wp.from_torch(self.bounds_lower.view(-1, 3), dtype=wp.float32)
++        s.bounds_upper = wp.from_torch(self.bounds_upper.view(-1, 3), dtype=wp.float32)
+         s.dims = wp.from_torch(self.dims.view(-1, 4), dtype=wp.float32)
+         s.inv_pose = wp.from_torch(self.inv_pose.view(-1, 8), dtype=wp.float32)
+         s.enable = wp.from_torch(self.enable.view(-1), dtype=wp.uint8)
+@@ -542,6 +567,10 @@ class MeshDataWarp:
+     """
+ 
+     mesh_ids: wp.array(dtype=wp.uint64)
++    use_swept_bounds: wp.int32
++    #: Exact local vertex bounds, used only to reject provably disjoint sweeps.
++    bounds_lower: wp.array2d(dtype=wp.float32)
++    bounds_upper: wp.array2d(dtype=wp.float32)
+     dims: wp.array2d(dtype=wp.float32)
+     inv_pose: wp.array2d(dtype=wp.float32)
+     enable: wp.array(dtype=wp.uint8)

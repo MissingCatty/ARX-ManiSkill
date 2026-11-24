@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "entry": {
+    "id": "D0108_S3_sparse_croissant",
+    "model_id": "robocasa__croissant__croissant_0",
+    "semantic_class": "croissant",
+    "family": "croissant",
+    "target_text": "croissant",
+    "layout": "S3_sparse",
+    "seed": 3361995542,
+    "actor_identities": [
+      {
+        "name": "target",
+        "model_id": "robocasa__croissant__croissant_0"
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__spatula__spatula_0"
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__yogurt__yogurt_2"
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "ai2thor__book__Book_10"
+      }
+    ],
+    "scene": {
+      "layout": "S3_sparse",
+      "actors": [
+        {
+          "name": "target",
+          "model_id": "robocasa__croissant__croissant_0",
+          "pose": [
+            -0.3037077784538269,
+            0.005404869094491005,
+            0.02065907046198845,
+            0.0840068981051445,
+            -2.4456530809402466e-06,
+            -4.4863554649055004e-07,
+            0.996465265750885
+          ]
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__spatula__spatula_0",
+          "pose": [
+            -0.21358193457126617,
+            -0.18369819223880768,
+            0.017101909965276718,
+            0.703072190284729,
+            -2.988032065331936e-05,
+            3.064400516450405e-05,
+            0.7111184597015381
+          ]
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__yogurt__yogurt_2",
+          "pose": [
+            -0.4304920434951782,
+            0.36635634303092957,
+            0.02102081850171089,
+            0.8822945952415466,
+            3.7509016692638397e-06,
+            2.855667844414711e-06,
+            0.47069793939590454
+          ]
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__book__Book_10",
+          "pose": [
+            -0.14625059068202972,
+            0.3579486012458801,
+            0.001656239852309227,
+            0.1590414196252823,
+            -2.1195759472902864e-05,
+            1.1721755981852766e-05,
+            -0.9872720241546631
+          ]
+        }
+      ],
+      "perception_camera": "head"
+    },
+    "admission": {
+      "target_mask_pixels": 2364,
+      "isolated_mask_pixels": 2364,
+      "occlusion_fraction": 0.0,
+      "projected_bbox_uv": [
+        [
+          407.3835729321518,
+          211.32428048203184
+        ],
+        [
+          515.4296390271898,
+          273.85310115111093
+        ]
+      ],
+      "fully_in_frame": true,
+      "admitted_view": true,
+      "valid_target_depth_fraction": 1.0,
+      "target_depth_median_m": 0.659,
+      "visible_pixels": 2364,
+      "border_clear": true
+    },
+    "camera": "head",
+    "robot_initial_q": [
+      0.4519999921321869,
+      -1.0728319921327056e-06,
+      -0.00020593733643181622,
+      2.5863868359010667e-05,
+      2.7094700271845795e-05,
+      0.0,
+      0.0,
+      -0.24871869385242462,
+      -0.24505318701267242,
+      -0.0005250244867056608,
+      0.00040246330900117755,
+      -0.0027694408781826496,
+      -0.0016749418573454022,
+      6.499443770735525e-06,
+      0.00048274517757818103,
+      0.043999914079904556,
+      0.04397093132138252
+    ],
+    "base_pose": [
+      -1.0499999523162842,
+      0.2499999850988388,
+      -0.5000001192092896,
+      1.0000001192092896,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "observation": null,
+    "physical_grasp_attempts": 0
+  },
+  "camera_input_sha256": {
+    "color.png": "7a706a676d264bdef2b1896bcf55dbbe0f931bf1f4451ce59f24ba957abe36b0",
+    "depth.png": "7ff72c6c7f938822b95d096f2bb1f51e5a975535bbdaaa767dd59978feec4f0d",
+    "params.json": "b352abd8dac97ffc0c9b7570c968400ea1e9769089a4524b3f621f4e9e99f47e"
+  },
+  "ground_truth_mask_is_evaluation_only": true
+}

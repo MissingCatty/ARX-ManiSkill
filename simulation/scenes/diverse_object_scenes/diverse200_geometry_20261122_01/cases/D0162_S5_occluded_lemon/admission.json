@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "entry": {
+    "id": "D0162_S5_occluded_lemon",
+    "model_id": "robocasa__lemon__lemon_10",
+    "semantic_class": "lemon",
+    "family": "lemon",
+    "target_text": "lemon",
+    "layout": "S5_occluded",
+    "seed": 1403858550,
+    "actor_identities": [
+      {
+        "name": "target",
+        "model_id": "robocasa__lemon__lemon_10"
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__bottled_water__bottled_water_10"
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "ai2thor__cell_phone__Cellphone_1"
+      }
+    ],
+    "scene": {
+      "layout": "S5_occluded",
+      "actors": [
+        {
+          "name": "target",
+          "model_id": "robocasa__lemon__lemon_10",
+          "pose": [
+            -0.31387025117874146,
+            -0.20732302963733673,
+            0.030678436160087585,
+            0.2577563524246216,
+            -3.382563591003418e-06,
+            0.0002331063151359558,
+            0.9662100076675415
+          ]
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bottled_water__bottled_water_10",
+          "pose": [
+            -0.4269995391368866,
+            -0.06712057441473007,
+            0.07989979535341263,
+            0.3796684443950653,
+            0.00037048710510134697,
+            3.380137786734849e-05,
+            0.9251225590705872
+          ]
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0",
+          "pose": [
+            -0.24008941650390625,
+            -0.07301484048366547,
+            0.06750021129846573,
+            0.9198755621910095,
+            -7.164780981838703e-06,
+            1.0032454156316817e-07,
+            0.3922104835510254
+          ]
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__cell_phone__Cellphone_1",
+          "pose": [
+            -0.2908356487751007,
+            0.2104489654302597,
+            0.0007568523287773132,
+            0.43333595991134644,
+            2.486049197614193e-07,
+            -1.4206898413249291e-06,
+            -0.9012326002120972
+          ]
+        }
+      ],
+      "perception_camera": "head"
+    },
+    "admission": {
+      "target_mask_pixels": 1251,
+      "isolated_mask_pixels": 1576,
+      "occlusion_fraction": 0.20621827411167515,
+      "projected_bbox_uv": [
+        [
+          547.9717130290098,
+          209.35378635979782
+        ],
+        [
+          624.2873977376044,
+          275.15225176449957
+        ]
+      ],
+      "fully_in_frame": true,
+      "admitted_view": true,
+      "valid_target_depth_fraction": 1.0,
+      "target_depth_median_m": 0.638,
+      "visible_pixels": 1251,
+      "border_clear": true
+    },
+    "camera": "head",
+    "robot_initial_q": [
+      0.4519999921321869,
+      -1.0728319921327056e-06,
+      -0.00020593733643181622,
+      2.5863868359010667e-05,
+      2.7094700271845795e-05,
+      0.0,
+      0.0,
+      -0.24871869385242462,
+      -0.24505318701267242,
+      -0.0005250244867056608,
+      0.00040246330900117755,
+      -0.0027694408781826496,
+      -0.0016749418573454022,
+      6.499443770735525e-06,
+      0.00048274517757818103,
+      0.043999914079904556,
+      0.04397093132138252
+    ],
+    "base_pose": [
+      -1.0499999523162842,
+      0.2499999850988388,
+      -0.5000001192092896,
+      1.0000001192092896,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "observation": null,
+    "physical_grasp_attempts": 0
+  },
+  "camera_input_sha256": {
+    "color.png": "3f384f3cffe5050a2da4be129325f177ee3896ec648403ea835d3820f05746a5",
+    "depth.png": "ac7dcec4d5fa4d5aec8d54e7e619330b52571758dd711eb44198165589bc6fa7",
+    "params.json": "b352abd8dac97ffc0c9b7570c968400ea1e9769089a4524b3f621f4e9e99f47e"
+  },
+  "ground_truth_mask_is_evaluation_only": true
+}

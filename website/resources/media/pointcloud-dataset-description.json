@@ -1,0 +1,575 @@
+{
+  "geometry_identity": "same centered vertex set after 10um rounding; texture and topology not compared",
+  "categories": {
+    "mug": [
+      {
+        "id": "C001",
+        "style": "mug_0",
+        "centered_vertex_hash_10um": "8641b3bcd812d85a273e28e07eb89411910155deb344835adeffa578a3bad36f",
+        "extent_mm": [
+          109.52481627464294,
+          124.9999850988388,
+          58.92391316592693
+        ],
+        "target_depth_median_m": 0.3540000021457672
+      },
+      {
+        "id": "C002",
+        "style": "mug_1",
+        "centered_vertex_hash_10um": "93b55de2b5ddb0adc4572c100ba6efd4ada9c636f274d873801458364a0b97e0",
+        "extent_mm": [
+          78.56354117393494,
+          114.99999463558197,
+          90.38898721337318
+        ],
+        "target_depth_median_m": 0.3529999852180481
+      },
+      {
+        "id": "C003",
+        "style": "mug_2",
+        "centered_vertex_hash_10um": "cb3385e06fd4c358b572c4a35d63c7aee978938291cf4db3e308ef54b19b470e",
+        "extent_mm": [
+          70.44023275375366,
+          104.99998927116394,
+          91.01046994328499
+        ],
+        "target_depth_median_m": 0.3540000021457672
+      },
+      {
+        "id": "C004",
+        "style": "mug_3",
+        "centered_vertex_hash_10um": "e3d56d67355201830abc08452f3c213ecedcb4757f2c44e95c997affff840096",
+        "extent_mm": [
+          98.22148084640503,
+          135.00002026557922,
+          82.79461041092873
+        ],
+        "target_depth_median_m": 0.3449999988079071
+      },
+      {
+        "id": "C005",
+        "style": "mug_4",
+        "centered_vertex_hash_10um": "9814e58db6305a07cba01496e956447d10a25af3bc9713b40174335c8d19bd14",
+        "extent_mm": [
+          78.53701710700989,
+          109.99998450279236,
+          86.88822761178017
+        ],
+        "target_depth_median_m": 0.3579999804496765
+      }
+    ],
+    "water_bottle": [
+      {
+        "id": "C006",
+        "style": "water_bottle_0",
+        "centered_vertex_hash_10um": "ab8c2fc194ca298b4f3f17324985887c9c52bca462b577caa83ad1adcfdeb5cf",
+        "extent_mm": [
+          50.373584032058716,
+          50.373584032058716,
+          134.99999791383743
+        ],
+        "target_depth_median_m": 0.32499998807907104
+      },
+      {
+        "id": "C007",
+        "style": "water_bottle_1",
+        "centered_vertex_hash_10um": "99a67aedd350b68b95b4406557f303712c2f647055e6aeb925ccc3638a9ad97c",
+        "extent_mm": [
+          49.48726296424866,
+          52.67086625099182,
+          134.99999791383743
+        ],
+        "target_depth_median_m": 0.3269999921321869
+      },
+      {
+        "id": "C008",
+        "style": "water_bottle_2",
+        "centered_vertex_hash_10um": "6ddf111996bcc66e16b0f4210f41eecc9e74114169cae93efc3f5900655e4724",
+        "extent_mm": [
+          44.96398568153381,
+          58.78797173500061,
+          134.99999791383743
+        ],
+        "target_depth_median_m": 0.3319999873638153
+      },
+      {
+        "id": "C009",
+        "style": "water_bottle_3",
+        "centered_vertex_hash_10um": "156b59bd743eabf8fe2566f3995874fbb0a8508a281980645c33a2735ace7e61",
+        "extent_mm": [
+          45.0533926486969,
+          45.71899771690369,
+          164.99999910593033
+        ],
+        "target_depth_median_m": 0.3199999928474426
+      },
+      {
+        "id": "C010",
+        "style": "water_bottle_4",
+        "centered_vertex_hash_10um": "49060b96dc1480d5fd478c8c964cd75fd917a37cfb2df7e15ed89a68655b54e1",
+        "extent_mm": [
+          49.48726296424866,
+          52.67089605331421,
+          134.99999791383743
+        ],
+        "target_depth_median_m": 0.3269999921321869
+      }
+    ],
+    "canned_food": [
+      {
+        "id": "C011",
+        "style": "canned_food_0",
+        "centered_vertex_hash_10um": "fbf52637ebf564f77fe4bec4b13252c8ce574fd3051d09488dfa0dedfe646266",
+        "extent_mm": [
+          63.86581063270569,
+          63.86581063270569,
+          95.0000025331974
+        ],
+        "target_depth_median_m": 0.3400000035762787
+      },
+      {
+        "id": "C012",
+        "style": "canned_food_1",
+        "centered_vertex_hash_10um": "b8cf08f1898ede9f19310d7fcb4bbb7f61c431f26dcab89c00c23f509ee41f1c",
+        "extent_mm": [
+          67.28988885879517,
+          67.28991866111755,
+          95.0000025331974
+        ],
+        "target_depth_median_m": 0.3400000035762787
+      },
+      {
+        "id": "C013",
+        "style": "canned_food_3",
+        "centered_vertex_hash_10um": "7e5448afe05c6665feefe2b716b492057c25626e1fe4098aa0235758aca321fb",
+        "extent_mm": [
+          60.01502275466919,
+          60.0149929523468,
+          95.0000025331974
+        ],
+        "target_depth_median_m": 0.33899998664855957
+      },
+      {
+        "id": "C014",
+        "style": "canned_food_4",
+        "centered_vertex_hash_10um": "ef49fc460b02e6d5907582afc34f08e163bef0c446604b131b2b2018482d0f04",
+        "extent_mm": [
+          64.05732035636902,
+          64.05732035636902,
+          95.0000025331974
+        ],
+        "target_depth_median_m": 0.34199997782707214
+      },
+      {
+        "id": "C015",
+        "style": "canned_food_5",
+        "centered_vertex_hash_10um": "c7a7b2f70b331ee8fce36a8cea8dedd018b5cda564e016479e4a69900cc0302c",
+        "extent_mm": [
+          68.10933351516724,
+          68.11010837554932,
+          95.0000025331974
+        ],
+        "target_depth_median_m": 0.3409999907016754
+      }
+    ],
+    "boxed_food": [
+      {
+        "id": "C016",
+        "style": "boxed_food_0",
+        "centered_vertex_hash_10um": "cd48cbb742fb98a4f02ebe6b45d1178c83f79083686defad50d9a369fc896475",
+        "extent_mm": [
+          45.36014795303345,
+          119.99998986721039,
+          72.36183062195778
+        ],
+        "target_depth_median_m": 0.3529999852180481
+      },
+      {
+        "id": "C017",
+        "style": "boxed_food_1",
+        "centered_vertex_hash_10um": "c7fb086d75773aaf55526217b1ae4c9f310102227fdb5caf9d9943cfc9d6bc2a",
+        "extent_mm": [
+          37.14287281036377,
+          129.99998033046722,
+          129.721499979496
+        ],
+        "target_depth_median_m": 0.3240000009536743
+      },
+      {
+        "id": "C018",
+        "style": "boxed_food_2",
+        "centered_vertex_hash_10um": "659817d1028195e3a13f9667ead07fd0eb59ca9dfa2675c14c622cf7c0d2cc31",
+        "extent_mm": [
+          31.6278338432312,
+          88.49367499351501,
+          150.00001341104507
+        ],
+        "target_depth_median_m": 0.3179999887943268
+      },
+      {
+        "id": "C019",
+        "style": "boxed_food_4",
+        "centered_vertex_hash_10um": "eb6a84ed84753eb9bb6b959634db36b83604b6bda6339bb95a04c33faca8c8ec",
+        "extent_mm": [
+          32.120972871780396,
+          64.69777226448059,
+          130.00000268220901
+        ],
+        "target_depth_median_m": 0.32999998331069946
+      },
+      {
+        "id": "C020",
+        "style": "boxed_food_6",
+        "centered_vertex_hash_10um": "c7fb086d75773aaf55526217b1ae4c9f310102227fdb5caf9d9943cfc9d6bc2a",
+        "extent_mm": [
+          37.14287281036377,
+          129.99998033046722,
+          129.721499979496
+        ],
+        "target_depth_median_m": 0.3240000009536743
+      }
+    ],
+    "milk": [
+      {
+        "id": "C021",
+        "style": "milk_0",
+        "centered_vertex_hash_10um": "2e9e830e55bc22955b2de109dd1424044947d949fda8453696a7174bcbdd74fa",
+        "extent_mm": [
+          55.56705594062805,
+          55.567026138305664,
+          180.00001460313797
+        ],
+        "target_depth_median_m": 0.296999990940094
+      },
+      {
+        "id": "C022",
+        "style": "milk_1",
+        "centered_vertex_hash_10um": "580fd9a8093f1790c4a896b8918d11c3cc7c3f66af13c9e79bb1922c129f92e6",
+        "extent_mm": [
+          52.650511264801025,
+          54.30474877357483,
+          119.99999359250069
+        ],
+        "target_depth_median_m": 0.3310000002384186
+      },
+      {
+        "id": "C023",
+        "style": "milk_3",
+        "centered_vertex_hash_10um": "e97226db299ebac403fe579bc296f987388b639029601bf8360d16933cad9932",
+        "extent_mm": [
+          61.906248331069946,
+          60.00000238418579,
+          119.99999359250069
+        ],
+        "target_depth_median_m": 0.3240000009536743
+      },
+      {
+        "id": "C024",
+        "style": "milk_4",
+        "centered_vertex_hash_10um": "b410ebc66dfb0fa827326110ee1f189ada9c885a0117b3bdd3be089e3a7216c4",
+        "extent_mm": [
+          53.603559732437134,
+          54.542362689971924,
+          160.0000038743019
+        ],
+        "target_depth_median_m": 0.30699998140335083
+      },
+      {
+        "id": "C025",
+        "style": "milk_5",
+        "centered_vertex_hash_10um": "f611384e3f131fe19937bc2ea67b0309ed1a621d97241f576c84487ea741f633",
+        "extent_mm": [
+          48.3875572681427,
+          48.38752746582031,
+          169.99999433755875
+        ],
+        "target_depth_median_m": 0.3059999942779541
+      }
+    ],
+    "ketchup": [
+      {
+        "id": "C026",
+        "style": "ketchup_0",
+        "centered_vertex_hash_10um": "078309ae7646c9acd16d86618f585b6a4a904ae7cf550d347fddad1cb81517a7",
+        "extent_mm": [
+          77.41227746009827,
+          48.37101697921753,
+          150.00001341104507
+        ],
+        "target_depth_median_m": 0.30399999022483826
+      },
+      {
+        "id": "C027",
+        "style": "ketchup_1",
+        "centered_vertex_hash_10um": "e3d13ea6ec674056d2ec065daf941a8575861cff43a70bb22adfbd58f806e875",
+        "extent_mm": [
+          64.27165865898132,
+          36.98742389678955,
+          160.0000038743019
+        ],
+        "target_depth_median_m": 0.3179999887943268
+      },
+      {
+        "id": "C028",
+        "style": "ketchup_2",
+        "centered_vertex_hash_10um": "28fc82634958b83b684d773de7edab1ac199f3d7b9735d0c0d9e6c74fc778ce6",
+        "extent_mm": [
+          44.28783059120178,
+          44.28783059120178,
+          164.99999910593033
+        ],
+        "target_depth_median_m": 0.32099997997283936
+      },
+      {
+        "id": "C029",
+        "style": "ketchup_3",
+        "centered_vertex_hash_10um": "bfa283b7ce1d0f98b7bd395e4bb6a52c309e149fb20b7aea22f628e47a5ea7bf",
+        "extent_mm": [
+          77.91540026664734,
+          56.33381009101868,
+          150.00001341104507
+        ],
+        "target_depth_median_m": 0.30799999833106995
+      },
+      {
+        "id": "C030",
+        "style": "ketchup_4",
+        "centered_vertex_hash_10um": "3f60af30e276ba6a67487061ef8aee190410502eec0b70ae2d3247ad72330e2d",
+        "extent_mm": [
+          86.24514937400818,
+          40.21981358528137,
+          150.00001341104507
+        ],
+        "target_depth_median_m": 0.33550000190734863
+      }
+    ],
+    "bowl": [
+      {
+        "id": "C031",
+        "style": "bowl_0",
+        "centered_vertex_hash_10um": "57038533d700b5b628caab24aa4929ef0ab83c1dd158d3f3442dd6dccd0449c1",
+        "extent_mm": [
+          129.99993562698364,
+          129.99998033046722,
+          36.80882602930069
+        ],
+        "target_depth_median_m": 0.39399999380111694
+      },
+      {
+        "id": "C032",
+        "style": "bowl_1",
+        "centered_vertex_hash_10um": "c3b13cbad526c62ed8b917950c292ec69b7b18e816c52cd078c45cc225ccb533",
+        "extent_mm": [
+          119.9999749660492,
+          119.99998986721039,
+          52.57208272814751
+        ],
+        "target_depth_median_m": 0.39800000190734863
+      },
+      {
+        "id": "C033",
+        "style": "bowl_2",
+        "centered_vertex_hash_10um": "d4d02a00e3496a640d2ab8311de2dd27c9927f372e1273972b54e4fedc92dbc6",
+        "extent_mm": [
+          114.99997973442078,
+          114.99999463558197,
+          48.433270305395126
+        ],
+        "target_depth_median_m": 0.38999998569488525
+      },
+      {
+        "id": "C034",
+        "style": "bowl_3",
+        "centered_vertex_hash_10um": "41fbb70c8f699b4e9c32ac2bc91094673a792c2d26836f5fbdeff189b9bee4ad",
+        "extent_mm": [
+          129.99993562698364,
+          129.99998033046722,
+          45.594874769449234
+        ],
+        "target_depth_median_m": 0.39499998092651367
+      },
+      {
+        "id": "C035",
+        "style": "bowl_4",
+        "centered_vertex_hash_10um": "bd511ec2f53293544a033d106cf8304a6a8c49c98862ef494745e55a5642cb3d",
+        "extent_mm": [
+          99.99999403953552,
+          99.99999403953552,
+          49.7560016810894
+        ],
+        "target_depth_median_m": 0.39800000190734863
+      }
+    ],
+    "apple": [
+      {
+        "id": "C036",
+        "style": "apple_0",
+        "centered_vertex_hash_10um": "612eb63df1c459615952cfcded55e4b171ca1a5a13d149b60586a674041eaa00",
+        "extent_mm": [
+          74.99998807907104,
+          74.64227080345154,
+          74.86996427178383
+        ],
+        "target_depth_median_m": 0.35099998116493225
+      },
+      {
+        "id": "C037",
+        "style": "apple_1",
+        "centered_vertex_hash_10um": "a87c34214e61e5b3cc1026482c89ef3ee8e3b4aefb114e5c2d270842b615ac4f",
+        "extent_mm": [
+          69.99999284744263,
+          66.76441431045532,
+          68.27196851372719
+        ],
+        "target_depth_median_m": 0.35099998116493225
+      },
+      {
+        "id": "C038",
+        "style": "apple_2",
+        "centered_vertex_hash_10um": "5a91f95afbd2f33aabfba3624fcb6ca12936c84a014d565345f9a59576dcd89f",
+        "extent_mm": [
+          69.70754265785217,
+          75.00001788139343,
+          72.59656861424446
+        ],
+        "target_depth_median_m": 0.3529999852180481
+      },
+      {
+        "id": "C039",
+        "style": "apple_3",
+        "centered_vertex_hash_10um": "48e1883efad034c970b77aca2e27a931b04330d8529d4762ba9b216fc2af4f4f",
+        "extent_mm": [
+          60.923606157302856,
+          62.623947858810425,
+          80.00000193715096
+        ],
+        "target_depth_median_m": 0.3569999933242798
+      },
+      {
+        "id": "C040",
+        "style": "apple_4",
+        "centered_vertex_hash_10um": "7c41db7095e5dfdc408875b50b5ac284613b31fe03135862d1fcd7135b712858",
+        "extent_mm": [
+          65.06034731864929,
+          69.99999284744263,
+          67.75680556893349
+        ],
+        "target_depth_median_m": 0.35599997639656067
+      }
+    ],
+    "spoon": [
+      {
+        "id": "C041",
+        "style": "spoon_0",
+        "centered_vertex_hash_10um": "ba98ee537cabbd6c6464659c191bd71802a9b5ede9c6b4444b73e3b5d7e10493",
+        "extent_mm": [
+          36.303162574768066,
+          190.0000125169754,
+          30.124244280159473
+        ],
+        "target_depth_median_m": 0.3929999768733978
+      },
+      {
+        "id": "C042",
+        "style": "spoon_1",
+        "centered_vertex_hash_10um": "4b9fe7029858938bdf0a47b8e756e56897d89f2b8300846de2689186157a06a0",
+        "extent_mm": [
+          55.18609285354614,
+          169.99999433755875,
+          28.287828899919987
+        ],
+        "target_depth_median_m": 0.3929999768733978
+      },
+      {
+        "id": "C043",
+        "style": "spoon_2",
+        "centered_vertex_hash_10um": "c1ce7181d311e01b5e664685695e8bd20d21afb06ac0b9522ee9b1585f5a536d",
+        "extent_mm": [
+          38.34724426269531,
+          200.00001043081284,
+          20.35725675523281
+        ],
+        "target_depth_median_m": 0.39499998092651367
+      },
+      {
+        "id": "C044",
+        "style": "spoon_3",
+        "centered_vertex_hash_10um": "9b7c68c1f80811fa281839d8fa847ce43cc07b0ed6b2db742463070595623c33",
+        "extent_mm": [
+          32.91463851928711,
+          190.0000125169754,
+          11.082726065069437
+        ],
+        "target_depth_median_m": 0.3929999768733978
+      },
+      {
+        "id": "C045",
+        "style": "spoon_4",
+        "centered_vertex_hash_10um": "ccc65294c2b8d45ef74a559e3fe7162639c6f74c4d3cb651fc6089f8208dacd1",
+        "extent_mm": [
+          43.149322271347046,
+          180.00002205371857,
+          60.95925346016884
+        ],
+        "target_depth_median_m": 0.3840000033378601
+      }
+    ],
+    "scissors": [
+      {
+        "id": "C046",
+        "style": "scissors_0",
+        "centered_vertex_hash_10um": "9508ff938085fb4a07b221432882e5e4c08e52397b04e385f6037ad820c47a92",
+        "extent_mm": [
+          79.58585023880005,
+          178.4292683005333,
+          10.02441206946969
+        ],
+        "target_depth_median_m": 0.38999998569488525
+      },
+      {
+        "id": "C047",
+        "style": "scissors_1",
+        "centered_vertex_hash_10um": "5e45de16fd53740fdcbcd6731da3e231cc5a561ce61a9f9c235fe27b7ec5666c",
+        "extent_mm": [
+          59.376657009124756,
+          159.9999964237213,
+          5.81616023555398
+        ],
+        "target_depth_median_m": 0.3959999978542328
+      },
+      {
+        "id": "C048",
+        "style": "scissors_3",
+        "centered_vertex_hash_10um": "60e9e2c3fecd4b1ea0b2fb84caa42dd5d9e5a70a5a58154206ffb2bd6cd7422a",
+        "extent_mm": [
+          69.46763396263123,
+          184.01391804218292,
+          7.7452161349356174
+        ],
+        "target_depth_median_m": 0.39499998092651367
+      },
+      {
+        "id": "C049",
+        "style": "scissors_4",
+        "centered_vertex_hash_10um": "67278ca8725101f194c9c432befcc00d62ec8a260b1ddc6047d0f9d8b0f2ab39",
+        "extent_mm": [
+          58.632999658584595,
+          180.00002205371857,
+          7.215036544948816
+        ],
+        "target_depth_median_m": 0.38999998569488525
+      },
+      {
+        "id": "C050",
+        "style": "scissors_6",
+        "centered_vertex_hash_10um": "94039ccd50419e56a4d335a6b4dc84957d67664ff0029458c4e1086a5d37dc84",
+        "extent_mm": [
+          62.586814165115356,
+          159.9999964237213,
+          11.53629133477807
+        ],
+        "target_depth_median_m": 0.3919999897480011
+      }
+    ]
+  }
+}

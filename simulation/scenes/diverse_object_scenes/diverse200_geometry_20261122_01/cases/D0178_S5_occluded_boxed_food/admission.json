@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "entry": {
+    "id": "D0178_S5_occluded_boxed_food",
+    "model_id": "robocasa__boxed_food__boxed_food_4",
+    "semantic_class": "boxed_food",
+    "family": "boxed_food",
+    "target_text": "food box",
+    "layout": "S5_occluded",
+    "seed": 3365921196,
+    "actor_identities": [
+      {
+        "name": "target",
+        "model_id": "robocasa__boxed_food__boxed_food_4"
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__yogurt__yogurt_2"
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "ai2thor__remote_control__Remote_1"
+      }
+    ],
+    "scene": {
+      "layout": "S5_occluded",
+      "actors": [
+        {
+          "name": "target",
+          "model_id": "robocasa__boxed_food__boxed_food_4",
+          "pose": [
+            -0.3918953835964203,
+            0.30299949645996094,
+            0.06452976167201996,
+            0.11045688390731812,
+            4.332978278398514e-05,
+            1.9824248738586903e-05,
+            0.9938810467720032
+          ]
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2",
+          "pose": [
+            -0.4810461401939392,
+            0.28064975142478943,
+            0.07749959081411362,
+            1.0000001192092896,
+            -6.178976036608219e-06,
+            3.30650873365812e-05,
+            3.3469618756498676e-06
+          ]
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__yogurt__yogurt_2",
+          "pose": [
+            -0.4501299262046814,
+            0.09542890638113022,
+            0.021020682528614998,
+            0.4803764522075653,
+            1.330394297838211e-06,
+            6.163725629448891e-06,
+            -0.8770625591278076
+          ]
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "ai2thor__remote_control__Remote_1",
+          "pose": [
+            -0.18941332399845123,
+            -0.19251516461372375,
+            0.0030989493243396282,
+            0.6490750312805176,
+            2.9208604246377945e-07,
+            5.250397521194827e-07,
+            -0.7607244253158569
+          ]
+        }
+      ],
+      "perception_camera": "head"
+    },
+    "admission": {
+      "target_mask_pixels": 2351,
+      "isolated_mask_pixels": 3063,
+      "occlusion_fraction": 0.23245184459680057,
+      "projected_bbox_uv": [
+        [
+          250.4635045793155,
+          223.21872367057952
+        ],
+        [
+          304.15445214724565,
+          303.1022836107729
+        ]
+      ],
+      "fully_in_frame": true,
+      "admitted_view": true,
+      "valid_target_depth_fraction": 1.0,
+      "target_depth_median_m": 0.546,
+      "visible_pixels": 2351,
+      "border_clear": true
+    },
+    "camera": "head",
+    "robot_initial_q": [
+      0.4519999921321869,
+      -1.0728319921327056e-06,
+      -0.00020593733643181622,
+      2.5863868359010667e-05,
+      2.7094700271845795e-05,
+      0.0,
+      0.0,
+      -0.24871869385242462,
+      -0.24505318701267242,
+      -0.0005250244867056608,
+      0.00040246330900117755,
+      -0.0027694408781826496,
+      -0.0016749418573454022,
+      6.499443770735525e-06,
+      0.00048274517757818103,
+      0.043999914079904556,
+      0.04397093132138252
+    ],
+    "base_pose": [
+      -1.0499999523162842,
+      0.2499999850988388,
+      -0.5000001192092896,
+      1.0000001192092896,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "observation": null,
+    "physical_grasp_attempts": 0
+  },
+  "camera_input_sha256": {
+    "color.png": "21e04bd1c6e40fd8f1f176e895be168cd9f3d1e1802c5801151272b8f0d3eb31",
+    "depth.png": "b3857f79d0675e116c30a27ecece9a8d088093ef2b88829fa7016b0359a902b7",
+    "params.json": "b352abd8dac97ffc0c9b7570c968400ea1e9769089a4524b3f621f4e9e99f47e"
+  },
+  "ground_truth_mask_is_evaluation_only": true
+}

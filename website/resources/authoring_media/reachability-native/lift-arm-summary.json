@@ -1,0 +1,53 @@
+{
+  "version": "V3",
+  "pipeline": "ZeroGrasp＋cuRobo",
+  "group": "fixed_zerograsp",
+  "registered_scenes": 160,
+  "results": {
+    "completed": 160,
+    "planning_passes": 152,
+    "physical_attempts": 152,
+    "successes": 116,
+    "failure_reasons": {
+      "approach_not_converged": 7,
+      "insufficient_hold_height": 18,
+      "no_feasible_native_post_or_recalled_candidate": 7,
+      "close_not_converged": 4,
+      "no_bilateral_target_contact": 4,
+      "not_executed_preexecution_record_binding_failure": 1,
+      "forbidden_robot_contact": 3
+    },
+    "by_layout": {
+      "S1_open": {
+        "n": 40,
+        "planning": 38,
+        "success": 29
+      },
+      "S2_edge": {
+        "n": 40,
+        "planning": 39,
+        "success": 32
+      },
+      "S3_sparse": {
+        "n": 40,
+        "planning": 39,
+        "success": 29
+      },
+      "S4_clutter": {
+        "n": 40,
+        "planning": 36,
+        "success": 26
+      }
+    },
+    "not_executed": 1,
+    "complete_result_records": 159
+  },
+  "output_directory": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp",
+  "source_audit_passed": true,
+  "source_summary_sha256": "e0b2fb9cd4acea9876f940a2947ff0a402e3afe5d9f8988328e7fde79c2112e0",
+  "source_summary": "内容/资源/七关节对照/实验汇总.json",
+  "subset_checks": {
+    "failure_totals_match": true,
+    "layout_totals_match": true
+  }
+}

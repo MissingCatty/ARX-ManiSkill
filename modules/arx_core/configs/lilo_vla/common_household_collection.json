@@ -1,0 +1,16 @@
+{
+  "asset_revision": "9cce00cadd5dc575fd2b8ea3836f5bdcde574229",
+  "egad_collection_enabled": false,
+  "exact_composed_visual_geometries": 100,
+  "existing_household_objects": 37,
+  "extra_catalog": "asset/common_household_collection_20261101_01/catalog.json",
+  "extra_catalog_sha256": "d55f97188e5f9486c327a982bf81186ed207fb45b726feed033ed6bb96aad289",
+  "new_downloaded_objects": 63,
+  "object_policy": "common_household",
+  "scope": "New teacher collections only; historical scene assets/physics/results retained; models include same-category variants",
+  "selected_objects": 100,
+  "selection_receipt": "runs/common_objects_20261101_01/collection_catalog.json",
+  "version": "common_household_collection_v1",
+  "placement_profile": "configs/lilo_vla/household_placement_diversity.json",
+  "placement_policy_updated": "2026-11-02: User requested table-position and object-orientation diversity for new teacher data"
+}

@@ -1,0 +1,7 @@
+CPU_IK I0038 queries 10 recovered 0
+CPU_IK I0018 queries 9 recovered 0
+CPU_IK I0015 queries 6 recovered 0
+CPU_IK I0044 queries 4 recovered 0
+CPU_IK I0063 queries 7 recovered 1
+CPU_IK I0119 queries 5 recovered 1
+CPU_IK I0130 queries 8 recovered 0

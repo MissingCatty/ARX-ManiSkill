@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "entry": {
+    "id": "D0052_S2_edge_milk",
+    "model_id": "robocasa__milk__milk_0",
+    "semantic_class": "milk",
+    "family": "milk",
+    "target_text": "milk",
+    "layout": "S2_edge",
+    "seed": 3370816161,
+    "actor_identities": [
+      {
+        "name": "target",
+        "model_id": "robocasa__milk__milk_0"
+      }
+    ],
+    "scene": {
+      "layout": "S2_edge",
+      "actors": [
+        {
+          "name": "target",
+          "model_id": "robocasa__milk__milk_0",
+          "pose": [
+            -0.6025590896606445,
+            0.322240948677063,
+            0.08954538404941559,
+            0.7463473677635193,
+            -2.7443747967481613e-06,
+            -4.269903001841158e-05,
+            0.6655569672584534
+          ]
+        }
+      ],
+      "perception_camera": "head"
+    },
+    "admission": {
+      "target_mask_pixels": 7295,
+      "isolated_mask_pixels": 7295,
+      "occlusion_fraction": 0.0,
+      "projected_bbox_uv": [
+        [
+          195.87917570324004,
+          326.9089646668264
+        ],
+        [
+          283.6705769470926,
+          456.96875434903114
+        ]
+      ],
+      "fully_in_frame": true,
+      "admitted_view": true,
+      "valid_target_depth_fraction": 1.0,
+      "target_depth_median_m": 0.374,
+      "visible_pixels": 7295,
+      "border_clear": true
+    },
+    "camera": "head",
+    "robot_initial_q": [
+      0.4519999921321869,
+      -1.0728319921327056e-06,
+      -0.00020593733643181622,
+      2.5863868359010667e-05,
+      2.7094700271845795e-05,
+      0.0,
+      0.0,
+      -0.24871869385242462,
+      -0.24505318701267242,
+      -0.0005250244867056608,
+      0.00040246330900117755,
+      -0.0027694408781826496,
+      -0.0016749418573454022,
+      6.499443770735525e-06,
+      0.00048274517757818103,
+      0.043999914079904556,
+      0.04397093132138252
+    ],
+    "base_pose": [
+      -1.0499999523162842,
+      0.2499999850988388,
+      -0.5000001192092896,
+      1.0000001192092896,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "observation": null,
+    "physical_grasp_attempts": 0
+  },
+  "camera_input_sha256": {
+    "color.png": "d90b3d19f905656a5d9cf455e7dfe7eac5cac6c5603201375a71ebaa1a6d2fe7",
+    "depth.png": "8a12d13392d84045932b35190dc3975dfbae8f156c9b03f69d2d90b065cc6616",
+    "params.json": "b352abd8dac97ffc0c9b7570c968400ea1e9769089a4524b3f621f4e9e99f47e"
+  },
+  "ground_truth_mask_is_evaluation_only": true
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "original_arm_elements_identical": true,
+  "lift_chain_copied_from_simulator_urdf": true,
+  "original_collision_spheres_identical": true,
+  "physical_robot_configuration_edits": 0,
+  "physical_attempts": 0
+}

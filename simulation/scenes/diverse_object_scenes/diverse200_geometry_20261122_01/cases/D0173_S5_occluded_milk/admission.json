@@ -1,0 +1,163 @@
+{
+  "passed": true,
+  "entry": {
+    "id": "D0173_S5_occluded_milk",
+    "model_id": "robocasa__milk__milk_1",
+    "semantic_class": "milk",
+    "family": "milk",
+    "target_text": "milk",
+    "layout": "S5_occluded",
+    "seed": 888788095,
+    "actor_identities": [
+      {
+        "name": "target",
+        "model_id": "robocasa__milk__milk_1"
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__bell_pepper__bell_pepper_0"
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "robocasa__donut__donut_0"
+      },
+      {
+        "name": "distractor_03",
+        "model_id": "robocasa__teapot__teapot_10"
+      }
+    ],
+    "scene": {
+      "layout": "S5_occluded",
+      "actors": [
+        {
+          "name": "target",
+          "model_id": "robocasa__milk__milk_1",
+          "pose": [
+            -0.3221805989742279,
+            -0.00979198794811964,
+            0.05998257175087929,
+            0.9939086437225342,
+            0.00012025749310851097,
+            -3.548874519765377e-05,
+            0.11020806431770325
+          ]
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_2",
+          "pose": [
+            -0.4346543848514557,
+            0.06605572253465652,
+            0.07749982923269272,
+            1.0000001192092896,
+            -2.434809721307829e-05,
+            1.5039633581181988e-05,
+            -2.1352443582145497e-06
+          ]
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__bell_pepper__bell_pepper_0",
+          "pose": [
+            -0.25302189588546753,
+            -0.1811995655298233,
+            0.035966988652944565,
+            0.5791237354278564,
+            3.281235694885254e-05,
+            5.306117236614227e-05,
+            -0.8152398467063904
+          ]
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__donut__donut_0",
+          "pose": [
+            -0.20703618228435516,
+            0.299594521522522,
+            0.0216093547642231,
+            0.40927696228027344,
+            -1.1594966053962708e-07,
+            1.2457167031243443e-06,
+            0.9124101400375366
+          ]
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__teapot__teapot_10",
+          "pose": [
+            -0.5601835250854492,
+            0.3556906282901764,
+            0.03506097197532654,
+            0.5157381296157837,
+            -8.333707228302956e-06,
+            -3.4337295801378787e-05,
+            -0.8567463755607605
+          ]
+        }
+      ],
+      "perception_camera": "head"
+    },
+    "admission": {
+      "target_mask_pixels": 1968,
+      "isolated_mask_pixels": 2462,
+      "occlusion_fraction": 0.2006498781478473,
+      "projected_bbox_uv": [
+        [
+          443.5364000656939,
+          191.9939540432057
+        ],
+        [
+          512.1119341112724,
+          272.38189010159664
+        ]
+      ],
+      "fully_in_frame": true,
+      "admitted_view": true,
+      "valid_target_depth_fraction": 1.0,
+      "target_depth_median_m": 0.604,
+      "visible_pixels": 1968,
+      "border_clear": true
+    },
+    "camera": "head",
+    "robot_initial_q": [
+      0.4519999921321869,
+      -1.0728319921327056e-06,
+      -0.00020593733643181622,
+      2.5863868359010667e-05,
+      2.7094700271845795e-05,
+      0.0,
+      0.0,
+      -0.24871869385242462,
+      -0.24505318701267242,
+      -0.0005250244867056608,
+      0.00040246330900117755,
+      -0.0027694408781826496,
+      -0.0016749418573454022,
+      6.499443770735525e-06,
+      0.00048274517757818103,
+      0.043999914079904556,
+      0.04397093132138252
+    ],
+    "base_pose": [
+      -1.0499999523162842,
+      0.2499999850988388,
+      -0.5000001192092896,
+      1.0000001192092896,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "observation": null,
+    "physical_grasp_attempts": 0
+  },
+  "camera_input_sha256": {
+    "color.png": "50305875e08c6fc199ab53c6f6452322c40c245e6d88e3d569ead4f62c94eeae",
+    "depth.png": "398b134b6931ddb674c34c75b8161a956e7c067fc46dd7c490860eef8eee6750",
+    "params.json": "b352abd8dac97ffc0c9b7570c968400ea1e9769089a4524b3f621f4e9e99f47e"
+  },
+  "ground_truth_mask_is_evaluation_only": true
+}

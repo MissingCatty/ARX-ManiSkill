@@ -1,0 +1,972 @@
+{
+  "primary_objective": "Full grasp endpoint reachability only, not path/holding success",
+  "scope": "Independent URDF FK and unchanged joint-limit verification of retained solver joint witnesses",
+  "physical_attempts": 0,
+  "summary": {
+    "diagnostic_failure": {
+      "original": {
+        "completed": 3,
+        "verified_reachable": 1
+      },
+      "local_search": {
+        "completed": 3,
+        "verified_reachable": 3
+      },
+      "map_local_search": {
+        "completed": 3,
+        "verified_reachable": 3
+      }
+    },
+    "successful_control": {
+      "original": {
+        "completed": 2,
+        "verified_reachable": 2
+      },
+      "local_search": {
+        "completed": 2,
+        "verified_reachable": 2
+      },
+      "map_local_search": {
+        "completed": 2,
+        "verified_reachable": 2
+      }
+    }
+  },
+  "rows": [
+    {
+      "case": "I0052",
+      "role": "diagnostic_failure",
+      "mode": "original",
+      "verified_reachable": false,
+      "meaning": "At least one original full-pose kinematic witness in the prior bounded diagnostic search; collision is separate",
+      "witnesses_recorded_in": "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_01/诊断/I0052",
+      "unverified_is_global_unreachable": false
+    },
+    {
+      "case": "I0052",
+      "role": "diagnostic_failure",
+      "mode": "local_search",
+      "verified_reachable": true,
+      "joint_names": [
+        "joint4",
+        "right_joint21",
+        "right_joint22",
+        "right_joint23",
+        "right_joint24",
+        "right_joint25",
+        "right_joint26"
+      ],
+      "q_witness": [
+        0.4333166182041168,
+        0.014538262039422989,
+        2.9941062927246094,
+        2.615412950515747,
+        -1.2045320272445679,
+        -0.06396320462226868,
+        0.42298421263694763
+      ],
+      "position_error_m": 7.537275444449282e-08,
+      "orientation_error_rad": 6.86370481595697e-08,
+      "joint_limits_valid": true,
+      "eef_goal_world": [
+        [
+          -0.9173306068812282,
+          0.3979033866744075,
+          -0.013331194081874284,
+          -0.37470828105835957
+        ],
+        [
+          0.39635005210478036,
+          0.9158849059399152,
+          0.0637325234590069,
+          0.019925625928116378
+        ],
+        [
+          0.03756921620327801,
+          0.053179996791519635,
+          -0.9978779570440651,
+          0.06189159063741255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_fk_world": [
+        [
+          -0.9173304760088321,
+          0.39790334975660924,
+          -0.0133312429232666,
+          -0.374708354025372
+        ],
+        [
+          0.3963500320564407,
+          0.915884718226258,
+          0.06373252708363768,
+          0.01992560985269499
+        ],
+        [
+          0.03756926768341507,
+          0.05317995084689021,
+          -0.9978779699711054,
+          0.06189158071531416
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_tolerance_m": 0.002,
+      "orientation_tolerance_rad": 0.03,
+      "numeric_tolerance_m_or_rad": 1e-06,
+      "angle_change_deg": -10.0,
+      "original_candidate_index": 0,
+      "collision_and_path_result_is_separate": true,
+      "physical_grasp_quality_verified": false,
+      "physical_attempts": 0
+    },
+    {
+      "case": "I0052",
+      "role": "diagnostic_failure",
+      "mode": "map_local_search",
+      "verified_reachable": true,
+      "joint_names": [
+        "joint4",
+        "right_joint21",
+        "right_joint22",
+        "right_joint23",
+        "right_joint24",
+        "right_joint25",
+        "right_joint26"
+      ],
+      "q_witness": [
+        0.3059786856174469,
+        0.07007438689470291,
+        2.371704578399658,
+        1.882234811782837,
+        -0.7802304625511169,
+        0.09672616422176361,
+        0.47358977794647217
+      ],
+      "position_error_m": 1.4481119249428345e-07,
+      "orientation_error_rad": 1.3586301622179736e-07,
+      "joint_limits_valid": true,
+      "eef_goal_world": [
+        [
+          -0.8665683390179342,
+          0.3979033866744075,
+          0.3012183209375383,
+          -0.38823391020419434
+        ],
+        [
+          0.3942450260189284,
+          0.9158849059399152,
+          -0.07567071962951961,
+          0.02591996538092302
+        ],
+        [
+          -0.30599084665480586,
+          0.053179996791519635,
+          -0.9505479813897038,
+          0.059856401684275015
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_fk_world": [
+        [
+          -0.866568174201312,
+          0.39790334189995796,
+          0.3012184090759555,
+          -0.38823402916887567
+        ],
+        [
+          0.3942450157399285,
+          0.9158847163717445,
+          -0.07567069367246845,
+          0.0259199686003736
+        ],
+        [
+          -0.3059909590586429,
+          0.05318004157100852,
+          -0.9505479557354681,
+          0.05985631917778311
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_tolerance_m": 0.002,
+      "orientation_tolerance_rad": 0.03,
+      "numeric_tolerance_m_or_rad": 1e-06,
+      "angle_change_deg": -30.0,
+      "original_candidate_index": 0,
+      "collision_and_path_result_is_separate": true,
+      "physical_grasp_quality_verified": false,
+      "physical_attempts": 0
+    },
+    {
+      "case": "I0056",
+      "role": "diagnostic_failure",
+      "mode": "original",
+      "verified_reachable": true,
+      "meaning": "At least one original full-pose kinematic witness in the prior bounded diagnostic search; collision is separate",
+      "witnesses_recorded_in": "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_01/诊断/I0056",
+      "unverified_is_global_unreachable": false
+    },
+    {
+      "case": "I0056",
+      "role": "diagnostic_failure",
+      "mode": "local_search",
+      "verified_reachable": true,
+      "joint_names": [
+        "joint4",
+        "right_joint21",
+        "right_joint22",
+        "right_joint23",
+        "right_joint24",
+        "right_joint25",
+        "right_joint26"
+      ],
+      "q_witness": [
+        0.4236188232898712,
+        0.17680245637893677,
+        2.9400219917297363,
+        2.5212275981903076,
+        -0.9329571723937988,
+        0.08176933228969574,
+        -0.10231147706508636
+      ],
+      "position_error_m": 1.5645961611765875e-07,
+      "orientation_error_rad": 7.183312734744933e-08,
+      "joint_limits_valid": true,
+      "eef_goal_world": [
+        [
+          -0.9397453954201289,
+          -0.2551365955876202,
+          0.22756100230578186,
+          -0.3383925673763382
+        ],
+        [
+          -0.27130626379801953,
+          0.9615625474389369,
+          -0.04231377724435608,
+          0.08847196619111154
+        ],
+        [
+          -0.20801837536590767,
+          -0.10150293386671619,
+          -0.9728440324016513,
+          0.059946824785869615
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_fk_world": [
+        [
+          -0.9397453552786704,
+          -0.25513658815390977,
+          0.22756095582798894,
+          -0.3383926998626504
+        ],
+        [
+          -0.2713062118557121,
+          0.9615625204066359,
+          -0.042313812848068254,
+          0.08847195848678296
+        ],
+        [
+          -0.208018284390265,
+          -0.10150290998005977,
+          -0.9728440536000161,
+          0.05994674191469322
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_tolerance_m": 0.002,
+      "orientation_tolerance_rad": 0.03,
+      "numeric_tolerance_m_or_rad": 1e-06,
+      "angle_change_deg": -5.0,
+      "original_candidate_index": 1,
+      "collision_and_path_result_is_separate": true,
+      "physical_grasp_quality_verified": false,
+      "physical_attempts": 0
+    },
+    {
+      "case": "I0056",
+      "role": "diagnostic_failure",
+      "mode": "map_local_search",
+      "verified_reachable": true,
+      "joint_names": [
+        "joint4",
+        "right_joint21",
+        "right_joint22",
+        "right_joint23",
+        "right_joint24",
+        "right_joint25",
+        "right_joint26"
+      ],
+      "q_witness": [
+        0.38176000118255615,
+        0.15732641518115997,
+        2.6388068199157715,
+        2.066951274871826,
+        -0.6914830803871155,
+        0.010727963410317898,
+        -0.437581866979599
+      ],
+      "position_error_m": 1.9991950029417583e-07,
+      "orientation_error_rad": 7.527195409523809e-08,
+      "joint_limits_valid": true,
+      "eef_goal_world": [
+        [
+          -0.7876115453658971,
+          -0.5378943361709879,
+          0.30056254717840486,
+          -0.3570123612779891
+        ],
+        [
+          -0.5539693255901234,
+          0.8317226094967085,
+          0.03681858962002148,
+          0.08241623612249983
+        ],
+        [
+          -0.2697891874457017,
+          -0.13750371333733932,
+          -0.9530511600904986,
+          0.059352980234688074
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_fk_world": [
+        [
+          -0.7876115096695574,
+          -0.5378943186206397,
+          0.3005624923899824,
+          -0.35701256034196827
+        ],
+        [
+          -0.5539692686188563,
+          0.8317225760475014,
+          0.03681855400199897,
+          0.0824162183084206
+        ],
+        [
+          -0.2697891014513561,
+          -0.13750366718217455,
+          -0.9530511960275394,
+          0.05935297533597722
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_tolerance_m": 0.002,
+      "orientation_tolerance_rad": 0.03,
+      "numeric_tolerance_m_or_rad": 1e-06,
+      "angle_change_deg": 20.0,
+      "original_candidate_index": 2,
+      "collision_and_path_result_is_separate": true,
+      "physical_grasp_quality_verified": false,
+      "physical_attempts": 0
+    },
+    {
+      "case": "I0199",
+      "role": "diagnostic_failure",
+      "mode": "original",
+      "verified_reachable": false,
+      "meaning": "At least one original full-pose kinematic witness in the prior bounded diagnostic search; collision is separate",
+      "witnesses_recorded_in": "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_01/诊断/I0199",
+      "unverified_is_global_unreachable": false
+    },
+    {
+      "case": "I0199",
+      "role": "diagnostic_failure",
+      "mode": "local_search",
+      "verified_reachable": true,
+      "joint_names": [
+        "joint4",
+        "right_joint21",
+        "right_joint22",
+        "right_joint23",
+        "right_joint24",
+        "right_joint25",
+        "right_joint26"
+      ],
+      "q_witness": [
+        0.43031439185142517,
+        0.002438837429508567,
+        3.0238869190216064,
+        2.6736035346984863,
+        -1.1146801710128784,
+        0.4137803614139557,
+        -0.9171426296234131
+      ],
+      "position_error_m": 3.1535412187174407e-07,
+      "orientation_error_rad": 1.892028343931831e-07,
+      "joint_limits_valid": true,
+      "eef_goal_world": [
+        [
+          -0.6366322129134605,
+          -0.7649537054607859,
+          0.09770093150112977,
+          -0.34750875877698567
+        ],
+        [
+          -0.7284258073012456,
+          0.554908685597843,
+          -0.4018364694651627,
+          -0.057885305592079835
+        ],
+        [
+          0.2531711162956794,
+          -0.3269899063753788,
+          -0.9104845224042639,
+          0.0719775344928546
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_fk_world": [
+        [
+          -0.6366321420610255,
+          -0.7649536412439242,
+          0.09770078015273086,
+          -0.34750904925402154
+        ],
+        [
+          -0.7284255903496646,
+          0.5549086735290497,
+          -0.4018364385741706,
+          -0.0578853147629
+        ],
+        [
+          0.2531712365544972,
+          -0.3269897411080237,
+          -0.9104845051902725,
+          0.07197741207059408
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_tolerance_m": 0.002,
+      "orientation_tolerance_rad": 0.03,
+      "numeric_tolerance_m_or_rad": 1e-06,
+      "angle_change_deg": -5.0,
+      "original_candidate_index": 0,
+      "collision_and_path_result_is_separate": true,
+      "physical_grasp_quality_verified": false,
+      "physical_attempts": 0
+    },
+    {
+      "case": "I0199",
+      "role": "diagnostic_failure",
+      "mode": "map_local_search",
+      "verified_reachable": true,
+      "joint_names": [
+        "joint4",
+        "right_joint21",
+        "right_joint22",
+        "right_joint23",
+        "right_joint24",
+        "right_joint25",
+        "right_joint26"
+      ],
+      "q_witness": [
+        0.3399740755558014,
+        -0.12353803217411041,
+        2.481782913208008,
+        1.975759506225586,
+        -0.6945297122001648,
+        0.011847524903714657,
+        -1.0967941284179688
+      ],
+      "position_error_m": 3.748686495015199e-08,
+      "orientation_error_rad": 8.823501140634566e-08,
+      "joint_limits_valid": true,
+      "eef_goal_world": [
+        [
+          -0.5356945342003891,
+          -0.7649537054607857,
+          0.3575995142098297,
+          -0.3586843978334598
+        ],
+        [
+          -0.8300014116649638,
+          0.5549086855978429,
+          -0.05634147290287393,
+          -0.07274159044425825
+        ],
+        [
+          -0.15533643204876535,
+          -0.3269899063753787,
+          -0.9321739497231619,
+          0.07291017986756722
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_fk_world": [
+        [
+          -0.5356943909363738,
+          -0.7649536885618601,
+          0.35759946011552085,
+          -0.35868441241190147
+        ],
+        [
+          -0.8300012831583989,
+          0.5549085575420792,
+          -0.05634148313614332,
+          -0.0727415872176881
+        ],
+        [
+          -0.15533637524649122,
+          -0.32698982724570114,
+          -0.93217394482098,
+          0.07291014548263844
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_tolerance_m": 0.002,
+      "orientation_tolerance_rad": 0.03,
+      "numeric_tolerance_m_or_rad": 1e-06,
+      "angle_change_deg": -30.0,
+      "original_candidate_index": 0,
+      "collision_and_path_result_is_separate": true,
+      "physical_grasp_quality_verified": false,
+      "physical_attempts": 0
+    },
+    {
+      "case": "I0002",
+      "role": "successful_control",
+      "mode": "original",
+      "verified_reachable": true,
+      "meaning": "At least one original full-pose kinematic witness in the prior bounded diagnostic search; collision is separate",
+      "witnesses_recorded_in": "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_01/诊断/I0002",
+      "unverified_is_global_unreachable": false
+    },
+    {
+      "case": "I0002",
+      "role": "successful_control",
+      "mode": "local_search",
+      "verified_reachable": true,
+      "joint_names": [
+        "joint4",
+        "right_joint21",
+        "right_joint22",
+        "right_joint23",
+        "right_joint24",
+        "right_joint25",
+        "right_joint26"
+      ],
+      "q_witness": [
+        0.24059079587459564,
+        -0.7666806578636169,
+        2.2463343143463135,
+        1.9691928625106812,
+        -1.232547640800476,
+        -0.1952257752418518,
+        0.31762588024139404
+      ],
+      "position_error_m": 1.4102830504007298e-07,
+      "orientation_error_rad": 1.1531148871562816e-07,
+      "joint_limits_valid": true,
+      "eef_goal_world": [
+        [
+          -0.47302920112105795,
+          0.8629348642497696,
+          0.1777265648819708,
+          -0.5570403235689028
+        ],
+        [
+          0.8810432575469549,
+          0.4627407048219303,
+          0.09815164611256177,
+          -0.28545302276842927
+        ],
+        [
+          0.002457165595401989,
+          0.20301338739843766,
+          -0.979172850063758,
+          0.06427312454676556
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_fk_world": [
+        [
+          -0.47302931738221243,
+          0.8629348528480455,
+          0.17772648828196777,
+          -0.5570403828334332
+        ],
+        [
+          0.8810432605491267,
+          0.46274076865053526,
+          0.09815168908213229,
+          -0.2854530228864064
+        ],
+        [
+          0.0024572215777188527,
+          0.20301335120832317,
+          -0.9791728863144057,
+          0.06427299657534555
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_tolerance_m": 0.002,
+      "orientation_tolerance_rad": 0.03,
+      "numeric_tolerance_m_or_rad": 1e-06,
+      "angle_change_deg": 0.0,
+      "original_candidate_index": 0,
+      "collision_and_path_result_is_separate": true,
+      "physical_grasp_quality_verified": false,
+      "physical_attempts": 0
+    },
+    {
+      "case": "I0002",
+      "role": "successful_control",
+      "mode": "map_local_search",
+      "verified_reachable": true,
+      "joint_names": [
+        "joint4",
+        "right_joint21",
+        "right_joint22",
+        "right_joint23",
+        "right_joint24",
+        "right_joint25",
+        "right_joint26"
+      ],
+      "q_witness": [
+        0.24059079587459564,
+        -0.7666806578636169,
+        2.2463343143463135,
+        1.9691928625106812,
+        -1.232547640800476,
+        -0.1952257752418518,
+        0.31762588024139404
+      ],
+      "position_error_m": 1.4102830504007298e-07,
+      "orientation_error_rad": 1.1531148871562816e-07,
+      "joint_limits_valid": true,
+      "eef_goal_world": [
+        [
+          -0.47302920112105795,
+          0.8629348642497696,
+          0.1777265648819708,
+          -0.5570403235689028
+        ],
+        [
+          0.8810432575469549,
+          0.4627407048219303,
+          0.09815164611256177,
+          -0.28545302276842927
+        ],
+        [
+          0.002457165595401989,
+          0.20301338739843766,
+          -0.979172850063758,
+          0.06427312454676556
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_fk_world": [
+        [
+          -0.47302931738221243,
+          0.8629348528480455,
+          0.17772648828196777,
+          -0.5570403828334332
+        ],
+        [
+          0.8810432605491267,
+          0.46274076865053526,
+          0.09815168908213229,
+          -0.2854530228864064
+        ],
+        [
+          0.0024572215777188527,
+          0.20301335120832317,
+          -0.9791728863144057,
+          0.06427299657534555
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_tolerance_m": 0.002,
+      "orientation_tolerance_rad": 0.03,
+      "numeric_tolerance_m_or_rad": 1e-06,
+      "angle_change_deg": 0.0,
+      "original_candidate_index": 0,
+      "collision_and_path_result_is_separate": true,
+      "physical_grasp_quality_verified": false,
+      "physical_attempts": 0
+    },
+    {
+      "case": "I0004",
+      "role": "successful_control",
+      "mode": "original",
+      "verified_reachable": true,
+      "meaning": "At least one original full-pose kinematic witness in the prior bounded diagnostic search; collision is separate",
+      "witnesses_recorded_in": "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_01/诊断/I0004",
+      "unverified_is_global_unreachable": false
+    },
+    {
+      "case": "I0004",
+      "role": "successful_control",
+      "mode": "local_search",
+      "verified_reachable": true,
+      "joint_names": [
+        "joint4",
+        "right_joint21",
+        "right_joint22",
+        "right_joint23",
+        "right_joint24",
+        "right_joint25",
+        "right_joint26"
+      ],
+      "q_witness": [
+        0.42905691266059875,
+        0.1494065374135971,
+        3.0367090702056885,
+        2.700019359588623,
+        -1.2217254638671875,
+        -0.030852224677801132,
+        0.9836034774780273
+      ],
+      "position_error_m": 4.246624857117427e-07,
+      "orientation_error_rad": 1.0910883107070725e-07,
+      "joint_limits_valid": true,
+      "eef_goal_world": [
+        [
+          -0.6719861050048834,
+          0.7405242094786484,
+          0.0076453586583520305,
+          -0.3717088726685085
+        ],
+        [
+          0.7403245043120688,
+          0.6714709924715545,
+          0.03234571010812193,
+          0.08930060698670894
+        ],
+        [
+          0.018819148829980037,
+          0.02739585517391685,
+          -0.999447446009651,
+          0.056606729638093475
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_fk_world": [
+        [
+          -0.6719862117788801,
+          0.7405241918963014,
+          0.007645416626949602,
+          -0.37170929226401905
+        ],
+        [
+          0.7403245049379661,
+          0.6714710587583328,
+          0.03234570509848863,
+          0.08930054706188897
+        ],
+        [
+          0.018819101132227886,
+          0.02739595711584124,
+          -0.9994474988543829,
+          0.05660670343026561
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_tolerance_m": 0.002,
+      "orientation_tolerance_rad": 0.03,
+      "numeric_tolerance_m_or_rad": 1e-06,
+      "angle_change_deg": 0.0,
+      "original_candidate_index": 0,
+      "collision_and_path_result_is_separate": true,
+      "physical_grasp_quality_verified": false,
+      "physical_attempts": 0
+    },
+    {
+      "case": "I0004",
+      "role": "successful_control",
+      "mode": "map_local_search",
+      "verified_reachable": true,
+      "joint_names": [
+        "joint4",
+        "right_joint21",
+        "right_joint22",
+        "right_joint23",
+        "right_joint24",
+        "right_joint25",
+        "right_joint26"
+      ],
+      "q_witness": [
+        0.42905691266059875,
+        0.1494065374135971,
+        3.0367090702056885,
+        2.700019359588623,
+        -1.2217254638671875,
+        -0.030852224677801132,
+        0.9836034774780273
+      ],
+      "position_error_m": 4.246624857117427e-07,
+      "orientation_error_rad": 1.0910883107070725e-07,
+      "joint_limits_valid": true,
+      "eef_goal_world": [
+        [
+          -0.6719861050048834,
+          0.7405242094786484,
+          0.0076453586583520305,
+          -0.3717088726685085
+        ],
+        [
+          0.7403245043120688,
+          0.6714709924715545,
+          0.03234571010812193,
+          0.08930060698670894
+        ],
+        [
+          0.018819148829980037,
+          0.02739585517391685,
+          -0.999447446009651,
+          0.056606729638093475
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_fk_world": [
+        [
+          -0.6719862117788801,
+          0.7405241918963014,
+          0.007645416626949602,
+          -0.37170929226401905
+        ],
+        [
+          0.7403245049379661,
+          0.6714710587583328,
+          0.03234570509848863,
+          0.08930054706188897
+        ],
+        [
+          0.018819101132227886,
+          0.02739595711584124,
+          -0.9994474988543829,
+          0.05660670343026561
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_tolerance_m": 0.002,
+      "orientation_tolerance_rad": 0.03,
+      "numeric_tolerance_m_or_rad": 1e-06,
+      "angle_change_deg": 0.0,
+      "original_candidate_index": 0,
+      "collision_and_path_result_is_separate": true,
+      "physical_grasp_quality_verified": false,
+      "physical_attempts": 0
+    }
+  ],
+  "source_sha256": {
+    "/home/zhaoyechong/projects/ARX-可达性地图/工具/核验终点可达证据.py": "a0053fdcf18c3f1c4578432bee1bd4affc18c35f1aff2898f6dd48747da9ba8a",
+    "/home/zhaoyechong/projects/ManiSkill/assets/arx/robot.urdf": "0ac9f20f13bd2a194d9f5c2002856a84ba406a4a3906ef9ed5ec182002569704",
+    "/home/zhaoyechong/projects/ManiSkill/七轴升降规划.py": "690e3702a7ba62a3cff9e0de892d978c18f0a2e7929cb4302e5bb4cbc3af7bba",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/state.json": "c162c170846d8981e618cbef41b8b2ce71f3b72f9e1fcfab2877f17a79c03d03",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_02/比较/I0052/local_search/结果.json": "6f536d6b68f955b2c7f10f3e6fe89d4a5b9715f6bfe1c3c7d28c8cb35fe8377c",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_02/比较/I0052/map_local_search/结果.json": "bfe05570d50a8d9da5debff10864c3277cb79bf9189babe280fed0f8f5614ad7",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/state.json": "a1d601f4b64aae71320b0ac60b2ca65b70794cb9f1489c98126f3b1c75f477dd",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_02/比较/I0056/local_search/结果.json": "d1b5a2c3db17f60679f81c5d28a5aa9c2f83498028b1e874edc929d89e6d203b",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_02/比较/I0056/map_local_search/结果.json": "5718d6c309f0fe478fd3acb21d2b921829cb5753bdbad205e2a771bdb7242e47",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/state.json": "542caa610471c29de94b53502674df89e862254ec8cf4c81287a66d3331cca33",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_02/比较/I0199/local_search/结果.json": "8777de4b8a350bc0006e45b523628fd81f071d37b1d10cc22e150cfe618851a7",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_02/比较/I0199/map_local_search/结果.json": "df97575f5527d2818fab97c9c071b9ecbbcd3ba36cdd09300db91a036034f028",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0002_S2_edge_052_extra_large_clamp/state.json": "1fc19a45ae196d4ef2ab2075b00ce04ea6fb372369aa5e8f318b70bda6c2244d",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_02/比较/I0002/local_search/结果.json": "02f49a7ee85acc29534ea70d0a1e797d5a766d361461d13fe03f8b7c8fde4e06",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_02/比较/I0002/map_local_search/结果.json": "9b5901bdba488f435ea07711400bdc9ff053f96cee059d6872d72dd74c5b3925",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0004_S3_sparse_071_nine_hole_peg_test/state.json": "665fd3cf75d9f2c5bc04fdb05708ab21975923d3643d2040cf3a96391fad2043",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_02/比较/I0004/local_search/结果.json": "26e04097b825497fc33ce7f44d07922493ebcdc779f1ba14f3cd6c27228c5e54",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_02/比较/I0004/map_local_search/结果.json": "3b253b4790d42f7f50b1cf5664ac640ddcd84c2aaf0e1bc85fdc2e6f612ba0fa"
+  }
+}

@@ -1,0 +1,944 @@
+{
+  "scope": "CPU URDF FK and original spheres vs native convex scene parts; target excluded as in endpoint checker",
+  "original_collision_gates_overridden": false,
+  "CPU_crosscheck_tolerance_m": 0.0002,
+  "physical_attempts": 0,
+  "summary": {
+    "0": {
+      "witnesses": 32,
+      "collision_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "witnesses_with_collision": 32
+    },
+    "2": {
+      "witnesses": 32,
+      "collision_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "witnesses_with_collision": 32
+    }
+  },
+  "records": [
+    {
+      "candidate": 0,
+      "witness": 0,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.556460659355723e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 1,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.510705496252933e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 2,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.481986487859304e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 3,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.615228227889458e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 4,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.483617611761916e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 5,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.603683842941466e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 6,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.53528532220532e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 7,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.584475179559346e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 8,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.5127651125637676e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 9,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.5585053965686035e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 10,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.579873194099972e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 11,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.456974311473684e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 12,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.5684817939989926e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 13,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.480664736040198e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 14,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.39376317475987e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 15,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.336546080031036e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 16,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.419537767941852e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 17,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.557112369597051e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 18,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.5216574199541966e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 19,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.491323366407398e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 20,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.486401195458791e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 21,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.597060421241474e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 22,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.550392920599835e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 23,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.433152244487983e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 24,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.447910075056684e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 25,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.546700123309657e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 26,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.409886105694651e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 27,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.536669913036197e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 28,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.548590590037262e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 29,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.638418921532663e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 30,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.5361235012315055e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 0,
+      "witness": 31,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.4584792006869285e-06,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 0,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.0596967989802464e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 1,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.078105181487464e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 2,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.072318138481553e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 3,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.064647479934321e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 4,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.0606281216270264e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 5,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.057613335267581e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 6,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.07333737569285e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 7,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.0655102858166166e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 8,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.063906955936643e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 9,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.06206465015649e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 10,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.066304631361513e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 11,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.06110023685727e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 12,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.0589165593018246e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 13,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.057764217063527e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 14,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.053141403176282e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 15,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.061776461278173e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 16,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.0636624135447514e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 17,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.065679322101586e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 18,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.054795105973204e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 19,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.05457509833332e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 20,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.060537843925046e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 21,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.056082539277613e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 22,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.06053907640583e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 23,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.0545850717554084e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 24,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.072616667982672e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 25,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.064092060634879e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 26,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.06790486333067e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 27,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.073196692561039e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 28,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.058727765149291e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 29,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.057563237053115e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 30,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.070236848857574e-05,
+      "original_native_checker_clear": false
+    },
+    {
+      "candidate": 2,
+      "witness": 31,
+      "colliding_link_obstacle_pairs": [
+        [
+          "right_link26",
+          "distractor_03"
+        ],
+        [
+          "right_link27",
+          "distractor_03"
+        ]
+      ],
+      "table_crosscheck_error_m": 6.063610605681197e-05,
+      "original_native_checker_clear": false
+    }
+  ],
+  "source_sha256": {
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/state.json": "a1d601f4b64aae71320b0ac60b2ca65b70794cb9f1489c98126f3b1c75f477dd",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/升降联合规划_20261120_01/七关节.yml": "e800ecaab50dfd4ba0215f9f308968beb9706c4478bde040e0cfbce88d0d1672",
+    "/home/zhaoyechong/projects/ARX-可达性地图/工具/复核终点碰撞部件.py": "29c8b82e24c25887bc5dfbd4bf12219aae2c6e5ece31820eed57de40f2f96e38",
+    "/home/zhaoyechong/projects/ManiSkill/cache/arx_scene_collision/d3f8507f3448bc47a876160160ce818954b3c775f77c70e8d04f35558c11c49b.ply": "9439e389f249eb9789614dc6973f66c571e254a57cdf04fda5cfe39e0e3a0b18",
+    "/home/zhaoyechong/projects/ManiSkill/cache/arx_scene_collision/2e91d5b578c91b3f3afb6494776bb306419fbecee2bd36dbf7dffa12f7db71c9.ply": "10d3be4642bb26b9eca4cc1dbeff331ae2941514b059026f4f893450a19dceef",
+    "/home/zhaoyechong/projects/ManiSkill/cache/arx_scene_collision/855b9384f945cfb71683a8d070e57dfacdfca6b82b47794b65b625bf26ca5ba9.ply": "523db2fa46b41b1a27b7ca382ef7b1edc387b54c71e702932d5d172c48daa5db",
+    "/home/zhaoyechong/projects/ManiSkill/cache/arx_scene_collision/3e023b8235bf3fc04ed36979894c459a027ef031cc7b34e47f5de948a8ecf59c.ply": "5ce8778c0cb4cbef9de60dcfd694efae504b57a9b2faafd35e063c2f41acd58b",
+    "/home/zhaoyechong/projects/ManiSkill/cache/arx_scene_collision/3399dc078c6d293fedf9d5d54dc4875f6e99aebeaf9a2f86879b77d23d298377.ply": "f3277899bc41199d92c7ad5af234bef490130834bca03b61fa239ace7e2876e5",
+    "/home/zhaoyechong/projects/ManiSkill/cache/arx_scene_collision/eaa39e21424f94ce1fbe5dc898a72008af3cbb50a4697d471ff842f14fa3996d.ply": "a472d2f605c148eff5a4baf5b1f71821aa044d9881d1f0d8f72983dedbabf75a",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_01/诊断/I0056/候选000.json": "f81f64d5e83dd8246fc986f3e88aae05d54359f9b229fff4a398702cd9fc9b59",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_01/诊断/I0056/候选001.json": "19c79e48c04582a03e5d3e08ed6227a6a2b655e29ec7fd24278e8e9f0a29f8b0",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/抓取位姿局部修正_20261121_01/诊断/I0056/候选002.json": "9a8fb434fc2d21743f03b40902c2eb7407d45c0603124cdd8e8cb04805deea0a"
+  }
+}

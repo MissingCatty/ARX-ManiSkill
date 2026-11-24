@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARX 朝向可达性地图</title><link rel="stylesheet" href="/media/reachability-map.css"><header><h1>ARX 朝向可达性地图</h1><p>固定升降 0.22 m · action TCP43 · 419 万组独立关节采样 · 327 万组通过原静态检查</p><p class="muted">拖动旋转，滚轮缩放，点击体素查看。颜色表示已观察到的朝向格覆盖，不能解释为 IK 或抓取成功概率。空白区域表示未知。</p></header>
+<main><section id="view"><canvas id="canvas" aria-label="可旋转的三维机械臂工作区"></canvas><div id="legend"><span id="scale-title"></span><div class="gradient"></div><span>0</span><span id="scale-max"></span></div></section><aside>
+<label for="metric">着色指标</label><select id="metric"><option value="4">朝下方向覆盖</option><option value="3">全部朝向覆盖</option><option value="6">平均关节限位余量</option><option value="7">平均雅可比条件指标</option></select>
+<label for="roi"><input id="roi" type="checkbox" checked> 只看桌面区域（上方 3–30 cm）</label>
+<label for="height">最高显示高度：<span id="height-value">30</span> cm</label><input type="range" id="height" min="3" max="120" value="30">
+<div class="buttons"><button id="reset">三维视图</button><button id="top">俯视图</button></div><div id="count" class="stat"></div>
+<p class="small muted">概览格为 5 cm，原始查询格为 2 cm。橙线为原桌面边界；X/Y/Z 为 body4 基座坐标，单位厘米。关节余量取六关节中最小值，再按格内样本求平均。</p>
+<div id="detail" class="stat">点击彩色体素查看数值。</div><p class="small muted">当前杂物和运动路径未计入此通用地图；执行仍须通过原场景 IK、碰撞及轨迹检查。原自碰撞策略保持关闭。本页不连接仿真服务，也不发送运动命令。</p></aside></main>
+<section id="regions"><h2>桌面高覆盖区域参考</h2><p class="small muted">按朝下方向覆盖排序，所列中心相距至少 10 cm；只用于查看与布置参考。高度是 TCP 高度，不是物体高度。</p><table><thead><tr><th>序号</th><th>基座 X / Y / Z（cm）</th><th>桌上高度（cm）</th><th>朝下覆盖</th><th>全部覆盖</th><th>关节样本数</th><th>平均限位余量</th></tr></thead><tbody id="region-rows"></tbody></table></section>
+<script type="module" src="/media/reachability-map.mjs"></script></html>

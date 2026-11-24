@@ -1,0 +1,56 @@
+{
+  "version": "tabletop_xy_yaw_v1",
+  "xy_offsets_m": [
+    [
+      -0.06,
+      -0.12
+    ],
+    [
+      -0.06,
+      -0.06
+    ],
+    [
+      -0.06,
+      0
+    ],
+    [
+      0,
+      -0.12
+    ],
+    [
+      0,
+      -0.06
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0.06,
+      -0.12
+    ],
+    [
+      0.06,
+      -0.06
+    ],
+    [
+      0.06,
+      0
+    ]
+  ],
+  "yaw_degrees": [
+    0,
+    45,
+    90,
+    135,
+    180,
+    225,
+    270,
+    315
+  ],
+  "support_border_m": 0.02,
+  "support_prim_suffix": "breakfast_table_xftrki_0/base_link/collisions/xftrki__base_link__collision__3",
+  "scope": "New Graspness teacher collection only; original reference pose first, then balanced nearby registered XY/yaw variants; all historical benchmark resets, robot/cameras, Z/resting tilt and physics unchanged.",
+  "block_attempts": 2,
+  "reference_first": true
+}

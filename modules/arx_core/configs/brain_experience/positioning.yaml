@@ -1,0 +1,109 @@
+category: positioning
+experiences:
+- id: target_horizontal_direction
+  title: 图像水平偏移与底盘旋转方向
+  description: 当前实机方向约定中，目标位于图像左侧时使用正 angular_z，目标位于图像右侧时使用负 angular_z。应在每次旋转后重新观察目标，确认方向约定在当前任务中仍然有效。
+  tags:
+  - 底盘
+  - 旋转
+  - 目标对中
+  - horizontal_offset
+  references:
+    left_target_angular_z_sign: positive
+    right_target_angular_z_sign: negative
+  applicability:
+    platform_model: ARX-LIFT2
+    arm_model: ARX-X5
+    task_types:
+    - target_alignment
+  evidence:
+  - result: left_target_turned_center_after_positive_angular_z
+    observation:
+      initial_target_side: left
+      initial_horizontal_offset_m: -0.03812357816399882
+      command:
+        linear_x: 0.0
+        angular_z: 0.3
+        duration: 0.34713254432681717
+      post_move_target_side: center
+      post_move_horizontal_offset_m: -0.011773584309370453
+    run_id: 0714c7cd2867
+  - result: supported
+    observation:
+      pre_rotation_target_side: left
+      pre_rotation_bearing_error_rad: -0.3026788915930619
+      commanded_angular_z: 0.3
+      post_rotation_target_side: center
+      post_rotation_bearing_error_rad: 0.03586188337519969
+    run_id: 8fe0fe21f54d
+  confidence: 0.92
+  updated_at: '2026-07-02T07:44:01.648632+00:00'
+- id: chassis_rotation_calibration
+  title: 底盘旋转实机响应
+  description: '历史实机标定中，发送 angular_z=±0.3rad/s 时实际角速度约为 0.15rad/s。
+
+    该值是初始参考，不是固定执行值；后续动作应根据方位误差的实际变化进行修正。'
+  tags:
+  - 底盘
+  - 旋转
+  - 标定
+  references:
+    command_angular_z_abs: 0.3
+    observed_angular_speed_rad_s: 0.15
+    historical_max_single_duration_sec: 3.0
+  applicability:
+    platform_model: ARX-LIFT2
+    arm_model: ARX-X5
+    task_types:
+    - target_alignment
+  evidence: []
+  confidence: 0.75
+- id: chassis_translation_calibration
+  title: 底盘直线运动实机响应
+  description: '历史实机标定中，发送 linear_x=0.22 时实际线速度约为 0.04m/s。
+
+    该值只用于首次估算；大脑应根据动作前后目标距离的变化修正本次任务中的运动估计。'
+  tags:
+  - 底盘
+  - 平移
+  - 标定
+  - 目标距离
+  references:
+    command_linear_x: 0.22
+    observed_linear_speed_m_s: 0.04
+  applicability:
+    platform_model: ARX-LIFT2
+    arm_model: ARX-X5
+    task_types:
+    - target_approach
+    - target_retreat
+  evidence: []
+  confidence: 0.75
+- id: distance_adjustment_effect_under_calibration
+  title: 距离调整后应以重新测距修正位移估计
+  description: 在目标已对中后进行前后调整时，线性位移的执行效果应以新的目标距离观测来修正，而不要仅依赖命令时长或历史标定。结合重新观测可以迭代逼近目标距离。
+  tags:
+  - 底盘
+  - 前进
+  - 后退
+  - 重新测距
+  - 距离迭代
+  references:
+    observed_forward_distance_m: 0.29429999256535666
+    observed_backward_distance_m: 0.3292999916811823
+  applicability:
+    platform_model: ARX-LIFT2
+    arm_model: ARX-X5
+    task_types:
+    - target_approach
+    - grasp
+  evidence:
+  - result: distance_iterated_into_tolerance
+    observation:
+      after_forward_distance_m: 0.29429999256535666
+      after_backward_distance_m: 0.3292999916811823
+      desired_distance_m: 0.35
+      distance_tolerance_m: 0.05
+    run_id: 0714c7cd2867
+  confidence: 0.91
+  updated_at: '2026-07-02T02:00:36.637416+00:00'

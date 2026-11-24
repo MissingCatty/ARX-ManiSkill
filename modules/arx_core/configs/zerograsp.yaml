@@ -1,0 +1,35 @@
+model:
+  root: "servers/zerograsp/vendor/zerograsp_mainline_minimal"
+  # Relative paths are resolved against model.root so the repository can move
+  # unchanged between simulation and real-robot hosts.
+  checkpoint: "checkpoints/zerograsp_cvpr2025/zerograsp_demo.ckpt"
+  config: "configs/demo_640x480.yaml"
+  python: "/home/arx/doc/miniconda3/envs/zerograsp/bin/python"
+
+task:
+  default_prompt: "red cube."
+  default_mask_method: "langsam"
+  enable_refine_recapture: false
+  approach_distance_m: 0.08
+  default_execute: false
+  mask_min_area: 50
+  depth_fusion_enabled: true
+  depth_burst_frames: 3
+  depth_burst_window_sec: 1.0
+  depth_fusion_drop_worst: true
+  langsam_timeout_sec: 240.0
+  safety_translation_limit_m: 0.65
+  max_target_x_m: 0.38
+  safety_axis_limits_m:
+    x: 0.56
+    y: 0.30
+    z: 0.30
+  fixed_open_gripper: true
+  fixed_open_gripper_value: -3.2
+  intermediate_waypoint_enabled: true
+  intermediate_waypoint_height_offset_m: 0.10
+  intermediate_waypoint_target_ratio: 0.6666667
+  intermediate_waypoint_timeout_sec: 20.0
+  final_speed: 1.3
+  close_delay: 0.5
+  motion_timeout_sec: 120.0

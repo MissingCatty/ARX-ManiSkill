@@ -1,0 +1,110 @@
+robot:
+  # Legacy single-arm fields remain for compatibility; they describe the right arm.
+  arm_status_topic: "/arm_status"
+  arm_cmd_topic: "/arm_cmd"
+  default_arm_id: "right"
+  control_mode: 4
+  arx_ws: "/home/arx/arx_sdk/LIFT/ARX_X5/ROS2/X5_ws"
+
+arms:
+  right:
+    status_topic: "/arm_status"
+    cmd_topic: "/arm_cmd"
+    legacy_status_topic: "/arm_status"
+    legacy_cmd_topic: "/arm_cmd"
+    command_type: "legacy_single_arm"
+    role: "manipulator"
+    enabled: true
+  left:
+    status_topic: "/arm_l_status"
+    cmd_topic: "/arm_l_cmd"
+    legacy_status_topic: "/arm_l_status"
+    legacy_cmd_topic: "/arm_l_cmd"
+    command_type: "legacy_single_arm_left"
+    role: "manipulator"
+    enabled: true
+
+motion:
+  x_range: [0.00, 0.50]
+  y_range: [-0.40, 0.40]
+  z_range: [-0.30, 0.60]
+  default_speed: 0.03
+  close_delay: 0.5
+  open_gripper_value: -3.2
+  close_gripper_value: 0.0
+  open_gripper_threshold: 0.20
+  close_gripper_threshold: 0.08
+  gripper_min_command_sec: 3.0
+  gripper_hold_after_sec: 2.0
+  gripper_timeout_sec: 15.0
+  gripper_open_duration_sec: 2.0
+  gripper_close_duration_sec: 3.0
+  gripper_timeout_margin_sec: 3.0
+
+camera:
+  # Legacy default fields remain for compatibility. New callers should use camera_id.
+  name: "right_hand"
+  serial: "352122272245"
+  default: "right_hand"
+  cameras:
+    right_hand:
+      name: "right_hand"
+      serial: "352122272245"
+      role: "hand"
+      arm: "right"
+    left_hand:
+      name: "left_hand"
+      serial: "352122273322"
+      role: "hand"
+      arm: "left"
+      status: "detected_but_frame_timeout_usb2"
+    head:
+      name: "head"
+      serial: "352122270890"
+      role: "head"
+      arm: null
+  width: 640
+  height: 480
+  fps: 30
+  # DualMap mapping/navigation and navigation VLM evaluation use the head camera.
+  # Only camera_id=head may reuse the persistent DualMap ROS stream;
+  # right_hand and left_hand always capture their own RealSense directly.
+  dualmap_camera_id: "head"
+  dualmap_camera_serial: "352122270890"
+  dualmap_health_url: "http://127.0.0.1:8005/health"
+  dualmap_health_timeout_sec: 0.5
+  ros_setup_bash: "/opt/ros/jazzy/setup.bash"
+  ros_capture_timeout_sec: 5.0
+  ros_sync_tolerance_sec: 0.3
+  ros_depth_scale: 0.001
+  ros_topics:
+    rgb: "/camera/camera/color/image_raw"
+    depth: "/camera/camera/aligned_depth_to_color/image_raw"
+    camera_info: "/camera/camera/color/camera_info"
+
+lift:
+  workdir: "/home/arx/coolas-arx/tools"
+  executable: "direct_lift_height_dynamic"
+  home_height: 0.5
+  robot_type: 1
+  warmup: 4.0
+  feedback_tolerance: 0.01
+  outer_gain: 0.25
+  ramp_step: 0.001
+  max_command: 0.0
+
+chassis:
+  body_ws: "/home/arx/arx_sdk/LIFT/body/ROS2"
+  command_topic: "/chassis/cmd"
+  status_topic: "/chassis/status"
+  legacy_command_topic: "/ARX_VR_L"
+  legacy_status_topic: "/body_information"
+  default_height: 0.2
+  publish_hz: 50
+  status_timeout_sec: 5.0
+  stop_publish_count: 20
+  linear_x_range: [-0.5, 0.5]
+  linear_y_range: [-0.5, 0.5]
+  angular_z_range: [-0.8, 0.8]
+  duration_range: [0.0, 10.0]
+  lock_after: true

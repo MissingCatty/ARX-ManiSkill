@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-22T19:13:43.356560+08:00",
+  "user_authorization": "Delete the earlier insufficient-category scene batch after the new batch finishes.",
+  "new_dataset": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/diverse_object_scenes/datasets/diverse200_20261122_01",
+  "new_verification_sha256": "5e6b090e946a715bcebaf7c287fcc192a18d319bd96ee3f15a41c086825f4db4",
+  "removed_dataset": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/head_perception_scenes/datasets/head200_20261122_02",
+  "old_models": 38,
+  "old_semantic_classes": 13,
+  "old_registration_sha256": "7f9108837cc8f2c91442805c6e30d590acb4090cf2c945bd6ce81a4956b2101d",
+  "removed_paths": [
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/head_perception_scenes/datasets/head200_20261122_02",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/docs/head_perception_scenes",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/head_perception_scenes/active_dataset.json"
+  ],
+  "shared_sampler_retained": "experiments/head_perception_scenes/scene_builder.py is a frozen dependency of the new dataset.",
+  "passed": true
+}

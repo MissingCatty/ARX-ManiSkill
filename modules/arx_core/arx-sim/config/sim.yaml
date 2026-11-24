@@ -1,0 +1,16 @@
+simulation:
+  isaac_root: ../isaacsim
+  asset_root: ../asset
+  headless: true
+  seed: 20260909
+
+runtime:
+  run_root: runs
+
+services:
+  arx_ops_host: 127.0.0.1
+  arx_ops_port: 8001
+
+# The sole Isaac-specific setting exposed by the public launcher.
+webrtc:
+  port: 49100

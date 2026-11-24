@@ -1,0 +1,154 @@
+{
+  "id": "D0183_S5_occluded_scissors",
+  "model_id": "robocasa__scissors__scissors_0",
+  "semantic_class": "scissors",
+  "family": "scissors",
+  "target_text": "scissors",
+  "layout": "S5_occluded",
+  "seed": 542312353,
+  "actor_identities": [
+    {
+      "name": "target",
+      "model_id": "robocasa__scissors__scissors_0"
+    },
+    {
+      "name": "distractor_00",
+      "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+    },
+    {
+      "name": "distractor_01",
+      "model_id": "robocasa__mango__mango_10"
+    },
+    {
+      "name": "distractor_02",
+      "model_id": "ai2thor__cell_phone__Cellphone_1"
+    },
+    {
+      "name": "distractor_03",
+      "model_id": "robocasa__avocado__avocado_4"
+    }
+  ],
+  "scene": {
+    "layout": "S5_occluded",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__scissors__scissors_0",
+        "pose": [
+          -0.19843952357769012,
+          0.047611407935619354,
+          0.004659137222915888,
+          0.9999164938926697,
+          -6.657160702161491e-05,
+          0.00010951783042401075,
+          -0.012929019518196583
+        ]
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__soap_dispenser__soap_dispenser_2",
+        "pose": [
+          -0.2694557309150696,
+          0.014952851459383965,
+          0.07749953120946884,
+          -0.5824934840202332,
+          6.4338091760873795e-06,
+          -3.7721983972005546e-05,
+          0.8128353953361511
+        ]
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__mango__mango_10",
+        "pose": [
+          -0.5737078189849854,
+          0.2708708345890045,
+          0.025844531133770943,
+          0.9884808659553528,
+          0.00025945273227989674,
+          0.003983941860496998,
+          0.15129438042640686
+        ]
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "ai2thor__cell_phone__Cellphone_1",
+        "pose": [
+          -0.13841235637664795,
+          -0.204896941781044,
+          0.0007568853907287121,
+          0.9708836674690247,
+          1.4744728105142713e-06,
+          4.297368150218972e-07,
+          0.23955191671848297
+        ]
+      },
+      {
+        "name": "distractor_03",
+        "model_id": "robocasa__avocado__avocado_4",
+        "pose": [
+          -0.36699867248535156,
+          0.10416919738054276,
+          0.033466778695583344,
+          0.7500750422477722,
+          -6.337463855743408e-05,
+          -0.00020207278430461884,
+          -0.6613527536392212
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 432,
+    "isolated_mask_pixels": 567,
+    "occlusion_fraction": 0.23809523809523814,
+    "projected_bbox_uv": [
+      [
+        368.95421955854033,
+        190.80842898903276
+      ],
+      [
+        467.48864635866767,
+        221.49689573382673
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.767,
+    "visible_pixels": 432,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "observation": null,
+  "physical_grasp_attempts": 0
+}

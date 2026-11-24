@@ -1,0 +1,14 @@
+{
+  "original_completed_results_verified": 66,
+  "old_stop_preserved": true,
+  "original_service": [
+    "MainPID=0",
+    "ActiveState=inactive"
+  ],
+  "diagnostic_physical_closures": 24,
+  "offline_model_jobs": 12,
+  "frozen_source_hashes_verified": 1264,
+  "original_weight_metadata_verified": 5,
+  "graspgenx_weight_sha256_matched_original": true,
+  "permanent_physics_or_inference_change": false
+}

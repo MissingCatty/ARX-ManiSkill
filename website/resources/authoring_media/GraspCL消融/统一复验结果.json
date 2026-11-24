@@ -1,0 +1,131 @@
+{
+  "groups": {
+    "A_zerograsp": {
+      "passed": true,
+      "registered": 100,
+      "completed": 100,
+      "successes": 47,
+      "planning_passes": 67,
+      "failure_reasons": {
+        "no_feasible_native_post_or_recalled_candidate": 33,
+        "insufficient_hold_height": 17,
+        "close_not_converged": 1,
+        "no_bilateral_target_contact": 1,
+        "lift_not_converged": 1
+      },
+      "refinement_cases": 100,
+      "refined_rescore_cases": 0,
+      "processing": {
+        "input_candidates": 3598,
+        "retained_candidates": 1476,
+        "retracted_candidates": 233,
+        "retained_recall_candidates": 0,
+        "recall_tcp43_shift_verified": 0
+      },
+      "selected_origins": {
+        "zerograsp": 67
+      }
+    },
+    "B_graspcl_no_experience": {
+      "passed": true,
+      "registered": 100,
+      "completed": 100,
+      "successes": 47,
+      "planning_passes": 67,
+      "failure_reasons": {
+        "no_feasible_native_post_or_recalled_candidate": 33,
+        "insufficient_hold_height": 17,
+        "close_not_converged": 1,
+        "no_bilateral_target_contact": 1,
+        "lift_not_converged": 1
+      },
+      "refinement_cases": 100,
+      "refined_rescore_cases": 100,
+      "processing": {
+        "input_candidates": 3598,
+        "retained_candidates": 1476,
+        "retracted_candidates": 233,
+        "retained_recall_candidates": 0,
+        "recall_tcp43_shift_verified": 0
+      },
+      "selected_origins": {
+        "zerograsp": 67
+      }
+    },
+    "C_graspcl_experience50": {
+      "passed": true,
+      "registered": 100,
+      "completed": 100,
+      "successes": 63,
+      "planning_passes": 94,
+      "failure_reasons": {
+        "insufficient_hold_height": 19,
+        "no_feasible_native_post_or_recalled_candidate": 6,
+        "close_not_converged": 2,
+        "no_bilateral_target_contact": 4,
+        "approach_not_converged": 5,
+        "forbidden_robot_contact": 1
+      },
+      "refinement_cases": 100,
+      "refined_rescore_cases": 100,
+      "processing": {
+        "input_candidates": 4600,
+        "retained_candidates": 2078,
+        "retracted_candidates": 608,
+        "retained_recall_candidates": 602,
+        "recall_tcp43_shift_verified": 602
+      },
+      "selected_origins": {
+        "demonstration_patch": 14,
+        "zerograsp": 51,
+        "demonstration_object": 29
+      }
+    }
+  },
+  "analysis": {
+    "comparisons": {
+      "C_graspcl_experience50 vs B_graspcl_no_experience": {
+        "gain_scenes": 20,
+        "loss_scenes": 4,
+        "paired_difference": 0.16,
+        "model_cluster_bootstrap_95_ci": [
+          0.0594059405940594,
+          0.2647058823529412
+        ],
+        "two_sided_model_cluster_signflip_p": 0.005979880402391952,
+        "mcnemar_exact_descriptive_p": 0.001543879508972168,
+        "primary_holm_adjusted_p": 0.011959760804783904
+      },
+      "C_graspcl_experience50 vs A_zerograsp": {
+        "gain_scenes": 22,
+        "loss_scenes": 6,
+        "paired_difference": 0.16,
+        "model_cluster_bootstrap_95_ci": [
+          0.057692307692307696,
+          0.27
+        ],
+        "two_sided_model_cluster_signflip_p": 0.0071798564028719425,
+        "mcnemar_exact_descriptive_p": 0.0037191659212112427,
+        "primary_holm_adjusted_p": 0.011959760804783904
+      },
+      "B_graspcl_no_experience vs A_zerograsp": {
+        "gain_scenes": 4,
+        "loss_scenes": 4,
+        "paired_difference": 0.0,
+        "model_cluster_bootstrap_95_ci": [
+          -0.04950495049504951,
+          0.04950495049504951
+        ],
+        "two_sided_model_cluster_signflip_p": 1.0,
+        "mcnemar_exact_descriptive_p": 1.0
+      }
+    },
+    "shared_rgbd_native_candidate_cases": 100,
+    "positive_evidence_for_added_experience_over_both_controls": true,
+    "all_100_denominator_includes_common_frontend_failures": true,
+    "experience_bank_frozen": true
+  },
+  "wall_seconds": 7007.843752535991,
+  "uniform_processing_verified": true,
+  "same_scene_revalidation": true
+}

@@ -1,0 +1,43 @@
+ros2:
+  enabled: true
+  distro: jazzy
+  domain_id: 0
+  rmw_implementation: rmw_fastrtps_cpp
+  publish_hz: 30.0
+  # Mapping must use a rigidly mounted sensor. The right-arm camera moves with
+  # grasp commands and corrupts a base-odometry-only mapping stream.
+  camera_role: head
+  qos:
+    sensor:
+      history: keep_last
+      depth: 5
+      reliability: best_effort
+      durability: volatile
+    reliable:
+      history: keep_last
+      depth: 10
+      reliability: reliable
+      durability: volatile
+    static:
+      history: keep_last
+      depth: 1
+      reliability: reliable
+      durability: transient_local
+  topics:
+    clock: /clock
+    rgb: /camera/camera/color/image_raw
+    depth: /camera/camera/aligned_depth_to_color/image_raw
+    camera_info: /camera/camera/color/camera_info
+    odometry: /rgbd_odom
+    tf: /tf
+    tf_static: /tf_static
+  frames:
+    world: map
+    base: base_link
+    lift: lift_link
+    arm_base: arm_base_link
+    ee: ee_link
+    tcp: gripper_tcp
+    right_camera: right_camera_link
+    camera_mount: mapping_camera_link
+    camera_optical: camera_color_optical_frame

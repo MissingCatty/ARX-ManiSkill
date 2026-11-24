@@ -1,0 +1,2645 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-20T02:06:24.555923+08:00",
+  "registered_and_completed": 300,
+  "groups": {
+    "A_zerograsp": {
+      "completed": 100,
+      "successes": 47,
+      "planning_passes": 67,
+      "actual_refinement_requests": 100,
+      "actual_rescore_requests": 0,
+      "retained_recall_candidates": 0,
+      "verified_recall_tcp_shifts": 0
+    },
+    "B_graspcl_no_experience": {
+      "completed": 100,
+      "successes": 47,
+      "planning_passes": 67,
+      "actual_refinement_requests": 100,
+      "actual_rescore_requests": 100,
+      "retained_recall_candidates": 0,
+      "verified_recall_tcp_shifts": 0
+    },
+    "C_graspcl_experience50": {
+      "completed": 100,
+      "successes": 63,
+      "planning_passes": 94,
+      "actual_refinement_requests": 100,
+      "actual_rescore_requests": 100,
+      "retained_recall_candidates": 602,
+      "verified_recall_tcp_shifts": 602
+    }
+  },
+  "same_rgbd_native_rows_and_pre_refinement_native_poses": 100,
+  "actual_rpc_refinement_before_planning_cases": 300,
+  "actual_rpc_rescore_after_refinement_before_planning_cases": 200,
+  "selected_goals_match_actual_refined_pools": true,
+  "source_test_actor_model_intersection": 0,
+  "source_test_actor_category_intersection": 0,
+  "original_and_loaded_bank_files_unchanged": true,
+  "test_feedback_updates": 0,
+  "all_services_and_simulators_exited": true,
+  "cases": {
+    "T0001_S1_open_062_dice": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0002_S2_edge_061_foam_brick": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0003_S3_sparse_033_spatula": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0004_S4_clutter_032_knife": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      }
+    },
+    "T0005_S1_open_073-f_lego_duplo": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0006_S2_edge_043_phillips_screwdriver": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0007_S3_sparse_010_potted_meat_can": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "close_not_converged",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0008_S4_clutter_065-i_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0009_S1_open_065-j_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0010_S2_edge_065-c_cups": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "close_not_converged",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "close_not_converged",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0011_S3_sparse_071_nine_hole_peg_test": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0012_S4_clutter_042_adjustable_wrench": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "no_bilateral_target_contact",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0013_S1_open_070-b_colored_wood_blocks": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "no_bilateral_target_contact",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0014_S2_edge_077_rubiks_cube": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "no_bilateral_target_contact",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0015_S3_sparse_031_spoon": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0016_S4_clutter_007_tuna_fish_can": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0017_S1_open_044_flat_screwdriver": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0018_S2_edge_065-d_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0019_S3_sparse_062_dice": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0020_S4_clutter_073-a_lego_duplo": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0021_S1_open_048_hammer": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0022_S2_edge_032_knife": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0023_S3_sparse_065-f_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0024_S4_clutter_029_plate": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0025_S1_open_042_adjustable_wrench": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0026_S2_edge_028_skillet_lid": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0027_S3_sparse_040_large_marker": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      }
+    },
+    "T0028_S4_clutter_065-b_cups": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0029_S1_open_030_fork": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      }
+    },
+    "T0030_S2_edge_059_chain": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0031_S3_sparse_073-b_lego_duplo": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0032_S4_clutter_061_foam_brick": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0033_S1_open_002_master_chef_can": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0034_S2_edge_026_sponge": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "approach_not_converged",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0035_S3_sparse_050_medium_clamp": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "no_bilateral_target_contact",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "no_bilateral_target_contact",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0036_S4_clutter_007_tuna_fish_can": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0037_S1_open_073-c_lego_duplo": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0038_S2_edge_065-g_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0039_S3_sparse_037_scissors": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0040_S4_clutter_035_power_drill": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0041_S1_open_073-b_lego_duplo": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0042_S2_edge_022_windex_bottle": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0043_S3_sparse_051_large_clamp": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0044_S4_clutter_025_mug": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0045_S1_open_024_bowl": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0046_S2_edge_070-b_colored_wood_blocks": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0047_S3_sparse_006_mustard_bottle": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0048_S4_clutter_021_bleach_cleanser": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "lift_not_converged",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "lift_not_converged",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0049_S1_open_071_nine_hole_peg_test": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0050_S2_edge_005_tomato_soup_can": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "approach_not_converged",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0051_S3_sparse_065-c_cups": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "forbidden_robot_contact",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0052_S4_clutter_065-a_cups": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0053_S1_open_050_medium_clamp": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0054_S2_edge_070-a_colored_wood_blocks": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0055_S3_sparse_073-e_lego_duplo": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0056_S4_clutter_070-a_colored_wood_blocks": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "approach_not_converged",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0057_S1_open_029_plate": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0058_S2_edge_019_pitcher_base": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0059_S3_sparse_044_flat_screwdriver": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      }
+    },
+    "T0060_S4_clutter_065-i_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0061_S1_open_048_hammer": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0062_S2_edge_022_windex_bottle": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "approach_not_converged",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0063_S3_sparse_019_pitcher_base": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0064_S4_clutter_065-d_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0065_S1_open_005_tomato_soup_can": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0066_S2_edge_073-a_lego_duplo": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0067_S3_sparse_051_large_clamp": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0068_S4_clutter_028_skillet_lid": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0069_S1_open_065-h_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0070_S2_edge_065-e_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "approach_not_converged",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0071_S3_sparse_038_padlock": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0072_S4_clutter_033_spatula": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0073_S1_open_065-b_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0074_S2_edge_065-g_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0075_S3_sparse_073-c_lego_duplo": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0076_S4_clutter_065-e_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0077_S1_open_024_bowl": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0078_S2_edge_043_phillips_screwdriver": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0079_S3_sparse_065-f_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0080_S4_clutter_006_mustard_bottle": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0081_S1_open_073-e_lego_duplo": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0082_S2_edge_026_sponge": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "no_bilateral_target_contact",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0083_S3_sparse_025_mug": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0084_S4_clutter_073-g_lego_duplo": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0085_S1_open_052_extra_large_clamp": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0086_S2_edge_010_potted_meat_can": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0087_S3_sparse_035_power_drill": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0088_S4_clutter_002_master_chef_can": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0089_S1_open_037_scissors": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0090_S2_edge_073-g_lego_duplo": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0091_S3_sparse_065-h_cups": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0092_S4_clutter_077_rubiks_cube": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "close_not_converged",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0093_S1_open_065-j_cups": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0094_S2_edge_036_wood_block": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      }
+    },
+    "T0095_S3_sparse_073-d_lego_duplo": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0096_S4_clutter_040_large_marker": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "demonstration_patch",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0097_S1_open_036_wood_block": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": true,
+        "reason": "insufficient_hold_height",
+        "selected_origin": "demonstration_object",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0098_S2_edge_073-d_lego_duplo": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0099_S3_sparse_059_chain": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "B_graspcl_no_experience": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      },
+      "C_graspcl_experience50": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": true
+      }
+    },
+    "T0100_S4_clutter_030_fork": {
+      "A_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": null,
+        "service_order_checked": true,
+        "planning_consumed_refined_pose": false
+      }
+    }
+  }
+}

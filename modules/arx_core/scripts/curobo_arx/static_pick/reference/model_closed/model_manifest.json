@@ -1,0 +1,54 @@
+{
+  "source": "/home/zhaoyechong/projects/asset/robots/arx_x5_lift/1.0.0/usd/robot.usd",
+  "spheres": {
+    "right_link21": 26,
+    "right_link22": 115,
+    "right_link23": 97,
+    "right_link24": 36,
+    "right_link25": 24,
+    "right_link26": 89,
+    "right_link27": 258,
+    "right_link28": 226
+  },
+  "locks": {
+    "right_joint27": 0.02191237360239029,
+    "right_joint28": 0.019810164347290993
+  },
+  "joint_limits": {
+    "right_joint21": [
+      -2.0940000224454822,
+      3.1415998441247366
+    ],
+    "right_joint22": [
+      0.0,
+      3.6649996815896064
+    ],
+    "right_joint23": [
+      0.0,
+      3.239999917977638
+    ],
+    "right_joint24": [
+      -1.670999893338,
+      1.670999893338
+    ],
+    "right_joint25": [
+      -1.670999893338,
+      1.670999893338
+    ],
+    "right_joint26": [
+      -2.0940000224454822,
+      2.0940000224454822
+    ],
+    "right_joint27": [
+      0.0,
+      0.04399999976158142
+    ],
+    "right_joint28": [
+      0.0,
+      0.04399999976158142
+    ]
+  },
+  "collision_profile_id": "arx_refined_871_v1",
+  "sphere_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+  "urdf_sha256": "05116a83104b73128743e5c4b3de0338642be0a9fe607a79681e358495aebb3f"
+}

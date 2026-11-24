@@ -1,0 +1,7 @@
+{
+  "phase": "frozen",
+  "completed": 200,
+  "registered": 200,
+  "construction_independent_of_ik": true,
+  "physical_grasps": 0
+}

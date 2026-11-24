@@ -1,0 +1,110 @@
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local Python packaging outputs
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+build/
+dist/
+
+# Native/CUDA build outputs
+*.so
+*.o
+*.a
+*.dll
+*.dylib
+third_party/octree_feature_extractor/build/
+third_party/octree_feature_extractor/dist/
+third_party/octree_feature_extractor/*.egg-info/
+ofe/cuda/*.so
+
+# Local configuration and editor files
+.env
+.env.*
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.pid
+*.prof
+
+# Training and experiment trackers
+wandb/
+lightning_logs/
+tensorboard/
+runs/
+
+# Model weights and checkpoints.
+# Gitee free repositories do not support Git LFS, so transfer checkpoints separately.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+pytorch_model*.bin
+!checkpoints/zerograsp_cvpr2025/need_to_be_replaced.ckpt
+
+# Generic generated outputs
+output/
+outputs/
+example_run/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+
+# ZeroGrasp / ManiSkill Codex generated artifacts
+maniskill_codex/runs/
+maniskill_codex/batch_runs/
+maniskill_codex/videos/
+maniskill_codex/zg_inputs/
+maniskill_codex/zg_outputs/
+
+# ManiSkill + cuRobo generated artifacts and local dependencies
+maniskill_curobo/envs/
+maniskill_curobo/external/
+maniskill_curobo/runs/
+maniskill_curobo/batch_run/
+maniskill_curobo/batch_runs/
+maniskill_curobo/logs/
+maniskill_curobo/smoke_tests/
+maniskill_curobo/datasets/
+
+# Real-world collision model experiments
+maniskill_curobo_real/runs/
+
+# GraspNet baseline integration generated artifacts and local dependencies
+maniskill_curobo_graspnet/checkpoints/
+maniskill_curobo_graspnet/envs/
+maniskill_curobo_graspnet/external/
+maniskill_curobo_graspnet/runs/
+
+# AffordanceNet + OpenArm integration generated artifacts and local dependencies
+maniskill_curobo_affordance/checkpoints/
+maniskill_curobo_affordance/envs/
+maniskill_curobo_affordance/external/
+maniskill_curobo_affordance/runs/
+
+# Robot-description repositories cloned locally by the G1-D setup.
+# Keep these as reproducible external dependencies instead of broken gitlinks.
+maniskill_curobo_g1d/external/
+
+# Local datasets and large generated training data
+datasets/
+data/

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "time": "2026-11-21T04:26:34.843871+08:00",
+  "trace_recomputed": 318,
+  "joint7_plans": 309,
+  "not_executed": 2,
+  "source_hashes_checked": 3984,
+  "physical_retries": 0,
+  "all_services_exited": true
+}

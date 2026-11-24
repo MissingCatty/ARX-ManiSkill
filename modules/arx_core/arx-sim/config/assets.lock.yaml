@@ -1,0 +1,17 @@
+format: coolas-assets-lock-v1
+assets:
+  environment:
+    id: house_double_floor_lower
+    version: 1.0.0
+    path: environments/house_double_floor_lower/1.0.0/usd/environment.usd
+    sha256: e408b5abcbf08c6dae000d5ecb8a492aee458ad949ad0e6541e1b2578aa5bd9d
+  robot:
+    id: arx_x5_lift
+    version: 1.0.0
+    path: robots/arx_x5_lift/1.0.0/usd/robot.usd
+    sha256: fb1b4c0bcc7cef32b57cf2656bd7db221b9f15022b12650d5dfd08c06414ce58
+  task:
+    id: grasp_demo
+    version: 1.0.0
+    path: tasks/grasp_demo/1.0.0/task.usda
+    sha256: 34aaea3180e77596b5edc1018881a5971076dcd7e4ab1285c1f228c730489d30

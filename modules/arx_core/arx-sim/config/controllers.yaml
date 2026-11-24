@@ -1,0 +1,253 @@
+controllers:
+  frames:
+    base_link: base_link
+    lift_link: body4
+    arm_base_link: body4
+    ee_link: right_eef_link
+    gripper_tcp: right_eef_link
+  right_arm:
+    joints: [right_joint21, right_joint22, right_joint23, right_joint24, right_joint25, right_joint26]
+    # Vendor GO_HOME is the six-axis zero position.  Keep this explicit so
+    # startup/reset never mistakes an arbitrary authored USD pose for home.
+    home_joint_positions_rad: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    ee_link: right_eef_link
+    position_tolerance_m: 0.01
+    orientation_tolerance_rad: 0.06
+    home_min_duration_sec: 2.0
+    joint_step_rad: 0.025
+    stable_steps: 8
+    damping: 0.05
+    # The fourth arm joint carries most of the extended arm under gravity.
+    # The previous gains settled about 0.44 rad away from the zero/home target,
+    # which made /arm/home wait until its HTTP deadline on every mapping run.
+    # ARX loaded tabletop lift: 80k/1600 leaves 4.37 mm tool error;
+    # 120k/2000 reduces it to 3.12 mm in the same physical trajectory.
+    drive_stiffness: 120000.0
+    drive_damping: 2000.0
+    max_effort: 10000.0
+  left_arm:
+    joints: [left_joint11, left_joint12, left_joint13, left_joint14, left_joint15, left_joint16]
+    ee_link: left_eef_link
+    # Vendor GO_HOME uses the six-axis zero position for both arms.
+    # Motion tolerances and IK settings inherit the right-arm defaults.
+    home_joint_positions_rad: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    drive_stiffness: 20000.0
+    drive_damping: 800.0
+    max_effort: 10000.0
+  gripper:
+    joints: [right_joint27, right_joint28]
+    api_open: -3.2
+    api_closed: 0.0
+    api_close_after_pose: 0.1
+    open_m: 0.044
+    closed_m: 0.0
+    tolerance_m: 0.002
+    stable_steps: 5
+    drive_stiffness: 8000.0
+    drive_damping: 800.0
+    max_effort: 800.0
+  left_gripper:
+    joints: [left_joint17, left_joint18]
+    drive_stiffness: 8000.0
+    drive_damping: 800.0
+    max_effort: 800.0
+  gripper_contact:
+    # Keep contact tuning on the gripper side so grasping does not depend on
+    # editing every task object. Existing finger colliders get this material,
+    # and each inner finger face gets a thin invisible collision pad.
+    material:
+      static_friction: 6.0
+      dynamic_friction: 5.0
+      restitution: 0.0
+    bind_existing_collision_links: [left_link17, left_link18, right_link27, right_link28]
+    replacement_colliders:
+      enabled: true
+      disable_existing_collision_links: [right_link27, right_link28]
+      # Split the original gripper collision mesh into small convex cells
+      # instead of using one large convex hull for the whole finger.
+      split_existing_collision_links: [right_link27, right_link28]
+      split_axes: [x, y, z]
+      split_segments:
+        x: 4
+        y: 4
+        z: 3
+      split_overlap_m: 0.001
+    rubber_pads:
+      enabled: false
+      size_m: [0.035, 0.0015, 0.030]
+      x_m: 0.045
+      z_m: -0.020
+      links:
+        left_link17:
+          y_m: 0.01855
+        left_link18:
+          y_m: -0.01855
+        right_link27:
+          y_m: 0.01855
+        right_link28:
+          y_m: -0.01855
+  lift:
+    joint: joint4
+    # The HTTP height is the vendor SDK native value. Lift2 maps native
+    # height=0.5 to joint4=0.0m, and height=15.0 to joint4=0.46m.
+    native_zero: 0.5
+    native_per_meter: 31.52173913043478
+    joint_zero_m: 0.0
+    min_m: 0.0
+    max_m: 0.46
+    tolerance_m: 0.005
+    velocity_tolerance_mps: 0.002
+    stable_steps: 8
+    drive_stiffness: 12000.0
+    drive_damping: 1200.0
+    max_effort: 30000.0
+  chassis:
+    model: planar_virtual_joints
+    x_joint: base_footprint_x_joint
+    y_joint: base_footprint_y_joint
+    yaw_joint: base_footprint_rz_joint
+    supports_linear_y: true
+    tolerance: 0.001
+    velocity_tolerance: 0.005
+    stable_steps: 4
+    # Planar virtual joints are velocity-controlled. Position-drive stiffness
+    # would turn a timed velocity command into an inaccurate displacement goal.
+    drive_stiffness: 0.0
+    drive_damping: 20000.0
+    max_effort: 50000.0
+    linear_x_scale: 1.0
+    linear_y_scale: 1.0
+    angular_z_scale: 0.5
+  camera:
+    # Publish/save uint16 depth in millimetres. DualMap decodes the ROS depth
+    # stream with depth_factor=1000.0, so 1 integer unit must equal 0.001 m.
+    depth_scale: 0.001
+    resolution: [640, 480]
+    roles:
+      # PR8's calibrated local transforms are authored relative to body4 and
+      # the two link16/link26 wrist links. In PR7's exported robot USD these
+      # links are direct children of the articulation root rather than nested
+      # beneath the preceding kinematic links.
+      head: body4/head_color_camera
+      left_wrist: left_link16/left_color_camera
+      right_wrist: right_link26/right_color_camera
+    logical_serials:
+      "352122270890": head
+      "352122273322": left_wrist
+      "352122272245": right_wrist
+    definitions:
+      head:
+        serial: "352122270890"
+        frame: head_depth_optical_frame
+        reference_frame: head_reference
+        depth_valid_range_m: [0.10, 2.00]
+        depth_intrinsics:
+          width: 640
+          height: 480
+          fx: 385.556640625
+          fy: 385.556640625
+          cx: 317.3089599609375
+          cy: 240.1505584716797
+          distortion_model: brown_conrady
+          coeffs: [0.0, 0.0, 0.0, 0.0, 0.0]
+        color_intrinsics:
+          width: 640
+          height: 480
+          fx: 391.53875732421875
+          fy: 390.5028381347656
+          cx: 314.70556640625
+          cy: 240.345947265625
+          distortion_model: inverse_brown_conrady
+          coeffs: [-0.053569495677948, 0.05939065292477608, 0.00005090847844257951, -0.00014923019625712186, -0.02002261020243168]
+        T_color_from_depth:
+          - [0.9999727011, 0.0042298138, -0.0060590091, 0.0000088721]
+          - [-0.0042273300, 0.9999910000, 0.0004226730, 0.0000100000]
+          - [0.0060607418, -0.0003970480, 0.9999815822, 0.0000100000]
+          - [0.0, 0.0, 0.0, 1.0]
+        T_reference_from_depth:
+          - [1.0, 0.0, 0.0, 0.00]
+          - [0.0, 0.0, 1.0, 0.02]
+          - [0.0, -1.0, 0.0, 0.16]
+          - [0.0, 0.0, 0.0, 1.0]
+        xform_rows:
+          - [-0.006059009, -0.999972701, -0.004229814, 0.0]
+          - [-0.000422673, -0.004227330, 0.999991000, 0.0]
+          - [-0.999981582, 0.006060742, -0.000397048, 0.0]
+          - [0.177639050, 0.000008890, 0.280510033, 1.0]
+      left_wrist:
+        serial: "352122273322"
+        frame: left_wrist_depth_optical_frame
+        reference_frame: left_ee
+        depth_valid_range_m: [0.0, 1.50]
+        calibration_note: "Left wrist hand-eye is a temporary mirrored value; recalibrate for high-precision work."
+        depth_intrinsics:
+          width: 640
+          height: 480
+          fx: 390.2655944824219
+          fy: 390.2655944824219
+          cx: 318.6296691894531
+          cy: 239.8097686767578
+          distortion_model: brown_conrady
+          coeffs: [0.0, 0.0, 0.0, 0.0, 0.0]
+        color_intrinsics:
+          width: 640
+          height: 480
+          fx: 391.3247375488281
+          fy: 390.3759460449219
+          cx: 313.939697265625
+          cy: 240.84259033203125
+          distortion_model: inverse_brown_conrady
+          coeffs: [-0.05437622591853142, 0.06214268505573273, -0.0001848314277594909, 0.00031201494857668877, -0.021107440814375877]
+        T_color_from_depth:
+          - [0.9999470115, 0.0089459242, -0.0050977487, 0.0000100000]
+          - [-0.0089462269, 0.9999600053, -0.0000365314, 0.0000100000]
+          - [0.0050972179, 0.0000821351, 0.9999870062, 0.0000100000]
+          - [0.0, 0.0, 0.0, 1.0]
+        T_reference_from_depth:
+          - [0.0, -0.515038075, 0.857167301, 0.071]
+          - [-1.0, 0.0, 0.0, 0.001]
+          - [0.0, -0.857167301, -0.515038075, 0.071]
+          - [0.0, 0.0, 0.0, 1.0]
+        xform_rows:
+          - [-0.008977115, -0.999947012, -0.005042619, 0.0]
+          - [0.515048790, -0.008946227, 0.857114204, 0.0]
+          - [-0.857113860, 0.005097218, 0.515101786, 0.0]
+          - [0.070996669, 0.001009961, 0.071013773, 1.0]
+      right_wrist:
+        serial: "352122272245"
+        frame: right_wrist_depth_optical_frame
+        reference_frame: right_ee
+        depth_valid_range_m: [0.0, 1.50]
+        depth_intrinsics:
+          width: 640
+          height: 480
+          fx: 388.48419189453125
+          fy: 388.48419189453125
+          cx: 317.9107971191406
+          cy: 238.6846466064453
+          distortion_model: brown_conrady
+          coeffs: [0.0, 0.0, 0.0, 0.0, 0.0]
+        color_intrinsics:
+          width: 640
+          height: 480
+          fx: 392.071044921875
+          fy: 391.0259094238281
+          cx: 315.4335632324219
+          cy: 236.485107421875
+          distortion_model: inverse_brown_conrady
+          coeffs: [-0.05229520425200462, 0.06437485665082932, -0.00033429707400500774, 0.0009613928850740194, -0.02257872372865677]
+        T_color_from_depth:
+          - [0.9999979138, 0.0004907444, -0.0019927088, 0.0000098649]
+          - [-0.0004895395, 0.9999997020, 0.0006050477, 0.0000100000]
+          - [0.0019930052, -0.0006040709, 0.9999978542, 0.0000100000]
+          - [0.0, 0.0, 0.0, 1.0]
+        T_reference_from_depth:
+          - [0.0, -0.515038075, 0.857167301, 0.071]
+          - [-1.0, 0.0, 0.0, -0.001]
+          - [0.0, -0.857167301, -0.515038075, 0.071]
+          - [0.0, 0.0, 0.0, 1.0]
+        xform_rows:
+          - [-0.001960837, -0.999997914, 0.000605671, 0.0]
+          - [0.514519294, -0.000489540, 0.857478668, 0.0]
+          - [-0.857476581, 0.001993005, 0.514519180, 0.0]
+          - [0.070996590, -0.000990120, 0.071013714, 1.0]

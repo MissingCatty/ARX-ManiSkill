@@ -1,0 +1,9 @@
+{
+  "source_files_checked": 1264,
+  "source_mismatches": [],
+  "selected_poses_checked": 50,
+  "generator_to_eef_max_matrix_error": 2.7755575615628914e-17,
+  "tcp43_contact_storage_max_matrix_error": 0.0,
+  "stop_marker_preserved": true,
+  "simulation_started": false
+}

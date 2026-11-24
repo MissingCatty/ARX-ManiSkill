@@ -1,0 +1,1277 @@
+{
+  "scope": "13 previously failed S5 trials with fixed blocker and simulator instance segmentation",
+  "validated_total": 13,
+  "unexecuted": 0,
+  "successful_direct": 0,
+  "blocker_physical_grasp": 4,
+  "blocker_short_lift_passed": 3,
+  "blocker_laid_stable": 3,
+  "blocker_removed_with_retreat": 1,
+  "original_target_reobserved": 1,
+  "original_target_attempted": 1,
+  "rescued": 1,
+  "failure_reason_counts": {
+    "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate": 7,
+    "\u64a4\u79bb\u89c4\u5212_state_collision": 2,
+    "insufficient_hold_height": 1,
+    "\u8fdb\u573a\u590d\u6838: full_scene_path_collision": 2
+  },
+  "infrastructure_interruptions_preserved": 1,
+  "timing_s": {
+    "direct_total": 273.4295810920885,
+    "direct_median": 20.647551330039278,
+    "clearance_trial_total": 475.3033561706543,
+    "clearance_trial_median": 21.335634469985962,
+    "paired_median_extra": 1.5295214529614896,
+    "run_total_with_warmups": 703.5903687889222
+  },
+  "rows": [
+    {
+      "case": "I0015",
+      "id": "I0015_S5_occluded_065-g_cups",
+      "target_model": "065-g_cups",
+      "blocker": "distractor_00",
+      "blocker_model": "036_wood_block",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0015_S5_occluded_065-g_cups",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "80c6800d56245e65c81df4443278615f678ac7f01151dc11d6adc8cf2ffb370f"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0015_S5_occluded_065-g_cups",
+      "status": "completed",
+      "phase": "\u6321\u7269\u6293\u53d6",
+      "placed": false,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 4252,
+        "isolated_mask_pixels": 6019,
+        "occlusion_fraction": 0.2935703605250042,
+        "projected_bbox_uv": [
+          [
+            256.8398908073243,
+            177.80417069412667
+          ],
+          [
+            369.15752850276357,
+            299.61992877683736
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": false,
+        "physical_attempt": false,
+        "close_started": false,
+        "planning_success": false,
+        "counts": {
+          "raw": 16795,
+          "native_postprocessed_zero": 25,
+          "zero_scored_input": 25,
+          "scored": 25,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 2.1998008160153404,
+        "retained_candidates": 7,
+        "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+        "wall_seconds": 6.9171597469830886
+      },
+      "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+      "wall_seconds": 15.12147668201942,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u914d\u5bf901/\u8bd5\u6b21/I0015",
+      "direct_wall_s": 23.23152256105095,
+      "clearance_trial_wall_s": 28.260514974594116,
+      "blocker_planner_result": false,
+      "blocker_planner_rejections": {
+        "grasp_ik": 5,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 2,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0018",
+      "id": "I0018_S5_occluded_002_master_chef_can",
+      "target_model": "002_master_chef_can",
+      "blocker": "distractor_00",
+      "blocker_model": "036_wood_block",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0018_S5_occluded_002_master_chef_can",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "95c708665efd67c234983ff66d9b7a0d79f4ead5b5fe0ea808e8cbd94313aaae"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0018_S5_occluded_002_master_chef_can",
+      "status": "completed",
+      "phase": "\u6321\u7269\u6293\u53d6",
+      "placed": false,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 4705,
+        "isolated_mask_pixels": 6321,
+        "occlusion_fraction": 0.255655750672362,
+        "projected_bbox_uv": [
+          [
+            267.07275356684204,
+            174.32671052204515
+          ],
+          [
+            360.54769934875327,
+            298.50817012286586
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": false,
+        "physical_attempt": false,
+        "close_started": false,
+        "planning_success": false,
+        "counts": {
+          "raw": 20022,
+          "native_postprocessed_zero": 23,
+          "zero_scored_input": 23,
+          "scored": 23,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 2.3225017950171605,
+        "retained_candidates": 9,
+        "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+        "wall_seconds": 6.375955466995947
+      },
+      "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+      "wall_seconds": 14.190832369029522,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u914d\u5bf901/\u8bd5\u6b21/I0018",
+      "direct_wall_s": 22.910854523070157,
+      "clearance_trial_wall_s": 17.651696920394897,
+      "blocker_planner_result": false,
+      "blocker_planner_rejections": {
+        "grasp_ik": 8,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 1,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0038",
+      "id": "I0038_S5_occluded_065-b_cups",
+      "target_model": "065-b_cups",
+      "blocker": "distractor_00",
+      "blocker_model": "002_master_chef_can",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0038_S5_occluded_065-b_cups",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "54e40e1ac7c87b2dca391f909f96a307ca212b0a4e0ff8904e84b51fe3c0b174"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0038_S5_occluded_065-b_cups",
+      "status": "completed",
+      "phase": "\u6321\u7269\u6293\u53d6",
+      "placed": false,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 2177,
+        "isolated_mask_pixels": 3216,
+        "occlusion_fraction": 0.32307213930348255,
+        "projected_bbox_uv": [
+          [
+            273.669473219041,
+            189.1673346096895
+          ],
+          [
+            355.71966208484764,
+            285.60698790594455
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": false,
+        "physical_attempt": false,
+        "close_started": false,
+        "planning_success": false,
+        "counts": {
+          "raw": 9171,
+          "native_postprocessed_zero": 30,
+          "zero_scored_input": 30,
+          "scored": 30,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 2.232688389951363,
+        "retained_candidates": 10,
+        "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+        "wall_seconds": 7.661201143055223
+      },
+      "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+      "wall_seconds": 14.189829504932277,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u914d\u5bf901/\u8bd5\u6b21/I0038",
+      "direct_wall_s": 20.890501003013924,
+      "clearance_trial_wall_s": 17.851693630218506,
+      "blocker_planner_result": false,
+      "blocker_planner_rejections": {
+        "grasp_ik": 8,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 2,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0044",
+      "id": "I0044_S5_occluded_054_softball",
+      "target_model": "054_softball",
+      "blocker": "distractor_00",
+      "blocker_model": "036_wood_block",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0044_S5_occluded_054_softball",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "98abc9cc77e9036d0b6c350dba780fc3afb75ca66b17751a7da37a759b6e573d"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0044_S5_occluded_054_softball",
+      "status": "completed",
+      "phase": "\u6321\u7269\u6293\u53d6",
+      "placed": false,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 2258,
+        "isolated_mask_pixels": 2945,
+        "occlusion_fraction": 0.23327674023769096,
+        "projected_bbox_uv": [
+          [
+            271.91981615381565,
+            188.2513429187971
+          ],
+          [
+            355.97773520831487,
+            286.6394456210968
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": false,
+        "physical_attempt": false,
+        "close_started": false,
+        "planning_success": false,
+        "counts": {
+          "raw": 17641,
+          "native_postprocessed_zero": 20,
+          "zero_scored_input": 20,
+          "scored": 20,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 1.911719088908285,
+        "retained_candidates": 4,
+        "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+        "wall_seconds": 5.577583646052517
+      },
+      "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+      "wall_seconds": 13.041769956005737,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u914d\u5bf901/\u8bd5\u6b21/I0044",
+      "direct_wall_s": 23.24179004295729,
+      "clearance_trial_wall_s": 16.73671269416809,
+      "blocker_planner_result": false,
+      "blocker_planner_rejections": {
+        "grasp_ik": 3,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 1,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0048",
+      "id": "I0048_S5_occluded_044_flat_screwdriver",
+      "target_model": "044_flat_screwdriver",
+      "blocker": "distractor_00",
+      "blocker_model": "002_master_chef_can",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0048_S5_occluded_044_flat_screwdriver",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "ad192d6f9ba6e01e53798f8d9eead68bf5ac3a1f699b71fcc1b2c65a47641c68"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0048_S5_occluded_044_flat_screwdriver",
+      "status": "completed",
+      "phase": "\u6321\u7269\u653e\u7f6e\u548c\u64a4\u79bb",
+      "placed": true,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 2039,
+        "isolated_mask_pixels": 3264,
+        "occlusion_fraction": 0.37530637254901966,
+        "projected_bbox_uv": [
+          [
+            211.86624445067307,
+            201.59303587958559
+          ],
+          [
+            417.546948147502,
+            274.09349389350416
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": true,
+        "physical_attempt": true,
+        "close_started": true,
+        "planning_success": true,
+        "counts": {
+          "raw": 10245,
+          "native_postprocessed_zero": 21,
+          "zero_scored_input": 21,
+          "scored": 21,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 1.4391291319625452,
+        "retained_candidates": 9,
+        "planning_seconds": 1.0377481729956344,
+        "bilateral_fingers": [
+          "right_link27",
+          "right_link28"
+        ],
+        "minimum_hold_lift_m": 0.0293988436460495,
+        "hold_seconds": 3.025,
+        "reason": "success",
+        "stages": {
+          "pregrasp": {
+            "joint_error_rad": 3.0994415283203125e-06,
+            "settled": true,
+            "planned_seconds": 6.0,
+            "tool_position_error_m": 4.866660529331967e-07,
+            "tool_rotation_error_rad": 1.835009578306806e-06
+          },
+          "approach": {
+            "joint_error_rad": 1.430511474609375e-06,
+            "settled": true,
+            "planned_seconds": 5.0,
+            "tool_position_error_m": 7.212327344945797e-07,
+            "tool_rotation_error_rad": 2.0345070059499573e-06
+          },
+          "close": {
+            "joint_error_rad": 0.0009129047393798828,
+            "settled": true,
+            "planned_seconds": 3.0,
+            "tool_position_error_m": 0.00015407045430222642,
+            "tool_rotation_error_rad": 0.0012582054264725323
+          },
+          "lift": {
+            "joint_error_rad": 0.0013964176177978516,
+            "settled": true,
+            "planned_seconds": 6.0,
+            "tool_position_error_m": 0.0003497634315118144,
+            "tool_rotation_error_rad": 0.0017020829632345144
+          },
+          "hold": {
+            "joint_error_rad": 0.0013962984085083008,
+            "settled": true,
+            "planned_seconds": 3.0,
+            "tool_position_error_m": 0.0003497574300064141,
+            "tool_rotation_error_rad": 0.0017018142423353023
+          }
+        },
+        "forbidden_contact_events": 0,
+        "wall_seconds": 31.369827541988343
+      },
+      "reason": "\u64a4\u79bb\u89c4\u5212_state_collision",
+      "wall_seconds": 60.98474547697697,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u914d\u5bf901/\u8bd5\u6b21/I0048",
+      "direct_wall_s": 19.12225692800712,
+      "clearance_trial_wall_s": 64.43589377403259,
+      "blocker_planner_result": true,
+      "blocker_planner_rejections": {
+        "grasp_ik": 0,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0055",
+      "id": "I0055_S5_occluded_065-i_cups",
+      "target_model": "065-i_cups",
+      "blocker": "distractor_00",
+      "blocker_model": "036_wood_block",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0055_S5_occluded_065-i_cups",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "a9a93eefaf6bbabc7ae6ad0256e8ba648c0502e0403051e19fb7393bee3ef1b3"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0055_S5_occluded_065-i_cups",
+      "status": "completed",
+      "phase": "\u6321\u7269\u6293\u53d6",
+      "placed": false,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 4957,
+        "isolated_mask_pixels": 7253,
+        "occlusion_fraction": 0.3165586653798428,
+        "projected_bbox_uv": [
+          [
+            246.2782745687539,
+            170.92564334693412
+          ],
+          [
+            380.27630346914776,
+            309.234442197422
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": false,
+        "physical_attempt": true,
+        "close_started": true,
+        "planning_success": true,
+        "counts": {
+          "raw": 17182,
+          "native_postprocessed_zero": 22,
+          "zero_scored_input": 22,
+          "scored": 22,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 2.104521838016808,
+        "retained_candidates": 5,
+        "planning_seconds": 0.5802916799439117,
+        "bilateral_fingers": [
+          "right_link27",
+          "right_link28"
+        ],
+        "minimum_hold_lift_m": 3.3527612686157227e-07,
+        "hold_seconds": 3.025,
+        "reason": "insufficient_hold_height",
+        "stages": {
+          "pregrasp": {
+            "joint_error_rad": 1.430511474609375e-06,
+            "settled": true,
+            "planned_seconds": 6.000000000000001,
+            "tool_position_error_m": 8.035124083173527e-07,
+            "tool_rotation_error_rad": 2.897666623246179e-06
+          },
+          "approach": {
+            "joint_error_rad": 1.6689300537109375e-06,
+            "settled": true,
+            "planned_seconds": 5.0,
+            "tool_position_error_m": 1.3374402833848374e-06,
+            "tool_rotation_error_rad": 2.782174874009063e-06
+          },
+          "close": {
+            "joint_error_rad": 0.0008684396743774414,
+            "settled": true,
+            "planned_seconds": 3.0,
+            "tool_position_error_m": 0.000155700718438617,
+            "tool_rotation_error_rad": 0.0009532532446607042
+          },
+          "lift": {
+            "joint_error_rad": 1.3113021850585938e-06,
+            "settled": true,
+            "planned_seconds": 6.0,
+            "tool_position_error_m": 3.250018031898271e-06,
+            "tool_rotation_error_rad": 2.0428164917276042e-06
+          },
+          "hold": {
+            "joint_error_rad": 1.3113021850585938e-06,
+            "settled": true,
+            "planned_seconds": 3.0,
+            "tool_position_error_m": 3.250018031898271e-06,
+            "tool_rotation_error_rad": 2.0428164917276042e-06
+          }
+        },
+        "forbidden_contact_events": 0,
+        "wall_seconds": 27.163023867993616
+      },
+      "reason": "insufficient_hold_height",
+      "wall_seconds": 34.186941127991304,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u914d\u5bf901/\u8bd5\u6b21/I0055",
+      "direct_wall_s": 18.73652784002479,
+      "clearance_trial_wall_s": 37.435314655303955,
+      "blocker_planner_result": true,
+      "blocker_planner_rejections": {
+        "grasp_ik": 0,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0063",
+      "id": "I0063_S5_occluded_002_master_chef_can",
+      "target_model": "002_master_chef_can",
+      "blocker": "distractor_00",
+      "blocker_model": "036_wood_block",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0063_S5_occluded_002_master_chef_can",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "f178cf2185ec4264f204b812c98087af0fc15821f27ab6c5d24dcc2c00e66116"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0063_S5_occluded_002_master_chef_can",
+      "status": "completed",
+      "phase": "\u6321\u7269\u6293\u53d6",
+      "placed": false,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 4701,
+        "isolated_mask_pixels": 6336,
+        "occlusion_fraction": 0.25804924242424243,
+        "projected_bbox_uv": [
+          [
+            265.4365940594738,
+            172.42526277971237
+          ],
+          [
+            365.97226750007496,
+            301.1816168641433
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": false,
+        "physical_attempt": false,
+        "close_started": false,
+        "planning_success": false,
+        "counts": {
+          "raw": 19146,
+          "native_postprocessed_zero": 21,
+          "zero_scored_input": 21,
+          "scored": 21,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 2.688377366052009,
+        "retained_candidates": 7,
+        "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+        "wall_seconds": 6.8830939079634845
+      },
+      "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+      "wall_seconds": 18.080177941010334,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u914d\u5bf901/\u8bd5\u6b21/I0063",
+      "direct_wall_s": 20.647551330039278,
+      "clearance_trial_wall_s": 21.638582706451416,
+      "blocker_planner_result": false,
+      "blocker_planner_rejections": {
+        "grasp_ik": 6,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 1,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0069",
+      "id": "I0069_S5_occluded_073-e_lego_duplo",
+      "target_model": "073-e_lego_duplo",
+      "blocker": "distractor_00",
+      "blocker_model": "065-i_cups",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0069_S5_occluded_073-e_lego_duplo",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "ed2e4e4f3c28a862195152dbc7d93b0d584007e03a30fd3b982f3999f449ad39"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0069_S5_occluded_073-e_lego_duplo",
+      "status": "completed",
+      "phase": "\u5b8c\u6210",
+      "placed": true,
+      "removed": true,
+      "reobserved": true,
+      "success": true,
+      "visibility_before": {
+        "target_mask_pixels": 2490,
+        "isolated_mask_pixels": 3226,
+        "occlusion_fraction": 0.22814631122132667,
+        "projected_bbox_uv": [
+          [
+            266.46310674264936,
+            200.79225616360262
+          ],
+          [
+            363.8119756396477,
+            273.8220616439612
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": true,
+        "physical_attempt": true,
+        "close_started": true,
+        "planning_success": true,
+        "counts": {
+          "raw": 13269,
+          "native_postprocessed_zero": 52,
+          "zero_scored_input": 52,
+          "scored": 52,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 1.907870532013476,
+        "retained_candidates": 42,
+        "planning_seconds": 0.7062519050668925,
+        "bilateral_fingers": [
+          "right_link27",
+          "right_link28"
+        ],
+        "minimum_hold_lift_m": 0.026217304170131683,
+        "hold_seconds": 3.025,
+        "reason": "success",
+        "stages": {
+          "pregrasp": {
+            "joint_error_rad": 1.5497207641601562e-06,
+            "settled": true,
+            "planned_seconds": 6.0,
+            "tool_position_error_m": 5.807576335971748e-07,
+            "tool_rotation_error_rad": 1.2481217277509524e-06
+          },
+          "approach": {
+            "joint_error_rad": 1.3113021850585938e-06,
+            "settled": true,
+            "planned_seconds": 5.0,
+            "tool_position_error_m": 5.578448796099055e-08,
+            "tool_rotation_error_rad": 5.549484867259896e-07
+          },
+          "close": {
+            "joint_error_rad": 0.0015251636505126953,
+            "settled": true,
+            "planned_seconds": 3.0,
+            "tool_position_error_m": 0.0005159547968704479,
+            "tool_rotation_error_rad": 0.002268910092814573
+          },
+          "lift": {
+            "joint_error_rad": 0.0007077604532241821,
+            "settled": true,
+            "planned_seconds": 6.0,
+            "tool_position_error_m": 0.0002750252527569035,
+            "tool_rotation_error_rad": 0.0012197656318976952
+          },
+          "hold": {
+            "joint_error_rad": 0.0007079392671585083,
+            "settled": true,
+            "planned_seconds": 3.0,
+            "tool_position_error_m": 0.0002750628733450919,
+            "tool_rotation_error_rad": 0.0012195296813409873
+          }
+        },
+        "forbidden_contact_events": 0,
+        "wall_seconds": 37.763731303974055
+      },
+      "retreat_height_m": 0.07,
+      "visibility_after": {
+        "target_mask_pixels": 3228,
+        "isolated_mask_pixels": 3228,
+        "occlusion_fraction": 0.0,
+        "projected_bbox_uv": [
+          [
+            266.4605557580436,
+            200.7764238254518
+          ],
+          [
+            363.81332779205076,
+            273.80868762162993
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "target_grasp": {
+        "success": true,
+        "physical_attempt": true,
+        "close_started": true,
+        "planning_success": true,
+        "counts": {
+          "raw": 4732,
+          "native_postprocessed_zero": 16,
+          "zero_scored_input": 16,
+          "scored": 16,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 0.6200111570069566,
+        "retained_candidates": 5,
+        "planning_seconds": 0.643197373021394,
+        "bilateral_fingers": [
+          "right_link27",
+          "right_link28"
+        ],
+        "minimum_hold_lift_m": 0.02992529794573784,
+        "hold_seconds": 3.025,
+        "reason": "success",
+        "stages": {
+          "pregrasp": {
+            "joint_error_rad": 1.6689300537109375e-06,
+            "settled": true,
+            "planned_seconds": 6.0,
+            "tool_position_error_m": 4.781992940727859e-07,
+            "tool_rotation_error_rad": 1.2517806595887267e-06
+          },
+          "approach": {
+            "joint_error_rad": 1.1920928955078125e-06,
+            "settled": true,
+            "planned_seconds": 5.0,
+            "tool_position_error_m": 2.520836044872062e-07,
+            "tool_rotation_error_rad": 6.093230762299982e-07
+          },
+          "close": {
+            "joint_error_rad": 0.0007169842720031738,
+            "settled": true,
+            "planned_seconds": 3.0,
+            "tool_position_error_m": 0.00010388666612966898,
+            "tool_rotation_error_rad": 0.0006941755074496058
+          },
+          "lift": {
+            "joint_error_rad": 0.0006163120269775391,
+            "settled": true,
+            "planned_seconds": 6.0,
+            "tool_position_error_m": 0.0001722871769733609,
+            "tool_rotation_error_rad": 0.0007244902009283366
+          },
+          "hold": {
+            "joint_error_rad": 0.0006163120269775391,
+            "settled": true,
+            "planned_seconds": 3.0,
+            "tool_position_error_m": 0.00017219718143727652,
+            "tool_rotation_error_rad": 0.0007246316197010253
+          }
+        },
+        "forbidden_contact_events": 0,
+        "wall_seconds": 34.759948163991794
+      },
+      "reason": "success",
+      "wall_seconds": 121.39554647402838,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u914d\u5bf901/\u8bd5\u6b21/I0069",
+      "direct_wall_s": 20.319630309008062,
+      "clearance_trial_wall_s": 125.19158554077148,
+      "blocker_planner_result": true,
+      "blocker_planner_rejections": {
+        "grasp_ik": 0,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0100",
+      "id": "I0100_S5_occluded_053_mini_soccer_ball",
+      "target_model": "053_mini_soccer_ball",
+      "blocker": "distractor_00",
+      "blocker_model": "002_master_chef_can",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0100_S5_occluded_053_mini_soccer_ball",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "15716b226354629c864a3723e2cf426190bc52d7d42b7ca34d602f442dd63038"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0100_S5_occluded_053_mini_soccer_ball",
+      "status": "completed",
+      "phase": "\u6321\u7269\u653e\u7f6e\u548c\u64a4\u79bb",
+      "placed": true,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 1778,
+        "isolated_mask_pixels": 2654,
+        "occlusion_fraction": 0.33006782215523733,
+        "projected_bbox_uv": [
+          [
+            271.495066665306,
+            188.61493065235726
+          ],
+          [
+            358.3028417210351,
+            286.64561536145686
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": true,
+        "physical_attempt": true,
+        "close_started": true,
+        "planning_success": true,
+        "counts": {
+          "raw": 9591,
+          "native_postprocessed_zero": 23,
+          "zero_scored_input": 23,
+          "scored": 23,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 1.5698172320844606,
+        "retained_candidates": 6,
+        "planning_seconds": 0.6376208500005305,
+        "bilateral_fingers": [
+          "right_link27",
+          "right_link28"
+        ],
+        "minimum_hold_lift_m": 0.029606685042381287,
+        "hold_seconds": 3.025,
+        "reason": "success",
+        "stages": {
+          "pregrasp": {
+            "joint_error_rad": 3.337860107421875e-06,
+            "settled": true,
+            "planned_seconds": 6.0,
+            "tool_position_error_m": 5.884149172731789e-07,
+            "tool_rotation_error_rad": 1.0476559282654478e-06
+          },
+          "approach": {
+            "joint_error_rad": 1.9073486328125e-06,
+            "settled": true,
+            "planned_seconds": 5.0,
+            "tool_position_error_m": 9.529248665952193e-07,
+            "tool_rotation_error_rad": 2.148778301148164e-06
+          },
+          "close": {
+            "joint_error_rad": 0.000887751579284668,
+            "settled": true,
+            "planned_seconds": 3.0,
+            "tool_position_error_m": 9.978333037251478e-05,
+            "tool_rotation_error_rad": 0.000860417253018737
+          },
+          "lift": {
+            "joint_error_rad": 0.0012353062629699707,
+            "settled": true,
+            "planned_seconds": 6.0,
+            "tool_position_error_m": 0.0004909308846575516,
+            "tool_rotation_error_rad": 0.0018900443588239712
+          },
+          "hold": {
+            "joint_error_rad": 0.0012354850769042969,
+            "settled": true,
+            "planned_seconds": 3.0,
+            "tool_position_error_m": 0.0004908100709517655,
+            "tool_rotation_error_rad": 0.001889945822892355
+          }
+        },
+        "forbidden_contact_events": 0,
+        "wall_seconds": 29.292928050039336
+      },
+      "reason": "\u64a4\u79bb\u89c4\u5212_state_collision",
+      "wall_seconds": 58.18258682300802,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u914d\u5bf901/\u8bd5\u6b21/I0100",
+      "direct_wall_s": 22.31519340199884,
+      "clearance_trial_wall_s": 62.910786867141724,
+      "blocker_planner_result": true,
+      "blocker_planner_rejections": {
+        "grasp_ik": 0,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0119",
+      "id": "I0119_S5_occluded_051_large_clamp",
+      "target_model": "051_large_clamp",
+      "blocker": "distractor_00",
+      "blocker_model": "036_wood_block",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0119_S5_occluded_051_large_clamp",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "ccd7eb3f1bbb93cbe734c36d7926ae0bbb2e2ced17359f77744cf420bc30ac2c"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0119_S5_occluded_051_large_clamp",
+      "preceding_setup_failure": "/home/zhaoyechong/projects/CLARO-ARX/docs/06_\u505a\u914d\u5bf9\u9a8c\u8bc1/resources/S5_\u56fa\u5b9a\u6321\u7269\u914d\u5bf901/\u8bd5\u6b21/I0119/\u914d\u5bf9\u7ed3\u679c.json",
+      "preceding_commanded_robot_actions": 0,
+      "status": "completed",
+      "phase": "\u6321\u7269\u6293\u53d6",
+      "placed": false,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 4067,
+        "isolated_mask_pixels": 6192,
+        "occlusion_fraction": 0.34318475452196384,
+        "projected_bbox_uv": [
+          [
+            217.42510673652123,
+            171.21383654391076
+          ],
+          [
+            411.1868156861338,
+            323.456677766154
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": false,
+        "physical_attempt": false,
+        "close_started": false,
+        "planning_success": false,
+        "counts": {
+          "raw": 20503,
+          "native_postprocessed_zero": 13,
+          "zero_scored_input": 13,
+          "scored": 13,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 2.2306006740545854,
+        "retained_candidates": 5,
+        "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+        "wall_seconds": 6.48468669410795
+      },
+      "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+      "wall_seconds": 11.96159210591577,
+      "isolated_scene_wall_seconds": 20.196737847989425,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u63a5\u7eed01/\u8bd5\u6b21/I0119",
+      "direct_wall_s": 18.959790327004157,
+      "clearance_trial_wall_s": 20.644646167755127,
+      "blocker_planner_result": false,
+      "blocker_planner_rejections": {
+        "grasp_ik": 5,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0130",
+      "id": "I0130_S5_occluded_065-j_cups",
+      "target_model": "065-j_cups",
+      "blocker": "distractor_00",
+      "blocker_model": "036_wood_block",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0130_S5_occluded_065-j_cups",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "a1e679c18cda92c2518ab3c46ac8afc6fbe5c2d203b7db8b03f3614fb3cb99ed"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0130_S5_occluded_065-j_cups",
+      "status": "completed",
+      "phase": "\u6321\u7269\u6293\u53d6",
+      "placed": false,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 5283,
+        "isolated_mask_pixels": 7818,
+        "occlusion_fraction": 0.3242517267843438,
+        "projected_bbox_uv": [
+          [
+            245.18773569359828,
+            171.0889550945812
+          ],
+          [
+            380.22097712307476,
+            309.3357975902637
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": false,
+        "physical_attempt": false,
+        "close_started": false,
+        "planning_success": false,
+        "counts": {
+          "raw": 16505,
+          "native_postprocessed_zero": 29,
+          "zero_scored_input": 29,
+          "scored": 29,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 1.6271399629767984,
+        "retained_candidates": 8,
+        "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+        "wall_seconds": 5.0192244740901515
+      },
+      "reason": "\u6293\u53d6\u89c4\u5212: no_feasible_native_post_or_recalled_candidate",
+      "wall_seconds": 11.136369033018127,
+      "isolated_scene_wall_seconds": 20.141464006970637,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u63a5\u7eed01/\u8bd5\u6b21/I0130",
+      "direct_wall_s": 22.62313765392173,
+      "clearance_trial_wall_s": 20.586647272109985,
+      "blocker_planner_result": false,
+      "blocker_planner_rejections": {
+        "grasp_ik": 7,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 1,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0167",
+      "id": "I0167_S5_occluded_065-e_cups",
+      "target_model": "065-e_cups",
+      "blocker": "distractor_00",
+      "blocker_model": "036_wood_block",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0167_S5_occluded_065-e_cups",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "ef108bc82db423ceca6c4d7647cb31a434cbe21c00e00813cb7922c0b4308182"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0167_S5_occluded_065-e_cups",
+      "status": "completed",
+      "phase": "\u6321\u7269\u6293\u53d6",
+      "placed": false,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 3517,
+        "isolated_mask_pixels": 4788,
+        "occlusion_fraction": 0.26545530492898917,
+        "projected_bbox_uv": [
+          [
+            271.67794313413606,
+            186.65459003537484
+          ],
+          [
+            354.4336793621772,
+            287.62894135275025
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": false,
+        "physical_attempt": false,
+        "close_started": false,
+        "planning_success": false,
+        "counts": {
+          "raw": 17816,
+          "native_postprocessed_zero": 23,
+          "zero_scored_input": 23,
+          "scored": 23,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 2.2603988019982353,
+        "retained_candidates": 8,
+        "planning_seconds": 0.7561559309251606,
+        "reason": "\u8fdb\u573a\u590d\u6838: full_scene_path_collision",
+        "wall_seconds": 6.1142003639834
+      },
+      "reason": "\u8fdb\u573a\u590d\u6838: full_scene_path_collision",
+      "wall_seconds": 11.768285022000782,
+      "isolated_scene_wall_seconds": 20.89536293002311,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u63a5\u7eed01/\u8bd5\u6b21/I0167",
+      "direct_wall_s": 19.806113017024472,
+      "clearance_trial_wall_s": 21.335634469985962,
+      "blocker_planner_result": true,
+      "blocker_planner_rejections": {
+        "grasp_ik": 6,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 1,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "case": "I0190",
+      "id": "I0190_S5_occluded_063-a_marbles",
+      "target_model": "063-a_marbles",
+      "blocker": "distractor_00",
+      "blocker_model": "036_wood_block",
+      "direct": {
+        "arm": "fixed_zerograsp",
+        "id": "I0190_S5_occluded_063-a_marbles",
+        "planning_success": false,
+        "success": false,
+        "closed": false,
+        "failure_category": "\u6293\u53d6 IK\uff0f\u573a\u666f\u78b0\u649e\u672a\u901a\u8fc7",
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "result_sha256": "788340005ed3aa6c71fe96cfa6ae8e06832ee2c1d72e9926040602d658dcc001"
+      },
+      "source_trial": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/fixed_zerograsp/trials/I0190_S5_occluded_063-a_marbles",
+      "status": "completed",
+      "phase": "\u6321\u7269\u6293\u53d6",
+      "placed": false,
+      "removed": false,
+      "reobserved": false,
+      "success": false,
+      "visibility_before": {
+        "target_mask_pixels": 2524,
+        "isolated_mask_pixels": 3333,
+        "occlusion_fraction": 0.2427242724272427,
+        "projected_bbox_uv": [
+          [
+            265.9739969434905,
+            189.80728185557047
+          ],
+          [
+            366.48622926746833,
+            274.61395493238626
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true
+      },
+      "blocker_grasp": {
+        "success": false,
+        "physical_attempt": false,
+        "close_started": false,
+        "planning_success": false,
+        "counts": {
+          "raw": 15978,
+          "native_postprocessed_zero": 22,
+          "zero_scored_input": 22,
+          "scored": 22,
+          "rejected": 0,
+          "recalled": {
+            "object": 0,
+            "patch": 0
+          }
+        },
+        "inference_seconds": 1.7583376099355519,
+        "retained_candidates": 5,
+        "planning_seconds": 0.5652991950046271,
+        "reason": "\u8fdb\u573a\u590d\u6838: full_scene_path_collision",
+        "wall_seconds": 5.548491918016225
+      },
+      "reason": "\u8fdb\u573a\u590d\u6838: full_scene_path_collision",
+      "wall_seconds": 11.034045173902996,
+      "isolated_scene_wall_seconds": 20.179626411991194,
+      "run_directory": "S5_\u56fa\u5b9a\u6321\u7269\u63a5\u7eed01/\u8bd5\u6b21/I0190",
+      "direct_wall_s": 20.62471215496771,
+      "clearance_trial_wall_s": 20.62364649772644,
+      "blocker_planner_result": true,
+      "blocker_planner_rejections": {
+        "grasp_ik": 3,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    }
+  ]
+}

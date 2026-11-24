@@ -1,0 +1,113 @@
+{
+  "created_at": "2026-11-22T00:17:27.176131+08:00",
+  "gpu_uuid": "GPU-3164d5f3-6a9a-17b4-53f9-a70e3a82b834",
+  "cases": [
+    {
+      "case": "I0052",
+      "case_id": "I0052_S1_open_071_nine_hole_peg_test",
+      "source": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test",
+      "role": "diagnostic_failure",
+      "candidates": 1
+    },
+    {
+      "case": "I0056",
+      "case_id": "I0056_S4_clutter_073-a_lego_duplo",
+      "source": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo",
+      "role": "diagnostic_failure",
+      "candidates": 3
+    },
+    {
+      "case": "I0199",
+      "case_id": "I0199_S4_clutter_073-d_lego_duplo",
+      "source": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo",
+      "role": "diagnostic_failure",
+      "candidates": 4
+    },
+    {
+      "case": "I0002",
+      "case_id": "I0002_S2_edge_052_extra_large_clamp",
+      "source": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0002_S2_edge_052_extra_large_clamp",
+      "role": "successful_control",
+      "candidates": 11
+    },
+    {
+      "case": "I0004",
+      "case_id": "I0004_S3_sparse_071_nine_hole_peg_test",
+      "source": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0004_S3_sparse_071_nine_hole_peg_test",
+      "role": "successful_control",
+      "candidates": 3
+    }
+  ],
+  "source_hashes": {
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/工具/验证关节空间投影.py": "fda9d578c7672b14698c521d62a62a11e480986d338150beccc7f2a656971f45",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/工具/关节空间位姿投影.py": "4aefd35464d604e84ad3752f3c5a81e8353ab10a32753b4578e8a02cc4b68ad4",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/工具/公共.py": "e79110553a66efd23b6f9c9c199fe668c252b03008f41f1a22805317e4f36a94",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/planning_rejection_audit.py": "4d5fe659c7579342d291999beea8ff5a9f70e71d0d1bcf023cdeea1a1f134a14",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/七轴升降规划.py": "690e3702a7ba62a3cff9e0de892d978c18f0a2e7929cb4302e5bb4cbc3af7bba",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/assets/arx/robot.urdf": "0ac9f20f13bd2a194d9f5c2002856a84ba406a4a3906ef9ed5ec182002569704",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/table_truncation_model.py": "184b2261cd1528c5a1b7e2d65b997c31c8d9d45e5a715e974fdecf77bb4753ba",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/scripts/curobo_arx/static_pick/reference/model/arx.urdf": "05116a83104b73128743e5c4b3de0338642be0a9fe607a79681e358495aebb3f",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo_adapter/research/20261117_07_action_tcp/action_tcp_43mm.json": "70712cd8c8e24905cb26713f9923b63bd26e1ce694348155ffac9aa26b42420a",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/实验/升降联合规划_20261120_01/七关节.yml": "e800ecaab50dfd4ba0215f9f308968beb9706c4478bde040e0cfbce88d0d1672",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/configs/easg/finger_pad_geometry.json": "2d0c4e9f144287d431157cd2f0eace3341b69b4298baea19fd73c20d286461c0",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/实验/抓取位姿局部修正_20261121_01/登记.json": "1f79a54b16f020aa5df4356d568448c4c8d043afec0c576b2a06999b835ea557",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/实验/地图流程比较_20261121_01/结果.json": "b9e43c0ea1a807e14869ccdaf21966efe23d49c04b1ae30af2a6e73c0f3d1feb",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/产物/前方精细_20261121_01/完成.json": "44040a017aba7265be282a5ed0017ca385f90051bb0acfe56936f5082d0a05d4",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/实验/升降联合规划_20261120_01/含原升降关节.urdf": "a5a861e710672d538b861f130758a54d61f5211293cecacfa646b82cde4ac15e",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/state.json": "c162c170846d8981e618cbef41b8b2ce71f3b72f9e1fcfab2877f17a79c03d03",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/graspcl/candidate_pool.json": "6beca0966823ef93b7b3943eeb5a5e3580f704a96c843fe82f2f0fbfc882ee4f",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/camera/depth.png": "9e5a923c8a5990dd132bee7b28a609b52bb19c78344ffd4504baf181c1e70b9b",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/camera/mask.png": "f327dc32a156d61e4a06563c822eb977272c798c58edbef9ace71175c8785575",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/camera/params.json": "1e817674830410bdbda862c2b5997eeee72e4a9f674f117ea545a7412ed7efa9",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/state.json": "a1d601f4b64aae71320b0ac60b2ca65b70794cb9f1489c98126f3b1c75f477dd",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/graspcl/candidate_pool.json": "b7b135d6c0ba19b7f3106ef78a1ca40230d5554b1c7ad8fbd04bc8cf7876f940",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/camera/depth.png": "47cd4793582df125245b964a981ade9d5267356e9678f5b5c54efd8bcfb6dc35",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/camera/mask.png": "61d3dc1bdf2ca32299141c91143dfafd38cc9b2cec50e5de0be039822dcb8f62",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/camera/params.json": "1e817674830410bdbda862c2b5997eeee72e4a9f674f117ea545a7412ed7efa9",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/state.json": "542caa610471c29de94b53502674df89e862254ec8cf4c81287a66d3331cca33",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/graspcl/candidate_pool.json": "5fbcc097ee12dda31c10c3dfd81ce0bd0757d38d4f241e52d79c6bbf12500cd9",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/camera/depth.png": "c3ac908520bcad5ad91cd4e642af96b78005f665c704311efb030d951c615440",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/camera/mask.png": "bc4b6caf4d7c4d2c01dddd5f5b2732c544451ea4d0b33d1f695401c66dd6a987",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/camera/params.json": "1e817674830410bdbda862c2b5997eeee72e4a9f674f117ea545a7412ed7efa9",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0002_S2_edge_052_extra_large_clamp/state.json": "1fc19a45ae196d4ef2ab2075b00ce04ea6fb372369aa5e8f318b70bda6c2244d",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0002_S2_edge_052_extra_large_clamp/graspcl/candidate_pool.json": "349b84a5900e70da71b0f49102e6cac74856c372baa2cf78605e0c2fbdaef1d4",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0002_S2_edge_052_extra_large_clamp/camera/depth.png": "564ffc203607f49495ec9ff4825651845242e625808394c989b056b9ceba93f5",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0002_S2_edge_052_extra_large_clamp/camera/mask.png": "9d541a9fd6fd9686529ec8d6eef99ac3a5d65fe360a49b70d4caee35b0bfb63e",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0002_S2_edge_052_extra_large_clamp/camera/params.json": "1e817674830410bdbda862c2b5997eeee72e4a9f674f117ea545a7412ed7efa9",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0004_S3_sparse_071_nine_hole_peg_test/state.json": "665fd3cf75d9f2c5bc04fdb05708ab21975923d3643d2040cf3a96391fad2043",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0004_S3_sparse_071_nine_hole_peg_test/graspcl/candidate_pool.json": "36dfcbef060b2c0e9dabbdaf48fe67f625b90622b39415ea8e7c819d41106740",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0004_S3_sparse_071_nine_hole_peg_test/camera/depth.png": "03523319ac03df87e1d147c2287c3cd50fcb86231c3303c0f718622dce1d524f",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0004_S3_sparse_071_nine_hole_peg_test/camera/mask.png": "8b700d3af97a3a54da6aeb4e6492aef7d2190d006fd364eb3f74056c52a3bbf4",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0004_S3_sparse_071_nine_hole_peg_test/camera/params.json": "1e817674830410bdbda862c2b5997eeee72e4a9f674f117ea545a7412ed7efa9"
+  },
+  "physical_attempts": 0,
+  "source_map_hashes": {
+    "关节见证.bin": "6c8fba72f73f47fe772ac73e1efb763e158a0ce6f92070d6818092e520b9ebd5",
+    "精细体素统计.npz": "a145751519c0c6cbe6bab95d9422b2330c63ff9f94c2fa13d24de0715626c489",
+    "概览体素统计.npz": "69680381fd07396be458851162d98ccd5bbb66e124d46d5f14bbd7a6d913712d",
+    "已覆盖位姿格.npy": "e2ea9b76bfa9d38cc590094ce5f7983dbe1f7bb6c59465b7397ae04e03f66690",
+    "地图元数据.json": "0b1e05d62f6354012a3be6699c2cff76fa3fd1c5f422aaee56fcd26f776c66a6",
+    "独立模型核验.json": "ff259f38120f9bbddb3694a4ed67883d6102193875936038fa19625991c43469",
+    "登记.json": "8f9f272045dff30b610234d2cac772ff16718219555984b26dd61c0fd881ff82"
+  },
+  "model": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/实验/升降联合规划_20261120_01/七关节.yml",
+  "pipeline": "Original pure IK first; map/direct projection only after no validated original witness.",
+  "baseline_seeds": 128,
+  "baseline_return_seeds": 32,
+  "original_eef_position_tolerance_m": 0.002,
+  "original_rotation_tolerance_rad": 0.03,
+  "modes": [
+    "direct_joint_projection",
+    "map_seeded_joint_projection"
+  ],
+  "shared_start_count": 6,
+  "total_start_count": 8,
+  "max_nfev_per_start": 250,
+  "wall_budget_per_goal_mode_s": 20.0,
+  "position_change_limit_m": 0.005,
+  "rotation_change_limit_deg": 3.0,
+  "nominal_contact_change_limit_m": 0.003,
+  "geometry_gate": "Width unchanged; nominal endpoint drift <=3mm; observed original and new authored-pad corridors nonempty.",
+  "scope": "Development-only paired offline test. No scene collision/path check or physical execution. No training or feedback writes.",
+  "initialization_note": "Map witnesses are cached from the frozen map query; the anchor may be far from G. Only the final pose is subject to change caps. No new map targets added."
+}

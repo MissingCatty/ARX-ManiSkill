@@ -1,0 +1,605 @@
+{
+  "version": "arx_teacher_batch_v1",
+  "fixture": {
+    "id": "arx_tabletop_rt_v1",
+    "bundle": "fixtures/tabletop_rt_v1",
+    "mailbox": "../../runs/lilo_teacher_rt_v1/runtime/mailbox",
+    "runtime": "../../runs/lilo_teacher_rt_v1/runtime",
+    "ops_url": "http://127.0.0.1:8103",
+    "model_reference": "../../scripts/curobo_arx/static_pick/reference",
+    "asset_root": "../../asset",
+    "startup": {
+      "container": "arx-lilo-teacher-rt-gpu3",
+      "image": "localhost/arx-isaac-warm:6.0.1",
+      "webrtc_port": 49212,
+      "ros_domain": 34
+    }
+  },
+  "resources": {
+    "gpu_uuid": "GPU-c28703d5-5487-1100-18bc-3ac15fd42c94",
+    "neural_python": "../../../tmp/arx-fullchain/env/bin/python",
+    "planner_python": "../../../curobo/.venv/bin/python",
+    "zerograsp_checkpoint": "../../servers/zerograsp/vendor/zerograsp_mainline_minimal/checkpoints/zerograsp_cvpr2025/zerograsp_synthetic.ckpt",
+    "storage_fallback_root": "/coolas/data/arx_lilo_teacher",
+    "curobo_source": "../../../curobo/source"
+  },
+  "budget": {
+    "max_attempts": 20,
+    "attempt_seconds": 900,
+    "cleanup_seconds": 60,
+    "encoding_seconds": 120
+  },
+  "contracts": {
+    "10mm": "handoff_10mm.json",
+    "40_60_80mm": "handoff_40_60_80mm.json"
+  },
+  "roles": {
+    "rubiks_cube": "train",
+    "mustard_bottle": "train",
+    "apple_01": "train",
+    "005_tomato_soup_can": "train",
+    "lemon_01": "validation"
+  },
+  "cases": [
+    {
+      "case_id": "rubiks_cube_10mm_j0",
+      "object_name": "rubiks_cube",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7199818150922657
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "10mm",
+      "entry_delta_world": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_mode": "fresh",
+      "goal_group_id": "rubiks_cube"
+    },
+    {
+      "case_id": "rubiks_cube_10mm_j1",
+      "object_name": "rubiks_cube",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7199818150922657
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "10mm",
+      "entry_delta_world": [
+        0.005,
+        -0.005,
+        0.005,
+        0.04,
+        -0.04,
+        0.04
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "rubiks_cube"
+    },
+    {
+      "case_id": "rubiks_cube_40_60_80mm_j0",
+      "object_name": "rubiks_cube",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7199818150922657
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "40_60_80mm",
+      "entry_delta_world": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "rubiks_cube"
+    },
+    {
+      "case_id": "rubiks_cube_40_60_80mm_j1",
+      "object_name": "rubiks_cube",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7199818150922657
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "40_60_80mm",
+      "entry_delta_world": [
+        0.005,
+        -0.005,
+        0.005,
+        0.04,
+        -0.04,
+        0.04
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "rubiks_cube"
+    },
+    {
+      "case_id": "mustard_bottle_10mm_j0",
+      "object_name": "mustard_bottle",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7710252035260201
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "10mm",
+      "entry_delta_world": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_mode": "fresh",
+      "goal_group_id": "mustard_bottle"
+    },
+    {
+      "case_id": "mustard_bottle_10mm_j1",
+      "object_name": "mustard_bottle",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7710252035260201
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "10mm",
+      "entry_delta_world": [
+        0.005,
+        -0.005,
+        0.005,
+        0.04,
+        -0.04,
+        0.04
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "mustard_bottle"
+    },
+    {
+      "case_id": "mustard_bottle_40_60_80mm_j0",
+      "object_name": "mustard_bottle",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7710252035260201
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "40_60_80mm",
+      "entry_delta_world": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "mustard_bottle"
+    },
+    {
+      "case_id": "mustard_bottle_40_60_80mm_j1",
+      "object_name": "mustard_bottle",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7710252035260201
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "40_60_80mm",
+      "entry_delta_world": [
+        0.005,
+        -0.005,
+        0.005,
+        0.04,
+        -0.04,
+        0.04
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "mustard_bottle"
+    },
+    {
+      "case_id": "apple_01_10mm_j0",
+      "object_name": "apple_01",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7248420002048761
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "10mm",
+      "entry_delta_world": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_mode": "fresh",
+      "goal_group_id": "apple_01"
+    },
+    {
+      "case_id": "apple_01_10mm_j1",
+      "object_name": "apple_01",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7248420002048761
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "10mm",
+      "entry_delta_world": [
+        0.005,
+        -0.005,
+        0.005,
+        0.04,
+        -0.04,
+        0.04
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "apple_01"
+    },
+    {
+      "case_id": "apple_01_40_60_80mm_j0",
+      "object_name": "apple_01",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7248420002048761
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "40_60_80mm",
+      "entry_delta_world": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "apple_01"
+    },
+    {
+      "case_id": "apple_01_40_60_80mm_j1",
+      "object_name": "apple_01",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7248420002048761
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "40_60_80mm",
+      "entry_delta_world": [
+        0.005,
+        -0.005,
+        0.005,
+        0.04,
+        -0.04,
+        0.04
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "apple_01"
+    },
+    {
+      "case_id": "005_tomato_soup_can_10mm_j0",
+      "object_name": "005_tomato_soup_can",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7248571290554748
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "10mm",
+      "entry_delta_world": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_mode": "fresh",
+      "goal_group_id": "005_tomato_soup_can"
+    },
+    {
+      "case_id": "005_tomato_soup_can_10mm_j1",
+      "object_name": "005_tomato_soup_can",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7248571290554748
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "10mm",
+      "entry_delta_world": [
+        0.005,
+        -0.005,
+        0.005,
+        0.04,
+        -0.04,
+        0.04
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "005_tomato_soup_can"
+    },
+    {
+      "case_id": "005_tomato_soup_can_40_60_80mm_j0",
+      "object_name": "005_tomato_soup_can",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7248571290554748
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "40_60_80mm",
+      "entry_delta_world": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "005_tomato_soup_can"
+    },
+    {
+      "case_id": "005_tomato_soup_can_40_60_80mm_j1",
+      "object_name": "005_tomato_soup_can",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.7248571290554748
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "40_60_80mm",
+      "entry_delta_world": [
+        0.005,
+        -0.005,
+        0.005,
+        0.04,
+        -0.04,
+        0.04
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "005_tomato_soup_can"
+    },
+    {
+      "case_id": "lemon_01_10mm_j0",
+      "object_name": "lemon_01",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.716337974948343
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "10mm",
+      "entry_delta_world": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_mode": "fresh",
+      "goal_group_id": "lemon_01"
+    },
+    {
+      "case_id": "lemon_01_10mm_j1",
+      "object_name": "lemon_01",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.716337974948343
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "10mm",
+      "entry_delta_world": [
+        0.005,
+        -0.005,
+        0.005,
+        0.04,
+        -0.04,
+        0.04
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "lemon_01"
+    },
+    {
+      "case_id": "lemon_01_40_60_80mm_j0",
+      "object_name": "lemon_01",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.716337974948343
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "40_60_80mm",
+      "entry_delta_world": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "lemon_01"
+    },
+    {
+      "case_id": "lemon_01_40_60_80mm_j1",
+      "object_name": "lemon_01",
+      "placement": {
+        "position": [
+          4.048,
+          2.08,
+          0.716337974948343
+        ],
+        "orientation": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "contract": "40_60_80mm",
+      "entry_delta_world": [
+        0.005,
+        -0.005,
+        0.005,
+        0.04,
+        -0.04,
+        0.04
+      ],
+      "goal_mode": "group",
+      "goal_group_id": "lemon_01"
+    }
+  ]
+}

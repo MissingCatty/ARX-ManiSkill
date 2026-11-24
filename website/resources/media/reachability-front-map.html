@@ -1,0 +1,9 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARX 前方精细可达性地图</title><link rel="stylesheet" href="/media/reachability-front-map.css"><header><h1>ARX 前方精细可达性地图</h1><p>前方 180° · TCP43 · 16,777,216 组采样 · 10,559,134 个关节见证 · 无桌面约束</p><p class="muted">拖动旋转，滚轮缩放，点击体素查看。颜色表示已观察到的朝向格覆盖，不能解释为 IK 或抓取成功概率。空白区域表示未知。</p></header>
+<main><section id="view"><canvas id="canvas" aria-label="可旋转的三维机械臂工作区"></canvas><div id="legend"><span id="scale-title"></span><div class="gradient"></div><span>0</span><span id="scale-max"></span></div></section><aside>
+<label for="metric">着色指标</label><select id="metric"><option value="4">朝下方向覆盖</option><option value="3">全部朝向覆盖</option><option value="6">平均关节限位余量</option><option value="7">平均雅可比条件指标</option></select>
+<label for="height">最高显示高度：<span id="height-value">120</span> cm</label><input type="range" id="height" min="-100" max="120" value="120">
+<div class="buttons"><button id="reset">三维视图</button><button id="top">俯视图</button></div><div id="count" class="stat"></div>
+<p class="small muted">概览显示格为 5 cm，查询统计格为 5 mm；完整位姿匹配使用原始位置与四元数，不按朝向格吸附。前方定义为 body4 +X 半空间。坐标单位厘米，关节余量单位弧度。</p>
+<div id="detail" class="stat">点击彩色体素查看数值。</div><p class="small muted">本图仅验证运动学与关节限位，不检查桌面、地面、杂物和自碰撞。升降通过实际 body4 坐标变换适配。抓取几何、场景碰撞与路径分别检查。空白表示未知，本页不连接仿真。</p></aside></main>
+<script type="module" src="/media/reachability-front-map.mjs"></script></html>

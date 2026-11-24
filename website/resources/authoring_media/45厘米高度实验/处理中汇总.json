@@ -1,0 +1,554 @@
+{
+  "time": "2026-11-21T00:31:42.079928+08:00",
+  "final": false,
+  "source": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01",
+  "selected_lift_m": 0.452,
+  "registered_test_scenes": 160,
+  "registered_test_slots": 320,
+  "new": {
+    "fixed_zerograsp": {
+      "completed": 160,
+      "planning_passes": 153,
+      "physical_attempts": 153,
+      "successes": 111,
+      "failure_reasons": {
+        "approach_not_converged": 8,
+        "insufficient_hold_height": 21,
+        "no_feasible_native_post_or_recalled_candidate": 7,
+        "close_not_converged": 6,
+        "no_bilateral_target_contact": 6,
+        "forbidden_robot_contact": 1
+      },
+      "by_layout": {
+        "S1_open": {
+          "n": 40,
+          "planning": 38,
+          "success": 28
+        },
+        "S2_edge": {
+          "n": 40,
+          "planning": 39,
+          "success": 27
+        },
+        "S3_sparse": {
+          "n": 40,
+          "planning": 39,
+          "success": 29
+        },
+        "S4_clutter": {
+          "n": 40,
+          "planning": 37,
+          "success": 27
+        }
+      }
+    },
+    "fixed_graspcl": {
+      "completed": 134,
+      "planning_passes": 133,
+      "physical_attempts": 133,
+      "successes": 98,
+      "failure_reasons": {
+        "no_bilateral_target_contact": 5,
+        "no_feasible_native_post_or_recalled_candidate": 1,
+        "approach_not_converged": 7,
+        "close_not_converged": 7,
+        "insufficient_hold_height": 15,
+        "forbidden_robot_contact": 1
+      },
+      "by_layout": {
+        "S1_open": {
+          "n": 34,
+          "planning": 34,
+          "success": 26
+        },
+        "S2_edge": {
+          "n": 33,
+          "planning": 33,
+          "success": 23
+        },
+        "S3_sparse": {
+          "n": 33,
+          "planning": 33,
+          "success": 25
+        },
+        "S4_clutter": {
+          "n": 34,
+          "planning": 33,
+          "success": 24
+        }
+      }
+    }
+  },
+  "paired": {
+    "paired": 134,
+    "both_success": [
+      "I0002_S2_edge_052_extra_large_clamp",
+      "I0004_S3_sparse_071_nine_hole_peg_test",
+      "I0005_S1_open_063-b_marbles",
+      "I0006_S4_clutter_051_large_clamp",
+      "I0009_S3_sparse_065-i_cups",
+      "I0012_S3_sparse_053_mini_soccer_ball",
+      "I0014_S2_edge_002_master_chef_can",
+      "I0016_S4_clutter_053_mini_soccer_ball",
+      "I0019_S1_open_028_skillet_lid",
+      "I0020_S2_edge_002_master_chef_can",
+      "I0021_S4_clutter_065-h_cups",
+      "I0022_S1_open_029_plate",
+      "I0028_S3_sparse_059_chain",
+      "I0032_S2_edge_054_softball",
+      "I0033_S3_sparse_072-e_toy_airplane",
+      "I0034_S1_open_065-i_cups",
+      "I0035_S4_clutter_072-b_toy_airplane",
+      "I0036_S3_sparse_065-h_cups",
+      "I0039_S4_clutter_073-f_lego_duplo",
+      "I0040_S1_open_002_master_chef_can",
+      "I0043_S2_edge_070-b_colored_wood_blocks",
+      "I0049_S2_edge_073-g_lego_duplo",
+      "I0050_S4_clutter_002_master_chef_can",
+      "I0051_S3_sparse_065-g_cups",
+      "I0054_S2_edge_073-d_lego_duplo",
+      "I0057_S1_open_002_master_chef_can",
+      "I0058_S3_sparse_065-e_cups",
+      "I0060_S2_edge_073-e_lego_duplo",
+      "I0061_S1_open_065-c_cups",
+      "I0067_S4_clutter_072-e_toy_airplane",
+      "I0070_S2_edge_028_skillet_lid",
+      "I0072_S4_clutter_073-g_lego_duplo",
+      "I0073_S1_open_054_softball",
+      "I0074_S2_edge_072-d_toy_airplane",
+      "I0078_S4_clutter_065-j_cups",
+      "I0079_S2_edge_063-b_marbles",
+      "I0080_S3_sparse_073-f_lego_duplo",
+      "I0083_S3_sparse_065-f_cups",
+      "I0084_S1_open_073-g_lego_duplo",
+      "I0085_S2_edge_053_mini_soccer_ball",
+      "I0086_S1_open_065-a_cups",
+      "I0089_S3_sparse_052_extra_large_clamp",
+      "I0090_S4_clutter_054_softball",
+      "I0094_S1_open_072-d_toy_airplane",
+      "I0096_S1_open_073-d_lego_duplo",
+      "I0097_S3_sparse_051_large_clamp",
+      "I0098_S4_clutter_065-e_cups",
+      "I0103_S4_clutter_070-a_colored_wood_blocks",
+      "I0105_S1_open_073-f_lego_duplo",
+      "I0107_S1_open_053_mini_soccer_ball",
+      "I0110_S2_edge_065-a_cups",
+      "I0112_S4_clutter_002_master_chef_can",
+      "I0114_S2_edge_065-j_cups",
+      "I0121_S4_clutter_073-e_lego_duplo",
+      "I0122_S3_sparse_065-j_cups",
+      "I0123_S2_edge_072-c_toy_airplane",
+      "I0124_S1_open_065-b_cups",
+      "I0128_S1_open_065-h_cups",
+      "I0132_S2_edge_073-a_lego_duplo",
+      "I0134_S1_open_072-e_toy_airplane",
+      "I0136_S1_open_073-b_lego_duplo",
+      "I0137_S4_clutter_063-b_marbles",
+      "I0139_S3_sparse_072-b_toy_airplane",
+      "I0143_S3_sparse_070-b_colored_wood_blocks",
+      "I0146_S4_clutter_065-c_cups",
+      "I0150_S3_sparse_028_skillet_lid",
+      "I0151_S2_edge_065-i_cups",
+      "I0152_S3_sparse_054_softball",
+      "I0153_S1_open_070-a_colored_wood_blocks",
+      "I0157_S3_sparse_002_master_chef_can",
+      "I0158_S4_clutter_063-a_marbles",
+      "I0160_S1_open_065-j_cups",
+      "I0164_S4_clutter_065-i_cups",
+      "I0165_S1_open_072-a_toy_airplane",
+      "I0166_S4_clutter_070-b_colored_wood_blocks"
+    ],
+    "graspcl_only": [
+      "I0008_S1_open_052_extra_large_clamp",
+      "I0010_S2_edge_071_nine_hole_peg_test",
+      "I0017_S3_sparse_072-a_toy_airplane",
+      "I0023_S2_edge_065-c_cups",
+      "I0025_S3_sparse_065-a_cups",
+      "I0026_S4_clutter_036_wood_block",
+      "I0030_S2_edge_063-a_marbles",
+      "I0041_S3_sparse_029_plate",
+      "I0047_S3_sparse_072-d_toy_airplane",
+      "I0052_S1_open_071_nine_hole_peg_test",
+      "I0053_S4_clutter_065-b_cups",
+      "I0065_S4_clutter_065-a_cups",
+      "I0082_S4_clutter_044_flat_screwdriver",
+      "I0099_S2_edge_073-f_lego_duplo",
+      "I0101_S3_sparse_065-b_cups",
+      "I0115_S3_sparse_063-b_marbles",
+      "I0117_S1_open_070-b_colored_wood_blocks",
+      "I0120_S3_sparse_065-d_cups",
+      "I0141_S4_clutter_072-d_toy_airplane",
+      "I0142_S2_edge_065-b_cups",
+      "I0145_S1_open_073-e_lego_duplo",
+      "I0156_S2_edge_072-e_toy_airplane",
+      "I0168_S1_open_044_flat_screwdriver"
+    ],
+    "zerograsp_only": [
+      "I0001_S4_clutter_072-c_toy_airplane",
+      "I0037_S2_edge_072-b_toy_airplane",
+      "I0042_S1_open_063-a_marbles",
+      "I0068_S3_sparse_065-c_cups",
+      "I0075_S3_sparse_063-a_marbles",
+      "I0076_S1_open_073-c_lego_duplo",
+      "I0091_S2_edge_070-a_colored_wood_blocks",
+      "I0092_S3_sparse_073-d_lego_duplo",
+      "I0095_S4_clutter_065-d_cups",
+      "I0104_S2_edge_065-h_cups",
+      "I0108_S3_sparse_002_master_chef_can",
+      "I0109_S4_clutter_029_plate",
+      "I0118_S4_clutter_065-f_cups",
+      "I0126_S2_edge_065-e_cups",
+      "I0129_S3_sparse_073-g_lego_duplo",
+      "I0131_S3_sparse_036_wood_block",
+      "I0135_S4_clutter_071_nine_hole_peg_test",
+      "I0149_S2_edge_002_master_chef_can",
+      "I0154_S4_clutter_002_master_chef_can"
+    ],
+    "both_failure": [
+      "I0011_S4_clutter_072-a_toy_airplane",
+      "I0013_S1_open_032_knife",
+      "I0027_S1_open_072-b_toy_airplane",
+      "I0045_S4_clutter_059_chain",
+      "I0046_S1_open_065-d_cups",
+      "I0056_S4_clutter_073-a_lego_duplo",
+      "I0062_S3_sparse_032_knife",
+      "I0064_S2_edge_036_wood_block",
+      "I0066_S1_open_036_wood_block",
+      "I0087_S2_edge_029_plate",
+      "I0113_S1_open_059_chain",
+      "I0116_S2_edge_032_knife",
+      "I0127_S4_clutter_052_extra_large_clamp",
+      "I0138_S2_edge_059_chain",
+      "I0148_S1_open_065-g_cups",
+      "I0161_S3_sparse_073-a_lego_duplo",
+      "I0162_S2_edge_065-d_cups"
+    ]
+  },
+  "height_only_200": {
+    "fixed_zerograsp": {
+      "completed": 200,
+      "planning_passes": 153,
+      "physical_attempts": 153,
+      "successes": 120,
+      "failure_reasons": {
+        "approach_not_converged": 7,
+        "insufficient_hold_height": 16,
+        "registered_occlusion_outside_range": 31,
+        "no_feasible_native_post_or_recalled_candidate": 8,
+        "independent_scene_admission_failed": 7,
+        "no_bilateral_target_contact": 5,
+        "close_not_converged": 3,
+        "forbidden_robot_contact": 2,
+        "registered_wrist_view_not_admitted": 1
+      },
+      "by_layout": {
+        "S1_open": {
+          "n": 40,
+          "planning": 38,
+          "success": 27
+        },
+        "S2_edge": {
+          "n": 40,
+          "planning": 39,
+          "success": 34
+        },
+        "S3_sparse": {
+          "n": 40,
+          "planning": 39,
+          "success": 30
+        },
+        "S4_clutter": {
+          "n": 40,
+          "planning": 37,
+          "success": 29
+        }
+      }
+    },
+    "fixed_graspcl": {
+      "completed": 200,
+      "planning_passes": 160,
+      "physical_attempts": 160,
+      "successes": 120,
+      "failure_reasons": {
+        "no_bilateral_target_contact": 4,
+        "insufficient_hold_height": 23,
+        "registered_occlusion_outside_range": 31,
+        "independent_scene_admission_failed": 7,
+        "approach_not_converged": 9,
+        "close_not_converged": 4,
+        "no_feasible_native_post_or_recalled_candidate": 1,
+        "registered_wrist_view_not_admitted": 1
+      },
+      "by_layout": {
+        "S1_open": {
+          "n": 40,
+          "planning": 40,
+          "success": 33
+        },
+        "S2_edge": {
+          "n": 40,
+          "planning": 40,
+          "success": 28
+        },
+        "S3_sparse": {
+          "n": 40,
+          "planning": 40,
+          "success": 32
+        },
+        "S4_clutter": {
+          "n": 40,
+          "planning": 40,
+          "success": 27
+        }
+      }
+    }
+  },
+  "history_matched_160": {
+    "height_452_old_bank": {
+      "fixed_zerograsp": {
+        "completed": 160,
+        "planning_passes": 153,
+        "physical_attempts": 153,
+        "successes": 120,
+        "failure_reasons": {
+          "approach_not_converged": 7,
+          "insufficient_hold_height": 16,
+          "no_feasible_native_post_or_recalled_candidate": 7,
+          "no_bilateral_target_contact": 5,
+          "close_not_converged": 3,
+          "forbidden_robot_contact": 2
+        },
+        "by_layout": {
+          "S1_open": {
+            "n": 40,
+            "planning": 38,
+            "success": 27
+          },
+          "S2_edge": {
+            "n": 40,
+            "planning": 39,
+            "success": 34
+          },
+          "S3_sparse": {
+            "n": 40,
+            "planning": 39,
+            "success": 30
+          },
+          "S4_clutter": {
+            "n": 40,
+            "planning": 37,
+            "success": 29
+          }
+        }
+      },
+      "fixed_graspcl": {
+        "completed": 160,
+        "planning_passes": 160,
+        "physical_attempts": 160,
+        "successes": 120,
+        "failure_reasons": {
+          "no_bilateral_target_contact": 4,
+          "insufficient_hold_height": 23,
+          "approach_not_converged": 9,
+          "close_not_converged": 4
+        },
+        "by_layout": {
+          "S1_open": {
+            "n": 40,
+            "planning": 40,
+            "success": 33
+          },
+          "S2_edge": {
+            "n": 40,
+            "planning": 40,
+            "success": 28
+          },
+          "S3_sparse": {
+            "n": 40,
+            "planning": 40,
+            "success": 32
+          },
+          "S4_clutter": {
+            "n": 40,
+            "planning": 40,
+            "success": 27
+          }
+        }
+      }
+    },
+    "height_220_old_bank": {
+      "fixed_zerograsp": {
+        "completed": 160,
+        "planning_passes": 127,
+        "physical_attempts": 127,
+        "successes": 101,
+        "failure_reasons": {
+          "no_feasible_native_post_or_recalled_candidate": 33,
+          "insufficient_hold_height": 17,
+          "approach_not_converged": 3,
+          "no_bilateral_target_contact": 2,
+          "forbidden_robot_contact": 3,
+          "close_not_converged": 1
+        },
+        "by_layout": {
+          "S1_open": {
+            "n": 40,
+            "planning": 27,
+            "success": 20
+          },
+          "S2_edge": {
+            "n": 40,
+            "planning": 39,
+            "success": 32
+          },
+          "S3_sparse": {
+            "n": 40,
+            "planning": 31,
+            "success": 23
+          },
+          "S4_clutter": {
+            "n": 40,
+            "planning": 30,
+            "success": 26
+          }
+        }
+      },
+      "fixed_graspcl": {
+        "completed": 160,
+        "planning_passes": 158,
+        "physical_attempts": 158,
+        "successes": 120,
+        "failure_reasons": {
+          "insufficient_hold_height": 23,
+          "no_feasible_native_post_or_recalled_candidate": 2,
+          "no_bilateral_target_contact": 11,
+          "approach_not_converged": 4
+        },
+        "by_layout": {
+          "S1_open": {
+            "n": 40,
+            "planning": 39,
+            "success": 28
+          },
+          "S2_edge": {
+            "n": 40,
+            "planning": 40,
+            "success": 32
+          },
+          "S3_sparse": {
+            "n": 40,
+            "planning": 40,
+            "success": 29
+          },
+          "S4_clutter": {
+            "n": 40,
+            "planning": 39,
+            "success": 31
+          }
+        }
+      }
+    }
+  },
+  "source_collection": {
+    "completed": 40,
+    "planning_passes": 30,
+    "physical_attempts": 30,
+    "successes": 24,
+    "failure_reasons": {
+      "no_feasible_native_post_or_recalled_candidate": 10,
+      "insufficient_hold_height": 4,
+      "approach_not_converged": 1,
+      "lift_not_converged": 1
+    },
+    "by_layout": {
+      "S1_open": {
+        "n": 10,
+        "planning": 7,
+        "success": 6
+      },
+      "S2_edge": {
+        "n": 10,
+        "planning": 7,
+        "success": 6
+      },
+      "S3_sparse": {
+        "n": 10,
+        "planning": 9,
+        "success": 7
+      },
+      "S4_clutter": {
+        "n": 10,
+        "planning": 7,
+        "success": 5
+      }
+    }
+  },
+  "bank": {
+    "passed": true,
+    "source_budget": 40,
+    "clean_labels": 28,
+    "historical_arx_feedback_imported": 0,
+    "source_test_model_and_mesh_overlap": 0,
+    "current_test_observations_or_outcomes_used": 0,
+    "all_contacts_authored_tcp43": true,
+    "all_labels_use_hold10_3seconds": true,
+    "source_ids": [
+      "B0074_S2_edge_015_peach",
+      "B0033_S3_sparse_008_pudding_box",
+      "B0082_S4_clutter_016_pear",
+      "B0002_S2_edge_003_cracker_box",
+      "B0159_S3_sparse_062_dice",
+      "B0094_S4_clutter_018_plum",
+      "B0025_S1_open_007_tuna_fish_can",
+      "B0111_S3_sparse_025_mug",
+      "B0013_S1_open_005_tomato_soup_can",
+      "B0128_S2_edge_033_spatula",
+      "B0070_S4_clutter_014_lemon",
+      "B0063_S3_sparse_013_apple",
+      "B0218_S2_edge_055_baseball",
+      "B0021_S3_sparse_006_mustard_bottle",
+      "B0208_S4_clutter_048_hammer",
+      "B0163_S1_open_077_rubiks_cube",
+      "B0051_S3_sparse_011_banana",
+      "B0226_S4_clutter_056_tennis_ball",
+      "B0055_S1_open_012_strawberry",
+      "B0152_S2_edge_061_foam_brick",
+      "B0231_S3_sparse_057_racquetball",
+      "B0046_S4_clutter_010_potted_meat_can",
+      "B0169_S1_open_035_power_drill",
+      "B0104_S2_edge_024_bowl",
+      "B0087_S3_sparse_017_orange",
+      "B0139_S1_open_022_windex_bottle",
+      "B0236_S2_edge_058_golf_ball",
+      "B0201_S3_sparse_043_phillips_screwdriver"
+    ],
+    "raw_source_images_clouds_and_execution_retained": true
+  },
+  "partial_audit": {
+    "passed": true,
+    "final": false,
+    "source": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01",
+    "time": "2026-11-21T00:32:36.331114+08:00",
+    "trace_recomputed": 334,
+    "dual_videos_present": 334,
+    "claims_complete": 334,
+    "unchanged_memory_receipts": 268,
+    "source_and_asset_hashes_checked": 3009,
+    "registration_sha256": {
+      "collection": "311d8f3b14829a8086c5628eabc9238c3b9b3d05cc143f3b56bb5f5cacb3eee0",
+      "fixed_zerograsp": "2e9c59c5232dc653a109cfdfaf712c0ad041ed158a63b7d08a9dcd0a183a123e",
+      "fixed_graspcl": "96351875f91f8dbc46cc669baef177e8b3f0bb9d9e7d6888b1af606acd5a4bce"
+    },
+    "bank_sha256": "4bf44bd994bf78f15ee2d43d434085805de4e7368278355dc98103696efe3cd8",
+    "training_test_overlap": 0,
+    "test_feedback_updates": 0,
+    "owned_services_exited_normally": null,
+    "systemd": [
+      "MainPID=2647413",
+      "ExecMainStatus=0",
+      "ActiveState=active"
+    ],
+    "new_robot_actions": 0,
+    "video_scope": "All 360 dual videos checked for presence; the 20 selected arm videos are decoded to extract screenshots. Not a full-frame audit of all videos."
+  }
+}

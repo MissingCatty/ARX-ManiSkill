@@ -1,0 +1,46 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARX 朝向可达性地图</title><style>
+@font-face{font-family:MapChinese;src:url(data:font/woff;base64,__MAP_FONT__) format('woff');font-display:swap}*{box-sizing:border-box}body{margin:0;background:#eff3f8;color:#17243a;font:15px MapChinese,system-ui,sans-serif}header{padding:24px 28px 14px}h1{font-size:25px;margin:0 0 9px}p{margin:7px 0;line-height:1.6}.muted{color:#55647a}main{display:grid;grid-template-columns:1fr 310px;gap:18px;padding:8px 24px 24px}#view{position:relative;background:#fff;border:1px solid #d6deeb;border-radius:12px;min-height:600px;overflow:hidden}canvas{width:100%;height:640px;display:block;touch-action:none;cursor:grab}#legend{position:absolute;bottom:15px;left:20px;right:20px;background:#fffd;padding:8px;border-radius:7px;font-size:13px}#scale-max{float:right}.gradient{height:9px;margin:5px 0;background:linear-gradient(90deg,#332a77,#126b91,#119f84,#8bc34a,#f4da53)}aside{background:#fff;border:1px solid #d6deeb;border-radius:12px;padding:18px}label{display:block;margin:13px 0 5px;font-weight:600}select,input[type=range]{width:100%}select,button{font:inherit;padding:8px;border:1px solid #bcc9dc;border-radius:6px;background:#fff;color:#17243a}button{cursor:pointer}button:hover{background:#edf3fb}.buttons{display:flex;gap:8px;margin:15px 0}.small{font-size:12px}.stat{padding:10px 0;border-bottom:1px solid #e5eaf1}#detail{min-height:110px;font-size:13px;line-height:1.7}#regions{margin:0 24px 24px;background:white;padding:20px;border-radius:12px;overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px}td,th{padding:8px;text-align:right;border-bottom:1px solid #dde4ee;white-space:nowrap}th:first-child,td:first-child{text-align:left}h2{font-size:18px;margin:0 0 10px}@media(max-width:850px){main{grid-template-columns:1fr;padding:8px 12px}header{padding:18px}canvas{height:460px}#view{min-height:460px}#regions{margin:12px}aside{padding:14px}}
+</style><header><h1>ARX 朝向可达性地图</h1><p>固定升降 0.22 m · action TCP43 · 419 万组独立关节采样 · 327 万组通过原静态检查</p><p class="muted">拖动旋转，滚轮缩放，点击体素查看。颜色表示已观察到的朝向格覆盖，不能解释为 IK 或抓取成功概率。空白区域表示未知。</p></header>
+<main><section id="view"><canvas id="canvas" aria-label="可旋转的三维机械臂工作区"></canvas><div id="legend"><span id="scale-title"></span><div class="gradient"></div><span>0</span><span id="scale-max"></span></div></section><aside>
+<label for="metric">着色指标</label><select id="metric"><option value="4">朝下方向覆盖</option><option value="3">全部朝向覆盖</option><option value="6">平均关节限位余量</option><option value="7">平均雅可比条件指标</option></select>
+<label for="roi"><input id="roi" type="checkbox" checked> 只看桌面区域（上方 3–30 cm）</label>
+<label for="height">最高显示高度：<span id="height-value">30</span> cm</label><input type="range" id="height" min="3" max="120" value="30">
+<div class="buttons"><button id="reset">三维视图</button><button id="top">俯视图</button></div><div id="count" class="stat"></div>
+<p class="small muted">概览格为 5 cm，原始查询格为 2 cm。橙线为原桌面边界；X/Y/Z 为 body4 基座坐标，单位厘米。关节余量取六关节中最小值，再按格内样本求平均。</p>
+<div id="detail" class="stat">点击彩色体素查看数值。</div><p class="small muted">当前杂物和运动路径未计入此通用地图；执行仍须通过原场景 IK、碰撞及轨迹检查。原自碰撞策略保持关闭。本页不连接仿真服务，也不发送运动命令。</p></aside></main>
+<section id="regions"><h2>桌面高覆盖区域参考</h2><p class="small muted">按朝下方向覆盖排序，所列中心相距至少 10 cm；只用于查看与布置参考。高度是 TCP 高度，不是物体高度。</p><table><thead><tr><th>序号</th><th>基座 X / Y / Z（cm）</th><th>桌上高度（cm）</th><th>朝下覆盖</th><th>全部覆盖</th><th>关节样本数</th><th>平均限位余量</th></tr></thead><tbody id="region-rows"></tbody></table></section>
+<script>
+'use strict';
+const config=__MAP_CONFIGURATION__;
+const encoded='__MAP_DATA__';
+const bytes=Uint8Array.from(atob(encoded),c=>c.charCodeAt(0));
+const data=new Float32Array(bytes.buffer),n=config.rows,w=config.columns;
+const canvas=document.querySelector('#canvas'),ctx=canvas.getContext('2d'),el=id=>document.getElementById(id);
+let yaw=-.8,pitch=.72,zoom=1,selected=-1,projected=[],drag=null,moved=false,scheduled=false;
+const labels={3:'全部朝向格覆盖',4:'朝下方向格覆盖',6:'平均限位余量（rad）',7:'雅可比条件指标'};
+const stops=[[51,42,119],[18,107,145],[17,159,132],[139,195,74],[244,218,83]];
+function color(t){const x=Math.max(0,Math.min(.999,t))*4,i=Math.floor(x),f=x-i;return `rgb(${stops[i].map((v,j)=>Math.round(v+(stops[i+1][j]-v)*f)).join(',')})`;}
+function visible(i){return (!el('roi').checked||data[i*w+9]>.5)&&data[i*w+8]<=Number(el('height').value)/100;}
+function project(p,W,H){const x=p[0]-.60,y=p[1]+.12,z=p[2]-.24,c=Math.cos(yaw),s=Math.sin(yaw),a=x*c-y*s,b=x*s+y*c;const cp=Math.cos(pitch),sp=Math.sin(pitch);const scale=Math.min(W,H)*.72*zoom;return [W/2+a*scale,H*.46-(z*cp-b*sp)*scale,b*cp+z*sp];}
+function line(a,b,W,H,colorValue,width=1){const pa=project(a,W,H),pb=project(b,W,H);ctx.beginPath();ctx.moveTo(pa[0],pa[1]);ctx.lineTo(pb[0],pb[1]);ctx.strokeStyle=colorValue;ctx.lineWidth=width;ctx.stroke();}
+function draw(){scheduled=false;const rect=canvas.getBoundingClientRect(),W=rect.width,H=rect.height,dpr=Math.min(devicePixelRatio||1,2);if(canvas.width!==Math.round(W*dpr)||canvas.height!==Math.round(H*dpr)){canvas.width=Math.round(W*dpr);canvas.height=Math.round(H*dpr);}ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,W,H);ctx.fillStyle='#fff';ctx.fillRect(0,0,W,H);
+ const metric=Number(el('metric').value);projected=[];let maximum=0;for(let i=0;i<n;i++)if(visible(i)){const p=project([data[i*w],data[i*w+1],data[i*w+2]],W,H);projected.push([p[0],p[1],p[2],i]);maximum=Math.max(maximum,data[i*w+metric]);}
+ for(let x=.0;x<=1.31;x+=.10)line([x,-.95,.01],[x,.70,.01],W,H,'#e2e7ef');for(let y=-.9;y<=.71;y+=.1)line([0,y,.01],[1.3,y,.01],W,H,'#e2e7ef');
+ projected.sort((a,b)=>a[2]-b[2]);const radius=Math.max(1.5,Math.min(4,Math.min(W,H)*.005*zoom));for(const [x,y,z,i] of projected){ctx.fillStyle=color(data[i*w+metric]/(maximum||1));ctx.beginPath();ctx.arc(x,y,radius,0,Math.PI*2);ctx.fill();}
+ for(let i=0;i<4;i++)line(config.table[i],config.table[(i+1)%4],W,H,'#c15b27',1.7);
+ const origin=project([0,0,0],W,H);ctx.font='12px system-ui';for(const [endpoint,c,label] of [[[.2,0,0],'#c63836','X +20'],[[0,.2,0],'#268647','Y +20'],[[0,0,.2],'#316ec9','Z +20']]){line([0,0,0],endpoint,W,H,c,2);const q=project(endpoint,W,H);ctx.fillStyle=c;ctx.fillText(label,q[0]+4,q[1]-4);}
+ if(selected>=0&&visible(selected)){const q=project([data[selected*w],data[selected*w+1],data[selected*w+2]],W,H);ctx.strokeStyle='#111';ctx.lineWidth=2;ctx.beginPath();ctx.arc(q[0],q[1],radius+5,0,Math.PI*2);ctx.stroke();}
+ el('count').textContent=`当前显示 ${projected.length.toLocaleString()} / ${n.toLocaleString()} 个概览格`;el('scale-title').textContent=labels[metric];el('scale-max').textContent=metric<=4?(maximum*100).toFixed(1)+'%':maximum.toFixed(3);
+}
+function refresh(){if(!scheduled){scheduled=true;requestAnimationFrame(draw);}}
+function show(i){selected=i;const r=Array.from(data.slice(i*w,(i+1)*w));el('detail').innerHTML=`基座 XYZ：${r.slice(0,3).map(v=>(v*100).toFixed(1)).join(' / ')} cm<br>桌上高度：${(r[8]*100).toFixed(1)} cm<br>全部 / 朝下覆盖：${(r[3]*100).toFixed(2)}% / ${(r[4]*100).toFixed(2)}%<br>关节样本：${r[5].toLocaleString()}<br>平均限位余量：${r[6].toFixed(3)} rad<br>平均条件指标：${r[7].toFixed(4)}`;refresh();}
+canvas.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY];moved=false;canvas.setPointerCapture(e.pointerId);});
+canvas.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-drag[0],dy=e.clientY-drag[1];if(Math.abs(dx)+Math.abs(dy)>2)moved=true;yaw+=dx*.008;pitch=Math.max(-1.5,Math.min(1.55,pitch+dy*.008));drag=[e.clientX,e.clientY];refresh();});
+canvas.addEventListener('pointerup',e=>{drag=null;if(moved)return;const r=canvas.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;let nearest=null,distance=180;for(const q of projected){const d=(q[0]-x)**2+(q[1]-y)**2;if(d<distance){distance=d;nearest=q[3];}}if(nearest!==null)show(nearest);});
+canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.35,Math.min(6,zoom*Math.exp(-e.deltaY*.001)));refresh();},{passive:false});
+el('reset').onclick=()=>{yaw=-.8;pitch=.72;zoom=1;refresh();};el('top').onclick=()=>{yaw=0;pitch=0;zoom=1;refresh();};
+el('metric').onchange=refresh;el('roi').onchange=refresh;el('height').oninput=()=>{el('height-value').textContent=el('height').value;refresh();};
+el('region-rows').innerHTML=config.regions.map(r=>`<tr><td>${r.rank}</td><td>${[r.body4_x_m,r.body4_y_m,r.body4_z_m].map(x=>(x*100).toFixed(1)).join(' / ')}</td><td>${(r.height_above_table_m*100).toFixed(1)}</td><td>${(r.observed_down_fraction*100).toFixed(1)}%</td><td>${(r.observed_all_fraction*100).toFixed(1)}%</td><td>${r.joint_samples}</td><td>${r.mean_joint_margin_rad.toFixed(3)} rad</td></tr>`).join('');
+new ResizeObserver(refresh).observe(canvas);refresh();
+</script></html>

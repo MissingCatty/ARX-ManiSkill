@@ -1,0 +1,6 @@
+robot: scripts/curobo_arx/static_pick/reference/model/arx.yml
+scene_model: null
+require_measured_scene: true
+collision_profile: configs/collision/arx_refined_871.json
+interpolation_dt: 0.025
+warmup_iterations: 5

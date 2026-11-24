@@ -1,0 +1,6 @@
+# Installed into Isaac Sim's Python environment; Isaac itself supplies numpy.
+fastapi
+uvicorn
+pydantic
+Pillow
+PyYAML

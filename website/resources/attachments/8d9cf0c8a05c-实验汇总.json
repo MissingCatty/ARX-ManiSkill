@@ -1,0 +1,4236 @@
+{
+  "time": "2026-11-21T00:55:44.694554+08:00",
+  "final": true,
+  "source": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01",
+  "selected_lift_m": 0.452,
+  "registered_test_scenes": 160,
+  "registered_test_slots": 320,
+  "new": {
+    "fixed_zerograsp": {
+      "completed": 160,
+      "planning_passes": 153,
+      "physical_attempts": 153,
+      "successes": 111,
+      "failure_reasons": {
+        "approach_not_converged": 8,
+        "insufficient_hold_height": 21,
+        "no_feasible_native_post_or_recalled_candidate": 7,
+        "close_not_converged": 6,
+        "no_bilateral_target_contact": 6,
+        "forbidden_robot_contact": 1
+      },
+      "by_layout": {
+        "S1_open": {
+          "n": 40,
+          "planning": 38,
+          "success": 28
+        },
+        "S2_edge": {
+          "n": 40,
+          "planning": 39,
+          "success": 27
+        },
+        "S3_sparse": {
+          "n": 40,
+          "planning": 39,
+          "success": 29
+        },
+        "S4_clutter": {
+          "n": 40,
+          "planning": 37,
+          "success": 27
+        }
+      }
+    },
+    "fixed_graspcl": {
+      "completed": 160,
+      "planning_passes": 158,
+      "physical_attempts": 158,
+      "successes": 116,
+      "failure_reasons": {
+        "no_bilateral_target_contact": 8,
+        "no_feasible_native_post_or_recalled_candidate": 2,
+        "approach_not_converged": 8,
+        "insufficient_hold_height": 18,
+        "close_not_converged": 7,
+        "forbidden_robot_contact": 1
+      },
+      "by_layout": {
+        "S1_open": {
+          "n": 40,
+          "planning": 40,
+          "success": 31
+        },
+        "S2_edge": {
+          "n": 40,
+          "planning": 40,
+          "success": 28
+        },
+        "S3_sparse": {
+          "n": 40,
+          "planning": 40,
+          "success": 29
+        },
+        "S4_clutter": {
+          "n": 40,
+          "planning": 38,
+          "success": 28
+        }
+      }
+    }
+  },
+  "paired": {
+    "paired": 160,
+    "both_success": [
+      "I0002_S2_edge_052_extra_large_clamp",
+      "I0004_S3_sparse_071_nine_hole_peg_test",
+      "I0005_S1_open_063-b_marbles",
+      "I0006_S4_clutter_051_large_clamp",
+      "I0009_S3_sparse_065-i_cups",
+      "I0012_S3_sparse_053_mini_soccer_ball",
+      "I0014_S2_edge_002_master_chef_can",
+      "I0016_S4_clutter_053_mini_soccer_ball",
+      "I0019_S1_open_028_skillet_lid",
+      "I0020_S2_edge_002_master_chef_can",
+      "I0021_S4_clutter_065-h_cups",
+      "I0022_S1_open_029_plate",
+      "I0028_S3_sparse_059_chain",
+      "I0032_S2_edge_054_softball",
+      "I0033_S3_sparse_072-e_toy_airplane",
+      "I0034_S1_open_065-i_cups",
+      "I0035_S4_clutter_072-b_toy_airplane",
+      "I0036_S3_sparse_065-h_cups",
+      "I0039_S4_clutter_073-f_lego_duplo",
+      "I0040_S1_open_002_master_chef_can",
+      "I0043_S2_edge_070-b_colored_wood_blocks",
+      "I0049_S2_edge_073-g_lego_duplo",
+      "I0050_S4_clutter_002_master_chef_can",
+      "I0051_S3_sparse_065-g_cups",
+      "I0054_S2_edge_073-d_lego_duplo",
+      "I0057_S1_open_002_master_chef_can",
+      "I0058_S3_sparse_065-e_cups",
+      "I0060_S2_edge_073-e_lego_duplo",
+      "I0061_S1_open_065-c_cups",
+      "I0067_S4_clutter_072-e_toy_airplane",
+      "I0070_S2_edge_028_skillet_lid",
+      "I0072_S4_clutter_073-g_lego_duplo",
+      "I0073_S1_open_054_softball",
+      "I0074_S2_edge_072-d_toy_airplane",
+      "I0078_S4_clutter_065-j_cups",
+      "I0079_S2_edge_063-b_marbles",
+      "I0080_S3_sparse_073-f_lego_duplo",
+      "I0083_S3_sparse_065-f_cups",
+      "I0084_S1_open_073-g_lego_duplo",
+      "I0085_S2_edge_053_mini_soccer_ball",
+      "I0086_S1_open_065-a_cups",
+      "I0089_S3_sparse_052_extra_large_clamp",
+      "I0090_S4_clutter_054_softball",
+      "I0094_S1_open_072-d_toy_airplane",
+      "I0096_S1_open_073-d_lego_duplo",
+      "I0097_S3_sparse_051_large_clamp",
+      "I0098_S4_clutter_065-e_cups",
+      "I0103_S4_clutter_070-a_colored_wood_blocks",
+      "I0105_S1_open_073-f_lego_duplo",
+      "I0107_S1_open_053_mini_soccer_ball",
+      "I0110_S2_edge_065-a_cups",
+      "I0112_S4_clutter_002_master_chef_can",
+      "I0114_S2_edge_065-j_cups",
+      "I0121_S4_clutter_073-e_lego_duplo",
+      "I0122_S3_sparse_065-j_cups",
+      "I0123_S2_edge_072-c_toy_airplane",
+      "I0124_S1_open_065-b_cups",
+      "I0128_S1_open_065-h_cups",
+      "I0132_S2_edge_073-a_lego_duplo",
+      "I0134_S1_open_072-e_toy_airplane",
+      "I0136_S1_open_073-b_lego_duplo",
+      "I0137_S4_clutter_063-b_marbles",
+      "I0139_S3_sparse_072-b_toy_airplane",
+      "I0143_S3_sparse_070-b_colored_wood_blocks",
+      "I0146_S4_clutter_065-c_cups",
+      "I0150_S3_sparse_028_skillet_lid",
+      "I0151_S2_edge_065-i_cups",
+      "I0152_S3_sparse_054_softball",
+      "I0153_S1_open_070-a_colored_wood_blocks",
+      "I0157_S3_sparse_002_master_chef_can",
+      "I0158_S4_clutter_063-a_marbles",
+      "I0160_S1_open_065-j_cups",
+      "I0164_S4_clutter_065-i_cups",
+      "I0165_S1_open_072-a_toy_airplane",
+      "I0166_S4_clutter_070-b_colored_wood_blocks",
+      "I0170_S2_edge_044_flat_screwdriver",
+      "I0171_S1_open_072-c_toy_airplane",
+      "I0172_S3_sparse_002_master_chef_can",
+      "I0174_S4_clutter_028_skillet_lid",
+      "I0177_S1_open_002_master_chef_can",
+      "I0180_S3_sparse_044_flat_screwdriver",
+      "I0181_S1_open_073-a_lego_duplo",
+      "I0183_S2_edge_051_large_clamp",
+      "I0185_S3_sparse_070-a_colored_wood_blocks",
+      "I0187_S2_edge_065-g_cups",
+      "I0188_S3_sparse_073-e_lego_duplo",
+      "I0189_S1_open_051_large_clamp",
+      "I0192_S1_open_065-f_cups",
+      "I0194_S4_clutter_065-g_cups",
+      "I0195_S2_edge_073-c_lego_duplo",
+      "I0198_S2_edge_072-a_toy_airplane"
+    ],
+    "graspcl_only": [
+      "I0008_S1_open_052_extra_large_clamp",
+      "I0010_S2_edge_071_nine_hole_peg_test",
+      "I0017_S3_sparse_072-a_toy_airplane",
+      "I0023_S2_edge_065-c_cups",
+      "I0025_S3_sparse_065-a_cups",
+      "I0026_S4_clutter_036_wood_block",
+      "I0030_S2_edge_063-a_marbles",
+      "I0041_S3_sparse_029_plate",
+      "I0047_S3_sparse_072-d_toy_airplane",
+      "I0052_S1_open_071_nine_hole_peg_test",
+      "I0053_S4_clutter_065-b_cups",
+      "I0065_S4_clutter_065-a_cups",
+      "I0082_S4_clutter_044_flat_screwdriver",
+      "I0099_S2_edge_073-f_lego_duplo",
+      "I0101_S3_sparse_065-b_cups",
+      "I0115_S3_sparse_063-b_marbles",
+      "I0117_S1_open_070-b_colored_wood_blocks",
+      "I0120_S3_sparse_065-d_cups",
+      "I0141_S4_clutter_072-d_toy_airplane",
+      "I0142_S2_edge_065-b_cups",
+      "I0145_S1_open_073-e_lego_duplo",
+      "I0156_S2_edge_072-e_toy_airplane",
+      "I0168_S1_open_044_flat_screwdriver",
+      "I0186_S4_clutter_073-b_lego_duplo",
+      "I0199_S4_clutter_073-d_lego_duplo"
+    ],
+    "zerograsp_only": [
+      "I0001_S4_clutter_072-c_toy_airplane",
+      "I0037_S2_edge_072-b_toy_airplane",
+      "I0042_S1_open_063-a_marbles",
+      "I0068_S3_sparse_065-c_cups",
+      "I0075_S3_sparse_063-a_marbles",
+      "I0076_S1_open_073-c_lego_duplo",
+      "I0091_S2_edge_070-a_colored_wood_blocks",
+      "I0092_S3_sparse_073-d_lego_duplo",
+      "I0095_S4_clutter_065-d_cups",
+      "I0104_S2_edge_065-h_cups",
+      "I0108_S3_sparse_002_master_chef_can",
+      "I0109_S4_clutter_029_plate",
+      "I0118_S4_clutter_065-f_cups",
+      "I0126_S2_edge_065-e_cups",
+      "I0129_S3_sparse_073-g_lego_duplo",
+      "I0131_S3_sparse_036_wood_block",
+      "I0135_S4_clutter_071_nine_hole_peg_test",
+      "I0149_S2_edge_002_master_chef_can",
+      "I0154_S4_clutter_002_master_chef_can",
+      "I0191_S3_sparse_072-c_toy_airplane"
+    ],
+    "both_failure": [
+      "I0011_S4_clutter_072-a_toy_airplane",
+      "I0013_S1_open_032_knife",
+      "I0027_S1_open_072-b_toy_airplane",
+      "I0045_S4_clutter_059_chain",
+      "I0046_S1_open_065-d_cups",
+      "I0056_S4_clutter_073-a_lego_duplo",
+      "I0062_S3_sparse_032_knife",
+      "I0064_S2_edge_036_wood_block",
+      "I0066_S1_open_036_wood_block",
+      "I0087_S2_edge_029_plate",
+      "I0113_S1_open_059_chain",
+      "I0116_S2_edge_032_knife",
+      "I0127_S4_clutter_052_extra_large_clamp",
+      "I0138_S2_edge_059_chain",
+      "I0148_S1_open_065-g_cups",
+      "I0161_S3_sparse_073-a_lego_duplo",
+      "I0162_S2_edge_065-d_cups",
+      "I0169_S3_sparse_073-c_lego_duplo",
+      "I0175_S2_edge_073-b_lego_duplo",
+      "I0178_S4_clutter_073-c_lego_duplo",
+      "I0179_S2_edge_065-f_cups",
+      "I0182_S4_clutter_032_knife",
+      "I0196_S1_open_065-e_cups",
+      "I0200_S3_sparse_073-b_lego_duplo"
+    ]
+  },
+  "height_only_200": {
+    "fixed_zerograsp": {
+      "completed": 200,
+      "planning_passes": 153,
+      "physical_attempts": 153,
+      "successes": 120,
+      "failure_reasons": {
+        "approach_not_converged": 7,
+        "insufficient_hold_height": 16,
+        "registered_occlusion_outside_range": 31,
+        "no_feasible_native_post_or_recalled_candidate": 8,
+        "independent_scene_admission_failed": 7,
+        "no_bilateral_target_contact": 5,
+        "close_not_converged": 3,
+        "forbidden_robot_contact": 2,
+        "registered_wrist_view_not_admitted": 1
+      },
+      "by_layout": {
+        "S1_open": {
+          "n": 40,
+          "planning": 38,
+          "success": 27
+        },
+        "S2_edge": {
+          "n": 40,
+          "planning": 39,
+          "success": 34
+        },
+        "S3_sparse": {
+          "n": 40,
+          "planning": 39,
+          "success": 30
+        },
+        "S4_clutter": {
+          "n": 40,
+          "planning": 37,
+          "success": 29
+        }
+      }
+    },
+    "fixed_graspcl": {
+      "completed": 200,
+      "planning_passes": 160,
+      "physical_attempts": 160,
+      "successes": 120,
+      "failure_reasons": {
+        "no_bilateral_target_contact": 4,
+        "insufficient_hold_height": 23,
+        "registered_occlusion_outside_range": 31,
+        "independent_scene_admission_failed": 7,
+        "approach_not_converged": 9,
+        "close_not_converged": 4,
+        "no_feasible_native_post_or_recalled_candidate": 1,
+        "registered_wrist_view_not_admitted": 1
+      },
+      "by_layout": {
+        "S1_open": {
+          "n": 40,
+          "planning": 40,
+          "success": 33
+        },
+        "S2_edge": {
+          "n": 40,
+          "planning": 40,
+          "success": 28
+        },
+        "S3_sparse": {
+          "n": 40,
+          "planning": 40,
+          "success": 32
+        },
+        "S4_clutter": {
+          "n": 40,
+          "planning": 40,
+          "success": 27
+        }
+      }
+    }
+  },
+  "history_matched_160": {
+    "height_452_old_bank": {
+      "fixed_zerograsp": {
+        "completed": 160,
+        "planning_passes": 153,
+        "physical_attempts": 153,
+        "successes": 120,
+        "failure_reasons": {
+          "approach_not_converged": 7,
+          "insufficient_hold_height": 16,
+          "no_feasible_native_post_or_recalled_candidate": 7,
+          "no_bilateral_target_contact": 5,
+          "close_not_converged": 3,
+          "forbidden_robot_contact": 2
+        },
+        "by_layout": {
+          "S1_open": {
+            "n": 40,
+            "planning": 38,
+            "success": 27
+          },
+          "S2_edge": {
+            "n": 40,
+            "planning": 39,
+            "success": 34
+          },
+          "S3_sparse": {
+            "n": 40,
+            "planning": 39,
+            "success": 30
+          },
+          "S4_clutter": {
+            "n": 40,
+            "planning": 37,
+            "success": 29
+          }
+        }
+      },
+      "fixed_graspcl": {
+        "completed": 160,
+        "planning_passes": 160,
+        "physical_attempts": 160,
+        "successes": 120,
+        "failure_reasons": {
+          "no_bilateral_target_contact": 4,
+          "insufficient_hold_height": 23,
+          "approach_not_converged": 9,
+          "close_not_converged": 4
+        },
+        "by_layout": {
+          "S1_open": {
+            "n": 40,
+            "planning": 40,
+            "success": 33
+          },
+          "S2_edge": {
+            "n": 40,
+            "planning": 40,
+            "success": 28
+          },
+          "S3_sparse": {
+            "n": 40,
+            "planning": 40,
+            "success": 32
+          },
+          "S4_clutter": {
+            "n": 40,
+            "planning": 40,
+            "success": 27
+          }
+        }
+      }
+    },
+    "height_220_old_bank": {
+      "fixed_zerograsp": {
+        "completed": 160,
+        "planning_passes": 127,
+        "physical_attempts": 127,
+        "successes": 101,
+        "failure_reasons": {
+          "no_feasible_native_post_or_recalled_candidate": 33,
+          "insufficient_hold_height": 17,
+          "approach_not_converged": 3,
+          "no_bilateral_target_contact": 2,
+          "forbidden_robot_contact": 3,
+          "close_not_converged": 1
+        },
+        "by_layout": {
+          "S1_open": {
+            "n": 40,
+            "planning": 27,
+            "success": 20
+          },
+          "S2_edge": {
+            "n": 40,
+            "planning": 39,
+            "success": 32
+          },
+          "S3_sparse": {
+            "n": 40,
+            "planning": 31,
+            "success": 23
+          },
+          "S4_clutter": {
+            "n": 40,
+            "planning": 30,
+            "success": 26
+          }
+        }
+      },
+      "fixed_graspcl": {
+        "completed": 160,
+        "planning_passes": 158,
+        "physical_attempts": 158,
+        "successes": 120,
+        "failure_reasons": {
+          "insufficient_hold_height": 23,
+          "no_feasible_native_post_or_recalled_candidate": 2,
+          "no_bilateral_target_contact": 11,
+          "approach_not_converged": 4
+        },
+        "by_layout": {
+          "S1_open": {
+            "n": 40,
+            "planning": 39,
+            "success": 28
+          },
+          "S2_edge": {
+            "n": 40,
+            "planning": 40,
+            "success": 32
+          },
+          "S3_sparse": {
+            "n": 40,
+            "planning": 40,
+            "success": 29
+          },
+          "S4_clutter": {
+            "n": 40,
+            "planning": 39,
+            "success": 31
+          }
+        }
+      }
+    }
+  },
+  "source_collection": {
+    "completed": 40,
+    "planning_passes": 30,
+    "physical_attempts": 30,
+    "successes": 24,
+    "failure_reasons": {
+      "no_feasible_native_post_or_recalled_candidate": 10,
+      "insufficient_hold_height": 4,
+      "approach_not_converged": 1,
+      "lift_not_converged": 1
+    },
+    "by_layout": {
+      "S1_open": {
+        "n": 10,
+        "planning": 7,
+        "success": 6
+      },
+      "S2_edge": {
+        "n": 10,
+        "planning": 7,
+        "success": 6
+      },
+      "S3_sparse": {
+        "n": 10,
+        "planning": 9,
+        "success": 7
+      },
+      "S4_clutter": {
+        "n": 10,
+        "planning": 7,
+        "success": 5
+      }
+    }
+  },
+  "bank": {
+    "passed": true,
+    "source_budget": 40,
+    "clean_labels": 28,
+    "historical_arx_feedback_imported": 0,
+    "source_test_model_and_mesh_overlap": 0,
+    "current_test_observations_or_outcomes_used": 0,
+    "all_contacts_authored_tcp43": true,
+    "all_labels_use_hold10_3seconds": true,
+    "source_ids": [
+      "B0074_S2_edge_015_peach",
+      "B0033_S3_sparse_008_pudding_box",
+      "B0082_S4_clutter_016_pear",
+      "B0002_S2_edge_003_cracker_box",
+      "B0159_S3_sparse_062_dice",
+      "B0094_S4_clutter_018_plum",
+      "B0025_S1_open_007_tuna_fish_can",
+      "B0111_S3_sparse_025_mug",
+      "B0013_S1_open_005_tomato_soup_can",
+      "B0128_S2_edge_033_spatula",
+      "B0070_S4_clutter_014_lemon",
+      "B0063_S3_sparse_013_apple",
+      "B0218_S2_edge_055_baseball",
+      "B0021_S3_sparse_006_mustard_bottle",
+      "B0208_S4_clutter_048_hammer",
+      "B0163_S1_open_077_rubiks_cube",
+      "B0051_S3_sparse_011_banana",
+      "B0226_S4_clutter_056_tennis_ball",
+      "B0055_S1_open_012_strawberry",
+      "B0152_S2_edge_061_foam_brick",
+      "B0231_S3_sparse_057_racquetball",
+      "B0046_S4_clutter_010_potted_meat_can",
+      "B0169_S1_open_035_power_drill",
+      "B0104_S2_edge_024_bowl",
+      "B0087_S3_sparse_017_orange",
+      "B0139_S1_open_022_windex_bottle",
+      "B0236_S2_edge_058_golf_ball",
+      "B0201_S3_sparse_043_phillips_screwdriver"
+    ],
+    "raw_source_images_clouds_and_execution_retained": true
+  },
+  "per_scene": [
+    {
+      "id": "I0001_S4_clutter_072-c_toy_airplane",
+      "layout": "S4_clutter",
+      "model_id": "072-c_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029850147664546967,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -0.018832597881555557,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0002_S2_edge_052_extra_large_clamp",
+      "layout": "S2_edge",
+      "model_id": "052_extra_large_clamp",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.014871986582875252,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.014842769131064415,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0004_S3_sparse_071_nine_hole_peg_test",
+      "layout": "S3_sparse",
+      "model_id": "071_nine_hole_peg_test",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.024748574011027813,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.027230489067733288,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0005_S1_open_063-b_marbles",
+      "layout": "S1_open",
+      "model_id": "063-b_marbles",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02850690856575966,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02997584268450737,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0006_S4_clutter_051_large_clamp",
+      "layout": "S4_clutter",
+      "model_id": "051_large_clamp",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.015729455277323723,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.015686342492699623,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0008_S1_open_052_extra_large_clamp",
+      "layout": "S1_open",
+      "model_id": "052_extra_large_clamp",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029367346316576004,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0009_S3_sparse_065-i_cups",
+      "layout": "S3_sparse",
+      "model_id": "065-i_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03078291565179825,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02821526676416397,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0010_S2_edge_071_nine_hole_peg_test",
+      "layout": "S2_edge",
+      "model_id": "071_nine_hole_peg_test",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 5.335547029972076e-06,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030138584785163403,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0011_S4_clutter_072-a_toy_airplane",
+      "layout": "S4_clutter",
+      "model_id": "072-a_toy_airplane",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -1.519918441772461e-06,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0012_S3_sparse_053_mini_soccer_ball",
+      "layout": "S3_sparse",
+      "model_id": "053_mini_soccer_ball",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.0287123192101717,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.027696115896105766,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0013_S1_open_032_knife",
+      "layout": "S1_open",
+      "model_id": "032_knife",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "physical_attempt": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      }
+    },
+    {
+      "id": "I0014_S2_edge_002_master_chef_can",
+      "layout": "S2_edge",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029947757720947266,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02993759512901306,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0016_S4_clutter_053_mini_soccer_ball",
+      "layout": "S4_clutter",
+      "model_id": "053_mini_soccer_ball",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028300637379288673,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028301706537604332,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0017_S3_sparse_072-a_toy_airplane",
+      "layout": "S3_sparse",
+      "model_id": "072-a_toy_airplane",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "forbidden_robot_contact"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.012516699731349945,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0019_S1_open_028_skillet_lid",
+      "layout": "S1_open",
+      "model_id": "028_skillet_lid",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.014163505285978317,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.014342688024044037,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0020_S2_edge_002_master_chef_can",
+      "layout": "S2_edge",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030162259936332703,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029726028442382812,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0021_S4_clutter_065-h_cups",
+      "layout": "S4_clutter",
+      "model_id": "065-h_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028857287019491196,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029844921082258224,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0022_S1_open_029_plate",
+      "layout": "S1_open",
+      "model_id": "029_plate",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.011242796666920185,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.011299637146294117,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0023_S2_edge_065-c_cups",
+      "layout": "S2_edge",
+      "model_id": "065-c_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030040327459573746,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0025_S3_sparse_065-a_cups",
+      "layout": "S3_sparse",
+      "model_id": "065-a_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030199047178030014,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0026_S4_clutter_036_wood_block",
+      "layout": "S4_clutter",
+      "model_id": "036_wood_block",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 2.8736889362335205e-05,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028421469032764435,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0027_S1_open_072-b_toy_airplane",
+      "layout": "S1_open",
+      "model_id": "072-b_toy_airplane",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      }
+    },
+    {
+      "id": "I0028_S3_sparse_059_chain",
+      "layout": "S3_sparse",
+      "model_id": "059_chain",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.011095300316810608,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.01110142096877098,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0030_S2_edge_063-a_marbles",
+      "layout": "S2_edge",
+      "model_id": "063-a_marbles",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 1.601874828338623e-07,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028446272015571594,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0032_S2_edge_054_softball",
+      "layout": "S2_edge",
+      "model_id": "054_softball",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02982642874121666,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029221244156360626,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0033_S3_sparse_072-e_toy_airplane",
+      "layout": "S3_sparse",
+      "model_id": "072-e_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029744721949100494,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03016453981399536,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0034_S1_open_065-i_cups",
+      "layout": "S1_open",
+      "model_id": "065-i_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030617479234933853,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02828134223818779,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0035_S4_clutter_072-b_toy_airplane",
+      "layout": "S4_clutter",
+      "model_id": "072-b_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.019173897802829742,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029399048537015915,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0036_S3_sparse_065-h_cups",
+      "layout": "S3_sparse",
+      "model_id": "065-h_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.0296616293489933,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02385229989886284,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0037_S2_edge_072-b_toy_airplane",
+      "layout": "S2_edge",
+      "model_id": "072-b_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02000964805483818,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      }
+    },
+    {
+      "id": "I0039_S4_clutter_073-f_lego_duplo",
+      "layout": "S4_clutter",
+      "model_id": "073-f_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029774118214845657,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03007538616657257,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0040_S1_open_002_master_chef_can",
+      "layout": "S1_open",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02902078628540039,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029261410236358643,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0041_S3_sparse_029_plate",
+      "layout": "S3_sparse",
+      "model_id": "029_plate",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.010581479407846928,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0042_S1_open_063-a_marbles",
+      "layout": "S1_open",
+      "model_id": "063-a_marbles",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02848116122186184,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 6.92903995513916e-07,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0043_S2_edge_070-b_colored_wood_blocks",
+      "layout": "S2_edge",
+      "model_id": "070-b_colored_wood_blocks",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029595831409096718,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029884474352002144,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0045_S4_clutter_059_chain",
+      "layout": "S4_clutter",
+      "model_id": "059_chain",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -1.7136335372924805e-07,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -2.60770320892334e-08,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0046_S1_open_065-d_cups",
+      "layout": "S1_open",
+      "model_id": "065-d_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      }
+    },
+    {
+      "id": "I0047_S3_sparse_072-d_toy_airplane",
+      "layout": "S3_sparse",
+      "model_id": "072-d_toy_airplane",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 7.82310962677002e-07,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03112473338842392,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0049_S2_edge_073-g_lego_duplo",
+      "layout": "S2_edge",
+      "model_id": "073-g_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.013322738930583,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029193991795182228,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0050_S4_clutter_002_master_chef_can",
+      "layout": "S4_clutter",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029326826333999634,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029319114983081818,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0051_S3_sparse_065-g_cups",
+      "layout": "S3_sparse",
+      "model_id": "065-g_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.026240646839141846,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03408169001340866,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0052_S1_open_071_nine_hole_peg_test",
+      "layout": "S1_open",
+      "model_id": "071_nine_hole_peg_test",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "physical_attempt": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02961005549877882,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0053_S4_clutter_065-b_cups",
+      "layout": "S4_clutter",
+      "model_id": "065-b_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030207600444555283,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0054_S2_edge_073-d_lego_duplo",
+      "layout": "S2_edge",
+      "model_id": "073-d_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029325129464268684,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029209883883595467,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0056_S4_clutter_073-a_lego_duplo",
+      "layout": "S4_clutter",
+      "model_id": "073-a_lego_duplo",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "physical_attempt": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": false,
+        "physical_attempt": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate"
+      }
+    },
+    {
+      "id": "I0057_S1_open_002_master_chef_can",
+      "layout": "S1_open",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02916804701089859,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02931211143732071,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0058_S3_sparse_065-e_cups",
+      "layout": "S3_sparse",
+      "model_id": "065-e_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029306847602128983,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.025905407965183258,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0060_S2_edge_073-e_lego_duplo",
+      "layout": "S2_edge",
+      "model_id": "073-e_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029846251010894775,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03002818673849106,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0061_S1_open_065-c_cups",
+      "layout": "S1_open",
+      "model_id": "065-c_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.025921531021595,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030178774148225784,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0062_S3_sparse_032_knife",
+      "layout": "S3_sparse",
+      "model_id": "032_knife",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "physical_attempt": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 5.117617547512054e-07,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0064_S2_edge_036_wood_block",
+      "layout": "S2_edge",
+      "model_id": "036_wood_block",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 1.5944242477416992e-06,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 1.4789402484893799e-05,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0065_S4_clutter_065-a_cups",
+      "layout": "S4_clutter",
+      "model_id": "065-a_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03069412335753441,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0066_S1_open_036_wood_block",
+      "layout": "S1_open",
+      "model_id": "036_wood_block",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -0.04626518487930298,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0067_S4_clutter_072-e_toy_airplane",
+      "layout": "S4_clutter",
+      "model_id": "072-e_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029732130467891693,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03016456961631775,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0068_S3_sparse_065-c_cups",
+      "layout": "S3_sparse",
+      "model_id": "065-c_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030461426824331284,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      }
+    },
+    {
+      "id": "I0070_S2_edge_028_skillet_lid",
+      "layout": "S2_edge",
+      "model_id": "028_skillet_lid",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029768697917461395,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.013721037656068802,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0072_S4_clutter_073-g_lego_duplo",
+      "layout": "S4_clutter",
+      "model_id": "073-g_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.015104576013982296,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.04786099586635828,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0073_S1_open_054_softball",
+      "layout": "S1_open",
+      "model_id": "054_softball",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.0304221473634243,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029142186045646667,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0074_S2_edge_072-d_toy_airplane",
+      "layout": "S2_edge",
+      "model_id": "072-d_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029330283403396606,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029400989413261414,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0075_S3_sparse_063-a_marbles",
+      "layout": "S3_sparse",
+      "model_id": "063-a_marbles",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02975095622241497,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      }
+    },
+    {
+      "id": "I0076_S1_open_073-c_lego_duplo",
+      "layout": "S1_open",
+      "model_id": "073-c_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.014852679334580898,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      }
+    },
+    {
+      "id": "I0078_S4_clutter_065-j_cups",
+      "layout": "S4_clutter",
+      "model_id": "065-j_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.012517709285020828,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.027518782764673233,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0079_S2_edge_063-b_marbles",
+      "layout": "S2_edge",
+      "model_id": "063-b_marbles",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029937954619526863,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02994341216981411,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0080_S3_sparse_073-f_lego_duplo",
+      "layout": "S3_sparse",
+      "model_id": "073-f_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.027210349217057228,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02916830964386463,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0082_S4_clutter_044_flat_screwdriver",
+      "layout": "S4_clutter",
+      "model_id": "044_flat_screwdriver",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 0.0003249216824769974,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029472026973962784,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0083_S3_sparse_065-f_cups",
+      "layout": "S3_sparse",
+      "model_id": "065-f_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03456561267375946,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029207438230514526,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0084_S1_open_073-g_lego_duplo",
+      "layout": "S1_open",
+      "model_id": "073-g_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.0311938114464283,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.0320434644818306,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0085_S2_edge_053_mini_soccer_ball",
+      "layout": "S2_edge",
+      "model_id": "053_mini_soccer_ball",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029404759407043457,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028697151690721512,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0086_S1_open_065-a_cups",
+      "layout": "S1_open",
+      "model_id": "065-a_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029450125992298126,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02879820391535759,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0087_S2_edge_029_plate",
+      "layout": "S2_edge",
+      "model_id": "029_plate",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 1.73225998878479e-07,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      }
+    },
+    {
+      "id": "I0089_S3_sparse_052_extra_large_clamp",
+      "layout": "S3_sparse",
+      "model_id": "052_extra_large_clamp",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.020660188049077988,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.027797773480415344,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0090_S4_clutter_054_softball",
+      "layout": "S4_clutter",
+      "model_id": "054_softball",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030317191034555435,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030644845217466354,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0091_S2_edge_070-a_colored_wood_blocks",
+      "layout": "S2_edge",
+      "model_id": "070-a_colored_wood_blocks",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028555121272802353,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "forbidden_robot_contact"
+      }
+    },
+    {
+      "id": "I0092_S3_sparse_073-d_lego_duplo",
+      "layout": "S3_sparse",
+      "model_id": "073-d_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029999757185578346,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      }
+    },
+    {
+      "id": "I0094_S1_open_072-d_toy_airplane",
+      "layout": "S1_open",
+      "model_id": "072-d_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029740482568740845,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03009513020515442,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0095_S4_clutter_065-d_cups",
+      "layout": "S4_clutter",
+      "model_id": "065-d_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03002147004008293,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      }
+    },
+    {
+      "id": "I0096_S1_open_073-d_lego_duplo",
+      "layout": "S1_open",
+      "model_id": "073-d_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02997203730046749,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029819892719388008,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0097_S3_sparse_051_large_clamp",
+      "layout": "S3_sparse",
+      "model_id": "051_large_clamp",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.021047286689281464,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.020796842873096466,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0098_S4_clutter_065-e_cups",
+      "layout": "S4_clutter",
+      "model_id": "065-e_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03095998242497444,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030846532434225082,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0099_S2_edge_073-f_lego_duplo",
+      "layout": "S2_edge",
+      "model_id": "073-f_lego_duplo",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -0.005238909274339676,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02929147519171238,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0101_S3_sparse_065-b_cups",
+      "layout": "S3_sparse",
+      "model_id": "065-b_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03307507187128067,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0103_S4_clutter_070-a_colored_wood_blocks",
+      "layout": "S4_clutter",
+      "model_id": "070-a_colored_wood_blocks",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02726542204618454,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029927171766757965,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0104_S2_edge_065-h_cups",
+      "layout": "S2_edge",
+      "model_id": "065-h_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.015805788338184357,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      }
+    },
+    {
+      "id": "I0105_S1_open_073-f_lego_duplo",
+      "layout": "S1_open",
+      "model_id": "073-f_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02983870729804039,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029615093022584915,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0107_S1_open_053_mini_soccer_ball",
+      "layout": "S1_open",
+      "model_id": "053_mini_soccer_ball",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.0289280004799366,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029423993080854416,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0108_S3_sparse_002_master_chef_can",
+      "layout": "S3_sparse",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029555365443229675,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      }
+    },
+    {
+      "id": "I0109_S4_clutter_029_plate",
+      "layout": "S4_clutter",
+      "model_id": "029_plate",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.010736280120909214,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      }
+    },
+    {
+      "id": "I0110_S2_edge_065-a_cups",
+      "layout": "S2_edge",
+      "model_id": "065-a_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.024546228349208832,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030183833092451096,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0112_S4_clutter_002_master_chef_can",
+      "layout": "S4_clutter",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029249612241983414,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028606321662664413,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0113_S1_open_059_chain",
+      "layout": "S1_open",
+      "model_id": "059_chain",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -2.089887857437134e-06,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0114_S2_edge_065-j_cups",
+      "layout": "S2_edge",
+      "model_id": "065-j_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.013118598610162735,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.013374511152505875,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0115_S3_sparse_063-b_marbles",
+      "layout": "S3_sparse",
+      "model_id": "063-b_marbles",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -9.190849959850311e-05,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02928019128739834,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0116_S2_edge_032_knife",
+      "layout": "S2_edge",
+      "model_id": "032_knife",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "physical_attempt": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      }
+    },
+    {
+      "id": "I0117_S1_open_070-b_colored_wood_blocks",
+      "layout": "S1_open",
+      "model_id": "070-b_colored_wood_blocks",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 5.0768256187438965e-05,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029466137290000916,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0118_S4_clutter_065-f_cups",
+      "layout": "S4_clutter",
+      "model_id": "065-f_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030749384313821793,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      }
+    },
+    {
+      "id": "I0120_S3_sparse_065-d_cups",
+      "layout": "S3_sparse",
+      "model_id": "065-d_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02944221720099449,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0121_S4_clutter_073-e_lego_duplo",
+      "layout": "S4_clutter",
+      "model_id": "073-e_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02945074439048767,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02857101708650589,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0122_S3_sparse_065-j_cups",
+      "layout": "S3_sparse",
+      "model_id": "065-j_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02714758738875389,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.012367833405733109,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0123_S2_edge_072-c_toy_airplane",
+      "layout": "S2_edge",
+      "model_id": "072-c_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029926545917987823,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030431948602199554,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0124_S1_open_065-b_cups",
+      "layout": "S1_open",
+      "model_id": "065-b_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.0306062214076519,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.032266948372125626,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0126_S2_edge_065-e_cups",
+      "layout": "S2_edge",
+      "model_id": "065-e_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02902848646044731,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      }
+    },
+    {
+      "id": "I0127_S4_clutter_052_extra_large_clamp",
+      "layout": "S4_clutter",
+      "model_id": "052_extra_large_clamp",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 0.00884881429374218,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 0.009416751563549042,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0128_S1_open_065-h_cups",
+      "layout": "S1_open",
+      "model_id": "065-h_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.027463339269161224,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03188948333263397,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0129_S3_sparse_073-g_lego_duplo",
+      "layout": "S3_sparse",
+      "model_id": "073-g_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.016356468200683594,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -0.001233559101819992,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0131_S3_sparse_036_wood_block",
+      "layout": "S3_sparse",
+      "model_id": "036_wood_block",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.025584742426872253,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      }
+    },
+    {
+      "id": "I0132_S2_edge_073-a_lego_duplo",
+      "layout": "S2_edge",
+      "model_id": "073-a_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030744601041078568,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030744601041078568,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0134_S1_open_072-e_toy_airplane",
+      "layout": "S1_open",
+      "model_id": "072-e_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02904399111866951,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03006402775645256,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0135_S4_clutter_071_nine_hole_peg_test",
+      "layout": "S4_clutter",
+      "model_id": "071_nine_hole_peg_test",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.022626381367444992,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      }
+    },
+    {
+      "id": "I0136_S1_open_073-b_lego_duplo",
+      "layout": "S1_open",
+      "model_id": "073-b_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030052080750465393,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029683537781238556,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0137_S4_clutter_063-b_marbles",
+      "layout": "S4_clutter",
+      "model_id": "063-b_marbles",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028229719027876854,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02784956432878971,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0138_S2_edge_059_chain",
+      "layout": "S2_edge",
+      "model_id": "059_chain",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 5.587935447692871e-08,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0139_S3_sparse_072-b_toy_airplane",
+      "layout": "S3_sparse",
+      "model_id": "072-b_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.020981717854738235,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.021009676158428192,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0141_S4_clutter_072-d_toy_airplane",
+      "layout": "S4_clutter",
+      "model_id": "072-d_toy_airplane",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030125275254249573,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0142_S2_edge_065-b_cups",
+      "layout": "S2_edge",
+      "model_id": "065-b_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -4.4330954551696777e-07,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02999674528837204,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0143_S3_sparse_070-b_colored_wood_blocks",
+      "layout": "S3_sparse",
+      "model_id": "070-b_colored_wood_blocks",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02995939925312996,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02994084358215332,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0145_S1_open_073-e_lego_duplo",
+      "layout": "S1_open",
+      "model_id": "073-e_lego_duplo",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 6.891787052154541e-08,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029843326658010483,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0146_S4_clutter_065-c_cups",
+      "layout": "S4_clutter",
+      "model_id": "065-c_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028818275779485703,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02890660986304283,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0148_S1_open_065-g_cups",
+      "layout": "S1_open",
+      "model_id": "065-g_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 0.003715056926012039,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 0.003715056926012039,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0149_S2_edge_002_master_chef_can",
+      "layout": "S2_edge",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029766254127025604,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 4.836544394493103e-05,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0150_S3_sparse_028_skillet_lid",
+      "layout": "S3_sparse",
+      "model_id": "028_skillet_lid",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.024445533752441406,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.014205202460289001,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0151_S2_edge_065-i_cups",
+      "layout": "S2_edge",
+      "model_id": "065-i_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.017962969839572906,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.016032923012971878,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0152_S3_sparse_054_softball",
+      "layout": "S3_sparse",
+      "model_id": "054_softball",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02965214103460312,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02923690900206566,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0153_S1_open_070-a_colored_wood_blocks",
+      "layout": "S1_open",
+      "model_id": "070-a_colored_wood_blocks",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.012117333710193634,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.011064153164625168,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0154_S4_clutter_002_master_chef_can",
+      "layout": "S4_clutter",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029444605112075806,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      }
+    },
+    {
+      "id": "I0156_S2_edge_072-e_toy_airplane",
+      "layout": "S2_edge",
+      "model_id": "072-e_toy_airplane",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 1.4528632164001465e-07,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03013991191983223,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0157_S3_sparse_002_master_chef_can",
+      "layout": "S3_sparse",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029459722340106964,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029240965843200684,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0158_S4_clutter_063-a_marbles",
+      "layout": "S4_clutter",
+      "model_id": "063-a_marbles",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028781956061720848,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030155787244439125,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0160_S1_open_065-j_cups",
+      "layout": "S1_open",
+      "model_id": "065-j_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.021980170160531998,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.018810689449310303,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0161_S3_sparse_073-a_lego_duplo",
+      "layout": "S3_sparse",
+      "model_id": "073-a_lego_duplo",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 1.3969838619232178e-08,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -1.7900019884109497e-06,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0162_S2_edge_065-d_cups",
+      "layout": "S2_edge",
+      "model_id": "065-d_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "close_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -0.5028327219188213,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0164_S4_clutter_065-i_cups",
+      "layout": "S4_clutter",
+      "model_id": "065-i_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030703525990247726,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.01766175776720047,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0165_S1_open_072-a_toy_airplane",
+      "layout": "S1_open",
+      "model_id": "072-a_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.012510769069194794,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.027404196560382843,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0166_S4_clutter_070-b_colored_wood_blocks",
+      "layout": "S4_clutter",
+      "model_id": "070-b_colored_wood_blocks",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029905905947089195,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029961397871375084,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0168_S1_open_044_flat_screwdriver",
+      "layout": "S1_open",
+      "model_id": "044_flat_screwdriver",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -1.4260411262512207e-05,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.018538739532232285,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0169_S3_sparse_073-c_lego_duplo",
+      "layout": "S3_sparse",
+      "model_id": "073-c_lego_duplo",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -1.1844560503959656e-05,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0170_S2_edge_044_flat_screwdriver",
+      "layout": "S2_edge",
+      "model_id": "044_flat_screwdriver",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029812512919306755,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029812829568982124,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0171_S1_open_072-c_toy_airplane",
+      "layout": "S1_open",
+      "model_id": "072-c_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029953710734844208,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.030164875090122223,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0172_S3_sparse_002_master_chef_can",
+      "layout": "S3_sparse",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029522206634283066,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029544401913881302,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0174_S4_clutter_028_skillet_lid",
+      "layout": "S4_clutter",
+      "model_id": "028_skillet_lid",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.027604158967733383,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.026030052453279495,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0175_S2_edge_073-b_lego_duplo",
+      "layout": "S2_edge",
+      "model_id": "073-b_lego_duplo",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -1.6763806343078613e-07,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      }
+    },
+    {
+      "id": "I0177_S1_open_002_master_chef_can",
+      "layout": "S1_open",
+      "model_id": "002_master_chef_can",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02979334443807602,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029432952404022217,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0178_S4_clutter_073-c_lego_duplo",
+      "layout": "S4_clutter",
+      "model_id": "073-c_lego_duplo",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      }
+    },
+    {
+      "id": "I0179_S2_edge_065-f_cups",
+      "layout": "S2_edge",
+      "model_id": "065-f_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "approach_not_converged"
+      }
+    },
+    {
+      "id": "I0180_S3_sparse_044_flat_screwdriver",
+      "layout": "S3_sparse",
+      "model_id": "044_flat_screwdriver",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029679568484425545,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029682857915759087,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0181_S1_open_073-a_lego_duplo",
+      "layout": "S1_open",
+      "model_id": "073-a_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028969050385057926,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029814881272614002,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0182_S4_clutter_032_knife",
+      "layout": "S4_clutter",
+      "model_id": "032_knife",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "physical_attempt": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": false,
+        "physical_attempt": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate"
+      }
+    },
+    {
+      "id": "I0183_S2_edge_051_large_clamp",
+      "layout": "S2_edge",
+      "model_id": "051_large_clamp",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.020271800458431244,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.020195946097373962,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0185_S3_sparse_070-a_colored_wood_blocks",
+      "layout": "S3_sparse",
+      "model_id": "070-a_colored_wood_blocks",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02837207168340683,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02614351361989975,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0186_S4_clutter_073-b_lego_duplo",
+      "layout": "S4_clutter",
+      "model_id": "073-b_lego_duplo",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -2.7194619178771973e-07,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029582206159830093,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0187_S2_edge_065-g_cups",
+      "layout": "S2_edge",
+      "model_id": "065-g_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.027636948972940445,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.022176336497068405,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0188_S3_sparse_073-e_lego_duplo",
+      "layout": "S3_sparse",
+      "model_id": "073-e_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029672402888536453,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029598001390695572,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0189_S1_open_051_large_clamp",
+      "layout": "S1_open",
+      "model_id": "051_large_clamp",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02834872156381607,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.024418435990810394,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0191_S3_sparse_072-c_toy_airplane",
+      "layout": "S3_sparse",
+      "model_id": "072-c_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029850244522094727,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": -0.01942330040037632,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0192_S1_open_065-f_cups",
+      "layout": "S1_open",
+      "model_id": "065-f_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.03147565945982933,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.027211051434278488,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0194_S4_clutter_065-g_cups",
+      "layout": "S4_clutter",
+      "model_id": "065-g_cups",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02816316857933998,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.029903296381235123,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0195_S2_edge_073-c_lego_duplo",
+      "layout": "S2_edge",
+      "model_id": "073-c_lego_duplo",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.028897725045681,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.025670170783996582,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0196_S1_open_065-e_cups",
+      "layout": "S1_open",
+      "model_id": "065-e_cups",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 5.7220458984375e-06,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "insufficient_hold_height",
+        "minimum_hold_lift_m": 1.0482966899871826e-05,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0198_S2_edge_072-a_toy_airplane",
+      "layout": "S2_edge",
+      "model_id": "072-a_toy_airplane",
+      "fixed_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.011487402021884918,
+        "hold_seconds": 3.025
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.021867595613002777,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0199_S4_clutter_073-d_lego_duplo",
+      "layout": "S4_clutter",
+      "model_id": "073-d_lego_duplo",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "physical_attempt": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate"
+      },
+      "fixed_graspcl": {
+        "success": true,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "success",
+        "minimum_hold_lift_m": 0.02944345586001873,
+        "hold_seconds": 3.025
+      }
+    },
+    {
+      "id": "I0200_S3_sparse_073-b_lego_duplo",
+      "layout": "S3_sparse",
+      "model_id": "073-b_lego_duplo",
+      "fixed_zerograsp": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      },
+      "fixed_graspcl": {
+        "success": false,
+        "planning_success": true,
+        "physical_attempt": true,
+        "reason": "no_bilateral_target_contact"
+      }
+    }
+  ],
+  "historical_same_height_pair": {
+    "fixed_zerograsp": {
+      "paired": 160,
+      "both_success": [
+        "I0001_S4_clutter_072-c_toy_airplane",
+        "I0002_S2_edge_052_extra_large_clamp",
+        "I0004_S3_sparse_071_nine_hole_peg_test",
+        "I0005_S1_open_063-b_marbles",
+        "I0006_S4_clutter_051_large_clamp",
+        "I0009_S3_sparse_065-i_cups",
+        "I0012_S3_sparse_053_mini_soccer_ball",
+        "I0014_S2_edge_002_master_chef_can",
+        "I0016_S4_clutter_053_mini_soccer_ball",
+        "I0019_S1_open_028_skillet_lid",
+        "I0020_S2_edge_002_master_chef_can",
+        "I0021_S4_clutter_065-h_cups",
+        "I0022_S1_open_029_plate",
+        "I0028_S3_sparse_059_chain",
+        "I0032_S2_edge_054_softball",
+        "I0033_S3_sparse_072-e_toy_airplane",
+        "I0034_S1_open_065-i_cups",
+        "I0035_S4_clutter_072-b_toy_airplane",
+        "I0036_S3_sparse_065-h_cups",
+        "I0037_S2_edge_072-b_toy_airplane",
+        "I0039_S4_clutter_073-f_lego_duplo",
+        "I0040_S1_open_002_master_chef_can",
+        "I0042_S1_open_063-a_marbles",
+        "I0043_S2_edge_070-b_colored_wood_blocks",
+        "I0049_S2_edge_073-g_lego_duplo",
+        "I0050_S4_clutter_002_master_chef_can",
+        "I0051_S3_sparse_065-g_cups",
+        "I0054_S2_edge_073-d_lego_duplo",
+        "I0057_S1_open_002_master_chef_can",
+        "I0058_S3_sparse_065-e_cups",
+        "I0060_S2_edge_073-e_lego_duplo",
+        "I0067_S4_clutter_072-e_toy_airplane",
+        "I0068_S3_sparse_065-c_cups",
+        "I0070_S2_edge_028_skillet_lid",
+        "I0073_S1_open_054_softball",
+        "I0074_S2_edge_072-d_toy_airplane",
+        "I0075_S3_sparse_063-a_marbles",
+        "I0078_S4_clutter_065-j_cups",
+        "I0079_S2_edge_063-b_marbles",
+        "I0080_S3_sparse_073-f_lego_duplo",
+        "I0083_S3_sparse_065-f_cups",
+        "I0084_S1_open_073-g_lego_duplo",
+        "I0085_S2_edge_053_mini_soccer_ball",
+        "I0086_S1_open_065-a_cups",
+        "I0089_S3_sparse_052_extra_large_clamp",
+        "I0090_S4_clutter_054_softball",
+        "I0091_S2_edge_070-a_colored_wood_blocks",
+        "I0092_S3_sparse_073-d_lego_duplo",
+        "I0094_S1_open_072-d_toy_airplane",
+        "I0095_S4_clutter_065-d_cups",
+        "I0096_S1_open_073-d_lego_duplo",
+        "I0097_S3_sparse_051_large_clamp",
+        "I0098_S4_clutter_065-e_cups",
+        "I0103_S4_clutter_070-a_colored_wood_blocks",
+        "I0104_S2_edge_065-h_cups",
+        "I0105_S1_open_073-f_lego_duplo",
+        "I0107_S1_open_053_mini_soccer_ball",
+        "I0108_S3_sparse_002_master_chef_can",
+        "I0109_S4_clutter_029_plate",
+        "I0110_S2_edge_065-a_cups",
+        "I0112_S4_clutter_002_master_chef_can",
+        "I0114_S2_edge_065-j_cups",
+        "I0118_S4_clutter_065-f_cups",
+        "I0121_S4_clutter_073-e_lego_duplo",
+        "I0122_S3_sparse_065-j_cups",
+        "I0123_S2_edge_072-c_toy_airplane",
+        "I0124_S1_open_065-b_cups",
+        "I0126_S2_edge_065-e_cups",
+        "I0128_S1_open_065-h_cups",
+        "I0129_S3_sparse_073-g_lego_duplo",
+        "I0131_S3_sparse_036_wood_block",
+        "I0132_S2_edge_073-a_lego_duplo",
+        "I0134_S1_open_072-e_toy_airplane",
+        "I0135_S4_clutter_071_nine_hole_peg_test",
+        "I0136_S1_open_073-b_lego_duplo",
+        "I0137_S4_clutter_063-b_marbles",
+        "I0139_S3_sparse_072-b_toy_airplane",
+        "I0143_S3_sparse_070-b_colored_wood_blocks",
+        "I0146_S4_clutter_065-c_cups",
+        "I0149_S2_edge_002_master_chef_can",
+        "I0150_S3_sparse_028_skillet_lid",
+        "I0151_S2_edge_065-i_cups",
+        "I0152_S3_sparse_054_softball",
+        "I0153_S1_open_070-a_colored_wood_blocks",
+        "I0154_S4_clutter_002_master_chef_can",
+        "I0157_S3_sparse_002_master_chef_can",
+        "I0158_S4_clutter_063-a_marbles",
+        "I0160_S1_open_065-j_cups",
+        "I0164_S4_clutter_065-i_cups",
+        "I0165_S1_open_072-a_toy_airplane",
+        "I0166_S4_clutter_070-b_colored_wood_blocks",
+        "I0170_S2_edge_044_flat_screwdriver",
+        "I0171_S1_open_072-c_toy_airplane",
+        "I0172_S3_sparse_002_master_chef_can",
+        "I0174_S4_clutter_028_skillet_lid",
+        "I0177_S1_open_002_master_chef_can",
+        "I0180_S3_sparse_044_flat_screwdriver",
+        "I0181_S1_open_073-a_lego_duplo",
+        "I0183_S2_edge_051_large_clamp",
+        "I0185_S3_sparse_070-a_colored_wood_blocks",
+        "I0187_S2_edge_065-g_cups",
+        "I0188_S3_sparse_073-e_lego_duplo",
+        "I0189_S1_open_051_large_clamp",
+        "I0191_S3_sparse_072-c_toy_airplane",
+        "I0192_S1_open_065-f_cups",
+        "I0194_S4_clutter_065-g_cups",
+        "I0195_S2_edge_073-c_lego_duplo",
+        "I0198_S2_edge_072-a_toy_airplane"
+      ],
+      "both_failure": [
+        "I0008_S1_open_052_extra_large_clamp",
+        "I0011_S4_clutter_072-a_toy_airplane",
+        "I0013_S1_open_032_knife",
+        "I0017_S3_sparse_072-a_toy_airplane",
+        "I0025_S3_sparse_065-a_cups",
+        "I0026_S4_clutter_036_wood_block",
+        "I0027_S1_open_072-b_toy_airplane",
+        "I0041_S3_sparse_029_plate",
+        "I0045_S4_clutter_059_chain",
+        "I0046_S1_open_065-d_cups",
+        "I0052_S1_open_071_nine_hole_peg_test",
+        "I0053_S4_clutter_065-b_cups",
+        "I0056_S4_clutter_073-a_lego_duplo",
+        "I0062_S3_sparse_032_knife",
+        "I0064_S2_edge_036_wood_block",
+        "I0065_S4_clutter_065-a_cups",
+        "I0066_S1_open_036_wood_block",
+        "I0082_S4_clutter_044_flat_screwdriver",
+        "I0087_S2_edge_029_plate",
+        "I0101_S3_sparse_065-b_cups",
+        "I0113_S1_open_059_chain",
+        "I0115_S3_sparse_063-b_marbles",
+        "I0116_S2_edge_032_knife",
+        "I0117_S1_open_070-b_colored_wood_blocks",
+        "I0120_S3_sparse_065-d_cups",
+        "I0127_S4_clutter_052_extra_large_clamp",
+        "I0138_S2_edge_059_chain",
+        "I0142_S2_edge_065-b_cups",
+        "I0145_S1_open_073-e_lego_duplo",
+        "I0161_S3_sparse_073-a_lego_duplo",
+        "I0168_S1_open_044_flat_screwdriver",
+        "I0169_S3_sparse_073-c_lego_duplo",
+        "I0179_S2_edge_065-f_cups",
+        "I0182_S4_clutter_032_knife",
+        "I0196_S1_open_065-e_cups",
+        "I0199_S4_clutter_073-d_lego_duplo",
+        "I0200_S3_sparse_073-b_lego_duplo"
+      ],
+      "current_only": [
+        "I0061_S1_open_065-c_cups",
+        "I0072_S4_clutter_073-g_lego_duplo",
+        "I0076_S1_open_073-c_lego_duplo"
+      ],
+      "historical_only": [
+        "I0010_S2_edge_071_nine_hole_peg_test",
+        "I0023_S2_edge_065-c_cups",
+        "I0030_S2_edge_063-a_marbles",
+        "I0047_S3_sparse_072-d_toy_airplane",
+        "I0099_S2_edge_073-f_lego_duplo",
+        "I0141_S4_clutter_072-d_toy_airplane",
+        "I0148_S1_open_065-g_cups",
+        "I0156_S2_edge_072-e_toy_airplane",
+        "I0162_S2_edge_065-d_cups",
+        "I0175_S2_edge_073-b_lego_duplo",
+        "I0178_S4_clutter_073-c_lego_duplo",
+        "I0186_S4_clutter_073-b_lego_duplo"
+      ],
+      "regression_reasons": {
+        "insufficient_hold_height": 8,
+        "close_not_converged": 2,
+        "no_bilateral_target_contact": 2
+      },
+      "same_planning_outcomes": 160
+    },
+    "fixed_graspcl": {
+      "paired": 160,
+      "both_success": [
+        "I0002_S2_edge_052_extra_large_clamp",
+        "I0004_S3_sparse_071_nine_hole_peg_test",
+        "I0005_S1_open_063-b_marbles",
+        "I0006_S4_clutter_051_large_clamp",
+        "I0008_S1_open_052_extra_large_clamp",
+        "I0009_S3_sparse_065-i_cups",
+        "I0012_S3_sparse_053_mini_soccer_ball",
+        "I0014_S2_edge_002_master_chef_can",
+        "I0016_S4_clutter_053_mini_soccer_ball",
+        "I0017_S3_sparse_072-a_toy_airplane",
+        "I0019_S1_open_028_skillet_lid",
+        "I0020_S2_edge_002_master_chef_can",
+        "I0022_S1_open_029_plate",
+        "I0023_S2_edge_065-c_cups",
+        "I0026_S4_clutter_036_wood_block",
+        "I0028_S3_sparse_059_chain",
+        "I0030_S2_edge_063-a_marbles",
+        "I0032_S2_edge_054_softball",
+        "I0033_S3_sparse_072-e_toy_airplane",
+        "I0034_S1_open_065-i_cups",
+        "I0036_S3_sparse_065-h_cups",
+        "I0039_S4_clutter_073-f_lego_duplo",
+        "I0040_S1_open_002_master_chef_can",
+        "I0043_S2_edge_070-b_colored_wood_blocks",
+        "I0047_S3_sparse_072-d_toy_airplane",
+        "I0049_S2_edge_073-g_lego_duplo",
+        "I0050_S4_clutter_002_master_chef_can",
+        "I0051_S3_sparse_065-g_cups",
+        "I0057_S1_open_002_master_chef_can",
+        "I0060_S2_edge_073-e_lego_duplo",
+        "I0067_S4_clutter_072-e_toy_airplane",
+        "I0070_S2_edge_028_skillet_lid",
+        "I0072_S4_clutter_073-g_lego_duplo",
+        "I0073_S1_open_054_softball",
+        "I0074_S2_edge_072-d_toy_airplane",
+        "I0078_S4_clutter_065-j_cups",
+        "I0079_S2_edge_063-b_marbles",
+        "I0080_S3_sparse_073-f_lego_duplo",
+        "I0082_S4_clutter_044_flat_screwdriver",
+        "I0083_S3_sparse_065-f_cups",
+        "I0084_S1_open_073-g_lego_duplo",
+        "I0085_S2_edge_053_mini_soccer_ball",
+        "I0086_S1_open_065-a_cups",
+        "I0089_S3_sparse_052_extra_large_clamp",
+        "I0090_S4_clutter_054_softball",
+        "I0094_S1_open_072-d_toy_airplane",
+        "I0096_S1_open_073-d_lego_duplo",
+        "I0097_S3_sparse_051_large_clamp",
+        "I0098_S4_clutter_065-e_cups",
+        "I0101_S3_sparse_065-b_cups",
+        "I0105_S1_open_073-f_lego_duplo",
+        "I0107_S1_open_053_mini_soccer_ball",
+        "I0110_S2_edge_065-a_cups",
+        "I0112_S4_clutter_002_master_chef_can",
+        "I0114_S2_edge_065-j_cups",
+        "I0115_S3_sparse_063-b_marbles",
+        "I0117_S1_open_070-b_colored_wood_blocks",
+        "I0120_S3_sparse_065-d_cups",
+        "I0121_S4_clutter_073-e_lego_duplo",
+        "I0122_S3_sparse_065-j_cups",
+        "I0123_S2_edge_072-c_toy_airplane",
+        "I0124_S1_open_065-b_cups",
+        "I0128_S1_open_065-h_cups",
+        "I0132_S2_edge_073-a_lego_duplo",
+        "I0134_S1_open_072-e_toy_airplane",
+        "I0136_S1_open_073-b_lego_duplo",
+        "I0137_S4_clutter_063-b_marbles",
+        "I0139_S3_sparse_072-b_toy_airplane",
+        "I0141_S4_clutter_072-d_toy_airplane",
+        "I0143_S3_sparse_070-b_colored_wood_blocks",
+        "I0145_S1_open_073-e_lego_duplo",
+        "I0150_S3_sparse_028_skillet_lid",
+        "I0151_S2_edge_065-i_cups",
+        "I0152_S3_sparse_054_softball",
+        "I0153_S1_open_070-a_colored_wood_blocks",
+        "I0156_S2_edge_072-e_toy_airplane",
+        "I0157_S3_sparse_002_master_chef_can",
+        "I0158_S4_clutter_063-a_marbles",
+        "I0160_S1_open_065-j_cups",
+        "I0164_S4_clutter_065-i_cups",
+        "I0165_S1_open_072-a_toy_airplane",
+        "I0166_S4_clutter_070-b_colored_wood_blocks",
+        "I0168_S1_open_044_flat_screwdriver",
+        "I0170_S2_edge_044_flat_screwdriver",
+        "I0171_S1_open_072-c_toy_airplane",
+        "I0172_S3_sparse_002_master_chef_can",
+        "I0174_S4_clutter_028_skillet_lid",
+        "I0177_S1_open_002_master_chef_can",
+        "I0181_S1_open_073-a_lego_duplo",
+        "I0183_S2_edge_051_large_clamp",
+        "I0185_S3_sparse_070-a_colored_wood_blocks",
+        "I0186_S4_clutter_073-b_lego_duplo",
+        "I0187_S2_edge_065-g_cups",
+        "I0188_S3_sparse_073-e_lego_duplo",
+        "I0189_S1_open_051_large_clamp",
+        "I0192_S1_open_065-f_cups",
+        "I0194_S4_clutter_065-g_cups",
+        "I0195_S2_edge_073-c_lego_duplo",
+        "I0198_S2_edge_072-a_toy_airplane",
+        "I0199_S4_clutter_073-d_lego_duplo"
+      ],
+      "both_failure": [
+        "I0011_S4_clutter_072-a_toy_airplane",
+        "I0013_S1_open_032_knife",
+        "I0027_S1_open_072-b_toy_airplane",
+        "I0046_S1_open_065-d_cups",
+        "I0056_S4_clutter_073-a_lego_duplo",
+        "I0062_S3_sparse_032_knife",
+        "I0064_S2_edge_036_wood_block",
+        "I0076_S1_open_073-c_lego_duplo",
+        "I0091_S2_edge_070-a_colored_wood_blocks",
+        "I0092_S3_sparse_073-d_lego_duplo",
+        "I0095_S4_clutter_065-d_cups",
+        "I0104_S2_edge_065-h_cups",
+        "I0109_S4_clutter_029_plate",
+        "I0113_S1_open_059_chain",
+        "I0116_S2_edge_032_knife",
+        "I0126_S2_edge_065-e_cups",
+        "I0127_S4_clutter_052_extra_large_clamp",
+        "I0129_S3_sparse_073-g_lego_duplo",
+        "I0138_S2_edge_059_chain",
+        "I0149_S2_edge_002_master_chef_can",
+        "I0169_S3_sparse_073-c_lego_duplo",
+        "I0178_S4_clutter_073-c_lego_duplo",
+        "I0179_S2_edge_065-f_cups",
+        "I0182_S4_clutter_032_knife"
+      ],
+      "current_only": [
+        "I0010_S2_edge_071_nine_hole_peg_test",
+        "I0021_S4_clutter_065-h_cups",
+        "I0025_S3_sparse_065-a_cups",
+        "I0035_S4_clutter_072-b_toy_airplane",
+        "I0041_S3_sparse_029_plate",
+        "I0052_S1_open_071_nine_hole_peg_test",
+        "I0053_S4_clutter_065-b_cups",
+        "I0054_S2_edge_073-d_lego_duplo",
+        "I0058_S3_sparse_065-e_cups",
+        "I0061_S1_open_065-c_cups",
+        "I0065_S4_clutter_065-a_cups",
+        "I0099_S2_edge_073-f_lego_duplo",
+        "I0103_S4_clutter_070-a_colored_wood_blocks",
+        "I0142_S2_edge_065-b_cups",
+        "I0146_S4_clutter_065-c_cups",
+        "I0180_S3_sparse_044_flat_screwdriver"
+      ],
+      "historical_only": [
+        "I0001_S4_clutter_072-c_toy_airplane",
+        "I0037_S2_edge_072-b_toy_airplane",
+        "I0042_S1_open_063-a_marbles",
+        "I0045_S4_clutter_059_chain",
+        "I0066_S1_open_036_wood_block",
+        "I0068_S3_sparse_065-c_cups",
+        "I0075_S3_sparse_063-a_marbles",
+        "I0087_S2_edge_029_plate",
+        "I0108_S3_sparse_002_master_chef_can",
+        "I0118_S4_clutter_065-f_cups",
+        "I0131_S3_sparse_036_wood_block",
+        "I0135_S4_clutter_071_nine_hole_peg_test",
+        "I0148_S1_open_065-g_cups",
+        "I0154_S4_clutter_002_master_chef_can",
+        "I0161_S3_sparse_073-a_lego_duplo",
+        "I0162_S2_edge_065-d_cups",
+        "I0175_S2_edge_073-b_lego_duplo",
+        "I0191_S3_sparse_072-c_toy_airplane",
+        "I0196_S1_open_065-e_cups",
+        "I0200_S3_sparse_073-b_lego_duplo"
+      ],
+      "regression_reasons": {
+        "insufficient_hold_height": 9,
+        "close_not_converged": 4,
+        "approach_not_converged": 4,
+        "no_bilateral_target_contact": 3
+      },
+      "same_planning_outcomes": 158
+    }
+  },
+  "slot_timing": {
+    "fixed_zerograsp": {
+      "samples": 160,
+      "mean_seconds": 48.06097438125,
+      "median_seconds": 48.655087
+    },
+    "fixed_graspcl": {
+      "samples": 160,
+      "mean_seconds": 56.98907079375,
+      "median_seconds": 56.17045
+    }
+  },
+  "audit": {
+    "passed": true,
+    "final": true,
+    "source": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01",
+    "time": "2026-11-21T00:56:48.401471+08:00",
+    "trace_recomputed": 360,
+    "dual_videos_present": 360,
+    "claims_complete": 360,
+    "unchanged_memory_receipts": 320,
+    "source_and_asset_hashes_checked": 3009,
+    "registration_sha256": {
+      "collection": "311d8f3b14829a8086c5628eabc9238c3b9b3d05cc143f3b56bb5f5cacb3eee0",
+      "fixed_zerograsp": "2e9c59c5232dc653a109cfdfaf712c0ad041ed158a63b7d08a9dcd0a183a123e",
+      "fixed_graspcl": "96351875f91f8dbc46cc669baef177e8b3f0bb9d9e7d6888b1af606acd5a4bce"
+    },
+    "bank_sha256": "4bf44bd994bf78f15ee2d43d434085805de4e7368278355dc98103696efe3cd8",
+    "training_test_overlap": 0,
+    "test_feedback_updates": 0,
+    "owned_services_exited_normally": true,
+    "systemd": [
+      "MainPID=0",
+      "ExecMainStatus=0",
+      "ActiveState=inactive"
+    ],
+    "new_robot_actions": 0,
+    "video_scope": "All 360 available dual-video pairs checked for presence; the 20 selected arm videos are decoded to extract screenshots. Not a full-frame audit of all videos."
+  },
+  "runtime": {
+    "time": "2026-11-21T00:55:33.205700+08:00",
+    "failed": false,
+    "all_owned_services_exited": true,
+    "services": {
+      "zerograsp": {
+        "pid": 2647503,
+        "returncode": 0,
+        "exited": true
+      },
+      "curobo": {
+        "pid": 2649925,
+        "returncode": 0,
+        "exited": true
+      },
+      "graspcl": {
+        "pid": 2797672,
+        "returncode": 0,
+        "exited": true
+      },
+      "fixed_zerograsp": {
+        "pid": 2659928,
+        "returncode": 0,
+        "exited": true
+      },
+      "fixed_graspcl": {
+        "pid": 2798210,
+        "returncode": 0,
+        "exited": true
+      }
+    },
+    "wall_seconds": 11208.860117438016
+  }
+}

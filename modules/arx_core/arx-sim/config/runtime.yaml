@@ -1,0 +1,47 @@
+simulation:
+  realtime: true
+  # This grasp pipeline consumes head RGB-D. Extra RTX sensor views prevent
+  # real-time playback on the current GPU; their calibrated prims remain.
+  camera_roles: [head]
+  camera_tick_hz: 5
+  # The exported dual-arm articulation has stiff position drives.  A 60 Hz
+  # physics step is too coarse for those constraints and produces a visible
+  # one-step limit cycle while the renderer is otherwise idle.
+  physics_dt: 0.0083333333
+  # RTX/WebRTC renders at 5 Hz; physics still advances at 120 Hz.
+  # Wall-clock pacing in simulation_loop prevents faster-than-real-time runs.
+  rendering_dt: 0.2
+  # Adjacent-link collision filtering in the exported asset is not complete.
+  # Enabling articulation-wide self collision makes the arm drives fight
+  # shallow collision penetrations, so keep it off until explicit collision
+  # groups have been authored and validated in the robot asset.
+  enable_self_collisions: false
+  solver_position_iteration_count: 16
+  solver_velocity_iteration_count: 4
+  # Real-Time 2.0's DLSS path returns zero RGBA on the local Linux/Kit stack.
+  # TAA alone remains noisy there; PathTracing with OptiX produces clear RGB
+  # at the existing 640x480 / 5 Hz. Camera optics and physics stay unchanged.
+  renderer: PathTracing
+  anti_aliasing: 1
+  denoiser: true
+  samples_per_pixel_per_frame: 4
+  # GPU 0 is the verified local default.
+  active_gpu: 3
+  physics_gpu: 3
+  minimum_free_gpu_memory_mb: 8000
+  queue_capacity: 32
+  command_timeout_sec: 30.0
+  camera_warmup_steps: 8
+  environment: environments/house_double_floor_lower/1.0.0/usd/environment.usd
+  environment_prim: /World/Environment
+  robot: robots/arx_x5_lift/1.0.0/usd/robot.usd
+  robot_prim: /World/Robot
+  articulation_root: /World/Robot/scene_0/controllable__lift2__exported_robot
+  scene_cameras:
+    default_view: robot_closeup
+    target_local_xyz: [0.35, 0.0, 0.65]
+    views:
+      robot_closeup: [-0.40, -0.65, 1.55]
+      left_oblique: [-1.45, 1.15, 2.15]
+      right_oblique: [-1.45, -1.15, 2.15]
+      front_oblique: [1.60, 0.95, 2.30]

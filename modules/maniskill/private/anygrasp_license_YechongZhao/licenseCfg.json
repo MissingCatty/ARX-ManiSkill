@@ -1,0 +1,14 @@
+{
+    "version": "3.1.0",
+    "feature_id": "N91090334321950534063",
+    "public_key": "YechongZhao.public_key",
+    "signature": "YechongZhao.signature",
+    "license": "YechongZhao.lic",
+    "toolbox": [
+        {
+            "name": "Basic",
+            "type": "PERMANENT",
+            "data": ""
+        }
+    ]
+}

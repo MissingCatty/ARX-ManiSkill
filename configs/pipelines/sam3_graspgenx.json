@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "description": "Fresh head observation -> target mask -> metric completion -> native grasp candidates. Planning and physical execution require a separately authorized experiment registration.",
+  "stages": [
+    {
+      "id": "sam3",
+      "module": "sam3",
+      "requires": [
+        "camera/color.png",
+        "camera/depth.png",
+        "camera/params.json",
+        "entry.json"
+      ],
+      "produces": [
+        "camera/mask.png",
+        "camera/depth_m.npy",
+        "sam3.json"
+      ]
+    },
+    {
+      "id": "rayst3r",
+      "module": "rayst3r",
+      "requires": [
+        "camera/color.png",
+        "camera/mask.png",
+        "camera/depth_m.npy",
+        "state.json"
+      ],
+      "produces": [
+        "completed_points_camera.npy",
+        "completed_points_world.npy",
+        "rayst3r.json"
+      ]
+    },
+    {
+      "id": "graspgenx",
+      "module": "graspgenx",
+      "requires": [
+        "completed_points_world.npy"
+      ],
+      "produces": [
+        "graspgenx_raw/grasps_generator_world.npy",
+        "graspgenx_raw/scores.npy",
+        "graspgenx_raw/inference.json"
+      ]
+    }
+  ]
+}

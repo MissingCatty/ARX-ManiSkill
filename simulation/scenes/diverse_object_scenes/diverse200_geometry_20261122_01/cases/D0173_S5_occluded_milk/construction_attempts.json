@@ -1,0 +1,9 @@
+{
+  "accepted_variant": 1,
+  "rejected": [
+    {
+      "variant": 0,
+      "reason": "No geometric 20-40% occlusion"
+    }
+  ]
+}

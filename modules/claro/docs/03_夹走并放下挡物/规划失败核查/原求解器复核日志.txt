@@ -1,0 +1,76 @@
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 4090" (24 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /home/zhaoyechong/.cache/warp/1.18.0
+Module curobo._src.geom.transform e63256c load on device 'cuda:0' took 0.91 ms  (cached)
+Module curobo._src.cost.wp_cspace_position 720cc8f load on device 'cuda:0' took 0.69 ms  (cached)
+Module curobo._src.geom.collision.wp_collision_kernel c21139e load on device 'cuda:0' took 0.62 ms  (cached)
+Module curobo._src.geom.collision.wp_collision_kernel 088fc58 load on device 'cuda:0' took 0.88 ms  (cached)
+Module goalset_pose_distance_1_0_dceffa2f dceffa2 load on device 'cuda:0' took 1.65 ms  (cached)
+Module _lm_solve_tiled_6_12_2a7debec 98fbcb3 load on device 'cuda:0' took 311.06 ms  (cached)
+Module curobo._src.cost.wp_torch_cspace_dist 131408b load on device 'cuda:0' took 3.02 ms  (cached)
+TRAJOPT_ATTEMPT resident_startup_warmup {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Module curobo._src.cost.wp_cspace_state 9ea9a53 load on device 'cuda:0' took 1.49 ms  (cached)
+Module curobo._src.geom.collision.wp_sweep_collision_kernel 99c2e3d load on device 'cuda:0' took 0.90 ms  (cached)
+Module curobo._src.geom.collision.wp_sweep_collision_kernel b3974db load on device 'cuda:0' took 1.84 ms  (cached)
+Module curobo._src.geom.collision.wp_speed_metric 14ade1f load on device 'cuda:0' took 1.35 ms  (cached)
+TRAJOPT_ATTEMPT resident_startup_warmup {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Traceback (most recent call last):
+  File "/home/zhaoyechong/projects/CLARO-ARX/工具/复核原求解器规划证明.py", line 91, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/zhaoyechong/projects/CLARO-ARX/工具/复核原求解器规划证明.py", line 34, in main
+    began = time.monotonic();pool = FastPlannerPool(OUT / '规划器预热', warmup)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/ManiSkill/fast_resident_planner.py", line 17, in __init__
+    super().__init__(root, warmup_trial)
+  File "/home/zhaoyechong/projects/ManiSkill/resident_planner.py", line 153, in __init__
+    context.optimize('resident_startup_warmup', path, 6.)
+  File "/home/zhaoyechong/projects/ManiSkill/arx_pipeline/planner.py", line 153, in optimize
+    q, times = optimize_path(self.planner, self.checker, path.clone(), NAMES, self.limits, seconds, self.out, label)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/COOLAS-ARX/scripts/curobo_arx/optimize_path.py", line 58, in optimize_path
+    result=planner.trajopt_solver.solve_cspace(js(path[-1]),js(path[0]),seed_traj=seed,num_seeds=num_seeds,initial_iters=iterations,finetune_attempts=finetunes,finetune_dt_scale=.75)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/curobo/source/curobo/_src/solver/solver_trajopt.py", line 956, in solve_cspace
+    result = self._solve_impl(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/curobo/source/curobo/_src/solver/solver_trajopt.py", line 428, in _solve_impl
+    self._interpolate_and_compute_metrics(js_optimized)
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/curobo/source/curobo/_src/solver/solver_trajopt.py", line 497, in _interpolate_and_compute_metrics
+    interpolated_metrics = interpolated_rollout.compute_metrics_from_state(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/curobo/source/curobo/_src/rollout/rollout_robot.py", line 292, in compute_metrics_from_state
+    return self._compute_metrics_from_state_executor(state)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/curobo/source/curobo/_src/util/cuda_graph_util.py", line 86, in __call__
+    self._initialize(inputs)
+  File "/home/zhaoyechong/projects/curobo/source/curobo/_src/util/cuda_graph_util.py", line 140, in _initialize
+    self._initialize_cuda_graph(inputs)
+  File "/home/zhaoyechong/projects/curobo/source/curobo/_src/util/cuda_graph_util.py", line 154, in _initialize_cuda_graph
+    self._graph_input = tuple(t.clone() if hasattr(t, "clone") else t for t in inputs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/curobo/source/curobo/_src/util/cuda_graph_util.py", line 154, in <genexpr>
+    self._graph_input = tuple(t.clone() if hasattr(t, "clone") else t for t in inputs)
+                              ^^^^^^^^^
+  File "/home/zhaoyechong/projects/curobo/source/curobo/_src/state/state_robot.py", line 155, in clone
+    self.cuda_robot_model_state.clone()
+  File "/home/zhaoyechong/projects/curobo/source/curobo/_src/robot/kinematics/kinematics_state.py", line 49, in clone
+    robot_spheres=self.robot_spheres.clone() if self.robot_spheres is not None else None,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 70.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 163.56 MiB is free. Process 3068387 has 1000.00 MiB memory in use. Process 1845527 has 918.00 MiB memory in use. Process 470584 has 244.70 MiB memory in use. Process 2624243 has 1.25 GiB memory in use. Including non-PyTorch memory, this process has 2.60 GiB memory in use. Process 3000566 has 17.34 GiB memory in use. Of the allocated memory 1.93 GiB is allocated by PyTorch, with 177.79 MiB allocated in private pools (e.g., CUDA Graphs), and 145.79 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

@@ -1,0 +1,2958 @@
+[
+  {
+    "name": "rubiks_cube",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/rubiks_cube.usda",
+    "container_path": "/workspace/asset/tabletop_objects/rubiks_cube.usda",
+    "size_m": [
+      0.058285847306251526,
+      0.057770855724811554,
+      0.05796363018453121
+    ],
+    "mass_kg": 0.20000000298023224,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/hot3d/rubiks_cube.usd",
+    "measured_mass_kg": 0.20000000298023224
+  },
+  {
+    "name": "005_tomato_soup_can",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/005_tomato_soup_can.usda",
+    "container_path": "/workspace/asset/tabletop_objects/005_tomato_soup_can.usda",
+    "size_m": [
+      0.0676593789236386,
+      0.10185499917294827,
+      0.06771425811094955
+    ],
+    "mass_kg": 0.3490000069141388,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/Props/YCB/Axis_Aligned_Physics/005_tomato_soup_can.usd",
+    "measured_mass_kg": 0.3490000069141388
+  },
+  {
+    "name": "raisin_box",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/raisin_box.usda",
+    "container_path": "/workspace/asset/tabletop_objects/raisin_box.usda",
+    "size_m": [
+      0.0397518016397953,
+      0.0858749970793724,
+      0.12317539751529694
+    ],
+    "mass_kg": 0.25,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/hope/raisin_box.usd",
+    "measured_mass_kg": 0.25
+  },
+  {
+    "name": "butter",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/butter.usda",
+    "container_path": "/workspace/asset/tabletop_objects/butter.usda",
+    "size_m": [
+      0.02393619902431965,
+      0.10330139845609665,
+      0.052826400846242905
+    ],
+    "mass_kg": 0.25,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/hope/butter.usd",
+    "measured_mass_kg": 0.25
+  },
+  {
+    "name": "yogurt_cup",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/yogurt_cup.usda",
+    "container_path": "/workspace/asset/tabletop_objects/yogurt_cup.usda",
+    "size_m": [
+      0.06796199828386307,
+      0.06791539490222931,
+      0.053676996380090714
+    ],
+    "mass_kg": 0.20000000298023224,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/hope/yogurt_cup.usd",
+    "measured_mass_kg": 0.20000000298023224
+  },
+  {
+    "name": "bbq_sauce_bottle",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/bbq_sauce_bottle.usda",
+    "container_path": "/workspace/asset/tabletop_objects/bbq_sauce_bottle.usda",
+    "size_m": [
+      0.04347919672727585,
+      0.06463219970464706,
+      0.1483289897441864
+    ],
+    "mass_kg": 0.4000000059604645,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/hope/bbq_sauce_bottle.usd",
+    "measured_mass_kg": 0.4000000059604645
+  },
+  {
+    "name": "lemon_01",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/lemon_01.usda",
+    "container_path": "/workspace/asset/tabletop_objects/lemon_01.usda",
+    "size_m": [
+      0.07616109400987625,
+      0.04957818612456322,
+      0.05067594989668578
+    ],
+    "mass_kg": 0.05,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/fruits_veggies/lemon_01.usd",
+    "measured_mass_kg": 0.05000000074505806
+  },
+  {
+    "name": "remote_control",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/remote_control.usda",
+    "container_path": "/workspace/asset/tabletop_objects/remote_control.usda",
+    "size_m": [
+      0.03558525629341602,
+      0.025243834592402023,
+      0.16430988907814026
+    ],
+    "mass_kg": 0.20000000298023224,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/hot3d/remote_control.usd",
+    "measured_mass_kg": 0.20000000298023224
+  },
+  {
+    "name": "mustard_bottle",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/mustard_bottle.usda",
+    "container_path": "/workspace/asset/tabletop_objects/mustard_bottle.usda",
+    "size_m": [
+      0.04857419803738594,
+      0.06513319909572601,
+      0.1600504070520401
+    ],
+    "mass_kg": 0.30000001192092896,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/hope/mustard_bottle.usd",
+    "mass_policy": "source_mass",
+    "source_densities_kg_m3": [],
+    "measured_mass_kg": 0.30000001192092896
+  },
+  {
+    "name": "salad_dressing_bottle",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/salad_dressing_bottle.usda",
+    "container_path": "/workspace/asset/tabletop_objects/salad_dressing_bottle.usda",
+    "size_m": [
+      0.043742792680859566,
+      0.06389593705534938,
+      0.147133572234452
+    ],
+    "mass_kg": 0.25,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/hot3d/salad_dressing_bottle.usd",
+    "mass_policy": "source_mass",
+    "source_densities_kg_m3": [],
+    "measured_mass_kg": 0.25
+  },
+  {
+    "name": "whitepackerbottle_a01",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/whitepackerbottle_a01.usda",
+    "container_path": "/workspace/asset/tabletop_objects/whitepackerbottle_a01.usda",
+    "size_m": [
+      0.043306997045874596,
+      0.0433069933205843,
+      0.07678452074527742
+    ],
+    "mass_kg": null,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/vomp/whitepackerbottle_a01/whitepackerbottle_a01.usd",
+    "mass_policy": "source_density_auto_mass",
+    "source_densities_kg_m3": [
+      800.0
+    ],
+    "measured_mass_kg": 0.0739603042602539
+  },
+  {
+    "name": "bagel_00",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/bagel_00.usda",
+    "container_path": "/workspace/asset/tabletop_objects/bagel_00.usda",
+    "size_m": [
+      0.10000000149011612,
+      0.09475921839475632,
+      0.031168242916464806
+    ],
+    "mass_kg": 0.012223336845636368,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/objaverse/bagel_00.usd",
+    "mass_policy": "source_mass",
+    "source_densities_kg_m3": [],
+    "measured_mass_kg": 0.012223336845636368
+  },
+  {
+    "name": "apple_01",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/apple_01.usda",
+    "container_path": "/workspace/asset/tabletop_objects/apple_01.usda",
+    "size_m": [
+      0.06805419769762011,
+      0.06592432828416686,
+      0.06768400040975212
+    ],
+    "mass_kg": null,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/objaverse/apple_01.usd",
+    "mass_policy": "source_density_auto_mass",
+    "source_densities_kg_m3": [
+      980.0
+    ],
+    "measured_mass_kg": 0.13581033051013947
+  },
+  {
+    "name": "smartphone",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/smartphone.usda",
+    "container_path": "/workspace/asset/tabletop_objects/smartphone.usda",
+    "size_m": [
+      0.07292929291725159,
+      0.15395519137382507,
+      0.010315921623259817
+    ],
+    "mass_kg": 0.20000000298023224,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/hot3d/smartphone.usd",
+    "mass_policy": "source_mass",
+    "source_densities_kg_m3": [],
+    "measured_mass_kg": 0.20000000298023224
+  },
+  {
+    "name": "dry_erase_marker",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/dry_erase_marker.usda",
+    "container_path": "/workspace/asset/tabletop_objects/dry_erase_marker.usda",
+    "size_m": [
+      0.021038999781012535,
+      0.1208450049161911,
+      0.018877001479268074
+    ],
+    "mass_kg": 0.019999999552965164,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/ycb/dry_erase_marker.usd",
+    "mass_policy": "source_mass",
+    "source_densities_kg_m3": [],
+    "measured_mass_kg": 0.019999999552965164
+  },
+  {
+    "name": "ceramic_mug",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/ceramic_mug.usda",
+    "container_path": "/workspace/asset/tabletop_objects/ceramic_mug.usda",
+    "size_m": [
+      0.09695964679121971,
+      0.1272139810025692,
+      0.08409243822097781
+    ],
+    "mass_kg": 0.5,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/hot3d/ceramic_mug.usd",
+    "mass_policy": "source_mass",
+    "source_densities_kg_m3": [],
+    "measured_mass_kg": 0.5
+  },
+  {
+    "name": "ycb_056_tennis_ball",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/ycb_056_tennis_ball.usda",
+    "container_path": "/workspace/asset/tabletop_objects/ycb_056_tennis_ball.usda",
+    "size_m": [
+      0.066975,
+      0.06703,
+      0.066457
+    ],
+    "mass_kg": 0.058,
+    "source": "/home/zhaoyechong/projects/asset/ycb_downloads/056_tennis_ball/google_16k/textured.obj",
+    "source_page": "https://ycb-benchmarks.s3.amazonaws.com/index.html",
+    "mass_source": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf",
+    "mass_policy": "YCB paper tennis-ball mass, 58 g",
+    "license": "CC BY 4.0",
+    "physics_model": "Rigid convex hull of native-scale mesh; default USD contact material",
+    "measured_mass_kg": 0.05799999460577965
+  },
+  {
+    "name": "bowl",
+    "path": "/home/zhaoyechong/projects/asset/tabletop_objects/bowl.usda",
+    "container_path": "/workspace/asset/tabletop_objects/bowl.usda",
+    "size_m": [
+      0.16144399344921112,
+      0.16111300885677338,
+      0.05496999993920326
+    ],
+    "mass_kg": 0.5,
+    "source": "/home/zhaoyechong/projects/asset/tabletop_cache/Assets/Isaac/6.0/Isaac/IsaacLab/Arena/assets/object_library/srl_robolab_assets/objects/ycb/bowl.usd",
+    "mass_policy": "source_mass",
+    "source_densities_kg_m3": [],
+    "measured_mass_kg": 0.5
+  },
+  {
+    "name": "egad_A0",
+    "egad_id": "A0",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_A0.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_A0.usda",
+    "size_m": [
+      0.0774254599157594,
+      0.08397005684785705,
+      0.07097941535121471
+    ],
+    "mass_kg": 0.2875163207566274,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      1.2504808471681212e-06,
+      9.167258423745465e-06,
+      6.094378843526784e-07
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00020186859510311174,
+        -7.121709428814346e-09,
+        1.3267319570075824e-09
+      ],
+      [
+        -7.121709428814346e-09,
+        0.00017185694672802837,
+        -1.0033897846054498e-08
+      ],
+      [
+        1.3267319570075824e-09,
+        -1.0033897846054498e-08,
+        0.00021675385426794854
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/A0.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "3fd9f097a27f713f8b58a5039e8032bcd8eff40f22f1c3c0fe7706219a98799a",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/A0.obj",
+    "processed_sha256": "7cf289cb6b04811d9e6aa5c2fa7256f23f6b6a8a80ca2f8ceaf3e8d18bb86e97",
+    "usd_sha256": "b60c8fd1a298e357735a3272bc8042320231716df106582eeab344251a5ba5a9",
+    "uniform_mesh_scale": 0.0008390886154455235,
+    "scaled_bbox_center_removed_m": [
+      0.03872254820928701,
+      0.038715704938174875,
+      0.03872255837065014
+    ],
+    "source_vertices": 3862,
+    "source_faces": 7720,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_A1",
+    "egad_id": "A1",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_A1.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_A1.usda",
+    "size_m": [
+      0.07677464386335982,
+      0.07677549358348555,
+      0.07102165761394569
+    ],
+    "mass_kg": 0.26405586579761203,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      1.1367909105267233e-06,
+      -2.740780180488101e-07,
+      0.0022094002037950666
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00017364059974739384,
+        -5.378869357590445e-09,
+        2.0311318081640257e-09
+      ],
+      [
+        -5.378869357590445e-09,
+        0.0001736382058290423,
+        2.5243312874621266e-09
+      ],
+      [
+        2.0311318081640257e-09,
+        2.5243312874621266e-09,
+        0.0001951939955591957
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/A1.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "67e7bd8d5d9fca33a8121a3492746a20ae93d86accc5f269fef8f033a766f62a",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/A1.obj",
+    "processed_sha256": "a8daa151c889d9643bf83d7d5ba2e713a4a427f515ddb71cbba0c947da7c5e4a",
+    "usd_sha256": "c8dc3af852da7bae573ad785df51cab0fb4edb71ae40f99431ae03ba1e2015c0",
+    "uniform_mesh_scale": 0.0007677546403260945,
+    "scaled_bbox_center_removed_m": [
+      0.03547651830891068,
+      0.035476710685190906,
+      0.038476644498858736
+    ],
+    "source_vertices": 5292,
+    "source_faces": 10580,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_A2",
+    "egad_id": "A2",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_A2.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_A2.usda",
+    "size_m": [
+      0.07108076067471915,
+      0.07139235771340893,
+      0.07102680972104457
+    ],
+    "mass_kg": 0.218323307313003,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      2.0169199684497395e-05,
+      -0.000991918773555277,
+      -4.99733484938885e-07
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00015579925319799976,
+        -2.995471429067598e-08,
+        4.638955812171472e-08
+      ],
+      [
+        -2.995471429067598e-08,
+        0.0001555674276224334,
+        1.0212377476596865e-08
+      ],
+      [
+        4.638955812171472e-08,
+        1.0212377476596865e-08,
+        0.00015578647638128833
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/A2.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "6f8df6c3f36e49a961bf6288e20b856dae27e594aa1202a715a2f59cb526d602",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/A2.obj",
+    "processed_sha256": "dee9fa2162cb1f9edebe71c47c812e3b6c8858cb5e8d99486a09b313c22ee92a",
+    "usd_sha256": "f3324675a50f8742e0f667ce3b5cdf67c74c5018fba1b42f14172bd60a956bf4",
+    "uniform_mesh_scale": 0.0007137504359102214,
+    "scaled_bbox_center_removed_m": [
+      0.03294177575822114,
+      0.03301844542038951,
+      0.03296046363607192
+    ],
+    "source_vertices": 8409,
+    "source_faces": 16850,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_A3",
+    "egad_id": "A3",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_A3.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_A3.usda",
+    "size_m": [
+      0.07101872830184844,
+      0.07102790924711003,
+      0.07102788794932148
+    ],
+    "mass_kg": 0.2475949088494613,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      2.9892674484138887e-06,
+      1.9253845781989087e-06,
+      4.97014889497235e-07
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00016634834636947886,
+        3.264676206445913e-09,
+        3.4949072174300416e-08
+      ],
+      [
+        3.264676206445913e-09,
+        0.00016637368119623263,
+        -1.535242695413505e-08
+      ],
+      [
+        3.4949072174300416e-08,
+        -1.535242695413505e-08,
+        0.00016638039048823153
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/A3.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "a69d40893ca5e2a9d0bafe96a7b06b89828c326a9764ac2bd5457b765621f2b4",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/A3.obj",
+    "processed_sha256": "3c6ff28ae9c559c937f756c8ffbd54ba9ab56b5d3fd2cd148823a3d0de8ac90a",
+    "usd_sha256": "b8d2536f467956998a7b3a1f14b921e81aac1e0ddd9e18d529e2f7095f3b685d",
+    "uniform_mesh_scale": 0.0007103998846761313,
+    "scaled_bbox_center_removed_m": [
+      0.03278266583331102,
+      0.032782274250238594,
+      0.03278227940063775
+    ],
+    "source_vertices": 8428,
+    "source_faces": 16828,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_A4",
+    "egad_id": "A4",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_A4.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_A4.usda",
+    "size_m": [
+      0.07162306137503563,
+      0.07162367832445171,
+      0.07102594746929664
+    ],
+    "mass_kg": 0.18624487272780027,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      3.602246919176724e-07,
+      4.013338632972095e-06,
+      0.0005563850334309514
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00011426163576545379,
+        5.264705663790669e-09,
+        2.4268232709617116e-09
+      ],
+      [
+        5.264705663790669e-09,
+        0.00011426188538581036,
+        1.8573138302544202e-08
+      ],
+      [
+        2.4268232709617116e-09,
+        1.8573138302544202e-08,
+        0.00011162127169865074
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/A4.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "9585d1cb20340bed4f1a4b9e17dc8735f6a62c298d56262aaf4b1cf39330fa37",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/A4.obj",
+    "processed_sha256": "186d1645966a80697aa090bfc7a837d832d7c1518e905c11db906894dfd90476",
+    "usd_sha256": "3681f2be79012441d9cf233e88cf1869110acc3db8b71e4571bddebeac9a1211",
+    "uniform_mesh_scale": 0.0007162669980366822,
+    "scaled_bbox_center_removed_m": [
+      0.033177239696163215,
+      0.033177047679306376,
+      0.03329837169808575
+    ],
+    "source_vertices": 7448,
+    "source_faces": 14916,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_A5",
+    "egad_id": "A5",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_A5.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_A5.usda",
+    "size_m": [
+      0.07217564074011898,
+      0.06937985132624955,
+      0.07724167857012323
+    ],
+    "mass_kg": 0.1409848696068219,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -8.597868422837803e-05,
+      -0.003245592042636611,
+      -0.0015408597647288199
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        8.100422572336128e-05,
+        -8.852989750162563e-09,
+        -1.9586165290874585e-08
+      ],
+      [
+        -8.852989750162563e-09,
+        8.313856703314177e-05,
+        1.1517593719219223e-06
+      ],
+      [
+        -1.9586165290874585e-08,
+        1.1517593719219223e-06,
+        8.610601149997472e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/A5.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "18b60a82583cd316372daa0afefe181d9a544e79afa8f7f0679771315254f899",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/A5.obj",
+    "processed_sha256": "6f83c8e8494630737db3bc647974ae9e4b5feda62e1423091e001501424accb1",
+    "usd_sha256": "2e473eca3660d9b561c73ec302b28e935f2e9d0e3ea1c7a3c85187ef7a04c6e9",
+    "uniform_mesh_scale": 0.0007724484753999357,
+    "scaled_bbox_center_removed_m": [
+      0.03656110889756359,
+      0.03224134756730753,
+      0.03641635470663415
+    ],
+    "source_vertices": 6829,
+    "source_faces": 13674,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_A6",
+    "egad_id": "A6",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_A6.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_A6.usda",
+    "size_m": [
+      0.07177502913676681,
+      0.07127638293523833,
+      0.07103034049802337
+    ],
+    "mass_kg": 0.2355784325717849,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -1.267733723205592e-05,
+      0.0004680229068115788,
+      1.2611225723007572e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.0001477602133883087,
+        6.292203432955417e-09,
+        1.418366465213138e-08
+      ],
+      [
+        6.292203432955417e-09,
+        0.0001470937769786583,
+        -2.118880074960026e-08
+      ],
+      [
+        1.418366465213138e-08,
+        -2.118880074960026e-08,
+        0.0001542602151325164
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/A6.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "42a3ad7d9c896dad41772b61e7048d9686efe1c18c38001134dca196c2620cfe",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/A6.obj",
+    "processed_sha256": "1735fa63aa7cfafd720a2ebd0f03d48cb292f48d8fe19bf29eae091aa6ebaaa0",
+    "usd_sha256": "8f8e1a388feb9c76607cef8cbc0d4aeca1b08ce95a445948123c935551f96edb",
+    "uniform_mesh_scale": 0.0007178239344325319,
+    "scaled_bbox_center_removed_m": [
+      0.03336600992596794,
+      0.033281294735579926,
+      0.03333087958672562
+    ],
+    "source_vertices": 6971,
+    "source_faces": 13950,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_B0",
+    "egad_id": "B0",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_B0.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_B0.usda",
+    "size_m": [
+      0.07168520814605024,
+      0.07763388397100417,
+      0.0716868225223625
+    ],
+    "mass_kg": 0.29952903470861764,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -2.019126989244857e-06,
+      3.368916907666195e-07,
+      -2.4814974084170606e-06
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00023906318513148122,
+        1.639718238059456e-08,
+        9.477538418497271e-09
+      ],
+      [
+        1.639718238059456e-08,
+        0.00019268459973309756,
+        4.093121171304853e-08
+      ],
+      [
+        9.477538418497271e-09,
+        4.093121171304853e-08,
+        0.0002390642740943552
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/B0.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "03d469722c8ee14101fb73229111f847c29d44639979b9402994bbc4a44cc110",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/B0.obj",
+    "processed_sha256": "967273d7b3114ddee39499f59abcb93ea14e93e58aa8a1c7e5b2ee9717fdf0ee",
+    "usd_sha256": "8d2397f8f6be917017a1b72acef8c84f5744db33dc03db3bddeb48a56dd9162c",
+    "uniform_mesh_scale": 0.0007763589425155914,
+    "scaled_bbox_center_removed_m": [
+      0.035851553364408824,
+      0.03585223208845074,
+      0.03585211640320471
+    ],
+    "source_vertices": 4983,
+    "source_faces": 9966,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_B1",
+    "egad_id": "B1",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_B1.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_B1.usda",
+    "size_m": [
+      0.07138103760632171,
+      0.07102532691661359,
+      0.07131707489423852
+    ],
+    "mass_kg": 0.13753181085431096,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      1.079888444835217e-05,
+      -0.0009271656604193552,
+      -1.1705002678105348e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00010348735021991285,
+        5.1831290777012735e-09,
+        4.009977989141321e-08
+      ],
+      [
+        5.1831290777012735e-09,
+        0.0001122001197192687,
+        5.5758461758094905e-09
+      ],
+      [
+        4.009977989141321e-08,
+        5.5758461758094905e-09,
+        0.00010369197697320924
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/B1.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "f7358694cc2ede5baca054f2e4b125f6d2aabbb6db89c9a6d9010c6fb3529f9a",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/B1.obj",
+    "processed_sha256": "673d9a1a9234a7b808b1c4b191695890967982306fdd7f4df949aea86031cc02",
+    "usd_sha256": "5d5c1e5dcf142c65016fb4dea7710639254ddf02ca28b8a7af53c1b075ff668b",
+    "uniform_mesh_scale": 0.0007138094861569306,
+    "scaled_bbox_center_removed_m": [
+      0.03286493266876427,
+      0.0327783417212866,
+      0.03288814590315409
+    ],
+    "source_vertices": 6411,
+    "source_faces": 12822,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_B2",
+    "egad_id": "B2",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_B2.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_B2.usda",
+    "size_m": [
+      0.07113511749089349,
+      0.07104658845114739,
+      0.07126292867549233
+    ],
+    "mass_kg": 0.21704905557796111,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      4.793855386265247e-07,
+      -6.930000014946106e-06,
+      -1.0520504702095839e-06
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.000125743468840211,
+        -7.432089761494091e-09,
+        9.15901613312796e-09
+      ],
+      [
+        -7.432089761494091e-09,
+        0.00013297441201088874,
+        -7.293369172532041e-09
+      ],
+      [
+        9.15901613312796e-09,
+        -7.293369172532041e-09,
+        0.00013278250076222017
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/B2.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "df1931a40bbdfb238ece55821e330182954549516f85bd36de5049782df9d393",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/B2.obj",
+    "processed_sha256": "b63374ebfffd97cbaad2f98fef0fdf99fb8ed2c9295a9020a89caeef72158611",
+    "usd_sha256": "c25241f3822196c814a6baa372bc1c86278ebf2bc2b401de5e120cba1a51a63b",
+    "uniform_mesh_scale": 0.0007126245365422875,
+    "scaled_bbox_center_removed_m": [
+      0.03286490894014644,
+      0.03287338065270496,
+      0.032864985109020035
+    ],
+    "source_vertices": 5642,
+    "source_faces": 11272,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_B3",
+    "egad_id": "B3",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_B3.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_B3.usda",
+    "size_m": [
+      0.08887108321795832,
+      0.0757228457258857,
+      0.07110715847654982
+    ],
+    "mass_kg": 0.14889871042606645,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -0.00012871839894427984,
+      0.00039556224313814446,
+      1.0457278829749965e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.0001314275872227313,
+        -4.1424018595709504e-08,
+        1.9330777190688608e-08
+      ],
+      [
+        -4.1424018595709504e-08,
+        0.00011941203325531196,
+        -1.529190788309346e-08
+      ],
+      [
+        1.9330777190688608e-08,
+        -1.529190788309346e-08,
+        0.0001447135000903402
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/B3.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "152a3a0286a3d404dff243b1bf6438ee39de774fea266ae2b06b4a4d4f5a8c2e",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/B3.obj",
+    "processed_sha256": "1c05e602017ee651fcc7b8320fa1f82e328c609d0636aeae6040ff4ba393cd65",
+    "usd_sha256": "4df4f8732806bca56f49053f9166f56a4b0dee4b3f08e2997d958971f7bf3421",
+    "uniform_mesh_scale": 0.0008878319272248203,
+    "scaled_bbox_center_removed_m": [
+      0.04305725979221862,
+      0.04153785027207649,
+      0.04292180847333787
+    ],
+    "source_vertices": 4917,
+    "source_faces": 9834,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_B4",
+    "egad_id": "B4",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_B4.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_B4.usda",
+    "size_m": [
+      0.07103229775230638,
+      0.07110170720863249,
+      0.07102656710394847
+    ],
+    "mass_kg": 0.289999484851219,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      2.752144785600784e-06,
+      4.769526913292132e-06,
+      -1.0543818258941467e-06
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00020942576388999088,
+        -1.5893176794184023e-08,
+        5.621888446665849e-08
+      ],
+      [
+        -1.5893176794184023e-08,
+        0.00021488039013491214,
+        6.062321831226478e-08
+      ],
+      [
+        5.621888446665849e-08,
+        6.062321831226478e-08,
+        0.00020929851700248505
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/B4.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "fb91ecbd76cca13beb7b4e57680cd87c1a3227c812d78ca19d8428c3fe0a0af7",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/B4.obj",
+    "processed_sha256": "04080010de89d5986a2f8701cc27d0076c1dd9ffcb48a01b267fdc067a083978",
+    "usd_sha256": "598c34f3296d8e6cdc7ec0a20aedcd0d3aad084a8b8a370b5fd01c144694a406",
+    "uniform_mesh_scale": 0.0007109747388018421,
+    "scaled_bbox_center_removed_m": [
+      0.032766238093930915,
+      0.032764644148999385,
+      0.032766269735861664
+    ],
+    "source_vertices": 6381,
+    "source_faces": 12758,
+    "source_manifold_watertight": false,
+    "source_nonmanifold_edges": 1,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_B5",
+    "egad_id": "B5",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_B5.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_B5.usda",
+    "size_m": [
+      0.07103629599636754,
+      0.07535982005322386,
+      0.07860433758560438
+    ],
+    "mass_kg": 0.17962882355074838,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -2.1877775908283456e-06,
+      7.568960581957194e-05,
+      1.3138610773219407e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00012527789959721652,
+        -1.7677761808392582e-08,
+        1.3792610965504868e-08
+      ],
+      [
+        -1.7677761808392582e-08,
+        0.00012298684652892175,
+        -4.040280437182281e-08
+      ],
+      [
+        1.3792610965504868e-08,
+        -4.040280437182281e-08,
+        8.761307657452244e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/B5.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "9c23c3473634eb2536dc851a558e1cc80e6e1fedad83792bf3e1ce31973dd6c9",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/B5.obj",
+    "processed_sha256": "577143e9ab8a6766ed163e0dd272c160b5ad47e4b927aacb7f6d641205a45da8",
+    "usd_sha256": "cce715869868e9a93265e7d54d2904bce405280f42dadb7ec34fa06384ea92e7",
+    "uniform_mesh_scale": 0.0007864342963014756,
+    "scaled_bbox_center_removed_m": [
+      0.036494705852709884,
+      0.03639877883858478,
+      0.03647651847432858
+    ],
+    "source_vertices": 8324,
+    "source_faces": 16714,
+    "source_manifold_watertight": false,
+    "source_nonmanifold_edges": 3,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_B6",
+    "egad_id": "B6",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_B6.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_B6.usda",
+    "size_m": [
+      0.0773776487216501,
+      0.07102130306039756,
+      0.07603176611364115
+    ],
+    "mass_kg": 0.17054455644434952,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      1.9146025778380687e-05,
+      -0.003418065274705165,
+      4.657000223506005e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00011372434821413409,
+        2.2638909563342733e-08,
+        -1.4678758261410163e-08
+      ],
+      [
+        2.2638909563342733e-08,
+        0.0001162944777990357,
+        2.3440254913611184e-09
+      ],
+      [
+        -1.4678758261410163e-08,
+        2.3440254913611184e-09,
+        0.00011675805954226566
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/B6.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "97ea4d5a18c5ffda643511b5f7b3c6495c9969ce27a29cc4767fd96043908dd1",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/B6.obj",
+    "processed_sha256": "00845bf0dba804bb67e67fe30936477b9a8112e0235452cc18d78fd02e9f309b",
+    "usd_sha256": "76f35f69a4d20866c0cf9f22cc0a825bcb2e7ab509d747b3f475e30a5eadac1a",
+    "uniform_mesh_scale": 0.0007737709785087737,
+    "scaled_bbox_center_removed_m": [
+      0.03565500657280204,
+      0.03842506069452305,
+      0.035630121916297025
+    ],
+    "source_vertices": 7050,
+    "source_faces": 14112,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_C0",
+    "egad_id": "C0",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_C0.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_C0.usda",
+    "size_m": [
+      0.0710302837385185,
+      0.0738654209143524,
+      0.07386921335074464
+    ],
+    "mass_kg": 0.370369462584756,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      6.795611216113574e-07,
+      -1.6243562931536367e-07,
+      2.456217717667099e-07
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00032200893920156107,
+        1.88465837889232e-09,
+        -1.5746730521192262e-09
+      ],
+      [
+        1.88465837889232e-09,
+        0.00030972028904734794,
+        -1.1698170544432413e-09
+      ],
+      [
+        -1.5746730521192262e-09,
+        -1.1698170544432413e-09,
+        0.0003097205028825153
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/C0.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "2d04d5922581c9ad4259a61c035d417fb9810638e8adf08308cc88e33acbfa1b",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/C0.obj",
+    "processed_sha256": "91fe04706bfbba3c8d23b5b099553e4c36abb7a5ef0f6ef4b8acd9c965205b70",
+    "usd_sha256": "fa3e999068df818a40f43c512a8cea62644a50a7238a5fb1b0cc0ef83fdab04a",
+    "uniform_mesh_scale": 0.0007387436165500837,
+    "scaled_bbox_center_removed_m": [
+      0.0355427795976929,
+      0.034121762554573894,
+      0.034121667083042616
+    ],
+    "source_vertices": 5120,
+    "source_faces": 10236,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_C1",
+    "egad_id": "C1",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_C1.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_C1.usda",
+    "size_m": [
+      0.09567002185432308,
+      0.09526189580452821,
+      0.05859134158880941
+    ],
+    "mass_kg": 0.25464432219231925,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -1.3879704517818447e-07,
+      -0.003105309810775144,
+      2.0192092321518788e-07
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.000158290187877945,
+        -2.8034456425703094e-08,
+        1.4200806968947442e-08
+      ],
+      [
+        -2.8034456425703094e-08,
+        0.00014576548959297197,
+        -7.835525563459716e-09
+      ],
+      [
+        1.4200806968947442e-08,
+        -7.835525563459716e-09,
+        0.00021190785439754471
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/C1.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "006d5f8acdc5daa0d54c9c280dea9778f48242372ee8305bb905ee736e8d1653",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/C1.obj",
+    "processed_sha256": "993b7b9cf526a49d83cb060d534cf2da5b41502c070136629fe8370d57a789e1",
+    "usd_sha256": "7b09d96dc27f196f9e0cd21ad7186fa2242334094ad3345151f3814c35dca820",
+    "uniform_mesh_scale": 0.0008878667574684096,
+    "scaled_bbox_center_removed_m": [
+      0.04395493208675825,
+      0.04411068866974341,
+      0.04395333922715934
+    ],
+    "source_vertices": 3051,
+    "source_faces": 6098,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_C2",
+    "egad_id": "C2",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_C2.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_C2.usda",
+    "size_m": [
+      0.07110055609801891,
+      0.07103606451076706,
+      0.07189718784621113
+    ],
+    "mass_kg": 0.14662844476359269,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      2.50372573630391e-05,
+      -2.7997571519764894e-05,
+      -0.0010633387890479989
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        8.90616881565763e-05,
+        -8.634720845799415e-10,
+        -2.213308995432426e-08
+      ],
+      [
+        -8.634720845799415e-10,
+        8.901670059419052e-05,
+        -2.4954214507231284e-09
+      ],
+      [
+        -2.213308995432426e-08,
+        -2.4954214507231284e-09,
+        8.610731996650324e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/C2.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "d08d4a827111e2b32660db701004a9cb5b2abf8da735bece19bb90c47e4720ea",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/C2.obj",
+    "processed_sha256": "0fcb904eec3c72ff588ddad687c090f4758c22ffe85a110d9578beaf801df653",
+    "usd_sha256": "36d07022a9b03838b263410b4360b19756a0890aa22549ee75f136139adf8255",
+    "uniform_mesh_scale": 0.000718836728674847,
+    "scaled_bbox_center_removed_m": [
+      0.033222016462183854,
+      0.03325562162638226,
+      0.03319126263215922
+    ],
+    "source_vertices": 6855,
+    "source_faces": 13706,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_C3",
+    "egad_id": "C3",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_C3.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_C3.usda",
+    "size_m": [
+      0.07423822112467107,
+      0.072874904854937,
+      0.07091178839341816
+    ],
+    "mass_kg": 0.16609423524151365,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      8.476785529919355e-05,
+      -0.00024190941846361899,
+      -0.0005798018967711333
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        9.831056290695888e-05,
+        -1.0077370098353086e-07,
+        3.686466905355161e-08
+      ],
+      [
+        -1.0077370098353086e-07,
+        9.905689653931334e-05,
+        5.948392971503721e-07
+      ],
+      [
+        3.686466905355161e-08,
+        5.948392971503721e-07,
+        8.024852628887429e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/C3.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "172a490323810d3d63725317b4b9c884d7864f3449c478271b2eace5f4992cf5",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/C3.obj",
+    "processed_sha256": "593f6fe504570cb375ec5c8096035ab2f66a5ca27cfaf70dd2aad5a912472cbc",
+    "usd_sha256": "9fc352cbcd94d69bddefeefb96d19f4638062f9554de7315548e7667bec18bf1",
+    "uniform_mesh_scale": 0.0007395081170172179,
+    "scaled_bbox_center_removed_m": [
+      0.03931078632429568,
+      0.04104920641694865,
+      0.04321221016616546
+    ],
+    "source_vertices": 6334,
+    "source_faces": 12664,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_C4",
+    "egad_id": "C4",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_C4.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_C4.usda",
+    "size_m": [
+      0.07889564249031022,
+      0.07121575858933271,
+      0.0789203516030974
+    ],
+    "mass_kg": 0.2045801648602845,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -1.379320765381452e-05,
+      0.00015896602180176758,
+      -6.197724107210684e-06
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.0001193674012202632,
+        8.854807789401054e-09,
+        2.633968572581212e-08
+      ],
+      [
+        8.854807789401054e-09,
+        0.0001795963039222077,
+        4.4572724937038817e-08
+      ],
+      [
+        2.633968572581212e-08,
+        4.4572724937038817e-08,
+        0.00014282761067727968
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/C4.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "4ef636f346d4c7e499933ca82f1a2980c6eedfcc3b0d25743ae6fb286c232776",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/C4.obj",
+    "processed_sha256": "67b01660108d17443c9c06bc795ecb7c6cc21a8966570c41c623b9491e15365e",
+    "usd_sha256": "c3fc3de1c7307613f0c29ab5f8fea0d8c2c4aa5ae9b8dea869d3b58389d812ef",
+    "uniform_mesh_scale": 0.0007899380714652551,
+    "scaled_bbox_center_removed_m": [
+      0.03694074972967823,
+      0.036906060574843344,
+      0.03692998021562255
+    ],
+    "source_vertices": 6724,
+    "source_faces": 13456,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_C5",
+    "egad_id": "C5",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_C5.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_C5.usda",
+    "size_m": [
+      0.07107170769183979,
+      0.0710266157266985,
+      0.0716632421109189
+    ],
+    "mass_kg": 0.20897239542086823,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -4.444789908010966e-06,
+      3.1847677040987456e-06,
+      -0.0014155138106635152
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00013839884083414068,
+        -1.0866267150061767e-08,
+        2.3382938295565763e-08
+      ],
+      [
+        -1.0866267150061767e-08,
+        0.00013837820328034477,
+        -3.0952459259971294e-09
+      ],
+      [
+        2.3382938295565763e-08,
+        -3.0952459259971294e-09,
+        0.00013411176550189155
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/C5.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "a8f04c7bf9c4bfaa1c37d3d935b1dc7b422534e8402cb1f971dcf56d94402a38",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/C5.obj",
+    "processed_sha256": "9c6ed8bf9d8dd2267d14235d58d349dc580f24223afef4bcbecdf6aea04dc856",
+    "usd_sha256": "c4def2dabaa254e511936ee521d9d9bc68c55c038c3aec2ed9b6caa109b3bbce",
+    "uniform_mesh_scale": 0.0007166165656810268,
+    "scaled_bbox_center_removed_m": [
+      0.03320606906738795,
+      0.033191849223376646,
+      0.033195374464498946
+    ],
+    "source_vertices": 7595,
+    "source_faces": 15170,
+    "source_manifold_watertight": false,
+    "source_nonmanifold_edges": 1,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_C6",
+    "egad_id": "C6",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_C6.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_C6.usda",
+    "size_m": [
+      0.07242602151066194,
+      0.07104823470291168,
+      0.0791343564205213
+    ],
+    "mass_kg": 0.1751129450504779,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      6.694057721276196e-05,
+      9.788643629777873e-07,
+      -5.374508611806849e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        9.930940796390262e-05,
+        2.0541135671159445e-08,
+        -5.212533598772074e-08
+      ],
+      [
+        2.0541135671159445e-08,
+        0.00010201419785835543,
+        -2.854147905153792e-09
+      ],
+      [
+        -5.212533598772074e-08,
+        -2.854147905153792e-09,
+        9.584308197379301e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/C6.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "98987f457d7fd87ff0dfb82d3dfc1e3748da186d279b6e9cd70bfda4ab5defd4",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/C6.obj",
+    "processed_sha256": "a2ce1c9b689cf0508c37b81feb2bae7b775d3b004f5dcbc30cf35702c5f3c5c1",
+    "usd_sha256": "2eedc487268993a5781542b299d1d0bac3146869549be696e693b17eb483fc3b",
+    "uniform_mesh_scale": 0.0007907872096596356,
+    "scaled_bbox_center_removed_m": [
+      0.038006134014735696,
+      0.038068608485719906,
+      0.038129344486148464
+    ],
+    "source_vertices": 7199,
+    "source_faces": 14430,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_D0",
+    "egad_id": "D0",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_D0.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_D0.usda",
+    "size_m": [
+      0.07108764764819607,
+      0.07102570666421106,
+      0.07107925825615291
+    ],
+    "mass_kg": 0.23720284922933565,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -0.006006505147221707,
+      2.2864480907931195e-07,
+      -1.0267640384163197e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.0002011489687889116,
+        9.515848682467494e-09,
+        -7.3415877074790625e-09
+      ],
+      [
+        9.515848682467494e-09,
+        0.000167082930377725,
+        1.3707155372858212e-08
+      ],
+      [
+        -7.3415877074790625e-09,
+        1.3707155372858212e-08,
+        0.00021406398940720576
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/D0.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "b845d357ef50732d52f7083e5109e4913c06f4b2259be3dae030c0447e99b6f4",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/D0.obj",
+    "processed_sha256": "961f5f0258ec6c49bb1f9de2f332201ee9770571d18da2cdf750d7c6c1488ff4",
+    "usd_sha256": "11184ab3544a9914087bae83375b884c78c900a75d4c0b320fba6b4f41b8e36d",
+    "uniform_mesh_scale": 0.00071111910143038,
+    "scaled_bbox_center_removed_m": [
+      0.03283106284680979,
+      0.03279696723525818,
+      0.03280741492598449
+    ],
+    "source_vertices": 6016,
+    "source_faces": 12028,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_D1",
+    "egad_id": "D1",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_D1.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_D1.usda",
+    "size_m": [
+      0.07392601716972019,
+      0.07386282935097323,
+      0.07103149547734612
+    ],
+    "mass_kg": 0.2616251519003761,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -2.430067910441065e-05,
+      1.638739599817058e-05,
+      -0.0074693364979521145
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00017356654350363397,
+        -5.144910293250904e-09,
+        -3.2895927808622977e-09
+      ],
+      [
+        -5.144910293250904e-09,
+        0.00017357467453037257,
+        6.774641888190356e-09
+      ],
+      [
+        -3.2895927808622977e-09,
+        6.774641888190356e-09,
+        0.00018534371861134017
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/D1.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "64a434c90797b85b3a542d217cd79aef6bf896101b1a29ffe47d9f884112a106",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/D1.obj",
+    "processed_sha256": "16b8ceb713521d4056268fad90b475ae2a867b364d1b30a287644fc3e65ffb36",
+    "usd_sha256": "f87b27e06ad4fc32a6414120ed4b968bee0eb0fcbcd629369af22b6d3caec858",
+    "uniform_mesh_scale": 0.0007392585181976742,
+    "scaled_bbox_center_removed_m": [
+      0.03410507624888891,
+      0.03405693417065211,
+      0.032655005961592244
+    ],
+    "source_vertices": 4957,
+    "source_faces": 9910,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_D2",
+    "egad_id": "D2",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_D2.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_D2.usda",
+    "size_m": [
+      0.07108843616186049,
+      0.07102737927737762,
+      0.07117084210534816
+    ],
+    "mass_kg": 0.2634880845562547,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      1.3276060966679134e-08,
+      3.252219362024588e-06,
+      -2.1507302821632456e-06
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00018852639015758737,
+        -4.912967860648617e-10,
+        7.7171429648727e-10
+      ],
+      [
+        -4.912967860648617e-10,
+        0.0001869112879238679,
+        -1.3779482941590149e-08
+      ],
+      [
+        7.7171429648727e-10,
+        -1.3779482941590149e-08,
+        0.0002040927764361131
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/D2.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "c39e68b12e0c8c8156b34e1c924f33a467527b9cc2da293ebf6ff284728882bd",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/D2.obj",
+    "processed_sha256": "6c968dc9e761d1dc55619924962777f0c387b91ab81f9aa70c54a872f9048b8e",
+    "usd_sha256": "58104742698fd8ad4321cf4890c6e7ab505168ab56b8a8c07c13fb9567d8aba3",
+    "uniform_mesh_scale": 0.0007117083688852582,
+    "scaled_bbox_center_removed_m": [
+      0.03278898086039555,
+      0.032787106402037546,
+      0.032790205237212336
+    ],
+    "source_vertices": 7950,
+    "source_faces": 15912,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_D3",
+    "egad_id": "D3",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_D3.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_D3.usda",
+    "size_m": [
+      0.07148938708756902,
+      0.07141871385643352,
+      0.07103881165456788
+    ],
+    "mass_kg": 0.1616422865513864,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -7.2688381413249345e-06,
+      6.315716394631833e-06,
+      -9.844580036125233e-07
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        8.625714836748456e-05,
+        -1.721005347450864e-08,
+        -1.194954747706459e-08
+      ],
+      [
+        -1.721005347450864e-08,
+        8.731842294312997e-05,
+        6.208610122426023e-09
+      ],
+      [
+        -1.194954747706459e-08,
+        6.208610122426023e-09,
+        0.00011084256709884136
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/D3.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "cbd616f8457be6707714f2d41f5686c9906e968c7266c5679dcf1e3032b8dde5",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/D3.obj",
+    "processed_sha256": "24de098c95152a17116b55decbc62b15b7b6473f1ae7f451ae4cf16305265948",
+    "usd_sha256": "e4431032228d33611efcb0bde5233667088ff377509195879b09c958a2a2f7fb",
+    "uniform_mesh_scale": 0.0007144690827109891,
+    "scaled_bbox_center_removed_m": [
+      0.03297728631039765,
+      0.03296653725522503,
+      0.03296924302823286
+    ],
+    "source_vertices": 5994,
+    "source_faces": 11984,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_D4",
+    "egad_id": "D4",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_D4.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_D4.usda",
+    "size_m": [
+      0.07155723483411172,
+      0.07107239654729025,
+      0.07104994877884098
+    ],
+    "mass_kg": 0.1526074309256182,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -5.583635890732371e-06,
+      2.876089299736969e-06,
+      4.508199517684549e-06
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00010150857086571924,
+        -1.0235149918667099e-08,
+        3.367520496353495e-08
+      ],
+      [
+        -1.0235149918667099e-08,
+        9.667744463714584e-05,
+        -1.1793480568996213e-09
+      ],
+      [
+        3.367520496353495e-08,
+        -1.1793480568996213e-09,
+        0.000105044746283398
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/D4.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "68484e4e159f6408e3532cb96d6ca86d98b1f2671c5481b404edeb56fdd414f8",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/D4.obj",
+    "processed_sha256": "e871c36e684a5b05f91dd18fbd4f03d05f6fbf9eea59a8b07aa598eee220f19d",
+    "usd_sha256": "2a20eb89b9646d25222277fcab3e94224f2403c031a5ac70cf7bf847203083fd",
+    "uniform_mesh_scale": 0.0007155723202906824,
+    "scaled_bbox_center_removed_m": [
+      0.03310062837380257,
+      0.03309442446196578,
+      0.033088212231600765
+    ],
+    "source_vertices": 7820,
+    "source_faces": 15604,
+    "source_manifold_watertight": false,
+    "source_nonmanifold_edges": 1,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_D5",
+    "egad_id": "D5",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_D5.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_D5.usda",
+    "size_m": [
+      0.07251246644516819,
+      0.07251314859106331,
+      0.07102674080726384
+    ],
+    "mass_kg": 0.13791097345147546,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -4.153971986310258e-06,
+      2.396408077769502e-07,
+      0.002462779199781727
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        7.368396114647275e-05,
+        1.0999105755408566e-08,
+        1.2003405757743553e-08
+      ],
+      [
+        1.0999105755408566e-08,
+        7.366939380072542e-05,
+        -1.3386064967827349e-09
+      ],
+      [
+        1.2003405757743553e-08,
+        -1.3386064967827349e-09,
+        9.557538927219941e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/D5.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "4e354fa4d4ef67ad1f87770119c0b455167f9917464f380eee6a95f58769f921",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/D5.obj",
+    "processed_sha256": "2d8279a7754a787960f6e0c53cbbc7eeb360a3ed61f343d58cc0f08b90c1ead9",
+    "usd_sha256": "0e438ac122761f488a42e0b4f93a83b7a64916d7a28b6b84e6819ecfcae781e3",
+    "uniform_mesh_scale": 0.0007251702458251704,
+    "scaled_bbox_center_removed_m": [
+      0.03342945415049119,
+      0.033431444057530096,
+      0.03342938635432491
+    ],
+    "source_vertices": 5738,
+    "source_faces": 11488,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_D6",
+    "egad_id": "D6",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_D6.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_D6.usda",
+    "size_m": [
+      0.0723904326043086,
+      0.07451474122971001,
+      0.07236637835303796
+    ],
+    "mass_kg": 0.16718168989199536,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -2.9315393808506993e-05,
+      -0.00037340572685891165,
+      2.5780840563426653e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        8.538982350210004e-05,
+        -3.978926123508647e-09,
+        -7.656927726532527e-09
+      ],
+      [
+        -3.978926123508647e-09,
+        8.298612204714388e-05,
+        1.0426633033208769e-08
+      ],
+      [
+        -7.656927726532527e-09,
+        1.0426633033208769e-08,
+        8.542927370425866e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/D6.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "33e3943f317e5f8006cfd25b50bc76afab95ede87ea60f9e5489e10e57c67ef4",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/D6.obj",
+    "processed_sha256": "3cec12ba5576afcbb0067a78c562da81fa83e5889657dc07dedd2607a88a43f5",
+    "usd_sha256": "fa95ed40364f839eccc1890f40804e31315201ac0886cec1cdc27669b3ac707f",
+    "uniform_mesh_scale": 0.0007562676994515558,
+    "scaled_bbox_center_removed_m": [
+      0.03438423104842458,
+      0.03437318941900975,
+      0.0343283503789547
+    ],
+    "source_vertices": 4925,
+    "source_faces": 9846,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_E0",
+    "egad_id": "E0",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_E0.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_E0.usda",
+    "size_m": [
+      0.06594455904479016,
+      0.08878574718943619,
+      0.04792407558720066
+    ],
+    "mass_kg": 0.17932549182504473,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -3.4002635052073278e-06,
+      -3.204314845860717e-05,
+      -0.004428607081470067
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00013685428426969608,
+        2.2115900109426905e-08,
+        -5.622779635921638e-09
+      ],
+      [
+        2.2115900109426905e-08,
+        6.572020726859053e-05,
+        1.1157819875584555e-08
+      ],
+      [
+        -5.622779635921638e-09,
+        1.1157819875584555e-08,
+        0.00014719819714606398
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/E0.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "5d55aa79aa22443ef52b637b8c54ae48376ce46b5791819fa7c1038519851cbb",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/E0.obj",
+    "processed_sha256": "34fcb8ee1980f5971137030293a001c7970311ca62c70f937d3d1cf2b62c620a",
+    "usd_sha256": "98b6adc34a21048a178c22675f816869ea1d9948d8856992d63cf92658e390a8",
+    "uniform_mesh_scale": 0.0008878319271053719,
+    "scaled_bbox_center_removed_m": [
+      0.040984409713918535,
+      0.0410086726467329,
+      0.0205481388854101
+    ],
+    "source_vertices": 2880,
+    "source_faces": 5756,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_E1",
+    "egad_id": "E1",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_E1.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_E1.usda",
+    "size_m": [
+      0.07206663200924811,
+      0.07106094274793617,
+      0.0720897771077964
+    ],
+    "mass_kg": 0.19277147877894116,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      1.6749490851548416e-06,
+      -7.202161084960477e-06,
+      8.982123486098994e-06
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00015263815258687467,
+        2.666383401428528e-09,
+        1.0587406257629818e-08
+      ],
+      [
+        2.666383401428528e-09,
+        0.00016107721107215485,
+        -2.5507595807905292e-08
+      ],
+      [
+        1.0587406257629818e-08,
+        -2.5507595807905292e-08,
+        0.000135868934188832
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/E1.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "d9facd5ff225f17b72406c6838b60ca79845ea5e60b738caeaea7a4111ec3503",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/E1.obj",
+    "processed_sha256": "754ce83090c917cf637b0c142bdf86ac5564e2f4fe33a5e7e2c8a55c18165165",
+    "usd_sha256": "8cd359523e1dcfb46db8f8c7413d86d20ce1623565e3f1a747fd74f677133c79",
+    "uniform_mesh_scale": 0.000721387306451868,
+    "scaled_bbox_center_removed_m": [
+      0.03320920060516352,
+      0.03321862542211422,
+      0.03319788356405944
+    ],
+    "source_vertices": 6545,
+    "source_faces": 13086,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_E2",
+    "egad_id": "E2",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_E2.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_E2.usda",
+    "size_m": [
+      0.07110334392746025,
+      0.07103783055293636,
+      0.07112228848688515
+    ],
+    "mass_kg": 0.09452230597900167,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      1.0180053157678904e-05,
+      -0.007521042910853793,
+      -8.987202283691488e-07
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        9.69570397900591e-05,
+        -5.788731904752833e-09,
+        4.07988059450639e-08
+      ],
+      [
+        -5.788731904752833e-09,
+        0.00012472532277930487,
+        -1.2846059651160627e-08
+      ],
+      [
+        4.07988059450639e-08,
+        -1.2846059651160627e-08,
+        9.689934188214527e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/E2.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "6bb97b26dec6989108236841666b5e82fc7e505e77a75e2cd4755a41e7fe318d",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/E2.obj",
+    "processed_sha256": "bd36834a949c37dc5dda24a6844832c20ee20c66bfbc095ddc1e42a98f8fa72d",
+    "usd_sha256": "235c3bda2e0549e505cdcd3bc90589b367ca24fa5038837fd4561242991b72df",
+    "uniform_mesh_scale": 0.0007112103330021685,
+    "scaled_bbox_center_removed_m": [
+      0.032777100758755055,
+      0.03265095371270327,
+      0.032788322061142634
+    ],
+    "source_vertices": 5323,
+    "source_faces": 10646,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_E3",
+    "egad_id": "E3",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_E3.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_E3.usda",
+    "size_m": [
+      0.07139505950054834,
+      0.07120445366154825,
+      0.07100163603607831
+    ],
+    "mass_kg": 0.15637019253139176,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      1.3427241707554599e-06,
+      -2.218211766150282e-05,
+      -1.2165196058385366e-06
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00011143154273452865,
+        -8.490488486237796e-09,
+        -7.337866994158561e-08
+      ],
+      [
+        -8.490488486237796e-09,
+        0.00012763588697126124,
+        3.437445545419096e-08
+      ],
+      [
+        -7.337866994158561e-08,
+        3.437445545419096e-08,
+        0.00011643181946877468
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/E3.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "d9275de5b4c2d84a16a724babf6916f31a45f921d0461ac947a40297ec9e3efd",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/E3.obj",
+    "processed_sha256": "0a11e510a767c1cc5687e4b6325b06bc3be7954e998709a382fe9c7e5ba6a067",
+    "usd_sha256": "2b3b37b1dc5a33be168baa16cda349c4a76388fe7adbf33d9a8ac7a14b0119ab",
+    "uniform_mesh_scale": 0.0007138861509320891,
+    "scaled_bbox_center_removed_m": [
+      0.03296228043134578,
+      0.032976064812631524,
+      0.032961853423914035
+    ],
+    "source_vertices": 7357,
+    "source_faces": 14702,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_E4",
+    "egad_id": "E4",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_E4.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_E4.usda",
+    "size_m": [
+      0.07365932829883057,
+      0.08883185989912198,
+      0.07363098906129384
+    ],
+    "mass_kg": 0.1315569840833721,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -6.614801096230549e-06,
+      0.01603114699240684,
+      1.1945696254288693e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00010536257305817598,
+        3.4841234201809976e-08,
+        2.717776015116507e-08
+      ],
+      [
+        3.4841234201809976e-08,
+        6.002960127645462e-05,
+        5.8490443278040294e-08
+      ],
+      [
+        2.717776015116507e-08,
+        5.8490443278040294e-08,
+        0.00010536644268547653
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/E4.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "5f2b3891dad3e6373806e922aca6f60876fd72df570d70fb322bc8553a26ddc5",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/E4.obj",
+    "processed_sha256": "ebb711aace3166ade409456df90d48394339d7135dbd4aaae5beca777d51724e",
+    "usd_sha256": "76f758ec0f2fbe5257e6188a9388d496298a5b1d24bf4905432ccc4b3610ac29",
+    "uniform_mesh_scale": 0.0008892811294959273,
+    "scaled_bbox_center_removed_m": [
+      0.04091321503034813,
+      0.04083961174792535,
+      0.04089328637362829
+    ],
+    "source_vertices": 3092,
+    "source_faces": 6180,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_E5",
+    "egad_id": "E5",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_E5.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_E5.usda",
+    "size_m": [
+      0.07103144521093452,
+      0.07743407970972221,
+      0.07629219141505633
+    ],
+    "mass_kg": 0.1841216449521518,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      9.6201316489843e-07,
+      -0.004388844230374484,
+      -8.000993681273249e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.0001188465744042788,
+        2.7325863532699393e-08,
+        1.9946500609552177e-07
+      ],
+      [
+        2.7325863532699393e-08,
+        9.590250674605463e-05,
+        2.1570768975857596e-08
+      ],
+      [
+        1.9946500609552177e-07,
+        2.1570768975857596e-08,
+        0.00014322373405302992
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/E5.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "7e4176cf9e56b29261a4488244d27b89166656288ca3257e53b0f42f426ca7ca",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/E5.obj",
+    "processed_sha256": "fb195d2dd075d9a7e9578b9d3cb3a2c9c6ddd4ac74652ecfe740eec2a605c629",
+    "usd_sha256": "5d5bc3499821b6161fee92e7caf0c94fdd70c4ae78c68557e33c32b0820ed76b",
+    "uniform_mesh_scale": 0.0007739171762724364,
+    "scaled_bbox_center_removed_m": [
+      0.044406859196058475,
+      0.05364491818042346,
+      0.0444932139309839
+    ],
+    "source_vertices": 7631,
+    "source_faces": 15290,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_E6",
+    "egad_id": "E6",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_E6.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_E6.usda",
+    "size_m": [
+      0.07092644062491493,
+      0.07848974032116449,
+      0.0801032412719545
+    ],
+    "mass_kg": 0.176919955741964,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      0.005919899425066562,
+      -1.2289670723776453e-05,
+      3.054103262384299e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00011816132057400934,
+        -2.834999383611488e-08,
+        -4.017252633808449e-08
+      ],
+      [
+        -2.834999383611488e-08,
+        0.00010078010844283354,
+        1.1175249697140684e-08
+      ],
+      [
+        -4.017252633808449e-08,
+        1.1175249697140684e-08,
+        0.00010749655113031664
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/E6.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "ce7e31ef30804e0982ff42e3c773e65242f004f01ca16a7e9d310f8faaa7ecce",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/E6.obj",
+    "processed_sha256": "da001b3564f3154b271f373efd2d2e9c685902f5442e30b7e6ca680f7f476ed2",
+    "usd_sha256": "67aa71c33349fba27bbf499af6c801a91d03b57781b1f915d7f4b09d7f7ac92d",
+    "uniform_mesh_scale": 0.0008010261701623956,
+    "scaled_bbox_center_removed_m": [
+      0.04281627557498408,
+      0.037506520726212925,
+      0.03746070448442486
+    ],
+    "source_vertices": 6326,
+    "source_faces": 12648,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_F0",
+    "egad_id": "F0",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_F0.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_F0.usda",
+    "size_m": [
+      0.08875517475080069,
+      0.01748618617732191,
+      0.08878319500164819
+    ],
+    "mass_kg": 0.10605498943022454,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -1.335489626238441e-05,
+      -0.0009603515098715849,
+      1.77581009346507e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        6.134791708877625e-05,
+        4.0585738703129855e-10,
+        7.092214389171167e-09
+      ],
+      [
+        4.0585738703129855e-10,
+        0.00011871610177204607,
+        4.712700286018787e-10
+      ],
+      [
+        7.092214389171167e-09,
+        4.712700286018787e-10,
+        6.134596440272626e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/F0.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "c3d820ad4ad208fa5b064c8f77f28c4b5b892298ee785d0a71b968cf4da929e7",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/F0.obj",
+    "processed_sha256": "2cafe0d1ec819523b3ab18a7478dd38c730514b9b366e4e339723504e8292eeb",
+    "usd_sha256": "e2c631eb455492a1373fe4a2ac568a78230c1925eb61ee130a797446592542c3",
+    "uniform_mesh_scale": 0.0008878319271104181,
+    "scaled_bbox_center_removed_m": [
+      0.04229462463976033,
+      0.033444743193493935,
+      0.042265562052034605
+    ],
+    "source_vertices": 2089,
+    "source_faces": 4174,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_F1",
+    "egad_id": "F1",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_F1.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_F1.usda",
+    "size_m": [
+      0.07851174888349409,
+      0.07777313436097386,
+      0.07102276007460803
+    ],
+    "mass_kg": 0.21322935593252532,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      8.571483315168433e-06,
+      -7.3869145935238215e-06,
+      -2.6568076463522765e-06
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.0001551052398000826,
+        1.9833931022352574e-09,
+        7.885010237969199e-08
+      ],
+      [
+        1.9833931022352574e-09,
+        0.00016018874266983014,
+        2.5559855513023436e-08
+      ],
+      [
+        7.885010237969199e-08,
+        2.5559855513023436e-08,
+        0.0001894942807533459
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/F1.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "6ae42c3b28320eeba3e19d7492ea1d650d5c8e222abcff65f42045d110273457",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/F1.obj",
+    "processed_sha256": "827238de249f2c7f9653faa826bbf6aa99eb02fb77d009dddeeab82360639a69",
+    "usd_sha256": "f6d62186e2957a93faf6a470956862f730459d5772a31b72dba41dacd33a6eb9",
+    "uniform_mesh_scale": 0.0007851152083107954,
+    "scaled_bbox_center_removed_m": [
+      0.03615104146930908,
+      0.03617124936515372,
+      0.03615885710670575
+    ],
+    "source_vertices": 7867,
+    "source_faces": 15754,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_F2",
+    "egad_id": "F2",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_F2.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_F2.usda",
+    "size_m": [
+      0.0534168798479414,
+      0.06038847823224627,
+      0.08875573330368434
+    ],
+    "mass_kg": 0.11756829662586854,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      1.2212438183272044e-05,
+      -3.16517852325658e-05,
+      1.2508533907718813e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00010820834275252126,
+        -1.8052694809873365e-08,
+        2.321660885181643e-08
+      ],
+      [
+        -1.8052694809873365e-08,
+        0.00010262181045934312,
+        -2.944221237138531e-08
+      ],
+      [
+        2.321660885181643e-08,
+        -2.944221237138531e-08,
+        4.029069939625184e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/F2.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "9e2294ddcc143e1cb9ed9a1263d80e73f022eee0fc8d947c7ce1240163731e87",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/F2.obj",
+    "processed_sha256": "88fc52b202148c737eaa4170a97af22c95a5c213880aa8852e688eb2a5114974",
+    "usd_sha256": "dd63a4a4daccd2f2de9073a341e0df8c65e982be42b5485545fd68b912f780fa",
+    "uniform_mesh_scale": 0.0008881819412138195,
+    "scaled_bbox_center_removed_m": [
+      0.04120200314441785,
+      0.041242685176921354,
+      0.0411995179047645
+    ],
+    "source_vertices": 3348,
+    "source_faces": 6692,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_F3",
+    "egad_id": "F3",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_F3.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_F3.usda",
+    "size_m": [
+      0.0710392175599521,
+      0.07167234475822276,
+      0.07175505645616206
+    ],
+    "mass_kg": 0.17375413138215381,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -0.007292314362048705,
+      -1.4754332512530386e-05,
+      -1.3711253839200935e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00012451903610877422,
+        2.1842521539711777e-08,
+        -3.370425417257751e-08
+      ],
+      [
+        2.1842521539711777e-08,
+        0.00011218386763404185,
+        -2.001910028619938e-09
+      ],
+      [
+        -3.370425417257751e-08,
+        -2.001910028619938e-09,
+        0.00011219148896368082
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/F3.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "f4c584d359cc2da5e229d723a726443f1cf0e8ee01a6f8632a30a64d312c5034",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/F3.obj",
+    "processed_sha256": "224bd9ec8b95186ddb33dfbca199c6572efc6bcd49c6f3d563429549468b1904",
+    "usd_sha256": "f892aff8840cb16c2a1dbef0d937a19e7dc0e7b992239e01c9ffe815b180f906",
+    "uniform_mesh_scale": 0.000717533473488309,
+    "scaled_bbox_center_removed_m": [
+      0.032800343976431896,
+      0.033288357104569594,
+      0.033294821546603286
+    ],
+    "source_vertices": 8290,
+    "source_faces": 16576,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_F4",
+    "egad_id": "F4",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_F4.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_F4.usda",
+    "size_m": [
+      0.07126944964893614,
+      0.07102398297933865,
+      0.07154463608394936
+    ],
+    "mass_kg": 0.13111916021944772,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -5.7770811376973e-06,
+      -1.5629777649805223e-05,
+      1.0571385300464886e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00010958357501266908,
+        -2.193806913220046e-09,
+        3.164457297901864e-08
+      ],
+      [
+        -2.193806913220046e-09,
+        0.00010662948887837918,
+        5.6468529151106575e-08
+      ],
+      [
+        3.164457297901864e-08,
+        5.6468529151106575e-08,
+        9.176176229172012e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/F4.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "affd4d3941ddbb880afaba8013111607661fa90d3070e79f18573a18b7497145",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/F4.obj",
+    "processed_sha256": "68c9d44b352a912ad0845a7dabfc9f1e55cf59801e74a60d06626c7a26af9657",
+    "usd_sha256": "7bd106320e7501f13fc58baef76c1cb89451f726d83e9819b58b4765a8bd4982",
+    "uniform_mesh_scale": 0.0007153253508236106,
+    "scaled_bbox_center_removed_m": [
+      0.03333732387328878,
+      0.03334960870633899,
+      0.03331740120387792
+    ],
+    "source_vertices": 8036,
+    "source_faces": 16068,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_F5",
+    "egad_id": "F5",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_F5.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_F5.usda",
+    "size_m": [
+      0.08879488495745387,
+      0.08796103176428942,
+      0.07010812121912917
+    ],
+    "mass_kg": 0.14642791970769828,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      1.056056799964705e-05,
+      -4.3710541356700184e-05,
+      0.0028633593335469364
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.0001052970703485047,
+        5.657660827597089e-09,
+        1.639030163743445e-09
+      ],
+      [
+        5.657660827597089e-09,
+        0.00013811088885186596,
+        -3.9001959448844464e-08
+      ],
+      [
+        1.639030163743445e-09,
+        -3.9001959448844464e-08,
+        0.00015806093720582856
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/F5.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "08d55db83911307ee29c2ecd4e670ce06c46d0971734ff149ed9f3e78a9b50c5",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/F5.obj",
+    "processed_sha256": "c688d96257c898eaf94e0e0ba316d7503525b441c3d9745fed43104ca2e69165",
+    "usd_sha256": "ca7ee19558567f89458c479bbc3ee1f20494376fb613d1caf4ab0069a390f3af",
+    "uniform_mesh_scale": 0.0008878319271703724,
+    "scaled_bbox_center_removed_m": [
+      0.041138963520996726,
+      0.04118091069854093,
+      0.05007337388750161
+    ],
+    "source_vertices": 5448,
+    "source_faces": 10896,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_F6",
+    "egad_id": "F6",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_F6.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_F6.usda",
+    "size_m": [
+      0.05180934385486341,
+      0.08724426603617863,
+      0.08994542006769299
+    ],
+    "mass_kg": 0.09147566862899795,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      4.860702190714942e-06,
+      -9.997900082530164e-06,
+      -1.098263867840405e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        8.616920523794259e-05,
+        1.2687593655176282e-09,
+        -2.1776510202483166e-08
+      ],
+      [
+        1.2687593655176282e-09,
+        8.19829026219863e-05,
+        -1.055056889533134e-08
+      ],
+      [
+        -2.1776510202483166e-08,
+        -1.055056889533134e-08,
+        2.713013904386272e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/F6.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "ca881d4914d2f1cc50ec2d9e4c239ddf8546e21b34e8cccedec15b428ca13b81",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/F6.obj",
+    "processed_sha256": "9a3a73cfb0fd1a68959274bfe298d9d2f2218ca8581989dd38620dbb3051aefa",
+    "usd_sha256": "b98fc5b811a00b1ff361ed27cc0aca282de0dbfa4042e35311fe2af42323d900",
+    "uniform_mesh_scale": 0.0008294710819860974,
+    "scaled_bbox_center_removed_m": [
+      0.04560310987684495,
+      0.04562122666579826,
+      0.045617564244066995
+    ],
+    "source_vertices": 2655,
+    "source_faces": 5302,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_G0",
+    "egad_id": "G0",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_G0.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_G0.usda",
+    "size_m": [
+      0.08878508710121386,
+      0.08877342978810529,
+      0.04096439563226631
+    ],
+    "mass_kg": 0.14744966794816777,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -1.594920427894957e-05,
+      1.5756342680494525e-05,
+      0.007611608938359323
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        7.306960809888203e-05,
+        -2.8724697048042177e-08,
+        8.018111734735835e-09
+      ],
+      [
+        -2.8724697048042177e-08,
+        7.307638628624468e-05,
+        -1.0932350239393347e-08
+      ],
+      [
+        8.018111734735835e-09,
+        -1.0932350239393347e-08,
+        0.0001255026475299282
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/G0.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "c54da0b70ed0e336bd34a906cc489670fb9bdfe474ab93430b8a06639701b996",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/G0.obj",
+    "processed_sha256": "eab1eabb808241668bbd9234d6fc2c907c8a94735ab92fc7498faa8198c72b5e",
+    "usd_sha256": "16bade63e3f7d44269cc0999627d501ce4f957523bec9569b6a591012b75c0aa",
+    "uniform_mesh_scale": 0.0008878319271647422,
+    "scaled_bbox_center_removed_m": [
+      0.04157598958450477,
+      0.041551282540402176,
+      0.0661098340497186
+    ],
+    "source_vertices": 2687,
+    "source_faces": 5370,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_G1",
+    "egad_id": "G1",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_G1.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_G1.usda",
+    "size_m": [
+      0.08878589878301152,
+      0.08866632589868152,
+      0.06641296291718221
+    ],
+    "mass_kg": 0.2540739213380964,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -6.234517690562895e-06,
+      1.186279567932088e-07,
+      -0.0054458725492936965
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00017081387861754457,
+        -2.7654349027219608e-08,
+        -7.277653892123344e-08
+      ],
+      [
+        -2.7654349027219608e-08,
+        0.00017082685926749953,
+        6.214382712530907e-08
+      ],
+      [
+        -7.277653892123344e-08,
+        6.214382712530907e-08,
+        0.00024091225878877432
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/G1.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "99a025e8b71a09ab23df77acf441a526f3391218b801d1d35d77aff9e62c552d",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/G1.obj",
+    "processed_sha256": "1815085a3b7086a89c2090fc0c4008155516f58bf5b16e5b32066d6a1bb8d62b",
+    "usd_sha256": "f6b5ccc765f1b9e6fa843e6aef19093e9548c9dc504a0aca403bdeb5fc345685",
+    "uniform_mesh_scale": 0.0008878319271568915,
+    "scaled_bbox_center_removed_m": [
+      0.04086851104893163,
+      0.040884248491322835,
+      0.05199388033297127
+    ],
+    "source_vertices": 3999,
+    "source_faces": 7998,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_G2",
+    "egad_id": "G2",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_G2.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_G2.usda",
+    "size_m": [
+      0.056020398779355406,
+      0.08878996702226222,
+      0.02227088243377296
+    ],
+    "mass_kg": 0.04808602899453038,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -1.6649455670722506e-06,
+      -5.349873209120964e-06,
+      0.00016815050655412405
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        2.7133930912994845e-05,
+        -1.1973608783575093e-08,
+        1.2164073497663435e-09
+      ],
+      [
+        -1.1973608783575093e-08,
+        1.6349646710772386e-05,
+        -6.864133951007509e-09
+      ],
+      [
+        1.2164073497663435e-09,
+        -6.864133951007509e-09,
+        4.081266937468699e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/G2.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "771357fcb27b391d21a507e6372091bb1c2e22d02ca53efc07bc2bd9884fa32c",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/G2.obj",
+    "processed_sha256": "2dbbbfd52dc4e24316a6600c85fb5dac282bd05e0c0d18d7b23c0daec8fd1397",
+    "usd_sha256": "3942f6876f22ff22289b7e2be6b1ab46f191579c03419e32acec064484cb2f33",
+    "uniform_mesh_scale": 0.000887831050027115,
+    "scaled_bbox_center_removed_m": [
+      0.04316697146222971,
+      0.04318050933203829,
+      0.05587484591476455
+    ],
+    "source_vertices": 1719,
+    "source_faces": 3434,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_G3",
+    "egad_id": "G3",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_G3.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_G3.usda",
+    "size_m": [
+      0.03147194076604619,
+      0.08875867840770285,
+      0.08877592360661052
+    ],
+    "mass_kg": 0.05664677442169549,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      0.00498402345058821,
+      3.310377367635997e-05,
+      -2.3780785955009e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.00011526692530915988,
+        3.679549259090864e-08,
+        2.9655762097904825e-09
+      ],
+      [
+        3.679549259090864e-08,
+        5.995727588153807e-05,
+        -1.7365210766420115e-08
+      ],
+      [
+        2.9655762097904825e-09,
+        -1.7365210766420115e-08,
+        5.994256244176119e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/G3.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "6d6f6ee2ff1103588028fad19c4d322ab3dfe1ad4dea1ebf9e9b420a295ee4e2",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/G3.obj",
+    "processed_sha256": "47e194aceb1f0e1a9afa24ec652d55ee95db7bdaf2435a2538b369a40a0db9a8",
+    "usd_sha256": "7972df6ae4b4c51478cb13af9fea38f1b15a6ee0d70280cc9e08c0669f40d698",
+    "uniform_mesh_scale": 0.0008877576775187266,
+    "scaled_bbox_center_removed_m": [
+      0.049107629786678354,
+      0.04088239898314766,
+      0.04087871083382551
+    ],
+    "source_vertices": 2247,
+    "source_faces": 4494,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_G4",
+    "egad_id": "G4",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_G4.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_G4.usda",
+    "size_m": [
+      0.08879014814139632,
+      0.08865971921227295,
+      0.02534083464279229
+    ],
+    "mass_kg": 0.07825017281707418,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -6.131921873557822e-05,
+      3.570005801024243e-05,
+      0.004288101510497813
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        5.370087506151658e-05,
+        -2.9150155427913103e-08,
+        -3.5119035121963175e-08
+      ],
+      [
+        -2.9150155427913103e-08,
+        5.4448633292405215e-05,
+        1.9907877634940952e-08
+      ],
+      [
+        -3.5119035121963175e-08,
+        1.9907877634940952e-08,
+        0.00010486946547956997
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/G4.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "f332fbbc2eabd2e6826692451c8305fb8bc48755e506d0866114c137f5c4bf95",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/G4.obj",
+    "processed_sha256": "729225e307de87609c3a21944320d8dffea4e94274a844e3fc1492eea4160a86",
+    "usd_sha256": "801247ae8930262fc35c860b10a38514012a282501b74bdd86ce5e0079b3badd",
+    "uniform_mesh_scale": 0.000887831927151476,
+    "scaled_bbox_center_removed_m": [
+      0.04122529381966626,
+      0.04119216813127283,
+      0.059479598456872534
+    ],
+    "source_vertices": 2591,
+    "source_faces": 5178,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_G5",
+    "egad_id": "G5",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_G5.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_G5.usda",
+    "size_m": [
+      0.054418878253530416,
+      0.08874524656999322,
+      0.08764520759588412
+    ],
+    "mass_kg": 0.15805415171380888,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      -0.0043887923971757245,
+      1.2145145157197453e-05,
+      1.5237732130386057e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        0.0001671155644101679,
+        3.4782950927095e-09,
+        3.897412073471395e-08
+      ],
+      [
+        3.4782950927095e-09,
+        0.0001149207195548217,
+        -2.3760188603827162e-08
+      ],
+      [
+        3.897412073471395e-08,
+        -2.3760188603827162e-08,
+        0.0001154767607792049
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/G5.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "9afcda314ce14c0f1e420d80ec17ed1e590395984d56a0ec9ceb7c9c421c8801",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/G5.obj",
+    "processed_sha256": "eb9c3e5de4ae452c768c994e058933b44aa0826405f56f4550b6e90b0eec8937",
+    "usd_sha256": "18abc62655c91920638d34409952aa64c9f857ce5cee3c15cf65cf872066119e",
+    "uniform_mesh_scale": 0.0008872844671701898,
+    "scaled_bbox_center_removed_m": [
+      0.02377455546813965,
+      0.04112241781753383,
+      0.04111055654553963
+    ],
+    "source_vertices": 4996,
+    "source_faces": 10006,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  },
+  {
+    "name": "egad_G6",
+    "egad_id": "G6",
+    "path": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/usd/egad_G6.usda",
+    "container_path": "/workspace/asset/egad49_arx_20261020/usd/egad_G6.usda",
+    "size_m": [
+      0.08959975222548938,
+      0.03249596884839269,
+      0.0908183956552778
+    ],
+    "mass_kg": 0.03156459726782602,
+    "density_kg_m3": 1000.0,
+    "center_of_mass_m": [
+      5.028610341210185e-05,
+      0.0008933973513522233,
+      4.749237895914588e-05
+    ],
+    "inertia_tensor_kg_m2": [
+      [
+        1.2874679981622142e-05,
+        2.3600305478008695e-08,
+        -8.58722461888614e-08
+      ],
+      [
+        2.3600305478008695e-08,
+        2.2880112086755646e-05,
+        1.3097772696239802e-08
+      ],
+      [
+        -8.58722461888614e-08,
+        1.3097772696239802e-08,
+        1.3193976408702764e-05
+      ]
+    ],
+    "source": "/home/zhaoyechong/projects/asset/egad49_raw_20261020/G6.obj",
+    "source_url": "https://github.com/pearl-robot-lab/neugraspnet/tree/baf9dc14041459b7831d9a2273a56c2805ca84b6/neugraspnet/data/egad_eval_set",
+    "source_sha256": "bb0221bd227ee5c9383c11359c7eadcc793232265322927b7926ca2afa18dbf1",
+    "processed_mesh": "/home/zhaoyechong/projects/asset/egad49_arx_20261020/processed/G6.obj",
+    "processed_sha256": "fdba95edf570ca56d1d1379462724ac6b7613b3d6f9921f8ae4fbc4a17a47d65",
+    "usd_sha256": "d45611f34dd30b0ee7239c29c218c23b7884f880ce1b33cdc0f44d7fae7d86f9",
+    "uniform_mesh_scale": 0.0008877294432494472,
+    "scaled_bbox_center_removed_m": [
+      0.0482153775680596,
+      0.07406306407148594,
+      0.04831851024631266
+    ],
+    "source_vertices": 1888,
+    "source_faces": 3772,
+    "source_manifold_watertight": true,
+    "source_nonmanifold_edges": 0,
+    "source_boundary_edges": 0,
+    "source_geometry_repaired": false,
+    "collision": "PhysX convexDecomposition max32 hulls/64 vertices/500000 voxels/minThickness1mm, no per-object tuning",
+    "provenance": "External EGAD mesh; ARX simulation density/contact assumptions are not official measured material properties"
+  }
+]

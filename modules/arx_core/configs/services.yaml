@@ -1,0 +1,5 @@
+arx_client_url: "http://127.0.0.1:8001"
+langsam_url: "http://127.0.0.1:8002"
+zerograsp_url: "http://127.0.0.1:8003"
+curobo_url: "http://127.0.0.1:8007"
+

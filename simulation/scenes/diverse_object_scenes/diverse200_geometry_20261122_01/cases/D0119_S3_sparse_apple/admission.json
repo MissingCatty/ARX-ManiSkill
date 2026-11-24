@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "entry": {
+    "id": "D0119_S3_sparse_apple",
+    "model_id": "robocasa__apple__apple_0",
+    "semantic_class": "apple",
+    "family": "apple",
+    "target_text": "apple",
+    "layout": "S3_sparse",
+    "seed": 3195006588,
+    "actor_identities": [
+      {
+        "name": "target",
+        "model_id": "robocasa__apple__apple_0"
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__bowl__bowl_1"
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+      }
+    ],
+    "scene": {
+      "layout": "S3_sparse",
+      "actors": [
+        {
+          "name": "target",
+          "model_id": "robocasa__apple__apple_0",
+          "pose": [
+            -0.2920960485935211,
+            -0.13290651142597198,
+            0.03600720316171646,
+            0.9057138562202454,
+            -2.880766987800598e-05,
+            -4.111509770154953e-05,
+            -0.4238894283771515
+          ]
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__bowl__bowl_1",
+          "pose": [
+            -0.44909343123435974,
+            0.3820507228374481,
+            0.02614380232989788,
+            0.5894460678100586,
+            -4.1781459003686905e-07,
+            3.0630617402493954e-06,
+            0.8078077435493469
+          ]
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0",
+          "pose": [
+            -0.5585160255432129,
+            0.18500152230262756,
+            0.06750039011240005,
+            0.35805073380470276,
+            7.802154868841171e-07,
+            9.65141225606203e-07,
+            -0.9337022304534912
+          ]
+        }
+      ],
+      "perception_camera": "head"
+    },
+    "admission": {
+      "target_mask_pixels": 1634,
+      "isolated_mask_pixels": 1634,
+      "occlusion_fraction": 0.0,
+      "projected_bbox_uv": [
+        [
+          498.7436436361584,
+          194.623764788958
+        ],
+        [
+          579.3396219211908,
+          267.8364106401888
+        ]
+      ],
+      "fully_in_frame": true,
+      "admitted_view": true,
+      "valid_target_depth_fraction": 1.0,
+      "target_depth_median_m": 0.653,
+      "visible_pixels": 1634,
+      "border_clear": true
+    },
+    "camera": "head",
+    "robot_initial_q": [
+      0.4519999921321869,
+      -1.0728319921327056e-06,
+      -0.00020593733643181622,
+      2.5863868359010667e-05,
+      2.7094700271845795e-05,
+      0.0,
+      0.0,
+      -0.24871869385242462,
+      -0.24505318701267242,
+      -0.0005250244867056608,
+      0.00040246330900117755,
+      -0.0027694408781826496,
+      -0.0016749418573454022,
+      6.499443770735525e-06,
+      0.00048274517757818103,
+      0.043999914079904556,
+      0.04397093132138252
+    ],
+    "base_pose": [
+      -1.0499999523162842,
+      0.2499999850988388,
+      -0.5000001192092896,
+      1.0000001192092896,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "observation": null,
+    "physical_grasp_attempts": 0
+  },
+  "camera_input_sha256": {
+    "color.png": "bf03b167c989dbc0c5553d3879cb11451352cd2b7af14413501ee87b5ae80f21",
+    "depth.png": "89ca7eb56d8c550a65ac9fe2188d22f06caaed04864832565c1de858d2f67f21",
+    "params.json": "b352abd8dac97ffc0c9b7570c968400ea1e9769089a4524b3f621f4e9e99f47e"
+  },
+  "ground_truth_mask_is_evaluation_only": true
+}

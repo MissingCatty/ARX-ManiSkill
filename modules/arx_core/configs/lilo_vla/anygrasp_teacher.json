@@ -1,0 +1,14 @@
+{
+  "api": "create_detector_20260704",
+  "sdk_revision": "b8eaafc9eca7babd5208e7a5ade3c561060be4c5",
+  "sdk_root": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/research_dependencies/anygrasp_sdk_b8eaafc9",
+  "python": "/home/zhaoyechong/projects/tmp/arx-anygrasp-env/bin/python",
+  "checkpoint": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/research_dependencies/anygrasp_runtime/checkpoint_detection.tar",
+  "license_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/research_dependencies/anygrasp_runtime/license",
+  "max_gripper_width_m": 0.088,
+  "detector_gripper_height_m": 0.03,
+  "candidate_limit": 8,
+  "qualified_goal_limit": 1,
+  "pregrasp_distance_mm": 80,
+  "scope": "Neural proposals and perception collision proxy only; unchanged full ARX collision, contact, camera and physical-success checks remain required. No substitute model fallback."
+}

@@ -1,0 +1,9 @@
+{
+  "accepted_variant": 1,
+  "rejected": [
+    {
+      "variant": 0,
+      "reason": "Head admission: {'target_mask_pixels': 959, 'isolated_mask_pixels': 1253, 'occlusion_fraction': 0.23463687150837986, 'projected_bbox_uv': [[449.5336419846414, 161.90017183605352], [525.552256406651, 236.75278665272546]], 'fully_in_frame': True, 'admitted_view': True, 'valid_target_depth_fraction': 1.0, 'target_depth_median_m': 0.718, 'visible_pixels': 959, 'border_clear': True}"
+    }
+  ]
+}

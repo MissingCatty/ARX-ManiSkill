@@ -1,0 +1,2009 @@
+{
+  "created_at": "2026-11-20T06:51:29.073427+08:00",
+  "scope": "Read-only posthoc diagnosis of the completed same-scene uniform-protocol revalidation; no additional grasps, no tuning, no feedback updates.",
+  "sources": {
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_unseen_unified_20261120_01/registration.json": "2eb4f87fb3904934bcbe6a5f98aeaaf9afd0313f5abcee90411bc33931716630",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_unseen_unified_20261120_01/analysis.json": "72ef25206fdca00020764889de9eff5e7aef28534b41008a20da784964607b25",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_unseen_unified_20261120_01/final_summary.json": "11336e2849c70c001e8f898a62c52ebc5e712844d6c8eb1b44a347a44fc8c36a",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_unseen_unified_20261120_01/final_verification.json": "0198814cfd334f763ad5f1abd9f883e1893fc1957e8176bf9057e5c648597eb0",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_unseen_unified_20261120_01/final_independent_stage_audit.json": "20e4d308ee8fa1212a5ba841c310885ac973dd6588bc5d21cf5d10f18ddd6555"
+  },
+  "headline": {
+    "A_zerograsp": {
+      "passed": true,
+      "registered": 100,
+      "completed": 100,
+      "successes": 47,
+      "planning_passes": 67,
+      "failure_reasons": {
+        "no_feasible_native_post_or_recalled_candidate": 33,
+        "insufficient_hold_height": 17,
+        "close_not_converged": 1,
+        "no_bilateral_target_contact": 1,
+        "lift_not_converged": 1
+      },
+      "refinement_cases": 100,
+      "refined_rescore_cases": 0,
+      "processing": {
+        "input_candidates": 3598,
+        "retained_candidates": 1476,
+        "retracted_candidates": 233,
+        "retained_recall_candidates": 0,
+        "recall_tcp43_shift_verified": 0
+      },
+      "selected_origins": {
+        "zerograsp": 67
+      }
+    },
+    "B_graspcl_no_experience": {
+      "passed": true,
+      "registered": 100,
+      "completed": 100,
+      "successes": 47,
+      "planning_passes": 67,
+      "failure_reasons": {
+        "no_feasible_native_post_or_recalled_candidate": 33,
+        "insufficient_hold_height": 17,
+        "close_not_converged": 1,
+        "no_bilateral_target_contact": 1,
+        "lift_not_converged": 1
+      },
+      "refinement_cases": 100,
+      "refined_rescore_cases": 100,
+      "processing": {
+        "input_candidates": 3598,
+        "retained_candidates": 1476,
+        "retracted_candidates": 233,
+        "retained_recall_candidates": 0,
+        "recall_tcp43_shift_verified": 0
+      },
+      "selected_origins": {
+        "zerograsp": 67
+      }
+    },
+    "C_graspcl_experience50": {
+      "passed": true,
+      "registered": 100,
+      "completed": 100,
+      "successes": 63,
+      "planning_passes": 94,
+      "failure_reasons": {
+        "insufficient_hold_height": 19,
+        "no_feasible_native_post_or_recalled_candidate": 6,
+        "close_not_converged": 2,
+        "no_bilateral_target_contact": 4,
+        "approach_not_converged": 5,
+        "forbidden_robot_contact": 1
+      },
+      "refinement_cases": 100,
+      "refined_rescore_cases": 100,
+      "processing": {
+        "input_candidates": 4600,
+        "retained_candidates": 2078,
+        "retracted_candidates": 608,
+        "retained_recall_candidates": 602,
+        "recall_tcp43_shift_verified": 602
+      },
+      "selected_origins": {
+        "demonstration_patch": 14,
+        "zerograsp": 51,
+        "demonstration_object": 29
+      }
+    }
+  },
+  "statistics": {
+    "C_graspcl_experience50 vs B_graspcl_no_experience": {
+      "gain_scenes": 20,
+      "loss_scenes": 4,
+      "paired_difference": 0.16,
+      "model_cluster_bootstrap_95_ci": [
+        0.0594059405940594,
+        0.2647058823529412
+      ],
+      "two_sided_model_cluster_signflip_p": 0.005979880402391952,
+      "mcnemar_exact_descriptive_p": 0.001543879508972168,
+      "primary_holm_adjusted_p": 0.011959760804783904
+    },
+    "C_graspcl_experience50 vs A_zerograsp": {
+      "gain_scenes": 22,
+      "loss_scenes": 6,
+      "paired_difference": 0.16,
+      "model_cluster_bootstrap_95_ci": [
+        0.057692307692307696,
+        0.27
+      ],
+      "two_sided_model_cluster_signflip_p": 0.0071798564028719425,
+      "mcnemar_exact_descriptive_p": 0.0037191659212112427,
+      "primary_holm_adjusted_p": 0.011959760804783904
+    },
+    "B_graspcl_no_experience vs A_zerograsp": {
+      "gain_scenes": 4,
+      "loss_scenes": 4,
+      "paired_difference": 0.0,
+      "model_cluster_bootstrap_95_ci": [
+        -0.04950495049504951,
+        0.04950495049504951
+      ],
+      "two_sided_model_cluster_signflip_p": 1.0,
+      "mcnemar_exact_descriptive_p": 1.0
+    }
+  },
+  "layouts": {
+    "S1_open": {
+      "scenes": 25,
+      "successes": {
+        "A_zerograsp": 11,
+        "B_graspcl_no_experience": 11,
+        "C_graspcl_experience50": 18
+      },
+      "planning_passes": {
+        "A_zerograsp": 14,
+        "B_graspcl_no_experience": 14,
+        "C_graspcl_experience50": 24
+      }
+    },
+    "S2_edge": {
+      "scenes": 25,
+      "successes": {
+        "A_zerograsp": 16,
+        "B_graspcl_no_experience": 15,
+        "C_graspcl_experience50": 14
+      },
+      "planning_passes": {
+        "A_zerograsp": 21,
+        "B_graspcl_no_experience": 21,
+        "C_graspcl_experience50": 24
+      }
+    },
+    "S3_sparse": {
+      "scenes": 25,
+      "successes": {
+        "A_zerograsp": 9,
+        "B_graspcl_no_experience": 8,
+        "C_graspcl_experience50": 14
+      },
+      "planning_passes": {
+        "A_zerograsp": 15,
+        "B_graspcl_no_experience": 15,
+        "C_graspcl_experience50": 23
+      }
+    },
+    "S4_clutter": {
+      "scenes": 25,
+      "successes": {
+        "A_zerograsp": 11,
+        "B_graspcl_no_experience": 13,
+        "C_graspcl_experience50": 17
+      },
+      "planning_passes": {
+        "A_zerograsp": 17,
+        "B_graspcl_no_experience": 17,
+        "C_graspcl_experience50": 23
+      }
+    }
+  },
+  "categories": {
+    "乐高积木（所有部件变体）": {
+      "scenes": 13,
+      "successes": {
+        "A_zerograsp": 6,
+        "B_graspcl_no_experience": 6,
+        "C_graspcl_experience50": 13
+      },
+      "C_minus_B_successes": 7
+    },
+    "剪刀": {
+      "scenes": 2,
+      "successes": {
+        "A_zerograsp": 0,
+        "B_graspcl_no_experience": 0,
+        "C_graspcl_experience50": 0
+      },
+      "C_minus_B_successes": 0
+    },
+    "夹具（所有尺寸）": {
+      "scenes": 5,
+      "successes": {
+        "A_zerograsp": 1,
+        "B_graspcl_no_experience": 1,
+        "C_graspcl_experience50": 3
+      },
+      "C_minus_B_successes": 2
+    },
+    "扳手": {
+      "scenes": 2,
+      "successes": {
+        "A_zerograsp": 0,
+        "B_graspcl_no_experience": 0,
+        "C_graspcl_experience50": 0
+      },
+      "C_minus_B_successes": 0
+    },
+    "挂锁": {
+      "scenes": 1,
+      "successes": {
+        "A_zerograsp": 0,
+        "B_graspcl_no_experience": 0,
+        "C_graspcl_experience50": 1
+      },
+      "C_minus_B_successes": 1
+    },
+    "插孔板": {
+      "scenes": 2,
+      "successes": {
+        "A_zerograsp": 0,
+        "B_graspcl_no_experience": 0,
+        "C_graspcl_experience50": 2
+      },
+      "C_minus_B_successes": 2
+    },
+    "海绵": {
+      "scenes": 2,
+      "successes": {
+        "A_zerograsp": 0,
+        "B_graspcl_no_experience": 0,
+        "C_graspcl_experience50": 0
+      },
+      "C_minus_B_successes": 0
+    },
+    "瓶装容器": {
+      "scenes": 5,
+      "successes": {
+        "A_zerograsp": 2,
+        "B_graspcl_no_experience": 2,
+        "C_graspcl_experience50": 4
+      },
+      "C_minus_B_successes": 2
+    },
+    "电钻": {
+      "scenes": 2,
+      "successes": {
+        "A_zerograsp": 2,
+        "B_graspcl_no_experience": 1,
+        "C_graspcl_experience50": 2
+      },
+      "C_minus_B_successes": 1
+    },
+    "积木块（木块及泡沫块）": {
+      "scenes": 8,
+      "successes": {
+        "A_zerograsp": 2,
+        "B_graspcl_no_experience": 2,
+        "C_graspcl_experience50": 3
+      },
+      "C_minus_B_successes": 1
+    },
+    "螺丝刀": {
+      "scenes": 4,
+      "successes": {
+        "A_zerograsp": 2,
+        "B_graspcl_no_experience": 2,
+        "C_graspcl_experience50": 3
+      },
+      "C_minus_B_successes": 1
+    },
+    "记号笔": {
+      "scenes": 2,
+      "successes": {
+        "A_zerograsp": 0,
+        "B_graspcl_no_experience": 0,
+        "C_graspcl_experience50": 0
+      },
+      "C_minus_B_successes": 0
+    },
+    "链条": {
+      "scenes": 2,
+      "successes": {
+        "A_zerograsp": 2,
+        "B_graspcl_no_experience": 1,
+        "C_graspcl_experience50": 1
+      },
+      "C_minus_B_successes": 0
+    },
+    "锤子": {
+      "scenes": 2,
+      "successes": {
+        "A_zerograsp": 2,
+        "B_graspcl_no_experience": 2,
+        "C_graspcl_experience50": 2
+      },
+      "C_minus_B_successes": 0
+    },
+    "食品金属罐": {
+      "scenes": 8,
+      "successes": {
+        "A_zerograsp": 5,
+        "B_graspcl_no_experience": 5,
+        "C_graspcl_experience50": 5
+      },
+      "C_minus_B_successes": 0
+    },
+    "餐具容器（杯碗盘壶及盖）": {
+      "scenes": 29,
+      "successes": {
+        "A_zerograsp": 22,
+        "B_graspcl_no_experience": 24,
+        "C_graspcl_experience50": 23
+      },
+      "C_minus_B_successes": -1
+    },
+    "餐具工具": {
+      "scenes": 7,
+      "successes": {
+        "A_zerograsp": 0,
+        "B_graspcl_no_experience": 0,
+        "C_graspcl_experience50": 0
+      },
+      "C_minus_B_successes": 0
+    },
+    "骰子": {
+      "scenes": 2,
+      "successes": {
+        "A_zerograsp": 0,
+        "B_graspcl_no_experience": 0,
+        "C_graspcl_experience50": 1
+      },
+      "C_minus_B_successes": 1
+    },
+    "魔方": {
+      "scenes": 2,
+      "successes": {
+        "A_zerograsp": 1,
+        "B_graspcl_no_experience": 1,
+        "C_graspcl_experience50": 0
+      },
+      "C_minus_B_successes": -1
+    }
+  },
+  "paired_decomposition": {
+    "C vs B_graspcl_no_experience": {
+      "gains": [
+        {
+          "id": "T0001_S1_open_062_dice",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "062_dice",
+            "family": "骰子",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_patch",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "062_dice",
+            "family": "骰子",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0011_S3_sparse_071_nine_hole_peg_test",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "071_nine_hole_peg_test",
+            "family": "插孔板",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "071_nine_hole_peg_test",
+            "family": "插孔板",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0031_S3_sparse_073-b_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-b_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_patch",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-b_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0032_S4_clutter_061_foam_brick",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "061_foam_brick",
+            "family": "积木块（木块及泡沫块）",
+            "layout": "S4_clutter"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "061_foam_brick",
+            "family": "积木块（木块及泡沫块）",
+            "layout": "S4_clutter"
+          }
+        },
+        {
+          "id": "T0035_S3_sparse_050_medium_clamp",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "no_bilateral_target_contact",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "050_medium_clamp",
+            "family": "夹具（所有尺寸）",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_patch",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "050_medium_clamp",
+            "family": "夹具（所有尺寸）",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0037_S1_open_073-c_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-c_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_patch",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-c_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0041_S1_open_073-b_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-b_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_patch",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-b_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0042_S2_edge_022_windex_bottle",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "022_windex_bottle",
+            "family": "瓶装容器",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "022_windex_bottle",
+            "family": "瓶装容器",
+            "layout": "S2_edge"
+          }
+        },
+        {
+          "id": "T0048_S4_clutter_021_bleach_cleanser",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "lift_not_converged",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "021_bleach_cleanser",
+            "family": "瓶装容器",
+            "layout": "S4_clutter"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "021_bleach_cleanser",
+            "family": "瓶装容器",
+            "layout": "S4_clutter"
+          }
+        },
+        {
+          "id": "T0049_S1_open_071_nine_hole_peg_test",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "071_nine_hole_peg_test",
+            "family": "插孔板",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "071_nine_hole_peg_test",
+            "family": "插孔板",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0053_S1_open_050_medium_clamp",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "050_medium_clamp",
+            "family": "夹具（所有尺寸）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "050_medium_clamp",
+            "family": "夹具（所有尺寸）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0071_S3_sparse_038_padlock",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "038_padlock",
+            "family": "挂锁",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "038_padlock",
+            "family": "挂锁",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0075_S3_sparse_073-c_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-c_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-c_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0078_S2_edge_043_phillips_screwdriver",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "043_phillips_screwdriver",
+            "family": "螺丝刀",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "043_phillips_screwdriver",
+            "family": "螺丝刀",
+            "layout": "S2_edge"
+          }
+        },
+        {
+          "id": "T0081_S1_open_073-e_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-e_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-e_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0084_S4_clutter_073-g_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-g_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S4_clutter"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-g_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S4_clutter"
+          }
+        },
+        {
+          "id": "T0087_S3_sparse_035_power_drill",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "035_power_drill",
+            "family": "电钻",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "035_power_drill",
+            "family": "电钻",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0088_S4_clutter_002_master_chef_can",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "002_master_chef_can",
+            "family": "食品金属罐",
+            "layout": "S4_clutter"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "002_master_chef_can",
+            "family": "食品金属罐",
+            "layout": "S4_clutter"
+          }
+        },
+        {
+          "id": "T0093_S1_open_065-j_cups",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-j_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-j_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0095_S3_sparse_073-d_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-d_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-d_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          }
+        }
+      ],
+      "losses": [
+        {
+          "id": "T0014_S2_edge_077_rubiks_cube",
+          "control": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "077_rubiks_cube",
+            "family": "魔方",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": false,
+            "planning_success": true,
+            "reason": "no_bilateral_target_contact",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "077_rubiks_cube",
+            "family": "魔方",
+            "layout": "S2_edge"
+          }
+        },
+        {
+          "id": "T0050_S2_edge_005_tomato_soup_can",
+          "control": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "005_tomato_soup_can",
+            "family": "食品金属罐",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": false,
+            "planning_success": true,
+            "reason": "approach_not_converged",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "005_tomato_soup_can",
+            "family": "食品金属罐",
+            "layout": "S2_edge"
+          }
+        },
+        {
+          "id": "T0051_S3_sparse_065-c_cups",
+          "control": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-c_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": false,
+            "planning_success": true,
+            "reason": "forbidden_robot_contact",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-c_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0070_S2_edge_065-e_cups",
+          "control": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-e_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": false,
+            "planning_success": true,
+            "reason": "approach_not_converged",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-e_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S2_edge"
+          }
+        }
+      ],
+      "gain_selected_origins": {
+        "demonstration_patch": 5,
+        "demonstration_object": 13,
+        "zerograsp": 2
+      },
+      "gain_control_failure_reasons": {
+        "no_feasible_native_post_or_recalled_candidate": 14,
+        "insufficient_hold_height": 4,
+        "no_bilateral_target_contact": 1,
+        "lift_not_converged": 1
+      },
+      "gain_unique_models": 16,
+      "gain_unique_categories": 11,
+      "newly_plannable": {
+        "cases": 27,
+        "successes": 14,
+        "origins": {
+          "demonstration_patch": 9,
+          "demonstration_object": 18
+        },
+        "failure_reasons": {
+          "no_bilateral_target_contact": 3,
+          "insufficient_hold_height": 7,
+          "approach_not_converged": 2,
+          "close_not_converged": 1
+        }
+      },
+      "shared_plannable": {
+        "cases": 67,
+        "control_successes": 47,
+        "C_successes": 49
+      },
+      "lost_plannability": []
+    },
+    "C vs A_zerograsp": {
+      "gains": [
+        {
+          "id": "T0001_S1_open_062_dice",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "062_dice",
+            "family": "骰子",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_patch",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "062_dice",
+            "family": "骰子",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0011_S3_sparse_071_nine_hole_peg_test",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "071_nine_hole_peg_test",
+            "family": "插孔板",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "071_nine_hole_peg_test",
+            "family": "插孔板",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0028_S4_clutter_065-b_cups",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-b_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S4_clutter"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-b_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S4_clutter"
+          }
+        },
+        {
+          "id": "T0031_S3_sparse_073-b_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-b_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_patch",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-b_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0032_S4_clutter_061_foam_brick",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "061_foam_brick",
+            "family": "积木块（木块及泡沫块）",
+            "layout": "S4_clutter"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "061_foam_brick",
+            "family": "积木块（木块及泡沫块）",
+            "layout": "S4_clutter"
+          }
+        },
+        {
+          "id": "T0035_S3_sparse_050_medium_clamp",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "no_bilateral_target_contact",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "050_medium_clamp",
+            "family": "夹具（所有尺寸）",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_patch",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "050_medium_clamp",
+            "family": "夹具（所有尺寸）",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0037_S1_open_073-c_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-c_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_patch",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-c_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0041_S1_open_073-b_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-b_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_patch",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-b_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0042_S2_edge_022_windex_bottle",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "022_windex_bottle",
+            "family": "瓶装容器",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "022_windex_bottle",
+            "family": "瓶装容器",
+            "layout": "S2_edge"
+          }
+        },
+        {
+          "id": "T0048_S4_clutter_021_bleach_cleanser",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "lift_not_converged",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "021_bleach_cleanser",
+            "family": "瓶装容器",
+            "layout": "S4_clutter"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "021_bleach_cleanser",
+            "family": "瓶装容器",
+            "layout": "S4_clutter"
+          }
+        },
+        {
+          "id": "T0049_S1_open_071_nine_hole_peg_test",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "071_nine_hole_peg_test",
+            "family": "插孔板",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "071_nine_hole_peg_test",
+            "family": "插孔板",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0052_S4_clutter_065-a_cups",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-a_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S4_clutter"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-a_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S4_clutter"
+          }
+        },
+        {
+          "id": "T0053_S1_open_050_medium_clamp",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "050_medium_clamp",
+            "family": "夹具（所有尺寸）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "050_medium_clamp",
+            "family": "夹具（所有尺寸）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0071_S3_sparse_038_padlock",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "038_padlock",
+            "family": "挂锁",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "038_padlock",
+            "family": "挂锁",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0075_S3_sparse_073-c_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-c_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-c_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          }
+        },
+        {
+          "id": "T0077_S1_open_024_bowl",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "024_bowl",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "024_bowl",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0078_S2_edge_043_phillips_screwdriver",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "043_phillips_screwdriver",
+            "family": "螺丝刀",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "043_phillips_screwdriver",
+            "family": "螺丝刀",
+            "layout": "S2_edge"
+          }
+        },
+        {
+          "id": "T0081_S1_open_073-e_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-e_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-e_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0084_S4_clutter_073-g_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-g_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S4_clutter"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-g_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S4_clutter"
+          }
+        },
+        {
+          "id": "T0088_S4_clutter_002_master_chef_can",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "002_master_chef_can",
+            "family": "食品金属罐",
+            "layout": "S4_clutter"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "002_master_chef_can",
+            "family": "食品金属罐",
+            "layout": "S4_clutter"
+          }
+        },
+        {
+          "id": "T0093_S1_open_065-j_cups",
+          "control": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-j_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-j_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0095_S3_sparse_073-d_lego_duplo",
+          "control": {
+            "success": false,
+            "planning_success": false,
+            "reason": "no_feasible_native_post_or_recalled_candidate",
+            "selected_origin": null,
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": false,
+            "model_id": "073-d_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "073-d_lego_duplo",
+            "family": "乐高积木（所有部件变体）",
+            "layout": "S3_sparse"
+          }
+        }
+      ],
+      "losses": [
+        {
+          "id": "T0014_S2_edge_077_rubiks_cube",
+          "control": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "077_rubiks_cube",
+            "family": "魔方",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": false,
+            "planning_success": true,
+            "reason": "no_bilateral_target_contact",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "077_rubiks_cube",
+            "family": "魔方",
+            "layout": "S2_edge"
+          }
+        },
+        {
+          "id": "T0030_S2_edge_059_chain",
+          "control": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "059_chain",
+            "family": "链条",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "059_chain",
+            "family": "链条",
+            "layout": "S2_edge"
+          }
+        },
+        {
+          "id": "T0045_S1_open_024_bowl",
+          "control": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "024_bowl",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S1_open"
+          },
+          "C": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "024_bowl",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S1_open"
+          }
+        },
+        {
+          "id": "T0050_S2_edge_005_tomato_soup_can",
+          "control": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "005_tomato_soup_can",
+            "family": "食品金属罐",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": false,
+            "planning_success": true,
+            "reason": "approach_not_converged",
+            "selected_origin": "demonstration_object",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "005_tomato_soup_can",
+            "family": "食品金属罐",
+            "layout": "S2_edge"
+          }
+        },
+        {
+          "id": "T0070_S2_edge_065-e_cups",
+          "control": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-e_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S2_edge"
+          },
+          "C": {
+            "success": false,
+            "planning_success": true,
+            "reason": "approach_not_converged",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "065-e_cups",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S2_edge"
+          }
+        },
+        {
+          "id": "T0083_S3_sparse_025_mug",
+          "control": {
+            "success": true,
+            "planning_success": true,
+            "reason": "success",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "025_mug",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S3_sparse"
+          },
+          "C": {
+            "success": false,
+            "planning_success": true,
+            "reason": "insufficient_hold_height",
+            "selected_origin": "zerograsp",
+            "service_order_checked": true,
+            "planning_consumed_refined_pose": true,
+            "model_id": "025_mug",
+            "family": "餐具容器（杯碗盘壶及盖）",
+            "layout": "S3_sparse"
+          }
+        }
+      ],
+      "gain_selected_origins": {
+        "demonstration_patch": 5,
+        "demonstration_object": 14,
+        "zerograsp": 3
+      },
+      "gain_control_failure_reasons": {
+        "no_feasible_native_post_or_recalled_candidate": 14,
+        "insufficient_hold_height": 6,
+        "no_bilateral_target_contact": 1,
+        "lift_not_converged": 1
+      },
+      "gain_unique_models": 18,
+      "gain_unique_categories": 10,
+      "newly_plannable": {
+        "cases": 27,
+        "successes": 14,
+        "origins": {
+          "demonstration_patch": 9,
+          "demonstration_object": 18
+        },
+        "failure_reasons": {
+          "no_bilateral_target_contact": 3,
+          "insufficient_hold_height": 7,
+          "approach_not_converged": 2,
+          "close_not_converged": 1
+        }
+      },
+      "shared_plannable": {
+        "cases": 67,
+        "control_successes": 47,
+        "C_successes": 49
+      },
+      "lost_plannability": []
+    }
+  },
+  "C_selected_origins": {
+    "demonstration_patch": {
+      "planned": 14,
+      "successes": 8
+    },
+    "zerograsp": {
+      "planned": 51,
+      "successes": 38
+    },
+    "demonstration_object": {
+      "planned": 29,
+      "successes": 17
+    }
+  },
+  "hold_failure_diagnosis": {
+    "cases": 19,
+    "all_robot_lift_and_hold_stages_settled": true,
+    "all_object_peaks_below_registered_1cm_threshold": true,
+    "median_lift_tool_position_error_mm": 0.09517771582087645,
+    "near_threshold_hold_min_9_to_10mm": 2,
+    "cases_detail": [
+      {
+        "id": "T0003_S3_sparse_033_spatula",
+        "minimum_hold_lift_m": 0.0032323021441698074,
+        "peak_lift_or_hold_m": 0.0032337401062250137,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 0.00020997490954841725
+      },
+      {
+        "id": "T0007_S3_sparse_010_potted_meat_can",
+        "minimum_hold_lift_m": 0.009239520877599716,
+        "peak_lift_or_hold_m": 0.009367004036903381,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 0.0004886451436368551
+      },
+      {
+        "id": "T0015_S3_sparse_031_spoon",
+        "minimum_hold_lift_m": -1.0710209608078003e-06,
+        "peak_lift_or_hold_m": 0.006604590453207493,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 1.4026473308778766e-05
+      },
+      {
+        "id": "T0019_S3_sparse_062_dice",
+        "minimum_hold_lift_m": 3.520399332046509e-07,
+        "peak_lift_or_hold_m": 0.00014679692685604095,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 3.723749607935276e-06
+      },
+      {
+        "id": "T0022_S2_edge_032_knife",
+        "minimum_hold_lift_m": -2.062879502773285e-07,
+        "peak_lift_or_hold_m": 0.004973158705979586,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 1.629429291754585e-06
+      },
+      {
+        "id": "T0025_S1_open_042_adjustable_wrench",
+        "minimum_hold_lift_m": -1.1781230568885803e-07,
+        "peak_lift_or_hold_m": 5.424953997135162e-07,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 2.4481726179108224e-05
+      },
+      {
+        "id": "T0030_S2_edge_059_chain",
+        "minimum_hold_lift_m": -8.102506399154663e-08,
+        "peak_lift_or_hold_m": 5.335547029972076e-06,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 2.3363540406610486e-05
+      },
+      {
+        "id": "T0036_S4_clutter_007_tuna_fish_can",
+        "minimum_hold_lift_m": 5.4016709327697754e-08,
+        "peak_lift_or_hold_m": 0.0031451815739274025,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 0.0001253726164485027
+      },
+      {
+        "id": "T0039_S3_sparse_037_scissors",
+        "minimum_hold_lift_m": -6.174668669700623e-07,
+        "peak_lift_or_hold_m": 4.121847450733185e-05,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 0.0001298201211745941
+      },
+      {
+        "id": "T0045_S1_open_024_bowl",
+        "minimum_hold_lift_m": 0.009804978966712952,
+        "peak_lift_or_hold_m": 0.009805753827095032,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 0.0005465234371112269
+      },
+      {
+        "id": "T0046_S2_edge_070-b_colored_wood_blocks",
+        "minimum_hold_lift_m": 7.972121238708496e-07,
+        "peak_lift_or_hold_m": 0.0026926659047603607,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 5.3961607359073685e-06
+      },
+      {
+        "id": "T0063_S3_sparse_019_pitcher_base",
+        "minimum_hold_lift_m": 0.002720192074775696,
+        "peak_lift_or_hold_m": 0.002738088369369507,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 9.517771582087645e-05
+      },
+      {
+        "id": "T0067_S3_sparse_051_large_clamp",
+        "minimum_hold_lift_m": -0.0003306698054075241,
+        "peak_lift_or_hold_m": 0.0033294204622507095,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 6.136037907640579e-06
+      },
+      {
+        "id": "T0072_S4_clutter_033_spatula",
+        "minimum_hold_lift_m": 0.004409248009324074,
+        "peak_lift_or_hold_m": 0.0044107865542173386,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 0.0002216751474244811
+      },
+      {
+        "id": "T0083_S3_sparse_025_mug",
+        "minimum_hold_lift_m": -2.7194619178771973e-07,
+        "peak_lift_or_hold_m": 1.1108815670013428e-05,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 0.00032350311553503363
+      },
+      {
+        "id": "T0085_S1_open_052_extra_large_clamp",
+        "minimum_hold_lift_m": 0.0066590625792741776,
+        "peak_lift_or_hold_m": 0.006659366190433502,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 0.0002173649120156151
+      },
+      {
+        "id": "T0089_S1_open_037_scissors",
+        "minimum_hold_lift_m": -5.876645445823669e-07,
+        "peak_lift_or_hold_m": 3.3085234463214874e-05,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 1.5729647537903728e-05
+      },
+      {
+        "id": "T0096_S4_clutter_040_large_marker",
+        "minimum_hold_lift_m": -8.316710591316223e-07,
+        "peak_lift_or_hold_m": 0.009495574049651623,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 1.3006006186393798e-05
+      },
+      {
+        "id": "T0097_S1_open_036_wood_block",
+        "minimum_hold_lift_m": 0.004071064293384552,
+        "peak_lift_or_hold_m": 0.004834026098251343,
+        "lift_settled": true,
+        "hold_settled": true,
+        "lift_tool_position_error_m": 0.0003726681428844298
+      }
+    ]
+  },
+  "remaining_planning_failures": [
+    {
+      "id": "T0004_S4_clutter_032_knife",
+      "model_id": "032_knife",
+      "final_candidates": 1,
+      "rejections": {
+        "grasp_ik": 1,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "id": "T0027_S3_sparse_040_large_marker",
+      "model_id": "040_large_marker",
+      "final_candidates": 6,
+      "rejections": {
+        "grasp_ik": 6,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "id": "T0029_S1_open_030_fork",
+      "model_id": "030_fork",
+      "final_candidates": 2,
+      "rejections": {
+        "grasp_ik": 2,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "id": "T0059_S3_sparse_044_flat_screwdriver",
+      "model_id": "044_flat_screwdriver",
+      "final_candidates": 4,
+      "rejections": {
+        "grasp_ik": 4,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "id": "T0094_S2_edge_036_wood_block",
+      "model_id": "036_wood_block",
+      "final_candidates": 14,
+      "rejections": {
+        "grasp_ik": 13,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 1,
+        "path": 0,
+        "optimizer": 0
+      }
+    },
+    {
+      "id": "T0100_S4_clutter_030_fork",
+      "model_id": "030_fork",
+      "final_candidates": 1,
+      "rejections": {
+        "grasp_ik": 1,
+        "closed_collision": 0,
+        "pre_or_lift_ik": 0,
+        "path": 0,
+        "optimizer": 0
+      }
+    }
+  ],
+  "remaining_planning_failure_note": "grasp_ik combines fixed-pose IK/scene-collision rejection; finite search failure does not prove mathematical unreachability.",
+  "exploratory_excluding_lego": {
+    "scenes": 87,
+    "successes": {
+      "A_zerograsp": 41,
+      "B_graspcl_no_experience": 41,
+      "C_graspcl_experience50": 50
+    },
+    "success_rates": {
+      "A_zerograsp": 0.47126436781609193,
+      "B_graspcl_no_experience": 0.47126436781609193,
+      "C_graspcl_experience50": 0.5747126436781609
+    },
+    "C_minus_B_percentage_points": 10.344827586206895,
+    "scope": "Posthoc descriptive concentration check only; not a new preregistered significance test."
+  },
+  "interpretation_limits": [
+    "The full added-experience chain changes recall proposals and ranking together; this run does not isolate their individual causal contributions.",
+    "Same held-out scene recipes and cached observations were reused for correction; this is not a fresh blind test.",
+    "The 27 newly plannable cases are a harder selected cohort; do not attribute a lower overall conditional success rate to worse grasp quality without paired comparison."
+  ],
+  "protected_inputs_unchanged": true
+}

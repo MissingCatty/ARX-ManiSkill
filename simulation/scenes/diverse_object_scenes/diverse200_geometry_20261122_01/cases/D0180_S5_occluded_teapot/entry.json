@@ -1,0 +1,154 @@
+{
+  "id": "D0180_S5_occluded_teapot",
+  "model_id": "robocasa__teapot__teapot_10",
+  "semantic_class": "teapot",
+  "family": "teapot",
+  "target_text": "teapot",
+  "layout": "S5_occluded",
+  "seed": 2056754192,
+  "actor_identities": [
+    {
+      "name": "target",
+      "model_id": "robocasa__teapot__teapot_10"
+    },
+    {
+      "name": "distractor_00",
+      "model_id": "robocasa__bottled_water__bottled_water_10"
+    },
+    {
+      "name": "distractor_01",
+      "model_id": "robocasa__carrot__carrot_1"
+    },
+    {
+      "name": "distractor_02",
+      "model_id": "ai2thor__keychain__Keychain_1"
+    },
+    {
+      "name": "distractor_03",
+      "model_id": "robocasa__orange__orange_1"
+    }
+  ],
+  "scene": {
+    "layout": "S5_occluded",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__teapot__teapot_10",
+        "pose": [
+          -0.20537260174751282,
+          0.2202940434217453,
+          0.035060569643974304,
+          0.07779586315155029,
+          8.26504547148943e-05,
+          9.954925189958885e-05,
+          -0.9969693422317505
+        ]
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__bottled_water__bottled_water_10",
+        "pose": [
+          -0.3649648427963257,
+          0.2055472880601883,
+          0.07989978045225143,
+          0.7070866227149963,
+          0.0003557293675839901,
+          -0.00011097704555140808,
+          0.707126796245575
+        ]
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__carrot__carrot_1",
+        "pose": [
+          -0.545344352722168,
+          0.2550414204597473,
+          0.013999272137880325,
+          0.9788843393325806,
+          6.837397813796997e-05,
+          -0.00029688625363633037,
+          0.20441554486751556
+        ]
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "ai2thor__keychain__Keychain_1",
+        "pose": [
+          -0.1558508425951004,
+          0.41252827644348145,
+          0.0022654361091554165,
+          0.43276247382164,
+          -2.8849579393863678e-05,
+          6.80581433698535e-06,
+          -0.9015081524848938
+        ]
+      },
+      {
+        "name": "distractor_03",
+        "model_id": "robocasa__orange__orange_1",
+        "pose": [
+          -0.3943465054035187,
+          0.009983763098716736,
+          0.02413034625351429,
+          0.5107911825180054,
+          -0.0004438888281583786,
+          0.0015182187780737877,
+          0.8597034215927124
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 1756,
+    "isolated_mask_pixels": 2253,
+    "occlusion_fraction": 0.22059476253883714,
+    "projected_bbox_uv": [
+      [
+        290.67425363851083,
+        167.37015399556725
+      ],
+      [
+        378.37306164613864,
+        237.00623702633186
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.71,
+    "visible_pixels": 1756,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "observation": null,
+  "physical_grasp_attempts": 0
+}

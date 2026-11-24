@@ -1,0 +1,7 @@
+{
+  "local_first": true,
+  "reserve_bytes": 1073741824,
+  "fallback_root": "/coolas/data",
+  "source": "AGENTS.md storage policy, user updated 2026-10-22",
+  "historical_snapshot": "runs/research_contract_20261019/storage_policy.json absent; not verified"
+}

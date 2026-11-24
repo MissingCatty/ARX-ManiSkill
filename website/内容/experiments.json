@@ -1,0 +1,580 @@
+{
+  "policy": {
+    "newVersions": "explicit-user-request-only",
+    "minorChanges": "edit-existing-version",
+    "repeatRuns": "append-batch",
+    "numbering": "V1-Vn"
+  },
+  "experiments": [
+    {
+      "id": "baseline",
+      "objective": "从目标观测生成抓取候选，经 cuRobo 检查可达性和碰撞，再闭合与抬升。",
+      "current": "V1",
+      "iterations": [
+        {
+          "code": "V1",
+          "parent": null,
+          "sourceId": "baseline",
+          "title": "原生后处理与实际桌面检查",
+          "date": "2026-11-18",
+          "status": "200 例已验证",
+          "resultSummary": "规划133/200；抓取成功105/200（52.5%）",
+          "change": "腕部 RGB-D → ZeroGrasp 原生后处理 → 插入截断 → cuRobo → ARX 抓取与短抬升",
+          "pipeline": "腕部 RGB-D → ZeroGrasp 原生后处理 → 插入截断 → cuRobo → ARX 抓取与短抬升",
+          "scenes": "200个登记场景，五类布局各40个。",
+          "settings": [
+            [
+              "候选",
+              "ZeroGrasp原生后处理；按实际开爪几何检查过深插入。"
+            ],
+            [
+              "规划",
+              "固定候选朝向，检查抓取、接近、抬升及路径。"
+            ],
+            [
+              "成功判定",
+              "目标抬升3 cm；实际抬高至少1 cm并保持3秒，满足原双指、收敛与接触检查。"
+            ]
+          ],
+          "authorization": {
+            "kind": "initial-registration",
+            "request": "用户要求建立实验主页与内部版本；可达性改进内四个已有方案按并列关系归档，CLARO归入遮挡情况处理。"
+          },
+          "batches": [
+            {
+              "id": "arx_physical_table_parallel_20261118_01",
+              "title": "200例原生抓取对照",
+              "date": "2026-11-18",
+              "status": "已完成",
+              "summary": "规划133/200；抓取成功105/200（52.5%）",
+              "outputs": [
+                "ManiSkill/outputs/arx_physical_table_parallel_20261118_01/zerograsp/"
+              ],
+              "artifacts": [
+                {
+                  "label": "逐布局与失败分布",
+                  "url": "/results/#benchmark"
+                },
+                {
+                  "label": "实际抓取录像",
+                  "url": "/media/baseline-demo.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sam3-graspgenx",
+      "objective": "以头部SAM3、RaySt3R目标点云补全、GraspGenX和cuRobo完成ARX抓取，分版本记录完整链路、距离与夹指近桌抓取的改进。",
+      "current": "V2",
+      "iterations": [
+        {
+          "code": "V1",
+          "parent": null,
+          "sourceId": "sam3-graspgenx",
+          "title": "头部SAM3＋RaySt3R＋GraspGenX抓取基线",
+          "date": "2026-11-23",
+          "status": "旧配置产物已清理",
+          "resultSummary": "旧配置的抓取结果、距离分析与录像已清理。",
+          "change": "接入头部语义分割、点云补全、原生抓姿和cuRobo；修复接触弹飞与模型夹爪参考系。",
+          "pipeline": "头部D405 RGB-D → SAM3目标掩码 → RaySt3R目标点云补全 → GraspGenX原生GraspMoE候选与评分 → cuRobo六轴规划 → ARX接近、闭合、抬升与保持",
+          "scenes": "保留当前独立采样200场景，旧测试批次已删除。",
+          "settings": [
+            [
+              "状态",
+              "旧配置与相应产物已清理，当前设置见V2。"
+            ]
+          ],
+          "authorization": {
+            "kind": "initial-registration",
+            "request": "用户要求建立实验主页与内部版本；可达性改进内四个已有方案按并列关系归档，CLARO归入遮挡情况处理。"
+          },
+          "batches": [],
+          "contentFile": "sam3-graspgenx-v1.md",
+          "reportLayout": true,
+          "archived": true,
+          "archiveReason": "按用户要求清理旧碰撞球配置及对应测试产物。"
+        },
+        {
+          "code": "V2",
+          "parent": "V1",
+          "sourceId": "sam3-graspgenx",
+          "title": "距离与夹指近桌抓取改进",
+          "date": "2026-11-23",
+          "status": "最新配置已统一并核验",
+          "resultSummary": "871球实际加载、四种夹爪状态与当前场景预检通过；实际抓取0次。",
+          "change": "统一200场景、D405头部向下45°、TCP43、升降45.2厘米、871碰撞球与1毫米物理接触偏移。",
+          "pipeline": "头部D405 → SAM3 → RaySt3R → GraspGenX → cuRobo（871球）→ ARX抓取",
+          "scenes": "40类、80型号、五种布局各40例，合计200例。",
+          "settings": [
+            [
+              "场景",
+              "独立随机采样200例，保持冻结摆放。"
+            ],
+            [
+              "感知",
+              "头部D405，640×480，向下45°。"
+            ],
+            [
+              "机器人",
+              "升降固定45.2厘米，右臂六轴；动作TCP为43毫米。"
+            ],
+            [
+              "碰撞模型",
+              "八个右臂连杆共871球，开合状态使用实测手指关节。"
+            ],
+            [
+              "物理",
+              "120Hz物理、40Hz控制，接触偏移1毫米。"
+            ],
+            [
+              "成功标准",
+              "目标抬升3厘米，实际至少抬高1厘米并保持3秒，满足双指接触等原检查。"
+            ],
+            [
+              "当前进度",
+              "配置核验完成，下一批实际抓取待登记。"
+            ]
+          ],
+          "contentFile": "sam3-graspgenx-v2.md",
+          "reportLayout": true,
+          "authorization": {
+            "kind": "explicit-user-request",
+            "request": "2026-11-23用户先要求V2承接距离问题，随后明确要求将夹指尖端与桌面微小接触余量改进作为V2。",
+            "history": [
+              "将当前链路与200例结果登记到V1，距离测试作为问题分析，准备推进V2。",
+              "用户提出允许夹爪尖端与桌面微小碰撞，并明确：这个改进作为V2版本。"
+            ]
+          },
+          "batches": []
+        }
+      ]
+    },
+    {
+      "id": "pointcloud-models",
+      "objective": "用50个桌面场景比较五种方法，看哪种方法重建物体更准确、处理更快，以及换成不同款式后表现怎样。",
+      "current": "V1",
+      "iterations": [
+        {
+          "code": "V1",
+          "parent": null,
+          "sourceId": "pointcloud-models",
+          "title": "五种点云生成方法的50场景对照",
+          "date": "2026-11-22",
+          "status": "250项已完成",
+          "resultSummary": "250/250项完成；243项生成模型，7项无三维表面",
+          "change": "头部 RGB-D＋SAM3 → 五种重建方法 → 深度配准 → 几何质量与耗时评测",
+          "pipeline": "头部 RGB-D＋SAM3 → 五种重建方法 → 深度配准 → 几何质量与耗时评测",
+          "scenes": "10类物体，每类5款，共50个场景；五种方法各50项，共250项。",
+          "settings": [
+            [
+              "输入",
+              "同一组头部RealSense D405观测与SAM3目标掩码，640×480，向下倾斜45°。"
+            ],
+            [
+              "方法",
+              "ZeroGrasp、RaySt3R、Hunyuan3D-2mini-Turbo、Hunyuan3D-2-Turbo、SPAR3D。"
+            ],
+            [
+              "运行",
+              "同一张RTX4090，每种模型加载后连续处理50个场景。"
+            ],
+            [
+              "指标",
+              "三维表面生成、形状误差、形状匹配得分与处理耗时。"
+            ]
+          ],
+          "authorization": {
+            "kind": "initial-registration",
+            "request": "用户要求建立实验主页与内部版本；可达性改进内四个已有方案按并列关系归档，CLARO归入遮挡情况处理。"
+          },
+          "batches": [
+            {
+              "id": "five_methods_50_20261122_01",
+              "title": "50场景五方法重建对照",
+              "date": "2026-11-22",
+              "status": "已完成",
+              "summary": "250/250项完成；243项生成模型，7项无三维表面",
+              "outputs": [
+                "ARX-SAM3-GraspGenX/experiments/pointcloud_benchmark/runs/five_methods_50_20261122_01/"
+              ],
+              "artifacts": [
+                {
+                  "label": "完整设置",
+                  "url": "/media/pointcloud-registration.json"
+                },
+                {
+                  "label": "汇总数据",
+                  "url": "/media/pointcloud-summary.json"
+                },
+                {
+                  "label": "逐项结果",
+                  "url": "/media/pointcloud-case-metrics.csv"
+                },
+                {
+                  "label": "核验",
+                  "url": "/media/pointcloud-verification.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mpc",
+      "objective": "在 GraspCL 分支上开放末端朝向搜索，接入 MPC 跟踪与腕部精调。",
+      "current": "V1",
+      "iterations": [
+        {
+          "code": "V1",
+          "parent": null,
+          "sourceId": "mpc",
+          "title": "朝向搜索与 MPC 跟踪",
+          "date": "2026-11-19",
+          "status": "已封存",
+          "resultSummary": "规划177/200；抓取成功120/200（60.0%）",
+          "change": "ZeroGrasp＋GraspCL → 全局规划 → MPC 跟踪与腕部精调 → 抓取与短抬升",
+          "pipeline": "ZeroGrasp＋GraspCL → 全局规划 → MPC 跟踪与腕部精调 → 抓取与短抬升",
+          "scenes": "与固定朝向GraspCL版本相同的200个场景。",
+          "settings": [
+            [
+              "候选与经验",
+              "沿用GraspCL候选来源与冻结示教库。"
+            ],
+            [
+              "组合改动",
+              "开放朝向搜索，并接入观察、预抓取和接近段MPC跟踪及近场腕部精调。"
+            ],
+            [
+              "成功判定",
+              "沿用3 cm计划抬升及至少1 cm保持3秒的原物理判定。"
+            ]
+          ],
+          "authorization": {
+            "kind": "initial-registration",
+            "request": "用户要求建立实验主页与内部版本；可达性改进内四个已有方案按并列关系归档，CLARO归入遮挡情况处理。"
+          },
+          "batches": [
+            {
+              "id": "arx_graspcl_mpc_200_20261119_03",
+              "title": "200例MPC对照",
+              "date": "2026-11-19",
+              "status": "已完成",
+              "summary": "规划177/200；抓取成功120/200（60.0%）",
+              "outputs": [
+                "ManiSkill/outputs/arx_graspcl_mpc_200_20261119_03/"
+              ],
+              "artifacts": [
+                {
+                  "label": "200例结果",
+                  "url": "/results/#benchmark"
+                },
+                {
+                  "label": "实际抓取录像",
+                  "url": "/media/mpc-demo.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reachability-improvement",
+      "objective": "比较候选扩充、固定高度、升降与手臂联合规划，以及先升降后固定高度抓取对可达性与实际成功的影响。",
+      "current": "V5",
+      "relation": "parallel",
+      "iterations": [
+        {
+          "code": "V1",
+          "parent": null,
+          "sourceId": "graspcl",
+          "title": "GraspCL 候选召回与重评分",
+          "date": "2026-11-18",
+          "status": "200 例已验证",
+          "resultSummary": "规划167/200；抓取成功127/200（63.5%）",
+          "change": "ZeroGrasp → 冻结示教召回与评分 → 插入截断与cuRobo检查 → ARX",
+          "pipeline": "ZeroGrasp → 冻结示教召回与评分 → 插入截断与cuRobo检查 → ARX",
+          "scenes": "200个登记场景，五类布局各40个。",
+          "settings": [
+            [
+              "经验库",
+              "原开发集12条成功示教和13条失败反馈，正式200例期间冻结。"
+            ],
+            [
+              "规划",
+              "固定候选朝向，无MPC，保留实际桌面、开爪与路径检查。"
+            ],
+            [
+              "成功判定",
+              "目标抬升3 cm；实际抬高至少1 cm并保持3秒，满足双指接触与原动作检查。"
+            ]
+          ],
+          "authorization": {
+            "kind": "initial-registration",
+            "request": "用户要求建立实验主页与内部版本；可达性改进内四个已有方案按并列关系归档，CLARO归入遮挡情况处理。"
+          },
+          "batches": [
+            {
+              "id": "arx_physical_table_parallel_20261118_01",
+              "title": "200例GraspCL对照",
+              "date": "2026-11-18",
+              "status": "已完成",
+              "summary": "规划167/200；抓取成功127/200（63.5%）",
+              "outputs": [
+                "ManiSkill/outputs/arx_physical_table_parallel_20261118_01/graspcl/"
+              ],
+              "artifacts": [
+                {
+                  "label": "逐布局与失败分布",
+                  "url": "/results/#benchmark"
+                },
+                {
+                  "label": "实际抓取录像",
+                  "url": "/media/graspcl-demo.mp4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "V2",
+          "parent": null,
+          "sourceId": "lift452",
+          "title": "固定45.2 cm高度抓取",
+          "date": "2026-11-21",
+          "status": "160例已核查",
+          "resultSummary": "规划通过153/160（95.6%）；抓取成功111/160（69.4%）",
+          "change": "将升降关节的初始读数设为45.2 cm，抓取过程中保持这个高度，由右臂六个关节完成接近、闭爪和抬升。",
+          "pipeline": "腕部彩色和深度图 → ZeroGrasp候选与原生后处理 → cuRobo右臂规划 → 接近、闭爪、抬升并保持物体。",
+          "scenes": "开阔桌面、靠近桌边、稀疏混放、中度杂乱各40个，共160个场景。",
+          "settings": [
+            [
+              "升降高度",
+              "升降关节读数固定为45.2 cm，桌面高50 cm；这个读数表示升降位置。"
+            ],
+            [
+              "参与规划的关节",
+              "右臂六个关节，升降和底盘在抓取过程中固定。"
+            ],
+            [
+              "测试场景",
+              "开阔桌面、靠近桌边、稀疏混放、中度杂乱各40个，共160个场景。"
+            ],
+            [
+              "观测与候选",
+              "每个场景重新拍摄腕部彩色和深度图，使用ZeroGrasp原生后处理候选。"
+            ],
+            [
+              "接近与抬升",
+              "预抓取点距抓取点8 cm，计划抬升3 cm；夹爪动作参考点沿末端前向偏移43 mm，记为TCP43。"
+            ],
+            [
+              "成功条件",
+              "物体实际抬高至少1 cm并保持3秒，两侧手指接触物体，动作到位且接触检查通过。"
+            ]
+          ],
+          "authorization": {
+            "kind": "explicit-user-request",
+            "request": "用户要求建立实验主页与内部版本；可达性改进内四个已有方案按并列关系归档，CLARO归入遮挡情况处理。"
+          },
+          "batches": [
+            {
+              "id": "arx_graspcl_compat160_20261120_01",
+              "title": "固定45.2 cm高度抓取：160场景记录",
+              "date": "2026-11-21",
+              "status": "160例已核查",
+              "summary": "规划通过153/160（95.6%）；抓取成功111/160（69.4%）",
+              "outputs": [
+                "ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp"
+              ],
+              "artifacts": [
+                {
+                  "label": "本管线统计与核查来源",
+                  "url": "/media/reachability-fixed-height-native.json"
+                }
+              ]
+            }
+          ],
+          "contentFile": "reachability-v2-native.md",
+          "reportLayout": true,
+          "resultScope": "zerograsp-curobo-only"
+        },
+        {
+          "code": "V3",
+          "parent": null,
+          "sourceId": "joint7",
+          "title": "升降与右臂联合规划",
+          "date": "2026-11-21",
+          "status": "159例已核查，1例未执行",
+          "resultSummary": "规划通过152/160（95.0%）；抓取成功116/160（72.5%）",
+          "change": "让升降关节和右臂一起规划到预抓取点。到达后固定升降高度，再由右臂靠近物体、闭爪并抬起。",
+          "pipeline": "腕部彩色和深度图 → ZeroGrasp候选与原生后处理 → 升降与右臂联合规划 → 固定高度完成抓取。",
+          "scenes": "开阔桌面、靠近桌边、稀疏混放、中度杂乱各40个，共160个场景。",
+          "settings": [
+            [
+              "起始高度",
+              "升降关节从45.2 cm开始，底盘固定。"
+            ],
+            [
+              "参与规划的关节",
+              "升降关节与右臂六个关节共同规划到预抓取点，共七个自由度。"
+            ],
+            [
+              "靠近物体后",
+              "固定规划选定的高度，由右臂完成最后接近、闭爪和短距离抬升。"
+            ],
+            [
+              "测试场景",
+              "开阔桌面、靠近桌边、稀疏混放、中度杂乱各40个，共160个场景。"
+            ],
+            [
+              "观测与候选",
+              "每个场景重新拍摄腕部彩色和深度图，使用ZeroGrasp原生后处理候选。"
+            ],
+            [
+              "接近与抬升",
+              "预抓取点距抓取点8 cm，计划抬升3 cm；夹爪动作参考点沿末端前向偏移43 mm，记为TCP43。"
+            ],
+            [
+              "成功条件",
+              "物体实际抬高至少1 cm并保持3秒，两侧手指接触物体，动作到位且接触检查通过。"
+            ]
+          ],
+          "authorization": {
+            "kind": "explicit-user-request",
+            "request": "用户要求建立实验主页与内部版本；可达性改进内四个已有方案按并列关系归档，CLARO归入遮挡情况处理。"
+          },
+          "batches": [
+            {
+              "id": "arx_joint7_pair_20261121_03",
+              "title": "升降与右臂联合规划：160场景记录",
+              "date": "2026-11-21",
+              "status": "159例已核查，1例未执行",
+              "summary": "规划通过152/160（95.0%）；抓取成功116/160（72.5%）",
+              "outputs": [
+                "ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp"
+              ],
+              "artifacts": [
+                {
+                  "label": "本管线统计与核查来源",
+                  "url": "/media/reachability-lift-arm-native.json"
+                }
+              ]
+            }
+          ],
+          "contentFile": "reachability-v3-native.md",
+          "reportLayout": true,
+          "resultScope": "zerograsp-curobo-only",
+          "archived": true,
+          "archiveReason": "升降与手臂同步运动需要处理执行响应差异，还会带动另一条臂和头部相机；后续先验证升降到位后固定高度抓取的串行方案。"
+        },
+        {
+          "code": "V5",
+          "parent": null,
+          "sourceId": "lift-serial",
+          "title": "先升降、固定高度抓取",
+          "date": "2026-11-22",
+          "status": "方案待验证",
+          "resultSummary": "执行方案已建立，抓取结果待验证。",
+          "change": "先安全停靠，再单独调整升降高度；到位停稳后重新观察，固定升降位置完成右臂抓取。",
+          "pipeline": "安全停靠 → 选定高度并单独升降 → 到位停稳 → 重新观察 → 固定高度规划与抓取",
+          "scenes": "计划与固定高度方案使用相同的桌面布局，正式场景与运行批次待登记。",
+          "settings": [
+            [
+              "执行方式",
+              "升降和右臂分段执行，每段通过实际状态检查后再进入下一段。"
+            ],
+            [
+              "升降阶段",
+              "手臂保持安全停靠姿态，检查双臂、头部和躯干整个升降过程的碰撞。"
+            ],
+            [
+              "抓取阶段",
+              "重新获取当前图像和相机外参，固定升降位置，用ZeroGrasp＋cuRobo完成抓取。"
+            ],
+            [
+              "成功判定",
+              "沿用3 cm计划抬升，以及至少1 cm保持3秒、双指接触和原动作检查。"
+            ]
+          ],
+          "authorization": {
+            "kind": "explicit-user-request",
+            "request": "用户要求归档升降关节同步联合规划，保留页面和入口并在版本树标注；新建升降＋固定高度抓取的串行实验版本。"
+          },
+          "batches": [],
+          "contentFile": "lift-serial-fixed-grasp.md",
+          "reportLayout": true,
+          "resultScope": "zerograsp-curobo-only"
+        }
+      ]
+    },
+    {
+      "id": "occlusion-handling",
+      "objective": "处理直接抓取受到遮挡或路径阻挡的场景，逐阶段核验移障、重新观测与原目标重抓。",
+      "current": "V1",
+      "iterations": [
+        {
+          "code": "V1",
+          "parent": null,
+          "sourceId": "claro",
+          "title": "CLARO 移障与重抓",
+          "date": "2026-11-18",
+          "status": "固定挡物已验证",
+          "resultSummary": "1/13场景完成原目标重抓",
+          "change": "腕部观测 → 检查直接抓取 → 视觉选挡与定位 → 移障 → 重新观测 → 重抓原目标",
+          "pipeline": "腕部观测 → 检查直接抓取 → 视觉选挡与定位 → 移障 → 重新观测 → 重抓原目标",
+          "scenes": "13个原直接抓取失败的部分遮挡场景，固定挡物配对。",
+          "settings": [
+            [
+              "目标",
+              "先处理一个挡物，再重新观察并抓取原目标。"
+            ],
+            [
+              "选挡与定位",
+              "视觉场景图与SAM3定位分别保存验证记录；固定挡物批次使用原登记挡物。"
+            ],
+            [
+              "验收",
+              "区分挡物抓取、落稳、撤离、重新观测和原目标重抓各阶段。"
+            ]
+          ],
+          "authorization": {
+            "kind": "initial-registration",
+            "request": "用户要求建立实验主页与内部版本；可达性改进内四个已有方案按并列关系归档，CLARO归入遮挡情况处理。"
+          },
+          "batches": [
+            {
+              "id": "fixed-blocker-pair-13",
+              "title": "13例固定挡物配对",
+              "date": "2026-11-18",
+              "status": "已完成",
+              "summary": "1/13场景完成原目标重抓",
+              "outputs": [
+                "CLARO-ARX/docs/06_做配对验证/resources/S5_固定挡物配对01/",
+                "CLARO-ARX/docs/06_做配对验证/resources/S5_固定挡物接续01/"
+              ],
+              "artifacts": [
+                {
+                  "label": "13例结果",
+                  "url": "/results/#cases"
+                },
+                {
+                  "label": "阶段记录",
+                  "url": "/iterations/v0.4/"
+                },
+                {
+                  "label": "成功案例录像",
+                  "url": "/media/i0069-regrasp.mp4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

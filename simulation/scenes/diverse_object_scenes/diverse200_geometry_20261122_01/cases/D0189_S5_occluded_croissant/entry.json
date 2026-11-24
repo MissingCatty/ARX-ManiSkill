@@ -1,0 +1,154 @@
+{
+  "id": "D0189_S5_occluded_croissant",
+  "model_id": "robocasa__croissant__croissant_0",
+  "semantic_class": "croissant",
+  "family": "croissant",
+  "target_text": "croissant",
+  "layout": "S5_occluded",
+  "seed": 1312356917,
+  "actor_identities": [
+    {
+      "name": "target",
+      "model_id": "robocasa__croissant__croissant_0"
+    },
+    {
+      "name": "distractor_00",
+      "model_id": "robocasa__bottled_water__bottled_water_10"
+    },
+    {
+      "name": "distractor_01",
+      "model_id": "robocasa__bell_pepper__bell_pepper_1"
+    },
+    {
+      "name": "distractor_02",
+      "model_id": "robocasa__orange__orange_1"
+    },
+    {
+      "name": "distractor_03",
+      "model_id": "robocasa__tomato__tomato_1"
+    }
+  ],
+  "scene": {
+    "layout": "S5_occluded",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__croissant__croissant_0",
+        "pose": [
+          -0.3370705842971802,
+          -0.11600709706544876,
+          0.020658984780311584,
+          0.9159955382347107,
+          2.3311004042625427e-06,
+          5.573529051616788e-07,
+          -0.401188462972641
+        ]
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__bottled_water__bottled_water_10",
+        "pose": [
+          -0.43668150901794434,
+          0.0061117131263017654,
+          0.07990101724863052,
+          -0.0453302338719368,
+          0.0002966150641441345,
+          0.00019342810264788568,
+          0.9989719986915588
+        ]
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__bell_pepper__bell_pepper_1",
+        "pose": [
+          -0.13449056446552277,
+          0.12580163776874542,
+          0.03784794732928276,
+          0.6393160820007324,
+          -4.743039608001709e-05,
+          -1.6067177057266235e-05,
+          -0.7689441442489624
+        ]
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "robocasa__orange__orange_1",
+        "pose": [
+          -0.1892196238040924,
+          -0.23178359866142273,
+          0.024130892008543015,
+          0.9933241605758667,
+          0.0009133853018283844,
+          0.0011677262373268604,
+          0.11534827202558517
+        ]
+      },
+      {
+        "name": "distractor_03",
+        "model_id": "robocasa__tomato__tomato_1",
+        "pose": [
+          -0.13281238079071045,
+          -0.13756220042705536,
+          0.028758876025676727,
+          0.6611367464065552,
+          -3.330409526824951e-05,
+          1.1833792086690664e-05,
+          -0.7502655386924744
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 2148,
+    "isolated_mask_pixels": 2719,
+    "occlusion_fraction": 0.210003677822729,
+    "projected_bbox_uv": [
+      [
+        476.4787657293218,
+        209.0285570175639
+      ],
+      [
+        603.905395828032,
+        304.22172356707074
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.624,
+    "visible_pixels": 2148,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "observation": null,
+  "physical_grasp_attempts": 0
+}

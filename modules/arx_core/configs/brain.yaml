@@ -1,0 +1,192 @@
+server:
+  host: "0.0.0.0"
+  port: 8004
+
+brain_llm:
+  model: "gpt-5.4-mini"
+  base_url_env: "BRAIN_LLM_BASE_URL"
+  api_key_env: "BRAIN_LLM_API_KEY"
+  timeout_sec: 60
+  json_mode: true
+
+evaluator_vlm:
+  model: "gpt-5.4-mini"
+  base_url_env: "EVALUATOR_VLM_BASE_URL"
+  api_key_env: "EVALUATOR_VLM_API_KEY"
+  timeout_sec: 90
+  min_pass_confidence: 0.75
+
+
+auto_point_vlm:
+  model: "gpt-5.4"
+  base_url_env: "EVALUATOR_VLM_BASE_URL"
+  api_key_env: "EVALUATOR_VLM_API_KEY"
+  timeout_sec: 90
+
+llm_profile_env: "BRAIN_LLM_PROFILE"
+llm_profiles:
+  gpt:
+    brain_llm:
+      model: "gpt-5.4-mini"
+      base_url_env: "BRAIN_LLM_BASE_URL"
+      api_key_env: "BRAIN_LLM_API_KEY"
+      timeout_sec: 60
+      json_mode: true
+      provider: "openai_compatible"
+      endpoint_path: "/v1/chat/completions"
+    evaluator_vlm:
+      model: "gpt-5.4-mini"
+      base_url_env: "EVALUATOR_VLM_BASE_URL"
+      api_key_env: "EVALUATOR_VLM_API_KEY"
+      timeout_sec: 90
+      min_pass_confidence: 0.75
+      provider: "openai_compatible"
+      endpoint_path: "/v1/chat/completions"
+    auto_point_vlm:
+      model: "gpt-5.4"
+      base_url_env: "EVALUATOR_VLM_BASE_URL"
+      api_key_env: "EVALUATOR_VLM_API_KEY"
+      timeout_sec: 90
+      provider: "openai_compatible"
+      endpoint_path: "/v1/chat/completions"
+  deepseek:
+    brain_llm:
+      model: "deepseek-v4-pro"
+      base_url_env: "DEEPSEEK_LLM_BASE_URL"
+      api_key_env: "DEEPSEEK_LLM_API_KEY"
+      timeout_sec: 120
+      json_mode: true
+      provider: "deepseek"
+      endpoint_path: "/v1/chat/completions"
+    evaluator_vlm:
+      model: "deepseek-flash"
+      base_url_env: "DEEPSEEK_VLM_BASE_URL"
+      api_key_env: "DEEPSEEK_VLM_API_KEY"
+      timeout_sec: 120
+      min_pass_confidence: 0.75
+      json_mode: true
+      provider: "deepseek"
+      endpoint_path: "/v1/chat/completions"
+    auto_point_vlm:
+      model: "deepseek-flash"
+      base_url_env: "DEEPSEEK_VLM_BASE_URL"
+      api_key_env: "DEEPSEEK_VLM_API_KEY"
+      timeout_sec: 120
+      json_mode: true
+      provider: "deepseek"
+      endpoint_path: "/v1/chat/completions"
+
+services:
+  arx_ops_base_url: "http://127.0.0.1:8001"
+  zerograsp_base_url: "http://127.0.0.1:8003"
+  langsam_base_url: "http://127.0.0.1:8002"
+  dualmap_base_url: "http://127.0.0.1:8005"
+
+operators:
+  get_status:
+    enabled: true
+    auto_point_prompt:
+      enabled: true
+      min_confidence: 0.6
+      max_points: 6
+  observe_local:
+    enabled: true
+    default_view_mode: "preset_sweep"
+    restore_observer: false
+    view_presets:
+      left:
+        name: "look_inward"
+        target_pose: [0.05, -0.10, 0.05, 0.0, 0.0, -0.50]
+      right:
+        name: "look_inward"
+        target_pose: [0.05, 0.10, 0.05, 0.0, 0.0, 0.50]
+  grasp_object:
+    enabled: true
+    mask_method: "langsam"
+    execute: true
+    execute_duration_sec: 10.0
+    timeout_sec: 600
+    return_home: false
+    post_grasp_action: "lift_ee"
+    post_grasp_lift_z_m: 0.10
+    post_grasp_lift_speed: 1.0
+    post_grasp_lift_timeout_sec: 8.0
+    home_speed: 2.5
+    home_timeout_sec: 15.0
+    home_close_gripper: true
+    home_gripper_close_duration_sec: 2.0
+  place_object:
+    enabled: true
+    default_place_height_offset_m: 0.10
+    default_release_height_offset_m: 0.02
+    default_retreat_z_m: 0.10
+    default_speed: 1.0
+    move_timeout_sec: 8.0
+    release_position_tolerance_m: 0.08
+    pre_place_position_tolerance_m: 0.08
+    open_gripper_duration_sec: 2.0
+    max_gripper_duration_sec: 5.0
+    max_arm_translation: 0.45
+    max_arm_speed: 2.5
+    arm_x_range: [0.0, 0.5]
+    arm_y_range: [-0.4, 0.4]
+    arm_z_range: [-0.3, 0.6]
+    tcp_gripper_x_m: 0.14
+  reposition_robot:
+    enabled: true
+    arm_x_range: [0.0, 0.5]
+    arm_y_range: [-0.4, 0.4]
+    arm_z_range: [-0.3, 0.6]
+    max_arm_translation: 0.65
+    max_arm_speed: 2.5
+    default_arm_speed: 0.8
+    max_arm_duration_sec: 15.0
+    arm_timeout_sec: 120.0
+    min_gripper: -3.2
+    max_gripper: 0.0
+    default_gripper_duration_sec: 2.0
+    max_gripper_duration_sec: 5.0
+    min_lift_height: 0.5
+    max_lift_height: 14.0
+    max_lift_delta: 2.0
+    lift_ramp_step: 0.001
+    max_linear_speed: 0.22
+    max_angular_speed: 0.4
+    max_chassis_duration_sec: 10.0
+  dualmap:
+    enabled: true
+    timeout_sec: 3600
+    execute: true
+
+operator_context:
+  enabled: false
+  calibration_path: "configs/calibration.yaml"
+  max_tool_calls_per_plan: 2
+  max_chars: 14000
+
+evaluator:
+  enabled: true
+  use_vlm: true
+  allow_pass_without_image: false
+
+orchestration:
+  enabled: true
+  max_steps: 8  # only Planner-selected operators; automatic observations are excluded
+  max_operator_failures: 2
+  max_same_action_repeats: 2
+  task_timeout_sec: 7200
+  auto_observe_initial: true
+  auto_observe_after_reposition: true
+
+storage:
+  enabled: true
+  root: "runs/brain"
+
+experience:
+  enabled: true
+  root: "configs/brain_experience"
+  platform_model: "ARX-LIFT2"
+  arm_model: "ARX-X5"
+  # 写入经验时由代码强制覆盖GPT返回的型号，避免遗漏或误标。
+  max_searches_per_plan: 1
+  max_results_per_search: 5

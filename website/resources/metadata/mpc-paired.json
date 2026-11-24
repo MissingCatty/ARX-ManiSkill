@@ -1,0 +1,234 @@
+{
+  "batch": "arx_graspcl_mpc_200_20261119_03",
+  "sources": [
+    {
+      "path": "docs/resource/两条管线200例成功场景分布/200例逐场景结果.csv",
+      "sha256": "cdf950bac42d67319c143263cb8ad2e975ab1083c79e3fb01750d97a2394940b"
+    },
+    {
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/batch_summary.json",
+      "sha256": "79706e61064cc5c804496811f556a39ee1fa8c2a81c348618ecd8fd1e40a1a41"
+    },
+    {
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/route_mpc_results.json",
+      "sha256": "e085e1f233f909685dbb9bf52874bafd28ac3935aab23866a4059f63270f5b10"
+    },
+    {
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/final_verification.json",
+      "sha256": "0970f9c5ddedcb016d42cef020c54a7b61bebf16b332c8d7022032d89f6afd5c"
+    },
+    {
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/suite_timing.json",
+      "sha256": "db4f786fc7b442762b3232e514618864b36d4836648e18e4272cb97dfdf02978"
+    }
+  ],
+  "checked_same_case_id_layout_model_seed_and_reference_outcome": 200,
+  "registered_final_verification": {
+    "passed": true,
+    "terminal_results": 200,
+    "fresh_captures_and_exact_resets": 191,
+    "unchanged_memory_receipts": 382,
+    "object_and_scene_overlap": 0,
+    "training_updates_during_test": 0,
+    "all_registered_cases_preserved": true,
+    "no_started_slots_replayed": true,
+    "collision_policy": "arx_tcp43_lift30_open_grasp_actual_table_no_nominal_v1",
+    "policy_refinement_checks": 191,
+    "nominal_closed_precheck": false,
+    "extra_closed_table_margin_m": 0.0,
+    "measured_closed_lift_collision_preserved": true,
+    "mpc_approach_endpoints_verified": 164,
+    "curobo_mpc_preloaded": true,
+    "verified_mpc_route_stages": {
+      "approach": 174,
+      "pregrasp": 176,
+      "observe": 191
+    },
+    "approach_replans": 0
+  },
+  "results": {
+    "verified": true,
+    "completed": 200,
+    "admission_failed": 7,
+    "planned": 177,
+    "wrist_reached": 164,
+    "successes": 120,
+    "failure_reasons": {
+      "smooth_mpc_no_safe_interval": 3,
+      "no_feasible_native_post_or_recalled_candidate": 14,
+      "insufficient_hold_height": 20,
+      "measured_start_state_in_collision": 2,
+      "mpc_approach_not_converged": 9,
+      "independent_scene_admission_failed": 7,
+      "no_bilateral_target_contact": 10,
+      "close_not_converged": 8,
+      "route_mpc_approach_not_converged": 2,
+      "forbidden_robot_contact": 3,
+      "lift_not_converged": 1,
+      "mpc_handoff_not_settled": 1
+    },
+    "by_layout": {
+      "S4_clutter": {
+        "completed": 40,
+        "planned": 40,
+        "wrist_reached": 38,
+        "success": 28
+      },
+      "S2_edge": {
+        "completed": 40,
+        "planned": 38,
+        "wrist_reached": 34,
+        "success": 27
+      },
+      "S5_occluded": {
+        "completed": 40,
+        "planned": 19,
+        "wrist_reached": 17,
+        "success": 3
+      },
+      "S3_sparse": {
+        "completed": 40,
+        "planned": 40,
+        "wrist_reached": 39,
+        "success": 33
+      },
+      "S1_open": {
+        "completed": 40,
+        "planned": 40,
+        "wrist_reached": 36,
+        "success": 29
+      }
+    },
+    "paired_with_original_fixed_orientation": {
+      "success_to_success": 98,
+      "success_to_failure": 29,
+      "failure_to_failure": 51,
+      "failure_to_success": 22
+    },
+    "shared_startup_seconds": 222.23703282291535,
+    "wall_seconds": 30117.556406673975
+  },
+  "fixed_graspcl_vs_mpc_by_layout": {
+    "S4_clutter": {
+      "两者都成功": 25,
+      "仅固定朝向 GraspCL 成功": 6,
+      "两者都失败": 6,
+      "仅 MPC 组成功": 3
+    },
+    "S2_edge": {
+      "仅固定朝向 GraspCL 成功": 9,
+      "仅 MPC 组成功": 4,
+      "两者都成功": 23,
+      "两者都失败": 4
+    },
+    "S5_occluded": {
+      "两者都失败": 32,
+      "仅固定朝向 GraspCL 成功": 5,
+      "两者都成功": 2,
+      "仅 MPC 组成功": 1
+    },
+    "S3_sparse": {
+      "两者都失败": 4,
+      "两者都成功": 26,
+      "仅 MPC 组成功": 7,
+      "仅固定朝向 GraspCL 成功": 3
+    },
+    "S1_open": {
+      "两者都成功": 22,
+      "两者都失败": 5,
+      "仅 MPC 组成功": 7,
+      "仅固定朝向 GraspCL 成功": 6
+    }
+  },
+  "initial_planning_failures_by_deepest_reached_stage": {
+    "grasp_ik": 10,
+    "pre_or_lift_ik": 3,
+    "path": 1
+  },
+  "initial_planning_failure_evidence": [
+    {
+      "case": "I0003_S5_occluded_073-a_lego_duplo",
+      "deepest_reached_rejection": "grasp_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0003_S5_occluded_073-a_lego_duplo_MPC200_01/plan_result.json",
+      "sha256": "a858a6c13d4c0f782a93a8c77f5824adbfe6aba5f7f6f28801271276b3297a56"
+    },
+    {
+      "case": "I0015_S5_occluded_065-g_cups",
+      "deepest_reached_rejection": "grasp_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0015_S5_occluded_065-g_cups_MPC200_01/plan_result.json",
+      "sha256": "9e98433c9d039af261bd8fd1b7e2d9adb0b71b360b976f0b9c5867403e6a7f1e"
+    },
+    {
+      "case": "I0044_S5_occluded_054_softball",
+      "deepest_reached_rejection": "grasp_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0044_S5_occluded_054_softball_MPC200_01/plan_result.json",
+      "sha256": "63ec9e67304659a0b209cbfdba1e11c94586b239dfc52e87e57a17707b366ba3"
+    },
+    {
+      "case": "I0048_S5_occluded_044_flat_screwdriver",
+      "deepest_reached_rejection": "grasp_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0048_S5_occluded_044_flat_screwdriver_MPC200_01/plan_result.json",
+      "sha256": "d86775ebdee5f09a32f9710836909bc8409985ff1f00282f34062b198a68bd10"
+    },
+    {
+      "case": "I0055_S5_occluded_065-i_cups",
+      "deepest_reached_rejection": "grasp_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0055_S5_occluded_065-i_cups_MPC200_01/plan_result.json",
+      "sha256": "f01716589e92df6ee80f27599e9863c04bbcb26f4b2b5ff376d388b992e4214e"
+    },
+    {
+      "case": "I0077_S5_occluded_071_nine_hole_peg_test",
+      "deepest_reached_rejection": "grasp_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0077_S5_occluded_071_nine_hole_peg_test_MPC200_01/plan_result.json",
+      "sha256": "2943130e143b3ee870ee96644d982b9e98a2cb102a5c01c4a4e5fafd8575af67"
+    },
+    {
+      "case": "I0119_S5_occluded_051_large_clamp",
+      "deepest_reached_rejection": "grasp_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0119_S5_occluded_051_large_clamp_MPC200_01/plan_result.json",
+      "sha256": "361bf96d0ce03166eba04f974dcd69d798d9ae6c475462653a9fb29d208dac09"
+    },
+    {
+      "case": "I0130_S5_occluded_065-j_cups",
+      "deepest_reached_rejection": "pre_or_lift_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0130_S5_occluded_065-j_cups_MPC200_01/plan_result.json",
+      "sha256": "5ea614ca2181bec4e4b9350e7718541780143d6bf9e1a93acab828fddd6f4e0b"
+    },
+    {
+      "case": "I0163_S5_occluded_070-b_colored_wood_blocks",
+      "deepest_reached_rejection": "grasp_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0163_S5_occluded_070-b_colored_wood_blocks_MPC200_01/plan_result.json",
+      "sha256": "6fa54010f19aadc4480509a84eaf0495b52c5943b5ed5419d94da79dbfe92bcd"
+    },
+    {
+      "case": "I0167_S5_occluded_065-e_cups",
+      "deepest_reached_rejection": "grasp_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0167_S5_occluded_065-e_cups_MPC200_01/plan_result.json",
+      "sha256": "ce573e2591a754b6611c94575fef767fbb25a301fc9a67f1150b8831a982548b"
+    },
+    {
+      "case": "I0173_S5_occluded_065-h_cups",
+      "deepest_reached_rejection": "path",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0173_S5_occluded_065-h_cups_MPC200_01/plan_result.json",
+      "sha256": "83b6ec934dc0b2518ccdaf62f6b05605af4e876d7aa6cba43b9d243c1c13a4c8"
+    },
+    {
+      "case": "I0190_S5_occluded_063-a_marbles",
+      "deepest_reached_rejection": "pre_or_lift_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0190_S5_occluded_063-a_marbles_MPC200_01/plan_result.json",
+      "sha256": "6e6d57fc5f9c92f6503a7079199e43818b73a280ae3f7e7f8391b2cb76039892"
+    },
+    {
+      "case": "I0193_S5_occluded_073-c_lego_duplo",
+      "deepest_reached_rejection": "grasp_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0193_S5_occluded_073-c_lego_duplo_MPC200_01/plan_result.json",
+      "sha256": "ea1e92c5a92770bd1489883408bf448985266996eda1b2b30e3229d8a2e60d2f"
+    },
+    {
+      "case": "I0197_S5_occluded_073-b_lego_duplo",
+      "deepest_reached_rejection": "pre_or_lift_ik",
+      "path": "outputs/arx_graspcl_mpc_200_20261119_03/free_graspcl_mpc/trials/I0197_S5_occluded_073-b_lego_duplo_MPC200_01/plan_result.json",
+      "sha256": "88cef862115f74e47a5888ccd99e762e560014c6eae9c79d4ec39d7496748513"
+    }
+  ]
+}

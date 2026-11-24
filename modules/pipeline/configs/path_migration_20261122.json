@@ -1,0 +1,279 @@
+{
+  "reason": "user requested English code/config/directory names; Chinese documentation filenames only inside docs",
+  "moves": [
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/D405原始深度_每单位0.1毫米.png",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/d405_depth_raw.png"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/模型输入深度米.npy",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/model_depth_m.npy"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/D405原始畸变图.png",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/d405_raw_rgb.png"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/头部原图.png",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/head_render.png"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/目标真值掩码_仅核查.png",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/target_mask_gt.png"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/深度毫米.npy",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/depth_mm.npy"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/核查.json",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/preflight.json"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/模型输入去畸变图.png",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查/model_rgb.png"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部视角核查/头部原图.png",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部视角核查/head_render.png"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部视角核查/目标真值掩码_仅核查.png",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部视角核查/target_mask_gt.png"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部视角核查/深度毫米.npy",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部视角核查/depth_mm.npy"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部视角核查/核查.json",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部视角核查/preflight.json"
+    ],
+    [
+      "环境/SPAR3D/lib/python3.11/site-packages/共享只读基础依赖.pth",
+      "环境/SPAR3D/lib/python3.11/site-packages/shared_base.pth"
+    ],
+    [
+      "环境/通用重建/lib/python3.11/site-packages/共享只读基础依赖.pth",
+      "环境/通用重建/lib/python3.11/site-packages/shared_base.pth"
+    ],
+    [
+      "权重/SPAR3D/下载记录_代理连接.json",
+      "权重/SPAR3D/download_receipt_proxy_attempt.json"
+    ],
+    [
+      "权重/SPAR3D/仓库文件清单.json",
+      "权重/SPAR3D/repository_files.json"
+    ],
+    [
+      "权重/SPAR3D/来源核验.json",
+      "权重/SPAR3D/provenance_check.json"
+    ],
+    [
+      "权重/SPAR3D/下载日志.log",
+      "权重/SPAR3D/download.log"
+    ],
+    [
+      "权重/SPAR3D/下载记录.json",
+      "权重/SPAR3D/download_receipt.json"
+    ],
+    [
+      "权重/Hunyuan3D-2/仓库文件清单.json",
+      "权重/Hunyuan3D-2/repository_files.json"
+    ],
+    [
+      "权重/Hunyuan3D-2/下载记录.json",
+      "权重/Hunyuan3D-2/download_receipt.json"
+    ],
+    [
+      "权重/RaySt3R/上游文件元数据.json",
+      "权重/RaySt3R/upstream_metadata.json"
+    ],
+    [
+      "权重/RaySt3R/下载日志.log",
+      "权重/RaySt3R/download.log"
+    ],
+    [
+      "权重/RaySt3R/下载记录.json",
+      "权重/RaySt3R/download_receipt.json"
+    ],
+    [
+      "权重/RaySt3R/下载记录_网络中断.json",
+      "权重/RaySt3R/download_receipt_network_interruption.json"
+    ],
+    [
+      "权重/Hunyuan3D-2mini/下载记录_代理连接.json",
+      "权重/Hunyuan3D-2mini/download_receipt_proxy_attempt.json"
+    ],
+    [
+      "权重/Hunyuan3D-2mini/仓库文件清单.json",
+      "权重/Hunyuan3D-2mini/repository_files.json"
+    ],
+    [
+      "权重/Hunyuan3D-2mini/下载日志.log",
+      "权重/Hunyuan3D-2mini/download.log"
+    ],
+    [
+      "权重/Hunyuan3D-2mini/下载记录.json",
+      "权重/Hunyuan3D-2mini/download_receipt.json"
+    ],
+    [
+      "实验/点云生成模型评测/下载RaySt3R权重.py",
+      "实验/点云生成模型评测/download_rayst3r_weights.py"
+    ],
+    [
+      "实验/点云生成模型评测/下载镜像权重.py",
+      "实验/点云生成模型评测/download_modelscope_weights.py"
+    ],
+    [
+      "实验/点云生成模型评测/头部相机配置.py",
+      "实验/点云生成模型评测/head_camera_config.py"
+    ],
+    [
+      "实验/点云生成模型评测/核验相机成像.py",
+      "实验/点云生成模型评测/check_camera_imaging.py"
+    ],
+    [
+      "实验/点云生成模型评测/相机成像.py",
+      "实验/点云生成模型评测/camera_imaging.py"
+    ],
+    [
+      "实验/点云生成模型评测/准备头部视角.py",
+      "实验/点云生成模型评测/preflight_head_camera.py"
+    ],
+    [
+      "实验/点云生成模型评测/方案配置.json",
+      "实验/点云生成模型评测/benchmark_plan.json"
+    ],
+    [
+      "配置/主线配置.json",
+      "配置/mainline.json"
+    ],
+    [
+      "配置/真实相机配置.json",
+      "配置/camera_profiles.json"
+    ],
+    [
+      "配置/头部桌面相机.json",
+      "配置/head_camera_mount.json"
+    ],
+    [
+      "配置/相机离线核验.json",
+      "配置/camera_math_checks.json"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部朝下核查",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/head_down_preflight"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/头部视角核查",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备/head_forward_preflight"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/准备",
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01/preparation"
+    ],
+    [
+      "实验/点云生成模型评测/运行/五方法50场景_20261122_01",
+      "实验/点云生成模型评测/运行/five_methods_50_20261122_01"
+    ],
+    [
+      "实验/点云生成模型评测/运行",
+      "实验/点云生成模型评测/runs"
+    ],
+    [
+      "环境/SPAR3D",
+      "环境/spar3d"
+    ],
+    [
+      "环境/通用重建",
+      "环境/reconstruction"
+    ],
+    [
+      "权重/SPAR3D",
+      "权重/spar3d"
+    ],
+    [
+      "权重/Hunyuan3D-2",
+      "权重/hunyuan3d-2"
+    ],
+    [
+      "权重/RaySt3R",
+      "权重/rayst3r"
+    ],
+    [
+      "权重/Hunyuan3D-2mini",
+      "权重/hunyuan3d-2mini"
+    ],
+    [
+      "实验/点云生成模型评测",
+      "实验/pointcloud_benchmark"
+    ],
+    [
+      "依赖",
+      "third_party"
+    ],
+    [
+      "环境",
+      "envs"
+    ],
+    [
+      "权重",
+      "weights"
+    ],
+    [
+      "配置",
+      "configs"
+    ],
+    [
+      "实验",
+      "experiments"
+    ]
+  ],
+  "payloads": [
+    {
+      "old": "权重/SPAR3D/model.safetensors",
+      "inode": 83506336,
+      "size": 7326949440,
+      "new": "weights/spar3d/model.safetensors",
+      "identity_preserved": true
+    },
+    {
+      "old": "权重/RaySt3R/rayst3r.pth",
+      "inode": 83514324,
+      "size": 2556359734,
+      "new": "weights/rayst3r/rayst3r.pth",
+      "identity_preserved": true
+    },
+    {
+      "old": "权重/Hunyuan3D-2/hunyuan3d-vae-v2-0-turbo/model.fp16.safetensors",
+      "inode": 83506354,
+      "size": 407410402,
+      "new": "weights/hunyuan3d-2/hunyuan3d-vae-v2-0-turbo/model.fp16.safetensors",
+      "identity_preserved": true
+    },
+    {
+      "old": "权重/Hunyuan3D-2/hunyuan3d-dit-v2-0-turbo/model.fp16.safetensors",
+      "inode": 83506366,
+      "size": 4930777530,
+      "new": "weights/hunyuan3d-2/hunyuan3d-dit-v2-0-turbo/model.fp16.safetensors",
+      "identity_preserved": true
+    },
+    {
+      "old": "权重/Hunyuan3D-2mini/hunyuan3d-vae-v2-mini-turbo/model.fp16.safetensors",
+      "inode": 83506407,
+      "size": 407410402,
+      "new": "weights/hunyuan3d-2mini/hunyuan3d-vae-v2-mini-turbo/model.fp16.safetensors",
+      "identity_preserved": true
+    },
+    {
+      "old": "权重/Hunyuan3D-2mini/hunyuan3d-dit-v2-mini-turbo/model.fp16.safetensors",
+      "inode": 83506634,
+      "size": 3822584202,
+      "new": "weights/hunyuan3d-2mini/hunyuan3d-dit-v2-mini-turbo/model.fp16.safetensors",
+      "identity_preserved": true
+    }
+  ],
+  "model_trials": 0,
+  "physical_trials": 0
+}

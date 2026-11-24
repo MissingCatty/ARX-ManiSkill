@@ -1,0 +1,21 @@
+{
+  "source": "P2 goal-conditioned step225; existing observations.py, backend.py and command_interval_v2 verified by offline ARX regression",
+  "policy_artifact_sha256": {
+    "action_head.pt": "00612c08708871d9035debb7d99fd122a855ed34c91f6a7da4f8af5a7634591d",
+    "dataset_statistics.json": "b16a71f31c75e471833885eccd8ddf8408692275d6208cc0f34eb12b7b180bf6",
+    "adapter_manifest.json": "fe156b712e87dc540b092b3edbe70713d12b40640c0bafe9f09d07a1852cf51c"
+  },
+  "interaction_semantics": {
+    "state_convention": "grasp_goal_world_error_v1",
+    "action_convention": "arx_world_delta_pose_v1",
+    "preprocessing_version": "released_jpeg_lanczos3_crop90_arx_v1",
+    "camera_role": "right_wrist",
+    "action_shape": [
+      8,
+      7
+    ],
+    "position_scale_m": 0.05,
+    "rotation_scale_rad": 0.5
+  },
+  "limitation": "Semantic compatibility only; no new physical qualification"
+}

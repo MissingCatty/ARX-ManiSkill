@@ -1,0 +1,17 @@
+{
+  "accepted_variant": 3,
+  "rejected": [
+    {
+      "variant": 0,
+      "reason": "No stable nonoverlapping geometric distractor placement"
+    },
+    {
+      "variant": 1,
+      "reason": "No stable nonoverlapping geometric distractor placement"
+    },
+    {
+      "variant": 2,
+      "reason": "Settled actor outside frame: distractor_00"
+    }
+  ]
+}

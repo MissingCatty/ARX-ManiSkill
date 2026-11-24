@@ -1,0 +1,10 @@
+server:
+  host: 0.0.0.0
+  port: 8006
+services:
+  # The same URL points to arx-ops on hardware and arx-sim in simulation.
+  arx_ops_base_url: http://127.0.0.1:8001
+runtime:
+  output_root: runs/conceptgraphs
+  conceptgraphs_root: "${CONCEPTGRAPHS_ROOT:-}"
+  python: python

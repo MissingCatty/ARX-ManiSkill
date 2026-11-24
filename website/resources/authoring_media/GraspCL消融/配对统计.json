@@ -1,0 +1,43 @@
+{
+  "comparisons": {
+    "C_graspcl_experience50 vs B_graspcl_no_experience": {
+      "gain_scenes": 20,
+      "loss_scenes": 4,
+      "paired_difference": 0.16,
+      "model_cluster_bootstrap_95_ci": [
+        0.0594059405940594,
+        0.2647058823529412
+      ],
+      "two_sided_model_cluster_signflip_p": 0.005979880402391952,
+      "mcnemar_exact_descriptive_p": 0.001543879508972168,
+      "primary_holm_adjusted_p": 0.011959760804783904
+    },
+    "C_graspcl_experience50 vs A_zerograsp": {
+      "gain_scenes": 22,
+      "loss_scenes": 6,
+      "paired_difference": 0.16,
+      "model_cluster_bootstrap_95_ci": [
+        0.057692307692307696,
+        0.27
+      ],
+      "two_sided_model_cluster_signflip_p": 0.0071798564028719425,
+      "mcnemar_exact_descriptive_p": 0.0037191659212112427,
+      "primary_holm_adjusted_p": 0.011959760804783904
+    },
+    "B_graspcl_no_experience vs A_zerograsp": {
+      "gain_scenes": 4,
+      "loss_scenes": 4,
+      "paired_difference": 0.0,
+      "model_cluster_bootstrap_95_ci": [
+        -0.04950495049504951,
+        0.04950495049504951
+      ],
+      "two_sided_model_cluster_signflip_p": 1.0,
+      "mcnemar_exact_descriptive_p": 1.0
+    }
+  },
+  "shared_rgbd_native_candidate_cases": 100,
+  "positive_evidence_for_added_experience_over_both_controls": true,
+  "all_100_denominator_includes_common_frontend_failures": true,
+  "experience_bank_frozen": true
+}

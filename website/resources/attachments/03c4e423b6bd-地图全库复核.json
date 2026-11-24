@@ -1,0 +1,25 @@
+{
+  "old": {
+    "directory": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/产物/首版_01",
+    "witnesses": 3267633,
+    "front": 1791450,
+    "rear": 1476183,
+    "joint_limit_violations": 0,
+    "minimum_joint_margin_rad": 0.00010014453581486116,
+    "maximum_quaternion_norm_error": 5.125504376479739e-08,
+    "file_integrity_passed": true
+  },
+  "new": {
+    "directory": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/reachability/产物/前方精细_20261121_01",
+    "witnesses": 10559134,
+    "front": 10559134,
+    "rear": 0,
+    "joint_limit_violations": 0,
+    "minimum_joint_margin_rad": 0.00010002532652531038,
+    "maximum_quaternion_norm_error": 5.2092607116804857e-08,
+    "file_integrity_passed": true
+  },
+  "passed": true,
+  "code_sha256": "1682e068414977938e4401c9dd0574cb732e624ab99fb0c899c00bdcd2d723d9",
+  "physical_attempts": 0
+}

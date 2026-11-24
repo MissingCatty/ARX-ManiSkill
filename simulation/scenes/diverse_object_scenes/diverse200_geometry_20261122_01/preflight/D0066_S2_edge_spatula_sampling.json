@@ -1,0 +1,8 @@
+{
+  "proposals": 145,
+  "geometrically_admitted": 80,
+  "rejection_counts": {
+    "fully_in_head_frame": 65
+  },
+  "IK_queries": 0
+}

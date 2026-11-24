@@ -1,0 +1,14 @@
+{
+  "published_at": "2026-11-23T15:25:41+08:00",
+  "final": true,
+  "completed": 200,
+  "source_run": "/home/zhaoyechong/projects/ARX-SAM3-GraspGenX/experiments/repaired_grasp_benchmark/runs/geometry200_repaired_20261123_01",
+  "v1_url": "/iterations/sam3-graspgenx/versions/V1/",
+  "v2_url": "/iterations/sam3-graspgenx/versions/V2/",
+  "v2_state": "physical_verification_complete",
+  "v2_local_policy_implemented": true,
+  "v2_local_test_maximum_tolerance_m": 0.002,
+  "v2_physical_attempts": 3,
+  "production_v1_unchanged": true,
+  "v2_recommended_real_contact_tolerance_m": 0.0
+}

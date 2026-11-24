@@ -1,0 +1,146 @@
+{
+  "simulation": {
+    "passed": true,
+    "scene": "D0001_S1_open_lemon",
+    "catalog_models": 80,
+    "head_model": "Intel RealSense D405",
+    "head_pitch_deg": 45,
+    "K_error_max": 0.0,
+    "lift_joint_m": 0.4519999921321869,
+    "sim_freq_hz": 120,
+    "control_freq_hz": 40,
+    "solver_iterations": [
+      16,
+      4
+    ],
+    "contact_offset_m": 0.001,
+    "rest_offset_m": 0.0,
+    "target_mass_kg": 0.01677766628563404,
+    "physical_grasps": 0,
+    "frozen_scene_files_verified": 2406
+  },
+  "native": {
+    "passed": true,
+    "motion_planner_loaded": true,
+    "sphere_states": [
+      {
+        "finger_state": "open",
+        "measured_finger_joints_m": [
+          0.044,
+          0.044
+        ],
+        "native_sphere_count": 871,
+        "independent_URDF_FK_max_error_m": 5.2181219225614594e-08,
+        "profile_id": "arx_refined_871_v1",
+        "total_spheres": 871,
+        "sphere_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+        "counts": {
+          "right_link21": 26,
+          "right_link22": 115,
+          "right_link23": 97,
+          "right_link24": 36,
+          "right_link25": 24,
+          "right_link26": 89,
+          "right_link27": 258,
+          "right_link28": 226
+        },
+        "profile_path": "/home/zhaoyechong/projects/COOLAS-ARX/configs/collision/arx_refined_871.json"
+      },
+      {
+        "finger_state": "partial",
+        "measured_finger_joints_m": [
+          0.022,
+          0.022
+        ],
+        "native_sphere_count": 871,
+        "independent_URDF_FK_max_error_m": 5.2181219225614594e-08,
+        "profile_id": "arx_refined_871_v1",
+        "total_spheres": 871,
+        "sphere_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+        "counts": {
+          "right_link21": 26,
+          "right_link22": 115,
+          "right_link23": 97,
+          "right_link24": 36,
+          "right_link25": 24,
+          "right_link26": 89,
+          "right_link27": 258,
+          "right_link28": 226
+        },
+        "profile_path": "/home/zhaoyechong/projects/COOLAS-ARX/configs/collision/arx_refined_871.json"
+      },
+      {
+        "finger_state": "closed",
+        "measured_finger_joints_m": [
+          0.0,
+          0.0
+        ],
+        "native_sphere_count": 871,
+        "independent_URDF_FK_max_error_m": 5.2181219225614594e-08,
+        "profile_id": "arx_refined_871_v1",
+        "total_spheres": 871,
+        "sphere_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+        "counts": {
+          "right_link21": 26,
+          "right_link22": 115,
+          "right_link23": 97,
+          "right_link24": 36,
+          "right_link25": 24,
+          "right_link26": 89,
+          "right_link27": 258,
+          "right_link28": 226
+        },
+        "profile_path": "/home/zhaoyechong/projects/COOLAS-ARX/configs/collision/arx_refined_871.json"
+      },
+      {
+        "finger_state": "asymmetric",
+        "measured_finger_joints_m": [
+          0.031,
+          0.012
+        ],
+        "native_sphere_count": 871,
+        "independent_URDF_FK_max_error_m": 5.298280134484881e-08,
+        "profile_id": "arx_refined_871_v1",
+        "total_spheres": 871,
+        "sphere_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+        "counts": {
+          "right_link21": 26,
+          "right_link22": 115,
+          "right_link23": 97,
+          "right_link24": 36,
+          "right_link25": 24,
+          "right_link26": 89,
+          "right_link27": 258,
+          "right_link28": 226
+        },
+        "profile_path": "/home/zhaoyechong/projects/COOLAS-ARX/configs/collision/arx_refined_871.json"
+      }
+    ],
+    "CUDA_device": "NVIDIA GeForce RTX 4090",
+    "physical_grasps": 0
+  },
+  "native7": {
+    "passed": true,
+    "dof": 7,
+    "native_sphere_count": 871,
+    "independent_URDF_FK_max_error_m": 9.663452685694824e-08,
+    "physical_grasps": 0
+  },
+  "cleanup": {
+    "completed": true,
+    "at": "2026-11-24T10:44:21.384009+08:00",
+    "paths_removed": 58,
+    "files_removed": 23555,
+    "bytes_removed": 4053899499,
+    "manifest_sha256": "b03825aa4487f9f425a8e2b9ba8da152b6746208813b59723a10a029196b2145",
+    "current_dataset_unchanged": true,
+    "current_collision_profile": "arx_refined_871_v1",
+    "new_physical_grasps": 0,
+    "supplement_sha256": "59a0fe62fdb48d20ed7ec631d51d017c0e4870f450584ceaba677962ecbb91b9",
+    "supplement_paths_removed": 9,
+    "supplement_bytes_removed": 82491,
+    "scene_cleanup_paths_removed": 17,
+    "scene_cleanup_bytes_removed": 8273209,
+    "scene_cleanup_sha256": "251f5497f70ac430992d2f786591f85804de2771e4a63cd3814beeaad93694cb"
+  }
+}

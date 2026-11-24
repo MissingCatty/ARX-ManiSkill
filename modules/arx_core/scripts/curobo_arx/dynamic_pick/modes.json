@@ -1,0 +1,14 @@
+{
+  "default_entry": "run.py",
+  "online_controller": "online_time_pick.py",
+  "method": "cuRobo fully optimized reference geometry with online predictive time scheduling (stop-and-go)",
+  "native_MPC_spatial_detour": "experimental; attempts_00-08 did not complete successfully; not the demonstrated success",
+  "experimental_entry": "mpc_experimental.py",
+  "recording": "Current WebRTC viewpoint, original wall-time, no text/audio",
+  "main_research": "paused_by_user; stop side simulator with data-root podman wrapper before any future explicit main resume",
+  "side_simulator": "coolas-arx-dynamic-pick-zhaoyechong",
+  "podman_wrapper": "/coolas/data/zhaoyechong/COOLAS-ARX/dynamic_pick_20261022/podman-arx.sh",
+  "repeated_demo_lifecycle": "Use a fresh side simulator. Capture desired view before restart; --restore-view restores it before warming/recording. Existing fixture sessions are rejected by the default runner.",
+  "example_command": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/.venv/bin/python scripts/curobo_arx/dynamic_pick/run.py --name NEW_NAME --restore-view runs/arx_dynamic_pick/viewport.json",
+  "review_command": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/.venv/bin/python scripts/curobo_arx/dynamic_pick/review_demo.py --name NEW_NAME"
+}

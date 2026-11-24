@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "construction_independent_of_ik": true,
+  "IK_queries": 0,
+  "actors": {
+    "target": {
+      "passed": true,
+      "inside_registered_roi": true,
+      "inside_table": true,
+      "fully_in_head_frame": true,
+      "not_clearly_beyond_link_length": true,
+      "center_world_m": [
+        -0.2571313258838896,
+        0.015880602173680796,
+        0.0039015054760770202
+      ],
+      "center_distance_m": 0.6834783823868569,
+      "nearest_bbox_distance_m": 0.6021729461257207,
+      "bbox_world_min_m": [
+        -0.34442020781231286,
+        -0.04080301599669261,
+        0.0006378283548983094
+      ],
+      "bbox_world_max_m": [
+        -0.16984244395546635,
+        0.0725642203440542,
+        0.007165182597255731
+      ],
+      "near_table_edge_gap_m": 0.38007979218768717
+    },
+    "distractor_00": {
+      "passed": true,
+      "inside_registered_roi": true,
+      "inside_table": true,
+      "fully_in_head_frame": true,
+      "not_clearly_beyond_link_length": true,
+      "center_world_m": [
+        -0.321880408476591,
+        0.30800936189418504,
+        0.02235184863198842
+      ],
+      "center_distance_m": 0.6884978446838272,
+      "nearest_bbox_distance_m": 0.6431190548031799,
+      "bbox_world_min_m": [
+        -0.3520183198894964,
+        0.27736556680607766,
+        -0.00010465552611114981
+      ],
+      "bbox_world_max_m": [
+        -0.2917424970636856,
+        0.3386531569822924,
+        0.04480835279008799
+      ],
+      "near_table_edge_gap_m": 0.37248168011050364
+    },
+    "distractor_01": {
+      "passed": true,
+      "inside_registered_roi": true,
+      "inside_table": true,
+      "fully_in_head_frame": true,
+      "not_clearly_beyond_link_length": true,
+      "center_world_m": [
+        -0.431586210218486,
+        0.18366589855351936,
+        0.0284612939458826
+      ],
+      "center_distance_m": 0.5445393454610917,
+      "nearest_bbox_distance_m": 0.4880465576333447,
+      "bbox_world_min_m": [
+        -0.48143694949650007,
+        0.1460864472274269,
+        -0.0006402276708277477
+      ],
+      "bbox_world_max_m": [
+        -0.38173547094047194,
+        0.22124534987961184,
+        0.05756281556259295
+      ],
+      "near_table_edge_gap_m": 0.24306305050349997
+    },
+    "distractor_02": {
+      "passed": true,
+      "inside_registered_roi": true,
+      "inside_table": true,
+      "fully_in_head_frame": true,
+      "not_clearly_beyond_link_length": true,
+      "center_world_m": [
+        -0.16509494803867525,
+        -0.21694848413819653,
+        0.03503549440762228
+      ],
+      "center_distance_m": 0.7914201123700988,
+      "nearest_bbox_distance_m": 0.7067668697998898,
+      "bbox_world_min_m": [
+        -0.23101043629158777,
+        -0.29860717278189547,
+        -0.0002153634815175165
+      ],
+      "bbox_world_max_m": [
+        -0.09917945978576276,
+        -0.1352897954944976,
+        0.07028635229676207
+      ],
+      "near_table_edge_gap_m": 0.49348956370841224
+    }
+  },
+  "physical_grasps": 0,
+  "at": "2026-11-22T23:17:50.021197+08:00"
+}

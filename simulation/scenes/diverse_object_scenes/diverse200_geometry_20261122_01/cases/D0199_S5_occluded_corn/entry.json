@@ -1,0 +1,137 @@
+{
+  "id": "D0199_S5_occluded_corn",
+  "model_id": "robocasa__corn__corn_0",
+  "semantic_class": "corn",
+  "family": "corn",
+  "target_text": "corn",
+  "layout": "S5_occluded",
+  "seed": 2005016599,
+  "actor_identities": [
+    {
+      "name": "target",
+      "model_id": "robocasa__corn__corn_0"
+    },
+    {
+      "name": "distractor_00",
+      "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+    },
+    {
+      "name": "distractor_01",
+      "model_id": "robocasa__bell_pepper__bell_pepper_1"
+    },
+    {
+      "name": "distractor_02",
+      "model_id": "robocasa__donut__donut_1"
+    }
+  ],
+  "scene": {
+    "layout": "S5_occluded",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__corn__corn_0",
+        "pose": [
+          -0.12603729963302612,
+          0.3944457173347473,
+          0.028185773640871048,
+          0.8210017085075378,
+          -0.00738438218832016,
+          -0.009016366675496101,
+          -0.5708069205284119
+        ]
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__soap_dispenser__soap_dispenser_2",
+        "pose": [
+          -0.3205263316631317,
+          0.3412932753562927,
+          0.07749950140714645,
+          1.0,
+          -5.594179674517363e-05,
+          4.9166290409630165e-05,
+          3.7526810956478585e-06
+        ]
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__bell_pepper__bell_pepper_1",
+        "pose": [
+          -0.5305694341659546,
+          0.20421452820301056,
+          0.037849441170692444,
+          0.6423479318618774,
+          4.394352436065674e-05,
+          -5.429983139038086e-05,
+          0.7664133310317993
+        ]
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "robocasa__donut__donut_1",
+        "pose": [
+          -0.43236812949180603,
+          -0.015533514320850372,
+          0.020250113680958748,
+          0.676277756690979,
+          -5.1390379667282104e-06,
+          -1.0856078006327152e-05,
+          -0.7366469502449036
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 1128,
+    "isolated_mask_pixels": 1432,
+    "occlusion_fraction": 0.2122905027932961,
+    "projected_bbox_uv": [
+      [
+        218.23763211384048,
+        143.41446785178883
+      ],
+      [
+        269.6541927282282,
+        216.98845945743483
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.763,
+    "visible_pixels": 1128,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "observation": null,
+  "physical_grasp_attempts": 0
+}

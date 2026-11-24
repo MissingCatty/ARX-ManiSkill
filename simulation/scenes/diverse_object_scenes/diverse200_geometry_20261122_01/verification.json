@@ -1,0 +1,1454 @@
+{
+  "passed": true,
+  "scenes": 200,
+  "categories": 40,
+  "models": 80,
+  "layouts": {
+    "S1_open": 40,
+    "S2_edge": 40,
+    "S3_sparse": 40,
+    "S4_clutter": 40,
+    "S5_occluded": 40
+  },
+  "construction_independent_of_ik": true,
+  "construction_IK_queries": 0,
+  "physical_grasps": 0,
+  "records": [
+    {
+      "id": "D0001_S1_open_lemon",
+      "passed": true,
+      "visible_pixels": 1780,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5238795767678286
+    },
+    {
+      "id": "D0002_S1_open_bottled_water",
+      "passed": true,
+      "visible_pixels": 2448,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5251481396361246
+    },
+    {
+      "id": "D0003_S1_open_mushroom",
+      "passed": true,
+      "visible_pixels": 1763,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4131054348633949
+    },
+    {
+      "id": "D0004_S1_open_carrot",
+      "passed": true,
+      "visible_pixels": 1116,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.75569286816412
+    },
+    {
+      "id": "D0005_S1_open_potato",
+      "passed": true,
+      "visible_pixels": 1548,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7794377582098946
+    },
+    {
+      "id": "D0006_S1_open_bell_pepper",
+      "passed": true,
+      "visible_pixels": 3255,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.47795838655073586
+    },
+    {
+      "id": "D0007_S1_open_banana",
+      "passed": true,
+      "visible_pixels": 989,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.8482765674124123
+    },
+    {
+      "id": "D0008_S1_open_teapot",
+      "passed": true,
+      "visible_pixels": 2287,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7291043363300397
+    },
+    {
+      "id": "D0009_S1_open_milk",
+      "passed": true,
+      "visible_pixels": 2313,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5879918430490685
+    },
+    {
+      "id": "D0010_S1_open_croissant",
+      "passed": true,
+      "visible_pixels": 2890,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5736741378250411
+    },
+    {
+      "id": "D0011_S1_open_tomato",
+      "passed": true,
+      "visible_pixels": 1568,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5770395196908498
+    },
+    {
+      "id": "D0012_S1_open_spatula",
+      "passed": true,
+      "visible_pixels": 904,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.8035504314577118
+    },
+    {
+      "id": "D0013_S1_open_onion",
+      "passed": true,
+      "visible_pixels": 3486,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4433515308822357
+    },
+    {
+      "id": "D0014_S1_open_scissors",
+      "passed": true,
+      "visible_pixels": 809,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6415225233993662
+    },
+    {
+      "id": "D0015_S1_open_remote_control",
+      "passed": true,
+      "visible_pixels": 4018,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5663960102636756
+    },
+    {
+      "id": "D0016_S1_open_peach",
+      "passed": true,
+      "visible_pixels": 1141,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.665095293264917
+    },
+    {
+      "id": "D0017_S1_open_candle",
+      "passed": true,
+      "visible_pixels": 1066,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7428266283159647
+    },
+    {
+      "id": "D0018_S1_open_boxed_food",
+      "passed": true,
+      "visible_pixels": 2218,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7988842432026763
+    },
+    {
+      "id": "D0019_S1_open_avocado",
+      "passed": true,
+      "visible_pixels": 1997,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6793938727810437
+    },
+    {
+      "id": "D0020_S1_open_eggplant",
+      "passed": true,
+      "visible_pixels": 2136,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6105450280182841
+    },
+    {
+      "id": "D0021_S1_open_apple",
+      "passed": true,
+      "visible_pixels": 1254,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7753107861864752
+    },
+    {
+      "id": "D0022_S1_open_yogurt",
+      "passed": true,
+      "visible_pixels": 2477,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5258214675628486
+    },
+    {
+      "id": "D0023_S1_open_baguette",
+      "passed": true,
+      "visible_pixels": 1793,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.8029860927554849
+    },
+    {
+      "id": "D0024_S1_open_pear",
+      "passed": true,
+      "visible_pixels": 964,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7750949906071504
+    },
+    {
+      "id": "D0025_S1_open_book",
+      "passed": true,
+      "visible_pixels": 16673,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7275166085422843
+    },
+    {
+      "id": "D0026_S1_open_sponge",
+      "passed": true,
+      "visible_pixels": 2580,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6374106560368409
+    },
+    {
+      "id": "D0027_S1_open_keychain",
+      "passed": true,
+      "visible_pixels": 1052,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5410742447880256
+    },
+    {
+      "id": "D0028_S1_open_cucumber",
+      "passed": true,
+      "visible_pixels": 3925,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.45023803783105026
+    },
+    {
+      "id": "D0029_S1_open_broccoli",
+      "passed": true,
+      "visible_pixels": 1177,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6011865024356753
+    },
+    {
+      "id": "D0030_S1_open_corn",
+      "passed": true,
+      "visible_pixels": 3362,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5563514228254105
+    },
+    {
+      "id": "D0031_S1_open_bread",
+      "passed": true,
+      "visible_pixels": 3477,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6360565382883108
+    },
+    {
+      "id": "D0032_S1_open_mug",
+      "passed": true,
+      "visible_pixels": 3508,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6227663652626613
+    },
+    {
+      "id": "D0033_S1_open_bowl",
+      "passed": true,
+      "visible_pixels": 2718,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7220085692449223
+    },
+    {
+      "id": "D0034_S1_open_soap_dispenser",
+      "passed": true,
+      "visible_pixels": 2889,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4149441165671042
+    },
+    {
+      "id": "D0035_S1_open_donut",
+      "passed": true,
+      "visible_pixels": 1579,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.845679250443322
+    },
+    {
+      "id": "D0036_S1_open_cell_phone",
+      "passed": true,
+      "visible_pixels": 6621,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4473898997600301
+    },
+    {
+      "id": "D0037_S1_open_bar_soap",
+      "passed": true,
+      "visible_pixels": 3757,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.44972841362332294
+    },
+    {
+      "id": "D0038_S1_open_canned_food",
+      "passed": true,
+      "visible_pixels": 2497,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7132301003359985
+    },
+    {
+      "id": "D0039_S1_open_mango",
+      "passed": true,
+      "visible_pixels": 3285,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5081510552558409
+    },
+    {
+      "id": "D0040_S1_open_orange",
+      "passed": true,
+      "visible_pixels": 1596,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6158917801820267
+    },
+    {
+      "id": "D0041_S2_edge_cell_phone",
+      "passed": true,
+      "visible_pixels": 8920,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5045274129207923
+    },
+    {
+      "id": "D0042_S2_edge_lemon",
+      "passed": true,
+      "visible_pixels": 2644,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.43471175911435106
+    },
+    {
+      "id": "D0043_S2_edge_book",
+      "passed": true,
+      "visible_pixels": 19836,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4797317551638895
+    },
+    {
+      "id": "D0044_S2_edge_bar_soap",
+      "passed": true,
+      "visible_pixels": 4878,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.38950996531545307
+    },
+    {
+      "id": "D0045_S2_edge_onion",
+      "passed": true,
+      "visible_pixels": 2875,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5495441160426855
+    },
+    {
+      "id": "D0046_S2_edge_teapot",
+      "passed": true,
+      "visible_pixels": 4879,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4132898521920634
+    },
+    {
+      "id": "D0047_S2_edge_mango",
+      "passed": true,
+      "visible_pixels": 3894,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5425922854953809
+    },
+    {
+      "id": "D0048_S2_edge_avocado",
+      "passed": true,
+      "visible_pixels": 2885,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.38834622216383635
+    },
+    {
+      "id": "D0049_S2_edge_soap_dispenser",
+      "passed": true,
+      "visible_pixels": 3300,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.394691089499798
+    },
+    {
+      "id": "D0050_S2_edge_bell_pepper",
+      "passed": true,
+      "visible_pixels": 4363,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4985089779254931
+    },
+    {
+      "id": "D0051_S2_edge_pear",
+      "passed": true,
+      "visible_pixels": 4079,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5166829813145001
+    },
+    {
+      "id": "D0052_S2_edge_milk",
+      "passed": true,
+      "visible_pixels": 7295,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4624854452023757
+    },
+    {
+      "id": "D0053_S2_edge_banana",
+      "passed": true,
+      "visible_pixels": 4016,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5291338450407268
+    },
+    {
+      "id": "D0054_S2_edge_bowl",
+      "passed": true,
+      "visible_pixels": 6737,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4246811533771641
+    },
+    {
+      "id": "D0055_S2_edge_potato",
+      "passed": true,
+      "visible_pixels": 3839,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.46096231983398656
+    },
+    {
+      "id": "D0056_S2_edge_scissors",
+      "passed": true,
+      "visible_pixels": 1767,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5146998987418577
+    },
+    {
+      "id": "D0057_S2_edge_eggplant",
+      "passed": true,
+      "visible_pixels": 3796,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4851352151203891
+    },
+    {
+      "id": "D0058_S2_edge_corn",
+      "passed": true,
+      "visible_pixels": 4047,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.44452780684984394
+    },
+    {
+      "id": "D0059_S2_edge_mushroom",
+      "passed": true,
+      "visible_pixels": 879,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.45315894085741826
+    },
+    {
+      "id": "D0060_S2_edge_yogurt",
+      "passed": true,
+      "visible_pixels": 3636,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.3856061246448419
+    },
+    {
+      "id": "D0061_S2_edge_croissant",
+      "passed": true,
+      "visible_pixels": 4458,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.44572277114957526
+    },
+    {
+      "id": "D0062_S2_edge_broccoli",
+      "passed": true,
+      "visible_pixels": 2515,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4431162828023478
+    },
+    {
+      "id": "D0063_S2_edge_peach",
+      "passed": true,
+      "visible_pixels": 2580,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4976181010697422
+    },
+    {
+      "id": "D0064_S2_edge_baguette",
+      "passed": true,
+      "visible_pixels": 8836,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4351935132817948
+    },
+    {
+      "id": "D0065_S2_edge_mug",
+      "passed": true,
+      "visible_pixels": 6395,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.41725350885018003
+    },
+    {
+      "id": "D0066_S2_edge_spatula",
+      "passed": true,
+      "visible_pixels": 4099,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4483312519009194
+    },
+    {
+      "id": "D0067_S2_edge_apple",
+      "passed": true,
+      "visible_pixels": 3018,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.38841907470672316
+    },
+    {
+      "id": "D0068_S2_edge_orange",
+      "passed": true,
+      "visible_pixels": 2766,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.47023655403245074
+    },
+    {
+      "id": "D0069_S2_edge_remote_control",
+      "passed": true,
+      "visible_pixels": 7789,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.45795177306932494
+    },
+    {
+      "id": "D0070_S2_edge_cucumber",
+      "passed": true,
+      "visible_pixels": 5064,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4870132129743951
+    },
+    {
+      "id": "D0071_S2_edge_candle",
+      "passed": true,
+      "visible_pixels": 3786,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5243859468465264
+    },
+    {
+      "id": "D0072_S2_edge_bread",
+      "passed": true,
+      "visible_pixels": 9438,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.40382401071347584
+    },
+    {
+      "id": "D0073_S2_edge_sponge",
+      "passed": true,
+      "visible_pixels": 5008,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4053839960209789
+    },
+    {
+      "id": "D0074_S2_edge_bottled_water",
+      "passed": true,
+      "visible_pixels": 3340,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4616781427338623
+    },
+    {
+      "id": "D0075_S2_edge_donut",
+      "passed": true,
+      "visible_pixels": 4716,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.40875971453631227
+    },
+    {
+      "id": "D0076_S2_edge_tomato",
+      "passed": true,
+      "visible_pixels": 2471,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.49126406333817574
+    },
+    {
+      "id": "D0077_S2_edge_canned_food",
+      "passed": true,
+      "visible_pixels": 4602,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4642710848744682
+    },
+    {
+      "id": "D0078_S2_edge_carrot",
+      "passed": true,
+      "visible_pixels": 3356,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.3949891481651017
+    },
+    {
+      "id": "D0079_S2_edge_boxed_food",
+      "passed": true,
+      "visible_pixels": 6427,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4822531672808118
+    },
+    {
+      "id": "D0080_S2_edge_keychain",
+      "passed": true,
+      "visible_pixels": 1809,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4083530746257496
+    },
+    {
+      "id": "D0081_S3_sparse_soap_dispenser",
+      "passed": true,
+      "visible_pixels": 1572,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7683983857432413
+    },
+    {
+      "id": "D0082_S3_sparse_cell_phone",
+      "passed": true,
+      "visible_pixels": 2729,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6834783823868569
+    },
+    {
+      "id": "D0083_S3_sparse_lemon",
+      "passed": true,
+      "visible_pixels": 2651,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5455531049616137
+    },
+    {
+      "id": "D0084_S3_sparse_pear",
+      "passed": true,
+      "visible_pixels": 953,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7111801651628629
+    },
+    {
+      "id": "D0085_S3_sparse_keychain",
+      "passed": true,
+      "visible_pixels": 655,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.699116081838155
+    },
+    {
+      "id": "D0086_S3_sparse_peach",
+      "passed": true,
+      "visible_pixels": 1668,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5647129802303007
+    },
+    {
+      "id": "D0087_S3_sparse_bowl",
+      "passed": true,
+      "visible_pixels": 4251,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5870641643901375
+    },
+    {
+      "id": "D0088_S3_sparse_avocado",
+      "passed": true,
+      "visible_pixels": 1672,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6758828002363942
+    },
+    {
+      "id": "D0089_S3_sparse_tomato",
+      "passed": true,
+      "visible_pixels": 1138,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.704277876372268
+    },
+    {
+      "id": "D0090_S3_sparse_canned_food",
+      "passed": true,
+      "visible_pixels": 3286,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4894015622038427
+    },
+    {
+      "id": "D0091_S3_sparse_carrot",
+      "passed": true,
+      "visible_pixels": 1304,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7241708515547117
+    },
+    {
+      "id": "D0092_S3_sparse_remote_control",
+      "passed": true,
+      "visible_pixels": 5074,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5048074411228297
+    },
+    {
+      "id": "D0093_S3_sparse_mushroom",
+      "passed": true,
+      "visible_pixels": 869,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6776595773057026
+    },
+    {
+      "id": "D0094_S3_sparse_onion",
+      "passed": true,
+      "visible_pixels": 2444,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5400741083822431
+    },
+    {
+      "id": "D0095_S3_sparse_bottled_water",
+      "passed": true,
+      "visible_pixels": 1515,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.8116706152011436
+    },
+    {
+      "id": "D0096_S3_sparse_teapot",
+      "passed": true,
+      "visible_pixels": 1916,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.790601264581217
+    },
+    {
+      "id": "D0097_S3_sparse_corn",
+      "passed": true,
+      "visible_pixels": 5305,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.43795167722494704
+    },
+    {
+      "id": "D0098_S3_sparse_banana",
+      "passed": true,
+      "visible_pixels": 1119,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.751925036051074
+    },
+    {
+      "id": "D0099_S3_sparse_candle",
+      "passed": true,
+      "visible_pixels": 1310,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6835712844944243
+    },
+    {
+      "id": "D0100_S3_sparse_baguette",
+      "passed": true,
+      "visible_pixels": 6074,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.49973195478594973
+    },
+    {
+      "id": "D0101_S3_sparse_boxed_food",
+      "passed": true,
+      "visible_pixels": 3908,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.42383808329124245
+    },
+    {
+      "id": "D0102_S3_sparse_donut",
+      "passed": true,
+      "visible_pixels": 1794,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7960205482160655
+    },
+    {
+      "id": "D0103_S3_sparse_milk",
+      "passed": true,
+      "visible_pixels": 2671,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5317271221380875
+    },
+    {
+      "id": "D0104_S3_sparse_orange",
+      "passed": true,
+      "visible_pixels": 1142,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7498728690223168
+    },
+    {
+      "id": "D0105_S3_sparse_cucumber",
+      "passed": true,
+      "visible_pixels": 3050,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5211211932905014
+    },
+    {
+      "id": "D0106_S3_sparse_book",
+      "passed": true,
+      "visible_pixels": 29941,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5477865130279661
+    },
+    {
+      "id": "D0107_S3_sparse_broccoli",
+      "passed": true,
+      "visible_pixels": 960,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6521557361170389
+    },
+    {
+      "id": "D0108_S3_sparse_croissant",
+      "passed": true,
+      "visible_pixels": 2364,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.629852193839415
+    },
+    {
+      "id": "D0109_S3_sparse_scissors",
+      "passed": true,
+      "visible_pixels": 753,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7012875107157979
+    },
+    {
+      "id": "D0110_S3_sparse_mug",
+      "passed": true,
+      "visible_pixels": 2242,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7729958800810142
+    },
+    {
+      "id": "D0111_S3_sparse_sponge",
+      "passed": true,
+      "visible_pixels": 2132,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7096464506785083
+    },
+    {
+      "id": "D0112_S3_sparse_bread",
+      "passed": true,
+      "visible_pixels": 4029,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.547166275032645
+    },
+    {
+      "id": "D0113_S3_sparse_bell_pepper",
+      "passed": true,
+      "visible_pixels": 1723,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7851278042841964
+    },
+    {
+      "id": "D0114_S3_sparse_yogurt",
+      "passed": true,
+      "visible_pixels": 3078,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.46483875497806043
+    },
+    {
+      "id": "D0115_S3_sparse_mango",
+      "passed": true,
+      "visible_pixels": 2768,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4666967722810103
+    },
+    {
+      "id": "D0116_S3_sparse_eggplant",
+      "passed": true,
+      "visible_pixels": 1250,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7828511264266228
+    },
+    {
+      "id": "D0117_S3_sparse_spatula",
+      "passed": true,
+      "visible_pixels": 1853,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.573685074307341
+    },
+    {
+      "id": "D0118_S3_sparse_potato",
+      "passed": true,
+      "visible_pixels": 1388,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7992579022396896
+    },
+    {
+      "id": "D0119_S3_sparse_apple",
+      "passed": true,
+      "visible_pixels": 1634,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6530283061357645
+    },
+    {
+      "id": "D0120_S3_sparse_bar_soap",
+      "passed": true,
+      "visible_pixels": 2583,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5826649277368317
+    },
+    {
+      "id": "D0121_S4_clutter_cell_phone",
+      "passed": true,
+      "visible_pixels": 6774,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.500189659686078
+    },
+    {
+      "id": "D0122_S4_clutter_teapot",
+      "passed": true,
+      "visible_pixels": 2855,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5929495495877394
+    },
+    {
+      "id": "D0123_S4_clutter_mushroom",
+      "passed": true,
+      "visible_pixels": 496,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.577577943428002
+    },
+    {
+      "id": "D0124_S4_clutter_candle",
+      "passed": true,
+      "visible_pixels": 1914,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6967193608232634
+    },
+    {
+      "id": "D0125_S4_clutter_bar_soap",
+      "passed": true,
+      "visible_pixels": 2449,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6025647589985968
+    },
+    {
+      "id": "D0126_S4_clutter_bell_pepper",
+      "passed": true,
+      "visible_pixels": 2307,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5934248787419933
+    },
+    {
+      "id": "D0127_S4_clutter_bottled_water",
+      "passed": true,
+      "visible_pixels": 2475,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5795901781900175
+    },
+    {
+      "id": "D0128_S4_clutter_lemon",
+      "passed": true,
+      "visible_pixels": 1516,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5540257954383102
+    },
+    {
+      "id": "D0129_S4_clutter_mug",
+      "passed": true,
+      "visible_pixels": 3235,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6973077190286088
+    },
+    {
+      "id": "D0130_S4_clutter_milk",
+      "passed": true,
+      "visible_pixels": 5040,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5833394929968656
+    },
+    {
+      "id": "D0131_S4_clutter_bowl",
+      "passed": true,
+      "visible_pixels": 2573,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7824257008890304
+    },
+    {
+      "id": "D0132_S4_clutter_onion",
+      "passed": true,
+      "visible_pixels": 1386,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5872496430066138
+    },
+    {
+      "id": "D0133_S4_clutter_soap_dispenser",
+      "passed": true,
+      "visible_pixels": 1878,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.730167651089279
+    },
+    {
+      "id": "D0134_S4_clutter_pear",
+      "passed": true,
+      "visible_pixels": 1478,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7048639115098183
+    },
+    {
+      "id": "D0135_S4_clutter_baguette",
+      "passed": true,
+      "visible_pixels": 3268,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7510125640989717
+    },
+    {
+      "id": "D0136_S4_clutter_tomato",
+      "passed": true,
+      "visible_pixels": 2195,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4553051733461009
+    },
+    {
+      "id": "D0137_S4_clutter_remote_control",
+      "passed": true,
+      "visible_pixels": 4984,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6044179676186777
+    },
+    {
+      "id": "D0138_S4_clutter_cucumber",
+      "passed": true,
+      "visible_pixels": 1977,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6578196962712738
+    },
+    {
+      "id": "D0139_S4_clutter_apple",
+      "passed": true,
+      "visible_pixels": 1455,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6656322810049372
+    },
+    {
+      "id": "D0140_S4_clutter_bread",
+      "passed": true,
+      "visible_pixels": 6851,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4869153364839035
+    },
+    {
+      "id": "D0141_S4_clutter_boxed_food",
+      "passed": true,
+      "visible_pixels": 4673,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5848423507679498
+    },
+    {
+      "id": "D0142_S4_clutter_croissant",
+      "passed": true,
+      "visible_pixels": 4032,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.4965868565904685
+    },
+    {
+      "id": "D0143_S4_clutter_eggplant",
+      "passed": true,
+      "visible_pixels": 1944,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6020807546989757
+    },
+    {
+      "id": "D0144_S4_clutter_avocado",
+      "passed": true,
+      "visible_pixels": 1370,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6399855051451714
+    },
+    {
+      "id": "D0145_S4_clutter_corn",
+      "passed": true,
+      "visible_pixels": 2740,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5563973539922822
+    },
+    {
+      "id": "D0146_S4_clutter_keychain",
+      "passed": true,
+      "visible_pixels": 517,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7537132994031892
+    },
+    {
+      "id": "D0147_S4_clutter_orange",
+      "passed": true,
+      "visible_pixels": 1130,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7129321549247243
+    },
+    {
+      "id": "D0148_S4_clutter_carrot",
+      "passed": true,
+      "visible_pixels": 2614,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.47543457649127585
+    },
+    {
+      "id": "D0149_S4_clutter_donut",
+      "passed": true,
+      "visible_pixels": 1635,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7607587017074217
+    },
+    {
+      "id": "D0150_S4_clutter_banana",
+      "passed": true,
+      "visible_pixels": 2265,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6021563422857259
+    },
+    {
+      "id": "D0151_S4_clutter_spatula",
+      "passed": true,
+      "visible_pixels": 1277,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7948369933206297
+    },
+    {
+      "id": "D0152_S4_clutter_mango",
+      "passed": true,
+      "visible_pixels": 2906,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5024334066931626
+    },
+    {
+      "id": "D0153_S4_clutter_potato",
+      "passed": true,
+      "visible_pixels": 2732,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5709620489101006
+    },
+    {
+      "id": "D0154_S4_clutter_broccoli",
+      "passed": true,
+      "visible_pixels": 1716,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5182218005318265
+    },
+    {
+      "id": "D0155_S4_clutter_canned_food",
+      "passed": true,
+      "visible_pixels": 5695,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.36697614008775736
+    },
+    {
+      "id": "D0156_S4_clutter_peach",
+      "passed": true,
+      "visible_pixels": 1576,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5507932586137494
+    },
+    {
+      "id": "D0157_S4_clutter_sponge",
+      "passed": true,
+      "visible_pixels": 1948,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.7109014080790048
+    },
+    {
+      "id": "D0158_S4_clutter_yogurt",
+      "passed": true,
+      "visible_pixels": 1597,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.6906020103493755
+    },
+    {
+      "id": "D0159_S4_clutter_scissors",
+      "passed": true,
+      "visible_pixels": 1287,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5210472662832699
+    },
+    {
+      "id": "D0160_S4_clutter_book",
+      "passed": true,
+      "visible_pixels": 22522,
+      "occlusion_fraction": 0.0,
+      "center_distance_m": 0.5264980519222937
+    },
+    {
+      "id": "D0161_S5_occluded_mushroom",
+      "passed": true,
+      "visible_pixels": 498,
+      "occlusion_fraction": 0.21077654516640254,
+      "center_distance_m": 0.7375591445688146
+    },
+    {
+      "id": "D0162_S5_occluded_lemon",
+      "passed": true,
+      "visible_pixels": 1251,
+      "occlusion_fraction": 0.20621827411167515,
+      "center_distance_m": 0.6548064331820596
+    },
+    {
+      "id": "D0163_S5_occluded_orange",
+      "passed": true,
+      "visible_pixels": 1448,
+      "occlusion_fraction": 0.276,
+      "center_distance_m": 0.5251510303915679
+    },
+    {
+      "id": "D0164_S5_occluded_cell_phone",
+      "passed": true,
+      "visible_pixels": 1471,
+      "occlusion_fraction": 0.3623753792804508,
+      "center_distance_m": 0.7936515070048891
+    },
+    {
+      "id": "D0165_S5_occluded_pear",
+      "passed": true,
+      "visible_pixels": 1143,
+      "occlusion_fraction": 0.2696485623003195,
+      "center_distance_m": 0.6709682627432743
+    },
+    {
+      "id": "D0166_S5_occluded_book",
+      "passed": true,
+      "visible_pixels": 8510,
+      "occlusion_fraction": 0.3038854805725971,
+      "center_distance_m": 0.7912865851912498
+    },
+    {
+      "id": "D0167_S5_occluded_onion",
+      "passed": true,
+      "visible_pixels": 1182,
+      "occlusion_fraction": 0.2192866578599736,
+      "center_distance_m": 0.7767166377250293
+    },
+    {
+      "id": "D0168_S5_occluded_peach",
+      "passed": true,
+      "visible_pixels": 1090,
+      "occlusion_fraction": 0.21185827910339838,
+      "center_distance_m": 0.6553533535601729
+    },
+    {
+      "id": "D0169_S5_occluded_bottled_water",
+      "passed": true,
+      "visible_pixels": 1155,
+      "occlusion_fraction": 0.20124481327800825,
+      "center_distance_m": 0.8346617285543302
+    },
+    {
+      "id": "D0170_S5_occluded_candle",
+      "passed": true,
+      "visible_pixels": 1609,
+      "occlusion_fraction": 0.2260702260702261,
+      "center_distance_m": 0.5234197445632843
+    },
+    {
+      "id": "D0171_S5_occluded_avocado",
+      "passed": true,
+      "visible_pixels": 1371,
+      "occlusion_fraction": 0.2315022421524664,
+      "center_distance_m": 0.6300153542290636
+    },
+    {
+      "id": "D0172_S5_occluded_spatula",
+      "passed": true,
+      "visible_pixels": 665,
+      "occlusion_fraction": 0.39490445859872614,
+      "center_distance_m": 0.842695337360065
+    },
+    {
+      "id": "D0173_S5_occluded_milk",
+      "passed": true,
+      "visible_pixels": 1968,
+      "occlusion_fraction": 0.2006498781478473,
+      "center_distance_m": 0.6034121718519591
+    },
+    {
+      "id": "D0174_S5_occluded_mug",
+      "passed": true,
+      "visible_pixels": 1761,
+      "occlusion_fraction": 0.2333478450152373,
+      "center_distance_m": 0.7991823264556869
+    },
+    {
+      "id": "D0175_S5_occluded_keychain",
+      "passed": true,
+      "visible_pixels": 684,
+      "occlusion_fraction": 0.2182857142857143,
+      "center_distance_m": 0.6245613470635033
+    },
+    {
+      "id": "D0176_S5_occluded_donut",
+      "passed": true,
+      "visible_pixels": 2602,
+      "occlusion_fraction": 0.21127614428614727,
+      "center_distance_m": 0.5313334522618023
+    },
+    {
+      "id": "D0177_S5_occluded_cucumber",
+      "passed": true,
+      "visible_pixels": 1871,
+      "occlusion_fraction": 0.24768797748291116,
+      "center_distance_m": 0.5873285051045208
+    },
+    {
+      "id": "D0178_S5_occluded_boxed_food",
+      "passed": true,
+      "visible_pixels": 2351,
+      "occlusion_fraction": 0.23245184459680057,
+      "center_distance_m": 0.6148148746941372
+    },
+    {
+      "id": "D0179_S5_occluded_potato",
+      "passed": true,
+      "visible_pixels": 1130,
+      "occlusion_fraction": 0.2575558475689882,
+      "center_distance_m": 0.7013721955255436
+    },
+    {
+      "id": "D0180_S5_occluded_teapot",
+      "passed": true,
+      "visible_pixels": 1756,
+      "occlusion_fraction": 0.22059476253883714,
+      "center_distance_m": 0.7521148292778299
+    },
+    {
+      "id": "D0181_S5_occluded_eggplant",
+      "passed": true,
+      "visible_pixels": 807,
+      "occlusion_fraction": 0.31319148936170216,
+      "center_distance_m": 0.7628035884660752
+    },
+    {
+      "id": "D0182_S5_occluded_soap_dispenser",
+      "passed": true,
+      "visible_pixels": 1429,
+      "occlusion_fraction": 0.2034559643255296,
+      "center_distance_m": 0.7852616617751932
+    },
+    {
+      "id": "D0183_S5_occluded_scissors",
+      "passed": true,
+      "visible_pixels": 432,
+      "occlusion_fraction": 0.23809523809523814,
+      "center_distance_m": 0.7528400817170228
+    },
+    {
+      "id": "D0184_S5_occluded_bowl",
+      "passed": true,
+      "visible_pixels": 2658,
+      "occlusion_fraction": 0.20371479928100655,
+      "center_distance_m": 0.6571329643124758
+    },
+    {
+      "id": "D0185_S5_occluded_banana",
+      "passed": true,
+      "visible_pixels": 1057,
+      "occlusion_fraction": 0.20346646571213267,
+      "center_distance_m": 0.7340642070291581
+    },
+    {
+      "id": "D0186_S5_occluded_bell_pepper",
+      "passed": true,
+      "visible_pixels": 1574,
+      "occlusion_fraction": 0.2699443413729128,
+      "center_distance_m": 0.6378341399828363
+    },
+    {
+      "id": "D0187_S5_occluded_mango",
+      "passed": true,
+      "visible_pixels": 967,
+      "occlusion_fraction": 0.2361769352290679,
+      "center_distance_m": 0.7881536639274833
+    },
+    {
+      "id": "D0188_S5_occluded_remote_control",
+      "passed": true,
+      "visible_pixels": 2335,
+      "occlusion_fraction": 0.228354263053536,
+      "center_distance_m": 0.7293090582553667
+    },
+    {
+      "id": "D0189_S5_occluded_croissant",
+      "passed": true,
+      "visible_pixels": 2148,
+      "occlusion_fraction": 0.210003677822729,
+      "center_distance_m": 0.614362720797739
+    },
+    {
+      "id": "D0190_S5_occluded_sponge",
+      "passed": true,
+      "visible_pixels": 1174,
+      "occlusion_fraction": 0.20136054421768712,
+      "center_distance_m": 0.8012887923887199
+    },
+    {
+      "id": "D0191_S5_occluded_canned_food",
+      "passed": true,
+      "visible_pixels": 2066,
+      "occlusion_fraction": 0.22563718140929534,
+      "center_distance_m": 0.5723726780747087
+    },
+    {
+      "id": "D0192_S5_occluded_tomato",
+      "passed": true,
+      "visible_pixels": 752,
+      "occlusion_fraction": 0.2357723577235772,
+      "center_distance_m": 0.8084634401751523
+    },
+    {
+      "id": "D0193_S5_occluded_carrot",
+      "passed": true,
+      "visible_pixels": 553,
+      "occlusion_fraction": 0.23300970873786409,
+      "center_distance_m": 0.727964347477512
+    },
+    {
+      "id": "D0194_S5_occluded_yogurt",
+      "passed": true,
+      "visible_pixels": 1636,
+      "occlusion_fraction": 0.21572387344199428,
+      "center_distance_m": 0.6053055133897383
+    },
+    {
+      "id": "D0195_S5_occluded_broccoli",
+      "passed": true,
+      "visible_pixels": 509,
+      "occlusion_fraction": 0.24704142011834318,
+      "center_distance_m": 0.8488830886899178
+    },
+    {
+      "id": "D0196_S5_occluded_bar_soap",
+      "passed": true,
+      "visible_pixels": 1442,
+      "occlusion_fraction": 0.20022185246810875,
+      "center_distance_m": 0.7894987990689126
+    },
+    {
+      "id": "D0197_S5_occluded_apple",
+      "passed": true,
+      "visible_pixels": 1568,
+      "occlusion_fraction": 0.23061825318940132,
+      "center_distance_m": 0.5960456711142058
+    },
+    {
+      "id": "D0198_S5_occluded_baguette",
+      "passed": true,
+      "visible_pixels": 2301,
+      "occlusion_fraction": 0.24483098129307512,
+      "center_distance_m": 0.6170960623418297
+    },
+    {
+      "id": "D0199_S5_occluded_corn",
+      "passed": true,
+      "visible_pixels": 1128,
+      "occlusion_fraction": 0.2122905027932961,
+      "center_distance_m": 0.8912898161084895
+    },
+    {
+      "id": "D0200_S5_occluded_bread",
+      "passed": true,
+      "visible_pixels": 2564,
+      "occlusion_fraction": 0.20839765359678908,
+      "center_distance_m": 0.6262187526386988
+    }
+  ],
+  "target_distance_min_median_max_m": [
+    0.36697614008775736,
+    0.5947352749280996,
+    0.8912898161084895
+  ],
+  "target_centers_beyond_70cm_retained": 59,
+  "yaw_bins_degrees": [
+    -180.0,
+    -150.0,
+    -120.0,
+    -90.0,
+    -60.0,
+    -30.0,
+    0.0,
+    30.0,
+    60.0,
+    90.0,
+    120.0,
+    150.0,
+    180.0
+  ],
+  "yaw_counts": [
+    18,
+    13,
+    8,
+    20,
+    19,
+    17,
+    10,
+    20,
+    21,
+    17,
+    17,
+    20
+  ],
+  "verifier_source_sha256": "dbc678dee6b511ef72a4ba7d9f4409b0094a30c6aa5c7bfa18d1be43d423c63a"
+}

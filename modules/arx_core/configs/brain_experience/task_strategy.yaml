@@ -1,0 +1,148 @@
+category: task_strategy
+experiences:
+- id: align_before_distance_adjustment
+  title: 目标接近的对中优先策略
+  description: '当目标明显偏离图像水平中心时，通常先完成朝向调整，再进行前后距离调整。
+
+    这是一条任务经验；如果现场观测或抓取可行性给出更强证据，大脑可以采用其他顺序并说明原因。'
+  tags:
+  - 目标接近
+  - 对中
+  - 任务流程
+  references: {}
+  applicability:
+    platform_model: ARX-LIFT2
+    arm_model: ARX-X5
+    task_types:
+    - target_approach
+    - grasp
+  evidence: []
+  confidence: 0.75
+- id: observe_after_physical_motion
+  title: 物理移动后重新观测
+  description: 机器人执行物理移动后，应使用新的状态和图像判断动作效果，不能仅根据命令假设移动已经达到预期。
+  tags:
+  - 闭环
+  - 重新观测
+  - 任务流程
+  references: {}
+  applicability:
+    platform_model: ARX-LIFT2
+    arm_model: ARX-X5
+    task_types:
+    - reposition
+    - target_approach
+    - grasp
+  evidence:
+  - result: reobserve_after_each_motion
+    observation:
+      motion_types:
+      - rotation
+      - forward_motion
+      - backward_motion
+      follow_up_actions:
+      - get_status
+      - get_status
+      - get_status
+      - grasp_object
+    run_id: 0714c7cd2867
+  confidence: 0.97
+  updated_at: '2026-07-02T02:00:36.637416+00:00'
+- id: grasp_after_center_and_tolerance
+  title: 抓取前区分期望距离与距离误差容差
+  description: 本次成功样本再次表明，应先根据现场观测把目标对中，再根据最新测距判断是否进入可抓取状态；目标距离从较远位置经前进调整后进入可抓取范围，且在 grasp_readiness.ready=true
+    时才执行抓取。distance_tolerance_m 表示允许误差，不是目标距离本身。该样本不证明某个固定距离或容差是最佳或必要参数。
+  tags:
+  - 抓取门槛
+  - 居中
+  - 距离容差
+  - 闭环
+  - single_sample
+  references:
+    successful_sample_desired_distance_m: 0.35
+    distance_tolerance_m: 0.05
+    observed_distance_before_approach_m: 0.567099985673849
+    observed_distance_before_grasp_m: 0.3292999916811823
+  applicability:
+    platform_model: ARX-LIFT2
+    arm_model: ARX-X5
+    task_types:
+    - grasp
+    - target_approach
+  evidence:
+  - result: grasp_success_after_centering_and_distance_within_tolerance
+    observation:
+      target_side: center
+      distance_m: 0.3292999916811823
+      desired_distance_m: 0.35
+      distance_error_m: -0.020700008318817686
+      grasp_evaluation: PASS
+      grasp_confidence: 0.98
+    run_id: 0714c7cd2867
+  - result: update
+    observation:
+      distance_changed_after_forward_motion: true
+      distance_before_approach_m: 0.567099985673849
+      distance_before_grasp_m: 0.3292999916811823
+      grasp_readiness_ready_true_before_grasp: true
+      centered_before_grasp: true
+    run_id: 4dd0b15315b8
+  confidence: 0.91
+  updated_at: '2026-07-06T15:19:19.751041+00:00'
+- id: stop_when_centered_after_reobserve
+  title: 重新观测确认居中后立即停止转向
+  description: 在目标对中任务中，每次底盘旋转后应先重新观测目标是否已回到图像中心；一旦最新观测显示目标已居中，就停止继续转向。该结论强调以最新观测为准，不应基于先前偏移继续微调。
+  tags:
+  - 闭环
+  - 重新观测
+  - 居中停止
+  - 目标对中
+  - 转向控制
+  references:
+    task_goal: target_in_image_center
+    post_rotation_target_side: center
+  applicability:
+    platform_model: ARX-LIFT2
+    arm_model: ARX-X5
+    task_types:
+    - target_alignment
+  evidence:
+  - result: supported
+    observation:
+      post_reobserve_target_side: center
+      post_reobserve_bearing_error_rad: 0.03586188337519969
+      post_reobserve_horizontal_offset_m: 0.01740406079957393
+      task_decision: finish
+    run_id: 8fe0fe21f54d
+  confidence: 0.88
+  updated_at: '2026-07-02T07:44:01.648632+00:00'
+- id: pink_cuboid_refresh_observation_after_segmentation_failure_1
+  title: 首次 point 分割失败后，改用最新图像重新观测再分割
+  description: 在一次成功样本中，首次带 point 的目标分割失败后，没有继续沿用旧 point；随后改为使用最新图像重新获取目标的结构化观测，并成功完成目标分割与深度测距。该经验强调：当首次点提示失效时，应优先重观测、重分割，再决定后续对中或接近动作。
+  tags:
+  - task_strategy
+  - recovery
+  - segmentation
+  - reobserve
+  - single_sample
+  references:
+    run_id: 4dd0b15315b8
+    failed_step: target_segmentation
+    successful_reobservation_step: 2
+  applicability:
+    platform_model: ARX-LIFT2
+    arm_model: ARX-X5
+    task_types:
+    - grasp
+    - target_observation
+    - segmentation_recovery
+  evidence:
+  - result: add
+    observation:
+      first_point_segmentation_failed: true
+      reused_old_point: false
+      reobserved_with_latest_image: true
+      segmentation_then_succeeded: true
+    run_id: 4dd0b15315b8
+  confidence: 0.92
+  updated_at: '2026-07-06T15:19:19.751041+00:00'

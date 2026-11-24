@@ -1,0 +1,24 @@
+name: zerograsp
+channels:
+  - defaults
+  - https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/conda-forge/
+dependencies:
+  - python=3.11
+  - pip
+  - setuptools
+  - wheel
+  - cmake
+  - ninja
+  - pip:
+      # Socket communication, kept aligned with lingbot style.
+      - websockets==16.0
+      - msgpack==1.1.2
+      - numpy
+      - pyyaml
+
+      # Lightweight HTTP serving is optional, but useful for ZeroGrasp's
+      # existing FastAPI entrypoint.
+      - fastapi
+      - uvicorn

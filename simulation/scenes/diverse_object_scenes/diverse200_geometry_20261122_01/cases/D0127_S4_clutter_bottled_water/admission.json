@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "entry": {
+    "id": "D0127_S4_clutter_bottled_water",
+    "model_id": "robocasa__bottled_water__bottled_water_10",
+    "semantic_class": "bottled_water",
+    "family": "bottled_water",
+    "target_text": "water bottle",
+    "layout": "S4_clutter",
+    "seed": 3278875957,
+    "actor_identities": [
+      {
+        "name": "target",
+        "model_id": "robocasa__bottled_water__bottled_water_10"
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__soap_dispenser__soap_dispenser_0"
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__teapot__teapot_10"
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "robocasa__tomato__tomato_1"
+      },
+      {
+        "name": "distractor_03",
+        "model_id": "robocasa__boxed_food__boxed_food_4"
+      },
+      {
+        "name": "distractor_04",
+        "model_id": "robocasa__peach__peach_0"
+      },
+      {
+        "name": "distractor_05",
+        "model_id": "robocasa__broccoli__broccoli_1"
+      }
+    ],
+    "scene": {
+      "layout": "S4_clutter",
+      "actors": [
+        {
+          "name": "target",
+          "model_id": "robocasa__bottled_water__bottled_water_10",
+          "pose": [
+            -0.34219247102737427,
+            0.04439849033951759,
+            0.0799010843038559,
+            0.6821441054344177,
+            0.00043999822810292244,
+            -2.7658184990286827e-05,
+            0.7312177419662476
+          ]
+        },
+        {
+          "name": "distractor_00",
+          "model_id": "robocasa__soap_dispenser__soap_dispenser_0",
+          "pose": [
+            -0.26401522755622864,
+            0.3694438636302948,
+            0.06750057637691498,
+            0.6977272629737854,
+            2.5641638785600662e-06,
+            -3.535285941325128e-06,
+            -0.7163634300231934
+          ]
+        },
+        {
+          "name": "distractor_01",
+          "model_id": "robocasa__teapot__teapot_10",
+          "pose": [
+            -0.20211803913116455,
+            -0.03776446729898453,
+            0.03506110608577728,
+            0.9990010857582092,
+            -1.92217412404716e-05,
+            2.3131811758503318e-05,
+            0.04468922317028046
+          ]
+        },
+        {
+          "name": "distractor_02",
+          "model_id": "robocasa__tomato__tomato_1",
+          "pose": [
+            -0.4232170879840851,
+            0.08570456504821777,
+            0.028758825734257698,
+            0.724844217300415,
+            -1.792609691619873e-05,
+            1.9614933989942074e-05,
+            -0.6889129877090454
+          ]
+        },
+        {
+          "name": "distractor_03",
+          "model_id": "robocasa__boxed_food__boxed_food_4",
+          "pose": [
+            -0.5372967720031738,
+            -0.06136731803417206,
+            0.06453040987253189,
+            0.9109888076782227,
+            3.2011885195970535e-05,
+            -3.0903611332178116e-05,
+            0.4124312698841095
+          ]
+        },
+        {
+          "name": "distractor_04",
+          "model_id": "robocasa__peach__peach_0",
+          "pose": [
+            -0.3386862576007843,
+            -0.09127071499824524,
+            0.02965983748435974,
+            0.9923922419548035,
+            8.486956357955933e-05,
+            -0.0008193403482437134,
+            0.12311363965272903
+          ]
+        },
+        {
+          "name": "distractor_05",
+          "model_id": "robocasa__broccoli__broccoli_1",
+          "pose": [
+            -0.49850982427597046,
+            0.23351611196994781,
+            0.02614528499543667,
+            0.9158957600593567,
+            2.261251211166382e-06,
+            5.930755287408829e-05,
+            0.4014163315296173
+          ]
+        }
+      ],
+      "perception_camera": "head"
+    },
+    "admission": {
+      "target_mask_pixels": 2475,
+      "isolated_mask_pixels": 2475,
+      "occlusion_fraction": 0.0,
+      "projected_bbox_uv": [
+        [
+          418.15495992378334,
+          181.5489375462232
+        ],
+        [
+          484.0591822952473,
+          279.5119221629143
+        ]
+      ],
+      "fully_in_frame": true,
+      "admitted_view": true,
+      "valid_target_depth_fraction": 1.0,
+      "target_depth_median_m": 0.584,
+      "visible_pixels": 2475,
+      "border_clear": true
+    },
+    "camera": "head",
+    "robot_initial_q": [
+      0.4519999921321869,
+      -1.0728319921327056e-06,
+      -0.00020593733643181622,
+      2.5863868359010667e-05,
+      2.7094700271845795e-05,
+      0.0,
+      0.0,
+      -0.24871869385242462,
+      -0.24505318701267242,
+      -0.0005250244867056608,
+      0.00040246330900117755,
+      -0.0027694408781826496,
+      -0.0016749418573454022,
+      6.499443770735525e-06,
+      0.00048274517757818103,
+      0.043999914079904556,
+      0.04397093132138252
+    ],
+    "base_pose": [
+      -1.0499999523162842,
+      0.2499999850988388,
+      -0.5000001192092896,
+      1.0000001192092896,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "observation": null,
+    "physical_grasp_attempts": 0
+  },
+  "camera_input_sha256": {
+    "color.png": "d950bf93a9e998402c769cfb268a679413a7e11da3d7054ba5dc8ca45a04e730",
+    "depth.png": "07273148504944b7e37475e2baa833feb59918fd86bfb70b588f7583bb61bbd2",
+    "params.json": "b352abd8dac97ffc0c9b7570c968400ea1e9769089a4524b3f621f4e9e99f47e"
+  },
+  "ground_truth_mask_is_evaluation_only": true
+}

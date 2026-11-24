@@ -1,0 +1,52 @@
+{
+  "version": "V2",
+  "pipeline": "ZeroGrasp＋cuRobo",
+  "group": "fixed_zerograsp",
+  "registered_scenes": 160,
+  "results": {
+    "completed": 160,
+    "planning_passes": 153,
+    "physical_attempts": 153,
+    "successes": 111,
+    "failure_reasons": {
+      "approach_not_converged": 8,
+      "insufficient_hold_height": 21,
+      "no_feasible_native_post_or_recalled_candidate": 7,
+      "close_not_converged": 6,
+      "no_bilateral_target_contact": 6,
+      "forbidden_robot_contact": 1
+    },
+    "by_layout": {
+      "S1_open": {
+        "n": 40,
+        "planning": 38,
+        "success": 28
+      },
+      "S2_edge": {
+        "n": 40,
+        "planning": 39,
+        "success": 27
+      },
+      "S3_sparse": {
+        "n": 40,
+        "planning": 39,
+        "success": 29
+      },
+      "S4_clutter": {
+        "n": 40,
+        "planning": 37,
+        "success": 27
+      }
+    },
+    "not_executed": 0,
+    "complete_result_records": 160
+  },
+  "output_directory": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp",
+  "source_audit_passed": true,
+  "source_summary_sha256": "8d9cf0c8a05ca34c47bfd0dc33e905b3a4ce0204a629232a08d1c0ee8eaf2f5b",
+  "source_summary": "内容/资源/45厘米高度实验/实验汇总.json",
+  "subset_checks": {
+    "failure_totals_match": true,
+    "layout_totals_match": true
+  }
+}

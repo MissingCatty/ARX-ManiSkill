@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "entry": {
+    "id": "D0019_S1_open_avocado",
+    "model_id": "robocasa__avocado__avocado_4",
+    "semantic_class": "avocado",
+    "family": "avocado",
+    "target_text": "avocado",
+    "layout": "S1_open",
+    "seed": 1119061506,
+    "actor_identities": [
+      {
+        "name": "target",
+        "model_id": "robocasa__avocado__avocado_4"
+      }
+    ],
+    "scene": {
+      "layout": "S1_open",
+      "actors": [
+        {
+          "name": "target",
+          "model_id": "robocasa__avocado__avocado_4",
+          "pose": [
+            -0.24943645298480988,
+            0.008371572010219097,
+            0.03346468135714531,
+            0.3363332450389862,
+            0.0002535581588745117,
+            6.877072155475616e-05,
+            0.941743016242981
+          ]
+        }
+      ],
+      "perception_camera": "head"
+    },
+    "admission": {
+      "target_mask_pixels": 1997,
+      "isolated_mask_pixels": 1997,
+      "occlusion_fraction": 0.0,
+      "projected_bbox_uv": [
+        [
+          408.59300483983566,
+          176.7631534287694
+        ],
+        [
+          493.34530240185484,
+          254.42913924484313
+        ]
+      ],
+      "fully_in_frame": true,
+      "admitted_view": true,
+      "valid_target_depth_fraction": 1.0,
+      "target_depth_median_m": 0.68,
+      "visible_pixels": 1997,
+      "border_clear": true
+    },
+    "camera": "head",
+    "robot_initial_q": [
+      0.4519999921321869,
+      -1.0728319921327056e-06,
+      -0.00020593733643181622,
+      2.5863868359010667e-05,
+      2.7094700271845795e-05,
+      0.0,
+      0.0,
+      -0.24871869385242462,
+      -0.24505318701267242,
+      -0.0005250244867056608,
+      0.00040246330900117755,
+      -0.0027694408781826496,
+      -0.0016749418573454022,
+      6.499443770735525e-06,
+      0.00048274517757818103,
+      0.043999914079904556,
+      0.04397093132138252
+    ],
+    "base_pose": [
+      -1.0499999523162842,
+      0.2499999850988388,
+      -0.5000001192092896,
+      1.0000001192092896,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "observation": null,
+    "physical_grasp_attempts": 0
+  },
+  "camera_input_sha256": {
+    "color.png": "25454de82da45c24ce642c5baa48ed20e2ba58eadd7fed3680d7f1568fbb8f52",
+    "depth.png": "ad6a849bf49072e8a9307c1e2ecbae472940bd706e7d05f1b55a273f63c1976b",
+    "params.json": "b352abd8dac97ffc0c9b7570c968400ea1e9769089a4524b3f621f4e9e99f47e"
+  },
+  "ground_truth_mask_is_evaluation_only": true
+}

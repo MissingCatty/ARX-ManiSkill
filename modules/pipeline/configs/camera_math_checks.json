@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "sdk_version": "2.59.2",
+  "roles": {
+    "head": {
+      "deprojection_max_normalized_error": 1.4477722254380154e-07,
+      "projection_max_pixel_error": 5.681596167050884e-05,
+      "checked_pixel_count": 99,
+      "checked_ray_count": 81,
+      "depth_unit_and_invalid_checks_passed": true
+    },
+    "left_wrist": {
+      "deprojection_max_normalized_error": 1.0749439716128961e-07,
+      "projection_max_pixel_error": 4.434318702806195e-05,
+      "checked_pixel_count": 99,
+      "checked_ray_count": 81,
+      "depth_unit_and_invalid_checks_passed": true
+    },
+    "right_wrist": {
+      "deprojection_max_normalized_error": 1.2426856155212107e-07,
+      "projection_max_pixel_error": 6.569781794496521e-05,
+      "checked_pixel_count": 99,
+      "checked_ray_count": 81,
+      "depth_unit_and_invalid_checks_passed": true
+    }
+  },
+  "physical_trials": 0
+}

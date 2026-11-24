@@ -1,0 +1,38 @@
+STATIC_CHECK_PASSED 10
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 4090" (24 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /home/zhaoyechong/.cache/warp/1.18.0
+Module curobo._src.geom.transform e63256c load on device 'cuda:0' took 45.65 ms  (cached)
+Module curobo._src.cost.wp_cspace_position 720cc8f load on device 'cuda:0' took 47.05 ms  (cached)
+Module curobo._src.geom.collision.wp_collision_kernel c21139e load on device 'cuda:0' took 23.07 ms  (cached)
+Module curobo._src.geom.collision.wp_collision_kernel 088fc58 load on device 'cuda:0' took 54.73 ms  (cached)
+Module goalset_pose_distance_1_0_dceffa2f dceffa2 load on device 'cuda:0' took 41.00 ms  (cached)
+Module _lm_solve_tiled_6_12_2a7debec 98fbcb3 load on device 'cuda:0' took 446.58 ms  (cached)
+Module curobo._src.cost.wp_torch_cspace_dist 131408b load on device 'cuda:0' took 29.55 ms  (cached)
+TRAJOPT_ATTEMPT resident_startup_warmup {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+Module curobo._src.cost.wp_cspace_state 9ea9a53 load on device 'cuda:0' took 41.87 ms  (cached)
+Module curobo._src.geom.collision.wp_sweep_collision_kernel 99c2e3d load on device 'cuda:0' took 38.69 ms  (cached)
+Module curobo._src.geom.collision.wp_sweep_collision_kernel b3974db load on device 'cuda:0' took 43.06 ms  (cached)
+Module curobo._src.geom.collision.wp_speed_metric 14ade1f load on device 'cuda:0' took 7.15 ms  (cached)
+TRAJOPT_ATTEMPT resident_startup_warmup {"initial_iters": 100, "num_seeds": 4, "finetune_attempts": 3}
+PURE/FIXED-POSITION PROBES PASSED 32 20
+CASE I0069 candidates 1 full_pose 1 scene_clear 1
+CASE I0038 candidates 10 full_pose 2 scene_clear 2
+CASE I0018 candidates 9 full_pose 1 scene_clear 1
+CASE I0015 candidates 7 full_pose 2 scene_clear 2
+CASE I0044 candidates 4 full_pose 1 scene_clear 1
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+Mesh already in cache, reusing existing instance: target_a472d2f605c148eff5a4
+CASE I0063 candidates 7 full_pose 1 scene_clear 1
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+Mesh already in cache, reusing existing instance: distractor_02_4d2924fc1533bee5c742
+CASE I0119 candidates 5 full_pose 0 scene_clear 0
+CASE I0130 candidates 8 full_pose 1 scene_clear 1
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+Mesh already in cache, reusing existing instance: distractor_01_5944e76204c3bc3f1f1e
+CASE I0167 candidates 8 full_pose 2 scene_clear 2
+CASE I0190 candidates 5 full_pose 1 scene_clear 1

@@ -1,0 +1,20 @@
+{
+  "purpose": "Current active ARX right-arm robot descriptions with approved 871-sphere profile",
+  "collision_profile_id": "arx_refined_871_v1",
+  "sphere_parameter_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
+  "files": {
+    "historical_reference/catalog.json": "7457d916797fd94e18c87923b49bd3c2548b20c65f7770470f9421fc52e8c91a",
+    "historical_reference/catalog_asset_sha256.json": "2bfbef944d2f8ea9082ad81074e7161f9dd51e77174ec6ac48cf91f32db0bb44",
+    "historical_reference/initial_setup.json": "53d6cd529bcd7700d7b81ab79150ec5ef5918fb26852ddb3d3f1ae1164cfd61e",
+    "historical_reference/registration.json": "c7f3e6c6f3a52fe03943c43b408079e56f04611416431eee6d19068787c8fd2c",
+    "historical_reference/setup.json.gz": "d00fd09a11541a249d2e0fdd973aab86a33951040e61e71926f31374b35baaf4",
+    "historical_reference/viewport_initial.json": "031ba8c499c7abeaa7d7c6846265ee7d76c515dbcc7b9803434a60c83914675a",
+    "model/arx.urdf": "05116a83104b73128743e5c4b3de0338642be0a9fe607a79681e358495aebb3f",
+    "model/arx.yml": "d783232b88c760c85377d3d9b850a77981b11d257e355cf7ba108ef251ab5b79",
+    "model/model_manifest.json": "4d5278cd9f51507d8bf8b3dc422bceb3853001fd608ec6af829f184689ba1d48",
+    "model_closed/arx.urdf": "05116a83104b73128743e5c4b3de0338642be0a9fe607a79681e358495aebb3f",
+    "model_closed/arx.yml": "953fe68949d64fc5cf8febe5417c1bb0ca8433a2c4ae54b9a87fdd1c2a2c1124",
+    "model_closed/model_manifest.json": "1e4211b221f9c7aa8fa8f45699271207777ef103a2c31606966f5c5cfd689cef"
+  },
+  "runtime_initial_state": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/configs/runtime/arx_initial_state.json"
+}

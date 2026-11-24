@@ -1,0 +1,154 @@
+{
+  "authorization": "2026-11-23 user: fix, rerun tests, clear previous test artifacts",
+  "at": "2026-11-23T07:59:01.419472+08:00",
+  "targets": [
+    {
+      "path": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/diverse_grasp_benchmark/runs/diverse200_fixed452_20261122_01",
+      "files": 7751,
+      "bytes": 1726658941,
+      "registration_sha256": "7156a027d3a1b8af0bf994e23cc93b0b398aa8ac4506ff99606c9882b75bd96b",
+      "protocol": "diverse200_head_sam3_rayst3r_graspgenx_fixed452_v1",
+      "previous_progress": {
+        "phase": "stopped_by_user",
+        "registered": 200,
+        "completed": 144,
+        "not_executed": 56,
+        "claimed_without_terminal_receipt": [],
+        "grasp_planning_entered": 100,
+        "before_grasp_planning_failures": 44,
+        "planning_passes": 70,
+        "planning_rejections": 30,
+        "physical_attempts": 70,
+        "successes": 4,
+        "failure_reasons": {
+          "insufficient_hold_height": 15,
+          "no_bilateral_target_contact": 46,
+          "sam3_no_target_mask": 43,
+          "no_feasible_native_post_or_recalled_candidate": 30,
+          "forbidden_robot_contact": 4,
+          "rayst3r_empty_pointcloud": 1,
+          "close_not_converged": 1
+        },
+        "planning_rate_among_entered": 0.7,
+        "planning_rate_registered": 0.35,
+        "success_rate_registered": 0.02,
+        "success_rate_completed": 0.027777777777777776,
+        "at": "2026-11-22T21:16:33.983784+08:00",
+        "by_layout": {
+          "S1_open": {
+            "completed": 40,
+            "planning_passes": 27,
+            "successes": 1
+          },
+          "S2_edge": {
+            "completed": 40,
+            "planning_passes": 0,
+            "successes": 0
+          },
+          "S3_sparse": {
+            "completed": 40,
+            "planning_passes": 24,
+            "successes": 3
+          },
+          "S4_clutter": {
+            "completed": 24,
+            "planning_passes": 19,
+            "successes": 0
+          },
+          "S5_occluded": {
+            "completed": 0,
+            "planning_passes": 0,
+            "successes": 0
+          }
+        },
+        "automatic_resume_allowed": false,
+        "stop_receipt": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/diverse_grasp_benchmark/runs/diverse200_fixed452_20261122_01/user_stop.json",
+        "interrupted": [
+          "D0145_S4_clutter_corn"
+        ],
+        "not_started": 55
+      }
+    },
+    {
+      "path": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/diverse_grasp_benchmark/runs/geometry200_fixed452_20261122_01",
+      "files": 4308,
+      "bytes": 936820337,
+      "registration_sha256": "02b4cf61cb64dfaf83423f93cdf0837d8934d98041b5304da57c855f6748ef18",
+      "protocol": "independent_geometry200_head_sam3_rayst3r_graspgenx_fixed452_v1",
+      "previous_progress": {
+        "phase": "stopped_by_user",
+        "registered": 200,
+        "completed": 66,
+        "not_executed": 134,
+        "claimed_without_terminal_receipt": [
+          "D0067_S2_edge_apple"
+        ],
+        "grasp_planning_entered": 51,
+        "before_grasp_planning_failures": 15,
+        "planning_passes": 50,
+        "planning_rejections": 1,
+        "physical_attempts": 50,
+        "successes": 0,
+        "failure_reasons": {
+          "insufficient_hold_height": 16,
+          "no_bilateral_target_contact": 32,
+          "sam3_no_target_mask": 15,
+          "no_feasible_native_post_or_recalled_candidate": 1,
+          "forbidden_robot_contact": 2
+        },
+        "planning_rate_among_entered": 0.9803921568627451,
+        "planning_rate_registered": 0.25,
+        "success_rate_registered": 0.0,
+        "success_rate_completed": 0.0,
+        "at": "2026-11-23T00:13:42.374966+08:00",
+        "by_layout": {
+          "S1_open": {
+            "completed": 40,
+            "planning_passes": 30,
+            "successes": 0
+          },
+          "S2_edge": {
+            "completed": 26,
+            "planning_passes": 20,
+            "successes": 0
+          },
+          "S3_sparse": {
+            "completed": 0,
+            "planning_passes": 0,
+            "successes": 0
+          },
+          "S4_clutter": {
+            "completed": 0,
+            "planning_passes": 0,
+            "successes": 0
+          },
+          "S5_occluded": {
+            "completed": 0,
+            "planning_passes": 0,
+            "successes": 0
+          }
+        },
+        "automatic_resume_allowed": false,
+        "interrupted": [
+          "D0067_S2_edge_apple"
+        ],
+        "not_started": 133
+      }
+    },
+    {
+      "path": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/claro/进度网站/内容/资源/grasp-failures",
+      "files": 115,
+      "bytes": 157804080
+    }
+  ],
+  "preserved": [
+    "frozen 200-scene dataset",
+    "object assets",
+    "weights",
+    "offline diagnosis and its independent controlled experiments",
+    "unrelated historical benchmarks"
+  ],
+  "completed": true,
+  "removed_web_assets": 108,
+  "freed_bytes": 2821283358
+}

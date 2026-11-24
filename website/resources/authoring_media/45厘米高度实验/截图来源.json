@@ -1,0 +1,316 @@
+{
+  "run": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01",
+  "selection_policy": "3 GraspCL-only, 2 ZeroGrasp-only, 3 both-success, 2 both-failure; deterministic layout/object diversity; illustrative only.",
+  "cases": [
+    {
+      "id": "I0008_S1_open_052_extra_large_clamp",
+      "sources": [
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0008_S1_open_052_extra_large_clamp/initial_overview.png",
+          "sha256": "3664afef12dfd6112abc059d91622296513f084db67f8f42aa93f812390a6674"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0008_S1_open_052_extra_large_clamp/camera/color.png",
+          "sha256": "5d67fce1c2dab8730194135fb0c228cf9057af25b1d716e53036134c302df526"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0008_S1_open_052_extra_large_clamp/execution.mp4",
+          "sha256": "414f582db25266015f349a95fae9750b3bf2358fac28428f915a27e7a0d36d93",
+          "frame_index": 419,
+          "frame_count": 421,
+          "fps": 20.0,
+          "result_sha256": "5fb4cc5132cc0681ef5824c467c677cdc4fc7eda511f3ecb8094954f80b70690",
+          "evaluation_sha256": "3a20dc77fe8b3db94317c28328f1310651042b3493ad609e3f74c8576eeea495"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_graspcl/trials/I0008_S1_open_052_extra_large_clamp/execution.mp4",
+          "sha256": "d38f132a427ebec229724fe4dc91f2bb3df4015c57729029fd7c82f59c0c1450",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "2454b6803329ccde5c44ad967de42d49627a7426ecc6a2b6160b100209b394ba",
+          "evaluation_sha256": "90787655f48641bf691798390b44372976de6c73ec3d77109bd7b9644d819522"
+        }
+      ]
+    },
+    {
+      "id": "I0010_S2_edge_071_nine_hole_peg_test",
+      "sources": [
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0010_S2_edge_071_nine_hole_peg_test/initial_overview.png",
+          "sha256": "c00544ab620717fa640ca884e1020d4ac5db8aba01ba88d0e43fb7e1762598c0"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0010_S2_edge_071_nine_hole_peg_test/camera/color.png",
+          "sha256": "073ef900f054b8fc099420f01033eaf12ec3f2b2db13550876189680aa4704ee"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0010_S2_edge_071_nine_hole_peg_test/execution.mp4",
+          "sha256": "2907f6e168f91dff9957f49e391816dda9f5a4cc3a61de1ff66cab27de9836b6",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "0bbb55545af084064638cb34d17080b36d1c64d98401f5ea55e51c915c5d74aa",
+          "evaluation_sha256": "9f5ce7a391cd313264fbf2044003b7e7b8eff491fb54993a57ffaa1d46398c14"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_graspcl/trials/I0010_S2_edge_071_nine_hole_peg_test/execution.mp4",
+          "sha256": "6db1556855c32072d28d8566f703fc2b63463b7ce8ed8287b71af81ba36029f8",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "4ee59e44ecb970cb069c18d5a45048b61c7dda23b2412806506c16549e4e3b9f",
+          "evaluation_sha256": "2c2ceae1d55a56a5f395faa20feb94eed0738d8de1960c319b48baac6a8e0f33"
+        }
+      ]
+    },
+    {
+      "id": "I0017_S3_sparse_072-a_toy_airplane",
+      "sources": [
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0017_S3_sparse_072-a_toy_airplane/initial_overview.png",
+          "sha256": "d2d8b8abb3bce178e56e2a1d0954c18adcd4e066adbfe35acff843202fdf36e3"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0017_S3_sparse_072-a_toy_airplane/camera/color.png",
+          "sha256": "cec6445e5ad903b389db093b13993fae44f2b8dda2d62e7b53a377eeb9d5ad1d"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0017_S3_sparse_072-a_toy_airplane/execution.mp4",
+          "sha256": "bc7e6b49f83a66afacf06d4b14c0a1db39662146d0cd04c370d8d952c7cfc9d6",
+          "frame_index": 255,
+          "frame_count": 257,
+          "fps": 20.0,
+          "result_sha256": "4bf0975a53016645529347b5fa8306f1a6a819345c1abbb1830668989bd16aa3",
+          "evaluation_sha256": "c400ce3b83f4035ab7c7bbeb1bd901b1b08dccdbebcd1958ed7bf22fb5df5b72"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_graspcl/trials/I0017_S3_sparse_072-a_toy_airplane/execution.mp4",
+          "sha256": "4c985eec077aac903087a0d5136900fd7ada407078beb480bc56058c170f9f63",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "b1303385482e85e20692750e33d789076a923324e49c4552faa14dc052973383",
+          "evaluation_sha256": "956cd10a54e45f52d73dc4086789effb3ac024ace14bd8029868a4227e48ccc8"
+        }
+      ]
+    },
+    {
+      "id": "I0001_S4_clutter_072-c_toy_airplane",
+      "sources": [
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0001_S4_clutter_072-c_toy_airplane/initial_overview.png",
+          "sha256": "dd90ecd33096d537e7c903f487781045a06ce405bdfdf6fb0996fb18e916df87"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0001_S4_clutter_072-c_toy_airplane/camera/color.png",
+          "sha256": "a4998a28038285a70f5f5c62bf08d224ac404df378ddf8bd9a02560568d4c5f4"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0001_S4_clutter_072-c_toy_airplane/execution.mp4",
+          "sha256": "0fabcd7ba2c5a1ee2a7ade5ca4ac8927652c5523c7b06ac812973e7a1558f364",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "6368bf51c876d311aa2b27662a630ce98de95db1ab64028aedbf4116e3a0c3e1",
+          "evaluation_sha256": "04a0890d8f217a83817e1cf4f67494aca1323b3943e67f25f0c862a6287ed142"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_graspcl/trials/I0001_S4_clutter_072-c_toy_airplane/execution.mp4",
+          "sha256": "bfa913d5c26f8ccf050c7dfa03dc38e8ab68af059dff8e9594390d75c7defd48",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "2c5cd6e8d96dcef10815e63cd9e44fda77ea4dac82453c1efe9014c3721b1795",
+          "evaluation_sha256": "9eb5f97be62ebeab2516c0505935e7842db2b64a7c987382cd7df14dee8f279a"
+        }
+      ]
+    },
+    {
+      "id": "I0037_S2_edge_072-b_toy_airplane",
+      "sources": [
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0037_S2_edge_072-b_toy_airplane/initial_overview.png",
+          "sha256": "7409c508690b3027f10e3551207be7f71a08afcfa811e1a0ffd9cc9dec8f6cd5"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0037_S2_edge_072-b_toy_airplane/camera/color.png",
+          "sha256": "cfabba8e6aba6d72d52a8e8a4c157f99cb0952694c6c06640b33f17a3899aeff"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0037_S2_edge_072-b_toy_airplane/execution.mp4",
+          "sha256": "fd2880585edcb110eb67d39fc7c7237d22bd5d4901efd79408771b834306c305",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "927d835c93e2ec513ce515dbf3c28d8b3059b90ccc4f2e77d837976d9fe15174",
+          "evaluation_sha256": "455f4a8337072964cd7f8868326f375f2f822de5676aed94deb0156f223f6eea"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_graspcl/trials/I0037_S2_edge_072-b_toy_airplane/execution.mp4",
+          "sha256": "a3dd9b81816358db818290ea2652254f8d23216432b12ee8559b522de8c69934",
+          "frame_index": 480,
+          "frame_count": 482,
+          "fps": 20.0,
+          "result_sha256": "0c10231da895457c473a032c68cf1e9be5bf98fc0815989cb83bcb4684620c81",
+          "evaluation_sha256": "aea9357d1f7c2a1f3c63b175e202229c676c0de005bb4628e4d4478542bd0e12"
+        }
+      ]
+    },
+    {
+      "id": "I0005_S1_open_063-b_marbles",
+      "sources": [
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0005_S1_open_063-b_marbles/initial_overview.png",
+          "sha256": "2ab32b9a47ec790a25b13b2925110d41e3715dbf3106c0024196cc4f61a06b30"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0005_S1_open_063-b_marbles/camera/color.png",
+          "sha256": "739eb4920b3d13399c1f293f5fbd4f315e77212ee07f3220fcc57fd9a5566876"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0005_S1_open_063-b_marbles/execution.mp4",
+          "sha256": "557480a4d3c7b1048c693a027c6270d6baf2439466aee1d0337bc7f49a44616d",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "334e95147e86838e1c163f305092641f31aaa2e62ec35e506b1c2fc6af590984",
+          "evaluation_sha256": "5223a8bd795d7265c0d2046b353a540dd9614f5d61933d8122b5d2f688ffe19e"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_graspcl/trials/I0005_S1_open_063-b_marbles/execution.mp4",
+          "sha256": "aa530f2389ca770756b34bcc2e36f815148bc85ac1af613b155cd84e7a34dd01",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "932038ca9f2a2bb0af69f6e0069ae239b61b818a94b9c6bf8c6bad0466b0c92d",
+          "evaluation_sha256": "16c98c046cd13de7f00ac9e656efc0fc4c64f543817b454fa3d79bc28d43ec38"
+        }
+      ]
+    },
+    {
+      "id": "I0006_S4_clutter_051_large_clamp",
+      "sources": [
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0006_S4_clutter_051_large_clamp/initial_overview.png",
+          "sha256": "4a7489ae1acd819f8bab8269868582bd9ab0b890e5323f9c86a955331b42231d"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0006_S4_clutter_051_large_clamp/camera/color.png",
+          "sha256": "ed2844c98ca81eda5545f730443721b7e1f4ac781967f3ed2052005df45bc8b3"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0006_S4_clutter_051_large_clamp/execution.mp4",
+          "sha256": "b92adc7fad92439fca67aa11ac6b70f28b4f205f9b4d63eb29d8ec7d7b1b0fd0",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "a0a94d5d49f724f98fc0d771347f1161b0a92abe2488789412a887aa7e92c384",
+          "evaluation_sha256": "e7fd5a6972ca9d930cc9f71e9b5c23a0174a10c37ad5bf45f6c8285e4ac74ec4"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_graspcl/trials/I0006_S4_clutter_051_large_clamp/execution.mp4",
+          "sha256": "94dd4057b4b7a4f106eb6dc18778e56f6f82921474a37a177e36406ec7f06c1f",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "985d4d63d0c00bf006c8bd51dc01ccafff144fe8a509a2f88281c750b97cb91a",
+          "evaluation_sha256": "47265bd2b38d00ed6a7f0bb21fbb9ebc38922422f2dc9558c971d8139eef0b34"
+        }
+      ]
+    },
+    {
+      "id": "I0009_S3_sparse_065-i_cups",
+      "sources": [
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0009_S3_sparse_065-i_cups/initial_overview.png",
+          "sha256": "ac9be19f1a0418264c3670d2e46cbd28211797d7f21036ce570ca613b6e9bb6d"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0009_S3_sparse_065-i_cups/camera/color.png",
+          "sha256": "3af6f5d9ba76f9017a6081c39d57a7ed16881865e9e0d3e599e3d3fae85d8db0"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0009_S3_sparse_065-i_cups/execution.mp4",
+          "sha256": "b3f784cd1460b3d1d6dde844e002993cc61f41f6fa845b157330b681e4263d12",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "d2408125eff6ae54f6ba1e2dc64bf01374fa0363cb69a291bf95c9528f5c4f0a",
+          "evaluation_sha256": "74c33366024112eb83c348a5500ffda8ea1932cde38e01c372dadb3485ec0d20"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_graspcl/trials/I0009_S3_sparse_065-i_cups/execution.mp4",
+          "sha256": "9bd72740dbdc98b65b603c229e51bc6ca3319d8a74d2f63a6ebd3d9a91ea5952",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "8d0293beb61e8b23686c023d72292401a896ef199d6607a1e31ace28fc1d2af6",
+          "evaluation_sha256": "10388dae4073d09aaf7d3de4a1c3ecb9ed90f2b584d237e815e60ba2d6622756"
+        }
+      ]
+    },
+    {
+      "id": "I0013_S1_open_032_knife",
+      "sources": [
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0013_S1_open_032_knife/initial_overview.png",
+          "sha256": "b44668e9154523108c0f26602d62ee0f92f5a011c464711417912329a35e3523"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0013_S1_open_032_knife/camera/color.png",
+          "sha256": "9a41aac3a720eb56d7cce5da04ce6704bc6d446d81da3fa809c877f50fbdeaf1"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0013_S1_open_032_knife/execution.mp4",
+          "sha256": "27648cc402c0365e087fa0155ac83b87ba8de1809ff1f1cb402ee52c1ef0cb8e",
+          "frame_index": 119,
+          "frame_count": 121,
+          "fps": 20.0,
+          "result_sha256": "06e62ff7f096ae5851c0a2bd85129e29fd35f0ba80eaf6762cd605fe34908077",
+          "evaluation_sha256": "3a20dc77fe8b3db94317c28328f1310651042b3493ad609e3f74c8576eeea495"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_graspcl/trials/I0013_S1_open_032_knife/execution.mp4",
+          "sha256": "7bc5efa896efb5c58e291c3f3e2e1869bd5620446e2efd5cf26420bb10e908da",
+          "frame_index": 400,
+          "frame_count": 402,
+          "fps": 20.0,
+          "result_sha256": "f71881ef1b045fe8206d2046bc8a26bb53dec4d51695d873eeb0eb5a37d07e1d",
+          "evaluation_sha256": "b339044d33988fa5fc9f4f3b7d734807a9bc5ab09c5ab2df92153646306a3852"
+        }
+      ]
+    },
+    {
+      "id": "I0045_S4_clutter_059_chain",
+      "sources": [
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0045_S4_clutter_059_chain/initial_overview.png",
+          "sha256": "25c6708a848a82c60dbf59d0375bd8ef5f8bb55557fe0d5b2a769d6ac640be4a"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0045_S4_clutter_059_chain/camera/color.png",
+          "sha256": "ce95bcc37ee9959edc00a05ec10dc27c5b815125f83bbab99a03823b24622f55"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_zerograsp/trials/I0045_S4_clutter_059_chain/execution.mp4",
+          "sha256": "c3596d3832ed14914d9352f047caf2eca87dfb0d41013afae57a51c3ba3bc3b6",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "5091db1aca396d2f12da74104896c95c5a44bdcefa77f7356d3226035dbdc8a4",
+          "evaluation_sha256": "8da06402555f1f43d7837704b73f3d5f50d1183dfee24ef78b1ed394d0590a4a"
+        },
+        {
+          "path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_compat160_20261120_01/fixed_graspcl/trials/I0045_S4_clutter_059_chain/execution.mp4",
+          "sha256": "67531123d11b689f48a3e16ca421e77fe17bf15c85e73e9ea6e360721f62b04a",
+          "frame_index": 581,
+          "frame_count": 583,
+          "fps": 20.0,
+          "result_sha256": "2a46861024a44f9348c2dc4c454a5c439dfee8372b3b2909c47aeb61fe7e6890",
+          "evaluation_sha256": "ea501ac9ac0e8c8f2a96fbce1e3b67d454ab40e33587b60ef39a998fc4ba59ef"
+        }
+      ]
+    }
+  ]
+}

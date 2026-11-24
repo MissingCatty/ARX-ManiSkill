@@ -1,0 +1,154 @@
+{
+  "id": "D0123_S4_clutter_mushroom",
+  "model_id": "robocasa__mushroom__mushroom_0",
+  "semantic_class": "mushroom",
+  "family": "mushroom",
+  "target_text": "mushroom",
+  "layout": "S4_clutter",
+  "seed": 184261492,
+  "actor_identities": [
+    {
+      "name": "target",
+      "model_id": "robocasa__mushroom__mushroom_0"
+    },
+    {
+      "name": "distractor_00",
+      "model_id": "ai2thor__book__Book_11"
+    },
+    {
+      "name": "distractor_01",
+      "model_id": "robocasa__mango__mango_1"
+    },
+    {
+      "name": "distractor_02",
+      "model_id": "robocasa__scissors__scissors_0"
+    },
+    {
+      "name": "distractor_03",
+      "model_id": "robocasa__candle__candle_0"
+    }
+  ],
+  "scene": {
+    "layout": "S4_clutter",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__mushroom__mushroom_0",
+        "pose": [
+          -0.40746474266052246,
+          0.21062929928302765,
+          0.012520481832325459,
+          0.974921464920044,
+          -0.002053856384009123,
+          0.00613782461732626,
+          -0.22245481610298157
+        ]
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "ai2thor__book__Book_11",
+        "pose": [
+          -0.4177333116531372,
+          0.00033471567439846694,
+          0.0012769373133778572,
+          0.678519070148468,
+          9.924406185746193e-09,
+          -2.1594405552605167e-07,
+          -0.7345828413963318
+        ]
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__mango__mango_1",
+        "pose": [
+          -0.1874483972787857,
+          0.09733749181032181,
+          0.032555125653743744,
+          0.9478369951248169,
+          -0.00040677934885025024,
+          -0.0003904784098267555,
+          0.3187553584575653
+        ]
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "robocasa__scissors__scissors_0",
+        "pose": [
+          -0.13974778354167938,
+          -0.17396074533462524,
+          0.004657071083784103,
+          0.21756237745285034,
+          -1.747533679008484e-05,
+          -1.6638601664453745e-05,
+          -0.9760465025901794
+        ]
+      },
+      {
+        "name": "distractor_03",
+        "model_id": "robocasa__candle__candle_0",
+        "pose": [
+          -0.2808529734611511,
+          0.2864742577075958,
+          0.029838861897587776,
+          0.513232946395874,
+          4.604458808898926e-06,
+          6.456626579165459e-05,
+          -0.8582495450973511
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 496,
+    "isolated_mask_pixels": 496,
+    "occlusion_fraction": 0.0,
+    "projected_bbox_uv": [
+      [
+        314.9734376469031,
+        271.9450476495958
+      ],
+      [
+        362.59692466164756,
+        318.7107423650262
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.602,
+    "visible_pixels": 496,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "observation": null,
+  "physical_grasp_attempts": 0
+}

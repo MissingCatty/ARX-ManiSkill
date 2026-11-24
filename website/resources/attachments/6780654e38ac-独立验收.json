@@ -1,0 +1,307 @@
+{
+  "passed": true,
+  "created_at": "2026-11-22T00:22:17.164870+08:00",
+  "original_candidates": 22,
+  "original_ik_passed": 13,
+  "projection_inputs": 9,
+  "cases": [
+    {
+      "case": "I0052",
+      "role": "diagnostic_failure",
+      "candidates": 1,
+      "original_ik_passed": 0,
+      "modes": {
+        "direct_joint_projection": {
+          "total_pose_witnesses": 0,
+          "new_admissible_projections": 0
+        },
+        "map_seeded_joint_projection": {
+          "total_pose_witnesses": 0,
+          "new_admissible_projections": 0
+        }
+      }
+    },
+    {
+      "case": "I0056",
+      "role": "diagnostic_failure",
+      "candidates": 3,
+      "original_ik_passed": 2,
+      "modes": {
+        "direct_joint_projection": {
+          "total_pose_witnesses": 3,
+          "new_admissible_projections": 1
+        },
+        "map_seeded_joint_projection": {
+          "total_pose_witnesses": 3,
+          "new_admissible_projections": 1
+        }
+      }
+    },
+    {
+      "case": "I0199",
+      "role": "diagnostic_failure",
+      "candidates": 4,
+      "original_ik_passed": 0,
+      "modes": {
+        "direct_joint_projection": {
+          "total_pose_witnesses": 1,
+          "new_admissible_projections": 1
+        },
+        "map_seeded_joint_projection": {
+          "total_pose_witnesses": 1,
+          "new_admissible_projections": 1
+        }
+      }
+    },
+    {
+      "case": "I0002",
+      "role": "successful_control",
+      "candidates": 11,
+      "original_ik_passed": 10,
+      "modes": {
+        "direct_joint_projection": {
+          "total_pose_witnesses": 10,
+          "new_admissible_projections": 0
+        },
+        "map_seeded_joint_projection": {
+          "total_pose_witnesses": 10,
+          "new_admissible_projections": 0
+        }
+      }
+    },
+    {
+      "case": "I0004",
+      "role": "successful_control",
+      "candidates": 3,
+      "original_ik_passed": 1,
+      "modes": {
+        "direct_joint_projection": {
+          "total_pose_witnesses": 1,
+          "new_admissible_projections": 0
+        },
+        "map_seeded_joint_projection": {
+          "total_pose_witnesses": 1,
+          "new_admissible_projections": 0
+        }
+      }
+    }
+  ],
+  "accepted_projection_evidence": [
+    {
+      "case": "I0056",
+      "index": 1,
+      "mode": "direct_joint_projection",
+      "tcp_position_change_m": 0.00043378843901990393,
+      "orientation_change_deg": 2.5425420830649745,
+      "eef_position_change_m": 0.002337683286490729,
+      "nominal_contact_change_m": 0.0004501710240034332,
+      "within_original_goal_tolerances": false,
+      "q_witness_7": [
+        0.4297311998181021,
+        0.1791005722986621,
+        3.1415931147887686,
+        2.9168820446003503,
+        -1.1698793723439562,
+        0.08925585508850695,
+        -0.09657725530480227
+      ],
+      "joint_limits_valid": true,
+      "projection_seconds": 0.040399717865511775,
+      "selected_start": 0,
+      "independent_fk_world": [
+        [
+          -0.948626427590959,
+          -0.25472039333264407,
+          0.18768436827956733,
+          -0.33710386728327235
+        ],
+        [
+          -0.26934438702675273,
+          0.9613787717199728,
+          -0.0566079363992315,
+          0.08900475830070695
+        ],
+        [
+          -0.16601657162228795,
+          -0.10425151560846241,
+          -0.9805968179838962,
+          0.06028019478507718
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "physical_grasp_quality_verified": false
+    },
+    {
+      "case": "I0056",
+      "index": 1,
+      "mode": "map_seeded_joint_projection",
+      "tcp_position_change_m": 0.00043378843901990393,
+      "orientation_change_deg": 2.5425420830649745,
+      "eef_position_change_m": 0.002337683286490729,
+      "nominal_contact_change_m": 0.0004501710240034332,
+      "within_original_goal_tolerances": false,
+      "q_witness_7": [
+        0.4297311998181021,
+        0.1791005722986621,
+        3.1415931147887686,
+        2.9168820446003503,
+        -1.1698793723439562,
+        0.08925585508850695,
+        -0.09657725530480227
+      ],
+      "joint_limits_valid": true,
+      "projection_seconds": 0.039876695023849607,
+      "selected_start": 0,
+      "independent_fk_world": [
+        [
+          -0.948626427590959,
+          -0.25472039333264407,
+          0.18768436827956733,
+          -0.33710386728327235
+        ],
+        [
+          -0.26934438702675273,
+          0.9613787717199728,
+          -0.0566079363992315,
+          0.08900475830070695
+        ],
+        [
+          -0.16601657162228795,
+          -0.10425151560846241,
+          -0.9805968179838962,
+          0.06028019478507718
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "physical_grasp_quality_verified": false
+    },
+    {
+      "case": "I0199",
+      "index": 0,
+      "mode": "direct_joint_projection",
+      "tcp_position_change_m": 0.0004411914385318691,
+      "orientation_change_deg": 2.418599062740657,
+      "eef_position_change_m": 0.0022546760631542264,
+      "nominal_contact_change_m": 0.0009133319979837141,
+      "within_original_goal_tolerances": false,
+      "q_witness_7": [
+        0.42518141940863713,
+        0.020537317706512136,
+        3.1415928637373427,
+        2.916877114722186,
+        -1.262689748209828,
+        0.47602051566689085,
+        -0.8929493920601029
+      ],
+      "joint_limits_valid": true,
+      "projection_seconds": 0.04706404311582446,
+      "selected_start": 0,
+      "independent_fk_world": [
+        [
+          -0.6403135352208303,
+          -0.7635693647059405,
+          0.08342902310102232,
+          -0.34733468134365764
+        ],
+        [
+          -0.7056264157775193,
+          0.5418316570737332,
+          -0.45662875155831395,
+          -0.05556650493299681
+        ],
+        [
+          0.30346323989897883,
+          -0.35125529273637235,
+          -0.8857368578504129,
+          0.0709133862643338
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "physical_grasp_quality_verified": false
+    },
+    {
+      "case": "I0199",
+      "index": 0,
+      "mode": "map_seeded_joint_projection",
+      "tcp_position_change_m": 0.0004411914385318691,
+      "orientation_change_deg": 2.418599062740657,
+      "eef_position_change_m": 0.0022546760631542264,
+      "nominal_contact_change_m": 0.0009133319979837141,
+      "within_original_goal_tolerances": false,
+      "q_witness_7": [
+        0.42518141940863713,
+        0.020537317706512136,
+        3.1415928637373427,
+        2.916877114722186,
+        -1.262689748209828,
+        0.47602051566689085,
+        -0.8929493920601029
+      ],
+      "joint_limits_valid": true,
+      "projection_seconds": 0.051608235808089375,
+      "selected_start": 0,
+      "independent_fk_world": [
+        [
+          -0.6403135352208303,
+          -0.7635693647059405,
+          0.08342902310102232,
+          -0.34733468134365764
+        ],
+        [
+          -0.7056264157775193,
+          0.5418316570737332,
+          -0.45662875155831395,
+          -0.05556650493299681
+        ],
+        [
+          0.30346323989897883,
+          -0.35125529273637235,
+          -0.8857368578504129,
+          0.0709133862643338
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "physical_grasp_quality_verified": false
+    }
+  ],
+  "original_passes_retained_without_map": true,
+  "original_goal_tolerance_was_not_relaxed": true,
+  "map_additional_recoveries_over_direct_projection": 0,
+  "hard_constraint_followup_additional_recoveries": {
+    "direct_joint_projection": {
+      "accepted_projection_inputs": 2,
+      "additional_over_previous": 0
+    },
+    "map_seeded_joint_projection": {
+      "accepted_projection_inputs": 2,
+      "additional_over_previous": 0
+    }
+  },
+  "physical_attempts": 0,
+  "source_hashes_unchanged": true,
+  "code_sha256": "009f99f61e906bd75a2dd3facdb70668fd40e277afd6ddb8661eb55bf82b1b24",
+  "source_result_sha256": {
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/关节空间投影_20261122_01/结果汇总.json": "540caea9a3d34394bd101967545a02462d1d8416df23b07d27a11310bc3baa67",
+    "/home/zhaoyechong/projects/ARX-可达性地图/实验/关节空间硬约束投影_20261122_01/结果汇总.json": "8e5c1f2c9833126a38a81844b55b9403dd83fa5ec31a7180c1cabcefe8a70c2c"
+  }
+}

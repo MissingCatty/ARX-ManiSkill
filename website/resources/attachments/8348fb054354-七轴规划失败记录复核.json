@@ -1,0 +1,182 @@
+{
+  "time": "2026-11-21T22:13:56.396515+08:00",
+  "mode": "existing_records_read_only",
+  "new_planning_queries": 0,
+  "new_physical_attempts": 0,
+  "source": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03",
+  "group_counts": {
+    "fixed_zerograsp": {
+      "ARX几何截断后候选为空": 4,
+      "抓取IK复合门槛拒绝": 3
+    },
+    "fixed_graspcl": {
+      "抓取IK复合门槛拒绝": 1,
+      "ARX几何截断后候选为空": 1
+    }
+  },
+  "rows": [
+    {
+      "group": "fixed_zerograsp",
+      "case_id": "I0013_S1_open_032_knife",
+      "reason": "no_feasible_native_post_or_recalled_candidate",
+      "stage_classification": "ARX几何截断后候选为空",
+      "candidate_count": 0,
+      "candidate_rejections": {},
+      "before_arx_truncation": 1,
+      "after_arx_truncation": 0,
+      "result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0013_S1_open_032_knife/result.json",
+      "plan_result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0013_S1_open_032_knife/plan_result.json",
+      "truncation_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0013_S1_open_032_knife/truncation.json",
+      "grasp_ik_distinguishes_kinematics_from_collision": false
+    },
+    {
+      "group": "fixed_zerograsp",
+      "case_id": "I0052_S1_open_071_nine_hole_peg_test",
+      "reason": "no_feasible_native_post_or_recalled_candidate",
+      "stage_classification": "抓取IK复合门槛拒绝",
+      "candidate_count": 1,
+      "candidate_rejections": {
+        "grasp_ik": 1
+      },
+      "before_arx_truncation": 1,
+      "after_arx_truncation": 1,
+      "result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/result.json",
+      "plan_result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/plan_result.json",
+      "truncation_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/truncation.json",
+      "grasp_ik_distinguishes_kinematics_from_collision": false
+    },
+    {
+      "group": "fixed_zerograsp",
+      "case_id": "I0056_S4_clutter_073-a_lego_duplo",
+      "reason": "no_feasible_native_post_or_recalled_candidate",
+      "stage_classification": "抓取IK复合门槛拒绝",
+      "candidate_count": 3,
+      "candidate_rejections": {
+        "grasp_ik": 3
+      },
+      "before_arx_truncation": 77,
+      "after_arx_truncation": 3,
+      "result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/result.json",
+      "plan_result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/plan_result.json",
+      "truncation_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/truncation.json",
+      "grasp_ik_distinguishes_kinematics_from_collision": false
+    },
+    {
+      "group": "fixed_zerograsp",
+      "case_id": "I0062_S3_sparse_032_knife",
+      "reason": "no_feasible_native_post_or_recalled_candidate",
+      "stage_classification": "ARX几何截断后候选为空",
+      "candidate_count": 0,
+      "candidate_rejections": {},
+      "before_arx_truncation": 2,
+      "after_arx_truncation": 0,
+      "result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0062_S3_sparse_032_knife/result.json",
+      "plan_result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0062_S3_sparse_032_knife/plan_result.json",
+      "truncation_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0062_S3_sparse_032_knife/truncation.json",
+      "grasp_ik_distinguishes_kinematics_from_collision": false
+    },
+    {
+      "group": "fixed_zerograsp",
+      "case_id": "I0116_S2_edge_032_knife",
+      "reason": "no_feasible_native_post_or_recalled_candidate",
+      "stage_classification": "ARX几何截断后候选为空",
+      "candidate_count": 0,
+      "candidate_rejections": {},
+      "before_arx_truncation": 3,
+      "after_arx_truncation": 0,
+      "result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0116_S2_edge_032_knife/result.json",
+      "plan_result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0116_S2_edge_032_knife/plan_result.json",
+      "truncation_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0116_S2_edge_032_knife/truncation.json",
+      "grasp_ik_distinguishes_kinematics_from_collision": false
+    },
+    {
+      "group": "fixed_zerograsp",
+      "case_id": "I0182_S4_clutter_032_knife",
+      "reason": "no_feasible_native_post_or_recalled_candidate",
+      "stage_classification": "ARX几何截断后候选为空",
+      "candidate_count": 0,
+      "candidate_rejections": {},
+      "before_arx_truncation": 1,
+      "after_arx_truncation": 0,
+      "result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0182_S4_clutter_032_knife/result.json",
+      "plan_result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0182_S4_clutter_032_knife/plan_result.json",
+      "truncation_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0182_S4_clutter_032_knife/truncation.json",
+      "grasp_ik_distinguishes_kinematics_from_collision": false
+    },
+    {
+      "group": "fixed_zerograsp",
+      "case_id": "I0199_S4_clutter_073-d_lego_duplo",
+      "reason": "no_feasible_native_post_or_recalled_candidate",
+      "stage_classification": "抓取IK复合门槛拒绝",
+      "candidate_count": 4,
+      "candidate_rejections": {
+        "grasp_ik": 4
+      },
+      "before_arx_truncation": 8,
+      "after_arx_truncation": 4,
+      "result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/result.json",
+      "plan_result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/plan_result.json",
+      "truncation_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/truncation.json",
+      "grasp_ik_distinguishes_kinematics_from_collision": false
+    },
+    {
+      "group": "fixed_graspcl",
+      "case_id": "I0056_S4_clutter_073-a_lego_duplo",
+      "reason": "no_feasible_native_post_or_recalled_candidate",
+      "stage_classification": "抓取IK复合门槛拒绝",
+      "candidate_count": 7,
+      "candidate_rejections": {
+        "grasp_ik": 7
+      },
+      "before_arx_truncation": 84,
+      "after_arx_truncation": 7,
+      "result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0056_S4_clutter_073-a_lego_duplo/result.json",
+      "plan_result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0056_S4_clutter_073-a_lego_duplo/plan_result.json",
+      "truncation_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0056_S4_clutter_073-a_lego_duplo/truncation.json",
+      "grasp_ik_distinguishes_kinematics_from_collision": false
+    },
+    {
+      "group": "fixed_graspcl",
+      "case_id": "I0182_S4_clutter_032_knife",
+      "reason": "no_feasible_native_post_or_recalled_candidate",
+      "stage_classification": "ARX几何截断后候选为空",
+      "candidate_count": 0,
+      "candidate_rejections": {},
+      "before_arx_truncation": 3,
+      "after_arx_truncation": 0,
+      "result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0182_S4_clutter_032_knife/result.json",
+      "plan_result_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0182_S4_clutter_032_knife/plan_result.json",
+      "truncation_path": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0182_S4_clutter_032_knife/truncation.json",
+      "grasp_ik_distinguishes_kinematics_from_collision": false
+    }
+  ],
+  "source_sha256": {
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0013_S1_open_032_knife/result.json": "7cdac79e4ecadf7f5220681a035210b0e2b079ca9585c5be68d6543fee8711f4",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0013_S1_open_032_knife/plan_result.json": "0b88e8cb70c6703b497bb5474f4f3653ab042a6bad52fbf266935b7cc9a1adc0",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0013_S1_open_032_knife/truncation.json": "bab48b396a74a9821a7ab8744337efc659f60e2010e61d9e680f90cb21e2dbda",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/result.json": "139d2ee6e932409d343b702dba9756e5008da29e8f1a54375101a61d81934938",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/plan_result.json": "37da656dbdf9c89675f7336dc0cd820cc3ae76eefd7c0b06e07452ea2fb26828",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0052_S1_open_071_nine_hole_peg_test/truncation.json": "75eeedf40a7e78d3afa055d7125ff94883ab964082a45b55d2815eaebc250511",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/result.json": "b2c9061a1901cec44e78e270f483cead062c84fc768a6eb2ba9a0e2448e6b766",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/plan_result.json": "da53526e7267c0b91ac6f15074b2b8242f5d5f706e6ad49c574f63473ff2e481",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0056_S4_clutter_073-a_lego_duplo/truncation.json": "d44f3a798e4184ef2c947cca4a62f6b43a84f872881fcb7d44869cb84b3668d9",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0062_S3_sparse_032_knife/result.json": "232bbd4993b6f34f47e62da15f51132543a50235727976979005fb5577bf4b2d",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0062_S3_sparse_032_knife/plan_result.json": "d0ec211e9df44a3e4c66af775b98592420aa10c9e75d22bacf466425938e5c82",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0062_S3_sparse_032_knife/truncation.json": "9374966adabb41b394904cb013c61e33895d1c95777e3e8dc6e45effa4d098a9",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0116_S2_edge_032_knife/result.json": "b18f3c001711b7b3d485eec75715cabf7077ad2100f7c1f8f78fa05362ec38c3",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0116_S2_edge_032_knife/plan_result.json": "beba37dde67d6f954d8efa6b46007b7ce45b4bb9d67c03320eed865fa23c5196",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0116_S2_edge_032_knife/truncation.json": "109b8047dd07e92cbaea40c34f4feb0d296e30fe58f3a5eb1b04ec496f980670",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0182_S4_clutter_032_knife/result.json": "4a16bdb3d27ad6ce8133bc1f6d270a9fa99820c963433e7cee2ba64b197fe43e",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0182_S4_clutter_032_knife/plan_result.json": "5a6d029dafdc37a41ae4b5e83986e70c70c22c09dd241a902402345d6bc3053c",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0182_S4_clutter_032_knife/truncation.json": "9ac83bef681e7391a45df9abf6f2ade1cc28327dd076685c43723678937e73a5",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/result.json": "a585cf455fac9df81b03da20f8b625af2f1160c20e60d51f248f99cd380d785d",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/plan_result.json": "b0cf5c5210a6c11ec77deec34d961dfbf000260720e6d7e89f47c6ddfa981f6d",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_zerograsp/trials/I0199_S4_clutter_073-d_lego_duplo/truncation.json": "4710f31cf628aaffd9367070486d2b818179217b50bffa7fbddb7ac6ae397488",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0056_S4_clutter_073-a_lego_duplo/result.json": "713bb1de610f2ea2dfef5dd158c5707df16522518adea58c2f9af799f910904e",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0056_S4_clutter_073-a_lego_duplo/plan_result.json": "24605d4698da20f7e2835f3b166d696af217c9a1bf5f7020a81ba7f77711a47b",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0056_S4_clutter_073-a_lego_duplo/truncation.json": "6b1cbb68cc86d38ebee802b36d75a30648e3175da31db04d9f4fdb6db0a5dd27",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0182_S4_clutter_032_knife/result.json": "920bcf796e85b4afc21463bb10f61cfe3a9cac45e8b9ad181e394b27e3ad0755",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0182_S4_clutter_032_knife/plan_result.json": "eb49e4582654ee7311732a28c6b72c9a298a7071b7df55c287de2a12668cdaaf",
+    "/home/zhaoyechong/projects/ManiSkill/outputs/arx_joint7_pair_20261121_03/fixed_graspcl/trials/I0182_S4_clutter_032_knife/truncation.json": "8febc6f52d8fddbf40892de3c95a1afc04518b24d7797a18897795a3bcd74814"
+  }
+}

@@ -1,0 +1,70 @@
+task_layout:
+  description: Connected lower-floor mapping and navigation layout with graspable household objects.
+  scene_policy:
+    disabled_interior_doors:
+      - door_bexenl_0
+      - door_bexenl_1
+    removed_floor_clutter:
+      - can_of_soda_113
+      - can_of_soda_114
+      - can_of_soda_115
+      - trash_can_116
+
+simulation:
+  environment: environments/house_double_floor_lower/1.0.0/usd/environment_mapping.usda
+  task_overlay: ../../../../asset/tasks/mapping_demo/1.0.0/usd/task.usd
+
+# Declarative inventory for downstream mapping / navigation tests.  The USD
+# overlay contains the authoritative transforms, rigid bodies, mass and mesh
+# collision geometry copied from the corresponding BEHAVIOR-1K DatasetObjects.
+objects:
+  coffee_table_laptop:
+    category: laptop
+    model: izydvb
+    support: coffee_table_koagbh_0
+    position: [3.55, 5.25, 0.4315]
+  coffee_table_mug:
+    category: mug
+    model: ehnmxj
+    support: coffee_table_koagbh_0
+    position: [3.35, 5.80, 0.4506]
+  coffee_table_notebook:
+    category: notebook
+    model: aanuhi
+    support: coffee_table_koagbh_0
+    position: [3.72, 5.78, 0.4307]
+  breakfast_table_plate:
+    category: plate
+    model: aewthq
+    support: breakfast_table_xftrki_0
+    position: [4.12, 1.20, 0.6904]
+  breakfast_table_bowl:
+    category: bowl
+    model: adciys
+    support: breakfast_table_xftrki_0
+    position: [4.45, 1.15, 0.7092]
+  breakfast_table_apple:
+    category: apple
+    model: agveuv
+    support: breakfast_table_xftrki_0
+    position: [4.15, 1.65, 0.7189]
+  breakfast_table_cereal:
+    category: box_of_cereal
+    model: dkhgxn
+    support: breakfast_table_xftrki_0
+    position: [4.55, 1.75, 0.8035]
+  countertop_saucepan:
+    category: saucepan
+    model: fsinsu
+    support: countertop_tpuwys_0
+    position: [5.87, 6.15, 1.4110]
+  countertop_soap_bottle:
+    category: soap_bottle
+    model: hamffy
+    support: countertop_tpuwys_0
+    position: [5.87, 7.25, 1.5081]
+  shelf_wine_bottle:
+    category: wine_bottle
+    model: hlzfxw
+    support: shelf_vanltx_0
+    position: [3.10, 7.40, 1.4043]

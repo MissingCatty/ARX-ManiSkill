@@ -1,0 +1,86 @@
+{
+  "id": "D0057_S2_edge_eggplant",
+  "model_id": "robocasa__eggplant__eggplant_2",
+  "semantic_class": "eggplant",
+  "family": "eggplant",
+  "target_text": "eggplant",
+  "layout": "S2_edge",
+  "seed": 2916680483,
+  "actor_identities": [
+    {
+      "name": "target",
+      "model_id": "robocasa__eggplant__eggplant_2"
+    }
+  ],
+  "scene": {
+    "layout": "S2_edge",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__eggplant__eggplant_2",
+        "pose": [
+          -0.5498031377792358,
+          0.26255372166633606,
+          0.022690515965223312,
+          0.8239938020706177,
+          0.0005833059549331665,
+          -0.0011221417225897312,
+          0.5665974020957947
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 3796,
+    "isolated_mask_pixels": 3796,
+    "occlusion_fraction": 0.0,
+    "projected_bbox_uv": [
+      [
+        257.18045498683654,
+        309.9778388438243
+      ],
+      [
+        348.2899657763202,
+        451.93278311459557
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.481,
+    "visible_pixels": 3796,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "observation": null,
+  "physical_grasp_attempts": 0
+}

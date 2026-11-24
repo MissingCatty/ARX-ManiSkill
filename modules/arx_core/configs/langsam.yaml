@@ -1,0 +1,20 @@
+model:
+  # Relative paths are resolved from the repository root. Deployments may set
+  # COOLAS_MODEL_ROOT, LANGSAM_GROUNDING_DINO_PATH, or LANGSAM_SAM_CHECKPOINT
+  # without changing this shared configuration.
+  grounding_dino_path: "servers/langsam/grounding-dino-base"
+  sam_checkpoint: "servers/langsam/checkpoints/sam2.1_hiera_small.pt"
+  python: "/home/arx/doc/miniconda3/envs/langsam/bin/python"
+
+output:
+  save_overlay: true
+  save_debug_masks: true
+
+selection:
+  # Candidate masks are evaluated independently; they are never merged.
+  strategy: "highest_score"  # highest_score | highest_mask_score | largest_valid
+  min_detection_score: 0.25
+  min_mask_score: 0.0
+  max_bbox_width_ratio: 0.80
+  max_bbox_height_ratio: 0.80
+  max_mask_area_ratio: 0.50

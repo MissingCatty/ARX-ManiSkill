@@ -1,0 +1,9 @@
+{
+  "accepted_variant": 1,
+  "rejected": [
+    {
+      "variant": 0,
+      "reason": "Settled actor outside frame: distractor_01"
+    }
+  ]
+}

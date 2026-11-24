@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/graspnet/graspness_unofficial",
+  "revision": "b5abf5aaaf3a797514f89161d8ccc8dfc2ec0eca",
+  "source": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/research_dependencies/graspness_unofficial",
+  "python": "/home/zhaoyechong/projects/tmp/arx-graspness-env/bin/python",
+  "library_directories": [
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/research_dependencies/graspness_system_deps/root/usr/lib/x86_64-linux-gnu/openblas-pthread",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/research_dependencies/graspness_system_deps/root/usr/lib/x86_64-linux-gnu"
+  ],
+  "checkpoint": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/research_dependencies/graspness_checkpoints/mirror_realsense.tar",
+  "checkpoint_receipt": "runs/graspness_teacher_integration_20261102_01/checkpoint_download_receipt.json",
+  "num_points": 15000,
+  "voxel_size_m": 0.005,
+  "collision_voxel_size_m": 0.01,
+  "collision_threshold": 0.01,
+  "max_gripper_width_m": 0.088,
+  "candidate_limit": 8,
+  "qualified_goal_limit": 2,
+  "pregrasp_distance_mm": 100,
+  "render_camera_clipping": {"right_wrist": [0.001, 10.0]},
+  "seed": 20261102,
+  "scope": "Open Graspness/GSNet implementation and public pretrained weights; preserve weight provenance. New teacher wrist renderer near clip is explicitly corrected to 1mm; original camera transforms/intrinsics, robot, physics, physical success and camera-inside/clearance gates remain frozen. Not applied to historical benchmarks."
+}

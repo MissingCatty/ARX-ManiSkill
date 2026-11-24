@@ -1,0 +1,778 @@
+{
+  "created_at": "2026-11-19T23:54:47.083968+08:00",
+  "analysis_only_no_new_grasps": true,
+  "intended_full_protocol_comparison_valid": false,
+  "reason": "A executed insertion refinement in all 100 cases; B and C executed none. The hook matches Path(socket).stem == graspcl, but their shared-service sockets are shared5_<hash>.sock.",
+  "scope": {
+    "A_vs_B_or_C": "Confounded by downstream candidate processing. These comparisons cannot attribute benefit or harm to GraspCL.",
+    "C_vs_B": "Both omit refinement. Descriptive effect of the added bank within that incomplete implementation, not the intended full chain; adjusted p=0.1034 does not establish robust improvement.",
+    "existing_final_independent_audit": "Verified execution labels, frozen inputs, hashes, isolation and accounting, but not uniform downstream refinement execution."
+  },
+  "arms": {
+    "A_zerograsp": {
+      "processing": {
+        "trials": 100,
+        "truncation_receipts": 100,
+        "refinement_metadata": 100,
+        "refined_rescore_receipts": 0,
+        "refined_candidates_rescored": 0,
+        "recall_candidates": 0,
+        "recall_tcp43_shift_tagged": 0
+      },
+      "graspcl_socket": "/home/zhaoyechong/projects/ManiSkill/outputs/arx_graspcl_unseen_50_100_20261119_01/A_zerograsp/resident/local_adapter/graspcl.sock",
+      "graspcl_socket_stem": "graspcl",
+      "selected_origins": {
+        "zerograsp": {
+          "planned": 67,
+          "success": 47
+        }
+      },
+      "layouts": {
+        "S1_open": {
+          "registered": 25,
+          "success": 11,
+          "planning": 14
+        },
+        "S2_edge": {
+          "registered": 25,
+          "success": 16,
+          "planning": 21
+        },
+        "S3_sparse": {
+          "registered": 25,
+          "success": 9,
+          "planning": 15
+        },
+        "S4_clutter": {
+          "registered": 25,
+          "success": 11,
+          "planning": 17
+        }
+      },
+      "recorded_outcomes": {
+        "registered": 100,
+        "terminal_slots": 100,
+        "uninterrupted_results": 99,
+        "unknown_infrastructure_outcomes": [
+          "T0022_S2_edge_032_knife"
+        ],
+        "successes": 47,
+        "success_fraction_of_known_outcomes": 0.47474747474747475,
+        "verified_success_fraction_of_registered_slots": 0.47,
+        "planning_passes": 67,
+        "execution_entries": 67,
+        "closure_stage_records": 66,
+        "known_failure_reasons": {
+          "no_feasible_native_post_or_recalled_candidate": 33,
+          "insufficient_hold_height": 16,
+          "close_not_converged": 1,
+          "no_bilateral_target_contact": 1,
+          "lift_not_converged": 1
+        }
+      }
+    },
+    "B_graspcl_no_experience": {
+      "processing": {
+        "trials": 100,
+        "truncation_receipts": 0,
+        "refinement_metadata": 0,
+        "refined_rescore_receipts": 0,
+        "refined_candidates_rescored": 0,
+        "recall_candidates": 0,
+        "recall_tcp43_shift_tagged": 0
+      },
+      "graspcl_socket": "/home/zhaoyechong/projects/ManiSkill/tmp/shared5_868aa97742480e.sock",
+      "graspcl_socket_stem": "shared5_868aa97742480e",
+      "selected_origins": {
+        "zerograsp": {
+          "planned": 53,
+          "success": 37
+        }
+      },
+      "layouts": {
+        "S1_open": {
+          "registered": 25,
+          "success": 9,
+          "planning": 12
+        },
+        "S2_edge": {
+          "registered": 25,
+          "success": 13,
+          "planning": 18
+        },
+        "S3_sparse": {
+          "registered": 25,
+          "success": 6,
+          "planning": 10
+        },
+        "S4_clutter": {
+          "registered": 25,
+          "success": 9,
+          "planning": 13
+        }
+      },
+      "recorded_outcomes": {
+        "registered": 100,
+        "terminal_slots": 100,
+        "uninterrupted_results": 100,
+        "unknown_infrastructure_outcomes": [],
+        "successes": 37,
+        "success_fraction_of_known_outcomes": 0.37,
+        "verified_success_fraction_of_registered_slots": 0.37,
+        "planning_passes": 53,
+        "execution_entries": 53,
+        "closure_stage_records": 53,
+        "known_failure_reasons": {
+          "no_feasible_native_post_or_recalled_candidate": 47,
+          "insufficient_hold_height": 14,
+          "close_not_converged": 1,
+          "lift_not_converged": 1
+        }
+      }
+    },
+    "C_graspcl_experience50": {
+      "processing": {
+        "trials": 100,
+        "truncation_receipts": 0,
+        "refinement_metadata": 0,
+        "refined_rescore_receipts": 0,
+        "refined_candidates_rescored": 0,
+        "recall_candidates": 1417,
+        "recall_tcp43_shift_tagged": 0
+      },
+      "graspcl_socket": "/home/zhaoyechong/projects/ManiSkill/tmp/shared5_d76ca903346508.sock",
+      "graspcl_socket_stem": "shared5_d76ca903346508",
+      "selected_origins": {
+        "demonstration_object": {
+          "planned": 28,
+          "success": 16
+        },
+        "zerograsp": {
+          "planned": 36,
+          "success": 23
+        },
+        "demonstration_patch": {
+          "planned": 12,
+          "success": 8
+        }
+      },
+      "layouts": {
+        "S1_open": {
+          "registered": 25,
+          "success": 13,
+          "planning": 20
+        },
+        "S2_edge": {
+          "registered": 25,
+          "success": 11,
+          "planning": 19
+        },
+        "S3_sparse": {
+          "registered": 25,
+          "success": 8,
+          "planning": 18
+        },
+        "S4_clutter": {
+          "registered": 25,
+          "success": 15,
+          "planning": 19
+        }
+      },
+      "recorded_outcomes": {
+        "registered": 100,
+        "terminal_slots": 100,
+        "uninterrupted_results": 100,
+        "unknown_infrastructure_outcomes": [],
+        "successes": 47,
+        "success_fraction_of_known_outcomes": 0.47,
+        "verified_success_fraction_of_registered_slots": 0.47,
+        "planning_passes": 76,
+        "execution_entries": 76,
+        "closure_stage_records": 71,
+        "known_failure_reasons": {
+          "no_feasible_native_post_or_recalled_candidate": 24,
+          "close_not_converged": 2,
+          "insufficient_hold_height": 15,
+          "no_bilateral_target_contact": 7,
+          "approach_not_converged": 5
+        }
+      }
+    }
+  },
+  "paired_C_vs_B": {
+    "planning": {
+      "neither_pass": 24,
+      "both_pass": 53,
+      "C_only_pass": 23
+    },
+    "gains": [
+      {
+        "id": "T0013_S1_open_070-b_colored_wood_blocks",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "070-b_colored_wood_blocks",
+          "category": "积木块（木块及泡沫块）",
+          "effective_candidate_count": 8
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_patch",
+          "model_id": "070-b_colored_wood_blocks",
+          "category": "积木块（木块及泡沫块）",
+          "effective_candidate_count": 24
+        }
+      },
+      {
+        "id": "T0016_S4_clutter_007_tuna_fish_can",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "007_tuna_fish_can",
+          "category": "食品金属罐",
+          "effective_candidate_count": 11
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_patch",
+          "model_id": "007_tuna_fish_can",
+          "category": "食品金属罐",
+          "effective_candidate_count": 24
+        }
+      },
+      {
+        "id": "T0017_S1_open_044_flat_screwdriver",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "044_flat_screwdriver",
+          "category": "螺丝刀",
+          "effective_candidate_count": 9
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_object",
+          "model_id": "044_flat_screwdriver",
+          "category": "螺丝刀",
+          "effective_candidate_count": 53
+        }
+      },
+      {
+        "id": "T0032_S4_clutter_061_foam_brick",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "061_foam_brick",
+          "category": "积木块（木块及泡沫块）",
+          "effective_candidate_count": 13
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_object",
+          "model_id": "061_foam_brick",
+          "category": "积木块（木块及泡沫块）",
+          "effective_candidate_count": 33
+        }
+      },
+      {
+        "id": "T0036_S4_clutter_007_tuna_fish_can",
+        "B": {
+          "success": false,
+          "planning_success": true,
+          "reason": "insufficient_hold_height",
+          "selected_origin": "zerograsp",
+          "model_id": "007_tuna_fish_can",
+          "category": "食品金属罐",
+          "effective_candidate_count": 10
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_patch",
+          "model_id": "007_tuna_fish_can",
+          "category": "食品金属罐",
+          "effective_candidate_count": 43
+        }
+      },
+      {
+        "id": "T0037_S1_open_073-c_lego_duplo",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "073-c_lego_duplo",
+          "category": "乐高积木（所有部件变体）",
+          "effective_candidate_count": 2
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_patch",
+          "model_id": "073-c_lego_duplo",
+          "category": "乐高积木（所有部件变体）",
+          "effective_candidate_count": 43
+        }
+      },
+      {
+        "id": "T0041_S1_open_073-b_lego_duplo",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "073-b_lego_duplo",
+          "category": "乐高积木（所有部件变体）",
+          "effective_candidate_count": 11
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_patch",
+          "model_id": "073-b_lego_duplo",
+          "category": "乐高积木（所有部件变体）",
+          "effective_candidate_count": 64
+        }
+      },
+      {
+        "id": "T0048_S4_clutter_021_bleach_cleanser",
+        "B": {
+          "success": false,
+          "planning_success": true,
+          "reason": "lift_not_converged",
+          "selected_origin": "zerograsp",
+          "model_id": "021_bleach_cleanser",
+          "category": "瓶装容器",
+          "effective_candidate_count": 78
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_object",
+          "model_id": "021_bleach_cleanser",
+          "category": "瓶装容器",
+          "effective_candidate_count": 88
+        }
+      },
+      {
+        "id": "T0055_S3_sparse_073-e_lego_duplo",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "073-e_lego_duplo",
+          "category": "乐高积木（所有部件变体）",
+          "effective_candidate_count": 11
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_object",
+          "model_id": "073-e_lego_duplo",
+          "category": "乐高积木（所有部件变体）",
+          "effective_candidate_count": 32
+        }
+      },
+      {
+        "id": "T0071_S3_sparse_038_padlock",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "038_padlock",
+          "category": "挂锁",
+          "effective_candidate_count": 6
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_patch",
+          "model_id": "038_padlock",
+          "category": "挂锁",
+          "effective_candidate_count": 47
+        }
+      },
+      {
+        "id": "T0078_S2_edge_043_phillips_screwdriver",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "043_phillips_screwdriver",
+          "category": "螺丝刀",
+          "effective_candidate_count": 12
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_object",
+          "model_id": "043_phillips_screwdriver",
+          "category": "螺丝刀",
+          "effective_candidate_count": 19
+        }
+      },
+      {
+        "id": "T0081_S1_open_073-e_lego_duplo",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "073-e_lego_duplo",
+          "category": "乐高积木（所有部件变体）",
+          "effective_candidate_count": 13
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_object",
+          "model_id": "073-e_lego_duplo",
+          "category": "乐高积木（所有部件变体）",
+          "effective_candidate_count": 35
+        }
+      },
+      {
+        "id": "T0088_S4_clutter_002_master_chef_can",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "002_master_chef_can",
+          "category": "食品金属罐",
+          "effective_candidate_count": 26
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_object",
+          "model_id": "002_master_chef_can",
+          "category": "食品金属罐",
+          "effective_candidate_count": 32
+        }
+      },
+      {
+        "id": "T0092_S4_clutter_077_rubiks_cube",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "077_rubiks_cube",
+          "category": "魔方",
+          "effective_candidate_count": 10
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_object",
+          "model_id": "077_rubiks_cube",
+          "category": "魔方",
+          "effective_candidate_count": 27
+        }
+      },
+      {
+        "id": "T0095_S3_sparse_073-d_lego_duplo",
+        "B": {
+          "success": false,
+          "planning_success": false,
+          "reason": "no_feasible_native_post_or_recalled_candidate",
+          "selected_origin": "none",
+          "model_id": "073-d_lego_duplo",
+          "category": "乐高积木（所有部件变体）",
+          "effective_candidate_count": 8
+        },
+        "C": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "demonstration_object",
+          "model_id": "073-d_lego_duplo",
+          "category": "乐高积木（所有部件变体）",
+          "effective_candidate_count": 22
+        }
+      }
+    ],
+    "losses": [
+      {
+        "id": "T0002_S2_edge_061_foam_brick",
+        "B": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "zerograsp",
+          "model_id": "061_foam_brick",
+          "category": "积木块（木块及泡沫块）",
+          "effective_candidate_count": 9
+        },
+        "C": {
+          "success": false,
+          "planning_success": true,
+          "reason": "close_not_converged",
+          "selected_origin": "demonstration_object",
+          "model_id": "061_foam_brick",
+          "category": "积木块（木块及泡沫块）",
+          "effective_candidate_count": 18
+        }
+      },
+      {
+        "id": "T0050_S2_edge_005_tomato_soup_can",
+        "B": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "zerograsp",
+          "model_id": "005_tomato_soup_can",
+          "category": "食品金属罐",
+          "effective_candidate_count": 36
+        },
+        "C": {
+          "success": false,
+          "planning_success": true,
+          "reason": "approach_not_converged",
+          "selected_origin": "demonstration_object",
+          "model_id": "005_tomato_soup_can",
+          "category": "食品金属罐",
+          "effective_candidate_count": 41
+        }
+      },
+      {
+        "id": "T0061_S1_open_048_hammer",
+        "B": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "zerograsp",
+          "model_id": "048_hammer",
+          "category": "锤子",
+          "effective_candidate_count": 31
+        },
+        "C": {
+          "success": false,
+          "planning_success": true,
+          "reason": "insufficient_hold_height",
+          "selected_origin": "demonstration_patch",
+          "model_id": "048_hammer",
+          "category": "锤子",
+          "effective_candidate_count": 65
+        }
+      },
+      {
+        "id": "T0070_S2_edge_065-e_cups",
+        "B": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "zerograsp",
+          "model_id": "065-e_cups",
+          "category": "餐具容器（杯碗盘壶及盖）",
+          "effective_candidate_count": 26
+        },
+        "C": {
+          "success": false,
+          "planning_success": true,
+          "reason": "approach_not_converged",
+          "selected_origin": "zerograsp",
+          "model_id": "065-e_cups",
+          "category": "餐具容器（杯碗盘壶及盖）",
+          "effective_candidate_count": 32
+        }
+      },
+      {
+        "id": "T0087_S3_sparse_035_power_drill",
+        "B": {
+          "success": true,
+          "planning_success": true,
+          "reason": "success",
+          "selected_origin": "zerograsp",
+          "model_id": "035_power_drill",
+          "category": "电钻",
+          "effective_candidate_count": 48
+        },
+        "C": {
+          "success": false,
+          "planning_success": true,
+          "reason": "approach_not_converged",
+          "selected_origin": "demonstration_object",
+          "model_id": "035_power_drill",
+          "category": "电钻",
+          "effective_candidate_count": 66
+        }
+      }
+    ],
+    "gain_selected_origins": {
+      "demonstration_patch": 6,
+      "demonstration_object": 9
+    },
+    "gain_categories": {
+      "积木块（木块及泡沫块）": 2,
+      "食品金属罐": 3,
+      "螺丝刀": 2,
+      "乐高积木（所有部件变体）": 5,
+      "瓶装容器": 1,
+      "挂锁": 1,
+      "魔方": 1
+    },
+    "gain_B_failure_reasons": {
+      "no_feasible_native_post_or_recalled_candidate": 13,
+      "insufficient_hold_height": 1,
+      "lift_not_converged": 1
+    },
+    "statistics": {
+      "paired_cases": 100,
+      "excluded_unknown_infrastructure_outcomes": [],
+      "gain_scenes": 15,
+      "loss_scenes": 5,
+      "paired_difference": 0.1,
+      "model_cluster_bootstrap_95_ci": [
+        0.010101010101010102,
+        0.1919191919191919
+      ],
+      "two_sided_model_cluster_signflip_p": 0.05167896642067159,
+      "mcnemar_exact_descriptive_p": 0.04138946533203125,
+      "primary_holm_adjusted_p": 0.10335793284134318
+    }
+  },
+  "example": {
+    "case": "T0024_S4_clutter_029_plate",
+    "arms": {
+      "A_zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success",
+        "selected_origin": "zerograsp",
+        "model_id": "029_plate",
+        "category": "餐具容器（杯碗盘壶及盖）",
+        "effective_candidate_count": 17
+      },
+      "B_graspcl_no_experience": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": "none",
+        "model_id": "029_plate",
+        "category": "餐具容器（杯碗盘壶及盖）",
+        "effective_candidate_count": 81
+      },
+      "C_graspcl_experience50": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_feasible_native_post_or_recalled_candidate",
+        "selected_origin": "none",
+        "model_id": "029_plate",
+        "category": "餐具容器（杯碗盘壶及盖）",
+        "effective_candidate_count": 88
+      }
+    }
+  },
+  "dispatch_reproduction": {
+    "method": "Run actual AST-extracted table_truncation_bench.execute with mock endpoints; no model or simulator execution.",
+    "results": [
+      {
+        "mode": "native_adapter",
+        "socket": "/adapter/graspcl.sock",
+        "events": [
+          "inference",
+          "refinement"
+        ]
+      },
+      {
+        "mode": "named_graspcl",
+        "socket": "/service/graspcl.sock",
+        "events": [
+          "inference",
+          "refinement"
+        ]
+      },
+      {
+        "mode": "hashed_graspcl",
+        "socket": "/tmp/shared5_example.sock",
+        "events": [
+          "inference"
+        ]
+      }
+    ]
+  },
+  "additional_omitted_stages": [
+    "Refined-pose GraspCL rescoring (initial GraspCL scoring still executed).",
+    "Recall TCP40 contact-frame to TCP43 conversion of +3 mm; bank_complete.json records contact_storage_tcp_m=0.040 and planner_recall_contact_shift_m=0.003."
+  ],
+  "bank_provenance": {
+    "passed": true,
+    "registered_collection_scenes": 50,
+    "clean_feedback_points": 41,
+    "positive": 39,
+    "negative": 2,
+    "excluded_without_clean_label": 9,
+    "same_pretrained_encoder_and_offline_memory": true,
+    "historical_arx_feedback": 0,
+    "test_images_clouds_feedback_or_templates_added": 0,
+    "category_model_mesh_intersections": 0,
+    "banks": {
+      "no_experience": "e2d9ca7d4e96874014bc908b31d19ca286baae2a5b8d72182e29eadf15c6210d",
+      "experience50": "95076d232f5be84a7a2ee09a089456223c7f8142333d9eecf678b14318e35d0d"
+    }
+  },
+  "source_checks": {
+    "/home/zhaoyechong/projects/ManiSkill/table_truncation_bench.py": {
+      "sha256": "f74350cca4d6bca2dafe5ce95345be0d47c793f28f5b9330a41dce67b8f0f0b1",
+      "matches_frozen_registration": true
+    },
+    "/home/zhaoyechong/projects/ManiSkill/table_truncation_model.py": {
+      "sha256": "184b2261cd1528c5a1b7e2d65b997c31c8d9d45e5a715e974fdecf77bb4753ba",
+      "matches_frozen_registration": true
+    },
+    "/home/zhaoyechong/projects/ManiSkill/table_truncation_services.py": {
+      "sha256": "f102c6b3484969719d85e4a570ceb28447ae536dfb9e5b3bc2b46b877dc0bd5b",
+      "matches_frozen_registration": true
+    },
+    "/home/zhaoyechong/projects/ManiSkill/graspcl_unseen_shared_backends_20261119.py": {
+      "sha256": "d5bb5e4a113a785f39b6b68c4ab4a62186e06661a657008cdb6835bdd9fc416b",
+      "matches_frozen_registration": true
+    },
+    "/home/zhaoyechong/projects/ManiSkill/graspcl_unseen_bank.py": {
+      "sha256": "2cdb53ddb75c35c1cd48fa62b8f7abe3aecca3b6ff6fbf7476e463df0ee7b92a",
+      "matches_frozen_registration": true
+    }
+  },
+  "recommended_correction": [
+    "Route by explicit component identity; avoid relying on socket filenames.",
+    "Require refinement receipts in all arms and refined-pose rescoring in both GraspCL arms.",
+    "Assert registered TCP conversion of recalled candidates.",
+    "Evaluate the corrected full protocol in a separately authorized and registered batch; preserve all current raw results."
+  ],
+  "raw_data_preservation": {
+    "checked_result_registration_and_bank_receipt_files": 1211,
+    "checked_hashes_unchanged_during_analysis": true,
+    "bank_model_hashes_reference": "final_independent_audit.json; this analysis writes no bank files"
+  }
+}

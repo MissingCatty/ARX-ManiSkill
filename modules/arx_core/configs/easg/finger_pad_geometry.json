@@ -1,0 +1,144 @@
+{
+  "version": "arx_authored_inner_pads_v1",
+  "parts": {
+    "right_link27": {
+      "link": "right_link27",
+      "mesh_path": "/World/scene_0/controllable__lift2__exported_robot/right_link27/collisions/right_link27",
+      "collision_approximation": "convexHull",
+      "vertices_link": [
+        [
+          0.05600000172853381,
+          -0.024637771770358086,
+          0.016734527423977852
+        ],
+        [
+          0.0560000017285338,
+          -0.024637771770358086,
+          -0.0041940445080399505
+        ],
+        [
+          0.07100000232458026,
+          -0.025423889979720116,
+          0.00127024098765105
+        ],
+        [
+          0.07100000232458026,
+          -0.025423889979720116,
+          0.011270240880548952
+        ]
+      ],
+      "center_link": [
+        0.06261663012894338,
+        -0.024984535227921875,
+        0.006270241226885882
+      ],
+      "normal_link": [
+        -0.05233605509400291,
+        -0.9986295295740044,
+        3.862377978982893e-18
+      ],
+      "area_m2": 0.00023228263438519766,
+      "authored_distal_tip_EEF_z_m": 0.04497002789957018,
+      "pad_center_neutral_EEF_m": [
+        -0.006000060792475396,
+        0.002225461949202151,
+        0.036586654689853795
+      ],
+      "pad_normal_neutral_EEF": [
+        1.0614585476022411e-08,
+        -0.9986295295740044,
+        -0.0523360550940018
+      ],
+      "pad_neutral_EEF_bounds_m": [
+        [
+          -0.016464345647609534,
+          0.0017861071974039078,
+          0.029970024167120468
+        ],
+        [
+          0.004464226284407836,
+          0.002572225406765938,
+          0.04497002789957018
+        ]
+      ],
+      "convex_envelope_surface_y_at_pad_center_EEF_m": [
+        -0.002581918329107036,
+        -0.0025819183291070327
+      ],
+      "source_triangle_count": 2
+    },
+    "right_link28": {
+      "link": "right_link28",
+      "mesh_path": "/World/scene_0/controllable__lift2__exported_robot/right_link28/collisions/right_link28",
+      "collision_approximation": "convexHull",
+      "vertices_link": [
+        [
+          0.0560000017285347,
+          0.02463774383068085,
+          0.016734568402171135
+        ],
+        [
+          0.0560000017285347,
+          0.024637779220938686,
+          -0.004194003529846667
+        ],
+        [
+          0.07100000232458115,
+          0.025423888117074966,
+          0.001270283479243517
+        ],
+        [
+          0.07100000232458115,
+          0.025423871353268623,
+          0.011270283721387385
+        ]
+      ],
+      "center_link": [
+        0.06261663016801118,
+        0.024984524968931034,
+        0.00627028295056865
+      ],
+      "normal_link": [
+        -0.052336050240254096,
+        0.9986295298269514,
+        1.688684572336288e-06
+      ],
+      "area_m2": 0.000232282637008468,
+      "authored_distal_tip_EEF_z_m": 0.0449700278995815,
+      "pad_center_neutral_EEF_m": [
+        -0.006000013109191009,
+        0.001346514943906621,
+        0.036586654728931786
+      ],
+      "pad_normal_neutral_EEF": [
+        -1.6780699878407864e-06,
+        0.9986295298269514,
+        -0.05233605024059555
+      ],
+      "pad_neutral_EEF_bounds_m": [
+        [
+          -0.016464297218835654,
+          0.0009997338056564366,
+          0.029970024167131702
+        ],
+        [
+          0.004464274713181716,
+          0.0017858780920505524,
+          0.0449700278995811
+        ]
+      ],
+      "convex_envelope_surface_y_at_pad_center_EEF_m": [
+        0.00615379568364166,
+        0.006153805552845699
+      ],
+      "source_triangle_count": 2
+    }
+  },
+  "source_sha256": {
+    "asset/robots/arx_x5_lift/1.0.0/usd/robot.usd": "fb1b4c0bcc7cef32b57cf2656bd7db221b9f15022b12650d5dfd08c06414ce58"
+  },
+  "selection": "Unique inward-facing distal planar facet, normal closing cosine >0.99, proximal EEF Z>15mm, reaching authored fingertip; actual tapered polygon",
+  "robot_or_physics_modified": false,
+  "target_or_goal_used": false,
+  "collision_scope": "Yellow guide is the authored inner pad. Existing PhysX convexHull envelope can protrude beyond it; guide is not a collision or contact certificate."
+}

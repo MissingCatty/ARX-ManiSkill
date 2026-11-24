@@ -1,0 +1,155 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-11-21T23:22:17.998600+08:00",
+  "frame": "body4",
+  "pose_frame": "action_tcp43",
+  "T_eef_action": [
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.043
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "reference_base_world": [
+    [
+      1.0,
+      -7.1013350755322335e-09,
+      -1.4906981959939003e-07,
+      -0.9558818936347961
+    ],
+    [
+      7.101334187353814e-09,
+      1.0,
+      -4.6566133171666024e-09,
+      0.25100669264793396
+    ],
+    [
+      1.4906981959939003e-07,
+      4.656612428988183e-09,
+      1.0,
+      -0.010000485926866531
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lift_joint_m": null,
+  "lift_semantics": "Use the actual body4 transform for each lift height.",
+  "front_halfspace": {
+    "axis": "body4 +X",
+    "minimum_x_m": 0.0
+  },
+  "joint_names": [
+    "right_joint21",
+    "right_joint22",
+    "right_joint23",
+    "right_joint24",
+    "right_joint25",
+    "right_joint26"
+  ],
+  "joint_limits": [
+    [
+      -2.0940000224454822,
+      3.1415998441247366
+    ],
+    [
+      0.0,
+      3.6649996815896064
+    ],
+    [
+      0.0,
+      3.239999917977638
+    ],
+    [
+      -1.670999893338,
+      1.670999893338
+    ],
+    [
+      -1.670999893338,
+      1.670999893338
+    ],
+    [
+      -2.0940000224454822,
+      2.0940000224454822
+    ]
+  ],
+  "fields": [
+    "q21",
+    "q22",
+    "q23",
+    "q24",
+    "q25",
+    "q26",
+    "tcp_x",
+    "tcp_y",
+    "tcp_z",
+    "qw",
+    "qx",
+    "qy",
+    "qz",
+    "joint_margin_rad",
+    "joint_margin_normalized",
+    "jacobian_condition_index"
+  ],
+  "dtype": "<f4",
+  "witness_file": "关节见证.bin",
+  "witnesses": 10559134,
+  "sampled_joint_states": 16777216,
+  "rear_rejected": 6218082,
+  "bounds_rejected": 0,
+  "table_checked": false,
+  "ground_checked": false,
+  "self_collision_checked": false,
+  "scene_collision_checked": false,
+  "orientation_matching": "Unquantized xyz/quaternion pose distances",
+  "orientation_grid": {
+    "azimuth_bins": 12,
+    "cos_polar_bins": 8,
+    "roll_bins": 12,
+    "total_bins": 1152,
+    "display_statistics_only": true
+  },
+  "uncovered_semantics": "Unknown; a strict matcher may skip this correction, not prove unreachable.",
+  "fine": {
+    "file": "精细体素统计.npz",
+    "resolution_m": 0.005,
+    "voxels": 4877929,
+    "observed_pose_bins": 10447229,
+    "sample_count_sum": 10559134,
+    "maximum_observed_orientation_fraction": 0.0234375,
+    "maximum_down_orientation_fraction": 0.041666666666666664
+  },
+  "coarse": {
+    "file": "概览体素统计.npz",
+    "resolution_m": 0.05,
+    "voxels": 9536,
+    "observed_pose_bins": 2040962,
+    "sample_count_sum": 10559134,
+    "maximum_observed_orientation_fraction": 0.6085069444444444,
+    "maximum_down_orientation_fraction": 0.8333333333333334
+  },
+  "wall_seconds": 176.15404034010135,
+  "physical_attempts": 0
+}

@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "image": {"quality": 86, "method": 6, "widths": [480, 960, 1440], "workers": 2},
+  "video": {"crf": [24, 22], "preset": "slow", "threads": 2, "minimum_mean_ssim": 0.985, "minimum_frame_ssim": 0.96},
+  "text": {"gzip_level": 9, "brotli_quality": 8, "minimum_bytes": 1024}
+}

@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "registered_attempts": 250,
+  "result_records": 250,
+  "physical_trials": 0,
+  "frozen_input_and_source_checks": "passed",
+  "registered_weight_stat_checks": "passed",
+  "methods": {
+    "zerograsp": {
+      "records": 50,
+      "valid_outputs": 50,
+      "model_output_failures": 0,
+      "model_loads": 1,
+      "gpu_uuid": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b"
+    },
+    "hunyuan-mini": {
+      "records": 50,
+      "valid_outputs": 43,
+      "model_output_failures": 7,
+      "model_loads": 1,
+      "gpu_uuid": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b"
+    },
+    "hunyuan-turbo": {
+      "records": 50,
+      "valid_outputs": 50,
+      "model_output_failures": 0,
+      "model_loads": 1,
+      "gpu_uuid": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b"
+    },
+    "spar3d": {
+      "records": 50,
+      "valid_outputs": 50,
+      "model_output_failures": 0,
+      "model_loads": 1,
+      "gpu_uuid": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b"
+    },
+    "rayst3r": {
+      "records": 50,
+      "valid_outputs": 50,
+      "model_output_failures": 0,
+      "model_loads": 1,
+      "gpu_uuid": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b"
+    }
+  }
+}

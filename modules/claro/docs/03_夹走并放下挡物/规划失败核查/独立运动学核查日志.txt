@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "/home/zhaoyechong/projects/CLARO-ARX/工具/独立运动学复核.py", line 78, in <module>
+    if __name__ == '__main__':main()
+                              ^^^^^^
+  File "/home/zhaoyechong/projects/CLARO-ARX/工具/独立运动学复核.py", line 72, in main
+    save(OUT / (name + '_独立复核.json'), {'queries': rows, 'physical_attempts': 0})
+  File "/home/zhaoyechong/projects/CLARO-ARX/工具/核查挡物规划.py", line 33, in save
+    tmp.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + '\n')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/home/zhaoyechong/projects/tmp/arx-fullchain/python/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable

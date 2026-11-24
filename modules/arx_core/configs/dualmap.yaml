@@ -1,0 +1,30 @@
+server:
+  host: "0.0.0.0"
+  port: 8005
+
+runtime:
+  dualmap_dir: "servers/DualMap"
+  map_root: "map"
+  ros_stream_config: "servers/DualMap/config/data_config/ros/arx_realsense_rgbd_odom.yaml"
+  python: "/home/arx/doc/miniconda3/envs/dualmap-jazzy/bin/python"
+  default_timeout_sec: 3600
+  max_timeout_sec: 14400
+  default_execute: false
+  rerun_mode: "save"
+
+services:
+  arx_ops_base_url: "http://127.0.0.1:8001"
+
+explore:
+  runner: "applications.runner_arx_closed_loop_explore"
+  dataset_name: "arx_realsense_rgbd_odom"
+  scene_id: "live"
+  max_commands: 0
+  initial_scan_steps: 10
+
+semantic_navigation:
+  runner: "applications.runner_arx_semantic_navigation"
+  dataset_name: "arx_realsense_rgbd_odom"
+  scene_id: "live"
+  max_attempts: 5
+  max_commands_per_path: 90

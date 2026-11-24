@@ -1,0 +1,137 @@
+{
+  "id": "D0181_S5_occluded_eggplant",
+  "model_id": "robocasa__eggplant__eggplant_1",
+  "semantic_class": "eggplant",
+  "family": "eggplant",
+  "target_text": "eggplant",
+  "layout": "S5_occluded",
+  "seed": 2720827543,
+  "actor_identities": [
+    {
+      "name": "target",
+      "model_id": "robocasa__eggplant__eggplant_1"
+    },
+    {
+      "name": "distractor_00",
+      "model_id": "robocasa__soap_dispenser__soap_dispenser_2"
+    },
+    {
+      "name": "distractor_01",
+      "model_id": "robocasa__lemon__lemon_10"
+    },
+    {
+      "name": "distractor_02",
+      "model_id": "robocasa__cucumber__cucumber_1"
+    }
+  ],
+  "scene": {
+    "layout": "S5_occluded",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__eggplant__eggplant_1",
+        "pose": [
+          -0.20414744317531586,
+          0.23492494225502014,
+          0.017409201711416245,
+          0.4967644512653351,
+          -8.039921522140503e-05,
+          -8.075474761426449e-05,
+          -0.867885410785675
+        ]
+      },
+      {
+        "name": "distractor_00",
+        "model_id": "robocasa__soap_dispenser__soap_dispenser_2",
+        "pose": [
+          -0.3151940703392029,
+          0.2774427533149719,
+          0.07750394940376282,
+          1.0,
+          -0.0001795083808247,
+          7.675024244235829e-05,
+          0.0004174814675934613
+        ]
+      },
+      {
+        "name": "distractor_01",
+        "model_id": "robocasa__lemon__lemon_10",
+        "pose": [
+          -0.41258811950683594,
+          0.0766700804233551,
+          0.03068425878882408,
+          0.21029868721961975,
+          0.00012996792793273926,
+          -0.0012329993769526482,
+          -0.9776365756988525
+        ]
+      },
+      {
+        "name": "distractor_02",
+        "model_id": "robocasa__cucumber__cucumber_1",
+        "pose": [
+          -0.5055499076843262,
+          0.2884654104709625,
+          0.022067440673708916,
+          0.8925058841705322,
+          0.00022169388830661774,
+          0.0006589711410924792,
+          -0.4510352611541748
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 807,
+    "isolated_mask_pixels": 1175,
+    "occlusion_fraction": 0.31319148936170216,
+    "projected_bbox_uv": [
+      [
+        288.5673223142603,
+        166.45105313119606
+      ],
+      [
+        354.1557543396036,
+        243.0973573864273
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.706,
+    "visible_pixels": 807,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "observation": null,
+  "physical_grasp_attempts": 0
+}

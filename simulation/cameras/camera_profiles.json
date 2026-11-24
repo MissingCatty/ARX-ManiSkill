@@ -1,0 +1,444 @@
+{
+  "profiles": {
+    "head": {
+      "serial": "352122270890",
+      "frame": "head_depth_optical_frame",
+      "reference_frame": "head_reference",
+      "depth_valid_range_m": [
+        0.1,
+        2.0
+      ],
+      "depth_intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 385.556640625,
+        "fy": 385.556640625,
+        "cx": 317.3089599609375,
+        "cy": 240.1505584716797,
+        "distortion_model": "brown_conrady",
+        "coeffs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "color_intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 391.53875732421875,
+        "fy": 390.5028381347656,
+        "cx": 314.70556640625,
+        "cy": 240.345947265625,
+        "distortion_model": "inverse_brown_conrady",
+        "coeffs": [
+          -0.053569495677948,
+          0.05939065292477608,
+          5.090847844257951e-05,
+          -0.00014923019625712186,
+          -0.02002261020243168
+        ]
+      },
+      "T_color_from_depth": [
+        [
+          0.9999727011,
+          0.0042298138,
+          -0.0060590091,
+          8.8721e-06
+        ],
+        [
+          -0.00422733,
+          0.999991,
+          0.000422673,
+          1e-05
+        ],
+        [
+          0.0060607418,
+          -0.000397048,
+          0.9999815822,
+          1e-05
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_reference_from_depth": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.02
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          0.16
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "xform_rows": [
+        [
+          -0.006059009,
+          -0.999972701,
+          -0.004229814,
+          0.0
+        ],
+        [
+          -0.000422673,
+          -0.00422733,
+          0.999991,
+          0.0
+        ],
+        [
+          -0.999981582,
+          0.006060742,
+          -0.000397048,
+          0.0
+        ],
+        [
+          0.17763905,
+          8.89e-06,
+          0.280510033,
+          1.0
+        ]
+      ],
+      "model": "Intel RealSense D405",
+      "model_identity": "supported by ARX data-pipeline documentation and project D405 capture implementation; live USB identity not available on GPU host",
+      "raw_depth_scale_m": 0.0001,
+      "raw_depth_scale_source": "https://github.com/realsenseai/librealsense/blob/master/src/ds/d400/d400-device.cpp",
+      "fps": 30,
+      "aligned_depth_frame": "color_optical",
+      "ideal_depth_range_m": [
+        0.07,
+        0.5
+      ],
+      "minimum_depth_m": 0.07,
+      "application_maximum_depth_m": 2.0,
+      "render_clipping_m": [
+        0.05,
+        10.0
+      ],
+      "model_input_projection": "rectified_pinhole_with_per_device_color_K",
+      "model_input_distortion_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "left_wrist": {
+      "serial": "352122273322",
+      "frame": "left_wrist_depth_optical_frame",
+      "reference_frame": "left_ee",
+      "depth_valid_range_m": [
+        0.0,
+        1.5
+      ],
+      "calibration_note": "Left wrist hand-eye is a temporary mirrored value; recalibrate for high-precision work.",
+      "depth_intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 390.2655944824219,
+        "fy": 390.2655944824219,
+        "cx": 318.6296691894531,
+        "cy": 239.8097686767578,
+        "distortion_model": "brown_conrady",
+        "coeffs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "color_intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 391.3247375488281,
+        "fy": 390.3759460449219,
+        "cx": 313.939697265625,
+        "cy": 240.84259033203125,
+        "distortion_model": "inverse_brown_conrady",
+        "coeffs": [
+          -0.05437622591853142,
+          0.06214268505573273,
+          -0.0001848314277594909,
+          0.00031201494857668877,
+          -0.021107440814375877
+        ]
+      },
+      "T_color_from_depth": [
+        [
+          0.9999470115,
+          0.0089459242,
+          -0.0050977487,
+          1e-05
+        ],
+        [
+          -0.0089462269,
+          0.9999600053,
+          -3.65314e-05,
+          1e-05
+        ],
+        [
+          0.0050972179,
+          8.21351e-05,
+          0.9999870062,
+          1e-05
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_reference_from_depth": [
+        [
+          0.0,
+          -0.515038075,
+          0.857167301,
+          0.071
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          0.001
+        ],
+        [
+          0.0,
+          -0.857167301,
+          -0.515038075,
+          0.071
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "xform_rows": [
+        [
+          -0.008977115,
+          -0.999947012,
+          -0.005042619,
+          0.0
+        ],
+        [
+          0.51504879,
+          -0.008946227,
+          0.857114204,
+          0.0
+        ],
+        [
+          -0.85711386,
+          0.005097218,
+          0.515101786,
+          0.0
+        ],
+        [
+          0.070996669,
+          0.001009961,
+          0.071013773,
+          1.0
+        ]
+      ],
+      "model": "Intel RealSense D405",
+      "model_identity": "supported by ARX data-pipeline documentation and project D405 capture implementation; live USB identity not available on GPU host",
+      "raw_depth_scale_m": 0.0001,
+      "raw_depth_scale_source": "https://github.com/realsenseai/librealsense/blob/master/src/ds/d400/d400-device.cpp",
+      "fps": 30,
+      "aligned_depth_frame": "color_optical",
+      "ideal_depth_range_m": [
+        0.07,
+        0.5
+      ],
+      "minimum_depth_m": 0.07,
+      "application_maximum_depth_m": 1.5,
+      "render_clipping_m": [
+        0.05,
+        10.0
+      ],
+      "model_input_projection": "rectified_pinhole_with_per_device_color_K",
+      "model_input_distortion_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "right_wrist": {
+      "serial": "352122272245",
+      "frame": "right_wrist_depth_optical_frame",
+      "reference_frame": "right_ee",
+      "depth_valid_range_m": [
+        0.0,
+        1.5
+      ],
+      "depth_intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 388.48419189453125,
+        "fy": 388.48419189453125,
+        "cx": 317.9107971191406,
+        "cy": 238.6846466064453,
+        "distortion_model": "brown_conrady",
+        "coeffs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "color_intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 392.071044921875,
+        "fy": 391.0259094238281,
+        "cx": 315.4335632324219,
+        "cy": 236.485107421875,
+        "distortion_model": "inverse_brown_conrady",
+        "coeffs": [
+          -0.05229520425200462,
+          0.06437485665082932,
+          -0.00033429707400500774,
+          0.0009613928850740194,
+          -0.02257872372865677
+        ]
+      },
+      "T_color_from_depth": [
+        [
+          0.9999979138,
+          0.0004907444,
+          -0.0019927088,
+          9.8649e-06
+        ],
+        [
+          -0.0004895395,
+          0.999999702,
+          0.0006050477,
+          1e-05
+        ],
+        [
+          0.0019930052,
+          -0.0006040709,
+          0.9999978542,
+          1e-05
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_reference_from_depth": [
+        [
+          0.0,
+          -0.515038075,
+          0.857167301,
+          0.071
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          -0.001
+        ],
+        [
+          0.0,
+          -0.857167301,
+          -0.515038075,
+          0.071
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "xform_rows": [
+        [
+          -0.001960837,
+          -0.999997914,
+          0.000605671,
+          0.0
+        ],
+        [
+          0.514519294,
+          -0.00048954,
+          0.857478668,
+          0.0
+        ],
+        [
+          -0.857476581,
+          0.001993005,
+          0.51451918,
+          0.0
+        ],
+        [
+          0.07099659,
+          -0.00099012,
+          0.071013714,
+          1.0
+        ]
+      ],
+      "model": "Intel RealSense D405",
+      "model_identity": "supported by ARX data-pipeline documentation and project D405 capture implementation; live USB identity not available on GPU host",
+      "raw_depth_scale_m": 0.0001,
+      "raw_depth_scale_source": "https://github.com/realsenseai/librealsense/blob/master/src/ds/d400/d400-device.cpp",
+      "fps": 30,
+      "aligned_depth_frame": "color_optical",
+      "ideal_depth_range_m": [
+        0.07,
+        0.5
+      ],
+      "minimum_depth_m": 0.07,
+      "application_maximum_depth_m": 1.5,
+      "render_clipping_m": [
+        0.05,
+        10.0
+      ],
+      "model_input_projection": "rectified_pinhole_with_per_device_color_K",
+      "model_input_distortion_coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "calibration_source": "/home/zhaoyechong/projects/COOLAS-ARX/arx-sim/config/controllers.yaml",
+  "calibration_sha256": "e9010f093abbfb0912498d247ac28854800edeba97b2debbab19da53ae7a3017",
+  "source_urls": [
+    "https://github.com/ARXroboticsX/ROS2_AC-one_Play",
+    "https://arx-global.us/faq/",
+    "https://www.realsenseai.com/products/stereo-depth-camera-d405/",
+    "https://github.com/realsenseai/librealsense/blob/master/src/rs.cpp",
+    "https://github.com/realsenseai/librealsense/blob/master/src/ds/d400/d400-device.cpp"
+  ],
+  "note": "per-device calibration copied from existing project; no live hardware re-calibration; head mounting override stored separately; stereo-matching noise not simulated"
+}

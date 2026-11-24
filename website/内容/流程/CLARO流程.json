@@ -1,0 +1,57 @@
+{
+  "title": "从腕部 RGB 开始的流程",
+  "intro": "在同一张流程图中点击步骤卡片，查看输入、方法、输出与验证证据。拖动画布移动，使用缩放按钮查看全貌。",
+  "directory": "CLARO步骤",
+  "diagram": "/media/claro-workflow.svg",
+  "note": "视觉选挡的首批固定图验证与13例固定挡物实测分别记录；实际全链路结果仍为1/13。多轮动态任务编排尚未接入。",
+  "graph": {
+    "positions": {
+      "wrist": [190, 0], "direct": [190, 210],
+      "scene-graph": [0, 470], "blocker": [0, 680], "sam3": [0, 890],
+      "fixed-blocker": [380, 680],
+      "grasp-proposals": [190, 1150], "planning": [190, 1360],
+      "removal": [190, 1570], "reobserve": [190, 1780],
+      "regrasp": [190, 1990], "evaluation": [190, 2200],
+      "orchestration": [190, 2460]
+    },
+    "edges": [
+      {"source":"wrist","target":"direct"},
+      {"source":"direct","target":"scene-graph","label":"受阻：视觉选挡"},
+      {"source":"direct","target":"fixed-blocker","label":"13例固定挡物实测","kind":"fixed","sourceHandle":"out-right"},
+      {"source":"scene-graph","target":"blocker"},
+      {"source":"blocker","target":"sam3"},
+      {"source":"sam3","target":"grasp-proposals","label":"掩码与点云"},
+      {"source":"fixed-blocker","target":"grasp-proposals","label":"仿真实例掩码","kind":"fixed","targetHandle":"in-right"},
+      {"source":"grasp-proposals","target":"planning"},
+      {"source":"planning","target":"removal"},
+      {"source":"removal","target":"reobserve"},
+      {"source":"reobserve","target":"regrasp"},
+      {"source":"regrasp","target":"evaluation"},
+      {"source":"evaluation","target":"orchestration","label":"后续工作","kind":"pending"}
+    ]
+  },
+  "groups": [
+    {"title":"观测与直接抓取判断","layout":"sequence","steps":["wrist","direct"]},
+    {"title":"直接抓取受阻后的两条路线","layout":"branches","transition":"直接可抓时执行原目标抓取；受阻时进入以下路线","lanes":[
+      {"title":"视觉选挡路线","kind":"vision","note":"首批3例固定图验证，尚未在线驱动13例批次。","steps":["scene-graph","blocker","sam3"]},
+      {"title":"13例实测路线","kind":"fixed","note":"固定挡物与仿真实例掩码，跳过左侧视觉选挡三步。","steps":["fixed-blocker"]}
+    ]},
+    {"title":"抓取、移障与重抓","layout":"sequence","transition":"定位信息交给后续几何与执行模块","steps":["grasp-proposals","planning","removal","reobserve","regrasp","evaluation"]},
+    {"title":"后续工作","layout":"pending","transition":"多轮反馈闭环仍待接入","steps":["orchestration"]}
+  ],
+  "steps": [
+    {"id":"wrist","number":"01","title":"腕部 RGB 与任务目标","summary":"采集同帧图像、深度、目标掩码和相机标定。","status":"观测已验证","kind":"input","file":"01_腕部观测.md"},
+    {"id":"direct","number":"02","title":"检查能否直接抓取","summary":"ZeroGrasp 生成原目标候选，cuRobo 检查可执行性。","status":"直接抓取基线已完成","kind":"geometry","file":"02_直接抓取判断.md"},
+    {"id":"scene-graph","number":"03","title":"生成语义场景图","summary":"Qwen4-Max 从腕部 RGB 描述物体实例、位置和关系。","status":"首批3例固定图验证","kind":"vision","file":"03_生成场景图.md"},
+    {"id":"blocker","number":"04","title":"VLM 选择一个挡物","summary":"结合任务、场景图和失败回执，选出唯一挡物实例。","status":"首批3例选择已核对","kind":"vision","file":"04_选择挡物.md"},
+    {"id":"sam3","number":"05","title":"SAM3 定位挡物","summary":"点提示得到实例掩码，再用深度回投可见三维点云。","status":"首批3例定位已验证","kind":"vision","file":"05_定位挡物.md"},
+    {"id":"grasp-proposals","number":"06","title":"生成挡物抓取候选","summary":"ZeroGrasp 推理并使用原生后处理后的抓点。","status":"已接入执行链路","kind":"geometry","file":"06_生成抓点.md"},
+    {"id":"planning","number":"07","title":"cuRobo 规划与碰撞复核","summary":"检查 G、H、抬升终点及进场、接近轨迹。","status":"已实测，问题已定位","kind":"geometry","file":"07_规划与复核.md"},
+    {"id":"removal","number":"08","title":"夹走并放下挡物","summary":"闭爪短抬、搬运、下降、松爪，最后撤离。","status":"I0069完成移障","kind":"execute","file":"08_移走挡物.md"},
+    {"id":"reobserve","number":"09","title":"重新观测并更新碰撞场景","summary":"采集新腕部 RGB-D，让规划世界反映移障后的摆放。","status":"I0069已验证","kind":"input","file":"09_重新观测.md"},
+    {"id":"regrasp","number":"10","title":"重新抓取原目标","summary":"用新观测生成新抓点，重新规划和执行。","status":"I0069重抓成功","kind":"geometry","file":"10_重抓原目标.md"},
+    {"id":"evaluation","number":"11","title":"实际执行结果核验","summary":"检查真实物体抬升、持续保持、接触和动作收敛。","status":"13例已结算","kind":"execute","file":"11_结果核验.md"},
+    {"id":"fixed-blocker","number":"实测分支","title":"固定挡物与实例掩码","summary":"使用历史碰撞证据预先指定挡物，验证清障本身的收益。","status":"13例采用此路线","kind":"fixed","file":"固定挡物实测分支.md"},
+    {"id":"orchestration","number":"待接入","title":"动态场景图与多轮任务编排","summary":"根据新观测和工具回执决定是否继续选挡或重抓。","status":"尚未实现闭环","kind":"pending","file":"多轮动态编排.md"}
+  ]
+}
