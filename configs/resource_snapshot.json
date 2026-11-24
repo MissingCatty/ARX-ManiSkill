@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "provider": "google_drive",
+  "folder_id": "1-dUTcHeIoismcRMk0JAj5mCRuR7R691A",
+  "remote_prefix": "ARX-ManiSkill",
+  "snapshot_id": "resources_20261124_03",
+  "remote_path": "ARX-ManiSkill/resources_20261124_03",
+  "manifest": "manifest.json",
+  "completion_marker": "COMPLETE.json",
+  "sha256_inventory": "SHA256SUMS",
+  "local_roots": {
+    "weights": "weights",
+    "shared_models": "simulation/assets/models",
+    "scenes": "simulation/scenes/latest200"
+  },
+  "module_weight_registry": "configs/modules.json",
+  "shared_asset_catalog": "simulation/assets/catalog.json",
+  "excluded_retired_resources": [
+    "weights/easg",
+    "simulation/assets/models/source_easg",
+    "weights/spar3d"
+  ],
+  "availability": "Use only after COMPLETE.json confirms the remote checksum check.",
+  "previous_transport_snapshot": "resources_20261124_02",
+  "archive_runs_registry": "configs/cloud_backup.json:archive_runs"
+}

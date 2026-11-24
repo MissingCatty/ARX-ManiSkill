@@ -1,0 +1,32 @@
+{
+  "provider": "google_drive",
+  "account_email": "yzhao6141@gmail.com",
+  "folder_id": "1-dUTcHeIoismcRMk0JAj5mCRuR7R691A",
+  "remote_name": "arx_drive",
+  "remote_prefix": "ARX-ManiSkill",
+  "credential_file": "~/.config/arx-maniskill/google-drive.conf",
+  "rclone_binary": "environments/backup_tools/bin/rclone",
+  "chunk_bytes": 2147483648,
+  "compression_threads": 2,
+  "include": [
+    "weights",
+    "simulation/assets",
+    "simulation/scenes/latest200",
+    "simulation/robots",
+    "simulation/cameras",
+    "configs",
+    "docs"
+  ],
+  "snapshot_parent": "tmp/cloud_backup",
+  "version": 1,
+  "exclude": [
+    "weights/easg",
+    "simulation/assets/models/source_easg",
+    "weights/spar3d"
+  ],
+  "archive_runs": [
+    "tmp/reachability/experiments",
+    "tmp/reachability/logs",
+    "tmp/zerograsp/legacy_arx_visualizations"
+  ]
+}

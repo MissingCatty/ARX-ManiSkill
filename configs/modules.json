@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "modules": {
+    "sam3": {
+      "source": "modules/sam3",
+      "role": "segmentation",
+      "environment": "environments/sam3",
+      "adapter": "modules/sam3/arx_adapter.py",
+      "weights": [
+        "weights/sam3/sam3.pt"
+      ],
+      "inputs": [
+        "camera/color.png",
+        "camera/depth.png",
+        "camera/params.json",
+        "entry.json"
+      ],
+      "outputs": [
+        "camera/mask.png",
+        "camera/depth_m.npy",
+        "sam3.json"
+      ]
+    },
+    "rayst3r": {
+      "source": "modules/rayst3r",
+      "role": "reconstruction",
+      "environment": "environments/reconstruction",
+      "adapter": "modules/rayst3r/arx_adapter.py",
+      "weights": [
+        "weights/rayst3r/rayst3r.pth",
+        "weights/dinov2/dinov2_vitl14_reg4_pretrain.pth"
+      ],
+      "inputs": [
+        "camera/color.png",
+        "camera/mask.png",
+        "camera/depth_m.npy",
+        "state.json"
+      ],
+      "outputs": [
+        "completed_points_camera.npy",
+        "completed_points_world.npy",
+        "rayst3r.json"
+      ],
+      "reconstruction": "modules/rayst3r/arx_reconstruction.py"
+    },
+    "graspgenx": {
+      "source": "modules/graspgenx",
+      "role": "grasp_generation",
+      "environment": "environments/graspgenx",
+      "adapter": "modules/graspgenx/arx_adapter.py",
+      "weights": [
+        "weights/graspgenx/gen",
+        "weights/graspgenx/dis"
+      ],
+      "inputs": [
+        "completed_points_world.npy"
+      ],
+      "outputs": [
+        "graspgenx_raw/grasps_generator_world.npy",
+        "graspgenx_raw/scores.npy",
+        "graspgenx_raw/inference.json"
+      ]
+    },
+    "curobo": {
+      "source": "modules/curobo",
+      "role": "motion_planning",
+      "environment": "environments/curobo",
+      "adapter": "modules/curobo/arx_adapter.py",
+      "inputs": [
+        "state.json",
+        "candidates/candidate_pool.json"
+      ],
+      "outputs": [
+        "plan_result.json"
+      ],
+      "asset_resources": [
+        "curobo_assets"
+      ]
+    },
+    "maniskill": {
+      "source": "modules/maniskill",
+      "role": "simulation",
+      "environment": "environments/simulation",
+      "asset_resources": [
+        "maniskill_package_assets"
+      ]
+    },
+    "pipeline": {
+      "source": "modules/pipeline",
+      "role": "experiment_orchestration",
+      "environment": "environments/simulation"
+    },
+    "camera": {
+      "source": "modules/camera",
+      "role": "camera_geometry",
+      "environment": "environments/simulation"
+    },
+    "arx_core": {
+      "source": "modules/arx_core",
+      "role": "robot_configuration_and_shared_control"
+    },
+    "zerograsp": {
+      "source": "modules/zerograsp",
+      "role": "baseline_perception",
+      "environment": "environments/graspcl",
+      "weights": [
+        "weights/zerograsp/mainline/zerograsp_synthetic.ckpt"
+      ],
+      "reconstruction": "modules/zerograsp/arx_reconstruction.py",
+      "asset_resources": [
+        "zerograsp_arx_assets"
+      ]
+    },
+    "graspcl": {
+      "source": "modules/graspcl",
+      "role": "grasp_ranking",
+      "environment": "environments/graspcl",
+      "weights": [
+        "weights/graspcl"
+      ]
+    },
+    "dinov2": {
+      "source": "modules/dinov2",
+      "role": "visual_features",
+      "environment": "environments/reconstruction",
+      "weights": [
+        "weights/dinov2"
+      ]
+    },
+    "claro": {
+      "source": "modules/claro",
+      "role": "occlusion_orchestration",
+      "environment": "environments/sam3"
+    },
+    "reachability": {
+      "source": "modules/reachability",
+      "role": "kinematic_analysis",
+      "environment": "environments/curobo"
+    },
+    "curobo_adapter": {
+      "source": "modules/curobo_adapter",
+      "role": "version_comparison",
+      "environment": "environments/curobo_v090",
+      "asset_resources": [
+        "curobo_v090_assets"
+      ]
+    }
+  }
+}

@@ -1,0 +1,105 @@
+/tmp/
+/weights/
+/environments/
+/simulation/assets/*
+!/simulation/assets/catalog.json
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/website/node_modules/
+/website/resources/state/
+*.pending
+
+# Local credentials and machine-specific authorizations.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.lic
+*_keys.json
+credentials.json
+
+# Model files and platform-specific build products stay outside Git.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.so
+*.so.*
+*.a
+*.o
+*.egg-info/
+*.dist-info/
+build/
+.cache/
+*.log
+/modules/research_dependencies/anygrasp_runtime/checkpoint_detection.tar
+/modules/research_dependencies/graspness_system_deps/
+/modules/pipeline/experiments/diverse_object_scenes/dependencies/
+
+# Historical camera captures; retain their scene definitions and JSON records.
+# The current frozen 200-scene dataset is included in full.
+/simulation/scenes/benchmark_inputs/**/*.png
+/simulation/scenes/benchmark_inputs/**/*.fpfh
+/simulation/scenes/benchmark_inputs/**/*.pcd
+/simulation/scenes/benchmark_inputs/**/*.npz
+/simulation/scenes/benchmark_inputs/**/*.npy
+/simulation/scenes/benchmark_inputs/**/*.ply
+
+# Rebuilt from the website's own source snapshots and compression cache.
+/website/resources/site/
+/website/resources/.build-*/
+/website/resources/.previous-*/
+
+# Vendored model repositories must not apply their LFS filters to this repo.
+.gitattributes
+!/.gitattributes
+
+# Optional upstream examples are external assets; record their LFS object IDs.
+/modules/graspgenx/assets/proc_grippers/**/*.obj
+/modules/graspgenx/assets/sample_data/**/*.obj
+/modules/graspgenx/assets/sample_data/real_world/*/depth.npy
+
+# Retired routes and module-level compatibility links.
+/modules/easg/
+/modules/spar3d/
+/modules/tmp
+/modules/asset
+/modules/compat_tmp/
+
+# Library meshes, textures and archived runs have canonical external storage.
+/modules/maniskill/source/mani_skill/assets/
+/modules/maniskill/source/mani_skill/**/assets/
+!/modules/maniskill/source/mani_skill/utils/assets/
+/modules/curobo/source/curobo/content/assets/
+/modules/curobo_adapter/source/curobo/content/assets/
+/modules/zerograsp/maniskill_curobo_real/ARX-X5/meshes/
+/modules/zerograsp/maniskill_curobo_real/ARX-X5/visualizations/
+/modules/zerograsp/maniskill_curobo_openarm/
+/modules/zerograsp/maniskill_curobo_fangzhou/
+/modules/zerograsp/maniskill_curobo_affordance/
+/modules/zerograsp/maniskill_curobo_g1d/
+/modules/zerograsp/maniskill_curobo_graspnet/
+/modules/reachability/实验/
+/modules/maniskill/source/examples/tutorials/
+/modules/maniskill/source/mani_skill/**/*.hdr
+/modules/maniskill/source/docs/**/*.png
+/modules/maniskill/source/docs/**/*.jpg
+/modules/maniskill/source/docs/**/*.gif
+/modules/maniskill/source/docs/**/*.webm
+/modules/maniskill/source/docs/**/*.mp4
+/modules/maniskill/source/docs/**/*.svg
+/modules/maniskill/source/figures/
+/modules/curobo/source/docs/**/*.png
+/modules/curobo/source/docs/**/*.jpg
+/modules/curobo/source/docs/**/*.gif
+/modules/curobo/source/docs/**/*.mp4
+/modules/curobo/source/docs/**/*.svg
+/modules/curobo_adapter/source/docs/**/*.png
+/modules/curobo_adapter/source/docs/**/*.jpg
+/modules/curobo_adapter/source/docs/**/*.gif
+/modules/curobo_adapter/source/docs/**/*.mp4
+/modules/curobo_adapter/source/docs/**/*.svg
