@@ -2,7 +2,9 @@
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import json
+import os
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import time
@@ -101,9 +103,30 @@ def audit(root):
 
 
 def publish(root):
+    node = os.environ.get('ARX_NODE_EXECUTABLE') or shutil.which('node')
+    if node is None:
+        managed = ROOT/'environments/node/bin/node'
+        if managed.is_file():
+            node = str(managed)
+        else:
+            # NVM's executable is normally added by the interactive shell and
+            # is absent from systemd's PATH. Discover its installed versions.
+            candidates = list((Path.home()/'.nvm/versions/node').glob('v*/bin/node'))
+            if candidates:
+                def version(path):
+                    return tuple(int(part) for part in path.parents[1].name.lstrip('v').split('.'))
+                node = str(max(candidates, key=version))
+    if node is None:
+        # User services have a smaller PATH than an interactive terminal.
+        # Resolve the user's configured Node runtime through their login shell.
+        resolved = subprocess.run(['/bin/bash', '-lc', 'command -v node'],
+                                  capture_output=True, text=True, check=True)
+        node = resolved.stdout.strip().splitlines()[-1]
+    if not Path(node).is_file():
+        raise RuntimeError('Configured Node runtime is unavailable: '+node)
     subprocess.run([sys.executable, str(ROOT/'website/tools/publish_mobile_v4.py'), '--root', str(root)], check=True)
     with (root/'website_build.log').open('a') as stream:
-        subprocess.run(['node', 'build.mjs'], cwd=ROOT/'website', stdout=stream, stderr=subprocess.STDOUT, check=True)
+        subprocess.run([node, 'build.mjs'], cwd=ROOT/'website', stdout=stream, stderr=subprocess.STDOUT, check=True)
 
 
 def finish(root):
@@ -133,18 +156,28 @@ def finish(root):
 
 def watch(root):
     last_published = 0
+    failures = 0
     while True:
         progress = read_json(root/'progress.json')
         stopped = root/'services_stopped.json'
-        if progress['phase'] in ['complete', 'stopped'] and stopped.exists() \
-                and read_json(stopped)['all_owned_exited']:
-            finish(root)
-            return
-        if progress['completed'] >= last_published+10:
-            publish(root)
-            last_published = progress['completed']
+        try:
+            if progress['phase'] in ['complete', 'stopped'] and stopped.exists() \
+                    and read_json(stopped)['all_owned_exited']:
+                finish(root)
+                return
+            if progress['completed'] >= last_published+10:
+                publish(root)
+                last_published = progress['completed']
+                failures = 0
+                write_json(root/'publication_status.json', {'at': now(), 'state': 'published',
+                    'completed': last_published})
+        except (OSError, subprocess.SubprocessError, RuntimeError) as error:
+            failures += 1
+            write_json(root/'publication_status.json', {'at': now(), 'state': 'publication_error',
+                'error': str(error), 'consecutive_failures': failures})
+            print('PUBLICATION_ERROR', now(), str(error), flush=True)
         # Background watcher only: no model loading, restart or robot action.
-        time.sleep(30)
+        time.sleep(min(300, 30*max(1, failures)))
 
 
 if __name__ == '__main__':
