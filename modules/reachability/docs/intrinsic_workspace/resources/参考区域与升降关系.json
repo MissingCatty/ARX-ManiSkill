@@ -1,0 +1,485 @@
+{
+  "at": "2026-11-25T02:05:57.824592+08:00",
+  "frame": "body4/action_tcp43",
+  "selection_uses_table_or_camera": false,
+  "source_sha256": {
+    "tmp/reachability/shared_region_comparison_20261125_01/statistics_2cm.npz": "c20038173bd498bf578437429187d05faf3247f86ef7410a37bf1404372bfc9e",
+    "tmp/reachability/products/前方精细_20261121_01/地图元数据.json": "0b1e05d62f6354012a3be6699c2cff76fa3fd1c5f422aaee56fcd26f776c66a6",
+    "tmp/reachability/products/前方精细_20261121_01/概览体素统计.npz": "69680381fd07396be458851162d98ccd5bbb66e124d46d5f14bbd7a6d913712d",
+    "simulation/assets/models/arx_x5_lift/robot.urdf": "0ac9f20f13bd2a194d9f5c2002856a84ba406a4a3906ef9ed5ec182002569704"
+  },
+  "thresholds_per_arm_per_2cm_cell": {
+    "sample_count": 29,
+    "orientation_count": 26,
+    "down_orientation_count": 4
+  },
+  "thresholds_interpretation": "Configuration and full-orientation counts each meet the full-atlas lower quartile, with at least four downward bins",
+  "downward_definition": "approach axis within 60 degrees of body4 -Z",
+  "engineering_min_forward_m": 0.2,
+  "regions": {
+    "shared": {
+      "lower_body4_m": [
+        0.2,
+        -0.2,
+        -0.16
+      ],
+      "upper_body4_m": [
+        0.5,
+        0.2,
+        0.1
+      ],
+      "center_body4_m": [
+        0.35000000000000003,
+        0.0,
+        -0.03
+      ],
+      "dimensions_m": [
+        0.3,
+        0.4,
+        0.26
+      ],
+      "position_cells": 3900,
+      "volume_m3": 0.031200000000000006,
+      "metrics": {
+        "right": {
+          "sample_count": {
+            "minimum": 31,
+            "median": 65.0,
+            "mean": 95.25769230769231
+          },
+          "orientation_count": {
+            "minimum": 27,
+            "median": 57.0,
+            "mean": 68.93538461538462
+          },
+          "down_orientation_count": {
+            "minimum": 4,
+            "median": 22.0,
+            "mean": 26.024358974358975
+          }
+        },
+        "left": {
+          "sample_count": {
+            "minimum": 29,
+            "median": 65.0,
+            "mean": 94.58205128205128
+          },
+          "orientation_count": {
+            "minimum": 26,
+            "median": 56.0,
+            "mean": 69.42102564102564
+          },
+          "down_orientation_count": {
+            "minimum": 4,
+            "median": 22.0,
+            "mean": 26.114102564102563
+          }
+        }
+      },
+      "width_search": [
+        {
+          "width_cells": 10,
+          "maximum_rectangle_area_cells": 364,
+          "volume_cells": 3640
+        },
+        {
+          "width_cells": 12,
+          "maximum_rectangle_area_cells": 221,
+          "volume_cells": 2652
+        },
+        {
+          "width_cells": 14,
+          "maximum_rectangle_area_cells": 221,
+          "volume_cells": 3094
+        },
+        {
+          "width_cells": 16,
+          "maximum_rectangle_area_cells": 221,
+          "volume_cells": 3536
+        },
+        {
+          "width_cells": 18,
+          "maximum_rectangle_area_cells": 195,
+          "volume_cells": 3510
+        },
+        {
+          "width_cells": 20,
+          "maximum_rectangle_area_cells": 195,
+          "volume_cells": 3900
+        },
+        {
+          "width_cells": 22,
+          "maximum_rectangle_area_cells": 143,
+          "volume_cells": 3146
+        },
+        {
+          "width_cells": 24,
+          "maximum_rectangle_area_cells": 132,
+          "volume_cells": 3168
+        },
+        {
+          "width_cells": 26,
+          "maximum_rectangle_area_cells": 117,
+          "volume_cells": 3042
+        },
+        {
+          "width_cells": 28,
+          "maximum_rectangle_area_cells": 117,
+          "volume_cells": 3276
+        },
+        {
+          "width_cells": 30,
+          "maximum_rectangle_area_cells": 96,
+          "volume_cells": 2880
+        }
+      ]
+    },
+    "right": {
+      "lower_body4_m": [
+        0.2,
+        -0.56,
+        -0.34
+      ],
+      "upper_body4_m": [
+        0.46,
+        0.06,
+        0.24
+      ],
+      "center_body4_m": [
+        0.33,
+        -0.25,
+        -0.05
+      ],
+      "dimensions_m": [
+        0.26,
+        0.62,
+        0.58
+      ],
+      "position_cells": 11687,
+      "volume_m3": 0.09349600000000001,
+      "metrics": {
+        "right": {
+          "sample_count": {
+            "minimum": 30,
+            "median": 89.0,
+            "mean": 122.42098057670917
+          },
+          "orientation_count": {
+            "minimum": 27,
+            "median": 74.0,
+            "mean": 83.84931975699496
+          },
+          "down_orientation_count": {
+            "minimum": 4,
+            "median": 28.0,
+            "mean": 31.45366646701463
+          }
+        }
+      },
+      "width_search": [
+        {
+          "width_cells": 11,
+          "maximum_rectangle_area_cells": 504,
+          "volume_cells": 5544
+        },
+        {
+          "width_cells": 13,
+          "maximum_rectangle_area_cells": 456,
+          "volume_cells": 5928
+        },
+        {
+          "width_cells": 15,
+          "maximum_rectangle_area_cells": 441,
+          "volume_cells": 6615
+        },
+        {
+          "width_cells": 17,
+          "maximum_rectangle_area_cells": 437,
+          "volume_cells": 7429
+        },
+        {
+          "width_cells": 19,
+          "maximum_rectangle_area_cells": 437,
+          "volume_cells": 8303
+        },
+        {
+          "width_cells": 21,
+          "maximum_rectangle_area_cells": 437,
+          "volume_cells": 9177
+        },
+        {
+          "width_cells": 23,
+          "maximum_rectangle_area_cells": 403,
+          "volume_cells": 9269
+        },
+        {
+          "width_cells": 25,
+          "maximum_rectangle_area_cells": 390,
+          "volume_cells": 9750
+        },
+        {
+          "width_cells": 27,
+          "maximum_rectangle_area_cells": 390,
+          "volume_cells": 10530
+        },
+        {
+          "width_cells": 29,
+          "maximum_rectangle_area_cells": 390,
+          "volume_cells": 11310
+        },
+        {
+          "width_cells": 31,
+          "maximum_rectangle_area_cells": 377,
+          "volume_cells": 11687
+        }
+      ]
+    },
+    "left": {
+      "lower_body4_m": [
+        0.2,
+        -0.06000000000000005,
+        -0.34
+      ],
+      "upper_body4_m": [
+        0.46,
+        0.56,
+        0.24
+      ],
+      "center_body4_m": [
+        0.33,
+        0.25,
+        -0.05
+      ],
+      "dimensions_m": [
+        0.26,
+        0.62,
+        0.58
+      ],
+      "position_cells": 11687,
+      "volume_m3": 0.09349600000000001,
+      "metrics": {
+        "left": {
+          "sample_count": {
+            "minimum": 30,
+            "median": 89.0,
+            "mean": 122.42098057670917
+          },
+          "orientation_count": {
+            "minimum": 27,
+            "median": 74.0,
+            "mean": 83.84931975699496
+          },
+          "down_orientation_count": {
+            "minimum": 4,
+            "median": 28.0,
+            "mean": 31.45366646701463
+          }
+        }
+      },
+      "width_search": [
+        {
+          "width_cells": 11,
+          "maximum_rectangle_area_cells": 504,
+          "volume_cells": 5544
+        },
+        {
+          "width_cells": 13,
+          "maximum_rectangle_area_cells": 456,
+          "volume_cells": 5928
+        },
+        {
+          "width_cells": 15,
+          "maximum_rectangle_area_cells": 441,
+          "volume_cells": 6615
+        },
+        {
+          "width_cells": 17,
+          "maximum_rectangle_area_cells": 437,
+          "volume_cells": 7429
+        },
+        {
+          "width_cells": 19,
+          "maximum_rectangle_area_cells": 437,
+          "volume_cells": 8303
+        },
+        {
+          "width_cells": 21,
+          "maximum_rectangle_area_cells": 437,
+          "volume_cells": 9177
+        },
+        {
+          "width_cells": 23,
+          "maximum_rectangle_area_cells": 403,
+          "volume_cells": 9269
+        },
+        {
+          "width_cells": 25,
+          "maximum_rectangle_area_cells": 390,
+          "volume_cells": 9750
+        },
+        {
+          "width_cells": 27,
+          "maximum_rectangle_area_cells": 390,
+          "volume_cells": 10530
+        },
+        {
+          "width_cells": 29,
+          "maximum_rectangle_area_cells": 390,
+          "volume_cells": 11310
+        },
+        {
+          "width_cells": 31,
+          "maximum_rectangle_area_cells": 377,
+          "volume_cells": 11687
+        }
+      ]
+    }
+  },
+  "arm_model_verification": {
+    "passed": true,
+    "paired_fk_samples": 512,
+    "maximum_position_error_m": 1.4819317104845772e-07,
+    "translation_body4_m": [
+      0.0,
+      0.5,
+      0.0
+    ],
+    "joint_limits_equal": true
+  },
+  "height_and_base_reference": {
+    "mount_xyz_at_zero_lift_m": [
+      0.09411799907684326,
+      0.001006699982099235,
+      0.27000001072883606
+    ],
+    "lift_limits_m": [
+      0.0,
+      0.46000000834465027
+    ],
+    "probes": [
+      {
+        "lift_m": 0.0,
+        "body4_in_base_link": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.09411799907684326
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.001006699982099235
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.27000001072883606
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "lift_m": 0.23000000417232513,
+        "body4_in_base_link": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.09411799907684326
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.001006699982099235
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.5000000149011612
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "lift_m": 0.46000000834465027,
+        "body4_in_base_link": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.09411799907684326
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.001006699982099235
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.7300000190734863
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "target_height_above_base_link_m": 0.5,
+        "lift_interval_m": [
+          0.12999998927116393,
+          0.38999998927116397
+        ],
+        "center_aligned_lift_m": 0.25999998927116397
+      },
+      {
+        "target_height_above_base_link_m": 0.6,
+        "lift_interval_m": [
+          0.2299999892711639,
+          0.46000000834465027
+        ],
+        "center_aligned_lift_m": 0.35999998927116394
+      },
+      {
+        "target_height_above_base_link_m": 0.75,
+        "lift_interval_m": [
+          0.37999998927116396,
+          0.46000000834465027
+        ],
+        "center_aligned_lift_m": 0.509999989271164
+      },
+      {
+        "target_height_above_base_link_m": 0.9,
+        "lift_interval_m": null,
+        "center_aligned_lift_m": 0.659999989271164
+      }
+    ],
+    "formula": "target_z_base = mount_z + joint4 + desired_tcp_z_body4",
+    "scope": "upright base, other chassis joint coordinates held at their recorded values"
+  },
+  "physical_attempts": 0,
+  "new_IK_queries": 0,
+  "interpretation": "Body-relative kinematic preferred regions for future base and lift initialization; each specific grasp continues through full-pose and collision checks"
+}

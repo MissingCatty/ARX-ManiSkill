@@ -10,3 +10,5 @@
 - 2026年11月25日按用户要求新增共有区与各臂独有区的直接比较，入口compare_regions.py。复用已冻结前方地图，以5厘米和2厘米格分别统计每条臂的配置密度和去重朝向覆盖，位置格等权；重新核对当前完整模型与512组左右臂FK。产物为根目录tmp/reachability/shared_region_comparison_20261125_01，文字报告位于modules/reachability/docs/可达性地图/共有区域与单臂独有区域的可达性比较.md，未加入网站。新增IK和物理动作均为0。
 
 - 同日按用户要求给出适合当前桌面操作的空间并绘制多视角图。recommend_workspace.py读取当前200场景中的冻结机器人、桌面和头部相机几何，结合2厘米地图格选取body4前方34至54厘米、左右各15厘米、桌面上方2至30厘米的TCP推荐区；2100个位置格均有双臂覆盖，每臂至少4个向下朝向格。draw_workspace.py使用实际URDF视觉网格、初始关节状态和5厘米高密度区域，生成斜视、俯视、正视、侧视图。运行记录在tmp/reachability/recommended_workspace_20261125_01，文档与独立图片副本在modules/reachability/docs/recommended_workspace/。未修改场景、未启动服务、新增IK和物理动作均为0。具体抓姿仍需原有完整位姿、碰撞和路径检查，不把位置覆盖写成任意朝向均可达。
+
+- 用户随后要求原图不动，另画不考虑桌子的图，为后续自主升降与底盘位姿选择准备。新选区入口intrinsic_workspace.py，绘图draw_intrinsic_workspace.py，结果tmp/reachability/intrinsic_workspace_20261125_01，独立说明与图片在modules/reachability/docs/intrinsic_workspace/。选区不读取桌面/相机条件，图中仍显示原机器人与参考桌子；统计完整前方高度，坐标以body4为原点。2厘米格每臂至少29个配置、26个朝向格及4个下探朝向格，以body4前方20厘米为工程参考起点，搜索最大矩形。共同核心X20～50、Y±20、Z−16～＋10厘米；左右各自参考框见JSON。原14个图、程序、说明文件及网站原图已核对不变。实际URDF核对升降0～46厘米、body4高度为底盘原点以上27厘米加升降量；新文件给出未来站位/高度初始化公式，未接入实际导航、控制或候选过滤。新增IK、服务、仿真和物理抓取均为0。
