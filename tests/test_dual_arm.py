@@ -141,7 +141,9 @@ class ActualArmModelTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.model = ArmModel()
-        cls.state = read_json(current_dataset()/'cases/D0008_S1_open_teapot/state.json')
+        # This regression fixture belongs to the preserved V3 collection;
+        # selecting V4's 100 new scenes must not redirect the V3 test fixture.
+        cls.state = read_json(ROOT/'simulation/scenes/latest200/cases/D0008_S1_open_teapot/state.json')
 
     def test_authored_chain_equivalence(self):
         self.assertLess(self.model.proof['maximum_transform_error'], 2e-6)

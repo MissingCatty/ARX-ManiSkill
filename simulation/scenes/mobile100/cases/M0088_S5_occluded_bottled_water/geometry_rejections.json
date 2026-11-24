@@ -1,0 +1,14 @@
+[
+  {
+    "variant": 0,
+    "reason": "target_outside_head_view"
+  },
+  {
+    "variant": 1,
+    "reason": "No geometric 20-40% occlusion"
+  },
+  {
+    "variant": 2,
+    "reason": "target_outside_head_view"
+  }
+]

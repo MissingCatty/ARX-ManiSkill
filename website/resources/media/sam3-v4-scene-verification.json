@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scenes": 100,
+  "layouts": {
+    "S1_open": 20,
+    "S2_edge": 20,
+    "S3_sparse": 20,
+    "S4_clutter": 20,
+    "S5_occluded": 20
+  },
+  "categories": 40,
+  "target_models": 40,
+  "IK_calls": 0,
+  "model_calls": 0,
+  "source_sha256": "160ba8432ebdc3c04019477e26af613d5aaeb867910cdc8d208c974e648877b1"
+}

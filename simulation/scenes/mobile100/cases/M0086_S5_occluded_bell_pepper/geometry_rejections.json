@@ -1,0 +1,14 @@
+[
+  {
+    "variant": 0,
+    "reason": "target_outside_head_view"
+  },
+  {
+    "variant": 1,
+    "reason": "geometric_layout_or_visibility"
+  },
+  {
+    "variant": 2,
+    "reason": "geometric_layout_or_visibility"
+  }
+]

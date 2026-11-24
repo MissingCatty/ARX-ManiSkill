@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T17:53:51.981Z",
+  "generatedAt": "2026-11-24T19:13:30.610Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -531,7 +531,7 @@
     },
     {
       "file": "media/active-configuration.json",
-      "sha256": "b5e4e81cef131d0c14974bc4ad0315e94d8d27689651643cb1c4d052d2fb6d4b"
+      "sha256": "4a20380b35159d62e25debfe32895b53af406de1257a48af1d8b37a03c32926d"
     },
     {
       "file": "media/active-configuration-verification.json",
@@ -660,6 +660,70 @@
     {
       "file": "media/sam3-v3-left-approach-diagnosis.json",
       "sha256": "9068091542ba6caf1d06a536df76d9b89ac0e6431a3c48c5cd0b96a6f99182b0"
+    },
+    {
+      "file": "media/sam3-v4-summary.json",
+      "sha256": "297b442572d2bf1f622f1a1d8876a26a7e183fa72371811d286414cb0cefb4d8"
+    },
+    {
+      "file": "media/sam3-v4-registration.json",
+      "sha256": "2934034f3605154f7d1da049e56e4c7cd700f3ebf3448a2f8d773a89915863f3"
+    },
+    {
+      "file": "media/sam3-v4-scene-verification.json",
+      "sha256": "85242febe3fe9f18e22688921a99e26cd6f4637803aea537a08209f214733c16"
+    },
+    {
+      "file": "media/sam3-v4-m0001-initial.jpg",
+      "sha256": "c0bccb58a8e36163ef10211c7477803c989c87e7fdca003fa9afa6b5bb0abe1f"
+    },
+    {
+      "file": "media/sam3-v4-m0011-initial.jpg",
+      "sha256": "bd9e74c49da5d1b643f3dbf015d30944850c10cee94b40ca3caaa492bddd1344"
+    },
+    {
+      "file": "media/sam3-v4-m0021-initial.jpg",
+      "sha256": "e6a5c00035b4541a59c8e89696acb5c4d1f7cc8e24a02352fb2c764c0be74f51"
+    },
+    {
+      "file": "media/sam3-v4-m0031-initial.jpg",
+      "sha256": "a7efb7f55de6cb439b3a51f6f9ee722b970d82130049985b25e42f0e492d7f2e"
+    },
+    {
+      "file": "media/sam3-v4-m0041-initial.jpg",
+      "sha256": "271c63c413543df477b2e3785ca78f2f338d75075c7a109fe74b20289795b981"
+    },
+    {
+      "file": "media/sam3-v4-m0051-initial.jpg",
+      "sha256": "75a7bb5528d429c7d6ff8628a62620cad87172413540b638ce441a4777323c2f"
+    },
+    {
+      "file": "media/sam3-v4-m0061-initial.jpg",
+      "sha256": "5a4ebaea4ea6838eaa1d4ec1480fc7aaa223377765e6dfe3e15371a8509daeb2"
+    },
+    {
+      "file": "media/sam3-v4-m0071-initial.jpg",
+      "sha256": "1fa49c36870775708a5480a652749178091cbe629c1717e4d5f5b35f77b48e40"
+    },
+    {
+      "file": "media/sam3-v4-m0081-initial.jpg",
+      "sha256": "9987f2da243b47dc29287fa91ec18693cde1c890ed0390bf5cd0ae9f713306e7"
+    },
+    {
+      "file": "media/sam3-v4-m0091-initial.jpg",
+      "sha256": "acd9bcda7e03782e6b87b31eb475b3d9dde13b4c1d71aa324fddb2c7412a1c7f"
+    },
+    {
+      "file": "media/sam3-v4-m0001-grasp.mp4",
+      "sha256": "79f2bc3f322acb8294cb6bf01e18682d89449c76b6a9ea03d3deef5dbd96b723"
+    },
+    {
+      "file": "media/sam3-v4-m0001-head.mp4",
+      "sha256": "03a3a1ddf0ea1a2b75637d8281210f80a1dcd8170de91b1fdaa78569f028dc3f"
+    },
+    {
+      "file": "media/sam3-v4-m0001-station.mp4",
+      "sha256": "542a4dd0c2a77526c82307ed2fa830cbfc2dbc886dc9d8f79f36daf50231ae68"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
@@ -1679,7 +1743,7 @@
     },
     {
       "file": "optimized/manifest.json",
-      "sha256": "7c950ec4a2d3e3746d9af27a77255865e2720d24f1fe036001d924bb2b502d5b"
+      "sha256": "53d0778f7b8b6a6a90f441dbf9d5b6d19adc3743c9220a763240fec31e280ce1"
     }
   ]
 }

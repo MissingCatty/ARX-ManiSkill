@@ -236,7 +236,7 @@ class Execution:
         save(self.out / "forbidden_contacts.json", self.forbidden)
 
 
-def trial(entry, out, neural_gpu, planner_gpu, perception_camera=PERCEPTION_CAMERA):
+def trial(entry, out, neural_gpu, planner_gpu, perception_camera=PERCEPTION_CAMERA, prepare_observation=None):
     env = None; execution = None
     result = {**entry, "camera": perception_camera, "success": False, "planning_success": False, "physical_attempt": False}
     started = time.monotonic()
@@ -249,6 +249,12 @@ def trial(entry, out, neural_gpu, planner_gpu, perception_camera=PERCEPTION_CAME
         obs, _ = env.reset(seed=entry["seed"])
         for _ in range(80):
             env._step_action(torch.tensor(env.initial_q[None], device=env.device))
+        if prepare_observation is not None:
+            preparation = prepare_observation(env, out, entry)
+            result['stationing'] = preparation
+            if not preparation['success']:
+                result['reason'] = preparation['reason']
+                return result
         if 'observation' in entry:
             save(out/'state.json',snapshot(env))
             save(out/'observation_request.json',entry['observation'])

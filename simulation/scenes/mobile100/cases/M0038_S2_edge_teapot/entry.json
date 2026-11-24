@@ -1,0 +1,80 @@
+{
+  "model_id": "robocasa__teapot__teapot_0",
+  "semantic_class": "teapot",
+  "family": "teapot",
+  "target_text": "teapot",
+  "layout": "S2_edge",
+  "id": "M0038_S2_edge_teapot",
+  "seed": 2029912618,
+  "scene": {
+    "layout": "S2_edge",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__teapot__teapot_0",
+        "pose": [
+          -0.5753335356712341,
+          0.37281954288482666,
+          0.04087923467159271,
+          0.9705967307090759,
+          3.7997961044311523e-06,
+          -2.6677982532419264e-05,
+          -0.24071183800697327
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 4884,
+    "isolated_mask_pixels": 4884,
+    "occlusion_fraction": 0.0,
+    "projected_bbox_uv": [
+      [
+        134.5215416480568,
+        323.7089163063228
+      ],
+      [
+        282.7859085886544,
+        465.6311068107995
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.444,
+    "visible_pixels": 4884,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "construction_variant": 0,
+  "planner_arm": null
+}

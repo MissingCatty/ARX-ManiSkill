@@ -1,10 +1,10 @@
 {
-  "profile_id": "arx_sam3_graspgenx_dual871_20261125_01",
-  "at": "2026-11-25T01:06:27.521675+08:00",
-  "state": "v3_dual_arm_integrated_left_approach_tracking_pending",
-  "dataset": "/home/zhaoyechong/projects/ARX-ManiSkill/simulation/scenes/latest200",
-  "dataset_freeze_sha256": "72b210ae39167e5d6781b0d063c93d04a7426801544683fe65c3a8a0bddbf447",
-  "scene_count": 200,
+  "profile_id": "arx_sam3_graspgenx_mobile871_20261125_01",
+  "at": "2026-11-25T03:05:02.378141+08:00",
+  "state": "v4_preflight",
+  "dataset": "/home/zhaoyechong/projects/ARX-ManiSkill/simulation/scenes/mobile100",
+  "dataset_freeze_sha256": "099616c6380f029daf947ef7405b3ac3956d584602e4c8ab7d7321afa4f52be3",
+  "scene_count": 100,
   "categories": 40,
   "models": 80,
   "construction_IK_calls": 0,
@@ -44,7 +44,7 @@
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/pipeline.py": "bb5cadfed2dd557bfc362d3abbbf7889ddf8e38c262091dff1a5754d2551b6aa",
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/registry.py": "dd979fc85ed69bfc57829e5a4de6574c822bfb954f03a335758560e7900b1fae",
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/service.py": "7c64b63005f772d45766e83b767b1f933b9bcf4b84bd0c967a633cec32ebe5ad",
-    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "6cdd21a2a20ca8a1599ae26ee5393c135ddc97537ef163a7d987fe2fe9c007c4",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "294027e21fdac8bf8ddc01884eefd716938f9f89de943c6a72ab8f289d81b2ce",
     "/home/zhaoyechong/projects/ARX-ManiSkill/configs/path_aliases.json": "4b34e5b4b70abdca3c4f3a69754884a0a29068cb870e16f35a0e44b1e04246b4",
     "/home/zhaoyechong/projects/ARX-ManiSkill/configs/pipelines/sam3_graspgenx.json": "5fa511488c30b7914a34670fe64cd28f912a654aad3c7570c185bd6d6a9421a6",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/arx-sim/config/controllers.yaml": "e9010f093abbfb0912498d247ac28854800edeba97b2debbab19da53ae7a3017",
@@ -124,11 +124,15 @@
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/dual_arm/adapter.py": "83d5692d40694386de15e69ad0d022f6cfa673341b4d84dd2a364301df6fb11b",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/dual_arm_grasp/run.py": "6d92ddd954d6a0c6c1b08157a394aa031026c44eb561be1b3cd6098de8882de9",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/arms.py": "546a80dd3f319fba6d4f07b5c2aabd53ce7fe6f9a2e724ea66603c5aa05d3976",
-    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/arx_pipeline/run.py": "c6753a2401977e47851ff7da944cd822e945c85500a8d4f509a2077e43d2fcee",
-    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/experiments/sam3_graspgenx_v3.json": "69a070ad2fa780cfe2e099adc48f2d737f6438202392c62efb60b065005e8ab9"
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/arx_pipeline/run.py": "8122ba9a26e45bdabaa9443fc4ce6adf96b3fe269283fbdd6b78f6ce428a0fb1",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/experiments/sam3_graspgenx_v3.json": "69a070ad2fa780cfe2e099adc48f2d737f6438202392c62efb60b065005e8ab9",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/experiments/sam3_graspgenx_v4.json": "18978d5148ea06b0079b0e59e866bb694a84aff7c62c70b61e808daf315a1e27",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/mobile_manipulation/placement.py": "e15fecd76f14681ad72fd17b27ad5831186b72d692e4185bd5f01bd26ef2ea66",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/mobile_dual_arm/run.py": "fb8c3069ff84746becbe5db25b3498d072026d9b34ec66978c24b5cbf04c1f70",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/mobile_dual_arm/runtime.py": "d3702d13a0f2c70cb58bf369f76b872fc37ea66bbb5e98540ca775ad8bf26a47"
   },
-  "grasp_tests_authorized": false,
-  "physical_grasp_budget": 0,
+  "grasp_tests_authorized": true,
+  "physical_grasp_budget": 100,
   "physical_grasps": 0,
   "verification": "experiments/current_configuration/records/validation_20261124_01",
   "migration": {
@@ -209,7 +213,7 @@
     "component_motions_passed": 3,
     "formal_grasp_attempts": 0
   },
-  "version": "V3",
+  "version": "V4",
   "available_arms": [
     "right",
     "left"
@@ -320,5 +324,19 @@
       "position_error_m": 0.00189235877566511,
       "closure_executed": false
     }
+  },
+  "initial_lift_joint_m": 0.452,
+  "lift_control": "stationing_then_fixed_during_grasp",
+  "base_control": "kinematic_SE2_rate_limited",
+  "mobile_revision": {
+    "at": "2026-11-25T03:05:02.378401+08:00",
+    "parent_configuration_sha256": "b5e4e81cef131d0c14974bc4ad0315e94d8d27689651643cb1c4d052d2fb6d4b",
+    "parent_configuration_snapshot": "configs/experiments/history/sam3_graspgenx_v3_20261125_01.json",
+    "preserved_v3_dataset": "simulation/scenes/latest200",
+    "new_dataset": "simulation/scenes/mobile100",
+    "physical_model_and_success_unchanged": true,
+    "bounded_interface_preflight": "tmp/mobile_dual_arm/interface_20261125_01",
+    "offline_tests_passed": 43,
+    "config": "configs/experiments/sam3_graspgenx_v4.json"
   }
 }

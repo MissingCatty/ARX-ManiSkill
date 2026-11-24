@@ -1,0 +1,80 @@
+{
+  "model_id": "robocasa__broccoli__broccoli_1",
+  "semantic_class": "broccoli",
+  "family": "broccoli",
+  "target_text": "broccoli",
+  "layout": "S1_open",
+  "id": "M0012_S1_open_broccoli",
+  "seed": 2027312540,
+  "scene": {
+    "layout": "S1_open",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__broccoli__broccoli_1",
+        "pose": [
+          -0.4241000711917877,
+          -0.05455823987722397,
+          0.026145100593566895,
+          0.2322121113538742,
+          -1.8998980522155762e-05,
+          1.990795135498047e-05,
+          0.9726652503013611
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 1328,
+    "isolated_mask_pixels": 1328,
+    "occlusion_fraction": 0.0,
+    "projected_bbox_uv": [
+      [
+        481.41779355381703,
+        263.65344296568156
+      ],
+      [
+        554.9488989646259,
+        335.67793502784866
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.562,
+    "visible_pixels": 1328,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "construction_variant": 0,
+  "planner_arm": null
+}

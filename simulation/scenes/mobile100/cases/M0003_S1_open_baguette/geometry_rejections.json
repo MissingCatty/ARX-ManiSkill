@@ -1,0 +1,10 @@
+[
+  {
+    "variant": 0,
+    "reason": "target_outside_head_view"
+  },
+  {
+    "variant": 1,
+    "reason": "target_outside_head_view"
+  }
+]

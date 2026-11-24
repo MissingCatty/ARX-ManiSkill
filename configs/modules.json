@@ -166,6 +166,21 @@
         "configs/policies/fingertip_table.json",
         "configs/experiments/sam3_graspgenx_v3.json"
       ]
+    },
+    "mobile_manipulation": {
+      "source": "modules/mobile_manipulation",
+      "role": "base_and_lift_placement",
+      "environment": "environments/simulation",
+      "inputs": [
+        "state.json",
+        "camera/mask.png",
+        "camera/depth_m.npy"
+      ],
+      "outputs": [
+        "stationing/selected.json",
+        "stationing/command.json",
+        "stationing/receipt.json"
+      ]
     }
   }
 }

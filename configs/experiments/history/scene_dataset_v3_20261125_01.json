@@ -1,0 +1,18 @@
+{
+  "dataset": "/home/zhaoyechong/projects/ARX-ManiSkill/simulation/scenes/latest200",
+  "object_catalog": "/home/zhaoyechong/projects/ARX-ManiSkill/simulation/scenes/latest200/object_catalog.json",
+  "environment_id": "ARXPickCatalog-v1",
+  "adapter": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/diverse_object_scenes/asset_environment.py",
+  "runtime_factory": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/current_configuration/configuration.py:runtime",
+  "scenes": 200,
+  "categories": 40,
+  "models": 80,
+  "state": "verified_independent_sampling",
+  "grasp_tests_authorized": false,
+  "grasp_test_budget": 0,
+  "construction_independent_of_ik": true,
+  "verification": "/home/zhaoyechong/projects/ARX-ManiSkill/simulation/scenes/latest200/verification.json",
+  "freeze": "/home/zhaoyechong/projects/ARX-ManiSkill/simulation/scenes/latest200/frozen_dataset.json",
+  "active_configuration": "configs/active_experiment.json",
+  "shared_asset_catalog": "simulation/assets/catalog.json"
+}

@@ -1,0 +1,231 @@
+{
+  "at": "2026-11-25T03:12:25.192036+08:00",
+  "phase": "running",
+  "version": "V4",
+  "registered": 100,
+  "completed": 1,
+  "not_completed": 99,
+  "station_ready": 1,
+  "planning_passes": 1,
+  "physical_attempts": 1,
+  "successes": 1,
+  "selected_arms": {
+    "right": 1
+  },
+  "failure_reasons": {},
+  "by_layout": {
+    "S1_open": {
+      "completed": 1,
+      "planning_passes": 1,
+      "successes": 1
+    },
+    "S2_edge": {
+      "completed": 0,
+      "planning_passes": 0,
+      "successes": 0
+    },
+    "S3_sparse": {
+      "completed": 0,
+      "planning_passes": 0,
+      "successes": 0
+    },
+    "S4_clutter": {
+      "completed": 0,
+      "planning_passes": 0,
+      "successes": 0
+    },
+    "S5_occluded": {
+      "completed": 0,
+      "planning_passes": 0,
+      "successes": 0
+    }
+  },
+  "results": [
+    {
+      "model_id": "robocasa__apple__apple_0",
+      "semantic_class": "apple",
+      "family": "apple",
+      "target_text": "apple",
+      "layout": "S1_open",
+      "id": "M0001_S1_open_apple",
+      "seed": 2026212507,
+      "scene": {
+        "layout": "S1_open",
+        "actors": [
+          {
+            "name": "target",
+            "model_id": "robocasa__apple__apple_0",
+            "pose": [
+              -0.42717084288597107,
+              0.21465957164764404,
+              0.03600744903087616,
+              0.5890927314758301,
+              -4.725903272628784e-05,
+              1.2823380529880524e-05,
+              0.8080655336380005
+            ]
+          }
+        ],
+        "perception_camera": "head"
+      },
+      "admission": {
+        "target_mask_pixels": 2032,
+        "isolated_mask_pixels": 2032,
+        "occlusion_fraction": 0.0,
+        "projected_bbox_uv": [
+          [
+            307.0922795001536,
+            254.7195475329646
+          ],
+          [
+            375.67979685587864,
+            336.5744096581699
+          ]
+        ],
+        "fully_in_frame": true,
+        "admitted_view": true,
+        "valid_target_depth_fraction": 1.0,
+        "target_depth_median_m": 0.556,
+        "visible_pixels": 2032,
+        "border_clear": true
+      },
+      "camera": "head",
+      "robot_initial_q": [
+        0.4519999921321869,
+        -1.0728319921327056e-06,
+        -0.00020593733643181622,
+        2.5863868359010667e-05,
+        2.7094700271845795e-05,
+        0.0,
+        0.0,
+        -0.24871869385242462,
+        -0.24505318701267242,
+        -0.0005250244867056608,
+        0.00040246330900117755,
+        -0.0027694408781826496,
+        -0.0016749418573454022,
+        6.499443770735525e-06,
+        0.00048274517757818103,
+        0.043999914079904556,
+        0.04397093132138252
+      ],
+      "base_pose": [
+        -1.0499999523162842,
+        0.2499999850988388,
+        -0.5000001192092896,
+        1.0000001192092896,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "construction_variant": 0,
+      "planner_arm": null,
+      "success": true,
+      "planning_success": true,
+      "physical_attempt": true,
+      "stationing": {
+        "success": true,
+        "reason": "station_ready",
+        "motion_started": true,
+        "ticks": 330,
+        "lift_m": 0.4057704210281372,
+        "object_displacements_m": {
+          "target": 0.0
+        },
+        "idle_samples": 60,
+        "base_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -1.0381231307983398
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.21590526401996613
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.5000002384185791
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "base_execution": "kinematic_SE2_rate_limited",
+        "lift_execution": "original_joint4_PD",
+        "forbidden_contacts": 0
+      },
+      "selected_arm": "right",
+      "bilateral_fingers": [
+        "right_link27",
+        "right_link28"
+      ],
+      "minimum_hold_lift_m": 0.029737889766693115,
+      "hold_seconds": 3.025,
+      "final_lift_m": 0.02973800152540207,
+      "reason": "success",
+      "stages": {
+        "open": {
+          "joint_error_rad": 1.341104507446289e-07,
+          "settled": true,
+          "planned_seconds": 2.0,
+          "finger_positions_m": [
+            0.04399985820055008,
+            0.04399965703487396
+          ],
+          "finger_error_m": 3.427267074584961e-07,
+          "finger_opening_passed": true
+        },
+        "pregrasp": {
+          "joint_error_rad": 1.6689300537109375e-06,
+          "settled": true,
+          "planned_seconds": 6.0,
+          "tool_position_error_m": 9.239522626053475e-06,
+          "tool_rotation_error_rad": 3.1769896474404826e-06
+        },
+        "approach": {
+          "joint_error_rad": 1.5497207641601562e-06,
+          "settled": true,
+          "planned_seconds": 5.0,
+          "tool_position_error_m": 8.787908490464878e-07,
+          "tool_rotation_error_rad": 2.3392401019160937e-06
+        },
+        "close": {
+          "joint_error_rad": 0.0011911988258361816,
+          "settled": true,
+          "planned_seconds": 3.0,
+          "tool_position_error_m": 0.000220912774396107,
+          "tool_rotation_error_rad": 0.001348098732222495
+        },
+        "lift": {
+          "joint_error_rad": 0.0012169480323791504,
+          "settled": true,
+          "planned_seconds": 6.0,
+          "tool_position_error_m": 4.718791067880807e-05,
+          "tool_rotation_error_rad": 0.0012379410473549557
+        },
+        "hold": {
+          "joint_error_rad": 0.0012168288230895996,
+          "settled": true,
+          "planned_seconds": 3.0,
+          "tool_position_error_m": 4.716495099813632e-05,
+          "tool_rotation_error_rad": 0.0012377931398839018
+        }
+      },
+      "forbidden_contact_events": 0,
+      "non_target_displacement_m": {},
+      "wall_seconds": 152.37937090999912,
+      "success_v1": true,
+      "success_v2": true,
+      "contact_policy_id": "arx_871_distal_table_contact_v1"
+    }
+  ]
+}

@@ -68,7 +68,7 @@
     {
       "id": "sam3-graspgenx",
       "objective": "以头部SAM3、RaySt3R目标点云、GraspGenX和cuRobo完成ARX抓取，分版本记录感知、近桌接触与左右臂选择。",
-      "current": "V3",
+      "current": "V4",
       "iterations": [
         {
           "code": "V1",
@@ -219,6 +219,56 @@
                 {
                   "label": "独立验收与视频记录",
                   "url": "/media/sam3-v3-integration-2-acceptance.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "V4",
+          "parent": "V3",
+          "sourceId": "sam3-graspgenx",
+          "title": "底盘、升降与双臂自主站位抓取",
+          "date": "2026-11-25",
+          "contentFile": "sam3-graspgenx-v4.md",
+          "reportLayout": true,
+          "authorization": {
+            "kind": "explicit-user-request",
+            "request": "2026-11-25：在双臂操作基础上接入升降和移动底盘，针对目标自主调整位置，生成100个靠近桌沿的场景测试，作为V4版本。"
+          },
+          "status": "100场景抓取测试进行中",
+          "resultSummary": "已完成1/100例；站位到位1例，最终抓取规划通过1例，抓取成功1例。",
+          "change": "由目标观测计算底盘位置、朝向和升降高度，停稳后重新感知，再选一臂抓取。",
+          "pipeline": "初次头部RGB-D与SAM3 → 站位和整机移动检查 → 底盘与升降移动 → 停稳重新观测 → SAM3＋RaySt3R＋GraspGenX → 左右臂cuRobo → 抓取",
+          "scenes": "新采样100例，五类布局各20例，使用共享物体资产。",
+          "settings": [
+            [
+              "底盘",
+              "限速SE2仿真位姿接口，完整机器人路径检查。"
+            ],
+            [
+              "升降",
+              "真实joint4原PD控制，0～46厘米。"
+            ],
+            [
+              "末段",
+              "重新观测与规划，每臂871球，TCP43和原成功标准。"
+            ]
+          ],
+          "batches": [
+            {
+              "id": "v4_100_20261125_01",
+              "title": "V4独立100场景",
+              "date": "2026-11-25",
+              "status": "100场景抓取测试进行中",
+              "summary": "已完成1/100例；站位到位1例，最终抓取规划通过1例，抓取成功1例。",
+              "outputs": [
+                "tmp/mobile_dual_arm/v4_100_20261125_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "逐例原始结果",
+                  "url": "/media/sam3-v4-summary.json"
                 }
               ]
             }

@@ -1,0 +1,80 @@
+{
+  "model_id": "robocasa__croissant__croissant_0",
+  "semantic_class": "croissant",
+  "family": "croissant",
+  "target_text": "croissant",
+  "layout": "S1_open",
+  "id": "M0018_S1_open_croissant",
+  "seed": 2027912558,
+  "scene": {
+    "layout": "S1_open",
+    "actors": [
+      {
+        "name": "target",
+        "model_id": "robocasa__croissant__croissant_0",
+        "pose": [
+          -0.48159801959991455,
+          0.3227460980415344,
+          0.02065921761095524,
+          0.540353000164032,
+          5.345791578292847e-06,
+          -6.498477887362242e-06,
+          -0.8414384722709656
+        ]
+      }
+    ],
+    "perception_camera": "head"
+  },
+  "admission": {
+    "target_mask_pixels": 3562,
+    "isolated_mask_pixels": 3562,
+    "occlusion_fraction": 0.0,
+    "projected_bbox_uv": [
+      [
+        204.79237203193873,
+        272.6848631984721
+      ],
+      [
+        313.94260881599683,
+        403.7859769968772
+      ]
+    ],
+    "fully_in_frame": true,
+    "admitted_view": true,
+    "valid_target_depth_fraction": 1.0,
+    "target_depth_median_m": 0.523,
+    "visible_pixels": 3562,
+    "border_clear": true
+  },
+  "camera": "head",
+  "robot_initial_q": [
+    0.4519999921321869,
+    -1.0728319921327056e-06,
+    -0.00020593733643181622,
+    2.5863868359010667e-05,
+    2.7094700271845795e-05,
+    0.0,
+    0.0,
+    -0.24871869385242462,
+    -0.24505318701267242,
+    -0.0005250244867056608,
+    0.00040246330900117755,
+    -0.0027694408781826496,
+    -0.0016749418573454022,
+    6.499443770735525e-06,
+    0.00048274517757818103,
+    0.043999914079904556,
+    0.04397093132138252
+  ],
+  "base_pose": [
+    -1.0499999523162842,
+    0.2499999850988388,
+    -0.5000001192092896,
+    1.0000001192092896,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "construction_variant": 0,
+  "planner_arm": null
+}
