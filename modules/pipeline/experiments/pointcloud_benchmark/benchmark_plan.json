@@ -1,0 +1,100 @@
+{
+  "id": "pointcloud-models",
+  "parent": "sam3-graspgenx",
+  "version_type": "experiment",
+  "stage": "archived_comparison_hunyuan_retired",
+  "executable_registration": false,
+  "scope": "perception_point_cloud_generation_and_reconstruction",
+  "baseline": {
+    "id": "rgbd-backprojection",
+    "method": "calibrated_rgbd_backprojection",
+    "input_camera_role": "head",
+    "mask_source": "SAM3_prediction"
+  },
+  "candidate_models": [
+    {
+      "id": "rayst3r",
+      "repository": "https://github.com/Duisterhof/rayst3r",
+      "input_modality": "RGBD_mask_calibration",
+      "weights": "bartduis/rayst3r",
+      "status": "source_cloned"
+    },
+    {
+      "id": "spar3d",
+      "repository": "https://github.com/Stability-AI/stable-point-aware-3d",
+      "input_modality": "masked_RGB",
+      "weights": "https://modelscope.cn/models/stabilityai/stable-point-aware-3d",
+      "status": "downloading_verified_public_mirror"
+    },
+    {
+      "id": "zerograsp-reconstruction",
+      "input_modality": "RGBD_mask",
+      "scope": "network_forward_and_reconstruction_decode_only",
+      "status": "existing_weights_adapter_pending"
+    }
+  ],
+  "observation_snapshot": null,
+  "sample_count": 50,
+  "compute_budget": {
+    "method_scene_pairs": 150,
+    "model_repetitions_per_scene": 1,
+    "automatic_inference_retries": 0,
+    "warmup_separate": true,
+    "resident_per_method": true
+  },
+  "physical_trial_budget": 0,
+  "freeze_before_execution": [
+    "observation_frames",
+    "SAM3_masks_and_instance_binding",
+    "camera_calibration",
+    "model_weights_and_code",
+    "point_sampling_budget",
+    "GraspGenX_configuration",
+    "robot_and_planner_configuration"
+  ],
+  "comparison_rules": {
+    "match_input_modality_for_primary_comparison": false,
+    "report_extra_modalities_separately": true,
+    "ground_truth_as_model_input": false,
+    "separate_visible_and_completed_surface_evaluation": true,
+    "keep_raw_and_common_processed_outputs": true,
+    "report_native_input_modality_per_method": true,
+    "style_variation_requires_distinct_asset": true,
+    "pose_changes_are_not_styles": true,
+    "unknown_pretraining_overlap_not_claimed_unseen": true,
+    "ground_truth_alignment_for_shape_scoring_only": true,
+    "metric_deployment_geometry_uses_observations_only": true
+  },
+  "metrics": {
+    "geometry": [
+      "scale_and_frame_consistency",
+      "visible_surface_distance_p50_p95",
+      "surface_coverage",
+      "background_contamination",
+      "outlier_fraction"
+    ],
+    "performance": [
+      "load_and_warmup",
+      "steady_generation_p50_p95",
+      "transfer_postprocess_and_io",
+      "peak_gpu_and_host_memory",
+      "output_point_count_and_bytes"
+    ],
+    "downstream": [],
+    "physical": "not_registered"
+  },
+  "results": {
+    "model_runs": 0,
+    "planning_trials": 0,
+    "physical_trials": 0,
+    "success_rate": null
+  },
+  "planning_trial_budget": 0,
+  "retired_methods": [
+    "hunyuan3d-2mini-turbo",
+    "hunyuan3d-2-turbo"
+  ],
+  "pending_removal_confirmation": [
+    "spar3d"
+  ]
+}
