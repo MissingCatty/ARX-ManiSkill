@@ -3,9 +3,9 @@
   "profile_id": "arx_refined_871_v1",
   "total_spheres": 871,
   "models": {
-    "open": "/home/zhaoyechong/projects/COOLAS-ARX/scripts/curobo_arx/static_pick/reference/model/arx.yml",
-    "closed": "/home/zhaoyechong/projects/COOLAS-ARX/scripts/curobo_arx/static_pick/reference/model_closed/arx.yml",
-    "lift7": "/home/zhaoyechong/projects/ARX-可达性地图/实验/升降联合规划_20261120_01/七关节.yml"
+    "open": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/scripts/curobo_arx/static_pick/reference/model/arx.yml",
+    "closed": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/scripts/curobo_arx/static_pick/reference/model_closed/arx.yml",
+    "lift7": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/reachability/experiments/升降联合规划_20261120_01/七关节.yml"
   },
   "parameters_sha256": "66eced4df51a49edd97ccece7c9276065bbf33a75974a8b29aed127d604ca085",
   "native": {

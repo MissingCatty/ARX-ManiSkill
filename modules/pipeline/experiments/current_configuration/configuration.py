@@ -24,6 +24,12 @@ def load_current(verify_dataset=False):
     if config['collision_profile_id']!=profile['profile_id']:raise ValueError('Stale experiment collision profile')
     if config['tcp_eef_z_m']!=.043 or config['lift_joint_m']!=.452:raise ValueError('Stale TCP or lift configuration')
     if config['contact_offset_m']!=.001 or config['graspgenx_virtual_origin_back_m']!=.100:raise ValueError('Stale contact or GraspGenX geometry settings')
+    from modules.curobo.fingertip_contact import load_profile as contact_profile
+    contact = contact_profile()
+    if config.get('table_contact_policy_id') != contact.profile_id:
+        raise ValueError('Stale fingertip/table policy registration')
+    if config['table_penetration_allowance_m'] != (contact.maximum_penetration_m if contact.enabled else 0.):
+        raise ValueError('Stale local fingertip/table allowance')
     for name,digest in config['configuration_hashes'].items():
         if sha(name)!=digest:raise ValueError('Active configuration changed: '+name)
     for path in config['planning_models'].values():require_current_profile(yaml.safe_load(Path(path).read_text()))

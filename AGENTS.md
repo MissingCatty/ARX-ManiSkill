@@ -20,3 +20,5 @@
 - modules/tmp、modules/asset及modules/compat_tmp已退役，不创建或提交这些兼容入口。历史路径通过arx_project.layout.canonical_path和配置映射读取，实际产物、资产和环境分别归入根目录tmp、simulation/assets/models和environments。
 
 - 2026年11月24日用户确认模块目录精简，同时明确当前200场景的定义和参考观测保持原样、继续随Git保存。ManiSkill包内资产、两版cuRobo内置资产及ZeroGrasp旧ARX模型统一放在simulation/assets/models/source_*，通过共享资源索引加载；不得把它们重新复制回模块。可达性实验记录位于tmp/reachability/experiments，旧绝对路径只在读取时映射。OpenArm、Fangzhou/lift2等已删除的无关ZeroGrasp演示工程不恢复。
+
+- 2026年11月24日用户授权继续将指尖近桌接触接回当前871球版本。共享规则位于configs/policies/fingertip_table.json：只对夹指最前端10毫米与桌面上表面开放最多2毫米接触，生效于最后接近、闭合；抬升仅允许退出已有接触。球参数、实际几何、其他物体检查、1毫米物理接触偏移及成功标准保持。tmp/fingertip_contact/v2_871_20261124_02三项接触与退离接口验证完成，正式物体抓取0次；不把接口验证计入抓取成功率，也不据此自动开启200场景批次。01预启动停止记录保留。

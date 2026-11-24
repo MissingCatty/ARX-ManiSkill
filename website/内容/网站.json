@@ -23,9 +23,9 @@
       "title": "SAM3＋RGB-D点云＋GraspGenX＋cuRobo",
       "shortTitle": "SAM3＋点云＋GraspGenX",
       "date": "2026-11-24",
-      "status": "871球配置已统一并核验",
+      "status": "871球指尖接触策略已接入",
       "summary": "头部SAM3、RaySt3R、GraspGenX与cuRobo；统一使用当前200场景、TCP43和871球碰撞模型。",
-      "metric": "当前配置已核验，抓取测试待登记",
+      "metric": "接触与退离验证3/3，正式抓取待登记",
       "file": "SAM3点云GraspGenX主线.md",
       "workflow": "SAM3点云GraspGenX流程.json"
     },
@@ -364,7 +364,18 @@
     "active-configuration-verification.json": "active-configuration/verification.json",
     "active-head.jpg": "active-configuration/head.jpg",
     "gripper-spheres-current.jpg": "active-configuration/spheres.jpg",
-    "action-tcp-current.jpg": "active-configuration/tcp.jpg"
+    "action-tcp-current.jpg": "active-configuration/tcp.jpg",
+    "contact871-acceptance.json": "contact871/contact871-acceptance.json",
+    "contact871-policy.json": "contact871/contact871-policy.json",
+    "contact871-teapot.png": "contact871/contact871-teapot.png",
+    "contact871-teapot-overview.mp4": "contact871/contact871-teapot-overview.mp4",
+    "contact871-teapot-head.mp4": "contact871/contact871-teapot-head.mp4",
+    "contact871-phone.png": "contact871/contact871-phone.png",
+    "contact871-phone-overview.mp4": "contact871/contact871-phone-overview.mp4",
+    "contact871-phone-head.mp4": "contact871/contact871-phone-head.mp4",
+    "contact871-soap.png": "contact871/contact871-soap.png",
+    "contact871-soap-overview.mp4": "contact871/contact871-soap-overview.mp4",
+    "contact871-soap-head.mp4": "contact871/contact871-soap-head.mp4"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",

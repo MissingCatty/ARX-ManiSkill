@@ -9,12 +9,102 @@ WORKSPACE=SITE.parent/'modules'
 PROJECT=WORKSPACE/'pipeline'
 sys.path.insert(0,str(PROJECT/'experiments/current_configuration'))
 from configuration import load_current, load_profile
+from arx_project.layout import ROOT, sha256
 
 
 def read(p):return json.loads(p.read_text())
 def save(p,v):
     p.parent.mkdir(parents=True,exist_ok=True)
     p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n')
+
+
+def publish_contact_validation(config):
+    """Publish a completed component check alongside the existing V2."""
+    revision=config.get('contact_policy_revision',{})
+    run=Path(revision.get('validation_run',''))
+    if not run.is_absolute() or not (run/'acceptance.json').is_file():
+        return
+    receipt=read(run/'acceptance.json')
+    if not receipt['completed'] or receipt['component_motions_completed']!=3:
+        raise ValueError('Incomplete fingertip contact validation')
+    if receipt['contact_profile']!=read(ROOT/'configs/policies/fingertip_table.json'):
+        raise ValueError('Published contact results differ from the active policy')
+    content=SITE/'内容';site=read(content/'网站.json');registry=read(content/'experiments.json')
+    media=SITE/'resources/media';media.mkdir(parents=True,exist_ok=True)
+    files={'contact871-acceptance.json':run/'acceptance.json',
+           'contact871-policy.json':ROOT/'configs/policies/fingertip_table.json'}
+    names=['teapot','phone','soap']; rows=[]; video_rows=[]
+    for label,item in zip(names,receipt['rows']):
+        trial=run/'trials'/item['id']; evaluation=item['independent_contact_evaluation']
+        files[f'contact871-{label}.png']=trial/'initial_overview.png'
+        for view,file in [('overview','execution.mp4'),('head','head.mp4')]:
+            files[f'contact871-{label}-{view}.mp4']=trial/file
+        depth=item['nominal_fixture_depth_m']*1000
+        request=f'留{-depth:.1f}毫米间隙' if depth<0 else f'名义接触{depth:.1f}毫米'
+        rows.append(f'| {request} | {"通过" if item["strict_real_mesh_clear"] else "拦截"} | '
+            f'{"通过" if item["local_real_mesh_clear"] else "拦截"} | '
+            f'{evaluation["allowed_tip_table_events"]} | {evaluation["maximum_allowed_depth_m"]*1000:.3f}毫米 | 接近、闭合命令与退离均完成 |')
+        video_rows.append(f'| {request} | [第三人称](/media/contact871-{label}-overview.mp4) · '
+                          f'[头部](/media/contact871-{label}-head.mp4) |')
+    for name,source in files.items():
+        target=media/name
+        if not target.exists() or sha256(source)!=sha256(target):shutil.copy2(source,target)
+        # Build falls back to this real publication copy when the source is absent.
+        site['localAssets'][name]='contact871/'+name
+    current=next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
+    current.update(status='871球指尖接触策略已接入',metric='接触与退离验证3/3，正式抓取待登记')
+    experiment=next(e for e in registry['experiments'] if e['id']=='sam3-graspgenx')
+    node=next(n for n in experiment['iterations'] if n['code']=='V2')
+    node.update(status='指尖接触策略已接入并完成接口验证',
+        resultSummary='871球模型下三项接触与退离接口验证全部通过，六段录像已核验；正式抓取0次。',
+        change='保留当前配置，在最后接近与闭合阶段加入指尖最前端10毫米、桌面上表面最多2毫米的局部接触规则。')
+    node['settings']=[row for row in node['settings'] if row[0] not in ['当前进度','指尖与桌面']]
+    node['settings'] += [['指尖与桌面','前端10毫米、桌面上表面最多2毫米；抬升只允许退出已有接触。'],
+                         ['当前进度','接触与退离接口验证3/3完成，正式抓取待登记。']]
+    save(content/'网站.json',site);save(content/'experiments.json',registry)
+    page=content/'迭代/sam3-graspgenx-v2.md';text=page.read_text()
+    text=text.replace('旧球配置及对应抓取、距离和指尖余量实验产物已清理。本轮完成配置核验，实际抓取0次，新批次待登记。',
+        '当前871球版本已接入局部指尖接触策略，三个接触与退离动作完成验证。正式200场景抓取待登记。')
+    section='''<a id="fingertip-table"></a>
+
+## 指尖与桌面的接触余量
+
+先用871球照常检查。若只有夹指与桌面冲突，再用原始凸碰撞网格核实：球体碰桌、真实网格仍有间隙时可以继续；确实接触时，只放行两根夹指最前端10毫米与桌面上表面最多2毫米的接触。夹指主体、手腕、手臂、桌侧面和其他物体继续检查。
+
+到预抓取位姿仍用cuRobo规划。最后接近使用密集检查的局部轨迹；闭合后重新读取夹指状态与实际接触，再检查抬升。抬升时接触深度不能增加。机器人球参数、几何、质量、摩擦和1毫米物理接触偏移保持当前配置。
+
+### 三项接口验证
+
+在茶壶、手机、香皂场景的空白桌面区域分别执行接近、闭合命令和退离，物体摆放保持原样。下表记录接触接口表现；正式物体抓取另行登记。
+
+| 验证动作 | 零余量网格检查 | 2毫米局部规则 | 放行的接触记录数 | 实际最大接触深度 | 执行结果 |
+| --- | --- | --- | ---: | ---: | --- |
+'''+ '\n'.join(rows)+'''
+
+名义接触深度是规划终点要求。实际物理接触会阻止夹指继续下压，因此后两项实测深度约为0.024和0.018毫米。桌面阻力也使夹指未能完全闭合，控制器读取当时的真实开合位置，再用这个状态规划退离。
+
+三项的禁止接触均为0，原始接触点与法线的独立复核全部通过。离线检查共87项通过，六段视频全部完成解码检查。
+
+| 验证动作 | 录像 |
+| --- | --- |
+'''+ '\n'.join(video_rows)+'''
+
+[接触规则](/media/contact871-policy.json) · [本轮验证记录](/media/contact871-acceptance.json)
+
+## 夹爪进场开度
+
+当前 GraspGenX 输出抓姿、评分和生成分支。88毫米是 ARX 的全开宽度，由适配层写入候选记录。到预抓取点和最后接近时，两个指关节都使用44毫米的全开命令。
+
+后续可按每个抓姿附近的目标点云估算所需开度，在安全位置调好夹爪，并用同一个开度做接近规划与执行。
+'''
+    page.write_text(text+'\n'+section)
+    doc=content/'实验配置/夹爪碰撞球精细化.md'
+    doc.write_text(doc.read_text()+'''\n### 当前指尖接触规则
+
+871个球的球心和半径保持不变。最后接近与闭合阶段，若碰撞只涉及指尖和桌面，使用真实凸网格复核，并允许夹指最前端10毫米与桌面上表面最多2毫米的局部接触。抬升只允许退出已有接触；其他部位和其他物体继续按原检查。
+
+[查看V2接入方法与验证结果](/iterations/sam3-graspgenx/versions/V2/#fingertip-table)
+''')
 
 
 def publish():
@@ -104,6 +194,7 @@ def publish():
 | 动作TCP | EEF前方43毫米 |
 | 升降与手臂 | 升降固定45.2厘米，右臂六轴规划 |
 | 碰撞球 | 开爪、闭爪与七轴参考模型均为871球 |
+| 进场开度 | 双指全开，指腹间距约88毫米 |
 | 物理 | 接触偏移1毫米；120Hz物理、40Hz控制 |
 | 抓取标准 | 目标抬升3厘米，实际抬高至少1厘米并保持3秒，双指接触与动作到位达标 |
 '''
@@ -193,9 +284,10 @@ GraspGenX的虚拟原点在EEF后方100毫米，输入条件和生成结果成�
     save(workflow_file,workflow)
     for step in workflow['steps']:
         file=content/'流程'/workflow['directory']/step['file']
-        text=file.read_text().split('## 当前设置与结果')[0].rstrip()
+        text=file.read_text().split('## 当前设置与结果',1)[0].split('## 当前设置与核验',1)[0].rstrip()
         file.write_text(text+'\n\n## 当前设置与核验\n\n[当前V2配置、871球加载核验与后续测试状态](/iterations/sam3-graspgenx/versions/V2/)\n')
-    print('Published current 871 configuration; retired result links removed.')
+    publish_contact_validation(config)
+    print('Published current 871 configuration and available contact validation.')
 
 
 if __name__=='__main__':publish()

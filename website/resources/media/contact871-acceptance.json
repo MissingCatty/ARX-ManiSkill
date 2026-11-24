@@ -1,0 +1,321 @@
+{
+  "at": "2026-11-24T20:34:32.712593+08:00",
+  "completed": true,
+  "registration": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/fingertip_contact/v2_871_20261124_02/registration.json",
+  "registration_sha256": "b7798f9a9cdef5e719c0a091f80037b34ad7a58b7c07a76f65baaedb20893495",
+  "registered_source_hashes_unchanged": true,
+  "protected_files_verified": 2633,
+  "frozen_scene_files_verified": 2406,
+  "component_motions_registered": 3,
+  "component_motions_completed": 3,
+  "component_motions_passed": 3,
+  "formal_grasp_attempts": 0,
+  "contact_profile": {
+    "profile_id": "arx_871_distal_table_contact_v1",
+    "enabled": true,
+    "collision_profile_id": "arx_refined_871_v1",
+    "maximum_penetration_m": 0.002,
+    "distal_length_m": 0.01,
+    "release_depth_noise_m": 0.0001,
+    "minimum_normal_z": 0.95,
+    "surface_position_noise_m": 0.0001,
+    "allowed_stages": [
+      "final_approach",
+      "closure"
+    ],
+    "release_policy": "nonincreasing_existing_contact",
+    "ik_fallback_seeds": 32,
+    "ik_return_seeds": 8,
+    "position_tolerance_m": 0.002,
+    "rotation_tolerance_rad": 0.03,
+    "actual_geometry_resource": "arx_robot"
+  },
+  "gpu_roles": {
+    "planner": "GPU-2786f56b-9d00-ba9f-5a2f-1e38775dc169",
+    "simulation": "GPU-b827b8be-c675-83f7-1b4c-39b5811c6d5e"
+  },
+  "rows": [
+    {
+      "id": "D0008_S1_open_teapot",
+      "component_motion_passed": true,
+      "reason": "contact_and_release_completed",
+      "sphere_count": 871,
+      "initial_production_route_passed": true,
+      "nominal_fixture_depth_m": -0.001,
+      "endpoint_real_mesh_depth_m": 0.0,
+      "strict_real_mesh_clear": true,
+      "local_real_mesh_clear": true,
+      "native_full_scene_clear": false,
+      "mesh_table_gap_m": 0.0009999716367352224,
+      "measured_finger_joints_at_close_m": {
+        "right_joint27": 1.3170790014171985e-09,
+        "right_joint28": 3.784372637483102e-08
+      },
+      "stages": {
+        "pregrasp": {
+          "joint_error_rad": 3.0994415283203125e-06,
+          "settled": true,
+          "planned_seconds": 6.0,
+          "tool_position_error_m": 6.347954584840616e-07,
+          "tool_rotation_error_rad": 4.394803661092364e-06
+        },
+        "approach": {
+          "joint_error_rad": 3.5762786865234375e-06,
+          "settled": true,
+          "planned_seconds": 5.0,
+          "tool_position_error_m": 2.2694375781954626e-06,
+          "tool_rotation_error_rad": 3.979071992192987e-06
+        },
+        "close": {
+          "joint_error_rad": 4.0531158447265625e-06,
+          "settled": true,
+          "planned_seconds": 3.0,
+          "tool_position_error_m": 2.086114588993209e-06,
+          "tool_rotation_error_rad": 5.1823574855139495e-06
+        },
+        "lift": {
+          "joint_error_rad": 3.0994415283203125e-06,
+          "settled": true,
+          "planned_seconds": 6.0,
+          "tool_position_error_m": 3.873211756908928e-06,
+          "tool_rotation_error_rad": 3.6847470219366938e-06
+        }
+      },
+      "independent_contact_evaluation": {
+        "passed": true,
+        "independently_successful": false,
+        "success_v1": false,
+        "success_v2": false,
+        "minimum_lift_m": null,
+        "hold_seconds": 0.0,
+        "bilateral": [],
+        "forbidden": 0,
+        "strict_forbidden": 0,
+        "allowed_tip_table_events": 0,
+        "maximum_allowed_depth_m": 0.0,
+        "raw_contact_points_recomputed": true,
+        "all_required_stages_settled": false
+      },
+      "videos": [
+        {
+          "file": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/fingertip_contact/v2_871_20261124_02/trials/D0008_S1_open_teapot/execution.mp4",
+          "sha256": "044bb5045d5590c8075a372525dc34d5df4db64d78290855f20e28d299469d0e",
+          "metadata": {
+            "fps": 20.0,
+            "size": [
+              1920,
+              1080
+            ],
+            "duration": 20.1,
+            "codec": "h264"
+          },
+          "full_decode_passed": true
+        },
+        {
+          "file": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/fingertip_contact/v2_871_20261124_02/trials/D0008_S1_open_teapot/head.mp4",
+          "sha256": "394b46a3d5f1be11b46bf4f02a11c2cc17849efeaf56e775690c838e7b4e7f81",
+          "metadata": {
+            "fps": 20.0,
+            "size": [
+              640,
+              480
+            ],
+            "duration": 20.1,
+            "codec": "h264"
+          },
+          "full_decode_passed": true
+        }
+      ]
+    },
+    {
+      "id": "D0036_S1_open_cell_phone",
+      "component_motion_passed": true,
+      "reason": "contact_and_release_completed",
+      "sphere_count": 871,
+      "initial_production_route_passed": true,
+      "nominal_fixture_depth_m": 0.001,
+      "endpoint_real_mesh_depth_m": 0.0009999809082117672,
+      "strict_real_mesh_clear": false,
+      "local_real_mesh_clear": true,
+      "native_full_scene_clear": false,
+      "mesh_table_gap_m": -0.0009999809082117672,
+      "measured_finger_joints_at_close_m": {
+        "right_joint27": 0.04399999976158142,
+        "right_joint28": 0.04379104822874069
+      },
+      "stages": {
+        "pregrasp": {
+          "joint_error_rad": 3.0994415283203125e-06,
+          "settled": true,
+          "planned_seconds": 6.0,
+          "tool_position_error_m": 5.159880634892803e-07,
+          "tool_rotation_error_rad": 2.4948746535360404e-06
+        },
+        "approach": {
+          "joint_error_rad": 0.0029000192880630493,
+          "settled": true,
+          "planned_seconds": 5.0,
+          "tool_position_error_m": 0.001022379260012276,
+          "tool_rotation_error_rad": 0.0005691037877497917
+        },
+        "close": {
+          "joint_error_rad": 0.0031507015228271484,
+          "settled": true,
+          "planned_seconds": 3.0,
+          "tool_position_error_m": 0.0010465971659890502,
+          "tool_rotation_error_rad": 0.0007900052504164041
+        },
+        "lift": {
+          "joint_error_rad": 0.0004482865333557129,
+          "settled": true,
+          "planned_seconds": 6.0,
+          "tool_position_error_m": 0.0004467820945273501,
+          "tool_rotation_error_rad": 0.00046276691868754556
+        }
+      },
+      "independent_contact_evaluation": {
+        "passed": true,
+        "independently_successful": false,
+        "success_v1": false,
+        "success_v2": false,
+        "minimum_lift_m": null,
+        "hold_seconds": 0.0,
+        "bilateral": [],
+        "forbidden": 0,
+        "strict_forbidden": 2120,
+        "allowed_tip_table_events": 2120,
+        "maximum_allowed_depth_m": 2.4269726054626517e-05,
+        "raw_contact_points_recomputed": true,
+        "all_required_stages_settled": false
+      },
+      "videos": [
+        {
+          "file": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/fingertip_contact/v2_871_20261124_02/trials/D0036_S1_open_cell_phone/execution.mp4",
+          "sha256": "78f02b08832a61595049a63b8135c0664ea82dd32d4ebb569cefb141a484c151",
+          "metadata": {
+            "fps": 20.0,
+            "size": [
+              1920,
+              1080
+            ],
+            "duration": 20.1,
+            "codec": "h264"
+          },
+          "full_decode_passed": true
+        },
+        {
+          "file": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/fingertip_contact/v2_871_20261124_02/trials/D0036_S1_open_cell_phone/head.mp4",
+          "sha256": "1e7f87a927271291b244cf8ce90e4ec97f07013c25e07f067d64d0f01547717e",
+          "metadata": {
+            "fps": 20.0,
+            "size": [
+              640,
+              480
+            ],
+            "duration": 20.1,
+            "codec": "h264"
+          },
+          "full_decode_passed": true
+        }
+      ]
+    },
+    {
+      "id": "D0037_S1_open_bar_soap",
+      "component_motion_passed": true,
+      "reason": "contact_and_release_completed",
+      "sphere_count": 871,
+      "initial_production_route_passed": true,
+      "nominal_fixture_depth_m": 0.0015,
+      "endpoint_real_mesh_depth_m": 0.0014999847986116865,
+      "strict_real_mesh_clear": false,
+      "local_real_mesh_clear": true,
+      "native_full_scene_clear": false,
+      "mesh_table_gap_m": -0.0014999847986116865,
+      "measured_finger_joints_at_close_m": {
+        "right_joint27": 0.04399999976158142,
+        "right_joint28": 0.04364147409796715
+      },
+      "stages": {
+        "pregrasp": {
+          "joint_error_rad": 3.0994415283203125e-06,
+          "settled": true,
+          "planned_seconds": 6.0,
+          "tool_position_error_m": 5.924719267662069e-07,
+          "tool_rotation_error_rad": 3.981968466733961e-06
+        },
+        "approach": {
+          "joint_error_rad": 0.00424620509147644,
+          "settled": true,
+          "planned_seconds": 5.0,
+          "tool_position_error_m": 0.001547256932449609,
+          "tool_rotation_error_rad": 0.000776782267961613
+        },
+        "close": {
+          "joint_error_rad": 0.00467507541179657,
+          "settled": true,
+          "planned_seconds": 3.0,
+          "tool_position_error_m": 0.0015895724377461712,
+          "tool_rotation_error_rad": 0.0010792758672835971
+        },
+        "lift": {
+          "joint_error_rad": 4.291534423828125e-06,
+          "settled": true,
+          "planned_seconds": 6.0,
+          "tool_position_error_m": 0.0006400442730249715,
+          "tool_rotation_error_rad": 4.278017998647065e-06
+        }
+      },
+      "independent_contact_evaluation": {
+        "passed": true,
+        "independently_successful": false,
+        "success_v1": false,
+        "success_v2": false,
+        "minimum_lift_m": null,
+        "hold_seconds": 0.0,
+        "bilateral": [],
+        "forbidden": 0,
+        "strict_forbidden": 2189,
+        "allowed_tip_table_events": 2189,
+        "maximum_allowed_depth_m": 1.8005765014095232e-05,
+        "raw_contact_points_recomputed": true,
+        "all_required_stages_settled": false
+      },
+      "videos": [
+        {
+          "file": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/fingertip_contact/v2_871_20261124_02/trials/D0037_S1_open_bar_soap/execution.mp4",
+          "sha256": "fad28447796dca94d1e1fff0b622f199b6cc06a4654ce760e997c9726d704af7",
+          "metadata": {
+            "fps": 20.0,
+            "size": [
+              1920,
+              1080
+            ],
+            "duration": 20.1,
+            "codec": "h264"
+          },
+          "full_decode_passed": true
+        },
+        {
+          "file": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/fingertip_contact/v2_871_20261124_02/trials/D0037_S1_open_bar_soap/head.mp4",
+          "sha256": "975c88a8d6c00ef35036cf8cf84070295b7b2264e0441ae73eb7fa8d822a61ca",
+          "metadata": {
+            "fps": 20.0,
+            "size": [
+              640,
+              480
+            ],
+            "duration": 20.1,
+            "codec": "h264"
+          },
+          "full_decode_passed": true
+        }
+      ]
+    }
+  ],
+  "processes": {
+    "at": "2026-11-24T20:21:37.539013+08:00",
+    "all_owned_exited": true,
+    "returncode": 0
+  },
+  "interpretation": "Contact/release interface validation in clear tabletop patches. Positive nominal overlap is opposed by unchanged physics; measured penetration is reported separately. These motions do not target the objects and are not grasp trials."
+}

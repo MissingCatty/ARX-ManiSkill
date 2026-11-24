@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T04:31:14.402Z",
+  "generatedAt": "2026-11-24T12:47:51.355Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -548,6 +548,50 @@
     {
       "file": "media/action-tcp-current.jpg",
       "sha256": "91572ea5ee03ff0c9752ecb16aee848b890f992a136a0cfecb9b469b3490a036"
+    },
+    {
+      "file": "media/contact871-acceptance.json",
+      "sha256": "74cb23b8dc165ca77175d1e1396c058fc32f23c46a4e9b493c7217ba9df9f7f6"
+    },
+    {
+      "file": "media/contact871-policy.json",
+      "sha256": "71f2041e9abf1fdcd5d71adb8909bc9c5261bcfdd09e476d0ca53015ab70eed8"
+    },
+    {
+      "file": "media/contact871-teapot.png",
+      "sha256": "77b67ea17e85b3fb1b98ca6d6d7f27c6e2e6988988dbfcaddb23012afc4521af"
+    },
+    {
+      "file": "media/contact871-teapot-overview.mp4",
+      "sha256": "044bb5045d5590c8075a372525dc34d5df4db64d78290855f20e28d299469d0e"
+    },
+    {
+      "file": "media/contact871-teapot-head.mp4",
+      "sha256": "394b46a3d5f1be11b46bf4f02a11c2cc17849efeaf56e775690c838e7b4e7f81"
+    },
+    {
+      "file": "media/contact871-phone.png",
+      "sha256": "75bb0d63f65f3c01ef1b79df9229d59f43dc7ef5d40b1cc1b99c4f5905427137"
+    },
+    {
+      "file": "media/contact871-phone-overview.mp4",
+      "sha256": "78f02b08832a61595049a63b8135c0664ea82dd32d4ebb569cefb141a484c151"
+    },
+    {
+      "file": "media/contact871-phone-head.mp4",
+      "sha256": "1e7f87a927271291b244cf8ce90e4ec97f07013c25e07f067d64d0f01547717e"
+    },
+    {
+      "file": "media/contact871-soap.png",
+      "sha256": "6692b39ecb0111a5c72a8059cb7df131124ec9752496260916d11055cf28aa8c"
+    },
+    {
+      "file": "media/contact871-soap-overview.mp4",
+      "sha256": "fad28447796dca94d1e1fff0b622f199b6cc06a4654ce760e997c9726d704af7"
+    },
+    {
+      "file": "media/contact871-soap-head.mp4",
+      "sha256": "975c88a8d6c00ef35036cf8cf84070295b7b2264e0441ae73eb7fa8d822a61ca"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
@@ -1567,7 +1611,7 @@
     },
     {
       "file": "optimized/manifest.json",
-      "sha256": "1d9ae6056905bb3b3fb555482d5fc1fae4bd8ea444b82419b9cf15e01afaeadf"
+      "sha256": "d1a4178671153707f104457184bf4628859a54f52f572b53d397d548dc4d6361"
     }
   ]
 }

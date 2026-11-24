@@ -65,6 +65,11 @@ def install(root):
                 'min_contact_separation_m':self.physics_min_separation})
             super().finish()
     run.Execution=MeasuredExecution
+    from modules.curobo.fingertip_contact import load_profile
+    profile = load_profile()
+    if profile.enabled:
+        from planning_common.contact_execution import install as install_contact_policy
+        install_contact_policy(run, baseline, profile)
 
     def capture_checked():
         out=capture()

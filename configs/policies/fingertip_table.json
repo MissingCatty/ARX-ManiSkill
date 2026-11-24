@@ -1,0 +1,17 @@
+{
+  "profile_id": "arx_871_distal_table_contact_v1",
+  "enabled": true,
+  "collision_profile_id": "arx_refined_871_v1",
+  "maximum_penetration_m": 0.002,
+  "distal_length_m": 0.01,
+  "release_depth_noise_m": 0.0001,
+  "minimum_normal_z": 0.95,
+  "surface_position_noise_m": 0.0001,
+  "allowed_stages": ["final_approach", "closure"],
+  "release_policy": "nonincreasing_existing_contact",
+  "ik_fallback_seeds": 32,
+  "ik_return_seeds": 8,
+  "position_tolerance_m": 0.002,
+  "rotation_tolerance_rad": 0.03,
+  "actual_geometry_resource": "arx_robot"
+}

@@ -160,6 +160,10 @@ class PlannerPool:
                 'warmup_seconds': time.perf_counter() - started,
                 'kinematics_tensor_copies': len(self.parameters[role]), 'robot_trajectories_executed': 0}
 
+    def validate_start_state(self, context, state, current, closed=False, include_target=False):
+        """Default start gate; a registered planner may provide a scoped policy."""
+        return bool(context.checker.validate(current[None, None]).all())
+
     def bind(self, directory, state, closed=False, include_target=False):
         role = 'closed' if closed else 'open'
         context = self.contexts[role]
@@ -200,7 +204,7 @@ class PlannerPool:
         save(directory / 'fk_validation.json', error)
         assert error['position_error_m'] < 2e-5 and error['rotation_error_rad'] < 2e-4, error
         current = context.measured(state)
-        assert bool(context.checker.validate(current[None, None]).all()), 'Measured state collides in unchanged ARX model'
+        assert self.validate_start_state(context, state, current, closed, include_target), 'Measured state collides in unchanged ARX model'
         save(directory / 'start_state.json', {'actual': q.tolist(), 'planning_start': current.tolist(),
             'max_clamp_rad': float((current-q).abs().max()), 'policy': 'Original 1e-4 rad inset'})
         torch.cuda.synchronize()

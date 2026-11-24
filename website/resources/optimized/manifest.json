@@ -14950,8 +14950,431 @@
           "frames_checked": 597
         }
       ]
+    },
+    "media/contact871-phone.png": {
+      "kind": "image",
+      "source_sha256": "75bb0d63f65f3c01ef1b79df9229d59f43dc7ef5d40b1cc1b99c4f5905427137",
+      "source_bytes": 2046854,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "file": "optimized/media/contact871-phone-75bb0d63f65f-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 20548,
+          "sha256": "f82370439c5b5d717121af54162d827afdba7765c8d09a1f568c50d33414133d"
+        },
+        {
+          "file": "optimized/media/contact871-phone-75bb0d63f65f-fc16be0e-w960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 73850,
+          "sha256": "90752925153966faeab80c81b799381360f8da325336dec11ebe496e89c9a6b9"
+        },
+        {
+          "file": "optimized/media/contact871-phone-75bb0d63f65f-fc16be0e-w1440.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 142750,
+          "sha256": "176767cc2f7d09662fa9842aad7816dcbeba150089ccbe2fb5f0ac90e5c660f2"
+        },
+        {
+          "file": "optimized/media/contact871-phone-75bb0d63f65f-fc16be0e-w1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 225278,
+          "sha256": "c54255c773d5cf5222b8c8510c1a29f9965bd45ba52604bf9a649c10c5c7538c"
+        }
+      ],
+      "files": [
+        {
+          "file": "optimized/media/contact871-phone-75bb0d63f65f-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 20548,
+          "sha256": "f82370439c5b5d717121af54162d827afdba7765c8d09a1f568c50d33414133d"
+        },
+        {
+          "file": "optimized/media/contact871-phone-75bb0d63f65f-fc16be0e-w960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 73850,
+          "sha256": "90752925153966faeab80c81b799381360f8da325336dec11ebe496e89c9a6b9"
+        },
+        {
+          "file": "optimized/media/contact871-phone-75bb0d63f65f-fc16be0e-w1440.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 142750,
+          "sha256": "176767cc2f7d09662fa9842aad7816dcbeba150089ccbe2fb5f0ac90e5c660f2"
+        },
+        {
+          "file": "optimized/media/contact871-phone-75bb0d63f65f-fc16be0e-w1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 225278,
+          "sha256": "c54255c773d5cf5222b8c8510c1a29f9965bd45ba52604bf9a649c10c5c7538c"
+        }
+      ],
+      "pillow_version": "13.0.0"
+    },
+    "media/contact871-soap.png": {
+      "kind": "image",
+      "source_sha256": "6692b39ecb0111a5c72a8059cb7df131124ec9752496260916d11055cf28aa8c",
+      "source_bytes": 2053236,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "file": "optimized/media/contact871-soap-6692b39ecb01-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 20690,
+          "sha256": "34a95551f3a7d85d781b779b500ea3a675589e17df9bde939d2ef44901ebf4ba"
+        },
+        {
+          "file": "optimized/media/contact871-soap-6692b39ecb01-fc16be0e-w960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 73606,
+          "sha256": "298fd10a1b1d07c80765616ae14f64a988e12a146186576c93a90eb8ce3ba406"
+        },
+        {
+          "file": "optimized/media/contact871-soap-6692b39ecb01-fc16be0e-w1440.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 142518,
+          "sha256": "1a3bb73ca7aa1dbed33b1bcb9aec7844e8a33f0cc01b647210fd4a0f067e1c62"
+        },
+        {
+          "file": "optimized/media/contact871-soap-6692b39ecb01-fc16be0e-w1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 225120,
+          "sha256": "79cef08b92694a10e867696146cd1bc0bf33c8ec8e004056057b6d00dd97a01f"
+        }
+      ],
+      "files": [
+        {
+          "file": "optimized/media/contact871-soap-6692b39ecb01-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 20690,
+          "sha256": "34a95551f3a7d85d781b779b500ea3a675589e17df9bde939d2ef44901ebf4ba"
+        },
+        {
+          "file": "optimized/media/contact871-soap-6692b39ecb01-fc16be0e-w960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 73606,
+          "sha256": "298fd10a1b1d07c80765616ae14f64a988e12a146186576c93a90eb8ce3ba406"
+        },
+        {
+          "file": "optimized/media/contact871-soap-6692b39ecb01-fc16be0e-w1440.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 142518,
+          "sha256": "1a3bb73ca7aa1dbed33b1bcb9aec7844e8a33f0cc01b647210fd4a0f067e1c62"
+        },
+        {
+          "file": "optimized/media/contact871-soap-6692b39ecb01-fc16be0e-w1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 225120,
+          "sha256": "79cef08b92694a10e867696146cd1bc0bf33c8ec8e004056057b6d00dd97a01f"
+        }
+      ],
+      "pillow_version": "13.0.0"
+    },
+    "media/contact871-teapot.png": {
+      "kind": "image",
+      "source_sha256": "77b67ea17e85b3fb1b98ca6d6d7f27c6e2e6988988dbfcaddb23012afc4521af",
+      "source_bytes": 2047663,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "width": 1920,
+      "height": 1080,
+      "variants": [
+        {
+          "file": "optimized/media/contact871-teapot-77b67ea17e85-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 20726,
+          "sha256": "09bce91b9697fe95769f2fc993480299e85dba78cf015a5624d0cc77f4c22dae"
+        },
+        {
+          "file": "optimized/media/contact871-teapot-77b67ea17e85-fc16be0e-w960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 73490,
+          "sha256": "0597ef444b9ad97210a0489823c22e7e1994ff8c6974199b4d4027a527a09fe0"
+        },
+        {
+          "file": "optimized/media/contact871-teapot-77b67ea17e85-fc16be0e-w1440.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 142500,
+          "sha256": "0fe0bf5625529c86c994b3b7c850b6c4734f245e8cc274ae53815443246b3d97"
+        },
+        {
+          "file": "optimized/media/contact871-teapot-77b67ea17e85-fc16be0e-w1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 224930,
+          "sha256": "457db91189ed0e435759c65f867835caa37d256fc89b58c370a7efc60ac1cce4"
+        }
+      ],
+      "files": [
+        {
+          "file": "optimized/media/contact871-teapot-77b67ea17e85-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 20726,
+          "sha256": "09bce91b9697fe95769f2fc993480299e85dba78cf015a5624d0cc77f4c22dae"
+        },
+        {
+          "file": "optimized/media/contact871-teapot-77b67ea17e85-fc16be0e-w960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 73490,
+          "sha256": "0597ef444b9ad97210a0489823c22e7e1994ff8c6974199b4d4027a527a09fe0"
+        },
+        {
+          "file": "optimized/media/contact871-teapot-77b67ea17e85-fc16be0e-w1440.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 142500,
+          "sha256": "0fe0bf5625529c86c994b3b7c850b6c4734f245e8cc274ae53815443246b3d97"
+        },
+        {
+          "file": "optimized/media/contact871-teapot-77b67ea17e85-fc16be0e-w1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 224930,
+          "sha256": "457db91189ed0e435759c65f867835caa37d256fc89b58c370a7efc60ac1cce4"
+        }
+      ],
+      "pillow_version": "13.0.0"
+    },
+    "media/contact871-phone-head.mp4": {
+      "kind": "video",
+      "source_sha256": "1e7f87a927271291b244cf8ce90e4ec97f07013c25e07f067d64d0f01547717e",
+      "source_bytes": 1114683,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/contact871-phone-head-1e7f87a92727-fc16be0e.mp4",
+          "bytes": 390478,
+          "sha256": "44dbf2796a0284dc10824fd5c32579a0dfb1d4467cad11fca1f8085317aaaac0"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/contact871-phone-head-1e7f87a92727-fc16be0e.mp4",
+        "bytes": 390478,
+        "sha256": "44dbf2796a0284dc10824fd5c32579a0dfb1d4467cad11fca1f8085317aaaac0"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 20.0,
+        "duration": 20.1
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 390478,
+          "mean_ssim": 0.990523,
+          "minimum_frame_ssim": 0.988294,
+          "frames_checked": 402
+        }
+      ]
+    },
+    "media/contact871-phone-overview.mp4": {
+      "kind": "video",
+      "source_sha256": "78f02b08832a61595049a63b8135c0664ea82dd32d4ebb569cefb141a484c151",
+      "source_bytes": 2432464,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/contact871-phone-overview-78f02b08832a-fc16be0e.mp4",
+          "bytes": 1196831,
+          "sha256": "80e2e4db6b4fa7953f2e20cad8f22cbb5afcdf50f5cbd176eba2e7345116e412"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/contact871-phone-overview-78f02b08832a-fc16be0e.mp4",
+        "bytes": 1196831,
+        "sha256": "80e2e4db6b4fa7953f2e20cad8f22cbb5afcdf50f5cbd176eba2e7345116e412"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 20.1
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 1196831,
+          "mean_ssim": 0.993976,
+          "minimum_frame_ssim": 0.992561,
+          "frames_checked": 402
+        }
+      ]
+    },
+    "media/contact871-soap-head.mp4": {
+      "kind": "video",
+      "source_sha256": "975c88a8d6c00ef35036cf8cf84070295b7b2264e0441ae73eb7fa8d822a61ca",
+      "source_bytes": 1395225,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/contact871-soap-head-975c88a8d6c0-fc16be0e.mp4",
+          "bytes": 483217,
+          "sha256": "7e87c87e85bca23eb1ec1eb77627ae4c510f33c4ffc99b407669705d3d772231"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/contact871-soap-head-975c88a8d6c0-fc16be0e.mp4",
+        "bytes": 483217,
+        "sha256": "7e87c87e85bca23eb1ec1eb77627ae4c510f33c4ffc99b407669705d3d772231"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 20.0,
+        "duration": 20.1
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 483217,
+          "mean_ssim": 0.989783,
+          "minimum_frame_ssim": 0.986816,
+          "frames_checked": 402
+        }
+      ]
+    },
+    "media/contact871-soap-overview.mp4": {
+      "kind": "video",
+      "source_sha256": "fad28447796dca94d1e1fff0b622f199b6cc06a4654ce760e997c9726d704af7",
+      "source_bytes": 2401462,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/contact871-soap-overview-fad28447796d-fc16be0e.mp4",
+          "bytes": 1184231,
+          "sha256": "b7acc1489e709f316fe10df6db81707a5d796e8ec81162df1f6047f208f00988"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/contact871-soap-overview-fad28447796d-fc16be0e.mp4",
+        "bytes": 1184231,
+        "sha256": "b7acc1489e709f316fe10df6db81707a5d796e8ec81162df1f6047f208f00988"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 20.1
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 1184231,
+          "mean_ssim": 0.993971,
+          "minimum_frame_ssim": 0.99257,
+          "frames_checked": 402
+        }
+      ]
+    },
+    "media/contact871-teapot-head.mp4": {
+      "kind": "video",
+      "source_sha256": "394b46a3d5f1be11b46bf4f02a11c2cc17849efeaf56e775690c838e7b4e7f81",
+      "source_bytes": 495050,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/contact871-teapot-head-394b46a3d5f1-fc16be0e.mp4",
+          "bytes": 208711,
+          "sha256": "9a113d2652c39b7f8e929da57a76a1f89aac42bc115ed5f2581017440d9b6aab"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/contact871-teapot-head-394b46a3d5f1-fc16be0e.mp4",
+        "bytes": 208711,
+        "sha256": "9a113d2652c39b7f8e929da57a76a1f89aac42bc115ed5f2581017440d9b6aab"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 20.0,
+        "duration": 20.1
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 208711,
+          "mean_ssim": 0.992628,
+          "minimum_frame_ssim": 0.990525,
+          "frames_checked": 402
+        }
+      ]
+    },
+    "media/contact871-teapot-overview.mp4": {
+      "kind": "video",
+      "source_sha256": "044bb5045d5590c8075a372525dc34d5df4db64d78290855f20e28d299469d0e",
+      "source_bytes": 2268482,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/contact871-teapot-overview-044bb5045d55-fc16be0e.mp4",
+          "bytes": 1124903,
+          "sha256": "2ff9a472319a9d756a3726ea6f4ecaf8f2c35dfc0d2b2cda4bac4ae1fb385756"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/contact871-teapot-overview-044bb5045d55-fc16be0e.mp4",
+        "bytes": 1124903,
+        "sha256": "2ff9a472319a9d756a3726ea6f4ecaf8f2c35dfc0d2b2cda4bac4ae1fb385756"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 20.1
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 1124903,
+          "mean_ssim": 0.994036,
+          "minimum_frame_ssim": 0.992509,
+          "frames_checked": 402
+        }
+      ]
     }
   },
   "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
-  "source_count": 313
+  "source_count": 322
 }

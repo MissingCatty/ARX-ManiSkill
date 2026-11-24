@@ -25,7 +25,10 @@ export function readUpgradePlan(root, settings, markdown) {
     {source:resolve(mapRoot,'docs/可达性地图/选定高度抓取对照实验.md'), title:'固定高度对照结果', url:'/roadmap/fixed-height/'},
     {source:resolve(docsRoot,'GraspCL示教兼容修复与160场景对照.md'), title:'GraspCL 示教兼容与160场景对照', url:'/roadmap/graspcl-compat/'}
   ];
-  const documents = known.map(d=>({...d, source:realpathSync(d.source), body:readFileSync(d.source,'utf8')}));
+  const documents = known.map(d=>{
+    const actual=realpathSync(sourcePath(d.source));
+    return {...d,source:actual,body:readFileSync(actual,'utf8')};
+  });
   const routes = new Map(documents.map(d=>[d.source,d.url]));
   const files = new Map();
   const safeRoots = [mapRoot,docsRoot,realpathSync(resolve(root,'../tmp/reachability')),realpathSync(resolve(root,'../tmp/maniskill/docs_resources'))];

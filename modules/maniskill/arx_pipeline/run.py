@@ -116,6 +116,13 @@ class Execution:
         self.stages = {}
         env.trace_callback = self.record
 
+    def contact_event(self, robot_link, other, contact, original_allowed):
+        """Return a contact decision; the default preserves the original gate."""
+        return {'allowed': original_allowed}
+
+    def extra_trace_fields(self):
+        return {}
+
     def record(self):
         self.tick += 1
         contacts = []
@@ -133,11 +140,13 @@ class Execution:
             robot_link = a if a in robot_entities else b
             other = b if a in robot_entities else a
             allowed = self.label!='observe' and other == target and any(n in robot_link.name for n in ["right_link27", "right_link28"])
-            event = {"a": a.name, "b": b.name, "impulse_ns": impulse, "allowed": allowed}
+            event = {"a": a.name, "b": b.name, "impulse_ns": impulse,
+                     **self.contact_event(robot_link, other, c, allowed)}
+            allowed = event['allowed']
             contacts.append(event)
             if not allowed:
                 self.forbidden.append({"tick": self.tick, "stage": self.label, **event})
-            if allowed and self.label == "close":
+            if allowed and other == target and self.label == "close":
                 self.bilateral.add("right_link27" if "right_link27" in robot_link.name else "right_link28")
         z = float(self.env.obj.pose.p[0, 2])
         if self.label == "hold":
@@ -147,6 +156,7 @@ class Execution:
                "object_pose": self.env.obj.pose.raw_pose[0].tolist(), "contacts": contacts}
         if self.env.scene_spec is not None:
             row['objects']={n:a.pose.raw_pose[0].tolist() for n,a in self.env.objects.items()}
+        row.update(self.extra_trace_fields())
         self.trace.write(json.dumps(row) + "\n")
 
     def step(self):

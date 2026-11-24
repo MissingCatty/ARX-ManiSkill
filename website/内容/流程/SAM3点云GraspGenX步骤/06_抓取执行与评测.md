@@ -5,11 +5,3 @@
 ## 当前设置与核验
 
 [当前V2配置、871球加载核验与后续测试状态](/iterations/sam3-graspgenx/versions/V2/)
-
-## 当前设置与核验
-
-[当前V2配置、871球加载核验与后续测试状态](/iterations/sam3-graspgenx/versions/V2/)
-
-## 当前设置与核验
-
-[当前V2配置、871球加载核验与后续测试状态](/iterations/sam3-graspgenx/versions/V2/)
