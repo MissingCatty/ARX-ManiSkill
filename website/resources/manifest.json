@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T12:47:51.355Z",
+  "generatedAt": "2026-11-24T16:12:34.103Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -592,6 +592,10 @@
     {
       "file": "media/contact871-soap-head.mp4",
       "sha256": "975c88a8d6c00ef35036cf8cf84070295b7b2264e0441ae73eb7fa8d822a61ca"
+    },
+    {
+      "file": "media/table-tolerance-review.json",
+      "sha256": "0f6f4b869295807903fae52bbaacc396c8e9a85459381ff441a6af4f85e0fb35"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

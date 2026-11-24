@@ -33,7 +33,13 @@ def publish_contact_validation(config):
     media=SITE/'resources/media';media.mkdir(parents=True,exist_ok=True)
     files={'contact871-acceptance.json':run/'acceptance.json',
            'contact871-policy.json':ROOT/'configs/policies/fingertip_table.json'}
-    names=['teapot','phone','soap']; rows=[]; video_rows=[]
+    tolerance_file=ROOT/'tmp/fingertip_contact/tolerance_review_20261124_01/review.json'
+    tolerance_review=read(tolerance_file) if tolerance_file.is_file() else None
+    if tolerance_review:
+        if tolerance_review['selected_nominal_mesh_tolerance_mm']!=config['table_penetration_allowance_m']*1000:
+            raise ValueError('Tolerance review differs from the active policy')
+        files['table-tolerance-review.json']=tolerance_file
+    names=['teapot','phone','soap']; rows=[]; video_rows=[]; closure_rows=[]
     for label,item in zip(names,receipt['rows']):
         trial=run/'trials'/item['id']; evaluation=item['independent_contact_evaluation']
         files[f'contact871-{label}.png']=trial/'initial_overview.png'
@@ -46,25 +52,32 @@ def publish_contact_validation(config):
             f'{evaluation["allowed_tip_table_events"]} | {evaluation["maximum_allowed_depth_m"]*1000:.3f}毫米 | 接近、闭合命令与退离均完成 |')
         video_rows.append(f'| {request} | [第三人称](/media/contact871-{label}-overview.mp4) · '
                           f'[头部](/media/contact871-{label}-head.mp4) |')
+        closed=item['measured_finger_joints_at_close_m']
+        final=read(trial/'final_state.json')
+        final_fingers=[final['qpos'][final['joint_names'].index(name)]
+                       for name in ['right_joint27','right_joint28']]
+        closure_rows.append(f'| {request} | {closed["right_joint27"]*1000:.2f} / '
+                            f'{closed["right_joint28"]*1000:.2f} | '
+                            f'{final_fingers[0]*1000:.2f} / {final_fingers[1]*1000:.2f} |')
     for name,source in files.items():
         target=media/name
         if not target.exists() or sha256(source)!=sha256(target):shutil.copy2(source,target)
         # Build falls back to this real publication copy when the source is absent.
         site['localAssets'][name]='contact871/'+name
     current=next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
-    current.update(status='871球指尖接触策略已接入',metric='接触与退离验证3/3，正式抓取待登记')
+    current.update(status='871球指尖接触策略已接入',metric='空桌面接触测试3/3，正式抓取待登记')
     experiment=next(e for e in registry['experiments'] if e['id']=='sam3-graspgenx')
     node=next(n for n in experiment['iterations'] if n['code']=='V2')
     node.update(status='指尖接触策略已接入并完成接口验证',
-        resultSummary='871球模型下三项接触与退离接口验证全部通过，六段录像已核验；正式抓取0次。',
+        resultSummary='空桌面接触测试3/3通过，六段录像记录了空夹和退离。正式物体抓取0次。',
         change='保留当前配置，在最后接近与闭合阶段加入指尖最前端10毫米、桌面上表面最多2毫米的局部接触规则。')
     node['settings']=[row for row in node['settings'] if row[0] not in ['当前进度','指尖与桌面']]
     node['settings'] += [['指尖与桌面','前端10毫米、桌面上表面最多2毫米；抬升只允许退出已有接触。'],
-                         ['当前进度','接触与退离接口验证3/3完成，正式抓取待登记。']]
+                         ['当前进度','空桌面接触测试3/3完成，正式抓取待登记。']]
     save(content/'网站.json',site);save(content/'experiments.json',registry)
     page=content/'迭代/sam3-graspgenx-v2.md';text=page.read_text()
     text=text.replace('旧球配置及对应抓取、距离和指尖余量实验产物已清理。本轮完成配置核验，实际抓取0次，新批次待登记。',
-        '当前871球版本已接入局部指尖接触策略，三个接触与退离动作完成验证。正式200场景抓取待登记。')
+        '当前871球版本已接入局部指尖接触策略，三项空桌面接触测试已完成。正式200场景抓取待登记。')
     section='''<a id="fingertip-table"></a>
 
 ## 指尖与桌面的接触余量
@@ -73,19 +86,29 @@ def publish_contact_validation(config):
 
 到预抓取位姿仍用cuRobo规划。最后接近使用密集检查的局部轨迹；闭合后重新读取夹指状态与实际接触，再检查抬升。抬升时接触深度不能增加。机器人球参数、几何、质量、摩擦和1毫米物理接触偏移保持当前配置。
 
-### 三项接口验证
+### 空桌面接触测试（3项）
 
-在茶壶、手机、香皂场景的空白桌面区域分别执行接近、闭合命令和退离，物体摆放保持原样。下表记录接触接口表现；正式物体抓取另行登记。
+三个动作都对准预设的空桌面测试点。茶壶、手机和香皂留在原位作为背景。测试依次下发接近、空夹和退离命令，检查指尖接触桌面后能否抬离。正式物体抓取0次。
 
 | 验证动作 | 零余量网格检查 | 2毫米局部规则 | 放行的接触记录数 | 实际最大接触深度 | 执行结果 |
 | --- | --- | --- | ---: | ---: | --- |
 '''+ '\n'.join(rows)+'''
 
-名义接触深度是规划终点要求。实际物理接触会阻止夹指继续下压，因此后两项实测深度约为0.024和0.018毫米。桌面阻力也使夹指未能完全闭合，控制器读取当时的真实开合位置，再用这个状态规划退离。
+名义接触深度是规划终点要求，后两项实际接触深度约为0.024和0.018毫米。
+
+### 录像与闭合时序
+
+视频约11.05至14.08秒为闭合阶段，14.08秒后开始抬升。下表是两根手指各自的关节位移，单位为毫米，每根44表示全开，接近0表示合拢。
+
+| 空桌面测试动作 | 闭合阶段结束，指27 / 指28 | 抬升阶段结束，指27 / 指28 |
+| --- | ---: | ---: |
+'''+ '\n'.join(closure_rows)+'''
+
+茶壶视频在闭合阶段就已合拢。手机和香皂视频在闭合阶段末仍接近全开，抬升过程中继续合拢；香皂视频在抬升后合拢到位，手机视频末尾仍留有开度。此前将触桌和闭合延迟直接归因为“桌面阻碍闭合”，现修正为上述逐阶段记录，阻力来源尚待对照验证。
 
 三项的禁止接触均为0，原始接触点与法线的独立复核全部通过。离线检查共87项通过，六段视频全部完成解码检查。
 
-| 验证动作 | 录像 |
+| 空桌面测试动作 | 空夹测试录像 |
 | --- | --- |
 '''+ '\n'.join(video_rows)+'''
 
@@ -96,6 +119,16 @@ def publish_contact_validation(config):
 当前 GraspGenX 输出抓姿、评分和生成分支。88毫米是 ARX 的全开宽度，由适配层写入候选记录。到预抓取点和最后接近时，两个指关节都使用44毫米的全开命令。
 
 后续可按每个抓姿附近的目标点云估算所需开度，在安全位置调好夹爪，并用同一个开度做接近规划与执行。
+'''
+    if tolerance_review:
+        section+='''
+## 容差为什么取2毫米
+
+旧硬碰撞检查采用0毫米容差，碰撞球进入桌面就会拒绝该解。保留的历史汇总中，53个原位规划失败场景通过真实夹指网格零穿入复核，确认恢复8例终点；增加2毫米指尖余量后为9例。额外恢复的香皂候选真实指尖穿入约1.818毫米，向上取0.5毫米档得到2毫米。
+
+本轮继续采用真实网格最多2毫米、指尖前端10毫米和桌面上表面的局部规则。旧批次逐例深度记录已在清理时删除，以上是保留下来的汇总。当前871球配置的全场景深度分布尚待补充。
+
+[容差选择与来源记录](/media/table-tolerance-review.json)
 '''
     page.write_text(text+'\n'+section)
     doc=content/'实验配置/夹爪碰撞球精细化.md'
