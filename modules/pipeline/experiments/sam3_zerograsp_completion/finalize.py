@@ -12,7 +12,7 @@ from arx_project.layout import ROOT, now, sha256
 from modules.pipeline.experiments.sam3_zerograsp_comparison.io_parallel.contracts import METHODS, completed_rows
 from modules.pipeline.experiments.sam3_zerograsp_comparison.io_parallel.metrics import FAILURE_LABELS, failure_category
 from modules.pipeline.experiments.sam3_zerograsp_comparison.io_parallel.publication import publish, sync_public
-from modules.pipeline.experiments.sam3_zerograsp_comparison.metrics import distribution
+from .latency_report import build_latency_report, render_latency, refresh_latency_section
 
 
 def dirty_paths():
@@ -29,18 +29,7 @@ def publish_final(root, configuration):
     if any(summary['methods'][m]['completed'] != 74 for m in METHODS):
         raise RuntimeError('Both groups must have 74 completed results')
     rows = {m:{row['id']:row for row in completed_rows(root/'methods'/m)} for m in METHODS}
-    ids = [pair['id'] for pair in read_json(root/'registration.json')['cohort']['pairs']]
-    paired = {'at':now(),'cases':74,'groups':{}}
-    keys = ['generation_delivery_seconds','candidate_decode_seconds','initial_planning_rpc_seconds',
-            'generation_and_initial_planning_seconds','execution_with_replanning_seconds','trial_wall_seconds']
-    for group in ['all_completed','both_successful']:
-        eligible = [i for i in ids if group == 'all_completed' or all(rows[m][i]['result']['success'] for m in METHODS)]
-        paired['groups'][group] = {}
-        for key in keys:
-            common = [i for i in eligible if all(not rows[m][i]['latency'].get('common_precondition_failure')
-                and rows[m][i]['latency'].get('timings',{}).get(key) is not None for m in METHODS)]
-            paired['groups'][group][key] = {'ids':common,
-                **{m:distribution([rows[m][i]['latency']['timings'][key] for i in common]) for m in METHODS}}
+    paired = build_latency_report(root)
     atomic_json(root/'paired_latency_summary.json',paired)
     site_file = ROOT/'website/内容/网站.json'
     site = read_json(site_file)
@@ -71,24 +60,14 @@ def publish_final(root, configuration):
         reason = '抓取成功' if result['success'] else FAILURE_LABELS.get(failure_category(result),result['reason'])
         before = '规划服务显存不足' if 'avocado' in case else '另一分组资源门控触发停止'
         report.append(f'| {case} | {before} | {reason} |')
-    report += ['', '## 同场景配对延时','', '每项采用两组都有计时的相同场景，显示中位数／P90和例数。','',
-        '| 环节 | RaySt3R＋GraspGenX | ZeroGrasp |','| --- | --- | --- |']
-    names = ['生成与候选交接','候选解码','首次规划','生成与首次规划合计','执行环节电脑耗时，含重规划','整次试验电脑耗时']
-    for key,title in zip(keys,names):
-        group = paired['groups']['all_completed'][key]
-        values = []
-        for m in METHODS:
-            d = group[m]
-            values.append(f"{d['median_seconds']:.3f}／{d['p90_seconds']:.3f}秒（{d['samples']}例）" if d['samples'] else '未调用')
-        report.append('| '+title+' | '+' | '.join(values)+' |')
-    report += ['', '执行环节电脑耗时包含仿真计算、渲染、录像与重规划；实际仿真动作时间单独保存在轨迹中。','']
+    report += ['', *render_latency(paired).splitlines()]
     report_path = ROOT/'modules/pipeline/docs/mainline_versions/V6_共享内存对照最终结果.md'
     report_path.write_text('\n'.join(report).rstrip()+'\n')
     report_url = attach(report_path,'sam3-v6-complete74-final-report.md')
     latency_url = attach(root/'paired_latency_summary.json','sam3-v6-complete74-paired-latency.json')
     acceptance_url = attach(root/'acceptance.json','sam3-v6-complete74-acceptance.json')
     makeup_url = attach(root/'inheritance_verified.json','sam3-v6-complete74-makeup-receipt.json')
-    appendix = ['','## 最终完整结果与授权补跑','',*report[2:report.index('## 同场景配对延时')],
+    appendix = ['','## 最终完整结果与授权补跑','',*report[2:report.index('## 延时对照')],
         '',f'- [最终结果报告与配对延时]({report_url})',f'- [逐项配对延时数据]({latency_url})',
         f'- [148条结果及录像独立验收]({acceptance_url})',f'- [两例补跑承接记录]({makeup_url})','']
     for case in configuration['authorized_makeup_cases']:
@@ -104,7 +83,12 @@ def publish_final(root, configuration):
                 cells.append(FAILURE_LABELS.get(failure_category(result),result['reason']))
         appendix += ['| '+' | '.join(cells)+' |','']
     page = ROOT/'website/内容/迭代/sam3-graspgenx-v6.md'
-    page.write_text((page.read_text()+'\n'.join(appendix)).rstrip()+'\n')
+    body = refresh_latency_section(page.read_text(),paired)
+    body = body.replace('## 首次启动与预热','## 两例补跑的启动与预热')
+    body = body.replace('### 实际资源分配','### 两例补跑的实际资源分配')
+    old = '保留前批已经完成的146条结果与0条中断。本批只执行ZeroGrasp剩余2例与GraspGenX剩余0例。原场景序号、随机种子和观测保持。'
+    body = body.replace(old,'继承前批146条完整结果，另行保留两条历史中断。按本轮授权补跑ZeroGrasp牛油果与甜甜圈各一次，场景序号、随机种子和观测保持。')
+    page.write_text((body+'\n'.join(appendix)).rstrip()+'\n')
     atomic_json(site_file,site)
     node = sorted((Path.home()/'.nvm/versions/node').glob('v*/bin/node'))[-1]
     subprocess.run([str(node),'build.mjs'],cwd=ROOT/'website',check=True)

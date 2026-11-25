@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T17:17:01.129Z",
+  "generatedAt": "2026-11-25T23:42:56.421Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1431,7 +1431,7 @@
     },
     {
       "file": "media/sam3-v6-v6-complete74-20261126-01-summary.json",
-      "sha256": "1339857e37ba0e0584d088d689f62b425fc7dd1dec674a98066cf235eeb0ba22"
+      "sha256": "62899d2563514a28846a00abd98e2ab32564369aa76745badb3ac9d8af93612e"
     },
     {
       "file": "media/sam3-v6-v6-complete74-20261126-01-m0002-graspgenx.mp4",
@@ -1459,11 +1459,11 @@
     },
     {
       "file": "media/sam3-v6-complete74-final-report.md",
-      "sha256": "a6223b281aa14dbc660eb68ed9dae46b67d7d630ecb485f3b4db570e574fd95f"
+      "sha256": "e851b4e4dd69e0812a45e326af1a0a8606ed5f443dff45ba7fdb6a4ecac890be"
     },
     {
       "file": "media/sam3-v6-complete74-paired-latency.json",
-      "sha256": "beab5f6bfde098be19407bef628faf99acf1a91a97e6bad42fa1267b31389b4c"
+      "sha256": "929ddf448f2d689356e850c1ae58d9789ac129e2fad6d71ccadd8642e172a9cf"
     },
     {
       "file": "media/sam3-v6-complete74-acceptance.json",

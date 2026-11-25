@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-26T07:43:56.101832+08:00",
+  "purpose": "Use identical case sets in V6 main latency table and downloadable report; clarify execution and makeup warmup timing",
+  "run": "tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01",
+  "source_before_sha256": "ad9f245496d5c3c96ba7a5b5254fe187505e6d2a20eb403d1c81f407909410a0",
+  "source_after_sha256": "f0853ec0833d430916aafd0f9275e4204fa66c997ce55513c7e5abdfdaa5441c",
+  "latency_report_source_sha256": "7197afd88d9aa8b84855b8670038a535d32ddaede4c031d257601282ddf1070a",
+  "validation": {
+    "at": "2026-11-26T07:43:55.832854+08:00",
+    "passed": true,
+    "public_page_matches_local": true,
+    "main_and_download_latency_tables_identical": true,
+    "raw_latency_files_unchanged": 148,
+    "sample_counts": {
+      "generation_delivery_seconds": 69,
+      "candidate_decode_seconds": 65,
+      "initial_planning_rpc_seconds": 65,
+      "generation_and_initial_planning_seconds": 69,
+      "execution_with_replanning_seconds": 59,
+      "generation_to_trial_return_seconds": 69,
+      "trial_wall_seconds": 69
+    },
+    "both_successful_cases": 39,
+    "simulated_execution_seconds_each": 25.15,
+    "offline_fault_tests_passed": 3,
+    "new_model_calls": 0,
+    "new_physical_trials": 0,
+    "public_todos_preserved": true
+  },
+  "original_snapshot": "tmp/website_deployment/v6_latency_review_20261126_01",
+  "physical_results_and_measured_timings_changed": false
+}
