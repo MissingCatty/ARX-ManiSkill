@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T10:34:09.624Z",
+  "generatedAt": "2026-11-25T17:17:01.129Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1310,6 +1310,186 @@
       "sha256": "952199f1d64c345a0df21acccddba785c5e947ceef89b5e93e984e64ac388cdb"
     },
     {
+      "file": "media/sam3-v6-v6-io74-parallel-20261125-01-previous-page.md",
+      "sha256": "e8370671dbad9ade83ea613aa1450c171e1543ce4cbcd5098ea20258ea108e3b"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-parallel-20261125-01-summary.json",
+      "sha256": "b98a6d4aaf1def97f4ac4930d6149e0140f7439336cc49d29b6b228178130037"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-01-previous-page.md",
+      "sha256": "cfaef4da2e7141256d44c8d001182b7324aa8424741ed828f80a6e6d6a76e8b0"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-01-summary.json",
+      "sha256": "2d4f070e4d76a8b2ff73806b60f0aac7afe3b154d09156dafa3bec34f806b4db"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-01-m0002-graspgenx.mp4",
+      "sha256": "cc54c37db7b6bada0b21a156e2b41fd00da20d8dd749f2460f9b91cfc421069a"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-01-m0002-zerograsp.mp4",
+      "sha256": "4093c2f50e29c0082b37cfd41d3aa8a76d2c586d40cdd6f010585ccb3d4d0c6c"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-01-m0004-graspgenx.mp4",
+      "sha256": "37eafab845f24053d787c068e918c83e34cb1e613eee5d2133b8a935c15cadca"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-01-m0004-zerograsp.mp4",
+      "sha256": "317b25916462a9a92713134baff80eac21cb6be491d8017c16d51b8cd30dc075"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-01-m0005-graspgenx.mp4",
+      "sha256": "12d0edcaa2b2a02764b940d130987ef630791c208546ed74dff72a1e79d93e8a"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-01-m0005-zerograsp.mp4",
+      "sha256": "5f12b2a7307c2035de7adf68b4897a11cb6419ee557cb771b7635d3c40d4bc23"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-02-previous-page.md",
+      "sha256": "b0a35b8afdb90ebf2902473b81ccba0adca29b78b15ed92a23fa07470c310fa6"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-02-summary.json",
+      "sha256": "d9e450fad7e77a453e49daba5ba077e20ac88ec99cb5a3d1874b9e302d014465"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-02-m0002-graspgenx.mp4",
+      "sha256": "cc54c37db7b6bada0b21a156e2b41fd00da20d8dd749f2460f9b91cfc421069a"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-02-m0002-zerograsp.mp4",
+      "sha256": "4093c2f50e29c0082b37cfd41d3aa8a76d2c586d40cdd6f010585ccb3d4d0c6c"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-02-m0004-graspgenx.mp4",
+      "sha256": "37eafab845f24053d787c068e918c83e34cb1e613eee5d2133b8a935c15cadca"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-02-m0004-zerograsp.mp4",
+      "sha256": "317b25916462a9a92713134baff80eac21cb6be491d8017c16d51b8cd30dc075"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-02-m0005-graspgenx.mp4",
+      "sha256": "12d0edcaa2b2a02764b940d130987ef630791c208546ed74dff72a1e79d93e8a"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-02-m0005-zerograsp.mp4",
+      "sha256": "5f12b2a7307c2035de7adf68b4897a11cb6419ee557cb771b7635d3c40d4bc23"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-03-previous-page.md",
+      "sha256": "93dcc2df5d7e8ff8ad8396306a066e8e903f66f2b653054d5446afa1beb63d63"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-03-summary.json",
+      "sha256": "ea912976450f0a32cc54019e9ff127da9c5c3cbad5d6478c8e6fe1cdaa453c77"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-03-m0002-graspgenx.mp4",
+      "sha256": "cc54c37db7b6bada0b21a156e2b41fd00da20d8dd749f2460f9b91cfc421069a"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-03-m0002-zerograsp.mp4",
+      "sha256": "4093c2f50e29c0082b37cfd41d3aa8a76d2c586d40cdd6f010585ccb3d4d0c6c"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-03-m0004-graspgenx.mp4",
+      "sha256": "37eafab845f24053d787c068e918c83e34cb1e613eee5d2133b8a935c15cadca"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-03-m0004-zerograsp.mp4",
+      "sha256": "317b25916462a9a92713134baff80eac21cb6be491d8017c16d51b8cd30dc075"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-03-m0005-graspgenx.mp4",
+      "sha256": "12d0edcaa2b2a02764b940d130987ef630791c208546ed74dff72a1e79d93e8a"
+    },
+    {
+      "file": "media/sam3-v6-v6-io74-continue-20261125-03-m0005-zerograsp.mp4",
+      "sha256": "5f12b2a7307c2035de7adf68b4897a11cb6419ee557cb771b7635d3c40d4bc23"
+    },
+    {
+      "file": "media/sam3-v8-indexed-planning-plan.md",
+      "sha256": "196da7e0e0c5ef9416875c150ab42138f6140353ca106b37aa27d725e610fd4d"
+    },
+    {
+      "file": "media/sam3-v8-indexed-planning-config.json",
+      "sha256": "bd56e775ea02b13758458c46e5c5e88db8aed784f9848b375be74a8e547782ee"
+    },
+    {
+      "file": "media/sam3-v8-indexed-planning-preparation.json",
+      "sha256": "7b4c4a0c56dcea9494134e84716e9137464e5552539b7bd4f6deddd3af5aa3e2"
+    },
+    {
+      "file": "media/sam3-v6-v6-complete74-20261126-01-previous-page.md",
+      "sha256": "ebe937658f1f33c49398fe09b59a4a8cd362abb11ce1a0ebb217e83cbc387f3d"
+    },
+    {
+      "file": "media/sam3-v6-v6-complete74-20261126-01-summary.json",
+      "sha256": "1339857e37ba0e0584d088d689f62b425fc7dd1dec674a98066cf235eeb0ba22"
+    },
+    {
+      "file": "media/sam3-v6-v6-complete74-20261126-01-m0002-graspgenx.mp4",
+      "sha256": "cc54c37db7b6bada0b21a156e2b41fd00da20d8dd749f2460f9b91cfc421069a"
+    },
+    {
+      "file": "media/sam3-v6-v6-complete74-20261126-01-m0002-zerograsp.mp4",
+      "sha256": "4093c2f50e29c0082b37cfd41d3aa8a76d2c586d40cdd6f010585ccb3d4d0c6c"
+    },
+    {
+      "file": "media/sam3-v6-v6-complete74-20261126-01-m0004-graspgenx.mp4",
+      "sha256": "37eafab845f24053d787c068e918c83e34cb1e613eee5d2133b8a935c15cadca"
+    },
+    {
+      "file": "media/sam3-v6-v6-complete74-20261126-01-m0004-zerograsp.mp4",
+      "sha256": "317b25916462a9a92713134baff80eac21cb6be491d8017c16d51b8cd30dc075"
+    },
+    {
+      "file": "media/sam3-v6-v6-complete74-20261126-01-m0005-graspgenx.mp4",
+      "sha256": "12d0edcaa2b2a02764b940d130987ef630791c208546ed74dff72a1e79d93e8a"
+    },
+    {
+      "file": "media/sam3-v6-v6-complete74-20261126-01-m0005-zerograsp.mp4",
+      "sha256": "5f12b2a7307c2035de7adf68b4897a11cb6419ee557cb771b7635d3c40d4bc23"
+    },
+    {
+      "file": "media/sam3-v6-complete74-final-report.md",
+      "sha256": "a6223b281aa14dbc660eb68ed9dae46b67d7d630ecb485f3b4db570e574fd95f"
+    },
+    {
+      "file": "media/sam3-v6-complete74-paired-latency.json",
+      "sha256": "beab5f6bfde098be19407bef628faf99acf1a91a97e6bad42fa1267b31389b4c"
+    },
+    {
+      "file": "media/sam3-v6-complete74-acceptance.json",
+      "sha256": "0261a7194a72f21153ee3c0b8f26bbf31ed9b65d289369e0d42984e11a64b906"
+    },
+    {
+      "file": "media/sam3-v6-complete74-makeup-receipt.json",
+      "sha256": "366dfd910f951a905ce61a2484085ca426051bed71d8f38a2fa9ec9edb2c45d2"
+    },
+    {
+      "file": "media/sam3-v6-complete74-m0042-graspgenx.mp4",
+      "sha256": "3b79432f30d7e7d5334cb178cd5c6b65cabaf4b39f1915c7fb22c57b35855ca8"
+    },
+    {
+      "file": "media/sam3-v6-complete74-m0042-zerograsp.mp4",
+      "sha256": "de79743d39d634c688b23621da75a3a603fbaf80d4f10628f6a9431ab3741813"
+    },
+    {
+      "file": "media/sam3-v6-complete74-m0060-graspgenx.mp4",
+      "sha256": "8419091e671c63191408e6810d2504f59844557c503e2af590a2ee6ef8a571a5"
+    },
+    {
+      "file": "media/sam3-v6-complete74-m0060-zerograsp.mp4",
+      "sha256": "42136b365c3067c39d73879b4d940d47b1cb98971bab3a61e1e2218373459c25"
+    },
+    {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
       "sha256": "dcfa7fab48debcd576c22c202c52b01c783630b6f7d3f4f94c722a25f5652310"
     },
@@ -2327,7 +2507,7 @@
     },
     {
       "file": "optimized/manifest.json",
-      "sha256": "96c2cade7f0d9abc1860fed872d5b5fb7afc60789501c254080247f0a2735fb3"
+      "sha256": "af904664b3e15c8c60089703b07ec3a8b36141aea2c5001e0ba9571145d10c2a"
     }
   ]
 }

@@ -68,7 +68,7 @@
     {
       "id": "sam3-graspgenx",
       "objective": "以头部SAM3、RaySt3R目标点云、GraspGenX和cuRobo完成ARX抓取，分版本记录感知、近桌接触与左右臂选择。",
-      "current": "V7",
+      "current": "V8",
       "iterations": [
         {
           "code": "V1",
@@ -469,10 +469,110 @@
                   "url": "/media/sam3-v6-zerograsp-20261125-01-latency.json"
                 }
               ]
+            },
+            {
+              "id": "v6_io74_parallel_20261125_01",
+              "title": "共享内存与候选读取优化后的74例延时复测",
+              "date": "2026-11-25",
+              "status": "故障停止，保留记录",
+              "summary": "共享内存延时复测：RaySt3R＋GraspGenX 0/74；ZeroGrasp 32/74，含失败分布。",
+              "outputs": [
+                "tmp/sam3_zerograsp_comparison/v6_io74_parallel_20261125_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "本轮对照结果",
+                  "url": "/media/sam3-v6-v6-io74-parallel-20261125-01-summary.json"
+                },
+                {
+                  "label": "上一轮完整页面",
+                  "url": "/media/sam3-v6-v6-io74-parallel-20261125-01-previous-page.md"
+                }
+              ]
+            },
+            {
+              "id": "v6_io74_continue_20261125_01",
+              "title": "共享内存与候选读取优化后的74例延时复测",
+              "date": "2026-11-25",
+              "status": "故障停止，保留记录",
+              "summary": "共享内存延时复测：RaySt3R＋GraspGenX 5/74；ZeroGrasp 44/74，含失败分布。",
+              "outputs": [
+                "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "本轮对照结果",
+                  "url": "/media/sam3-v6-v6-io74-continue-20261125-01-summary.json"
+                },
+                {
+                  "label": "上一轮完整页面",
+                  "url": "/media/sam3-v6-v6-io74-continue-20261125-01-previous-page.md"
+                }
+              ]
+            },
+            {
+              "id": "v6_io74_continue_20261125_02",
+              "title": "共享内存与候选读取优化后的74例延时复测",
+              "date": "2026-11-25",
+              "status": "故障停止，保留记录",
+              "summary": "共享内存延时复测：RaySt3R＋GraspGenX 30/74；ZeroGrasp 72/74，含失败分布。",
+              "outputs": [
+                "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_02"
+              ],
+              "artifacts": [
+                {
+                  "label": "本轮对照结果",
+                  "url": "/media/sam3-v6-v6-io74-continue-20261125-02-summary.json"
+                },
+                {
+                  "label": "上一轮完整页面",
+                  "url": "/media/sam3-v6-v6-io74-continue-20261125-02-previous-page.md"
+                }
+              ]
+            },
+            {
+              "id": "v6_io74_continue_20261125_03",
+              "title": "共享内存与候选读取优化后的74例延时复测",
+              "date": "2026-11-25",
+              "status": "已完成",
+              "summary": "共享内存延时复测：RaySt3R＋GraspGenX 74/74；ZeroGrasp 72/74，含失败分布。",
+              "outputs": [
+                "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03"
+              ],
+              "artifacts": [
+                {
+                  "label": "本轮对照结果",
+                  "url": "/media/sam3-v6-v6-io74-continue-20261125-03-summary.json"
+                },
+                {
+                  "label": "上一轮完整页面",
+                  "url": "/media/sam3-v6-v6-io74-continue-20261125-03-previous-page.md"
+                }
+              ]
+            },
+            {
+              "id": "v6_complete74_20261126_01",
+              "title": "共享内存与候选读取优化后的74例延时复测",
+              "date": "2026-11-25",
+              "status": "已完成",
+              "summary": "共享内存延时复测：RaySt3R＋GraspGenX 74/74；ZeroGrasp 74/74，含失败分布。",
+              "outputs": [
+                "tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "本轮对照结果",
+                  "url": "/media/sam3-v6-v6-complete74-20261126-01-summary.json"
+                },
+                {
+                  "label": "上一轮完整页面",
+                  "url": "/media/sam3-v6-v6-complete74-20261126-01-previous-page.md"
+                }
+              ]
             }
           ],
           "status": "已完成",
-          "resultSummary": "已完成 74/74 个配对场景。"
+          "resultSummary": "共享内存延时复测：RaySt3R＋GraspGenX 74/74；ZeroGrasp 74/74，含失败分布。"
         },
         {
           "code": "V7",
@@ -508,6 +608,47 @@
           "authorization": {
             "kind": "explicit-user-request",
             "request": "在GraspGenX后接类似ZeroGrasp的碰撞筛选、宽度深度修正和NMS，减少交给规划器的候选，预先建立独立实验版本。"
+          },
+          "batches": []
+        },
+        {
+          "code": "V8",
+          "parent": "V4",
+          "sourceId": "sam3-graspgenx",
+          "title": "可达性索引与批量IK加速",
+          "date": "2026-11-26",
+          "status": "方案已登记，适配待实施",
+          "resultSummary": "问题定位与方案登记完成；本版规划回放0次、物理抓取0次。",
+          "change": "把可达性地图用成关节解查询库，批量查询、复用核验后的关节解并分批检查，保持原抓姿和评分顺序。",
+          "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 可达性索引与关节解复用 → 分批IK和终点碰撞检查 → 双臂cuRobo路径规划 → 抓取",
+          "scenes": "先使用同一套69份有效候选做规划回放，74例总体范围保留5例共同站位失败。",
+          "settings": [
+            [
+              "实验分组",
+              "原实现、索引复用、索引复用＋分批终点检查。"
+            ],
+            [
+              "抓取位姿",
+              "原位姿、分数、顺序和来源编号保持，邻近关节解用于原目标IK初值。"
+            ],
+            [
+              "地图与缓存",
+              "绑定机器人、限位和TCP版本，地图未覆盖时继续原IK；首轮回放使用冻结只读地图和缓存。"
+            ],
+            [
+              "当前配置",
+              "同一观测与最终站位、共享内存交接、每臂871球、TCP43和V2指尖2毫米余量。"
+            ],
+            [
+              "评价内容",
+              "索引命中与耗时、IK与路径调用数、规划总耗时中位数/P90、规划通过率和失败阶段。"
+            ]
+          ],
+          "contentFile": "sam3-graspgenx-v8.md",
+          "reportLayout": true,
+          "authorization": {
+            "kind": "explicit-user-request",
+            "request": "用户讨论用数据库原理优化可达性与候选搜索后，明确要求：作为实验版本。"
           },
           "batches": []
         }

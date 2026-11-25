@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-26T01:17:38.109564+08:00",
+  "run": "tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01",
+  "purpose": "Normalize generated Markdown endings before Git publication",
+  "source": "modules/pipeline/experiments/sam3_zerograsp_completion/finalize.py",
+  "before_sha256": "52c5d0c3e46eeca96165a9b4eb5f0e5bf67b6d3cd1a64c7feda0fbc9f4c2e45b",
+  "after_sha256": "ad9f245496d5c3c96ba7a5b5254fe187505e6d2a20eb403d1c81f407909410a0",
+  "archive": "finalization_revisions/markdown_eof_01",
+  "physical_execution_unchanged": true,
+  "completed_results_unchanged": true,
+  "prior_stop_preserved": true
+}

@@ -1,0 +1,227 @@
+{
+  "at": "2026-11-25T22:27:46.359815+08:00",
+  "phase": "stopped",
+  "registered_pairs": 74,
+  "completed_pairs": 5,
+  "methods": {
+    "graspgenx": {
+      "completed": 5,
+      "registered": 74,
+      "interrupted": 0,
+      "not_started": 69,
+      "planning_passes": 4,
+      "successes": 4,
+      "failures": {
+        "stationing": 1
+      },
+      "latency": {
+        "candidate_conversion_publish_seconds": {
+          "samples": 4,
+          "median_seconds": 1.0965238599997065,
+          "p90_seconds": 1.3997949303996393
+        },
+        "candidate_decode_seconds": {
+          "samples": 4,
+          "median_seconds": 0.3471239420000529,
+          "p90_seconds": 0.3770827251002629
+        },
+        "execution_with_replanning_seconds": {
+          "samples": 4,
+          "median_seconds": 29.361009882500184,
+          "p90_seconds": 31.318941661000462
+        },
+        "generation_and_initial_planning_seconds": {
+          "samples": 4,
+          "median_seconds": 10.237993709500188,
+          "p90_seconds": 43.95156364530031
+        },
+        "generation_delivery_seconds": {
+          "samples": 4,
+          "median_seconds": 3.4753543020001416,
+          "p90_seconds": 3.667793732899554
+        },
+        "generation_to_trial_return_seconds": {
+          "samples": 4,
+          "median_seconds": 41.22357329400029,
+          "p90_seconds": 73.44371459940004
+        },
+        "graspgenx_rpc_seconds": {
+          "samples": 4,
+          "median_seconds": 0.6280811199999334,
+          "p90_seconds": 0.6815011446996323
+        },
+        "initial_planning_rpc_seconds": {
+          "samples": 4,
+          "median_seconds": 6.724920872999974,
+          "p90_seconds": 40.39554138230015
+        },
+        "input_restore_seconds": {
+          "samples": 4,
+          "median_seconds": 0.3003581490002034,
+          "p90_seconds": 0.32587018049998734
+        },
+        "rayst3r_rpc_seconds": {
+          "samples": 4,
+          "median_seconds": 1.4489700429999175,
+          "p90_seconds": 1.4750744511000449
+        },
+        "trial_wall_seconds": {
+          "samples": 4,
+          "median_seconds": 42.75650495300033,
+          "p90_seconds": 75.16729972929971
+        }
+      }
+    },
+    "zerograsp": {
+      "completed": 44,
+      "registered": 74,
+      "interrupted": 2,
+      "not_started": 28,
+      "planning_passes": 36,
+      "successes": 29,
+      "failures": {
+        "initial_planning": 3,
+        "stationing": 2,
+        "close": 2,
+        "empty_candidates": 3,
+        "approach": 2,
+        "hold_height": 3
+      },
+      "latency": {
+        "candidate_decode_seconds": {
+          "samples": 39,
+          "median_seconds": 0.0020066729994141497,
+          "p90_seconds": 0.004284367598302198
+        },
+        "execution_with_replanning_seconds": {
+          "samples": 36,
+          "median_seconds": 48.335243011000784,
+          "p90_seconds": 63.54108424950027
+        },
+        "generation_and_initial_planning_seconds": {
+          "samples": 42,
+          "median_seconds": 9.942681622000691,
+          "p90_seconds": 14.111621648101208
+        },
+        "generation_delivery_seconds": {
+          "samples": 42,
+          "median_seconds": 1.409895824499472,
+          "p90_seconds": 2.0096311590004916
+        },
+        "generation_to_trial_return_seconds": {
+          "samples": 42,
+          "median_seconds": 56.0490137220022,
+          "p90_seconds": 75.81422480539986
+        },
+        "initial_planning_rpc_seconds": {
+          "samples": 39,
+          "median_seconds": 8.629077268000401,
+          "p90_seconds": 12.377271312399536
+        },
+        "input_restore_seconds": {
+          "samples": 42,
+          "median_seconds": 0.36708508750052715,
+          "p90_seconds": 0.4788874570984261
+        },
+        "trial_wall_seconds": {
+          "samples": 42,
+          "median_seconds": 57.91338092750084,
+          "p90_seconds": 79.46670564569867
+        },
+        "zerograsp_generation_postprocessing_rpc_seconds": {
+          "samples": 42,
+          "median_seconds": 1.409887637997599,
+          "p90_seconds": 2.0096229844992193
+        }
+      }
+    }
+  },
+  "paired_results": [
+    {
+      "id": "M0001_S1_open_apple",
+      "graspgenx": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success"
+      },
+      "zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "no_arm_has_executable_candidate"
+      }
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "graspgenx": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success"
+      },
+      "zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success"
+      }
+    },
+    {
+      "id": "M0003_S1_open_baguette",
+      "graspgenx": {
+        "success": false,
+        "planning_success": false,
+        "reason": "unable_to_reach_high_workspace"
+      },
+      "zerograsp": {
+        "success": false,
+        "planning_success": false,
+        "reason": "unable_to_reach_high_workspace"
+      }
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "graspgenx": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success"
+      },
+      "zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success"
+      }
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "graspgenx": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success"
+      },
+      "zerograsp": {
+        "success": true,
+        "planning_success": true,
+        "reason": "success"
+      }
+    }
+  ],
+  "failure_labels": {
+    "stationing": "共同高可达站位未通过",
+    "pointcloud": "点云未生成",
+    "empty_candidates": "没有候选",
+    "initial_planning": "初始规划不出来",
+    "approach_replanning": "接近重规划不通过",
+    "lift_replanning": "闭合后抬升重规划不通过",
+    "opening": "开爪未到位",
+    "pregrasp": "预抓取运动未到位",
+    "approach": "接近运动未到位",
+    "close": "闭合未到位",
+    "lift": "抬升运动未到位",
+    "hold": "保持动作未到位",
+    "bilateral_contact": "未形成双指夹持",
+    "hold_height": "抬升或保持高度不足",
+    "forbidden_contact": "禁止接触",
+    "other": "其他抓取失败"
+  },
+  "sam3_excluded": 25,
+  "original_interrupted": 1,
+  "common_stationing_failures_registered": 5
+}

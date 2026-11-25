@@ -1,0 +1,42 @@
+{
+  "module_name": "rayst3r_fast_inference",
+  "module": {
+    "source": "modules/rayst3r",
+    "role": "reconstruction",
+    "environment": "environments/reconstruction",
+    "adapter": "modules/rayst3r/fast_inference/service.py",
+    "weights": [
+      "weights/rayst3r/rayst3r.pth",
+      "weights/dinov2/dinov2_vitl14_reg4_pretrain.pth"
+    ],
+    "inputs": [
+      "camera/color.png",
+      "camera/mask.png",
+      "camera/depth_m.npy",
+      "state.json"
+    ],
+    "outputs": [
+      "completed_points_camera.npy",
+      "completed_points_world.npy",
+      "rayst3r.json"
+    ],
+    "reconstruction": "modules/rayst3r/fast_inference/service.py",
+    "source_directories": [
+      "modules/rayst3r/fast_inference",
+      "modules/rayst3r/memory_efficient"
+    ],
+    "startup_free_mib": 23000,
+    "compute_validation_report": "configs/experiments/history/rayst3r_memory_validation_20261125.json",
+    "compute_activation_receipt": "configs/experiments/history/rayst3r_memory_activation_20261125.json",
+    "source_files": [
+      "configs/experiments/history/rayst3r_memory_validation_20261125.json",
+      "configs/experiments/history/rayst3r_memory_activation_20261125.json",
+      "configs/experiments/history/rayst3r_workspace_validation_20261125.json",
+      "configs/experiments/history/rayst3r_loader_alignment_20261125.json"
+    ],
+    "workspace_reservation_mib": 14336,
+    "workspace_validation_report": "configs/experiments/history/rayst3r_workspace_validation_20261125.json",
+    "validation_profile": "configs/experiments/rayst3r_fast_inference_profile.json"
+  },
+  "active_registry_changed": false
+}

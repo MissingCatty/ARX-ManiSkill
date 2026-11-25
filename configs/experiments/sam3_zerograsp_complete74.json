@@ -1,0 +1,21 @@
+{
+  "version": "V6",
+  "predecessor": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03",
+  "predecessor_units": [
+    "arx-v6-io74-continue-20261125-03.service",
+    "arx-v6-io74-continue-20261125-03-watch.service"
+  ],
+  "completion_root": "tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01",
+  "queue_root": "tmp/sam3_zerograsp_completion/complete74_20261126_01",
+  "authorized_makeup_cases": ["M0042_S3_sparse_avocado", "M0060_S3_sparse_donut"],
+  "user_authorization": "等GraspGenX跑完，再补跑ZeroGrasp两个历史中断场景；两条链路各完成74例后更新公网，并推送Git。",
+  "attempts_per_makeup_case_in_new_registration": 1,
+  "ordinary_grasp_failure_counts_as_completed": true,
+  "preserve_historical_interruptions_and_STOP": true,
+  "model_robot_scene_physics_candidate_order_and_success_criteria": "unchanged",
+  "resource_floors": "inherit_predecessor_without_relaxation",
+  "public_control_socket_relative_to_home": ".ssh/arx_public_repeat_continue",
+  "git_remote": "origin",
+  "git_branch": "main",
+  "git_commit_message": "Complete V6 paired trials and record reconstruction acceleration and V8 plan"
+}

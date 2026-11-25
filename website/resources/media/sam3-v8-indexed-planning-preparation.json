@@ -1,0 +1,723 @@
+{
+  "version": "V8",
+  "parent": "V4",
+  "method": "indexed_grasp_planning",
+  "at": "2026-11-26T00:17:09.193196+08:00",
+  "state": "plan_registered_adapter_pending",
+  "source_snapshot": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/analysis/completed_latency_comparison.json",
+  "source_snapshot_sha256": "aeea77331256320963af40c78b7315e5583a5d326780755004806afe161513d2",
+  "snapshot_at": "2026-11-25T23:54:25.230907+08:00",
+  "paired_model_cases": 31,
+  "single_arm_records_with_candidate_events": 61,
+  "endpoint_checks": 5444,
+  "endpoint_counts": {
+    "zero_kinematic_solutions": 4635,
+    "grasp_endpoint_passed": 59,
+    "kinematic_solutions_but_rejected": 750
+  },
+  "records": [
+    {
+      "id": "M0001_S1_open_apple",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0001_S1_open_apple/arms/right/plan_result.json",
+      "sha256": "ba3379951c3870722376ec0c87f825b8d2a5b004bfc735235995ed1db11848f2",
+      "candidate_endpoint_checks": 2,
+      "counts": {
+        "zero_kinematic_solutions": 1,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0001_S1_open_apple",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0001_S1_open_apple/arms/left/plan_result.json",
+      "sha256": "ab93d449f8095eedd0f79cf2d1b64addb51d8f3c5863776547236f822433814d",
+      "candidate_endpoint_checks": 2,
+      "counts": {
+        "zero_kinematic_solutions": 1,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0002_S1_open_avocado/arms/right/plan_result.json",
+      "sha256": "b3d9e85b6f52d43ed615294df4157b6dd847212f4fdbb10c7213c8c1ec999d20",
+      "candidate_endpoint_checks": 4,
+      "counts": {
+        "zero_kinematic_solutions": 3,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0002_S1_open_avocado/arms/left/plan_result.json",
+      "sha256": "3a4719512f1e6bcf112778b9c56f177c3707be856dd69ec0be5a217466965039",
+      "candidate_endpoint_checks": 4,
+      "counts": {
+        "zero_kinematic_solutions": 3,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0004_S1_open_banana/arms/right/plan_result.json",
+      "sha256": "8e8bea84dda15f96af0476c8e355477547cd0a0371871741efa1cb15ac6c5495",
+      "candidate_endpoint_checks": 1,
+      "counts": {
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0004_S1_open_banana/arms/left/plan_result.json",
+      "sha256": "2445a05563f2090ec08f888e5dc2c5162726bc03df0ac2b4a426c9a2bcfc2e15",
+      "candidate_endpoint_checks": 1,
+      "counts": {
+        "zero_kinematic_solutions": 1
+      }
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0005_S1_open_bar_soap/arms/right/plan_result.json",
+      "sha256": "082890aed13654393909b6bc80910ce45db50f5932221e402721701bf2274fa5",
+      "candidate_endpoint_checks": 312,
+      "counts": {
+        "kinematic_solutions_but_rejected": 105,
+        "zero_kinematic_solutions": 206,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0005_S1_open_bar_soap/arms/left/plan_result.json",
+      "sha256": "037376d71582a84cd26acbb205909cb846bfef9573bcaec25e944ffc0fb7ace5",
+      "candidate_endpoint_checks": 239,
+      "counts": {
+        "zero_kinematic_solutions": 228,
+        "kinematic_solutions_but_rejected": 10,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0006_S1_open_bell_pepper",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0006_S1_open_bell_pepper/arms/right/plan_result.json",
+      "sha256": "b8e3ad77f26fd09dbc067f25665821288cc1104b44c66a12cd08973b3258a12b",
+      "candidate_endpoint_checks": 6,
+      "counts": {
+        "zero_kinematic_solutions": 4,
+        "kinematic_solutions_but_rejected": 1,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0006_S1_open_bell_pepper",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0006_S1_open_bell_pepper/arms/left/plan_result.json",
+      "sha256": "5f0b2e8d442445c69a9df1012d418f865bddfecd2a1607b1127be10af2b4d049",
+      "candidate_endpoint_checks": 2,
+      "counts": {
+        "zero_kinematic_solutions": 1,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0008_S1_open_bottled_water",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0008_S1_open_bottled_water/arms/right/plan_result.json",
+      "sha256": "6845ecc49c362d7253b05e2c0066d19b937de619aafad4c93e4b5238fec270ba",
+      "candidate_endpoint_checks": 29,
+      "counts": {
+        "zero_kinematic_solutions": 24,
+        "kinematic_solutions_but_rejected": 4,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0008_S1_open_bottled_water",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0008_S1_open_bottled_water/arms/left/plan_result.json",
+      "sha256": "b996a4057ac43246cdcdfb1a33eaebe6dcab2b39fa5ec38b4e00934970ee301b",
+      "candidate_endpoint_checks": 15,
+      "counts": {
+        "zero_kinematic_solutions": 14,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0009_S1_open_bowl",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0009_S1_open_bowl/arms/right/plan_result.json",
+      "sha256": "947aa600412b7f825643cd80c209b9d25fced4f15205ebc54ffb74042fd3ae54",
+      "candidate_endpoint_checks": 12,
+      "counts": {
+        "zero_kinematic_solutions": 8,
+        "grasp_endpoint_passed": 2,
+        "kinematic_solutions_but_rejected": 2
+      }
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0010_S1_open_boxed_food/arms/right/plan_result.json",
+      "sha256": "691da1822fd925ec1a5d717f9ec54180395c40435310df5db84fd37ce2ba2a98",
+      "candidate_endpoint_checks": 57,
+      "counts": {
+        "zero_kinematic_solutions": 55,
+        "grasp_endpoint_passed": 2
+      }
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0010_S1_open_boxed_food/arms/left/plan_result.json",
+      "sha256": "5c75672a9e58ba2a139ec876afb5c3767e4f4843d65d65ee5ff84e5a1ff99c7a",
+      "candidate_endpoint_checks": 57,
+      "counts": {
+        "zero_kinematic_solutions": 57
+      }
+    },
+    {
+      "id": "M0011_S1_open_bread",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0011_S1_open_bread/arms/right/plan_result.json",
+      "sha256": "db8fd709f68c7ede3b2ee74e3d8f27f47d4f5c14fcf6718362f5863d5fd3a556",
+      "candidate_endpoint_checks": 191,
+      "counts": {
+        "zero_kinematic_solutions": 186,
+        "kinematic_solutions_but_rejected": 4,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0011_S1_open_bread",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0011_S1_open_bread/arms/left/plan_result.json",
+      "sha256": "0809462bbbadd238e66e6fbd471f27e69371ac2e4b4d8aa7f94d44cac95daff7",
+      "candidate_endpoint_checks": 191,
+      "counts": {
+        "zero_kinematic_solutions": 165,
+        "kinematic_solutions_but_rejected": 26
+      }
+    },
+    {
+      "id": "M0012_S1_open_broccoli",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0012_S1_open_broccoli/arms/right/plan_result.json",
+      "sha256": "ef620fdc5d2efe8e2f688bd9ec1b534120bb4ae9100a5b8112ff2107916e7e64",
+      "candidate_endpoint_checks": 76,
+      "counts": {
+        "zero_kinematic_solutions": 67,
+        "grasp_endpoint_passed": 3,
+        "kinematic_solutions_but_rejected": 6
+      }
+    },
+    {
+      "id": "M0012_S1_open_broccoli",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0012_S1_open_broccoli/arms/left/plan_result.json",
+      "sha256": "f144052068254b1610c863552f550e6051b94a6123cc3bacf50b4f4eaa8124ca",
+      "candidate_endpoint_checks": 76,
+      "counts": {
+        "zero_kinematic_solutions": 71,
+        "kinematic_solutions_but_rejected": 5
+      }
+    },
+    {
+      "id": "M0015_S1_open_carrot",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0015_S1_open_carrot/arms/right/plan_result.json",
+      "sha256": "7bc16c9805598d7234bfd0ba9d2897fcfc1602976a7c3a77e2ff1ee554d2d7d9",
+      "candidate_endpoint_checks": 8,
+      "counts": {
+        "zero_kinematic_solutions": 5,
+        "kinematic_solutions_but_rejected": 2,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0015_S1_open_carrot",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0015_S1_open_carrot/arms/left/plan_result.json",
+      "sha256": "3164e57dfae7a9d2a6952f8c91996f82a16b9e703fb2bf97611254a5b3aafe68",
+      "candidate_endpoint_checks": 8,
+      "counts": {
+        "zero_kinematic_solutions": 8
+      }
+    },
+    {
+      "id": "M0016_S1_open_cell_phone",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0016_S1_open_cell_phone/arms/right/plan_result.json",
+      "sha256": "fa8c3bc75d21c42ad4d6294fd1337beba3367a2eff0b695f7c85bf8e6c8bfb5a",
+      "candidate_endpoint_checks": 925,
+      "counts": {
+        "zero_kinematic_solutions": 835,
+        "kinematic_solutions_but_rejected": 89,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0016_S1_open_cell_phone",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0016_S1_open_cell_phone/arms/left/plan_result.json",
+      "sha256": "feaa32862578c83ab24606b49dad4585d28c2db03d92add560d57dc01a9e6da8",
+      "candidate_endpoint_checks": 306,
+      "counts": {
+        "zero_kinematic_solutions": 267,
+        "kinematic_solutions_but_rejected": 38,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0018_S1_open_croissant",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0018_S1_open_croissant/arms/right/plan_result.json",
+      "sha256": "f046a388da0071c87e0138b9de54ce952fde33b8d5a7cdd9f58b989a9f956570",
+      "candidate_endpoint_checks": 123,
+      "counts": {
+        "zero_kinematic_solutions": 107,
+        "kinematic_solutions_but_rejected": 15,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0018_S1_open_croissant",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0018_S1_open_croissant/arms/left/plan_result.json",
+      "sha256": "f9d6b882a924777511cc0a07d646a69433baef13afe68053e945b6108078b3bd",
+      "candidate_endpoint_checks": 100,
+      "counts": {
+        "zero_kinematic_solutions": 94,
+        "kinematic_solutions_but_rejected": 5,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0019_S1_open_cucumber",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0019_S1_open_cucumber/arms/right/plan_result.json",
+      "sha256": "6414eb8cd4f3a33cfa7b8a2f749d898ca2f0c3f6f084693c1da1c1a1e0693ee0",
+      "candidate_endpoint_checks": 1,
+      "counts": {
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0019_S1_open_cucumber",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0019_S1_open_cucumber/arms/left/plan_result.json",
+      "sha256": "b261d8a9e7a2d4227e5873aefe4b5c7825dacf1266b46620a205952fb879c5b1",
+      "candidate_endpoint_checks": 1,
+      "counts": {
+        "zero_kinematic_solutions": 1
+      }
+    },
+    {
+      "id": "M0020_S1_open_donut",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0020_S1_open_donut/arms/right/plan_result.json",
+      "sha256": "a707990b6a790b868a6fdf75d11fab5d580b969b9c593ce6d38f62c7da5c59ac",
+      "candidate_endpoint_checks": 376,
+      "counts": {
+        "kinematic_solutions_but_rejected": 53,
+        "zero_kinematic_solutions": 322,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0020_S1_open_donut",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0020_S1_open_donut/arms/left/plan_result.json",
+      "sha256": "1d4b0f9be0b1ff0cdb5daee013411a0b758b80833a0ff4d8548af8e88086ece5",
+      "candidate_endpoint_checks": 376,
+      "counts": {
+        "zero_kinematic_solutions": 305,
+        "kinematic_solutions_but_rejected": 71
+      }
+    },
+    {
+      "id": "M0022_S2_edge_keychain",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0022_S2_edge_keychain/arms/right/plan_result.json",
+      "sha256": "92e07a505e4aa0977082e862ad0ed9f0c9eec075893552b2dbbdf18a18935c88",
+      "candidate_endpoint_checks": 83,
+      "counts": {
+        "zero_kinematic_solutions": 77,
+        "kinematic_solutions_but_rejected": 5,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0022_S2_edge_keychain",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0022_S2_edge_keychain/arms/left/plan_result.json",
+      "sha256": "d35cd7423d4f55ff6bcb1d80dec947e040af4208faba12fa3a909458282f4ba0",
+      "candidate_endpoint_checks": 83,
+      "counts": {
+        "zero_kinematic_solutions": 76,
+        "kinematic_solutions_but_rejected": 6,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0023_S2_edge_lemon",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0023_S2_edge_lemon/arms/right/plan_result.json",
+      "sha256": "167303a2ca785200d5976af711157fea8de631d677149602b8d587461ece2941",
+      "candidate_endpoint_checks": 8,
+      "counts": {
+        "zero_kinematic_solutions": 7,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0023_S2_edge_lemon",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0023_S2_edge_lemon/arms/left/plan_result.json",
+      "sha256": "06f230d3d0b31ed1c8ebf3a6dd69d2b66ee7dc4e65395c55ed724a104de88fb1",
+      "candidate_endpoint_checks": 8,
+      "counts": {
+        "zero_kinematic_solutions": 8
+      }
+    },
+    {
+      "id": "M0024_S2_edge_mango",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0024_S2_edge_mango/arms/right/plan_result.json",
+      "sha256": "127f66b1b554cdd737fbafa84c776e37174d19acb8baa3f6ba466b59ec8b3d70",
+      "candidate_endpoint_checks": 12,
+      "counts": {
+        "zero_kinematic_solutions": 5,
+        "kinematic_solutions_but_rejected": 6,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0024_S2_edge_mango",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0024_S2_edge_mango/arms/left/plan_result.json",
+      "sha256": "d2f417d19b6f4031d9e3c17e176dc19896d69ac92715a08aaf1b56c2dbb56f91",
+      "candidate_endpoint_checks": 12,
+      "counts": {
+        "zero_kinematic_solutions": 12
+      }
+    },
+    {
+      "id": "M0026_S2_edge_mug",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0026_S2_edge_mug/arms/right/plan_result.json",
+      "sha256": "8e929d80f6a8954460c564e5c070e7181d9b0ca322aa9fdcde09549b807231f6",
+      "candidate_endpoint_checks": 2,
+      "counts": {
+        "kinematic_solutions_but_rejected": 1,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0026_S2_edge_mug",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0026_S2_edge_mug/arms/left/plan_result.json",
+      "sha256": "74055f261a2741ab5264cec18d86234d81e2f126621a961bf8ea04b76ca094ba",
+      "candidate_endpoint_checks": 2,
+      "counts": {
+        "kinematic_solutions_but_rejected": 1,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0027_S2_edge_mushroom",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0027_S2_edge_mushroom/arms/right/plan_result.json",
+      "sha256": "ed4d654069c08e67304543f80ec65a830dd229809b1299010cc58ca982291d43",
+      "candidate_endpoint_checks": 14,
+      "counts": {
+        "zero_kinematic_solutions": 8,
+        "kinematic_solutions_but_rejected": 3,
+        "grasp_endpoint_passed": 3
+      }
+    },
+    {
+      "id": "M0027_S2_edge_mushroom",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0027_S2_edge_mushroom/arms/left/plan_result.json",
+      "sha256": "02df3a6511cf4fd41e27e8fae9ec18204ad302c33d1ad21034e8b740bded6a8d",
+      "candidate_endpoint_checks": 14,
+      "counts": {
+        "zero_kinematic_solutions": 8,
+        "kinematic_solutions_but_rejected": 5,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0029_S2_edge_orange",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0029_S2_edge_orange/arms/right/plan_result.json",
+      "sha256": "ecd81b874967296de9e768fb0568c234c100d7fdb0f8f701f1efffcbeaf6fcfc",
+      "candidate_endpoint_checks": 271,
+      "counts": {
+        "zero_kinematic_solutions": 196,
+        "kinematic_solutions_but_rejected": 74,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0029_S2_edge_orange",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0029_S2_edge_orange/arms/left/plan_result.json",
+      "sha256": "7ec05fe8bc7f64193adbbd0d8f8566008eca4b2e03ba470acf75d47e4cdd27d7",
+      "candidate_endpoint_checks": 234,
+      "counts": {
+        "zero_kinematic_solutions": 208,
+        "kinematic_solutions_but_rejected": 25,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0030_S2_edge_peach",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0030_S2_edge_peach/arms/right/plan_result.json",
+      "sha256": "4b8d9b8b33e57ba127ebc776694139a4b9177ad104dc5535301c05d96d5c2e31",
+      "candidate_endpoint_checks": 13,
+      "counts": {
+        "zero_kinematic_solutions": 10,
+        "kinematic_solutions_but_rejected": 2,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0030_S2_edge_peach",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0030_S2_edge_peach/arms/left/plan_result.json",
+      "sha256": "298d35c4a82ea3914aca8bc83bb514af98b6c39123ea9acd89fb963e7312816b",
+      "candidate_endpoint_checks": 5,
+      "counts": {
+        "zero_kinematic_solutions": 4,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0031_S2_edge_pear",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0031_S2_edge_pear/arms/right/plan_result.json",
+      "sha256": "bde876f5284c68e66a3a14ce480e107e4c3288588fc116933745ec9ab5768a86",
+      "candidate_endpoint_checks": 63,
+      "counts": {
+        "zero_kinematic_solutions": 56,
+        "kinematic_solutions_but_rejected": 6,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0031_S2_edge_pear",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0031_S2_edge_pear/arms/left/plan_result.json",
+      "sha256": "08bc229a2ebf3bfb2cc0dc98ebf8f0dad20e549698cc17aae6df70503b718fc3",
+      "candidate_endpoint_checks": 23,
+      "counts": {
+        "kinematic_solutions_but_rejected": 7,
+        "zero_kinematic_solutions": 15,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0032_S2_edge_potato",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0032_S2_edge_potato/arms/right/plan_result.json",
+      "sha256": "c3888d89729ea86a6a5546a20a4e434846632db69da984eca1c326b063933985",
+      "candidate_endpoint_checks": 19,
+      "counts": {
+        "zero_kinematic_solutions": 16,
+        "kinematic_solutions_but_rejected": 2,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0032_S2_edge_potato",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0032_S2_edge_potato/arms/left/plan_result.json",
+      "sha256": "aed3e6dd492e838905d2420bb9841d87fb736c712f4e30f14fbf60dae1722323",
+      "candidate_endpoint_checks": 4,
+      "counts": {
+        "zero_kinematic_solutions": 3,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0033_S2_edge_remote_control",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0033_S2_edge_remote_control/arms/right/plan_result.json",
+      "sha256": "0322aecbe2cbcc4bdc7d6822bcde15413482eb05b33a810f9cef62c4b7b2b640",
+      "candidate_endpoint_checks": 44,
+      "counts": {
+        "zero_kinematic_solutions": 42,
+        "kinematic_solutions_but_rejected": 1,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0033_S2_edge_remote_control",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0033_S2_edge_remote_control/arms/left/plan_result.json",
+      "sha256": "785cf1e35c23605d55661eaeffa27cdb728142e3f73ae0b38a5b60d0455a3b89",
+      "candidate_endpoint_checks": 44,
+      "counts": {
+        "zero_kinematic_solutions": 37,
+        "kinematic_solutions_but_rejected": 6,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0034_S2_edge_scissors",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0034_S2_edge_scissors/arms/right/plan_result.json",
+      "sha256": "212386aa9b053d231e456992742af720b4697bfe99c0eb153d8522b7c73018af",
+      "candidate_endpoint_checks": 250,
+      "counts": {
+        "kinematic_solutions_but_rejected": 70,
+        "zero_kinematic_solutions": 178,
+        "grasp_endpoint_passed": 2
+      }
+    },
+    {
+      "id": "M0034_S2_edge_scissors",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0034_S2_edge_scissors/arms/left/plan_result.json",
+      "sha256": "e06fb2d12fc34dfd28820df743a28b3ffe2c3e3753731b55756b4dc71bc40a10",
+      "candidate_endpoint_checks": 129,
+      "counts": {
+        "zero_kinematic_solutions": 92,
+        "kinematic_solutions_but_rejected": 36,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0036_S2_edge_spatula",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0036_S2_edge_spatula/arms/right/plan_result.json",
+      "sha256": "4b5af7207890b6be71543b35b18490013105067490bb5a5fae762cef90ce4c6f",
+      "candidate_endpoint_checks": 31,
+      "counts": {
+        "zero_kinematic_solutions": 15,
+        "kinematic_solutions_but_rejected": 15,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0036_S2_edge_spatula",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0036_S2_edge_spatula/arms/left/plan_result.json",
+      "sha256": "34a8a98efbf47f719ee239a4437df4e05dc3babf2e9bb8371e6ae94d6cdf4959",
+      "candidate_endpoint_checks": 31,
+      "counts": {
+        "zero_kinematic_solutions": 30,
+        "kinematic_solutions_but_rejected": 1
+      }
+    },
+    {
+      "id": "M0038_S2_edge_teapot",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0038_S2_edge_teapot/arms/right/plan_result.json",
+      "sha256": "ea48606d3fa1871492129ad2af0753b8046d9cf6f3102319e55b0732a3de5a92",
+      "candidate_endpoint_checks": 45,
+      "counts": {
+        "zero_kinematic_solutions": 44,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0038_S2_edge_teapot",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0038_S2_edge_teapot/arms/left/plan_result.json",
+      "sha256": "f15c477be17ea7453297d6eb15422c76b2954a19dcf4162886d37a47231fe9cf",
+      "candidate_endpoint_checks": 1,
+      "counts": {
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0039_S2_edge_tomato",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0039_S2_edge_tomato/arms/right/plan_result.json",
+      "sha256": "9fa242966decbb012f703646f5bdcfa298758b129ee7fac6ed060c731f9aa6bf",
+      "candidate_endpoint_checks": 61,
+      "counts": {
+        "zero_kinematic_solutions": 40,
+        "kinematic_solutions_but_rejected": 19,
+        "grasp_endpoint_passed": 2
+      }
+    },
+    {
+      "id": "M0039_S2_edge_tomato",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0039_S2_edge_tomato/arms/left/plan_result.json",
+      "sha256": "7df665fe8ad84c134531d80738a75810cbaa2fa875e9e149f6dbe88f5102e686",
+      "candidate_endpoint_checks": 18,
+      "counts": {
+        "zero_kinematic_solutions": 17,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0041_S3_sparse_apple",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0041_S3_sparse_apple/arms/right/plan_result.json",
+      "sha256": "508bde4e27041e67418eda739fbf7f8ea57be114567e5c896564b2671edaa1e5",
+      "candidate_endpoint_checks": 8,
+      "counts": {
+        "zero_kinematic_solutions": 6,
+        "kinematic_solutions_but_rejected": 1,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0041_S3_sparse_apple",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0041_S3_sparse_apple/arms/left/plan_result.json",
+      "sha256": "d5d683629f69a8fff336a32fa3b17f019b1c99f1114c62f2dd5eaa0a8731eccd",
+      "candidate_endpoint_checks": 1,
+      "counts": {
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0043_S3_sparse_baguette",
+      "arm": "right",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0043_S3_sparse_baguette/arms/right/plan_result.json",
+      "sha256": "8ef0b1dc37ddd652fc52d447460f8ab16cabc0b086eb61961db4b57d96ef847b",
+      "candidate_endpoint_checks": 384,
+      "counts": {
+        "zero_kinematic_solutions": 361,
+        "kinematic_solutions_but_rejected": 22,
+        "grasp_endpoint_passed": 1
+      }
+    },
+    {
+      "id": "M0043_S3_sparse_baguette",
+      "arm": "left",
+      "source": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/methods/graspgenx/trials/M0043_S3_sparse_baguette/arms/left/plan_result.json",
+      "sha256": "352a9645011573d6f9bd63f3698e2e2b81fc1d2af1a06ae4fcf320a12980d6fc",
+      "candidate_endpoint_checks": 26,
+      "counts": {
+        "zero_kinematic_solutions": 25,
+        "grasp_endpoint_passed": 1
+      }
+    }
+  ],
+  "configuration_sha256": "bd56e775ea02b13758458c46e5c5e88db8aed784f9848b375be74a8e547782ee",
+  "plan_sha256": "196da7e0e0c5ef9416875c150ab42138f6140353ca106b37aa27d725e610fd4d",
+  "available_interfaces": [
+    "modules/reachability/orientation_index.py",
+    "modules/reachability/工具/能力索引.py",
+    "modules/curobo/dual_arm/witness_pool.py"
+  ],
+  "new_native_planning_calls": 0,
+  "new_physical_grasps": 0,
+  "formal_batches": 0
+}

@@ -1,0 +1,99 @@
+{
+  "version": "V8",
+  "parent": "V4",
+  "state": "planned",
+  "implementation_status": "source_review_complete_adapter_pending",
+  "method": "indexed_grasp_planning",
+  "user_request": "将借鉴数据库索引、关节解缓存和批量处理的可达性地图规划加速方案作为独立实验版本。",
+  "objective": "保持原抓取位姿和评分顺序，通过索引查询与关节解复用减少重复IK搜索，缩短候选检查与规划总耗时。",
+  "baseline_run": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03",
+  "baseline_method": "graspgenx",
+  "diagnostic_snapshot": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_03/analysis/completed_latency_comparison.json",
+  "candidate_io_activation": "tmp/candidate_io/activation_20261125_01",
+  "cohort": {
+    "source": "V6_original_frozen_74_pairs",
+    "paired_scenes": 74,
+    "candidate_observations": 69,
+    "common_stationing_failures": 5,
+    "SAM_failures_excluded": 25,
+    "original_interrupted_separate": 1,
+    "selection_by_grasp_or_planning_outcome": false,
+    "replay_inputs_status": "freeze_complete_candidate_snapshot_before_replay"
+  },
+  "invariants": {
+    "candidate_world_poses": "unchanged",
+    "candidate_scores_order_and_source_indices": "unchanged",
+    "candidate_postprocessing": "original_GraspGenX_no_V7_postprocessing",
+    "rayst3r_backend": "same_frozen_backend_in_all_variants",
+    "candidate_transport": "same_shared_memory_single_decode_background_snapshot",
+    "robot_and_scene_state": "same_saved_post_stationing_state",
+    "collision_spheres_per_arm": 871,
+    "tcp_eef_z_m": 0.043,
+    "table_contact_policy": "configs/policies/fingertip_table.json",
+    "kinematic_position_tolerance_m": 0.002,
+    "kinematic_orientation_tolerance_rad": 0.03,
+    "physical_configuration_and_success_criteria": "inherit_frozen_baseline"
+  },
+  "index": {
+    "storage": "resident_arrays_and_spatial_orientation_index_with_persistent_snapshot",
+    "frame": "body4",
+    "pose_frame": "action_tcp43",
+    "lookup_fields": ["arm", "position_xyz", "orientation_quaternion"],
+    "version_binding": ["robot_model_hash", "joint_limits_hash", "TCP_transform", "arm_mount_transform", "map_hash"],
+    "returned_fields": ["joint_configurations", "FK_pose", "joint_limit_margin", "source_map_rows"],
+    "multiple_joint_branches": true,
+    "map_miss": "unknown_then_original_IK_fallback",
+    "nearby_sample": "IK_seed_refined_to_original_target",
+    "direct_reuse": "independent_FK_and_joint_limits_then_current_scene_collision_gate",
+    "runtime_cache": "separate_kinematic_solution_cache_from_scene_dependent_collision_results",
+    "timed_replay_map_cache": "frozen_read_only_snapshot_shared_by_all_replay_variants",
+    "incremental_solution_cache": "separate_later_variant"
+  },
+  "variants": [
+    {
+      "id": "control",
+      "description": "原候选顺序、原逐候选IK与碰撞及轨迹检查。",
+      "state": "planned"
+    },
+    {
+      "id": "indexed_reuse",
+      "description": "批量查询地图，复用经独立核验的关节解；邻近解作为IK初值，未覆盖或失败时保留原求解路径。",
+      "state": "planned"
+    },
+    {
+      "id": "indexed_batched",
+      "description": "在索引复用基础上，按原排名分批求解和检查终点碰撞；路径规划仍按原排名查找首个可执行方案。",
+      "candidate_batch_sizes_to_compare": [16, 32],
+      "state": "planned"
+    }
+  ],
+  "metrics": [
+    "index_lookup_seconds_and_hit_rate",
+    "independently_verified_direct_reuse_count",
+    "IK_call_count_seed_count_and_seconds",
+    "endpoint_collision_check_count_and_seconds",
+    "trajectory_planning_call_count_and_seconds",
+    "query_plus_IK_plus_collision_plus_path_seconds_median_p90_and_case_count",
+    "selected_source_candidate_and_arm_changes",
+    "original_successful_candidate_retention",
+    "planning_success_rate",
+    "failure_stage_distribution"
+  ],
+  "execution": {
+    "current_phase": "registration_only",
+    "next_stage": "implement_independent_adapter_then_saved_candidate_replay",
+    "native_planning_budget": 0,
+    "physical_grasp_budget": 0,
+    "automatic_retries": false,
+    "default_pipeline_enabled": false,
+    "output_root": "tmp/indexed_grasp_planning",
+    "adapter_reserved_path": "modules/curobo/indexed_planning",
+    "orchestration_reserved_path": "modules/pipeline/experiments/indexed_grasp_planning"
+  },
+  "references": [
+    {
+      "title": "MoveIt Cached IK 官方实现",
+      "url": "https://github.com/moveit/moveit/blob/master/moveit_kinematics/cached_ik_kinematics_plugin/README.md"
+    }
+  ]
+}

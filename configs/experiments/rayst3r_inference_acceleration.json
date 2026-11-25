@@ -1,0 +1,23 @@
+{
+  "method": "rayst3r_inference_acceleration",
+  "reference_validation": "tmp/rayst3r/compute_optimization_20261125_01",
+  "protected_campaign": "tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_02",
+  "variants": ["baseline", "combined", "sdpa", "sdpa_combined"],
+  "case_count": 50,
+  "repetitions": 3,
+  "warmup_per_variant": 1,
+  "seed": 20261125,
+  "minimum_gpu_free_mib": 20000,
+  "minimum_after_warmup_free_mib": 1536,
+  "strict_coordinate_atol_m": 0.000001,
+  "maximum_mean_fscore5_drop": 0.005,
+  "maximum_median_chamfer_increase_mm": 0.1,
+  "maximum_case_fscore5_drop": 0.02,
+  "maximum_case_chamfer_increase_mm": 0.5,
+  "minimum_paired_speedup": 1.1,
+  "physical_trials": 0,
+  "planning_calls": 0,
+  "automatic_activation": false,
+  "automatic_retries": false,
+  "unchanged": ["weights", "50 observations", "SAM3 masks", "depth quantization", "input resolution", "21 novel views", "FP32 DINO", "BF16 RaySt3R", "confidence filtering"]
+}

@@ -1,0 +1,103 @@
+{
+  "at": "2026-11-25T21:01:51.252337+08:00",
+  "phase": "stopped",
+  "registered_pairs": 74,
+  "completed_pairs": 0,
+  "methods": {
+    "graspgenx": {
+      "completed": 0,
+      "registered": 74,
+      "interrupted": 0,
+      "not_started": 74,
+      "planning_passes": 0,
+      "successes": 0,
+      "failures": {},
+      "latency": {}
+    },
+    "zerograsp": {
+      "completed": 32,
+      "registered": 74,
+      "interrupted": 1,
+      "not_started": 41,
+      "planning_passes": 25,
+      "successes": 21,
+      "failures": {
+        "initial_planning": 3,
+        "stationing": 2,
+        "close": 1,
+        "empty_candidates": 2,
+        "approach": 2,
+        "hold_height": 1
+      },
+      "latency": {
+        "candidate_decode_seconds": {
+          "samples": 28,
+          "median_seconds": 0.0020035039997310378,
+          "p90_seconds": 0.004449082302380702
+        },
+        "execution_with_replanning_seconds": {
+          "samples": 25,
+          "median_seconds": 52.06426352599374,
+          "p90_seconds": 64.74789622060125
+        },
+        "generation_and_initial_planning_seconds": {
+          "samples": 30,
+          "median_seconds": 10.777454816499812,
+          "p90_seconds": 14.739496300901374
+        },
+        "generation_delivery_seconds": {
+          "samples": 30,
+          "median_seconds": 1.581445256000734,
+          "p90_seconds": 2.0136183018003067
+        },
+        "generation_to_trial_return_seconds": {
+          "samples": 30,
+          "median_seconds": 63.15728272500019,
+          "p90_seconds": 76.23414510460061
+        },
+        "initial_planning_rpc_seconds": {
+          "samples": 28,
+          "median_seconds": 9.237348792998091,
+          "p90_seconds": 12.924869351601956
+        },
+        "input_restore_seconds": {
+          "samples": 30,
+          "median_seconds": 0.3699643185009336,
+          "p90_seconds": 0.5326095078984511
+        },
+        "trial_wall_seconds": {
+          "samples": 30,
+          "median_seconds": 65.1071083855004,
+          "p90_seconds": 79.8596331443001
+        },
+        "zerograsp_generation_postprocessing_rpc_seconds": {
+          "samples": 30,
+          "median_seconds": 1.5814400269991893,
+          "p90_seconds": 2.0136102264990767
+        }
+      }
+    }
+  },
+  "paired_results": [],
+  "failure_labels": {
+    "stationing": "共同高可达站位未通过",
+    "pointcloud": "点云未生成",
+    "empty_candidates": "没有候选",
+    "initial_planning": "初始规划不出来",
+    "approach_replanning": "接近重规划不通过",
+    "lift_replanning": "闭合后抬升重规划不通过",
+    "opening": "开爪未到位",
+    "pregrasp": "预抓取运动未到位",
+    "approach": "接近运动未到位",
+    "close": "闭合未到位",
+    "lift": "抬升运动未到位",
+    "hold": "保持动作未到位",
+    "bilateral_contact": "未形成双指夹持",
+    "hold_height": "抬升或保持高度不足",
+    "forbidden_contact": "禁止接触",
+    "other": "其他抓取失败"
+  },
+  "sam3_excluded": 25,
+  "original_interrupted": 1,
+  "common_stationing_failures_registered": 5
+}

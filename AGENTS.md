@@ -1,5 +1,9 @@
 # ARX-ManiSkill 工程约定
 
+- V6完整74例对照已于2026年11月26日完成，最终记录tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01：两组各74条完整结果，新增两例ZeroGrasp补跑均成功；RaySt3R＋GraspGenX规划69/74、抓取55/74，ZeroGrasp规划59/74、抓取45/74。148条完整结果独立验收通过，256段录像全部解码正常，模型服务均已退出。历史两条中断保存在historical_attempts，旧批次和STOP保留，不再追加或重抓。最终报告modules/pipeline/docs/mainline_versions/V6_共享内存对照最终结果.md；公网发布与Git推送状态读取本批final_publication.json、git_push.json及队列status.json。V8仍为已登记待实现方案，未因V6结束自动启动。
+
+- 2026年11月26日最新授权：等GraspGenX原74例结束，再补跑ZeroGrasp两条历史中断M0042_S3_sparse_avocado和M0060_S3_sparse_donut，使两组各完整74例，最终更新公网并推送Git。此授权替代两例旧禁止重试规则，其他场景不重跑；普通抓取失败算完整结果。新增独立编排modules/pipeline/experiments/sam3_zerograsp_completion，配置configs/experiments/sam3_zerograsp_complete74.json；队列arx-v6-complete74-20261126-01.service等待前驱控制器、发布与模型退出且验收通过，之后登记tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01。146条完整结果继承，旧两条中断复制到historical_attempts，所有旧结果与STOP保留。模型、物理、候选、成功标准与显存门槛保持；只补两例各一次。最终148条完整结果独立验收后发布V6最终报告及补跑录像，保留V8和公网待办，然后提交并验证远端Git。队列状态tmp/sam3_zerograsp_completion/complete74_20261126_01/status.json；不得重复启动或误把等待视为故障。
+
 - 所有实际项目代码、仿真资源、模型权重及运行产物均归入本工程。
 - `modules/<module>/`保存模块代码和模块配置，模块名、代码文件与目录使用英文；禁止在模块目录保存模型权重或实际运行产物。
 - `simulation/`保存仿真资产、机器人描述、相机标定与冻结场景；场景构造不能按IK或抓取结果挑选。
@@ -81,3 +85,19 @@
 
 - 用户明确授权将网站待办随Git推送并复制到公网部署。实时SQLite数据库继续留在website/resources/state/，可恢复快照website/resources/state/todos.snapshot.json是Git例外；使用website/tools/todo_snapshot.mjs导出或恢复。新部署首次创建数据库时自动载入快照，已有数据库不因重启而覆盖；显式迁移前保存原数据库备份，保留条目编号、完成状态和删除后的编号序列。部署公网网站需同时同步此快照并核对API结果，不能只复制静态页面。
 - 公网部署主机已由用户明确提供为root@117.72.104.29；非敏感配置记录在configs/deployments/public_website.json，凭据不进入工程。网站路径/opt/arx-maniskill/website，服务arx-website.service以arx-web运行，Node在/opt/arx-maniskill/environments/node/bin/node；后端127.0.0.1:18786，经现有Nginx代理公开访问。保持CLARO_HOST及本机HTTPS代理的待办同源支持，每次部署先在独立暂存目录验证，旧网站与数据库保存到deployment-backups，再切换并核对公网待办。流程见docs/公网网站部署与待办同步.md。
+
+- 用户最新授权两组同时复测原74例，主要比较I/O优化后的延时并增加失败分布。新批次tmp/sam3_zerograsp_comparison/v6_io74_parallel_20261125_01，入口modules/pipeline/experiments/sam3_zerograsp_comparison/io_parallel，配置sam3_zerograsp_io74_parallel.json；控制器arx-v6-io74-parallel-20261125-01.service及同名-watch.service。两法均重新推理与抓取，固定同一SAM3、RGB-D、最终站位和物体状态；GraspGenX不加后处理，ZeroGrasp保留原生后处理，强制共享内存、后台留档、一次解码。两组各74条结果，5个共同站位失败保留，最多各69个物理槽；每场景每方法一次，原结果/STOP保留。Ray启动23000MiB与原单组件门槛不放宽，模型前资源不足由后台等待，两组预热就绪后共同放行；资源/记录/配置故障停止后续调度。6项新离线契约检查及12项前驱软件承接核对通过。GPU3显示空闲但独立CUDA分配未通过，记录在preflight/ray_device_probe.json；调度器会跳过近期分配失败的设备并尝试健康组合，不排查或复位显卡。首次源登记与0模型/0领取下的资源门控修订保存在registration_revisions/admission_01。网页V6当前内容替换为本轮进度与结果，旧页及媒体归档，V7仍为待实现计划；发布跟进使用已授权SSH控制连接同步公网内容，保留公网实时待办数据库。
+
+- 用户随后明确“一张卡好了就先测，不必须两个同时测”，撤销上述强制同时放行和同一规划GPU要求。同一74例登记在0模型/0领取下修订为独立先就绪先测，原登记与源码保存在registration_revisions/independent_02；不删STOP、不新增场景或重试槽。ZeroGrasp允许在至少18000MiB空闲的一张卡上运行生成/规划/仿真，逐组件仍检查原14000/10000MiB；GraspGenX采用Ray独立23000MiB卡及至少16000MiB执行卡，其他原门槛不变。各组独立预热检查并放行，另一组缺资源不阻挡已就绪组，网页记录分组进度和实际设备；6项修订后的离线契约检查通过。
+
+- 上述I/O复测在ZeroGrasp完成32例、领取第33例后发生Warp碰撞网格分配显存不足并停止：21成功、25规划通过，32完整/1中断/41未开始；GraspGenX尚未启动。原STOP、登记与全部结果保留，独立记录核验通过。用户明确要求继续，新承接目录为tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_01，只执行ZeroGrasp剩余41例与GraspGenX74例，原第33例中断不重试；统计承接旧32例并单列中断。规划服务通过io_parallel/planner_service.py可选包装释放不再活跃的Warp网格缓存，不改原规划器、当前障碍、碰撞球、抓姿、物理或成功标准；各新槽领取前检查1536MiB余量。13项离线故障检查通过，100次真实CUDA图网格查询和缓存生命周期检查通过，实际GPU缓存用量保持1876字节；验证0抓取。后续只读取新登记进度，不重启旧控制器。
+
+- 承接01于22:26停止：ZeroGrasp累计44完整/2中断/28未开始、36规划通过、29成功；GraspGenX5完整/0中断/69未开始、4规划通过且成功。GraspGenX在下一槽领取前触发1536MiB显存余量门控，总调度按原故障规则中断正在执行的ZeroGrasp甜甜圈一例；本轮没有新的CUDA分配/OOM报错。所有模型与调度均已退出，STOP保留。离线核验原有两处程序问题已修复：继承候选按已登记前驱定位原始绝对路径凭据并核对副本哈希；GraspGenX原生转换在独立解释器中重建，隔离两个同名common模块。旧失败验收和前后审查源码保存在acceptance_revisions/audit_01，2项离线故障检查通过。重新核验49完整/2中断/97未开始、80段视频全部通过，record_integrity=true；执行登记和STOP散列未变，未新增抓取或重启实验。
+
+- 用户再次明确继续，当前新承接为tmp/sam3_zerograsp_comparison/v6_io74_continue_20261125_02，继承44+5条完整结果及两条中断，只新增ZeroGrasp28槽、GraspGenX69槽，每个未领取场景仍一次。旧STOP/验收不改。分组显卡从提交时即预留，加载与执行期间不分配给另一自有分组；完成退出后释放预留。进度新增in_progress，正在执行的槽不再临时计为中断。17项离线检查通过；模型、机器人、物理、候选、成功标准、显存门槛及故障停止规则不变，正式源码在新登记冻结。
+
+- 上述承接02最终为ZeroGrasp72完整/2历史中断/0待测、43成功；GraspGenX30完整/0中断/44待测，再次在领取下一例前因显存余量门控停止，结果与STOP保留，独立验收通过。沿用用户持续完成同一74例的授权，承接03仅补GraspGenX未领取的44槽，ZeroGrasp只继承结果、不加载模型；18项离线检查通过。入口arx-v6-io74-continue-20261125-03.service及同名-watch.service，原冻结RaySt3R后端不变；启动等待独立加速接口核验释放GPU。当前进度仍读取tmp/sam3_zerograsp_comparison/active_io_repeat.json，未重试任何旧领取或中断。
+
+- 用户要求加速点云重建，独立可选实现为modules/rayst3r/fast_inference，基于PyTorch SDPA融合注意力、同次DINO特征复用及省去推理损失/指标。原21视角、输入分辨率、FP32 DINO、BF16主网络、权重和筛选保留；融合输出存在浮点差异，未宣称逐点相同。tmp/rayst3r/inference_acceleration_20261125_01已完成50观测×4实现×3次计时，原重建中位1.2466秒→0.6606秒，配对加速1.89倍；完整表面F-score@5mm均值91.414%→91.395%，CD中位1.806→1.789毫米，按预登记几何门槛50组核验通过。独立三组实际头部观测工作接口1.2855→0.6883秒，相机/世界坐标、21视角及模型只加载一次契约通过；7项CPU检查通过，新增物理抓取和规划0。已验证配置和可选模块定义在configs/experiments/rayst3r_fast_inference_profile.json及rayst3r_fast_inference_module.json，原configs/modules.json没有切换，原74例仍使用冻结后端。报告modules/rayst3r/docs/重建推理加速.md，峰值计算显存约11.3GiB，服务14GiB工作区与原启动门槛保留。
+
+- 2026年11月26日用户明确将可达性地图的数据库索引、关节解复用与批量IK检查方案作为实验版本。登记为SAM3主线V8，父版本V4，与V7后处理并列；配置configs/experiments/indexed_grasp_planning.json，方案modules/pipeline/docs/mainline_versions/V8_可达性索引与批量IK加速实验方案.md，准备记录tmp/indexed_grasp_planning/preparation_20261126_01。当前仅问题定位和方案登记，适配器待实现，V8原生规划与物理抓取预算均为0，不改当前V6运行登记与默认链路。原抓姿、评分、顺序与来源编号保持；查询命中需独立FK及限位核验，邻近解只辅助求解原目标，未覆盖保留原IK，当前场景碰撞与完整路径另验。先比较原实现、索引复用、索引复用加分批终点检查，首轮地图与缓存冻结，同卡统一预热，记录查询及各规划阶段耗时、调用数和规划通过率。网页V8与附件真实复制到resources，旧V6/V7结果和节点保留。

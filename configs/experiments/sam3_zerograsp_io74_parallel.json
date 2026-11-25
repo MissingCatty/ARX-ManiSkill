@@ -1,0 +1,37 @@
+{
+  "version": "V6",
+  "run_type": "resource_adaptive_repeat_after_candidate_io_optimization",
+  "source_comparison": "tmp/sam3_zerograsp_comparison/v6_paired_20261125_01",
+  "candidate_io_activation": "tmp/candidate_io/activation_20261125_01",
+  "user_authorization": "仅比较上一轮74个场景，显卡先就绪的分组先测，不再要求两组同时开始，单卡够用时允许先测。GraspGenX不加后处理，ZeroGrasp保留原生后处理；两组使用共享内存。主要测延时，增加失败分布，并以新结果替换V6网页当前对比，旧结果归档。",
+  "methods": ["graspgenx", "zerograsp"],
+  "paired_scenes": 74,
+  "common_precondition_failures_per_method": 5,
+  "maximum_physical_slots_per_method": 69,
+  "maximum_attempts_per_case_per_method": 1,
+  "automatic_retries": false,
+  "same_cached_SAM_RGBD_and_post_stationing_state": true,
+  "fresh_generator_inference": true,
+  "graspgenx_postprocessing": false,
+  "shared_memory_required": true,
+  "scheduling": "independent_first_ready",
+  "parallel_start_barrier": false,
+  "shared_planner_gpu": false,
+  "resource_floors_mib": {
+    "rayst3r": 23000,
+    "zerograsp_single_device": 18000,
+    "graspgenx_execution_device": 16000,
+    "graspgenx_before_loading": 12000,
+    "zerograsp_before_loading": 14000,
+    "curobo_before_loading": 10000,
+    "minimum_after_warmup": 1536
+  },
+  "primary_metrics": ["warm_stage_latency_median_p90_and_sample_counts", "failure_distribution"],
+  "secondary_metrics": ["planning_success_rate", "physical_grasp_success_rate"],
+  "publication": {
+    "version": "V6",
+    "preserve_previous_batches": true,
+    "replace_current_comparison": true,
+    "public_url": "http://117.72.104.29/iterations/sam3-graspgenx/versions/V6/"
+  }
+}

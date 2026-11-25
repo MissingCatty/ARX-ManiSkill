@@ -1,83 +1,137 @@
 ## 本版进度
 
-已完成 74/74 个配对场景。
+已完成。已完成 74/74 个配对场景。
 
-## 比较的两条链路
+本次两组都重新运行模型与抓取，使用相同的74个场景、SAM3掩码、RGB-D、最后站位及物体状态。每组资源就绪后独立预热并开始，先就绪先测。
 
-| 方案 | 感知与抓姿生成 | 规划与执行 |
+分组进度：RaySt3R＋GraspGenX完成74/74；ZeroGrasp完成74/74。
+
+## 本次比较的链路
+
+| 方案 | 生成与候选处理 | 候选交接与规划 |
 | --- | --- | --- |
-| 当前链路 | 头部RGB-D → SAM3 → RaySt3R重建点云 → GraspGenX生成抓姿 | 双臂cuRobo → 物理抓取 |
-| 实验链路 | 同一份头部RGB-D与SAM3掩码 → ZeroGrasp重建并生成抓姿 → 原生碰撞检测、宽度深度修正、NMS | 同一套双臂cuRobo → 物理抓取 |
+| RaySt3R＋GraspGenX | RaySt3R重建、GraspGenX原候选与原评分；不加后处理 | 共享内存、后台保存、一次解码 → 双臂cuRobo |
+| ZeroGrasp | 原生重建与抓姿、碰撞筛选、宽度深度修正、NMS | 共享内存、后台保存、一次解码 → 同一双臂cuRobo |
 
-每个场景固定为V4最后一次抓取准备时的站位、升降、关节状态和物体摆放。原链路结果作为配对参照，新分支从相同状态执行一次。
-
-SAM3最终分割失败的场景剔除；其余规划失败、空抓和掉落都计入分母。原中断场景和未开始项单独登记。底盘无法通过共同站位门控的场景，两组均保留为规划失败。
-
-两组沿用871球、TCP43、1毫米物理接触偏移和V2指尖2毫米桌面余量。计划抬升3厘米，物体至少升高1厘米并保持3秒，同时满足双指接触和动作检查。
-
-现有对照组各模块的接口说明：
+ZeroGrasp允许在一张满足门槛的GPU上完成生成、规划与仿真；RaySt3R独立占用一张GPU，GraspGenX与规划执行使用另一张GPU。模型在每次承接运行中加载和预热一次。实际设备分配单独记录，871球、TCP43、V2指尖2毫米余量与物理成功判据沿用上一轮。
 
 [[流程卡片]]
 
-## 规划与抓取结果
+## 两组进度与结果
 
-| 方案 | 规划成功率 | 抓取成功率 |
-| --- | ---: | ---: |
-| RaySt3R＋GraspGenX | 69/74（93.2%） | 54/74（73.0%） |
-| ZeroGrasp | 60/74（81.1%） | 44/74（59.5%） |
+| 方案 | 完整结束 | 进行中 | 中断 | 未开始 | 规划成功率 | 抓取成功率 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| RaySt3R＋GraspGenX | 74/74 | 0 | 0 | 0 | 69/74（93.2%） | 55/74（74.3%） |
+| ZeroGrasp | 74/74 | 0 | 0 | 0 | 59/74（79.7%） | 45/74（60.8%） |
 
-配对队列共74例；SAM3最终失败剔除25例，原中断1例。当前两组表格使用同样的74个已完成配对场景。
+25例SAM3最终失败剔除，原1例中断单列。74例中包含5例共同站位失败，两组都保留在分母中。
 
-### 按布局比较
+## 本次承接
 
-| 场景布局 | 配对数 | 当前链路规划成功率 | ZeroGrasp规划成功率 | 当前链路抓取成功率 | ZeroGrasp抓取成功率 |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| 单物体 | 17 | 15/17（88.2%） | 13/17（76.5%） | 12/17（70.6%） | 11/17（64.7%） |
-| 桌边 | 14 | 14/14（100.0%） | 11/14（78.6%） | 10/14（71.4%） | 8/14（57.1%） |
-| 稀疏多物体 | 15 | 15/15（100.0%） | 14/15（93.3%） | 11/15（73.3%） | 11/15（73.3%） |
-| 杂乱多物体 | 15 | 14/15（93.3%） | 13/15（86.7%） | 11/15（73.3%） | 9/15（60.0%） |
-| 目标遮挡 | 13 | 11/13（84.6%） | 9/13（69.2%） | 10/13（76.9%） | 5/13（38.5%） |
+保留前批已经完成的146条结果与0条中断。本批只执行ZeroGrasp剩余2例与GraspGenX剩余0例。原场景序号、随机种子和观测保持。
+规划服务现在会释放已经不属于当前碰撞场景的历史网格缓存，当前障碍、抓取位姿和规划参数保持。每个新场景领取前检查显存余量。
 
-## 延时
+## 延时对照
 
-表中依次显示中位数 / P90，并标出实际计时例数。规划环节统计实际调用，执行环节统计实际运动；模型加载和预热单列。
+每项显示中位数 / P90及实际计时例数。未调用的模块不填零；执行耗时只统计实际动作。共同站位失败的5例不进入模型与规划耗时统计。
 
 | 环节 | RaySt3R＋GraspGenX | ZeroGrasp |
 | --- | ---: | ---: |
-| 重建与抓姿生成 | 1.824 / 2.265 秒（69例） | 0.741 / 1.272 秒（69例） |
-| 首次cuRobo抓取规划 | 32.418 / 68.021 秒（69例） | 6.557 / 9.463 秒（65例） |
-| 生成与首次规划合计 | 34.294 / 70.190 秒（69例） | 7.297 / 10.368 秒（69例） |
-| 执行抓取，含到位后的重规划 | 27.986 / 39.532 秒（69例） | 52.019 / 62.639 秒（60例） |
-| 生成开始至本次抓取结束 | 63.769 / 105.094 秒（69例） | 58.961 / 72.029 秒（65例） |
+| 生成、转换并交出共享候选 | 4.5660 / 5.5299 秒（69例） | 1.2878 / 1.9865 秒（69例） |
+| 候选一次解码 | 0.1867 / 0.4264 秒（69例） | 0.0021 / 0.0039 秒（65例） |
+| 首次cuRobo规划请求 | 14.1286 / 63.1949 秒（69例） | 7.8389 / 11.8892 秒（65例） |
+| 生成与首次规划合计 | 17.9938 / 66.9644 秒（69例） | 9.2067 / 13.3616 秒（69例） |
+| 执行抓取，含接近与抬升重规划 | 35.2012 / 37.8826 秒（69例） | 40.6856 / 60.9553 秒（59例） |
+| 生成开始至本次试验返回 | 51.0129 / 104.2036 秒（69例） | 46.8474 / 72.5022 秒（69例） |
+| 整次试验，含场景建立与状态恢复 | 52.6764 / 105.4460 秒（69例） | 49.7354 / 75.0235 秒（69例） |
 
-共用SAM3分割耗时：0.334 / 0.362 秒（69例）。
+生成阶段包含模型推理、其原生候选处理以及交出候选的时间。首次规划请求包含共享候选读取、双臂搜索与后台记录完成确认。执行阶段包含开爪、接近、闭合、抬升、保持及过程中重规划。
 
-重建与生成使用模型同步后的实测耗时；执行耗时从首次规划返回计到最终状态落盘，包含开爪、运动、闭合、抬升、保持及过程中重新规划。每个批次保留GPU型号与UUID，便于核对运行设备。
+## 失败分布
 
-| 首次启动与预热 | 耗时 | GPU |
-| --- | ---: | --- |
-| zerograsp | 170.66 秒 | `GPU-2786f56b-9d00-ba9f-5a2f-1e38775dc169` |
-| curobo_dual_arm | 123.29 秒 | `GPU-b827b8be-c675-83f7-1b4c-39b5811c6d5e` |
+按场景最终失败阶段计数，括号内为占该组完整结束场景的比例。
 
-## 配对录像
+| 失败阶段 | RaySt3R＋GraspGenX | ZeroGrasp |
+| --- | ---: | ---: |
+| 共同高可达站位未通过 | 5/74（6.8%） | 5/74（6.8%） |
+| 没有候选 | 0/74（0.0%） | 4/74（5.4%） |
+| 初始规划不出来 | 0/74（0.0%） | 6/74（8.1%） |
+| 接近运动未到位 | 3/74（4.1%） | 4/74（5.4%） |
+| 闭合未到位 | 0/74（0.0%） | 5/74（6.8%） |
+| 未形成双指夹持 | 6/74（8.1%） | 0/74（0.0%） |
+| 抬升或保持高度不足 | 5/74（6.8%） | 5/74（6.8%） |
+
+## 首次启动与预热
+
+| 分组 | 模块 | 加载与预热耗时 | GPU |
+| --- | --- | ---: | --- |
+| ZeroGrasp | zerograsp | 10.32 秒 | `GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b` |
+| ZeroGrasp | curobo_dual_arm | 97.65 秒 | `GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b` |
+
+### 实际资源分配
+
+ZeroGrasp：zerograsp：`GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b`；curobo_dual_arm：`GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b`；simulation：`GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b`。
+
+
+## 本轮配对视频
 
 ### M0002_S1_open_avocado
 
-| 当前链路 | ZeroGrasp |
+| RaySt3R＋GraspGenX | ZeroGrasp |
 | --- | --- |
-| <video controls preload="none" src="/media/sam3-v6-zerograsp-20261125-01-m0002-baseline.mp4"></video> | <video controls preload="none" src="/media/sam3-v6-zerograsp-20261125-01-m0002-zerograsp.mp4"></video> |
+| <video controls preload="none" src="/media/sam3-v6-v6-complete74-20261126-01-m0002-graspgenx.mp4"></video> | <video controls preload="none" src="/media/sam3-v6-v6-complete74-20261126-01-m0002-zerograsp.mp4"></video> |
 ### M0004_S1_open_banana
 
-| 当前链路 | ZeroGrasp |
+| RaySt3R＋GraspGenX | ZeroGrasp |
 | --- | --- |
-| <video controls preload="none" src="/media/sam3-v6-zerograsp-20261125-01-m0004-baseline.mp4"></video> | <video controls preload="none" src="/media/sam3-v6-zerograsp-20261125-01-m0004-zerograsp.mp4"></video> |
+| <video controls preload="none" src="/media/sam3-v6-v6-complete74-20261126-01-m0004-graspgenx.mp4"></video> | <video controls preload="none" src="/media/sam3-v6-v6-complete74-20261126-01-m0004-zerograsp.mp4"></video> |
 ### M0005_S1_open_bar_soap
 
-| 当前链路 | ZeroGrasp |
+| RaySt3R＋GraspGenX | ZeroGrasp |
 | --- | --- |
-| <video controls preload="none" src="/media/sam3-v6-zerograsp-20261125-01-m0005-baseline.mp4"></video> | <video controls preload="none" src="/media/sam3-v6-zerograsp-20261125-01-m0005-zerograsp.mp4"></video> |
+| <video controls preload="none" src="/media/sam3-v6-v6-complete74-20261126-01-m0005-graspgenx.mp4"></video> | <video controls preload="none" src="/media/sam3-v6-v6-complete74-20261126-01-m0005-zerograsp.mp4"></video> |
 
-## 数据文件
+## 数据与历史记录
 
-- [逐例配对结果](/media/sam3-v6-zerograsp-20261125-01-summary.json)
-- [延时汇总](/media/sam3-v6-zerograsp-20261125-01-latency.json)
+- [本次逐例统计、延时与失败分布](/media/sam3-v6-v6-complete74-20261126-01-summary.json)
+- [上一轮文件交接版本的完整页面](/media/sam3-v6-v6-complete74-20261126-01-previous-page.md)
+- [ZeroGrasp方法](/papers/zerograsp/)
+- [GraspGenX方法](/papers/graspgenx/)
+
+## 最终完整结果与授权补跑
+
+完成时间：2026-11-26T01:14:02.673667+08:00。两组均完整结束74例，合计148条结果，独立验收通过。
+
+| 链路 | 完整结束 | 规划通过 | 抓取成功 |
+| --- | ---: | ---: | ---: |
+| RaySt3R＋GraspGenX | 74/74 | 69/74（93.2%） | 55/74（74.3%） |
+| ZeroGrasp | 74/74 | 59/74（79.7%） | 45/74（60.8%） |
+
+25例SAM3最终失败单列剔除，5例共同站位失败保留在74例分母内。原V4中断1例继续单列。
+
+## 两例中断补跑
+
+牛油果与甜甜圈按本轮明确授权各补跑一次，原中断尝试与停止记录保留；最终74例结果采用本次完整记录。
+
+| 场景 | 原中断原因 | 本次结果 |
+| --- | --- | --- |
+| M0042_S3_sparse_avocado | 规划服务显存不足 | 抓取成功 |
+| M0060_S3_sparse_donut | 另一分组资源门控触发停止 | 抓取成功 |
+
+
+- [最终结果报告与配对延时](/media/sam3-v6-complete74-final-report.md)
+- [逐项配对延时数据](/media/sam3-v6-complete74-paired-latency.json)
+- [148条结果及录像独立验收](/media/sam3-v6-complete74-acceptance.json)
+- [两例补跑承接记录](/media/sam3-v6-complete74-makeup-receipt.json)
+
+### M0042_S3_sparse_avocado
+
+| RaySt3R＋GraspGenX | ZeroGrasp补跑 |
+| --- | --- |
+| <video controls preload="none" src="/media/sam3-v6-complete74-m0042-graspgenx.mp4"></video> | <video controls preload="none" src="/media/sam3-v6-complete74-m0042-zerograsp.mp4"></video> |
+
+### M0060_S3_sparse_donut
+
+| RaySt3R＋GraspGenX | ZeroGrasp补跑 |
+| --- | --- |
+| <video controls preload="none" src="/media/sam3-v6-complete74-m0060-graspgenx.mp4"></video> | <video controls preload="none" src="/media/sam3-v6-complete74-m0060-zerograsp.mp4"></video> |

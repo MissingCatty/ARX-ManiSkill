@@ -121,11 +121,26 @@ markdown.renderer.rules.evidence_video = (tokens, i) => {
   const { href, label } = tokens[i].meta;
   return video(href, label);
 };
+markdown.inline.ruler.before('autolink', 'registered_video_tag', (state, silent) => {
+  if (!state.src.startsWith('<video ', state.pos)) return false;
+  const match = /^<video controls(?: playsinline)? preload="none" src="(\/media\/[a-z0-9.-]+\.mp4)"><\/video>/.exec(state.src.slice(state.pos));
+  if (!match || !media.has(basename(match[1]))) return false;
+  if (!silent) {
+    const token = state.push('evidence_video', '', 0);
+    token.meta = { href: match[1], label: '抓取录像' };
+  }
+  state.pos += match[0].length;
+  return true;
+});
 markdown.core.ruler.after('inline', 'video_links', state => {
   for (let i = 1; i < state.tokens.length - 1; i++) {
     const tokens = state.tokens[i].children;
-    if (state.tokens[i - 1].type !== 'paragraph_open' || state.tokens[i + 1].type !== 'paragraph_close'
-      || tokens?.length !== 3 || tokens[0].type !== 'link_open' || tokens[1].type !== 'text'
+    if (state.tokens[i - 1].type !== 'paragraph_open' || state.tokens[i + 1].type !== 'paragraph_close') continue;
+    if (tokens?.length === 1 && tokens[0].type === 'evidence_video') {
+      state.tokens.splice(i - 1, 3, tokens[0]);
+      continue;
+    }
+    if (tokens?.length !== 3 || tokens[0].type !== 'link_open' || tokens[1].type !== 'text'
       || tokens[2].type !== 'link_close') continue;
     const href = tokens[0].attrGet('href');
     if (!/^\/media\/[a-z0-9.-]+\.mp4$/.test(href ?? '') || !media.has(basename(href))) continue;

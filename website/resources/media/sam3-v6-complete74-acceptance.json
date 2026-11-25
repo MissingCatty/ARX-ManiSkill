@@ -1,0 +1,1924 @@
+{
+  "at": "2026-11-26T01:11:53.455878+08:00",
+  "passed": true,
+  "record_integrity": true,
+  "issues": [],
+  "results": [
+    {
+      "method": "graspgenx",
+      "id": "M0001_S1_open_apple",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0002_S1_open_avocado",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0003_S1_open_baguette",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0004_S1_open_banana",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0005_S1_open_bar_soap",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0006_S1_open_bell_pepper",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0007_S1_open_book",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0008_S1_open_bottled_water",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0009_S1_open_bowl",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0010_S1_open_boxed_food",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0011_S1_open_bread",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0012_S1_open_broccoli",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0015_S1_open_carrot",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0016_S1_open_cell_phone",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0018_S1_open_croissant",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0019_S1_open_cucumber",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0020_S1_open_donut",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0022_S2_edge_keychain",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0023_S2_edge_lemon",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0024_S2_edge_mango",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0026_S2_edge_mug",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0027_S2_edge_mushroom",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0029_S2_edge_orange",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0030_S2_edge_peach",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0031_S2_edge_pear",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0032_S2_edge_potato",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0033_S2_edge_remote_control",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0034_S2_edge_scissors",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0036_S2_edge_spatula",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0038_S2_edge_teapot",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0039_S2_edge_tomato",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0041_S3_sparse_apple",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0042_S3_sparse_avocado",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0043_S3_sparse_baguette",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0044_S3_sparse_banana",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0045_S3_sparse_bar_soap",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0046_S3_sparse_bell_pepper",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0047_S3_sparse_book",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0048_S3_sparse_bottled_water",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0050_S3_sparse_boxed_food",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0052_S3_sparse_broccoli",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0055_S3_sparse_carrot",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0056_S3_sparse_cell_phone",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0058_S3_sparse_croissant",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0059_S3_sparse_cucumber",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0060_S3_sparse_donut",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0061_S4_clutter_eggplant",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0062_S4_clutter_keychain",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0063_S4_clutter_lemon",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0064_S4_clutter_mango",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0065_S4_clutter_milk",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0066_S4_clutter_mug",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0067_S4_clutter_mushroom",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0069_S4_clutter_orange",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0070_S4_clutter_peach",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0071_S4_clutter_pear",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0072_S4_clutter_potato",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0074_S4_clutter_scissors",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0076_S4_clutter_spatula",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0078_S4_clutter_teapot",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0079_S4_clutter_tomato",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0081_S5_occluded_apple",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0082_S5_occluded_avocado",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0084_S5_occluded_banana",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0085_S5_occluded_bar_soap",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0086_S5_occluded_bell_pepper",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0087_S5_occluded_book",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0089_S5_occluded_bowl",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0092_S5_occluded_broccoli",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0095_S5_occluded_carrot",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0096_S5_occluded_cell_phone",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0098_S5_occluded_croissant",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0099_S5_occluded_cucumber",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "graspgenx",
+      "id": "M0100_S5_occluded_donut",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0001_S1_open_apple",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0002_S1_open_avocado",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0003_S1_open_baguette",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0004_S1_open_banana",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0005_S1_open_bar_soap",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0006_S1_open_bell_pepper",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0007_S1_open_book",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0008_S1_open_bottled_water",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0009_S1_open_bowl",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0010_S1_open_boxed_food",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0011_S1_open_bread",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0012_S1_open_broccoli",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0015_S1_open_carrot",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0016_S1_open_cell_phone",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0018_S1_open_croissant",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0019_S1_open_cucumber",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0020_S1_open_donut",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0022_S2_edge_keychain",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0023_S2_edge_lemon",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0024_S2_edge_mango",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0026_S2_edge_mug",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0027_S2_edge_mushroom",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0029_S2_edge_orange",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0030_S2_edge_peach",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0031_S2_edge_pear",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0032_S2_edge_potato",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0033_S2_edge_remote_control",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0034_S2_edge_scissors",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0036_S2_edge_spatula",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0038_S2_edge_teapot",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0039_S2_edge_tomato",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0041_S3_sparse_apple",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0042_S3_sparse_avocado",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0043_S3_sparse_baguette",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0044_S3_sparse_banana",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0045_S3_sparse_bar_soap",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0046_S3_sparse_bell_pepper",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0047_S3_sparse_book",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0048_S3_sparse_bottled_water",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0050_S3_sparse_boxed_food",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0052_S3_sparse_broccoli",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0055_S3_sparse_carrot",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0056_S3_sparse_cell_phone",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0058_S3_sparse_croissant",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0059_S3_sparse_cucumber",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0060_S3_sparse_donut",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0061_S4_clutter_eggplant",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0062_S4_clutter_keychain",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0063_S4_clutter_lemon",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0064_S4_clutter_mango",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0065_S4_clutter_milk",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0066_S4_clutter_mug",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0067_S4_clutter_mushroom",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0069_S4_clutter_orange",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0070_S4_clutter_peach",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0071_S4_clutter_pear",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0072_S4_clutter_potato",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0074_S4_clutter_scissors",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0076_S4_clutter_spatula",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0078_S4_clutter_teapot",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0079_S4_clutter_tomato",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0081_S5_occluded_apple",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0082_S5_occluded_avocado",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0084_S5_occluded_banana",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0085_S5_occluded_bar_soap",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0086_S5_occluded_bell_pepper",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0087_S5_occluded_book",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0089_S5_occluded_bowl",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0092_S5_occluded_broccoli",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0095_S5_occluded_carrot",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0096_S5_occluded_cell_phone",
+      "state": "complete",
+      "success": false
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0098_S5_occluded_croissant",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0099_S5_occluded_cucumber",
+      "state": "complete",
+      "success": true
+    },
+    {
+      "method": "zerograsp",
+      "id": "M0100_S5_occluded_donut",
+      "state": "complete",
+      "success": false
+    }
+  ],
+  "videos": [
+    {
+      "file": "methods/graspgenx/trials/M0001_S1_open_apple/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0001_S1_open_apple/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0002_S1_open_avocado/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0002_S1_open_avocado/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0004_S1_open_banana/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0004_S1_open_banana/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0005_S1_open_bar_soap/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0005_S1_open_bar_soap/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0006_S1_open_bell_pepper/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0006_S1_open_bell_pepper/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0008_S1_open_bottled_water/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0008_S1_open_bottled_water/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0009_S1_open_bowl/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0009_S1_open_bowl/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0010_S1_open_boxed_food/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0010_S1_open_boxed_food/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0011_S1_open_bread/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0011_S1_open_bread/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0012_S1_open_broccoli/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0012_S1_open_broccoli/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0015_S1_open_carrot/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0015_S1_open_carrot/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0016_S1_open_cell_phone/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0016_S1_open_cell_phone/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0018_S1_open_croissant/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0018_S1_open_croissant/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0019_S1_open_cucumber/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0019_S1_open_cucumber/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0020_S1_open_donut/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0020_S1_open_donut/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0022_S2_edge_keychain/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0022_S2_edge_keychain/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0023_S2_edge_lemon/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0023_S2_edge_lemon/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0024_S2_edge_mango/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0024_S2_edge_mango/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0026_S2_edge_mug/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0026_S2_edge_mug/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0027_S2_edge_mushroom/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0027_S2_edge_mushroom/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0029_S2_edge_orange/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0029_S2_edge_orange/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0030_S2_edge_peach/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0030_S2_edge_peach/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0031_S2_edge_pear/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0031_S2_edge_pear/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0032_S2_edge_potato/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0032_S2_edge_potato/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0033_S2_edge_remote_control/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0033_S2_edge_remote_control/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0034_S2_edge_scissors/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0034_S2_edge_scissors/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0036_S2_edge_spatula/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0036_S2_edge_spatula/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0038_S2_edge_teapot/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0038_S2_edge_teapot/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0039_S2_edge_tomato/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0039_S2_edge_tomato/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0041_S3_sparse_apple/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0041_S3_sparse_apple/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0042_S3_sparse_avocado/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0042_S3_sparse_avocado/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0043_S3_sparse_baguette/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0043_S3_sparse_baguette/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0044_S3_sparse_banana/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0044_S3_sparse_banana/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0045_S3_sparse_bar_soap/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0045_S3_sparse_bar_soap/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0046_S3_sparse_bell_pepper/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0046_S3_sparse_bell_pepper/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0047_S3_sparse_book/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0047_S3_sparse_book/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0048_S3_sparse_bottled_water/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0048_S3_sparse_bottled_water/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0050_S3_sparse_boxed_food/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0050_S3_sparse_boxed_food/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0052_S3_sparse_broccoli/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0052_S3_sparse_broccoli/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0055_S3_sparse_carrot/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0055_S3_sparse_carrot/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0056_S3_sparse_cell_phone/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0056_S3_sparse_cell_phone/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0058_S3_sparse_croissant/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0058_S3_sparse_croissant/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0059_S3_sparse_cucumber/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0059_S3_sparse_cucumber/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0060_S3_sparse_donut/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0060_S3_sparse_donut/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0061_S4_clutter_eggplant/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0061_S4_clutter_eggplant/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0062_S4_clutter_keychain/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0062_S4_clutter_keychain/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0063_S4_clutter_lemon/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0063_S4_clutter_lemon/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0064_S4_clutter_mango/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0064_S4_clutter_mango/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0065_S4_clutter_milk/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0065_S4_clutter_milk/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0066_S4_clutter_mug/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0066_S4_clutter_mug/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0067_S4_clutter_mushroom/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0067_S4_clutter_mushroom/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0069_S4_clutter_orange/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0069_S4_clutter_orange/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0070_S4_clutter_peach/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0070_S4_clutter_peach/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0071_S4_clutter_pear/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0071_S4_clutter_pear/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0072_S4_clutter_potato/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0072_S4_clutter_potato/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0074_S4_clutter_scissors/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0074_S4_clutter_scissors/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0078_S4_clutter_teapot/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0078_S4_clutter_teapot/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0079_S4_clutter_tomato/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0079_S4_clutter_tomato/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0081_S5_occluded_apple/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0081_S5_occluded_apple/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0082_S5_occluded_avocado/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0082_S5_occluded_avocado/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0084_S5_occluded_banana/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0084_S5_occluded_banana/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0085_S5_occluded_bar_soap/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0085_S5_occluded_bar_soap/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0086_S5_occluded_bell_pepper/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0086_S5_occluded_bell_pepper/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0089_S5_occluded_bowl/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0089_S5_occluded_bowl/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0092_S5_occluded_broccoli/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0092_S5_occluded_broccoli/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0095_S5_occluded_carrot/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0095_S5_occluded_carrot/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0098_S5_occluded_croissant/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0098_S5_occluded_croissant/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0099_S5_occluded_cucumber/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0099_S5_occluded_cucumber/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0100_S5_occluded_donut/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/graspgenx/trials/M0100_S5_occluded_donut/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0002_S1_open_avocado/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0002_S1_open_avocado/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0004_S1_open_banana/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0004_S1_open_banana/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0005_S1_open_bar_soap/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0005_S1_open_bar_soap/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0006_S1_open_bell_pepper/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0006_S1_open_bell_pepper/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0008_S1_open_bottled_water/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0008_S1_open_bottled_water/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0009_S1_open_bowl/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0009_S1_open_bowl/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0010_S1_open_boxed_food/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0010_S1_open_boxed_food/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0011_S1_open_bread/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0011_S1_open_bread/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0012_S1_open_broccoli/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0012_S1_open_broccoli/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0015_S1_open_carrot/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0015_S1_open_carrot/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0018_S1_open_croissant/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0018_S1_open_croissant/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0019_S1_open_cucumber/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0019_S1_open_cucumber/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0020_S1_open_donut/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0020_S1_open_donut/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0023_S2_edge_lemon/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0023_S2_edge_lemon/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0026_S2_edge_mug/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0026_S2_edge_mug/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0027_S2_edge_mushroom/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0027_S2_edge_mushroom/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0029_S2_edge_orange/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0029_S2_edge_orange/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0030_S2_edge_peach/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0030_S2_edge_peach/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0031_S2_edge_pear/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0031_S2_edge_pear/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0032_S2_edge_potato/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0032_S2_edge_potato/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0033_S2_edge_remote_control/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0033_S2_edge_remote_control/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0036_S2_edge_spatula/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0036_S2_edge_spatula/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0038_S2_edge_teapot/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0038_S2_edge_teapot/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0039_S2_edge_tomato/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0039_S2_edge_tomato/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0041_S3_sparse_apple/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0041_S3_sparse_apple/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0042_S3_sparse_avocado/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0042_S3_sparse_avocado/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0043_S3_sparse_baguette/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0043_S3_sparse_baguette/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0044_S3_sparse_banana/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0044_S3_sparse_banana/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0045_S3_sparse_bar_soap/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0045_S3_sparse_bar_soap/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0046_S3_sparse_bell_pepper/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0046_S3_sparse_bell_pepper/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0047_S3_sparse_book/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0047_S3_sparse_book/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0048_S3_sparse_bottled_water/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0048_S3_sparse_bottled_water/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0050_S3_sparse_boxed_food/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0050_S3_sparse_boxed_food/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0052_S3_sparse_broccoli/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0052_S3_sparse_broccoli/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0055_S3_sparse_carrot/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0055_S3_sparse_carrot/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0058_S3_sparse_croissant/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0058_S3_sparse_croissant/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0059_S3_sparse_cucumber/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0059_S3_sparse_cucumber/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0060_S3_sparse_donut/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0060_S3_sparse_donut/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0061_S4_clutter_eggplant/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0061_S4_clutter_eggplant/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0062_S4_clutter_keychain/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0062_S4_clutter_keychain/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0063_S4_clutter_lemon/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0063_S4_clutter_lemon/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0064_S4_clutter_mango/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0064_S4_clutter_mango/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0065_S4_clutter_milk/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0065_S4_clutter_milk/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0066_S4_clutter_mug/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0066_S4_clutter_mug/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0067_S4_clutter_mushroom/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0067_S4_clutter_mushroom/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0069_S4_clutter_orange/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0069_S4_clutter_orange/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0070_S4_clutter_peach/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0070_S4_clutter_peach/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0071_S4_clutter_pear/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0071_S4_clutter_pear/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0072_S4_clutter_potato/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0072_S4_clutter_potato/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0078_S4_clutter_teapot/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0078_S4_clutter_teapot/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0079_S4_clutter_tomato/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0079_S4_clutter_tomato/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0081_S5_occluded_apple/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0081_S5_occluded_apple/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0086_S5_occluded_bell_pepper/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0086_S5_occluded_bell_pepper/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0089_S5_occluded_bowl/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0089_S5_occluded_bowl/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0092_S5_occluded_broccoli/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0092_S5_occluded_broccoli/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0095_S5_occluded_carrot/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0095_S5_occluded_carrot/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0098_S5_occluded_croissant/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0098_S5_occluded_croissant/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0099_S5_occluded_cucumber/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0099_S5_occluded_cucumber/execution.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0100_S5_occluded_donut/head.mp4",
+      "passed": true
+    },
+    {
+      "file": "methods/zerograsp/trials/M0100_S5_occluded_donut/execution.mp4",
+      "passed": true
+    }
+  ],
+  "task_complete": true,
+  "authorized_schedule_complete": true
+}
