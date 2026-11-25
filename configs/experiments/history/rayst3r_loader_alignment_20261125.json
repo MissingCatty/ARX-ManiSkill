@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-25T13:31:17.234935+08:00",
+  "source": "/home/zhaoyechong/projects/ARX-ManiSkill/modules/rayst3r/arx_adapter.py",
+  "before_sha256": "6484e3374f73fd5fa54af04fdfe89504425e8338d32f0ccdd9f9e5351599c02b",
+  "after_sha256": "b4ce4f7f7f81b4d0a0e5a1e2d674dd2919591490be5d6f5f91cf0bcd99ba5164",
+  "change": "Use the same qualified native reconstruction module as the validated memory adapter; initialize shared native image globals once",
+  "inference_math_model_weights_inputs_and_outputs_unchanged": true,
+  "previous_configuration": "configs/experiments/history/active_experiment_before_rayst3r_loader_20261125.json",
+  "new_configuration_sha256": "8d3de2b67176c7d0b26c90d33bac41285a75ce713edc49a420b026c4af1f4cab"
+}

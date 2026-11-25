@@ -11,6 +11,7 @@ import numpy as np
 
 from arx_project.layout import read_json, write_json
 from .adapter import DualArmPlanner
+from modules.curobo.candidate_io.store import candidate_pool, limit_candidate_view
 
 
 class RankBoundPool:
@@ -27,17 +28,14 @@ class RankBoundPool:
         if any(flags.get(name, False) for name in ['observe', 'approach', 'lift']):
             return self.pool.request(directory, **flags)
         directory = Path(directory)
-        path = directory/'candidates/candidate_pool.json'
-        candidates = read_json(path)
+        candidates = candidate_pool(directory)
         total = len(candidates['candidates'])
         limit = total if self.best_index is None else min(total, self.best_index+1)
         receipt = {'full_candidate_count': total, 'retained_prefix_count': limit,
                    'winning_candidate_before_request': self.best_index,
                    'equal_rank_included': True, 'world_poses_and_scores_unchanged': True}
         if limit < total:
-            bounded = {**candidates, 'candidates': candidates['candidates'][:limit]}
-            bounded['search_bound'] = receipt
-            write_json(path, bounded)
+            limit_candidate_view(directory, limit, receipt)
         write_json(directory/'candidate_search_bound.json', receipt)
         result = self.pool.request(directory, **flags)
         result = deepcopy(result)

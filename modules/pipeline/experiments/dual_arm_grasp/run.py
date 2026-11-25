@@ -43,17 +43,24 @@ def gpu_inventory():
 
 def allocation_probes(gpus):
     def probe(gpu):
-        result = subprocess.run([str(ROOT/'environments/reconstruction/bin/python'), '-c',
-            'import torch; x=torch.zeros(1,device="cuda"); torch.cuda.synchronize(); print(torch.cuda.get_device_name())'],
-            env=dict(os.environ, CUDA_VISIBLE_DEVICES=gpu), capture_output=True, text=True, timeout=60)
+        try:
+            result = subprocess.run([str(ROOT/'environments/reconstruction/bin/python'), '-c',
+                'import torch; x=torch.zeros(1,device="cuda"); torch.cuda.synchronize(); print(torch.cuda.get_device_name())'],
+                env=dict(os.environ, CUDA_VISIBLE_DEVICES=gpu), capture_output=True, text=True, timeout=60)
+        except subprocess.TimeoutExpired:
+            return gpu, {'passed': False, 'returncode': None, 'reason': 'allocation_probe_timeout', 'timeout_seconds': 60}
+        except OSError as error:
+            return gpu, {'passed': False, 'returncode': None, 'reason': str(error)}
         return gpu, {'passed': result.returncode == 0, 'returncode': result.returncode,
                      'stdout': result.stdout.strip(), 'stderr': result.stderr[-2000:]}
     with ThreadPoolExecutor(max_workers=4) as workers:
         return dict(workers.map(probe, gpus))
 
 
-def choose_gpus():
+def choose_gpus(candidate_gpus=None):
     free = gpu_inventory()
+    if candidate_gpus is not None:
+        free = {gpu: value for gpu, value in free.items() if gpu in candidate_gpus}
     probes = allocation_probes(free)
     available = [gpu for gpu in free if probes[gpu]['passed']]
     # Startup estimates select a placement; the hard admission gate follows
@@ -156,14 +163,19 @@ def guard(root):
 class Services:
     def __init__(self, root, reg):
         self.root, self.reg = root, reg
+        self.components = tuple(reg.get('required_components', COMPONENTS))
+        self.bindings = {name: reg.get('component_modules', {}).get(name, name) for name in self.components}
+        if not set(self.bindings.values()) <= module_records().keys():
+            raise ValueError('Unregistered component binding')
         socket_root = ROOT/'tmp/rpc'/sha256(root/'registration.json')[:12]
         socket_root.mkdir(parents=True, exist_ok=False)
-        self.sockets = {name: socket_root/(name+'.sock') for name in COMPONENTS}
+        self.sockets = {name: socket_root/(name+'.sock') for name in self.components}
         self.children, self.streams = {}, []
 
     def start(self):
         from arx_service_readiness import wait_ready
-        for kind in COMPONENTS:
+        for kind in self.components:
+            module_kind = self.bindings[kind]
             folder = self.root/'resident'/kind
             folder.mkdir()
             env = dict(os.environ, CUDA_VISIBLE_DEVICES=self.reg['gpu_roles'][kind],
@@ -172,17 +184,18 @@ class Services:
                 LILO_GPU=self.reg['gpu_roles']['curobo_dual_arm'],
                 GRASP_TRAJOPT_POLICY='interactive', OMP_NUM_THREADS='4', OPENBLAS_NUM_THREADS='4')
             env.pop('PYTHONPATH', None)
-            python = ROOT/module_records()[kind]['environment']/'bin/python'
+            python = ROOT/module_records()[module_kind]['environment']/'bin/python'
             cmd = ['bash', '-c', 'source "$1" || exit; shift; exec "$@"', 'v3-worker',
                 str(ROOT/'modules/arx_core/scripts/curobo_arx/environment.sh'), str(python),
-                '-m', 'arx_project', 'serve', '--kind', kind, '--root', str(folder),
+                '-m', 'arx_project', 'serve', '--kind', module_kind, '--root', str(folder),
                 '--socket', str(self.sockets[kind]), '--warmup-trial', str(self.root/'preflight/head_warmup'),
                 '--descriptor', str(self.root/'gripper_descriptor.json')]
             stream = (folder/'service.log').open('x'); self.streams.append(stream)
             child = subprocess.Popen(cmd, env=env, stdout=stream, stderr=subprocess.STDOUT)
             self.children[kind] = child
-            wait_ready(self.sockets[kind], folder/(kind+'_ready.json'), child, kind, timeout=1800)
+            wait_ready(self.sockets[kind], folder/(module_kind+'_ready.json'), child, module_kind, timeout=1800)
             print('READY', kind, flush=True)
+        write_json(self.root/'preflight/component_bindings.json', {'bindings': self.bindings})
         free = gpu_inventory()
         write_json(self.root/'preflight/warm_resources.json', {'free_mib': free, 'minimum_remaining_mib': 1536})
         if any(free.get(gpu, 0) < 1536 for gpu in set(self.reg['gpu_roles'].values())):

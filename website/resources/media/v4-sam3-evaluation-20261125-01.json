@@ -1,0 +1,1250 @@
+{
+  "reference": "archived simulator visible masks from the same frozen initial scene, lens remapped",
+  "reference_is_separate_from_inference": true,
+  "inference_and_prompt_selection_used_ground_truth": false,
+  "reference_alignment": {
+    "robot_qpos_identical_in_all_cases": true,
+    "maximum_object_translation_delta_mm": 0.2514370056299423,
+    "maximum_object_rotation_delta_deg": 0.5124354513364653
+  },
+  "failures": 13,
+  "controls": 8,
+  "baseline_reproduction_all_21": true,
+  "original_raw_reference_iou_median": 0.9843917040838144,
+  "original_raw_reference_iou_minimum": 0.9665891923300407,
+  "threshold_scan": [
+    {
+      "threshold": 0.5,
+      "original_prompt_admitted": 0,
+      "synonym_highest_score_admitted": 4,
+      "synonym_admitted_and_reference_iou_over_08": 4
+    },
+    {
+      "threshold": 0.4,
+      "original_prompt_admitted": 1,
+      "synonym_highest_score_admitted": 5,
+      "synonym_admitted_and_reference_iou_over_08": 5
+    },
+    {
+      "threshold": 0.3,
+      "original_prompt_admitted": 3,
+      "synonym_highest_score_admitted": 9,
+      "synonym_admitted_and_reference_iou_over_08": 9
+    },
+    {
+      "threshold": 0.2,
+      "original_prompt_admitted": 4,
+      "synonym_highest_score_admitted": 9,
+      "synonym_admitted_and_reference_iou_over_08": 9
+    },
+    {
+      "threshold": 0.1,
+      "original_prompt_admitted": 7,
+      "synonym_highest_score_admitted": 11,
+      "synonym_admitted_and_reference_iou_over_08": 11
+    },
+    {
+      "threshold": 0.05,
+      "original_prompt_admitted": 9,
+      "synonym_highest_score_admitted": 13,
+      "synonym_admitted_and_reference_iou_over_08": 13
+    },
+    {
+      "threshold": 0.01,
+      "original_prompt_admitted": 12,
+      "synonym_highest_score_admitted": 13,
+      "synonym_admitted_and_reference_iou_over_08": 13
+    }
+  ],
+  "cases": [
+    {
+      "id": "M0013_S1_open_candle",
+      "group": "failure",
+      "original_prompt": "candle",
+      "original_score": 0.10302734375,
+      "original_class_score": 0.90234375,
+      "original_presence": 0.1142578125,
+      "original_raw_reference_iou": 0.9799635701275046,
+      "best_prompt_by_model_score": "candle holder",
+      "best_prompt_score": 0.1083984375,
+      "best_prompt_reference_iou": 0.9795268425841674,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.024177363637795,
+      "reference_object_rotation_delta_deg": 0.04655711752713332,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "original_prompt": true,
+          "best_score": 0.10302734375,
+          "best_class_score": 0.90234375,
+          "presence_score": [
+            0.1142578125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9799635701275046,
+          "reference_recall": 0.9839963420210334,
+          "prediction_precision": 0.995835261453031
+        },
+        {
+          "prompt": "wax candle",
+          "original_prompt": false,
+          "best_score": 0.04736328125,
+          "best_class_score": 0.8984375,
+          "presence_score": [
+            0.052734375
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9794895168641751,
+          "reference_recall": 0.9826245999085506,
+          "prediction_precision": 0.9967532467532467
+        },
+        {
+          "prompt": "jar candle",
+          "original_prompt": false,
+          "best_score": 0.057373046875,
+          "best_class_score": 0.91015625,
+          "presence_score": [
+            0.06298828125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9790623577605826,
+          "reference_recall": 0.9835390946502057,
+          "prediction_precision": 0.99537251272559
+        },
+        {
+          "prompt": "candle with a wick",
+          "original_prompt": false,
+          "best_score": 0.0986328125,
+          "best_class_score": 0.875,
+          "presence_score": [
+            0.11279296875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9795268425841674,
+          "reference_recall": 0.984453589391861,
+          "prediction_precision": 0.994916820702403
+        },
+        {
+          "prompt": "candle holder",
+          "original_prompt": false,
+          "best_score": 0.1083984375,
+          "best_class_score": 0.90234375,
+          "presence_score": [
+            0.1201171875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9795268425841674,
+          "reference_recall": 0.984453589391861,
+          "prediction_precision": 0.994916820702403
+        }
+      ]
+    },
+    {
+      "id": "M0014_S1_open_canned_food",
+      "group": "failure",
+      "original_prompt": "canned food",
+      "original_score": 0.1474609375,
+      "original_class_score": 0.91796875,
+      "original_presence": 0.16015625,
+      "original_raw_reference_iou": 0.9911929543634908,
+      "best_prompt_by_model_score": "can",
+      "best_prompt_score": 0.6484375,
+      "best_prompt_reference_iou": 0.9935948759007206,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.0007492558123910087,
+      "reference_object_rotation_delta_deg": 0.0008528572856339198,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "original_prompt": true,
+          "best_score": 0.1474609375,
+          "best_class_score": 0.91796875,
+          "presence_score": [
+            0.16015625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9911929543634908,
+          "reference_recall": 0.9917222963951936,
+          "prediction_precision": 0.9994617868675996
+        },
+        {
+          "prompt": "food can",
+          "original_prompt": false,
+          "best_score": 0.208984375,
+          "best_class_score": 0.953125,
+          "presence_score": [
+            0.21875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9925273552175073,
+          "reference_recall": 0.9930574098798398,
+          "prediction_precision": 0.9994625100779361
+        },
+        {
+          "prompt": "tin can",
+          "original_prompt": false,
+          "best_score": 0.5234375,
+          "best_class_score": 0.96484375,
+          "presence_score": [
+            0.54296875
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.9930611155591139,
+          "reference_recall": 0.9935914552736983,
+          "prediction_precision": 0.9994627988181574
+        },
+        {
+          "prompt": "metal can",
+          "original_prompt": false,
+          "best_score": 0.4140625,
+          "best_class_score": 0.95703125,
+          "presence_score": [
+            0.431640625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9933279957299173,
+          "reference_recall": 0.9938584779706275,
+          "prediction_precision": 0.9994629430719656
+        },
+        {
+          "prompt": "can",
+          "original_prompt": false,
+          "best_score": 0.6484375,
+          "best_class_score": 0.96875,
+          "presence_score": [
+            0.66796875
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.9935948759007206,
+          "reference_recall": 0.9941255006675568,
+          "prediction_precision": 0.9994630872483221
+        }
+      ]
+    },
+    {
+      "id": "M0017_S1_open_corn",
+      "group": "failure",
+      "original_prompt": "corn",
+      "original_score": 0.00921630859375,
+      "original_class_score": 0.59765625,
+      "original_presence": 0.01544189453125,
+      "original_raw_reference_iou": 0.9716663715247034,
+      "best_prompt_by_model_score": "ear of corn",
+      "best_prompt_score": 0.0546875,
+      "best_prompt_reference_iou": 0.9749733759318424,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.2514370056299423,
+      "reference_object_rotation_delta_deg": 0.5124354513364653,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "original_prompt": true,
+          "best_score": 0.00921630859375,
+          "best_class_score": 0.59765625,
+          "presence_score": [
+            0.01544189453125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9716663715247034,
+          "reference_recall": 0.9828049435787212,
+          "prediction_precision": 0.988470545847595
+        },
+        {
+          "prompt": "ear of corn",
+          "original_prompt": false,
+          "best_score": 0.0546875,
+          "best_class_score": 0.8125,
+          "presence_score": [
+            0.0673828125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9749733759318424,
+          "reference_recall": 0.983879634605051,
+          "prediction_precision": 0.9908008658008658
+        },
+        {
+          "prompt": "corn on the cob",
+          "original_prompt": false,
+          "best_score": 0.0023956298828125,
+          "best_class_score": 0.83203125,
+          "presence_score": [
+            0.0028839111328125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9757092198581561,
+          "reference_recall": 0.9856707863156009,
+          "prediction_precision": 0.9897482014388489
+        },
+        {
+          "prompt": "yellow corn",
+          "original_prompt": false,
+          "best_score": 0.04296875,
+          "best_class_score": 0.6484375,
+          "presence_score": [
+            0.06640625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.0026867275658248252,
+          "reference_recall": 0.0026867275658248252,
+          "prediction_precision": 1.0
+        }
+      ]
+    },
+    {
+      "id": "M0021_S2_edge_eggplant",
+      "group": "failure",
+      "original_prompt": "eggplant",
+      "original_score": 0.470703125,
+      "original_class_score": 0.953125,
+      "original_presence": 0.494140625,
+      "original_raw_reference_iou": 0.9924863387978142,
+      "best_prompt_by_model_score": "aubergine",
+      "best_prompt_score": 0.5234375,
+      "best_prompt_reference_iou": 0.992943318916458,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.007125288459969812,
+      "reference_object_rotation_delta_deg": 0.017562166479801106,
+      "prompts": [
+        {
+          "prompt": "eggplant",
+          "original_prompt": true,
+          "best_score": 0.470703125,
+          "best_class_score": 0.953125,
+          "presence_score": [
+            0.494140625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9924863387978142,
+          "reference_recall": 0.9942974452554745,
+          "prediction_precision": 0.9981680787726128
+        },
+        {
+          "prompt": "aubergine",
+          "original_prompt": false,
+          "best_score": 0.5234375,
+          "best_class_score": 0.95703125,
+          "presence_score": [
+            0.546875
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.992943318916458,
+          "reference_recall": 0.9949817518248175,
+          "prediction_precision": 0.9979409746053535
+        },
+        {
+          "prompt": "purple eggplant",
+          "original_prompt": false,
+          "best_score": 0.314453125,
+          "best_class_score": 0.9453125,
+          "presence_score": [
+            0.33203125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9922586520947176,
+          "reference_recall": 0.9940693430656934,
+          "prediction_precision": 0.9981676591846084
+        },
+        {
+          "prompt": "eggplant vegetable",
+          "original_prompt": false,
+          "best_score": 0.18359375,
+          "best_class_score": 0.91796875,
+          "presence_score": [
+            0.2001953125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9922586520947176,
+          "reference_recall": 0.9940693430656934,
+          "prediction_precision": 0.9981676591846084
+        }
+      ]
+    },
+    {
+      "id": "M0025_S2_edge_milk",
+      "group": "failure",
+      "original_prompt": "milk",
+      "original_score": 0.07275390625,
+      "original_class_score": 0.921875,
+      "original_presence": 0.0791015625,
+      "original_raw_reference_iou": 0.9862926767356264,
+      "best_prompt_by_model_score": "carton of milk",
+      "best_prompt_score": 0.8359375,
+      "best_prompt_reference_iou": 0.988196471633456,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.020161277978664023,
+      "reference_object_rotation_delta_deg": 0.013035029402471462,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "original_prompt": true,
+          "best_score": 0.07275390625,
+          "best_class_score": 0.921875,
+          "presence_score": [
+            0.0791015625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9862926767356264,
+          "reference_recall": 0.9865431001650374,
+          "prediction_precision": 0.9997426990865818
+        },
+        {
+          "prompt": "milk carton",
+          "original_prompt": false,
+          "best_score": 0.421875,
+          "best_class_score": 0.96875,
+          "presence_score": [
+            0.435546875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9868003553750476,
+          "reference_recall": 0.9870509077059795,
+          "prediction_precision": 0.9997428314259997
+        },
+        {
+          "prompt": "carton of milk",
+          "original_prompt": false,
+          "best_score": 0.8359375,
+          "best_class_score": 0.9765625,
+          "presence_score": [
+            0.85546875
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.988196471633456,
+          "reference_recall": 0.9884473784435699,
+          "prediction_precision": 0.9997431946584489
+        },
+        {
+          "prompt": "milk box",
+          "original_prompt": false,
+          "best_score": 0.259765625,
+          "best_class_score": 0.96875,
+          "presence_score": [
+            0.267578125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9887041502728773,
+          "reference_recall": 0.9889551859845118,
+          "prediction_precision": 0.9997433264887063
+        }
+      ]
+    },
+    {
+      "id": "M0028_S2_edge_onion",
+      "group": "failure",
+      "original_prompt": "onion",
+      "original_score": 0.034912109375,
+      "original_class_score": 0.90234375,
+      "original_presence": 0.03857421875,
+      "original_raw_reference_iou": 0.9665891923300407,
+      "best_prompt_by_model_score": "yellow onion",
+      "best_prompt_score": 0.34765625,
+      "best_prompt_reference_iou": 0.9689224513505663,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.023394996584431837,
+      "reference_object_rotation_delta_deg": 0.0430423503102867,
+      "prompts": [
+        {
+          "prompt": "onion",
+          "original_prompt": true,
+          "best_score": 0.034912109375,
+          "best_class_score": 0.90234375,
+          "presence_score": [
+            0.03857421875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9665891923300407,
+          "reference_recall": 0.973091547236034,
+          "prediction_precision": 0.9931343283582089
+        },
+        {
+          "prompt": "onion bulb",
+          "original_prompt": false,
+          "best_score": 0.044677734375,
+          "best_class_score": 0.94140625,
+          "presence_score": [
+            0.04736328125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9680603948896632,
+          "reference_recall": 0.9751389295115531,
+          "prediction_precision": 0.9925573087228342
+        },
+        {
+          "prompt": "yellow onion",
+          "original_prompt": false,
+          "best_score": 0.34765625,
+          "best_class_score": 0.96484375,
+          "presence_score": [
+            0.359375
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9689224513505663,
+          "reference_recall": 0.9757238958759872,
+          "prediction_precision": 0.9928571428571429
+        },
+        {
+          "prompt": "whole onion",
+          "original_prompt": false,
+          "best_score": 0.025146484375,
+          "best_class_score": 0.8984375,
+          "presence_score": [
+            0.0279541015625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.967479674796748,
+          "reference_recall": 0.9745539631471191,
+          "prediction_precision": 0.9925528745904081
+        }
+      ]
+    },
+    {
+      "id": "M0035_S2_edge_soap_dispenser",
+      "group": "failure",
+      "original_prompt": "soap dispenser",
+      "original_score": 0.10400390625,
+      "original_class_score": 0.91015625,
+      "original_presence": 0.1142578125,
+      "original_raw_reference_iou": 0.9843917040838144,
+      "best_prompt_by_model_score": "soap bottle",
+      "best_prompt_score": 0.1474609375,
+      "best_prompt_reference_iou": 0.9848225737494656,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.000849656283275207,
+      "reference_object_rotation_delta_deg": 0.00116437472572874,
+      "prompts": [
+        {
+          "prompt": "soap dispenser",
+          "original_prompt": true,
+          "best_score": 0.10400390625,
+          "best_class_score": 0.91015625,
+          "presence_score": [
+            0.1142578125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9843917040838144,
+          "reference_recall": 0.9867123874839263,
+          "prediction_precision": 0.9976164680390033
+        },
+        {
+          "prompt": "pump bottle",
+          "original_prompt": false,
+          "best_score": 0.1455078125,
+          "best_class_score": 0.9375,
+          "presence_score": [
+            0.1552734375
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9848258174823681,
+          "reference_recall": 0.9875696528075439,
+          "prediction_precision": 0.9971867561133954
+        },
+        {
+          "prompt": "liquid soap bottle",
+          "original_prompt": false,
+          "best_score": 0.07666015625,
+          "best_class_score": 0.9375,
+          "presence_score": [
+            0.08154296875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9850459303567614,
+          "reference_recall": 0.9882126018002572,
+          "prediction_precision": 0.996757457846952
+        },
+        {
+          "prompt": "soap bottle",
+          "original_prompt": false,
+          "best_score": 0.1474609375,
+          "best_class_score": 0.9375,
+          "presence_score": [
+            0.1572265625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9848225737494656,
+          "reference_recall": 0.9873553364766395,
+          "prediction_precision": 0.9974020350725266
+        }
+      ]
+    },
+    {
+      "id": "M0037_S2_edge_sponge",
+      "group": "failure",
+      "original_prompt": "sponge",
+      "original_score": 0.265625,
+      "original_class_score": 0.94921875,
+      "original_presence": 0.279296875,
+      "original_raw_reference_iou": 0.983237852747719,
+      "best_prompt_by_model_score": "cleaning sponge",
+      "best_prompt_score": 0.337890625,
+      "best_prompt_reference_iou": 0.982176957352005,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.00032580853110680325,
+      "reference_object_rotation_delta_deg": 0.00041676434575501974,
+      "prompts": [
+        {
+          "prompt": "sponge",
+          "original_prompt": true,
+          "best_score": 0.265625,
+          "best_class_score": 0.94921875,
+          "presence_score": [
+            0.279296875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.983237852747719,
+          "reference_recall": 0.983446519524618,
+          "prediction_precision": 0.9997842502696872
+        },
+        {
+          "prompt": "kitchen sponge",
+          "original_prompt": false,
+          "best_score": 0.275390625,
+          "best_class_score": 0.93359375,
+          "presence_score": [
+            0.294921875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9830256736685763,
+          "reference_recall": 0.9832342954159593,
+          "prediction_precision": 0.9997842037116962
+        },
+        {
+          "prompt": "cleaning sponge",
+          "original_prompt": false,
+          "best_score": 0.337890625,
+          "best_class_score": 0.9296875,
+          "presence_score": [
+            0.36328125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.982176957352005,
+          "reference_recall": 0.9823853989813243,
+          "prediction_precision": 0.9997840172786178
+        },
+        {
+          "prompt": "dish sponge",
+          "original_prompt": false,
+          "best_score": 0.087890625,
+          "best_class_score": 0.921875,
+          "presence_score": [
+            0.09521484375
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9838778107764107,
+          "reference_recall": 0.984295415959253,
+          "prediction_precision": 0.9995689655172414
+        }
+      ]
+    },
+    {
+      "id": "M0040_S2_edge_yogurt",
+      "group": "failure",
+      "original_prompt": "yogurt",
+      "original_score": 0.0341796875,
+      "original_class_score": 0.75390625,
+      "original_presence": 0.04541015625,
+      "original_raw_reference_iou": 0.9712251557401365,
+      "best_prompt_by_model_score": "yogurt container",
+      "best_prompt_score": 0.055908203125,
+      "best_prompt_reference_iou": 0.9875407890833581,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.00048447396750864326,
+      "reference_object_rotation_delta_deg": 0.00029529075281908016,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "original_prompt": true,
+          "best_score": 0.0341796875,
+          "best_class_score": 0.75390625,
+          "presence_score": [
+            0.04541015625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9712251557401365,
+          "reference_recall": 0.971513353115727,
+          "prediction_precision": 0.9996946564885496
+        },
+        {
+          "prompt": "yogurt cup",
+          "original_prompt": false,
+          "best_score": 0.0400390625,
+          "best_class_score": 0.859375,
+          "presence_score": [
+            0.046630859375
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9875407890833581,
+          "reference_recall": 0.9878338278931751,
+          "prediction_precision": 0.9996996996996997
+        },
+        {
+          "prompt": "yogurt container",
+          "original_prompt": false,
+          "best_score": 0.055908203125,
+          "best_class_score": 0.87890625,
+          "presence_score": [
+            0.0634765625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9875407890833581,
+          "reference_recall": 0.9878338278931751,
+          "prediction_precision": 0.9996996996996997
+        },
+        {
+          "prompt": "yoghurt",
+          "original_prompt": false,
+          "best_score": 0.029541015625,
+          "best_class_score": 0.765625,
+          "presence_score": [
+            0.03857421875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9735983387718777,
+          "reference_recall": 0.9738872403560831,
+          "prediction_precision": 0.999695400548279
+        }
+      ]
+    },
+    {
+      "id": "M0049_S3_sparse_bowl",
+      "group": "failure",
+      "original_prompt": "bowl",
+      "original_score": 0.353515625,
+      "original_class_score": 0.9609375,
+      "original_presence": 0.3671875,
+      "original_raw_reference_iou": 0.988507556675063,
+      "best_prompt_by_model_score": "small bowl",
+      "best_prompt_score": 0.6015625,
+      "best_prompt_reference_iou": 0.9888224181360201,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.00042722843385632433,
+      "reference_object_rotation_delta_deg": 9.72457543663414e-05,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "original_prompt": true,
+          "best_score": 0.353515625,
+          "best_class_score": 0.9609375,
+          "presence_score": [
+            0.3671875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.988507556675063,
+          "reference_recall": 0.9886632026452528,
+          "prediction_precision": 0.9998407643312102
+        },
+        {
+          "prompt": "small bowl",
+          "original_prompt": false,
+          "best_score": 0.6015625,
+          "best_class_score": 0.96875,
+          "presence_score": [
+            0.62109375
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.9888224181360201,
+          "reference_recall": 0.9889781136828846,
+          "prediction_precision": 0.9998408150270615
+        },
+        {
+          "prompt": "ceramic bowl",
+          "original_prompt": false,
+          "best_score": 0.039794921875,
+          "best_class_score": 0.91796875,
+          "presence_score": [
+            0.04345703125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9875629722921915,
+          "reference_recall": 0.9877184695323571,
+          "prediction_precision": 0.9998406120497291
+        },
+        {
+          "prompt": "empty bowl",
+          "original_prompt": false,
+          "best_score": 0.1337890625,
+          "best_class_score": 0.94140625,
+          "presence_score": [
+            0.142578125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9866183879093199,
+          "reference_recall": 0.9867737364194615,
+          "prediction_precision": 0.9998404594767071
+        }
+      ]
+    },
+    {
+      "id": "M0051_S3_sparse_bread",
+      "group": "failure",
+      "original_prompt": "bread",
+      "original_score": 0.359375,
+      "original_class_score": 0.9140625,
+      "original_presence": 0.392578125,
+      "original_raw_reference_iou": 0.9846281678437889,
+      "best_prompt_by_model_score": "bread",
+      "best_prompt_score": 0.359375,
+      "best_prompt_reference_iou": 0.9846281678437889,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.00048537544831342487,
+      "reference_object_rotation_delta_deg": 4.5520938813219165e-05,
+      "prompts": [
+        {
+          "prompt": "bread",
+          "original_prompt": true,
+          "best_score": 0.359375,
+          "best_class_score": 0.9140625,
+          "presence_score": [
+            0.392578125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9846281678437889,
+          "reference_recall": 0.9852421533984619,
+          "prediction_precision": 0.9993674889310563
+        },
+        {
+          "prompt": "loaf of bread",
+          "original_prompt": false,
+          "best_score": 0.12255859375,
+          "best_class_score": 0.91015625,
+          "presence_score": [
+            0.134765625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9844204403822185,
+          "reference_recall": 0.985034296404074,
+          "prediction_precision": 0.9993673555461831
+        },
+        {
+          "prompt": "bread loaf",
+          "original_prompt": false,
+          "best_score": 0.10009765625,
+          "best_class_score": 0.8984375,
+          "presence_score": [
+            0.111328125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9829663481512256,
+          "reference_recall": 0.9835792974433589,
+          "prediction_precision": 0.9993664202745512
+        },
+        {
+          "prompt": "bread roll",
+          "original_prompt": false,
+          "best_score": 0.310546875,
+          "best_class_score": 0.9453125,
+          "presence_score": [
+            0.328125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9842127129206482,
+          "reference_recall": 0.9848264394096862,
+          "prediction_precision": 0.9993672221050411
+        }
+      ]
+    },
+    {
+      "id": "M0053_S3_sparse_candle",
+      "group": "failure",
+      "original_prompt": "candle",
+      "original_score": 0.059326171875,
+      "original_class_score": 0.828125,
+      "original_presence": 0.07177734375,
+      "original_raw_reference_iou": 0.9757665677546983,
+      "best_prompt_by_model_score": "candle holder",
+      "best_prompt_score": 0.482421875,
+      "best_prompt_reference_iou": 0.9762493814943097,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.01776088184540797,
+      "reference_object_rotation_delta_deg": 0.03376586173369513,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "original_prompt": true,
+          "best_score": 0.059326171875,
+          "best_class_score": 0.828125,
+          "presence_score": [
+            0.07177734375
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9757665677546983,
+          "reference_recall": 0.9860069965017492,
+          "prediction_precision": 0.9894684052156469
+        },
+        {
+          "prompt": "wax candle",
+          "original_prompt": false,
+          "best_score": 0.01904296875,
+          "best_class_score": 0.81640625,
+          "presence_score": [
+            0.0233154296875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9747899159663865,
+          "reference_recall": 0.9855072463768116,
+          "prediction_precision": 0.9889669007021064
+        },
+        {
+          "prompt": "jar candle",
+          "original_prompt": false,
+          "best_score": 0.0810546875,
+          "best_class_score": 0.9140625,
+          "presence_score": [
+            0.0888671875
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9767326732673267,
+          "reference_recall": 0.9860069965017492,
+          "prediction_precision": 0.9904618473895582
+        },
+        {
+          "prompt": "candle with a wick",
+          "original_prompt": false,
+          "best_score": 0.0869140625,
+          "best_class_score": 0.79296875,
+          "presence_score": [
+            0.10986328125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9747899159663865,
+          "reference_recall": 0.9855072463768116,
+          "prediction_precision": 0.9889669007021064
+        },
+        {
+          "prompt": "candle holder",
+          "original_prompt": false,
+          "best_score": 0.482421875,
+          "best_class_score": 0.95703125,
+          "presence_score": [
+            0.50390625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9762493814943097,
+          "reference_recall": 0.9860069965017492,
+          "prediction_precision": 0.9899648770697441
+        }
+      ]
+    },
+    {
+      "id": "M0054_S3_sparse_canned_food",
+      "group": "failure",
+      "original_prompt": "canned food",
+      "original_score": 0.0223388671875,
+      "original_class_score": 0.80859375,
+      "original_presence": 0.027587890625,
+      "original_raw_reference_iou": 0.9899348727057431,
+      "best_prompt_by_model_score": "can",
+      "best_prompt_score": 0.373046875,
+      "best_prompt_reference_iou": 0.9926101093703813,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.000824939440645068,
+      "reference_object_rotation_delta_deg": 0.0011843909987711188,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "original_prompt": true,
+          "best_score": 0.0223388671875,
+          "best_class_score": 0.80859375,
+          "presence_score": [
+            0.027587890625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9899348727057431,
+          "reference_recall": 0.991108476585655,
+          "prediction_precision": 0.998805256869773
+        },
+        {
+          "prompt": "food can",
+          "original_prompt": false,
+          "best_score": 0.06640625,
+          "best_class_score": 0.9140625,
+          "presence_score": [
+            0.07275390625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9917184265010351,
+          "reference_recall": 0.9937759336099585,
+          "prediction_precision": 0.9979166666666667
+        },
+        {
+          "prompt": "tin can",
+          "original_prompt": false,
+          "best_score": 0.1923828125,
+          "best_class_score": 0.94140625,
+          "presence_score": [
+            0.2041015625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.992309967465247,
+          "reference_recall": 0.9943687018375815,
+          "prediction_precision": 0.9979179060083284
+        },
+        {
+          "prompt": "metal can",
+          "original_prompt": false,
+          "best_score": 0.119140625,
+          "best_class_score": 0.91796875,
+          "presence_score": [
+            0.1298828125
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.992309967465247,
+          "reference_recall": 0.9943687018375815,
+          "prediction_precision": 0.9979179060083284
+        },
+        {
+          "prompt": "can",
+          "original_prompt": false,
+          "best_score": 0.373046875,
+          "best_class_score": 0.95703125,
+          "presence_score": [
+            0.390625
+          ],
+          "native_candidate_count_at_05": 0,
+          "reference_iou": 0.9926101093703813,
+          "reference_recall": 0.995257854179016,
+          "prediction_precision": 0.9973269973269974
+        }
+      ]
+    },
+    {
+      "id": "M0001_S1_open_apple",
+      "group": "control",
+      "original_prompt": "apple",
+      "original_score": 0.953125,
+      "original_class_score": 0.96875,
+      "original_presence": 0.984375,
+      "original_raw_reference_iou": 0.9950835791543756,
+      "best_prompt_by_model_score": "apple",
+      "best_prompt_score": 0.953125,
+      "best_prompt_reference_iou": 0.9950835791543756,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.0006171401855313425,
+      "reference_object_rotation_delta_deg": 0.000783168429694742,
+      "prompts": [
+        {
+          "prompt": "apple",
+          "original_prompt": true,
+          "best_score": 0.953125,
+          "best_class_score": 0.96875,
+          "presence_score": [
+            0.984375
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.9950835791543756,
+          "reference_recall": 0.9960629921259843,
+          "prediction_precision": 0.9990128331688055
+        }
+      ]
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "group": "control",
+      "original_prompt": "avocado",
+      "original_score": 0.75,
+      "original_class_score": 0.9765625,
+      "original_presence": 0.76953125,
+      "original_raw_reference_iou": 0.9897912885662432,
+      "best_prompt_by_model_score": "avocado",
+      "best_prompt_score": 0.75,
+      "best_prompt_reference_iou": 0.9897912885662432,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.0068809822884223285,
+      "reference_object_rotation_delta_deg": 0.010385979029787818,
+      "prompts": [
+        {
+          "prompt": "avocado",
+          "original_prompt": true,
+          "best_score": 0.75,
+          "best_class_score": 0.9765625,
+          "presence_score": [
+            0.76953125
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.9897912885662432,
+          "reference_recall": 0.9911403907314857,
+          "prediction_precision": 0.9986266880292973
+        }
+      ]
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "group": "control",
+      "original_prompt": "banana",
+      "original_score": 0.96875,
+      "original_class_score": 0.98046875,
+      "original_presence": 0.98828125,
+      "original_raw_reference_iou": 0.9821162444113264,
+      "best_prompt_by_model_score": "banana",
+      "best_prompt_score": 0.96875,
+      "best_prompt_reference_iou": 0.9821162444113264,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.0004917039227579718,
+      "reference_object_rotation_delta_deg": 0.0006781949931165698,
+      "prompts": [
+        {
+          "prompt": "banana",
+          "original_prompt": true,
+          "best_score": 0.96875,
+          "best_class_score": 0.98046875,
+          "presence_score": [
+            0.98828125
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.9821162444113264,
+          "reference_recall": 0.9865269461077845,
+          "prediction_precision": 0.9954682779456193
+        }
+      ]
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "group": "control",
+      "original_prompt": "bar of soap",
+      "original_score": 0.97265625,
+      "original_class_score": 0.9765625,
+      "original_presence": 0.99609375,
+      "original_raw_reference_iou": 0.975529692629066,
+      "best_prompt_by_model_score": "bar of soap",
+      "best_prompt_score": 0.97265625,
+      "best_prompt_reference_iou": 0.975529692629066,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.010132439161397607,
+      "reference_object_rotation_delta_deg": 0.03535783725202714,
+      "prompts": [
+        {
+          "prompt": "bar of soap",
+          "original_prompt": true,
+          "best_score": 0.97265625,
+          "best_class_score": 0.9765625,
+          "presence_score": [
+            0.99609375
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.975529692629066,
+          "reference_recall": 0.9766955482521661,
+          "prediction_precision": 0.9987778796211427
+        }
+      ]
+    },
+    {
+      "id": "M0006_S1_open_bell_pepper",
+      "group": "control",
+      "original_prompt": "bell pepper",
+      "original_score": 0.93359375,
+      "original_class_score": 0.97265625,
+      "original_presence": 0.9609375,
+      "original_raw_reference_iou": 0.9892392392392393,
+      "best_prompt_by_model_score": "bell pepper",
+      "best_prompt_score": 0.93359375,
+      "best_prompt_reference_iou": 0.9892392392392393,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.006568222430098224,
+      "reference_object_rotation_delta_deg": 0.009695459700316947,
+      "prompts": [
+        {
+          "prompt": "bell pepper",
+          "original_prompt": true,
+          "best_score": 0.93359375,
+          "best_class_score": 0.97265625,
+          "presence_score": [
+            0.9609375
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.9892392392392393,
+          "reference_recall": 0.990975181749812,
+          "prediction_precision": 0.9982323232323232
+        }
+      ]
+    },
+    {
+      "id": "M0008_S1_open_bottled_water",
+      "group": "control",
+      "original_prompt": "water bottle",
+      "original_score": 0.6796875,
+      "original_class_score": 0.96875,
+      "original_presence": 0.703125,
+      "original_raw_reference_iou": 0.9913141993957704,
+      "best_prompt_by_model_score": "water bottle",
+      "best_prompt_score": 0.6796875,
+      "best_prompt_reference_iou": 0.9913141993957704,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.008403528318210268,
+      "reference_object_rotation_delta_deg": 0.00577002079260577,
+      "prompts": [
+        {
+          "prompt": "water bottle",
+          "original_prompt": true,
+          "best_score": 0.6796875,
+          "best_class_score": 0.96875,
+          "presence_score": [
+            0.703125
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.9913141993957704,
+          "reference_recall": 0.9939416887542597,
+          "prediction_precision": 0.9973404255319149
+        }
+      ]
+    },
+    {
+      "id": "M0009_S1_open_bowl",
+      "group": "control",
+      "original_prompt": "bowl",
+      "original_score": 0.5859375,
+      "original_class_score": 0.97265625,
+      "original_presence": 0.6015625,
+      "original_raw_reference_iou": 0.9900377877018207,
+      "best_prompt_by_model_score": "bowl",
+      "best_prompt_score": 0.5859375,
+      "best_prompt_reference_iou": 0.9900377877018207,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.0010851342855634268,
+      "reference_object_rotation_delta_deg": 0.0002612057655716284,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "original_prompt": true,
+          "best_score": 0.5859375,
+          "best_class_score": 0.97265625,
+          "presence_score": [
+            0.6015625
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.9900377877018207,
+          "reference_recall": 0.9902078680639066,
+          "prediction_precision": 0.9998265394622723
+        }
+      ]
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "group": "control",
+      "original_prompt": "food box",
+      "original_score": 0.83203125,
+      "original_class_score": 0.97265625,
+      "original_presence": 0.85546875,
+      "original_raw_reference_iou": 0.9873352287412768,
+      "best_prompt_by_model_score": "food box",
+      "best_prompt_score": 0.83203125,
+      "best_prompt_reference_iou": 0.9873352287412768,
+      "reference_robot_qpos_max_delta": 0.0,
+      "reference_object_translation_delta_mm": 0.0077556755670712425,
+      "reference_object_rotation_delta_deg": 0.006811824304649563,
+      "prompts": [
+        {
+          "prompt": "food box",
+          "original_prompt": true,
+          "best_score": 0.83203125,
+          "best_class_score": 0.97265625,
+          "presence_score": [
+            0.85546875
+          ],
+          "native_candidate_count_at_05": 1,
+          "reference_iou": 0.9873352287412768,
+          "reference_recall": 0.9888687548537406,
+          "prediction_precision": 0.9984317825405122
+        }
+      ]
+    }
+  ]
+}

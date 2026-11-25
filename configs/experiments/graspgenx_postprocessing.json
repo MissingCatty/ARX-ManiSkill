@@ -1,0 +1,94 @@
+{
+  "version": "V7",
+  "parent": "V4",
+  "state": "planned",
+  "implementation_status": "source_review_complete_adapter_pending",
+  "user_request": "在GraspGenX后接类似ZeroGrasp的碰撞筛选、宽度深度修正和NMS，减少交给规划器的候选，预先建立独立实验版本。",
+  "method": "graspgenx_postprocessing",
+  "objective": "在保留可执行抓法的前提下减少重复、空抓和碰撞候选，并降低后处理加规划总耗时。",
+  "baseline_run": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02",
+  "candidate_io_activation": "tmp/candidate_io/activation_20261125_01",
+  "cohort": {
+    "source": "V4_complete_nonterminal_SAM_failure_cases",
+    "paired_scenes": 74,
+    "saved_candidate_observations": 69,
+    "common_stationing_failures": 5,
+    "SAM_failures_excluded": 25,
+    "original_interrupted_separate": 1,
+    "selection_by_grasp_or_planning_outcome": false
+  },
+  "pairing": {
+    "SAM3_RGBD_pointcloud_and_raw_grasps": "identical_cached_inputs",
+    "base_lift_arm_and_object_state": "same_final_grasp_preparation_state",
+    "candidate_IO": "same_shared_memory_background_snapshot_implementation_in_all_variants",
+    "GPU_warmup_seeds_and_timing": "matched_per_comparison"
+  },
+  "variants": [
+    {
+      "id": "control",
+      "pipeline": ["original_GraspGenX_candidates", "native_score_order", "dual_arm_cuRobo"],
+      "candidate_pose_changes": false,
+      "state": "planned"
+    },
+    {
+      "id": "nms_only",
+      "pipeline": ["original_GraspGenX_candidates", "ZeroGrasp_GraspNet_NMS", "native_score_order", "dual_arm_cuRobo"],
+      "candidate_pose_changes": false,
+      "state": "planned"
+    },
+    {
+      "id": "collision_empty_nms",
+      "pipeline": ["original_GraspGenX_candidates", "ARX_local_collision_filter", "ARX_grasp_cavity_empty_filter", "ZeroGrasp_GraspNet_NMS", "native_score_order", "dual_arm_cuRobo"],
+      "candidate_pose_changes": false,
+      "geometry_source": "current_ARX_geometry_and_observed_pointcloud",
+      "state": "planned"
+    },
+    {
+      "id": "width_depth_collision_nms",
+      "pipeline": ["original_GraspGenX_candidates", "ARX_width_depth_refinement", "recheck_refined_geometry", "ZeroGrasp_GraspNet_NMS", "native_score_order", "dual_arm_cuRobo"],
+      "candidate_pose_changes": true,
+      "state": "pending_geometry_and_execution_contract_validation"
+    }
+  ],
+  "nms": {
+    "reference": "modules/zerograsp/server/vendor/zerograsp_mainline_minimal/zerograsp/pipeline.py",
+    "implementation": "GraspGroup.nms",
+    "translation_threshold_m": 0.03,
+    "rotation_threshold_deg": 30.0,
+    "thresholds_status": "initial_reference_values_for_offline_comparison",
+    "rotate_or_translate_retained_grasps": false,
+    "preserve_source_indices_and_suppression_representatives": true,
+    "ARX_finger_swap_equivalence": "must_verify_before_suppressing_as_equivalent"
+  },
+  "geometry": {
+    "graspgenx_virtual_origin_back_m": 0.1,
+    "tcp_eef_z_m": 0.043,
+    "robot_profile": "simulation/robots/arx/collision/arx_refined_871.json",
+    "finger_pad_geometry": "simulation/robots/arx/finger_pad_geometry.json",
+    "table_contact_policy": "configs/policies/fingertip_table.json",
+    "pointcloud_inputs": ["measured_scene_RGBD", "RaySt3R_completed_target_points"],
+    "robot_self_points": "identify_and_remove_using_measured_robot_state_before_scene_filtering",
+    "intentional_finger_target_contact": "distinguish_from_gripper_body_collision",
+    "target_mesh_or_simulator_segmentation_input": false,
+    "ARX_width_depth_parameters_status": "pending_current_geometry_validation",
+    "all_rejected_raw_fallback": false
+  },
+  "metrics": [
+    "candidate_count_after_each_stage",
+    "original_successful_grasp_retention_and_suppression_reason",
+    "local_filter_rejection_reason",
+    "native_IK_queries_and_motion_planning_calls",
+    "postprocessing_seconds",
+    "curobo_request_seconds",
+    "postprocessing_plus_planning_seconds_median_and_p90",
+    "planning_success_rate",
+    "physical_grasp_success_rate"
+  ],
+  "execution": {
+    "next_stage": "offline_saved_candidate_comparison",
+    "physical_tests_started": false,
+    "physical_grasp_budget": 0,
+    "automatic_retries": false,
+    "output_root": "tmp/graspgenx_postprocessing"
+  }
+}

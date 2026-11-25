@@ -7,7 +7,8 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 /website/node_modules/
-/website/resources/state/
+/website/resources/state/*
+!/website/resources/state/todos.snapshot.json
 *.pending
 
 # Local credentials and machine-specific authorizations.

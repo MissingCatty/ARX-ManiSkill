@@ -9,6 +9,7 @@ from scipy.spatial.transform import Rotation
 from arx_project.layout import ROOT, read_json, write_json
 from modules.arx_core.arms import get_arm
 from modules.curobo.dual_arm.accelerated_adapter import AcceleratedDualArmPlanner
+from modules.curobo.candidate_io.store import candidate_scope, candidate_pool
 
 
 def connection_gate(context, target, approach_axis, q):
@@ -28,7 +29,7 @@ class PlacementPlanner(AcceleratedDualArmPlanner):
             proposal = read_json(witness_file)
             if proposal['arm'] != arm:
                 raise ValueError('Known endpoint witness belongs to another arm')
-            candidates = read_json(Path(directory)/'candidates/candidate_pool.json')['candidates']
+            candidates = candidate_pool(directory)['candidates']
             if len(candidates) != 1:
                 raise ValueError('Known endpoint witness requires one original grasp')
             target = np.asarray(candidates[0]['pose']).copy()
@@ -43,11 +44,15 @@ class PlacementPlanner(AcceleratedDualArmPlanner):
     def request(self, directory, *, station_probe=False, **flags):
         if not station_probe:
             return super().request(directory, **flags)
-        if set(flags) - {'arm'}:
+        if set(flags) - {'arm', 'candidate_transport'}:
             raise ValueError('Endpoint probe cannot execute another planning stage')
-        return self.endpoint(directory, flags.get('arm'))
+        return self.endpoint(directory, flags.get('arm'), flags.get('candidate_transport'))
 
-    def endpoint(self, directory, side):
+    def endpoint(self, directory, side, candidate_transport=None):
+        with candidate_scope(directory, candidate_transport):
+            return self._endpoint(directory, side)
+
+    def _endpoint(self, directory, side):
         import torch
         started = time.perf_counter()
         directory = Path(directory)
@@ -57,7 +62,7 @@ class PlacementPlanner(AcceleratedDualArmPlanner):
         witness = proposal['witness']
         if proposal['arm'] != side or witness['joint_names'] != list(arm.joints):
             raise ValueError('Endpoint witness belongs to another physical arm')
-        candidates = read_json(directory/'candidates/candidate_pool.json')['candidates']
+        candidates = candidate_pool(directory)['candidates']
         if len(candidates) != 1:
             raise ValueError('Endpoint probe requires one unchanged world grasp')
         contact = np.asarray(candidates[0]['pose'])

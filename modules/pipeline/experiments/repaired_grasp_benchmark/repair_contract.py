@@ -37,7 +37,8 @@ def simulation_config(config):
     return result
 
 
-def make_candidates(directory):
+def make_candidates(directory, *, background=False):
+    from arx_project.artifacts import publish_candidate_pool
     from common import paths,read,save
     paths()
     import graspcl_pipeline as display
@@ -63,8 +64,9 @@ def make_candidates(directory):
                 'model_origin_behind_eef_m':ORIGIN_BACK_M,'storage_tcp_m':TCP_M,
                 'pose_refinement_applied':False,'source_network_depth_m':0.}})
     dest=directory/'candidates';dest.mkdir()
+    persist_pool = (lambda payload: publish_candidate_pool(directory, payload)) if background else (lambda payload: save(dest/'candidate_pool.json', payload))
     (directory/'graspcl').symlink_to(dest,target_is_directory=True)
-    save(dest/'candidate_pool.json',{'candidates':candidates,'protocol':VERSION,
+    persist_pool({'candidates':candidates,'protocol':VERSION,
         'raw_count':len(poses),'retained_count':len(candidates),'graspcl_invoked':False,
         'native_score_order':True,'topdown_filter':False,'orientation_changes':0,
         'posthoc_grasp_position_changes':0,'model_reference_frame_conversion':True})

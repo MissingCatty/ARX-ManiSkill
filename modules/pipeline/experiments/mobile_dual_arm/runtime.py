@@ -63,12 +63,15 @@ class Stationing:
                 read_json(coarse/'candidates/candidate_pool.json'), center, out/'stationing/search')
             if selected is None:
                 return {'success': False, 'reason': 'no_safe_reachable_station', 'motion_started': False,
-                        'search_report': search_report}
+                        'search_report_file': str(out/'stationing/search/search_result.json'),
+                        'search_summary': {k:v for k,v in search_report.items() if k!='events'}}
             chosen, path = selected['proposal'], selected['path']
             write_json(out/'stationing/selected.json', {**chosen, 'coarse_plan': selected['work']+'/plan_result.json',
                        'transit': selected['transit'], 'grasp_will_be_reobserved_and_replanned': True})
             write_json(out/'stationing/command.json', {'path': path, 'goal': chosen})
             receipt = self.execute(env, out/'stationing', state, chosen, path)
+            receipt['search_report_file'] = str(out/'stationing/search/search_result.json')
+            receipt['search_summary'] = {k:v for k,v in search_report.items() if k!='events'}
             write_json(out/'stationing/receipt.json', receipt)
             return receipt
         checker = SweepChecker(self.model, state, self.settings['transit_clearance_m'])

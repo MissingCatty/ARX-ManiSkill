@@ -7,7 +7,8 @@ from short_lift_protocol import LIFT_DISTANCE_M, PROTOCOL
 
 class ShortLiftPlanner(TruncationPlanner):
     def select_tcp43(self, state, rows, camera):
-        pool = json.loads((self.out.parent / 'graspcl/candidate_pool.json').read_text())['candidates']
+        from modules.curobo.candidate_io.store import candidate_pool
+        pool = candidate_pool(self.out.parent)['candidates']
         start = self.measured(state)
         rejected = {k: 0 for k in ['grasp_ik', 'closed_collision', 'pre_or_lift_ik', 'path', 'optimizer']}
         for index, candidate in enumerate(pool):

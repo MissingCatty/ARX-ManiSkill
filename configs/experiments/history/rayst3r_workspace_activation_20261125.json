@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-25T13:58:36.407740+08:00",
+  "validation": "configs/experiments/history/rayst3r_workspace_validation_20261125.json",
+  "validation_sha256": "3f2ae9ee5c91b9b904f14b297b3a71d75f097cfb76905e96924ad5c4535565eb",
+  "point_outputs_bitwise_equal": true,
+  "inference_pool_mib": 14336,
+  "startup_empty_gpu_requirement_mib": 23000,
+  "postwarm_free_mib": [
+    5579.6875,
+    5579.6875
+  ],
+  "adapter_sha256": "0e9da8cb137cb33b402bd66d8746b65a3bacf6aa101d438d750032fc7ee7394c",
+  "prediction_math_weights_scenes_physics_success_unchanged": true,
+  "previous_configuration": "configs/experiments/history/active_experiment_before_rayst3r_workspace_20261125.json",
+  "new_configuration_sha256": "77da276e9184e8d342db265da438673d49d7b641e467753ab51fc968082d2a9a"
+}

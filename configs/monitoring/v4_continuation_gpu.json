@@ -1,0 +1,13 @@
+{
+  "run": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02",
+  "controller_unit": "arx-v4-high100-resume-20261125-02.service",
+  "poll_interval_seconds": 1,
+  "admission_plans_mib": [
+    {"rayst3r": 23000, "perception": 12000, "planning": 10000},
+    {"rayst3r": 23000, "execution": 23000}
+  ],
+  "start_commands": [
+    ["systemctl", "--user", "start", "arx-v4-high100-resume-launch-20261125-02.service"]
+  ],
+  "status_file": "tmp/resource_monitor/v4_continuation_20261125_02/status.json"
+}

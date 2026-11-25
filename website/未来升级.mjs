@@ -57,7 +57,7 @@ export function readUpgradePlan(root, settings, markdown) {
   if (!table) throw new Error('未来升级计划缺少阶段进度表');
   const env=(document,summary=false)=>({
     resolveUpgradeLink:href=>resolveLink(document,href,summary),
-    upgradeAnchors:{'阶段与状态':'stages','可达性引导的抓取位姿局部修正':'grasp-refinement','头部初始感知与腕部近场复核':'head-wrist','地图引导修正的具体方法':'map-guided-method'}
+    upgradeAnchors:{'阶段与状态':'stages','可达性引导的抓取位姿局部修正':'grasp-refinement','头部初始感知与腕部近场复核':'head-wrist','地图引导修正的具体方法':'map-guided-method','cuRobo v2 原生多相机 TSDF／ESDF 管线':'multi-camera-distance-field'}
   });
   const summary=markdown.render(table,env(documents[0],true));
   const pages=documents.map(d=>({

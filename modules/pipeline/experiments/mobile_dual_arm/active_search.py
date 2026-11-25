@@ -18,6 +18,9 @@ class StationBackend:
 
 
 def make_search(model, settings, request, options):
+    if options.get('placement_method') == 'high_workspace_priority':
+        from modules.pipeline.experiments.mobile_dual_arm.workspace_priority.entry import make_search as priority_search
+        return priority_search(model, settings, request, options)
     index = OrientationIndex(ROOT/options['map_directory'], ROOT/options['index_directory'])
     generator = InverseReachability(index, model,
         read_json(ROOT/'simulation/robots/arx/runtime/action_tcp.json')['T_eef_action'], options)

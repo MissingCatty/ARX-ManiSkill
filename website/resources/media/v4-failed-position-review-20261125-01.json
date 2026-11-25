@@ -1,0 +1,118 @@
+{
+  "at": "2026-11-25T14:29:18.607451+08:00",
+  "source_campaign": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/mobile_dual_arm/v4_high100_20261125_04",
+  "new_simulation_instances": 0,
+  "new_ik_or_grasp_planning_calls": 0,
+  "cases": [
+    {
+      "id": "M0003_S1_open_baguette",
+      "label": "长棍面包",
+      "object_center_world_m": [
+        -0.36770568311681096,
+        0.27035110752998115,
+        0.016192361370690276
+      ],
+      "target_from_perception_world_m": [
+        -0.38337741347152865,
+        0.2692061097565662,
+        0.02683668670400008
+      ],
+      "center_body4_m": [
+        0.5881761799756527,
+        0.01934440974684455,
+        -0.20580769945741134
+      ],
+      "table_near_edge_world_x_m": -0.7245,
+      "center_from_near_table_edge_m": 0.3567943168831891,
+      "nearest_object_surface_from_edge_m": 0.24812737594925072,
+      "farthest_object_surface_from_edge_m": 0.4647439430630991,
+      "object_world_bounds_m": [
+        [
+          -0.4763726240507493,
+          0.23540367129396478,
+          -2.1681389277689034e-08
+        ],
+        [
+          -0.25975605693690096,
+          0.3098317038096251,
+          0.03257853115605775
+        ]
+      ],
+      "robot_part_front_gaps_m": {
+        "base_link": 0.10743354308605191,
+        "wheel1": 0.07988772533033495,
+        "wheel2": 0.07983691120762137,
+        "wheel3": 0.6784299616292128
+      },
+      "closest_shared_candidate_base_delta_xy_m": [
+        0.08250453976791228,
+        0.008199424675628175
+      ],
+      "closest_shared_candidate_lift_m": 0.4068367951844536,
+      "closest_shared_candidate_rejection": {
+        "passed": false,
+        "link": "wheel1",
+        "obstacle": "table"
+      },
+      "physical_body_motion": false,
+      "native_grasp_planning_calls": 0,
+      "source_state_sha256": "1dece6e894421d022130cc23dfcf0ff3ddc26b8efd72948f674251eedc7a7c64",
+      "source_search_sha256": "fea7043188a4210420232c69d5047daa40a6cfd886fdb759c882d91a0b0c8485"
+    },
+    {
+      "id": "M0007_S1_open_book",
+      "label": "书本",
+      "object_center_world_m": [
+        -0.3217483535922427,
+        0.15649621160165791,
+        0.007893718639217992
+      ],
+      "target_from_perception_world_m": [
+        -0.34603254719133514,
+        0.16577988940540336,
+        0.015088979585486495
+      ],
+      "center_body4_m": [
+        0.6341335074546222,
+        -0.09451048654648064,
+        -0.2141063485095562
+      ],
+      "table_near_edge_world_x_m": -0.7245,
+      "center_from_near_table_edge_m": 0.40275164640775735,
+      "nearest_object_surface_from_edge_m": 0.20959640877560248,
+      "farthest_object_surface_from_edge_m": 0.5959159708909334,
+      "object_world_bounds_m": [
+        [
+          -0.5149035912243975,
+          -0.03770779103108851,
+          6.4952335759004e-08
+        ],
+        [
+          -0.1285840291090667,
+          0.3507088223658678,
+          0.015787538662591312
+        ]
+      ],
+      "robot_part_front_gaps_m": {
+        "base_link": 0.10743354308605191,
+        "wheel1": 0.07988772533033495,
+        "wheel2": 0.07983691120762137,
+        "wheel3": 0.6784299616292128
+      },
+      "closest_shared_candidate_base_delta_xy_m": [
+        0.0959051288207281,
+        0.0004709453494080029
+      ],
+      "closest_shared_candidate_lift_m": 0.39508908806594,
+      "closest_shared_candidate_rejection": {
+        "passed": false,
+        "link": "base_link",
+        "obstacle": "table"
+      },
+      "physical_body_motion": false,
+      "native_grasp_planning_calls": 0,
+      "source_state_sha256": "d6ffe9fb0371bd346a8ae8ce949bf14aee56d31442232af2f8158c1073b202e4",
+      "source_search_sha256": "725292a66cfad5f9741a28584bea7e0b1248597705f40693ba636a8d554b5a8b"
+    }
+  ]
+}

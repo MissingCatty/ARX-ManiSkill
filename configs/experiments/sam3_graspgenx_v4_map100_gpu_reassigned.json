@@ -1,0 +1,14 @@
+{
+  "variant": "inverse_reachability_map100",
+  "base_experiment": "configs/experiments/sam3_graspgenx_v4.json",
+  "dataset": "simulation/scenes/mobile100",
+  "physical_slot_budget": 100,
+  "component_modules": {
+    "curobo_dual_arm": "curobo_dual_arm_map"
+  },
+  "station_search_configuration": "configs/experiments/inverse_reachability_placement.json",
+  "predecessor": "tmp/mobile_dual_arm/v4_100_20261125_01",
+  "publication_prefix": "sam3-v4-map100-20261125-02",
+  "report_document": "V4_地图主动站位100场景测试结果_02.md",
+  "user_authorization": "2026-11-25：保留旧批次，直接用新版重测同一组100场景；本轮用户要求寻找其他可用显卡，重新检查资源并分配组件。启用地图主动站位与非感知加速，沿用V2指尖余量；感知配置、场景物理、初始条件及成功判据保持不变，每例一次，不自动重抓。资源预检停止的01登记和原始旧100批次均保留。"
+}

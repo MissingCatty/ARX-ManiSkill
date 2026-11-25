@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-25T13:56:55.115277+08:00",
+  "passed": true,
+  "physical_grasps": 0,
+  "planning_calls": 0,
+  "registry_worker_calls": 2,
+  "competitor_mib": 0.0,
+  "cache_cleanup_preserves_live_workspace": true,
+  "outputs_bitwise_equal": true,
+  "source_input_weight_integrity": true,
+  "records": [
+    {
+      "call": 0,
+      "point_count": 50968,
+      "bitwise_equal": true,
+      "workspace_still_held_mib": 14336.0,
+      "allocated_mib": 16329.86083984375,
+      "remaining_mib": 5579.6875
+    },
+    {
+      "call": 1,
+      "point_count": 50968,
+      "bitwise_equal": true,
+      "workspace_still_held_mib": 14336.0,
+      "allocated_mib": 16329.86083984375,
+      "remaining_mib": 5579.6875
+    }
+  ]
+}

@@ -9,6 +9,7 @@ import time
 import traceback
 from .layout import ROOT,ensure_run_path,now,write_json
 from .registry import create_worker, module_records
+from .artifacts import close_owned_transports, finish_candidate_transport, commit_candidate_transport
 
 
 def read_message(stream):
@@ -24,6 +25,7 @@ def serve(args,worker=None):
     if module_records().get(args.kind, {}).get('role') != 'motion_planning':
         warm=worker.request(ensure_run_path(args.warmup_trial))
         if not warm.get('success') or not warm.get('target_found',True):raise RuntimeError('Module warmup failed: '+str(warm))
+        finish_candidate_transport(args.warmup_trial)
     memory = None
     torch = sys.modules.get('torch')
     if torch is not None and torch.cuda.is_initialized():
@@ -49,7 +51,12 @@ def serve(args,worker=None):
                     try:
                         message=read_message(stream);command=message.pop('command','request')
                         if command=='health':response=ready
+                        elif command=='artifact_commit':
+                            directory=ensure_run_path(message.pop('directory'))
+                            result=commit_candidate_transport(directory,message.pop('token'))
+                            response={'status':'ok','result':result}
                         elif command=='shutdown':
+                            close_owned_transports()
                             stream.write(b'{"status":"stopped"}\n');stream.flush();break
                         elif command=='request':
                             directory=ensure_run_path(message.pop('directory'))
@@ -60,7 +67,9 @@ def serve(args,worker=None):
                         else:raise ValueError('Unknown RPC command')
                     except Exception:response={'status':'error','returncode':1,'error':traceback.format_exc()}
                     stream.write(json.dumps(response,default=lambda v:v.tolist()).encode()+b'\n');stream.flush()
-        finally:args.socket.unlink(missing_ok=True)
+        finally:
+            args.socket.unlink(missing_ok=True)
+            close_owned_transports()
     write_json(args.root/(args.kind+'_stopped.json'),ready)
 
 

@@ -1,0 +1,41 @@
+{
+  "at": "2026-11-25T10:21:21.682648+08:00",
+  "kind": "explicit_new_map100_software_registration",
+  "previous_configuration": "configs/experiments/history/active_experiment_before_map100_20261125.json",
+  "previous_configuration_sha256": "4a20380b35159d62e25debfe32895b53af406de1257a48af1d8b37a03c32926d",
+  "source_updates": {
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": {
+      "before": "294027e21fdac8bf8ddc01884eefd716938f9f89de943c6a72ab8f289d81b2ce",
+      "after": "dfd2830c9b00db5e49ebcb28a8ebf46b877fb6dded984c4fc46641af5d12fc81"
+    },
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/arx_adapter.py": {
+      "before": "f29d1157ee8d28a42afa0731d0877097558e8d6d4c0bc1d70a3e2c78fb3c0195",
+      "after": "621dfa7f5e2fa36818742060063cb222b3d6cde324fae6a5e5b4f3da04e5594c"
+    },
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/dual_arm/adapter.py": {
+      "before": "83d5692d40694386de15e69ad0d022f6cfa673341b4d84dd2a364301df6fb11b",
+      "after": "f254af0771ae424f8261533b6a90a0a646a6771d60193eb07f7bb852b9f893be"
+    },
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/dual_arm_grasp/run.py": {
+      "before": "6d92ddd954d6a0c6c1b08157a394aa031026c44eb561be1b3cd6098de8882de9",
+      "after": "ab1306550b1851777000dd62f44dc5655464a7e70bb82eba479cec6eeb58a3d5"
+    },
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/mobile_manipulation/placement.py": {
+      "before": "e15fecd76f14681ad72fd17b27ad5831186b72d692e4185bd5f01bd26ef2ea66",
+      "after": "6ad3699171b07ef293df9e2a1ff30e79c154501efa493f3cf346686810722fe5"
+    },
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/mobile_dual_arm/run.py": {
+      "before": "fb8c3069ff84746becbe5db25b3498d072026d9b34ec66978c24b5cbf04c1f70",
+      "after": "a2a3d5023dabb751dc60c0eaf1a71817e307deab88a6399ada90a9a04ed58892"
+    },
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/mobile_dual_arm/runtime.py": {
+      "before": "d3702d13a0f2c70cb58bf369f76b872fc37ea66bbb5e98540ca775ad8bf26a47",
+      "after": "f64431ac54bf9158069d2f8d283012412d2444db063117f690e6642d19c89a1f"
+    }
+  },
+  "robot_camera_scene_physics_success_fields_unchanged": true,
+  "default_planner_binding_unchanged": true,
+  "run_uses_explicit_component_alias": true,
+  "user_authorization": "保留旧批次，直接用新版重测同一组100场景；感知优化先不做",
+  "new_configuration_sha256": "250da0512acf741dddd63b723fef2a1c436aab732db203d0e9d7dd57c5c7976b"
+}

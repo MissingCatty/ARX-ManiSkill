@@ -9,6 +9,7 @@ import numpy as np
 from arx_project.layout import ROOT, read_json, write_json
 from modules.arx_core.arms import get_arm
 from modules.curobo.dual_arm.model import ArmModel
+from modules.curobo.candidate_io.store import candidate_scope, candidate_pool, bind_candidate_view
 
 
 def choose_plan(plans, state):
@@ -42,9 +43,8 @@ class DualArmPlanner:
                 'observed_solver_finger_positions_m': observed,
                 'execution_required_before_arm_motion': True}
         write_json(work/filename, canonical)
-        candidates = directory/'candidates/candidate_pool.json'
-        if not (work/'candidates/candidate_pool.json').exists():
-            write_json(work/'candidates/candidate_pool.json', read_json(candidates))
+        if planned_open:
+            bind_candidate_view(work, directory)
         return work
 
     def opening_sweep(self, work, canonical):
@@ -72,7 +72,22 @@ class DualArmPlanner:
         write_json(work/'opening_sweep.json', result)
         return result
 
-    def request(self, directory, observe=False, approach=False, lift=False, selector='graspcl', arm=None):
+    def request(self, directory, observe=False, approach=False, lift=False, selector='graspcl', arm=None,
+                candidate_transport=None):
+        if observe or int(approach)+int(lift) > 1:
+            raise ValueError('V3 starts from the fixed head view and accepts one planning stage')
+        if approach or lift:
+            if candidate_transport is not None:
+                raise ValueError('Execution replanning does not consume a new candidate pool')
+            return self._request(directory, observe, approach, lift, selector, arm)
+        started = time.perf_counter()
+        with candidate_scope(directory, candidate_transport):
+            result = self._request(directory, observe, approach, lift, selector, arm)
+        result['wall_seconds'] = time.perf_counter()-started
+        write_json(Path(directory)/'plan_result.json', result)
+        return result
+
+    def _request(self, directory, observe=False, approach=False, lift=False, selector='graspcl', arm=None):
         directory = Path(directory)
         if observe or int(approach)+int(lift) > 1:
             raise ValueError('V3 starts from the fixed head view and accepts one planning stage')
@@ -111,7 +126,7 @@ class DualArmPlanner:
                 selected.update(arm=chosen, joint_names=get_arm(chosen).joints,
                                 finger_joint_names=get_arm(chosen).finger_joints,
                                 open_finger_m=.044)
-                candidate = read_json(directory/'candidates/candidate_pool.json')['candidates'][selected['index']]
+                candidate = candidate_pool(directory)['candidates'][selected['index']]
                 if not np.allclose(candidate['pose'], selected['contact_pose_world'], atol=1e-10, rtol=0):
                     raise ValueError('Selected arm changed the native world grasp pose')
             result['arm_results'] = {side: {

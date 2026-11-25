@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-25T13:23:19.405446+08:00",
+  "passed": true,
+  "completed": 50,
+  "record_integrity": true,
+  "outputs_equivalent": true,
+  "bitwise_equal_cases": 50,
+  "coordinate_atol_m": 1e-06,
+  "peak_allocated_mib": {
+    "baseline": 12179.2060546875,
+    "inplace": 11561.93408203125
+  },
+  "stress_replay": {
+    "seconds": 1.2508234389997597,
+    "peak_allocated_mib": 11561.71044921875,
+    "remaining_mib": 9927.6875
+  },
+  "stress_output_points": 50968,
+  "same_gpu_and_common_warmup": true,
+  "source_input_weight_integrity": true,
+  "physical_grasps": 0,
+  "planning_calls": 0,
+  "issues": [],
+  "eligible_for_next_registration": true
+}

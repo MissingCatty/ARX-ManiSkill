@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-25T12:57:25.823146+08:00",
+  "previous_configuration": "configs/experiments/history/active_experiment_before_high_workspace_alignment_20261125.json",
+  "source_updates": {
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/mobile_dual_arm/run.py": {
+      "before": "6aa9b8e9f3be311371882d7ddf2e9fc219ac35f8efd5167bf78a73deb81851c5",
+      "after": "c7863c8286e3cefb91cd4c0e6c49cd69c261a4471c0907e48e878d205d7db041"
+    }
+  },
+  "physical_configuration_unchanged": true,
+  "workspace_standard": "2cm / 29 joint samples / 26 orientation bins / 4 downward bins; unchanged original recommendation",
+  "cpu_replay": "tmp/mobile_manipulation/high_workspace_registered_20261125_01/complete.json",
+  "development_only_mode_physical_budget": 0,
+  "new_configuration_sha256": "c116f65118d0a7fd782e64618c17bf08256177a099f8f27466617bd88cd4d3cd"
+}

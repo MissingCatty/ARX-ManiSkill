@@ -1,0 +1,82 @@
+{
+  "at": "2026-11-25T14:32:16.983796+08:00",
+  "scope": "read_only_geometry_reconstruction",
+  "cases": [
+    {
+      "id": "M0003_S1_open_baguette",
+      "probe": "Move the existing first shared candidate 9mm backward in robot-forward axis; no change to object or robot state",
+      "high_workspace_gate": {
+        "passed": true,
+        "scope": "shared",
+        "target_body4_m": [
+          0.499,
+          0.010000000000000009,
+          -0.15000000000000002
+        ],
+        "cell": [
+          24,
+          0,
+          -8
+        ],
+        "high_density_threshold": 29.0,
+        "right_sample_count": 54,
+        "left_sample_count": 48,
+        "head_view": {
+          "passed": true,
+          "uv": [
+            307.2541996031559,
+            297.25381300786654
+          ],
+          "depth_m": 0.5316084131864245
+        }
+      },
+      "endpoint_collision": {
+        "passed": true
+      },
+      "full_body_transit": {
+        "passed": true,
+        "samples": 62,
+        "clearance_m": 0.003
+      },
+      "new_native_ik_calls": 0,
+      "new_robot_or_object_motion": 0
+    },
+    {
+      "id": "M0007_S1_open_book",
+      "probe": "Move the existing first shared candidate 9mm backward in robot-forward axis; no change to object or robot state",
+      "high_workspace_gate": {
+        "passed": true,
+        "scope": "shared",
+        "target_body4_m": [
+          0.49900000000000005,
+          -0.19,
+          -0.15000000000000002
+        ],
+        "cell": [
+          24,
+          -10,
+          -8
+        ],
+        "high_density_threshold": 29.0,
+        "right_sample_count": 53,
+        "left_sample_count": 40,
+        "head_view": {
+          "passed": true,
+          "uv": [
+            454.48546591194713,
+            296.15781333974564
+          ],
+          "depth_m": 0.5318677010146254
+        }
+      },
+      "endpoint_collision": {
+        "passed": false,
+        "link": "base_link",
+        "obstacle": "table"
+      },
+      "full_body_transit": null,
+      "new_native_ik_calls": 0,
+      "new_robot_or_object_motion": 0
+    }
+  ]
+}

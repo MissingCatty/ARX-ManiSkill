@@ -1,0 +1,2821 @@
+{
+  "at": "2026-11-25T15:44:58.450559+08:00",
+  "passed": true,
+  "task_complete": false,
+  "registered": 100,
+  "completed": 87,
+  "interrupted": 1,
+  "not_started": 12,
+  "successes": 48,
+  "record_integrity": true,
+  "issues": [],
+  "video_count": 390,
+  "videos": [
+    {
+      "file": "trials/M0001_S1_open_apple/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0001_S1_open_apple/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0001_S1_open_apple/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0001_S1_open_apple/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0001_S1_open_apple/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0001_S1_open_apple/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0002_S1_open_avocado/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0002_S1_open_avocado/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0002_S1_open_avocado/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0002_S1_open_avocado/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0002_S1_open_avocado/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0002_S1_open_avocado/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0004_S1_open_banana/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0004_S1_open_banana/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0004_S1_open_banana/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0004_S1_open_banana/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0004_S1_open_banana/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0004_S1_open_banana/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0005_S1_open_bar_soap/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0005_S1_open_bar_soap/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0005_S1_open_bar_soap/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0005_S1_open_bar_soap/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0005_S1_open_bar_soap/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0005_S1_open_bar_soap/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0006_S1_open_bell_pepper/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0006_S1_open_bell_pepper/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0006_S1_open_bell_pepper/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0006_S1_open_bell_pepper/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0006_S1_open_bell_pepper/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0006_S1_open_bell_pepper/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0008_S1_open_bottled_water/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0008_S1_open_bottled_water/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0008_S1_open_bottled_water/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0008_S1_open_bottled_water/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0008_S1_open_bottled_water/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0008_S1_open_bottled_water/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0009_S1_open_bowl/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0009_S1_open_bowl/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0009_S1_open_bowl/stationing/segments/01_right/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0009_S1_open_bowl/stationing/segments/01_right/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0009_S1_open_bowl/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0009_S1_open_bowl/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0009_S1_open_bowl/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0009_S1_open_bowl/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0010_S1_open_boxed_food/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0010_S1_open_boxed_food/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0010_S1_open_boxed_food/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0010_S1_open_boxed_food/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0010_S1_open_boxed_food/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0010_S1_open_boxed_food/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0011_S1_open_bread/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0011_S1_open_bread/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0011_S1_open_bread/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0011_S1_open_bread/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0011_S1_open_bread/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0011_S1_open_bread/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0012_S1_open_broccoli/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0012_S1_open_broccoli/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0012_S1_open_broccoli/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0012_S1_open_broccoli/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0012_S1_open_broccoli/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0012_S1_open_broccoli/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0015_S1_open_carrot/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0015_S1_open_carrot/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0015_S1_open_carrot/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0015_S1_open_carrot/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0015_S1_open_carrot/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0015_S1_open_carrot/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0016_S1_open_cell_phone/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0016_S1_open_cell_phone/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0016_S1_open_cell_phone/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0016_S1_open_cell_phone/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0016_S1_open_cell_phone/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0016_S1_open_cell_phone/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0018_S1_open_croissant/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0018_S1_open_croissant/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0018_S1_open_croissant/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0018_S1_open_croissant/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0018_S1_open_croissant/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0018_S1_open_croissant/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0019_S1_open_cucumber/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0019_S1_open_cucumber/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0019_S1_open_cucumber/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0019_S1_open_cucumber/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0019_S1_open_cucumber/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0019_S1_open_cucumber/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0020_S1_open_donut/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0020_S1_open_donut/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0020_S1_open_donut/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0020_S1_open_donut/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0020_S1_open_donut/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0020_S1_open_donut/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0022_S2_edge_keychain/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0022_S2_edge_keychain/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0022_S2_edge_keychain/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0022_S2_edge_keychain/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0022_S2_edge_keychain/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0022_S2_edge_keychain/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0023_S2_edge_lemon/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0023_S2_edge_lemon/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0023_S2_edge_lemon/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0023_S2_edge_lemon/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0023_S2_edge_lemon/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0023_S2_edge_lemon/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0024_S2_edge_mango/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0024_S2_edge_mango/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0024_S2_edge_mango/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0024_S2_edge_mango/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0024_S2_edge_mango/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0024_S2_edge_mango/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0026_S2_edge_mug/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0026_S2_edge_mug/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0026_S2_edge_mug/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0026_S2_edge_mug/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0026_S2_edge_mug/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0026_S2_edge_mug/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0027_S2_edge_mushroom/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0027_S2_edge_mushroom/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0027_S2_edge_mushroom/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0027_S2_edge_mushroom/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0027_S2_edge_mushroom/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0027_S2_edge_mushroom/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0029_S2_edge_orange/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0029_S2_edge_orange/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0029_S2_edge_orange/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0029_S2_edge_orange/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0029_S2_edge_orange/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0029_S2_edge_orange/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0030_S2_edge_peach/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0030_S2_edge_peach/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0030_S2_edge_peach/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0030_S2_edge_peach/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0030_S2_edge_peach/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0030_S2_edge_peach/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0031_S2_edge_pear/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0031_S2_edge_pear/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0031_S2_edge_pear/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0031_S2_edge_pear/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0031_S2_edge_pear/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0031_S2_edge_pear/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0032_S2_edge_potato/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0032_S2_edge_potato/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0032_S2_edge_potato/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0032_S2_edge_potato/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0032_S2_edge_potato/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0032_S2_edge_potato/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0033_S2_edge_remote_control/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0033_S2_edge_remote_control/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0033_S2_edge_remote_control/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0033_S2_edge_remote_control/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0033_S2_edge_remote_control/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0033_S2_edge_remote_control/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0034_S2_edge_scissors/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0034_S2_edge_scissors/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0034_S2_edge_scissors/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0034_S2_edge_scissors/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0034_S2_edge_scissors/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0034_S2_edge_scissors/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0036_S2_edge_spatula/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0036_S2_edge_spatula/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0036_S2_edge_spatula/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0036_S2_edge_spatula/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0036_S2_edge_spatula/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0036_S2_edge_spatula/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0038_S2_edge_teapot/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0038_S2_edge_teapot/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0038_S2_edge_teapot/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0038_S2_edge_teapot/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0038_S2_edge_teapot/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0038_S2_edge_teapot/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0039_S2_edge_tomato/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0039_S2_edge_tomato/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0039_S2_edge_tomato/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0039_S2_edge_tomato/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0039_S2_edge_tomato/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0039_S2_edge_tomato/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0041_S3_sparse_apple/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0041_S3_sparse_apple/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0041_S3_sparse_apple/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0041_S3_sparse_apple/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0041_S3_sparse_apple/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0041_S3_sparse_apple/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0042_S3_sparse_avocado/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0042_S3_sparse_avocado/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0042_S3_sparse_avocado/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0042_S3_sparse_avocado/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0042_S3_sparse_avocado/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0042_S3_sparse_avocado/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0043_S3_sparse_baguette/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0043_S3_sparse_baguette/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0043_S3_sparse_baguette/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0043_S3_sparse_baguette/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0043_S3_sparse_baguette/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0043_S3_sparse_baguette/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0044_S3_sparse_banana/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0044_S3_sparse_banana/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0044_S3_sparse_banana/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0044_S3_sparse_banana/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0044_S3_sparse_banana/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0044_S3_sparse_banana/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0045_S3_sparse_bar_soap/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0045_S3_sparse_bar_soap/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0045_S3_sparse_bar_soap/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0045_S3_sparse_bar_soap/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0045_S3_sparse_bar_soap/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0045_S3_sparse_bar_soap/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0046_S3_sparse_bell_pepper/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0046_S3_sparse_bell_pepper/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0046_S3_sparse_bell_pepper/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0046_S3_sparse_bell_pepper/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0046_S3_sparse_bell_pepper/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0046_S3_sparse_bell_pepper/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0047_S3_sparse_book/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0047_S3_sparse_book/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0047_S3_sparse_book/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0047_S3_sparse_book/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0047_S3_sparse_book/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0047_S3_sparse_book/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0048_S3_sparse_bottled_water/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0048_S3_sparse_bottled_water/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0048_S3_sparse_bottled_water/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0048_S3_sparse_bottled_water/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0048_S3_sparse_bottled_water/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0048_S3_sparse_bottled_water/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0050_S3_sparse_boxed_food/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0050_S3_sparse_boxed_food/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0050_S3_sparse_boxed_food/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0050_S3_sparse_boxed_food/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0050_S3_sparse_boxed_food/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0050_S3_sparse_boxed_food/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0052_S3_sparse_broccoli/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0052_S3_sparse_broccoli/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0052_S3_sparse_broccoli/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0052_S3_sparse_broccoli/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0052_S3_sparse_broccoli/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0052_S3_sparse_broccoli/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0055_S3_sparse_carrot/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0055_S3_sparse_carrot/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0055_S3_sparse_carrot/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0055_S3_sparse_carrot/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0055_S3_sparse_carrot/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0055_S3_sparse_carrot/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0056_S3_sparse_cell_phone/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0056_S3_sparse_cell_phone/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0056_S3_sparse_cell_phone/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0056_S3_sparse_cell_phone/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0056_S3_sparse_cell_phone/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0056_S3_sparse_cell_phone/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0058_S3_sparse_croissant/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0058_S3_sparse_croissant/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0058_S3_sparse_croissant/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0058_S3_sparse_croissant/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0058_S3_sparse_croissant/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0058_S3_sparse_croissant/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0059_S3_sparse_cucumber/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0059_S3_sparse_cucumber/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0059_S3_sparse_cucumber/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0059_S3_sparse_cucumber/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0059_S3_sparse_cucumber/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0059_S3_sparse_cucumber/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0060_S3_sparse_donut/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0060_S3_sparse_donut/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0060_S3_sparse_donut/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0060_S3_sparse_donut/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0060_S3_sparse_donut/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0060_S3_sparse_donut/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0061_S4_clutter_eggplant/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0061_S4_clutter_eggplant/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0061_S4_clutter_eggplant/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0061_S4_clutter_eggplant/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0061_S4_clutter_eggplant/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0061_S4_clutter_eggplant/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0062_S4_clutter_keychain/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0062_S4_clutter_keychain/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0062_S4_clutter_keychain/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0062_S4_clutter_keychain/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0062_S4_clutter_keychain/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0062_S4_clutter_keychain/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0063_S4_clutter_lemon/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0063_S4_clutter_lemon/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0063_S4_clutter_lemon/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0063_S4_clutter_lemon/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0063_S4_clutter_lemon/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0063_S4_clutter_lemon/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0064_S4_clutter_mango/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0064_S4_clutter_mango/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0064_S4_clutter_mango/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0064_S4_clutter_mango/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0064_S4_clutter_mango/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0064_S4_clutter_mango/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0065_S4_clutter_milk/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0065_S4_clutter_milk/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0065_S4_clutter_milk/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0065_S4_clutter_milk/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0065_S4_clutter_milk/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0065_S4_clutter_milk/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0066_S4_clutter_mug/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0066_S4_clutter_mug/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0066_S4_clutter_mug/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0066_S4_clutter_mug/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0066_S4_clutter_mug/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0066_S4_clutter_mug/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0067_S4_clutter_mushroom/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0067_S4_clutter_mushroom/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0067_S4_clutter_mushroom/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0067_S4_clutter_mushroom/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0067_S4_clutter_mushroom/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0067_S4_clutter_mushroom/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0069_S4_clutter_orange/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0069_S4_clutter_orange/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0069_S4_clutter_orange/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0069_S4_clutter_orange/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0069_S4_clutter_orange/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0069_S4_clutter_orange/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0070_S4_clutter_peach/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0070_S4_clutter_peach/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0070_S4_clutter_peach/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0070_S4_clutter_peach/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0070_S4_clutter_peach/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0070_S4_clutter_peach/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0071_S4_clutter_pear/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0071_S4_clutter_pear/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0071_S4_clutter_pear/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0071_S4_clutter_pear/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0071_S4_clutter_pear/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0071_S4_clutter_pear/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0072_S4_clutter_potato/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0072_S4_clutter_potato/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0072_S4_clutter_potato/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0072_S4_clutter_potato/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0072_S4_clutter_potato/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0072_S4_clutter_potato/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0074_S4_clutter_scissors/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0074_S4_clutter_scissors/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0074_S4_clutter_scissors/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0074_S4_clutter_scissors/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0074_S4_clutter_scissors/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0074_S4_clutter_scissors/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0078_S4_clutter_teapot/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0078_S4_clutter_teapot/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0078_S4_clutter_teapot/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0078_S4_clutter_teapot/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0078_S4_clutter_teapot/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0078_S4_clutter_teapot/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0079_S4_clutter_tomato/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0079_S4_clutter_tomato/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0079_S4_clutter_tomato/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0079_S4_clutter_tomato/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0079_S4_clutter_tomato/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0079_S4_clutter_tomato/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0081_S5_occluded_apple/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0081_S5_occluded_apple/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0081_S5_occluded_apple/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0081_S5_occluded_apple/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0081_S5_occluded_apple/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0081_S5_occluded_apple/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0082_S5_occluded_avocado/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0082_S5_occluded_avocado/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0082_S5_occluded_avocado/stationing/segments/01_right/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0082_S5_occluded_avocado/stationing/segments/01_right/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0082_S5_occluded_avocado/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0082_S5_occluded_avocado/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0082_S5_occluded_avocado/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0082_S5_occluded_avocado/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0083_S5_occluded_baguette/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0083_S5_occluded_baguette/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0083_S5_occluded_baguette/stationing/segments/01_left/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0083_S5_occluded_baguette/stationing/segments/01_left/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0083_S5_occluded_baguette/stationing/segments/02_right/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0083_S5_occluded_baguette/stationing/segments/02_right/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0083_S5_occluded_baguette/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0083_S5_occluded_baguette/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0084_S5_occluded_banana/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0084_S5_occluded_banana/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0084_S5_occluded_banana/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0084_S5_occluded_banana/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0084_S5_occluded_banana/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0084_S5_occluded_banana/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0085_S5_occluded_bar_soap/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0085_S5_occluded_bar_soap/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0085_S5_occluded_bar_soap/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0085_S5_occluded_bar_soap/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0085_S5_occluded_bar_soap/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0085_S5_occluded_bar_soap/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0086_S5_occluded_bell_pepper/stationing/segments/00_shared/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0086_S5_occluded_bell_pepper/stationing/segments/00_shared/motion.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0086_S5_occluded_bell_pepper/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0086_S5_occluded_bell_pepper/execution.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0086_S5_occluded_bell_pepper/stationing/head.mp4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "trials/M0086_S5_occluded_bell_pepper/stationing/motion.mp4",
+      "passed": true,
+      "error": null
+    }
+  ],
+  "results": [
+    {
+      "id": "M0001_S1_open_apple",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 228,
+      "base_translation_m": 0.022256721084023517,
+      "lift_change_m": -0.01622873544692993
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 225,
+      "base_translation_m": 0.0027843824969008913,
+      "lift_change_m": -0.012787222862243652
+    },
+    {
+      "id": "M0003_S1_open_baguette",
+      "state": "complete",
+      "success": false,
+      "reason": "unable_to_plan",
+      "selected_arm": null
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 336,
+      "base_translation_m": 0.01708208492193825,
+      "lift_change_m": -0.04728206992149353
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 285,
+      "base_translation_m": 0.008060507906572666,
+      "lift_change_m": -0.03850916028022766
+    },
+    {
+      "id": "M0006_S1_open_bell_pepper",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 228,
+      "base_translation_m": 0.0032251741572254964,
+      "lift_change_m": -0.01540374755859375
+    },
+    {
+      "id": "M0007_S1_open_book",
+      "state": "complete",
+      "success": false,
+      "reason": "unable_to_plan",
+      "selected_arm": null
+    },
+    {
+      "id": "M0008_S1_open_bottled_water",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 186,
+      "base_translation_m": 0.0,
+      "lift_change_m": 0.0
+    },
+    {
+      "id": "M0009_S1_open_bowl",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 186,
+      "base_translation_m": 0.04152229790036366,
+      "lift_change_m": -0.05089578032493591
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 204,
+      "base_translation_m": 0.042675177793789466,
+      "lift_change_m": -0.005242973566055298
+    },
+    {
+      "id": "M0011_S1_open_bread",
+      "state": "complete",
+      "success": false,
+      "reason": "insufficient_hold_height",
+      "selected_arm": "right",
+      "station_trace_samples": 420,
+      "base_translation_m": 0.17600356613342255,
+      "lift_change_m": -0.02292683720588684
+    },
+    {
+      "id": "M0012_S1_open_broccoli",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 306,
+      "base_translation_m": 0.11306988465223647,
+      "lift_change_m": -0.03451767563819885
+    },
+    {
+      "id": "M0013_S1_open_candle",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0014_S1_open_canned_food",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0015_S1_open_carrot",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 348,
+      "base_translation_m": 0.023724889729515315,
+      "lift_change_m": -0.04933080077171326
+    },
+    {
+      "id": "M0016_S1_open_cell_phone",
+      "state": "complete",
+      "success": false,
+      "reason": "no_bilateral_target_contact",
+      "selected_arm": "left",
+      "station_trace_samples": 432,
+      "base_translation_m": 0.08337219009878923,
+      "lift_change_m": -0.06401187181472778
+    },
+    {
+      "id": "M0017_S1_open_corn",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0018_S1_open_croissant",
+      "state": "complete",
+      "success": false,
+      "reason": "insufficient_hold_height",
+      "selected_arm": "left",
+      "station_trace_samples": 282,
+      "base_translation_m": 0.005129855588801226,
+      "lift_change_m": -0.03799208998680115
+    },
+    {
+      "id": "M0019_S1_open_cucumber",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 261,
+      "base_translation_m": 0.04418897590293798,
+      "lift_change_m": -0.03415471315383911
+    },
+    {
+      "id": "M0020_S1_open_donut",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 279,
+      "base_translation_m": 0.007193160309728816,
+      "lift_change_m": -0.037257492542266846
+    },
+    {
+      "id": "M0021_S2_edge_eggplant",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0022_S2_edge_keychain",
+      "state": "complete",
+      "success": false,
+      "reason": "no_bilateral_target_contact",
+      "selected_arm": "right",
+      "station_trace_samples": 450,
+      "base_translation_m": 0.008972905682423978,
+      "lift_change_m": -0.06689324975013733
+    },
+    {
+      "id": "M0023_S2_edge_lemon",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 270,
+      "base_translation_m": 0.005950333113877747,
+      "lift_change_m": -0.018901437520980835
+    },
+    {
+      "id": "M0024_S2_edge_mango",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 276,
+      "base_translation_m": 0.012057718313260801,
+      "lift_change_m": -0.02647438645362854
+    },
+    {
+      "id": "M0025_S2_edge_milk",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0026_S2_edge_mug",
+      "state": "complete",
+      "success": false,
+      "reason": "no_bilateral_target_contact",
+      "selected_arm": "right",
+      "station_trace_samples": 276,
+      "base_translation_m": 0.009784004124402506,
+      "lift_change_m": -0.03693392872810364
+    },
+    {
+      "id": "M0027_S2_edge_mushroom",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 363,
+      "base_translation_m": 0.005447098469256706,
+      "lift_change_m": -0.052233219146728516
+    },
+    {
+      "id": "M0028_S2_edge_onion",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0029_S2_edge_orange",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 291,
+      "base_translation_m": 0.022298341343229937,
+      "lift_change_m": -0.03966966271400452
+    },
+    {
+      "id": "M0030_S2_edge_peach",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 231,
+      "base_translation_m": 0.003592707755386902,
+      "lift_change_m": -0.017995446920394897
+    },
+    {
+      "id": "M0031_S2_edge_pear",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 234,
+      "base_translation_m": 0.007883192050053528,
+      "lift_change_m": -0.024745196104049683
+    },
+    {
+      "id": "M0032_S2_edge_potato",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 228,
+      "base_translation_m": 0.0053367451768555,
+      "lift_change_m": -0.014726966619491577
+    },
+    {
+      "id": "M0033_S2_edge_remote_control",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 378,
+      "base_translation_m": 0.011133813639486343,
+      "lift_change_m": -0.05483850836753845
+    },
+    {
+      "id": "M0034_S2_edge_scissors",
+      "state": "complete",
+      "success": false,
+      "reason": "no_bilateral_target_contact",
+      "selected_arm": "left",
+      "station_trace_samples": 447,
+      "base_translation_m": 0.0034117296359464284,
+      "lift_change_m": -0.06671175360679626
+    },
+    {
+      "id": "M0035_S2_edge_soap_dispenser",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0036_S2_edge_spatula",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 405,
+      "base_translation_m": 0.004458591306513672,
+      "lift_change_m": -0.059073567390441895
+    },
+    {
+      "id": "M0037_S2_edge_sponge",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0038_S2_edge_teapot",
+      "state": "complete",
+      "success": false,
+      "reason": "insufficient_hold_height",
+      "selected_arm": "left",
+      "station_trace_samples": 186,
+      "base_translation_m": 0.0,
+      "lift_change_m": 0.0
+    },
+    {
+      "id": "M0039_S2_edge_tomato",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 234,
+      "base_translation_m": 0.007066929908189704,
+      "lift_change_m": -0.024280518293380737
+    },
+    {
+      "id": "M0040_S2_edge_yogurt",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0041_S3_sparse_apple",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 228,
+      "base_translation_m": 0.007302302107267508,
+      "lift_change_m": -0.015548884868621826
+    },
+    {
+      "id": "M0042_S3_sparse_avocado",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 228,
+      "base_translation_m": 0.00603105500177432,
+      "lift_change_m": -0.014208346605300903
+    },
+    {
+      "id": "M0043_S3_sparse_baguette",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 324,
+      "base_translation_m": 0.05058875416026699,
+      "lift_change_m": -0.045241981744766235
+    },
+    {
+      "id": "M0044_S3_sparse_banana",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 333,
+      "base_translation_m": 0.05978519988721755,
+      "lift_change_m": -0.04693111777305603
+    },
+    {
+      "id": "M0045_S3_sparse_bar_soap",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 285,
+      "base_translation_m": 0.0043149724792477875,
+      "lift_change_m": -0.038375258445739746
+    },
+    {
+      "id": "M0046_S3_sparse_bell_pepper",
+      "state": "complete",
+      "success": false,
+      "reason": "approach_not_converged",
+      "selected_arm": "left",
+      "station_trace_samples": 228,
+      "base_translation_m": 0.009871420070089397,
+      "lift_change_m": -0.015745848417282104
+    },
+    {
+      "id": "M0047_S3_sparse_book",
+      "state": "complete",
+      "success": false,
+      "reason": "insufficient_hold_height",
+      "selected_arm": "right",
+      "station_trace_samples": 390,
+      "base_translation_m": 0.006834075767582449,
+      "lift_change_m": -0.056924134492874146
+    },
+    {
+      "id": "M0048_S3_sparse_bottled_water",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 234,
+      "base_translation_m": 0.0009271374309692335,
+      "lift_change_m": 0.004888981580734253
+    },
+    {
+      "id": "M0049_S3_sparse_bowl",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0050_S3_sparse_boxed_food",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 255,
+      "base_translation_m": 0.007258925033334843,
+      "lift_change_m": -0.009207338094711304
+    },
+    {
+      "id": "M0051_S3_sparse_bread",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0052_S3_sparse_broccoli",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 285,
+      "base_translation_m": 0.008219061265566568,
+      "lift_change_m": -0.03831467032432556
+    },
+    {
+      "id": "M0053_S3_sparse_candle",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0054_S3_sparse_canned_food",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0055_S3_sparse_carrot",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 345,
+      "base_translation_m": 0.008340729766274549,
+      "lift_change_m": -0.04862946271896362
+    },
+    {
+      "id": "M0056_S3_sparse_cell_phone",
+      "state": "complete",
+      "success": false,
+      "reason": "no_bilateral_target_contact",
+      "selected_arm": "right",
+      "station_trace_samples": 432,
+      "base_translation_m": 0.02804127567562193,
+      "lift_change_m": -0.064016193151474
+    },
+    {
+      "id": "M0057_S3_sparse_corn",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0058_S3_sparse_croissant",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 285,
+      "base_translation_m": 0.0552935642376506,
+      "lift_change_m": -0.038369834423065186
+    },
+    {
+      "id": "M0059_S3_sparse_cucumber",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 267,
+      "base_translation_m": 0.05342430741304257,
+      "lift_change_m": -0.03509801626205444
+    },
+    {
+      "id": "M0060_S3_sparse_donut",
+      "state": "complete",
+      "success": false,
+      "reason": "approach_not_converged",
+      "selected_arm": "right",
+      "station_trace_samples": 279,
+      "base_translation_m": 0.029469873673036693,
+      "lift_change_m": -0.037138402462005615
+    },
+    {
+      "id": "M0061_S4_clutter_eggplant",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 237,
+      "base_translation_m": 0.019401841750757765,
+      "lift_change_m": -0.026848703622817993
+    },
+    {
+      "id": "M0062_S4_clutter_keychain",
+      "state": "complete",
+      "success": false,
+      "reason": "no_bilateral_target_contact",
+      "selected_arm": "left",
+      "station_trace_samples": 450,
+      "base_translation_m": 0.07643935346527019,
+      "lift_change_m": -0.06702035665512085
+    },
+    {
+      "id": "M0063_S4_clutter_lemon",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 231,
+      "base_translation_m": 0.01064953911137407,
+      "lift_change_m": -0.019025862216949463
+    },
+    {
+      "id": "M0064_S4_clutter_mango",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 234,
+      "base_translation_m": 0.008671383532715885,
+      "lift_change_m": -0.02369782328605652
+    },
+    {
+      "id": "M0065_S4_clutter_milk",
+      "state": "complete",
+      "success": false,
+      "reason": "approach_not_converged",
+      "selected_arm": "left",
+      "station_trace_samples": 186,
+      "base_translation_m": 0.0,
+      "lift_change_m": 0.0
+    },
+    {
+      "id": "M0066_S4_clutter_mug",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 279,
+      "base_translation_m": 0.007918231420707737,
+      "lift_change_m": -0.037416815757751465
+    },
+    {
+      "id": "M0067_S4_clutter_mushroom",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 372,
+      "base_translation_m": 0.015676645784821065,
+      "lift_change_m": -0.05332985520362854
+    },
+    {
+      "id": "M0068_S4_clutter_onion",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0069_S4_clutter_orange",
+      "state": "complete",
+      "success": false,
+      "reason": "insufficient_hold_height",
+      "selected_arm": "left",
+      "station_trace_samples": 294,
+      "base_translation_m": 0.0100922679493897,
+      "lift_change_m": -0.03976643085479736
+    },
+    {
+      "id": "M0070_S4_clutter_peach",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 231,
+      "base_translation_m": 0.003244424926691926,
+      "lift_change_m": -0.018773704767227173
+    },
+    {
+      "id": "M0071_S4_clutter_pear",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 240,
+      "base_translation_m": 0.00018579256348401414,
+      "lift_change_m": -0.030178040266036987
+    },
+    {
+      "id": "M0072_S4_clutter_potato",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 228,
+      "base_translation_m": 0.006379599093729359,
+      "lift_change_m": -0.015326261520385742
+    },
+    {
+      "id": "M0073_S4_clutter_remote_control",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0074_S4_clutter_scissors",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 447,
+      "base_translation_m": 0.039717909443467335,
+      "lift_change_m": -0.06663677096366882
+    },
+    {
+      "id": "M0075_S4_clutter_soap_dispenser",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0076_S4_clutter_spatula",
+      "state": "complete",
+      "success": false,
+      "reason": "unable_to_plan",
+      "selected_arm": null
+    },
+    {
+      "id": "M0077_S4_clutter_sponge",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0078_S4_clutter_teapot",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 186,
+      "base_translation_m": 0.0,
+      "lift_change_m": 0.0
+    },
+    {
+      "id": "M0079_S4_clutter_tomato",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 234,
+      "base_translation_m": 0.006714444711309253,
+      "lift_change_m": -0.024284183979034424
+    },
+    {
+      "id": "M0080_S4_clutter_yogurt",
+      "state": "complete",
+      "success": false,
+      "reason": "coarse_sam3_no_target_mask",
+      "selected_arm": null
+    },
+    {
+      "id": "M0081_S5_occluded_apple",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "left",
+      "station_trace_samples": 225,
+      "base_translation_m": 0.014688407334239996,
+      "lift_change_m": -0.013795524835586548
+    },
+    {
+      "id": "M0082_S5_occluded_avocado",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 231,
+      "base_translation_m": 0.06997474998296951,
+      "lift_change_m": -0.009754389524459839
+    },
+    {
+      "id": "M0083_S5_occluded_baguette",
+      "state": "complete",
+      "success": false,
+      "reason": "unable_to_plan",
+      "selected_arm": null,
+      "station_trace_samples": 231,
+      "base_translation_m": 0.018691384502718584,
+      "lift_change_m": -0.04529601335525513
+    },
+    {
+      "id": "M0084_S5_occluded_banana",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 336,
+      "base_translation_m": 0.008566804028830796,
+      "lift_change_m": -0.047230929136276245
+    },
+    {
+      "id": "M0085_S5_occluded_bar_soap",
+      "state": "complete",
+      "success": true,
+      "reason": "success",
+      "selected_arm": "right",
+      "station_trace_samples": 288,
+      "base_translation_m": 0.07451044570399878,
+      "lift_change_m": -0.03879886865615845
+    },
+    {
+      "id": "M0086_S5_occluded_bell_pepper",
+      "state": "complete",
+      "success": false,
+      "reason": "insufficient_hold_height",
+      "selected_arm": "right",
+      "station_trace_samples": 228,
+      "base_translation_m": 0.02381706150042366,
+      "lift_change_m": -0.014465421438217163
+    },
+    {
+      "id": "M0087_S5_occluded_book",
+      "state": "complete",
+      "success": false,
+      "reason": "unable_to_plan",
+      "selected_arm": null
+    },
+    {
+      "id": "M0088_S5_occluded_bottled_water",
+      "state": "interrupted"
+    },
+    {
+      "id": "M0089_S5_occluded_bowl",
+      "state": "not_started"
+    },
+    {
+      "id": "M0090_S5_occluded_boxed_food",
+      "state": "not_started"
+    },
+    {
+      "id": "M0091_S5_occluded_bread",
+      "state": "not_started"
+    },
+    {
+      "id": "M0092_S5_occluded_broccoli",
+      "state": "not_started"
+    },
+    {
+      "id": "M0093_S5_occluded_candle",
+      "state": "not_started"
+    },
+    {
+      "id": "M0094_S5_occluded_canned_food",
+      "state": "not_started"
+    },
+    {
+      "id": "M0095_S5_occluded_carrot",
+      "state": "not_started"
+    },
+    {
+      "id": "M0096_S5_occluded_cell_phone",
+      "state": "not_started"
+    },
+    {
+      "id": "M0097_S5_occluded_corn",
+      "state": "not_started"
+    },
+    {
+      "id": "M0098_S5_occluded_croissant",
+      "state": "not_started"
+    },
+    {
+      "id": "M0099_S5_occluded_cucumber",
+      "state": "not_started"
+    },
+    {
+      "id": "M0100_S5_occluded_donut",
+      "state": "not_started"
+    }
+  ],
+  "audit_source_sha256": "02c11f83a72d633912468bcfadfeb683fb6a29669516b19d13b8a6c765ac2561"
+}

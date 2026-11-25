@@ -1,0 +1,764 @@
+{
+  "phase": "complete",
+  "registered_pairs": 74,
+  "completed_pairs": 74,
+  "interrupted": 0,
+  "not_started": 0,
+  "sam3_excluded": 25,
+  "baseline_interrupted": 1,
+  "denominator": 74,
+  "results": [
+    {
+      "id": "M0001_S1_open_apple",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "no_arm_has_executable_candidate"
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0003_S1_open_baguette",
+      "layout": "S1_open",
+      "baseline_planning_success": false,
+      "baseline_success": false,
+      "baseline_reason": "unable_to_plan",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "unable_to_reach_high_workspace"
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0006_S1_open_bell_pepper",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "close_not_converged"
+    },
+    {
+      "id": "M0007_S1_open_book",
+      "layout": "S1_open",
+      "baseline_planning_success": false,
+      "baseline_success": false,
+      "baseline_reason": "unable_to_plan",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "unable_to_reach_high_workspace"
+    },
+    {
+      "id": "M0008_S1_open_bottled_water",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0009_S1_open_bowl",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0011_S1_open_bread",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "insufficient_hold_height",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0012_S1_open_broccoli",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0015_S1_open_carrot",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0016_S1_open_cell_phone",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "no_bilateral_target_contact",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "zerograsp_no_postprocessed_candidate"
+    },
+    {
+      "id": "M0018_S1_open_croissant",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "insufficient_hold_height",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0019_S1_open_cucumber",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0020_S1_open_donut",
+      "layout": "S1_open",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "approach_not_converged"
+    },
+    {
+      "id": "M0022_S2_edge_keychain",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "no_bilateral_target_contact",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "no_arm_has_executable_candidate"
+    },
+    {
+      "id": "M0023_S2_edge_lemon",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0024_S2_edge_mango",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "no_arm_has_executable_candidate"
+    },
+    {
+      "id": "M0026_S2_edge_mug",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "no_bilateral_target_contact",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0027_S2_edge_mushroom",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "insufficient_hold_height"
+    },
+    {
+      "id": "M0029_S2_edge_orange",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "insufficient_hold_height"
+    },
+    {
+      "id": "M0030_S2_edge_peach",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0031_S2_edge_pear",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "approach_not_converged"
+    },
+    {
+      "id": "M0032_S2_edge_potato",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0033_S2_edge_remote_control",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0034_S2_edge_scissors",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "no_bilateral_target_contact",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "zerograsp_no_postprocessed_candidate"
+    },
+    {
+      "id": "M0036_S2_edge_spatula",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0038_S2_edge_teapot",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "insufficient_hold_height",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0039_S2_edge_tomato",
+      "layout": "S2_edge",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0041_S3_sparse_apple",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0042_S3_sparse_avocado",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0043_S3_sparse_baguette",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0044_S3_sparse_banana",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0045_S3_sparse_bar_soap",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0046_S3_sparse_bell_pepper",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "approach_not_converged",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "insufficient_hold_height"
+    },
+    {
+      "id": "M0047_S3_sparse_book",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "insufficient_hold_height",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "close_not_converged"
+    },
+    {
+      "id": "M0048_S3_sparse_bottled_water",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "insufficient_hold_height"
+    },
+    {
+      "id": "M0050_S3_sparse_boxed_food",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0052_S3_sparse_broccoli",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0055_S3_sparse_carrot",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0056_S3_sparse_cell_phone",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "no_bilateral_target_contact",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "zerograsp_no_postprocessed_candidate"
+    },
+    {
+      "id": "M0058_S3_sparse_croissant",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0059_S3_sparse_cucumber",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0060_S3_sparse_donut",
+      "layout": "S3_sparse",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "approach_not_converged",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0061_S4_clutter_eggplant",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0062_S4_clutter_keychain",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "no_bilateral_target_contact",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "insufficient_hold_height"
+    },
+    {
+      "id": "M0063_S4_clutter_lemon",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "close_not_converged"
+    },
+    {
+      "id": "M0064_S4_clutter_mango",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0065_S4_clutter_milk",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "approach_not_converged",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "close_not_converged"
+    },
+    {
+      "id": "M0066_S4_clutter_mug",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0067_S4_clutter_mushroom",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "approach_not_converged"
+    },
+    {
+      "id": "M0069_S4_clutter_orange",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "insufficient_hold_height",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0070_S4_clutter_peach",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0071_S4_clutter_pear",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0072_S4_clutter_potato",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0074_S4_clutter_scissors",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "zerograsp_no_postprocessed_candidate"
+    },
+    {
+      "id": "M0076_S4_clutter_spatula",
+      "layout": "S4_clutter",
+      "baseline_planning_success": false,
+      "baseline_success": false,
+      "baseline_reason": "unable_to_plan",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "unable_to_reach_high_workspace"
+    },
+    {
+      "id": "M0078_S4_clutter_teapot",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0079_S4_clutter_tomato",
+      "layout": "S4_clutter",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0081_S5_occluded_apple",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "insufficient_hold_height"
+    },
+    {
+      "id": "M0082_S5_occluded_avocado",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0084_S5_occluded_banana",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "no_arm_has_executable_candidate"
+    },
+    {
+      "id": "M0085_S5_occluded_bar_soap",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "no_arm_has_executable_candidate"
+    },
+    {
+      "id": "M0086_S5_occluded_bell_pepper",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": false,
+      "baseline_reason": "insufficient_hold_height",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0087_S5_occluded_book",
+      "layout": "S5_occluded",
+      "baseline_planning_success": false,
+      "baseline_success": false,
+      "baseline_reason": "unable_to_plan",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "unable_to_reach_high_workspace"
+    },
+    {
+      "id": "M0089_S5_occluded_bowl",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "insufficient_hold_height"
+    },
+    {
+      "id": "M0092_S5_occluded_broccoli",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0095_S5_occluded_carrot",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0096_S5_occluded_cell_phone",
+      "layout": "S5_occluded",
+      "baseline_planning_success": false,
+      "baseline_success": false,
+      "baseline_reason": "unable_to_plan",
+      "zerograsp_planning_success": false,
+      "zerograsp_success": false,
+      "zerograsp_reason": "unable_to_reach_high_workspace"
+    },
+    {
+      "id": "M0098_S5_occluded_croissant",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "measured_pregrasp_approach_unreachable"
+    },
+    {
+      "id": "M0099_S5_occluded_cucumber",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": true,
+      "zerograsp_reason": "success"
+    },
+    {
+      "id": "M0100_S5_occluded_donut",
+      "layout": "S5_occluded",
+      "baseline_planning_success": true,
+      "baseline_success": true,
+      "baseline_reason": "success",
+      "zerograsp_planning_success": true,
+      "zerograsp_success": false,
+      "zerograsp_reason": "approach_not_converged"
+    }
+  ],
+  "baseline": {
+    "planning_passes": 69,
+    "successes": 54,
+    "planning_rate": 0.9324324324324325,
+    "grasp_rate": 0.7297297297297297
+  },
+  "zerograsp": {
+    "planning_passes": 60,
+    "successes": 44,
+    "planning_rate": 0.8108108108108109,
+    "grasp_rate": 0.5945945945945946
+  }
+}

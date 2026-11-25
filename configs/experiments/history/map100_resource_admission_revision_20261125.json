@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-25T10:26:52.730119+08:00",
+  "kind": "per_device_allocation_timeout_isolation",
+  "source_updates": {
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/dual_arm_grasp/run.py": {
+      "before": "ab1306550b1851777000dd62f44dc5655464a7e70bb82eba479cec6eeb58a3d5",
+      "after": "da6913f4645255529cac5c62c2df6e9957a2c7f1119505319f1feed0dc76182f"
+    },
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/mobile_dual_arm/run.py": {
+      "before": "a2a3d5023dabb751dc60c0eaf1a71817e307deab88a6399ada90a9a04ed58892",
+      "after": "c49c4c461fa25acfe86b0ccdd78705d1ae3af7b4d67c01a84df49673c17037f3"
+    }
+  },
+  "physical_fields_unchanged": true,
+  "all_assigned_devices_require_fresh_successful_allocation": true
+}

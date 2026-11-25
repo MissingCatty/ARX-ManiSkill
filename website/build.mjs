@@ -340,6 +340,7 @@ function overview() {
       <a class="research-button" href="/results/">实验成果 <span aria-hidden="true">↗</span></a>
       <a class="research-button" href="/configuration/#scene-gallery">评测场景 <span aria-hidden="true">↗</span></a>
       ${upgradePlan ? '<a class="research-button" href="#roadmap">升级计划 <span aria-hidden="true">↗</span></a>' : ''}
+      <a class="research-button" href="https://github.com/MissingCatty/ARX-ManiSkill" target="_blank" rel="noopener noreferrer">GitHub 仓库 <span aria-hidden="true">↗</span></a>
     </div>
     <div class="hero-methods">ZeroGrasp <span>·</span> SAM3 <span>·</span> GraspGenX <span>·</span> cuRobo <span>·</span> GraspCL <span>·</span> CLARO</div>
   </header>
@@ -375,6 +376,8 @@ function overview() {
         <p class="todo-feedback" role="status" data-todo-feedback>正在读取待办…</p>
         <div class="todo-groups">${versions.map(v => `<section class="todo-group" data-todo-group="${v.id}" ${todoScope(v)} hidden>
           <h4><a href="/iterations/${v.id}/#todos">${esc(v.title)}</a></h4><ul data-todo-items></ul>
+        </section>`).join('')}${configurationRecords.filter(record=>record.todos).map(record=>`<section class="todo-group" data-todo-group="${esc(record.id)}" hidden>
+          <h4><a href="/configuration/${esc(record.id)}/#todos">${esc(record.title)}</a></h4><ul data-todo-items></ul>
         </section>`).join('')}</div>
       </section>
     </div>
@@ -488,9 +491,9 @@ function configurationDetail(record) {
     return `<section class="configuration-record" id="${item.id}">${record.sections?`<h2>${esc(item.title)}</h2>`:''}<div class="markdown">${markdown.render(raw)}</div>${item.gallery?`<h2>按场景布局浏览</h2>${sceneGalleryHtml()}`:''}</section>`;
   }).join('');
   write(`configuration/${record.id}/record.md`,`# ${record.title}\n${download}`);
-  return page(record.title,'configuration',`<div class="container article-layout">[[page-contents]]<article class="article">
+  return page(record.title,'configuration',`<div class="container article-layout${record.todos?' has-todos':''}">[[page-contents]]<article class="article">
     <header class="page-heading"><p class="eyebrow"><a href="/configuration/">实验配置与核查</a><span class="status">${esc(record.status)}</span></p><h1>${esc(record.title)}</h1><p>${esc(record.summary)}</p></header>
-    ${body}<p class="article-foot"><a href="./record.md" download>下载本页记录</a></p></article></div>`,true);
+    ${body}<p class="article-foot"><a href="./record.md" download>下载本页记录</a></p></article>${record.todos?versionTodos(record):''}</div>`,true);
 }
 
 function iterationsPage() {

@@ -1,0 +1,31 @@
+{
+  "format": "arx_website_todos_v1",
+  "exportedAt": "2026-11-25T10:41:33.548Z",
+  "sequence": 7,
+  "items": [
+    {
+      "id": 2,
+      "version": "graspcl",
+      "text": "分析成功原因",
+      "completed": 0
+    },
+    {
+      "id": 3,
+      "version": "claro",
+      "text": "东西堆到一起",
+      "completed": 0
+    },
+    {
+      "id": 4,
+      "version": "claro",
+      "text": "13个场景抓取流程和200个场景可能不一致",
+      "completed": 0
+    },
+    {
+      "id": 7,
+      "version": "gripper-configuration",
+      "text": "按 GraspGenX 官方向导复核 ARX 夹爪扫掠区域：对齐坐标轴，核对全开/半开两指内侧区域与指尖深度；将当前15毫米指腹截取方案与完整有效夹持面叠加可视化，检查原点偏移和开合动画，再决定是否修改生成器参数。",
+      "completed": 0
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "source_summary_at": "2026-11-25T15:14:51.540232+08:00",
+  "completed": 64,
+  "empty": 14,
+  "nonempty": 50,
+  "nonempty_reference_iou_median": 0.9864002576167172,
+  "nonempty_reference_iou_lt_05": 0,
+  "nonempty_reference_iou_gt_08": 50,
+  "reference": "initial-scene simulator visible masks, lens-remapped; evaluation only",
+  "cases": [
+    {
+      "id": "M0001_S1_open_apple",
+      "target_text": "apple",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.953125,
+      "reference_iou": 0.9950835791543756,
+      "reference_recall": 0.9960629921259843,
+      "prediction_precision": 0.9990128331688055
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "target_text": "avocado",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.75,
+      "reference_iou": 0.9897912885662432,
+      "reference_recall": 0.9911403907314857,
+      "prediction_precision": 0.9986266880292973
+    },
+    {
+      "id": "M0003_S1_open_baguette",
+      "target_text": "baguette",
+      "grasp_result": "unable_to_plan",
+      "mask_empty": false,
+      "score": 0.54296875,
+      "reference_iou": 0.9604606525911709,
+      "reference_recall": 0.9608294930875576,
+      "prediction_precision": 0.9996004794246903
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "target_text": "banana",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.96875,
+      "reference_iou": 0.9821162444113264,
+      "reference_recall": 0.9865269461077845,
+      "prediction_precision": 0.9954682779456193
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "target_text": "bar of soap",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.97265625,
+      "reference_iou": 0.975529692629066,
+      "reference_recall": 0.9766955482521661,
+      "prediction_precision": 0.9987778796211427
+    },
+    {
+      "id": "M0006_S1_open_bell_pepper",
+      "target_text": "bell pepper",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.93359375,
+      "reference_iou": 0.9892392392392393,
+      "reference_recall": 0.990975181749812,
+      "prediction_precision": 0.9982323232323232
+    },
+    {
+      "id": "M0007_S1_open_book",
+      "target_text": "book",
+      "grasp_result": "unable_to_plan",
+      "mask_empty": false,
+      "score": 0.96484375,
+      "reference_iou": 0.9857724599064903,
+      "reference_recall": 0.9858715873095681,
+      "prediction_precision": 0.999898011218766
+    },
+    {
+      "id": "M0008_S1_open_bottled_water",
+      "target_text": "water bottle",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.6796875,
+      "reference_iou": 0.9913141993957704,
+      "reference_recall": 0.9939416887542597,
+      "prediction_precision": 0.9973404255319149
+    },
+    {
+      "id": "M0009_S1_open_bowl",
+      "target_text": "bowl",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.5859375,
+      "reference_iou": 0.9900377877018207,
+      "reference_recall": 0.9902078680639066,
+      "prediction_precision": 0.9998265394622723
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "target_text": "food box",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.83203125,
+      "reference_iou": 0.9873352287412768,
+      "reference_recall": 0.9888687548537406,
+      "prediction_precision": 0.9984317825405122
+    },
+    {
+      "id": "M0011_S1_open_bread",
+      "target_text": "bread",
+      "grasp_result": "insufficient_hold_height",
+      "mask_empty": false,
+      "score": 0.66015625,
+      "reference_iou": 0.9873595505617978,
+      "reference_recall": 0.9878220140515223,
+      "prediction_precision": 0.999526066350711
+    },
+    {
+      "id": "M0012_S1_open_broccoli",
+      "target_text": "broccoli",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.94921875,
+      "reference_iou": 0.9642857142857143,
+      "reference_recall": 0.9759036144578314,
+      "prediction_precision": 0.9878048780487805
+    },
+    {
+      "id": "M0013_S1_open_candle",
+      "target_text": "candle",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0014_S1_open_canned_food",
+      "target_text": "canned food",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0015_S1_open_carrot",
+      "target_text": "carrot",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.9296875,
+      "reference_iou": 0.9327453142227122,
+      "reference_recall": 0.9586402266288951,
+      "prediction_precision": 0.9718552556002298
+    },
+    {
+      "id": "M0016_S1_open_cell_phone",
+      "target_text": "cell phone",
+      "grasp_result": "no_bilateral_target_contact",
+      "mask_empty": false,
+      "score": 0.97265625,
+      "reference_iou": 0.9703666499246609,
+      "reference_recall": 0.9708542713567839,
+      "prediction_precision": 0.999482669425763
+    },
+    {
+      "id": "M0017_S1_open_corn",
+      "target_text": "corn",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0018_S1_open_croissant",
+      "target_text": "croissant",
+      "grasp_result": "insufficient_hold_height",
+      "mask_empty": false,
+      "score": 0.9765625,
+      "reference_iou": 0.9879652952700811,
+      "reference_recall": 0.9910162829870859,
+      "prediction_precision": 0.9968935329003107
+    },
+    {
+      "id": "M0019_S1_open_cucumber",
+      "target_text": "cucumber",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.859375,
+      "reference_iou": 0.9858044164037855,
+      "reference_recall": 0.9873617693522907,
+      "prediction_precision": 0.9984025559105432
+    },
+    {
+      "id": "M0020_S1_open_donut",
+      "target_text": "donut",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.94140625,
+      "reference_iou": 0.9869960988296489,
+      "reference_recall": 0.9904921700223713,
+      "prediction_precision": 0.996436609152288
+    },
+    {
+      "id": "M0021_S2_edge_eggplant",
+      "target_text": "eggplant",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0022_S2_edge_keychain",
+      "target_text": "keychain",
+      "grasp_result": "no_bilateral_target_contact",
+      "mask_empty": false,
+      "score": 0.8671875,
+      "reference_iou": 0.868788386376326,
+      "reference_recall": 0.9670602858918583,
+      "prediction_precision": 0.8952819332566168
+    },
+    {
+      "id": "M0023_S2_edge_lemon",
+      "target_text": "lemon",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.93359375,
+      "reference_iou": 0.9921448087431693,
+      "reference_recall": 0.9941820670773442,
+      "prediction_precision": 0.9979388526279629
+    },
+    {
+      "id": "M0024_S2_edge_mango",
+      "target_text": "mango",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.94140625,
+      "reference_iou": 0.9923896499238964,
+      "reference_recall": 0.9930374238468234,
+      "prediction_precision": 0.9993431136413401
+    },
+    {
+      "id": "M0025_S2_edge_milk",
+      "target_text": "milk",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0026_S2_edge_mug",
+      "target_text": "mug",
+      "grasp_result": "no_bilateral_target_contact",
+      "mask_empty": false,
+      "score": 0.8671875,
+      "reference_iou": 0.982987410683906,
+      "reference_recall": 0.9838242806061638,
+      "prediction_precision": 0.9991353968528446
+    },
+    {
+      "id": "M0027_S2_edge_mushroom",
+      "target_text": "mushroom",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.95703125,
+      "reference_iou": 0.9701952723535457,
+      "reference_recall": 0.9812889812889813,
+      "prediction_precision": 0.9884816753926702
+    },
+    {
+      "id": "M0028_S2_edge_onion",
+      "target_text": "onion",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0029_S2_edge_orange",
+      "target_text": "orange",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.9296875,
+      "reference_iou": 0.9885546108567691,
+      "reference_recall": 0.9901735997379627,
+      "prediction_precision": 0.9983487450462352
+    },
+    {
+      "id": "M0030_S2_edge_peach",
+      "target_text": "peach",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.9140625,
+      "reference_iou": 0.992128801431127,
+      "reference_recall": 0.992128801431127,
+      "prediction_precision": 1.0
+    },
+    {
+      "id": "M0031_S2_edge_pear",
+      "target_text": "pear",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.9609375,
+      "reference_iou": 0.9888465723612623,
+      "reference_recall": 0.9918144611186903,
+      "prediction_precision": 0.9969829950630829
+    },
+    {
+      "id": "M0032_S2_edge_potato",
+      "target_text": "potato",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.96484375,
+      "reference_iou": 0.9878391019644528,
+      "reference_recall": 0.9887640449438202,
+      "prediction_precision": 0.9990539262062441
+    },
+    {
+      "id": "M0033_S2_edge_remote_control",
+      "target_text": "remote control",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.96484375,
+      "reference_iou": 0.9831866544069355,
+      "reference_recall": 0.983703509002497,
+      "prediction_precision": 0.9994658832955
+    },
+    {
+      "id": "M0034_S2_edge_scissors",
+      "target_text": "scissors",
+      "grasp_result": "no_bilateral_target_contact",
+      "mask_empty": false,
+      "score": 0.9765625,
+      "reference_iou": 0.9360155113911779,
+      "reference_recall": 0.9862104187946884,
+      "prediction_precision": 0.9484282907662083
+    },
+    {
+      "id": "M0035_S2_edge_soap_dispenser",
+      "target_text": "soap dispenser",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0036_S2_edge_spatula",
+      "target_text": "spatula",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.95703125,
+      "reference_iou": 0.8834818368745716,
+      "reference_recall": 0.9822199644399289,
+      "prediction_precision": 0.897840724402136
+    },
+    {
+      "id": "M0037_S2_edge_sponge",
+      "target_text": "sponge",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0038_S2_edge_teapot",
+      "target_text": "teapot",
+      "grasp_result": "insufficient_hold_height",
+      "mask_empty": false,
+      "score": 0.9609375,
+      "reference_iou": 0.9832276539169564,
+      "reference_recall": 0.9838313548915268,
+      "prediction_precision": 0.9993762993762993
+    },
+    {
+      "id": "M0039_S2_edge_tomato",
+      "target_text": "tomato",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.91015625,
+      "reference_iou": 0.9906120916259857,
+      "reference_recall": 0.9932228915662651,
+      "prediction_precision": 0.9973534971644612
+    },
+    {
+      "id": "M0040_S2_edge_yogurt",
+      "target_text": "yogurt",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0041_S3_sparse_apple",
+      "target_text": "apple",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.95703125,
+      "reference_iou": 0.9872794419368075,
+      "reference_recall": 0.9876847290640394,
+      "prediction_precision": 0.9995845450768591
+    },
+    {
+      "id": "M0042_S3_sparse_avocado",
+      "target_text": "avocado",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.828125,
+      "reference_iou": 0.989492644851396,
+      "reference_recall": 0.9915764139590855,
+      "prediction_precision": 0.9978807145019679
+    },
+    {
+      "id": "M0043_S3_sparse_baguette",
+      "target_text": "baguette",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.80078125,
+      "reference_iou": 0.9723951285520974,
+      "reference_recall": 0.9723951285520974,
+      "prediction_precision": 1.0
+    },
+    {
+      "id": "M0044_S3_sparse_banana",
+      "target_text": "banana",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.95703125,
+      "reference_iou": 0.9835164835164835,
+      "reference_recall": 0.991140642303433,
+      "prediction_precision": 0.9922394678492239
+    },
+    {
+      "id": "M0045_S3_sparse_bar_soap",
+      "target_text": "bar of soap",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.97265625,
+      "reference_iou": 0.9771547248182763,
+      "reference_recall": 0.9779163419069888,
+      "prediction_precision": 0.9992036102999734
+    },
+    {
+      "id": "M0046_S3_sparse_bell_pepper",
+      "target_text": "bell pepper",
+      "grasp_result": "approach_not_converged",
+      "mask_empty": false,
+      "score": 0.75,
+      "reference_iou": 0.9917936694021102,
+      "reference_recall": 0.9932491928382742,
+      "prediction_precision": 0.9985246385364415
+    },
+    {
+      "id": "M0047_S3_sparse_book",
+      "target_text": "book",
+      "grasp_result": "insufficient_hold_height",
+      "mask_empty": false,
+      "score": 0.88671875,
+      "reference_iou": 0.9839858269357696,
+      "reference_recall": 0.9840200097269506,
+      "prediction_precision": 0.9999646979913157
+    },
+    {
+      "id": "M0048_S3_sparse_bottled_water",
+      "target_text": "water bottle",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.734375,
+      "reference_iou": 0.989312536106297,
+      "reference_recall": 0.9918911091804228,
+      "prediction_precision": 0.9973791496796739
+    },
+    {
+      "id": "M0049_S3_sparse_bowl",
+      "target_text": "bowl",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0050_S3_sparse_boxed_food",
+      "target_text": "food box",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.875,
+      "reference_iou": 0.9835918183861542,
+      "reference_recall": 0.9844769403824521,
+      "prediction_precision": 0.9990867579908675
+    },
+    {
+      "id": "M0051_S3_sparse_bread",
+      "target_text": "bread",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0052_S3_sparse_broccoli",
+      "target_text": "broccoli",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.94140625,
+      "reference_iou": 0.962532299741602,
+      "reference_recall": 0.9770491803278688,
+      "prediction_precision": 0.9847984137475215
+    },
+    {
+      "id": "M0053_S3_sparse_candle",
+      "target_text": "candle",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0054_S3_sparse_canned_food",
+      "target_text": "canned food",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0055_S3_sparse_carrot",
+      "target_text": "carrot",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.94921875,
+      "reference_iou": 0.9521640091116174,
+      "reference_recall": 0.9711895910780669,
+      "prediction_precision": 0.9798406000937646
+    },
+    {
+      "id": "M0056_S3_sparse_cell_phone",
+      "target_text": "cell phone",
+      "grasp_result": "no_bilateral_target_contact",
+      "mask_empty": false,
+      "score": 0.97265625,
+      "reference_iou": 0.9759825327510917,
+      "reference_recall": 0.9764089121887287,
+      "prediction_precision": 0.9995527728085868
+    },
+    {
+      "id": "M0057_S3_sparse_corn",
+      "target_text": "corn",
+      "grasp_result": "coarse_sam3_no_target_mask",
+      "mask_empty": true,
+      "score": null,
+      "reference_iou": 0.0,
+      "reference_recall": 0.0,
+      "prediction_precision": 0.0
+    },
+    {
+      "id": "M0058_S3_sparse_croissant",
+      "target_text": "croissant",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.96875,
+      "reference_iou": 0.9770158251695554,
+      "reference_recall": 0.9807110438729199,
+      "prediction_precision": 0.9961582789089513
+    },
+    {
+      "id": "M0059_S3_sparse_cucumber",
+      "target_text": "cucumber",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.96875,
+      "reference_iou": 0.9898825065274152,
+      "reference_recall": 0.990205680705191,
+      "prediction_precision": 0.9996704021094265
+    },
+    {
+      "id": "M0060_S3_sparse_donut",
+      "target_text": "donut",
+      "grasp_result": "approach_not_converged",
+      "mask_empty": false,
+      "score": 0.95703125,
+      "reference_iou": 0.9897032101756511,
+      "reference_recall": 0.9912041249620868,
+      "prediction_precision": 0.9984723495264284
+    },
+    {
+      "id": "M0061_S4_clutter_eggplant",
+      "target_text": "eggplant",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.94140625,
+      "reference_iou": 0.9912302070645554,
+      "reference_recall": 0.9931657310226996,
+      "prediction_precision": 0.99803777287221
+    },
+    {
+      "id": "M0062_S4_clutter_keychain",
+      "target_text": "keychain",
+      "grasp_result": "no_bilateral_target_contact",
+      "mask_empty": false,
+      "score": 0.765625,
+      "reference_iou": 0.8488038277511962,
+      "reference_recall": 0.9630836047774158,
+      "prediction_precision": 0.8773491592482691
+    },
+    {
+      "id": "M0063_S4_clutter_lemon",
+      "target_text": "lemon",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.79296875,
+      "reference_iou": 0.9873356064296152,
+      "reference_recall": 0.990713587487781,
+      "prediction_precision": 0.9965585054080629
+    },
+    {
+      "id": "M0064_S4_clutter_mango",
+      "target_text": "mango",
+      "grasp_result": "success",
+      "mask_empty": false,
+      "score": 0.7890625,
+      "reference_iou": 0.991106719367589,
+      "reference_recall": 0.991106719367589,
+      "prediction_precision": 1.0
+    }
+  ]
+}

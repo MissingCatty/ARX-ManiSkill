@@ -68,7 +68,7 @@
     {
       "id": "sam3-graspgenx",
       "objective": "以头部SAM3、RaySt3R目标点云、GraspGenX和cuRobo完成ARX抓取，分版本记录感知、近桌接触与左右臂选择。",
-      "current": "V4",
+      "current": "V7",
       "iterations": [
         {
           "code": "V1",
@@ -236,11 +236,11 @@
             "kind": "explicit-user-request",
             "request": "2026-11-25：在双臂操作基础上接入升降和移动底盘，针对目标自主调整位置，生成100个靠近桌沿的场景测试，作为V4版本。"
           },
-          "status": "试验停止，保留现场",
-          "resultSummary": "已完成88/100例；站位到位69例，最终抓取规划通过64例，抓取成功48例。 另有1例异常中断、11例未开始。",
+          "status": "原100场景续跑：100场景抓取测试完成",
+          "resultSummary": "已完成99/100例，SAM3失败25例，统计分母74例；规划通过69/74（93.2%），抓取成功54/74（73.0%）。 另有1例异常中断、0例未开始。 承接旧87例完整结果，本次新增完成12/12例。",
           "change": "由目标观测计算底盘位置、朝向和升降高度，停稳后重新感知，再选一臂抓取。",
           "pipeline": "初次头部RGB-D与SAM3 → 站位和整机移动检查 → 底盘与升降移动 → 停稳重新观测 → SAM3＋RaySt3R＋GraspGenX → 左右臂cuRobo → 抓取",
-          "scenes": "新采样100例，五类布局各20例，使用共享物体资产。",
+          "scenes": "沿用同一组100个冻结场景，五类布局各20例，重新采集观测。",
           "settings": [
             [
               "底盘",
@@ -271,6 +271,70 @@
                   "url": "/media/sam3-v4-summary.json"
                 }
               ]
+            },
+            {
+              "id": "v4_map100_20261125_02",
+              "title": "地图主动站位100场景",
+              "date": "2026-11-25",
+              "status": "地图主动站位新版：试验停止，保留现场",
+              "summary": "已完成10/100例；站位到位10例，最终抓取规划通过8例，抓取成功6例。 另有1例异常中断、89例未开始。",
+              "outputs": [
+                "tmp/mobile_dual_arm/v4_map100_20261125_02"
+              ],
+              "artifacts": [
+                {
+                  "label": "逐例原始结果",
+                  "url": "/media/sam3-v4-map100-20261125-02-summary.json"
+                }
+              ]
+            },
+            {
+              "id": "v4_high100_20261125_04",
+              "title": "高可达空间优先100场景",
+              "date": "2026-11-25",
+              "status": "高可达空间优先新版：试验停止，保留现场",
+              "summary": "已完成87/100例，SAM3失败20例，统计分母67例；规划通过63/67（94.0%），抓取成功48/67（71.6%）。 另有1例异常中断、12例未开始。",
+              "outputs": [
+                "tmp/mobile_dual_arm/v4_high100_20261125_04"
+              ],
+              "artifacts": [
+                {
+                  "label": "逐例原始结果",
+                  "url": "/media/sam3-v4-high100-20261125-04-summary.json"
+                }
+              ]
+            },
+            {
+              "id": "v4_high100_resume_20261125_01",
+              "title": "剩余12场景续跑，承接原结果",
+              "date": "2026-11-25",
+              "status": "原100场景续跑：100场景已登记，待组件预检",
+              "summary": "已完成87/100例，SAM3失败20例，统计分母67例；规划通过63/67（94.0%），抓取成功48/67（71.6%）。 另有1例异常中断、12例未开始。 承接旧87例完整结果，本次新增完成0/12例。",
+              "outputs": [
+                "tmp/mobile_dual_arm/v4_high100_resume_20261125_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "逐例原始结果",
+                  "url": "/media/sam3-v4-high100-resume-20261125-01-summary.json"
+                }
+              ]
+            },
+            {
+              "id": "v4_high100_resume_20261125_02",
+              "title": "剩余12场景续跑，承接原结果",
+              "date": "2026-11-25",
+              "status": "原100场景续跑：100场景抓取测试完成",
+              "summary": "已完成99/100例，SAM3失败25例，统计分母74例；规划通过69/74（93.2%），抓取成功54/74（73.0%）。 另有1例异常中断、0例未开始。 承接旧87例完整结果，本次新增完成12/12例。",
+              "outputs": [
+                "tmp/mobile_dual_arm/v4_high100_resume_20261125_02"
+              ],
+              "artifacts": [
+                {
+                  "label": "逐例原始结果",
+                  "url": "/media/sam3-v4-high100-resume-20261125-02-summary.json"
+                }
+              ]
             }
           ],
           "planningAcceleration": {
@@ -285,6 +349,167 @@
             "physical_grasps": 0,
             "user_authorization": "用户认可地图主动站位与离线完整规划对照，保留V2指尖余量，感知优化暂停"
           }
+        },
+        {
+          "code": "V5",
+          "parent": "V4",
+          "sourceId": "sam3-graspgenx",
+          "title": "SAM3分割与目标确认改进",
+          "date": "2026-11-25",
+          "status": "离线诊断完成，改进待验证",
+          "resultSummary": "13个空掩码与8个正常对照完全重现；固定0.5仅换词恢复4/13，完成96组不存在类别测试。本版实际抓取0次。",
+          "change": "定位V4空掩码的类别置信度问题，比较具体名称、同义词与分数门槛对恢复分割和误认的影响，准备候选目标核验。",
+          "pipeline": "V4保存的头部RGB → SAM3门槛前候选与分数 → 提示词与门槛对照 → 掩码和目标类别评价",
+          "scenes": "使用V4保存的13个空掩码、8个正常对照；17张单物体图片上检查96组不存在类别。另复核V4当时已完成64例的初次掩码。",
+          "settings": [
+            [
+              "权重与图片",
+              "沿用V4冻结SAM3权重和保存的640×480头部图片。"
+            ],
+            [
+              "已完成",
+              "原词回放、同义描述、阈值对照与不存在类别测试。"
+            ],
+            [
+              "待验证",
+              "具体名称、空结果同义词回退与候选目标核验的链路接入。"
+            ],
+            [
+              "实际抓取",
+              "本版0次；正在进行的100场景测试继续归V4。"
+            ]
+          ],
+          "contentFile": "sam3-graspgenx-v5.md",
+          "reportLayout": true,
+          "authorization": {
+            "kind": "explicit-user-request",
+            "request": "2026-11-25用户明确要求：详细数据放到V5里，不要放到V4。"
+          },
+          "batches": [
+            {
+              "id": "sam3_segmentation_diagnosis_20261125_01",
+              "title": "SAM3存图离线诊断",
+              "date": "2026-11-25",
+              "status": "已完成",
+              "summary": "21张图片复现原分数与掩码；13个原空结果的门槛前掩码参考IoU中位98.44%，仅换词恢复4/13；96组不存在类别测试已完成。实际抓取0次。",
+              "outputs": [
+                "tmp/sam3/segmentation_diagnosis_20261125_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "分割对比图",
+                  "url": "/media/v4-sam3-mask-diagnosis-20261125-01.jpg"
+                },
+                {
+                  "label": "逐例分数与掩码评价",
+                  "url": "/media/v4-sam3-evaluation-20261125-01.json"
+                },
+                {
+                  "label": "表格数据",
+                  "url": "/media/v4-sam3-evaluation-20261125-01.csv"
+                },
+                {
+                  "label": "不存在类别测试",
+                  "url": "/media/v4-sam3-negative-controls-20261125-01.json"
+                },
+                {
+                  "label": "64例初次掩码核对",
+                  "url": "/media/v4-sam3-completed-mask-review-20261125-01.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "V6",
+          "parent": "V4",
+          "sourceId": "sam3-graspgenx",
+          "title": "同观测ZeroGrasp生成对照",
+          "date": "2026-11-25",
+          "change": "SAM3后改用ZeroGrasp替换RaySt3R与GraspGenX，固定相同站位和执行配置。",
+          "pipeline": "相同SAM3与RGB-D → ZeroGrasp原生重建/抓姿/后处理 → 同一双臂cuRobo与执行",
+          "scenes": "V4原100场景中完整结束且SAM3最终分割成功的全部场景。",
+          "settings": [
+            [
+              "比较内容",
+              "规划成功率、抓取成功率及分环节延时。"
+            ],
+            [
+              "配对条件",
+              "相同SAM3掩码、RGB-D、机器人站位与物体状态。"
+            ],
+            [
+              "候选来源",
+              "ZeroGrasp原生碰撞、宽度深度修正与NMS后候选。"
+            ]
+          ],
+          "contentFile": "sam3-graspgenx-v6.md",
+          "reportLayout": true,
+          "authorization": {
+            "kind": "explicit-user-request",
+            "request": "从SAM分割开始，将后续抓取位姿生成替换为ZeroGrasp，与当前链路比较；分割失败剔除，只比较规划成功率、抓取成功率，作为当前主线实验版本。"
+          },
+          "batches": [
+            {
+              "id": "v6_paired_20261125_01",
+              "title": "相同SAM观测与站位的逐例对照",
+              "date": "2026-11-25",
+              "status": "已完成",
+              "summary": "已完成 74/74 个配对场景。",
+              "outputs": [
+                "tmp/sam3_zerograsp_comparison/v6_paired_20261125_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "逐例配对结果",
+                  "url": "/media/sam3-v6-zerograsp-20261125-01-summary.json"
+                },
+                {
+                  "label": "延时汇总",
+                  "url": "/media/sam3-v6-zerograsp-20261125-01-latency.json"
+                }
+              ]
+            }
+          ],
+          "status": "已完成",
+          "resultSummary": "已完成 74/74 个配对场景。"
+        },
+        {
+          "code": "V7",
+          "parent": "V4",
+          "sourceId": "sam3-graspgenx",
+          "title": "GraspGenX候选筛选与NMS",
+          "date": "2026-11-25",
+          "status": "方案已登记，待离线验证",
+          "change": "在GraspGenX后比较碰撞筛选、空抓筛选、宽度深度修正与NMS，保住可执行抓法并减少规划工作量。",
+          "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX → 候选后处理 → 双臂cuRobo → 抓取",
+          "scenes": "先比较V4的69份有效候选，后续物理对照沿用74例范围，包含5例共同站位失败。",
+          "resultSummary": "源码核对与方案登记完成；后处理适配和离线比较待实施，新增物理测试0次。",
+          "settings": [
+            [
+              "比较分组",
+              "原候选、仅NMS、几何筛选＋NMS，以及单独的宽度深度修正组。"
+            ],
+            [
+              "配对条件",
+              "同一份SAM3、RGB-D、重建点云、原始候选和最终站位；各组使用相同候选I/O优化。"
+            ],
+            [
+              "夹爪与规划",
+              "当前ARX几何、TCP43、每臂871球及V2指尖2毫米余量，双臂cuRobo保留完整路径检查。"
+            ],
+            [
+              "评价内容",
+              "候选数量、成功抓法保留情况、规划与抓取成功率、后处理加规划总耗时。"
+            ]
+          ],
+          "contentFile": "sam3-graspgenx-v7.md",
+          "reportLayout": true,
+          "authorization": {
+            "kind": "explicit-user-request",
+            "request": "在GraspGenX后接类似ZeroGrasp的碰撞筛选、宽度深度修正和NMS，减少交给规划器的候选，预先建立独立实验版本。"
+          },
+          "batches": []
         }
       ]
     },

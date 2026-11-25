@@ -1,0 +1,22 @@
+{
+  "at": "2026-11-25T12:41:15.189228+08:00",
+  "kind": "authorized_high_workspace_priority_software_registration",
+  "previous_configuration": "configs/experiments/history/active_experiment_before_high100_20261125.json",
+  "previous_sha256": "f41d20e2da29b930a4c02030b2a0e71d623a1303b015cbfc61565e8ece45b28d",
+  "source_updates": {
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/arx_pipeline/run.py": {
+      "before": "8122ba9a26e45bdabaa9443fc4ce6adf96b3fe269283fbdd6b78f6ce428a0fb1",
+      "after": "d043982f7b492fbfb5b1d4c597b910867096dad7709ae56d3fa45265d7636f89"
+    },
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/mobile_dual_arm/run.py": {
+      "before": "c49c4c461fa25acfe86b0ccdd78705d1ae3af7b4d67c01a84df49673c17037f3",
+      "after": "6aa9b8e9f3be311371882d7ddf2e9fc219ac35f8efd5167bf78a73deb81851c5"
+    }
+  },
+  "preserved_fields": "All fields other than configuration_hashes and maintenance_history",
+  "physical_configuration_unchanged": true,
+  "rayst3r_binding": "Original; validated optional optimization remains separately archived",
+  "new_batch_configuration": "configs/experiments/sam3_graspgenx_v4_high100.json",
+  "user_authorization": "先调通最新高可达逻辑，再新跑100组；不恢复旧批次；清理无效0/100",
+  "new_configuration_sha256": "2a63768d9e13c51afa300274dbf1d1b9b4dcfde955aff505b9a8ea501840bbff"
+}

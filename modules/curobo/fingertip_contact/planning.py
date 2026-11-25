@@ -152,7 +152,8 @@ def contact_pool(base, profile):
             return None, {'kind': 'no_local_grasp_endpoint', 'kinematic_solutions': len(solutions), 'reasons': reasons}
 
         def select_contact(self, context, state, directory, validator):
-            candidates = read_json(directory/'candidates/candidate_pool.json')['candidates']
+            from modules.curobo.candidate_io.store import candidate_pool
+            candidates = candidate_pool(directory)['candidates']
             start = context.measured(state)
             rejected = {k: 0 for k in ['grasp_ik', 'pre_or_lift_ik', 'path', 'local_approach']}
             events = []

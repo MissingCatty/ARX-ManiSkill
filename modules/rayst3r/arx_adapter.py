@@ -10,7 +10,7 @@ class RaySt3R:
         from PIL import Image
         import torch
         sys.path.insert(0,str(module_dir('rayst3r')))
-        from arx_reconstruction import RaySt3RAdapter
+        from modules.rayst3r.arx_reconstruction import RaySt3RAdapter
         self.torch = torch
         self.model = RaySt3RAdapter()
 

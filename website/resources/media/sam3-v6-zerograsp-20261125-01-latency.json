@@ -1,0 +1,80 @@
+{
+  "at": "2026-11-25T18:17:58.413996+08:00",
+  "latency": {
+    "baseline": {
+      "generation_seconds": {
+        "samples": 69,
+        "median_seconds": 1.8240146719999757,
+        "p90_seconds": 2.2645300125972425
+      },
+      "initial_planning_seconds": {
+        "samples": 69,
+        "median_seconds": 32.41758097799902,
+        "p90_seconds": 68.02054187220092
+      },
+      "generation_and_initial_planning_seconds": {
+        "samples": 69,
+        "median_seconds": 34.29418875599913,
+        "p90_seconds": 70.19035267999935
+      },
+      "execution_with_replanning_seconds": {
+        "samples": 69,
+        "median_seconds": 27.98589515686035,
+        "p90_seconds": 39.53204665184022
+      },
+      "warm_request_to_terminal_seconds": {
+        "samples": 69,
+        "median_seconds": 63.76922059059143,
+        "p90_seconds": 105.09429440498353
+      }
+    },
+    "zerograsp": {
+      "generation_seconds": {
+        "samples": 69,
+        "median_seconds": 0.7407020070022554,
+        "p90_seconds": 1.2720821254006296
+      },
+      "initial_planning_seconds": {
+        "samples": 65,
+        "median_seconds": 6.556551403002231,
+        "p90_seconds": 9.462929717399675
+      },
+      "generation_and_initial_planning_seconds": {
+        "samples": 69,
+        "median_seconds": 7.297253410004487,
+        "p90_seconds": 10.368238839401604
+      },
+      "execution_with_replanning_seconds": {
+        "samples": 60,
+        "median_seconds": 52.01885628700256,
+        "p90_seconds": 62.63880319595337
+      },
+      "warm_request_to_terminal_seconds": {
+        "samples": 65,
+        "median_seconds": 58.961424827575684,
+        "p90_seconds": 72.02940931320191
+      }
+    }
+  },
+  "shared_sam3": {
+    "samples": 69,
+    "median_seconds": 0.33356548699885025,
+    "p90_seconds": 0.3621862123989558
+  },
+  "startup": [
+    {
+      "component": "zerograsp",
+      "startup_seconds": 170.65789103507996,
+      "gpu": "GPU-2786f56b-9d00-ba9f-5a2f-1e38775dc169",
+      "resident_internal_startup_seconds": 2.8244965509984468,
+      "timing_source": "OS process start to resident readiness"
+    },
+    {
+      "component": "curobo_dual_arm",
+      "startup_seconds": 123.28646492958069,
+      "gpu": "GPU-b827b8be-c675-83f7-1b4c-39b5811c6d5e",
+      "resident_internal_startup_seconds": 122.88329599600183,
+      "timing_source": "OS process start to resident readiness"
+    }
+  ]
+}

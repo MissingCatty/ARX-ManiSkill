@@ -11,3 +11,27 @@
 - 原100槽已在第89例CUDA故障停止，88完整/1中断/11未开始、48成功，原STOP和所有结果保留。用户后续认可独立地图主动站位和纯规划对照，未授权重抓原槽。Stationing新增可注入station_search，默认原行为不变；active_search.py连接地图生成器与可选curobo_dual_arm_map原生门控。
 - 当前正式配置回放为tmp/mobile_manipulation/active_search_replay_20261125_06，显式继承正式服务interactive轨迹优化，统一预热并记录CUDA同步的IK/路径/优化接口耗时。3对离线搜索均通过、0实际抓取，独立verification通过。01/05停止、02–04诊断记录保持；旧源码在各自source_registered，不能从这些目录自动重试。
 - 用户要求保留V2前端10毫米/最多2毫米桌面上表面接触余量，当前871球/TCP43和物理不变。感知优化已由用户明确暂停，不改SAM3/RaySt3R/GraspGenX配置。后续优先项为重复绑定与批量独立FK。手部几何粗筛的增量CPU核验在tmp/mobile_manipulation/broadphase_hand_check_20261125_01，478条输出一致；06端到端计时和增量CPU计时分别展示。
+- 用户随后明确授权保留旧批次并以新版重测同一组100场景。新登记tmp/mobile_dual_arm/v4_map100_20261125_01、配置configs/experiments/sam3_graspgenx_v4_map100.json，以逻辑角色绑定选择curobo_dual_arm_map；旧批次及停止标记、场景定义、权重、物理和成功判据保留。新登记100槽，每例一次、不重试，故障停调度。GPU2驱动报告需复位，新批次只用经重新CUDA分配探测通过的GPU0/1/3。默认规划器不切换，不能删除旧STOP绕过默认加速切换门控。
+- 新登记01于10:35在模型加载前的资源门控停止，错误Registered GPU resources unavailable；随后只读查询GPU0余量16835 MiB，低于已登记的18000 MiB门槛，其他用户任务显存动态变化。0个槽领取、0个服务启动、0次抓取、100未开始，STOP保留，不自动重启控制器。GPU2故障与GPU0瞬时显存不足分开记录。需要继续时用新的资源登记，不覆盖01或旧原100批次。
+- 用户明确要求“找其他的可用的卡”，新资源登记为tmp/mobile_dual_arm/v4_map100_20261125_02，配置sam3_graspgenx_v4_map100_gpu_reassigned.json。GPU3负责RaySt3R、GPU1负责SAM3与GraspGenX、GPU0负责cuRobo与仿真，GPU2排除；三卡CUDA分配检查通过，启动前再次核验。控制器arx-v4-map100-20261125-02.service，独立只读跟进arx-v4-map100-watch-20261125-02.service；100个同场景、每例一次，资源或记录故障仍停止。01的0次执行记录及STOP、原始旧100批次均保留；资源承接证据在02的preflight/resource_reassignment.json。发布前缀改为sam3-v4-map100-20261125-02，各批次网页资源分别留存。实时状态读取02的current_trial.json、progress.json和preflight/all_ready.json，不把注册或模型加载算成已完成抓取。
+- 02已于10:52:30通过四组件预热、预热后显存、完整原生抓取规划与地图站位检查，10:52:32领取首个苹果场景。四组件各加载一次且实际GPU UUID与登记一致，证据为preflight/gpu_assignment_verified.json；后续完成数和失败原因读取本轮动态回执。
+
+- 2026年11月25日最新指令：旧100组不再恢复。先调通“目标进入双臂共同高可达空间 → 更合适的单臂高可达空间且绑定对应手臂 → 仍失败报无法规划”，然后重新运行同一组完整100例，每例一次，不自动重抓。新配置为configs/experiments/sam3_graspgenx_v4_high100.json；实际开始前完成重新资源探测、组件预热及底盘/升降到位后的新观测与规划交接验证。原机器人、场景、物理和成功标准不变。共同/单臂高区沿用先前推荐操作空间的2厘米体素、每臂至少29组采样/26个朝向桶/4个向下桶，并保留实际原生规划检查；不能在高区失败后退回低可达区最短移动方案。
+- 原地图02批次由主机关机/重启中断，封存结果为10完整、1中断、89未开始、6成功；未恢复和重抓。原始88完整/1中断/11未开始、48成功继续保留。用户随后明确删除此前无效0/100批次：v4_map100_20261125_01及其网页批次/专用媒体已核对0领取、0模型启动、0实际执行后删除，清理回执在tmp/mobile_dual_arm/cleanup_zero100_20261125_01/receipt.json。此项删除授权替代之前保留该01停止目录的要求，不用于删除非零批次。
+- RaySt3R计算优化50观测×四实现×三次重复已完成，50/50点云一致性检查通过，坐标差不超过1微米，组合优化配对中位加速1.0404倍。原生输入、权重、21视角、预处理和点云后处理不变。该结果允许在下一次新登记使用优化适配器，不修改已封存旧批次。记录为tmp/rayst3r/compute_optimization_20261125_01。
+
+- 高可达站位首次开发预检没有领取正式场景，原因是临时上四分位筛选与已登记操作空间不一致。全部原始文件和STOP已校验归档到tmp/mobile_dual_arm/high_workspace_preflight_20261125_01，空的正式登记已清理。修正后采用原2厘米地图和原推荐区域判据；相同缓存柠檬观测的CPU几何回放在0.581秒找到共同高区的无碰终点和完整移动路径，0次抓取/0次原生规划。后续先使用--development-only的独立0抓取登记完成实机仿真接口预检，再建立新的100槽批次。
+
+- 当前独立开发预检为tmp/mobile_dual_arm/high_workspace_preflight_20261125_02，development_only=true、抓取预算0、正式领取0；控制器arx-v4-workspace-check-20261125-02.service。先等preflight/complete.json通过且services_stopped.json确认组件退出，再创建v4_high100_20261125_02正式100槽，不恢复旧槽。正式发布前缀sam3-v4-high100-20261125-02。开发预检不登记为网页100例批次；当前网页保留原88例和地图02的10例结果。
+
+- 当前正式批次已重新登记并启动为tmp/mobile_dual_arm/v4_high100_20261125_03，控制器arx-v4-high100-20261125-03.service、只读跟进arx-v4-high100-watch-20261125-03.service。只读取03的progress.json/current_trial.json；此前高区01与02均0正式领取，已分别完整归档到high_workspace_preflight_20261125_01和03，原STOP与全部文件保留，空的100例批次和网页条目已清理。源站位联调成功证据仍在high_workspace_preflight_20261125_02，0次抓取、一次共同高区实际站位并停稳、新观测和完整规划交接通过。
+- 正式02预检被其他用户新任务占用GPU0/1/2各约7.9GB引发的RaySt3R OOM停止，不是GPU驱动故障；没有终止其他用户任务。独立memory_validation_20261125_01完成50/50观测逐元素完全一致核对，出错大输入重放生成50968点，峰值分配11561.71 MiB。当前注册表启用modules/rayst3r/memory_efficient/adapter.py：保留原生FP32 softmax提升，复用注意力临时缓冲区，每次RPC完成后释放闲置缓存；权重、像素/点数/视角/预后处理保持。验证和激活副本在configs/experiments/history/rayst3r_memory_validation_20261125.json和rayst3r_memory_activation_20261125.json，新的Ray启动门槛按峰值加3GiB上取整为15360MiB。原生加载器改为统一的模块限定导入，避免同文件两份模块全局变量。以上只改计算与加载，不修改机器人、场景物理和成功判据。
+- 03开始前保留了一次加载器源登记修订，原登记及原源码在registration_revisions/loader_01，变更在任何服务/正式领取之前完成。源码已冻结，运行期间不再修改已登记Python或配置。网站媒体继续复制成resources真实文件，再统一压缩；正式100例结果不能混入开发预检。
+
+- 当前实际执行只读取tmp/mobile_dual_arm/v4_high100_20261125_04：控制器arx-v4-high100-20261125-04.service、跟进arx-v4-high100-watch-20261125-04.service。GPU2独占RaySt3R推理池；GPU0常驻SAM3、GraspGenX、cuRobo与仿真，GPU1留空。原三卡登记已在首次启动前保存为registration_revisions/two_card_01，实际双卡资源与新CUDA探测在preflight/two_card_assignment.json。每例一次，100例全新同场景，不续跑旧槽。
+- 推理池验证为tmp/rayst3r/workspace_validation_20261125_03：通过真实注册表工厂连续两次处理原出错输入，50968点均与已验证输出逐元素相同，调用后保留14336MiB工作池；框架清理闲置缓存后仍保有，卡上剩余5579.69MiB。当前Ray要求启动时至少23000MiB空闲，空卡部署；先前8GiB并占测试未达资源门槛，不作为通过结果。验证副本和配置承接在configs/experiments/history/rayst3r_workspace_validation_20261125.json及rayst3r_workspace_activation_20261125.json。
+- 正式04于14:03:08通过全部预检并领取首场景M0001_S1_open_apple，首例已实际抓取成功，随后进入M0002；以动态progress.json为准。原空100例01/02/03目录与网页批次已清理，全部停止证据分别保存在high_workspace_preflight_20261125_01/03/04；原88例及地图02的10例实际结果和STOP仍保留。正式04已冻结源码与配置，不得边跑边修改已登记文件。
+
+- 正式04第88例CUDA非法内存访问后停止，独立验收87完整/1中断/12未开始、48成功，390段视频通过，源档案与STOP保留。用户已明确要求恢复继续，新的v4_high100_resume_20261125_01只执行原89—100，原87完整及第88中断按文件散列复制承接。continuation.py必须核对父批验收、STOP和三组槽位分区；执行索引仍取原0—99序号，不能把剩余12例从0重新编号。续跑首次启动前重新预检；中断不重抓，普通失败继续，资源/记录故障仍停。当前主要成功率按完整结束例数减终止性SAM失败为分母。
+
+- 续跑01只发生模型前显存准入失败，0新增槽/服务，STOP保留。当前仅运行v4_high100_resume_20261125_02及其独立启动器；只执行原89—100，其他槽继承。新调度允许模型启动前等待原显存门槛，启动后故障仍停止；不得把暂时资源不足改成放宽门槛。resume_launcher.py按运行目录生成唯一控制器与只读看护单位名，角色绑定以preflight/resources_after_inheritance.json和各组件ready回执为准。

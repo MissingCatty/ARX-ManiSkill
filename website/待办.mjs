@@ -1,36 +1,17 @@
 import { mkdirSync, readFileSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
 import { fileURLToPath } from 'node:url';
+import { initializeTodos } from './todo-snapshot.mjs';
 
 const registry = new URL('./内容/网站.json', import.meta.url);
 const storage = new URL('./resources/state/', import.meta.url);
-const schema = `
-  CREATE TABLE todos (
-    id INTEGER PRIMARY KEY AUTOINCREMENT, version TEXT NOT NULL, text TEXT NOT NULL,
-    completed INTEGER NOT NULL DEFAULT 0 CHECK (completed IN (0, 1))
-  ) STRICT;
-`;
 let statements;
 
 function openStore() {
   mkdirSync(storage, { recursive: true, mode: 0o700 });
   const db = new DatabaseSync(fileURLToPath(new URL('待办.sqlite', storage)));
   try {
-    db.exec('BEGIN IMMEDIATE');
-    const table = db.prepare("SELECT sql FROM sqlite_schema WHERE type = 'table' AND name = 'todos'").get();
-    if (!table) {
-      db.exec(schema);
-    } else if (!table.sql.includes('AUTOINCREMENT')) {
-      // Keep deleted IDs from being reused while another page may still refer to them.
-      db.exec(`
-        ALTER TABLE todos RENAME TO todos_before_delete;
-        ${schema}
-        INSERT INTO todos (id, version, text, completed)
-          SELECT id, version, text, completed FROM todos_before_delete;
-        DROP TABLE todos_before_delete;
-      `);
-    }
-    db.exec('COMMIT');
+    initializeTodos(db, new URL('todos.snapshot.json', storage));
   } catch (error) {
     db.close();
     throw error;
@@ -88,7 +69,9 @@ export async function handleTodos(req, res, url) {
     return json(res, 415, { error: '提交格式不正确。' });
   }
   const body = await readBody(req);
-  const versions = JSON.parse(readFileSync(registry, 'utf8')).versions;
+  const configuration = JSON.parse(readFileSync(registry, 'utf8'));
+  const versions = [...configuration.versions,
+    ...(configuration.configurationRecords ?? []).filter(record => record.todos)];
   if (!body || !versions.some(version => version.id === body.version)) {
     return json(res, 400, { error: '无法识别这个版本。' });
   }

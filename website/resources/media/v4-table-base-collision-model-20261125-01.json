@@ -1,0 +1,117 @@
+{
+  "scope": "saved_state_and_local_source_inspection",
+  "new_simulation_instances": 0,
+  "new_motion_or_ik_calls": 0,
+  "source_campaign": "tmp/mobile_dual_arm/v4_high100_20261125_04",
+  "saved_state": "tmp/mobile_dual_arm/v4_high100_20261125_04/trials/M0003_S1_open_baguette/stationing/coarse/state.json",
+  "state_sha256": "1dece6e894421d022130cc23dfcf0ff3ddc26b8efd72948f674251eedc7a7c64",
+  "table_collision": {
+    "kind": "solid_box",
+    "center": [
+      -0.12,
+      0.0,
+      -0.25
+    ],
+    "dims": [
+      1.209,
+      2.418,
+      0.5
+    ],
+    "world_bottom_m": -0.5,
+    "world_top_m": 0.0,
+    "under_table_space_is_blocked": true,
+    "planner_and_simulation_both_solid": true
+  },
+  "table_visual": {
+    "source": "simulation/assets/models/workspace_table/table.glb",
+    "sha256": "cb0ebd8ad6438c1160f095d902bf55415f9d643f8c6990a186a052251fe7951a"
+  },
+  "robot_station_check": {
+    "kind": "one_convex_hull_per_urdf_collision_element",
+    "obstacle_clearance_m": 0.003,
+    "base_parts": [
+      {
+        "link": "base_link",
+        "file": "simulation/assets/models/arx_x5_lift/meshes/base_link_base_link_collision_0.stl",
+        "sha256": "2f704ae3a10d56ef5156d573e4284b4464fc62a2d74b5513492610593fe99e4a",
+        "bounds_link_m": [
+          [
+            -0.3529335856437683,
+            -0.3285732567310333,
+            0.0
+          ],
+          [
+            0.21806640923023224,
+            0.3285866677761078,
+            0.9322498440742493
+          ]
+        ],
+        "source_is_convex": false,
+        "source_is_watertight": false
+      },
+      {
+        "link": "wheel1",
+        "file": "simulation/assets/models/arx_x5_lift/meshes/wheel1_wheel1_collision_0.stl",
+        "sha256": "746d0bf7bdd4779d24997bb26d5c04a3d95216542008596564acf5efbbed21ef",
+        "bounds_link_m": [
+          [
+            -5.215416987169874e-11,
+            -0.07499392330646515,
+            -0.07499998807907104
+          ],
+          [
+            0.06399999558925629,
+            0.07499392330646515,
+            0.07499998807907104
+          ]
+        ],
+        "source_is_convex": false,
+        "source_is_watertight": true
+      },
+      {
+        "link": "wheel2",
+        "file": "simulation/assets/models/arx_x5_lift/meshes/wheel2_wheel2_collision_0.stl",
+        "sha256": "c7bb09a79d4a3f9ee04ad3a150096a8e08cf5f6d501d06f416d8dd884fdf4463",
+        "bounds_link_m": [
+          [
+            -5.215422538284997e-11,
+            -0.07499811798334122,
+            -0.07499797642230988
+          ],
+          [
+            0.06399999558925629,
+            0.07499811798334122,
+            0.07499797642230988
+          ]
+        ],
+        "source_is_convex": false,
+        "source_is_watertight": true
+      },
+      {
+        "link": "wheel3",
+        "file": "simulation/assets/models/arx_x5_lift/meshes/wheel3_wheel3_collision_0.stl",
+        "sha256": "03dbc9baf5ec052d7edb52f5f3717e6a66f598692cc2e21a2719fb69a42b0f5e",
+        "bounds_link_m": [
+          [
+            -0.06400000303983688,
+            -0.07499971985816956,
+            -0.07499979436397552
+          ],
+          [
+            5.215322618212781e-11,
+            0.07499971985816956,
+            0.07499979436397552
+          ]
+        ],
+        "source_is_convex": false,
+        "source_is_watertight": true
+      }
+    ]
+  },
+  "source_sha256": {
+    "modules/mobile_manipulation/placement.py": "6ad3699171b07ef293df9e2a1ff30e79c154501efa493f3cf346686810722fe5",
+    "modules/curobo/dual_arm/model.py": "7f5d5a54274ee4a7e23bf91e7ca5cbe800d1aed383ba2587f9bd5ea0c2841873",
+    "modules/maniskill/arx_pipeline/environment.py": "642283a7b3970a23afe8d29ae934fd96fb11e3dee58b8067d404054ef4489e82",
+    "environments/simulation/lib/python3.12/site-packages/sapien/wrapper/urdf_loader.py": "51f41a69cfb9757f057662095c36883c141daae4a50415b8f07bfc5064a5f60a"
+  }
+}

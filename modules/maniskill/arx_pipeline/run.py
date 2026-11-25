@@ -274,39 +274,45 @@ def trial(entry, out, neural_gpu, planner_gpu, perception_camera=PERCEPTION_CAME
                 raise RuntimeError('registered_wrist_view_not_admitted')
             if entry['layout']=='S5_occluded' and not .20<=view['occlusion_fraction']<=.40:
                 raise RuntimeError('registered_occlusion_outside_range')
-        obs = env.get_obs()
-        state = snapshot(env, obs)
-        save(out / "state.json", state)
-        save(out / "initial_conditions.json", {"spawn": env.spawn, "base_pose": BASE_POSE,
-                                              "initial_q": env.initial_q.tolist(), "object_bbox": env.object_bbox})
-        camera = out / "camera"; camera.mkdir()
-        data = obs["sensor_data"][env.perception_camera]
-        rgb = data["rgb"].cpu().numpy()[0]
-        depth = data["depth"].cpu().numpy()[0, :, :, 0]
-        seg = data["segmentation"].cpu().numpy()[0, :, :, 0]
-        mask = seg == env.obj._objs[0].per_scene_id
-        if mask.sum() < 50:
-            raise RuntimeError("Target has fewer than 50 visible pixels")
-        Image.fromarray(rgb).save(camera / "color.png")
-        Image.fromarray(depth.astype(np.uint16)).save(camera / "depth.png")
-        Image.fromarray(mask.astype(np.uint8)).save(camera / "mask.png")
-        imageio.imwrite(out / "initial_overview.png", env.render().cpu().numpy()[0])
-        k = np.array(state["intrinsics"])
-        save(camera / "params.json", {"depth_scale": .001, "intrinsics": {
-            "width": 640, "height": 480, "fx": k[0, 0], "fy": k[1, 1], "ppx": k[0, 2], "ppy": k[1, 2]}})
-        save(out / "capture.json", {"mask_pixels": int(mask.sum()), "median_target_depth_mm": float(np.median(depth[mask])),
-            "camera": env.perception_camera, "camera_alignment": env.camera_alignment,
-            "target_touches_image_border": bool(mask[0].any() or mask[-1].any() or mask[:,0].any() or mask[:,-1].any()),
-            "mask_source": "simulator instance segmentation", "fresh_rgbd": True})
-        if entry.get('observation_only'):
-            result['reason']='observation_only_preflight'
-            return result
-        print(entry["id"], "fresh ZeroGrasp", flush=True)
-        if worker("neural.py", out, neural_gpu, out / "neural.log"):
-            raise RuntimeError("zerograsp_failed")
-        print(entry["id"], "cuRobo planning", flush=True)
-        worker("planner.py", out, planner_gpu, out / "planner.log")
-        plan = json.loads((out / "plan_result.json").read_text())
+        prepared = result.get('stationing', {})
+        if prepared.get('prepared_plan'):
+            from modules.mobile_manipulation.workspace_priority.handoff import validate_prepared
+            validate_prepared(out, prepared, snapshot(env))
+            plan = json.loads((out / "plan_result.json").read_text())
+        else:
+            obs = env.get_obs()
+            state = snapshot(env, obs)
+            save(out / "state.json", state)
+            save(out / "initial_conditions.json", {"spawn": env.spawn, "base_pose": BASE_POSE,
+                                                  "initial_q": env.initial_q.tolist(), "object_bbox": env.object_bbox})
+            camera = out / "camera"; camera.mkdir()
+            data = obs["sensor_data"][env.perception_camera]
+            rgb = data["rgb"].cpu().numpy()[0]
+            depth = data["depth"].cpu().numpy()[0, :, :, 0]
+            seg = data["segmentation"].cpu().numpy()[0, :, :, 0]
+            mask = seg == env.obj._objs[0].per_scene_id
+            if mask.sum() < 50:
+                raise RuntimeError("Target has fewer than 50 visible pixels")
+            Image.fromarray(rgb).save(camera / "color.png")
+            Image.fromarray(depth.astype(np.uint16)).save(camera / "depth.png")
+            Image.fromarray(mask.astype(np.uint8)).save(camera / "mask.png")
+            imageio.imwrite(out / "initial_overview.png", env.render().cpu().numpy()[0])
+            k = np.array(state["intrinsics"])
+            save(camera / "params.json", {"depth_scale": .001, "intrinsics": {
+                "width": 640, "height": 480, "fx": k[0, 0], "fy": k[1, 1], "ppx": k[0, 2], "ppy": k[1, 2]}})
+            save(out / "capture.json", {"mask_pixels": int(mask.sum()), "median_target_depth_mm": float(np.median(depth[mask])),
+                "camera": env.perception_camera, "camera_alignment": env.camera_alignment,
+                "target_touches_image_border": bool(mask[0].any() or mask[-1].any() or mask[:,0].any() or mask[:,-1].any()),
+                "mask_source": "simulator instance segmentation", "fresh_rgbd": True})
+            if entry.get('observation_only'):
+                result['reason']='observation_only_preflight'
+                return result
+            print(entry["id"], "fresh ZeroGrasp", flush=True)
+            if worker("neural.py", out, neural_gpu, out / "neural.log"):
+                raise RuntimeError("zerograsp_failed")
+            print(entry["id"], "cuRobo planning", flush=True)
+            worker("planner.py", out, planner_gpu, out / "planner.log")
+            plan = json.loads((out / "plan_result.json").read_text())
         if not plan["success"]:
             result["reason"] = plan["reason"]
             return result

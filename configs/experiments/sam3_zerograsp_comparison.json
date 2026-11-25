@@ -1,0 +1,29 @@
+{
+  "version": "V6",
+  "parent": "V4",
+  "user_request": "从SAM分割开始，将后续抓取位姿生成替换为ZeroGrasp，与当前链路比较；分割失败剔除，只比较规划成功率、抓取成功率，作为当前主线实验版本。",
+  "baseline_run": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02",
+  "cohort": "all_complete_nonterminal_sam_failure_cases",
+  "pairing": "same_final_grasp_preparation_station_and_cached_SAM3_RGBD",
+  "new_branch": "SAM3 -> ZeroGrasp native reconstruction/grasp/collision/refinement/NMS -> same dual-arm cuRobo -> same physical executor",
+  "adapter": "modules/zerograsp/arx_grasp_adapter.py",
+  "components": ["zerograsp", "curobo_dual_arm"],
+  "generator_startup_free_mib": 14000,
+  "planner_startup_free_mib": 10000,
+  "minimum_post_warmup_free_mib": 1536,
+  "automatic_retries": false,
+  "maximum_new_attempts_per_case": 1,
+  "latency": {
+    "user_request": "顺便记录一下延时",
+    "summaries": ["median", "p90"],
+    "stages": ["shared_sam3", "reconstruction_and_grasp_generation", "initial_curobo_planning", "execution_with_measured_replanning", "warm_request_to_terminal"],
+    "startup_and_warmup_separate": true
+  },
+  "success": {
+    "planned_lift_m": 0.03,
+    "minimum_hold_lift_m": 0.01,
+    "hold_seconds": 3.0,
+    "bilateral_contact": true,
+    "forbidden_contacts": 0
+  }
+}

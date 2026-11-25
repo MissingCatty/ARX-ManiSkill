@@ -1,0 +1,584 @@
+{
+  "at": "2026-11-25T18:31:27.709676+08:00",
+  "version": "V7",
+  "state": "planned",
+  "activity": "source_review_and_existing_candidate_inventory",
+  "physical_grasps_added": 0,
+  "model_inference_calls": 0,
+  "native_planning_calls": 0,
+  "candidate_count": {
+    "observations": 69,
+    "minimum": 944,
+    "median": 2240.0,
+    "p90": 3579.2000000000007,
+    "maximum": 6128,
+    "total": 166008,
+    "obb_total": 130680,
+    "diffusion_total": 35328
+  },
+  "source_review": {
+    "modules/zerograsp/server/vendor/zerograsp_mainline_minimal/zerograsp/pipeline.py": "90a4d93fb9018228435c857a1972bbe32c0985a173f626893766cf7e05182af2",
+    "modules/zerograsp/server/vendor/zerograsp_mainline_minimal/zerograsp/utils/collision_detector.py": "3fbbf54ac029a7a6a947aa72698250d895c05dc76a0ee4cf74217b3dde179fa1",
+    "modules/graspgenx/arx_adapter.py": "e73cfc89ed2676796d1a42c7644e9533ef7e41403b30939e7710870e30fb410c",
+    "modules/graspgenx/arx_frames.py": "056723d37e378952ed8fcd2848047d77ace38f5cdb6ea815f11b51ea28a18e54",
+    "modules/pipeline/experiments/repaired_grasp_benchmark/repair_contract.py": "cad58aaa5c2bcf599f438f393e1a0917d0b45e97e057cbf40e504ab28b0b4d45",
+    "simulation/robots/arx/finger_pad_geometry.json": "2d0c4e9f144287d431157cd2f0eace3341b69b4298baea19fd73c20d286461c0",
+    "configs/policies/fingertip_table.json": "71f2041e9abf1fdcd5d71adb8909bc9c5261bcfdd09e476d0ca53015ab70eed8"
+  },
+  "observations": [
+    {
+      "scene_id": "M0001_S1_open_apple",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0001_S1_open_apple/graspgenx_raw/inference.json",
+      "sha256": "408c0c62cbc858695fb95afd6d060ad3d687e4723d58d7411e4ed1d2edff62c5"
+    },
+    {
+      "scene_id": "M0002_S1_open_avocado",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0002_S1_open_avocado/graspgenx_raw/inference.json",
+      "sha256": "893955c7a933dfa8c67a89de48bb3b5f0d3926f4d59744a3cb0dd6eabcc4344d"
+    },
+    {
+      "scene_id": "M0004_S1_open_banana",
+      "count": 3536,
+      "diffusion": 512,
+      "obb": 3024,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0004_S1_open_banana/graspgenx_raw/inference.json",
+      "sha256": "851f8b71742001588b171bcdade1f773211837adc3f6c6617dd2a9e1daa6f998"
+    },
+    {
+      "scene_id": "M0005_S1_open_bar_soap",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0005_S1_open_bar_soap/graspgenx_raw/inference.json",
+      "sha256": "9d98d3adc0551d7e4f11eab171bdd7fff6477fc05655283a92a79606d06f227f"
+    },
+    {
+      "scene_id": "M0006_S1_open_bell_pepper",
+      "count": 2024,
+      "diffusion": 512,
+      "obb": 1512,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0006_S1_open_bell_pepper/graspgenx_raw/inference.json",
+      "sha256": "c2025877cd1d7079e8963c57e6b28be3fdcd4c4b736d8a91904dd6c01f16c714"
+    },
+    {
+      "scene_id": "M0008_S1_open_bottled_water",
+      "count": 944,
+      "diffusion": 512,
+      "obb": 432,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0008_S1_open_bottled_water/graspgenx_raw/inference.json",
+      "sha256": "e84f891faa8033d6fbe8d3601bdb9b3cbe0774ca02f5ef3a8530a236f37c77b9"
+    },
+    {
+      "scene_id": "M0009_S1_open_bowl",
+      "count": 2672,
+      "diffusion": 512,
+      "obb": 2160,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0009_S1_open_bowl/graspgenx_raw/inference.json",
+      "sha256": "549e9d8839912b3117f86c98fc492f72f3c886ff8b3042d621ec4152d63b26de"
+    },
+    {
+      "scene_id": "M0010_S1_open_boxed_food",
+      "count": 1376,
+      "diffusion": 512,
+      "obb": 864,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0010_S1_open_boxed_food/graspgenx_raw/inference.json",
+      "sha256": "45386d9b269ea85ff2cfefb6f243bdead6e3678b6d4a255484dc1346a318e6e4"
+    },
+    {
+      "scene_id": "M0011_S1_open_bread",
+      "count": 2456,
+      "diffusion": 512,
+      "obb": 1944,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0011_S1_open_bread/graspgenx_raw/inference.json",
+      "sha256": "e757805aac205a653b472c3cf8ba87a4150d286773df5b5c1792f626257256ad"
+    },
+    {
+      "scene_id": "M0012_S1_open_broccoli",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0012_S1_open_broccoli/graspgenx_raw/inference.json",
+      "sha256": "506440cdce2986cde2c241e4c849e6d6a03ee4e5f4f21d93a5d1f1ecbd7479bc"
+    },
+    {
+      "scene_id": "M0015_S1_open_carrot",
+      "count": 3752,
+      "diffusion": 512,
+      "obb": 3240,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0015_S1_open_carrot/graspgenx_raw/inference.json",
+      "sha256": "f794120af807ea8bc4cc3c4778b6e232e6048e168e39382f43c448b34f675dc2"
+    },
+    {
+      "scene_id": "M0016_S1_open_cell_phone",
+      "count": 3320,
+      "diffusion": 512,
+      "obb": 2808,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0016_S1_open_cell_phone/graspgenx_raw/inference.json",
+      "sha256": "e06fd1ac003b380c0d74094b398056d97199dc15d386985633d22ea083b08165"
+    },
+    {
+      "scene_id": "M0018_S1_open_croissant",
+      "count": 2888,
+      "diffusion": 512,
+      "obb": 2376,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0018_S1_open_croissant/graspgenx_raw/inference.json",
+      "sha256": "3188572580cd3e0f3c297ffb9dc775415d844b9e9d4321d59be1cab22016a1c3"
+    },
+    {
+      "scene_id": "M0019_S1_open_cucumber",
+      "count": 3536,
+      "diffusion": 512,
+      "obb": 3024,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0019_S1_open_cucumber/graspgenx_raw/inference.json",
+      "sha256": "bec2bcb7428f9c7f6735c65d815d755278a83d419da30e165aed6c1be702cc01"
+    },
+    {
+      "scene_id": "M0020_S1_open_donut",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0020_S1_open_donut/graspgenx_raw/inference.json",
+      "sha256": "b4a0cf35d60a73e0cdc23faf7cfb4a590c7b56c42ed85bc2dee9ae7f275844f5"
+    },
+    {
+      "scene_id": "M0022_S2_edge_keychain",
+      "count": 2024,
+      "diffusion": 512,
+      "obb": 1512,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0022_S2_edge_keychain/graspgenx_raw/inference.json",
+      "sha256": "2e8915f01be76e2c30519d3e517add16ede52c97e8a5d0c4c0617086f71a6034"
+    },
+    {
+      "scene_id": "M0023_S2_edge_lemon",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0023_S2_edge_lemon/graspgenx_raw/inference.json",
+      "sha256": "a70addf8f984dc0604c7cb6d5da7233fa2ce54c41cc35606d65b4cca11c9c0c7"
+    },
+    {
+      "scene_id": "M0024_S2_edge_mango",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0024_S2_edge_mango/graspgenx_raw/inference.json",
+      "sha256": "432c499f7f8fa7c4597517743d390cb7ca4f1b287990eff89becfa0fd524cbae"
+    },
+    {
+      "scene_id": "M0026_S2_edge_mug",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0026_S2_edge_mug/graspgenx_raw/inference.json",
+      "sha256": "378c5c3e39a570d1b37fc01172975fbb96071c6c164887b5cc8003c9b1c63faf"
+    },
+    {
+      "scene_id": "M0027_S2_edge_mushroom",
+      "count": 1160,
+      "diffusion": 512,
+      "obb": 648,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0027_S2_edge_mushroom/graspgenx_raw/inference.json",
+      "sha256": "f5a83b2c0d8756f7b4b25b3b66941fa44f51c4cef0141135926aba461fc8e71d"
+    },
+    {
+      "scene_id": "M0029_S2_edge_orange",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0029_S2_edge_orange/graspgenx_raw/inference.json",
+      "sha256": "e9d02cfcbc9fe908ef85624d35d7da51840792f6ced4464391737b57e0917036"
+    },
+    {
+      "scene_id": "M0030_S2_edge_peach",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0030_S2_edge_peach/graspgenx_raw/inference.json",
+      "sha256": "e623249f13985e247e51af716edbcf4be679a7b96543e66f795171b9b1dc605f"
+    },
+    {
+      "scene_id": "M0031_S2_edge_pear",
+      "count": 2672,
+      "diffusion": 512,
+      "obb": 2160,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0031_S2_edge_pear/graspgenx_raw/inference.json",
+      "sha256": "d1c5495477f9b0a6719c37c1a37165e4ab8739e28f60fc691a232a6e44147228"
+    },
+    {
+      "scene_id": "M0032_S2_edge_potato",
+      "count": 2024,
+      "diffusion": 512,
+      "obb": 1512,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0032_S2_edge_potato/graspgenx_raw/inference.json",
+      "sha256": "5752b96467daf94d2a3888e439f718fa638e15f39f6107e9693b5835d18d5544"
+    },
+    {
+      "scene_id": "M0033_S2_edge_remote_control",
+      "count": 4616,
+      "diffusion": 512,
+      "obb": 4104,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0033_S2_edge_remote_control/graspgenx_raw/inference.json",
+      "sha256": "93212311163cabb29436bbe1b6946e546827173287264243fe6cb8c0af6129b6"
+    },
+    {
+      "scene_id": "M0034_S2_edge_scissors",
+      "count": 3104,
+      "diffusion": 512,
+      "obb": 2592,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0034_S2_edge_scissors/graspgenx_raw/inference.json",
+      "sha256": "8fc343c6b0d8222bc411125d85534f96891730fef1c133406b19b2a68e70499b"
+    },
+    {
+      "scene_id": "M0036_S2_edge_spatula",
+      "count": 5048,
+      "diffusion": 512,
+      "obb": 4536,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0036_S2_edge_spatula/graspgenx_raw/inference.json",
+      "sha256": "cc6fca8e4a9b35bf79792ae3326e2a3351eb8e932ee86e8ce604a8a0decd8099"
+    },
+    {
+      "scene_id": "M0038_S2_edge_teapot",
+      "count": 2024,
+      "diffusion": 512,
+      "obb": 1512,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0038_S2_edge_teapot/graspgenx_raw/inference.json",
+      "sha256": "2b28c70a75694769aabd71a8afb2a7e7005901d7e15e9f67e135b4132e7dca69"
+    },
+    {
+      "scene_id": "M0039_S2_edge_tomato",
+      "count": 1376,
+      "diffusion": 512,
+      "obb": 864,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0039_S2_edge_tomato/graspgenx_raw/inference.json",
+      "sha256": "284c9ae9a8a92f5db4714d2325ef9f1de03ac1f223aaf8d0b7a256c1aef8be56"
+    },
+    {
+      "scene_id": "M0041_S3_sparse_apple",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0041_S3_sparse_apple/graspgenx_raw/inference.json",
+      "sha256": "97d5e7e720491463c33cedb364bf0c78b55a93f32aa2479dc9c90f9df42f1431"
+    },
+    {
+      "scene_id": "M0042_S3_sparse_avocado",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0042_S3_sparse_avocado/graspgenx_raw/inference.json",
+      "sha256": "23d6b31262426f156b93d370c8bbb20417aac5823e030fa6d2277c050f49944d"
+    },
+    {
+      "scene_id": "M0043_S3_sparse_baguette",
+      "count": 4400,
+      "diffusion": 512,
+      "obb": 3888,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0043_S3_sparse_baguette/graspgenx_raw/inference.json",
+      "sha256": "58f757817a48561da4f2206d0d21acd1e7055b451e94e4d3745cb126e3a7657f"
+    },
+    {
+      "scene_id": "M0044_S3_sparse_banana",
+      "count": 3320,
+      "diffusion": 512,
+      "obb": 2808,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0044_S3_sparse_banana/graspgenx_raw/inference.json",
+      "sha256": "344b56a37c6618a2264e34a388742fb5100c559a907a0711601ba7b13e67f7e5"
+    },
+    {
+      "scene_id": "M0045_S3_sparse_bar_soap",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0045_S3_sparse_bar_soap/graspgenx_raw/inference.json",
+      "sha256": "d1d014f9e3290e8999996b587357d8b6333740805b50f81858ff9f27f7bd6726"
+    },
+    {
+      "scene_id": "M0046_S3_sparse_bell_pepper",
+      "count": 1808,
+      "diffusion": 512,
+      "obb": 1296,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0046_S3_sparse_bell_pepper/graspgenx_raw/inference.json",
+      "sha256": "a9a63773318a81dd3201a627af6a0eba22e5bdc1167140d403995fa3f82e1f2e"
+    },
+    {
+      "scene_id": "M0047_S3_sparse_book",
+      "count": 6128,
+      "diffusion": 512,
+      "obb": 5616,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0047_S3_sparse_book/graspgenx_raw/inference.json",
+      "sha256": "3c1b6520bc3d6c6389f5975baa87bccc98e5025364d74bd41feeca15240cd045"
+    },
+    {
+      "scene_id": "M0048_S3_sparse_bottled_water",
+      "count": 944,
+      "diffusion": 512,
+      "obb": 432,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0048_S3_sparse_bottled_water/graspgenx_raw/inference.json",
+      "sha256": "c008c54d95d676657cf2d775d7568bb58563bc73d209c2189149416c3e903431"
+    },
+    {
+      "scene_id": "M0050_S3_sparse_boxed_food",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0050_S3_sparse_boxed_food/graspgenx_raw/inference.json",
+      "sha256": "e8750febf925c4780cf058bd1f5e8f162798d56c7696a3699c19f50ec87d96bd"
+    },
+    {
+      "scene_id": "M0052_S3_sparse_broccoli",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0052_S3_sparse_broccoli/graspgenx_raw/inference.json",
+      "sha256": "f1ccdb4c8d31e715d4bd309e07c4458258e418d2a74c3dc41cc53307f56317d3"
+    },
+    {
+      "scene_id": "M0055_S3_sparse_carrot",
+      "count": 3752,
+      "diffusion": 512,
+      "obb": 3240,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0055_S3_sparse_carrot/graspgenx_raw/inference.json",
+      "sha256": "62476a5acc723442c73ebf29128c93b760246468db99242ea57e3a58dea1bef9"
+    },
+    {
+      "scene_id": "M0056_S3_sparse_cell_phone",
+      "count": 3536,
+      "diffusion": 512,
+      "obb": 3024,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0056_S3_sparse_cell_phone/graspgenx_raw/inference.json",
+      "sha256": "596ec3d965530024991418c891146af0af410062617b7d7ae125d23bd8564e6e"
+    },
+    {
+      "scene_id": "M0058_S3_sparse_croissant",
+      "count": 2888,
+      "diffusion": 512,
+      "obb": 2376,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0058_S3_sparse_croissant/graspgenx_raw/inference.json",
+      "sha256": "a199020839019d001e1282442d3930d6fa59c444f851ff217c3599fcf6ea511d"
+    },
+    {
+      "scene_id": "M0059_S3_sparse_cucumber",
+      "count": 3536,
+      "diffusion": 512,
+      "obb": 3024,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0059_S3_sparse_cucumber/graspgenx_raw/inference.json",
+      "sha256": "2a19d86b288b58ce3c49e5f1e5fb0275f916f6a2edeea21aa334fa3904326f91"
+    },
+    {
+      "scene_id": "M0060_S3_sparse_donut",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0060_S3_sparse_donut/graspgenx_raw/inference.json",
+      "sha256": "d70c6965f1e1d7926048ffd4c992980f548e9c1a7c7a684178a864cb5eea37fe"
+    },
+    {
+      "scene_id": "M0061_S4_clutter_eggplant",
+      "count": 2888,
+      "diffusion": 512,
+      "obb": 2376,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0061_S4_clutter_eggplant/graspgenx_raw/inference.json",
+      "sha256": "5e6b36c91bc1e275aeefa8d7063e030dd2a796607156486fe628e2d531782b9a"
+    },
+    {
+      "scene_id": "M0062_S4_clutter_keychain",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0062_S4_clutter_keychain/graspgenx_raw/inference.json",
+      "sha256": "a4b430df1778f74ee60057207606fece932dd3ff81ef83e75c4d6a142b9109d6"
+    },
+    {
+      "scene_id": "M0063_S4_clutter_lemon",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0063_S4_clutter_lemon/graspgenx_raw/inference.json",
+      "sha256": "3a61c432294d6eadc2177f9fd3210474c2dbf2f5180b96d7fea5c8f7081f3af9"
+    },
+    {
+      "scene_id": "M0064_S4_clutter_mango",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0064_S4_clutter_mango/graspgenx_raw/inference.json",
+      "sha256": "8e5f51f6e0066a51628c26c992a67918d603623ccd1887280b39118cfe726164"
+    },
+    {
+      "scene_id": "M0065_S4_clutter_milk",
+      "count": 1376,
+      "diffusion": 512,
+      "obb": 864,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0065_S4_clutter_milk/graspgenx_raw/inference.json",
+      "sha256": "ed299276533121fb5d493c3909c63355054ab668a8898715ca492d8f1cb035b2"
+    },
+    {
+      "scene_id": "M0066_S4_clutter_mug",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0066_S4_clutter_mug/graspgenx_raw/inference.json",
+      "sha256": "aafd4493264825316fabf65b4f65464dc6faf4419fd20d7b69b354844471639b"
+    },
+    {
+      "scene_id": "M0067_S4_clutter_mushroom",
+      "count": 1160,
+      "diffusion": 512,
+      "obb": 648,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0067_S4_clutter_mushroom/graspgenx_raw/inference.json",
+      "sha256": "80d7875c872f5b6a720d3ed617a86c03c1e461980fb412e86b82ccf44e0c38cb"
+    },
+    {
+      "scene_id": "M0069_S4_clutter_orange",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0069_S4_clutter_orange/graspgenx_raw/inference.json",
+      "sha256": "82a117004aea01d410eb6be0814da1f0cfe86c37ee630d4e54f8a9e6fad9fe7c"
+    },
+    {
+      "scene_id": "M0070_S4_clutter_peach",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0070_S4_clutter_peach/graspgenx_raw/inference.json",
+      "sha256": "2e5cc0231a4189298dfcd9760b55c44f399ea60f73928882f9f7c55d36c25376"
+    },
+    {
+      "scene_id": "M0071_S4_clutter_pear",
+      "count": 2672,
+      "diffusion": 512,
+      "obb": 2160,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0071_S4_clutter_pear/graspgenx_raw/inference.json",
+      "sha256": "d4b1e6400ff6eaf525ed1ae2fc3e53f1ef841f5bc0f6e3e5bf10de943546cb75"
+    },
+    {
+      "scene_id": "M0072_S4_clutter_potato",
+      "count": 1808,
+      "diffusion": 512,
+      "obb": 1296,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0072_S4_clutter_potato/graspgenx_raw/inference.json",
+      "sha256": "d2480e97307d6e49e53dd4fb8116ea9efb74110a79cbbfb02e155166829cedf0"
+    },
+    {
+      "scene_id": "M0074_S4_clutter_scissors",
+      "count": 3320,
+      "diffusion": 512,
+      "obb": 2808,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0074_S4_clutter_scissors/graspgenx_raw/inference.json",
+      "sha256": "261d4b5347eff8c46524f43c397ff6e3c3c57ece705e10cfbde83add753be522"
+    },
+    {
+      "scene_id": "M0078_S4_clutter_teapot",
+      "count": 2024,
+      "diffusion": 512,
+      "obb": 1512,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0078_S4_clutter_teapot/graspgenx_raw/inference.json",
+      "sha256": "0936d2c8d28d9c7c955928ec594217590bc1f060816496549811ebdce7b84a0b"
+    },
+    {
+      "scene_id": "M0079_S4_clutter_tomato",
+      "count": 1376,
+      "diffusion": 512,
+      "obb": 864,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0079_S4_clutter_tomato/graspgenx_raw/inference.json",
+      "sha256": "c1236cbe299ed68f1c5c691d529d4994e6ca6562720d40d788cc4de368062672"
+    },
+    {
+      "scene_id": "M0081_S5_occluded_apple",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0081_S5_occluded_apple/graspgenx_raw/inference.json",
+      "sha256": "8ec589e3dd1ba98630658f532a9d67c4307793809f910a4d01bf70c5cd1f2806"
+    },
+    {
+      "scene_id": "M0082_S5_occluded_avocado",
+      "count": 1808,
+      "diffusion": 512,
+      "obb": 1296,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0082_S5_occluded_avocado/graspgenx_raw/inference.json",
+      "sha256": "fd925f0d646bd642e3587c99f36d5d7ed09735591b7bc26ee4bb6cbaa5983e54"
+    },
+    {
+      "scene_id": "M0084_S5_occluded_banana",
+      "count": 3752,
+      "diffusion": 512,
+      "obb": 3240,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0084_S5_occluded_banana/graspgenx_raw/inference.json",
+      "sha256": "7969d860c1beaa63cd0f347d67cd4d56e0ef73cd42766167edb533a763c3b730"
+    },
+    {
+      "scene_id": "M0085_S5_occluded_bar_soap",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0085_S5_occluded_bar_soap/graspgenx_raw/inference.json",
+      "sha256": "c3bacb691f3566d9328cb0dbaef6e977b9ae6eb612f3cd3c2dafaafd065311a5"
+    },
+    {
+      "scene_id": "M0086_S5_occluded_bell_pepper",
+      "count": 1808,
+      "diffusion": 512,
+      "obb": 1296,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0086_S5_occluded_bell_pepper/graspgenx_raw/inference.json",
+      "sha256": "6ecfe8dd5460132f9328c46a52c4645ccd228e3f1e6a3c7a9c65acd04dc139a3"
+    },
+    {
+      "scene_id": "M0089_S5_occluded_bowl",
+      "count": 2672,
+      "diffusion": 512,
+      "obb": 2160,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0089_S5_occluded_bowl/graspgenx_raw/inference.json",
+      "sha256": "cb6c597455249ac68bb27774547afb6b21511c0f1d936b69d5941080601857a5"
+    },
+    {
+      "scene_id": "M0092_S5_occluded_broccoli",
+      "count": 1592,
+      "diffusion": 512,
+      "obb": 1080,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0092_S5_occluded_broccoli/graspgenx_raw/inference.json",
+      "sha256": "3b6b50dad6baa708387a234d092a70a9b9b6237dd9091b8eb0f520599f446321"
+    },
+    {
+      "scene_id": "M0095_S5_occluded_carrot",
+      "count": 2672,
+      "diffusion": 512,
+      "obb": 2160,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0095_S5_occluded_carrot/graspgenx_raw/inference.json",
+      "sha256": "aa3f0184497f14c49e8c3d211af85663a6b018ada31e172b83b22ad860e87d46"
+    },
+    {
+      "scene_id": "M0098_S5_occluded_croissant",
+      "count": 2456,
+      "diffusion": 512,
+      "obb": 1944,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0098_S5_occluded_croissant/graspgenx_raw/inference.json",
+      "sha256": "5850de395ab54a6914f040adf757483e6d28d16043979b11d504c40e20fc8e74"
+    },
+    {
+      "scene_id": "M0099_S5_occluded_cucumber",
+      "count": 3536,
+      "diffusion": 512,
+      "obb": 3024,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0099_S5_occluded_cucumber/graspgenx_raw/inference.json",
+      "sha256": "1f3bd557f75f02f818bddc4f7fcf5577fd95e5b0a9b1e7bc4fdd5d49300617fe"
+    },
+    {
+      "scene_id": "M0100_S5_occluded_donut",
+      "count": 2240,
+      "diffusion": 512,
+      "obb": 1728,
+      "inference": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02/trials/M0100_S5_occluded_donut/graspgenx_raw/inference.json",
+      "sha256": "eccd5910879b831c526a94fc8e9fd613cf9ac5f6b2194d9f82d92b9424e46688"
+    }
+  ],
+  "plan_sha256": "fb83c376993f411276600df7b4b8216f750471617e4e3f167e2208abca9f5486",
+  "configuration_sha256": "10ae5cb36c49912c85ca086738888a3bb6bb1a1da546c020a0813243a1d450ea"
+}

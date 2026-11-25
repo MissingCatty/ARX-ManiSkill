@@ -1,0 +1,61 @@
+{
+  "at": "2026-11-25T18:24:40.302461+08:00",
+  "predecessor_run": "tmp/sam3_zerograsp_comparison/v6_paired_20261125_01",
+  "predecessor_registration_sha256": "d02c60af40109d029810d9713b65082bcfe75a274b6934b120f2b7e7b2851d4f",
+  "predecessor_acceptance_sha256": "7bc3fcea555525b41266d51f9f51bce4961da981218057cece6f2a91b19df6a4",
+  "stage_sha256": "0620c64299627ea3c22db2581a08ba99878a390f4af6e6b9d69837aac607cbd6",
+  "native_replay_verification": "tmp/candidate_io/native_replay_20261125_01/verification.json",
+  "native_replay_verification_sha256": "a2af2b222dd73cf79dd44844ece014d45a1c98fec043fa15aa6d61568649fa11",
+  "saved_pool_verification_sha256": "be2a151b76353cc727eb1d35782a599ae2b62ae15af6f498cb19ea026ce5cd4a",
+  "offline_verification_sha256": "f4dfb2d31e267a3d80f6eaa999fa89b6925c2b4fbccbac67d44e95d04501817f",
+  "files": {
+    "modules/curobo/dual_arm/adapter.py": {
+      "before_sha256": "f254af0771ae424f8261533b6a90a0a646a6771d60193eb07f7bb852b9f893be",
+      "after_sha256": "c561895ca40b519ea0b8e9f17f6189537e4622921a3f51210ecc5749adb25f81"
+    },
+    "modules/curobo/dual_arm/accelerated_adapter.py": {
+      "before_sha256": "ec69169e8bfb72d84520937a87389cf902e6e3b37ce067517b5c34fe1568c6d0",
+      "after_sha256": "dea987d9fb13130bbba272cecb988658af623f70be5aef7fcbbd2967adacff1e"
+    },
+    "modules/curobo/dual_arm/placement_service.py": {
+      "before_sha256": "1d89f1efe81c5156808436c1b3b80420047ea04aebe7e355dc55532cd1ba32e4",
+      "after_sha256": "2240b3cc6154eb690974b68da7f303318bb33c8e29c6734cd1c9fb2fb7fd8394"
+    },
+    "modules/curobo/fingertip_contact/planning.py": {
+      "before_sha256": "e60f2c2adfa4f121f3329abb53e0c822949d366bc2985ff56faa409c3f799a70",
+      "after_sha256": "febce5b7dc6632c5ef0d82017430d908f7efa4c8b25af012d1b403b057cd4623"
+    },
+    "modules/maniskill/short_lift_planner.py": {
+      "before_sha256": "102d91ae0b82f74d9d9c442153e0298517e2262582bf2dde13f3ecddebb9a878",
+      "after_sha256": "9b50b650363113e1c8c63808693c16420f82a16ea0ce6d949368912c9adc081b"
+    },
+    "modules/pipeline/experiments/repaired_grasp_benchmark/repair_contract.py": {
+      "before_sha256": "d6f1b6143d928d54572be066ebdcb7b505f0464cc50d4618e55003bd9ccc4bbc",
+      "after_sha256": "cad58aaa5c2bcf599f438f393e1a0917d0b45e97e057cbf40e504ab28b0b4d45"
+    },
+    "modules/zerograsp/arx_grasp_adapter.py": {
+      "before_sha256": "324017f43aabfcbb66d968239fa47af8a83d6fc28b4fa76b747379dbf018e8c7",
+      "after_sha256": "61331d7cf3eee4234e5bd91d775e1ddbaf8ef7d349b08ce3e3dfd943373f4d93"
+    },
+    "arx_project/client.py": {
+      "before_sha256": "3515c696057e95bf57108335bab7e6e9b77e324da3192890dc62acfd73df4e75",
+      "after_sha256": "99ef43b91f276ab1e96c958e03c20c02dd9a7e9f1e8781ecf5c082e18d8616c0"
+    },
+    "arx_project/service.py": {
+      "before_sha256": "7c64b63005f772d45766e83b767b1f933b9bcf4b84bd0c967a633cec32ebe5ad",
+      "after_sha256": "c3f6f79a3e62ccf4c1266ecb24d2f153ec71316d95f38b8ada02990a53b1f8c4"
+    },
+    "modules/pipeline/experiments/mobile_dual_arm/workspace_priority/runtime.py": {
+      "before_sha256": "33e18613079a7a96b799fcb7eaa1d5be801025b87ec88d8e10f62bbb3c8efdc4",
+      "after_sha256": "5ca6aa40de395d047b37b15a9a5693032f06e667a5adc68ea9539cdd7a671f16"
+    }
+  },
+  "runtime_dependencies": {
+    "arx_project/json_io.py": "1213feadeb99220d7fd3a3565c089fa482efe0a33a99e72e4232cbf2fa31f075",
+    "arx_project/artifacts.py": "3a1046639c2d7156d5e9ee0750f670c55caf988275b2286c393cb86272dedde9",
+    "arx_project/candidate_rpc.py": "fc203aa019af264e0ca61bd87ef68b7897c88c98319ff8cfb13def38617aa4d5",
+    "modules/curobo/candidate_io/store.py": "a2af26be67cb885ed4a45fd4691fc83350a70e80804c5197167203f26647f30e"
+  },
+  "physical_grasps_added": 0,
+  "physical_configuration_changed": false
+}

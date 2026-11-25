@@ -25,7 +25,7 @@
       "source": "modules/rayst3r",
       "role": "reconstruction",
       "environment": "environments/reconstruction",
-      "adapter": "modules/rayst3r/arx_adapter.py",
+      "adapter": "modules/rayst3r/memory_efficient/adapter.py",
       "weights": [
         "weights/rayst3r/rayst3r.pth",
         "weights/dinov2/dinov2_vitl14_reg4_pretrain.pth"
@@ -41,7 +41,21 @@
         "completed_points_world.npy",
         "rayst3r.json"
       ],
-      "reconstruction": "modules/rayst3r/arx_reconstruction.py"
+      "reconstruction": "modules/rayst3r/memory_efficient/adapter.py",
+      "source_directories": [
+        "modules/rayst3r/memory_efficient"
+      ],
+      "startup_free_mib": 23000,
+      "compute_validation_report": "configs/experiments/history/rayst3r_memory_validation_20261125.json",
+      "compute_activation_receipt": "configs/experiments/history/rayst3r_memory_activation_20261125.json",
+      "source_files": [
+        "configs/experiments/history/rayst3r_memory_validation_20261125.json",
+        "configs/experiments/history/rayst3r_memory_activation_20261125.json",
+        "configs/experiments/history/rayst3r_workspace_validation_20261125.json",
+        "configs/experiments/history/rayst3r_loader_alignment_20261125.json"
+      ],
+      "workspace_reservation_mib": 14336,
+      "workspace_validation_report": "configs/experiments/history/rayst3r_workspace_validation_20261125.json"
     },
     "graspgenx": {
       "source": "modules/graspgenx",
@@ -165,17 +179,43 @@
       "policies": [
         "configs/policies/fingertip_table.json",
         "configs/experiments/sam3_graspgenx_v3.json"
-      ]
+      ],
+      "source_files": [
+        "arx_project/artifacts.py",
+        "arx_project/candidate_rpc.py",
+        "arx_project/json_io.py",
+        "modules/curobo/candidate_io/store.py"
+      ],
+      "candidate_data_delivery": "one request decode; shared arm views; optional shared-memory handoff",
+      "candidate_transport_format": "arx_candidate_json_shm_v1"
     },
     "curobo_dual_arm_map": {
       "source": "modules/curobo/dual_arm",
       "role": "motion_planning",
       "environment": "environments/curobo",
       "adapter": "modules/curobo/dual_arm/placement_service.py",
-      "inputs": ["state.json", "candidates/candidate_pool.json"],
-      "optional_inputs": ["placement_witness.json"],
-      "outputs": ["plan_result.json", "endpoint_gate.json"],
-      "policies": ["configs/policies/fingertip_table.json"]
+      "inputs": [
+        "state.json",
+        "candidates/candidate_pool.json"
+      ],
+      "optional_inputs": [
+        "placement_witness.json"
+      ],
+      "outputs": [
+        "plan_result.json",
+        "endpoint_gate.json"
+      ],
+      "policies": [
+        "configs/policies/fingertip_table.json"
+      ],
+      "source_files": [
+        "arx_project/artifacts.py",
+        "arx_project/candidate_rpc.py",
+        "arx_project/json_io.py",
+        "modules/curobo/candidate_io/store.py"
+      ],
+      "candidate_data_delivery": "one request decode; shared arm views; optional shared-memory handoff",
+      "candidate_transport_format": "arx_candidate_json_shm_v1"
     },
     "mobile_manipulation": {
       "source": "modules/mobile_manipulation",

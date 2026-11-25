@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T01:48:13.093Z",
+  "generatedAt": "2026-11-25T10:34:09.624Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -780,6 +780,534 @@
     {
       "file": "media/sam3-v4-hand-geometry-acceleration.json",
       "sha256": "4645455cda485923fd81168c0c4acfcc437ad08f6c5c4102f9850aa728cbc1ea"
+    },
+    {
+      "file": "media/sam3-v4-initial100-report.html",
+      "sha256": "89b1abe3cb75f48c6c6c8d814443291c7514104544f35057a6cf64904640409a"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-summary.json",
+      "sha256": "2dd7d38699f6c2e7c9caa8cebf60d497e0f5409eae4ca176280a54c1f81c29b4"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-configuration.json",
+      "sha256": "f41d20e2da29b930a4c02030b2a0e71d623a1303b015cbfc61565e8ece45b28d"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-registration.json",
+      "sha256": "03799ac1d849608786566b91909b42da7408e8e605011ead67ded0b74649a864"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-scene-verification.json",
+      "sha256": "85242febe3fe9f18e22688921a99e26cd6f4637803aea537a08209f214733c16"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0001-initial.jpg",
+      "sha256": "c0bccb58a8e36163ef10211c7477803c989c87e7fdca003fa9afa6b5bb0abe1f"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0011-initial.jpg",
+      "sha256": "bd9e74c49da5d1b643f3dbf015d30944850c10cee94b40ca3caaa492bddd1344"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0021-initial.jpg",
+      "sha256": "e6a5c00035b4541a59c8e89696acb5c4d1f7cc8e24a02352fb2c764c0be74f51"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0031-initial.jpg",
+      "sha256": "a7efb7f55de6cb439b3a51f6f9ee722b970d82130049985b25e42f0e492d7f2e"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0041-initial.jpg",
+      "sha256": "271c63c413543df477b2e3785ca78f2f338d75075c7a109fe74b20289795b981"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0051-initial.jpg",
+      "sha256": "75a7bb5528d429c7d6ff8628a62620cad87172413540b638ce441a4777323c2f"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0061-initial.jpg",
+      "sha256": "5a4ebaea4ea6838eaa1d4ec1480fc7aaa223377765e6dfe3e15371a8509daeb2"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0071-initial.jpg",
+      "sha256": "1fa49c36870775708a5480a652749178091cbe629c1717e4d5f5b35f77b48e40"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0081-initial.jpg",
+      "sha256": "9987f2da243b47dc29287fa91ec18693cde1c890ed0390bf5cd0ae9f713306e7"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0091-initial.jpg",
+      "sha256": "acd9bcda7e03782e6b87b31eb475b3d9dde13b4c1d71aa324fddb2c7412a1c7f"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0001-grasp.mp4",
+      "sha256": "bff7002eeb2e094f60069db4a77b14e981c040f5a48b24180c68fd284affd956"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0001-head.mp4",
+      "sha256": "589880184020628ae1be4d8e74167a6e3b18a502ab65514140738a0e0ef236c9"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0001-station.mp4",
+      "sha256": "469f08d22b519fbecda0189c9654ceac9176527c1ced9e14a4503d5b471a8cb3"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0002-grasp.mp4",
+      "sha256": "ce154c678ffc56374ae262d1d89e0fedff572804dd09b34e74196669e830569f"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0002-head.mp4",
+      "sha256": "d72ee2d57999f539f5f9d48869fdcb4a1fcc1795da6a9dbf79cabcb95d0e8b23"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0002-station.mp4",
+      "sha256": "842dac472fe71598f091120896fe3f38f569f45da7054bfc63d74f86b6bcfd3e"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0004-grasp.mp4",
+      "sha256": "aed5d8dda1934fd49d3c487f21b5ebf7ea03e66530efaffdfe28df26bbaa21a1"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0004-head.mp4",
+      "sha256": "28bf42acb3caa15ffb7a3d57e7bb0549120535a0818cfb7ae419aed443573c78"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0004-station.mp4",
+      "sha256": "b319a9727c6e05ee7a523dd1f093a57cab636606aceb299d119101aedc960790"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0005-grasp.mp4",
+      "sha256": "80cc019b97804fdcaa24f6a4fc666c5e3b7dc509adb5ffaaa95701606ec5a454"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0005-head.mp4",
+      "sha256": "fd4bcb7ad698844ba7b9ff6dcf24a32206db1a362e17288bc438b91491934042"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-m0005-station.mp4",
+      "sha256": "bbb44fafcfab55e6a57bc7533264f40f1f14323f356a814d4b9a140e71a02f70"
+    },
+    {
+      "file": "media/sam3-v4-map100-20261125-02-acceptance.json",
+      "sha256": "7cfc1e50e9c9544470249181989d1e93e0907cf6bef232fd1c325f92f37adb97"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-summary.json",
+      "sha256": "81fbea60a91ec88f8d90abdb87f8c957a1ab656739178ca7b1105ebbf49cff5a"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-configuration.json",
+      "sha256": "77da276e9184e8d342db265da438673d49d7b641e467753ab51fc968082d2a9a"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-registration.json",
+      "sha256": "398319c7a27b5fb9479a4618aed0fab18a97e16ffc9f7ad2f67db4a6407715aa"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-scene-verification.json",
+      "sha256": "85242febe3fe9f18e22688921a99e26cd6f4637803aea537a08209f214733c16"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0001-initial.jpg",
+      "sha256": "c0bccb58a8e36163ef10211c7477803c989c87e7fdca003fa9afa6b5bb0abe1f"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0011-initial.jpg",
+      "sha256": "bd9e74c49da5d1b643f3dbf015d30944850c10cee94b40ca3caaa492bddd1344"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0021-initial.jpg",
+      "sha256": "e6a5c00035b4541a59c8e89696acb5c4d1f7cc8e24a02352fb2c764c0be74f51"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0031-initial.jpg",
+      "sha256": "a7efb7f55de6cb439b3a51f6f9ee722b970d82130049985b25e42f0e492d7f2e"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0041-initial.jpg",
+      "sha256": "271c63c413543df477b2e3785ca78f2f338d75075c7a109fe74b20289795b981"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0051-initial.jpg",
+      "sha256": "75a7bb5528d429c7d6ff8628a62620cad87172413540b638ce441a4777323c2f"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0061-initial.jpg",
+      "sha256": "5a4ebaea4ea6838eaa1d4ec1480fc7aaa223377765e6dfe3e15371a8509daeb2"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0071-initial.jpg",
+      "sha256": "1fa49c36870775708a5480a652749178091cbe629c1717e4d5f5b35f77b48e40"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0081-initial.jpg",
+      "sha256": "9987f2da243b47dc29287fa91ec18693cde1c890ed0390bf5cd0ae9f713306e7"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0091-initial.jpg",
+      "sha256": "acd9bcda7e03782e6b87b31eb475b3d9dde13b4c1d71aa324fddb2c7412a1c7f"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0001-grasp.mp4",
+      "sha256": "b4e6e2afad62e2f75c6a838dd084d041478b8cf8c3b377505ef8ebabd7cef9e0"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0001-head.mp4",
+      "sha256": "890a38c6119aefb5db29af027f5bffaf993ce5c4788d555ed744a0d898c0953f"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0001-station.mp4",
+      "sha256": "b421d06ed5dfb0a6ad81973b4b090a2c95d03ea1369e6169ba4d3389b6f79872"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0002-grasp.mp4",
+      "sha256": "46c29c1abcc6f4159e482d890e04ae2aa630fdf8012c175c6db52cefe48a15a3"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0002-head.mp4",
+      "sha256": "5b24a1fd3cf0ab99ce3ff48b0ec3a806aad91736490413fc674a9a1358316f50"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0002-station.mp4",
+      "sha256": "c4b4d8a17aa6847755d4cd3d94de98a4363bdca8cb8af4385d197399400e27b0"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0004-grasp.mp4",
+      "sha256": "005a8863488fc4f1a27acc2ecc1a5342013486cbf7cd1957eff3652f1189e24f"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0004-head.mp4",
+      "sha256": "66d933364cfa0e01bb6847a18c4b2ae3f3d07c681bd8111400e8be350a0ca942"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0004-station.mp4",
+      "sha256": "70c0fd551c6eca2ecfc020e92106c7c23365e7b72cd36f0056fc3b726c04f626"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0005-grasp.mp4",
+      "sha256": "e826a262be130731a57a07c1c6eef0d27179ccfcf64b5f96b4a31c40a1e9bdab"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0005-head.mp4",
+      "sha256": "169f0cd8ec0e919806ad5315cdbeacf889cd28c029b5868029dae91227a57684"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-m0005-station.mp4",
+      "sha256": "fd2f742c7db4c51fb4383af858d0a86b3aea85144b8b9ba520f92dcb6ffe1691"
+    },
+    {
+      "file": "media/v4-failed-position-review-20261125-01.jpg",
+      "sha256": "eeab9a513956d4545bfe53efe3619446868646d9b52482417e355f65998f3da1"
+    },
+    {
+      "file": "media/v4-failed-position-review-20261125-01.json",
+      "sha256": "254ffbf7d7fe04321d0722e376895c35fd130f6e2453583a86fb71cdc24cfdfd"
+    },
+    {
+      "file": "media/v4-failed-position-boundary-20261125-01.json",
+      "sha256": "fec3bbc6ae438d774c5f6773a907b4f5dd95d34f28680aff8c0ba4c09ab8d2af"
+    },
+    {
+      "file": "media/v4-table-base-collision-model-20261125-01.jpg",
+      "sha256": "524cdc920ccc9beb66a1ca2f4c92fb19196af109132e0205c4b4c3801bad7a46"
+    },
+    {
+      "file": "media/v4-table-base-collision-model-20261125-01.json",
+      "sha256": "aa2b61bc2f3f13fb704f5a717b0edb875f4446a07a59ea72faea204fc8238c0b"
+    },
+    {
+      "file": "media/v4-sam3-mask-diagnosis-20261125-01.jpg",
+      "sha256": "c8046e687952cae0cc059e59339fde81a235a277aa22a42d42bc3b03f563e71a"
+    },
+    {
+      "file": "media/v4-sam3-evaluation-20261125-01.json",
+      "sha256": "2aa4b497ed9502adf7a4032477205dbdae3c30174b02d2e4e67a22f8cba29512"
+    },
+    {
+      "file": "media/v4-sam3-evaluation-20261125-01.csv",
+      "sha256": "c7018a265339a0ea5519c24a5be5b0106e9141288bb1078f49aaff44ae77a991"
+    },
+    {
+      "file": "media/v4-sam3-negative-controls-20261125-01.json",
+      "sha256": "d8f286742c755678ba4c480116c1cfe410c230bf381546eb833ab2be83630fa9"
+    },
+    {
+      "file": "media/v4-sam3-completed-mask-review-20261125-01.json",
+      "sha256": "7dd5b006c12e1eb6484621749cb560ed2b5718ad42ca4acb7b1f35a4c3413a71"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-statistics.json",
+      "sha256": "8244d3f79237bbc13456eeaf1cd924841b29fb961ada6afe051f83efaf4d8ff1"
+    },
+    {
+      "file": "media/sam3-v4-high100-20261125-04-acceptance.json",
+      "sha256": "165109da26994c3347044b01c8d2607b93c0af39cefb98d4cb711a8965ca8d46"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-summary.json",
+      "sha256": "b73e8c30ab65564587adfde13b9ffd0d4ad59f2fec24c35cd574fbe6094731cd"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-statistics.json",
+      "sha256": "375396630be285f19fed751f5bb44791a25370bae7adbeabe68bd72c4de050b9"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-configuration.json",
+      "sha256": "8580e1dfb146cf98764b73069039a8a0641fe114b0b820fee9e121fdc7224b5b"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-registration.json",
+      "sha256": "dc2b7637fa2a2db8f074adf144b39629b20d9ac59a307334ff5353550c337967"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-scene-verification.json",
+      "sha256": "85242febe3fe9f18e22688921a99e26cd6f4637803aea537a08209f214733c16"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0001-initial.jpg",
+      "sha256": "c0bccb58a8e36163ef10211c7477803c989c87e7fdca003fa9afa6b5bb0abe1f"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0011-initial.jpg",
+      "sha256": "bd9e74c49da5d1b643f3dbf015d30944850c10cee94b40ca3caaa492bddd1344"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0021-initial.jpg",
+      "sha256": "e6a5c00035b4541a59c8e89696acb5c4d1f7cc8e24a02352fb2c764c0be74f51"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0031-initial.jpg",
+      "sha256": "a7efb7f55de6cb439b3a51f6f9ee722b970d82130049985b25e42f0e492d7f2e"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0041-initial.jpg",
+      "sha256": "271c63c413543df477b2e3785ca78f2f338d75075c7a109fe74b20289795b981"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0051-initial.jpg",
+      "sha256": "75a7bb5528d429c7d6ff8628a62620cad87172413540b638ce441a4777323c2f"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0061-initial.jpg",
+      "sha256": "5a4ebaea4ea6838eaa1d4ec1480fc7aaa223377765e6dfe3e15371a8509daeb2"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0071-initial.jpg",
+      "sha256": "1fa49c36870775708a5480a652749178091cbe629c1717e4d5f5b35f77b48e40"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0081-initial.jpg",
+      "sha256": "9987f2da243b47dc29287fa91ec18693cde1c890ed0390bf5cd0ae9f713306e7"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0091-initial.jpg",
+      "sha256": "acd9bcda7e03782e6b87b31eb475b3d9dde13b4c1d71aa324fddb2c7412a1c7f"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0001-grasp.mp4",
+      "sha256": "b4e6e2afad62e2f75c6a838dd084d041478b8cf8c3b377505ef8ebabd7cef9e0"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0001-head.mp4",
+      "sha256": "890a38c6119aefb5db29af027f5bffaf993ce5c4788d555ed744a0d898c0953f"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0001-station.mp4",
+      "sha256": "b421d06ed5dfb0a6ad81973b4b090a2c95d03ea1369e6169ba4d3389b6f79872"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0002-grasp.mp4",
+      "sha256": "46c29c1abcc6f4159e482d890e04ae2aa630fdf8012c175c6db52cefe48a15a3"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0002-head.mp4",
+      "sha256": "5b24a1fd3cf0ab99ce3ff48b0ec3a806aad91736490413fc674a9a1358316f50"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0002-station.mp4",
+      "sha256": "c4b4d8a17aa6847755d4cd3d94de98a4363bdca8cb8af4385d197399400e27b0"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0004-grasp.mp4",
+      "sha256": "005a8863488fc4f1a27acc2ecc1a5342013486cbf7cd1957eff3652f1189e24f"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0004-head.mp4",
+      "sha256": "66d933364cfa0e01bb6847a18c4b2ae3f3d07c681bd8111400e8be350a0ca942"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0004-station.mp4",
+      "sha256": "70c0fd551c6eca2ecfc020e92106c7c23365e7b72cd36f0056fc3b726c04f626"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0005-grasp.mp4",
+      "sha256": "e826a262be130731a57a07c1c6eef0d27179ccfcf64b5f96b4a31c40a1e9bdab"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0005-head.mp4",
+      "sha256": "169f0cd8ec0e919806ad5315cdbeacf889cd28c029b5868029dae91227a57684"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-01-m0005-station.mp4",
+      "sha256": "fd2f742c7db4c51fb4383af858d0a86b3aea85144b8b9ba520f92dcb6ffe1691"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-summary.json",
+      "sha256": "15f7a353e95aa0167f7b6b7766603038ebdd5d4e1fdc1f8eb3d8168032a71f2b"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-statistics.json",
+      "sha256": "e45d03a12b87222ff568a4b3b57aee26086d794a6146f1d6fcfd47612038883d"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-configuration.json",
+      "sha256": "9d03a1b148facf34fc80cc0d2836ef26a255498489af82211ba66a1b9565ca4b"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-registration.json",
+      "sha256": "0ea28d370dc6d5ab1c8cb397f8be39c457f0099aa15ddf438e6baacc3ff151c1"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-scene-verification.json",
+      "sha256": "85242febe3fe9f18e22688921a99e26cd6f4637803aea537a08209f214733c16"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0001-initial.jpg",
+      "sha256": "c0bccb58a8e36163ef10211c7477803c989c87e7fdca003fa9afa6b5bb0abe1f"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0011-initial.jpg",
+      "sha256": "bd9e74c49da5d1b643f3dbf015d30944850c10cee94b40ca3caaa492bddd1344"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0021-initial.jpg",
+      "sha256": "e6a5c00035b4541a59c8e89696acb5c4d1f7cc8e24a02352fb2c764c0be74f51"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0031-initial.jpg",
+      "sha256": "a7efb7f55de6cb439b3a51f6f9ee722b970d82130049985b25e42f0e492d7f2e"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0041-initial.jpg",
+      "sha256": "271c63c413543df477b2e3785ca78f2f338d75075c7a109fe74b20289795b981"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0051-initial.jpg",
+      "sha256": "75a7bb5528d429c7d6ff8628a62620cad87172413540b638ce441a4777323c2f"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0061-initial.jpg",
+      "sha256": "5a4ebaea4ea6838eaa1d4ec1480fc7aaa223377765e6dfe3e15371a8509daeb2"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0071-initial.jpg",
+      "sha256": "1fa49c36870775708a5480a652749178091cbe629c1717e4d5f5b35f77b48e40"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0081-initial.jpg",
+      "sha256": "9987f2da243b47dc29287fa91ec18693cde1c890ed0390bf5cd0ae9f713306e7"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0091-initial.jpg",
+      "sha256": "acd9bcda7e03782e6b87b31eb475b3d9dde13b4c1d71aa324fddb2c7412a1c7f"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0001-grasp.mp4",
+      "sha256": "b4e6e2afad62e2f75c6a838dd084d041478b8cf8c3b377505ef8ebabd7cef9e0"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0001-head.mp4",
+      "sha256": "890a38c6119aefb5db29af027f5bffaf993ce5c4788d555ed744a0d898c0953f"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0001-station.mp4",
+      "sha256": "b421d06ed5dfb0a6ad81973b4b090a2c95d03ea1369e6169ba4d3389b6f79872"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0002-grasp.mp4",
+      "sha256": "46c29c1abcc6f4159e482d890e04ae2aa630fdf8012c175c6db52cefe48a15a3"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0002-head.mp4",
+      "sha256": "5b24a1fd3cf0ab99ce3ff48b0ec3a806aad91736490413fc674a9a1358316f50"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0002-station.mp4",
+      "sha256": "c4b4d8a17aa6847755d4cd3d94de98a4363bdca8cb8af4385d197399400e27b0"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0004-grasp.mp4",
+      "sha256": "005a8863488fc4f1a27acc2ecc1a5342013486cbf7cd1957eff3652f1189e24f"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0004-head.mp4",
+      "sha256": "66d933364cfa0e01bb6847a18c4b2ae3f3d07c681bd8111400e8be350a0ca942"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0004-station.mp4",
+      "sha256": "70c0fd551c6eca2ecfc020e92106c7c23365e7b72cd36f0056fc3b726c04f626"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0005-grasp.mp4",
+      "sha256": "e826a262be130731a57a07c1c6eef0d27179ccfcf64b5f96b4a31c40a1e9bdab"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0005-head.mp4",
+      "sha256": "169f0cd8ec0e919806ad5315cdbeacf889cd28c029b5868029dae91227a57684"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-m0005-station.mp4",
+      "sha256": "fd2f742c7db4c51fb4383af858d0a86b3aea85144b8b9ba520f92dcb6ffe1691"
+    },
+    {
+      "file": "media/sam3-v4-high100-resume-20261125-02-acceptance.json",
+      "sha256": "365967b00e12b4020736b188339daf808a2371cb617ff6d774c9ad3480c8f67b"
+    },
+    {
+      "file": "media/sam3-v6-zerograsp-20261125-01-summary.json",
+      "sha256": "5f3f6cb51391b1bb8d11471a2d7ae1f54bb737b8a828bdfd15d417edb0846f68"
+    },
+    {
+      "file": "media/sam3-v6-zerograsp-20261125-01-latency.json",
+      "sha256": "5276c1f79864f4afca2f4f1b0a4afcca2910ae2dc284972c7e75e47f379c7a01"
+    },
+    {
+      "file": "media/sam3-v6-zerograsp-20261125-01-m0002-baseline.mp4",
+      "sha256": "46c29c1abcc6f4159e482d890e04ae2aa630fdf8012c175c6db52cefe48a15a3"
+    },
+    {
+      "file": "media/sam3-v6-zerograsp-20261125-01-m0002-zerograsp.mp4",
+      "sha256": "6b19be4e945fd1495aee5a8bc2966edf11eadbc9ad4a2ab35464a57670a87127"
+    },
+    {
+      "file": "media/sam3-v6-zerograsp-20261125-01-m0004-baseline.mp4",
+      "sha256": "005a8863488fc4f1a27acc2ecc1a5342013486cbf7cd1957eff3652f1189e24f"
+    },
+    {
+      "file": "media/sam3-v6-zerograsp-20261125-01-m0004-zerograsp.mp4",
+      "sha256": "f77d543c2178a39f186057a1f580a57d9d58bc2e60903dc7a4a51ece7b36c25c"
+    },
+    {
+      "file": "media/sam3-v6-zerograsp-20261125-01-m0005-baseline.mp4",
+      "sha256": "e826a262be130731a57a07c1c6eef0d27179ccfcf64b5f96b4a31c40a1e9bdab"
+    },
+    {
+      "file": "media/sam3-v6-zerograsp-20261125-01-m0005-zerograsp.mp4",
+      "sha256": "20def22313a7a4c6668362e0593f20b4d91c6554eb41bf3db8f308cc59249400"
+    },
+    {
+      "file": "media/sam3-v7-graspgenx-postprocessing-plan.md",
+      "sha256": "fb83c376993f411276600df7b4b8216f750471617e4e3f167e2208abca9f5486"
+    },
+    {
+      "file": "media/sam3-v7-graspgenx-postprocessing-config.json",
+      "sha256": "10ae5cb36c49912c85ca086738888a3bb6bb1a1da546c020a0813243a1d450ea"
+    },
+    {
+      "file": "media/sam3-v7-graspgenx-postprocessing-preparation.json",
+      "sha256": "952199f1d64c345a0df21acccddba785c5e947ceef89b5e93e984e64ac388cdb"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
@@ -1650,8 +2178,8 @@
       "sha256": "e061659945202c91a0be01850fe24aac3938aa12fcb1706b19d1b6a525f0e15f"
     },
     {
-      "file": "attachments/0aafe80b6c35-未来改进计划.md",
-      "sha256": "0aafe80b6c359cf22a21a71c84bb324c84fd1b2f28551be50aa9fc61768af679"
+      "file": "attachments/d97109de84d2-未来改进计划.md",
+      "sha256": "d97109de84d2178367b6bb71db284b34d76096e38d2de1f407a49f554306c4a3"
     },
     {
       "file": "attachments/c90af2d3934b-登记.json",
@@ -1799,7 +2327,7 @@
     },
     {
       "file": "optimized/manifest.json",
-      "sha256": "d702d981d434c66487a0adcb5cb5e4bce8748eadecf2a2b2ee56ece8a5ec50f4"
+      "sha256": "96c2cade7f0d9abc1860fed872d5b5fb7afc60789501c254080247f0a2735fb3"
     }
   ]
 }

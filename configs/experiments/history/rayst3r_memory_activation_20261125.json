@@ -1,0 +1,87 @@
+{
+  "at": "2026-11-25T13:27:09.631209+08:00",
+  "validation_report": "tmp/rayst3r/memory_validation_20261125_01/acceptance.json",
+  "validation_sha256": "1d6eda2975dcbbb1dc23e0f8ef2db7ee6ec42a9d59c917d7c12545b5e6455fe8",
+  "old_ray_record": {
+    "source": "modules/rayst3r",
+    "role": "reconstruction",
+    "environment": "environments/reconstruction",
+    "adapter": "modules/rayst3r/arx_adapter.py",
+    "weights": [
+      "weights/rayst3r/rayst3r.pth",
+      "weights/dinov2/dinov2_vitl14_reg4_pretrain.pth"
+    ],
+    "inputs": [
+      "camera/color.png",
+      "camera/mask.png",
+      "camera/depth_m.npy",
+      "state.json"
+    ],
+    "outputs": [
+      "completed_points_camera.npy",
+      "completed_points_world.npy",
+      "rayst3r.json"
+    ],
+    "reconstruction": "modules/rayst3r/arx_reconstruction.py"
+  },
+  "new_ray_record": {
+    "source": "modules/rayst3r",
+    "role": "reconstruction",
+    "environment": "environments/reconstruction",
+    "adapter": "modules/rayst3r/memory_efficient/adapter.py",
+    "weights": [
+      "weights/rayst3r/rayst3r.pth",
+      "weights/dinov2/dinov2_vitl14_reg4_pretrain.pth"
+    ],
+    "inputs": [
+      "camera/color.png",
+      "camera/mask.png",
+      "camera/depth_m.npy",
+      "state.json"
+    ],
+    "outputs": [
+      "completed_points_camera.npy",
+      "completed_points_world.npy",
+      "rayst3r.json"
+    ],
+    "reconstruction": "modules/rayst3r/memory_efficient/adapter.py",
+    "source_directories": [
+      "modules/rayst3r/memory_efficient"
+    ],
+    "startup_free_mib": 23000,
+    "compute_validation_report": "configs/experiments/history/rayst3r_memory_validation_20261125.json",
+    "compute_activation_receipt": "configs/experiments/history/rayst3r_memory_activation_20261125.json",
+    "source_files": [
+      "configs/experiments/history/rayst3r_memory_validation_20261125.json",
+      "configs/experiments/history/rayst3r_memory_activation_20261125.json",
+      "configs/experiments/history/rayst3r_workspace_validation_20261125.json",
+      "configs/experiments/history/rayst3r_loader_alignment_20261125.json"
+    ],
+    "workspace_reservation_mib": 14336,
+    "workspace_validation_report": "configs/experiments/history/rayst3r_workspace_validation_20261125.json"
+  },
+  "source_updates": {
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": {
+      "before": "dfd2830c9b00db5e49ebcb28a8ebf46b877fb6dded984c4fc46641af5d12fc81",
+      "after": "f18736c5db73b540ef3302d84c6f11fcef3d908ab0227d074d7fcd293226b7e6"
+    },
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/mobile_dual_arm/run.py": {
+      "before": "c7863c8286e3cefb91cd4c0e6c49cd69c261a4471c0907e48e878d205d7db041",
+      "after": "1103c2cab1c609e99f2e75c6fcad645dedf25080ec16d76dddb5874a00f433e1"
+    }
+  },
+  "unchanged_tested_prediction_class_AST": true,
+  "unchanged_tested_attention_source_sha256": "9993adc705dd1bce8748ac6bb7c36b619db4eb3b88213e1c28b5bc0a5a104445",
+  "post_validation_worker_only_changes": [
+    "Absolute import for dynamic adapter loading",
+    "Release unused CUDA cache after completed RPC output",
+    "Retain a 14GiB reusable inference pool between RPC calls; validated two exact-output calls through the registry"
+  ],
+  "activated_adapter_sha256": "0e9da8cb137cb33b402bd66d8746b65a3bacf6aa101d438d750032fc7ee7394c",
+  "validated_adapter_sha256": "55f255f43ca9dd5047236808d9b28fda046b99569af98a59a5c4898b976a4a8d",
+  "robot_scenes_physics_model_weights_success_unchanged": true,
+  "previous_configuration": "configs/experiments/history/active_experiment_before_rayst3r_memory_20261125.json",
+  "new_configuration_sha256": "5fbfe3360671c815dbf47d2e8176986b57d00c85786cdd43f8db438b366e6b47",
+  "durable_validation_copy": "configs/experiments/history/rayst3r_memory_validation_20261125.json",
+  "workspace_activation_receipt": "configs/experiments/history/rayst3r_workspace_activation_20261125.json"
+}

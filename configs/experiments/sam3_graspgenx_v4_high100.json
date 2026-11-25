@@ -1,0 +1,14 @@
+{
+  "variant": "high_workspace_priority100",
+  "base_experiment": "configs/experiments/sam3_graspgenx_v4.json",
+  "dataset": "simulation/scenes/mobile100",
+  "physical_slot_budget": 100,
+  "component_modules": {
+    "curobo_dual_arm": "curobo_dual_arm_map"
+  },
+  "station_search_configuration": "configs/experiments/high_workspace_placement.json",
+  "predecessor": "tmp/mobile_dual_arm/v4_100_20261125_01",
+  "publication_prefix": "sam3-v4-high100-20261125-04",
+  "report_document": "V4_高可达空间优先100场景测试结果.md",
+  "user_authorization": "2026-11-25：这次不恢复旧批次。先调通目标进入双臂共同高可达空间、受限时进入更合适的单臂高可达空间、仍失败报无法规划的最新逻辑，预检通过后重新运行同一组完整100场景。各场景一次，不自动重抓。清理此前无实际执行的无效0/100批次；有实际结果的旧批次保留。允许必要服务和仿真执行，使用重新通过CUDA探测的可用卡；模型、机器人、场景物理、初始条件、V2指尖余量和成功判据保持。"
+}

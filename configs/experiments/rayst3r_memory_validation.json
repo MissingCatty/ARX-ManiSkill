@@ -1,0 +1,12 @@
+{
+  "reference_validation": "tmp/rayst3r/compute_optimization_20261125_01",
+  "stress_source": "tmp/mobile_dual_arm/high_workspace_preflight_20261125_03/preflight/priority_pipeline/stationing/segments/00_shared/observation",
+  "case_count": 50,
+  "repetitions": 1,
+  "seed": 20261125,
+  "coordinate_atol_m": 0.000001,
+  "minimum_gpu_free_mib": 14000,
+  "maximum_stress_allocated_mib": 12000,
+  "physical_grasps": 0,
+  "planning_calls": 0
+}

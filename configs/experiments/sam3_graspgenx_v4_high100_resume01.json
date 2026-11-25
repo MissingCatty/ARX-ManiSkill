@@ -1,0 +1,14 @@
+{
+  "variant": "high_workspace_priority100",
+  "base_experiment": "configs/experiments/sam3_graspgenx_v4.json",
+  "dataset": "simulation/scenes/mobile100",
+  "physical_slot_budget": 100,
+  "component_modules": {
+    "curobo_dual_arm": "curobo_dual_arm_map"
+  },
+  "station_search_configuration": "configs/experiments/high_workspace_placement.json",
+  "predecessor": "tmp/mobile_dual_arm/v4_high100_20261125_04",
+  "publication_prefix": "sam3-v4-high100-resume-20261125-01",
+  "report_document": "V4_高可达空间优先剩余场景续跑结果.md",
+  "user_authorization": "2026-11-25用户要求：恢复之后继续。保留原87例完整结果、第88例中断及STOP，仅续跑原89—100这12个未开始场景；沿用原100场景、权重、SAM3提示和0.5阈值、机器人/桌子长方体/物理、V2指尖余量和成功标准。重新探测资源、启动服务并预热，失败不自动重试。主要规划与抓取成功率按完整结束例数减SAM3最终失败例数为分母。"
+}

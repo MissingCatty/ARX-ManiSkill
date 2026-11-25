@@ -76,7 +76,9 @@ V2和V3的当前页面只展示ZeroGrasp＋cuRobo。用`python3 tools/refresh-re
 
 在版本详情页的待办栏输入内容并添加。勾选可标记完成，取消勾选可恢复为待办。每条待办旁的「删除」可移除该条。桌面端待办栏固定在右侧，窄屏时通过顶部按钮展开。首页按版本汇总未完成事项，点击版本名称可回到清单。后续登记的版本会自动获得待办区和汇总入口。
 
-有权访问网站的访客共用同一份清单。待办保存在网站目录的 `数据/待办.sqlite`，构建页面与重启服务时沿用。待办服务使用 Node.js 22.13 或更新版本内置的 SQLite。
+有权访问网站的访客共用同一份清单。待办保存在网站目录的 `resources/state/待办.sqlite`，构建页面与重启服务时沿用。待办服务使用 Node.js 22.13 或更新版本内置的 SQLite。
+
+推送前运行`node tools/todo_snapshot.mjs export`，将全部待办、完成状态和编号导出到随Git保存的`resources/state/todos.snapshot.json`。新部署首次创建数据库时自动载入该快照，已有数据库不因重启而覆盖。迁移已有网站时，停服务后运行`node tools/todo_snapshot.mjs restore --replace`，原数据库会先备份到`resources/state/backups/`，随后恢复快照并核对结果。
 
 ## 场景图集
 

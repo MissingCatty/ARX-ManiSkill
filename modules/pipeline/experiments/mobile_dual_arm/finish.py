@@ -32,6 +32,35 @@ def audit(root):
             issues.append(entry['id']+': result hash differs from claim')
         record = {'id': entry['id'], 'state': 'complete', 'success': result['success'],
                   'reason': result['reason'], 'selected_arm': result.get('selected_arm')}
+        preparation = result.get('stationing', {})
+        if reg.get('station_search_options', {}).get('placement_method') == 'high_workspace_priority':
+            from modules.pipeline.experiments.mobile_dual_arm.workspace_priority.runtime import audit_segment
+            discovered = {str(path.parent.relative_to(directory)) for path in
+                          (directory/'stationing/segments').glob('*/receipt.json')}
+            registered = set(preparation.get('stationing_segments', []))
+            if registered != discovered:
+                issues.append(entry['id']+': station segment ledger differs from receipts')
+            for relative in sorted(registered | discovered):
+                segment = (directory/relative).resolve()
+                if not segment.is_relative_to((directory/'stationing/segments').resolve()):
+                    issues.append(entry['id']+': invalid station segment path')
+                    continue
+                try:
+                    expected = audit_segment(segment)
+                    if read_json(segment/'motion_verification.json') != expected:
+                        issues.append(entry['id']+': station segment verification differs')
+                except (OSError, KeyError, ValueError, RuntimeError) as error:
+                    issues.append(entry['id']+': damaged station segment: '+str(error))
+                videos.extend(segment.glob('*.mp4'))
+            if result.get('planning_success'):
+                try:
+                    gate = read_json(directory/'prepared_plan_execution_gate.json')
+                    if (not gate['passed'] or gate['artifact_hashes'] != preparation['prepared_artifacts']
+                            or gate['selected_arm'] != result['selected_arm']
+                            or gate['verified_high_cell'] != preparation['verified_high_cell']):
+                        issues.append(entry['id']+': prepared grasp handoff proof differs')
+                except (OSError, KeyError, ValueError) as error:
+                    issues.append(entry['id']+': missing grasp handoff proof: '+str(error))
         if result.get('stationing', {}).get('motion_started'):
             station = directory/'stationing'
             required = ['command.json', 'receipt.json', 'settled_state.json', 'execution.jsonl', 'contacts.json', 'motion.mp4', 'head.mp4']
@@ -56,7 +85,13 @@ def audit(root):
                 initial_base = np.asarray(coarse['links']['base_link'])
                 record['base_translation_m'] = float(np.linalg.norm(initial_base[:2, 3]-np.asarray(final['links']['base_link'])[:2, 3]))
                 record['lift_change_m'] = float(h-coarse['qpos'][coarse['joint_names'].index('joint4')])
-                fresh = read_json(directory/'state.json')
+                fresh_path = directory/'state.json'
+                if not fresh_path.exists() and preparation.get('stationing_segments'):
+                    # A preparation may move successfully but find no grasp.
+                    # Its last fresh observation remains in that segment; no
+                    # execution observation should be invented for this case.
+                    fresh_path = directory/sorted(preparation['stationing_segments'])[-1]/'observation/state.json'
+                fresh = read_json(fresh_path)
                 if np.abs(np.asarray(fresh['camera_world_optical'])-np.asarray(final['camera_world_optical'])).max() > .001:
                     issues.append(entry['id']+': fresh camera is not at settled station')
         if result.get('physical_attempt'):
@@ -86,6 +121,11 @@ def audit(root):
     for name, digest in reg['source_hashes'].items():
         if sha256(name) != digest:
             issues.append('source/config changed: '+name)
+    from modules.pipeline.experiments.mobile_dual_arm.campaign import verify_preserved_and_resources
+    try:
+        verify_preserved_and_resources(reg, full_resources=True)
+    except (OSError, RuntimeError) as error:
+        issues.append(str(error))
     frozen = read_json(Path(reg['dataset'])/'frozen_dataset.json')
     for name, digest in frozen['files'].items():
         if sha256(Path(reg['dataset'])/name) != digest:
@@ -131,12 +171,16 @@ def publish(root):
 
 def write_report(root, report):
     """Render accepted terminal results separately from interrupted claims."""
+    reg = read_json(root/'registration.json')
     summary = read_json(root/'summary.json')
     complete_ids = {row['id'] for row in report['results'] if row['state'] == 'complete'}
     from collections import Counter
     reasons = Counter(row['reason'] for row in summary['results']
                       if row['id'] in complete_ids and not row['success'])
-    text = ['# V4：100场景测试结果', '',
+    title = ('V4：高可达空间优先100场景测试结果'
+        if reg.get('station_search_options', {}).get('placement_method') == 'high_workspace_priority'
+        else 'V4：地图主动站位100场景测试结果' if reg.get('variant') else 'V4：100场景测试结果')
+    text = ['# '+title, '',
         f"登记100例，完成{report['completed']}例，中断{report['interrupted']}例，未开始{report['not_started']}例。", '',
         f"站位到位{summary['station_ready']}例，最终抓取规划通过{summary['planning_passes']}例，实际抓取{summary['physical_attempts']}例，成功{summary['successes']}例。", '',
         '| 布局 | 完成数 | 最终规划通过 | 抓取成功 |', '| --- | ---: | ---: | ---: |']
@@ -152,7 +196,7 @@ def write_report(root, report):
         f"独立核验{'通过' if report['passed'] else '发现问题'}；{report['video_count']}段视频完成逐帧解码检查。", '',
         f"原始记录：`{root.relative_to(ROOT)}`。", '',
         '入口计算、移动车体与升降、到位后感知和最终抓取分别留有记录；结果以本轮独立100例为分母。', '']
-    destination = ROOT/'modules/pipeline/docs/mainline_versions/V4_100场景测试结果.md'
+    destination = ROOT/'modules/pipeline/docs/mainline_versions'/reg.get('report_document', 'V4_100场景测试结果.md')
     destination.write_text('\n'.join(text))
 
 

@@ -12,6 +12,7 @@
 | 历史场景 | 当前运行和恢复只使用latest200场景集合 |
 | 共享资产索引 | `simulation/assets/catalog.json`随 Git 上传，保存相对路径与物理定义 |
 | 网站 | 页面源码、发布用媒体副本、附件、压缩缓存随 Git 上传 |
+| 网站待办快照 | `website/resources/state/todos.snapshot.json`随 Git 上传，包含全部待办、完成状态与编号序列 |
 | 三维模型、权重、Python 环境、运行产物 | 分别保存在 `simulation/assets/models/`、`weights/`、`environments/`、`tmp/`，由根目录忽略规则排除 |
 | 账号密钥、机器授权、待办数据库 | 保存在各用户自己的配置或网站状态目录，不进入 Git |
 
@@ -29,7 +30,16 @@ npm run build
 npm start
 ```
 
-已有压缩缓存随仓库保存，构建网站不需要仿真环境或模型权重。待办数据库在新机器首次启动时创建。
+已有压缩缓存随仓库保存，构建网站不需要仿真环境或模型权重。新机器首次启动时，从待办快照建立数据库；已有数据库继续沿用，不在每次启动时覆盖。
+
+提交前先导出最新待办：
+
+```bash
+cd website
+node tools/todo_snapshot.mjs export
+```
+
+更新已部署的网站时，先备份并停止该网站服务，再执行`node tools/todo_snapshot.mjs restore --replace`，最后启动服务并核对待办。恢复命令会将原数据库保存到`resources/state/backups/`，保留待办编号、完成状态与删除后留下的编号序列。
 
 ## 更新源码
 

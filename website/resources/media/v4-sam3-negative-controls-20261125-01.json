@@ -1,0 +1,3391 @@
+{
+  "cuda_visible_devices": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "seconds": 166.57488646600177,
+  "absent_image_category_pairs": 96,
+  "registration_sha256": "ef0260d6761c1e83d602cc979161953060bb41b838a6d1c30153f3a6e5c5a702",
+  "threshold_scan": [
+    {
+      "threshold": 0.5,
+      "original_prompt_false_positives": 3,
+      "synonym_policy_false_positives": 5
+    },
+    {
+      "threshold": 0.4,
+      "original_prompt_false_positives": 3,
+      "synonym_policy_false_positives": 7
+    },
+    {
+      "threshold": 0.3,
+      "original_prompt_false_positives": 4,
+      "synonym_policy_false_positives": 11
+    },
+    {
+      "threshold": 0.2,
+      "original_prompt_false_positives": 7,
+      "synonym_policy_false_positives": 16
+    },
+    {
+      "threshold": 0.1,
+      "original_prompt_false_positives": 16,
+      "synonym_policy_false_positives": 26
+    },
+    {
+      "threshold": 0.05,
+      "original_prompt_false_positives": 26,
+      "synonym_policy_false_positives": 43
+    },
+    {
+      "threshold": 0.01,
+      "original_prompt_false_positives": 58,
+      "synonym_policy_false_positives": 77
+    }
+  ],
+  "results": [
+    {
+      "case_id": "M0013_S1_open_candle",
+      "present_category": "candle",
+      "absent_category": "canned food",
+      "original_score": 0.0184326171875,
+      "original_mask_pixels": 2153,
+      "best_prompt": "tin can",
+      "best_score": 0.0654296875,
+      "best_mask_pixels": 2163,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.0184326171875,
+          "mask_pixels": 2153
+        },
+        {
+          "prompt": "food can",
+          "score": 0.012939453125,
+          "mask_pixels": 2162
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.0654296875,
+          "mask_pixels": 2163,
+          "mask": "negative_masks/M0013_S1_open_candle/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.0303955078125,
+          "mask_pixels": 2166
+        },
+        {
+          "prompt": "can",
+          "score": 0.035400390625,
+          "mask_pixels": 2167
+        }
+      ]
+    },
+    {
+      "case_id": "M0013_S1_open_candle",
+      "present_category": "candle",
+      "absent_category": "corn",
+      "original_score": 0.01202392578125,
+      "original_mask_pixels": 2151,
+      "best_prompt": "corn",
+      "best_score": 0.01202392578125,
+      "best_mask_pixels": 2151,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.01202392578125,
+          "mask_pixels": 2151
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.00154876708984375,
+          "mask_pixels": 2157
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.00127410888671875,
+          "mask_pixels": 2150
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.00390625,
+          "mask_pixels": 2152
+        }
+      ]
+    },
+    {
+      "case_id": "M0013_S1_open_candle",
+      "present_category": "candle",
+      "absent_category": "milk",
+      "original_score": 0.00372314453125,
+      "original_mask_pixels": 2149,
+      "best_prompt": "carton of milk",
+      "best_score": 0.0264892578125,
+      "best_mask_pixels": 172,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.00372314453125,
+          "mask_pixels": 2149
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.00396728515625,
+          "mask_pixels": 2155
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.0264892578125,
+          "mask_pixels": 172
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.00061798095703125,
+          "mask_pixels": 2158
+        }
+      ]
+    },
+    {
+      "case_id": "M0013_S1_open_candle",
+      "present_category": "candle",
+      "absent_category": "yogurt",
+      "original_score": 0.007537841796875,
+      "original_mask_pixels": 2152,
+      "best_prompt": "yogurt container",
+      "best_score": 0.011474609375,
+      "best_mask_pixels": 2157,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.007537841796875,
+          "mask_pixels": 2152
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.009033203125,
+          "mask_pixels": 2161
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.011474609375,
+          "mask_pixels": 2157
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.01092529296875,
+          "mask_pixels": 2151
+        }
+      ]
+    },
+    {
+      "case_id": "M0013_S1_open_candle",
+      "present_category": "candle",
+      "absent_category": "bowl",
+      "original_score": 0.01153564453125,
+      "original_mask_pixels": 2166,
+      "best_prompt": "small bowl",
+      "best_score": 0.0986328125,
+      "best_mask_pixels": 2168,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.01153564453125,
+          "mask_pixels": 2166
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.0986328125,
+          "mask_pixels": 2168,
+          "mask": "negative_masks/M0013_S1_open_candle/bowl-1.png"
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.018310546875,
+          "mask_pixels": 2159
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.00872802734375,
+          "mask_pixels": 2157
+        }
+      ]
+    },
+    {
+      "case_id": "M0014_S1_open_canned_food",
+      "present_category": "canned food",
+      "absent_category": "candle",
+      "original_score": 0.51171875,
+      "original_mask_pixels": 3723,
+      "best_prompt": "jar candle",
+      "best_score": 0.51953125,
+      "best_mask_pixels": 3723,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.51171875,
+          "mask_pixels": 3723,
+          "mask": "negative_masks/M0014_S1_open_canned_food/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.296875,
+          "mask_pixels": 3722,
+          "mask": "negative_masks/M0014_S1_open_canned_food/candle-1.png"
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.51953125,
+          "mask_pixels": 3723,
+          "mask": "negative_masks/M0014_S1_open_canned_food/candle-2.png"
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.1455078125,
+          "mask_pixels": 3718,
+          "mask": "negative_masks/M0014_S1_open_canned_food/candle-3.png"
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.486328125,
+          "mask_pixels": 3723,
+          "mask": "negative_masks/M0014_S1_open_canned_food/candle-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0014_S1_open_canned_food",
+      "present_category": "canned food",
+      "absent_category": "corn",
+      "original_score": 0.007476806640625,
+      "original_mask_pixels": 3701,
+      "best_prompt": "corn",
+      "best_score": 0.007476806640625,
+      "best_mask_pixels": 3701,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.007476806640625,
+          "mask_pixels": 3701
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.000335693359375,
+          "mask_pixels": 3701
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.00121307373046875,
+          "mask_pixels": 3691
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.0027008056640625,
+          "mask_pixels": 3702
+        }
+      ]
+    },
+    {
+      "case_id": "M0014_S1_open_canned_food",
+      "present_category": "canned food",
+      "absent_category": "milk",
+      "original_score": 0.050537109375,
+      "original_mask_pixels": 3711,
+      "best_prompt": "carton of milk",
+      "best_score": 0.083984375,
+      "best_mask_pixels": 3719,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.050537109375,
+          "mask_pixels": 3711,
+          "mask": "negative_masks/M0014_S1_open_canned_food/milk-0.png"
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.025390625,
+          "mask_pixels": 3707
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.083984375,
+          "mask_pixels": 3719,
+          "mask": "negative_masks/M0014_S1_open_canned_food/milk-2.png"
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.0030670166015625,
+          "mask_pixels": 3712
+        }
+      ]
+    },
+    {
+      "case_id": "M0014_S1_open_canned_food",
+      "present_category": "canned food",
+      "absent_category": "yogurt",
+      "original_score": 0.0498046875,
+      "original_mask_pixels": 3715,
+      "best_prompt": "yogurt cup",
+      "best_score": 0.30078125,
+      "best_mask_pixels": 3723,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.0498046875,
+          "mask_pixels": 3715
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.30078125,
+          "mask_pixels": 3723,
+          "mask": "negative_masks/M0014_S1_open_canned_food/yogurt-1.png"
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.2060546875,
+          "mask_pixels": 3723,
+          "mask": "negative_masks/M0014_S1_open_canned_food/yogurt-2.png"
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.03125,
+          "mask_pixels": 3705
+        }
+      ]
+    },
+    {
+      "case_id": "M0014_S1_open_canned_food",
+      "present_category": "canned food",
+      "absent_category": "bowl",
+      "original_score": 0.034423828125,
+      "original_mask_pixels": 3718,
+      "best_prompt": "small bowl",
+      "best_score": 0.0673828125,
+      "best_mask_pixels": 3716,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.034423828125,
+          "mask_pixels": 3718
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.0673828125,
+          "mask_pixels": 3716,
+          "mask": "negative_masks/M0014_S1_open_canned_food/bowl-1.png"
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.019775390625,
+          "mask_pixels": 3711
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.0299072265625,
+          "mask_pixels": 3714
+        }
+      ]
+    },
+    {
+      "case_id": "M0017_S1_open_corn",
+      "present_category": "corn",
+      "absent_category": "candle",
+      "original_score": 0.06103515625,
+      "original_mask_pixels": 5578,
+      "best_prompt": "candle",
+      "best_score": 0.06103515625,
+      "best_mask_pixels": 5578,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.06103515625,
+          "mask_pixels": 5578,
+          "mask": "negative_masks/M0017_S1_open_corn/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.03369140625,
+          "mask_pixels": 5572
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.005950927734375,
+          "mask_pixels": 5564
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.0201416015625,
+          "mask_pixels": 5588
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.02880859375,
+          "mask_pixels": 5591
+        }
+      ]
+    },
+    {
+      "case_id": "M0017_S1_open_corn",
+      "present_category": "corn",
+      "absent_category": "canned food",
+      "original_score": 0.006927490234375,
+      "original_mask_pixels": 5578,
+      "best_prompt": "can",
+      "best_score": 0.0179443359375,
+      "best_mask_pixels": 5583,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.006927490234375,
+          "mask_pixels": 5578
+        },
+        {
+          "prompt": "food can",
+          "score": 0.005218505859375,
+          "mask_pixels": 5582
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.01611328125,
+          "mask_pixels": 5576
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.00848388671875,
+          "mask_pixels": 5584
+        },
+        {
+          "prompt": "can",
+          "score": 0.0179443359375,
+          "mask_pixels": 5583
+        }
+      ]
+    },
+    {
+      "case_id": "M0017_S1_open_corn",
+      "present_category": "corn",
+      "absent_category": "milk",
+      "original_score": 0.001129150390625,
+      "original_mask_pixels": 5532,
+      "best_prompt": "carton of milk",
+      "best_score": 0.00665283203125,
+      "best_mask_pixels": 175,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.001129150390625,
+          "mask_pixels": 5532
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.00165557861328125,
+          "mask_pixels": 5570
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.00665283203125,
+          "mask_pixels": 175
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.0002269744873046875,
+          "mask_pixels": 5588
+        }
+      ]
+    },
+    {
+      "case_id": "M0017_S1_open_corn",
+      "present_category": "corn",
+      "absent_category": "yogurt",
+      "original_score": 0.00335693359375,
+      "original_mask_pixels": 5555,
+      "best_prompt": "yoghurt",
+      "best_score": 0.004608154296875,
+      "best_mask_pixels": 5566,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.00335693359375,
+          "mask_pixels": 5555
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.0021514892578125,
+          "mask_pixels": 5568
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.004547119140625,
+          "mask_pixels": 5570
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.004608154296875,
+          "mask_pixels": 5566
+        }
+      ]
+    },
+    {
+      "case_id": "M0017_S1_open_corn",
+      "present_category": "corn",
+      "absent_category": "bowl",
+      "original_score": 0.005523681640625,
+      "original_mask_pixels": 5575,
+      "best_prompt": "bowl",
+      "best_score": 0.005523681640625,
+      "best_mask_pixels": 5575,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.005523681640625,
+          "mask_pixels": 5575
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.005035400390625,
+          "mask_pixels": 5575
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.003082275390625,
+          "mask_pixels": 5567
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.002471923828125,
+          "mask_pixels": 5578
+        }
+      ]
+    },
+    {
+      "case_id": "M0021_S2_edge_eggplant",
+      "present_category": "eggplant",
+      "absent_category": "candle",
+      "original_score": 0.07275390625,
+      "original_mask_pixels": 4355,
+      "best_prompt": "candle holder",
+      "best_score": 0.1474609375,
+      "best_mask_pixels": 4356,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.07275390625,
+          "mask_pixels": 4355,
+          "mask": "negative_masks/M0021_S2_edge_eggplant/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.029541015625,
+          "mask_pixels": 4356
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.00823974609375,
+          "mask_pixels": 4351
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.05859375,
+          "mask_pixels": 4362,
+          "mask": "negative_masks/M0021_S2_edge_eggplant/candle-3.png"
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.1474609375,
+          "mask_pixels": 4356,
+          "mask": "negative_masks/M0021_S2_edge_eggplant/candle-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0021_S2_edge_eggplant",
+      "present_category": "eggplant",
+      "absent_category": "canned food",
+      "original_score": 0.01251220703125,
+      "original_mask_pixels": 176,
+      "best_prompt": "tin can",
+      "best_score": 0.064453125,
+      "best_mask_pixels": 175,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.01251220703125,
+          "mask_pixels": 176
+        },
+        {
+          "prompt": "food can",
+          "score": 0.0194091796875,
+          "mask_pixels": 176
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.064453125,
+          "mask_pixels": 175,
+          "mask": "negative_masks/M0021_S2_edge_eggplant/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.032470703125,
+          "mask_pixels": 176
+        },
+        {
+          "prompt": "can",
+          "score": 0.052734375,
+          "mask_pixels": 176,
+          "mask": "negative_masks/M0021_S2_edge_eggplant/canned_food-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0021_S2_edge_eggplant",
+      "present_category": "eggplant",
+      "absent_category": "corn",
+      "original_score": 0.00994873046875,
+      "original_mask_pixels": 4354,
+      "best_prompt": "corn",
+      "best_score": 0.00994873046875,
+      "best_mask_pixels": 4354,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.00994873046875,
+          "mask_pixels": 4354
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.000934600830078125,
+          "mask_pixels": 4350
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.00115203857421875,
+          "mask_pixels": 4357
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.0024261474609375,
+          "mask_pixels": 4354
+        }
+      ]
+    },
+    {
+      "case_id": "M0021_S2_edge_eggplant",
+      "present_category": "eggplant",
+      "absent_category": "milk",
+      "original_score": 0.007415771484375,
+      "original_mask_pixels": 4346,
+      "best_prompt": "carton of milk",
+      "best_score": 0.140625,
+      "best_mask_pixels": 174,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.007415771484375,
+          "mask_pixels": 4346
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.01409912109375,
+          "mask_pixels": 174
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.140625,
+          "mask_pixels": 174,
+          "mask": "negative_masks/M0021_S2_edge_eggplant/milk-2.png"
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.004669189453125,
+          "mask_pixels": 175
+        }
+      ]
+    },
+    {
+      "case_id": "M0021_S2_edge_eggplant",
+      "present_category": "eggplant",
+      "absent_category": "yogurt",
+      "original_score": 0.0093994140625,
+      "original_mask_pixels": 4354,
+      "best_prompt": "yogurt container",
+      "best_score": 0.0113525390625,
+      "best_mask_pixels": 175,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.0093994140625,
+          "mask_pixels": 4354
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.007598876953125,
+          "mask_pixels": 176
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.0113525390625,
+          "mask_pixels": 175
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.0072021484375,
+          "mask_pixels": 4356
+        }
+      ]
+    },
+    {
+      "case_id": "M0021_S2_edge_eggplant",
+      "present_category": "eggplant",
+      "absent_category": "bowl",
+      "original_score": 0.01470947265625,
+      "original_mask_pixels": 176,
+      "best_prompt": "small bowl",
+      "best_score": 0.02490234375,
+      "best_mask_pixels": 176,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.01470947265625,
+          "mask_pixels": 176
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.02490234375,
+          "mask_pixels": 176
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.007720947265625,
+          "mask_pixels": 175
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.009033203125,
+          "mask_pixels": 4350
+        }
+      ]
+    },
+    {
+      "case_id": "M0025_S2_edge_milk",
+      "present_category": "milk",
+      "absent_category": "candle",
+      "original_score": 0.1142578125,
+      "original_mask_pixels": 7785,
+      "best_prompt": "candle holder",
+      "best_score": 0.154296875,
+      "best_mask_pixels": 7795,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.1142578125,
+          "mask_pixels": 7785,
+          "mask": "negative_masks/M0025_S2_edge_milk/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.06689453125,
+          "mask_pixels": 7784,
+          "mask": "negative_masks/M0025_S2_edge_milk/candle-1.png"
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.0556640625,
+          "mask_pixels": 7786,
+          "mask": "negative_masks/M0025_S2_edge_milk/candle-2.png"
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.022705078125,
+          "mask_pixels": 7791
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.154296875,
+          "mask_pixels": 7795,
+          "mask": "negative_masks/M0025_S2_edge_milk/candle-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0025_S2_edge_milk",
+      "present_category": "milk",
+      "absent_category": "canned food",
+      "original_score": 0.130859375,
+      "original_mask_pixels": 7781,
+      "best_prompt": "tin can",
+      "best_score": 0.81640625,
+      "best_mask_pixels": 7797,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.130859375,
+          "mask_pixels": 7781,
+          "mask": "negative_masks/M0025_S2_edge_milk/canned_food-0.png"
+        },
+        {
+          "prompt": "food can",
+          "score": 0.10595703125,
+          "mask_pixels": 7795,
+          "mask": "negative_masks/M0025_S2_edge_milk/canned_food-1.png"
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.81640625,
+          "mask_pixels": 7797,
+          "mask": "negative_masks/M0025_S2_edge_milk/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.75390625,
+          "mask_pixels": 7800,
+          "mask": "negative_masks/M0025_S2_edge_milk/canned_food-3.png"
+        },
+        {
+          "prompt": "can",
+          "score": 0.66796875,
+          "mask_pixels": 7806,
+          "mask": "negative_masks/M0025_S2_edge_milk/canned_food-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0025_S2_edge_milk",
+      "present_category": "milk",
+      "absent_category": "corn",
+      "original_score": 0.006011962890625,
+      "original_mask_pixels": 7749,
+      "best_prompt": "corn",
+      "best_score": 0.006011962890625,
+      "best_mask_pixels": 7749,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.006011962890625,
+          "mask_pixels": 7749
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.00021076202392578125,
+          "mask_pixels": 7804
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.000522613525390625,
+          "mask_pixels": 7755
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.0020904541015625,
+          "mask_pixels": 7767
+        }
+      ]
+    },
+    {
+      "case_id": "M0025_S2_edge_milk",
+      "present_category": "milk",
+      "absent_category": "yogurt",
+      "original_score": 0.03466796875,
+      "original_mask_pixels": 7766,
+      "best_prompt": "yogurt container",
+      "best_score": 0.0732421875,
+      "best_mask_pixels": 7789,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.03466796875,
+          "mask_pixels": 7766
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.0211181640625,
+          "mask_pixels": 7783
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.0732421875,
+          "mask_pixels": 7789,
+          "mask": "negative_masks/M0025_S2_edge_milk/yogurt-2.png"
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.01446533203125,
+          "mask_pixels": 7763
+        }
+      ]
+    },
+    {
+      "case_id": "M0025_S2_edge_milk",
+      "present_category": "milk",
+      "absent_category": "bowl",
+      "original_score": 0.00860595703125,
+      "original_mask_pixels": 436,
+      "best_prompt": "small bowl",
+      "best_score": 0.0257568359375,
+      "best_mask_pixels": 441,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.00860595703125,
+          "mask_pixels": 436
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.0257568359375,
+          "mask_pixels": 441
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.004791259765625,
+          "mask_pixels": 428
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.0020294189453125,
+          "mask_pixels": 7785
+        }
+      ]
+    },
+    {
+      "case_id": "M0028_S2_edge_onion",
+      "present_category": "onion",
+      "absent_category": "candle",
+      "original_score": 0.0849609375,
+      "original_mask_pixels": 3352,
+      "best_prompt": "candle with a wick",
+      "best_score": 0.228515625,
+      "best_mask_pixels": 3363,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.0849609375,
+          "mask_pixels": 3352,
+          "mask": "negative_masks/M0028_S2_edge_onion/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.047607421875,
+          "mask_pixels": 3354
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.01318359375,
+          "mask_pixels": 3354
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.228515625,
+          "mask_pixels": 3363,
+          "mask": "negative_masks/M0028_S2_edge_onion/candle-3.png"
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.044921875,
+          "mask_pixels": 3360
+        }
+      ]
+    },
+    {
+      "case_id": "M0028_S2_edge_onion",
+      "present_category": "onion",
+      "absent_category": "canned food",
+      "original_score": 0.05810546875,
+      "original_mask_pixels": 3355,
+      "best_prompt": "tin can",
+      "best_score": 0.06103515625,
+      "best_mask_pixels": 3353,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.05810546875,
+          "mask_pixels": 3355,
+          "mask": "negative_masks/M0028_S2_edge_onion/canned_food-0.png"
+        },
+        {
+          "prompt": "food can",
+          "score": 0.00946044921875,
+          "mask_pixels": 3353
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.06103515625,
+          "mask_pixels": 3353,
+          "mask": "negative_masks/M0028_S2_edge_onion/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.0556640625,
+          "mask_pixels": 3355,
+          "mask": "negative_masks/M0028_S2_edge_onion/canned_food-3.png"
+        },
+        {
+          "prompt": "can",
+          "score": 0.0264892578125,
+          "mask_pixels": 3356
+        }
+      ]
+    },
+    {
+      "case_id": "M0028_S2_edge_onion",
+      "present_category": "onion",
+      "absent_category": "corn",
+      "original_score": 0.69921875,
+      "original_mask_pixels": 3359,
+      "best_prompt": "corn",
+      "best_score": 0.69921875,
+      "best_mask_pixels": 3359,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.69921875,
+          "mask_pixels": 3359,
+          "mask": "negative_masks/M0028_S2_edge_onion/corn-0.png"
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.53515625,
+          "mask_pixels": 3351,
+          "mask": "negative_masks/M0028_S2_edge_onion/corn-1.png"
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.341796875,
+          "mask_pixels": 3355,
+          "mask": "negative_masks/M0028_S2_edge_onion/corn-2.png"
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.44921875,
+          "mask_pixels": 3358,
+          "mask": "negative_masks/M0028_S2_edge_onion/corn-3.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0028_S2_edge_onion",
+      "present_category": "onion",
+      "absent_category": "milk",
+      "original_score": 0.01422119140625,
+      "original_mask_pixels": 3342,
+      "best_prompt": "carton of milk",
+      "best_score": 0.025390625,
+      "best_mask_pixels": 172,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.01422119140625,
+          "mask_pixels": 3342
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.0159912109375,
+          "mask_pixels": 3353
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.025390625,
+          "mask_pixels": 172
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.0013275146484375,
+          "mask_pixels": 3351
+        }
+      ]
+    },
+    {
+      "case_id": "M0028_S2_edge_onion",
+      "present_category": "onion",
+      "absent_category": "yogurt",
+      "original_score": 0.0159912109375,
+      "original_mask_pixels": 3359,
+      "best_prompt": "yoghurt",
+      "best_score": 0.0235595703125,
+      "best_mask_pixels": 3358,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.0159912109375,
+          "mask_pixels": 3359
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.0087890625,
+          "mask_pixels": 3361
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.016357421875,
+          "mask_pixels": 3364
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.0235595703125,
+          "mask_pixels": 3358
+        }
+      ]
+    },
+    {
+      "case_id": "M0028_S2_edge_onion",
+      "present_category": "onion",
+      "absent_category": "bowl",
+      "original_score": 0.006622314453125,
+      "original_mask_pixels": 3361,
+      "best_prompt": "small bowl",
+      "best_score": 0.0167236328125,
+      "best_mask_pixels": 3369,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.006622314453125,
+          "mask_pixels": 3361
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.0167236328125,
+          "mask_pixels": 3369
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.010498046875,
+          "mask_pixels": 3352
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.002685546875,
+          "mask_pixels": 3349
+        }
+      ]
+    },
+    {
+      "case_id": "M0035_S2_edge_soap_dispenser",
+      "present_category": "soap dispenser",
+      "absent_category": "candle",
+      "original_score": 0.109375,
+      "original_mask_pixels": 4630,
+      "best_prompt": "candle",
+      "best_score": 0.109375,
+      "best_mask_pixels": 4630,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.109375,
+          "mask_pixels": 4630,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.05419921875,
+          "mask_pixels": 4628,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/candle-1.png"
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.07275390625,
+          "mask_pixels": 4624,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/candle-2.png"
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.059814453125,
+          "mask_pixels": 4632,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/candle-3.png"
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.0478515625,
+          "mask_pixels": 4629
+        }
+      ]
+    },
+    {
+      "case_id": "M0035_S2_edge_soap_dispenser",
+      "present_category": "soap dispenser",
+      "absent_category": "canned food",
+      "original_score": 0.63671875,
+      "original_mask_pixels": 4622,
+      "best_prompt": "can",
+      "best_score": 0.9296875,
+      "best_mask_pixels": 4637,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.63671875,
+          "mask_pixels": 4622,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/canned_food-0.png"
+        },
+        {
+          "prompt": "food can",
+          "score": 0.71484375,
+          "mask_pixels": 4628,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/canned_food-1.png"
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.921875,
+          "mask_pixels": 4631,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.91015625,
+          "mask_pixels": 4637,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/canned_food-3.png"
+        },
+        {
+          "prompt": "can",
+          "score": 0.9296875,
+          "mask_pixels": 4637,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/canned_food-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0035_S2_edge_soap_dispenser",
+      "present_category": "soap dispenser",
+      "absent_category": "corn",
+      "original_score": 0.031982421875,
+      "original_mask_pixels": 4615,
+      "best_prompt": "corn",
+      "best_score": 0.031982421875,
+      "best_mask_pixels": 4615,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.031982421875,
+          "mask_pixels": 4615
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.000335693359375,
+          "mask_pixels": 4613
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.0010833740234375,
+          "mask_pixels": 4614
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.0093994140625,
+          "mask_pixels": 4601
+        }
+      ]
+    },
+    {
+      "case_id": "M0035_S2_edge_soap_dispenser",
+      "present_category": "soap dispenser",
+      "absent_category": "milk",
+      "original_score": 0.20703125,
+      "original_mask_pixels": 4608,
+      "best_prompt": "milk carton",
+      "best_score": 0.2578125,
+      "best_mask_pixels": 4615,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.20703125,
+          "mask_pixels": 4608,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/milk-0.png"
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.2578125,
+          "mask_pixels": 4615,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/milk-1.png"
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.1396484375,
+          "mask_pixels": 4625,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/milk-2.png"
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.038818359375,
+          "mask_pixels": 4620
+        }
+      ]
+    },
+    {
+      "case_id": "M0035_S2_edge_soap_dispenser",
+      "present_category": "soap dispenser",
+      "absent_category": "yogurt",
+      "original_score": 0.07763671875,
+      "original_mask_pixels": 4611,
+      "best_prompt": "yogurt container",
+      "best_score": 0.26953125,
+      "best_mask_pixels": 4620,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.07763671875,
+          "mask_pixels": 4611,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/yogurt-0.png"
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.03564453125,
+          "mask_pixels": 4623
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.26953125,
+          "mask_pixels": 4620,
+          "mask": "negative_masks/M0035_S2_edge_soap_dispenser/yogurt-2.png"
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.03125,
+          "mask_pixels": 4613
+        }
+      ]
+    },
+    {
+      "case_id": "M0035_S2_edge_soap_dispenser",
+      "present_category": "soap dispenser",
+      "absent_category": "bowl",
+      "original_score": 0.005706787109375,
+      "original_mask_pixels": 174,
+      "best_prompt": "small bowl",
+      "best_score": 0.00628662109375,
+      "best_mask_pixels": 174,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.005706787109375,
+          "mask_pixels": 174
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.00628662109375,
+          "mask_pixels": 174
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.0027923583984375,
+          "mask_pixels": 174
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.00323486328125,
+          "mask_pixels": 4633
+        }
+      ]
+    },
+    {
+      "case_id": "M0037_S2_edge_sponge",
+      "present_category": "sponge",
+      "absent_category": "candle",
+      "original_score": 0.04833984375,
+      "original_mask_pixels": 4622,
+      "best_prompt": "candle",
+      "best_score": 0.04833984375,
+      "best_mask_pixels": 4622,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.04833984375,
+          "mask_pixels": 4622
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.023681640625,
+          "mask_pixels": 4621
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.0067138671875,
+          "mask_pixels": 4622
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.03173828125,
+          "mask_pixels": 4642
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.04541015625,
+          "mask_pixels": 4647
+        }
+      ]
+    },
+    {
+      "case_id": "M0037_S2_edge_sponge",
+      "present_category": "sponge",
+      "absent_category": "canned food",
+      "original_score": 0.01129150390625,
+      "original_mask_pixels": 4633,
+      "best_prompt": "tin can",
+      "best_score": 0.03271484375,
+      "best_mask_pixels": 174,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.01129150390625,
+          "mask_pixels": 4633
+        },
+        {
+          "prompt": "food can",
+          "score": 0.00994873046875,
+          "mask_pixels": 175
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.03271484375,
+          "mask_pixels": 174
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.01385498046875,
+          "mask_pixels": 174
+        },
+        {
+          "prompt": "can",
+          "score": 0.0238037109375,
+          "mask_pixels": 176
+        }
+      ]
+    },
+    {
+      "case_id": "M0037_S2_edge_sponge",
+      "present_category": "sponge",
+      "absent_category": "corn",
+      "original_score": 0.01300048828125,
+      "original_mask_pixels": 4614,
+      "best_prompt": "corn",
+      "best_score": 0.01300048828125,
+      "best_mask_pixels": 4614,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.01300048828125,
+          "mask_pixels": 4614
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.00135040283203125,
+          "mask_pixels": 4628
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.00103759765625,
+          "mask_pixels": 4631
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.0027923583984375,
+          "mask_pixels": 4610
+        }
+      ]
+    },
+    {
+      "case_id": "M0037_S2_edge_sponge",
+      "present_category": "sponge",
+      "absent_category": "milk",
+      "original_score": 0.013427734375,
+      "original_mask_pixels": 4013,
+      "best_prompt": "carton of milk",
+      "best_score": 0.0556640625,
+      "best_mask_pixels": 174,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.013427734375,
+          "mask_pixels": 4013
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.00787353515625,
+          "mask_pixels": 4621
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.0556640625,
+          "mask_pixels": 174,
+          "mask": "negative_masks/M0037_S2_edge_sponge/milk-2.png"
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.0021514892578125,
+          "mask_pixels": 174
+        }
+      ]
+    },
+    {
+      "case_id": "M0037_S2_edge_sponge",
+      "present_category": "sponge",
+      "absent_category": "yogurt",
+      "original_score": 0.01708984375,
+      "original_mask_pixels": 4122,
+      "best_prompt": "yoghurt",
+      "best_score": 0.0172119140625,
+      "best_mask_pixels": 4579,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.01708984375,
+          "mask_pixels": 4122
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.00469970703125,
+          "mask_pixels": 4634
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.005645751953125,
+          "mask_pixels": 4626
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.0172119140625,
+          "mask_pixels": 4579
+        }
+      ]
+    },
+    {
+      "case_id": "M0037_S2_edge_sponge",
+      "present_category": "sponge",
+      "absent_category": "bowl",
+      "original_score": 0.00640869140625,
+      "original_mask_pixels": 4645,
+      "best_prompt": "small bowl",
+      "best_score": 0.0067138671875,
+      "best_mask_pixels": 4655,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.00640869140625,
+          "mask_pixels": 4645
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.0067138671875,
+          "mask_pixels": 4655
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.00341796875,
+          "mask_pixels": 4643
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.002044677734375,
+          "mask_pixels": 4638
+        }
+      ]
+    },
+    {
+      "case_id": "M0040_S2_edge_yogurt",
+      "present_category": "yogurt",
+      "absent_category": "candle",
+      "original_score": 0.060791015625,
+      "original_mask_pixels": 3313,
+      "best_prompt": "candle holder",
+      "best_score": 0.1337890625,
+      "best_mask_pixels": 3349,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.060791015625,
+          "mask_pixels": 3313,
+          "mask": "negative_masks/M0040_S2_edge_yogurt/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.036865234375,
+          "mask_pixels": 3326
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.0296630859375,
+          "mask_pixels": 3334
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.027587890625,
+          "mask_pixels": 3337
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.1337890625,
+          "mask_pixels": 3349,
+          "mask": "negative_masks/M0040_S2_edge_yogurt/candle-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0040_S2_edge_yogurt",
+      "present_category": "yogurt",
+      "absent_category": "canned food",
+      "original_score": 0.146484375,
+      "original_mask_pixels": 3317,
+      "best_prompt": "can",
+      "best_score": 0.2158203125,
+      "best_mask_pixels": 3348,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.146484375,
+          "mask_pixels": 3317,
+          "mask": "negative_masks/M0040_S2_edge_yogurt/canned_food-0.png"
+        },
+        {
+          "prompt": "food can",
+          "score": 0.072265625,
+          "mask_pixels": 3338,
+          "mask": "negative_masks/M0040_S2_edge_yogurt/canned_food-1.png"
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.1240234375,
+          "mask_pixels": 3341,
+          "mask": "negative_masks/M0040_S2_edge_yogurt/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.1611328125,
+          "mask_pixels": 3341,
+          "mask": "negative_masks/M0040_S2_edge_yogurt/canned_food-3.png"
+        },
+        {
+          "prompt": "can",
+          "score": 0.2158203125,
+          "mask_pixels": 3348,
+          "mask": "negative_masks/M0040_S2_edge_yogurt/canned_food-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0040_S2_edge_yogurt",
+      "present_category": "yogurt",
+      "absent_category": "corn",
+      "original_score": 0.00933837890625,
+      "original_mask_pixels": 3314,
+      "best_prompt": "corn",
+      "best_score": 0.00933837890625,
+      "best_mask_pixels": 3314,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.00933837890625,
+          "mask_pixels": 3314
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.000400543212890625,
+          "mask_pixels": 3331
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.0015869140625,
+          "mask_pixels": 3321
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.00225830078125,
+          "mask_pixels": 3307
+        }
+      ]
+    },
+    {
+      "case_id": "M0040_S2_edge_yogurt",
+      "present_category": "yogurt",
+      "absent_category": "milk",
+      "original_score": 0.00634765625,
+      "original_mask_pixels": 3278,
+      "best_prompt": "carton of milk",
+      "best_score": 0.0291748046875,
+      "best_mask_pixels": 174,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.00634765625,
+          "mask_pixels": 3278
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.01373291015625,
+          "mask_pixels": 3319
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.0291748046875,
+          "mask_pixels": 174
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.00177001953125,
+          "mask_pixels": 3321
+        }
+      ]
+    },
+    {
+      "case_id": "M0040_S2_edge_yogurt",
+      "present_category": "yogurt",
+      "absent_category": "bowl",
+      "original_score": 0.02001953125,
+      "original_mask_pixels": 3337,
+      "best_prompt": "small bowl",
+      "best_score": 0.03466796875,
+      "best_mask_pixels": 3344,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.02001953125,
+          "mask_pixels": 3337
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.03466796875,
+          "mask_pixels": 3344
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.007171630859375,
+          "mask_pixels": 3323
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.01068115234375,
+          "mask_pixels": 3333
+        }
+      ]
+    },
+    {
+      "case_id": "M0001_S1_open_apple",
+      "present_category": "apple",
+      "absent_category": "candle",
+      "original_score": 0.00665283203125,
+      "original_mask_pixels": 2019,
+      "best_prompt": "candle holder",
+      "best_score": 0.0303955078125,
+      "best_mask_pixels": 175,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.00665283203125,
+          "mask_pixels": 2019
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.004730224609375,
+          "mask_pixels": 2019
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.001434326171875,
+          "mask_pixels": 2022
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.0064697265625,
+          "mask_pixels": 2022
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.0303955078125,
+          "mask_pixels": 175
+        }
+      ]
+    },
+    {
+      "case_id": "M0001_S1_open_apple",
+      "present_category": "apple",
+      "absent_category": "canned food",
+      "original_score": 0.0025787353515625,
+      "original_mask_pixels": 2022,
+      "best_prompt": "tin can",
+      "best_score": 0.00799560546875,
+      "best_mask_pixels": 175,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.0025787353515625,
+          "mask_pixels": 2022
+        },
+        {
+          "prompt": "food can",
+          "score": 0.0023651123046875,
+          "mask_pixels": 175
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.00799560546875,
+          "mask_pixels": 175
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.004791259765625,
+          "mask_pixels": 175
+        },
+        {
+          "prompt": "can",
+          "score": 0.006561279296875,
+          "mask_pixels": 175
+        }
+      ]
+    },
+    {
+      "case_id": "M0001_S1_open_apple",
+      "present_category": "apple",
+      "absent_category": "corn",
+      "original_score": 0.0026092529296875,
+      "original_mask_pixels": 2022,
+      "best_prompt": "corn",
+      "best_score": 0.0026092529296875,
+      "best_mask_pixels": 2022,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.0026092529296875,
+          "mask_pixels": 2022
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.00078582763671875,
+          "mask_pixels": 31
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.00019931793212890625,
+          "mask_pixels": 2025
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.001068115234375,
+          "mask_pixels": 1998
+        }
+      ]
+    },
+    {
+      "case_id": "M0001_S1_open_apple",
+      "present_category": "apple",
+      "absent_category": "milk",
+      "original_score": 0.0012054443359375,
+      "original_mask_pixels": 2023,
+      "best_prompt": "carton of milk",
+      "best_score": 0.024169921875,
+      "best_mask_pixels": 173,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.0012054443359375,
+          "mask_pixels": 2023
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.0036468505859375,
+          "mask_pixels": 171
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.024169921875,
+          "mask_pixels": 173
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.0005950927734375,
+          "mask_pixels": 171
+        }
+      ]
+    },
+    {
+      "case_id": "M0001_S1_open_apple",
+      "present_category": "apple",
+      "absent_category": "yogurt",
+      "original_score": 0.00193023681640625,
+      "original_mask_pixels": 2024,
+      "best_prompt": "yogurt",
+      "best_score": 0.00193023681640625,
+      "best_mask_pixels": 2024,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.00193023681640625,
+          "mask_pixels": 2024
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.00106048583984375,
+          "mask_pixels": 2032
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.00118255615234375,
+          "mask_pixels": 2027
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.00186920166015625,
+          "mask_pixels": 2021
+        }
+      ]
+    },
+    {
+      "case_id": "M0001_S1_open_apple",
+      "present_category": "apple",
+      "absent_category": "bowl",
+      "original_score": 0.00131988525390625,
+      "original_mask_pixels": 2033,
+      "best_prompt": "small bowl",
+      "best_score": 0.00186920166015625,
+      "best_mask_pixels": 2031,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.00131988525390625,
+          "mask_pixels": 2033
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.00186920166015625,
+          "mask_pixels": 2031
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.00051116943359375,
+          "mask_pixels": 2029
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.00067901611328125,
+          "mask_pixels": 2027
+        }
+      ]
+    },
+    {
+      "case_id": "M0002_S1_open_avocado",
+      "present_category": "avocado",
+      "absent_category": "candle",
+      "original_score": 0.0322265625,
+      "original_mask_pixels": 4338,
+      "best_prompt": "candle with a wick",
+      "best_score": 0.043212890625,
+      "best_mask_pixels": 4360,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.0322265625,
+          "mask_pixels": 4338
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.013427734375,
+          "mask_pixels": 4345
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.003936767578125,
+          "mask_pixels": 4346
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.043212890625,
+          "mask_pixels": 4360
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.0380859375,
+          "mask_pixels": 176
+        }
+      ]
+    },
+    {
+      "case_id": "M0002_S1_open_avocado",
+      "present_category": "avocado",
+      "absent_category": "canned food",
+      "original_score": 0.005859375,
+      "original_mask_pixels": 4350,
+      "best_prompt": "tin can",
+      "best_score": 0.0250244140625,
+      "best_mask_pixels": 176,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.005859375,
+          "mask_pixels": 4350
+        },
+        {
+          "prompt": "food can",
+          "score": 0.00531005859375,
+          "mask_pixels": 4385
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.0250244140625,
+          "mask_pixels": 176
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.013671875,
+          "mask_pixels": 176
+        },
+        {
+          "prompt": "can",
+          "score": 0.0167236328125,
+          "mask_pixels": 176
+        }
+      ]
+    },
+    {
+      "case_id": "M0002_S1_open_avocado",
+      "present_category": "avocado",
+      "absent_category": "corn",
+      "original_score": 0.006103515625,
+      "original_mask_pixels": 4343,
+      "best_prompt": "ear of corn",
+      "best_score": 0.01129150390625,
+      "best_mask_pixels": 4354,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.006103515625,
+          "mask_pixels": 4343
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.01129150390625,
+          "mask_pixels": 4354
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.001373291015625,
+          "mask_pixels": 4350
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.0025482177734375,
+          "mask_pixels": 4344
+        }
+      ]
+    },
+    {
+      "case_id": "M0002_S1_open_avocado",
+      "present_category": "avocado",
+      "absent_category": "milk",
+      "original_score": 0.0023040771484375,
+      "original_mask_pixels": 4340,
+      "best_prompt": "carton of milk",
+      "best_score": 0.041259765625,
+      "best_mask_pixels": 174,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.0023040771484375,
+          "mask_pixels": 4340
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.00555419921875,
+          "mask_pixels": 172
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.041259765625,
+          "mask_pixels": 174
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.0014801025390625,
+          "mask_pixels": 172
+        }
+      ]
+    },
+    {
+      "case_id": "M0002_S1_open_avocado",
+      "present_category": "avocado",
+      "absent_category": "yogurt",
+      "original_score": 0.005462646484375,
+      "original_mask_pixels": 4357,
+      "best_prompt": "yoghurt",
+      "best_score": 0.00732421875,
+      "best_mask_pixels": 4360,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.005462646484375,
+          "mask_pixels": 4357
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.002471923828125,
+          "mask_pixels": 4369
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.0032806396484375,
+          "mask_pixels": 4358
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.00732421875,
+          "mask_pixels": 4360
+        }
+      ]
+    },
+    {
+      "case_id": "M0002_S1_open_avocado",
+      "present_category": "avocado",
+      "absent_category": "bowl",
+      "original_score": 0.0040283203125,
+      "original_mask_pixels": 4368,
+      "best_prompt": "small bowl",
+      "best_score": 0.005950927734375,
+      "best_mask_pixels": 4365,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.0040283203125,
+          "mask_pixels": 4368
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.005950927734375,
+          "mask_pixels": 4365
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.0026702880859375,
+          "mask_pixels": 4360
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.0013275146484375,
+          "mask_pixels": 4358
+        }
+      ]
+    },
+    {
+      "case_id": "M0004_S1_open_banana",
+      "present_category": "banana",
+      "absent_category": "candle",
+      "original_score": 0.0137939453125,
+      "original_mask_pixels": 2651,
+      "best_prompt": "candle holder",
+      "best_score": 0.047607421875,
+      "best_mask_pixels": 173,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.0137939453125,
+          "mask_pixels": 2651
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.00482177734375,
+          "mask_pixels": 2667
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.002044677734375,
+          "mask_pixels": 2677
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.0042724609375,
+          "mask_pixels": 2659
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.047607421875,
+          "mask_pixels": 173
+        }
+      ]
+    },
+    {
+      "case_id": "M0004_S1_open_banana",
+      "present_category": "banana",
+      "absent_category": "canned food",
+      "original_score": 0.01904296875,
+      "original_mask_pixels": 172,
+      "best_prompt": "tin can",
+      "best_score": 0.078125,
+      "best_mask_pixels": 174,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.01904296875,
+          "mask_pixels": 172
+        },
+        {
+          "prompt": "food can",
+          "score": 0.0250244140625,
+          "mask_pixels": 172
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.078125,
+          "mask_pixels": 174,
+          "mask": "negative_masks/M0004_S1_open_banana/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.043701171875,
+          "mask_pixels": 173
+        },
+        {
+          "prompt": "can",
+          "score": 0.06396484375,
+          "mask_pixels": 174,
+          "mask": "negative_masks/M0004_S1_open_banana/canned_food-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0004_S1_open_banana",
+      "present_category": "banana",
+      "absent_category": "corn",
+      "original_score": 0.003509521484375,
+      "original_mask_pixels": 2644,
+      "best_prompt": "yellow corn",
+      "best_score": 0.00885009765625,
+      "best_mask_pixels": 2648,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.003509521484375,
+          "mask_pixels": 2644
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.0038909912109375,
+          "mask_pixels": 2639
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.00103759765625,
+          "mask_pixels": 2638
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.00885009765625,
+          "mask_pixels": 2648
+        }
+      ]
+    },
+    {
+      "case_id": "M0004_S1_open_banana",
+      "present_category": "banana",
+      "absent_category": "milk",
+      "original_score": 0.002777099609375,
+      "original_mask_pixels": 171,
+      "best_prompt": "carton of milk",
+      "best_score": 0.09130859375,
+      "best_mask_pixels": 172,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.002777099609375,
+          "mask_pixels": 171
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.016357421875,
+          "mask_pixels": 172
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.09130859375,
+          "mask_pixels": 172,
+          "mask": "negative_masks/M0004_S1_open_banana/milk-2.png"
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.0047607421875,
+          "mask_pixels": 171
+        }
+      ]
+    },
+    {
+      "case_id": "M0004_S1_open_banana",
+      "present_category": "banana",
+      "absent_category": "yogurt",
+      "original_score": 0.005584716796875,
+      "original_mask_pixels": 172,
+      "best_prompt": "yogurt container",
+      "best_score": 0.011962890625,
+      "best_mask_pixels": 173,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.005584716796875,
+          "mask_pixels": 172
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.00592041015625,
+          "mask_pixels": 173
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.011962890625,
+          "mask_pixels": 173
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.002777099609375,
+          "mask_pixels": 2661
+        }
+      ]
+    },
+    {
+      "case_id": "M0004_S1_open_banana",
+      "present_category": "banana",
+      "absent_category": "bowl",
+      "original_score": 0.010009765625,
+      "original_mask_pixels": 173,
+      "best_prompt": "small bowl",
+      "best_score": 0.01116943359375,
+      "best_mask_pixels": 173,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.010009765625,
+          "mask_pixels": 173
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.01116943359375,
+          "mask_pixels": 173
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.004425048828125,
+          "mask_pixels": 171
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.0024871826171875,
+          "mask_pixels": 171
+        }
+      ]
+    },
+    {
+      "case_id": "M0005_S1_open_bar_soap",
+      "present_category": "bar of soap",
+      "absent_category": "candle",
+      "original_score": 0.392578125,
+      "original_mask_pixels": 3273,
+      "best_prompt": "wax candle",
+      "best_score": 0.39453125,
+      "best_mask_pixels": 3275,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.392578125,
+          "mask_pixels": 3273,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.39453125,
+          "mask_pixels": 3275,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/candle-1.png"
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.06884765625,
+          "mask_pixels": 3275,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/candle-2.png"
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.04736328125,
+          "mask_pixels": 3278
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.056396484375,
+          "mask_pixels": 3273,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/candle-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0005_S1_open_bar_soap",
+      "present_category": "bar of soap",
+      "absent_category": "canned food",
+      "original_score": 0.0859375,
+      "original_mask_pixels": 3273,
+      "best_prompt": "tin can",
+      "best_score": 0.12158203125,
+      "best_mask_pixels": 3281,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.0859375,
+          "mask_pixels": 3273,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/canned_food-0.png"
+        },
+        {
+          "prompt": "food can",
+          "score": 0.057373046875,
+          "mask_pixels": 3282,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/canned_food-1.png"
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.12158203125,
+          "mask_pixels": 3281,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.05859375,
+          "mask_pixels": 3281,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/canned_food-3.png"
+        },
+        {
+          "prompt": "can",
+          "score": 0.10888671875,
+          "mask_pixels": 3286,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/canned_food-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0005_S1_open_bar_soap",
+      "present_category": "bar of soap",
+      "absent_category": "corn",
+      "original_score": 0.013916015625,
+      "original_mask_pixels": 3257,
+      "best_prompt": "corn",
+      "best_score": 0.013916015625,
+      "best_mask_pixels": 3257,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.013916015625,
+          "mask_pixels": 3257
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.00015735626220703125,
+          "mask_pixels": 3246
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.0014495849609375,
+          "mask_pixels": 3252
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.0030975341796875,
+          "mask_pixels": 3261
+        }
+      ]
+    },
+    {
+      "case_id": "M0005_S1_open_bar_soap",
+      "present_category": "bar of soap",
+      "absent_category": "milk",
+      "original_score": 0.039794921875,
+      "original_mask_pixels": 3267,
+      "best_prompt": "carton of milk",
+      "best_score": 0.4453125,
+      "best_mask_pixels": 3279,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.039794921875,
+          "mask_pixels": 3267
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.091796875,
+          "mask_pixels": 3269,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/milk-1.png"
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.4453125,
+          "mask_pixels": 3279,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/milk-2.png"
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.0498046875,
+          "mask_pixels": 3277
+        }
+      ]
+    },
+    {
+      "case_id": "M0005_S1_open_bar_soap",
+      "present_category": "bar of soap",
+      "absent_category": "yogurt",
+      "original_score": 0.10107421875,
+      "original_mask_pixels": 3269,
+      "best_prompt": "yogurt container",
+      "best_score": 0.1435546875,
+      "best_mask_pixels": 3276,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.10107421875,
+          "mask_pixels": 3269,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/yogurt-0.png"
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.052734375,
+          "mask_pixels": 3275,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/yogurt-1.png"
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.1435546875,
+          "mask_pixels": 3276,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/yogurt-2.png"
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.1259765625,
+          "mask_pixels": 3268,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/yogurt-3.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0005_S1_open_bar_soap",
+      "present_category": "bar of soap",
+      "absent_category": "bowl",
+      "original_score": 0.019775390625,
+      "original_mask_pixels": 3274,
+      "best_prompt": "small bowl",
+      "best_score": 0.09130859375,
+      "best_mask_pixels": 3279,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.019775390625,
+          "mask_pixels": 3274
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.09130859375,
+          "mask_pixels": 3279,
+          "mask": "negative_masks/M0005_S1_open_bar_soap/bowl-1.png"
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.01190185546875,
+          "mask_pixels": 3267
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.009521484375,
+          "mask_pixels": 3272
+        }
+      ]
+    },
+    {
+      "case_id": "M0006_S1_open_bell_pepper",
+      "present_category": "bell pepper",
+      "absent_category": "candle",
+      "original_score": 0.12890625,
+      "original_mask_pixels": 3951,
+      "best_prompt": "candle",
+      "best_score": 0.12890625,
+      "best_mask_pixels": 3951,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.12890625,
+          "mask_pixels": 3951,
+          "mask": "negative_masks/M0006_S1_open_bell_pepper/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.0615234375,
+          "mask_pixels": 3947,
+          "mask": "negative_masks/M0006_S1_open_bell_pepper/candle-1.png"
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.0167236328125,
+          "mask_pixels": 3950
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.02783203125,
+          "mask_pixels": 3959
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.06494140625,
+          "mask_pixels": 3957,
+          "mask": "negative_masks/M0006_S1_open_bell_pepper/candle-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0006_S1_open_bell_pepper",
+      "present_category": "bell pepper",
+      "absent_category": "canned food",
+      "original_score": 0.011962890625,
+      "original_mask_pixels": 3942,
+      "best_prompt": "tin can",
+      "best_score": 0.034912109375,
+      "best_mask_pixels": 3637,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.011962890625,
+          "mask_pixels": 3942
+        },
+        {
+          "prompt": "food can",
+          "score": 0.0123291015625,
+          "mask_pixels": 3557
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.034912109375,
+          "mask_pixels": 3637
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.02392578125,
+          "mask_pixels": 3836
+        },
+        {
+          "prompt": "can",
+          "score": 0.03466796875,
+          "mask_pixels": 3549
+        }
+      ]
+    },
+    {
+      "case_id": "M0006_S1_open_bell_pepper",
+      "present_category": "bell pepper",
+      "absent_category": "corn",
+      "original_score": 0.01092529296875,
+      "original_mask_pixels": 3931,
+      "best_prompt": "corn",
+      "best_score": 0.01092529296875,
+      "best_mask_pixels": 3931,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.01092529296875,
+          "mask_pixels": 3931
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.006988525390625,
+          "mask_pixels": 446
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.00191497802734375,
+          "mask_pixels": 3930
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.0025482177734375,
+          "mask_pixels": 3926
+        }
+      ]
+    },
+    {
+      "case_id": "M0006_S1_open_bell_pepper",
+      "present_category": "bell pepper",
+      "absent_category": "milk",
+      "original_score": 0.0024871826171875,
+      "original_mask_pixels": 3906,
+      "best_prompt": "carton of milk",
+      "best_score": 0.062255859375,
+      "best_mask_pixels": 175,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.0024871826171875,
+          "mask_pixels": 3906
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.0107421875,
+          "mask_pixels": 174
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.062255859375,
+          "mask_pixels": 175,
+          "mask": "negative_masks/M0006_S1_open_bell_pepper/milk-2.png"
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.00274658203125,
+          "mask_pixels": 174
+        }
+      ]
+    },
+    {
+      "case_id": "M0006_S1_open_bell_pepper",
+      "present_category": "bell pepper",
+      "absent_category": "yogurt",
+      "original_score": 0.00634765625,
+      "original_mask_pixels": 3906,
+      "best_prompt": "yogurt",
+      "best_score": 0.00634765625,
+      "best_mask_pixels": 3906,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.00634765625,
+          "mask_pixels": 3906
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.0038909912109375,
+          "mask_pixels": 3938
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.006103515625,
+          "mask_pixels": 3938
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.00604248046875,
+          "mask_pixels": 3929
+        }
+      ]
+    },
+    {
+      "case_id": "M0006_S1_open_bell_pepper",
+      "present_category": "bell pepper",
+      "absent_category": "bowl",
+      "original_score": 0.00933837890625,
+      "original_mask_pixels": 3849,
+      "best_prompt": "small bowl",
+      "best_score": 0.010009765625,
+      "best_mask_pixels": 3736,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.00933837890625,
+          "mask_pixels": 3849
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.010009765625,
+          "mask_pixels": 3736
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.00390625,
+          "mask_pixels": 3757
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.0035400390625,
+          "mask_pixels": 3944
+        }
+      ]
+    },
+    {
+      "case_id": "M0008_S1_open_bottled_water",
+      "present_category": "water bottle",
+      "absent_category": "candle",
+      "original_score": 0.09326171875,
+      "original_mask_pixels": 2631,
+      "best_prompt": "candle",
+      "best_score": 0.09326171875,
+      "best_mask_pixels": 2631,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.09326171875,
+          "mask_pixels": 2631,
+          "mask": "negative_masks/M0008_S1_open_bottled_water/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.044189453125,
+          "mask_pixels": 2630
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.041748046875,
+          "mask_pixels": 2631
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.0279541015625,
+          "mask_pixels": 2634
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.05859375,
+          "mask_pixels": 2632,
+          "mask": "negative_masks/M0008_S1_open_bottled_water/candle-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0008_S1_open_bottled_water",
+      "present_category": "water bottle",
+      "absent_category": "canned food",
+      "original_score": 0.033203125,
+      "original_mask_pixels": 2624,
+      "best_prompt": "can",
+      "best_score": 0.294921875,
+      "best_mask_pixels": 2635,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.033203125,
+          "mask_pixels": 2624
+        },
+        {
+          "prompt": "food can",
+          "score": 0.04150390625,
+          "mask_pixels": 2627
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.22265625,
+          "mask_pixels": 2634,
+          "mask": "negative_masks/M0008_S1_open_bottled_water/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.162109375,
+          "mask_pixels": 2635,
+          "mask": "negative_masks/M0008_S1_open_bottled_water/canned_food-3.png"
+        },
+        {
+          "prompt": "can",
+          "score": 0.294921875,
+          "mask_pixels": 2635,
+          "mask": "negative_masks/M0008_S1_open_bottled_water/canned_food-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0008_S1_open_bottled_water",
+      "present_category": "water bottle",
+      "absent_category": "corn",
+      "original_score": 0.034912109375,
+      "original_mask_pixels": 2623,
+      "best_prompt": "corn",
+      "best_score": 0.034912109375,
+      "best_mask_pixels": 2623,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.034912109375,
+          "mask_pixels": 2623
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.00121307373046875,
+          "mask_pixels": 2615
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.002044677734375,
+          "mask_pixels": 2618
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.0101318359375,
+          "mask_pixels": 2621
+        }
+      ]
+    },
+    {
+      "case_id": "M0008_S1_open_bottled_water",
+      "present_category": "water bottle",
+      "absent_category": "milk",
+      "original_score": 0.026611328125,
+      "original_mask_pixels": 2620,
+      "best_prompt": "milk carton",
+      "best_score": 0.038330078125,
+      "best_mask_pixels": 2625,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.026611328125,
+          "mask_pixels": 2620
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.038330078125,
+          "mask_pixels": 2625
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.017822265625,
+          "mask_pixels": 2625
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.003631591796875,
+          "mask_pixels": 2626
+        }
+      ]
+    },
+    {
+      "case_id": "M0008_S1_open_bottled_water",
+      "present_category": "water bottle",
+      "absent_category": "yogurt",
+      "original_score": 0.0179443359375,
+      "original_mask_pixels": 2625,
+      "best_prompt": "yogurt container",
+      "best_score": 0.046142578125,
+      "best_mask_pixels": 2629,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.0179443359375,
+          "mask_pixels": 2625
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.025634765625,
+          "mask_pixels": 2627
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.046142578125,
+          "mask_pixels": 2629
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.0089111328125,
+          "mask_pixels": 2620
+        }
+      ]
+    },
+    {
+      "case_id": "M0008_S1_open_bottled_water",
+      "present_category": "water bottle",
+      "absent_category": "bowl",
+      "original_score": 0.004974365234375,
+      "original_mask_pixels": 2626,
+      "best_prompt": "small bowl",
+      "best_score": 0.0069580078125,
+      "best_mask_pixels": 2630,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.004974365234375,
+          "mask_pixels": 2626
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.0069580078125,
+          "mask_pixels": 2630
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.0034027099609375,
+          "mask_pixels": 2623
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.0024566650390625,
+          "mask_pixels": 2622
+        }
+      ]
+    },
+    {
+      "case_id": "M0009_S1_open_bowl",
+      "present_category": "bowl",
+      "absent_category": "candle",
+      "original_score": 0.0888671875,
+      "original_mask_pixels": 5747,
+      "best_prompt": "candle",
+      "best_score": 0.0888671875,
+      "best_mask_pixels": 5747,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.0888671875,
+          "mask_pixels": 5747,
+          "mask": "negative_masks/M0009_S1_open_bowl/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.03662109375,
+          "mask_pixels": 5746
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.0238037109375,
+          "mask_pixels": 5752
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.0264892578125,
+          "mask_pixels": 5760
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.0810546875,
+          "mask_pixels": 5760,
+          "mask": "negative_masks/M0009_S1_open_bowl/candle-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0009_S1_open_bowl",
+      "present_category": "bowl",
+      "absent_category": "canned food",
+      "original_score": 0.0260009765625,
+      "original_mask_pixels": 5748,
+      "best_prompt": "can",
+      "best_score": 0.1357421875,
+      "best_mask_pixels": 5774,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.0260009765625,
+          "mask_pixels": 5748
+        },
+        {
+          "prompt": "food can",
+          "score": 0.02783203125,
+          "mask_pixels": 5768
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.0673828125,
+          "mask_pixels": 5767,
+          "mask": "negative_masks/M0009_S1_open_bowl/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.0194091796875,
+          "mask_pixels": 5756
+        },
+        {
+          "prompt": "can",
+          "score": 0.1357421875,
+          "mask_pixels": 5774,
+          "mask": "negative_masks/M0009_S1_open_bowl/canned_food-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0009_S1_open_bowl",
+      "present_category": "bowl",
+      "absent_category": "corn",
+      "original_score": 0.003143310546875,
+      "original_mask_pixels": 5744,
+      "best_prompt": "corn",
+      "best_score": 0.003143310546875,
+      "best_mask_pixels": 5744,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.003143310546875,
+          "mask_pixels": 5744
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.0002155303955078125,
+          "mask_pixels": 170
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.000583648681640625,
+          "mask_pixels": 5763
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.000621795654296875,
+          "mask_pixels": 5723
+        }
+      ]
+    },
+    {
+      "case_id": "M0009_S1_open_bowl",
+      "present_category": "bowl",
+      "absent_category": "milk",
+      "original_score": 0.00311279296875,
+      "original_mask_pixels": 5740,
+      "best_prompt": "carton of milk",
+      "best_score": 0.054931640625,
+      "best_mask_pixels": 172,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.00311279296875,
+          "mask_pixels": 5740
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.00885009765625,
+          "mask_pixels": 171
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.054931640625,
+          "mask_pixels": 172,
+          "mask": "negative_masks/M0009_S1_open_bowl/milk-2.png"
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.002105712890625,
+          "mask_pixels": 172
+        }
+      ]
+    },
+    {
+      "case_id": "M0009_S1_open_bowl",
+      "present_category": "bowl",
+      "absent_category": "yogurt",
+      "original_score": 0.00830078125,
+      "original_mask_pixels": 5744,
+      "best_prompt": "yogurt cup",
+      "best_score": 0.058837890625,
+      "best_mask_pixels": 5761,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.00830078125,
+          "mask_pixels": 5744
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.058837890625,
+          "mask_pixels": 5761,
+          "mask": "negative_masks/M0009_S1_open_bowl/yogurt-1.png"
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.0224609375,
+          "mask_pixels": 5758
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.009765625,
+          "mask_pixels": 5744
+        }
+      ]
+    },
+    {
+      "case_id": "M0010_S1_open_boxed_food",
+      "present_category": "food box",
+      "absent_category": "candle",
+      "original_score": 0.154296875,
+      "original_mask_pixels": 3817,
+      "best_prompt": "candle",
+      "best_score": 0.154296875,
+      "best_mask_pixels": 3817,
+      "prompts": [
+        {
+          "prompt": "candle",
+          "score": 0.154296875,
+          "mask_pixels": 3817,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/candle-0.png"
+        },
+        {
+          "prompt": "wax candle",
+          "score": 0.0859375,
+          "mask_pixels": 3819,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/candle-1.png"
+        },
+        {
+          "prompt": "jar candle",
+          "score": 0.0302734375,
+          "mask_pixels": 3813
+        },
+        {
+          "prompt": "candle with a wick",
+          "score": 0.1123046875,
+          "mask_pixels": 3810,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/candle-3.png"
+        },
+        {
+          "prompt": "candle holder",
+          "score": 0.095703125,
+          "mask_pixels": 174,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/candle-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0010_S1_open_boxed_food",
+      "present_category": "food box",
+      "absent_category": "canned food",
+      "original_score": 0.251953125,
+      "original_mask_pixels": 3799,
+      "best_prompt": "can",
+      "best_score": 0.470703125,
+      "best_mask_pixels": 3827,
+      "prompts": [
+        {
+          "prompt": "canned food",
+          "score": 0.251953125,
+          "mask_pixels": 3799,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/canned_food-0.png"
+        },
+        {
+          "prompt": "food can",
+          "score": 0.40234375,
+          "mask_pixels": 3824,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/canned_food-1.png"
+        },
+        {
+          "prompt": "tin can",
+          "score": 0.41796875,
+          "mask_pixels": 3821,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/canned_food-2.png"
+        },
+        {
+          "prompt": "metal can",
+          "score": 0.14453125,
+          "mask_pixels": 3820,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/canned_food-3.png"
+        },
+        {
+          "prompt": "can",
+          "score": 0.470703125,
+          "mask_pixels": 3827,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/canned_food-4.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0010_S1_open_boxed_food",
+      "present_category": "food box",
+      "absent_category": "corn",
+      "original_score": 0.032470703125,
+      "original_mask_pixels": 3794,
+      "best_prompt": "corn",
+      "best_score": 0.032470703125,
+      "best_mask_pixels": 3794,
+      "prompts": [
+        {
+          "prompt": "corn",
+          "score": 0.032470703125,
+          "mask_pixels": 3794
+        },
+        {
+          "prompt": "ear of corn",
+          "score": 0.003631591796875,
+          "mask_pixels": 3821
+        },
+        {
+          "prompt": "corn on the cob",
+          "score": 0.00182342529296875,
+          "mask_pixels": 3803
+        },
+        {
+          "prompt": "yellow corn",
+          "score": 0.004547119140625,
+          "mask_pixels": 3798
+        }
+      ]
+    },
+    {
+      "case_id": "M0010_S1_open_boxed_food",
+      "present_category": "food box",
+      "absent_category": "milk",
+      "original_score": 0.1884765625,
+      "original_mask_pixels": 3813,
+      "best_prompt": "carton of milk",
+      "best_score": 0.91796875,
+      "best_mask_pixels": 3822,
+      "prompts": [
+        {
+          "prompt": "milk",
+          "score": 0.1884765625,
+          "mask_pixels": 3813,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/milk-0.png"
+        },
+        {
+          "prompt": "milk carton",
+          "score": 0.6328125,
+          "mask_pixels": 3813,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/milk-1.png"
+        },
+        {
+          "prompt": "carton of milk",
+          "score": 0.91796875,
+          "mask_pixels": 3822,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/milk-2.png"
+        },
+        {
+          "prompt": "milk box",
+          "score": 0.55078125,
+          "mask_pixels": 3821,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/milk-3.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0010_S1_open_boxed_food",
+      "present_category": "food box",
+      "absent_category": "yogurt",
+      "original_score": 0.1611328125,
+      "original_mask_pixels": 3802,
+      "best_prompt": "yogurt container",
+      "best_score": 0.318359375,
+      "best_mask_pixels": 3814,
+      "prompts": [
+        {
+          "prompt": "yogurt",
+          "score": 0.1611328125,
+          "mask_pixels": 3802,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/yogurt-0.png"
+        },
+        {
+          "prompt": "yogurt cup",
+          "score": 0.2158203125,
+          "mask_pixels": 3815,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/yogurt-1.png"
+        },
+        {
+          "prompt": "yogurt container",
+          "score": 0.318359375,
+          "mask_pixels": 3814,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/yogurt-2.png"
+        },
+        {
+          "prompt": "yoghurt",
+          "score": 0.2001953125,
+          "mask_pixels": 3799,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/yogurt-3.png"
+        }
+      ]
+    },
+    {
+      "case_id": "M0010_S1_open_boxed_food",
+      "present_category": "food box",
+      "absent_category": "bowl",
+      "original_score": 0.296875,
+      "original_mask_pixels": 704,
+      "best_prompt": "small bowl",
+      "best_score": 0.37890625,
+      "best_mask_pixels": 364,
+      "prompts": [
+        {
+          "prompt": "bowl",
+          "score": 0.296875,
+          "mask_pixels": 704,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/bowl-0.png"
+        },
+        {
+          "prompt": "small bowl",
+          "score": 0.37890625,
+          "mask_pixels": 364,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/bowl-1.png"
+        },
+        {
+          "prompt": "ceramic bowl",
+          "score": 0.0712890625,
+          "mask_pixels": 678,
+          "mask": "negative_masks/M0010_S1_open_boxed_food/bowl-2.png"
+        },
+        {
+          "prompt": "empty bowl",
+          "score": 0.04638671875,
+          "mask_pixels": 700
+        }
+      ]
+    }
+  ]
+}
