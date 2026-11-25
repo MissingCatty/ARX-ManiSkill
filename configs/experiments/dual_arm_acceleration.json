@@ -1,0 +1,30 @@
+{
+  "module": "curobo_dual_arm",
+  "variant": "rank_bound_batch_opening",
+  "adapter": "modules/curobo/dual_arm/accelerated_service.py",
+  "implementation": "modules/curobo/dual_arm/accelerated_adapter.py",
+  "activation": "future_run_registration_after_validation",
+  "current_v4_100_run": "unchanged_original_adapter",
+  "candidate_search": {
+    "first_arm": "right",
+    "second_arm_prefix": "first_arm_best_native_index_plus_one",
+    "include_equal_rank": true,
+    "tie_break": "original_joint_displacement_then_right",
+    "first_arm_failure": "retain_full_second_arm_pool",
+    "native_world_poses_and_scores": "unchanged"
+  },
+  "opening_check": {
+    "maximum_finger_step_m": 0.0005,
+    "target_per_finger_m": 0.044,
+    "sphere_count": 871,
+    "native_FK_at_every_original_width": true,
+    "batch_bounds_self_and_world_checks": true,
+    "include_target_and_parked_arm": true,
+    "restore_original_resident_state": true
+  },
+  "validation": {
+    "physical_grasp_budget": 0,
+    "method": "recorded_ranking_proof_and_same_GPU_cached_observation_planning_replay",
+    "interior_collision_fault_test": true
+  }
+}

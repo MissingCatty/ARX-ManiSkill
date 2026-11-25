@@ -23,9 +23,9 @@
       "title": "SAM3＋RGB-D点云＋GraspGenX＋cuRobo",
       "shortTitle": "SAM3＋点云＋GraspGenX",
       "date": "2026-11-25",
-      "status": "V4 100场景抓取测试进行中",
+      "status": "V4 试验停止，保留现场",
       "summary": "头部SAM3、RaySt3R、GraspGenX与cuRobo，接入左右臂选择与停放臂避碰。",
-      "metric": "已完成1/100例；站位到位1例，最终抓取规划通过1例，抓取成功1例。",
+      "metric": "已完成88/100例；站位到位69例，最终抓取规划通过64例，抓取成功48例。 另有1例异常中断、11例未开始。",
       "file": "SAM3点云GraspGenX主线.md",
       "workflow": "SAM3点云GraspGenX流程.json"
     },
@@ -408,7 +408,18 @@
     "sam3-v4-m0091-initial.jpg": "../../resources/media/sam3-v4-m0091-initial.jpg",
     "sam3-v4-m0001-grasp.mp4": "../../resources/media/sam3-v4-m0001-grasp.mp4",
     "sam3-v4-m0001-head.mp4": "../../resources/media/sam3-v4-m0001-head.mp4",
-    "sam3-v4-m0001-station.mp4": "../../resources/media/sam3-v4-m0001-station.mp4"
+    "sam3-v4-m0001-station.mp4": "../../resources/media/sam3-v4-m0001-station.mp4",
+    "sam3-v4-m0002-grasp.mp4": "../../resources/media/sam3-v4-m0002-grasp.mp4",
+    "sam3-v4-m0002-head.mp4": "../../resources/media/sam3-v4-m0002-head.mp4",
+    "sam3-v4-m0002-station.mp4": "../../resources/media/sam3-v4-m0002-station.mp4",
+    "sam3-v4-m0004-grasp.mp4": "../../resources/media/sam3-v4-m0004-grasp.mp4",
+    "sam3-v4-m0004-head.mp4": "../../resources/media/sam3-v4-m0004-head.mp4",
+    "sam3-v4-m0004-station.mp4": "../../resources/media/sam3-v4-m0004-station.mp4",
+    "sam3-v4-m0005-grasp.mp4": "../../resources/media/sam3-v4-m0005-grasp.mp4",
+    "sam3-v4-m0005-head.mp4": "../../resources/media/sam3-v4-m0005-head.mp4",
+    "sam3-v4-m0005-station.mp4": "../../resources/media/sam3-v4-m0005-station.mp4",
+    "sam3-v4-acceptance.json": "../../resources/media/sam3-v4-acceptance.json",
+    "sam3-v4-planning-acceleration.json": "../../resources/media/sam3-v4-planning-acceleration.json"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",

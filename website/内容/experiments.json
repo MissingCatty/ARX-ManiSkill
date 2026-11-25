@@ -236,8 +236,8 @@
             "kind": "explicit-user-request",
             "request": "2026-11-25：在双臂操作基础上接入升降和移动底盘，针对目标自主调整位置，生成100个靠近桌沿的场景测试，作为V4版本。"
           },
-          "status": "100场景抓取测试进行中",
-          "resultSummary": "已完成1/100例；站位到位1例，最终抓取规划通过1例，抓取成功1例。",
+          "status": "试验停止，保留现场",
+          "resultSummary": "已完成88/100例；站位到位69例，最终抓取规划通过64例，抓取成功48例。 另有1例异常中断、11例未开始。",
           "change": "由目标观测计算底盘位置、朝向和升降高度，停稳后重新感知，再选一臂抓取。",
           "pipeline": "初次头部RGB-D与SAM3 → 站位和整机移动检查 → 底盘与升降移动 → 停稳重新观测 → SAM3＋RaySt3R＋GraspGenX → 左右臂cuRobo → 抓取",
           "scenes": "新采样100例，五类布局各20例，使用共享物体资产。",
@@ -260,8 +260,8 @@
               "id": "v4_100_20261125_01",
               "title": "V4独立100场景",
               "date": "2026-11-25",
-              "status": "100场景抓取测试进行中",
-              "summary": "已完成1/100例；站位到位1例，最终抓取规划通过1例，抓取成功1例。",
+              "status": "试验停止，保留现场",
+              "summary": "已完成88/100例；站位到位69例，最终抓取规划通过64例，抓取成功48例。 另有1例异常中断、11例未开始。",
               "outputs": [
                 "tmp/mobile_dual_arm/v4_100_20261125_01"
               ],
@@ -272,7 +272,12 @@
                 }
               ]
             }
-          ]
+          ],
+          "planningAcceleration": {
+            "validation_report": "tmp/dual_arm_acceleration/replay_20261125_03/acceptance.json",
+            "state": "validated_for_future_registration",
+            "physical_grasps": 0
+          }
         }
       ]
     },

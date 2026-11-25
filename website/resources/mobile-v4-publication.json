@@ -1,12 +1,12 @@
 {
-  "at": "2026-11-25T03:13:02.397346+08:00",
+  "at": "2026-11-25T08:11:16.951310+08:00",
   "run": "tmp/mobile_dual_arm/v4_100_20261125_01",
-  "phase": "running",
+  "phase": "stopped",
   "copies": [
     {
-      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/summary.json",
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/publication_summary.json",
       "copy": "resources/media/sam3-v4-summary.json",
-      "sha256": "297b442572d2bf1f622f1a1d8876a26a7e183fa72371811d286414cb0cefb4d8"
+      "sha256": "a7dfdc74a8f47a7864fb2c493b628b7bbb1e6df19a3c799abf9e604b28ea8378"
     },
     {
       "source": "configs/experiments/active_experiment.json",
@@ -22,6 +22,11 @@
       "source": "simulation/scenes/mobile100/verification.json",
       "copy": "resources/media/sam3-v4-scene-verification.json",
       "sha256": "85242febe3fe9f18e22688921a99e26cd6f4637803aea537a08209f214733c16"
+    },
+    {
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/acceptance.json",
+      "copy": "resources/media/sam3-v4-acceptance.json",
+      "sha256": "84759f65d2307a48fc11a1f8db76bf038961e92e2cb95dd141bc3f3eb5501897"
     },
     {
       "source": "simulation/scenes/mobile100/cases/M0001_S1_open_apple/head.jpg",
@@ -87,6 +92,56 @@
       "source": "tmp/mobile_dual_arm/v4_100_20261125_01/trials/M0001_S1_open_apple/stationing/motion.mp4",
       "copy": "resources/media/sam3-v4-m0001-station.mp4",
       "sha256": "542a4dd0c2a77526c82307ed2fa830cbfc2dbc886dc9d8f79f36daf50231ae68"
+    },
+    {
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/trials/M0002_S1_open_avocado/execution.mp4",
+      "copy": "resources/media/sam3-v4-m0002-grasp.mp4",
+      "sha256": "0c70df14ed07480d6cc29eaf9d55ec2e618c030aa0d3eb93642245159973984f"
+    },
+    {
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/trials/M0002_S1_open_avocado/head.mp4",
+      "copy": "resources/media/sam3-v4-m0002-head.mp4",
+      "sha256": "b7347aa69ba5154020bdcb810e528f7b0e2f363c72082da346951926940497c7"
+    },
+    {
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/trials/M0002_S1_open_avocado/stationing/motion.mp4",
+      "copy": "resources/media/sam3-v4-m0002-station.mp4",
+      "sha256": "fae06b9e9e0efcead743c2847581ceccc9aed2fb01b316662faab5d8f6a30263"
+    },
+    {
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/trials/M0004_S1_open_banana/execution.mp4",
+      "copy": "resources/media/sam3-v4-m0004-grasp.mp4",
+      "sha256": "4c68dbcd794277a5e0f61fea323acdec591571dd9c138bb1e6025d4808c9eb03"
+    },
+    {
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/trials/M0004_S1_open_banana/head.mp4",
+      "copy": "resources/media/sam3-v4-m0004-head.mp4",
+      "sha256": "d9f5375e16a6ca82ddc51674952ca83b3eb2e4f618f50700bbf67d6bb7cbcc77"
+    },
+    {
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/trials/M0004_S1_open_banana/stationing/motion.mp4",
+      "copy": "resources/media/sam3-v4-m0004-station.mp4",
+      "sha256": "245b695540aea2ab7f5a4414dec079139a06b30b7a55268e7c3e02eeb1ab6bac"
+    },
+    {
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/trials/M0005_S1_open_bar_soap/execution.mp4",
+      "copy": "resources/media/sam3-v4-m0005-grasp.mp4",
+      "sha256": "19831f2e478b8a004e1d34374d3894ee0341d00737ec3aff7d9979d9cbd2f307"
+    },
+    {
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/trials/M0005_S1_open_bar_soap/head.mp4",
+      "copy": "resources/media/sam3-v4-m0005-head.mp4",
+      "sha256": "004cc8363c088068b0f1a3c642f5c06f780083b774743eb54e2aa14340da579f"
+    },
+    {
+      "source": "tmp/mobile_dual_arm/v4_100_20261125_01/trials/M0005_S1_open_bar_soap/stationing/motion.mp4",
+      "copy": "resources/media/sam3-v4-m0005-station.mp4",
+      "sha256": "ec4bba8a82785df4d2074f25a3df3531c27fb669aa89d024f91518cf6585095a"
+    },
+    {
+      "source": "tmp/dual_arm_acceleration/replay_20261125_03/acceptance.json",
+      "copy": "resources/media/sam3-v4-planning-acceleration.json",
+      "sha256": "d90e591a504dd80c019d8f6c13efeefca47744f10617877862aabd37dc4a1eca"
     }
   ]
 }

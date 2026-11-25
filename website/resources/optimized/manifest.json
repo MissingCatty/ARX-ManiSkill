@@ -16340,8 +16340,332 @@
           "frames_checked": 55
         }
       ]
+    },
+    "media/sam3-v4-m0002-grasp.mp4": {
+      "kind": "video",
+      "source_sha256": "0c70df14ed07480d6cc29eaf9d55ec2e618c030aa0d3eb93642245159973984f",
+      "source_bytes": 2827120,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v4-m0002-grasp-0c70df14ed07-fc16be0e.mp4",
+          "bytes": 1358296,
+          "sha256": "be245c5a46ae3a948c2d89e5b9c4f61032fe06c875cecaf8c98ba4cf8a7ceb06"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v4-m0002-grasp-0c70df14ed07-fc16be0e.mp4",
+        "bytes": 1358296,
+        "sha256": "be245c5a46ae3a948c2d89e5b9c4f61032fe06c875cecaf8c98ba4cf8a7ceb06"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 25.15
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 1358296,
+          "mean_ssim": 0.994294,
+          "minimum_frame_ssim": 0.982898,
+          "frames_checked": 503
+        }
+      ]
+    },
+    "media/sam3-v4-m0002-head.mp4": {
+      "kind": "video",
+      "source_sha256": "b7347aa69ba5154020bdcb810e528f7b0e2f363c72082da346951926940497c7",
+      "source_bytes": 1388120,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v4-m0002-head-b7347aa69ba5-fc16be0e.mp4",
+          "bytes": 526539,
+          "sha256": "8db5e2ee0ce7bb37cd784f864fe506d61659210551acb937a077c24989a6e5a5"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v4-m0002-head-b7347aa69ba5-fc16be0e.mp4",
+        "bytes": 526539,
+        "sha256": "8db5e2ee0ce7bb37cd784f864fe506d61659210551acb937a077c24989a6e5a5"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 20.0,
+        "duration": 25.15
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 526539,
+          "mean_ssim": 0.991502,
+          "minimum_frame_ssim": 0.984193,
+          "frames_checked": 503
+        }
+      ]
+    },
+    "media/sam3-v4-m0002-station.mp4": {
+      "kind": "video",
+      "source_sha256": "fae06b9e9e0efcead743c2847581ceccc9aed2fb01b316662faab5d8f6a30263",
+      "source_bytes": 1056672,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v4-m0002-station-fae06b9e9e0e-fc16be0e.mp4",
+          "bytes": 489389,
+          "sha256": "45e2380b56a4c7246d2b9d70b8085a457f228c6b5c6ff2db16e89e8e89c55bca"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v4-m0002-station-fae06b9e9e0e-fc16be0e.mp4",
+        "bytes": 489389,
+        "sha256": "45e2380b56a4c7246d2b9d70b8085a457f228c6b5c6ff2db16e89e8e89c55bca"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 2.55
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 489389,
+          "mean_ssim": 0.992098,
+          "minimum_frame_ssim": 0.991827,
+          "frames_checked": 51
+        }
+      ]
+    },
+    "media/sam3-v4-m0004-grasp.mp4": {
+      "kind": "video",
+      "source_sha256": "4c68dbcd794277a5e0f61fea323acdec591571dd9c138bb1e6025d4808c9eb03",
+      "source_bytes": 2941538,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v4-m0004-grasp-4c68dbcd7942-fc16be0e.mp4",
+          "bytes": 1408878,
+          "sha256": "ce920f4317d0fe5dbedee9cedaae691ad723bcfab8ff62a24c6e7aa5c8865ed7"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v4-m0004-grasp-4c68dbcd7942-fc16be0e.mp4",
+        "bytes": 1408878,
+        "sha256": "ce920f4317d0fe5dbedee9cedaae691ad723bcfab8ff62a24c6e7aa5c8865ed7"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 25.15
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 1408878,
+          "mean_ssim": 0.994271,
+          "minimum_frame_ssim": 0.982943,
+          "frames_checked": 503
+        }
+      ]
+    },
+    "media/sam3-v4-m0004-head.mp4": {
+      "kind": "video",
+      "source_sha256": "d9f5375e16a6ca82ddc51674952ca83b3eb2e4f618f50700bbf67d6bb7cbcc77",
+      "source_bytes": 1156790,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v4-m0004-head-d9f5375e16a6-fc16be0e.mp4",
+          "bytes": 460692,
+          "sha256": "04504bf48d5066783bd2f5d55ace19517ced299548c8a08fb202458566f4c16e"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v4-m0004-head-d9f5375e16a6-fc16be0e.mp4",
+        "bytes": 460692,
+        "sha256": "04504bf48d5066783bd2f5d55ace19517ced299548c8a08fb202458566f4c16e"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 20.0,
+        "duration": 25.15
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 460692,
+          "mean_ssim": 0.991285,
+          "minimum_frame_ssim": 0.980255,
+          "frames_checked": 503
+        }
+      ]
+    },
+    "media/sam3-v4-m0004-station.mp4": {
+      "kind": "video",
+      "source_sha256": "245b695540aea2ab7f5a4414dec079139a06b30b7a55268e7c3e02eeb1ab6bac",
+      "source_bytes": 966124,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v4-m0004-station-245b695540ae-fc16be0e.mp4",
+          "bytes": 432659,
+          "sha256": "86f7b5e954596f517d64ea33c5d9a85979be0d7ea28423b55215c0b999067982"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v4-m0004-station-245b695540ae-fc16be0e.mp4",
+        "bytes": 432659,
+        "sha256": "86f7b5e954596f517d64ea33c5d9a85979be0d7ea28423b55215c0b999067982"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 1.9
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 432659,
+          "mean_ssim": 0.990952,
+          "minimum_frame_ssim": 0.990593,
+          "frames_checked": 38
+        }
+      ]
+    },
+    "media/sam3-v4-m0005-grasp.mp4": {
+      "kind": "video",
+      "source_sha256": "19831f2e478b8a004e1d34374d3894ee0341d00737ec3aff7d9979d9cbd2f307",
+      "source_bytes": 3100443,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v4-m0005-grasp-19831f2e478b-fc16be0e.mp4",
+          "bytes": 1455199,
+          "sha256": "20011d785458e8ca805f3b9b6d581ceca50084705c2b9f9c10e21fe717c6f6df"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v4-m0005-grasp-19831f2e478b-fc16be0e.mp4",
+        "bytes": 1455199,
+        "sha256": "20011d785458e8ca805f3b9b6d581ceca50084705c2b9f9c10e21fe717c6f6df"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 25.15
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 1455199,
+          "mean_ssim": 0.994295,
+          "minimum_frame_ssim": 0.983202,
+          "frames_checked": 503
+        }
+      ]
+    },
+    "media/sam3-v4-m0005-head.mp4": {
+      "kind": "video",
+      "source_sha256": "004cc8363c088068b0f1a3c642f5c06f780083b774743eb54e2aa14340da579f",
+      "source_bytes": 1392214,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v4-m0005-head-004cc8363c08-fc16be0e.mp4",
+          "bytes": 528974,
+          "sha256": "9ae331fcdc3247556871fd638ee1fea263c5d9d58a639a279a8973f40577f06b"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v4-m0005-head-004cc8363c08-fc16be0e.mp4",
+        "bytes": 528974,
+        "sha256": "9ae331fcdc3247556871fd638ee1fea263c5d9d58a639a279a8973f40577f06b"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 20.0,
+        "duration": 25.15
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 528974,
+          "mean_ssim": 0.991212,
+          "minimum_frame_ssim": 0.983365,
+          "frames_checked": 503
+        }
+      ]
+    },
+    "media/sam3-v4-m0005-station.mp4": {
+      "kind": "video",
+      "source_sha256": "ec4bba8a82785df4d2074f25a3df3531c27fb669aa89d024f91518cf6585095a",
+      "source_bytes": 1295089,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "files": [
+        {
+          "file": "optimized/video/sam3-v4-m0005-station-ec4bba8a8278-fc16be0e.mp4",
+          "bytes": 587665,
+          "sha256": "066d8c60196aa0c5f82493d419c308d904c33a0de38f5b193861e3048a5ab644"
+        }
+      ],
+      "published": {
+        "file": "optimized/video/sam3-v4-m0005-station-ec4bba8a8278-fc16be0e.mp4",
+        "bytes": 587665,
+        "sha256": "066d8c60196aa0c5f82493d419c308d904c33a0de38f5b193861e3048a5ab644"
+      },
+      "metadata": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": 20.0,
+        "duration": 3.8
+      },
+      "transcoded": true,
+      "faststart": true,
+      "attempts": [
+        {
+          "crf": 24,
+          "bytes": 587665,
+          "mean_ssim": 0.992108,
+          "minimum_frame_ssim": 0.991852,
+          "frames_checked": 76
+        }
+      ]
     }
   },
   "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
-  "source_count": 346
+  "source_count": 355
 }

@@ -1,5 +1,6 @@
 """Publish V4 progress/results and independent compressed website snapshots."""
 import argparse
+from collections import Counter
 from pathlib import Path
 import shutil
 
@@ -8,6 +9,8 @@ from arx_project.layout import ROOT, now, read_json, sha256, write_json
 LAYOUTS = {'S1_open': '开阔', 'S2_edge': '桌边', 'S3_sparse': '稀疏干扰',
            'S4_clutter': '密集杂物', 'S5_occluded': '部分遮挡'}
 REASONS = {'success': '成功', 'coarse_sam3_no_target_mask': '初次观测SAM3未分割出目标',
+    'pregrasp_not_converged': '预抓取未到位', 'approach_not_converged': '最后接近未到位',
+    'close_not_converged': '闭合未到位', 'lift_not_converged': '抬升未到位', 'hold_not_converged': '保持未到位',
     'sam3_no_target_mask': '到位后SAM3未分割出目标', 'coarse_invalid_depth': '初次目标深度不足',
     'coarse_rayst3r_empty_pointcloud': '初次观测未生成目标点云',
     'rayst3r_empty_pointcloud': '到位后未生成目标点云',
@@ -26,6 +29,15 @@ def publish(root):
     reg = read_json(root/'registration.json')
     dataset = Path(reg['dataset'])
     summary = read_json(root/'summary.json')
+    adjudication = read_json(root/'acceptance.json') if (root/'acceptance.json').exists() else None
+    if adjudication:
+        complete = {row['id'] for row in adjudication['results'] if row['state'] == 'complete'}
+        progress['completed'] = adjudication['completed']
+        progress['not_completed'] = adjudication['interrupted']+adjudication['not_started']
+        progress['failure_reasons'] = dict(Counter(row['reason'] for row in summary['results']
+            if row['id'] in complete and not row['success']))
+        for layout, data in progress['by_layout'].items():
+            data['completed'] = sum(row['id'] in complete and row['layout'] == layout for row in summary['results'])
     site_path, version_path = website/'内容/网站.json', website/'内容/experiments.json'
     site, versions = read_json(site_path), read_json(version_path)
     copies = []
@@ -43,7 +55,19 @@ def publish(root):
                        'sha256': sha256(destination)})
         return '/media/'+name
 
-    progress_url = snapshot(root/'summary.json', 'sam3-v4-summary.json')
+    summary_source = root/'summary.json'
+    if adjudication:
+        exported = {**summary, 'completed': progress['completed'],
+            'not_completed': progress['not_completed'], 'by_layout': progress['by_layout'],
+            'interrupted': adjudication['interrupted'], 'not_started': adjudication['not_started'],
+            'raw_result_record_count': len(summary['results']), 'failure_reasons': progress['failure_reasons'],
+            'original_summary_sha256': sha256(summary_source),
+            'count_source': 'independent_acceptance_and_claims'}
+        states = {row['id']: row['state'] for row in adjudication['results']}
+        exported['results'] = [{**row, 'record_state': states[row['id']]} for row in summary['results']]
+        summary_source = root/'publication_summary.json'
+        write_json(summary_source, exported)
+    progress_url = snapshot(summary_source, 'sam3-v4-summary.json')
     snapshot(ROOT/'configs/experiments/active_experiment.json', 'active-configuration.json')
     snapshot(root/'registration.json', 'sam3-v4-registration.json')
     snapshot(dataset/'verification.json', 'sam3-v4-scene-verification.json')
@@ -54,6 +78,8 @@ def publish(root):
     status = titles.get(progress['phase'], progress['phase'])
     metric = (f"已完成{progress['completed']}/100例；站位到位{progress['station_ready']}例，"
               f"最终抓取规划通过{progress['planning_passes']}例，抓取成功{progress['successes']}例。")
+    if adjudication and adjudication['interrupted']:
+        metric += f" 另有{adjudication['interrupted']}例异常中断、{adjudication['not_started']}例未开始。"
     experiment = next(r for r in versions['experiments'] if r['id'] == 'sam3-graspgenx')
     experiment['current'] = 'V4'
     version = next((r for r in experiment['iterations'] if r['code'] == 'V4'), None)
@@ -90,7 +116,9 @@ def publish(root):
     for layout, label in LAYOUTS.items():
         data = progress['by_layout'][layout]
         text.append(f"| {label} | {data['completed']}/20 | {data['planning_passes']} | {data['successes']} |")
-    text += ['', f"尚未完成{progress['not_completed']}例；实际执行抓取{progress['physical_attempts']}例。", '',
+    remaining = (f"异常中断{adjudication['interrupted']}例，未开始{adjudication['not_started']}例。"
+                 if adjudication else f"尚未完成{progress['not_completed']}例。")
+    text += ['', remaining+f"实际执行抓取{progress['physical_attempts']}例。", '',
              f'[逐例结果]({progress_url}) · [试验登记](/media/sam3-v4-registration.json)', '',
              '## 场景示例', '', '目标放在桌面近侧，每类展示两例。点击图片查看原图。', '',
              '| 布局 | 场景一 | 场景二 |', '| --- | --- | --- |']
@@ -126,6 +154,28 @@ def publish(root):
     text += ['', '## 主要设置', '',
         '双臂各871碰撞球，TCP43；头部D405向下45°。升降和底盘到位后固定，再执行六轴手臂抓取。物体实际至少抬高1厘米并连续保持3秒，双指接触、到位和禁止接触检查通过。', '',
         '## 参考方法', '', '[SAM3](/papers/sam3/) · [RaySt3R](/papers/rayst3r/) · [GraspGenX](/papers/graspgenx/) · [cuRobo](/papers/curobo/)', '']
+    acceleration = read_json(ROOT/'configs/experiments/active_experiment.json').get('acceleration_revision')
+    validation = version.get('planningAcceleration', {})
+    if acceleration or validation:
+        report = ROOT/(acceleration or validation)['validation_report']
+        if not report.is_file():
+            report = media/'sam3-v4-planning-acceleration.json'
+        data = read_json(report)
+        url = '/media/sam3-v4-planning-acceleration.json'
+        if report != media/'sam3-v4-planning-acceleration.json':
+            url = snapshot(report, 'sam3-v4-planning-acceleration.json')
+        section = ['## 已验证的规划加速', '',
+            '以下是在同一显卡、相同缓存观测和候选上的完整选臂规划回放。'+
+            ('新登记默认使用排名截断与批量开爪检查。' if acceleration else '加速实现已验证，供后续登记使用。'), '',
+            '| 物体 | 原实现 | 加速实现 | 加速倍数 | 手臂与抓姿 |', '| --- | ---: | ---: | ---: | --- |']
+        labels = {'apple': '苹果', 'peach': '桃子', 'spatula': '锅铲'}
+        for row in data['paired_cases']:
+            name = row['case'].split('_')[-1]
+            section.append(f"| {labels.get(name, name)} | {row['original_seconds']:.1f}秒 | {row['accelerated_seconds']:.1f}秒 | {row['speedup']:.2f}倍 | {'一致' if row['passed'] else '有差异'} |")
+        section += ['', '另一臂保留能胜出或同名次的候选；开爪保留原有全部宽度采样和871球，批量计算关节限位、自碰撞与场景碰撞。', '',
+                    f'[逐点开爪与完整规划回放核验]({url})', '']
+        insert = text.index('## 参考方法')
+        text[insert:insert] = section
     (website/'内容/迭代/sam3-graspgenx-v4.md').write_text('\n'.join(text))
     write_json(site_path, site)
     write_json(version_path, versions)

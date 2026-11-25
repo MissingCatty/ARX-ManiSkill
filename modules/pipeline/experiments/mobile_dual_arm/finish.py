@@ -129,19 +129,24 @@ def publish(root):
         subprocess.run([node, 'build.mjs'], cwd=ROOT/'website', stdout=stream, stderr=subprocess.STDOUT, check=True)
 
 
-def finish(root):
-    report = audit(root)
+def write_report(root, report):
+    """Render accepted terminal results separately from interrupted claims."""
     summary = read_json(root/'summary.json')
+    complete_ids = {row['id'] for row in report['results'] if row['state'] == 'complete'}
+    from collections import Counter
+    reasons = Counter(row['reason'] for row in summary['results']
+                      if row['id'] in complete_ids and not row['success'])
     text = ['# V4：100场景测试结果', '',
         f"登记100例，完成{report['completed']}例，中断{report['interrupted']}例，未开始{report['not_started']}例。", '',
         f"站位到位{summary['station_ready']}例，最终抓取规划通过{summary['planning_passes']}例，实际抓取{summary['physical_attempts']}例，成功{summary['successes']}例。", '',
         '| 布局 | 完成数 | 最终规划通过 | 抓取成功 |', '| --- | ---: | ---: | ---: |']
     for layout, row in summary['by_layout'].items():
-        text.append(f"| {layout} | {row['completed']}/20 | {row['planning_passes']} | {row['successes']} |")
+        completed = sum(r['layout'] == layout and r['id'] in complete_ids for r in summary['results'])
+        text.append(f"| {layout} | {completed}/20 | {row['planning_passes']} | {row['successes']} |")
     text += ['', '## 主要失败原因', '', '| 原因 | 数量 |', '| --- | ---: |']
     sys.path.insert(0, str(ROOT/'website/tools'))
     from publish_mobile_v4 import REASONS
-    for reason, count in summary['failure_reasons'].items():
+    for reason, count in reasons.items():
         text.append(f'| {REASONS.get(reason, reason)} | {count} |')
     text += ['', '## 记录核验', '',
         f"独立核验{'通过' if report['passed'] else '发现问题'}；{report['video_count']}段视频完成逐帧解码检查。", '',
@@ -149,6 +154,11 @@ def finish(root):
         '入口计算、移动车体与升降、到位后感知和最终抓取分别留有记录；结果以本轮独立100例为分母。', '']
     destination = ROOT/'modules/pipeline/docs/mainline_versions/V4_100场景测试结果.md'
     destination.write_text('\n'.join(text))
+
+
+def finish(root):
+    report = audit(root)
+    write_report(root, report)
     publish(root)
     write_json(root/'publication_complete.json', {'at': now(), 'audit_passed': report['passed'],
         'task_complete': report['task_complete'], 'page': '/iterations/sam3-graspgenx/versions/V4/'})
