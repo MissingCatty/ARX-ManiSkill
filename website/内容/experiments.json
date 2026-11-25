@@ -277,6 +277,13 @@
             "validation_report": "tmp/dual_arm_acceleration/replay_20261125_03/acceptance.json",
             "state": "validated_for_future_registration",
             "physical_grasps": 0
+          },
+          "activeStationSearch": {
+            "validation_report": "tmp/mobile_manipulation/active_search_replay_20261125_06/acceptance.json",
+            "verification_report": "tmp/mobile_manipulation/active_search_replay_20261125_06/verification.json",
+            "geometry_validation_report": "tmp/mobile_manipulation/broadphase_hand_check_20261125_01/acceptance.json",
+            "physical_grasps": 0,
+            "user_authorization": "用户认可地图主动站位与离线完整规划对照，保留V2指尖余量，感知优化暂停"
           }
         }
       ]

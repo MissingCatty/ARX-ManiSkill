@@ -31,8 +31,9 @@ def capture(env, directory, executor, entry):
 
 
 class Stationing:
-    def __init__(self, services, executor, model, settings, seed):
+    def __init__(self, services, executor, model, settings, seed, *, station_search=None):
         self.services, self.executor, self.model, self.settings, self.seed = services, executor, model, settings, seed
+        self.station_search = station_search
 
     def prepare(self, env, out, entry):
         from repair_contract import make_candidates
@@ -57,6 +58,19 @@ class Stationing:
             return {'success': False, 'reason': 'coarse_rayst3r_empty_pointcloud', 'motion_started': False}
         self.services.request('graspgenx', coarse, seed=self.seed)
         make_candidates(coarse)
+        if self.station_search is not None:
+            selected, search_report = self.station_search.select(state,
+                read_json(coarse/'candidates/candidate_pool.json'), center, out/'stationing/search')
+            if selected is None:
+                return {'success': False, 'reason': 'no_safe_reachable_station', 'motion_started': False,
+                        'search_report': search_report}
+            chosen, path = selected['proposal'], selected['path']
+            write_json(out/'stationing/selected.json', {**chosen, 'coarse_plan': selected['work']+'/plan_result.json',
+                       'transit': selected['transit'], 'grasp_will_be_reobserved_and_replanned': True})
+            write_json(out/'stationing/command.json', {'path': path, 'goal': chosen})
+            receipt = self.execute(env, out/'stationing', state, chosen, path)
+            write_json(out/'stationing/receipt.json', receipt)
+            return receipt
         checker = SweepChecker(self.model, state, self.settings['transit_clearance_m'])
         proposals = station_proposals(state, center, self.settings)
         checked, eligible = [], []

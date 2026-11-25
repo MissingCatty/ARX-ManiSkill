@@ -1,0 +1,70 @@
+{
+  "at": "2026-11-25T09:41:46.776522+08:00",
+  "functional_equivalence_passed": true,
+  "performance_improved": true,
+  "physical_grasps": 0,
+  "new_IK_calls": 0,
+  "paired_cases": [
+    {
+      "case": "M0001_S1_open_apple",
+      "proposals": 20,
+      "equivalent": true,
+      "reference_median_seconds": 0.10780906600120943,
+      "updated_median_seconds": 0.007671921004657634,
+      "speedup": 14.052421282200168,
+      "timing_repeats": {
+        "reference": [
+          0.10811585999908857,
+          0.10758468499989249,
+          0.10780906600120943
+        ],
+        "updated": [
+          0.007671921004657634,
+          0.007345443009398878,
+          0.007682886003749445
+        ]
+      }
+    },
+    {
+      "case": "M0030_S2_edge_peach",
+      "proposals": 40,
+      "equivalent": true,
+      "reference_median_seconds": 0.2066998039954342,
+      "updated_median_seconds": 0.014297833011369221,
+      "speedup": 14.456722485923043,
+      "timing_repeats": {
+        "reference": [
+          0.2032721839932492,
+          0.2066998039954342,
+          0.21269384100742172
+        ],
+        "updated": [
+          0.014587651996407658,
+          0.013874165000743233,
+          0.014297833011369221
+        ]
+      }
+    },
+    {
+      "case": "M0036_S2_edge_spatula",
+      "proposals": 418,
+      "equivalent": true,
+      "reference_median_seconds": 1.826459422998596,
+      "updated_median_seconds": 0.09371497300162446,
+      "speedup": 19.489515543764135,
+      "timing_repeats": {
+        "reference": [
+          1.822434311005054,
+          1.827902176999487,
+          1.826459422998596
+        ],
+        "updated": [
+          0.09371497300162446,
+          0.0915090080088703,
+          0.09605810900393408
+        ]
+      }
+    }
+  ],
+  "original_V2_tip_rules_retained": true
+}

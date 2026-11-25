@@ -7,3 +7,7 @@
 - 维持TCP43、每臂871球、原驱动/质量/摩擦/接触偏移、D405向下45°和既有成功标准。V3源码、原200场景与已完成结果保留。
 - 运行产物统一为tmp/mobile_dual_arm/<run_id>；场景定义在simulation/scenes/mobile100/，资产仍引用simulation/assets/models，不复制网格。网站新增V4，媒体复制到website/resources真实文件并压缩。
 - 预算100槽；普通感知/规划/抓取失败记录并继续，资源/记录链/配置故障或机器人未确认静止时停止，不删除STOP、不自动重抓。
+
+- 原100槽已在第89例CUDA故障停止，88完整/1中断/11未开始、48成功，原STOP和所有结果保留。用户后续认可独立地图主动站位和纯规划对照，未授权重抓原槽。Stationing新增可注入station_search，默认原行为不变；active_search.py连接地图生成器与可选curobo_dual_arm_map原生门控。
+- 当前正式配置回放为tmp/mobile_manipulation/active_search_replay_20261125_06，显式继承正式服务interactive轨迹优化，统一预热并记录CUDA同步的IK/路径/优化接口耗时。3对离线搜索均通过、0实际抓取，独立verification通过。01/05停止、02–04诊断记录保持；旧源码在各自source_registered，不能从这些目录自动重试。
+- 用户要求保留V2前端10毫米/最多2毫米桌面上表面接触余量，当前871球/TCP43和物理不变。感知优化已由用户明确暂停，不改SAM3/RaySt3R/GraspGenX配置。后续优先项为重复绑定与批量独立FK。手部几何粗筛的增量CPU核验在tmp/mobile_manipulation/broadphase_hand_check_20261125_01，478条输出一致；06端到端计时和增量CPU计时分别展示。

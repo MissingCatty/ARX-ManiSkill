@@ -1,6 +1,7 @@
 """Placement frames, occlusion safety, limits and conservative transit checks."""
 from copy import deepcopy
 import unittest
+from unittest.mock import patch
 
 import numpy as np
 
@@ -92,6 +93,24 @@ class MobileGeometryTests(unittest.TestCase):
         self.assertFalse(result['passed'])
         self.assertEqual(result['sample'], 3)
         self.assertGreater(len(samples), len(calls))
+
+    def test_robot_geometry_cache_is_exact_and_scene_obstacles_are_fresh(self):
+        model = ArmModel()
+        first = SweepChecker(model, self.state)
+        expected = [(n, v.copy(), normals.copy(), edges.copy()) for n, v, normals, edges in first.parts]
+        with patch.object(model, 'parts', wraps=model.parts) as parts:
+            second = SweepChecker(model, self.state)
+            parts.assert_not_called()
+        self.assertIs(first.parts, second.parts)
+        for a, b in zip(expected, second.parts):
+            self.assertEqual(a[0], b[0])
+            for va, vb in zip(a[1:], b[1:]):
+                np.testing.assert_array_equal(va, vb)
+        changed = deepcopy(self.state)
+        changed['scene_cuboids']['table']['center'][0] = -1.05
+        checker = SweepChecker(model, changed)
+        self.assertIs(checker.parts, first.parts)
+        self.assertFalse(checker.check(changed['links']['base_link'], changed['qpos'][0])['passed'])
 
 
 if __name__ == '__main__':

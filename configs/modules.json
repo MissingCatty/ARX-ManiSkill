@@ -167,6 +167,16 @@
         "configs/experiments/sam3_graspgenx_v3.json"
       ]
     },
+    "curobo_dual_arm_map": {
+      "source": "modules/curobo/dual_arm",
+      "role": "motion_planning",
+      "environment": "environments/curobo",
+      "adapter": "modules/curobo/dual_arm/placement_service.py",
+      "inputs": ["state.json", "candidates/candidate_pool.json"],
+      "optional_inputs": ["placement_witness.json"],
+      "outputs": ["plan_result.json", "endpoint_gate.json"],
+      "policies": ["configs/policies/fingertip_table.json"]
+    },
     "mobile_manipulation": {
       "source": "modules/mobile_manipulation",
       "role": "base_and_lift_placement",
@@ -174,7 +184,8 @@
       "inputs": [
         "state.json",
         "camera/mask.png",
-        "camera/depth_m.npy"
+        "camera/depth_m.npy",
+        "candidates/candidate_pool.json"
       ],
       "outputs": [
         "stationing/selected.json",

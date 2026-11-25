@@ -176,6 +176,64 @@ def publish(root):
                     f'[逐点开爪与完整规划回放核验]({url})', '']
         insert = text.index('## 参考方法')
         text[insert:insert] = section
+    active_search = version.get('activeStationSearch')
+    if active_search:
+        source = ROOT/active_search['validation_report']
+        if not source.is_file():
+            source = media/'sam3-v4-active-station-search.json'
+        data = read_json(source)
+        if source != media/'sam3-v4-active-station-search.json':
+            snapshot(source, 'sam3-v4-active-station-search.json')
+        verification = ROOT/active_search['verification_report']
+        if verification.is_file():
+            snapshot(verification, 'sam3-v4-active-station-verification.json')
+        section = ['## 可达性地图主动选站位', '',
+            '手臂按6自由度规划。底盘XY、转向和升降先确定站位，到位后固定。', '',
+            '先保持原始抓法，从已有可达性地图中反算底盘和升降站位；再检查实际夹爪、停放臂、桌面和完整移动路径。'+
+            '地图提供的终点关节解经独立复算和原生碰撞检查后直接复用，预抓取与接近路径仍由原规划器生成。', '',
+            '以下是同一张显卡、同一份移动前观测的离线规划回放。两种搜索均使用双臂排名截断与批量开爪，最多调用3次完整规划。'+
+            '用时包含地图查询、碰撞检查和路径规划，模型先统一预热。', '',
+            '| 物体 | 几何站位搜索 | 地图主动搜索 | 耗时减少 | 两组规划结果 |',
+            '| --- | ---: | ---: | ---: | --- |']
+        labels = {'apple': '苹果', 'peach': '桃子', 'spatula': '锅铲'}
+        for pair in data['paired_cases']:
+            name = pair['case'].split('_')[-1]
+            a, b = pair['grid'], pair['map']
+            result = '均通过' if a['success'] and b['success'] else f"原搜索{'通过' if a['success'] else '未通过'}，地图搜索{'通过' if b['success'] else '未通过'}"
+            section.append(f"| {labels.get(name, name)} | {a['seconds']:.1f}秒 | {b['seconds']:.1f}秒 | {(1-b['seconds']/a['seconds'])*100:.1f}% | {result} |")
+        if all('solver_components' in p['map'] for p in data['paired_cases']):
+            section += ['', '### 单次求解耗时', '',
+                '以下单独统计地图方案的一次求解接口调用，单位为毫秒，取该例调用的中位数。整次搜索还包含多次尝试、碰撞世界准备和轨迹复核。', '',
+                '| 物体 | IK | 路径搜索 | 轨迹优化 |', '| --- | ---: | ---: | ---: |']
+            for pair in data['paired_cases']:
+                name = pair['case'].split('_')[-1]
+                parts = pair['map']['solver_components']
+                values = [f"{parts[key]['median_ms']:.1f}" if key in parts else '—'
+                          for key in ['native_ik', 'graph_path', 'trajectory_optimization']]
+                section.append(f"| {labels.get(name, name)} | {' | '.join(values)} |")
+        geometry_path = active_search.get('geometry_validation_report')
+        if geometry_path:
+            geometry_source = ROOT/geometry_path
+            if not geometry_source.is_file():
+                geometry_source = media/'sam3-v4-hand-geometry-acceleration.json'
+            geometry = read_json(geometry_source)
+            if geometry_source != media/'sam3-v4-hand-geometry-acceleration.json':
+                snapshot(geometry_source, 'sam3-v4-hand-geometry-acceleration.json')
+            section += ['', '### 几何检查的增量优化', '',
+                '随后对夹爪网格增加保守包围盒粗筛，仅精算可能碰桌的顶点。以下是已有记录上的CPU配对回放；上面的整次搜索计时保留原批次数据。', '',
+                '| 物体 | 关节解记录 | 原几何检查 | 新几何检查 |', '| --- | ---: | ---: | ---: |']
+            for row in geometry['paired_cases']:
+                name = row['case'].split('_')[-1]
+                section.append(f"| {labels.get(name, name)} | {row['proposals']} | {row['reference_median_seconds']*1000:.1f}毫秒 | {row['updated_median_seconds']*1000:.1f}毫秒 |")
+            section += ['', '三例共478条记录的通过结果、碰撞部位与原因一致，深度差小于2×10⁻¹²米。固定机器人凸几何也已改为启动时处理一次，场景障碍仍逐例更新。', '',
+                '下一步优先减少同站位的重复状态/场景绑定，并批量计算地图关节解的独立FK。感知配置保持现状。', '',
+                '[几何检查配对核验](/media/sam3-v4-hand-geometry-acceleration.json)', '']
+        section += ['', '沿用V2指尖余量：最前端10毫米允许与桌面上表面最多2毫米接触。快速检查与最终检查读取同一份配置。'+
+            '按原排名分批查询抓姿，必要时继续向后查询；地图方案没有通过时，剩余预算仍可使用原候选池。', '',
+            f"本次新增实际抓取为{data['physical_grasps']}次；原100例结果保留。", '',
+            '[完整对照数据](/media/sam3-v4-active-station-search.json) · [独立核验](/media/sam3-v4-active-station-verification.json)', '']
+        insert = text.index('## 参考方法')
+        text[insert:insert] = section
     (website/'内容/迭代/sam3-graspgenx-v4.md').write_text('\n'.join(text))
     write_json(site_path, site)
     write_json(version_path, versions)

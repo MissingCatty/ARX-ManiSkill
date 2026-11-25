@@ -419,7 +419,10 @@
     "sam3-v4-m0005-head.mp4": "../../resources/media/sam3-v4-m0005-head.mp4",
     "sam3-v4-m0005-station.mp4": "../../resources/media/sam3-v4-m0005-station.mp4",
     "sam3-v4-acceptance.json": "../../resources/media/sam3-v4-acceptance.json",
-    "sam3-v4-planning-acceleration.json": "../../resources/media/sam3-v4-planning-acceleration.json"
+    "sam3-v4-planning-acceleration.json": "../../resources/media/sam3-v4-planning-acceleration.json",
+    "sam3-v4-active-station-search.json": "../../resources/media/sam3-v4-active-station-search.json",
+    "sam3-v4-active-station-verification.json": "../../resources/media/sam3-v4-active-station-verification.json",
+    "sam3-v4-hand-geometry-acceleration.json": "../../resources/media/sam3-v4-hand-geometry-acceleration.json"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",

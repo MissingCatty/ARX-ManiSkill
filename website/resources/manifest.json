@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T00:11:22.105Z",
+  "generatedAt": "2026-11-25T01:48:13.093Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -768,6 +768,18 @@
     {
       "file": "media/sam3-v4-planning-acceleration.json",
       "sha256": "d90e591a504dd80c019d8f6c13efeefca47744f10617877862aabd37dc4a1eca"
+    },
+    {
+      "file": "media/sam3-v4-active-station-search.json",
+      "sha256": "d98664b4876d5c407b1001d0658089e0eea717d18df174a125eeb2e468aaada6"
+    },
+    {
+      "file": "media/sam3-v4-active-station-verification.json",
+      "sha256": "4cb36ca1ea5a80f9c5450ec15129eb1f204bff7fa995f22935039d5382e81d96"
+    },
+    {
+      "file": "media/sam3-v4-hand-geometry-acceleration.json",
+      "sha256": "4645455cda485923fd81168c0c4acfcc437ad08f6c5c4102f9850aa728cbc1ea"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

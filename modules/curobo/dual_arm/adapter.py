@@ -130,7 +130,7 @@ class DualArmPlanner:
         return result
 
 
-def create(args):
+def create(args, *, pool_extension=None):
     from modules.curobo.arx_adapter import create as create_single_arm
     model = ArmModel()
     root = Path(args.root)/'dual_arm'
@@ -139,7 +139,8 @@ def create(args):
         state = read_json(Path(args.warmup_trial)/filename)
         canonical = model.bind(state, 'right', warm/filename.removesuffix('.json'))
         write_json(warm/filename, canonical)
-    pool = create_single_arm(SimpleNamespace(**{**vars(args), 'root': root, 'warmup_trial': warm}))
+    kwargs = {} if pool_extension is None else {'pool_extension': pool_extension}
+    pool = create_single_arm(SimpleNamespace(**{**vars(args), 'root': root, 'warmup_trial': warm}), **kwargs)
     # Rebind and warm each arm through the same solver without moving the robot.
     for side in ['right', 'left']:
         for closed, filename in [(False, 'state.json'), (True, 'closed_state.json')]:

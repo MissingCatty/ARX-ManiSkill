@@ -1,0 +1,25 @@
+{
+  "variant": "inverse_reachability_station_search",
+  "parent_version": "V4",
+  "activation": "explicit_new_run_registration",
+  "map_directory": "tmp/reachability/products/前方精细_20261121_01",
+  "index_directory": "tmp/reachability/orientation_index_20261125_01",
+  "planner_module": "curobo_dual_arm_map",
+  "trajopt_policy": "interactive",
+  "candidate_query_limit": 16,
+  "candidate_scan_limit": 256,
+  "witnesses_per_candidate_arm": 4,
+  "maximum_destination_checks": 512,
+  "maximum_endpoint_checks": 64,
+  "position_tolerance_m": 0.002,
+  "orientation_tolerance_rad": 0.03,
+  "grasp_pose_changes": false,
+  "hand_table_precheck": "specific_FK_witness_original_hand_mesh_vertices_inside_original_table",
+  "map_miss": "unknown_keep_original_full_pool_fallback",
+  "station_budget": "share_original_three_full_planning_calls_with_fallback",
+  "validation": {
+    "physical_grasps": 0,
+    "simulation_instances": 0,
+    "same_gpu_pairwise_cached_observation_replay": true
+  }
+}

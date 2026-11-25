@@ -2,7 +2,7 @@
 import importlib.util
 import sys
 from arx_project.layout import ROOT, module_dir, read_json
-def create(args):
+def create(args, *, pool_extension=None):
     from modules.curobo.fingertip_contact import load_profile
     profile = load_profile()
     current = read_json(ROOT/'configs/experiments/active_experiment.json')
@@ -25,5 +25,7 @@ def create(args):
     if profile.enabled:
         from modules.curobo.fingertip_contact.planning import contact_pool
         base = contact_pool(base, profile)
+    if pool_extension is not None:
+        base = pool_extension(base)
     return checked_pool(base)(args.root / 'planner_warmup', args.warmup_trial)
 

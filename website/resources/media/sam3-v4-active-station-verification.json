@@ -1,0 +1,190 @@
+{
+  "at": "2026-11-25T09:31:53.370569+08:00",
+  "passed": true,
+  "recorded_searches": 6,
+  "physical_grasps": 0,
+  "same_gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "source_and_input_hashes_unchanged": true,
+  "case_results": [
+    {
+      "case": "M0001_S1_open_apple",
+      "mode": "grid",
+      "planning_success": true,
+      "fk_checks": [
+        {
+          "stage": "pregrasp",
+          "position_error_m": 4.324695148960738e-08,
+          "orientation_error_rad": 4.414175703718363e-08
+        },
+        {
+          "stage": "grasp",
+          "position_error_m": 7.054887477378424e-08,
+          "orientation_error_rad": 6.748078383485706e-08
+        },
+        {
+          "stage": "lift_goal",
+          "position_error_m": 1.217707194672673e-07,
+          "orientation_error_rad": 9.01555032177346e-08
+        }
+      ],
+      "selected_index": 2,
+      "selected_arm": "right",
+      "grasp_world_pose_identical": true,
+      "recorded_path_samples": {
+        "pregrasp": 121,
+        "approach": 41
+      }
+    },
+    {
+      "case": "M0001_S1_open_apple",
+      "mode": "map",
+      "planning_success": true,
+      "fk_checks": [
+        {
+          "stage": "pregrasp",
+          "position_error_m": 7.033600788106334e-08,
+          "orientation_error_rad": 2.5761436841395918e-08
+        },
+        {
+          "stage": "grasp",
+          "position_error_m": 0.0007907108395071966,
+          "orientation_error_rad": 0.02687933344636133
+        },
+        {
+          "stage": "lift_goal",
+          "position_error_m": 9.472664529045119e-08,
+          "orientation_error_rad": 7.06164481254864e-08
+        }
+      ],
+      "selected_index": 2,
+      "selected_arm": "right",
+      "grasp_world_pose_identical": true,
+      "recorded_path_samples": {
+        "pregrasp": 121,
+        "approach": 41
+      },
+      "map_endpoint_collision_passed": true
+    },
+    {
+      "case": "M0030_S2_edge_peach",
+      "mode": "grid",
+      "planning_success": true,
+      "fk_checks": [
+        {
+          "stage": "pregrasp",
+          "position_error_m": 7.982886116399302e-08,
+          "orientation_error_rad": 4.559199981814487e-08
+        },
+        {
+          "stage": "grasp",
+          "position_error_m": 1.1208644655682958e-07,
+          "orientation_error_rad": 1.5512540940632404e-07
+        },
+        {
+          "stage": "lift_goal",
+          "position_error_m": 5.5168574246420095e-08,
+          "orientation_error_rad": 8.741708862851751e-08
+        }
+      ],
+      "selected_index": 5,
+      "selected_arm": "right",
+      "grasp_world_pose_identical": true,
+      "recorded_path_samples": {
+        "pregrasp": 121,
+        "approach": 41
+      }
+    },
+    {
+      "case": "M0030_S2_edge_peach",
+      "mode": "map",
+      "planning_success": true,
+      "fk_checks": [
+        {
+          "stage": "pregrasp",
+          "position_error_m": 6.485347685667518e-08,
+          "orientation_error_rad": 1.2666789032130856e-07
+        },
+        {
+          "stage": "grasp",
+          "position_error_m": 0.0012210536898707158,
+          "orientation_error_rad": 0.02839920863167684
+        },
+        {
+          "stage": "lift_goal",
+          "position_error_m": 2.6031553175736517e-08,
+          "orientation_error_rad": 6.313247685772627e-08
+        }
+      ],
+      "selected_index": 5,
+      "selected_arm": "right",
+      "grasp_world_pose_identical": true,
+      "recorded_path_samples": {
+        "pregrasp": 121,
+        "approach": 41
+      },
+      "map_endpoint_collision_passed": true
+    },
+    {
+      "case": "M0036_S2_edge_spatula",
+      "mode": "grid",
+      "planning_success": true,
+      "fk_checks": [
+        {
+          "stage": "pregrasp",
+          "position_error_m": 6.491893238000006e-06,
+          "orientation_error_rad": 1.2677400928743941e-06
+        },
+        {
+          "stage": "grasp",
+          "position_error_m": 1.5179641008888398e-07,
+          "orientation_error_rad": 4.7263707519959163e-08
+        },
+        {
+          "stage": "lift_goal",
+          "position_error_m": 7.894787979369621e-08,
+          "orientation_error_rad": 4.5370586016698444e-08
+        }
+      ],
+      "selected_index": 144,
+      "selected_arm": "right",
+      "grasp_world_pose_identical": true,
+      "recorded_path_samples": {
+        "pregrasp": 141,
+        "approach": 41
+      }
+    },
+    {
+      "case": "M0036_S2_edge_spatula",
+      "mode": "map",
+      "planning_success": true,
+      "fk_checks": [
+        {
+          "stage": "pregrasp",
+          "position_error_m": 0.0017710910836533234,
+          "orientation_error_rad": 0.0060950538608519084
+        },
+        {
+          "stage": "grasp",
+          "position_error_m": 0.0008543967321064651,
+          "orientation_error_rad": 0.019876683178317624
+        },
+        {
+          "stage": "lift_goal",
+          "position_error_m": 4.468631280105095e-08,
+          "orientation_error_rad": 4.1637558570210434e-08
+        }
+      ],
+      "selected_index": 55,
+      "selected_arm": "right",
+      "grasp_world_pose_identical": true,
+      "recorded_path_samples": {
+        "pregrasp": 141,
+        "approach": 201
+      },
+      "map_endpoint_collision_passed": true
+    }
+  ],
+  "auditor_sha256": "3ba0333169659f97a41433b3b705bcc3723a257d80e449f1f86d5cf0d2f7fede",
+  "observed_planning_regressions": 0,
+  "warmup_excluded_from_search_timing": true
+}

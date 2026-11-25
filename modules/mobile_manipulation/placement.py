@@ -90,7 +90,8 @@ class SweepChecker:
     def __init__(self, model, state, clearance=.003):
         self.model, self.state, self.clearance = model, state, clearance
         self.parts = []
-        for name in model.links:
+        cached = getattr(model, '_transit_convex_parts', None)
+        for name in ([] if cached is not None else model.links):
             if not model.links[name].findall('collision'):
                 continue
             for v, faces, _ in model.parts(name):
@@ -107,6 +108,9 @@ class SweepChecker:
                     normal = basis[rank:]
                     edges = (v[:, None]-v[None, :]).reshape(-1, 3)
                 self.parts.append((name, v, normal, edges))
+        if cached is None:
+            model._transit_convex_parts = tuple(self.parts)
+        self.parts = model._transit_convex_parts
         self.obstacles = []
         table = state['scene_cuboids']['table']
         c, h = np.asarray(table['center']), np.asarray(table['dims'])/2

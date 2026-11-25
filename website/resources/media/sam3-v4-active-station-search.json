@@ -1,0 +1,277 @@
+{
+  "at": "2026-11-25T09:30:30.325433+08:00",
+  "passed": true,
+  "complete": true,
+  "physical_grasps": 0,
+  "same_gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "paired_cases": [
+    {
+      "case": "M0001_S1_open_apple",
+      "grid": {
+        "success": true,
+        "seconds": 22.127204485004768,
+        "solver_components": {
+          "graph_path": {
+            "calls": 4,
+            "total_seconds": 0.07512676398619078,
+            "median_ms": 19.899384496966377,
+            "p95_ms": 27.22563368806732
+          },
+          "kinematic_ik_fallback": {
+            "calls": 4,
+            "total_seconds": 0.7307190410210751,
+            "median_ms": 36.23154000524664,
+            "p95_ms": 555.6506172026272
+          },
+          "native_ik": {
+            "calls": 10,
+            "total_seconds": 1.4638617750169942,
+            "median_ms": 37.14470200065989,
+            "p95_ms": 598.0016970599527
+          },
+          "trajectory_optimization": {
+            "calls": 4,
+            "total_seconds": 0.273388589033857,
+            "median_ms": 56.85265301144682,
+            "p95_ms": 117.90012850324271
+          }
+        },
+        "timing_seconds": {
+          "query": 0.0,
+          "hand_table_precheck": 0.0,
+          "destination": 0.008801155010587536,
+          "transit": 0.542339017993072,
+          "endpoint": 0.0,
+          "planning": 21.367969108003308
+        },
+        "full_planning_calls": 1,
+        "endpoint_checks": 0,
+        "fallback_used": false,
+        "selected_arm": "right",
+        "selected_candidate": 2,
+        "selected_source": "original_geometry_grid"
+      },
+      "map": {
+        "success": true,
+        "seconds": 8.326019879998057,
+        "solver_components": {
+          "graph_path": {
+            "calls": 2,
+            "total_seconds": 0.012884638010291383,
+            "median_ms": 6.442319005145691,
+            "p95_ms": 6.636684809927829
+          },
+          "native_ik": {
+            "calls": 8,
+            "total_seconds": 0.5972601940156892,
+            "median_ms": 63.18678200477734,
+            "p95_ms": 168.97360029761327
+          },
+          "trajectory_optimization": {
+            "calls": 2,
+            "total_seconds": 0.047964592013158835,
+            "median_ms": 23.982296006579418,
+            "p95_ms": 24.081977312016534
+          }
+        },
+        "timing_seconds": {
+          "query": 0.6117185929906555,
+          "hand_table_precheck": 0.09020990699355025,
+          "destination": 1.062370979008847,
+          "transit": 1.4607875009969575,
+          "endpoint": 3.6239125629799673,
+          "planning": 1.2117038470023545
+        },
+        "full_planning_calls": 1,
+        "endpoint_checks": 3,
+        "fallback_used": false,
+        "selected_arm": "right",
+        "selected_candidate": 2,
+        "selected_source": "inverse_reachability"
+      },
+      "observed_regression": false,
+      "speedup": 2.6575968834955424
+    },
+    {
+      "case": "M0030_S2_edge_peach",
+      "map": {
+        "success": true,
+        "seconds": 3.5049185100069735,
+        "solver_components": {
+          "graph_path": {
+            "calls": 2,
+            "total_seconds": 0.013011279996135272,
+            "median_ms": 6.505639998067636,
+            "p95_ms": 6.772293804533547
+          },
+          "native_ik": {
+            "calls": 4,
+            "total_seconds": 0.020465036999667063,
+            "median_ms": 5.019326999899931,
+            "p95_ms": 5.545090402301867
+          },
+          "trajectory_optimization": {
+            "calls": 2,
+            "total_seconds": 0.04701279799337499,
+            "median_ms": 23.506398996687494,
+            "p95_ms": 24.08300649985904
+          }
+        },
+        "timing_seconds": {
+          "query": 0.5006670319999103,
+          "hand_table_precheck": 0.1556647790275747,
+          "destination": 0.008848126002703793,
+          "transit": 0.5481267579889391,
+          "endpoint": 0.9155469889956294,
+          "planning": 1.1108772000006866
+        },
+        "full_planning_calls": 1,
+        "endpoint_checks": 1,
+        "fallback_used": false,
+        "selected_arm": "right",
+        "selected_candidate": 5,
+        "selected_source": "inverse_reachability"
+      },
+      "grid": {
+        "success": true,
+        "seconds": 19.858607401998597,
+        "solver_components": {
+          "graph_path": {
+            "calls": 2,
+            "total_seconds": 0.012835462985094637,
+            "median_ms": 6.417731492547318,
+            "p95_ms": 6.511351745575666
+          },
+          "kinematic_ik_fallback": {
+            "calls": 11,
+            "total_seconds": 0.24255218598409556,
+            "median_ms": 14.235399008612148,
+            "p95_ms": 58.33465549949324
+          },
+          "native_ik": {
+            "calls": 14,
+            "total_seconds": 1.0912958360131597,
+            "median_ms": 59.636531499563716,
+            "p95_ms": 160.10144130268597
+          },
+          "trajectory_optimization": {
+            "calls": 2,
+            "total_seconds": 0.04935578101139981,
+            "median_ms": 24.677890505699906,
+            "p95_ms": 26.618051551486133
+          }
+        },
+        "timing_seconds": {
+          "query": 0.0,
+          "hand_table_precheck": 0.0,
+          "destination": 0.00792597899271641,
+          "transit": 0.6693526609888067,
+          "endpoint": 0.0,
+          "planning": 18.97998037999787
+        },
+        "full_planning_calls": 1,
+        "endpoint_checks": 0,
+        "fallback_used": false,
+        "selected_arm": "right",
+        "selected_candidate": 5,
+        "selected_source": "original_geometry_grid"
+      },
+      "observed_regression": false,
+      "speedup": 5.665925568682932
+    },
+    {
+      "case": "M0036_S2_edge_spatula",
+      "grid": {
+        "success": true,
+        "seconds": 94.20523503399454,
+        "solver_components": {
+          "graph_path": {
+            "calls": 2,
+            "total_seconds": 0.01369817899831105,
+            "median_ms": 6.849089499155525,
+            "p95_ms": 7.433833453251282
+          },
+          "kinematic_ik_fallback": {
+            "calls": 289,
+            "total_seconds": 6.106231756013585,
+            "median_ms": 14.51494799403008,
+            "p95_ms": 60.62214399862567
+          },
+          "native_ik": {
+            "calls": 292,
+            "total_seconds": 36.00003764203575,
+            "median_ms": 88.277830494917,
+            "p95_ms": 221.48401825033943
+          },
+          "trajectory_optimization": {
+            "calls": 2,
+            "total_seconds": 0.04745086199545767,
+            "median_ms": 23.725430997728836,
+            "p95_ms": 24.342557400086662
+          }
+        },
+        "timing_seconds": {
+          "query": 0.0,
+          "hand_table_precheck": 0.0,
+          "destination": 0.007648706989130005,
+          "transit": 0.42792410698893946,
+          "endpoint": 0.0,
+          "planning": 93.18645205700886
+        },
+        "full_planning_calls": 1,
+        "endpoint_checks": 0,
+        "fallback_used": false,
+        "selected_arm": "right",
+        "selected_candidate": 144,
+        "selected_source": "original_geometry_grid"
+      },
+      "map": {
+        "success": true,
+        "seconds": 10.160692031990038,
+        "solver_components": {
+          "graph_path": {
+            "calls": 1,
+            "total_seconds": 0.007281471000169404,
+            "median_ms": 7.281471000169404,
+            "p95_ms": 7.281471000169404
+          },
+          "native_ik": {
+            "calls": 6,
+            "total_seconds": 0.2088016440102365,
+            "median_ms": 30.814464000286534,
+            "p95_ms": 74.17198700568406
+          },
+          "trajectory_optimization": {
+            "calls": 1,
+            "total_seconds": 0.033668807009235024,
+            "median_ms": 33.668807009235024,
+            "p95_ms": 33.668807009235024
+          }
+        },
+        "timing_seconds": {
+          "query": 1.8698146880051354,
+          "hand_table_precheck": 1.8051734300970566,
+          "destination": 1.5864488139777677,
+          "transit": 0.526292957001715,
+          "endpoint": 2.01226133700402,
+          "planning": 1.5854624650091864
+        },
+        "full_planning_calls": 1,
+        "endpoint_checks": 2,
+        "fallback_used": false,
+        "selected_arm": "right",
+        "selected_candidate": 55,
+        "selected_source": "inverse_reachability"
+      },
+      "observed_regression": false,
+      "speedup": 9.271537286771187
+    }
+  ],
+  "baseline_planning_successes": 3,
+  "map_planning_successes": 3,
+  "observed_regressions": 0,
+  "grid_total_seconds": 136.1910469209979,
+  "map_total_seconds": 21.99163042199507,
+  "source_and_input_checksums_unchanged": true,
+  "default_activation": false
+}
