@@ -101,6 +101,8 @@ journalctl --user -u claro-arx-progress.service -n 30
 
 本机访问 `http://127.0.0.1:8786/`。服务单元源文件位于 `部署/`。
 
+公网网站位于`http://117.72.104.29/`，部署配置见`../configs/deployments/public_website.json`，更新与待办迁移流程见[公网网站部署与待办同步](../docs/公网网站部署与待办同步.md)。公网后端通过`CLARO_HOST=127.0.0.1`监听，再由现有Nginx代理提供访问。
+
 中文字形使用 Noto Sans CJK SC 的子集，按 SIL Open Font License 1.1 分发。 [字体许可](页面/notosc-OFL.txt)
 
 ## 论文调研与方法

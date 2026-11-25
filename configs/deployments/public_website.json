@@ -1,0 +1,21 @@
+{
+  "host": "117.72.104.29",
+  "ssh_user": "root",
+  "ssh_port": 22,
+  "credential_storage": "outside_repository",
+  "website_root": "/opt/arx-maniskill/website",
+  "backup_root": "/opt/arx-maniskill/deployment-backups",
+  "staging_root": "/opt/arx-maniskill/deployment-staging",
+  "service": "arx-website.service",
+  "service_user": "arx-web",
+  "node": "/opt/arx-maniskill/environments/node/bin/node",
+  "backend_host": "127.0.0.1",
+  "backend_port": 18786,
+  "nginx_configuration": "/etc/nginx/sites-enabled/zz-arx-website.conf",
+  "nginx_local_proxy_port": 18080,
+  "public_http_url": "http://117.72.104.29/",
+  "todo_snapshot": "website/resources/state/todos.snapshot.json",
+  "todo_database_relative_to_website": "resources/state/待办.sqlite",
+  "source_repository": "https://github.com/MissingCatty/ARX-ManiSkill",
+  "source_branch": "main"
+}

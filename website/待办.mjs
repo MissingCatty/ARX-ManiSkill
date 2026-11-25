@@ -62,7 +62,10 @@ export async function handleTodos(req, res, url) {
     res.setHeader('Allow', 'GET, HEAD, POST, PATCH, DELETE');
     return json(res, 405, { error: '请求方法不受支持。' });
   }
-  if (req.headers.origin !== `http://${req.headers.host}`) {
+  const sameHttpOrigin = req.headers.origin === `http://${req.headers.host}`;
+  const sameHttpsOrigin = req.socket.remoteAddress === '127.0.0.1'
+    && req.headers.origin === `https://${req.headers.host}`;
+  if (!sameHttpOrigin && !sameHttpsOrigin) {
     return json(res, 403, { error: '请从项目网站提交待办。' });
   }
   if (req.headers['content-type']?.split(';')[0].trim() !== 'application/json') {

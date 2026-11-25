@@ -11,9 +11,10 @@ import { preferredEncodings } from './http-encoding.mjs';
 
 const root = fileURLToPath(new URL('./resources/site', import.meta.url));
 const port = Number(process.env.CLARO_PORT ?? 8786);
+const host = process.env.CLARO_HOST ?? '0.0.0.0';
 const domain = (process.env.CLARO_MDNS_NAME ?? 'claro-arx.local').toLowerCase();
-if (!Number.isInteger(port) || port < 1024 || port > 65535 || !/^[a-z0-9][a-z0-9-]*\.local$/.test(domain)) {
-  throw new Error('Invalid CLARO_PORT or CLARO_MDNS_NAME');
+if (!isIPv4(host) || !Number.isInteger(port) || port < 1024 || port > 65535 || !/^[a-z0-9][a-z0-9-]*\.local$/.test(domain)) {
+  throw new Error('Invalid CLARO_HOST, CLARO_PORT or CLARO_MDNS_NAME');
 }
 
 const types = new Map([
@@ -166,7 +167,7 @@ http.on('error', error => {
   console.error('HTTP listener', error.code ?? error.message);
   process.exit(1);
 });
-http.listen(port, '0.0.0.0', () => {
+http.listen(port, host, () => {
   console.log(`CLARO-ARX http://${domain}:${port}/`);
   refreshNetwork();
 });
