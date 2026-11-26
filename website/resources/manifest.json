@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T10:17:35.233Z",
+  "generatedAt": "2026-11-26T10:55:42.745Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1603,7 +1603,7 @@
     },
     {
       "file": "media/sam3-v7-offline69-results.json",
-      "sha256": "6ff753e64b6fc09789c8f8ea71c3a7bd9b964ca6e1507bd5695a2ddb8199e9ca"
+      "sha256": "249b7f2e56dabac410f6028613f09d13aeaae6eb6d8934b0f82257cb1d1ae9dd"
     },
     {
       "file": "media/sam3-v7-offline69-report.md",
@@ -1623,11 +1623,15 @@
     },
     {
       "file": "media/sam3-v7-NMS-planning-plan.md",
-      "sha256": "83411b9f7a6fd891879f3d0f03e00c336408f9b46223d90f5c11c6d488a9bf3b"
+      "sha256": "2fde0f64cd760cf3fc4f89df728de8e3731c4ccf6a7ab5881cb53083f6d3400b"
     },
     {
       "file": "media/sam3-v7-planning69-20261126-01-results.json",
-      "sha256": "13d7a8cc595df0617decfa3300b26f7fbc83adbc4357a7bb9b07e0e1074e964e"
+      "sha256": "5284cbfd8c6b14b415139c74b14d08876e9aa37f60656a73b2c9bd95a4e29a73"
+    },
+    {
+      "file": "media/sam3-v7-planning69-20261126-01-report.md",
+      "sha256": "740e56f949f91159301677da64f8c83bcf49ffc7f7aefe7c82400734ee1770ab"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
