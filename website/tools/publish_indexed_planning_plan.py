@@ -498,6 +498,8 @@ def publish():
         status,summary=serialization['status'],serialization['summary']
         version.update(status=status,resultSummary=summary)
         version['settings'][-1]=['当前进度',status]
+        for previous in serialization.get('history_batches', []):
+            version['batches']=[v for v in version['batches'] if v['id']!=previous['id']]+[previous]
         version['batches']=[v for v in version['batches'] if v['id']!=serialization['batch']['id']]+[serialization['batch']]
     if group['current']=='V8':
         entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')

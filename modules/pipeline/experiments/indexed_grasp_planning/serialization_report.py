@@ -16,7 +16,8 @@ def report(root):
     full = reg.get('phase') == 'full';heading = '## 完整69场景结果' if full else '## GPU先导结果'
     body = DOCUMENT.read_text()
     if heading in body: body = body.split(heading)[0].rstrip()+'\n'
-    lines = [heading, '', '| 方法 | 完整请求 | 规划通过 | RPC中位耗时 | RPC P90 | RPC累计耗时 |',
+    continuation = reg.get('continuation')
+    lines = [heading, '', '| 方法 | 计时请求 | 计时样本规划通过 | RPC中位耗时 | RPC P90 | RPC累计耗时 |',
              '| --- | ---: | ---: | ---: | ---: | ---: |']
     for mode, label in [('control', '原版配置写出'), ('fast_binding', 'C版配置写出')]:
         value = accepted['summaries'][mode]
@@ -36,5 +37,11 @@ def report(root):
               ('时延门槛全部通过。' if accepted['timing_gate_passed'] else
                '时延门槛未全部通过，保留原链路并分析分项，不扩展完整批次。'), '',
               f"原始记录：`{root.relative_to(ROOT)}`。", '']
+    if continuation:
+        groups = accepted['planning_groups']
+        lines += [f"完整规划结果：原版{groups['control']['successes']}/{groups['control']['requests']}，"
+            f"C版{groups['fast_binding']['successes']}/{groups['fast_binding']['requests']}。"
+            f"继承{accepted['inherited_complete_requests']}次完成记录，本次新增{accepted['new_planning_requests']}次。", '',
+            'M0072的两种方法跨服务重启完成，规划结果保留在完整分母中；主延时表使用其余68对同次常驻运行的场景。', '']
     DOCUMENT.write_text(body.rstrip()+'\n\n'+'\n'.join(lines))
     shutil.copy2(DOCUMENT, root/'report.md')

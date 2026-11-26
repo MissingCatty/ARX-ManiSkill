@@ -120,9 +120,14 @@ def prepare(root, config=CONFIG):
         'case_selection': 'all_69_frozen_observations_no_outcome_filtering' if full else 'five_posthoc_engineering_fixtures_before_full69_decision',
         'geometry_hard_filter_enabled': False, 'new_candidate_poses': False,
         'physical_grasps': 0, 'automatic_default_activation': False}
+    inherited_rows, inherited_count = [], 0
+    if reg.get('continuation'):
+        from .serialization_resume import install, initial
+        install(root, reg)
+        inherited_rows, inherited_count = initial(root, reg)
     write_json(root/'registration.json', reg);write_json(root/'registration_pending.json', reg)
     write_json(root/'progress.json', {'at': now(), 'phase': 'waiting_for_gpu',
-        'completed_requests': 0, 'total_requests': reg['planning_requests'], 'results': []})
+        'completed_requests': inherited_count, 'total_requests': reg['planning_requests'], 'results': inherited_rows})
 
 
 def compare_pair(pair, optimized='vectorized'):
@@ -165,6 +170,9 @@ def run(root):
     if (root/'started.json').exists() or (root/'STOP').exists():
         raise ValueError('Do not repeat an already claimed V8 pilot')
     reg = raw(root/'registration.json');verify(reg)
+    from .serialization_resume import initial, timing_rows
+    rows, inherited_count = initial(root, reg)
+    inherited = reg.get('continuation', {}).get('inherited_sources', {})
     optimized = reg.get('optimized_group', 'vectorized')
     time_metric = reg.get('primary_time_metric', 'planning_request_seconds')
     if reg['device_assignment_pending']: raise ValueError('CUDA-verified assignment is required')
@@ -181,10 +189,10 @@ def run(root):
     worker = subprocess.Popen(command, cwd=ROOT, env=env, stdout=log, stderr=subprocess.STDOUT)
     write_json(root/'worker.json', {'at': now(), 'pid': worker.pid, 'command': command, 'gpu': reg['gpu']})
     client = Client(socket_path, timeout=1800, candidate_transport=True)
-    rows, completed = [], 0
+    completed, new_completed = inherited_count, 0
     try:
-        write_json(root/'progress.json', {'at': now(), 'phase': 'warming', 'completed_requests': 0,
-            'total_requests': reg['planning_requests'], 'results': []})
+        write_json(root/'progress.json', {'at': now(), 'phase': 'warming', 'completed_requests': completed,
+            'total_requests': reg['planning_requests'], 'results': rows})
         deadline = time.monotonic()+1200
         while not (root/'resident/curobo_indexed_planning_ready.json').exists():
             if worker.poll() is not None: raise RuntimeError('V8 worker exited during startup; see resident.log')
@@ -192,11 +200,16 @@ def run(root):
             time.sleep(1)
         write_json(root/'startup.json', {'at': now(), **raw(root/'resident/startup.json')})
         for ordinal, case in enumerate(reg['cases']):
+            if all(case['id']+'_'+v in inherited for v in reg['variants']):
+                continue
             source = Path(case['source_directory']);payload = raw(source/'candidates/candidate_pool.json')
             expected = raw(ROOT/reg['offline_source']/'cases'/case['id']/'nms_p015_r15.json')
             order = request_order(reg['variants'], ordinal)
-            pair = {}
+            pair = {v: raw(root/'plans'/case['id']/v/'metrics.json') for v in reg['variants']
+                    if case['id']+'_'+v in inherited}
             for variant in order:
+                if case['id']+'_'+variant in inherited:
+                    continue
                 directory = root/'plans'/case['id']/variant;directory.mkdir(parents=True)
                 claim = root/'claims'/(case['id']+'_'+variant+'.json')
                 with claim.open('x') as stream: json.dump({'at': now(), 'state': 'claimed'}, stream)
@@ -231,7 +244,8 @@ def run(root):
                     planning_rpc_seconds=rpc_seconds,
                     candidate_decode_seconds=io['load_seconds'],
                     postprocessing_plus_planning_seconds=post_seconds+metrics['planning_request_seconds'])
-                write_json(directory/'metrics.json', metrics);pair[variant] = metrics;completed += 1
+                write_json(directory/'metrics.json', metrics);pair[variant] = metrics
+                completed += 1;new_completed += 1
                 write_json(claim, {'at': now(), 'state': 'complete',
                     'extra_receipts_sha256': {name: sha256(directory/name) for name in reg.get('additional_receipts', [])},
                     'arm_results_sha256': {side: sha256(directory/'arms'/side/'plan_result.json')
@@ -246,14 +260,24 @@ def run(root):
             comparisons = [compare_pair({mode: pair[mode+'_'+str(n)] for mode in ['control', optimized]}, optimized) for n in repeats]
             rows.append({'id': case['id'], 'variants': pair, 'comparison': comparisons})
             write_json(root/'progress.json', {'at': now(), 'phase': 'comparing', 'completed_requests': completed,
-                'total_requests': reg['planning_requests'], 'results': rows, 'summaries': summarize(rows, reg['variant_modes'], time_metric)})
+                'total_requests': reg['planning_requests'], 'results': rows,
+                'summaries': summarize(timing_rows(rows, reg), reg['variant_modes'], time_metric)})
             if not all(all(c.values()) for c in comparisons):
                 raise RuntimeError('Original decisions, first branch or control success changed; stop scheduling')
         verify(reg)
-        summary = summarize(rows, reg['variant_modes'], time_metric)
+        expected_new = reg.get('continuation', {}).get('new_request_budget', reg['planning_requests'])
+        if new_completed != expected_new or completed != reg['planning_requests']:
+            raise ValueError('Executed request count differs from the registered continuation budget')
+        summary = summarize(timing_rows(rows, reg), reg['variant_modes'], time_metric)
         saving, timing_gates = latency_gates(summary, optimized, reg)
         write_json(root/'acceptance.json', {'at': now(), 'task_complete': completed == reg['planning_requests'],
             'record_integrity': True, 'planning_requests': completed, 'summaries': summary, 'cases': rows,
+            'new_planning_requests': new_completed, 'inherited_complete_requests': inherited_count,
+            'latency_excluded_case_ids': reg.get('continuation', {}).get('latency_excluded_case_ids', []),
+            'planning_groups': {group: {'requests': sum(1 for row in rows for v in row['variants']
+                    if reg['variant_modes'][v] == group),
+                'successes': sum(value['success'] for row in rows for v, value in row['variants'].items()
+                    if reg['variant_modes'][v] == group)} for group in dict.fromkeys(reg['variant_modes'].values())},
             'control_successes_retained': all(c['control_success_retained'] for r in rows for c in r['comparison']),
             'all_original_selections_and_branches_retained': all(all(c.values()) for r in rows for c in r['comparison']),
             'planning_total_time_reduction': saving,

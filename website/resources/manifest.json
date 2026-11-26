@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T13:06:25.643Z",
+  "generatedAt": "2026-11-26T14:12:18.966Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1659,7 +1659,7 @@
     },
     {
       "file": "media/sam3-v8-binding-serialization.md",
-      "sha256": "739f1853a1ecd2af9c54ff45e20eb7f8b8c1ca024b6893998c45653208714abc"
+      "sha256": "8f2c96969ebd886f568823ff52a88303ecbd52ffa6313e0d21ef4bcdd7f11730"
     },
     {
       "file": "media/sam3-v8-binding-serialization-cpu.json",
@@ -1667,7 +1667,11 @@
     },
     {
       "file": "media/sam3-v8-binding-serialization.json",
-      "sha256": "e1f55ba9a04526933d7407856445035fcbc454f6cb83c7cc4b6649f5fd2bef42"
+      "sha256": "aba549ac7172dde04f23ed20daa62d5d169c4fc8ddc669e4dff4fbc3604552bd"
+    },
+    {
+      "file": "media/sam3-v8-binding-serialization-yaml69-20261126-01-stop.json",
+      "sha256": "2191865b61232b6f8dea0f1098efec7b6207dbbbd202225060bbd772b043223a"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

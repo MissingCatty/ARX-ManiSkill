@@ -1,0 +1,195 @@
+{
+  "at": "2026-11-26T21:32:25.278879+08:00",
+  "task_complete": false,
+  "completed_record_integrity": true,
+  "source_run": "tmp/indexed_grasp_planning/yaml69_20261126_01",
+  "reason": "CUDA_reserve_below_1536_MiB",
+  "completed_requests": 109,
+  "complete_pairs": 54,
+  "counts": {
+    "control": {
+      "complete": 55,
+      "planning_passes": 55,
+      "resource_gate_not_executed": 0,
+      "unclaimed": 14
+    },
+    "fast_binding": {
+      "complete": 54,
+      "planning_passes": 54,
+      "resource_gate_not_executed": 1,
+      "unclaimed": 14
+    }
+  },
+  "paired_summaries": {
+    "control": {
+      "requests": 54,
+      "successes": 54,
+      "median_seconds": 9.230226658000902,
+      "p90_seconds": 25.340519545809368,
+      "total_seconds": 713.5484062679898,
+      "candidate_checks": 4657,
+      "stage_totals": {
+        "resident_world_bind": {
+          "calls": 406,
+          "wall_seconds": 143.359632022999,
+          "exclusive_seconds": 143.359632022999
+        },
+        "contact_world_bind": {
+          "calls": 190,
+          "wall_seconds": 25.501197998033604,
+          "exclusive_seconds": 25.501197998033604
+        },
+        "batch_world_bind": {
+          "calls": 190,
+          "wall_seconds": 0.2345529710437404,
+          "exclusive_seconds": 0.2345529710437404
+        },
+        "independent_FK": {
+          "calls": 10582,
+          "wall_seconds": 14.469939253278426,
+          "exclusive_seconds": 14.469939253278426
+        },
+        "grasp_batch_full_world_IK": {
+          "calls": 342,
+          "wall_seconds": 279.0985924380511,
+          "exclusive_seconds": 278.980637808083
+        },
+        "grasp_batch_kinematic_IK": {
+          "calls": 341,
+          "wall_seconds": 9.450567517080344,
+          "exclusive_seconds": 9.450567517080344
+        },
+        "grasp_endpoint": {
+          "calls": 4657,
+          "wall_seconds": 348.77200929370883,
+          "exclusive_seconds": 2.2612956595112337
+        },
+        "pregrasp_scalar_IK": {
+          "calls": 86,
+          "wall_seconds": 2.4412403530441225,
+          "exclusive_seconds": 2.4412403530441225
+        },
+        "lift_scalar_IK": {
+          "calls": 86,
+          "wall_seconds": 1.6824116190255154,
+          "exclusive_seconds": 1.6824116190255154
+        },
+        "PRM_path": {
+          "calls": 142,
+          "wall_seconds": 9.537906608966296,
+          "exclusive_seconds": 9.537906608966296
+        },
+        "trajectory_approach": {
+          "calls": 67,
+          "wall_seconds": 8.725598250050098,
+          "exclusive_seconds": 8.725598250050098
+        },
+        "trajectory_pregrasp": {
+          "calls": 75,
+          "wall_seconds": 11.153113795997342,
+          "exclusive_seconds": 11.153113795997342
+        },
+        "candidate_search": {
+          "calls": 190,
+          "wall_seconds": 385.77692166599445,
+          "exclusive_seconds": 0.9811505111574661
+        },
+        "local_collision_validate": {
+          "calls": 5494,
+          "wall_seconds": 52.92675204986881,
+          "exclusive_seconds": 45.85850731875689
+        }
+      }
+    },
+    "fast_binding": {
+      "requests": 54,
+      "successes": 54,
+      "median_seconds": 8.390090522007085,
+      "p90_seconds": 20.94364761449979,
+      "total_seconds": 605.8133748290275,
+      "candidate_checks": 4657,
+      "stage_totals": {
+        "resident_world_bind": {
+          "calls": 406,
+          "wall_seconds": 94.02341154580063,
+          "exclusive_seconds": 94.02341154580063
+        },
+        "contact_world_bind": {
+          "calls": 190,
+          "wall_seconds": 25.20672982899123,
+          "exclusive_seconds": 25.20672982899123
+        },
+        "batch_world_bind": {
+          "calls": 190,
+          "wall_seconds": 0.22876403912960086,
+          "exclusive_seconds": 0.22876403912960086
+        },
+        "independent_FK": {
+          "calls": 10582,
+          "wall_seconds": 14.274356957655982,
+          "exclusive_seconds": 14.274356957655982
+        },
+        "grasp_batch_full_world_IK": {
+          "calls": 342,
+          "wall_seconds": 266.448230563823,
+          "exclusive_seconds": 266.3327627028484
+        },
+        "grasp_batch_kinematic_IK": {
+          "calls": 341,
+          "wall_seconds": 9.173678497070796,
+          "exclusive_seconds": 9.173678497070796
+        },
+        "grasp_endpoint": {
+          "calls": 4657,
+          "wall_seconds": 335.3055384360341,
+          "exclusive_seconds": 2.214767190031125
+        },
+        "pregrasp_scalar_IK": {
+          "calls": 86,
+          "wall_seconds": 2.0939560829283437,
+          "exclusive_seconds": 2.0939560829283437
+        },
+        "lift_scalar_IK": {
+          "calls": 86,
+          "wall_seconds": 1.4373463571100729,
+          "exclusive_seconds": 1.4373463571100729
+        },
+        "PRM_path": {
+          "calls": 142,
+          "wall_seconds": 8.918057886970928,
+          "exclusive_seconds": 8.918057886970928
+        },
+        "trajectory_approach": {
+          "calls": 67,
+          "wall_seconds": 6.645460130966967,
+          "exclusive_seconds": 6.645460130966967
+        },
+        "trajectory_pregrasp": {
+          "calls": 75,
+          "wall_seconds": 8.606372830050532,
+          "exclusive_seconds": 8.606372830050532
+        },
+        "candidate_search": {
+          "calls": 190,
+          "wall_seconds": 366.5879213158769,
+          "exclusive_seconds": 1.039161670661997
+        },
+        "local_collision_validate": {
+          "calls": 5494,
+          "wall_seconds": 52.57952567767643,
+          "exclusive_seconds": 45.623236970452126
+        }
+      }
+    }
+  },
+  "paired_total_time_reduction": 0.15098489533799042,
+  "checked_endpoints": 327,
+  "checked_original_candidate_rows": 264032,
+  "generated_YAML_pairs": 324,
+  "paired_decisions_identical": true,
+  "resource_gate_before_planner_verified": true,
+  "original_STOP_preserved": true,
+  "new_planning_requests": 0,
+  "physical_grasps": 0,
+  "automatic_retry": false
+}

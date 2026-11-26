@@ -1,17 +1,242 @@
 {
-  "run": "tmp/indexed_grasp_planning/yaml69_20261126_01",
-  "phase": "planning",
-  "gpu": "GPU-b827b8be-c675-83f7-1b4c-39b5811c6d5e",
-  "completed_requests": 16,
+  "run": "tmp/indexed_grasp_planning/yaml69_continue_20261126_01",
+  "phase": "complete",
+  "gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "completed_requests": 138,
   "total_requests": 138,
-  "current": {
-    "id": "M0011_S1_open_bread",
-    "variant": "control_1"
-  },
+  "current": null,
+  "stopped_at_request": null,
+  "stop_summary": null,
   "primary_time_metric": "planning_rpc_seconds",
-  "summaries": null,
-  "acceptance": null,
-  "independent_review": null,
+  "summaries": {
+    "control": {
+      "requests": 68,
+      "successes": 68,
+      "median_seconds": 9.720910491501854,
+      "p90_seconds": 27.20755034190079,
+      "total_seconds": 965.5084204159939,
+      "candidate_checks": 6645,
+      "stage_totals": {
+        "resident_world_bind": {
+          "calls": 524,
+          "wall_seconds": 187.5782482260547,
+          "exclusive_seconds": 187.5782482260547
+        },
+        "contact_world_bind": {
+          "calls": 252,
+          "wall_seconds": 33.59365746201365,
+          "exclusive_seconds": 33.59365746201365
+        },
+        "batch_world_bind": {
+          "calls": 252,
+          "wall_seconds": 0.3215590640757,
+          "exclusive_seconds": 0.3215590640757
+        },
+        "independent_FK": {
+          "calls": 14547,
+          "wall_seconds": 21.072372750219074,
+          "exclusive_seconds": 21.072372750219074
+        },
+        "grasp_batch_full_world_IK": {
+          "calls": 480,
+          "wall_seconds": 400.8408990609605,
+          "exclusive_seconds": 400.69038573099533
+        },
+        "grasp_batch_kinematic_IK": {
+          "calls": 478,
+          "wall_seconds": 13.939207007089863,
+          "exclusive_seconds": 13.939207007089863
+        },
+        "grasp_endpoint": {
+          "calls": 6645,
+          "wall_seconds": 506.2172716337518,
+          "exclusive_seconds": 3.5785666154988576
+        },
+        "pregrasp_scalar_IK": {
+          "calls": 106,
+          "wall_seconds": 3.0836327430442907,
+          "exclusive_seconds": 3.0836327430442907
+        },
+        "lift_scalar_IK": {
+          "calls": 106,
+          "wall_seconds": 1.9339669439796126,
+          "exclusive_seconds": 1.9339669439796126
+        },
+        "PRM_path": {
+          "calls": 173,
+          "wall_seconds": 11.564741504000267,
+          "exclusive_seconds": 11.564741504000267
+        },
+        "trajectory_approach": {
+          "calls": 82,
+          "wall_seconds": 10.05106868801522,
+          "exclusive_seconds": 10.05106868801522
+        },
+        "trajectory_pregrasp": {
+          "calls": 91,
+          "wall_seconds": 13.040928109970991,
+          "exclusive_seconds": 13.040928109970991
+        },
+        "candidate_search": {
+          "calls": 252,
+          "wall_seconds": 550.1975855439814,
+          "exclusive_seconds": 1.4625611291412497
+        },
+        "local_collision_validate": {
+          "calls": 8205,
+          "wall_seconds": 78.63107851758832,
+          "exclusive_seconds": 69.45859525795095
+        }
+      }
+    },
+    "fast_binding": {
+      "requests": 68,
+      "successes": 68,
+      "median_seconds": 8.70703370749834,
+      "p90_seconds": 24.58665528070416,
+      "total_seconds": 866.4900255650282,
+      "candidate_checks": 6645,
+      "stage_totals": {
+        "resident_world_bind": {
+          "calls": 524,
+          "wall_seconds": 128.21136939282587,
+          "exclusive_seconds": 128.21136939282587
+        },
+        "contact_world_bind": {
+          "calls": 252,
+          "wall_seconds": 33.81037635494431,
+          "exclusive_seconds": 33.81037635494431
+        },
+        "batch_world_bind": {
+          "calls": 252,
+          "wall_seconds": 0.31767437409143895,
+          "exclusive_seconds": 0.31767437409143895
+        },
+        "independent_FK": {
+          "calls": 14547,
+          "wall_seconds": 20.8133797570772,
+          "exclusive_seconds": 20.8133797570772
+        },
+        "grasp_batch_full_world_IK": {
+          "calls": 480,
+          "wall_seconds": 397.32882778580824,
+          "exclusive_seconds": 397.181353115855
+        },
+        "grasp_batch_kinematic_IK": {
+          "calls": 478,
+          "wall_seconds": 14.165067002104479,
+          "exclusive_seconds": 14.165067002104479
+        },
+        "grasp_endpoint": {
+          "calls": 6645,
+          "wall_seconds": 503.38374223711435,
+          "exclusive_seconds": 3.515522745627095
+        },
+        "pregrasp_scalar_IK": {
+          "calls": 106,
+          "wall_seconds": 2.958190045930678,
+          "exclusive_seconds": 2.958190045930678
+        },
+        "lift_scalar_IK": {
+          "calls": 106,
+          "wall_seconds": 1.7426669971027877,
+          "exclusive_seconds": 1.7426669971027877
+        },
+        "PRM_path": {
+          "calls": 173,
+          "wall_seconds": 11.322711827990133,
+          "exclusive_seconds": 11.322711827990133
+        },
+        "trajectory_approach": {
+          "calls": 82,
+          "wall_seconds": 8.200877243987634,
+          "exclusive_seconds": 8.200877243987634
+        },
+        "trajectory_pregrasp": {
+          "calls": 91,
+          "wall_seconds": 10.840802986072958,
+          "exclusive_seconds": 10.840802986072958
+        },
+        "candidate_search": {
+          "calls": 252,
+          "wall_seconds": 542.9885884228861,
+          "exclusive_seconds": 1.6302065465861233
+        },
+        "local_collision_validate": {
+          "calls": 8205,
+          "wall_seconds": 79.36466494449996,
+          "exclusive_seconds": 70.30013578046055
+        }
+      }
+    }
+  },
+  "continuation": {
+    "source_run": "tmp/indexed_grasp_planning/yaml69_20261126_01",
+    "inherited_complete_requests": 109,
+    "new_request_budget": 29,
+    "latency_excluded_case_ids": [
+      "M0072_S4_clutter_potato"
+    ]
+  },
+  "acceptance": {
+    "at": "2026-11-26T22:09:42.564578+08:00",
+    "task_complete": true,
+    "record_integrity": true,
+    "planning_requests": 138,
+    "new_planning_requests": 29,
+    "inherited_complete_requests": 109,
+    "latency_excluded_case_ids": [
+      "M0072_S4_clutter_potato"
+    ],
+    "planning_groups": {
+      "control": {
+        "requests": 69,
+        "successes": 69
+      },
+      "fast_binding": {
+        "requests": 69,
+        "successes": 69
+      }
+    },
+    "control_successes_retained": true,
+    "all_original_selections_and_branches_retained": true,
+    "planning_total_time_reduction": 0.10255570304431227,
+    "timing_gate_passed": true,
+    "timing_gates": {
+      "total_time_reduction": true,
+      "median_reduced": true,
+      "p90_within_limit": true
+    },
+    "primary_time_metric": "planning_rpc_seconds",
+    "physical_grasps": 0,
+    "automatic_full_comparison": false,
+    "automatic_default_activation": false
+  },
+  "independent_review": {
+    "at": "2026-11-26T22:10:30.053339+08:00",
+    "passed": true,
+    "record_integrity": true,
+    "checked_requests": 138,
+    "checked_original_candidate_rows": 332016,
+    "checked_endpoints": 414,
+    "control_successes_retained": true,
+    "physical_grasps": 0,
+    "automatic_default_activation": false,
+    "all_original_selections_and_branches_retained": true,
+    "timing_and_arm_receipts_verified": true,
+    "stage_timing_inclusive_and_exclusive": true,
+    "planning_total_time_reduction": 0.10255570304431227,
+    "timing_gate_passed": true,
+    "automatic_full_comparison": false,
+    "generated_robot_YAML_pairs": 414,
+    "all_generated_configuration_values_equal": true,
+    "primary_time_metric": "planning_rpc_seconds",
+    "timing_gates": {
+      "total_time_reduction": true,
+      "median_reduced": true,
+      "p90_within_limit": true
+    }
+  },
   "CPU_preparation": {
     "at": "2026-11-26T20:45:31.930024+08:00",
     "passed": true,
