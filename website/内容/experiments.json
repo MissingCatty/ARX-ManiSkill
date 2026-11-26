@@ -643,8 +643,8 @@
           "sourceId": "sam3-graspgenx",
           "title": "可达性索引与批量IK加速",
           "date": "2026-11-26",
-          "status": "纯规划对照进行中",
-          "resultSummary": "69份观测，三组规划11/207次，物理抓取0次。",
+          "status": "C：上下文复用，纯规划对照进行中",
+          "resultSummary": "C：上下文复用：5份观测，规划8/20次，物理抓取0次。",
           "change": "以现行双臂交替搜索为基线，分别比较原生批量IK、几何IK、关节解索引与模型场景绑定复用，保留原抓姿和评分顺序。",
           "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 双臂交替调度 → 批量IK/几何IK/索引复用对照 → 当前碰撞与路径检查 → 选臂抓取",
           "scenes": "先使用同一套69份有效候选做规划回放，74例总体范围保留5例共同站位失败。",
@@ -663,7 +663,7 @@
             ],
             [
               "当前进度",
-              "纯规划对照进行中"
+              "C：上下文复用，纯规划对照进行中"
             ]
           ],
           "contentFile": "sam3-graspgenx-v8.md",
@@ -709,8 +709,8 @@
               "id": "native_batch_69_20261126_01",
               "title": "原生批量IK纯规划对照",
               "date": "2026-11-26",
-              "status": "纯规划对照进行中",
-              "summary": "69份观测，三组规划11/207次，物理抓取0次。",
+              "status": "纯规划对照已完成",
+              "summary": "69份观测，三组规划207/207次，物理抓取0次。",
               "outputs": [
                 "tmp/indexed_grasp_planning/native_batch_69_20261126_01"
               ],
@@ -718,6 +718,22 @@
                 {
                   "label": "进度与逐例结果",
                   "url": "/media/sam3-v8-native-batch-69-20261126-01-status.json"
+                }
+              ]
+            },
+            {
+              "id": "binding_reuse_pilot_20261126_01",
+              "title": "上下文复用纯规划对照",
+              "date": "2026-11-26",
+              "status": "C：上下文复用，纯规划对照进行中",
+              "summary": "C：上下文复用：5份观测，规划8/20次，物理抓取0次。",
+              "outputs": [
+                "tmp/indexed_grasp_planning/binding_reuse_pilot_20261126_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "进度与逐例结果",
+                  "url": "/media/sam3-v8-binding-reuse-pilot-20261126-01-status.json"
                 }
               ]
             }

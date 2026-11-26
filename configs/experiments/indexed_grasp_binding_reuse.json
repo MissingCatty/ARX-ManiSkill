@@ -1,0 +1,39 @@
+{
+  "version": "V8",
+  "variant": "C_binding_reuse",
+  "baseline": "A_scalar_IK_with_16_64_alternating_search",
+  "pilot_cases": [
+    "M0001_S1_open_apple",
+    "M0004_S1_open_banana",
+    "M0010_S1_open_boxed_food",
+    "M0044_S3_sparse_banana",
+    "M0069_S4_clutter_orange"
+  ],
+  "pilot_order": "ABBA_then_BAAB_alternating_by_case",
+  "pilot_planning_requests": 20,
+  "full_cases": 69,
+  "full_planning_requests": 138,
+  "physical_grasp_budget": 0,
+  "simulation_instances": 0,
+  "perception_calls": 0,
+  "automatic_retries": false,
+  "automatic_default_activation": false,
+  "cache_lifetime": "one_complete_planning_request",
+  "per_arm_contexts": true,
+  "shared_pure_kinematic_solver": true,
+  "reuse_requires": [
+    "identical_complete_measured_state",
+    "identical_arm_role_and_target_inclusion",
+    "same_frozen_model_epoch",
+    "scene_mesh_bytes_rechecked",
+    "same_output_directory_and_intact_binding_receipts",
+    "native_FK_and_start_collision_rechecked",
+    "original_random_seed_reset"
+  ],
+  "full_replay_gate": {
+    "independent_review_passed": true,
+    "original_successes_and_selections_retained": true,
+    "world_rebind_count_reduced": true,
+    "minimum_total_wall_reduction_fraction": 0.02
+  }
+}

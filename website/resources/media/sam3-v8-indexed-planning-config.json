@@ -2,7 +2,7 @@
   "version": "V8",
   "parent": "V4",
   "state": "in_progress",
-  "implementation_status": "native_batch_pilot_accepted_full_replay_running",
+  "implementation_status": "native_batch_accepted_binding_reuse_in_progress",
   "method": "indexed_grasp_planning",
   "user_request": "将借鉴数据库索引、关节解缓存和批量处理的可达性地图规划加速方案作为独立实验版本。",
   "objective": "以已启用的双臂交替搜索为基线，独立比较原生批量IK、几何IK、关节解索引及绑定复用，减少规划总耗时并保留原抓姿与规划效果。",
@@ -73,7 +73,7 @@
     {
       "id": "control",
       "description": "已启用的双臂交替搜索、原逐候选IK与全部碰撞/路径检查。",
-      "state": "implemented_baseline_replay_pending"
+      "state": "native_batch_full_replay_complete"
     },
     {
       "id": "native_batched",
@@ -82,12 +82,12 @@
         16,
         32
       ],
-      "state": "pilot_accepted_full_69_replay_running"
+      "state": "planning_replay_complete"
     },
     {
       "id": "binding_reuse",
       "description": "同一请求内按臂复用模型与场景上下文，记录显存与重绑定成本。",
-      "state": "planned"
+      "state": "pilot_running"
     },
     {
       "id": "geometric_ik",
@@ -122,8 +122,8 @@
     "solver_fallback_calls_and_total_cost"
   ],
   "execution": {
-    "current_phase": "native_batch_full_replay",
-    "next_stage": "analyze_full_batch_replay_before_binding_geometric_and_index_variants",
+    "current_phase": "binding_reuse_pilot",
+    "next_stage": "independently_check_binding_reuse_before_geometric_and_index_variants",
     "native_planning_budget": 224,
     "physical_grasp_budget": 0,
     "automatic_retries": false,
@@ -131,8 +131,9 @@
     "output_root": "tmp/indexed_grasp_planning",
     "adapter_reserved_path": "modules/curobo/indexed_planning",
     "orchestration_reserved_path": "modules/pipeline/experiments/indexed_grasp_planning",
-    "active_run": "tmp/indexed_grasp_planning/native_batch_69_20261126_01",
-    "user_authorization": "2026-11-26：开始吧，执行V8优化方案。"
+    "active_run": "tmp/indexed_grasp_planning/binding_reuse_pilot_20261126_01",
+    "user_authorization": "2026-11-26：开始吧，执行V8优化方案。",
+    "binding_planning_budget": 158
   },
   "references": [
     {
@@ -234,6 +235,18 @@
     "full_run": "tmp/indexed_grasp_planning/native_batch_69_20261126_01",
     "pilot_independent_endpoints": 45,
     "pilot_all_original_selections_retained": true,
-    "followup_run": "tmp/indexed_grasp_planning/native_batch_followup_20261126_02"
+    "followup_run": "tmp/indexed_grasp_planning/native_batch_followup_20261126_02",
+    "independent_review_passed": true,
+    "preferred_capacity": 16,
+    "full_original_selections_retained": true,
+    "independent_endpoints": 621
+  },
+  "binding_reuse_implementation": {
+    "adapter": "modules/curobo/indexed_planning/binding_service.py",
+    "configuration": "configs/experiments/indexed_grasp_binding_reuse.json",
+    "offline_checks": 20,
+    "automatic_default_activation": false,
+    "pilot_run": "tmp/indexed_grasp_planning/binding_reuse_pilot_20261126_01",
+    "followup_run": "tmp/indexed_grasp_planning/binding_followup_20261126_01"
   }
 }

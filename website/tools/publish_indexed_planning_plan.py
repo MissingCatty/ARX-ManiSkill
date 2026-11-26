@@ -4,9 +4,9 @@ import shutil
 from arx_project.layout import ROOT,read_json,write_json,sha256
 
 
-def planning_progress(website, config):
+def planning_progress(website, config, relative=None):
     """Copy a compact progress snapshot; never start or reconnect a planner."""
-    relative = config['execution'].get('active_run')
+    relative = relative or config['execution'].get('active_run')
     if not relative:
         return None
     run = (ROOT/relative).resolve()
@@ -16,22 +16,44 @@ def planning_progress(website, config):
     progress = read_json(run/'progress.json')
     acceptance = read_json(run/'acceptance.json') if (run/'acceptance.json').is_file() else None
     snapshot = {key: progress.get(key) for key in ['at','phase','completed_requests','total_requests','current']}
+    binding = registration.get('experiment') == 'binding_reuse'
+    component = 'binding_reuse_implementation' if binding else 'native_batch_implementation'
     snapshot.update(run=relative,gpu=registration['gpu'],cases=len(registration['cases']),
-        physical_grasps=0,offline_checks=config.get('native_batch_implementation',{}).get('offline_checks',0),
+        experiment='binding_reuse' if binding else 'native_batch',variants=registration['variants'],
+        physical_grasps=0,offline_checks=config.get(component,{}).get('offline_checks',0),
         model_warmup_complete=(run/'startup.json').is_file(),stopped=(run/'STOP').is_file())
     snapshot['results'] = [{'id': row['id'], 'variants': {mode: {key: value.get(key) for key in
-        ['seconds','success','selected_arm','selected_source_index','candidate_checks']} for mode,value in row['variants'].items()},
+        ['seconds','success','selected_arm','selected_source_index','candidate_checks',
+         'binding_seconds','full_world_rebinds','binding_cache_hits']} for mode,value in row['variants'].items()},
         'comparison':row['comparison']} for row in progress.get('results',[])]
     if acceptance:
         snapshot.update(summaries=acceptance['summaries'],
             control_successes_retained=acceptance['control_successes_retained'],
             record_integrity=acceptance['record_integrity'])
+    if (run/'independent_review.json').is_file():
+        checked = read_json(run/'independent_review.json')
+        snapshot.update(independent_review_passed=checked['passed'],
+            independent_endpoints=checked['checked_endpoints'])
     name = 'sam3-v8-'+run.name.replace('_','-')+'-status.json'
     target = website/'resources/media'/name
     if target.is_symlink() or target.exists() and target.stat().st_nlink != 1:
         raise ValueError('V8 progress must be a standalone website resource')
     write_json(target,snapshot)
     return snapshot,name
+
+
+def result_table(snapshot, title):
+    labels = {'control':'现行逐个检查','batch16':'批量16个','batch32':'批量32个',
+        'reuse':'左右臂上下文复用'}
+    lines = ['## '+title, '',
+        '| 方法 | 完整规划次数 | 规划通过 | 中位耗时 | P90耗时 | 合计耗时 |',
+        '| --- | ---: | ---: | ---: | ---: | ---: |']
+    for mode,value in snapshot['summaries'].items():
+        lines.append(f"| {labels[mode]} | {value['requests']} | {value['successes']} | "
+            f"{value['median_seconds']:.2f}秒 | {value['p90_seconds']:.2f}秒 | {value['total_seconds']:.2f}秒 |")
+    lines += ['', '表中时间是一整个场景返回完整规划的耗时。批量16表示每批最多16个目标；'
+        'P90按完整请求统计，包含双臂搜索、开爪检查、IK、碰撞与路径。']
+    return '\n'.join(lines)
 
 
 def publish():
@@ -47,6 +69,8 @@ def publish():
         (ROOT/'modules/pipeline/docs/mainline_versions/V8_可达性索引与批量IK加速实验方案.md','sam3-v8-indexed-planning-plan.md'),
         (ROOT/'modules/pipeline/docs/mainline_versions/V8_规划加速方法调研.md','sam3-v8-planning-research.md'),
         (ROOT/'modules/pipeline/docs/mainline_versions/V8_原生批量IK实施.md','sam3-v8-native-batch-method.md'),
+        (ROOT/'modules/pipeline/docs/mainline_versions/V8_原生批量IK完整对照结果.md','sam3-v8-native-batch-final.md'),
+        (ROOT/'modules/pipeline/docs/mainline_versions/V8_上下文复用实施.md','sam3-v8-binding-reuse-method.md'),
         (review/'arm_geometry_review.json','sam3-v8-arm-geometry-review.json'),
         (review/'source_review.json','sam3-v8-source-review.json')]
     for source,name in attachments:
@@ -65,6 +89,17 @@ def publish():
         write_json(website/'resources/media'/proof_name,proof)
         site['localAssets'][proof_name] = '../../resources/media/'+proof_name
     runtime = planning_progress(website,config)
+    native_run = config.get('native_batch_implementation',{}).get('full_run')
+    native_runtime = (planning_progress(website,config,native_run) if native_run else None)
+    if native_run and (ROOT/native_run/'independent_review.json').is_file():
+        name = 'sam3-v8-native-batch-fk-review.json'
+        source = ROOT/native_run/'independent_review.json'
+        target = website/'resources/media'/name
+        if target.is_symlink() or target.exists() and target.stat().st_nlink != 1:
+            raise ValueError('Independent FK attachment must be a real standalone copy')
+        shutil.copy2(source,target)
+        if sha256(source)!=sha256(target):raise ValueError('FK attachment copy mismatch')
+        site['localAssets'][name] = '../../resources/media/'+name
     body = '''## 本版进度
 
 方法调研、本地接口与ARX静态几何核查已完成，下一步适配并比较各方法。当前V8规划回放0次、物理抓取0次。
@@ -159,14 +194,15 @@ def publish():
     if runtime:
         snapshot,name = runtime
         done,total = snapshot['completed_requests'],snapshot['total_requests']
+        binding = snapshot['experiment']=='binding_reuse'
+        label = 'C：上下文复用' if binding else 'B：原生批量IK'
         status = ('纯规划对照已完成' if snapshot['phase']=='complete' else
             '纯规划对照停止，保留记录' if snapshot['stopped'] else
-            '纯规划对照进行中' if snapshot['model_warmup_complete'] else '批量IK已实现，常驻模型预热中')
-        summary = f"{snapshot['cases']}份观测，三组规划{done}/{total}次，物理抓取0次。"
+            '纯规划对照进行中' if snapshot['model_warmup_complete'] else '常驻模型预热中')
+        status = label+'，'+status
+        summary = f"{label}：{snapshot['cases']}份观测，规划{done}/{total}次，物理抓取0次。"
         body = body.replace('方法调研、本地接口与ARX静态几何核查已完成，下一步适配并比较各方法。当前V8规划回放0次、物理抓取0次。',
-            f"原生批量IK适配完成，{snapshot['offline_checks']}项新离线检查及11项原交替回归通过。{status}：{summary}")
-        body = body.replace('逐个调用小规模求解的开销 | 待适配 |','逐个调用小规模求解的开销 | 已接通，独立对照中 |')
-        body = body.replace('原生批量IK与绑定复用分别适配 | 待实施 |','原生批量IK与绑定复用分别适配 | 批量IK已接通；绑定复用待实施 |')
+            summary)
         body = body.replace('## 优化目标', f'[本轮进度与逐例数据](/media/{name})\n\n## 优化目标',1)
         body = body.replace('## 本地已经确认的条件',
             '## 批量接口怎样保持逐目标检查\n\n'
@@ -174,13 +210,40 @@ def publish():
             '两种批次容量的混合目标检查与独立FK均通过。\n\n'
             '[实施说明](/media/sam3-v8-native-batch-method.md) · '
             '[接口验证数据](/media/sam3-v8-batch-rows-validation.json)\n\n## 本地已经确认的条件',1)
-        if snapshot.get('summaries'):
-            table = ['## 本轮规划结果','','下表为相同保存观测、同一卡和同一常驻模型池的纯规划对照。耗时单位为秒。','',
-                '| 方法 | 完整规划次数 | 规划通过 | 中位耗时 | P90耗时 |','| --- | ---: | ---: | ---: | ---: |']
-            labels = {'control':'现行逐个检查','batch16':'批量16个','batch32':'批量32个'}
-            for mode,value in snapshot['summaries'].items():
-                table.append(f"| {labels[mode]} | {value['requests']} | {value['successes']} | {value['median_seconds']:.2f} | {value['p90_seconds']:.2f} |")
-            body = body.replace('## 优化目标','\n'.join(table)+'\n\n## 优化目标',1)
+        if binding:
+            body = body.replace('交替窗口反复绑定世界 | 待适配与测显存 |',
+                '交替窗口反复绑定世界 | 已实现，'+status+' |')
+            body = body.replace('原生批量IK与绑定复用分别适配 | 待实施 |',
+                '原生批量IK与绑定复用分别适配 | B已验收，C对照中 |')
+            section = ('## C怎样减少重复绑定\n\n'
+                '左右臂分别保留开放和闭合上下文，在同一次完整请求内复用相同的模型和场景。'
+                '纯运动学回退仍共享原求解器。复用前核对完整测得状态、实际网格和原始回执，'
+                '并重新检查FK与起始碰撞。\n\n'
+                '20项新增故障检查与原31项回归共51项通过。先用五份输入按ABBA/BAAB顺序做20次规划，'
+                '确认抓法保留、重绑定减少、总耗时至少降低2%后，再比较全部69份观测。\n\n'
+                '[上下文复用实施说明](/media/sam3-v8-binding-reuse-method.md)\n\n')
+            if snapshot.get('summaries'):
+                section += result_table(snapshot,'C上下文复用对照结果')+'\n\n'
+            body = body.replace('## 优化目标',section+'## 优化目标',1)
+        elif not native_runtime or not native_runtime[0].get('summaries'):
+            body = body.replace('逐个调用小规模求解的开销 | 待适配 |',
+                '逐个调用小规模求解的开销 | 已接通，独立对照中 |')
+        site['localAssets'][name] = '../../resources/media/'+name
+    if native_runtime and native_runtime[0].get('summaries'):
+        native,name = native_runtime
+        section = result_table(native,'B原生批量IK完整结果')
+        section += ('\n\n三组各69/69通过，原抓姿和选臂全部一致。621个终点独立复算通过。'
+            '批量16合计耗时减少32.84%，中位数降低29.12%；后续组合优先使用批量16。\n\n'
+            '[完整结果与分析](/media/sam3-v8-native-batch-final.md) · '
+            f'[69例逐项数据](/media/{name}) · '
+            '[621个终点复算](/media/sam3-v8-native-batch-fk-review.json)\n\n')
+        body = body.replace('## 优化目标',section+'## 优化目标',1)
+        body = body.replace('建立优化后的真实对照 | 已实现，待完整回放 |',
+            '建立优化后的真实对照 | 69份回放完成 |')
+        body = body.replace('逐个调用小规模求解的开销 | 待适配 |',
+            '逐个调用小规模求解的开销 | 207次对照完成，优先保留批量16 |')
+        body = body.replace('冻结现行交替输入，建立分项计时 | 待实施 |',
+            '冻结现行交替输入，建立分项计时 | B已完成，C增加逐次绑定记录 |')
         site['localAssets'][name] = '../../resources/media/'+name
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
@@ -195,7 +258,8 @@ def publish():
     if runtime:
         snapshot,name = runtime
         run = snapshot['run']
-        batch = {'id':run.split('/')[-1],'title':'原生批量IK纯规划对照','date':'2026-11-26',
+        batch = {'id':run.split('/')[-1],'title':('上下文复用纯规划对照' if snapshot['experiment']=='binding_reuse'
+            else '原生批量IK纯规划对照'),'date':'2026-11-26',
             'status':status,'summary':summary,'outputs':[run],
             'artifacts':[{'label':'进度与逐例结果','url':'/media/'+name}]}
         version['batches'] = [v for v in version['batches'] if v['id']!=batch['id']]+[batch]

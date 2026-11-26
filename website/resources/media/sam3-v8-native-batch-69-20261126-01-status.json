@@ -1,15 +1,18 @@
 {
-  "at": "2026-11-26T11:29:00.185235+08:00",
-  "phase": "planning",
-  "completed_requests": 11,
+  "at": "2026-11-26T13:09:14.213605+08:00",
+  "phase": "complete",
+  "completed_requests": 207,
   "total_requests": 207,
-  "current": {
-    "id": "M0005_S1_open_bar_soap",
-    "variant": "control"
-  },
+  "current": null,
   "run": "tmp/indexed_grasp_planning/native_batch_69_20261126_01",
   "gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
   "cases": 69,
+  "experiment": "native_batch",
+  "variants": {
+    "control": 0,
+    "batch16": 16,
+    "batch32": 32
+  },
   "physical_grasps": 0,
   "offline_checks": 20,
   "model_warmup_complete": true,
@@ -23,21 +26,30 @@
           "success": true,
           "selected_arm": "right",
           "selected_source_index": 1,
-          "candidate_checks": 4
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
         },
         "batch16": {
           "seconds": 6.043405611002527,
           "success": true,
           "selected_arm": "right",
           "selected_source_index": 1,
-          "candidate_checks": 4
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
         },
         "batch32": {
           "seconds": 6.056040578994725,
           "success": true,
           "selected_arm": "right",
           "selected_source_index": 1,
-          "candidate_checks": 4
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
         }
       },
       "comparison": {
@@ -61,21 +73,30 @@
           "success": true,
           "selected_arm": "right",
           "selected_source_index": 3,
-          "candidate_checks": 8
+          "candidate_checks": 8,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
         },
         "batch32": {
           "seconds": 5.620989738003118,
           "success": true,
           "selected_arm": "right",
           "selected_source_index": 3,
-          "candidate_checks": 8
+          "candidate_checks": 8,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
         },
         "batch16": {
           "seconds": 5.924159103997226,
           "success": true,
           "selected_arm": "right",
           "selected_source_index": 3,
-          "candidate_checks": 8
+          "candidate_checks": 8,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
         }
       },
       "comparison": {
@@ -99,21 +120,30 @@
           "success": true,
           "selected_arm": "right",
           "selected_source_index": 0,
-          "candidate_checks": 2
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
         },
         "control": {
           "seconds": 6.345983205996163,
           "success": true,
           "selected_arm": "right",
           "selected_source_index": 0,
-          "candidate_checks": 2
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
         },
         "batch32": {
           "seconds": 11.190825669997139,
           "success": true,
           "selected_arm": "right",
           "selected_source_index": 0,
-          "candidate_checks": 2
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
         }
       },
       "comparison": {
@@ -128,6 +158,3138 @@
           "speedup": 0.5670701513124174
         }
       }
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "variants": {
+        "batch16": {
+          "seconds": 32.087102318997495,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 238,
+          "candidate_checks": 511,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 65.43152770499728,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 238,
+          "candidate_checks": 511,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 85.59887120699568,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 238,
+          "candidate_checks": 511,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.667703376765062
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.308220581260525
+        }
+      }
+    },
+    {
+      "id": "M0006_S1_open_bell_pepper",
+      "variants": {
+        "batch32": {
+          "seconds": 17.364080449995527,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 1,
+          "candidate_checks": 8,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 5.476178415003233,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 1,
+          "candidate_checks": 8,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 6.709532020999177,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 1,
+          "candidate_checks": 8,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.31537393706354566
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8161788926357528
+        }
+      }
+    },
+    {
+      "id": "M0008_S1_open_bottled_water",
+      "variants": {
+        "batch32": {
+          "seconds": 7.610454358000425,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 14,
+          "candidate_checks": 31,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 4.797007633998874,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 14,
+          "candidate_checks": 31,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 6.369292750998284,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 14,
+          "candidate_checks": 31,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8369135995543577
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.3277637304255705
+        }
+      }
+    },
+    {
+      "id": "M0009_S1_open_bowl",
+      "variants": {
+        "control": {
+          "seconds": 9.387495372997364,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 11,
+          "candidate_checks": 24,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 9.56112889599899,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 11,
+          "candidate_checks": 24,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 10.001311186002567,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 11,
+          "candidate_checks": 24,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9818396420662955
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9386264659113622
+        }
+      }
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "variants": {
+        "control": {
+          "seconds": 23.16641585299658,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 13.184739802993136,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 11.69218074499804,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.7570628013256244
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.9813597102411593
+        }
+      }
+    },
+    {
+      "id": "M0011_S1_open_bread",
+      "variants": {
+        "batch16": {
+          "seconds": 28.9275815699948,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 190,
+          "candidate_checks": 382,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 57.67685727099888,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 190,
+          "candidate_checks": 382,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 31.74124505800137,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 190,
+          "candidate_checks": 382,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.9938361294199696
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.8170949868414072
+        }
+      }
+    },
+    {
+      "id": "M0012_S1_open_broccoli",
+      "variants": {
+        "batch16": {
+          "seconds": 17.51416464099748,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 75,
+          "candidate_checks": 152,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 18.199277660998632,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 75,
+          "candidate_checks": 152,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 26.019074518997513,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 75,
+          "candidate_checks": 152,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.4856018001618865
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.429676221422614
+        }
+      }
+    },
+    {
+      "id": "M0015_S1_open_carrot",
+      "variants": {
+        "batch32": {
+          "seconds": 10.39211683999747,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 7,
+          "candidate_checks": 16,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 8.219232565999846,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 7,
+          "candidate_checks": 16,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 5.415568249001808,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 7,
+          "candidate_checks": 16,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7909103306426881
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.5177045488282428
+        }
+      }
+    },
+    {
+      "id": "M0016_S1_open_cell_phone",
+      "variants": {
+        "batch32": {
+          "seconds": 46.56129848099954,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 305,
+          "candidate_checks": 642,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 58.0408041519986,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 305,
+          "candidate_checks": 642,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 95.22041701700073,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 305,
+          "candidate_checks": 642,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.0450550161494685
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.6405771492695949
+        }
+      }
+    },
+    {
+      "id": "M0018_S1_open_croissant",
+      "variants": {
+        "control": {
+          "seconds": 38.39548890799779,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 99,
+          "candidate_checks": 223,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 14.820835571001226,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 99,
+          "candidate_checks": 223,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 37.23060623499623,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 99,
+          "candidate_checks": 223,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.5906426614112936
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.0312883079488129
+        }
+      }
+    },
+    {
+      "id": "M0019_S1_open_cucumber",
+      "variants": {
+        "control": {
+          "seconds": 6.12768761299958,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 6.149445511000522,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 5.079186454000592,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9964618114003905
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.2064309252071543
+        }
+      }
+    },
+    {
+      "id": "M0020_S1_open_donut",
+      "variants": {
+        "batch16": {
+          "seconds": 103.40369661799923,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 375,
+          "candidate_checks": 752,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 143.50361961399904,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 375,
+          "candidate_checks": 752,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 101.36442716400052,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 375,
+          "candidate_checks": 752,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.3877997045322237
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.415719731556518
+        }
+      }
+    },
+    {
+      "id": "M0022_S2_edge_keychain",
+      "variants": {
+        "batch16": {
+          "seconds": 34.724732577000395,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 82,
+          "candidate_checks": 166,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 27.45492856099736,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 82,
+          "candidate_checks": 166,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 35.0201005370036,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 82,
+          "candidate_checks": 166,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.0085059822807343
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.2755487765775275
+        }
+      }
+    },
+    {
+      "id": "M0023_S2_edge_lemon",
+      "variants": {
+        "batch32": {
+          "seconds": 11.255188155999349,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 7,
+          "candidate_checks": 16,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 7.959341631998541,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 7,
+          "candidate_checks": 16,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 8.4722902709982,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 7,
+          "candidate_checks": 16,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7071709083562477
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9394557289006548
+        }
+      }
+    },
+    {
+      "id": "M0024_S2_edge_mango",
+      "variants": {
+        "batch32": {
+          "seconds": 12.068007223002496,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 11,
+          "candidate_checks": 24,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 8.14395392100414,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 11,
+          "candidate_checks": 24,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 11.295140235000872,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 11,
+          "candidate_checks": 24,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9359573644828051
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.3869356757863622
+        }
+      }
+    },
+    {
+      "id": "M0026_S2_edge_mug",
+      "variants": {
+        "control": {
+          "seconds": 8.806042461001198,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 9.560950197999773,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 7.552200805999746,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9210426033642024
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.1660233469964614
+        }
+      }
+    },
+    {
+      "id": "M0027_S2_edge_mushroom",
+      "variants": {
+        "control": {
+          "seconds": 7.811315608996665,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 13,
+          "candidate_checks": 28,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 8.234088306002377,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 13,
+          "candidate_checks": 28,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 7.094440234002832,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 13,
+          "candidate_checks": 28,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9486557975462171
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.1010474894915503
+        }
+      }
+    },
+    {
+      "id": "M0029_S2_edge_orange",
+      "variants": {
+        "batch16": {
+          "seconds": 70.35557449499902,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 233,
+          "candidate_checks": 505,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 55.53965756599791,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 233,
+          "candidate_checks": 505,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 61.540075573997456,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 233,
+          "candidate_checks": 505,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7894137453165955
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9024957647186429
+        }
+      }
+    },
+    {
+      "id": "M0030_S2_edge_peach",
+      "variants": {
+        "batch16": {
+          "seconds": 11.974934705998749,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 4,
+          "candidate_checks": 18,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 11.985525199001131,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 4,
+          "candidate_checks": 18,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 5.6899301249941345,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 4,
+          "candidate_checks": 18,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.47515333191285036
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.4747334831408415
+        }
+      }
+    },
+    {
+      "id": "M0031_S2_edge_pear",
+      "variants": {
+        "batch32": {
+          "seconds": 22.987960976999602,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 22,
+          "candidate_checks": 86,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 26.774158197004,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 22,
+          "candidate_checks": 86,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 9.629020332999062,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 22,
+          "candidate_checks": 86,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.1647034821310442
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.7805692864982143
+        }
+      }
+    },
+    {
+      "id": "M0032_S2_edge_potato",
+      "variants": {
+        "batch32": {
+          "seconds": 12.864360701001715,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 3,
+          "candidate_checks": 20,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 8.995906983000168,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 3,
+          "candidate_checks": 20,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 9.059988874003466,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 3,
+          "candidate_checks": 20,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7042704324434861
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.0071234497115626
+        }
+      }
+    },
+    {
+      "id": "M0033_S2_edge_remote_control",
+      "variants": {
+        "control": {
+          "seconds": 28.5486143839953,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 43,
+          "candidate_checks": 88,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 11.026081172996783,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 43,
+          "candidate_checks": 88,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 28.10711299799732,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 43,
+          "candidate_checks": 88,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.589189571169832
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.0157078169511553
+        }
+      }
+    },
+    {
+      "id": "M0034_S2_edge_scissors",
+      "variants": {
+        "control": {
+          "seconds": 61.970906255002774,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 128,
+          "candidate_checks": 273,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 61.21858612699725,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 128,
+          "candidate_checks": 273,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 47.49214456399932,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 128,
+          "candidate_checks": 273,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.0122890804182383
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.3048664536825076
+        }
+      }
+    },
+    {
+      "id": "M0036_S2_edge_spatula",
+      "variants": {
+        "batch16": {
+          "seconds": 13.942752200004179,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 30,
+          "candidate_checks": 62,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 20.192746512999292,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 30,
+          "candidate_checks": 62,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 16.59001108999655,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 30,
+          "candidate_checks": 62,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.4482611627418323
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.2171629303596498
+        }
+      }
+    },
+    {
+      "id": "M0038_S2_edge_teapot",
+      "variants": {
+        "batch16": {
+          "seconds": 11.226871840997774,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 13.254063196000061,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 5.023236295004608,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.44742973520557927
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.3789959517109115
+        }
+      }
+    },
+    {
+      "id": "M0039_S2_edge_tomato",
+      "variants": {
+        "batch32": {
+          "seconds": 14.401645783997083,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 17,
+          "candidate_checks": 79,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 12.291703713999595,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 17,
+          "candidate_checks": 79,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 23.53305147699575,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 17,
+          "candidate_checks": 79,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8534929895066558
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.52231661185185
+        }
+      }
+    },
+    {
+      "id": "M0041_S3_sparse_apple",
+      "variants": {
+        "batch32": {
+          "seconds": 13.211815941001987,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 9,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 8.23679128799995,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 9,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 7.632555816999229,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 9,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.5777067930012636
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9266418864004698
+        }
+      }
+    },
+    {
+      "id": "M0042_S3_sparse_avocado",
+      "variants": {
+        "control": {
+          "seconds": 10.863411500002258,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 16,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 5.225649865999003,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 16,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 6.827751195000019,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 16,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.078863256929187
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.5910672767275942
+        }
+      }
+    },
+    {
+      "id": "M0043_S3_sparse_baguette",
+      "variants": {
+        "control": {
+          "seconds": 29.602164110998274,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 25,
+          "candidate_checks": 106,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 15.468661985003564,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 25,
+          "candidate_checks": 106,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 9.06346152399783,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 25,
+          "candidate_checks": 106,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.9136861442635922
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 3.266099164499014
+        }
+      }
+    },
+    {
+      "id": "M0044_S3_sparse_banana",
+      "variants": {
+        "batch16": {
+          "seconds": 6.903219004998391,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 7.755374776999815,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 9.072904770000605,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.1234432474740272
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8547841042752726
+        }
+      }
+    },
+    {
+      "id": "M0045_S3_sparse_bar_soap",
+      "variants": {
+        "batch16": {
+          "seconds": 45.520037800000864,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 184,
+          "candidate_checks": 370,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 40.72051577000093,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 184,
+          "candidate_checks": 370,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 69.33931907000078,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 184,
+          "candidate_checks": 370,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.5232702436376155
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.7028104325015332
+        }
+      }
+    },
+    {
+      "id": "M0046_S3_sparse_bell_pepper",
+      "variants": {
+        "batch32": {
+          "seconds": 6.718943665000552,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 4.941022876999341,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 5.086681777000194,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7353868589101997
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9713646525600519
+        }
+      }
+    },
+    {
+      "id": "M0047_S3_sparse_book",
+      "variants": {
+        "batch32": {
+          "seconds": 43.550260026000615,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 124,
+          "candidate_checks": 250,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 17.28738066900405,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 124,
+          "candidate_checks": 250,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 47.8642349820002,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 124,
+          "candidate_checks": 250,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.0990573868772318
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.7687384166775404
+        }
+      }
+    },
+    {
+      "id": "M0048_S3_sparse_bottled_water",
+      "variants": {
+        "control": {
+          "seconds": 24.347318043997802,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 30,
+          "candidate_checks": 62,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 6.708252017000632,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 30,
+          "candidate_checks": 62,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 8.901845223001146,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 30,
+          "candidate_checks": 62,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 3.6294578650734537
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.7350866515952976
+        }
+      }
+    },
+    {
+      "id": "M0050_S3_sparse_boxed_food",
+      "variants": {
+        "control": {
+          "seconds": 55.75644739499694,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 103,
+          "candidate_checks": 208,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 41.478929450997384,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 103,
+          "candidate_checks": 208,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 18.909777228000166,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 103,
+          "candidate_checks": 208,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.3442113413478236
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.948551255931086
+        }
+      }
+    },
+    {
+      "id": "M0052_S3_sparse_broccoli",
+      "variants": {
+        "batch16": {
+          "seconds": 15.306657239998458,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 47,
+          "candidate_checks": 96,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 39.33126655600063,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 47,
+          "candidate_checks": 96,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 9.976814434005064,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 47,
+          "candidate_checks": 96,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.5695529689671543
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 3.9422670248274425
+        }
+      }
+    },
+    {
+      "id": "M0055_S3_sparse_carrot",
+      "variants": {
+        "batch16": {
+          "seconds": 10.754229463003867,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 3,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 7.356032869000046,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 3,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 6.57688726100605,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 3,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.6115628538177943
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.894080733206415
+        }
+      }
+    },
+    {
+      "id": "M0056_S3_sparse_cell_phone",
+      "variants": {
+        "batch32": {
+          "seconds": 78.35646349500166,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 340,
+          "candidate_checks": 682,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 106.1007314410017,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 340,
+          "candidate_checks": 682,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 86.94458733599458,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 340,
+          "candidate_checks": 682,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.354077592434603
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.220325895975316
+        }
+      }
+    },
+    {
+      "id": "M0058_S3_sparse_croissant",
+      "variants": {
+        "batch32": {
+          "seconds": 12.201640564002446,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 69,
+          "candidate_checks": 140,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 24.566268459995626,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 69,
+          "candidate_checks": 140,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 32.42312646999926,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 69,
+          "candidate_checks": 140,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.6572759867762943
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.319823013527592
+        }
+      }
+    },
+    {
+      "id": "M0059_S3_sparse_cucumber",
+      "variants": {
+        "control": {
+          "seconds": 7.125940763995459,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 8,
+          "candidate_checks": 18,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 5.852979276001861,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 8,
+          "candidate_checks": 18,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 8.311149316999945,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 8,
+          "candidate_checks": 18,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.2174894917555819
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8573953483689416
+        }
+      }
+    },
+    {
+      "id": "M0060_S3_sparse_donut",
+      "variants": {
+        "control": {
+          "seconds": 115.97470449400134,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 288,
+          "candidate_checks": 578,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 42.99153303800267,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 288,
+          "candidate_checks": 578,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 71.42827883700375,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 288,
+          "candidate_checks": 578,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.697617328311709
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.6236525138545004
+        }
+      }
+    },
+    {
+      "id": "M0061_S4_clutter_eggplant",
+      "variants": {
+        "batch16": {
+          "seconds": 8.909503509996284,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 25,
+          "candidate_checks": 52,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 15.577514130993222,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 25,
+          "candidate_checks": 52,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 27.124859303999983,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 25,
+          "candidate_checks": 52,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.7484155108660728
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.574289214053032
+        }
+      }
+    },
+    {
+      "id": "M0062_S4_clutter_keychain",
+      "variants": {
+        "batch16": {
+          "seconds": 19.224884602997918,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 140,
+          "candidate_checks": 282,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 20.57889510899986,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 140,
+          "candidate_checks": 282,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 73.5795000720027,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 140,
+          "candidate_checks": 282,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 3.8273051615887854
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 3.5754835078499356
+        }
+      }
+    },
+    {
+      "id": "M0063_S4_clutter_lemon",
+      "variants": {
+        "batch32": {
+          "seconds": 16.205111116003536,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 2,
+          "candidate_checks": 6,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 4.716392160000396,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 2,
+          "candidate_checks": 6,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 6.249531143002969,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 2,
+          "candidate_checks": 6,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.29104349400866936
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7546793594717759
+        }
+      }
+    },
+    {
+      "id": "M0064_S4_clutter_mango",
+      "variants": {
+        "batch32": {
+          "seconds": 7.230003631004365,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 13,
+          "candidate_checks": 30,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 4.884769659001904,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 13,
+          "candidate_checks": 30,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 5.714875769997889,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 13,
+          "candidate_checks": 30,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7904388519932181
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.169937616089271
+        }
+      }
+    },
+    {
+      "id": "M0065_S4_clutter_milk",
+      "variants": {
+        "control": {
+          "seconds": 13.922946209997463,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 18,
+          "candidate_checks": 99,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 22.98409995100519,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 18,
+          "candidate_checks": 99,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 24.769185746001313,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 18,
+          "candidate_checks": 99,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.6057642561456297
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.5621075457535036
+        }
+      }
+    },
+    {
+      "id": "M0066_S4_clutter_mug",
+      "variants": {
+        "control": {
+          "seconds": 11.701685308005835,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 8.084716090001166,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 8.13215010100248,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.4473835788096485
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.4389411364361469
+        }
+      }
+    },
+    {
+      "id": "M0067_S4_clutter_mushroom",
+      "variants": {
+        "batch16": {
+          "seconds": 15.735155879003287,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 32,
+          "candidate_checks": 66,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 24.11126861700177,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 32,
+          "candidate_checks": 66,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 8.315993048003293,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 32,
+          "candidate_checks": 66,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.5323183832691114
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.8993853744010756
+        }
+      }
+    },
+    {
+      "id": "M0069_S4_clutter_orange",
+      "variants": {
+        "batch16": {
+          "seconds": 64.76213602200005,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 272,
+          "candidate_checks": 580,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 54.56145157599531,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 272,
+          "candidate_checks": 580,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 109.23184432600101,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 272,
+          "candidate_checks": 580,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.6866621614965627
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.001996669275902
+        }
+      }
+    },
+    {
+      "id": "M0070_S4_clutter_peach",
+      "variants": {
+        "batch32": {
+          "seconds": 15.498995952999394,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 7,
+          "candidate_checks": 24,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 13.11168455099687,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 7,
+          "candidate_checks": 24,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 5.724079142004484,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 7,
+          "candidate_checks": 24,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8459699319077164
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.2906190193599176
+        }
+      }
+    },
+    {
+      "id": "M0071_S4_clutter_pear",
+      "variants": {
+        "batch32": {
+          "seconds": 6.752836020998075,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 10,
+          "candidate_checks": 27,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 6.0964842600005795,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 10,
+          "candidate_checks": 27,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 9.975371043998166,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 10,
+          "candidate_checks": 27,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.477212094737612
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.6362497824274245
+        }
+      }
+    },
+    {
+      "id": "M0072_S4_clutter_potato",
+      "variants": {
+        "control": {
+          "seconds": 7.781571341998642,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 9.774374351996812,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 12.065202459001739,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7961196350545896
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.6449598644068241
+        }
+      }
+    },
+    {
+      "id": "M0074_S4_clutter_scissors",
+      "variants": {
+        "control": {
+          "seconds": 65.61876353399566,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 166,
+          "candidate_checks": 334,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 32.808801004001,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 166,
+          "candidate_checks": 334,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 42.493096156998945,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 166,
+          "candidate_checks": 334,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.0000354028784386
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.5442217552600657
+        }
+      }
+    },
+    {
+      "id": "M0078_S4_clutter_teapot",
+      "variants": {
+        "batch16": {
+          "seconds": 7.327036810005666,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 4.607760767001309,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 5.927074933999393,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.6288709728752879
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7774088936466585
+        }
+      }
+    },
+    {
+      "id": "M0079_S4_clutter_tomato",
+      "variants": {
+        "batch16": {
+          "seconds": 5.015893508003501,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 5.555424553997,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 5.207596904998354,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.0382191919922077
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9373895468081928
+        }
+      }
+    },
+    {
+      "id": "M0081_S5_occluded_apple",
+      "variants": {
+        "batch32": {
+          "seconds": 28.736864612998033,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 21,
+          "candidate_checks": 102,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 14.286582091997843,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 21,
+          "candidate_checks": 102,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 9.521634850003466,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 21,
+          "candidate_checks": 102,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.49715173469327784
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.5004337298224204
+        }
+      }
+    },
+    {
+      "id": "M0082_S5_occluded_avocado",
+      "variants": {
+        "batch32": {
+          "seconds": 22.582217665993085,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 41,
+          "candidate_checks": 84,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 19.12284452899621,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 41,
+          "candidate_checks": 84,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 29.671480151999276,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 41,
+          "candidate_checks": 84,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.3139311909424212
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.551624817479849
+        }
+      }
+    },
+    {
+      "id": "M0084_S5_occluded_banana",
+      "variants": {
+        "control": {
+          "seconds": 50.25711267700535,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 110,
+          "candidate_checks": 222,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 26.5807606390008,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 110,
+          "candidate_checks": 222,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 35.06233575600345,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 110,
+          "candidate_checks": 222,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.8907326753947464
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.433364651651886
+        }
+      }
+    },
+    {
+      "id": "M0085_S5_occluded_bar_soap",
+      "variants": {
+        "control": {
+          "seconds": 137.34290945300017,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 261,
+          "candidate_checks": 524,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 79.81411167600163,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 261,
+          "candidate_checks": 524,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 65.89335680800286,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 261,
+          "candidate_checks": 524,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.7207847906712492
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.084321031833055
+        }
+      }
+    },
+    {
+      "id": "M0086_S5_occluded_bell_pepper",
+      "variants": {
+        "batch16": {
+          "seconds": 8.820136971997272,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 2,
+          "candidate_checks": 6,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 6.514773595998122,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 2,
+          "candidate_checks": 6,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 9.23267928200221,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 2,
+          "candidate_checks": 6,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.738624991503152
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7056211308777662
+        }
+      }
+    },
+    {
+      "id": "M0089_S5_occluded_bowl",
+      "variants": {
+        "batch16": {
+          "seconds": 28.681872454006225,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 105,
+          "candidate_checks": 227,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 37.51783233400056,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 105,
+          "candidate_checks": 227,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 47.30651390899584,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 105,
+          "candidate_checks": 227,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.6493523560867855
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.2609074396370252
+        }
+      }
+    },
+    {
+      "id": "M0092_S5_occluded_broccoli",
+      "variants": {
+        "batch32": {
+          "seconds": 33.74324136699579,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 69,
+          "candidate_checks": 150,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 16.624052197999845,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 69,
+          "candidate_checks": 150,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 17.770292804998462,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 69,
+          "candidate_checks": 150,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.492663168223661
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.9354968080955762
+        }
+      }
+    },
+    {
+      "id": "M0095_S5_occluded_carrot",
+      "variants": {
+        "batch32": {
+          "seconds": 21.806919518996438,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 22,
+          "candidate_checks": 103,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 27.186069565999787,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 22,
+          "candidate_checks": 103,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 18.977397107999423,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 22,
+          "candidate_checks": 103,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8702465789112414
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.6980559312528749
+        }
+      }
+    },
+    {
+      "id": "M0098_S5_occluded_croissant",
+      "variants": {
+        "control": {
+          "seconds": 15.55590019599913,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 55,
+          "candidate_checks": 112,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 20.03112348499417,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 55,
+          "candidate_checks": 112,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 29.4270636059955,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 55,
+          "candidate_checks": 112,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7765865058768399
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.5286256353770125
+        }
+      }
+    },
+    {
+      "id": "M0099_S5_occluded_cucumber",
+      "variants": {
+        "control": {
+          "seconds": 10.402404676002334,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 10,
+          "candidate_checks": 22,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 8.223871957998199,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 10,
+          "candidate_checks": 22,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch16": {
+          "seconds": 5.670180743996752,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 10,
+          "candidate_checks": 22,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.264903530737171
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.8345807912764998
+        }
+      }
+    },
+    {
+      "id": "M0100_S5_occluded_donut",
+      "variants": {
+        "batch16": {
+          "seconds": 56.463617916997464,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 207,
+          "candidate_checks": 416,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control": {
+          "seconds": 46.41069845799939,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 207,
+          "candidate_checks": 416,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "batch32": {
+          "seconds": 56.09266912399471,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 207,
+          "candidate_checks": 416,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8219575749861433
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.827393297249004
+        }
+      }
     }
-  ]
+  ],
+  "summaries": {
+    "control": {
+      "requests": 69,
+      "successes": 69,
+      "median_seconds": 15.55590019599913,
+      "p90_seconds": 75.98337429900133,
+      "total_seconds": 2151.755321524972
+    },
+    "batch16": {
+      "requests": 69,
+      "successes": 69,
+      "median_seconds": 11.026081172996783,
+      "p90_seconds": 56.7790551639977,
+      "total_seconds": 1445.1964345229935
+    },
+    "batch32": {
+      "requests": 69,
+      "successes": 69,
+      "median_seconds": 15.468661985003564,
+      "p90_seconds": 54.867695085595194,
+      "total_seconds": 1650.4757603259714
+    }
+  },
+  "control_successes_retained": {
+    "batch16": true,
+    "batch32": true
+  },
+  "record_integrity": true,
+  "independent_review_passed": true,
+  "independent_endpoints": 621
 }

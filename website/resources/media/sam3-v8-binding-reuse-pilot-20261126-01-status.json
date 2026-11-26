@@ -1,0 +1,144 @@
+{
+  "at": "2026-11-26T13:20:52.251162+08:00",
+  "phase": "planning",
+  "completed_requests": 8,
+  "total_requests": 20,
+  "current": {
+    "id": "M0010_S1_open_boxed_food",
+    "variant": "control_1"
+  },
+  "run": "tmp/indexed_grasp_planning/binding_reuse_pilot_20261126_01",
+  "gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "cases": 5,
+  "experiment": "binding_reuse",
+  "variants": {
+    "control_1": false,
+    "reuse_1": true,
+    "reuse_2": true,
+    "control_2": false
+  },
+  "physical_grasps": 0,
+  "offline_checks": 20,
+  "model_warmup_complete": true,
+  "stopped": false,
+  "results": [
+    {
+      "id": "M0001_S1_open_apple",
+      "variants": {
+        "control_1": {
+          "seconds": 5.298897503002081,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": 2.227284802997019,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse_1": {
+          "seconds": 4.125056859003962,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": 1.6542867560056038,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse_2": {
+          "seconds": 3.404561265000666,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": 1.3215013860026374,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control_2": {
+          "seconds": 4.89693736800109,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": 2.1221961229966837,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse_1": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.284563506424383
+        },
+        "reuse_2": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.4383460853949803
+        }
+      }
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "variants": {
+        "reuse_1": {
+          "seconds": 5.744901846002904,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 2.3260657390055712,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control_1": {
+          "seconds": 5.038020396998036,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 1.9215130170123302,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control_2": {
+          "seconds": 6.332498764000775,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 2.3954788580085733,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse_2": {
+          "seconds": 6.980284452001797,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 2.7850615670031402,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse_1": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8769549997626694
+        },
+        "reuse_2": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9071978094223293
+        }
+      }
+    }
+  ]
+}

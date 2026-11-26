@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T03:30:46.210Z",
+  "generatedAt": "2026-11-26T05:21:25.237Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1415,11 +1415,11 @@
     },
     {
       "file": "media/sam3-v8-indexed-planning-plan.md",
-      "sha256": "4629791bed1388a172ec905e8f837a51c1601647d703ecd8b73bbde0e5aeac07"
+      "sha256": "af23cf70cd088f03714c07a9a40207b4cc2fc65a826a10970fb250456829219f"
     },
     {
       "file": "media/sam3-v8-indexed-planning-config.json",
-      "sha256": "ffa5a3c21653fe7634c92f49828038969e68966d0321b72d30611740c4313be5"
+      "sha256": "3d0c738c62fa1a94176738eb64664df75e73c6a971a344c4316fd7c4e6dd28eb"
     },
     {
       "file": "media/sam3-v8-indexed-planning-preparation.json",
@@ -1527,7 +1527,7 @@
     },
     {
       "file": "media/sam3-v8-native-batch-method.md",
-      "sha256": "2c92df079e7a815bac75fbd2288e9ffd3e3c2f492cbd8e21141b628167acecc1"
+      "sha256": "98102c5aac73d0104c661f097da2d7faa7d4628b903e1dba42c3d00d28e2004c"
     },
     {
       "file": "media/sam3-v8-batch-rows-validation.json",
@@ -1539,7 +1539,23 @@
     },
     {
       "file": "media/sam3-v8-native-batch-69-20261126-01-status.json",
-      "sha256": "be1b3bb3c6096c947159da8bc78bf97683e010d64de6101c8bf6caff8a689c51"
+      "sha256": "0b31a87cc0ff0baa98b4417665046cf13474ce44abb7fe53bbf52806eb4f5902"
+    },
+    {
+      "file": "media/sam3-v8-native-batch-final.md",
+      "sha256": "1c9d3252ac64f5b0889f5d009d3a3c411e3d6b92d6c4ed11b3cf75e5467b8209"
+    },
+    {
+      "file": "media/sam3-v8-binding-reuse-method.md",
+      "sha256": "6c4d0722d2deec56555e644556c241db62787723f493a3b579d00fbbd7d3fbe5"
+    },
+    {
+      "file": "media/sam3-v8-native-batch-fk-review.json",
+      "sha256": "78652aaa2baac83800c38d7105c1a3588c41fbd57707b36a7ae78b46f54c73b4"
+    },
+    {
+      "file": "media/sam3-v8-binding-reuse-pilot-20261126-01-status.json",
+      "sha256": "eed04ff9bd928c9959ed6208df3ef4014167903089df812526e8d1a40af82b1c"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
