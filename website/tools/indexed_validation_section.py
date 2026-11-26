@@ -65,6 +65,12 @@ def section(website, site, active):
         saving = accepted['planning_total_time_reduction']
         lines += [f"原抓点、选臂、关节终点和候选拒绝分类全部一致，{reviewed['checked_endpoints']}个终点独立FK／限位核验通过。",
             (f'累计耗时减少{saving:.2%}。' if saving >= 0 else f'累计耗时增加{-saving:.2%}。'), '']
+        if full:
+            rows = accepted['cases']
+            faster = sum(row['variants']['vectorized_1']['planning_request_seconds'] <
+                         row['variants']['control_1']['planning_request_seconds'] for row in rows)
+            lines += [f'{faster}个场景更快、{len(rows)-faster}个更慢。收益集中在部分慢场景，'
+                      '中位耗时有所增加，P90基本持平；这项实现先保留为可选方案。', '']
         lines += [(('完整对照已完成，按全部输入的耗时和稳定性确定后续组合。' if full else
                     '达到先导2%的省时门槛，下一步比较完整69场景。') if accepted['timing_gate_passed'] else
                    '尚未达到2%的省时门槛，先分析新增分项计时，调整下一项优化。'), '']

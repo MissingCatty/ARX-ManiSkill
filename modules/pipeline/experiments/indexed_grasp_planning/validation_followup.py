@@ -1,5 +1,6 @@
 """Read-only follow-up: independent review, report, then publish V8 results."""
 import argparse
+import json
 from pathlib import Path
 import shutil
 import subprocess
@@ -10,6 +11,7 @@ import urllib.request
 from arx_project.layout import ROOT, ensure_run_path, now, read_json, sha256, write_json
 from .validation_launch import controller_unit
 from .validation_review import validate
+from .followup_state import completed_controller
 
 
 def report(run, checked):
@@ -84,8 +86,13 @@ def run(root, source):
     write_json(root/'registration.json', {'at': now(), 'run': str(source.relative_to(ROOT)),
         'source_sha256': sha256(__file__), 'planning_requests': 0, 'physical_grasps': 0})
     status = root/'status.json'
+    expected_requests = json.loads((source/'registration.json').read_text())['planning_requests']
+    def latest_progress():
+        # Only progress fields are consumed here; archived path relocation is
+        # unnecessary for these increasingly large, already-canonical receipts.
+        return json.loads((source/'progress.json').read_text())
     while True:
-        progress = read_json(source/'progress.json')
+        progress = latest_progress()
         write_json(status, {'at': now(), 'phase': 'following', 'run': str(source.relative_to(ROOT)),
             **{k: progress.get(k) for k in ['completed_requests', 'total_requests', 'current']}})
         if (source/'STOP').exists(): raise RuntimeError('Validation pilot stopped; do not retry this registration')
@@ -93,9 +100,7 @@ def run(root, source):
             state = subprocess.check_output(['systemctl', '--user', 'show', controller_unit(source),
                 '-p', 'MainPID', '-p', 'ActiveState', '-p', 'ExecMainStatus'], text=True)
             fields = dict(line.split('=', 1) for line in state.strip().splitlines())
-            if fields['MainPID'] == '0' and fields['ActiveState'] not in ['active', 'activating']:
-                if fields['ExecMainStatus'] != '0' or progress['phase'] != 'complete':
-                    raise RuntimeError('Validation controller exited before completing the pilot')
+            if completed_controller(fields, latest_progress, expected_requests) is not None:
                 break
         time.sleep(5)
     checked = validate(source);report(source, checked)

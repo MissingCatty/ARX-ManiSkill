@@ -2,16 +2,364 @@
   "run": "tmp/indexed_grasp_planning/validation69_20261126_01",
   "experiment": "batched_fallback_validation",
   "gpu": "GPU-b827b8be-c675-83f7-1b4c-39b5811c6d5e",
-  "phase": "planning",
-  "completed_requests": 31,
+  "phase": "complete",
+  "completed_requests": 138,
   "total_requests": 138,
-  "current": {
-    "id": "M0022_S2_edge_keychain",
-    "variant": "control_1"
+  "current": null,
+  "summaries": {
+    "control": {
+      "requests": 69,
+      "successes": 69,
+      "median_seconds": 9.978941950990702,
+      "p90_seconds": 31.761911518801934,
+      "total_seconds": 1069.3701642060769,
+      "candidate_checks": 6647,
+      "stage_totals": {
+        "resident_world_bind": {
+          "calls": 530,
+          "wall_seconds": 198.15686750705936,
+          "exclusive_seconds": 198.15686750705936
+        },
+        "contact_world_bind": {
+          "calls": 254,
+          "wall_seconds": 35.59695936100616,
+          "exclusive_seconds": 35.59695936100616
+        },
+        "batch_world_bind": {
+          "calls": 254,
+          "wall_seconds": 0.32642197208770085,
+          "exclusive_seconds": 0.32642197208770085
+        },
+        "independent_FK": {
+          "calls": 14549,
+          "wall_seconds": 20.26138072871254,
+          "exclusive_seconds": 20.26138072871254
+        },
+        "grasp_batch_full_world_IK": {
+          "calls": 482,
+          "wall_seconds": 507.0118889147998,
+          "exclusive_seconds": 506.86193393987196
+        },
+        "grasp_batch_kinematic_IK": {
+          "calls": 479,
+          "wall_seconds": 19.231144084085827,
+          "exclusive_seconds": 19.231144084085827
+        },
+        "grasp_endpoint": {
+          "calls": 6647,
+          "wall_seconds": 637.4420372107124,
+          "exclusive_seconds": 3.438117789104581
+        },
+        "pregrasp_scalar_IK": {
+          "calls": 108,
+          "wall_seconds": 4.412218594006845,
+          "exclusive_seconds": 4.412218594006845
+        },
+        "lift_scalar_IK": {
+          "calls": 108,
+          "wall_seconds": 2.3138147039862815,
+          "exclusive_seconds": 2.3138147039862815
+        },
+        "PRM_path": {
+          "calls": 177,
+          "wall_seconds": 15.421240882918937,
+          "exclusive_seconds": 15.421240882918937
+        },
+        "trajectory_approach": {
+          "calls": 84,
+          "wall_seconds": 12.470422765924013,
+          "exclusive_seconds": 12.470422765924013
+        },
+        "trajectory_pregrasp": {
+          "calls": 93,
+          "wall_seconds": 16.095501706004143,
+          "exclusive_seconds": 16.095501706004143
+        },
+        "candidate_search": {
+          "calls": 254,
+          "wall_seconds": 692.9650026820018,
+          "exclusive_seconds": 1.8279322763846722
+        },
+        "local_collision_validate": {
+          "calls": 8205,
+          "wall_seconds": 99.23451342739281,
+          "exclusive_seconds": 90.3048732389143
+        }
+      }
+    },
+    "vectorized": {
+      "requests": 69,
+      "successes": 69,
+      "median_seconds": 11.011090253989096,
+      "p90_seconds": 31.665101016598058,
+      "total_seconds": 1031.874738434868,
+      "candidate_checks": 6647,
+      "stage_totals": {
+        "resident_world_bind": {
+          "calls": 530,
+          "wall_seconds": 214.91160855194903,
+          "exclusive_seconds": 214.91160855194903
+        },
+        "contact_world_bind": {
+          "calls": 254,
+          "wall_seconds": 38.161236502972315,
+          "exclusive_seconds": 38.161236502972315
+        },
+        "batch_world_bind": {
+          "calls": 254,
+          "wall_seconds": 0.3270216819946654,
+          "exclusive_seconds": 0.3270216819946654
+        },
+        "independent_FK": {
+          "calls": 7540,
+          "wall_seconds": 10.062599818280432,
+          "exclusive_seconds": 10.062599818280432
+        },
+        "grasp_batch_full_world_IK": {
+          "calls": 482,
+          "wall_seconds": 530.5651447870478,
+          "exclusive_seconds": 530.4176284940331
+        },
+        "grasp_batch_kinematic_IK": {
+          "calls": 479,
+          "wall_seconds": 19.705127239009016,
+          "exclusive_seconds": 19.705127239009016
+        },
+        "grasp_endpoint": {
+          "calls": 6647,
+          "wall_seconds": 586.1737262903625,
+          "exclusive_seconds": 10.997634850355098
+        },
+        "pregrasp_scalar_IK": {
+          "calls": 108,
+          "wall_seconds": 4.809618260973366,
+          "exclusive_seconds": 4.809618260973366
+        },
+        "lift_scalar_IK": {
+          "calls": 108,
+          "wall_seconds": 2.19746395193215,
+          "exclusive_seconds": 2.19746395193215
+        },
+        "PRM_path": {
+          "calls": 177,
+          "wall_seconds": 15.68842689594021,
+          "exclusive_seconds": 15.68842689594021
+        },
+        "trajectory_approach": {
+          "calls": 84,
+          "wall_seconds": 11.686085598994396,
+          "exclusive_seconds": 11.686085598994396
+        },
+        "trajectory_pregrasp": {
+          "calls": 93,
+          "wall_seconds": 16.587208139055292,
+          "exclusive_seconds": 16.587208139055292
+        },
+        "candidate_search": {
+          "calls": 254,
+          "wall_seconds": 642.4973544349778,
+          "exclusive_seconds": 1.8074785637581954
+        },
+        "local_collision_validate": {
+          "calls": 1133,
+          "wall_seconds": 26.586360943940235,
+          "exclusive_seconds": 18.211060940651805
+        }
+      }
+    }
   },
-  "summaries": null,
-  "accepted": null,
-  "independent_review": null,
+  "accepted": {
+    "at": "2026-11-26T20:27:48.827414+08:00",
+    "task_complete": true,
+    "record_integrity": true,
+    "planning_requests": 138,
+    "summaries": {
+      "control": {
+        "requests": 69,
+        "successes": 69,
+        "median_seconds": 9.978941950990702,
+        "p90_seconds": 31.761911518801934,
+        "total_seconds": 1069.3701642060769,
+        "candidate_checks": 6647,
+        "stage_totals": {
+          "resident_world_bind": {
+            "calls": 530,
+            "wall_seconds": 198.15686750705936,
+            "exclusive_seconds": 198.15686750705936
+          },
+          "contact_world_bind": {
+            "calls": 254,
+            "wall_seconds": 35.59695936100616,
+            "exclusive_seconds": 35.59695936100616
+          },
+          "batch_world_bind": {
+            "calls": 254,
+            "wall_seconds": 0.32642197208770085,
+            "exclusive_seconds": 0.32642197208770085
+          },
+          "independent_FK": {
+            "calls": 14549,
+            "wall_seconds": 20.26138072871254,
+            "exclusive_seconds": 20.26138072871254
+          },
+          "grasp_batch_full_world_IK": {
+            "calls": 482,
+            "wall_seconds": 507.0118889147998,
+            "exclusive_seconds": 506.86193393987196
+          },
+          "grasp_batch_kinematic_IK": {
+            "calls": 479,
+            "wall_seconds": 19.231144084085827,
+            "exclusive_seconds": 19.231144084085827
+          },
+          "grasp_endpoint": {
+            "calls": 6647,
+            "wall_seconds": 637.4420372107124,
+            "exclusive_seconds": 3.438117789104581
+          },
+          "pregrasp_scalar_IK": {
+            "calls": 108,
+            "wall_seconds": 4.412218594006845,
+            "exclusive_seconds": 4.412218594006845
+          },
+          "lift_scalar_IK": {
+            "calls": 108,
+            "wall_seconds": 2.3138147039862815,
+            "exclusive_seconds": 2.3138147039862815
+          },
+          "PRM_path": {
+            "calls": 177,
+            "wall_seconds": 15.421240882918937,
+            "exclusive_seconds": 15.421240882918937
+          },
+          "trajectory_approach": {
+            "calls": 84,
+            "wall_seconds": 12.470422765924013,
+            "exclusive_seconds": 12.470422765924013
+          },
+          "trajectory_pregrasp": {
+            "calls": 93,
+            "wall_seconds": 16.095501706004143,
+            "exclusive_seconds": 16.095501706004143
+          },
+          "candidate_search": {
+            "calls": 254,
+            "wall_seconds": 692.9650026820018,
+            "exclusive_seconds": 1.8279322763846722
+          },
+          "local_collision_validate": {
+            "calls": 8205,
+            "wall_seconds": 99.23451342739281,
+            "exclusive_seconds": 90.3048732389143
+          }
+        }
+      },
+      "vectorized": {
+        "requests": 69,
+        "successes": 69,
+        "median_seconds": 11.011090253989096,
+        "p90_seconds": 31.665101016598058,
+        "total_seconds": 1031.874738434868,
+        "candidate_checks": 6647,
+        "stage_totals": {
+          "resident_world_bind": {
+            "calls": 530,
+            "wall_seconds": 214.91160855194903,
+            "exclusive_seconds": 214.91160855194903
+          },
+          "contact_world_bind": {
+            "calls": 254,
+            "wall_seconds": 38.161236502972315,
+            "exclusive_seconds": 38.161236502972315
+          },
+          "batch_world_bind": {
+            "calls": 254,
+            "wall_seconds": 0.3270216819946654,
+            "exclusive_seconds": 0.3270216819946654
+          },
+          "independent_FK": {
+            "calls": 7540,
+            "wall_seconds": 10.062599818280432,
+            "exclusive_seconds": 10.062599818280432
+          },
+          "grasp_batch_full_world_IK": {
+            "calls": 482,
+            "wall_seconds": 530.5651447870478,
+            "exclusive_seconds": 530.4176284940331
+          },
+          "grasp_batch_kinematic_IK": {
+            "calls": 479,
+            "wall_seconds": 19.705127239009016,
+            "exclusive_seconds": 19.705127239009016
+          },
+          "grasp_endpoint": {
+            "calls": 6647,
+            "wall_seconds": 586.1737262903625,
+            "exclusive_seconds": 10.997634850355098
+          },
+          "pregrasp_scalar_IK": {
+            "calls": 108,
+            "wall_seconds": 4.809618260973366,
+            "exclusive_seconds": 4.809618260973366
+          },
+          "lift_scalar_IK": {
+            "calls": 108,
+            "wall_seconds": 2.19746395193215,
+            "exclusive_seconds": 2.19746395193215
+          },
+          "PRM_path": {
+            "calls": 177,
+            "wall_seconds": 15.68842689594021,
+            "exclusive_seconds": 15.68842689594021
+          },
+          "trajectory_approach": {
+            "calls": 84,
+            "wall_seconds": 11.686085598994396,
+            "exclusive_seconds": 11.686085598994396
+          },
+          "trajectory_pregrasp": {
+            "calls": 93,
+            "wall_seconds": 16.587208139055292,
+            "exclusive_seconds": 16.587208139055292
+          },
+          "candidate_search": {
+            "calls": 254,
+            "wall_seconds": 642.4973544349778,
+            "exclusive_seconds": 1.8074785637581954
+          },
+          "local_collision_validate": {
+            "calls": 1133,
+            "wall_seconds": 26.586360943940235,
+            "exclusive_seconds": 18.211060940651805
+          }
+        }
+      }
+    },
+    "control_successes_retained": true,
+    "all_original_selections_and_branches_retained": true,
+    "planning_total_time_reduction": 0.035063093235863985,
+    "timing_gate_passed": true,
+    "physical_grasps": 0,
+    "automatic_full_comparison": false,
+    "automatic_default_activation": false
+  },
+  "independent_review": {
+    "at": "2026-11-26T20:30:06.268556+08:00",
+    "passed": true,
+    "record_integrity": true,
+    "checked_requests": 138,
+    "checked_original_candidate_rows": 332016,
+    "checked_endpoints": 414,
+    "control_successes_retained": true,
+    "physical_grasps": 0,
+    "automatic_default_activation": false,
+    "all_original_selections_and_branches_retained": true,
+    "timing_and_arm_receipts_verified": true,
+    "stage_timing_inclusive_and_exclusive": true,
+    "planning_total_time_reduction": 0.035063093235863985,
+    "timing_gate_passed": true,
+    "automatic_full_comparison": false
+  },
   "physical_grasps": 0,
   "stopped": false
 }

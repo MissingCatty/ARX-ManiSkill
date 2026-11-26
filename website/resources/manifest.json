@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T11:59:31.944Z",
+  "generatedAt": "2026-11-26T12:32:53.910Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1591,7 +1591,7 @@
     },
     {
       "file": "media/sam3-v8-funnel-review.md",
-      "sha256": "55e0ed24cd24df16aeaff4b21ae90f53ddda2560a7b78641cc89c9469c894390"
+      "sha256": "027d21019e3afe5ee1f138ac2b65df7eb36cdd221d0bb418938d3634203452ed"
     },
     {
       "file": "media/sam3-v8-funnel-source-review.json",
@@ -1651,11 +1651,11 @@
     },
     {
       "file": "media/sam3-v8-branch-validation-full69.json",
-      "sha256": "c401cd9f20a137f31d289dcc6b7ecb51d1421507539349f69dd282baa026f0be"
+      "sha256": "aeb7db32712998f309a50879b440c049ed71111195b38d9224acd71f30c94fcb"
     },
     {
       "file": "media/sam3-v8-branch-validation-full69.md",
-      "sha256": "1e748c9e2456370449e0462fcedf1d1af4636a11a00dd4a14b280c8003fd60b0"
+      "sha256": "c962b8dfd0e1088e58a81f113bc1cb174a1138a68a27fec7407e87b2188b913e"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
