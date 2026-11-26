@@ -1,0 +1,2439 @@
+{
+  "at": "2026-11-26T17:00:35.895403+08:00",
+  "stage": "proposal_review_only",
+  "physical_grasps": 0,
+  "new_IK_calls": 0,
+  "fixtures": 261,
+  "independently_solved_unique_endpoints": 115,
+  "solved_but_no_map_neighbor_counts": {
+    "0.03": 115,
+    "0.05235987755982989": 115,
+    "0.08726646259971647": 112,
+    "0.17453292519943295": 85
+  },
+  "solved_but_no_map_neighbor_examples": {
+    "0.03": [
+      {
+        "id": "M0001_S1_open_apple",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0001_S1_open_apple",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0002_S1_open_avocado",
+        "arm": "right",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0002_S1_open_avocado",
+        "arm": "left",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0004_S1_open_banana",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0005_S1_open_bar_soap",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0005_S1_open_bar_soap",
+        "arm": "left",
+        "candidate_index": 238
+      },
+      {
+        "id": "M0006_S1_open_bell_pepper",
+        "arm": "right",
+        "candidate_index": 5
+      },
+      {
+        "id": "M0006_S1_open_bell_pepper",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0008_S1_open_bottled_water",
+        "arm": "left",
+        "candidate_index": 14
+      },
+      {
+        "id": "M0009_S1_open_bowl",
+        "arm": "right",
+        "candidate_index": 11
+      },
+      {
+        "id": "M0010_S1_open_boxed_food",
+        "arm": "right",
+        "candidate_index": 56
+      },
+      {
+        "id": "M0011_S1_open_bread",
+        "arm": "right",
+        "candidate_index": 190
+      },
+      {
+        "id": "M0012_S1_open_broccoli",
+        "arm": "right",
+        "candidate_index": 75
+      },
+      {
+        "id": "M0015_S1_open_carrot",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0016_S1_open_cell_phone",
+        "arm": "right",
+        "candidate_index": 335
+      },
+      {
+        "id": "M0016_S1_open_cell_phone",
+        "arm": "left",
+        "candidate_index": 305
+      },
+      {
+        "id": "M0018_S1_open_croissant",
+        "arm": "right",
+        "candidate_index": 122
+      },
+      {
+        "id": "M0018_S1_open_croissant",
+        "arm": "left",
+        "candidate_index": 99
+      },
+      {
+        "id": "M0019_S1_open_cucumber",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0020_S1_open_donut",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0020_S1_open_donut",
+        "arm": "right",
+        "candidate_index": 375
+      },
+      {
+        "id": "M0022_S2_edge_keychain",
+        "arm": "right",
+        "candidate_index": 82
+      },
+      {
+        "id": "M0022_S2_edge_keychain",
+        "arm": "left",
+        "candidate_index": 82
+      },
+      {
+        "id": "M0023_S2_edge_lemon",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0024_S2_edge_mango",
+        "arm": "right",
+        "candidate_index": 11
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0027_S2_edge_mushroom",
+        "arm": "right",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0027_S2_edge_mushroom",
+        "arm": "left",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0029_S2_edge_orange",
+        "arm": "right",
+        "candidate_index": 270
+      },
+      {
+        "id": "M0029_S2_edge_orange",
+        "arm": "left",
+        "candidate_index": 233
+      },
+      {
+        "id": "M0030_S2_edge_peach",
+        "arm": "right",
+        "candidate_index": 12
+      },
+      {
+        "id": "M0030_S2_edge_peach",
+        "arm": "left",
+        "candidate_index": 4
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "right",
+        "candidate_index": 62
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "left",
+        "candidate_index": 22
+      },
+      {
+        "id": "M0032_S2_edge_potato",
+        "arm": "left",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0033_S2_edge_remote_control",
+        "arm": "right",
+        "candidate_index": 43
+      },
+      {
+        "id": "M0033_S2_edge_remote_control",
+        "arm": "left",
+        "candidate_index": 43
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "arm": "left",
+        "candidate_index": 128
+      },
+      {
+        "id": "M0036_S2_edge_spatula",
+        "arm": "right",
+        "candidate_index": 30
+      },
+      {
+        "id": "M0038_S2_edge_teapot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0039_S2_edge_tomato",
+        "arm": "right",
+        "candidate_index": 60
+      },
+      {
+        "id": "M0039_S2_edge_tomato",
+        "arm": "left",
+        "candidate_index": 17
+      },
+      {
+        "id": "M0041_S3_sparse_apple",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0041_S3_sparse_apple",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0042_S3_sparse_avocado",
+        "arm": "right",
+        "candidate_index": 14
+      },
+      {
+        "id": "M0042_S3_sparse_avocado",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0043_S3_sparse_baguette",
+        "arm": "left",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0044_S3_sparse_banana",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0045_S3_sparse_bar_soap",
+        "arm": "right",
+        "candidate_index": 184
+      },
+      {
+        "id": "M0045_S3_sparse_bar_soap",
+        "arm": "left",
+        "candidate_index": 184
+      },
+      {
+        "id": "M0046_S3_sparse_bell_pepper",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0047_S3_sparse_book",
+        "arm": "right",
+        "candidate_index": 124
+      },
+      {
+        "id": "M0047_S3_sparse_book",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0048_S3_sparse_bottled_water",
+        "arm": "right",
+        "candidate_index": 30
+      },
+      {
+        "id": "M0050_S3_sparse_boxed_food",
+        "arm": "right",
+        "candidate_index": 103
+      },
+      {
+        "id": "M0052_S3_sparse_broccoli",
+        "arm": "right",
+        "candidate_index": 47
+      },
+      {
+        "id": "M0055_S3_sparse_carrot",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0055_S3_sparse_carrot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "right",
+        "candidate_index": 340
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "left",
+        "candidate_index": 340
+      },
+      {
+        "id": "M0058_S3_sparse_croissant",
+        "arm": "right",
+        "candidate_index": 69
+      },
+      {
+        "id": "M0059_S3_sparse_cucumber",
+        "arm": "right",
+        "candidate_index": 8
+      },
+      {
+        "id": "M0060_S3_sparse_donut",
+        "arm": "right",
+        "candidate_index": 288
+      },
+      {
+        "id": "M0060_S3_sparse_donut",
+        "arm": "left",
+        "candidate_index": 288
+      },
+      {
+        "id": "M0061_S4_clutter_eggplant",
+        "arm": "right",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0061_S4_clutter_eggplant",
+        "arm": "left",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0062_S4_clutter_keychain",
+        "arm": "right",
+        "candidate_index": 140
+      },
+      {
+        "id": "M0062_S4_clutter_keychain",
+        "arm": "left",
+        "candidate_index": 140
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "right",
+        "candidate_index": 2
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0064_S4_clutter_mango",
+        "arm": "left",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0065_S4_clutter_milk",
+        "arm": "left",
+        "candidate_index": 18
+      },
+      {
+        "id": "M0066_S4_clutter_mug",
+        "arm": "right",
+        "candidate_index": 15
+      },
+      {
+        "id": "M0066_S4_clutter_mug",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0067_S4_clutter_mushroom",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0067_S4_clutter_mushroom",
+        "arm": "right",
+        "candidate_index": 32
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "right",
+        "candidate_index": 306
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "left",
+        "candidate_index": 272
+      },
+      {
+        "id": "M0070_S4_clutter_peach",
+        "arm": "left",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0071_S4_clutter_pear",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0071_S4_clutter_pear",
+        "arm": "left",
+        "candidate_index": 10
+      },
+      {
+        "id": "M0072_S4_clutter_potato",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0072_S4_clutter_potato",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0074_S4_clutter_scissors",
+        "arm": "right",
+        "candidate_index": 166
+      },
+      {
+        "id": "M0078_S4_clutter_teapot",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0079_S4_clutter_tomato",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0079_S4_clutter_tomato",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0081_S5_occluded_apple",
+        "arm": "left",
+        "candidate_index": 21
+      },
+      {
+        "id": "M0082_S5_occluded_avocado",
+        "arm": "right",
+        "candidate_index": 41
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "arm": "right",
+        "candidate_index": 110
+      },
+      {
+        "id": "M0085_S5_occluded_bar_soap",
+        "arm": "right",
+        "candidate_index": 261
+      },
+      {
+        "id": "M0086_S5_occluded_bell_pepper",
+        "arm": "right",
+        "candidate_index": 2
+      },
+      {
+        "id": "M0089_S5_occluded_bowl",
+        "arm": "right",
+        "candidate_index": 120
+      },
+      {
+        "id": "M0089_S5_occluded_bowl",
+        "arm": "left",
+        "candidate_index": 105
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "right",
+        "candidate_index": 79
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "left",
+        "candidate_index": 69
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "left",
+        "candidate_index": 22
+      },
+      {
+        "id": "M0098_S5_occluded_croissant",
+        "arm": "right",
+        "candidate_index": 55
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "arm": "right",
+        "candidate_index": 10
+      },
+      {
+        "id": "M0100_S5_occluded_donut",
+        "arm": "right",
+        "candidate_index": 207
+      }
+    ],
+    "0.05235987755982989": [
+      {
+        "id": "M0001_S1_open_apple",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0001_S1_open_apple",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0002_S1_open_avocado",
+        "arm": "right",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0002_S1_open_avocado",
+        "arm": "left",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0004_S1_open_banana",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0005_S1_open_bar_soap",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0005_S1_open_bar_soap",
+        "arm": "left",
+        "candidate_index": 238
+      },
+      {
+        "id": "M0006_S1_open_bell_pepper",
+        "arm": "right",
+        "candidate_index": 5
+      },
+      {
+        "id": "M0006_S1_open_bell_pepper",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0008_S1_open_bottled_water",
+        "arm": "left",
+        "candidate_index": 14
+      },
+      {
+        "id": "M0009_S1_open_bowl",
+        "arm": "right",
+        "candidate_index": 11
+      },
+      {
+        "id": "M0010_S1_open_boxed_food",
+        "arm": "right",
+        "candidate_index": 56
+      },
+      {
+        "id": "M0011_S1_open_bread",
+        "arm": "right",
+        "candidate_index": 190
+      },
+      {
+        "id": "M0012_S1_open_broccoli",
+        "arm": "right",
+        "candidate_index": 75
+      },
+      {
+        "id": "M0015_S1_open_carrot",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0016_S1_open_cell_phone",
+        "arm": "right",
+        "candidate_index": 335
+      },
+      {
+        "id": "M0016_S1_open_cell_phone",
+        "arm": "left",
+        "candidate_index": 305
+      },
+      {
+        "id": "M0018_S1_open_croissant",
+        "arm": "right",
+        "candidate_index": 122
+      },
+      {
+        "id": "M0018_S1_open_croissant",
+        "arm": "left",
+        "candidate_index": 99
+      },
+      {
+        "id": "M0019_S1_open_cucumber",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0020_S1_open_donut",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0020_S1_open_donut",
+        "arm": "right",
+        "candidate_index": 375
+      },
+      {
+        "id": "M0022_S2_edge_keychain",
+        "arm": "right",
+        "candidate_index": 82
+      },
+      {
+        "id": "M0022_S2_edge_keychain",
+        "arm": "left",
+        "candidate_index": 82
+      },
+      {
+        "id": "M0023_S2_edge_lemon",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0024_S2_edge_mango",
+        "arm": "right",
+        "candidate_index": 11
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0027_S2_edge_mushroom",
+        "arm": "right",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0027_S2_edge_mushroom",
+        "arm": "left",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0029_S2_edge_orange",
+        "arm": "right",
+        "candidate_index": 270
+      },
+      {
+        "id": "M0029_S2_edge_orange",
+        "arm": "left",
+        "candidate_index": 233
+      },
+      {
+        "id": "M0030_S2_edge_peach",
+        "arm": "right",
+        "candidate_index": 12
+      },
+      {
+        "id": "M0030_S2_edge_peach",
+        "arm": "left",
+        "candidate_index": 4
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "right",
+        "candidate_index": 62
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "left",
+        "candidate_index": 22
+      },
+      {
+        "id": "M0032_S2_edge_potato",
+        "arm": "left",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0033_S2_edge_remote_control",
+        "arm": "right",
+        "candidate_index": 43
+      },
+      {
+        "id": "M0033_S2_edge_remote_control",
+        "arm": "left",
+        "candidate_index": 43
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "arm": "left",
+        "candidate_index": 128
+      },
+      {
+        "id": "M0036_S2_edge_spatula",
+        "arm": "right",
+        "candidate_index": 30
+      },
+      {
+        "id": "M0038_S2_edge_teapot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0039_S2_edge_tomato",
+        "arm": "right",
+        "candidate_index": 60
+      },
+      {
+        "id": "M0039_S2_edge_tomato",
+        "arm": "left",
+        "candidate_index": 17
+      },
+      {
+        "id": "M0041_S3_sparse_apple",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0041_S3_sparse_apple",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0042_S3_sparse_avocado",
+        "arm": "right",
+        "candidate_index": 14
+      },
+      {
+        "id": "M0042_S3_sparse_avocado",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0043_S3_sparse_baguette",
+        "arm": "left",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0044_S3_sparse_banana",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0045_S3_sparse_bar_soap",
+        "arm": "right",
+        "candidate_index": 184
+      },
+      {
+        "id": "M0045_S3_sparse_bar_soap",
+        "arm": "left",
+        "candidate_index": 184
+      },
+      {
+        "id": "M0046_S3_sparse_bell_pepper",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0047_S3_sparse_book",
+        "arm": "right",
+        "candidate_index": 124
+      },
+      {
+        "id": "M0047_S3_sparse_book",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0048_S3_sparse_bottled_water",
+        "arm": "right",
+        "candidate_index": 30
+      },
+      {
+        "id": "M0050_S3_sparse_boxed_food",
+        "arm": "right",
+        "candidate_index": 103
+      },
+      {
+        "id": "M0052_S3_sparse_broccoli",
+        "arm": "right",
+        "candidate_index": 47
+      },
+      {
+        "id": "M0055_S3_sparse_carrot",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0055_S3_sparse_carrot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "right",
+        "candidate_index": 340
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "left",
+        "candidate_index": 340
+      },
+      {
+        "id": "M0058_S3_sparse_croissant",
+        "arm": "right",
+        "candidate_index": 69
+      },
+      {
+        "id": "M0059_S3_sparse_cucumber",
+        "arm": "right",
+        "candidate_index": 8
+      },
+      {
+        "id": "M0060_S3_sparse_donut",
+        "arm": "right",
+        "candidate_index": 288
+      },
+      {
+        "id": "M0060_S3_sparse_donut",
+        "arm": "left",
+        "candidate_index": 288
+      },
+      {
+        "id": "M0061_S4_clutter_eggplant",
+        "arm": "right",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0061_S4_clutter_eggplant",
+        "arm": "left",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0062_S4_clutter_keychain",
+        "arm": "right",
+        "candidate_index": 140
+      },
+      {
+        "id": "M0062_S4_clutter_keychain",
+        "arm": "left",
+        "candidate_index": 140
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "right",
+        "candidate_index": 2
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0064_S4_clutter_mango",
+        "arm": "left",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0065_S4_clutter_milk",
+        "arm": "left",
+        "candidate_index": 18
+      },
+      {
+        "id": "M0066_S4_clutter_mug",
+        "arm": "right",
+        "candidate_index": 15
+      },
+      {
+        "id": "M0066_S4_clutter_mug",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0067_S4_clutter_mushroom",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0067_S4_clutter_mushroom",
+        "arm": "right",
+        "candidate_index": 32
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "right",
+        "candidate_index": 306
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "left",
+        "candidate_index": 272
+      },
+      {
+        "id": "M0070_S4_clutter_peach",
+        "arm": "left",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0071_S4_clutter_pear",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0071_S4_clutter_pear",
+        "arm": "left",
+        "candidate_index": 10
+      },
+      {
+        "id": "M0072_S4_clutter_potato",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0072_S4_clutter_potato",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0074_S4_clutter_scissors",
+        "arm": "right",
+        "candidate_index": 166
+      },
+      {
+        "id": "M0078_S4_clutter_teapot",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0079_S4_clutter_tomato",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0079_S4_clutter_tomato",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0081_S5_occluded_apple",
+        "arm": "left",
+        "candidate_index": 21
+      },
+      {
+        "id": "M0082_S5_occluded_avocado",
+        "arm": "right",
+        "candidate_index": 41
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "arm": "right",
+        "candidate_index": 110
+      },
+      {
+        "id": "M0085_S5_occluded_bar_soap",
+        "arm": "right",
+        "candidate_index": 261
+      },
+      {
+        "id": "M0086_S5_occluded_bell_pepper",
+        "arm": "right",
+        "candidate_index": 2
+      },
+      {
+        "id": "M0089_S5_occluded_bowl",
+        "arm": "right",
+        "candidate_index": 120
+      },
+      {
+        "id": "M0089_S5_occluded_bowl",
+        "arm": "left",
+        "candidate_index": 105
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "right",
+        "candidate_index": 79
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "left",
+        "candidate_index": 69
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "left",
+        "candidate_index": 22
+      },
+      {
+        "id": "M0098_S5_occluded_croissant",
+        "arm": "right",
+        "candidate_index": 55
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "arm": "right",
+        "candidate_index": 10
+      },
+      {
+        "id": "M0100_S5_occluded_donut",
+        "arm": "right",
+        "candidate_index": 207
+      }
+    ],
+    "0.08726646259971647": [
+      {
+        "id": "M0001_S1_open_apple",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0001_S1_open_apple",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0002_S1_open_avocado",
+        "arm": "right",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0002_S1_open_avocado",
+        "arm": "left",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0004_S1_open_banana",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0005_S1_open_bar_soap",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0005_S1_open_bar_soap",
+        "arm": "left",
+        "candidate_index": 238
+      },
+      {
+        "id": "M0006_S1_open_bell_pepper",
+        "arm": "right",
+        "candidate_index": 5
+      },
+      {
+        "id": "M0006_S1_open_bell_pepper",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0008_S1_open_bottled_water",
+        "arm": "left",
+        "candidate_index": 14
+      },
+      {
+        "id": "M0009_S1_open_bowl",
+        "arm": "right",
+        "candidate_index": 11
+      },
+      {
+        "id": "M0010_S1_open_boxed_food",
+        "arm": "right",
+        "candidate_index": 56
+      },
+      {
+        "id": "M0011_S1_open_bread",
+        "arm": "right",
+        "candidate_index": 190
+      },
+      {
+        "id": "M0012_S1_open_broccoli",
+        "arm": "right",
+        "candidate_index": 75
+      },
+      {
+        "id": "M0015_S1_open_carrot",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0016_S1_open_cell_phone",
+        "arm": "right",
+        "candidate_index": 335
+      },
+      {
+        "id": "M0016_S1_open_cell_phone",
+        "arm": "left",
+        "candidate_index": 305
+      },
+      {
+        "id": "M0018_S1_open_croissant",
+        "arm": "right",
+        "candidate_index": 122
+      },
+      {
+        "id": "M0018_S1_open_croissant",
+        "arm": "left",
+        "candidate_index": 99
+      },
+      {
+        "id": "M0019_S1_open_cucumber",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0020_S1_open_donut",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0020_S1_open_donut",
+        "arm": "right",
+        "candidate_index": 375
+      },
+      {
+        "id": "M0022_S2_edge_keychain",
+        "arm": "right",
+        "candidate_index": 82
+      },
+      {
+        "id": "M0023_S2_edge_lemon",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0024_S2_edge_mango",
+        "arm": "right",
+        "candidate_index": 11
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0027_S2_edge_mushroom",
+        "arm": "right",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0027_S2_edge_mushroom",
+        "arm": "left",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0029_S2_edge_orange",
+        "arm": "right",
+        "candidate_index": 270
+      },
+      {
+        "id": "M0029_S2_edge_orange",
+        "arm": "left",
+        "candidate_index": 233
+      },
+      {
+        "id": "M0030_S2_edge_peach",
+        "arm": "right",
+        "candidate_index": 12
+      },
+      {
+        "id": "M0030_S2_edge_peach",
+        "arm": "left",
+        "candidate_index": 4
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "right",
+        "candidate_index": 62
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "left",
+        "candidate_index": 22
+      },
+      {
+        "id": "M0032_S2_edge_potato",
+        "arm": "left",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0033_S2_edge_remote_control",
+        "arm": "right",
+        "candidate_index": 43
+      },
+      {
+        "id": "M0033_S2_edge_remote_control",
+        "arm": "left",
+        "candidate_index": 43
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "arm": "left",
+        "candidate_index": 128
+      },
+      {
+        "id": "M0036_S2_edge_spatula",
+        "arm": "right",
+        "candidate_index": 30
+      },
+      {
+        "id": "M0038_S2_edge_teapot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0039_S2_edge_tomato",
+        "arm": "right",
+        "candidate_index": 60
+      },
+      {
+        "id": "M0039_S2_edge_tomato",
+        "arm": "left",
+        "candidate_index": 17
+      },
+      {
+        "id": "M0041_S3_sparse_apple",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0041_S3_sparse_apple",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0042_S3_sparse_avocado",
+        "arm": "right",
+        "candidate_index": 14
+      },
+      {
+        "id": "M0042_S3_sparse_avocado",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0043_S3_sparse_baguette",
+        "arm": "left",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0044_S3_sparse_banana",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0045_S3_sparse_bar_soap",
+        "arm": "right",
+        "candidate_index": 184
+      },
+      {
+        "id": "M0045_S3_sparse_bar_soap",
+        "arm": "left",
+        "candidate_index": 184
+      },
+      {
+        "id": "M0046_S3_sparse_bell_pepper",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0047_S3_sparse_book",
+        "arm": "right",
+        "candidate_index": 124
+      },
+      {
+        "id": "M0047_S3_sparse_book",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0048_S3_sparse_bottled_water",
+        "arm": "right",
+        "candidate_index": 30
+      },
+      {
+        "id": "M0050_S3_sparse_boxed_food",
+        "arm": "right",
+        "candidate_index": 103
+      },
+      {
+        "id": "M0052_S3_sparse_broccoli",
+        "arm": "right",
+        "candidate_index": 47
+      },
+      {
+        "id": "M0055_S3_sparse_carrot",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0055_S3_sparse_carrot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "right",
+        "candidate_index": 340
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "left",
+        "candidate_index": 340
+      },
+      {
+        "id": "M0058_S3_sparse_croissant",
+        "arm": "right",
+        "candidate_index": 69
+      },
+      {
+        "id": "M0059_S3_sparse_cucumber",
+        "arm": "right",
+        "candidate_index": 8
+      },
+      {
+        "id": "M0060_S3_sparse_donut",
+        "arm": "right",
+        "candidate_index": 288
+      },
+      {
+        "id": "M0060_S3_sparse_donut",
+        "arm": "left",
+        "candidate_index": 288
+      },
+      {
+        "id": "M0061_S4_clutter_eggplant",
+        "arm": "right",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0061_S4_clutter_eggplant",
+        "arm": "left",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0062_S4_clutter_keychain",
+        "arm": "right",
+        "candidate_index": 140
+      },
+      {
+        "id": "M0062_S4_clutter_keychain",
+        "arm": "left",
+        "candidate_index": 140
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "right",
+        "candidate_index": 2
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0064_S4_clutter_mango",
+        "arm": "left",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0065_S4_clutter_milk",
+        "arm": "left",
+        "candidate_index": 18
+      },
+      {
+        "id": "M0066_S4_clutter_mug",
+        "arm": "right",
+        "candidate_index": 15
+      },
+      {
+        "id": "M0066_S4_clutter_mug",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0067_S4_clutter_mushroom",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0067_S4_clutter_mushroom",
+        "arm": "right",
+        "candidate_index": 32
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "right",
+        "candidate_index": 306
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "left",
+        "candidate_index": 272
+      },
+      {
+        "id": "M0070_S4_clutter_peach",
+        "arm": "left",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0071_S4_clutter_pear",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0071_S4_clutter_pear",
+        "arm": "left",
+        "candidate_index": 10
+      },
+      {
+        "id": "M0072_S4_clutter_potato",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0072_S4_clutter_potato",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0074_S4_clutter_scissors",
+        "arm": "right",
+        "candidate_index": 166
+      },
+      {
+        "id": "M0078_S4_clutter_teapot",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0079_S4_clutter_tomato",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0079_S4_clutter_tomato",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0081_S5_occluded_apple",
+        "arm": "left",
+        "candidate_index": 21
+      },
+      {
+        "id": "M0082_S5_occluded_avocado",
+        "arm": "right",
+        "candidate_index": 41
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "arm": "right",
+        "candidate_index": 110
+      },
+      {
+        "id": "M0085_S5_occluded_bar_soap",
+        "arm": "right",
+        "candidate_index": 261
+      },
+      {
+        "id": "M0086_S5_occluded_bell_pepper",
+        "arm": "right",
+        "candidate_index": 2
+      },
+      {
+        "id": "M0089_S5_occluded_bowl",
+        "arm": "right",
+        "candidate_index": 120
+      },
+      {
+        "id": "M0089_S5_occluded_bowl",
+        "arm": "left",
+        "candidate_index": 105
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "right",
+        "candidate_index": 79
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "left",
+        "candidate_index": 22
+      },
+      {
+        "id": "M0098_S5_occluded_croissant",
+        "arm": "right",
+        "candidate_index": 55
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "arm": "right",
+        "candidate_index": 10
+      },
+      {
+        "id": "M0100_S5_occluded_donut",
+        "arm": "right",
+        "candidate_index": 207
+      }
+    ],
+    "0.17453292519943295": [
+      {
+        "id": "M0001_S1_open_apple",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0002_S1_open_avocado",
+        "arm": "right",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0002_S1_open_avocado",
+        "arm": "left",
+        "candidate_index": 3
+      },
+      {
+        "id": "M0004_S1_open_banana",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0005_S1_open_bar_soap",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0005_S1_open_bar_soap",
+        "arm": "left",
+        "candidate_index": 238
+      },
+      {
+        "id": "M0006_S1_open_bell_pepper",
+        "arm": "right",
+        "candidate_index": 5
+      },
+      {
+        "id": "M0006_S1_open_bell_pepper",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0008_S1_open_bottled_water",
+        "arm": "left",
+        "candidate_index": 14
+      },
+      {
+        "id": "M0009_S1_open_bowl",
+        "arm": "right",
+        "candidate_index": 11
+      },
+      {
+        "id": "M0010_S1_open_boxed_food",
+        "arm": "right",
+        "candidate_index": 56
+      },
+      {
+        "id": "M0011_S1_open_bread",
+        "arm": "right",
+        "candidate_index": 190
+      },
+      {
+        "id": "M0015_S1_open_carrot",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0016_S1_open_cell_phone",
+        "arm": "right",
+        "candidate_index": 335
+      },
+      {
+        "id": "M0016_S1_open_cell_phone",
+        "arm": "left",
+        "candidate_index": 305
+      },
+      {
+        "id": "M0018_S1_open_croissant",
+        "arm": "right",
+        "candidate_index": 122
+      },
+      {
+        "id": "M0018_S1_open_croissant",
+        "arm": "left",
+        "candidate_index": 99
+      },
+      {
+        "id": "M0020_S1_open_donut",
+        "arm": "right",
+        "candidate_index": 375
+      },
+      {
+        "id": "M0022_S2_edge_keychain",
+        "arm": "right",
+        "candidate_index": 82
+      },
+      {
+        "id": "M0024_S2_edge_mango",
+        "arm": "right",
+        "candidate_index": 11
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "arm": "left",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0027_S2_edge_mushroom",
+        "arm": "left",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0029_S2_edge_orange",
+        "arm": "right",
+        "candidate_index": 270
+      },
+      {
+        "id": "M0029_S2_edge_orange",
+        "arm": "left",
+        "candidate_index": 233
+      },
+      {
+        "id": "M0030_S2_edge_peach",
+        "arm": "right",
+        "candidate_index": 12
+      },
+      {
+        "id": "M0030_S2_edge_peach",
+        "arm": "left",
+        "candidate_index": 4
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "right",
+        "candidate_index": 62
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "arm": "left",
+        "candidate_index": 22
+      },
+      {
+        "id": "M0033_S2_edge_remote_control",
+        "arm": "right",
+        "candidate_index": 43
+      },
+      {
+        "id": "M0033_S2_edge_remote_control",
+        "arm": "left",
+        "candidate_index": 43
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "arm": "left",
+        "candidate_index": 128
+      },
+      {
+        "id": "M0036_S2_edge_spatula",
+        "arm": "right",
+        "candidate_index": 30
+      },
+      {
+        "id": "M0038_S2_edge_teapot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0039_S2_edge_tomato",
+        "arm": "right",
+        "candidate_index": 60
+      },
+      {
+        "id": "M0039_S2_edge_tomato",
+        "arm": "left",
+        "candidate_index": 17
+      },
+      {
+        "id": "M0041_S3_sparse_apple",
+        "arm": "right",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0041_S3_sparse_apple",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0042_S3_sparse_avocado",
+        "arm": "right",
+        "candidate_index": 14
+      },
+      {
+        "id": "M0043_S3_sparse_baguette",
+        "arm": "left",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0044_S3_sparse_banana",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0045_S3_sparse_bar_soap",
+        "arm": "right",
+        "candidate_index": 184
+      },
+      {
+        "id": "M0045_S3_sparse_bar_soap",
+        "arm": "left",
+        "candidate_index": 184
+      },
+      {
+        "id": "M0047_S3_sparse_book",
+        "arm": "right",
+        "candidate_index": 124
+      },
+      {
+        "id": "M0050_S3_sparse_boxed_food",
+        "arm": "right",
+        "candidate_index": 103
+      },
+      {
+        "id": "M0052_S3_sparse_broccoli",
+        "arm": "right",
+        "candidate_index": 47
+      },
+      {
+        "id": "M0055_S3_sparse_carrot",
+        "arm": "right",
+        "candidate_index": 1
+      },
+      {
+        "id": "M0055_S3_sparse_carrot",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "right",
+        "candidate_index": 340
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "arm": "left",
+        "candidate_index": 340
+      },
+      {
+        "id": "M0058_S3_sparse_croissant",
+        "arm": "right",
+        "candidate_index": 69
+      },
+      {
+        "id": "M0059_S3_sparse_cucumber",
+        "arm": "right",
+        "candidate_index": 8
+      },
+      {
+        "id": "M0060_S3_sparse_donut",
+        "arm": "right",
+        "candidate_index": 288
+      },
+      {
+        "id": "M0060_S3_sparse_donut",
+        "arm": "left",
+        "candidate_index": 288
+      },
+      {
+        "id": "M0061_S4_clutter_eggplant",
+        "arm": "right",
+        "candidate_index": 25
+      },
+      {
+        "id": "M0062_S4_clutter_keychain",
+        "arm": "right",
+        "candidate_index": 140
+      },
+      {
+        "id": "M0062_S4_clutter_keychain",
+        "arm": "left",
+        "candidate_index": 140
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "arm": "right",
+        "candidate_index": 2
+      },
+      {
+        "id": "M0064_S4_clutter_mango",
+        "arm": "left",
+        "candidate_index": 13
+      },
+      {
+        "id": "M0065_S4_clutter_milk",
+        "arm": "left",
+        "candidate_index": 18
+      },
+      {
+        "id": "M0066_S4_clutter_mug",
+        "arm": "right",
+        "candidate_index": 15
+      },
+      {
+        "id": "M0066_S4_clutter_mug",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0067_S4_clutter_mushroom",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0067_S4_clutter_mushroom",
+        "arm": "right",
+        "candidate_index": 32
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "right",
+        "candidate_index": 306
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "arm": "left",
+        "candidate_index": 272
+      },
+      {
+        "id": "M0070_S4_clutter_peach",
+        "arm": "left",
+        "candidate_index": 7
+      },
+      {
+        "id": "M0071_S4_clutter_pear",
+        "arm": "left",
+        "candidate_index": 10
+      },
+      {
+        "id": "M0072_S4_clutter_potato",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0072_S4_clutter_potato",
+        "arm": "left",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0079_S4_clutter_tomato",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0081_S5_occluded_apple",
+        "arm": "left",
+        "candidate_index": 21
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0085_S5_occluded_bar_soap",
+        "arm": "right",
+        "candidate_index": 261
+      },
+      {
+        "id": "M0089_S5_occluded_bowl",
+        "arm": "right",
+        "candidate_index": 120
+      },
+      {
+        "id": "M0089_S5_occluded_bowl",
+        "arm": "left",
+        "candidate_index": 105
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "arm": "left",
+        "candidate_index": 22
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "arm": "right",
+        "candidate_index": 0
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "arm": "right",
+        "candidate_index": 10
+      },
+      {
+        "id": "M0100_S5_occluded_donut",
+        "arm": "right",
+        "candidate_index": 207
+      }
+    ]
+  },
+  "input_sha256": {
+    "tmp/indexed_grasp_planning/index_lookup_20261126_01/acceptance.json": "ffc300fb8a1166fd0a6e86336025929b74770521bc199f492fbc36c297c08070",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/000.json": "fff9244b1f0dbfd5fff704f8a56ce7bbed59ecf00b802dc6bc9215b276334da8",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/001.json": "de6f90f969c1d878b4388e6110374ca1caf837ceaec5d2e1cd1a50b03bc3361c",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/002.json": "a3bb354ffc2326c43139e02051b1245aadd86ac989d4c1970895275030f7bcfb",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/003.json": "fe58fd9958210d680937d890bdfba04a9fc9b62a6ddc04409ab1698763f93c8a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/004.json": "56a52e179427e5f046334757962eed86a1cb476a673d861021d212af5a5b55d0",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/005.json": "b67600610ba68e97cabd25be7de26350f999bf38fd448f94876a570eb4e6b9f0",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/006.json": "2cd874bbde7427ac98ea07e3e118090a6eca11a546a2f7e4c91fa4b1966c5953",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/007.json": "c2299e6d689f87f631a10ced1497dff6c6e5ea7a3e6a46cc5662cfe590383b2b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/008.json": "83b3df75d556d4342003c1746e325d197bad16f98a3252251bc2ce0bf5fc8eca",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/009.json": "f0aba9df30dc74c78339d571f5e6cfdd0134533c2f598cc3c3c1a61e7f32689a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/010.json": "b180a4928e8cc9262a983d7590a3b8f8a7fecbb02b9b6be484347a520dae2d80",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/011.json": "eafa0eae79f974be0fff333504f195172727fbc349f78f9ee655fd65a997b0e4",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/012.json": "7fe3212416269e572b2c50a3f372106780d1eb6dc858cd953425a4759a967a4e",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/013.json": "7ae521a55196ac0aeebe503d781451c2a31e73ba195a959ec6af67082df80809",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/014.json": "19454dc0c5d8eb8aab9e5a50ef9f7b58bd8e2371de4573dea66125ba95791558",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/015.json": "5065949bb38f0aa4ee77563ac81364af4a9e5edf571adf8db10a4d1b95ac0e60",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/016.json": "1c622d66be677d8fa6abc4166fe49a7d07ac8917b5df8c1d7c3d82abca3e93fb",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/017.json": "25822cbb153f41ddc74a046ba036f9bcd84ee611122a22aac42a7bca51f8d21d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/018.json": "09f88d2f3fb403d1eb0dca0b0953ef00c82a4e003f98c8458900792c1f6d1efc",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/019.json": "098f176d8dcb76b6b253259fe8569281c01508ce6a5120b9bea9037d6a284dc4",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/020.json": "ba6006b9f0880a765b290b0690bc236907b5b0769ed945d5ec784906c6a9b34e",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/021.json": "28cd67b60fbdd8528620b0b3b2f8269302f5363ff9d3a54d1c2e9200808b41ed",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/022.json": "1ff6472f9281777db93a8d90f05a9ed8b7442a251aa5e89c2170f3eaffebe955",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/023.json": "febf1cdf4fb0fe18f54fdf09fd6b31e559d4c17ee376a858225c4e5b905eea9b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/024.json": "eae000a63b932b185a82642ebbfe42edc51a3b7981fa9603fa02cd8955f6d85b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/025.json": "18039b33adff189886ee3279504942fadbe4cd33d158746ffda45db00cb1ef6a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/026.json": "0076f94ac24b0f6ebf2b87acc360266cf1d1ef0d4a25d527b67af6c13fa785e5",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/027.json": "dc6d7d4f0817e0a5dafa182573570a8d8b62e0e3c0dcb8f4305b667e4dfdc0f8",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/028.json": "a7ca91d54903b49baac0bd0ef0a235a102174b825cba8d0d10d75beb22b66ca0",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/029.json": "e7d8a6a4c7df24af337c2cb55f394764854720cc0d4e02874eb30c02ce3f5f5d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/030.json": "ccd5e2d0bedd53463bb8343ed22eb5e50660613577dbe4ace2892151a390c7a3",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/031.json": "6f2c0c4b2fb9a8ef35b509f8a391149adbda23a4521df14225c62bda9055d6ba",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/032.json": "856a626adee7df9b2e2124e20827c43aab6322b5f6ed99b7a6b85958cf79393f",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/033.json": "954644f231e4094f6551f4541093d2cc143f9a7039fd9a1fb29ad204fb02bcab",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/034.json": "91d3b28d3a384b81ccf6898fa34f1a3787f65ef3eaa5268f6e07b1a6e1097cbf",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/035.json": "07640209ebf782c9dec1257d13c31f35ffb2ff663434b53f4c5d4ede892c3928",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/036.json": "c8d0bd454be5580872f8fcf137887588fbf15b91aa949751ba2a02cf67288a40",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/037.json": "f11a27be9bef310bdf19e421228eaf0d05bb85791a5d6716bfef7de3d3f0d2ce",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/038.json": "a2e5e7c3efe985cb96d8a5f44fc4bdc7a3b1119a85be1ee856e2819d32b58a9c",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/039.json": "463058e45aa2e88da10a173b182e5378d7dd2bbb6ddeee411d66493f60b7a63b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/040.json": "6402d8814235f7ea84281babfe4eb894f7ee735424cae605b4b3d4ff1c85d79d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/041.json": "cb714f5dca68d60c153fe6e658c8820637ce9d94ada05ed6db365bc80a233526",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/042.json": "11003ba1bad8bbdd6b43b6d510778eed9a43973c7c567260b8a96e9205d48d0f",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/043.json": "99c63f666753731816b5922374cc2e0ddb7a1d90396ef85f7af46d3bcdd3f286",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/044.json": "4b85110f6d501672b7ae68b75a5f042f004ce30fe6eae869189d2b201ff343c7",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/045.json": "9aaccc22dbbda414b2b3f9332232745e1195ee955b2af43f9fd2a0e9160d0838",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/046.json": "e608e92f0383989f057676e0a706e0820bfdf02c3cebcd314013d8164ca75529",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/047.json": "51e35655198dc37b90bec379ade4ae3139a79a72a0381a0df7c7d7c09bec532c",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/048.json": "ea51c39d039e600426ff2a680c2a2fa54a3dc5a19231ce0d58bbfc831cb7ce76",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/049.json": "551fa70df8f9fc1b7d7d9c571e62e6595d35e7fbc61a53c9b1eaf8ffdbb09358",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/050.json": "8309b379a8666b0f5744ac692f2a9d5ba437af445f5dd12b06ae89956681fe75",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/051.json": "fe664d9842b619862725b0a038eb0715de593ce7c4ae81d978c678cb363db874",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/052.json": "323c20138d62d74e7822ed92288493091076a3c193a329fc0ef3cc5dd386d5f3",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/053.json": "bdfb3bc4308634d182f5e3d6e6fce2edf716c8db9d889077a6e441a18ba18af4",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/054.json": "25fe5d5bd05330250a5e929e8df37724b70a98989b30c5c7d8e9b59cf983d9f3",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/055.json": "1244ad2ed5c17a846a56ba38897f4311505ed9df0f55dd3c117bf02247fe0871",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/056.json": "866cce25e4ac929fcd8f07310c3a07859d136ba476b1abc5ed36eaff0e43d57a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/057.json": "d0aa9dc71a145d1930dc9e0fc457fe027a15920c977ab07d298bbc343d28195f",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/058.json": "cd382fdbfca5cdf8f8b0f1ddb6f325968a331d12a4beebd010bb6dadb3faf6b5",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/059.json": "199b5273efa21544aed74dee2967d36882e2781af92e3377a119a8d7a69884e7",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/060.json": "f2a3b8053a6898e76fa1f0b874b0546b45e5caa4da7f73206c0ba713cf6dbab3",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/061.json": "af69cd646318967b48e5ed58d1010d0a41babb3592e506d95bb3ae7809aec6e7",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/062.json": "52c808e4bfb7857c2b3f1d6c232e46c1d99bbc602948dd75deaf41779addfebf",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/063.json": "620fb786a8435834180907ee6dcf1204ea84513dd4c98f40af33568bcf2fade0",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/064.json": "a18a20908ef075551e5ee2aa6df7fcd37e39c7a60f13d9eaf9dd9ced878b23dc",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/065.json": "7eda2c044013572ec2cfb16bf4e8a894960fdc0b56c0d3bbde297dcbe2bd26a3",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/066.json": "549a56b3c08825fc8b4d27d4fcea7d26a878bdb9c1b95d13c874731b4eb7461b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/067.json": "f094114120147adcb0d9b8ae0a71570381e02eb34b2ad2d7240a658b553ba202",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/068.json": "d6ab2461983499fd65127bf91d9bb94a9ac78f90788b4b87a1b50a996b99c615",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/069.json": "fb5c57c3c1ebd762a2f684e2fb273a56ad22a9862c72dc805e57cda7e5c6caf9",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/070.json": "3122d98897b44ebc72e610080c06ee7460831cf49dc8e72e67f763bdd7b6cf38",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/071.json": "d0637248face1eb0638afd648819dc4e775dcdee1569f95ae8d0d2ef0d7660ec",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/072.json": "7c5c8524c874e4bc526fcebc11a542f0a552dadf57e10580b9b6245ba42d1383",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/073.json": "632c5a54d91ec01b49300b4b8d3ac08674f400ca227299d8c0cf270c9bdf7f50",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/074.json": "b811fe9c630c008391abcf1046f9a51ca207569d8f5d1bc8795ca1f11bd213eb",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/075.json": "a57843281d68ea456add7a9243f267a3ed63dafddb6d702239abce0bbad22463",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/076.json": "419416273e8cff8920ab9476a7c3ed0660f95f25c006973e80e652e084f4dc63",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/077.json": "6022ee9e56244741c0d32fb6245cecc5da44a23c202d88461a8b1c8ba9d2bba9",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/078.json": "a0c20ea197b803e4f4e0717c9d51332ec96c0c8caadd86b070684ffb10520650",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/079.json": "24cfd61a45e57e0669baf0ddb292d19f943c2481760f3e20af493286f732b600",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/080.json": "4ca77badb7a1fa5a67109f13ea597f2c18e69e04881b30e79c0c3e217763e4e7",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/081.json": "ab9bfe6acb1f6efdd4d09cebb9608bb512ad0b93fa182a25ed9a929d6d2f9f6b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/082.json": "6064268e2bb3bf5aea13ba0c7b00d2c86268c34feb302d5ee22d52082a228227",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/083.json": "e81810c665e47d96f8e6d3ac5bbf32be9ed5541401de469764e0932559023500",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/084.json": "61b45c6f13535c9212245a9a893316d2dce8e1ee7192005e659b99cc009eab77",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/085.json": "0644a7b321a9f456a874f25944a32fa0b9bac2fdc7fc4e19a91fbfaf726c9af0",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/086.json": "73cce0ec4aa8bfb8b76effd9af4a2f8061dda3a8459269ca8e71c942c239ad95",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/087.json": "aebaabfde623ac374fa700fdcf83c575b971c37ce1f11dac020fda9632b3114d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/088.json": "fb9159a07df76da5732cf11ecc4d888e826f1bf1168688f28a458db1053483ae",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/089.json": "ae287c0aded780e925c72e70e79f1b866200dbda4dd1523050ab84f66d91ee15",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/090.json": "206190bb862da4ef17cacf186cdb141afeb41db1e51e5be131e41f5bcbbfcd08",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/091.json": "d3cfc70a76326a6bba866eb30f08a7f7f5818b5d72550fe8283da5f9a04346aa",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/092.json": "6c4a19940ba6734569dcff43db904221b98b1d2ec487d83016ac6cf0792c46e8",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/093.json": "7e2ca3dd2927c8061d065565e008360111220702b179a08c8304f41e5b29df18",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/094.json": "2a0df966eb542344b56a27eacbb0c640a0aaa1c713fd6fdd840d1f5663c2c3dd",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/095.json": "aaed62c2caa6f9c04450357eb42b9c445d735c4a74dddaf6a64ff02bfea76b20",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/096.json": "16762c0de91bc2a218a84c5e4a4f3d329a2c7bbc1b7a29f927695edd02e23c23",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/097.json": "fce3cbcb4770b8212ab30213e3b2215c54ba2961e8b15a41c12b38f5ad9f9e11",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/098.json": "0599ee1fbf9daa393c568f1c22892f92ba4753e3d0ae41829b9cbb38e8eefc2a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/099.json": "a65d80f9850eb11821cfcd30bd1b9597bf2824f936943866fe3c196a2b167320",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/100.json": "acbc7a1d184e566f6aeef71e1181fb7d17234e4c3bf30f74b80ce8738148618c",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/101.json": "c6762a87312cf22e195487dd9e860ccd44d49d8b19f5f81b576595dfd11127bd",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/102.json": "a148d6446c00bb8a596d691aef5967249e7475ec68d2583cd973051c9f89f637",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/103.json": "4edcdb1e4a6df95405cf05b670bc8ed6b7269b5d4abf4c5718eaac163be8ea2a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/104.json": "88550f556c6d3c785f1affb32a870583a59e564444b7de1e63e4bb203be5eb2e",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/105.json": "42ffd3b14bff744d508f8b846e09c4120cb158ce1bd82928622532fc72a3761c",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/106.json": "1728b43bdeb9e2e29e4f2afde934b3726d6f8a1490ecf30efd708c4599702875",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/107.json": "a7190ef72c96a45034c2381b26329d01d19063d2546b0e49d49b3c12dad0a7f5",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/108.json": "8a106dbf02d3e9b66756431b8a13edfc830a6d80b697e11784738cfc2c22b900",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/109.json": "214224b2cb34c525c65e8fb1a128622dbae4f0709e3941527a5bafa41337b5fb",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/110.json": "b3cadd88396b1dc225890118a9a4fbbe9e67356585e72845e06a458cce097e5f",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/111.json": "fcc4c806e2ffca8588b88286cb5fd5e0ec5dd49c049556195f1594ce131f545a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/112.json": "42ce06c41207c68551a6577d5b09b3e42dec1dbd5439a71392e01f32379533c0",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/113.json": "244b9cf600a79f1628c6717114ad09b4af96c0509fa6109ec796b98f8442553a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/114.json": "fd8377044371997989723a8eadd12bcb7d9ba318b087803f9f716955e2362311",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/115.json": "4fcdefd5a1fa7406089fd5d0a08b8478ec0ed2b714514849a558041f63990876",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/116.json": "0624fda9defa2c42e99cef400f446f8d58446b9f760e265af41200eabd7c3f43",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/117.json": "dfbd3bf7c2add27649fe398352ab4dec3be91afe8993bc737331e3f5e8a66b7c",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/118.json": "c74af049668a4f377bcdfd96aca1b8b9fd35f21cf7b2a0f50f7f380685d2f558",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/119.json": "c18839d241aedec86a2a266ddc7bd68670b9a75b73800dbc518786856e056059",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/120.json": "d42ee5b9370d49817ab512c9abafb52d14f64a2bb82c930ab00032e2adb35cae",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/121.json": "55b026c41891de0acd0b68903d8a2e7c9e98e354a3aabae5fb728a729a763eb3",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/122.json": "d9c8ec40b8e46acceb8e8717909733484b7be8b65bac023ff9b22ca6fb36bff2",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/123.json": "02457a21da7c093745fa8edc57da84a38531899029d162d134402134ee76af13",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/124.json": "63182c5985a125b3ed73a670725d6678c4205d2b425a29b462d6964930013a0f",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/125.json": "3616560a5046b5a11c67e7acc339a69e846ebcf0debc10f329c6d053feba5d57",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/126.json": "3f444784b6329f0dd2a69eb45acfea99e56069ae18f7d835a7a8119f5a7adc68",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/127.json": "b15d8fcbdf5a75f3ef234d4eacba427b97f3f89a7a7a1a10c34ff5289cee3e10",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/128.json": "a28eebf5fe82c55049fed3a3d4034a87bc51d8f7c6d2b0926acdc42c143afdcd",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/129.json": "d5ec20ef324d8564008ffaab2e4b344e139e946cddb551ecf4bcd7b745ca3033",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/130.json": "7b6b1bf000be00e02aba819a72902fd94846af719a881496f92fe7464accf6b6",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/131.json": "567b93514a7e345f420d83a55559ac4587612173b1c28b66bee300266f29e6fd",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/132.json": "b4724f23bca299a8186669f4388297b5ecc811daa3d1ac26818821d203b45659",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/133.json": "52ae6e2df03bf18beef798368823c01549e78b25cd5f306032ce6ea85637b7a0",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/134.json": "cfe24de7d8c22c2f5b4bbeaf262e628310a4b154038063f806233677fdb943bc",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/135.json": "85ab17f4ffd99bd2297f9a741dfaea6610b05563e6bd56aef774c8f74deaead7",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/136.json": "39018a94da077fc544e182361bc75c867b26e1e6fbe61fc4a6e9281c113d4b89",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/137.json": "63077d86c4e3502f348d7d4a5a2572bf5445b0493f388f8fe90b79d7b1bc0447",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/138.json": "0eda7b5f73faa62ee2d96906a92bf7a960384fe441abf5311717b38c420c3f4d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/139.json": "652e819b9a39b99d6dc56d560054d5aa0a2d0a33d65cdd8bb9eb11abe46860ee",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/140.json": "415016a400605dd0ce4742e35694ad3441363207058beb07e534fbc75e574361",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/141.json": "0ac3f3a255e29402ef14c4b71de3d8a363ad18a6ea325252d882abacf6d74744",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/142.json": "d58e9b6b8f049d1b1c4bf35ed2547b52bd8e669e723fb8be3d000c94e69c2f7d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/143.json": "1d05f21198da03db696d313cc877e9e3f68a30325254a810307b5583e7a339fa",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/144.json": "83361d0859faf1a36ba7275623973b75b432ef1cb4adad6d4b088c2c63d09eac",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/145.json": "8878413fa0112503bf247ce0cb511e90b253815bf9cd273bada416d0740c6e50",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/146.json": "79f2f1e5fc5344b44e6b7e389ae0f4af0782add656afecb30cf1d8d882d38d9c",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/147.json": "d8320fbe4d0a5bf326e6844e9dd0e7e2ebad7d7d41a791beb89a82c230f9ddfd",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/148.json": "a4de85b3f5a7cb1364d966eb4270f8cc0b70f17b6886cccce597f361a021ded2",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/149.json": "b32eaa32a0e606e7c8d22d7d5a04cd8dc0b7f837857fa6a545c1c79e049ab7a2",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/150.json": "3616da77b490c5cc9c83758e0daa0f8b917a87252ecff26012637cecca71277b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/151.json": "91a97a254cf95e2f47f39107808474972771ba87688c1d94d48110b67771a197",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/152.json": "e4b7bbe16c7f7ce00387794c893cf8027d9c18a8e3b2285fd1c0f98f9e242887",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/153.json": "068b1103226bfba4a5cbdb5453fad7c7c3d43ed47ff7518b1db65b39bdbc48cc",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/154.json": "58f121fcc3799b79c5ba097f8fc8bec41c8aad89aa0c5aafe7712c227a498d6a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/155.json": "f5f8ced234292124e2c932ab3c7f845155a94bda641c819380c9591fa95020be",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/156.json": "2cbea0ab0ed17a65e522129ba7a1abc7371c3c94fd86ef8e91308ecb60dd32d3",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/157.json": "034db32a0f95563b0d500d646ccad04b81e60aef7f0ce31b52e40d45a56ee385",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/158.json": "b6f349fe9faf3b88ff20404fb5a003b19299c42b58f0fabfc5b66b8214589fe3",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/159.json": "0d460974a48c6f96143f0cca66c54012628717266e97036413646bb894bea35b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/160.json": "261e43a2fcf2e76fd798210b334c5a6c8a25f7a6ba9d45eebfb298840385f48f",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/161.json": "328ca10fb2bad3fb2a2b834e44bfe3160de43f8762f9009ba9e25129a775d586",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/162.json": "702f1a292430c713e377f2b919fa0538ae37de0c385d89621d6039d7d844be43",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/163.json": "d620bac5918c229e7f0d02e8360bb5bae7f88cbd36d91cf82dc05461efe7a65f",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/164.json": "a2cdb946a2ac31c382461c5f8e29a53e60d465681748563f481f9ab013684227",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/165.json": "42b147a20370e88a5474e8bdfa75793d65f5641a1cb3de9160870b7175a5b6e8",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/166.json": "7a809a1ba68d9a4d4aa55d15f883453fa49ca922e75034f415a33e37f46b7161",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/167.json": "7242687e8135f5eeaec977847999bcd574e848e5d3c85ca474bfdef510494d96",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/168.json": "afce09790aced15c2f8da967224c39b0b8cb2723cf008d19d2d043e754634c10",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/169.json": "bc9aede5440dd694dd37424302a95265bc6d361d74139dacab12ff9bb83e3334",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/170.json": "6f181a5889ebbab2a2b13c147619e643cb60d9d79f0f12c7b2214a935ad5e90d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/171.json": "65f8b5d0592ee84eeece7500d2733ec24c714374ebc12558c29586dbc3dbb3f1",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/172.json": "f9829e66bea75cfd1cb52290d6ec3dad79f7a370ae0dad7fdf776aaee949cda6",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/173.json": "4a6b9c19aac00c9f223db97677c0d23fd8a2b87094cc5b79fd50df3ac1bdb0e4",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/174.json": "49bd54e915dcf1c95182e9f39b205916bdee962e2f85b556401bc72391f62933",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/175.json": "63350d427b88c3a8f595f9620938aea0d7ee24ec310b0128975c5afc7edcae36",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/176.json": "c35df4906146b5b51cd3e731de482268b3ff92195de8ec89db8fa9b38dced21d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/177.json": "7106e243e1b7dec20a3006ec4a474603a6222597603a58a52509cf9ca38efb0c",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/178.json": "3963f4d1e9440e125ee14e5e72d238c2bc91523f43505f8268e96d26411a1e36",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/179.json": "30e3503c00d5e507e4e4274ae84b352f5adafca58ef9d350915756a7e275e759",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/180.json": "64c3e340eadfe9411ac0e0a08c8c686a73e4ac87771899b9aab9c882f4bd9d70",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/181.json": "ab161bfe14c1395c034b8a9065ed456f16f4dff63d18b7263338a62fb050bcc1",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/182.json": "b36c1646805f6f8a332a5a180392abb2f39cf3d5ee1ec68f0086da25220ca2c7",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/183.json": "ccc6eac7a82f1877c2273079495777414fe0f8b389ab794c8a1eb1064d46d876",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/184.json": "409b749a11bcd32ab0c716fa996df61161ecf32f73c8e390a4fef207d19f000a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/185.json": "13583957d265077674cf80db5f50379a9cfaf78847442fc55ceade23243ffe42",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/186.json": "03089a175cc1c68eeaa312fb703907abf7aa4b75afb6d454061b1c79cecf368e",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/187.json": "026ab87e56a38c9180f4a7e648bbfc35f7958994e7585102397a8e5a933b6cb0",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/188.json": "463490e81374b3445919bc6b80c119f0105d21ddc8a77be0a45c1b4b2f5bcf11",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/189.json": "f9c6e06cc5e12419e0ae4c34f895d7d97034872ef7e77c80e2d71364c24b314d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/190.json": "1d23de2c65333d04c2084334a40d0a6908fa5e24be779403591414243bf19509",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/191.json": "7652b95e311be950c8a928794c544cab9ccd31f461f06850df9eb1f7a302aed5",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/192.json": "78972a8b079e035764d655f8710ae5136bb9ce9a6b2f0017756b253b548f5d37",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/193.json": "3b7233179e1c976a2abea8e383b1bfcb755cef8734b22eff14665cb3cfe87f99",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/194.json": "2d0e08411fa9cdd73aa29ed5ffdca10a035c25a4af94439a6b5ba4f92aed56b2",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/195.json": "2a5aee043a0b101188802b40daa96e0dc122a2f50d29a3aac91faf7d52f51ffb",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/196.json": "1ff8865e31bc1f5d030a5326f3eda8ec8a5e9160d1805fdf0794d69651f45459",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/197.json": "c0a6309ad550c40d9b1798576992c112b745bc469e298b0b0892a0a2d1ac89f1",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/198.json": "2899d411636e6801cb81c6fb94426a79841a6e79c02420a48ba33b871d0aeb10",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/199.json": "1ea962263b6a80b152048c08fe94dc386c67f5a41c55bd7bfde0c89294fa9afb",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/200.json": "a073461a53f85ea4003de740e3f5c65b81edf74a2e08492fbe9bc3fd680a9945",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/201.json": "4b76f353c51162b566a12161336669967d0e437173233e7f24ad6f4e875d064b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/202.json": "30e71b1717600a69f2ff3614769ac2841bd61402095e6173a442529c4e56eb5d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/203.json": "a477ac226ddf3579b5b9c5d9344697abcabab21c53096638574519f7a8966a2f",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/204.json": "99a0552c9f3fa6fff7dd51f259a648631c162b29bedcd3ac091874c16c0b9a05",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/205.json": "ea79fb3b04a2c2f58a5d19d7365919a7133aea377c47e73db553194dfea7a779",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/206.json": "16d2c57cffc4a027e959b5a90b08eed681dd221c007557427a5842b99e9ef2bc",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/207.json": "b94ccddb3f2a0b4a02114e4afc1a2c569de47c9264ac3deb864620c349b58b9b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/208.json": "f7eb767353bb5b826c0bc23384c5cd4e3f8d619b40e1987c20ad430b58fb14a9",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/209.json": "7d08bde871bbd792ffbee8d40fde89bdaf32d5424781892682c3a7b9ac4d2062",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/210.json": "5468ff9feb5b76eb1dd1f30d69639602c5af1358ab260e5b55600f8360544471",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/211.json": "7e81f6d155b1f3ec57b744bb9d9ee697849f1985ad835c998e80e691582531d1",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/212.json": "f03f13182730b28737ed19167a817c5f2f5a268a7b401d802fffdc4118134b60",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/213.json": "238bcc98ab13d6bf7878aa9440912f9e4e9cea5b50dfd265baee6f437bbd3e0f",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/214.json": "5859ecb5f3a909996958695f7dff1edb5ba3a9ec28f75bfc233930a934ab77c2",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/215.json": "a278a3c37393548ec77193e424cbb7fcede1e4ab356f2764a45878fbd527718c",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/216.json": "8cdbbf39c278ceec0b3be046f384d2b8cd50b633ca00416568959f6b7e542dcc",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/217.json": "108ad65992877dcfda1c17d389734a764b005d84b5356781d759fa8cfe0e9d62",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/218.json": "05af89ea3097c2f77a7b02596f976a41e0bd78f76844509102b4d79b87e18af4",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/219.json": "3794941137e2786912a38871882cbd58d2b9796277e1fc2bab8ece936a0c1750",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/220.json": "cbb2675a0e749d6151b0fde2485878aa04c1e012819ad9de7cdc9afa9a0536a4",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/221.json": "425368ec808f33ed51565b14eb6bf54ebf416546600cb9744a65a458fb80e1ed",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/222.json": "e9542becab5a282c122bd96acedb90add4bb4144fa808f3317ba4a5726e90acd",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/223.json": "f18775880a2dcb4c6cc8150b0aaa80d8cc83b441a1a0dd66325df86c49e0b902",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/224.json": "5f99ff2f773a4bc279bd37da4e9efa24452370ba786c03fa18fed6440685a00f",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/225.json": "91df09f095df74225e6cd044a5dc8a39ed7c60fa1d67213be15bb1e3c3b6ad97",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/226.json": "a69a41b9bfd47feb1b15c92bd7b8ac7c0b9b00e734444701ce979224357a0a64",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/227.json": "035699035d1a9de61ddd2de6d0e3a8c5ae776439ff058b5e493dbb17fbdcda89",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/228.json": "6cbf7bcf522415110686e911434f653236c452e98d51c805a71aa77fd3bc081b",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/229.json": "a94e320b48dcb9b8a36e5c64cd07cd173ccbff57d5d617255bf7a83e391e1b13",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/230.json": "0b63dc81ac6d6bbda90b404720e4927fed5f41ece42d93a780491a212b099979",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/231.json": "c2bed838c7b9293096e7435ed3038a4edeaea3c33ad16449562801c1a378d450",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/232.json": "219e32ad2a06c97491347f364b1087cfe491a15573c3630b4701bb31a56bd855",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/233.json": "411e60b0df09bed34e43e4951bc3b23dcf389e1a3b831c1d99a79cbb251a50b2",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/234.json": "33c31f7d582655c147b08d3487b226b5eb1b861b42cbfac1905f46a64945c3cc",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/235.json": "ae5715f9c246eb43dead944f0114fa59d0a9dbc3e2f81afdbe95aee8a55b54d2",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/236.json": "fe7195fb0e20f98633d2d8f194c4084c051e9c3df0bd55f6d9811bc1696aa66e",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/237.json": "bbc4894a5a6005a8937c080547c5cf567f9562e0d9a60867e5a658bdd1ab44e4",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/238.json": "0e82d75bc51a4f488d3f13734e8f30306b09563ef5f2bdbd8ad0c0c972d0292d",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/239.json": "e5715a80657e3f7f7a7f1999adc12677834403eedae898dc4bae9d7fc68e85b6",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/240.json": "69aacc1a611236c3837a38650e272c6e107fed3b4b2e417d0811e4f98063cae3",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/241.json": "0a77bf801d8e18937c6c407b0c168f269a20f47e3809be65d984856cb4583200",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/242.json": "a82dbc62c14c64a70906ff4a072cecbcbd982892ef599b09d7e56f2864b7ae60",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/243.json": "6c217055801a271b5ba21fab976c5e6c72b9ba578572deb756d77b35aceb0ea7",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/244.json": "dd2f7fdc4f16a77a047929128ee5d92f97b2ba5fca3e907d4f6c106e54103b83",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/245.json": "becb9d386592a9250d365c61f0451e67c12b1e540e9cdbdb8c3d954527f78cb6",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/246.json": "e466f1b99f4ccee4cc73ae4d789257ecdddfe9dbd34f9e6f766dbbbf416914dc",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/247.json": "512e0a05891a0989d48e388bcada7cec91be3ff1ee1b1279e463d062a992843a",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/248.json": "e2598418b7f82709287615b0b2d0107ccd5737cdb5fc56d1b6d0343e4c83af23",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/249.json": "85bfe869d4e31f5243f0cebbe4cb563d9197b9395c6c6876e9d009e666e571c0",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/250.json": "67836a994174bca61960a80a7e44b5aea919112f6da6df9bc02b2a005f4ec203",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/251.json": "3c05c6393636bec7244699ba34dbeb14a41aa91165e9a8e93d8429a9b5f4e942",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/252.json": "463341227a9e4589f43d242feae094ac5d5fcc53022898e2f96b3805b1b00151",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/253.json": "0ccdeb2c276c35d2f864be990ced3a7666432df86a13738d76ae3663f057a200",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/254.json": "47316659956fc08716722e6a1967834bbea49167c387707a0d7d9ecbec696036",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/255.json": "8f4c5bfae025318a214aadcfd80a4fa9d691a57c2e323d08a4079d979b8a46f8",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/256.json": "9e8175b84974bfd020403866d013a1a7dab9adb655fca12edaad74051ab98315",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/257.json": "fb767cf23187086170728bd2c97c9e40d7937b8d0d4e37ccfe64e5a34e70d8d3",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/258.json": "813c3a0685bb87fe5a4a3fe9a0a5082455f58a8723acbad55af899d9eeb5aef0",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/259.json": "578913f9417d79139671ba0b83fdcc4782c635b59839d2b376834cd28da8fd59",
+    "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/fixtures/260.json": "abe6797c8fef42979dbae42559e54e63e3d2efcdfefe71e7acb936199c5523e7"
+  },
+  "local_source_sha256": {
+    "modules/curobo/source/curobo/_src/motion/motion_planner.py": "e865256c6fb1d99394cec242209cda8fe8b9c8a0f5b5503f74978d45401efc9f",
+    "modules/curobo/source/curobo/_src/motion/motion_planner_batch.py": "bee3b22d53a2030fcc9d3135e619f7146e36ed16287a3ab657475b26d28541ac",
+    "modules/curobo/source/curobo/_src/motion/motion_planner_cfg.py": "5b2bce3a5e84949470ea4d7450ba43fc55fbf8b480d01494d539295530ce70aa",
+    "modules/curobo/indexed_planning/batches.py": "a580b3dbbaa70c6ca3bcd1c16174e892188b82aa3a0e1d8ef7de7808e0979758",
+    "modules/curobo/fingertip_contact/planning.py": "3ef632eb34ed112649c7322fcd438f50d35bde06269da8dde482761ed27283b0",
+    "modules/curobo/fingertip_contact/validator.py": "1d8b43cc59dd4c9c7884967a38bec5a2197301d05890ca63d54d40d7a2a5ae58",
+    "configs/experiments/graspgenx_postprocessing.json": "10ae5cb36c49912c85ca086738888a3bb6bb1a1da546c020a0813243a1d450ea"
+  },
+  "primary_sources": [
+    "https://nvlabs.github.io/curobo/latest/getting-started/motion_planning.html",
+    "https://github.com/NVlabs/curobo/blob/main/curobo/_src/motion/motion_planner.py",
+    "https://github.com/NVlabs/curobo/blob/main/curobo/_src/motion/motion_planner_batch.py",
+    "https://github.com/rpiRobotics/ik-geo",
+    "https://ostermd.github.io/EAIK/"
+  ]
+}

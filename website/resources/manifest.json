@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T08:18:44.307Z",
+  "generatedAt": "2026-11-26T09:05:48.926Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1415,11 +1415,11 @@
     },
     {
       "file": "media/sam3-v8-indexed-planning-plan.md",
-      "sha256": "21586464944bd56ecbf00a7340f9a40c2bdeb88682860c5d7a18c69d4cdf418b"
+      "sha256": "5ffda3bf7dedfd4217d85570af8bf7b11bb72cb9a00972911c5784ae319d9f14"
     },
     {
       "file": "media/sam3-v8-indexed-planning-config.json",
-      "sha256": "20607bb859d007deaae70bacc99b448951b506b812916b415a8be5f7deac2d37"
+      "sha256": "169f03c9b5ef2c8f08a45297338e81f8f44fccaa0014da987a16ef15d06f777a"
     },
     {
       "file": "media/sam3-v8-indexed-planning-preparation.json",
@@ -1588,6 +1588,14 @@
     {
       "file": "media/sam3-v8-index-seed-probe-20261126-02-status.json",
       "sha256": "4e06d79cfd1f2cca93360bf09f45bde8accdbe60ef49d52d6af10ad1aec0f5a6"
+    },
+    {
+      "file": "media/sam3-v8-funnel-review.md",
+      "sha256": "6c9995ebdfe9693fc5bb945ed607abad38c6fafd63169b5834084f0427370596"
+    },
+    {
+      "file": "media/sam3-v8-funnel-source-review.json",
+      "sha256": "cc42e13fa59a49947f9cb85b466e2c8eb5c2ec7c777a089ec68372bad7edb515"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

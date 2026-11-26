@@ -625,7 +625,9 @@
     "sam3-v8-index-reuse-method.md": "../../resources/media/sam3-v8-index-reuse-method.md",
     "sam3-v8-index-lookup-20261126-01-status.json": "../../resources/media/sam3-v8-index-lookup-20261126-01-status.json",
     "sam3-v8-index-seed-probe-20261126-01-status.json": "../../resources/media/sam3-v8-index-seed-probe-20261126-01-status.json",
-    "sam3-v8-index-seed-probe-20261126-02-status.json": "../../resources/media/sam3-v8-index-seed-probe-20261126-02-status.json"
+    "sam3-v8-index-seed-probe-20261126-02-status.json": "../../resources/media/sam3-v8-index-seed-probe-20261126-02-status.json",
+    "sam3-v8-funnel-review.md": "../../resources/media/sam3-v8-funnel-review.md",
+    "sam3-v8-funnel-source-review.json": "../../resources/media/sam3-v8-funnel-source-review.json"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",

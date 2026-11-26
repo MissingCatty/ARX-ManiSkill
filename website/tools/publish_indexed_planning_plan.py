@@ -122,6 +122,10 @@ def publish():
         (review/'source_review.json','sam3-v8-source-review.json')]
     index_doc=ROOT/'modules/pipeline/docs/mainline_versions/V8_地图索引复用实施.md'
     if index_doc.is_file():attachments.append((index_doc,'sam3-v8-index-reuse-method.md'))
+    funnel=config.get('funnel_proposal_review')
+    if funnel:
+        attachments.extend([(ROOT/funnel['document'],'sam3-v8-funnel-review.md'),
+            (ROOT/funnel['review_run']/'review.json','sam3-v8-funnel-source-review.json')])
     for source,name in attachments:
         target = website/'resources/media'/name
         if target.is_symlink():raise ValueError('Website resource must be a real copy')
@@ -394,6 +398,20 @@ def publish():
         body=body.replace('当前交替搜索的完整69份观测耗时将在V8重新测量。',
             '当前交替搜索的完整69份观测已完成B、C同期回放，结果见上方表格。')
         site['localAssets'][name] = '../../resources/media/'+name
+    if funnel:
+        section=('## 后续方向：分级筛选与批量路径\n\n'
+            '已核对用户补充的漏斗方案。下一步优先补候选粗筛与去重、预抓取和抬升联合检查，'
+            '以及直接复用预抓取关节解的小批量路径规划。具体适配与回放待实施。\n\n'
+            '| 工作 | 安排 |\n| --- | --- |\n'
+            '| 夹爪粗筛和代表候选去重 | 放在已有V7后处理实验，保留候选来源与后续检查机会 |\n'
+            '| 预抓取、抓取和抬升联合检查 | 基于B16补批量处理，保留同一组关节分支 |\n'
+            '| 少量已知关节终点并行规划 | 优先评估本地批量关节空间接口，减少重复IK |\n'
+            '| Goalset | 单独比较选点与避障表现，保留原路径回退 |\n\n'
+            '原IK能解出的115个终点中，有85个在2厘米/10°地图邻域里没有记录。'
+            '地图空值继续表示未知，不能据此删除候选。\n\n'
+            '[建议核对与实施顺序](/media/sam3-v8-funnel-review.md) · '
+            '[本地接口与反例数据](/media/sam3-v8-funnel-source-review.json)\n\n')
+        body=body.replace('## 优化目标',section+'## 优化目标',1)
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version = next(v for v in group['iterations'] if v['code']=='V8')
