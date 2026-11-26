@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T07:57:52.757Z",
+  "generatedAt": "2026-11-26T08:09:56.130Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1415,11 +1415,11 @@
     },
     {
       "file": "media/sam3-v8-indexed-planning-plan.md",
-      "sha256": "18aba70e0c074336221ce8c19ea46ac72bbf7715def891a14105bccd3eeade9f"
+      "sha256": "ebbcad65e7909b744a19ff650a281aa45af340a8b39ede7f8f2a1e0fdbc57696"
     },
     {
       "file": "media/sam3-v8-indexed-planning-config.json",
-      "sha256": "fb86c2940e594ba13ed795a74430923ad88bf6db9c1eb6722bdf0a4fcb9d7dcc"
+      "sha256": "679ef616dff8a53db38ac53975c17410211b89b3c467ea87d0147ea84c1b174a"
     },
     {
       "file": "media/sam3-v8-indexed-planning-preparation.json",
@@ -1575,7 +1575,7 @@
     },
     {
       "file": "media/sam3-v8-index-reuse-method.md",
-      "sha256": "0714c8f374a6f74ae093882ec043818ade1696fb4b6f90b2bd476ef3a50525fc"
+      "sha256": "2301045b5e2e17c398471ea93c711833ffc005ba7f671dfd08249d77b6d9c578"
     },
     {
       "file": "media/sam3-v8-index-lookup-20261126-01-status.json",
@@ -1584,6 +1584,10 @@
     {
       "file": "media/sam3-v8-index-seed-probe-20261126-01-status.json",
       "sha256": "812b2583ef08ca4260d653186cd5642b0cd6e3df77dc8dd3b17e178c689bb12a"
+    },
+    {
+      "file": "media/sam3-v8-index-seed-probe-20261126-02-status.json",
+      "sha256": "f32fc5e124630873a163de2584290ea640cfd4669bc43fd0443b6fbdb8e72914"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

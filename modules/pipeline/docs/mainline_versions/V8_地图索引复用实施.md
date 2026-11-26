@@ -64,6 +64,22 @@ E的目标是利用已有可达性地图减少寻找关节角的耗时。输入�
 
 ## 已有检查与代码入口
 
+### 后台等待显卡
+
+用户已要求使用监测脚本。新承接登记为`tmp/indexed_grasp_planning/index_seed_probe_20261126_02/`，直接复制原来的261个冻结终点，保留01登记与STOP。预算和求解参数保持。
+
+复用`modules/pipeline/monitoring/gpu_auto_start.py`，每秒查询所有显卡。空闲显存达到10,000 MiB后，在独立进程实测CUDA可用量，并做1 MiB分配和计算核验；通过后自动启动本轮IK。CUDA检查失败的卡冷却10分钟，继续检查其他卡。
+
+启动领取使用持久文件，监测器重启后也不会重复启动同一登记。任务自身发生故障则保留STOP并结束监测。17项离线检查通过，覆盖显卡利用率为N/A、CUDA坏卡不阻挡健康卡、冷却、低显存等待及重复调度拦截。
+
+| 内容 | 位置 |
+| --- | --- |
+| 监测配置 | `configs/experiments/indexed_grasp_seed_watch.json` |
+| 监测服务 | `arx-v8-index-seed-watch-20261126-01.service` |
+| 实时监测状态 | `tmp/indexed_grasp_planning/index_seed_probe_20261126_02/monitor/status.json` |
+| IK实际进度 | `tmp/indexed_grasp_planning/index_seed_probe_20261126_02/progress.json` |
+| 承接、启动与结果发布 | `modules/pipeline/experiments/indexed_grasp_planning/seed_watch.py` |
+
 查询模块16项离线检查通过，包括四元数正负号等价、完整旋转筛选、TCP偏移造成的位置变化、地图散列和限位故障、独立FK拦截，以及“4°近邻可以作为5°初值、不能直接绕过原精度验收”。
 
 | 内容 | 路径 |

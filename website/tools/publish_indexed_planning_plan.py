@@ -278,7 +278,8 @@ def publish():
             done=snapshot.get('completed_IK_calls' if probing else 'completed_queries',0)
             total=snapshot.get('total_IK_calls' if probing else 'total_queries',0)
             stage='原目标IK初值对照' if probing else 'CPU近邻查询'
-            state='已完成' if snapshot['phase']=='complete' else '已停止' if snapshot['stopped'] else '进行中'
+            state=('已完成' if snapshot['phase']=='complete' else '已停止' if snapshot['stopped'] else
+                '等待空闲显卡' if snapshot['phase']=='waiting_for_gpu' else '进行中')
             status=label+'，'+stage+state
             summary=f'E：{stage}{done:,}/{total:,}次，比较3°、5°、10°查询范围。'
             if snapshot.get('stop_summary',{}).get('phase')=='stopped_before_model_loading':

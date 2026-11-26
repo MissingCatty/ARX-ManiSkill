@@ -1,0 +1,25 @@
+{
+  "run": "tmp/indexed_grasp_planning/index_seed_probe_20261126_02",
+  "controller_unit": "arx-v8-index-seed-probe-20261126-02.service",
+  "status_file": "tmp/indexed_grasp_planning/index_seed_probe_20261126_02/monitor/status.json",
+  "poll_interval_seconds": 1,
+  "readiness_marker": "startup.json",
+  "dispatch_marker_files": ["dispatch_claim.json"],
+  "admission_plans_mib": [{"planner": 10000}],
+  "cuda_probe_before_dispatch": {
+    "python": "environments/curobo/bin/python",
+    "minimum_free_mib": 10000,
+    "timeout_seconds": 30,
+    "failure_cooldown_seconds": 600
+  },
+  "start_commands": [[
+    "environments/geometric_ik/bin/python",
+    "-m", "modules.pipeline.experiments.indexed_grasp_planning.seed_watch",
+    "launch",
+    "--root", "tmp/indexed_grasp_planning/index_seed_probe_20261126_02",
+    "--gpu", "{planner_uuid}"
+  ]],
+  "authorization": "2026-11-26：用监测脚本；只承接未执行的E初值对照，保留旧登记与STOP。",
+  "automatic_experiment_retries": false,
+  "physical_grasp_budget": 0
+}

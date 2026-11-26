@@ -2,9 +2,11 @@
 import tempfile
 from pathlib import Path
 import unittest
+from unittest.mock import patch
+from types import SimpleNamespace
 
 from arx_project.layout import ROOT, write_json
-from modules.pipeline.monitoring.gpu_auto_start import choose, tick
+from modules.pipeline.monitoring.gpu_auto_start import choose, tick, inventory
 
 
 class GPUAutoStartTests(unittest.TestCase):
@@ -55,6 +57,59 @@ class GPUAutoStartTests(unittest.TestCase):
     def test_new_claim_prevents_dispatch(self):
         write_json(self.root/'claims/new.json',{'state':'claimed'})
         self.assertEqual(self.check_tick({})['state'],'already_started_not_retried')
+        self.assertFalse(self.calls)
+
+    def single_gpu_config(self):
+        return {**self.config,'admission_plans_mib':[{'planner':10000}],
+            'start_commands':[['offline-placeholder','{planner_uuid}']],
+            'cuda_probe_before_dispatch':{'failure_cooldown_seconds':600}}
+
+    def test_unknown_utilization_does_not_crash_memory_monitor(self):
+        with patch('modules.pipeline.monitoring.gpu_auto_start.subprocess.run',
+                   return_value=SimpleNamespace(stdout='0, gpu0, 24000, [N/A]\n')):
+            values=inventory()
+        self.assertEqual(values[0]['free_mib'],24000)
+        self.assertIsNone(values[0]['utilization_percent'])
+
+    def test_seed_probe_registration_needs_no_grasp_schedule(self):
+        write_json(self.root/'registration.json',{'experiment':'index_seed_probe'})
+        result=self.check_tick({})
+        self.assertEqual(result['state'],'task_dispatched')
+
+    def test_failed_cuda_card_does_not_block_healthy_card(self):
+        checks=[]
+        def probe(gpu,_):
+            checks.append(gpu['uuid']);return {'passed':gpu['uuid']!='0'}
+        result=tick(self.single_gpu_config(),{},query=lambda:self.gpus,active=lambda _:False,
+            execute=lambda command,**_:self.calls.append(command),probe=probe,clock=lambda:100)
+        self.assertEqual(result['selected']['planner']['uuid'],'1')
+        self.assertEqual(checks,['0','1'])
+        self.assertEqual(self.calls,[['offline-placeholder','1']])
+        self.assertTrue((self.root/'monitor/cuda_admission.json').is_file())
+
+    def test_failed_cuda_card_is_not_probed_each_poll(self):
+        state={};checks=[]
+        def probe(gpu,_):
+            checks.append(gpu['uuid']);return {'passed':False}
+        config=self.single_gpu_config()
+        for at in [100,101,150]:
+            result=tick(config,state,query=lambda:self.gpus[:1],active=lambda _:False,
+                execute=lambda command,**_:self.calls.append(command),probe=probe,clock=lambda:at)
+            self.assertEqual(result['state'],'waiting_for_gpu')
+        self.assertEqual(checks,['0']);self.assertFalse(self.calls)
+
+    def test_low_memory_waits_without_cuda_probe(self):
+        def forbidden(*_):raise AssertionError('Do not initialize CUDA below the memory gate')
+        result=tick(self.single_gpu_config(),{},query=lambda:[{'index':0,'uuid':'0','free_mib':9999}],
+            active=lambda _:False,probe=forbidden)
+        self.assertEqual(result['state'],'waiting_for_gpu')
+
+    def test_durable_dispatch_marker_blocks_restart_duplicate(self):
+        config={**self.single_gpu_config(),'dispatch_marker_files':['dispatch_claim.json']}
+        write_json(self.root/'dispatch_claim.json',{'gpu':'0'})
+        result=tick(config,{},query=lambda:self.gpus,active=lambda _:False,
+            execute=lambda command,**_:self.calls.append(command))
+        self.assertEqual(result['state'],'already_started_not_retried')
         self.assertFalse(self.calls)
 
 
