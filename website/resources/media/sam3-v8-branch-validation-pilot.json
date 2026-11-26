@@ -1,0 +1,365 @@
+{
+  "run": "tmp/indexed_grasp_planning/validation_pilot_20261126_01",
+  "experiment": "batched_fallback_validation",
+  "gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "phase": "complete",
+  "completed_requests": 20,
+  "total_requests": 20,
+  "current": null,
+  "summaries": {
+    "control": {
+      "requests": 10,
+      "successes": 10,
+      "median_seconds": 6.060715915504261,
+      "p90_seconds": 21.294048857704908,
+      "total_seconds": 96.55520670700935,
+      "candidate_checks": 674,
+      "stage_totals": {
+        "resident_world_bind": {
+          "calls": 68,
+          "wall_seconds": 22.165448616011417,
+          "exclusive_seconds": 22.165448616011417
+        },
+        "contact_world_bind": {
+          "calls": 28,
+          "wall_seconds": 3.3938755609851796,
+          "exclusive_seconds": 3.3938755609851796
+        },
+        "batch_world_bind": {
+          "calls": 28,
+          "wall_seconds": 0.03518717095721513,
+          "exclusive_seconds": 0.03518717095721513
+        },
+        "independent_FK": {
+          "calls": 1526,
+          "wall_seconds": 2.139192505957908,
+          "exclusive_seconds": 2.139192505957908
+        },
+        "grasp_batch_full_world_IK": {
+          "calls": 52,
+          "wall_seconds": 36.28688981103187,
+          "exclusive_seconds": 36.264204076025635
+        },
+        "grasp_batch_kinematic_IK": {
+          "calls": 52,
+          "wall_seconds": 1.2494885290507227,
+          "exclusive_seconds": 1.2494885290507227
+        },
+        "grasp_endpoint": {
+          "calls": 674,
+          "wall_seconds": 48.18869280605577,
+          "exclusive_seconds": 0.46086042806564365
+        },
+        "pregrasp_scalar_IK": {
+          "calls": 14,
+          "wall_seconds": 0.1939754630147945,
+          "exclusive_seconds": 0.1939754630147945
+        },
+        "lift_scalar_IK": {
+          "calls": 14,
+          "wall_seconds": 0.1626584159967024,
+          "exclusive_seconds": 0.1626584159967024
+        },
+        "PRM_path": {
+          "calls": 28,
+          "wall_seconds": 1.414559270007885,
+          "exclusive_seconds": 1.414559270007885
+        },
+        "trajectory_approach": {
+          "calls": 14,
+          "wall_seconds": 1.07696398999542,
+          "exclusive_seconds": 1.07696398999542
+        },
+        "trajectory_pregrasp": {
+          "calls": 14,
+          "wall_seconds": 1.320764329022495,
+          "exclusive_seconds": 1.320764329022495
+        },
+        "candidate_search": {
+          "calls": 28,
+          "wall_seconds": 52.51980278197152,
+          "exclusive_seconds": 0.12700133692123927
+        },
+        "local_collision_validate": {
+          "calls": 1288,
+          "wall_seconds": 8.382199065934401,
+          "exclusive_seconds": 8.07494726695586
+        }
+      }
+    },
+    "vectorized": {
+      "requests": 10,
+      "successes": 10,
+      "median_seconds": 6.916477259503154,
+      "p90_seconds": 17.594442221199277,
+      "total_seconds": 91.27360162397963,
+      "candidate_checks": 674,
+      "stage_totals": {
+        "resident_world_bind": {
+          "calls": 68,
+          "wall_seconds": 22.595826057950035,
+          "exclusive_seconds": 22.595826057950035
+        },
+        "contact_world_bind": {
+          "calls": 28,
+          "wall_seconds": 3.704111714003375,
+          "exclusive_seconds": 3.704111714003375
+        },
+        "batch_world_bind": {
+          "calls": 28,
+          "wall_seconds": 0.03542925993679091,
+          "exclusive_seconds": 0.03542925993679091
+        },
+        "independent_FK": {
+          "calls": 400,
+          "wall_seconds": 0.5826022279652534,
+          "exclusive_seconds": 0.5826022279652534
+        },
+        "grasp_batch_full_world_IK": {
+          "calls": 52,
+          "wall_seconds": 38.22390220807574,
+          "exclusive_seconds": 38.20085487209144
+        },
+        "grasp_batch_kinematic_IK": {
+          "calls": 52,
+          "wall_seconds": 1.3055844340415206,
+          "exclusive_seconds": 1.3055844340415206
+        },
+        "grasp_endpoint": {
+          "calls": 674,
+          "wall_seconds": 41.963997106824536,
+          "exclusive_seconds": 0.6498576618614607
+        },
+        "pregrasp_scalar_IK": {
+          "calls": 14,
+          "wall_seconds": 0.19926194203435443,
+          "exclusive_seconds": 0.19926194203435443
+        },
+        "lift_scalar_IK": {
+          "calls": 14,
+          "wall_seconds": 0.15974447199550923,
+          "exclusive_seconds": 0.15974447199550923
+        },
+        "PRM_path": {
+          "calls": 28,
+          "wall_seconds": 1.7242062569712289,
+          "exclusive_seconds": 1.7242062569712289
+        },
+        "trajectory_approach": {
+          "calls": 14,
+          "wall_seconds": 1.299674570953357,
+          "exclusive_seconds": 1.299674570953357
+        },
+        "trajectory_pregrasp": {
+          "calls": 14,
+          "wall_seconds": 1.5784153360291384,
+          "exclusive_seconds": 1.5784153360291384
+        },
+        "candidate_search": {
+          "calls": 28,
+          "wall_seconds": 47.08831929601729,
+          "exclusive_seconds": 0.1275903512723744
+        },
+        "local_collision_validate": {
+          "calls": 162,
+          "wall_seconds": 1.5393185409193393,
+          "exclusive_seconds": 1.2250979108648608
+        }
+      }
+    }
+  },
+  "accepted": {
+    "at": "2026-11-26T19:43:13.022300+08:00",
+    "task_complete": true,
+    "record_integrity": true,
+    "planning_requests": 20,
+    "summaries": {
+      "control": {
+        "requests": 10,
+        "successes": 10,
+        "median_seconds": 6.060715915504261,
+        "p90_seconds": 21.294048857704908,
+        "total_seconds": 96.55520670700935,
+        "candidate_checks": 674,
+        "stage_totals": {
+          "resident_world_bind": {
+            "calls": 68,
+            "wall_seconds": 22.165448616011417,
+            "exclusive_seconds": 22.165448616011417
+          },
+          "contact_world_bind": {
+            "calls": 28,
+            "wall_seconds": 3.3938755609851796,
+            "exclusive_seconds": 3.3938755609851796
+          },
+          "batch_world_bind": {
+            "calls": 28,
+            "wall_seconds": 0.03518717095721513,
+            "exclusive_seconds": 0.03518717095721513
+          },
+          "independent_FK": {
+            "calls": 1526,
+            "wall_seconds": 2.139192505957908,
+            "exclusive_seconds": 2.139192505957908
+          },
+          "grasp_batch_full_world_IK": {
+            "calls": 52,
+            "wall_seconds": 36.28688981103187,
+            "exclusive_seconds": 36.264204076025635
+          },
+          "grasp_batch_kinematic_IK": {
+            "calls": 52,
+            "wall_seconds": 1.2494885290507227,
+            "exclusive_seconds": 1.2494885290507227
+          },
+          "grasp_endpoint": {
+            "calls": 674,
+            "wall_seconds": 48.18869280605577,
+            "exclusive_seconds": 0.46086042806564365
+          },
+          "pregrasp_scalar_IK": {
+            "calls": 14,
+            "wall_seconds": 0.1939754630147945,
+            "exclusive_seconds": 0.1939754630147945
+          },
+          "lift_scalar_IK": {
+            "calls": 14,
+            "wall_seconds": 0.1626584159967024,
+            "exclusive_seconds": 0.1626584159967024
+          },
+          "PRM_path": {
+            "calls": 28,
+            "wall_seconds": 1.414559270007885,
+            "exclusive_seconds": 1.414559270007885
+          },
+          "trajectory_approach": {
+            "calls": 14,
+            "wall_seconds": 1.07696398999542,
+            "exclusive_seconds": 1.07696398999542
+          },
+          "trajectory_pregrasp": {
+            "calls": 14,
+            "wall_seconds": 1.320764329022495,
+            "exclusive_seconds": 1.320764329022495
+          },
+          "candidate_search": {
+            "calls": 28,
+            "wall_seconds": 52.51980278197152,
+            "exclusive_seconds": 0.12700133692123927
+          },
+          "local_collision_validate": {
+            "calls": 1288,
+            "wall_seconds": 8.382199065934401,
+            "exclusive_seconds": 8.07494726695586
+          }
+        }
+      },
+      "vectorized": {
+        "requests": 10,
+        "successes": 10,
+        "median_seconds": 6.916477259503154,
+        "p90_seconds": 17.594442221199277,
+        "total_seconds": 91.27360162397963,
+        "candidate_checks": 674,
+        "stage_totals": {
+          "resident_world_bind": {
+            "calls": 68,
+            "wall_seconds": 22.595826057950035,
+            "exclusive_seconds": 22.595826057950035
+          },
+          "contact_world_bind": {
+            "calls": 28,
+            "wall_seconds": 3.704111714003375,
+            "exclusive_seconds": 3.704111714003375
+          },
+          "batch_world_bind": {
+            "calls": 28,
+            "wall_seconds": 0.03542925993679091,
+            "exclusive_seconds": 0.03542925993679091
+          },
+          "independent_FK": {
+            "calls": 400,
+            "wall_seconds": 0.5826022279652534,
+            "exclusive_seconds": 0.5826022279652534
+          },
+          "grasp_batch_full_world_IK": {
+            "calls": 52,
+            "wall_seconds": 38.22390220807574,
+            "exclusive_seconds": 38.20085487209144
+          },
+          "grasp_batch_kinematic_IK": {
+            "calls": 52,
+            "wall_seconds": 1.3055844340415206,
+            "exclusive_seconds": 1.3055844340415206
+          },
+          "grasp_endpoint": {
+            "calls": 674,
+            "wall_seconds": 41.963997106824536,
+            "exclusive_seconds": 0.6498576618614607
+          },
+          "pregrasp_scalar_IK": {
+            "calls": 14,
+            "wall_seconds": 0.19926194203435443,
+            "exclusive_seconds": 0.19926194203435443
+          },
+          "lift_scalar_IK": {
+            "calls": 14,
+            "wall_seconds": 0.15974447199550923,
+            "exclusive_seconds": 0.15974447199550923
+          },
+          "PRM_path": {
+            "calls": 28,
+            "wall_seconds": 1.7242062569712289,
+            "exclusive_seconds": 1.7242062569712289
+          },
+          "trajectory_approach": {
+            "calls": 14,
+            "wall_seconds": 1.299674570953357,
+            "exclusive_seconds": 1.299674570953357
+          },
+          "trajectory_pregrasp": {
+            "calls": 14,
+            "wall_seconds": 1.5784153360291384,
+            "exclusive_seconds": 1.5784153360291384
+          },
+          "candidate_search": {
+            "calls": 28,
+            "wall_seconds": 47.08831929601729,
+            "exclusive_seconds": 0.1275903512723744
+          },
+          "local_collision_validate": {
+            "calls": 162,
+            "wall_seconds": 1.5393185409193393,
+            "exclusive_seconds": 1.2250979108648608
+          }
+        }
+      }
+    },
+    "control_successes_retained": true,
+    "all_original_selections_and_branches_retained": true,
+    "planning_total_time_reduction": 0.05470036534701239,
+    "timing_gate_passed": true,
+    "physical_grasps": 0,
+    "automatic_full_comparison": false,
+    "automatic_default_activation": false
+  },
+  "independent_review": {
+    "at": "2026-11-26T19:43:23.436085+08:00",
+    "passed": true,
+    "record_integrity": true,
+    "checked_requests": 20,
+    "checked_original_candidate_rows": 45664,
+    "checked_endpoints": 60,
+    "control_successes_retained": true,
+    "physical_grasps": 0,
+    "automatic_default_activation": false,
+    "all_original_selections_and_branches_retained": true,
+    "timing_and_arm_receipts_verified": true,
+    "stage_timing_inclusive_and_exclusive": true,
+    "planning_total_time_reduction": 0.05470036534701239,
+    "timing_gate_passed": true,
+    "automatic_full_comparison": false
+  },
+  "physical_grasps": 0,
+  "stopped": false
+}

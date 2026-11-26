@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T11:23:34.926Z",
+  "generatedAt": "2026-11-26T11:59:31.944Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1591,7 +1591,7 @@
     },
     {
       "file": "media/sam3-v8-funnel-review.md",
-      "sha256": "55ee2ce114513c5b0d493a5a4408d4e9e805437491201f31740fd43c6da4c7cb"
+      "sha256": "55e0ed24cd24df16aeaff4b21ae90f53ddda2560a7b78641cc89c9469c894390"
     },
     {
       "file": "media/sam3-v8-funnel-source-review.json",
@@ -1640,6 +1640,22 @@
     {
       "file": "media/sam3-v8-full69-funnel-diagnosis.md",
       "sha256": "817cc6d5dc7ceadee1b800301add38ad84ff8e58d64d89f995c24f7435fc60b2"
+    },
+    {
+      "file": "media/sam3-v8-branch-validation-pilot.json",
+      "sha256": "348786e680f0634ca9a6e75a044a0b3bc11abf70ba284e499461c553d9150ce5"
+    },
+    {
+      "file": "media/sam3-v8-branch-validation-pilot.md",
+      "sha256": "9159c4fa76d7d7cefde5f0f637f9240241d9699ff66557ca57b3e633c66cb52a"
+    },
+    {
+      "file": "media/sam3-v8-branch-validation-full69.json",
+      "sha256": "c401cd9f20a137f31d289dcc6b7ecb51d1421507539349f69dd282baa026f0be"
+    },
+    {
+      "file": "media/sam3-v8-branch-validation-full69.md",
+      "sha256": "1e748c9e2456370449e0462fcedf1d1af4636a11a00dd4a14b280c8003fd60b0"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

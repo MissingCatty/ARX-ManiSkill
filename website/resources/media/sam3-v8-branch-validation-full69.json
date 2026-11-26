@@ -1,0 +1,17 @@
+{
+  "run": "tmp/indexed_grasp_planning/validation69_20261126_01",
+  "experiment": "batched_fallback_validation",
+  "gpu": "GPU-b827b8be-c675-83f7-1b4c-39b5811c6d5e",
+  "phase": "planning",
+  "completed_requests": 31,
+  "total_requests": 138,
+  "current": {
+    "id": "M0022_S2_edge_keychain",
+    "variant": "control_1"
+  },
+  "summaries": null,
+  "accepted": null,
+  "independent_review": null,
+  "physical_grasps": 0,
+  "stopped": false
+}
