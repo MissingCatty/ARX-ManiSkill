@@ -68,5 +68,13 @@
     "version": "Python 3.11.17",
     "requirements_exported": true,
     "exporter": "importlib.metadata"
+  },
+  {
+    "name": "geometric_ik",
+    "python": "environments/geometric_ik/bin/python",
+    "version": "Python 3.11.17",
+    "requirements_exported": true,
+    "exporter": "pip freeze",
+    "purpose": "V8 independent CPU EAIK worker; no existing environment modification"
   }
 ]

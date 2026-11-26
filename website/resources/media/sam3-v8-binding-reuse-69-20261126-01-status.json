@@ -1,0 +1,2326 @@
+{
+  "at": "2026-11-26T14:52:06.576708+08:00",
+  "phase": "complete",
+  "completed_requests": 138,
+  "total_requests": 138,
+  "current": null,
+  "run": "tmp/indexed_grasp_planning/binding_reuse_69_20261126_01",
+  "gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "cases": 69,
+  "experiment": "binding_reuse",
+  "variants": {
+    "control": false,
+    "reuse": true
+  },
+  "physical_grasps": 0,
+  "offline_checks": 20,
+  "model_warmup_complete": true,
+  "stopped": false,
+  "results": [
+    {
+      "id": "M0001_S1_open_apple",
+      "variants": {
+        "control": {
+          "seconds": 13.432307251001475,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": 2.3859813080198364,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 6.773708009000984,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": 2.5952268940018257,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.983006535438561
+        }
+      }
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "variants": {
+        "reuse": {
+          "seconds": 9.348122670999146,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 3,
+          "candidate_checks": 8,
+          "binding_seconds": 3.014042964998225,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 6.431186970999988,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 3,
+          "candidate_checks": 8,
+          "binding_seconds": 1.809625046007568,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.6879656159146883
+        }
+      }
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "variants": {
+        "control": {
+          "seconds": 5.207904474998941,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 2.0811748709966196,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 7.651809775001311,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 3.351521661003062,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.6806108134069562
+        }
+      }
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "variants": {
+        "reuse": {
+          "seconds": 75.45175060899783,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 238,
+          "candidate_checks": 511,
+          "binding_seconds": 2.9950090580023243,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 8
+        },
+        "control": {
+          "seconds": 91.75211295799818,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 238,
+          "candidate_checks": 511,
+          "binding_seconds": 4.073702244997548,
+          "full_world_rebinds": 14,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.216036900634304
+        }
+      }
+    },
+    {
+      "id": "M0006_S1_open_bell_pepper",
+      "variants": {
+        "control": {
+          "seconds": 5.519942175000324,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 1,
+          "candidate_checks": 8,
+          "binding_seconds": 2.1197275849990547,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 6.092574715003138,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 1,
+          "candidate_checks": 8,
+          "binding_seconds": 2.4751955280080438,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9060114045720784
+        }
+      }
+    },
+    {
+      "id": "M0008_S1_open_bottled_water",
+      "variants": {
+        "reuse": {
+          "seconds": 6.837633729999652,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 14,
+          "candidate_checks": 31,
+          "binding_seconds": 2.228859619994182,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 6.693355470997631,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 14,
+          "candidate_checks": 31,
+          "binding_seconds": 1.8809395719945314,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9788993876099256
+        }
+      }
+    },
+    {
+      "id": "M0009_S1_open_bowl",
+      "variants": {
+        "control": {
+          "seconds": 7.258939833998738,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 11,
+          "candidate_checks": 24,
+          "binding_seconds": 2.6495190329951583,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 6.896697946998756,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 11,
+          "candidate_checks": 24,
+          "binding_seconds": 2.1914257719981833,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.052523959985462
+        }
+      }
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "variants": {
+        "reuse": {
+          "seconds": 24.75214484099706,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114,
+          "binding_seconds": 2.6380424440067145,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        },
+        "control": {
+          "seconds": 25.153577520002727,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114,
+          "binding_seconds": 2.6474357480037725,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.0162180967178558
+        }
+      }
+    },
+    {
+      "id": "M0011_S1_open_bread",
+      "variants": {
+        "control": {
+          "seconds": 51.842257301002974,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 190,
+          "candidate_checks": 382,
+          "binding_seconds": 4.34884207900177,
+          "full_world_rebinds": 12,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 40.34213268500025,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 190,
+          "candidate_checks": 382,
+          "binding_seconds": 2.804165503992408,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 6
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.2850648652067576
+        }
+      }
+    },
+    {
+      "id": "M0012_S1_open_broccoli",
+      "variants": {
+        "reuse": {
+          "seconds": 19.319201588004944,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 75,
+          "candidate_checks": 152,
+          "binding_seconds": 3.109560064985999,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        },
+        "control": {
+          "seconds": 19.188452840004175,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 75,
+          "candidate_checks": 152,
+          "binding_seconds": 2.3446338450012263,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9932321867751538
+        }
+      }
+    },
+    {
+      "id": "M0015_S1_open_carrot",
+      "variants": {
+        "control": {
+          "seconds": 11.01448989599885,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 7,
+          "candidate_checks": 16,
+          "binding_seconds": 2.699018175000674,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 8.630977142995107,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 7,
+          "candidate_checks": 16,
+          "binding_seconds": 2.596774090001418,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.2761579266767262
+        }
+      }
+    },
+    {
+      "id": "M0016_S1_open_cell_phone",
+      "variants": {
+        "reuse": {
+          "seconds": 113.5583463350049,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 305,
+          "candidate_checks": 642,
+          "binding_seconds": 2.8703940140039776,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 10
+        },
+        "control": {
+          "seconds": 98.83364914599952,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 305,
+          "candidate_checks": 642,
+          "binding_seconds": 4.052035991000594,
+          "full_world_rebinds": 16,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8703336420066693
+        }
+      }
+    },
+    {
+      "id": "M0018_S1_open_croissant",
+      "variants": {
+        "control": {
+          "seconds": 50.345400017999054,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 99,
+          "candidate_checks": 223,
+          "binding_seconds": 2.974500774012995,
+          "full_world_rebinds": 10,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 36.66783921300521,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 99,
+          "candidate_checks": 223,
+          "binding_seconds": 3.047938513002009,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 4
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.3730124571982616
+        }
+      }
+    },
+    {
+      "id": "M0019_S1_open_cucumber",
+      "variants": {
+        "reuse": {
+          "seconds": 5.352528109004197,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 2.3029015209976933,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 6.023175745001936,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 2.288001530992915,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.125295490717658
+        }
+      }
+    },
+    {
+      "id": "M0020_S1_open_donut",
+      "variants": {
+        "control": {
+          "seconds": 120.02348152099876,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 375,
+          "candidate_checks": 752,
+          "binding_seconds": 5.117604829014454,
+          "full_world_rebinds": 18,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 177.08150374399702,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 375,
+          "candidate_checks": 752,
+          "binding_seconds": 3.265477958986594,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 12
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.6777866631091758
+        }
+      }
+    },
+    {
+      "id": "M0022_S2_edge_keychain",
+      "variants": {
+        "reuse": {
+          "seconds": 18.45228053399478,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 82,
+          "candidate_checks": 166,
+          "binding_seconds": 2.316862031999335,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 4
+        },
+        "control": {
+          "seconds": 48.96586550399661,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 82,
+          "candidate_checks": 166,
+          "binding_seconds": 3.539183310007502,
+          "full_world_rebinds": 10,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 2.6536484427378184
+        }
+      }
+    },
+    {
+      "id": "M0023_S2_edge_lemon",
+      "variants": {
+        "control": {
+          "seconds": 7.044678934995318,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 7,
+          "candidate_checks": 16,
+          "binding_seconds": 2.852956044996972,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 6.701848251999763,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 7,
+          "candidate_checks": 16,
+          "binding_seconds": 2.4797684799850686,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.0511546472114253
+        }
+      }
+    },
+    {
+      "id": "M0024_S2_edge_mango",
+      "variants": {
+        "reuse": {
+          "seconds": 13.85320952100301,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 11,
+          "candidate_checks": 24,
+          "binding_seconds": 2.4930641800092417,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 11.977463278002688,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 11,
+          "candidate_checks": 24,
+          "binding_seconds": 2.5795909209919046,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8645984354631696
+        }
+      }
+    },
+    {
+      "id": "M0026_S2_edge_mug",
+      "variants": {
+        "control": {
+          "seconds": 6.495618818997173,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": 2.407725478995417,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 6.502211642997281,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": 2.74162778200116,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9989860643790012
+        }
+      }
+    },
+    {
+      "id": "M0027_S2_edge_mushroom",
+      "variants": {
+        "reuse": {
+          "seconds": 10.799075798000558,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 13,
+          "candidate_checks": 28,
+          "binding_seconds": 2.376449140996556,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 10.829924675999791,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 13,
+          "candidate_checks": 28,
+          "binding_seconds": 1.8306680989990127,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.002856622045837
+        }
+      }
+    },
+    {
+      "id": "M0029_S2_edge_orange",
+      "variants": {
+        "control": {
+          "seconds": 97.11645830699854,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 233,
+          "candidate_checks": 505,
+          "binding_seconds": 4.130304232989147,
+          "full_world_rebinds": 14,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 97.13082024000323,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 233,
+          "candidate_checks": 505,
+          "binding_seconds": 3.8243655509941163,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 8
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9998521382505655
+        }
+      }
+    },
+    {
+      "id": "M0030_S2_edge_peach",
+      "variants": {
+        "reuse": {
+          "seconds": 12.615224625995324,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 4,
+          "candidate_checks": 18,
+          "binding_seconds": 2.9341550019962597,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 11.990142067996203,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 4,
+          "candidate_checks": 18,
+          "binding_seconds": 2.4588882320022094,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9504501444460167
+        }
+      }
+    },
+    {
+      "id": "M0031_S2_edge_pear",
+      "variants": {
+        "control": {
+          "seconds": 12.974746390005748,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 22,
+          "candidate_checks": 86,
+          "binding_seconds": 2.7718930059927516,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 16.01051023999753,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 22,
+          "candidate_checks": 86,
+          "binding_seconds": 2.106256835992099,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8103893127398387
+        }
+      }
+    },
+    {
+      "id": "M0032_S2_edge_potato",
+      "variants": {
+        "reuse": {
+          "seconds": 10.673830314000952,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 3,
+          "candidate_checks": 20,
+          "binding_seconds": 2.6447815889987396,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 8.777531045001524,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 3,
+          "candidate_checks": 20,
+          "binding_seconds": 2.1220288350086776,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8223412577102677
+        }
+      }
+    },
+    {
+      "id": "M0033_S2_edge_remote_control",
+      "variants": {
+        "control": {
+          "seconds": 33.236455845995806,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 43,
+          "candidate_checks": 88,
+          "binding_seconds": 3.6059360670042224,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 15.8562108240003,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 43,
+          "candidate_checks": 88,
+          "binding_seconds": 2.6021166759965126,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 2.096115914130531
+        }
+      }
+    },
+    {
+      "id": "M0034_S2_edge_scissors",
+      "variants": {
+        "reuse": {
+          "seconds": 78.42900033499609,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 128,
+          "candidate_checks": 273,
+          "binding_seconds": 2.2072651729977224,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 4
+        },
+        "control": {
+          "seconds": 66.81133071600198,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 128,
+          "candidate_checks": 273,
+          "binding_seconds": 2.9324428939944482,
+          "full_world_rebinds": 10,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8518702320650369
+        }
+      }
+    },
+    {
+      "id": "M0036_S2_edge_spatula",
+      "variants": {
+        "control": {
+          "seconds": 18.6489740620018,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 30,
+          "candidate_checks": 62,
+          "binding_seconds": 3.6647966600066866,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 21.984642189003353,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 30,
+          "candidate_checks": 62,
+          "binding_seconds": 2.315647243987769,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8482728034268374
+        }
+      }
+    },
+    {
+      "id": "M0038_S2_edge_teapot",
+      "variants": {
+        "reuse": {
+          "seconds": 12.339223407994723,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": 3.2466453939996427,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 9.38709087800089,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": 2.201989990004222,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.7607521614301016
+        }
+      }
+    },
+    {
+      "id": "M0039_S2_edge_tomato",
+      "variants": {
+        "control": {
+          "seconds": 14.273149833003117,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 17,
+          "candidate_checks": 79,
+          "binding_seconds": 3.1035345000054804,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 13.730095124999934,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 17,
+          "candidate_checks": 79,
+          "binding_seconds": 2.2087283299770206,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.039552144618021
+        }
+      }
+    },
+    {
+      "id": "M0041_S3_sparse_apple",
+      "variants": {
+        "reuse": {
+          "seconds": 6.242161870999553,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 9,
+          "binding_seconds": 2.7211052009952255,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 9.724900054003228,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 9,
+          "binding_seconds": 2.6506852849925053,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.5579378194570894
+        }
+      }
+    },
+    {
+      "id": "M0042_S3_sparse_avocado",
+      "variants": {
+        "control": {
+          "seconds": 13.151846198001294,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 16,
+          "binding_seconds": 3.3928238100052113,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 10.74178937900433,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 16,
+          "binding_seconds": 3.5191896059986902,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.2243626954469624
+        }
+      }
+    },
+    {
+      "id": "M0043_S3_sparse_baguette",
+      "variants": {
+        "reuse": {
+          "seconds": 23.798295206994226,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 25,
+          "candidate_checks": 106,
+          "binding_seconds": 3.1352107980055735,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        },
+        "control": {
+          "seconds": 27.36964854600228,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 25,
+          "candidate_checks": 106,
+          "binding_seconds": 3.030288687979919,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.1500676123203333
+        }
+      }
+    },
+    {
+      "id": "M0044_S3_sparse_banana",
+      "variants": {
+        "control": {
+          "seconds": 13.733999276999384,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": 4.128265138002462,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 7.766671399003826,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": 2.7374067670170916,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.768325009702476
+        }
+      }
+    },
+    {
+      "id": "M0045_S3_sparse_bar_soap",
+      "variants": {
+        "reuse": {
+          "seconds": 77.08335012300086,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 184,
+          "candidate_checks": 370,
+          "binding_seconds": 3.2211170960217714,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 6
+        },
+        "control": {
+          "seconds": 79.27966039400053,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 184,
+          "candidate_checks": 370,
+          "binding_seconds": 4.338966053001059,
+          "full_world_rebinds": 12,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.0284926675798995
+        }
+      }
+    },
+    {
+      "id": "M0046_S3_sparse_bell_pepper",
+      "variants": {
+        "control": {
+          "seconds": 7.277169287001016,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": 2.7500335540025844,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 9.875172186999407,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": 3.546249337006884,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.7369156860455919
+        }
+      }
+    },
+    {
+      "id": "M0047_S3_sparse_book",
+      "variants": {
+        "reuse": {
+          "seconds": 56.90742203500122,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 124,
+          "candidate_checks": 250,
+          "binding_seconds": 3.2478991279858747,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 4
+        },
+        "control": {
+          "seconds": 65.14483413400012,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 124,
+          "candidate_checks": 250,
+          "binding_seconds": 3.7825414200051455,
+          "full_world_rebinds": 10,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.14475110283387
+        }
+      }
+    },
+    {
+      "id": "M0048_S3_sparse_bottled_water",
+      "variants": {
+        "control": {
+          "seconds": 12.487690574998851,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 30,
+          "candidate_checks": 62,
+          "binding_seconds": 2.945801987007144,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 15.2862103189982,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 30,
+          "candidate_checks": 62,
+          "binding_seconds": 2.9226192529968102,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8169252100030798
+        }
+      }
+    },
+    {
+      "id": "M0050_S3_sparse_boxed_food",
+      "variants": {
+        "reuse": {
+          "seconds": 60.33800526300183,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 103,
+          "candidate_checks": 208,
+          "binding_seconds": 3.0366511280008126,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 4
+        },
+        "control": {
+          "seconds": 68.04314929700195,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 103,
+          "candidate_checks": 208,
+          "binding_seconds": 3.4930337539990433,
+          "full_world_rebinds": 10,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.1276996811613984
+        }
+      }
+    },
+    {
+      "id": "M0052_S3_sparse_broccoli",
+      "variants": {
+        "control": {
+          "seconds": 16.284356188996753,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 47,
+          "candidate_checks": 96,
+          "binding_seconds": 2.772872785993968,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 18.66023960700113,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 47,
+          "candidate_checks": 96,
+          "binding_seconds": 2.1425096280072466,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8726766929020048
+        }
+      }
+    },
+    {
+      "id": "M0055_S3_sparse_carrot",
+      "variants": {
+        "reuse": {
+          "seconds": 8.649111187995004,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 3,
+          "binding_seconds": 3.2696297459842754,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 5.948959054003353,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 3,
+          "binding_seconds": 2.01356419599324,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.6878116056896724
+        }
+      }
+    },
+    {
+      "id": "M0056_S3_sparse_cell_phone",
+      "variants": {
+        "control": {
+          "seconds": 93.74716538699431,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 340,
+          "candidate_checks": 682,
+          "binding_seconds": 5.606151546016918,
+          "full_world_rebinds": 18,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 89.80708030399546,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 340,
+          "candidate_checks": 682,
+          "binding_seconds": 6.049940671015065,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 12
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.0438727667090582
+        }
+      }
+    },
+    {
+      "id": "M0058_S3_sparse_croissant",
+      "variants": {
+        "reuse": {
+          "seconds": 16.34163866000017,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 69,
+          "candidate_checks": 140,
+          "binding_seconds": 2.615507651993539,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        },
+        "control": {
+          "seconds": 15.733039379003458,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 69,
+          "candidate_checks": 140,
+          "binding_seconds": 2.118506944978435,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.962757756816249
+        }
+      }
+    },
+    {
+      "id": "M0059_S3_sparse_cucumber",
+      "variants": {
+        "control": {
+          "seconds": 10.178973164001945,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 8,
+          "candidate_checks": 18,
+          "binding_seconds": 3.3854407880135113,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 6.443861165003909,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 8,
+          "candidate_checks": 18,
+          "binding_seconds": 2.5436141429963754,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.5796388071305956
+        }
+      }
+    },
+    {
+      "id": "M0060_S3_sparse_donut",
+      "variants": {
+        "reuse": {
+          "seconds": 76.6706973170003,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 288,
+          "candidate_checks": 578,
+          "binding_seconds": 2.574901467996824,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 10
+        },
+        "control": {
+          "seconds": 98.01056206499925,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 288,
+          "candidate_checks": 578,
+          "binding_seconds": 21.833083445009834,
+          "full_world_rebinds": 16,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.2783314290173702
+        }
+      }
+    },
+    {
+      "id": "M0061_S4_clutter_eggplant",
+      "variants": {
+        "control": {
+          "seconds": 10.568544389003364,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 25,
+          "candidate_checks": 52,
+          "binding_seconds": 2.826792366009613,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 10.632965967997734,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 25,
+          "candidate_checks": 52,
+          "binding_seconds": 3.0820753860025434,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9939413349776289
+        }
+      }
+    },
+    {
+      "id": "M0062_S4_clutter_keychain",
+      "variants": {
+        "reuse": {
+          "seconds": 39.108784329997434,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 140,
+          "candidate_checks": 282,
+          "binding_seconds": 2.8372561000142014,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 4
+        },
+        "control": {
+          "seconds": 42.265502369002206,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 140,
+          "candidate_checks": 282,
+          "binding_seconds": 3.3244739370056777,
+          "full_world_rebinds": 10,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.0807163427113609
+        }
+      }
+    },
+    {
+      "id": "M0063_S4_clutter_lemon",
+      "variants": {
+        "control": {
+          "seconds": 5.251520340003481,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 2,
+          "candidate_checks": 6,
+          "binding_seconds": 2.193110075997538,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 5.231003777000296,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 2,
+          "candidate_checks": 6,
+          "binding_seconds": 2.323434776990325,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.0039221082373122
+        }
+      }
+    },
+    {
+      "id": "M0064_S4_clutter_mango",
+      "variants": {
+        "reuse": {
+          "seconds": 12.764104445996054,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 13,
+          "candidate_checks": 30,
+          "binding_seconds": 3.6937645609868923,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 6.806096710002748,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 13,
+          "candidate_checks": 30,
+          "binding_seconds": 2.0028006049979012,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.5332216403272804
+        }
+      }
+    },
+    {
+      "id": "M0065_S4_clutter_milk",
+      "variants": {
+        "control": {
+          "seconds": 14.568535698002961,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 18,
+          "candidate_checks": 99,
+          "binding_seconds": 2.751413016987499,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 19.781216363997373,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 18,
+          "candidate_checks": 99,
+          "binding_seconds": 2.9415013329853537,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.7364833097179148
+        }
+      }
+    },
+    {
+      "id": "M0066_S4_clutter_mug",
+      "variants": {
+        "reuse": {
+          "seconds": 6.469650478000403,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": 2.2861977399879834,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 5.634192949997669,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17,
+          "binding_seconds": 1.7797218220002833,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.870865121563576
+        }
+      }
+    },
+    {
+      "id": "M0067_S4_clutter_mushroom",
+      "variants": {
+        "control": {
+          "seconds": 17.194379610002215,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 32,
+          "candidate_checks": 66,
+          "binding_seconds": 3.4125508540018927,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 11.255776187004813,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 32,
+          "candidate_checks": 66,
+          "binding_seconds": 2.7975509149982827,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.5276049669372183
+        }
+      }
+    },
+    {
+      "id": "M0069_S4_clutter_orange",
+      "variants": {
+        "reuse": {
+          "seconds": 65.56707138800266,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 272,
+          "candidate_checks": 580,
+          "binding_seconds": 2.4866219729810837,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 10
+        },
+        "control": {
+          "seconds": 80.14239159499994,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 272,
+          "candidate_checks": 580,
+          "binding_seconds": 4.551408662999165,
+          "full_world_rebinds": 16,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.2222963432474465
+        }
+      }
+    },
+    {
+      "id": "M0070_S4_clutter_peach",
+      "variants": {
+        "control": {
+          "seconds": 7.338034822001646,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 7,
+          "candidate_checks": 24,
+          "binding_seconds": 2.621705329998804,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 10.105024659002083,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 7,
+          "candidate_checks": 24,
+          "binding_seconds": 2.612108815003012,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.7261768347556224
+        }
+      }
+    },
+    {
+      "id": "M0071_S4_clutter_pear",
+      "variants": {
+        "reuse": {
+          "seconds": 7.739335346996086,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 10,
+          "candidate_checks": 27,
+          "binding_seconds": 2.7361653419939103,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 6.661436918002437,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 10,
+          "candidate_checks": 27,
+          "binding_seconds": 2.0267154919856694,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8607246771633923
+        }
+      }
+    },
+    {
+      "id": "M0072_S4_clutter_potato",
+      "variants": {
+        "control": {
+          "seconds": 6.764252590997785,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 2.8096158400003333,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 7.111733969999477,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 3.088555037989863,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9511397107277175
+        }
+      }
+    },
+    {
+      "id": "M0074_S4_clutter_scissors",
+      "variants": {
+        "reuse": {
+          "seconds": 42.97337954500108,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 166,
+          "candidate_checks": 334,
+          "binding_seconds": 2.450571156994556,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 6
+        },
+        "control": {
+          "seconds": 36.20492100399861,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 166,
+          "candidate_checks": 334,
+          "binding_seconds": 3.0163962130245636,
+          "full_world_rebinds": 12,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8424964800844987
+        }
+      }
+    },
+    {
+      "id": "M0078_S4_clutter_teapot",
+      "variants": {
+        "control": {
+          "seconds": 9.867730015001143,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": 2.7744081469936646,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 19.234252901995205,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": 10.293631793989334,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.5130290251085107
+        }
+      }
+    },
+    {
+      "id": "M0079_S4_clutter_tomato",
+      "variants": {
+        "reuse": {
+          "seconds": 13.805468219004979,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 7.958630887005711,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 10.404033446997346,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": 3.6890616769960616,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.7536168481902609
+        }
+      }
+    },
+    {
+      "id": "M0081_S5_occluded_apple",
+      "variants": {
+        "control": {
+          "seconds": 23.13962193000043,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 21,
+          "candidate_checks": 102,
+          "binding_seconds": 5.778606835985556,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 21.87411502800387,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 21,
+          "candidate_checks": 102,
+          "binding_seconds": 5.131824402997154,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.0578540846281745
+        }
+      }
+    },
+    {
+      "id": "M0082_S5_occluded_avocado",
+      "variants": {
+        "reuse": {
+          "seconds": 33.88196907100064,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 41,
+          "candidate_checks": 84,
+          "binding_seconds": 15.397739747008018,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        },
+        "control": {
+          "seconds": 32.99140525599796,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 41,
+          "candidate_checks": 84,
+          "binding_seconds": 5.6637597099907,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9737157007275322
+        }
+      }
+    },
+    {
+      "id": "M0084_S5_occluded_banana",
+      "variants": {
+        "control": {
+          "seconds": 45.6023738149961,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 110,
+          "candidate_checks": 222,
+          "binding_seconds": 11.340464650987997,
+          "full_world_rebinds": 10,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 31.343047859001672,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 110,
+          "candidate_checks": 222,
+          "binding_seconds": 2.8206187059913645,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 4
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.4549438210393815
+        }
+      }
+    },
+    {
+      "id": "M0085_S5_occluded_bar_soap",
+      "variants": {
+        "reuse": {
+          "seconds": 83.51861754800484,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 261,
+          "candidate_checks": 524,
+          "binding_seconds": 2.7078975929980516,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 8
+        },
+        "control": {
+          "seconds": 87.1127115670024,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 261,
+          "candidate_checks": 524,
+          "binding_seconds": 3.6011385659803636,
+          "full_world_rebinds": 14,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.043033447206328
+        }
+      }
+    },
+    {
+      "id": "M0086_S5_occluded_bell_pepper",
+      "variants": {
+        "control": {
+          "seconds": 4.832273763997364,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 2,
+          "candidate_checks": 6,
+          "binding_seconds": 2.0590861569871777,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 5.045617857998877,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 2,
+          "candidate_checks": 6,
+          "binding_seconds": 2.137998434009205,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9577169536009754
+        }
+      }
+    },
+    {
+      "id": "M0089_S5_occluded_bowl",
+      "variants": {
+        "reuse": {
+          "seconds": 33.05743793500005,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 105,
+          "candidate_checks": 227,
+          "binding_seconds": 3.5377239049994387,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 4
+        },
+        "control": {
+          "seconds": 27.73200828199333,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 105,
+          "candidate_checks": 227,
+          "binding_seconds": 2.6278950489941053,
+          "full_world_rebinds": 10,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.8389037388959795
+        }
+      }
+    },
+    {
+      "id": "M0092_S5_occluded_broccoli",
+      "variants": {
+        "control": {
+          "seconds": 19.446179691003636,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 69,
+          "candidate_checks": 150,
+          "binding_seconds": 3.705376482990687,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 18.458082854995155,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 69,
+          "candidate_checks": 150,
+          "binding_seconds": 2.600198042979173,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.053531931987242
+        }
+      }
+    },
+    {
+      "id": "M0095_S5_occluded_carrot",
+      "variants": {
+        "reuse": {
+          "seconds": 21.675500766003097,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 22,
+          "candidate_checks": 103,
+          "binding_seconds": 2.8337333939925884,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        },
+        "control": {
+          "seconds": 14.179938683999353,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 22,
+          "candidate_checks": 103,
+          "binding_seconds": 1.9255610770051135,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.654191976327479
+        }
+      }
+    },
+    {
+      "id": "M0098_S5_occluded_croissant",
+      "variants": {
+        "control": {
+          "seconds": 24.255740747001255,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 55,
+          "candidate_checks": 112,
+          "binding_seconds": 2.9221175470011076,
+          "full_world_rebinds": 8,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 16.558316741000453,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 55,
+          "candidate_checks": 112,
+          "binding_seconds": 2.717366992001189,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 2
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 1.464867542178428
+        }
+      }
+    },
+    {
+      "id": "M0099_S5_occluded_cucumber",
+      "variants": {
+        "reuse": {
+          "seconds": 8.522541499005456,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 10,
+          "candidate_checks": 22,
+          "binding_seconds": 3.3557919890081394,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        },
+        "control": {
+          "seconds": 6.705140858000959,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 10,
+          "candidate_checks": 22,
+          "binding_seconds": 1.70749221600272,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 0
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.7867536765627272
+        }
+      }
+    },
+    {
+      "id": "M0100_S5_occluded_donut",
+      "variants": {
+        "control": {
+          "seconds": 49.375961970996286,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 207,
+          "candidate_checks": 416,
+          "binding_seconds": 4.566769172990462,
+          "full_world_rebinds": 12,
+          "binding_cache_hits": 0
+        },
+        "reuse": {
+          "seconds": 51.53582068900141,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 207,
+          "candidate_checks": 416,
+          "binding_seconds": 3.013955775008071,
+          "full_world_rebinds": 6,
+          "binding_cache_hits": 6
+        }
+      },
+      "comparison": {
+        "reuse": {
+          "success_retained": true,
+          "same_selection": true,
+          "same_candidate_checks": true,
+          "speedup": 0.9580901460551287
+        }
+      }
+    }
+  ],
+  "summaries": {
+    "control": {
+      "requests": 69,
+      "successes": 69,
+      "median_seconds": 14.179938683999353,
+      "p90_seconds": 81.53645558940045,
+      "total_seconds": 2008.4105455020108,
+      "binding_seconds": 237.595181801953,
+      "full_world_rebinds": 584,
+      "binding_cache_hits": 0
+    },
+    "reuse": {
+      "requests": 69,
+      "successes": 69,
+      "median_seconds": 15.8562108240003,
+      "p90_seconds": 76.75322787820042,
+      "total_seconds": 1961.697695616007,
+      "binding_seconds": 223.1107354388514,
+      "full_world_rebinds": 414,
+      "binding_cache_hits": 170
+    }
+  },
+  "control_successes_retained": {
+    "reuse": true
+  },
+  "record_integrity": true,
+  "independent_review_passed": true,
+  "independent_endpoints": 414
+}

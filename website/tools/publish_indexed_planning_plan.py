@@ -17,9 +17,10 @@ def planning_progress(website, config, relative=None):
     acceptance = read_json(run/'acceptance.json') if (run/'acceptance.json').is_file() else None
     snapshot = {key: progress.get(key) for key in ['at','phase','completed_requests','total_requests','current']}
     binding = registration.get('experiment') == 'binding_reuse'
-    component = 'binding_reuse_implementation' if binding else 'native_batch_implementation'
+    geometric = registration.get('experiment') == 'geometric_ik'
+    component = 'binding_reuse_implementation' if binding else 'geometric_ik' if geometric else 'native_batch_implementation'
     snapshot.update(run=relative,gpu=registration['gpu'],cases=len(registration['cases']),
-        experiment='binding_reuse' if binding else 'native_batch',variants=registration['variants'],
+        experiment='binding_reuse' if binding else 'geometric_ik' if geometric else 'native_batch',variants=registration['variants'],
         physical_grasps=0,offline_checks=config.get(component,{}).get('offline_checks',0),
         model_warmup_complete=(run/'startup.json').is_file(),stopped=(run/'STOP').is_file())
     snapshot['results'] = [{'id': row['id'], 'variants': {mode: {key: value.get(key) for key in
@@ -44,15 +45,15 @@ def planning_progress(website, config, relative=None):
 
 def result_table(snapshot, title):
     labels = {'control':'现行逐个检查','batch16':'批量16个','batch32':'批量32个',
-        'reuse':'左右臂上下文复用'}
+        'reuse':'左右臂上下文复用','geometric':'几何IK优先，原IK回退'}
     lines = ['## '+title, '',
         '| 方法 | 完整规划次数 | 规划通过 | 中位耗时 | P90耗时 | 合计耗时 |',
         '| --- | ---: | ---: | ---: | ---: | ---: |']
     for mode,value in snapshot['summaries'].items():
         lines.append(f"| {labels[mode]} | {value['requests']} | {value['successes']} | "
             f"{value['median_seconds']:.2f}秒 | {value['p90_seconds']:.2f}秒 | {value['total_seconds']:.2f}秒 |")
-    lines += ['', '表中时间是一整个场景返回完整规划的耗时。批量16表示每批最多16个目标；'
-        'P90按完整请求统计，包含双臂搜索、开爪检查、IK、碰撞与路径。']
+    lines += ['', '表中时间是一整个场景返回完整规划的耗时，包含双臂搜索、开爪检查、IK、碰撞与路径。'
+        'P90同样按完整请求统计。']
     return '\n'.join(lines)
 
 
@@ -91,6 +92,23 @@ def publish():
     runtime = planning_progress(website,config)
     native_run = config.get('native_batch_implementation',{}).get('full_run')
     native_runtime = (planning_progress(website,config,native_run) if native_run else None)
+    binding_run=config.get('binding_reuse_implementation',{}).get('full_run')
+    binding_runtime=(planning_progress(website,config,binding_run) if binding_run else None)
+    geometric_doc=ROOT/'modules/pipeline/docs/mainline_versions/V8_几何IK实施.md'
+    if geometric_doc.is_file():
+        name='sam3-v8-geometric-ik-method.md'
+        target=website/'resources/media'/name
+        if target.is_symlink() or target.exists() and target.stat().st_nlink!=1:
+            raise ValueError('Geometric method attachment must be an independent copy')
+        shutil.copy2(geometric_doc,target);site['localAssets'][name]='../../resources/media/'+name
+    contract_run=config.get('geometric_ik',{}).get('contract_run')
+    if contract_run and (ROOT/contract_run/'acceptance.json').is_file():
+        name='sam3-v8-geometric-contract.json'
+        target=website/'resources/media'/name
+        if target.is_symlink() or target.exists() and target.stat().st_nlink!=1:
+            raise ValueError('Geometric contract must be an independent copy')
+        shutil.copy2(ROOT/contract_run/'acceptance.json',target)
+        site['localAssets'][name]='../../resources/media/'+name
     if native_run and (ROOT/native_run/'independent_review.json').is_file():
         name = 'sam3-v8-native-batch-fk-review.json'
         source = ROOT/native_run/'independent_review.json'
@@ -195,7 +213,8 @@ def publish():
         snapshot,name = runtime
         done,total = snapshot['completed_requests'],snapshot['total_requests']
         binding = snapshot['experiment']=='binding_reuse'
-        label = 'C：上下文复用' if binding else 'B：原生批量IK'
+        geometric = snapshot['experiment']=='geometric_ik'
+        label = 'C：上下文复用' if binding else 'D：几何IK' if geometric else 'B：原生批量IK'
         status = ('纯规划对照已完成' if snapshot['phase']=='complete' else
             '纯规划对照停止，保留记录' if snapshot['stopped'] else
             '纯规划对照进行中' if snapshot['model_warmup_complete'] else '常驻模型预热中')
@@ -222,13 +241,41 @@ def publish():
                 '20项新增故障检查与原31项回归共51项通过。先用五份输入按ABBA/BAAB顺序做20次规划，'
                 '确认抓法保留、重绑定减少、总耗时至少降低2%后，再比较全部69份观测。\n\n'
                 '[上下文复用实施说明](/media/sam3-v8-binding-reuse-method.md)\n\n')
-            if snapshot.get('summaries'):
+            if snapshot.get('summaries') and not binding_runtime:
                 section += result_table(snapshot,'C上下文复用对照结果')+'\n\n'
             body = body.replace('## 优化目标',section+'## 优化目标',1)
+        elif geometric:
+            section=('## D怎样加快寻找关节角\n\n'
+                '先用EAIK为原抓点求出多个关节解，按真实URDF方向和限位还原，再经过独立FK、当前碰撞与路径检查。'
+                '没有合格解时使用原IK；几何解后续接近或抬升不通过时，也先完整尝试同一个原抓法，再检查下一候选。\n\n'
+                '27项离线检查通过。256组随机物理姿态与原69份规划的207个终点全部通过独立核查。'
+                f"该207个终点上，几何求解加限位与精度筛选中位耗时约{config['geometric_ik']['contract_query_and_filter_median_ms']:.2f}毫秒。完整规划耗时由本轮对照测量。\n\n"
+                '[几何IK实施说明](/media/sam3-v8-geometric-ik-method.md)\n\n')
+            if snapshot.get('summaries'):section+=result_table(snapshot,'D几何IK对照结果')+'\n\n'
+            body=body.replace('## 优化目标',section+'## 优化目标',1)
         elif not native_runtime or not native_runtime[0].get('summaries'):
             body = body.replace('逐个调用小规模求解的开销 | 待适配 |',
                 '逐个调用小规模求解的开销 | 已接通，独立对照中 |')
         site['localAssets'][name] = '../../resources/media/'+name
+    if binding_runtime and binding_runtime[0].get('summaries'):
+        value,name=binding_runtime;summary_values=value['summaries']
+        control,reuse=summary_values['control'],summary_values['reuse']
+        saving=1-reuse['total_seconds']/control['total_seconds']
+        section=result_table(value,'C上下文复用完整结果')
+        section+=(f"\n\n累计耗时降低{saving:.2%}，完整重绑定{control['full_world_rebinds']}→{reuse['full_world_rebinds']}次。"
+            f"\n\n[逐例结果](/media/{name}) · [方法说明](/media/sam3-v8-binding-reuse-method.md)\n\n")
+        if config.get('binding_reuse_implementation',{}).get('include_in_default_combination') is False:
+            section+=('中位耗时高于同期控制组，当前保留为可选方案。后续优先组合批量16与其他实测有效的模块。\n\n')
+        body=body.replace('## 优化目标',section+'## 优化目标',1)
+        body=body.replace('交替窗口反复绑定世界 | 待适配与测显存 |','交替窗口反复绑定世界 | 138次完整对照已完成 |')
+        body=body.replace('原生批量IK与绑定复用分别适配 | 待实施 |',
+            '原生批量IK与绑定复用分别适配 | B/C完整对照与独立复算完成 |')
+        site['localAssets'][name]='../../resources/media/'+name
+    if config.get('geometric_ik',{}).get('contract_run'):
+        body=body.replace('结构已核查，求解待验证 |','27项检查与463个终点核验通过，按队列开展规划对照 |')
+        body=body.replace('验证EAIK自动分解、原限位与工具变换','独立CPU适配与463个终点核验通过，测完整规划')
+        body=body.replace('几何IK适配与FK、限位、多分支检查 | 待实施 |',
+            '几何IK适配与FK、限位、多分支检查 | CPU核验完成，按队列开展完整规划 |')
     if native_runtime and native_runtime[0].get('summaries'):
         native,name = native_runtime
         section = result_table(native,'B原生批量IK完整结果')
@@ -244,6 +291,8 @@ def publish():
             '逐个调用小规模求解的开销 | 207次对照完成，优先保留批量16 |')
         body = body.replace('冻结现行交替输入，建立分项计时 | 待实施 |',
             '冻结现行交替输入，建立分项计时 | B已完成，C增加逐次绑定记录 |')
+        body=body.replace('当前交替搜索的完整69份观测耗时将在V8重新测量。',
+            '当前交替搜索的完整69份观测已完成B、C同期回放，结果见上方表格。')
         site['localAssets'][name] = '../../resources/media/'+name
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
@@ -259,7 +308,7 @@ def publish():
         snapshot,name = runtime
         run = snapshot['run']
         batch = {'id':run.split('/')[-1],'title':('上下文复用纯规划对照' if snapshot['experiment']=='binding_reuse'
-            else '原生批量IK纯规划对照'),'date':'2026-11-26',
+            else '几何IK纯规划对照' if snapshot['experiment']=='geometric_ik' else '原生批量IK纯规划对照'),'date':'2026-11-26',
             'status':status,'summary':summary,'outputs':[run],
             'artifacts':[{'label':'进度与逐例结果','url':'/media/'+name}]}
         version['batches'] = [v for v in version['batches'] if v['id']!=batch['id']]+[batch]

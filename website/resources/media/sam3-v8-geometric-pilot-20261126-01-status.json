@@ -1,0 +1,197 @@
+{
+  "at": "2026-11-26T15:01:46.374703+08:00",
+  "phase": "planning",
+  "completed_requests": 12,
+  "total_requests": 20,
+  "current": {
+    "id": "M0044_S3_sparse_banana",
+    "variant": "geometric_1"
+  },
+  "run": "tmp/indexed_grasp_planning/geometric_pilot_20261126_01",
+  "gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "cases": 5,
+  "experiment": "geometric_ik",
+  "variants": {
+    "control_1": false,
+    "geometric_1": true,
+    "geometric_2": true,
+    "control_2": false
+  },
+  "physical_grasps": 0,
+  "offline_checks": 27,
+  "model_warmup_complete": true,
+  "stopped": false,
+  "results": [
+    {
+      "id": "M0001_S1_open_apple",
+      "variants": {
+        "control_1": {
+          "seconds": 3.326728041000024,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "geometric_1": {
+          "seconds": 4.142139670002507,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "geometric_2": {
+          "seconds": 4.64790527200239,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control_2": {
+          "seconds": 5.223864568004501,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "geometric_1": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8031424109361359
+        },
+        "geometric_2": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.123918036684508
+        }
+      }
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "variants": {
+        "geometric_1": {
+          "seconds": 7.062678390000656,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control_1": {
+          "seconds": 4.418240749997494,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control_2": {
+          "seconds": 5.3698785139931715,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "geometric_2": {
+          "seconds": 6.511694189000991,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "geometric_1": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.6255758093491617
+        },
+        "geometric_2": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8246515205003824
+        }
+      }
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "variants": {
+        "control_1": {
+          "seconds": 15.450386238000647,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "geometric_1": {
+          "seconds": 14.28440262300137,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "geometric_2": {
+          "seconds": 15.50243451899587,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        },
+        "control_2": {
+          "seconds": 18.66875958500168,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114,
+          "binding_seconds": null,
+          "full_world_rebinds": null,
+          "binding_cache_hits": null
+        }
+      },
+      "comparison": {
+        "geometric_1": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.081626347686515
+        },
+        "geometric_2": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.2042469563168263
+        }
+      }
+    }
+  ]
+}

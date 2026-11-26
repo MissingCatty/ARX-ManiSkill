@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T05:21:25.237Z",
+  "generatedAt": "2026-11-26T07:02:33.113Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1415,11 +1415,11 @@
     },
     {
       "file": "media/sam3-v8-indexed-planning-plan.md",
-      "sha256": "af23cf70cd088f03714c07a9a40207b4cc2fc65a826a10970fb250456829219f"
+      "sha256": "5399519821ebdfe046aa67b53547a1fa5f44b0cd1976f6384fb1747526062b42"
     },
     {
       "file": "media/sam3-v8-indexed-planning-config.json",
-      "sha256": "3d0c738c62fa1a94176738eb64664df75e73c6a971a344c4316fd7c4e6dd28eb"
+      "sha256": "102eb3f3caa271f4695609c656e156c2c562b3f384fdb92ff7b46060bd37af25"
     },
     {
       "file": "media/sam3-v8-indexed-planning-preparation.json",
@@ -1547,7 +1547,7 @@
     },
     {
       "file": "media/sam3-v8-binding-reuse-method.md",
-      "sha256": "6c4d0722d2deec56555e644556c241db62787723f493a3b579d00fbbd7d3fbe5"
+      "sha256": "266c400d3f5709112bcb1796824d6baa38b46d38674f34b55c60b56bc4c09558"
     },
     {
       "file": "media/sam3-v8-native-batch-fk-review.json",
@@ -1556,6 +1556,22 @@
     {
       "file": "media/sam3-v8-binding-reuse-pilot-20261126-01-status.json",
       "sha256": "eed04ff9bd928c9959ed6208df3ef4014167903089df812526e8d1a40af82b1c"
+    },
+    {
+      "file": "media/sam3-v8-binding-reuse-69-20261126-01-status.json",
+      "sha256": "6881146fb738e8aac7adc3f633c2e1aad42e4fba54c6aca0a8c7a720734fa5f5"
+    },
+    {
+      "file": "media/sam3-v8-geometric-ik-method.md",
+      "sha256": "d37edf18447c93599ba5bd28cb997dd2195ca16496276cdbd712ab8c88392743"
+    },
+    {
+      "file": "media/sam3-v8-geometric-contract.json",
+      "sha256": "795da34ad20f2a0d96b9cedfba1fb3794f298441f8db893cc674573abd0f8a4f"
+    },
+    {
+      "file": "media/sam3-v8-geometric-pilot-20261126-01-status.json",
+      "sha256": "8c6929200f45a0b8a7d037b77078c2ae46c24f1463d2a860c65b78640b8284b3"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
