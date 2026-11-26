@@ -1,0 +1,107 @@
+{
+  "at": "2026-11-27T03:00:26.987469+08:00",
+  "path_differences": {
+    "plan_result.json": {
+      "pregrasp": {
+        "shape_baseline": [
+          141,
+          6
+        ],
+        "shape_optimized": [
+          141,
+          6
+        ],
+        "maximum_command_difference_rad": 1.0013580322265625e-05
+      },
+      "approach": {
+        "shape_baseline": [
+          201,
+          6
+        ],
+        "shape_optimized": [
+          201,
+          6
+        ],
+        "maximum_command_difference_rad": 3.814697265625e-06
+      }
+    },
+    "approach_plan_result.json": {
+      "approach": {
+        "shape_baseline": [
+          201,
+          6
+        ],
+        "shape_optimized": [
+          201,
+          6
+        ],
+        "maximum_command_difference_rad": 4.291534423828125e-06
+      }
+    },
+    "lift_plan_result.json": {
+      "lift": {
+        "shape_baseline": [
+          241,
+          6
+        ],
+        "shape_optimized": [
+          241,
+          6
+        ],
+        "maximum_command_difference_rad": 0.00017839670181274414
+      }
+    }
+  },
+  "contact_coverage": {
+    "baseline": {
+      "approach": {
+        "samples": 603,
+        "bilateral_positive_impulse_samples": 0,
+        "last_sample_bilateral": false
+      },
+      "close": {
+        "samples": 363,
+        "bilateral_positive_impulse_samples": 288,
+        "last_sample_bilateral": true
+      },
+      "lift": {
+        "samples": 723,
+        "bilateral_positive_impulse_samples": 723,
+        "last_sample_bilateral": true
+      },
+      "hold": {
+        "samples": 363,
+        "bilateral_positive_impulse_samples": 363,
+        "last_sample_bilateral": true
+      }
+    },
+    "optimized": {
+      "approach": {
+        "samples": 603,
+        "bilateral_positive_impulse_samples": 0,
+        "last_sample_bilateral": false
+      },
+      "close": {
+        "samples": 363,
+        "bilateral_positive_impulse_samples": 288,
+        "last_sample_bilateral": true
+      },
+      "lift": {
+        "samples": 723,
+        "bilateral_positive_impulse_samples": 315,
+        "last_sample_bilateral": false
+      },
+      "hold": {
+        "samples": 363,
+        "bilateral_positive_impulse_samples": 0,
+        "last_sample_bilateral": false
+      }
+    }
+  },
+  "physics_receipts_identical": true,
+  "old_and_new_baseline": {
+    "same_samples": true,
+    "all_measured_joints_identical": true,
+    "all_target_poses_identical": true
+  }
+}

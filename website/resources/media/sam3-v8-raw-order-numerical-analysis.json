@@ -1,0 +1,599 @@
+{
+  "at": "2026-11-27T02:47:12.361916+08:00",
+  "maximum_joint_difference_rad": 3.814697265625e-06,
+  "joint_differences": [
+    {
+      "id": "M0001_S1_open_apple",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "maximum_joint_difference_rad": 3.5762786865234375e-07
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0006_S1_open_bell_pepper",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0008_S1_open_bottled_water",
+      "maximum_joint_difference_rad": 2.980232238769531e-07
+    },
+    {
+      "id": "M0009_S1_open_bowl",
+      "maximum_joint_difference_rad": 3.5762786865234375e-07
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "maximum_joint_difference_rad": 4.76837158203125e-07
+    },
+    {
+      "id": "M0011_S1_open_bread",
+      "maximum_joint_difference_rad": 8.344650268554688e-07
+    },
+    {
+      "id": "M0012_S1_open_broccoli",
+      "maximum_joint_difference_rad": 4.76837158203125e-07
+    },
+    {
+      "id": "M0015_S1_open_carrot",
+      "maximum_joint_difference_rad": 1.1920928955078125e-07
+    },
+    {
+      "id": "M0016_S1_open_cell_phone",
+      "maximum_joint_difference_rad": 5.960464477539062e-07
+    },
+    {
+      "id": "M0018_S1_open_croissant",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0019_S1_open_cucumber",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0020_S1_open_donut",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0022_S2_edge_keychain",
+      "maximum_joint_difference_rad": 3.5762786865234375e-07
+    },
+    {
+      "id": "M0023_S2_edge_lemon",
+      "maximum_joint_difference_rad": 1.4156103134155273e-07
+    },
+    {
+      "id": "M0024_S2_edge_mango",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0026_S2_edge_mug",
+      "maximum_joint_difference_rad": 3.5762786865234375e-07
+    },
+    {
+      "id": "M0027_S2_edge_mushroom",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0029_S2_edge_orange",
+      "maximum_joint_difference_rad": 1.7881393432617188e-07
+    },
+    {
+      "id": "M0030_S2_edge_peach",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0031_S2_edge_pear",
+      "maximum_joint_difference_rad": 5.960464477539062e-07
+    },
+    {
+      "id": "M0032_S2_edge_potato",
+      "maximum_joint_difference_rad": 5.960464477539062e-07
+    },
+    {
+      "id": "M0033_S2_edge_remote_control",
+      "maximum_joint_difference_rad": 1.7881393432617188e-07
+    },
+    {
+      "id": "M0034_S2_edge_scissors",
+      "maximum_joint_difference_rad": 7.152557373046875e-07
+    },
+    {
+      "id": "M0036_S2_edge_spatula",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0038_S2_edge_teapot",
+      "maximum_joint_difference_rad": 1.7881393432617188e-06
+    },
+    {
+      "id": "M0039_S2_edge_tomato",
+      "maximum_joint_difference_rad": 4.76837158203125e-07
+    },
+    {
+      "id": "M0041_S3_sparse_apple",
+      "maximum_joint_difference_rad": 8.344650268554688e-07
+    },
+    {
+      "id": "M0042_S3_sparse_avocado",
+      "maximum_joint_difference_rad": 3.5762786865234375e-07
+    },
+    {
+      "id": "M0043_S3_sparse_baguette",
+      "maximum_joint_difference_rad": 5.960464477539062e-07
+    },
+    {
+      "id": "M0044_S3_sparse_banana",
+      "maximum_joint_difference_rad": 2.1457672119140625e-06
+    },
+    {
+      "id": "M0045_S3_sparse_bar_soap",
+      "maximum_joint_difference_rad": 1.1920928955078125e-07
+    },
+    {
+      "id": "M0046_S3_sparse_bell_pepper",
+      "maximum_joint_difference_rad": 1.1920928955078125e-07
+    },
+    {
+      "id": "M0047_S3_sparse_book",
+      "maximum_joint_difference_rad": 9.5367431640625e-07
+    },
+    {
+      "id": "M0048_S3_sparse_bottled_water",
+      "maximum_joint_difference_rad": 1.0728836059570312e-06
+    },
+    {
+      "id": "M0050_S3_sparse_boxed_food",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0052_S3_sparse_broccoli",
+      "maximum_joint_difference_rad": 7.152557373046875e-07
+    },
+    {
+      "id": "M0055_S3_sparse_carrot",
+      "maximum_joint_difference_rad": 1.1920928955078125e-06
+    },
+    {
+      "id": "M0056_S3_sparse_cell_phone",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0058_S3_sparse_croissant",
+      "maximum_joint_difference_rad": 4.76837158203125e-07
+    },
+    {
+      "id": "M0059_S3_sparse_cucumber",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0060_S3_sparse_donut",
+      "maximum_joint_difference_rad": 5.960464477539062e-07
+    },
+    {
+      "id": "M0061_S4_clutter_eggplant",
+      "maximum_joint_difference_rad": 4.76837158203125e-07
+    },
+    {
+      "id": "M0062_S4_clutter_keychain",
+      "maximum_joint_difference_rad": 3.5762786865234375e-07
+    },
+    {
+      "id": "M0063_S4_clutter_lemon",
+      "maximum_joint_difference_rad": 7.152557373046875e-07
+    },
+    {
+      "id": "M0064_S4_clutter_mango",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0065_S4_clutter_milk",
+      "maximum_joint_difference_rad": 2.980232238769531e-07
+    },
+    {
+      "id": "M0066_S4_clutter_mug",
+      "maximum_joint_difference_rad": 4.76837158203125e-07
+    },
+    {
+      "id": "M0067_S4_clutter_mushroom",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0069_S4_clutter_orange",
+      "maximum_joint_difference_rad": 2.86102294921875e-06
+    },
+    {
+      "id": "M0070_S4_clutter_peach",
+      "maximum_joint_difference_rad": 3.5762786865234375e-07
+    },
+    {
+      "id": "M0071_S4_clutter_pear",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0072_S4_clutter_potato",
+      "maximum_joint_difference_rad": 8.344650268554688e-07
+    },
+    {
+      "id": "M0074_S4_clutter_scissors",
+      "maximum_joint_difference_rad": 3.814697265625e-06
+    },
+    {
+      "id": "M0078_S4_clutter_teapot",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0079_S4_clutter_tomato",
+      "maximum_joint_difference_rad": 2.980232238769531e-07
+    },
+    {
+      "id": "M0081_S5_occluded_apple",
+      "maximum_joint_difference_rad": 5.364418029785156e-07
+    },
+    {
+      "id": "M0082_S5_occluded_avocado",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0084_S5_occluded_banana",
+      "maximum_joint_difference_rad": 1.1920928955078125e-06
+    },
+    {
+      "id": "M0085_S5_occluded_bar_soap",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0086_S5_occluded_bell_pepper",
+      "maximum_joint_difference_rad": 7.152557373046875e-07
+    },
+    {
+      "id": "M0089_S5_occluded_bowl",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0092_S5_occluded_broccoli",
+      "maximum_joint_difference_rad": 2.682209014892578e-07
+    },
+    {
+      "id": "M0095_S5_occluded_carrot",
+      "maximum_joint_difference_rad": 9.5367431640625e-07
+    },
+    {
+      "id": "M0098_S5_occluded_croissant",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0099_S5_occluded_cucumber",
+      "maximum_joint_difference_rad": 2.384185791015625e-07
+    },
+    {
+      "id": "M0100_S5_occluded_donut",
+      "maximum_joint_difference_rad": 9.5367431640625e-07
+    }
+  ],
+  "all_final_grasps_and_arms_retained": true,
+  "candidate_classification": [
+    {
+      "id": "M0001_S1_open_apple",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0005_S1_open_bar_soap",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0006_S1_open_bell_pepper",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0008_S1_open_bottled_water",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0009_S1_open_bowl",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0011_S1_open_bread",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0012_S1_open_broccoli",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0015_S1_open_carrot",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0016_S1_open_cell_phone",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0018_S1_open_croissant",
+      "candidate_kind_sequence_equal": false
+    },
+    {
+      "id": "M0019_S1_open_cucumber",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0020_S1_open_donut",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0022_S2_edge_keychain",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0023_S2_edge_lemon",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0024_S2_edge_mango",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0026_S2_edge_mug",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0027_S2_edge_mushroom",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0029_S2_edge_orange",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0030_S2_edge_peach",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0031_S2_edge_pear",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0032_S2_edge_potato",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0033_S2_edge_remote_control",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0034_S2_edge_scissors",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0036_S2_edge_spatula",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0038_S2_edge_teapot",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0039_S2_edge_tomato",
+      "candidate_kind_sequence_equal": false
+    },
+    {
+      "id": "M0041_S3_sparse_apple",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0042_S3_sparse_avocado",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0043_S3_sparse_baguette",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0044_S3_sparse_banana",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0045_S3_sparse_bar_soap",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0046_S3_sparse_bell_pepper",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0047_S3_sparse_book",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0048_S3_sparse_bottled_water",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0050_S3_sparse_boxed_food",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0052_S3_sparse_broccoli",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0055_S3_sparse_carrot",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0056_S3_sparse_cell_phone",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0058_S3_sparse_croissant",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0059_S3_sparse_cucumber",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0060_S3_sparse_donut",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0061_S4_clutter_eggplant",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0062_S4_clutter_keychain",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0063_S4_clutter_lemon",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0064_S4_clutter_mango",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0065_S4_clutter_milk",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0066_S4_clutter_mug",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0067_S4_clutter_mushroom",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0069_S4_clutter_orange",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0070_S4_clutter_peach",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0071_S4_clutter_pear",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0072_S4_clutter_potato",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0074_S4_clutter_scissors",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0078_S4_clutter_teapot",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0079_S4_clutter_tomato",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0081_S5_occluded_apple",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0082_S5_occluded_avocado",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0084_S5_occluded_banana",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0085_S5_occluded_bar_soap",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0086_S5_occluded_bell_pepper",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0089_S5_occluded_bowl",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0092_S5_occluded_broccoli",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0095_S5_occluded_carrot",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0098_S5_occluded_croissant",
+      "candidate_kind_sequence_equal": false
+    },
+    {
+      "id": "M0099_S5_occluded_cucumber",
+      "candidate_kind_sequence_equal": true
+    },
+    {
+      "id": "M0100_S5_occluded_donut",
+      "candidate_kind_sequence_equal": true
+    }
+  ],
+  "candidate_records_with_branch_count_or_reason_differences": [
+    "M0005_S1_open_bar_soap",
+    "M0011_S1_open_bread",
+    "M0012_S1_open_broccoli",
+    "M0016_S1_open_cell_phone",
+    "M0018_S1_open_croissant",
+    "M0020_S1_open_donut",
+    "M0022_S2_edge_keychain",
+    "M0024_S2_edge_mango",
+    "M0029_S2_edge_orange",
+    "M0030_S2_edge_peach",
+    "M0031_S2_edge_pear",
+    "M0032_S2_edge_potato",
+    "M0033_S2_edge_remote_control",
+    "M0034_S2_edge_scissors",
+    "M0039_S2_edge_tomato",
+    "M0041_S3_sparse_apple",
+    "M0043_S3_sparse_baguette",
+    "M0045_S3_sparse_bar_soap",
+    "M0047_S3_sparse_book",
+    "M0048_S3_sparse_bottled_water",
+    "M0050_S3_sparse_boxed_food",
+    "M0052_S3_sparse_broccoli",
+    "M0056_S3_sparse_cell_phone",
+    "M0058_S3_sparse_croissant",
+    "M0060_S3_sparse_donut",
+    "M0061_S4_clutter_eggplant",
+    "M0062_S4_clutter_keychain",
+    "M0069_S4_clutter_orange",
+    "M0074_S4_clutter_scissors",
+    "M0081_S5_occluded_apple",
+    "M0085_S5_occluded_bar_soap",
+    "M0092_S5_occluded_broccoli",
+    "M0098_S5_occluded_croissant",
+    "M0100_S5_occluded_donut"
+  ],
+  "independent_FK_endpoints": 414,
+  "complete_original_candidate_rows": 332016
+}

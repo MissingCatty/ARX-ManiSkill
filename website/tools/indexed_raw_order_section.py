@@ -56,6 +56,20 @@ def document(website):
             f"{proof['checked_requests']}次请求、{proof['checked_original_candidate_rows']}条候选原值和{proof['checked_endpoints']}个关节终点已独立核验。",'',
             f"原抓法与选臂{'全部保持' if proof['original_grasps_and_arms_retained'] else '发生变化'}；"
             f"关节终点原值{'完全相同' if proof['joint_endpoints_exactly_retained'] else '有差异，已按原精度独立核验'}。",'']
+        differences=[]
+        for row in p['results']:
+            a=row['variants']['control_1']['joint_endpoints'];b=row['variants']['optimized_1']['joint_endpoints']
+            differences.extend(abs(x-y) for key in a if a[key] is not None and b[key] is not None
+                               for x,y in zip(a[key],b[key]))
+        if differences:
+            lines += [f"两组对应关节终点的最大差为{max(differences):.8f}弧度。",'']
+        analysis_file=planning/'paired_numerical_analysis.json'
+        if analysis_file.exists():
+            analysis=raw(analysis_file)
+            changed=len(analysis['candidate_records_with_branch_count_or_reason_differences'])
+            types=sum(not v['candidate_kind_sequence_equal'] for v in analysis['candidate_classification'])
+            lines += [f"{changed}个场景的中间候选分支数量或原因记录有差异，其中{types}个场景的候选失败类型序列不同。"
+                '最终69个场景选中的抓法和手臂均保持。','']
     else:
         lines+=['## 当前进度','',f"已完成{p['completed_requests']}/138次规划，当前阶段：{p['phase']}。",'']
     if result:
@@ -67,6 +81,8 @@ def document(website):
                 f"{v['successes']}/10（{v['successes']/10:.0%}） | {v['planning_median_seconds']:.2f}秒 | {v['planning_p90_seconds']:.2f}秒 |")
         lines+=['',f"初始规划累计省时{result['planning_total_time_reduction']:.2%}，"
             f"原成功变失败{len(result['baseline_success_losses'])}例，原失败变成功{len(result['optimized_success_gains'])}例。",'']
+        from website.tools.indexed_raw_order_analysis import analyze,markdown
+        lines+=[markdown(analyze(physical))]
     elif physical:
         lines+=['## 实际抓取进度','',f"已完成{q['completed_requests']}/20次，当前阶段：{q['phase']}。",'']
     else:
@@ -90,6 +106,8 @@ def section(website,site,active):
         site['localAssets'][name]='../../resources/media/'+name
         return '/media/'+name
     url=attach(DOCUMENT,'sam3-v8-raw-order.md')
+    numerical=planning/'paired_numerical_analysis.json'
+    numerical_url=attach(numerical,'sam3-v8-raw-order-numerical-analysis.json') if numerical.exists() else None
     snapshot=website/'resources/media/sam3-v8-raw-order.json'
     if snapshot.is_symlink() or snapshot.exists() and snapshot.stat().st_nlink!=1:
         raise ValueError('Website snapshot must be independent')
@@ -107,12 +125,14 @@ def section(website,site,active):
             'insufficient_hold_height':'抬升或保持不足','approach_not_converged':'接近动作未到位',
             'no_arm_has_executable_candidate':'规划不出来'}
         rows=[]
+        finished={(row['id'],row['variant']) for row in q['results']}
         for case in raw(physical/'registration.json')['cases']:
             cells=[]
             for mode in ['baseline','optimized']:
                 directory=physical/'trials'/case['id']/mode
                 claim=physical/'claims'/(case['id']+'_'+mode+'.json')
-                if not claim.exists() or raw(claim)['state']!='complete':cells.append('待执行');continue
+                if (case['id'],mode) not in finished or not claim.exists() or raw(claim)['state']!='complete':
+                    cells.append('待执行');continue
                 outcome=raw(directory/'result.json');text=labels.get(outcome['reason'],outcome['reason']);links=[]
                 prefix='sam3-v8-raw-order-'+case['id'].split('_')[0].lower()+'-'+mode
                 for name,suffix,label in [('execution.mp4','overview.mp4','第三人称'),('head.mp4','head.mp4','头部'),
@@ -127,7 +147,20 @@ def section(website,site,active):
             for reason in failures:
                 counts=[result['groups'][m]['failure_reasons'].get(reason,0) for m in ['baseline','optimized']]
                 body+=f'| {labels.get(reason,reason)} | {counts[0]} | {counts[1]} |\n'
+            if result['baseline_success_losses']:
+                from website.tools.indexed_physical_videos import comparisons
+                clips=comparisons(website,physical,result,prefix='sam3-v8-raw-order',
+                    cache_name='sam3-v8-raw-order-comparisons.json')
+                body+='\n### 原成功、新失败的实际对比\n\n左侧为当前链路，右侧为本轮优化组。\n\n'
+                for case,name in clips:
+                    site['localAssets'][name]='../../resources/media/'+name
+                    body+=f'[{case} · 同步对比](/media/{name})\n\n'
+            for name in ['physical_analysis.json','scissors_hold_diagnosis.json','scissors_command_contact_analysis.json']:
+                if (physical/name).exists():
+                    media='sam3-v8-raw-order-'+name.replace('_','-')
+                    body+=f'\n[分析记录：{name}]({attach(physical/name,media)})\n'
     body+=f'\n[本轮说明与结果]({url}) · [逐例统计和独立核验](/media/sam3-v8-raw-order.json)\n'
+    if numerical_url:body+=f'\n[关节差异与中间候选记录]({numerical_url})\n'
     batches=[{'id':planning.name,'title':'保留原顺序的69场景规划对照','date':raw(planning/'registration.json')['at'].split('T')[0],
         'status':status,'summary':status,'outputs':[str(planning.relative_to(ROOT))],
         'artifacts':[{'label':'本轮核验数据','url':'/media/sam3-v8-raw-order.json'}]}]

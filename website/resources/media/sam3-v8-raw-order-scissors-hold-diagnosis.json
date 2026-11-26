@@ -1,0 +1,198 @@
+{
+  "at": "2026-11-27T02:59:04.438800+08:00",
+  "case": "M0074_S4_clutter_scissors",
+  "stages": {
+    "open": {
+      "baseline": {
+        "samples": 243,
+        "max_object_displacement_mm": 0.0,
+        "last_object_displacement_mm": 0.0,
+        "last_object_position": [
+          -0.3911251723766327,
+          0.14393945038318634,
+          0.0028751010540872812
+        ],
+        "last_finger_openings_mm": [
+          43.999869376420975,
+          43.99966076016426
+        ]
+      },
+      "optimized": {
+        "samples": 243,
+        "max_object_displacement_mm": 0.0,
+        "last_object_displacement_mm": 0.0,
+        "last_object_position": [
+          -0.3911251723766327,
+          0.14393945038318634,
+          0.0028751010540872812
+        ],
+        "last_finger_openings_mm": [
+          43.999869376420975,
+          43.99966076016426
+        ]
+      },
+      "maximum_full_robot_joint_difference": 0.0,
+      "maximum_object_position_difference_mm": 0.0
+    },
+    "pregrasp": {
+      "baseline": {
+        "samples": 723,
+        "max_object_displacement_mm": 0.0,
+        "last_object_displacement_mm": 0.0,
+        "last_object_position": [
+          -0.3911251723766327,
+          0.14393945038318634,
+          0.0028751010540872812
+        ],
+        "last_finger_openings_mm": [
+          43.999962508678436,
+          43.99971291422844
+        ]
+      },
+      "optimized": {
+        "samples": 723,
+        "max_object_displacement_mm": 0.0,
+        "last_object_displacement_mm": 0.0,
+        "last_object_position": [
+          -0.3911251723766327,
+          0.14393945038318634,
+          0.0028751010540872812
+        ],
+        "last_finger_openings_mm": [
+          43.99997740983963,
+          43.99971663951874
+        ]
+      },
+      "maximum_full_robot_joint_difference": 1.0013580322265625e-05,
+      "maximum_object_position_difference_mm": 0.0
+    },
+    "approach": {
+      "baseline": {
+        "samples": 603,
+        "max_object_displacement_mm": 0.0,
+        "last_object_displacement_mm": 0.0,
+        "last_object_position": [
+          -0.3911251723766327,
+          0.14393945038318634,
+          0.0028751010540872812
+        ],
+        "last_finger_openings_mm": [
+          43.99992153048515,
+          43.999988585710526
+        ]
+      },
+      "optimized": {
+        "samples": 603,
+        "max_object_displacement_mm": 0.0,
+        "last_object_displacement_mm": 0.0,
+        "last_object_position": [
+          -0.3911251723766327,
+          0.14393945038318634,
+          0.0028751010540872812
+        ],
+        "last_finger_openings_mm": [
+          43.99991035461426,
+          43.99998113512993
+        ]
+      },
+      "maximum_full_robot_joint_difference": 4.5299530029296875e-06,
+      "maximum_object_position_difference_mm": 0.0
+    },
+    "close": {
+      "baseline": {
+        "samples": 363,
+        "max_object_displacement_mm": 12.567117814626734,
+        "last_object_displacement_mm": 11.30685530087065,
+        "last_object_position": [
+          -0.3937791585922241,
+          0.1545809656381607,
+          0.0056245531886816025
+        ],
+        "last_finger_openings_mm": [
+          4.5835888013243675,
+          4.058150574564934
+        ]
+      },
+      "optimized": {
+        "samples": 363,
+        "max_object_displacement_mm": 18.926869152211182,
+        "last_object_displacement_mm": 18.71587252226312,
+        "last_object_position": [
+          -0.3937819004058838,
+          0.15383490920066833,
+          0.018537335097789764
+        ],
+        "last_finger_openings_mm": [
+          0.5174485850147903,
+          0.45182168832980096
+        ]
+      },
+      "maximum_full_robot_joint_difference": 0.004147540283156559,
+      "maximum_object_position_difference_mm": 13.138457638056476
+    },
+    "lift": {
+      "baseline": {
+        "samples": 723,
+        "max_object_displacement_mm": 43.29102638273664,
+        "last_object_displacement_mm": 43.286874223951656,
+        "last_object_position": [
+          -0.3937353789806366,
+          0.1537412852048874,
+          0.044956739991903305
+        ],
+        "last_finger_openings_mm": [
+          0.6439127610065043,
+          0.5631535896100104
+        ]
+      },
+      "optimized": {
+        "samples": 723,
+        "max_object_displacement_mm": 118.14673708739213,
+        "last_object_displacement_mm": 116.03026665499787,
+        "last_object_position": [
+          -0.38459986448287964,
+          0.028092820197343826,
+          0.0028375310357660055
+        ],
+        "last_finger_openings_mm": [
+          4.727114699676349e-05,
+          5.141149728160599e-06
+        ]
+      },
+      "maximum_full_robot_joint_difference": 0.0041599684045650065,
+      "maximum_object_position_difference_mm": 132.85644981760942
+    },
+    "hold": {
+      "baseline": {
+        "samples": 363,
+        "max_object_displacement_mm": 43.29109362611961,
+        "last_object_displacement_mm": 43.28690469167119,
+        "last_object_position": [
+          -0.39373552799224854,
+          0.15374130010604858,
+          0.0449567586183548
+        ],
+        "last_finger_openings_mm": [
+          0.643931794911623,
+          0.5631295498460531
+        ]
+      },
+      "optimized": {
+        "samples": 363,
+        "max_object_displacement_mm": 116.03026665499787,
+        "last_object_displacement_mm": 116.03026665499787,
+        "last_object_position": [
+          -0.38459986448287964,
+          0.028092820197343826,
+          0.0028375310357660055
+        ],
+        "last_finger_openings_mm": [
+          3.080863919535659e-05,
+          6.45249631503475e-06
+        ]
+      },
+      "maximum_full_robot_joint_difference": 0.000643905436646719,
+      "maximum_object_position_difference_mm": 132.8564332328687
+    }
+  }
+}

@@ -6,10 +6,10 @@ import subprocess
 from arx_project.layout import ROOT, sha256, write_json
 
 
-def comparisons(website, run, accepted):
+def comparisons(website, run, accepted, *, prefix='sam3-v8-physical', cache_name='sam3-v8-physical-comparisons.json'):
     binary = subprocess.check_output([str(ROOT/'environments/simulation/bin/python'), '-c',
         'import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())'], text=True, timeout=30).strip()
-    cache_file = website/'resources/metadata/sam3-v8-physical-comparisons.json'
+    cache_file = website/'resources/metadata'/cache_name
     cache = json.loads(cache_file.read_text()) if cache_file.exists() else {}
     targets = accepted['baseline_success_losses'][:2]
     labels = {'success': 'SUCCESS', 'approach_not_converged': 'APPROACH STOPPED',
@@ -20,7 +20,7 @@ def comparisons(website, run, accepted):
         folders = [run/'trials'/case/mode for mode in ['baseline', 'optimized']]
         videos = [p/'execution.mp4' for p in folders]
         if not all(p.exists() for p in videos): continue
-        name = 'sam3-v8-physical-'+case.split('_')[0].lower()+'-comparison.mp4'
+        name = prefix+'-'+case.split('_')[0].lower()+'-comparison.mp4'
         target = website/'resources/media'/name
         if target.is_symlink() or target.exists() and target.stat().st_nlink != 1:
             raise ValueError('Comparison videos must be independent website files')

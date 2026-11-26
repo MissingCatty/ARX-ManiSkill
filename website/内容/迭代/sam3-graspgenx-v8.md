@@ -1,6 +1,6 @@
 ## V8当前实验：保留原顺序的计算优化
 
-原序计算优化：规划0/138次。
+原序计算优化：规划138/138次，规划核验通过；实抓20/20次，完成、未通过组合启用门槛。
 
 这一轮保持原始抓法评分顺序，只比较计算加速。原来的NMS组合及20次实抓结果完整保留在上一轮章节。
 
@@ -16,19 +16,111 @@
 
 每例使用相同的冻结感知与候选。实抓恢复相同的底盘、升降、物体及关节状态，保持871球、TCP43、V2指尖余量、物理和进入开度。计划抬升3厘米，最低保持抬升1厘米、持续3秒，并满足双指接触及禁止接触检查。初始规划计时包括候选读取、共享内存交接与规划。
 
-## 当前进度
+## 69场景规划对照
 
-已完成0/138次规划，当前阶段：warming。
+| 方法 | 规划通过 | 累计耗时 | 中位耗时 | P90耗时 |
+| --- | ---: | ---: | ---: | ---: |
+| 当前链路 | 69/69（100.00%） | 1612.72秒 | 15.08秒 | 67.30秒 |
+| 本轮优化组 | 69/69（100.00%） | 619.62秒 | 5.82秒 | 19.86秒 |
 
-实抓阶段等待规划核验结果。
+累计省时61.58%；138次请求、332016条候选原值和414个关节终点已独立核验。
+
+原抓法与选臂全部保持；关节终点原值有差异，已按原精度独立核验。
+
+两组对应关节终点的最大差为0.00000381弧度。
+
+34个场景的中间候选分支数量或原因记录有差异，其中3个场景的候选失败类型序列不同。最终69个场景选中的抓法和手臂均保持。
+
+## 10场景实际抓取对照
+
+| 方法 | 规划通过 | 实际成功 | 初始规划中位数 | 初始规划P90 |
+| --- | ---: | ---: | ---: | ---: |
+| 当前链路 | 10/10（100%） | 8/10（80%） | 38.75秒 | 89.58秒 |
+| 本轮优化组 | 10/10（100%） | 7/10（70%） | 14.98秒 | 30.68秒 |
+
+初始规划累计省时65.56%，原成功变失败1例，原失败变成功0例。
+
+### 任务与事件核验
+
+| 项目 | 结果 |
+| --- | --- |
+| 任务完成情况 | 20/20完成，中断0、未开始0。 |
+| 记录完整性 | 20个槽位的命令、回执与评估一致；40段原视频解码通过。 |
+| 事件适用性 | 按实际轨迹和阶段报告核对已执行动作；提前结束后未执行的抬升、保持单列。 |
+| 关键事件覆盖 | 两组逐阶段实际执行数量见下表。 |
+
+| 实际阶段 | 当前链路 | 本轮优化组 |
+| --- | ---: | ---: |
+| 张开 | 10 | 10 |
+| 预抓取 | 10 | 10 |
+| 接近 | 10 | 10 |
+| 闭合 | 10 | 10 |
+| 抬升 | 8 | 8 |
+| 保持 | 8 | 8 |
+
+### 杂乱剪刀：同一抓法仍有夹持保持差异
+
+M0074两组都选第166号抓法。预抓取和接近期间，物体逐采样位置完全一致；实际接近轨迹的两组关节最大差约0.00000453弧度。闭合接触后，物体运动开始分岔。
+
+| 观测 | 当前链路 | 本轮优化组 |
+| --- | ---: | ---: |
+| 闭合期间物体最大位移 | 12.57毫米 | 18.93毫米 |
+| 闭合结束两指位置 | 4.58、4.06毫米 | 0.52、0.45毫米 |
+| 抬升期双指同时有有效接触的采样 | 723/723 | 315/723 |
+| 保持期双指同时有有效接触的采样 | 363/363 | 0/363 |
+
+两组物理配置记录完全相同。新基线的逐采样关节状态和物体位姿，也与上一轮基线完全一致。两组闭合时形成了不同的接触状态；优化组随后在抬升过程中脱离，保持期物体已回到桌面。
+
+本轮去掉NMS后仍有一例退步，需要继续定位同一抓法下的细小指令差异与接触保持过程。现有记录把分歧定位到了闭合接触，具体因果还需要后续固定命令回放来区分。
+
+### 本轮结论与下一步
+
+本轮优化组合保留为可选，默认链路保持。下一步优先固定同一成功抓法的运动命令，隔离微小指令差异与夹持接触稳定性，再决定计算优化如何接入常规抓取。
 
 ## 任务与记录
 
 规划阶段逐项核对领取、候选、实际求解配置和独立FK。实抓按实际发生的接近、闭合、抬升与保持动作核对命令、回执和视频。普通失败如实记录，资源、程序或记录故障停止，已领取任务不重试。默认配置保持。
 
+### 逐场景结果和录像
+
+| 场景 | 当前链路 | 本轮优化组 |
+| --- | --- | --- |
+| M0020_S1_open_donut | 成功 · [第三人称](/media/sam3-v8-raw-order-m0020-baseline-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0020-baseline-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0020-baseline-initial.png) | 成功 · [第三人称](/media/sam3-v8-raw-order-m0020-optimized-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0020-optimized-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0020-optimized-initial.png) |
+| M0034_S2_edge_scissors | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-raw-order-m0034-baseline-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0034-baseline-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0034-baseline-initial.png) | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-raw-order-m0034-optimized-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0034-optimized-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0034-optimized-initial.png) |
+| M0074_S4_clutter_scissors | 成功 · [第三人称](/media/sam3-v8-raw-order-m0074-baseline-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0074-baseline-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0074-baseline-initial.png) | 抬升或保持不足 · [第三人称](/media/sam3-v8-raw-order-m0074-optimized-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0074-optimized-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0074-optimized-initial.png) |
+| M0084_S5_occluded_banana | 成功 · [第三人称](/media/sam3-v8-raw-order-m0084-baseline-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0084-baseline-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0084-baseline-initial.png) | 成功 · [第三人称](/media/sam3-v8-raw-order-m0084-optimized-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0084-optimized-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0084-optimized-initial.png) |
+| M0085_S5_occluded_bar_soap | 成功 · [第三人称](/media/sam3-v8-raw-order-m0085-baseline-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0085-baseline-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0085-baseline-initial.png) | 成功 · [第三人称](/media/sam3-v8-raw-order-m0085-optimized-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0085-optimized-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0085-optimized-initial.png) |
+| M0099_S5_occluded_cucumber | 成功 · [第三人称](/media/sam3-v8-raw-order-m0099-baseline-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0099-baseline-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0099-baseline-initial.png) | 成功 · [第三人称](/media/sam3-v8-raw-order-m0099-optimized-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0099-optimized-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0099-optimized-initial.png) |
+| M0001_S1_open_apple | 成功 · [第三人称](/media/sam3-v8-raw-order-m0001-baseline-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0001-baseline-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0001-baseline-initial.png) | 成功 · [第三人称](/media/sam3-v8-raw-order-m0001-optimized-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0001-optimized-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0001-optimized-initial.png) |
+| M0044_S3_sparse_banana | 成功 · [第三人称](/media/sam3-v8-raw-order-m0044-baseline-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0044-baseline-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0044-baseline-initial.png) | 成功 · [第三人称](/media/sam3-v8-raw-order-m0044-optimized-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0044-optimized-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0044-optimized-initial.png) |
+| M0056_S3_sparse_cell_phone | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-raw-order-m0056-baseline-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0056-baseline-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0056-baseline-initial.png) | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-raw-order-m0056-optimized-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0056-optimized-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0056-optimized-initial.png) |
+| M0064_S4_clutter_mango | 成功 · [第三人称](/media/sam3-v8-raw-order-m0064-baseline-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0064-baseline-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0064-baseline-initial.png) | 成功 · [第三人称](/media/sam3-v8-raw-order-m0064-optimized-overview.mp4) · [头部](/media/sam3-v8-raw-order-m0064-optimized-head.mp4) · [初始图](/media/sam3-v8-raw-order-m0064-optimized-initial.png) |
+
+### 失败分布
+
+| 原因 | 当前链路 | 本轮优化组 |
+| --- | ---: | ---: |
+| 抬升或保持不足 | 0 | 1 |
+| 闭合后未形成双指夹持 | 2 | 2 |
+
+### 原成功、新失败的实际对比
+
+左侧为当前链路，右侧为本轮优化组。
+
+[M0074_S4_clutter_scissors · 同步对比](/media/sam3-v8-raw-order-m0074-comparison.mp4)
+
+
+[分析记录：physical_analysis.json](/media/sam3-v8-raw-order-physical-analysis.json)
+
+[分析记录：scissors_hold_diagnosis.json](/media/sam3-v8-raw-order-scissors-hold-diagnosis.json)
+
+[分析记录：scissors_command_contact_analysis.json](/media/sam3-v8-raw-order-scissors-command-contact-analysis.json)
+
 [本轮说明与结果](/media/sam3-v8-raw-order.md) · [逐例统计和独立核验](/media/sam3-v8-raw-order.json)
 
-## V8当前实验：优化组合实际抓取
+[关节差异与中间候选记录](/media/sam3-v8-raw-order-numerical-analysis.json)
+
+## 上一轮：含NMS的优化组合实际抓取
 
 实际抓取对照：20/20次，独立核验完成，优化组合未保留全部原成功。
 

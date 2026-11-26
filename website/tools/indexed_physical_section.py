@@ -43,7 +43,8 @@ def section(website, site, active):
         raise ValueError('Physical summary must be an independent file')
     write_json(target, {'run': active['physical_run'], 'progress': p, 'acceptance': accepted, 'analysis': analysis})
     site['localAssets'][target.name] = '../../resources/media/'+target.name
-    lines = ['## V8当前实验：优化组合实际抓取', '', status+'。', '',
+    heading = '## 上一轮：含NMS的优化组合实际抓取' if active.get('raw_order_run') else '## V8当前实验：优化组合实际抓取'
+    lines = [heading, '', status+'。', '',
         '选取10个场景，两组各执行一次。其中包括全部6个此前NMS改变抓法的场景，并覆盖五种布局。'
         '两组恢复相同的最终站位、升降和物体状态，使用相同的冻结感知与原始候选，再各自规划、实际抓取。', '',
         '| 项目 | 当前链路 | 优化组合 |', '| --- | --- | --- |',

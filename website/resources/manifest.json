@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T18:05:41.590Z",
+  "generatedAt": "2026-11-26T19:17:40.545Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1415,7 +1415,7 @@
     },
     {
       "file": "media/sam3-v8-indexed-planning-plan.md",
-      "sha256": "27db0b1f1e5727eab57cdec9cab85636282717a448ff8e07c41023ed656c518b"
+      "sha256": "27a321199acd675d476886357ab77cc592c521d926f496061ba201c3b252841e"
     },
     {
       "file": "media/sam3-v8-indexed-planning-config.json",
@@ -1707,7 +1707,7 @@
     },
     {
       "file": "media/sam3-v8-physical-pilot.json",
-      "sha256": "5d32aab2091fcef6b29bc686889e81c9ea202938d97f94e9e84fdd2352a025d4"
+      "sha256": "1e79074479a386fb31b153797ab2757cb027e79bbb675c6028c3460d2570c5c4"
     },
     {
       "file": "media/sam3-v8-physical-m0020-baseline-overview.mp4",
@@ -1959,11 +1959,271 @@
     },
     {
       "file": "media/sam3-v8-raw-order.md",
-      "sha256": "3a3435227c0294838088fab22c958d135bc0132ab3be4dcefe6c2dba1a1525ef"
+      "sha256": "bcc817f97b81cd977e8d3c9a934ebd84e20b7a68f9572e864d5b7b9e29eeb3e3"
     },
     {
       "file": "media/sam3-v8-raw-order.json",
-      "sha256": "9a2f1898e5f02e6aef59654df210b8a4734c73f8c270dae604d3e1496d5df979"
+      "sha256": "1890aac5d4f72e36bde8a6f1be6efd09be14a69afc4195f8a92c3433ac69acd2"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-numerical-analysis.json",
+      "sha256": "0910b3110f58683901f2a40a843180f182c3afabf6edd76bb10c8213ecf3c7b8"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0020-baseline-overview.mp4",
+      "sha256": "d9cb8a917d134e1e1b9a6d48c87f1226a69ac444174c2c3e2ab557d418d839ca"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0020-baseline-head.mp4",
+      "sha256": "f36aa7cd96f7e1e52720eaa66a97902d359b0a3c87b29d9b81e999d264dc1c50"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0020-baseline-initial.png",
+      "sha256": "5b155e887b4828778835efd7c3575f6366e58d5416e938e7027a370564ad10c2"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0020-optimized-overview.mp4",
+      "sha256": "f1b9e3de643b4f9ad00da6b7b69203cbb45bd82c4405a0576ad253707ff2d1e3"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0020-optimized-head.mp4",
+      "sha256": "c8cd8b40d8b689905e515a6748127137704a0e9cef6b1d151a9a5146f1364391"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0020-optimized-initial.png",
+      "sha256": "5b155e887b4828778835efd7c3575f6366e58d5416e938e7027a370564ad10c2"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0034-baseline-overview.mp4",
+      "sha256": "97d871de95c2dcbc28fd118c351f7b3275df51f375d50b6720cf9c9e0874dbc7"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0034-baseline-head.mp4",
+      "sha256": "ed10a8f9b6c976c4c86290ca7e008fa1c177498a43fe2b8b69794035f26792c4"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0034-baseline-initial.png",
+      "sha256": "9b03ad19e704386b8f83b3539e5ef3eb8d71e0d2d69c3ff631ccb0a746b42739"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0034-optimized-overview.mp4",
+      "sha256": "0ca99f02f6999f07d2fa0e1acff009348c65f455788ed5e40f347d9a3cab736b"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0034-optimized-head.mp4",
+      "sha256": "b63070148688daa14a112ec186e960ddee5685c29b16e7c79a7af235188b6755"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0034-optimized-initial.png",
+      "sha256": "9b03ad19e704386b8f83b3539e5ef3eb8d71e0d2d69c3ff631ccb0a746b42739"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0074-baseline-overview.mp4",
+      "sha256": "c9c271251d981356c1b74f698f22bcd41fdd6e909ef2a32ee07ea6639bdd3481"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0074-baseline-head.mp4",
+      "sha256": "ef7be9060021ebc1f6bd9403df0d0949fa91af7163fae0a95e55db3b192ed75e"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0074-baseline-initial.png",
+      "sha256": "10da69e89d15d71d591e0ff9d375ee6fca8dd4504dee71d33e0c2b226b89c36e"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0074-optimized-overview.mp4",
+      "sha256": "760ce91c0c0f2ef5e7ac47b389eaea58dbd648e778ce4b3bab493dbb52dc21bd"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0074-optimized-head.mp4",
+      "sha256": "f831e1d87da8f53a83488577475a173167c964ee7e7454efb2b00604bc2512ae"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0074-optimized-initial.png",
+      "sha256": "10da69e89d15d71d591e0ff9d375ee6fca8dd4504dee71d33e0c2b226b89c36e"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0084-baseline-overview.mp4",
+      "sha256": "a4883a573cca503c416e3c9601f2c8d3a91b5127757c111ed5e6840c62d29d89"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0084-baseline-head.mp4",
+      "sha256": "7ab63b490e8093a29ee7378c9d2e3123bc9e627df297c1aeac166a3cb2f467e2"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0084-baseline-initial.png",
+      "sha256": "aac3b0fb9b12430fb2a57beb7f2aceab8cfd9793fc58f4c174e55c154cf1b94e"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0084-optimized-overview.mp4",
+      "sha256": "9eb9040cb155bcf276fea0c807290854bb15d10ea78d5540e0f91ad4534b0913"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0084-optimized-head.mp4",
+      "sha256": "f9cb2ff937c24e33cb3f0e51e7ee66e8efea74388ca730c092a89c4fb8aec351"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0084-optimized-initial.png",
+      "sha256": "aac3b0fb9b12430fb2a57beb7f2aceab8cfd9793fc58f4c174e55c154cf1b94e"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0085-baseline-overview.mp4",
+      "sha256": "2f3b46c6cefdbe4bfe79052eca0fd474d85b2d7f6c8acf59cfa69b65b477d936"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0085-baseline-head.mp4",
+      "sha256": "573925e7bf460c8cd5135fe64c5f3b079c4681e67437031db5520436e3137529"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0085-baseline-initial.png",
+      "sha256": "0816d04fb01a85663cfa9920585246fbe74713d3a0004a2eea7ecc7c3d003d8c"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0085-optimized-overview.mp4",
+      "sha256": "7c21490f8b4d4447785780d77ef2d2b7d99555261526fc321dc577772f7b7787"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0085-optimized-head.mp4",
+      "sha256": "7479070af0a6815e2fbe9aa5638935141ccceec9710dcf05a574158f63b52174"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0085-optimized-initial.png",
+      "sha256": "0816d04fb01a85663cfa9920585246fbe74713d3a0004a2eea7ecc7c3d003d8c"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0099-baseline-overview.mp4",
+      "sha256": "5460c2878562a1c0c1eef67110d2ca5e9e241831dd00fe2703ba7d0ad19c7e40"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0099-baseline-head.mp4",
+      "sha256": "7fd99b67e32df91aafea70700f68bc5ebe9404d79c0e48c50e121bfde8907071"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0099-baseline-initial.png",
+      "sha256": "e67f6ee61cf3e57c26511eb6a935dc942db773bac5ed2992921c67ed35ab7f3d"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0099-optimized-overview.mp4",
+      "sha256": "b81e0deab67c66e05eb319d4db38a7357bb30168b0a9d6cbf941fbbe3580868c"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0099-optimized-head.mp4",
+      "sha256": "a19f49842253289aadae6781348179b01bdd8c1e084a1e4bd159e12f017c6da8"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0099-optimized-initial.png",
+      "sha256": "e67f6ee61cf3e57c26511eb6a935dc942db773bac5ed2992921c67ed35ab7f3d"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0001-baseline-overview.mp4",
+      "sha256": "4b6f6af6404f19ab13c3ae6da324b6861bf028db1eaf4428f5b03e4d156649cb"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0001-baseline-head.mp4",
+      "sha256": "e2d66212bd5a7bd966240e685aad9aac3dff7022063f68f6fc2f27461abe26b6"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0001-baseline-initial.png",
+      "sha256": "92f051c076e6b3cc1fa9a9a3df20e096a028952c8d0f2b4c9b5930f0a801716e"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0001-optimized-overview.mp4",
+      "sha256": "ffe3b08bcb3e6fa44196e78f2cdbf152d027d3e5eb0367994025027a8571c3e8"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0001-optimized-head.mp4",
+      "sha256": "93b93c167df6752136f03e696497b951fc309d9526e3fd9031c31eb2877c17c0"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0001-optimized-initial.png",
+      "sha256": "92f051c076e6b3cc1fa9a9a3df20e096a028952c8d0f2b4c9b5930f0a801716e"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0044-optimized-overview.mp4",
+      "sha256": "f04a01e09060d7b4b698a62b0b727a676831a632e24b72d416b79fb04efcb75a"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0044-optimized-head.mp4",
+      "sha256": "0493c34f3964322370309e7ee07e62c83028d9025973ebe1423b408304291383"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0044-optimized-initial.png",
+      "sha256": "6b597a33f628e538e9623ad79155cf7855cd96b7228bc722b2146b5e956d63ea"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0044-baseline-overview.mp4",
+      "sha256": "146d2967ab0fe7c96c36170408ab3d101a5e15757c0a7b13142aa71c0a60c1b5"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0044-baseline-head.mp4",
+      "sha256": "f50a70b11aa93b56c2caed9e04356dbfd7316c8314684e82e8542ff57f983747"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0044-baseline-initial.png",
+      "sha256": "6b597a33f628e538e9623ad79155cf7855cd96b7228bc722b2146b5e956d63ea"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0056-baseline-overview.mp4",
+      "sha256": "370a0754701d6421f79a1bdba8f587b666d334dae0cb1f98671eb2b177e2b929"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0056-baseline-head.mp4",
+      "sha256": "e96ab90e463d645fbbb4ca250bc131fafdd9077bb973ba96866131399d1d2b39"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0056-baseline-initial.png",
+      "sha256": "ee282c39390e40ccf41b1acc2acc861937e69e9eb483743894585952152f3271"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0056-optimized-overview.mp4",
+      "sha256": "a1b2bcf64c81a19881c5c4719e2707170a23a02f110cf611f3731b3c74a2d580"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0056-optimized-head.mp4",
+      "sha256": "84bcbdb27c9155a7da9b8f6f30bd68a307ae7c4fb9fc831010045ba4f8347f2a"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0056-optimized-initial.png",
+      "sha256": "ee282c39390e40ccf41b1acc2acc861937e69e9eb483743894585952152f3271"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0064-baseline-overview.mp4",
+      "sha256": "525749a39a19f63d2bf8b7ce9fb14ae6207d8adbd0cb580dabdc25a8f4ab8283"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0064-baseline-head.mp4",
+      "sha256": "15a6cfafa6bd11bd97657a04c0111637f76188b0925f071b746539f60d6567bd"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0064-baseline-initial.png",
+      "sha256": "0e7da4bdcac5d6bebdda73579e63b0140ea58f02ad1b00f8786273948f4bbd3d"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0064-optimized-overview.mp4",
+      "sha256": "4f07b54dfd4cc465b074a87d707d929a0d541a2ca18cb022e83a7ff3d631e5a1"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0064-optimized-head.mp4",
+      "sha256": "f4ac0db20833c1c79dd460ea49979efa5cf53b0c46d67d46bc27c791fcdb72d8"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0064-optimized-initial.png",
+      "sha256": "0e7da4bdcac5d6bebdda73579e63b0140ea58f02ad1b00f8786273948f4bbd3d"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-m0074-comparison.mp4",
+      "sha256": "3efcc28e9b72fb573a97346cf582b1d08fd160407faf952cc10a51aec316b731"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-physical-analysis.json",
+      "sha256": "aaf8c634b949538eda156c9dbdc3ae2a643e9e3acbdef92fcbfe1834eced1385"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-scissors-hold-diagnosis.json",
+      "sha256": "4e849bc4e47c8ad28c3df46f31afe362f319dd72f278d6a9e10bc736d7fd6a28"
+    },
+    {
+      "file": "media/sam3-v8-raw-order-scissors-command-contact-analysis.json",
+      "sha256": "56b571121f7b16fb7ee20e7d24bc767fa3e8956d7b8b8813bd6348fef25e7b28"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
@@ -2983,7 +3243,7 @@
     },
     {
       "file": "optimized/manifest.json",
-      "sha256": "7cb2d4b6edd4dc2bc31f952e1060eac94cb1e5fae5868dbcbe1ae89fa63cc344"
+      "sha256": "eb7aa81ee03ddf6a81c485b6b262dcc355710a602707d751cb0690571d1d757a"
     }
   ]
 }

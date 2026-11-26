@@ -1,0 +1,24 @@
+{
+  "sam3-v8-raw-order-m0074-comparison.mp4": {
+    "source": {
+      "source_sha256": [
+        "c9c271251d981356c1b74f698f22bcd41fdd6e909ef2a32ee07ea6639bdd3481",
+        "760ce91c0c0f2ef5e7ac47b389eaea58dbd648e778ce4b3bab493dbb52dc21bd"
+      ],
+      "results": [
+        "success",
+        "insufficient_hold_height"
+      ],
+      "seconds": [
+        42.106914804986445,
+        14.734978855005465
+      ],
+      "settings": "640x480_per_panel_plus80_header_20fps_crf24_v1"
+    },
+    "sha256": "3efcc28e9b72fb573a97346cf582b1d08fd160407faf952cc10a51aec316b731",
+    "size": 419945,
+    "ends_are_padded_with_last_actual_frame": true,
+    "left": "baseline",
+    "right": "optimized"
+  }
+}
