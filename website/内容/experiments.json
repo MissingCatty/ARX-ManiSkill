@@ -692,8 +692,8 @@
           "sourceId": "sam3-graspgenx",
           "title": "可达性索引与批量IK加速",
           "date": "2026-11-26",
-          "status": "E：地图索引复用，原目标IK初值对照已完成",
-          "resultSummary": "E：原目标IK初值对照3,132/3,132次，比较3°、5°、10°查询范围。",
+          "status": "后续阶段：完整69例定位完成，联合批量检查待适配",
+          "resultSummary": "69例耗时与终点拒绝拆分完成；当前重点为批量抓取IK与开爪/绑定开销。",
           "change": "以现行双臂交替搜索为基线，分别比较原生批量IK、几何IK、关节解索引与模型场景绑定复用，保留原抓姿和评分顺序。",
           "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 双臂交替调度 → 批量IK/几何IK/索引复用对照 → 当前碰撞与路径检查 → 选臂抓取",
           "scenes": "先使用同一套69份有效候选做规划回放，74例总体范围保留5例共同站位失败。",
@@ -712,7 +712,7 @@
             ],
             [
               "当前进度",
-              "E：地图索引复用，原目标IK初值对照已完成"
+              "后续阶段：完整69例定位完成，联合批量检查待适配"
             ]
           ],
           "contentFile": "sam3-graspgenx-v8.md",
@@ -863,6 +863,26 @@
                 {
                   "label": "进度与逐例结果",
                   "url": "/media/sam3-v8-index-seed-probe-20261126-02-status.json"
+                }
+              ]
+            },
+            {
+              "id": "funnel_diagnosis_20261126_01",
+              "title": "完整69例的剩余耗时与拒绝定位",
+              "date": "2026-11-26",
+              "status": "已完成",
+              "summary": "69例耗时与终点拒绝拆分完成；当前重点为批量抓取IK与开爪/绑定开销。",
+              "outputs": [
+                "tmp/indexed_grasp_planning/funnel_diagnosis_20261126_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "定位报告",
+                  "url": "/media/sam3-v8-full69-funnel-diagnosis.md"
+                },
+                {
+                  "label": "逐例数据",
+                  "url": "/media/sam3-v8-full69-funnel-diagnosis.json"
                 }
               ]
             }

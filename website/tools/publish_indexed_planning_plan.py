@@ -126,6 +126,16 @@ def publish():
     if funnel:
         attachments.extend([(ROOT/funnel['document'],'sam3-v8-funnel-review.md'),
             (ROOT/funnel['review_run']/'review.json','sam3-v8-funnel-source-review.json')])
+    diagnosis=None;diagnosis_run=None
+    active=ROOT/'tmp/indexed_grasp_planning/funnel_active.json'
+    if active.exists():
+        diagnosis_run=(ROOT/read_json(active)['run']).resolve()
+        if not diagnosis_run.is_relative_to(ROOT/'tmp/indexed_grasp_planning'):
+            raise ValueError('Unexpected V8 funnel diagnosis path')
+        diagnosis=read_json(diagnosis_run/'acceptance.json')
+        if not diagnosis['passed']:raise ValueError('V8 funnel diagnosis did not pass')
+        attachments.extend([(diagnosis_run/'acceptance.json','sam3-v8-full69-funnel-diagnosis.json'),
+            (ROOT/'modules/pipeline/docs/mainline_versions/V8_完整候选检查耗时定位.md','sam3-v8-full69-funnel-diagnosis.md')])
     for source,name in attachments:
         target = website/'resources/media'/name
         if target.is_symlink():raise ValueError('Website resource must be a real copy')
@@ -400,10 +410,10 @@ def publish():
         site['localAssets'][name] = '../../resources/media/'+name
     if funnel:
         section=('## 后续方向：分级筛选与批量路径\n\n'
-            '已核对用户补充的漏斗方案。下一步优先补候选粗筛与去重、预抓取和抬升联合检查，'
-            '以及直接复用预抓取关节解的小批量路径规划。具体适配与回放待实施。\n\n'
+            'V7已完成候选去重与原候选后备的69场景对照，NMS15与B16组合累计省时28.65%，两组各69/69通过。'
+            '接下来推进完整抓法联合检查，以及直接复用预抓取关节解的小批量路径规划。\n\n'
             '| 工作 | 安排 |\n| --- | --- |\n'
-            '| 夹爪粗筛和代表候选去重 | 放在已有V7后处理实验，保留候选来源与后续检查机会 |\n'
+            '| 夹爪粗筛和代表候选去重 | V7离线和138次规划完成，保留NMS15；几何硬筛误删3条原成功抓法，暂缓启用 |\n'
             '| 预抓取、抓取和抬升联合检查 | 基于B16补批量处理，保留同一组关节分支 |\n'
             '| 少量已知关节终点并行规划 | 优先评估本地批量关节空间接口，减少重复IK |\n'
             '| Goalset | 单独比较选点与避障表现，保留原路径回退 |\n\n'
@@ -412,6 +422,29 @@ def publish():
             '[建议核对与实施顺序](/media/sam3-v8-funnel-review.md) · '
             '[本地接口与反例数据](/media/sam3-v8-funnel-source-review.json)\n\n')
         body=body.replace('## 优化目标',section+'## 优化目标',1)
+    if diagnosis:
+        values=diagnosis['summaries']['nms15'];counts=diagnosis['endpoint_candidates']['nms15']
+        section=['## V8后续阶段：完整69例定位已完成','',
+            '已从V7完整138次规划记录中，拆分69个配对场景的耗时和终点拒绝原因。'
+            '当前进入完整抓法批量验证的适配准备，下一阶段再比较4、8个已知预抓取关节目标的并行路径。','',
+            '| NMS15＋B16的环节 | 每场景平均耗时 |','| --- | ---: |']
+        for key,label in [('opening_seconds','双臂开爪检查'),('candidate_search_seconds','候选搜索'),
+            ('postprocessing_seconds','NMS与候选队列构造'),('decode_seconds','共享候选读取与解码'),
+            ('other_request_seconds','其余状态准备与请求记录'),('postprocess_plus_plan_seconds','合计')]:
+            section.append(f"| {label} | {values[key]['mean']:.3f}秒 |")
+        section += ['',f"候选搜索中的批量抓取IK，GPU事件计时平均{values['batched_grasp_IK_GPU_seconds']['mean']:.2f}秒；"
+            '这是当前优先核对的计算开销。','',
+            '| 候选终点检查结果 | 次数 |','| --- | ---: |']
+        for key,label in [('no_kinematic_solution_returned','本次未返回合格运动学解'),
+            ('solutions_rejected_table','有解，被桌面碰撞拒绝'),
+            ('solutions_rejected_other_world','有解，被非桌面场景碰撞拒绝'),('endpoint_passed','抓取终点通过')]:
+            section.append(f"| {label} | {counts.get(key,0)} |")
+        section+=['','下一步先补齐每次绑定、预抓取/抬升IK和PRM的独立计时，'
+            '同时适配抓取分支的批量FK与碰撞验证。继续保留原候选、最终精度、871球和V2规则。','',
+            '[完整69例耗时定位报告](/media/sam3-v8-full69-funnel-diagnosis.md) · '
+            '[逐例数据与拒绝来源](/media/sam3-v8-full69-funnel-diagnosis.json) · '
+            '[V7已完成的NMS规划对照](/iterations/sam3-graspgenx/versions/V7/)','']
+        body='\n'.join(section)+'\n'+body
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version = next(v for v in group['iterations'] if v['code']=='V8')
@@ -433,6 +466,16 @@ def publish():
             'status':status,'summary':summary,'outputs':[run],
             'artifacts':[{'label':'进度与逐例结果','url':'/media/'+name}]}
         version['batches'] = [v for v in version['batches'] if v['id']!=batch['id']]+[batch]
+    if diagnosis:
+        status='后续阶段：完整69例定位完成，联合批量检查待适配'
+        summary='69例耗时与终点拒绝拆分完成；当前重点为批量抓取IK与开爪/绑定开销。'
+        version.update(status=status,resultSummary=summary)
+        version['settings'][-1]=['当前进度',status]
+        batch={'id':diagnosis_run.name,'title':'完整69例的剩余耗时与拒绝定位','date':'2026-11-26',
+            'status':'已完成','summary':summary,'outputs':[str(diagnosis_run.relative_to(ROOT))],
+            'artifacts':[{'label':'定位报告','url':'/media/sam3-v8-full69-funnel-diagnosis.md'},
+                {'label':'逐例数据','url':'/media/sam3-v8-full69-funnel-diagnosis.json'}]}
+        version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
     if group['current']=='V8':
         entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
         entry.update(status='V8'+status,metric=summary)

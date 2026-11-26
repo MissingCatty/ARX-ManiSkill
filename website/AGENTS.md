@@ -1,5 +1,7 @@
 # 网站内容与表达约定
 
+- V8后续阶段现由funnel_active.json承接，已完成V7全69例CPU记录定位；publish_indexed_planning_plan.py优先显示此定位、各候选互斥拒绝类别和下一阶段待适配状态，保留B/C/D/E历史结果。新GPU规划尚未开始，不把69例已有记录分析写成新增138次规划。报告和逐例JSON真实复制到resources。
+
 - V7完整规划对照已完成并独立核验：两组69/69通过、138请求、414终点；含后处理累计1322.38→943.48秒，省28.65%，中位9.97→9.17秒、P90 44.59→31.42秒。最终报告及原始配对摘要已复制到resources，物理0、默认不切换，保留V8当前指针。
 
 - V7已推进NMS15加后备的规划对照，先导10次与30终点独立复算通过，完整69场景138次在后台运行。publish_graspgenx_postprocessing.py从planning_active.json读取最新纯规划登记，与离线表分段展示，保留V8当前指针及旧批次。两组同用B16，只改变候选优先顺序；原编号、优先名次、候选检查数量和后处理＋规划耗时分别记录。结果报告由graspgenx_postprocessing_planning_report.py生成，附件均复制到resources。

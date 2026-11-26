@@ -23,9 +23,9 @@
       "title": "SAM3＋RGB-D点云＋GraspGenX＋cuRobo",
       "shortTitle": "SAM3＋点云＋GraspGenX",
       "date": "2026-11-26",
-      "status": "V8E：地图索引复用，原目标IK初值对照已完成",
+      "status": "V8后续阶段：完整69例定位完成，联合批量检查待适配",
       "summary": "头部SAM3、RaySt3R与GraspGenX生成抓法，研究候选后处理、可达性索引和双臂cuRobo规划。",
-      "metric": "E：原目标IK初值对照3,132/3,132次，比较3°、5°、10°查询范围。",
+      "metric": "69例耗时与终点拒绝拆分完成；当前重点为批量抓取IK与开爪/绑定开销。",
       "file": "SAM3点云GraspGenX主线.md",
       "workflow": "SAM3点云GraspGenX流程.json"
     },
@@ -636,7 +636,9 @@
     "sam3-v7-planning-pilot-20261126-01-report.md": "../../resources/media/sam3-v7-planning-pilot-20261126-01-report.md",
     "sam3-v7-NMS-planning-plan.md": "../../resources/media/sam3-v7-NMS-planning-plan.md",
     "sam3-v7-planning69-20261126-01-results.json": "../../resources/media/sam3-v7-planning69-20261126-01-results.json",
-    "sam3-v7-planning69-20261126-01-report.md": "../../resources/media/sam3-v7-planning69-20261126-01-report.md"
+    "sam3-v7-planning69-20261126-01-report.md": "../../resources/media/sam3-v7-planning69-20261126-01-report.md",
+    "sam3-v8-full69-funnel-diagnosis.json": "../../resources/media/sam3-v8-full69-funnel-diagnosis.json",
+    "sam3-v8-full69-funnel-diagnosis.md": "../../resources/media/sam3-v8-full69-funnel-diagnosis.md"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",

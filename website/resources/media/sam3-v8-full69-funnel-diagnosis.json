@@ -1,0 +1,4340 @@
+{
+  "at": "2026-11-26T19:19:09.830737+08:00",
+  "passed": true,
+  "record_integrity": true,
+  "paired_cases": 69,
+  "source_run": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/graspgenx_postprocessing/planning69_20261126_01",
+  "summaries": {
+    "control": {
+      "postprocessing_seconds": {
+        "mean": 0.0038754854914799766,
+        "median": 0.003554676004569046,
+        "total": 0.2674084989121184
+      },
+      "planning_seconds": {
+        "mean": 19.161087319927425,
+        "median": 9.962474194995593,
+        "total": 1322.1150250749924
+      },
+      "opening_seconds": {
+        "mean": 3.031021818246581,
+        "median": 2.8480303160031326,
+        "total": 209.1405054590141
+      },
+      "candidate_search_seconds": {
+        "mean": 15.453037042335685,
+        "median": 6.31303974299226,
+        "total": 1066.2595559211622
+      },
+      "decode_seconds": {
+        "mean": 0.22002463024683241,
+        "median": 0.19116540100367274,
+        "total": 15.181699487031437
+      },
+      "other_request_seconds": {
+        "mean": 0.45700382909832854,
+        "median": 0.35406633900129236,
+        "total": 31.53326420778467
+      },
+      "postprocess_plus_plan_seconds": {
+        "mean": 19.164962805418906,
+        "median": 9.968920573985088,
+        "total": 1322.3824335739046
+      },
+      "batched_grasp_IK_GPU_seconds": {
+        "mean": 10.407915086331574,
+        "median": 3.636005861282349,
+        "total": 718.1461409568786
+      },
+      "batched_grasp_IK_wall_seconds": {
+        "mean": 10.442166178074727,
+        "median": 3.650396762022865,
+        "total": 720.5094662871561
+      },
+      "saved_trajopt_solve_seconds": {
+        "mean": 0.15719425092907657,
+        "median": 0.10805816399806645,
+        "total": 10.846403314106283
+      },
+      "saved_trajopt_validation_seconds": {
+        "mean": 0.11871241369732635,
+        "median": 0.11285499099176377,
+        "total": 8.191156545115518
+      },
+      "candidate_checks": {
+        "mean": 149.59420289855072,
+        "median": 66.0,
+        "total": 10322.0
+      }
+    },
+    "nms15": {
+      "postprocessing_seconds": {
+        "mean": 0.3555110525506451,
+        "median": 0.2996114439883968,
+        "total": 24.53026262599451
+      },
+      "planning_seconds": {
+        "mean": 13.318065580129083,
+        "median": 8.868772380999872,
+        "total": 918.9465250289068
+      },
+      "opening_seconds": {
+        "mean": 3.0271044217247898,
+        "median": 2.9501138200139394,
+        "total": 208.8702050990105
+      },
+      "candidate_search_seconds": {
+        "mean": 9.66645772713072,
+        "median": 5.424820969987195,
+        "total": 666.9855831720197
+      },
+      "decode_seconds": {
+        "mean": 0.22607208066704293,
+        "median": 0.19543609100219328,
+        "total": 15.598973566025961
+      },
+      "other_request_seconds": {
+        "mean": 0.3984313506065308,
+        "median": 0.33452845401188824,
+        "total": 27.491763191850623
+      },
+      "postprocess_plus_plan_seconds": {
+        "mean": 13.673576632679728,
+        "median": 9.16788043800625,
+        "total": 943.4767876549013
+      },
+      "batched_grasp_IK_GPU_seconds": {
+        "mean": 6.239638323493626,
+        "median": 2.8813116455078127,
+        "total": 430.5350443210602
+      },
+      "batched_grasp_IK_wall_seconds": {
+        "mean": 6.261304592350338,
+        "median": 2.8871173780062236,
+        "total": 432.0300168721733
+      },
+      "saved_trajopt_solve_seconds": {
+        "mean": 0.15852091847699595,
+        "median": 0.12446349099627696,
+        "total": 10.93794337491272
+      },
+      "saved_trajopt_validation_seconds": {
+        "mean": 0.11742962985569476,
+        "median": 0.09905969200190157,
+        "total": 8.102644460042939
+      },
+      "candidate_checks": {
+        "mean": 96.33333333333333,
+        "median": 38.0,
+        "total": 6647.0
+      }
+    }
+  },
+  "endpoint_candidates": {
+    "control": {
+      "no_kinematic_solution_returned": 8523,
+      "endpoint_passed": 121,
+      "solutions_rejected_table": 1171,
+      "solutions_rejected_other_world": 507
+    },
+    "nms15": {
+      "no_kinematic_solution_returned": 5505,
+      "endpoint_passed": 108,
+      "solutions_rejected_table": 750,
+      "solutions_rejected_other_world": 284
+    }
+  },
+  "rejected_solution_branches": {
+    "control": {
+      "nonfinger_table_collision": 5504,
+      "real_finger_depth_exceeds_tolerance": 3362,
+      "finger_body_contact": 168,
+      "ground_or_other_object_collision": 3975
+    },
+    "nms15": {
+      "nonfinger_table_collision": 2913,
+      "real_finger_depth_exceeds_tolerance": 2758,
+      "finger_body_contact": 192,
+      "ground_or_other_object_collision": 2243
+    }
+  },
+  "examples": {
+    "control": {
+      "no_kinematic_solution_returned": [
+        {
+          "id": "M0001_S1_open_apple",
+          "arm": "right",
+          "search_rank": 0,
+          "original_source_index": 0,
+          "returned_kinematic_solutions": 0
+        },
+        {
+          "id": "M0001_S1_open_apple",
+          "arm": "left",
+          "search_rank": 0,
+          "original_source_index": 0,
+          "returned_kinematic_solutions": 0
+        },
+        {
+          "id": "M0002_S1_open_avocado",
+          "arm": "right",
+          "search_rank": 0,
+          "original_source_index": 0,
+          "returned_kinematic_solutions": 0
+        },
+        {
+          "id": "M0002_S1_open_avocado",
+          "arm": "right",
+          "search_rank": 1,
+          "original_source_index": 1,
+          "returned_kinematic_solutions": 0
+        },
+        {
+          "id": "M0002_S1_open_avocado",
+          "arm": "right",
+          "search_rank": 2,
+          "original_source_index": 2,
+          "returned_kinematic_solutions": 0
+        }
+      ],
+      "endpoint_passed": [
+        {
+          "id": "M0001_S1_open_apple",
+          "arm": "right",
+          "search_rank": 1,
+          "original_source_index": 1,
+          "returned_kinematic_solutions": null
+        },
+        {
+          "id": "M0001_S1_open_apple",
+          "arm": "left",
+          "search_rank": 1,
+          "original_source_index": 1,
+          "returned_kinematic_solutions": null
+        },
+        {
+          "id": "M0002_S1_open_avocado",
+          "arm": "right",
+          "search_rank": 3,
+          "original_source_index": 3,
+          "returned_kinematic_solutions": null
+        },
+        {
+          "id": "M0002_S1_open_avocado",
+          "arm": "left",
+          "search_rank": 3,
+          "original_source_index": 3,
+          "returned_kinematic_solutions": null
+        },
+        {
+          "id": "M0004_S1_open_banana",
+          "arm": "right",
+          "search_rank": 0,
+          "original_source_index": 0,
+          "returned_kinematic_solutions": null
+        }
+      ],
+      "solutions_rejected_table": [
+        {
+          "id": "M0005_S1_open_bar_soap",
+          "arm": "right",
+          "search_rank": 0,
+          "original_source_index": 0,
+          "returned_kinematic_solutions": 7
+        },
+        {
+          "id": "M0005_S1_open_bar_soap",
+          "arm": "right",
+          "search_rank": 4,
+          "original_source_index": 4,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0005_S1_open_bar_soap",
+          "arm": "right",
+          "search_rank": 7,
+          "original_source_index": 7,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0005_S1_open_bar_soap",
+          "arm": "right",
+          "search_rank": 8,
+          "original_source_index": 8,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0005_S1_open_bar_soap",
+          "arm": "right",
+          "search_rank": 29,
+          "original_source_index": 29,
+          "returned_kinematic_solutions": 8
+        }
+      ],
+      "solutions_rejected_other_world": [
+        {
+          "id": "M0020_S1_open_donut",
+          "arm": "left",
+          "search_rank": 160,
+          "original_source_index": 160,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0020_S1_open_donut",
+          "arm": "left",
+          "search_rank": 214,
+          "original_source_index": 214,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0020_S1_open_donut",
+          "arm": "left",
+          "search_rank": 348,
+          "original_source_index": 348,
+          "returned_kinematic_solutions": 2
+        },
+        {
+          "id": "M0020_S1_open_donut",
+          "arm": "left",
+          "search_rank": 349,
+          "original_source_index": 349,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0029_S2_edge_orange",
+          "arm": "right",
+          "search_rank": 128,
+          "original_source_index": 128,
+          "returned_kinematic_solutions": 8
+        }
+      ]
+    },
+    "nms15": {
+      "no_kinematic_solution_returned": [
+        {
+          "id": "M0001_S1_open_apple",
+          "arm": "right",
+          "search_rank": 0,
+          "original_source_index": 0,
+          "returned_kinematic_solutions": 0
+        },
+        {
+          "id": "M0001_S1_open_apple",
+          "arm": "left",
+          "search_rank": 0,
+          "original_source_index": 0,
+          "returned_kinematic_solutions": 0
+        },
+        {
+          "id": "M0002_S1_open_avocado",
+          "arm": "right",
+          "search_rank": 0,
+          "original_source_index": 0,
+          "returned_kinematic_solutions": 0
+        },
+        {
+          "id": "M0002_S1_open_avocado",
+          "arm": "right",
+          "search_rank": 1,
+          "original_source_index": 1,
+          "returned_kinematic_solutions": 0
+        },
+        {
+          "id": "M0002_S1_open_avocado",
+          "arm": "right",
+          "search_rank": 2,
+          "original_source_index": 2,
+          "returned_kinematic_solutions": 0
+        }
+      ],
+      "endpoint_passed": [
+        {
+          "id": "M0001_S1_open_apple",
+          "arm": "right",
+          "search_rank": 1,
+          "original_source_index": 1,
+          "returned_kinematic_solutions": null
+        },
+        {
+          "id": "M0001_S1_open_apple",
+          "arm": "left",
+          "search_rank": 1,
+          "original_source_index": 1,
+          "returned_kinematic_solutions": null
+        },
+        {
+          "id": "M0002_S1_open_avocado",
+          "arm": "right",
+          "search_rank": 3,
+          "original_source_index": 3,
+          "returned_kinematic_solutions": null
+        },
+        {
+          "id": "M0002_S1_open_avocado",
+          "arm": "left",
+          "search_rank": 3,
+          "original_source_index": 3,
+          "returned_kinematic_solutions": null
+        },
+        {
+          "id": "M0004_S1_open_banana",
+          "arm": "right",
+          "search_rank": 0,
+          "original_source_index": 0,
+          "returned_kinematic_solutions": null
+        }
+      ],
+      "solutions_rejected_table": [
+        {
+          "id": "M0005_S1_open_bar_soap",
+          "arm": "right",
+          "search_rank": 0,
+          "original_source_index": 0,
+          "returned_kinematic_solutions": 7
+        },
+        {
+          "id": "M0005_S1_open_bar_soap",
+          "arm": "right",
+          "search_rank": 3,
+          "original_source_index": 4,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0005_S1_open_bar_soap",
+          "arm": "right",
+          "search_rank": 12,
+          "original_source_index": 32,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0005_S1_open_bar_soap",
+          "arm": "right",
+          "search_rank": 14,
+          "original_source_index": 35,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0005_S1_open_bar_soap",
+          "arm": "right",
+          "search_rank": 15,
+          "original_source_index": 36,
+          "returned_kinematic_solutions": 8
+        }
+      ],
+      "solutions_rejected_other_world": [
+        {
+          "id": "M0020_S1_open_donut",
+          "arm": "left",
+          "search_rank": 96,
+          "original_source_index": 160,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0020_S1_open_donut",
+          "arm": "left",
+          "search_rank": 207,
+          "original_source_index": 349,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0029_S2_edge_orange",
+          "arm": "right",
+          "search_rank": 53,
+          "original_source_index": 128,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0029_S2_edge_orange",
+          "arm": "right",
+          "search_rank": 92,
+          "original_source_index": 206,
+          "returned_kinematic_solutions": 8
+        },
+        {
+          "id": "M0033_S2_edge_remote_control",
+          "arm": "left",
+          "search_rank": 17,
+          "original_source_index": 25,
+          "returned_kinematic_solutions": 8
+        }
+      ]
+    }
+  },
+  "cases": {
+    "control": [
+      {
+        "id": "M0001_S1_open_apple",
+        "candidate_checks": 4,
+        "postprocessing_seconds": 0.000511905993334949,
+        "planning_seconds": 4.2795420740003465,
+        "opening_seconds": 1.8602008019952336,
+        "candidate_search_seconds": 2.08367212099256,
+        "decode_seconds": 0.11705868999706581,
+        "other_request_seconds": 0.2186104610154871,
+        "postprocess_plus_plan_seconds": 4.280053979993681,
+        "batched_grasp_IK_GPU_seconds": 0.8936141567230225,
+        "batched_grasp_IK_wall_seconds": 0.8967768049769802,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 28,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.24967872000706848,
+        "saved_trajopt_validation_seconds": 0.16456047201063484,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 2,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0002_S1_open_avocado",
+        "candidate_checks": 8,
+        "postprocessing_seconds": 0.0014645360060967505,
+        "planning_seconds": 4.855171962000895,
+        "opening_seconds": 2.236604157005786,
+        "candidate_search_seconds": 2.041224879998481,
+        "decode_seconds": 0.2641289190069074,
+        "other_request_seconds": 0.31321400598972104,
+        "postprocess_plus_plan_seconds": 4.856636498006992,
+        "batched_grasp_IK_GPU_seconds": 0.8664319629669189,
+        "batched_grasp_IK_wall_seconds": 0.8695899789890973,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 32,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.17667716700816527,
+        "saved_trajopt_validation_seconds": 0.11285499099176377,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 6,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0004_S1_open_banana",
+        "candidate_checks": 2,
+        "postprocessing_seconds": 0.005870173001312651,
+        "planning_seconds": 6.506775169997127,
+        "opening_seconds": 3.5588432399963494,
+        "candidate_search_seconds": 2.166823698004009,
+        "decode_seconds": 0.25662011999520473,
+        "other_request_seconds": 0.5244881120015634,
+        "postprocess_plus_plan_seconds": 6.5126453429984394,
+        "batched_grasp_IK_GPU_seconds": 0.8459612216949463,
+        "batched_grasp_IK_wall_seconds": 0.8494110759929754,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 33,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.024890405999030918,
+        "saved_trajopt_validation_seconds": 0.039779657003236935,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 1,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0005_S1_open_bar_soap",
+        "candidate_checks": 511,
+        "postprocessing_seconds": 0.0016080859932117164,
+        "planning_seconds": 42.35079176700674,
+        "opening_seconds": 2.685309934997349,
+        "candidate_search_seconds": 37.258791936023044,
+        "decode_seconds": 0.3361812299990561,
+        "other_request_seconds": 2.0705086659872904,
+        "postprocess_plus_plan_seconds": 42.35239985299995,
+        "batched_grasp_IK_GPU_seconds": 21.531157112121573,
+        "batched_grasp_IK_wall_seconds": 21.60365940706106,
+        "batched_grasp_IK_calls": 64,
+        "batched_grasp_IK_targets": 1023,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 32,
+          "pure_kinematic_fallback": 32
+        },
+        "saved_trajopt_solve_seconds": 0.05401997400622349,
+        "saved_trajopt_validation_seconds": 0.06464234100712929,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 510,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0006_S1_open_bell_pepper",
+        "candidate_checks": 8,
+        "postprocessing_seconds": 0.006026221002684906,
+        "planning_seconds": 10.01324278699758,
+        "opening_seconds": 4.340349357982632,
+        "candidate_search_seconds": 4.324293763987953,
+        "decode_seconds": 0.14768872800050303,
+        "other_request_seconds": 1.2009109370264923,
+        "postprocess_plus_plan_seconds": 10.019269008000265,
+        "batched_grasp_IK_GPU_seconds": 1.6005672950744627,
+        "batched_grasp_IK_wall_seconds": 1.6043871770089027,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 36,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.23275492301036138,
+        "saved_trajopt_validation_seconds": 0.14378306399157736,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 6,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0008_S1_open_bottled_water",
+        "candidate_checks": 31,
+        "postprocessing_seconds": 0.0005538569967029616,
+        "planning_seconds": 7.071403016001568,
+        "opening_seconds": 2.718804098010878,
+        "candidate_search_seconds": 3.827504882006906,
+        "decode_seconds": 0.06510276799963322,
+        "other_request_seconds": 0.4599912679841509,
+        "postprocess_plus_plan_seconds": 7.071956872998271,
+        "batched_grasp_IK_GPU_seconds": 2.164873250961304,
+        "batched_grasp_IK_wall_seconds": 2.169290872014244,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 63,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.13808842800790444,
+        "saved_trajopt_validation_seconds": 0.129604953006492,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 30,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0009_S1_open_bowl",
+        "candidate_checks": 24,
+        "postprocessing_seconds": 0.005122433998622,
+        "planning_seconds": 7.315841842995724,
+        "opening_seconds": 4.306189909009845,
+        "candidate_search_seconds": 2.111824589999742,
+        "decode_seconds": 0.19116540100367274,
+        "other_request_seconds": 0.7066619429824641,
+        "postprocess_plus_plan_seconds": 7.320964276994346,
+        "batched_grasp_IK_GPU_seconds": 0.817865629196167,
+        "batched_grasp_IK_wall_seconds": 0.8212399990006816,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 54,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.050367800999083556,
+        "saved_trajopt_validation_seconds": 0.05483692399866413,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 22,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0010_S1_open_boxed_food",
+        "candidate_checks": 114,
+        "postprocessing_seconds": 0.000976470997557044,
+        "planning_seconds": 9.432511317005265,
+        "opening_seconds": 3.0784998430026462,
+        "candidate_search_seconds": 5.551507382013369,
+        "decode_seconds": 0.25896319100866094,
+        "other_request_seconds": 0.543540900980588,
+        "postprocess_plus_plan_seconds": 9.433487788002822,
+        "batched_grasp_IK_GPU_seconds": 3.636005861282349,
+        "batched_grasp_IK_wall_seconds": 3.650396762022865,
+        "batched_grasp_IK_calls": 16,
+        "batched_grasp_IK_targets": 240,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 8,
+          "pure_kinematic_fallback": 8
+        },
+        "saved_trajopt_solve_seconds": 0.05091652499686461,
+        "saved_trajopt_validation_seconds": 0.05765339000208769,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 112,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0011_S1_open_bread",
+        "candidate_checks": 382,
+        "postprocessing_seconds": 0.003678628010675311,
+        "planning_seconds": 27.410397054001805,
+        "opening_seconds": 3.833180921006715,
+        "candidate_search_seconds": 23.075446549017215,
+        "decode_seconds": 0.1736337840120541,
+        "other_request_seconds": 0.3281357999658212,
+        "postprocess_plus_plan_seconds": 27.41407568201248,
+        "batched_grasp_IK_GPU_seconds": 17.604666271209716,
+        "batched_grasp_IK_wall_seconds": 17.68528547506139,
+        "batched_grasp_IK_calls": 48,
+        "batched_grasp_IK_targets": 765,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 24,
+          "pure_kinematic_fallback": 24
+        },
+        "saved_trajopt_solve_seconds": 0.05681284499587491,
+        "saved_trajopt_validation_seconds": 0.05912384099792689,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 381,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0012_S1_open_broccoli",
+        "candidate_checks": 152,
+        "postprocessing_seconds": 0.000881674000993371,
+        "planning_seconds": 9.686930779003887,
+        "opening_seconds": 2.321697071995004,
+        "candidate_search_seconds": 6.811326709022978,
+        "decode_seconds": 0.2342500100057805,
+        "other_request_seconds": 0.31965698798012454,
+        "postprocess_plus_plan_seconds": 9.68781245300488,
+        "batched_grasp_IK_GPU_seconds": 4.795131006240846,
+        "batched_grasp_IK_wall_seconds": 4.81299629402929,
+        "batched_grasp_IK_calls": 20,
+        "batched_grasp_IK_targets": 309,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 10,
+          "pure_kinematic_fallback": 10
+        },
+        "saved_trajopt_solve_seconds": 0.045779090010910295,
+        "saved_trajopt_validation_seconds": 0.05276843599858694,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 149,
+          "pre_or_lift_ik": 2,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0015_S1_open_carrot",
+        "candidate_checks": 16,
+        "postprocessing_seconds": 0.004774533008458093,
+        "planning_seconds": 6.788128579995828,
+        "opening_seconds": 3.6129563430149574,
+        "candidate_search_seconds": 2.443207975011319,
+        "decode_seconds": 0.33743361599044874,
+        "other_request_seconds": 0.3945306459791027,
+        "postprocess_plus_plan_seconds": 6.792903113004286,
+        "batched_grasp_IK_GPU_seconds": 0.9687867050170897,
+        "batched_grasp_IK_wall_seconds": 0.9729333079885691,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 44,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.051813452009810135,
+        "saved_trajopt_validation_seconds": 0.05959815900132526,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 15,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0016_S1_open_cell_phone",
+        "candidate_checks": 642,
+        "postprocessing_seconds": 0.003554676004569046,
+        "planning_seconds": 42.50766424500034,
+        "opening_seconds": 2.222388346999651,
+        "candidate_search_seconds": 39.56836218200624,
+        "decode_seconds": 0.31521851000434253,
+        "other_request_seconds": 0.40169520599010866,
+        "postprocess_plus_plan_seconds": 42.51121892100491,
+        "batched_grasp_IK_GPU_seconds": 27.08343194580078,
+        "batched_grasp_IK_wall_seconds": 27.189497063009185,
+        "batched_grasp_IK_calls": 82,
+        "batched_grasp_IK_targets": 1307,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 41,
+          "pure_kinematic_fallback": 41
+        },
+        "saved_trajopt_solve_seconds": 0.04932826499862131,
+        "saved_trajopt_validation_seconds": 0.05451452199486084,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 641,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0018_S1_open_croissant",
+        "candidate_checks": 223,
+        "postprocessing_seconds": 0.007767338000121526,
+        "planning_seconds": 16.519609091003076,
+        "opening_seconds": 2.7910178449965315,
+        "candidate_search_seconds": 12.852889815010712,
+        "decode_seconds": 0.15964736200112384,
+        "other_request_seconds": 0.7160540689947084,
+        "postprocess_plus_plan_seconds": 16.527376429003198,
+        "batched_grasp_IK_GPU_seconds": 8.34988853263855,
+        "batched_grasp_IK_wall_seconds": 8.376544378013932,
+        "batched_grasp_IK_calls": 30,
+        "batched_grasp_IK_targets": 473,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 15,
+          "pure_kinematic_fallback": 15
+        },
+        "saved_trajopt_solve_seconds": 0.2801439320028294,
+        "saved_trajopt_validation_seconds": 0.21096617401053663,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 219,
+          "pre_or_lift_ik": 2,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0019_S1_open_cucumber",
+        "candidate_checks": 2,
+        "postprocessing_seconds": 0.002442426994093694,
+        "planning_seconds": 4.440661015993101,
+        "opening_seconds": 2.043486586000654,
+        "candidate_search_seconds": 1.7352045140141854,
+        "decode_seconds": 0.34452873599366285,
+        "other_request_seconds": 0.3174411799845984,
+        "postprocess_plus_plan_seconds": 4.443103442987194,
+        "batched_grasp_IK_GPU_seconds": 0.7283219242095946,
+        "batched_grasp_IK_wall_seconds": 0.7317033240105957,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 29,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.0555705019942252,
+        "saved_trajopt_validation_seconds": 0.05387770199740771,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 1,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0020_S1_open_donut",
+        "candidate_checks": 752,
+        "postprocessing_seconds": 0.00857694199657999,
+        "planning_seconds": 66.68426111900772,
+        "opening_seconds": 3.2571220750105567,
+        "candidate_search_seconds": 62.855437877980876,
+        "decode_seconds": 0.1606208150042221,
+        "other_request_seconds": 0.4110803510120604,
+        "postprocess_plus_plan_seconds": 66.6928380610043,
+        "batched_grasp_IK_GPU_seconds": 47.50256379508972,
+        "batched_grasp_IK_wall_seconds": 47.63751860293269,
+        "batched_grasp_IK_calls": 96,
+        "batched_grasp_IK_targets": 1519,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 48,
+          "pure_kinematic_fallback": 48
+        },
+        "saved_trajopt_solve_seconds": 0.02437894699687604,
+        "saved_trajopt_validation_seconds": 0.08582258300157264,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 751,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0022_S2_edge_keychain",
+        "candidate_checks": 166,
+        "postprocessing_seconds": 0.0010399549937574193,
+        "planning_seconds": 17.26622966400464,
+        "opening_seconds": 2.7839806280098855,
+        "candidate_search_seconds": 14.016912967010285,
+        "decode_seconds": 0.14512804299010895,
+        "other_request_seconds": 0.3202080259943614,
+        "postprocess_plus_plan_seconds": 17.267269618998398,
+        "batched_grasp_IK_GPU_seconds": 10.144941947937012,
+        "batched_grasp_IK_wall_seconds": 10.167162963058217,
+        "batched_grasp_IK_calls": 24,
+        "batched_grasp_IK_targets": 356,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 12,
+          "pure_kinematic_fallback": 12
+        },
+        "saved_trajopt_solve_seconds": 0.43220054598350544,
+        "saved_trajopt_validation_seconds": 0.21562581899343058,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 164,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0023_S2_edge_lemon",
+        "candidate_checks": 16,
+        "postprocessing_seconds": 0.004922715001157485,
+        "planning_seconds": 8.413766181998653,
+        "opening_seconds": 3.506458117000875,
+        "candidate_search_seconds": 4.510389664006652,
+        "decode_seconds": 0.11813494400121272,
+        "other_request_seconds": 0.27878345698991325,
+        "postprocess_plus_plan_seconds": 8.41868889699981,
+        "batched_grasp_IK_GPU_seconds": 2.9421167640686035,
+        "batched_grasp_IK_wall_seconds": 2.946350377998897,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 45,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.13978492400201503,
+        "saved_trajopt_validation_seconds": 0.10932975000469014,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 15,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0024_S2_edge_mango",
+        "candidate_checks": 24,
+        "postprocessing_seconds": 0.0007071609870763496,
+        "planning_seconds": 5.519204639000236,
+        "opening_seconds": 2.2820706119964598,
+        "candidate_search_seconds": 2.8290297649946297,
+        "decode_seconds": 0.1393397770007141,
+        "other_request_seconds": 0.26876448500843253,
+        "postprocess_plus_plan_seconds": 5.519911799987312,
+        "batched_grasp_IK_GPU_seconds": 1.6225034465789794,
+        "batched_grasp_IK_wall_seconds": 1.6259852500079433,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 55,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.04829009900277015,
+        "saved_trajopt_validation_seconds": 0.053760014998260885,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 23,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "candidate_checks": 4,
+        "postprocessing_seconds": 0.0052946319920010865,
+        "planning_seconds": 6.577903693003464,
+        "opening_seconds": 3.0818730820028577,
+        "candidate_search_seconds": 3.031261751006241,
+        "decode_seconds": 0.13792458700481802,
+        "other_request_seconds": 0.3268442729895469,
+        "postprocess_plus_plan_seconds": 6.583198324995465,
+        "batched_grasp_IK_GPU_seconds": 1.5208621444702148,
+        "batched_grasp_IK_wall_seconds": 1.5244736160093453,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 33,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.09283652498561423,
+        "saved_trajopt_validation_seconds": 0.05694354500155896,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 2,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0027_S2_edge_mushroom",
+        "candidate_checks": 28,
+        "postprocessing_seconds": 0.0008005759882507846,
+        "planning_seconds": 6.402951729003689,
+        "opening_seconds": 2.226804363002884,
+        "candidate_search_seconds": 3.8450301000120817,
+        "decode_seconds": 0.07486132900521625,
+        "other_request_seconds": 0.2562559369835071,
+        "postprocess_plus_plan_seconds": 6.40375230499194,
+        "batched_grasp_IK_GPU_seconds": 1.6862853431701659,
+        "batched_grasp_IK_wall_seconds": 1.6894451469997875,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 56,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.2023843460046919,
+        "saved_trajopt_validation_seconds": 0.11689355799171608,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 24,
+          "pre_or_lift_ik": 2,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0029_S2_edge_orange",
+        "candidate_checks": 505,
+        "postprocessing_seconds": 0.00304384900664445,
+        "planning_seconds": 48.634471657001995,
+        "opening_seconds": 3.4997410229989327,
+        "candidate_search_seconds": 44.65863158198772,
+        "decode_seconds": 0.11618494499998633,
+        "other_request_seconds": 0.3599141070153564,
+        "postprocess_plus_plan_seconds": 48.63751550600864,
+        "batched_grasp_IK_GPU_seconds": 31.778792078018185,
+        "batched_grasp_IK_wall_seconds": 31.87369992901222,
+        "batched_grasp_IK_calls": 64,
+        "batched_grasp_IK_targets": 1022,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 32,
+          "pure_kinematic_fallback": 32
+        },
+        "saved_trajopt_solve_seconds": 0.17612400198413525,
+        "saved_trajopt_validation_seconds": 0.12691727200581226,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 503,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0030_S2_edge_peach",
+        "candidate_checks": 18,
+        "postprocessing_seconds": 0.0011931219924008474,
+        "planning_seconds": 7.265021093000541,
+        "opening_seconds": 2.5443495609943056,
+        "candidate_search_seconds": 4.349003584007733,
+        "decode_seconds": 0.11009187900344841,
+        "other_request_seconds": 0.2615760689950548,
+        "postprocess_plus_plan_seconds": 7.266214214992942,
+        "batched_grasp_IK_GPU_seconds": 2.4295617542266843,
+        "batched_grasp_IK_wall_seconds": 2.432933136980864,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 55,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.4673596670036204,
+        "saved_trajopt_validation_seconds": 0.1720251959923189,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 16,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "candidate_checks": 86,
+        "postprocessing_seconds": 0.004725131002487615,
+        "planning_seconds": 9.958805226997356,
+        "opening_seconds": 2.803558888990665,
+        "candidate_search_seconds": 6.5643281410157215,
+        "decode_seconds": 0.30667228599486407,
+        "other_request_seconds": 0.2842459109961055,
+        "postprocess_plus_plan_seconds": 9.963530357999844,
+        "batched_grasp_IK_GPU_seconds": 3.7422725639343266,
+        "batched_grasp_IK_wall_seconds": 3.7531247820152203,
+        "batched_grasp_IK_calls": 12,
+        "batched_grasp_IK_targets": 190,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 6,
+          "pure_kinematic_fallback": 6
+        },
+        "saved_trajopt_solve_seconds": 0.2312388609861955,
+        "saved_trajopt_validation_seconds": 0.1163682709884597,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 84,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0032_S2_edge_potato",
+        "candidate_checks": 20,
+        "postprocessing_seconds": 0.0012418169935699552,
+        "planning_seconds": 6.600613303002319,
+        "opening_seconds": 2.7003555789997336,
+        "candidate_search_seconds": 3.264895325002726,
+        "decode_seconds": 0.29632099499576725,
+        "other_request_seconds": 0.33904140400409233,
+        "postprocess_plus_plan_seconds": 6.601855119995889,
+        "batched_grasp_IK_GPU_seconds": 2.2684312171936036,
+        "batched_grasp_IK_wall_seconds": 2.271846245988854,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 62,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.059641292988089845,
+        "saved_trajopt_validation_seconds": 0.061615528000402264,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 19,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0033_S2_edge_remote_control",
+        "candidate_checks": 88,
+        "postprocessing_seconds": 0.00566955900285393,
+        "planning_seconds": 10.520222735009156,
+        "opening_seconds": 2.569066460011527,
+        "candidate_search_seconds": 7.164967594027985,
+        "decode_seconds": 0.4076737870054785,
+        "other_request_seconds": 0.3785148939641658,
+        "postprocess_plus_plan_seconds": 10.52589229401201,
+        "batched_grasp_IK_GPU_seconds": 4.718008504867554,
+        "batched_grasp_IK_wall_seconds": 4.729185570002301,
+        "batched_grasp_IK_calls": 12,
+        "batched_grasp_IK_targets": 182,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 6,
+          "pure_kinematic_fallback": 6
+        },
+        "saved_trajopt_solve_seconds": 0.2108334950171411,
+        "saved_trajopt_validation_seconds": 0.1301111270149704,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 86,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "candidate_checks": 273,
+        "postprocessing_seconds": 0.0009248339920304716,
+        "planning_seconds": 35.27594924600271,
+        "opening_seconds": 2.0680598889885005,
+        "candidate_search_seconds": 32.56610903098772,
+        "decode_seconds": 0.3246609819907462,
+        "other_request_seconds": 0.3171193440357456,
+        "postprocess_plus_plan_seconds": 35.27687407999474,
+        "batched_grasp_IK_GPU_seconds": 23.058974557876592,
+        "batched_grasp_IK_wall_seconds": 23.094719628963503,
+        "batched_grasp_IK_calls": 36,
+        "batched_grasp_IK_targets": 576,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 18,
+          "pure_kinematic_fallback": 18
+        },
+        "saved_trajopt_solve_seconds": 0.025756153001566418,
+        "saved_trajopt_validation_seconds": 0.03900274100305978,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 272,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0036_S2_edge_spatula",
+        "candidate_checks": 62,
+        "postprocessing_seconds": 0.008331207005539909,
+        "planning_seconds": 8.067162373001338,
+        "opening_seconds": 2.7150085100147408,
+        "candidate_search_seconds": 4.7059617359918775,
+        "decode_seconds": 0.2713968250027392,
+        "other_request_seconds": 0.3747953019919805,
+        "postprocess_plus_plan_seconds": 8.075493580006878,
+        "batched_grasp_IK_GPU_seconds": 2.0742000427246094,
+        "batched_grasp_IK_wall_seconds": 2.081194371043239,
+        "batched_grasp_IK_calls": 8,
+        "batched_grasp_IK_targets": 126,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 4,
+          "pure_kinematic_fallback": 4
+        },
+        "saved_trajopt_solve_seconds": 0.025479062998783775,
+        "saved_trajopt_validation_seconds": 0.04409663401020225,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 61,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0038_S2_edge_teapot",
+        "candidate_checks": 17,
+        "postprocessing_seconds": 0.0014092810015426949,
+        "planning_seconds": 5.114707450993592,
+        "opening_seconds": 2.098587761996896,
+        "candidate_search_seconds": 2.3880616319947876,
+        "decode_seconds": 0.2678184300020803,
+        "other_request_seconds": 0.36023962699982803,
+        "postprocess_plus_plan_seconds": 5.116116731995135,
+        "batched_grasp_IK_GPU_seconds": 1.3666141338348388,
+        "batched_grasp_IK_wall_seconds": 1.3700362549861893,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 59,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.05632777699793223,
+        "saved_trajopt_validation_seconds": 0.054193221003515646,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 16,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0039_S2_edge_tomato",
+        "candidate_checks": 79,
+        "postprocessing_seconds": 0.005140884997672401,
+        "planning_seconds": 19.060941787000047,
+        "opening_seconds": 3.7959619459870737,
+        "candidate_search_seconds": 13.567089869015035,
+        "decode_seconds": 0.08737386099528521,
+        "other_request_seconds": 1.610516111002653,
+        "postprocess_plus_plan_seconds": 19.06608267199772,
+        "batched_grasp_IK_GPU_seconds": 7.935376588821413,
+        "batched_grasp_IK_wall_seconds": 7.949064700995223,
+        "batched_grasp_IK_calls": 12,
+        "batched_grasp_IK_targets": 188,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 6,
+          "pure_kinematic_fallback": 6
+        },
+        "saved_trajopt_solve_seconds": 0.22847086600086186,
+        "saved_trajopt_validation_seconds": 0.1520340419956483,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 75,
+          "pre_or_lift_ik": 2,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0041_S3_sparse_apple",
+        "candidate_checks": 9,
+        "postprocessing_seconds": 0.0006305230053840205,
+        "planning_seconds": 5.801823884990881,
+        "opening_seconds": 2.8480303160031326,
+        "candidate_search_seconds": 2.4715052279934753,
+        "decode_seconds": 0.12062969600083306,
+        "other_request_seconds": 0.36165864499344025,
+        "postprocess_plus_plan_seconds": 5.802454407996265,
+        "batched_grasp_IK_GPU_seconds": 1.1344363517761231,
+        "batched_grasp_IK_wall_seconds": 1.1377194870001404,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 42,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.15728375801700167,
+        "saved_trajopt_validation_seconds": 0.12001039400638547,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 7,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0042_S3_sparse_avocado",
+        "candidate_checks": 16,
+        "postprocessing_seconds": 0.0042546990007394925,
+        "planning_seconds": 6.348870761998114,
+        "opening_seconds": 2.840468588998192,
+        "candidate_search_seconds": 2.7267750649916707,
+        "decode_seconds": 0.1393123360030586,
+        "other_request_seconds": 0.6423147720051929,
+        "postprocess_plus_plan_seconds": 6.353125460998854,
+        "batched_grasp_IK_GPU_seconds": 0.9892321395874023,
+        "batched_grasp_IK_wall_seconds": 0.9925392050208757,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 55,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.19526188998133875,
+        "saved_trajopt_validation_seconds": 0.1203528590122005,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 13,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0043_S3_sparse_baguette",
+        "candidate_checks": 106,
+        "postprocessing_seconds": 0.002854591002687812,
+        "planning_seconds": 14.685112503997516,
+        "opening_seconds": 2.733298917984939,
+        "candidate_search_seconds": 11.246447003999492,
+        "decode_seconds": 0.25984351699298713,
+        "other_request_seconds": 0.4455230650200974,
+        "postprocess_plus_plan_seconds": 14.687967095000204,
+        "batched_grasp_IK_GPU_seconds": 7.975951446533204,
+        "batched_grasp_IK_wall_seconds": 7.995226795988856,
+        "batched_grasp_IK_calls": 14,
+        "batched_grasp_IK_targets": 223,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 7,
+          "pure_kinematic_fallback": 7
+        },
+        "saved_trajopt_solve_seconds": 0.06103331899794284,
+        "saved_trajopt_validation_seconds": 0.19057687401073053,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 105,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0044_S3_sparse_banana",
+        "candidate_checks": 17,
+        "postprocessing_seconds": 0.010741143007180654,
+        "planning_seconds": 9.497234468988609,
+        "opening_seconds": 3.926515599989216,
+        "candidate_search_seconds": 4.805827231990406,
+        "decode_seconds": 0.41135308300727047,
+        "other_request_seconds": 0.35353855400171597,
+        "postprocess_plus_plan_seconds": 9.50797561199579,
+        "batched_grasp_IK_GPU_seconds": 2.185167802810669,
+        "batched_grasp_IK_wall_seconds": 2.21394055300334,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 57,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.2706882310012588,
+        "saved_trajopt_validation_seconds": 0.1753638540103566,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 16,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0045_S3_sparse_bar_soap",
+        "candidate_checks": 370,
+        "postprocessing_seconds": 0.0012932690005982295,
+        "planning_seconds": 44.68286711699329,
+        "opening_seconds": 2.546750035005971,
+        "candidate_search_seconds": 41.49146824600757,
+        "decode_seconds": 0.2738709590048529,
+        "other_request_seconds": 0.3707778769748984,
+        "postprocess_plus_plan_seconds": 44.68416038599389,
+        "batched_grasp_IK_GPU_seconds": 33.361414159774775,
+        "batched_grasp_IK_wall_seconds": 33.4603004350065,
+        "batched_grasp_IK_calls": 48,
+        "batched_grasp_IK_targets": 752,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 24,
+          "pure_kinematic_fallback": 24
+        },
+        "saved_trajopt_solve_seconds": 0.8155454810039373,
+        "saved_trajopt_validation_seconds": 0.366486030005035,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 368,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0046_S3_sparse_bell_pepper",
+        "candidate_checks": 17,
+        "postprocessing_seconds": 0.004321354004787281,
+        "planning_seconds": 6.551002926004003,
+        "opening_seconds": 3.690738031989895,
+        "candidate_search_seconds": 2.4662504240113776,
+        "decode_seconds": 0.1078639879997354,
+        "other_request_seconds": 0.286150482002995,
+        "postprocess_plus_plan_seconds": 6.55532428000879,
+        "batched_grasp_IK_GPU_seconds": 1.1937988204956054,
+        "batched_grasp_IK_wall_seconds": 1.197425802005455,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 57,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.0635305600007996,
+        "saved_trajopt_validation_seconds": 0.058569301007082686,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 16,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0047_S3_sparse_book",
+        "candidate_checks": 250,
+        "postprocessing_seconds": 0.0059157739888178185,
+        "planning_seconds": 33.505392106992076,
+        "opening_seconds": 2.0520583230099874,
+        "candidate_search_seconds": 30.473638626004686,
+        "decode_seconds": 0.3291990060097305,
+        "other_request_seconds": 0.6504961519676726,
+        "postprocess_plus_plan_seconds": 33.511307880980894,
+        "batched_grasp_IK_GPU_seconds": 19.489976001739503,
+        "batched_grasp_IK_wall_seconds": 19.582801870041294,
+        "batched_grasp_IK_calls": 32,
+        "batched_grasp_IK_targets": 505,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 16,
+          "pure_kinematic_fallback": 16
+        },
+        "saved_trajopt_solve_seconds": 0.226773817994399,
+        "saved_trajopt_validation_seconds": 0.14571750900358893,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 249,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0048_S3_sparse_bottled_water",
+        "candidate_checks": 62,
+        "postprocessing_seconds": 0.01795172499259934,
+        "planning_seconds": 8.970081767998636,
+        "opening_seconds": 3.4891230320063187,
+        "candidate_search_seconds": 4.949406990010175,
+        "decode_seconds": 0.2362393399962457,
+        "other_request_seconds": 0.2953124059858965,
+        "postprocess_plus_plan_seconds": 8.988033492991235,
+        "batched_grasp_IK_GPU_seconds": 2.794371866226196,
+        "batched_grasp_IK_wall_seconds": 2.8018097059975844,
+        "batched_grasp_IK_calls": 8,
+        "batched_grasp_IK_targets": 125,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 4,
+          "pure_kinematic_fallback": 4
+        },
+        "saved_trajopt_solve_seconds": 0.05276897200383246,
+        "saved_trajopt_validation_seconds": 0.057283668022137135,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 61,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0050_S3_sparse_boxed_food",
+        "candidate_checks": 208,
+        "postprocessing_seconds": 0.0005206670030020177,
+        "planning_seconds": 32.64186805101053,
+        "opening_seconds": 2.7160546539962525,
+        "candidate_search_seconds": 29.30586744500033,
+        "decode_seconds": 0.25629852499696426,
+        "other_request_seconds": 0.3636474270169856,
+        "postprocess_plus_plan_seconds": 32.642388718013535,
+        "batched_grasp_IK_GPU_seconds": 24.37589681625366,
+        "batched_grasp_IK_wall_seconds": 24.410806846019113,
+        "batched_grasp_IK_calls": 28,
+        "batched_grasp_IK_targets": 430,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 14,
+          "pure_kinematic_fallback": 14
+        },
+        "saved_trajopt_solve_seconds": 0.16515761001210194,
+        "saved_trajopt_validation_seconds": 0.17583771201316267,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 207,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0052_S3_sparse_broccoli",
+        "candidate_checks": 96,
+        "postprocessing_seconds": 0.003928992999135517,
+        "planning_seconds": 17.812712928003748,
+        "opening_seconds": 3.374418932988192,
+        "candidate_search_seconds": 14.029855615008273,
+        "decode_seconds": 0.0941355169925373,
+        "other_request_seconds": 0.3143028630147455,
+        "postprocess_plus_plan_seconds": 17.816641921002883,
+        "batched_grasp_IK_GPU_seconds": 8.135526498794556,
+        "batched_grasp_IK_wall_seconds": 8.157148462996702,
+        "batched_grasp_IK_calls": 12,
+        "batched_grasp_IK_targets": 192,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 6,
+          "pure_kinematic_fallback": 6
+        },
+        "saved_trajopt_solve_seconds": 0.025457127005211078,
+        "saved_trajopt_validation_seconds": 0.16188107900961768,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 95,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0055_S3_sparse_carrot",
+        "candidate_checks": 3,
+        "postprocessing_seconds": 0.002482916010194458,
+        "planning_seconds": 8.479829320000135,
+        "opening_seconds": 3.272232230010559,
+        "candidate_search_seconds": 4.5524150079872925,
+        "decode_seconds": 0.2521893709927099,
+        "other_request_seconds": 0.4029927110095741,
+        "postprocess_plus_plan_seconds": 8.48231223601033,
+        "batched_grasp_IK_GPU_seconds": 2.0343153553009037,
+        "batched_grasp_IK_wall_seconds": 2.036819707005634,
+        "batched_grasp_IK_calls": 3,
+        "batched_grasp_IK_targets": 25,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 1
+        },
+        "saved_trajopt_solve_seconds": 0.5083708929887507,
+        "saved_trajopt_validation_seconds": 0.2921888230048353,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 1,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "candidate_checks": 682,
+        "postprocessing_seconds": 0.009350570995593444,
+        "planning_seconds": 87.8673646410025,
+        "opening_seconds": 3.908838540999568,
+        "candidate_search_seconds": 82.83983069899841,
+        "decode_seconds": 0.4366018980072113,
+        "other_request_seconds": 0.6820935029973043,
+        "postprocess_plus_plan_seconds": 87.87671521199809,
+        "batched_grasp_IK_GPU_seconds": 58.34101165580751,
+        "batched_grasp_IK_wall_seconds": 58.56712903099833,
+        "batched_grasp_IK_calls": 88,
+        "batched_grasp_IK_targets": 1383,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 44,
+          "pure_kinematic_fallback": 44
+        },
+        "saved_trajopt_solve_seconds": 0.17998237699794117,
+        "saved_trajopt_validation_seconds": 0.12017834998550825,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 680,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0058_S3_sparse_croissant",
+        "candidate_checks": 140,
+        "postprocessing_seconds": 0.00198912899941206,
+        "planning_seconds": 10.154903369999374,
+        "opening_seconds": 2.585491270016064,
+        "candidate_search_seconds": 7.036728909006342,
+        "decode_seconds": 0.19090866300393827,
+        "other_request_seconds": 0.34177452797302976,
+        "postprocess_plus_plan_seconds": 10.156892498998786,
+        "batched_grasp_IK_GPU_seconds": 5.122772966384887,
+        "batched_grasp_IK_wall_seconds": 5.140728407015558,
+        "batched_grasp_IK_calls": 20,
+        "batched_grasp_IK_targets": 299,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 10,
+          "pure_kinematic_fallback": 10
+        },
+        "saved_trajopt_solve_seconds": 0.04837548601790331,
+        "saved_trajopt_validation_seconds": 0.053873979006311856,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 139,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0059_S3_sparse_cucumber",
+        "candidate_checks": 18,
+        "postprocessing_seconds": 0.007373311003902927,
+        "planning_seconds": 6.892090438996092,
+        "opening_seconds": 3.280943159988965,
+        "candidate_search_seconds": 2.093507330995635,
+        "decode_seconds": 0.41832627600524575,
+        "other_request_seconds": 1.0993136720062466,
+        "postprocess_plus_plan_seconds": 6.899463749999995,
+        "batched_grasp_IK_GPU_seconds": 0.956527645111084,
+        "batched_grasp_IK_wall_seconds": 0.9598863930004882,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 47,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.04726489700260572,
+        "saved_trajopt_validation_seconds": 0.05436433698923793,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 17,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0060_S3_sparse_donut",
+        "candidate_checks": 578,
+        "postprocessing_seconds": 0.0015260209911502898,
+        "planning_seconds": 63.2147157050058,
+        "opening_seconds": 3.5125430560001405,
+        "candidate_search_seconds": 59.135938917985186,
+        "decode_seconds": 0.13622257100360002,
+        "other_request_seconds": 0.4300111600168748,
+        "postprocess_plus_plan_seconds": 63.21624172599695,
+        "batched_grasp_IK_GPU_seconds": 38.17568240499496,
+        "batched_grasp_IK_wall_seconds": 38.359333440996124,
+        "batched_grasp_IK_calls": 76,
+        "batched_grasp_IK_targets": 1186,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 38,
+          "pure_kinematic_fallback": 38
+        },
+        "saved_trajopt_solve_seconds": 0.13462241500383243,
+        "saved_trajopt_validation_seconds": 0.18621419501141645,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 576,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0061_S4_clutter_eggplant",
+        "candidate_checks": 52,
+        "postprocessing_seconds": 0.005903585988562554,
+        "planning_seconds": 13.073310453997692,
+        "opening_seconds": 3.926217390995589,
+        "candidate_search_seconds": 7.800377728999592,
+        "decode_seconds": 0.31517732400971,
+        "other_request_seconds": 1.0315380099928007,
+        "postprocess_plus_plan_seconds": 13.079214039986255,
+        "batched_grasp_IK_GPU_seconds": 4.2057605018615725,
+        "batched_grasp_IK_wall_seconds": 4.2126106540090404,
+        "batched_grasp_IK_calls": 8,
+        "batched_grasp_IK_targets": 114,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 4,
+          "pure_kinematic_fallback": 4
+        },
+        "saved_trajopt_solve_seconds": 0.2031791390181752,
+        "saved_trajopt_validation_seconds": 0.11196119300439022,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 50,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0062_S4_clutter_keychain",
+        "candidate_checks": 282,
+        "postprocessing_seconds": 0.0012766529980581254,
+        "planning_seconds": 37.32946862600511,
+        "opening_seconds": 2.827377420006087,
+        "candidate_search_seconds": 34.04802175097575,
+        "decode_seconds": 0.1302498399891192,
+        "other_request_seconds": 0.3238196150341537,
+        "postprocess_plus_plan_seconds": 37.33074527900317,
+        "batched_grasp_IK_GPU_seconds": 22.15967328834533,
+        "batched_grasp_IK_wall_seconds": 22.236664698983077,
+        "batched_grasp_IK_calls": 36,
+        "batched_grasp_IK_targets": 568,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 18,
+          "pure_kinematic_fallback": 18
+        },
+        "saved_trajopt_solve_seconds": 0.31178133499633987,
+        "saved_trajopt_validation_seconds": 0.1735886109963758,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 280,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "candidate_checks": 6,
+        "postprocessing_seconds": 0.0055753009946784005,
+        "planning_seconds": 6.140053458002512,
+        "opening_seconds": 2.784068669003318,
+        "candidate_search_seconds": 2.8013242870074464,
+        "decode_seconds": 0.28358777600806206,
+        "other_request_seconds": 0.2710727259836858,
+        "postprocess_plus_plan_seconds": 6.145628758997191,
+        "batched_grasp_IK_GPU_seconds": 1.2923309211730956,
+        "batched_grasp_IK_wall_seconds": 1.295764823022182,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 33,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.10805816399806645,
+        "saved_trajopt_validation_seconds": 0.05578980001155287,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 5,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0064_S4_clutter_mango",
+        "candidate_checks": 30,
+        "postprocessing_seconds": 0.0012946240021847188,
+        "planning_seconds": 5.871224670991069,
+        "opening_seconds": 3.0671521659969585,
+        "candidate_search_seconds": 2.268541246987297,
+        "decode_seconds": 0.16011571099807043,
+        "other_request_seconds": 0.3754155470087426,
+        "postprocess_plus_plan_seconds": 5.872519294993253,
+        "batched_grasp_IK_GPU_seconds": 1.3453259601593017,
+        "batched_grasp_IK_wall_seconds": 1.34911547601223,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 63,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.051640440986375324,
+        "saved_trajopt_validation_seconds": 0.06383729599474464,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 29,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0065_S4_clutter_milk",
+        "candidate_checks": 99,
+        "postprocessing_seconds": 0.0055544009956065565,
+        "planning_seconds": 22.313164580002194,
+        "opening_seconds": 3.9821461779793026,
+        "candidate_search_seconds": 17.81065617900458,
+        "decode_seconds": 0.08553299399500247,
+        "other_request_seconds": 0.43482922902330756,
+        "postprocess_plus_plan_seconds": 22.3187189809978,
+        "batched_grasp_IK_GPU_seconds": 14.605058292388918,
+        "batched_grasp_IK_wall_seconds": 14.618657433005865,
+        "batched_grasp_IK_calls": 14,
+        "batched_grasp_IK_targets": 223,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 7,
+          "pure_kinematic_fallback": 7
+        },
+        "saved_trajopt_solve_seconds": 0.06714318000013009,
+        "saved_trajopt_validation_seconds": 0.2681807850021869,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 98,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0066_S4_clutter_mug",
+        "candidate_checks": 17,
+        "postprocessing_seconds": 0.0013088190025882795,
+        "planning_seconds": 5.32544732101087,
+        "opening_seconds": 2.3872334260086063,
+        "candidate_search_seconds": 2.4509414119966095,
+        "decode_seconds": 0.13573356199776754,
+        "other_request_seconds": 0.35153892100788653,
+        "postprocess_plus_plan_seconds": 5.326756140013458,
+        "batched_grasp_IK_GPU_seconds": 1.2364975509643554,
+        "batched_grasp_IK_wall_seconds": 1.239680724000209,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 57,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.1542262010043487,
+        "saved_trajopt_validation_seconds": 0.12545598998258356,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 15,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0067_S4_clutter_mushroom",
+        "candidate_checks": 66,
+        "postprocessing_seconds": 0.005570155000896193,
+        "planning_seconds": 8.34940211600042,
+        "opening_seconds": 2.869744677998824,
+        "candidate_search_seconds": 5.139749373003724,
+        "decode_seconds": 0.08730847199331038,
+        "other_request_seconds": 0.25259959300456103,
+        "postprocess_plus_plan_seconds": 8.354972271001316,
+        "batched_grasp_IK_GPU_seconds": 3.051319337844849,
+        "batched_grasp_IK_wall_seconds": 3.0618628330121282,
+        "batched_grasp_IK_calls": 12,
+        "batched_grasp_IK_targets": 161,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 6,
+          "pure_kinematic_fallback": 6
+        },
+        "saved_trajopt_solve_seconds": 0.05270490200200584,
+        "saved_trajopt_validation_seconds": 0.055050223993021064,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 65,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "candidate_checks": 580,
+        "postprocessing_seconds": 0.0006207679980434477,
+        "planning_seconds": 68.05573933299456,
+        "opening_seconds": 2.2864286489930237,
+        "candidate_search_seconds": 65.22662886601756,
+        "decode_seconds": 0.11788118998811115,
+        "other_request_seconds": 0.4248006279958645,
+        "postprocess_plus_plan_seconds": 68.0563601009926,
+        "batched_grasp_IK_GPU_seconds": 43.712671262741075,
+        "batched_grasp_IK_wall_seconds": 43.87866228095663,
+        "batched_grasp_IK_calls": 76,
+        "batched_grasp_IK_targets": 1194,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 38,
+          "pure_kinematic_fallback": 38
+        },
+        "saved_trajopt_solve_seconds": 0.3842466680071084,
+        "saved_trajopt_validation_seconds": 0.23695957000018097,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 567,
+          "pre_or_lift_ik": 11,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0070_S4_clutter_peach",
+        "candidate_checks": 24,
+        "postprocessing_seconds": 0.0040939909958979115,
+        "planning_seconds": 7.181389200995909,
+        "opening_seconds": 3.5316647209983785,
+        "candidate_search_seconds": 3.063912055993569,
+        "decode_seconds": 0.27190965101181064,
+        "other_request_seconds": 0.31390277299215086,
+        "postprocess_plus_plan_seconds": 7.185483191991807,
+        "batched_grasp_IK_GPU_seconds": 1.5954965553283693,
+        "batched_grasp_IK_wall_seconds": 1.599389366005198,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 63,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.07946442400861997,
+        "saved_trajopt_validation_seconds": 0.0692019920097664,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 23,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0071_S4_clutter_pear",
+        "candidate_checks": 27,
+        "postprocessing_seconds": 0.001852907007560134,
+        "planning_seconds": 6.03544881498965,
+        "opening_seconds": 2.5657002460065996,
+        "candidate_search_seconds": 2.7904966460046126,
+        "decode_seconds": 0.34353317800560035,
+        "other_request_seconds": 0.33571874497283716,
+        "postprocess_plus_plan_seconds": 6.03730172199721,
+        "batched_grasp_IK_GPU_seconds": 1.315760087966919,
+        "batched_grasp_IK_wall_seconds": 1.3191529199975776,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 63,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.077446412993595,
+        "saved_trajopt_validation_seconds": 0.14830690099915955,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 26,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0072_S4_clutter_potato",
+        "candidate_checks": 2,
+        "postprocessing_seconds": 0.006446378989494406,
+        "planning_seconds": 9.962474194995593,
+        "opening_seconds": 3.8481662409903947,
+        "candidate_search_seconds": 5.744668478000676,
+        "decode_seconds": 0.10538165199977811,
+        "other_request_seconds": 0.2642578240047442,
+        "postprocess_plus_plan_seconds": 9.968920573985088,
+        "batched_grasp_IK_GPU_seconds": 2.3654605813026426,
+        "batched_grasp_IK_wall_seconds": 2.37710314297874,
+        "batched_grasp_IK_calls": 3,
+        "batched_grasp_IK_targets": 24,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 1
+        },
+        "saved_trajopt_solve_seconds": 0.7171048770105699,
+        "saved_trajopt_validation_seconds": 0.33909818400570657,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 0,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0074_S4_clutter_scissors",
+        "candidate_checks": 334,
+        "postprocessing_seconds": 0.0011449489975348115,
+        "planning_seconds": 44.563517015994876,
+        "opening_seconds": 4.050837905990193,
+        "candidate_search_seconds": 39.16658414201811,
+        "decode_seconds": 0.39581663699937053,
+        "other_request_seconds": 0.9502783309872029,
+        "postprocess_plus_plan_seconds": 44.56466196499241,
+        "batched_grasp_IK_GPU_seconds": 27.033433715820316,
+        "batched_grasp_IK_wall_seconds": 27.175420851941453,
+        "batched_grasp_IK_calls": 44,
+        "batched_grasp_IK_targets": 686,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 22,
+          "pure_kinematic_fallback": 22
+        },
+        "saved_trajopt_solve_seconds": 0.025412016999325715,
+        "saved_trajopt_validation_seconds": 0.044072873002733104,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 333,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0078_S4_clutter_teapot",
+        "candidate_checks": 4,
+        "postprocessing_seconds": 0.008388917995034717,
+        "planning_seconds": 6.167529747996014,
+        "opening_seconds": 2.875797180997324,
+        "candidate_search_seconds": 2.71956676398986,
+        "decode_seconds": 0.2649375969922403,
+        "other_request_seconds": 0.30722820601658896,
+        "postprocess_plus_plan_seconds": 6.175918665991048,
+        "batched_grasp_IK_GPU_seconds": 1.1112754516601562,
+        "batched_grasp_IK_wall_seconds": 1.1150975289929193,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 28,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.0628176240134053,
+        "saved_trajopt_validation_seconds": 0.06882559999939986,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 3,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0079_S4_clutter_tomato",
+        "candidate_checks": 2,
+        "postprocessing_seconds": 0.0005653789994539693,
+        "planning_seconds": 4.524334525005543,
+        "opening_seconds": 2.2718051269912394,
+        "candidate_search_seconds": 1.8486664869997185,
+        "decode_seconds": 0.08619086700491607,
+        "other_request_seconds": 0.31767204400966875,
+        "postprocess_plus_plan_seconds": 4.524899904004997,
+        "batched_grasp_IK_GPU_seconds": 0.4776550693511963,
+        "batched_grasp_IK_wall_seconds": 0.494954564012005,
+        "batched_grasp_IK_calls": 3,
+        "batched_grasp_IK_targets": 31,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 1
+        },
+        "saved_trajopt_solve_seconds": 0.11817124600929674,
+        "saved_trajopt_validation_seconds": 0.10714747899328358,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 0,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0081_S5_occluded_apple",
+        "candidate_checks": 102,
+        "postprocessing_seconds": 0.003629262006143108,
+        "planning_seconds": 17.80144390600617,
+        "opening_seconds": 3.9102521419990808,
+        "candidate_search_seconds": 13.456502618995728,
+        "decode_seconds": 0.12953868799377233,
+        "other_request_seconds": 0.30515045701758936,
+        "postprocess_plus_plan_seconds": 17.805073168012314,
+        "batched_grasp_IK_GPU_seconds": 7.435939519882202,
+        "batched_grasp_IK_wall_seconds": 7.4592629310063785,
+        "batched_grasp_IK_calls": 14,
+        "batched_grasp_IK_targets": 223,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 7,
+          "pure_kinematic_fallback": 7
+        },
+        "saved_trajopt_solve_seconds": 0.14538486899982672,
+        "saved_trajopt_validation_seconds": 0.1263402400072664,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 101,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0082_S5_occluded_avocado",
+        "candidate_checks": 84,
+        "postprocessing_seconds": 0.0013566270063165575,
+        "planning_seconds": 12.393589671002701,
+        "opening_seconds": 2.820760128990514,
+        "candidate_search_seconds": 9.128423377987929,
+        "decode_seconds": 0.13138879899634048,
+        "other_request_seconds": 0.31301736502791755,
+        "postprocess_plus_plan_seconds": 12.394946298009017,
+        "batched_grasp_IK_GPU_seconds": 7.262946367263795,
+        "batched_grasp_IK_wall_seconds": 7.275094133015955,
+        "batched_grasp_IK_calls": 12,
+        "batched_grasp_IK_targets": 176,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 6,
+          "pure_kinematic_fallback": 6
+        },
+        "saved_trajopt_solve_seconds": 0.07849141799670178,
+        "saved_trajopt_validation_seconds": 0.07345115399220958,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 81,
+          "pre_or_lift_ik": 2,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "candidate_checks": 222,
+        "postprocessing_seconds": 0.005093731990200467,
+        "planning_seconds": 38.54167917999439,
+        "opening_seconds": 3.3322177670052042,
+        "candidate_search_seconds": 34.48744791299396,
+        "decode_seconds": 0.36794716099393554,
+        "other_request_seconds": 0.35406633900129236,
+        "postprocess_plus_plan_seconds": 38.54677291198459,
+        "batched_grasp_IK_GPU_seconds": 17.121387706756593,
+        "batched_grasp_IK_wall_seconds": 17.206150516998605,
+        "batched_grasp_IK_calls": 28,
+        "batched_grasp_IK_targets": 446,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 14,
+          "pure_kinematic_fallback": 14
+        },
+        "saved_trajopt_solve_seconds": 0.06293916401045863,
+        "saved_trajopt_validation_seconds": 0.09352305700303987,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 221,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0085_S5_occluded_bar_soap",
+        "candidate_checks": 524,
+        "postprocessing_seconds": 0.0011085389996878803,
+        "planning_seconds": 65.63971751301142,
+        "opening_seconds": 2.555744011013303,
+        "candidate_search_seconds": 62.51886282399937,
+        "decode_seconds": 0.16194489800545853,
+        "other_request_seconds": 0.4031657799932873,
+        "postprocess_plus_plan_seconds": 65.6408260520111,
+        "batched_grasp_IK_GPU_seconds": 46.15161325836181,
+        "batched_grasp_IK_wall_seconds": 46.26690512998903,
+        "batched_grasp_IK_calls": 68,
+        "batched_grasp_IK_targets": 1067,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 34,
+          "pure_kinematic_fallback": 34
+        },
+        "saved_trajopt_solve_seconds": 0.20353593498293776,
+        "saved_trajopt_validation_seconds": 0.12029403701308183,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 523,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0086_S5_occluded_bell_pepper",
+        "candidate_checks": 6,
+        "postprocessing_seconds": 0.005404593990533613,
+        "planning_seconds": 5.409660489996895,
+        "opening_seconds": 2.772375249012839,
+        "candidate_search_seconds": 2.2874430119991302,
+        "decode_seconds": 0.10636916699877474,
+        "other_request_seconds": 0.24347306198615115,
+        "postprocess_plus_plan_seconds": 5.415065083987429,
+        "batched_grasp_IK_GPU_seconds": 1.1449682254791258,
+        "batched_grasp_IK_wall_seconds": 1.148374715980026,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 36,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.06859519799763802,
+        "saved_trajopt_validation_seconds": 0.055123012003605254,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 5,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0089_S5_occluded_bowl",
+        "candidate_checks": 227,
+        "postprocessing_seconds": 0.0017489259917056188,
+        "planning_seconds": 24.269235082989326,
+        "opening_seconds": 3.3938472059962805,
+        "candidate_search_seconds": 19.95769681701495,
+        "decode_seconds": 0.3879607889975887,
+        "other_request_seconds": 0.5297302709805081,
+        "postprocess_plus_plan_seconds": 24.27098400898103,
+        "batched_grasp_IK_GPU_seconds": 16.045626655578616,
+        "batched_grasp_IK_wall_seconds": 16.09778195801482,
+        "batched_grasp_IK_calls": 30,
+        "batched_grasp_IK_targets": 476,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 15,
+          "pure_kinematic_fallback": 15
+        },
+        "saved_trajopt_solve_seconds": 0.23053129800246097,
+        "saved_trajopt_validation_seconds": 0.22075722900626715,
+        "saved_trajopt_reports": 3,
+        "candidate_rejected": {
+          "grasp_ik": 223,
+          "pre_or_lift_ik": 2,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "candidate_checks": 150,
+        "postprocessing_seconds": 0.006726054998580366,
+        "planning_seconds": 21.073714610000025,
+        "opening_seconds": 4.150405085005332,
+        "candidate_search_seconds": 16.382897157003754,
+        "decode_seconds": 0.12393886799691245,
+        "other_request_seconds": 0.4164734999940265,
+        "postprocess_plus_plan_seconds": 21.080440664998605,
+        "batched_grasp_IK_GPU_seconds": 11.927750526428222,
+        "batched_grasp_IK_wall_seconds": 11.961795879949932,
+        "batched_grasp_IK_calls": 20,
+        "batched_grasp_IK_targets": 319,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 10,
+          "pure_kinematic_fallback": 10
+        },
+        "saved_trajopt_solve_seconds": 0.1575239030062221,
+        "saved_trajopt_validation_seconds": 0.1613344479847001,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 149,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "candidate_checks": 103,
+        "postprocessing_seconds": 0.0014069120079511777,
+        "planning_seconds": 11.166576750998502,
+        "opening_seconds": 2.3735440489981556,
+        "candidate_search_seconds": 8.155465000978438,
+        "decode_seconds": 0.3380098470079247,
+        "other_request_seconds": 0.29955785401398316,
+        "postprocess_plus_plan_seconds": 11.167983663006453,
+        "batched_grasp_IK_GPU_seconds": 5.320245334625244,
+        "batched_grasp_IK_wall_seconds": 5.333207473071525,
+        "batched_grasp_IK_calls": 14,
+        "batched_grasp_IK_targets": 223,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 7,
+          "pure_kinematic_fallback": 7
+        },
+        "saved_trajopt_solve_seconds": 0.08861362401512451,
+        "saved_trajopt_validation_seconds": 0.05618964499444701,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 102,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0098_S5_occluded_croissant",
+        "candidate_checks": 112,
+        "postprocessing_seconds": 0.006790103987441398,
+        "planning_seconds": 11.414027648992487,
+        "opening_seconds": 2.962991985012195,
+        "candidate_search_seconds": 7.9206130880338605,
+        "decode_seconds": 0.17313595300947782,
+        "other_request_seconds": 0.3572866229369538,
+        "postprocess_plus_plan_seconds": 11.420817752979929,
+        "batched_grasp_IK_GPU_seconds": 5.38723049736023,
+        "batched_grasp_IK_wall_seconds": 5.401258559970302,
+        "batched_grasp_IK_calls": 16,
+        "batched_grasp_IK_targets": 237,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 8,
+          "pure_kinematic_fallback": 8
+        },
+        "saved_trajopt_solve_seconds": 0.052588033009669743,
+        "saved_trajopt_validation_seconds": 0.060406766991945915,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 110,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "candidate_checks": 22,
+        "postprocessing_seconds": 0.0023112040071282536,
+        "planning_seconds": 10.082671387004666,
+        "opening_seconds": 3.0544829620193923,
+        "candidate_search_seconds": 6.31303974299226,
+        "decode_seconds": 0.3700964110030327,
+        "other_request_seconds": 0.3450522709899815,
+        "postprocess_plus_plan_seconds": 10.084982591011794,
+        "batched_grasp_IK_GPU_seconds": 3.195728950500488,
+        "batched_grasp_IK_wall_seconds": 3.2068051749811275,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 52,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.2555569960095454,
+        "saved_trajopt_validation_seconds": 0.1711808510008268,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 21,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0100_S5_occluded_donut",
+        "candidate_checks": 416,
+        "postprocessing_seconds": 0.008846401993650943,
+        "planning_seconds": 41.783452185001806,
+        "opening_seconds": 4.219513233998441,
+        "candidate_search_seconds": 36.97637459602265,
+        "decode_seconds": 0.2791931590036256,
+        "other_request_seconds": 0.30837119597708806,
+        "postprocess_plus_plan_seconds": 41.79229858699546,
+        "batched_grasp_IK_GPU_seconds": 28.70069564819335,
+        "batched_grasp_IK_wall_seconds": 28.78462387897889,
+        "batched_grasp_IK_calls": 52,
+        "batched_grasp_IK_targets": 831,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 26,
+          "pure_kinematic_fallback": 26
+        },
+        "saved_trajopt_solve_seconds": 0.19918081699870527,
+        "saved_trajopt_validation_seconds": 0.11287671500758734,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 415,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      }
+    ],
+    "nms15": [
+      {
+        "id": "M0001_S1_open_apple",
+        "candidate_checks": 4,
+        "postprocessing_seconds": 0.24883098600548692,
+        "planning_seconds": 7.061121905993787,
+        "opening_seconds": 3.212812310011941,
+        "candidate_search_seconds": 3.453567883989308,
+        "decode_seconds": 0.12427446799119934,
+        "other_request_seconds": 0.27046724400133826,
+        "postprocess_plus_plan_seconds": 7.309952891999274,
+        "batched_grasp_IK_GPU_seconds": 1.3908172969818116,
+        "batched_grasp_IK_wall_seconds": 1.394679452991113,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 29,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.38465450298099313,
+        "saved_trajopt_validation_seconds": 0.29047609100234695,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 2,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0002_S1_open_avocado",
+        "candidate_checks": 8,
+        "postprocessing_seconds": 0.3220725649880478,
+        "planning_seconds": 6.3961647789983544,
+        "opening_seconds": 3.612512313979096,
+        "candidate_search_seconds": 2.250354061005055,
+        "decode_seconds": 0.24888249399373308,
+        "other_request_seconds": 0.2844159100204706,
+        "postprocess_plus_plan_seconds": 6.718237343986402,
+        "batched_grasp_IK_GPU_seconds": 0.8512255764007569,
+        "batched_grasp_IK_wall_seconds": 0.8542988400004106,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 32,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.17755590201704763,
+        "saved_trajopt_validation_seconds": 0.11241192299348768,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 6,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0004_S1_open_banana",
+        "candidate_checks": 2,
+        "postprocessing_seconds": 0.5791405149939237,
+        "planning_seconds": 5.674624876002781,
+        "opening_seconds": 2.841760567011079,
+        "candidate_search_seconds": 1.858463402983034,
+        "decode_seconds": 0.4220281640009489,
+        "other_request_seconds": 0.5523727420077194,
+        "postprocess_plus_plan_seconds": 6.253765390996705,
+        "batched_grasp_IK_GPU_seconds": 0.8478351135253906,
+        "batched_grasp_IK_wall_seconds": 0.8513798159983708,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 33,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.026893101996392943,
+        "saved_trajopt_validation_seconds": 0.03893106301256921,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 1,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0005_S1_open_bar_soap",
+        "candidate_checks": 219,
+        "postprocessing_seconds": 0.24078958699828945,
+        "planning_seconds": 29.178427229999215,
+        "opening_seconds": 3.5941857180005172,
+        "candidate_search_seconds": 23.848706557997502,
+        "decode_seconds": 0.16442230899701826,
+        "other_request_seconds": 1.5711126450041775,
+        "postprocess_plus_plan_seconds": 29.419216816997505,
+        "batched_grasp_IK_GPU_seconds": 12.719707271575928,
+        "batched_grasp_IK_wall_seconds": 12.7536241710186,
+        "batched_grasp_IK_calls": 28,
+        "batched_grasp_IK_targets": 446,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 14,
+          "pure_kinematic_fallback": 14
+        },
+        "saved_trajopt_solve_seconds": 0.16656594698724803,
+        "saved_trajopt_validation_seconds": 0.09905969200190157,
+        "saved_trajopt_reports": 3,
+        "candidate_rejected": {
+          "grasp_ik": 217,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0006_S1_open_bell_pepper",
+        "candidate_checks": 8,
+        "postprocessing_seconds": 0.31007173300895374,
+        "planning_seconds": 6.491323626003577,
+        "opening_seconds": 2.627693807997275,
+        "candidate_search_seconds": 3.0944407760107424,
+        "decode_seconds": 0.30196262600657064,
+        "other_request_seconds": 0.4672264159889892,
+        "postprocess_plus_plan_seconds": 6.801395359012531,
+        "batched_grasp_IK_GPU_seconds": 1.5022683639526369,
+        "batched_grasp_IK_wall_seconds": 1.505630852014292,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 37,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.20872790399880614,
+        "saved_trajopt_validation_seconds": 0.11244007899949793,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 6,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0008_S1_open_bottled_water",
+        "candidate_checks": 29,
+        "postprocessing_seconds": 0.12057095199998002,
+        "planning_seconds": 7.1284376089897705,
+        "opening_seconds": 3.0464009960123803,
+        "candidate_search_seconds": 3.6036337639961857,
+        "decode_seconds": 0.07336990699695889,
+        "other_request_seconds": 0.40503294198424555,
+        "postprocess_plus_plan_seconds": 7.2490085609897505,
+        "batched_grasp_IK_GPU_seconds": 1.5511008052825928,
+        "batched_grasp_IK_wall_seconds": 1.5553623900050297,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 63,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.14783668500604108,
+        "saved_trajopt_validation_seconds": 0.11131774999375921,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 28,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0009_S1_open_bowl",
+        "candidate_checks": 22,
+        "postprocessing_seconds": 0.40475328800675925,
+        "planning_seconds": 5.367077464994509,
+        "opening_seconds": 2.896258102991851,
+        "candidate_search_seconds": 1.8738087630044902,
+        "decode_seconds": 0.19036355800926685,
+        "other_request_seconds": 0.4066470409889007,
+        "postprocess_plus_plan_seconds": 5.771830753001268,
+        "batched_grasp_IK_GPU_seconds": 0.8227041549682618,
+        "batched_grasp_IK_wall_seconds": 0.8261194760125363,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 52,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.047199219989124686,
+        "saved_trajopt_validation_seconds": 0.05507782999484334,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 20,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0010_S1_open_boxed_food",
+        "candidate_checks": 52,
+        "postprocessing_seconds": 0.16585505999682937,
+        "planning_seconds": 6.509844437998254,
+        "opening_seconds": 2.678576925987727,
+        "candidate_search_seconds": 3.4689341280027293,
+        "decode_seconds": 0.09911911998642609,
+        "other_request_seconds": 0.2632142640213715,
+        "postprocess_plus_plan_seconds": 6.675699497995083,
+        "batched_grasp_IK_GPU_seconds": 1.8445241260528564,
+        "batched_grasp_IK_wall_seconds": 1.8519394640024984,
+        "batched_grasp_IK_calls": 8,
+        "batched_grasp_IK_targets": 112,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 4,
+          "pure_kinematic_fallback": 4
+        },
+        "saved_trajopt_solve_seconds": 0.08571607500198297,
+        "saved_trajopt_validation_seconds": 0.06278325300081633,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 50,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0011_S1_open_bread",
+        "candidate_checks": 172,
+        "postprocessing_seconds": 0.3416819400008535,
+        "planning_seconds": 13.198027967999224,
+        "opening_seconds": 3.170030758003122,
+        "candidate_search_seconds": 9.403992220992222,
+        "decode_seconds": 0.2757881689904025,
+        "other_request_seconds": 0.34821682001347654,
+        "postprocess_plus_plan_seconds": 13.539709908000077,
+        "batched_grasp_IK_GPU_seconds": 6.28588553237915,
+        "batched_grasp_IK_wall_seconds": 6.3079673029860714,
+        "batched_grasp_IK_calls": 24,
+        "batched_grasp_IK_targets": 363,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 12,
+          "pure_kinematic_fallback": 12
+        },
+        "saved_trajopt_solve_seconds": 0.05788635399949271,
+        "saved_trajopt_validation_seconds": 0.06940092501463369,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 171,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0012_S1_open_broccoli",
+        "candidate_checks": 126,
+        "postprocessing_seconds": 0.24275508300343063,
+        "planning_seconds": 16.15401158599707,
+        "opening_seconds": 3.7890077259799,
+        "candidate_search_seconds": 11.933450176002225,
+        "decode_seconds": 0.1144392370042624,
+        "other_request_seconds": 0.31711444701068103,
+        "postprocess_plus_plan_seconds": 16.3967666690005,
+        "batched_grasp_IK_GPU_seconds": 8.029184720993042,
+        "batched_grasp_IK_wall_seconds": 8.065273123022052,
+        "batched_grasp_IK_calls": 16,
+        "batched_grasp_IK_targets": 252,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 8,
+          "pure_kinematic_fallback": 8
+        },
+        "saved_trajopt_solve_seconds": 0.13753145799273625,
+        "saved_trajopt_validation_seconds": 0.11812076701608021,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 124,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0015_S1_open_carrot",
+        "candidate_checks": 16,
+        "postprocessing_seconds": 0.6409526229981566,
+        "planning_seconds": 5.202829763991758,
+        "opening_seconds": 2.336357729989686,
+        "candidate_search_seconds": 2.156432453004527,
+        "decode_seconds": 0.37396984999941196,
+        "other_request_seconds": 0.3360697309981333,
+        "postprocess_plus_plan_seconds": 5.843782386989915,
+        "batched_grasp_IK_GPU_seconds": 0.9812070274353029,
+        "batched_grasp_IK_wall_seconds": 0.9849964300083229,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 46,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.05254771700128913,
+        "saved_trajopt_validation_seconds": 0.059911036005360074,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 15,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0016_S1_open_cell_phone",
+        "candidate_checks": 355,
+        "postprocessing_seconds": 0.4824677069991594,
+        "planning_seconds": 27.05187580200436,
+        "opening_seconds": 3.1260374579869676,
+        "candidate_search_seconds": 23.374428578012157,
+        "decode_seconds": 0.19662603200413287,
+        "other_request_seconds": 0.35478373400110286,
+        "postprocess_plus_plan_seconds": 27.53434350900352,
+        "batched_grasp_IK_GPU_seconds": 16.87335125160217,
+        "batched_grasp_IK_wall_seconds": 16.939914463990135,
+        "batched_grasp_IK_calls": 46,
+        "batched_grasp_IK_targets": 734,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 23,
+          "pure_kinematic_fallback": 23
+        },
+        "saved_trajopt_solve_seconds": 0.04719939999631606,
+        "saved_trajopt_validation_seconds": 0.053164868004387245,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 354,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0018_S1_open_croissant",
+        "candidate_checks": 152,
+        "postprocessing_seconds": 0.4483656429947587,
+        "planning_seconds": 14.07602069999848,
+        "opening_seconds": 2.956571683011134,
+        "candidate_search_seconds": 10.265609612994012,
+        "decode_seconds": 0.42355376700288616,
+        "other_request_seconds": 0.43028563699044753,
+        "postprocess_plus_plan_seconds": 14.524386342993239,
+        "batched_grasp_IK_GPU_seconds": 6.986341465950012,
+        "batched_grasp_IK_wall_seconds": 7.020384019022458,
+        "batched_grasp_IK_calls": 20,
+        "batched_grasp_IK_targets": 316,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 10,
+          "pure_kinematic_fallback": 10
+        },
+        "saved_trajopt_solve_seconds": 0.06336972600547597,
+        "saved_trajopt_validation_seconds": 0.060438523010816425,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 150,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0019_S1_open_cucumber",
+        "candidate_checks": 2,
+        "postprocessing_seconds": 0.5475426359917037,
+        "planning_seconds": 5.151719613990281,
+        "opening_seconds": 2.822134966001613,
+        "candidate_search_seconds": 1.8095112789887935,
+        "decode_seconds": 0.19543609100219328,
+        "other_request_seconds": 0.32463727799768094,
+        "postprocess_plus_plan_seconds": 5.6992622499819845,
+        "batched_grasp_IK_GPU_seconds": 0.724665491104126,
+        "batched_grasp_IK_wall_seconds": 0.728076544997748,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 31,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.054483808009536006,
+        "saved_trajopt_validation_seconds": 0.05358198501926381,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 1,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0020_S1_open_donut",
+        "candidate_checks": 456,
+        "postprocessing_seconds": 0.2824663459905423,
+        "planning_seconds": 39.671688438000274,
+        "opening_seconds": 3.039055390006979,
+        "candidate_search_seconds": 36.03675141299027,
+        "decode_seconds": 0.15764182299608365,
+        "other_request_seconds": 0.43823981200694107,
+        "postprocess_plus_plan_seconds": 39.954154783990816,
+        "batched_grasp_IK_GPU_seconds": 27.06800046157837,
+        "batched_grasp_IK_wall_seconds": 27.133226095989812,
+        "batched_grasp_IK_calls": 60,
+        "batched_grasp_IK_targets": 934,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 30,
+          "pure_kinematic_fallback": 30
+        },
+        "saved_trajopt_solve_seconds": 0.16735133898328058,
+        "saved_trajopt_validation_seconds": 0.11169301200425252,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 455,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0022_S2_edge_keychain",
+        "candidate_checks": 116,
+        "postprocessing_seconds": 0.2826647619949654,
+        "planning_seconds": 11.367950232001022,
+        "opening_seconds": 2.9710032310103998,
+        "candidate_search_seconds": 7.7328267639823025,
+        "decode_seconds": 0.31577506399480626,
+        "other_request_seconds": 0.348345173013513,
+        "postprocess_plus_plan_seconds": 11.650614993995987,
+        "batched_grasp_IK_GPU_seconds": 5.130483777999879,
+        "batched_grasp_IK_wall_seconds": 5.14473755301151,
+        "batched_grasp_IK_calls": 16,
+        "batched_grasp_IK_targets": 242,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 8,
+          "pure_kinematic_fallback": 8
+        },
+        "saved_trajopt_solve_seconds": 0.21011316200019792,
+        "saved_trajopt_validation_seconds": 0.11338728899136186,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 114,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0023_S2_edge_lemon",
+        "candidate_checks": 14,
+        "postprocessing_seconds": 0.19136019199504517,
+        "planning_seconds": 5.900137625998468,
+        "opening_seconds": 2.6205809299863176,
+        "candidate_search_seconds": 2.7069908389967168,
+        "decode_seconds": 0.2726706980029121,
+        "other_request_seconds": 0.2998951590125216,
+        "postprocess_plus_plan_seconds": 6.091497817993513,
+        "batched_grasp_IK_GPU_seconds": 1.588681686401367,
+        "batched_grasp_IK_wall_seconds": 1.5921581269794842,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 43,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.04888042500533629,
+        "saved_trajopt_validation_seconds": 0.054365142990718596,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 13,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0024_S2_edge_mango",
+        "candidate_checks": 12,
+        "postprocessing_seconds": 0.24581351100641768,
+        "planning_seconds": 6.093488194004749,
+        "opening_seconds": 3.076601134001976,
+        "candidate_search_seconds": 2.5610536580061307,
+        "decode_seconds": 0.15832562500145286,
+        "other_request_seconds": 0.2975077769951895,
+        "postprocess_plus_plan_seconds": 6.339301705011167,
+        "batched_grasp_IK_GPU_seconds": 1.3599097862243652,
+        "batched_grasp_IK_wall_seconds": 1.3633774430054473,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 43,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.048766306004836224,
+        "saved_trajopt_validation_seconds": 0.053969108004821464,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 11,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0026_S2_edge_mug",
+        "candidate_checks": 4,
+        "postprocessing_seconds": 0.24114599799213465,
+        "planning_seconds": 6.443490239995299,
+        "opening_seconds": 2.1072071139788022,
+        "candidate_search_seconds": 3.7844500799983507,
+        "decode_seconds": 0.28205713200441096,
+        "other_request_seconds": 0.269775914013735,
+        "postprocess_plus_plan_seconds": 6.684636237987434,
+        "batched_grasp_IK_GPU_seconds": 2.387422170639038,
+        "batched_grasp_IK_wall_seconds": 2.3909863900044,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 31,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.09418547200039029,
+        "saved_trajopt_validation_seconds": 0.09602585599350277,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 2,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0027_S2_edge_mushroom",
+        "candidate_checks": 22,
+        "postprocessing_seconds": 0.1434429080109112,
+        "planning_seconds": 10.909779936002451,
+        "opening_seconds": 3.4802187309978763,
+        "candidate_search_seconds": 6.9171611280034995,
+        "decode_seconds": 0.23785442901134957,
+        "other_request_seconds": 0.2745456479897257,
+        "postprocess_plus_plan_seconds": 11.053222844013362,
+        "batched_grasp_IK_GPU_seconds": 3.049800676345825,
+        "batched_grasp_IK_wall_seconds": 3.0531262940057786,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 50,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.37546438598656096,
+        "saved_trajopt_validation_seconds": 0.1629519579873886,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 18,
+          "pre_or_lift_ik": 2,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0029_S2_edge_orange",
+        "candidate_checks": 233,
+        "postprocessing_seconds": 0.18697429000167176,
+        "planning_seconds": 19.318252318000305,
+        "opening_seconds": 2.5400465590064414,
+        "candidate_search_seconds": 16.248210370002198,
+        "decode_seconds": 0.15379937099351082,
+        "other_request_seconds": 0.3761960179981543,
+        "postprocess_plus_plan_seconds": 19.505226608001976,
+        "batched_grasp_IK_GPU_seconds": 11.74498024749756,
+        "batched_grasp_IK_wall_seconds": 11.77453391601739,
+        "batched_grasp_IK_calls": 32,
+        "batched_grasp_IK_targets": 510,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 16,
+          "pure_kinematic_fallback": 16
+        },
+        "saved_trajopt_solve_seconds": 0.1776190030068392,
+        "saved_trajopt_validation_seconds": 0.116958329002955,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 231,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0030_S2_edge_peach",
+        "candidate_checks": 16,
+        "postprocessing_seconds": 0.2317583959957119,
+        "planning_seconds": 9.9056603039935,
+        "opening_seconds": 3.9377029670140473,
+        "candidate_search_seconds": 5.424820969987195,
+        "decode_seconds": 0.12211047300661448,
+        "other_request_seconds": 0.42102589398564305,
+        "postprocess_plus_plan_seconds": 10.137418699989212,
+        "batched_grasp_IK_GPU_seconds": 2.8831007614135746,
+        "batched_grasp_IK_wall_seconds": 2.8871173780062236,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 51,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.6313096009980654,
+        "saved_trajopt_validation_seconds": 0.22370888601290062,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 14,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0031_S2_edge_pear",
+        "candidate_checks": 59,
+        "postprocessing_seconds": 0.419916839004145,
+        "planning_seconds": 8.301739880000241,
+        "opening_seconds": 2.2484180830069818,
+        "candidate_search_seconds": 5.580485407001106,
+        "decode_seconds": 0.17246294900542125,
+        "other_request_seconds": 0.300373440986732,
+        "postprocess_plus_plan_seconds": 8.721656719004386,
+        "batched_grasp_IK_GPU_seconds": 3.32920401763916,
+        "batched_grasp_IK_wall_seconds": 3.3379616159800207,
+        "batched_grasp_IK_calls": 10,
+        "batched_grasp_IK_targets": 158,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 5,
+          "pure_kinematic_fallback": 5
+        },
+        "saved_trajopt_solve_seconds": 0.2196587649814319,
+        "saved_trajopt_validation_seconds": 0.11433504498563707,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 57,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0032_S2_edge_potato",
+        "candidate_checks": 19,
+        "postprocessing_seconds": 0.28855777000717353,
+        "planning_seconds": 9.355218600991066,
+        "opening_seconds": 3.285768459987594,
+        "candidate_search_seconds": 5.66703124398191,
+        "decode_seconds": 0.11382618300558534,
+        "other_request_seconds": 0.2885927140159765,
+        "postprocess_plus_plan_seconds": 9.64377637099824,
+        "batched_grasp_IK_GPU_seconds": 3.0902036609649652,
+        "batched_grasp_IK_wall_seconds": 3.0938515690213535,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 57,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.5000369010085706,
+        "saved_trajopt_validation_seconds": 0.28829530798248015,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 17,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0033_S2_edge_remote_control",
+        "candidate_checks": 54,
+        "postprocessing_seconds": 0.7475238400074886,
+        "planning_seconds": 8.217202528001508,
+        "opening_seconds": 2.2279051530058496,
+        "candidate_search_seconds": 5.2561760429962305,
+        "decode_seconds": 0.38718532300845254,
+        "other_request_seconds": 0.3459360089909751,
+        "postprocess_plus_plan_seconds": 8.964726368008996,
+        "batched_grasp_IK_GPU_seconds": 3.2820039501190186,
+        "batched_grasp_IK_wall_seconds": 3.2889865759789245,
+        "batched_grasp_IK_calls": 8,
+        "batched_grasp_IK_targets": 115,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 4,
+          "pure_kinematic_fallback": 4
+        },
+        "saved_trajopt_solve_seconds": 0.29294665101042483,
+        "saved_trajopt_validation_seconds": 0.17533301399089396,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 52,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "candidate_checks": 230,
+        "postprocessing_seconds": 0.4620139289909275,
+        "planning_seconds": 30.71374674300023,
+        "opening_seconds": 3.2208489830081817,
+        "candidate_search_seconds": 26.83472102698579,
+        "decode_seconds": 0.3259537209960399,
+        "other_request_seconds": 0.33222301201021764,
+        "postprocess_plus_plan_seconds": 31.175760671991156,
+        "batched_grasp_IK_GPU_seconds": 19.346144012451173,
+        "batched_grasp_IK_wall_seconds": 19.379371172952233,
+        "batched_grasp_IK_calls": 30,
+        "batched_grasp_IK_targets": 480,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 15,
+          "pure_kinematic_fallback": 15
+        },
+        "saved_trajopt_solve_seconds": 0.027521748997969553,
+        "saved_trajopt_validation_seconds": 0.03985643199121114,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 229,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0036_S2_edge_spatula",
+        "candidate_checks": 32,
+        "postprocessing_seconds": 0.8381744970101863,
+        "planning_seconds": 6.275607023999328,
+        "opening_seconds": 2.8656592500046827,
+        "candidate_search_seconds": 2.405749654993997,
+        "decode_seconds": 0.5065745949978009,
+        "other_request_seconds": 0.49762352400284726,
+        "postprocess_plus_plan_seconds": 7.113781521009514,
+        "batched_grasp_IK_GPU_seconds": 1.1271966896057128,
+        "batched_grasp_IK_wall_seconds": 1.130825096013723,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 64,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.025332745994091965,
+        "saved_trajopt_validation_seconds": 0.04475766699761152,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 31,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0038_S2_edge_teapot",
+        "candidate_checks": 17,
+        "postprocessing_seconds": 0.2900342520006234,
+        "planning_seconds": 6.509688889011159,
+        "opening_seconds": 3.3726347140036523,
+        "candidate_search_seconds": 2.518843793004635,
+        "decode_seconds": 0.1446854380046716,
+        "other_request_seconds": 0.4735249439981999,
+        "postprocess_plus_plan_seconds": 6.799723141011782,
+        "batched_grasp_IK_GPU_seconds": 1.3597000312805176,
+        "batched_grasp_IK_wall_seconds": 1.3632990940095624,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 60,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.07483352499548346,
+        "saved_trajopt_validation_seconds": 0.07555553600832354,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 16,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0039_S2_edge_tomato",
+        "candidate_checks": 30,
+        "postprocessing_seconds": 0.22491517099842895,
+        "planning_seconds": 6.175849136998295,
+        "opening_seconds": 2.9276183209876763,
+        "candidate_search_seconds": 2.851679540006444,
+        "decode_seconds": 0.10808482699212618,
+        "other_request_seconds": 0.28846644901204854,
+        "postprocess_plus_plan_seconds": 6.400764307996724,
+        "batched_grasp_IK_GPU_seconds": 1.2255364208221435,
+        "batched_grasp_IK_wall_seconds": 1.2294265939854085,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 63,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.04768259800039232,
+        "saved_trajopt_validation_seconds": 0.059768792998511344,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 29,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0041_S3_sparse_apple",
+        "candidate_checks": 9,
+        "postprocessing_seconds": 0.2328694370080484,
+        "planning_seconds": 5.851129534989013,
+        "opening_seconds": 2.7722224989993265,
+        "candidate_search_seconds": 2.7279271190054715,
+        "decode_seconds": 0.09226122300606221,
+        "other_request_seconds": 0.25871869397815317,
+        "postprocess_plus_plan_seconds": 6.083998971997062,
+        "batched_grasp_IK_GPU_seconds": 1.169455888748169,
+        "batched_grasp_IK_wall_seconds": 1.172698570007924,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 42,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.15540726999461185,
+        "saved_trajopt_validation_seconds": 0.11839607202273328,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 7,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0042_S3_sparse_avocado",
+        "candidate_checks": 12,
+        "postprocessing_seconds": 0.3356332089897478,
+        "planning_seconds": 5.254259213004843,
+        "opening_seconds": 2.3076233850151766,
+        "candidate_search_seconds": 2.2742409959901124,
+        "decode_seconds": 0.28161428999737836,
+        "other_request_seconds": 0.39078054200217593,
+        "postprocess_plus_plan_seconds": 5.589892421994591,
+        "batched_grasp_IK_GPU_seconds": 0.9654895572662353,
+        "batched_grasp_IK_wall_seconds": 0.9687734840117628,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 51,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.197835220998968,
+        "saved_trajopt_validation_seconds": 0.12228015299479011,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 10,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0043_S3_sparse_baguette",
+        "candidate_checks": 100,
+        "postprocessing_seconds": 0.7166184559901012,
+        "planning_seconds": 9.493257957990863,
+        "opening_seconds": 2.594488023009035,
+        "candidate_search_seconds": 6.140968901992892,
+        "decode_seconds": 0.40401092999672983,
+        "other_request_seconds": 0.3537901029922068,
+        "postprocess_plus_plan_seconds": 10.209876413980965,
+        "batched_grasp_IK_GPU_seconds": 3.9737178554534918,
+        "batched_grasp_IK_wall_seconds": 3.98625330106006,
+        "batched_grasp_IK_calls": 14,
+        "batched_grasp_IK_targets": 222,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 7,
+          "pure_kinematic_fallback": 7
+        },
+        "saved_trajopt_solve_seconds": 0.05190053400292527,
+        "saved_trajopt_validation_seconds": 0.0534682290017372,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 99,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0044_S3_sparse_banana",
+        "candidate_checks": 17,
+        "postprocessing_seconds": 0.5382309339911444,
+        "planning_seconds": 7.524952589999884,
+        "opening_seconds": 3.2304699090018403,
+        "candidate_search_seconds": 3.614422808008385,
+        "decode_seconds": 0.32298771299247164,
+        "other_request_seconds": 0.35707215999718755,
+        "postprocess_plus_plan_seconds": 8.063183523991029,
+        "batched_grasp_IK_GPU_seconds": 2.1433549537658694,
+        "batched_grasp_IK_wall_seconds": 2.1472070290037664,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 61,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.12446349099627696,
+        "saved_trajopt_validation_seconds": 0.09900454099988565,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 16,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0045_S3_sparse_bar_soap",
+        "candidate_checks": 156,
+        "postprocessing_seconds": 0.29949299499276094,
+        "planning_seconds": 13.39803148599458,
+        "opening_seconds": 3.414600888005225,
+        "candidate_search_seconds": 9.570626417000312,
+        "decode_seconds": 0.1325147760071559,
+        "other_request_seconds": 0.28028940498188604,
+        "postprocess_plus_plan_seconds": 13.69752448098734,
+        "batched_grasp_IK_GPU_seconds": 6.7136162948608415,
+        "batched_grasp_IK_wall_seconds": 6.7314099299837835,
+        "batched_grasp_IK_calls": 20,
+        "batched_grasp_IK_targets": 314,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 10,
+          "pure_kinematic_fallback": 10
+        },
+        "saved_trajopt_solve_seconds": 0.2478178979945369,
+        "saved_trajopt_validation_seconds": 0.11491905100410804,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 154,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0046_S3_sparse_bell_pepper",
+        "candidate_checks": 17,
+        "postprocessing_seconds": 0.2717681219946826,
+        "planning_seconds": 4.8368310569931054,
+        "opening_seconds": 2.100174061997677,
+        "candidate_search_seconds": 2.2082430549926357,
+        "decode_seconds": 0.25274934199114796,
+        "other_request_seconds": 0.27566459801164456,
+        "postprocess_plus_plan_seconds": 5.108599178987788,
+        "batched_grasp_IK_GPU_seconds": 1.173281784057617,
+        "batched_grasp_IK_wall_seconds": 1.17667239200091,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 58,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.06089556100778282,
+        "saved_trajopt_validation_seconds": 0.054810233996249735,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 16,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0047_S3_sparse_book",
+        "candidate_checks": 220,
+        "postprocessing_seconds": 1.118921308996505,
+        "planning_seconds": 15.567514159993152,
+        "opening_seconds": 3.1491078840044793,
+        "candidate_search_seconds": 11.27680771802261,
+        "decode_seconds": 0.5779203319980297,
+        "other_request_seconds": 0.5636782259680331,
+        "postprocess_plus_plan_seconds": 16.686435468989657,
+        "batched_grasp_IK_GPU_seconds": 6.70341835975647,
+        "batched_grasp_IK_wall_seconds": 6.727758349981741,
+        "batched_grasp_IK_calls": 28,
+        "batched_grasp_IK_targets": 443,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 14,
+          "pure_kinematic_fallback": 14
+        },
+        "saved_trajopt_solve_seconds": 0.04810742299014237,
+        "saved_trajopt_validation_seconds": 0.05415296299906913,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 219,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0048_S3_sparse_bottled_water",
+        "candidate_checks": 58,
+        "postprocessing_seconds": 0.13559396599885076,
+        "planning_seconds": 7.866408522997517,
+        "opening_seconds": 2.770751010000822,
+        "candidate_search_seconds": 4.507328959007282,
+        "decode_seconds": 0.07599389601091389,
+        "other_request_seconds": 0.5123346579784993,
+        "postprocess_plus_plan_seconds": 8.002002488996368,
+        "batched_grasp_IK_GPU_seconds": 2.6532843132019046,
+        "batched_grasp_IK_wall_seconds": 2.6607778330071596,
+        "batched_grasp_IK_calls": 8,
+        "batched_grasp_IK_targets": 121,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 4,
+          "pure_kinematic_fallback": 4
+        },
+        "saved_trajopt_solve_seconds": 0.046634929996798746,
+        "saved_trajopt_validation_seconds": 0.05408349099161569,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 57,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0050_S3_sparse_boxed_food",
+        "candidate_checks": 104,
+        "postprocessing_seconds": 0.20226920599816367,
+        "planning_seconds": 14.452082071002224,
+        "opening_seconds": 2.832730714013451,
+        "candidate_search_seconds": 11.265452498017112,
+        "decode_seconds": 0.09701183099241462,
+        "other_request_seconds": 0.25688702797924634,
+        "postprocess_plus_plan_seconds": 14.654351277000387,
+        "batched_grasp_IK_GPU_seconds": 9.140260906219483,
+        "batched_grasp_IK_wall_seconds": 9.157885253982386,
+        "batched_grasp_IK_calls": 16,
+        "batched_grasp_IK_targets": 231,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 8,
+          "pure_kinematic_fallback": 8
+        },
+        "saved_trajopt_solve_seconds": 0.04793414499727078,
+        "saved_trajopt_validation_seconds": 0.053529894998064265,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 103,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0052_S3_sparse_broccoli",
+        "candidate_checks": 72,
+        "postprocessing_seconds": 0.24857523699756712,
+        "planning_seconds": 10.322212397004478,
+        "opening_seconds": 2.842710643992177,
+        "candidate_search_seconds": 7.027480891003506,
+        "decode_seconds": 0.12272791100258473,
+        "other_request_seconds": 0.3292929510062095,
+        "postprocess_plus_plan_seconds": 10.570787634002045,
+        "batched_grasp_IK_GPU_seconds": 4.291402629852295,
+        "batched_grasp_IK_wall_seconds": 4.303025563029223,
+        "batched_grasp_IK_calls": 12,
+        "batched_grasp_IK_targets": 168,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 6,
+          "pure_kinematic_fallback": 6
+        },
+        "saved_trajopt_solve_seconds": 0.026425839008879848,
+        "saved_trajopt_validation_seconds": 0.04615144200215582,
+        "saved_trajopt_reports": 1,
+        "candidate_rejected": {
+          "grasp_ik": 71,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0055_S3_sparse_carrot",
+        "candidate_checks": 3,
+        "postprocessing_seconds": 0.4679840159951709,
+        "planning_seconds": 6.437411533988779,
+        "opening_seconds": 2.901300226993044,
+        "candidate_search_seconds": 2.487376785997185,
+        "decode_seconds": 0.37951107799017336,
+        "other_request_seconds": 0.6692234430083772,
+        "postprocess_plus_plan_seconds": 6.90539554998395,
+        "batched_grasp_IK_GPU_seconds": 0.9241403279304505,
+        "batched_grasp_IK_wall_seconds": 0.9265137040056288,
+        "batched_grasp_IK_calls": 3,
+        "batched_grasp_IK_targets": 31,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 1
+        },
+        "saved_trajopt_solve_seconds": 0.23023475099762436,
+        "saved_trajopt_validation_seconds": 0.11429950202000327,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 1,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "candidate_checks": 336,
+        "postprocessing_seconds": 0.5303388460015412,
+        "planning_seconds": 34.15122645399242,
+        "opening_seconds": 2.889350475015817,
+        "candidate_search_seconds": 30.422830377021455,
+        "decode_seconds": 0.21362179900461342,
+        "other_request_seconds": 0.6254238029505359,
+        "postprocess_plus_plan_seconds": 34.68156529999396,
+        "batched_grasp_IK_GPU_seconds": 20.29248649597168,
+        "batched_grasp_IK_wall_seconds": 20.351539953015163,
+        "batched_grasp_IK_calls": 44,
+        "batched_grasp_IK_targets": 685,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 22,
+          "pure_kinematic_fallback": 22
+        },
+        "saved_trajopt_solve_seconds": 0.5022699939872837,
+        "saved_trajopt_validation_seconds": 0.35813766600040253,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 334,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0058_S3_sparse_croissant",
+        "candidate_checks": 82,
+        "postprocessing_seconds": 0.45523477700771764,
+        "planning_seconds": 20.186994249990676,
+        "opening_seconds": 4.403867296001408,
+        "candidate_search_seconds": 15.001240996993147,
+        "decode_seconds": 0.4101295599975856,
+        "other_request_seconds": 0.3717563969985349,
+        "postprocess_plus_plan_seconds": 20.642229026998393,
+        "batched_grasp_IK_GPU_seconds": 9.858685733795166,
+        "batched_grasp_IK_wall_seconds": 9.941831573960371,
+        "batched_grasp_IK_calls": 12,
+        "batched_grasp_IK_targets": 177,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 6,
+          "pure_kinematic_fallback": 6
+        },
+        "saved_trajopt_solve_seconds": 0.24299944999802392,
+        "saved_trajopt_validation_seconds": 0.18668565999541897,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 81,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0059_S3_sparse_cucumber",
+        "candidate_checks": 18,
+        "postprocessing_seconds": 0.5657103859994095,
+        "planning_seconds": 4.666705344992806,
+        "opening_seconds": 2.2878029550192878,
+        "candidate_search_seconds": 1.8265827799914405,
+        "decode_seconds": 0.22004256000218447,
+        "other_request_seconds": 0.3322770499798935,
+        "postprocess_plus_plan_seconds": 5.232415730992216,
+        "batched_grasp_IK_GPU_seconds": 0.9563750114440916,
+        "batched_grasp_IK_wall_seconds": 0.9596946040110197,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 48,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.04912914898886811,
+        "saved_trajopt_validation_seconds": 0.054363084986107424,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 17,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0060_S3_sparse_donut",
+        "candidate_checks": 338,
+        "postprocessing_seconds": 0.3162786550092278,
+        "planning_seconds": 32.22984800499398,
+        "opening_seconds": 2.806940216003568,
+        "candidate_search_seconds": 27.869578668978647,
+        "decode_seconds": 0.13002975800191052,
+        "other_request_seconds": 1.4232993620098568,
+        "postprocess_plus_plan_seconds": 32.54612666000321,
+        "batched_grasp_IK_GPU_seconds": 16.403305253982545,
+        "batched_grasp_IK_wall_seconds": 16.481145216021105,
+        "batched_grasp_IK_calls": 44,
+        "batched_grasp_IK_targets": 690,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 22,
+          "pure_kinematic_fallback": 22
+        },
+        "saved_trajopt_solve_seconds": 0.23259777600469533,
+        "saved_trajopt_validation_seconds": 0.2677057990076719,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 336,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0061_S4_clutter_eggplant",
+        "candidate_checks": 38,
+        "postprocessing_seconds": 0.44075229900772683,
+        "planning_seconds": 9.659202394002932,
+        "opening_seconds": 2.912272422996466,
+        "candidate_search_seconds": 5.609566619008547,
+        "decode_seconds": 0.22533442999701947,
+        "other_request_seconds": 0.9120289220008999,
+        "postprocess_plus_plan_seconds": 10.099954693010659,
+        "batched_grasp_IK_GPU_seconds": 2.8813116455078127,
+        "batched_grasp_IK_wall_seconds": 2.889549042985891,
+        "batched_grasp_IK_calls": 8,
+        "batched_grasp_IK_targets": 100,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 4,
+          "pure_kinematic_fallback": 4
+        },
+        "saved_trajopt_solve_seconds": 0.21320975899288896,
+        "saved_trajopt_validation_seconds": 0.11422939000476617,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 36,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0062_S4_clutter_keychain",
+        "candidate_checks": 210,
+        "postprocessing_seconds": 0.26505730599456,
+        "planning_seconds": 30.473033298010705,
+        "opening_seconds": 3.256504245000542,
+        "candidate_search_seconds": 26.578894360995037,
+        "decode_seconds": 0.18322086900298018,
+        "other_request_seconds": 0.45441382301214617,
+        "postprocess_plus_plan_seconds": 30.738090604005265,
+        "batched_grasp_IK_GPU_seconds": 15.9366821975708,
+        "batched_grasp_IK_wall_seconds": 16.042025469010696,
+        "batched_grasp_IK_calls": 28,
+        "batched_grasp_IK_targets": 432,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 14,
+          "pure_kinematic_fallback": 14
+        },
+        "saved_trajopt_solve_seconds": 0.3757525800174335,
+        "saved_trajopt_validation_seconds": 0.33741122101491783,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 208,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0063_S4_clutter_lemon",
+        "candidate_checks": 6,
+        "postprocessing_seconds": 0.25566580799932126,
+        "planning_seconds": 5.067517389994464,
+        "opening_seconds": 2.2520887249847874,
+        "candidate_search_seconds": 2.426176971013774,
+        "decode_seconds": 0.11497335700551048,
+        "other_request_seconds": 0.27427833699039184,
+        "postprocess_plus_plan_seconds": 5.323183197993785,
+        "batched_grasp_IK_GPU_seconds": 1.290383228302002,
+        "batched_grasp_IK_wall_seconds": 1.2937595580006018,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 34,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.1096703489893116,
+        "saved_trajopt_validation_seconds": 0.055833079997682944,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 5,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0064_S4_clutter_mango",
+        "candidate_checks": 28,
+        "postprocessing_seconds": 0.31747693399665877,
+        "planning_seconds": 6.18162214300537,
+        "opening_seconds": 2.9501138200139394,
+        "candidate_search_seconds": 2.614373472009902,
+        "decode_seconds": 0.16397512100229505,
+        "other_request_seconds": 0.4531597299792338,
+        "postprocess_plus_plan_seconds": 6.499099077002029,
+        "batched_grasp_IK_GPU_seconds": 1.3771161861419678,
+        "batched_grasp_IK_wall_seconds": 1.3807797890040092,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 63,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.055325378983980045,
+        "saved_trajopt_validation_seconds": 0.07597167900530621,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 27,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0065_S4_clutter_milk",
+        "candidate_checks": 26,
+        "postprocessing_seconds": 0.1774019589938689,
+        "planning_seconds": 10.36501235999458,
+        "opening_seconds": 3.9765407929953653,
+        "candidate_search_seconds": 5.800679827996646,
+        "decode_seconds": 0.2792204489960568,
+        "other_request_seconds": 0.30857129000651184,
+        "postprocess_plus_plan_seconds": 10.542414318988449,
+        "batched_grasp_IK_GPU_seconds": 3.759303331375122,
+        "batched_grasp_IK_wall_seconds": 3.763697674003197,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 63,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.29844330000923946,
+        "saved_trajopt_validation_seconds": 0.18232965198694728,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 25,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0066_S4_clutter_mug",
+        "candidate_checks": 11,
+        "postprocessing_seconds": 0.29910805700637866,
+        "planning_seconds": 8.868772380999872,
+        "opening_seconds": 4.481544305002899,
+        "candidate_search_seconds": 3.7088376710162265,
+        "decode_seconds": 0.35327672101266216,
+        "other_request_seconds": 0.32511368396808393,
+        "postprocess_plus_plan_seconds": 9.16788043800625,
+        "batched_grasp_IK_GPU_seconds": 1.9547955150604248,
+        "batched_grasp_IK_wall_seconds": 1.9580411939823534,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 47,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.16001136701379437,
+        "saved_trajopt_validation_seconds": 0.12339588800386991,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 9,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0067_S4_clutter_mushroom",
+        "candidate_checks": 56,
+        "postprocessing_seconds": 0.19487668400688563,
+        "planning_seconds": 7.396791155988467,
+        "opening_seconds": 2.8440067889896454,
+        "candidate_search_seconds": 4.140671186993131,
+        "decode_seconds": 0.10643566500220913,
+        "other_request_seconds": 0.30567751500348095,
+        "postprocess_plus_plan_seconds": 7.5916678399953526,
+        "batched_grasp_IK_GPU_seconds": 2.133909489631653,
+        "batched_grasp_IK_wall_seconds": 2.1412223279912723,
+        "batched_grasp_IK_calls": 8,
+        "batched_grasp_IK_targets": 119,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 4,
+          "pure_kinematic_fallback": 4
+        },
+        "saved_trajopt_solve_seconds": 0.051314673997694626,
+        "saved_trajopt_validation_seconds": 0.055999795004026964,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 55,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0069_S4_clutter_orange",
+        "candidate_checks": 210,
+        "postprocessing_seconds": 0.22016595299646724,
+        "planning_seconds": 36.1435079780058,
+        "opening_seconds": 3.359966379997786,
+        "candidate_search_seconds": 32.19299822898756,
+        "decode_seconds": 0.2481414490030147,
+        "other_request_seconds": 0.3424019200174371,
+        "postprocess_plus_plan_seconds": 36.36367393100227,
+        "batched_grasp_IK_GPU_seconds": 20.352143461227413,
+        "batched_grasp_IK_wall_seconds": 20.47367010700691,
+        "batched_grasp_IK_calls": 28,
+        "batched_grasp_IK_targets": 440,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 14,
+          "pure_kinematic_fallback": 14
+        },
+        "saved_trajopt_solve_seconds": 0.22542201599571854,
+        "saved_trajopt_validation_seconds": 0.3018407869967632,
+        "saved_trajopt_reports": 3,
+        "candidate_rejected": {
+          "grasp_ik": 204,
+          "pre_or_lift_ik": 4,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0070_S4_clutter_peach",
+        "candidate_checks": 24,
+        "postprocessing_seconds": 0.24721844600571785,
+        "planning_seconds": 5.920107550002285,
+        "opening_seconds": 2.979760362984962,
+        "candidate_search_seconds": 2.5186309650016483,
+        "decode_seconds": 0.12284709900268354,
+        "other_request_seconds": 0.2988691230129916,
+        "postprocess_plus_plan_seconds": 6.167325996008003,
+        "batched_grasp_IK_GPU_seconds": 1.6103782920837402,
+        "batched_grasp_IK_wall_seconds": 1.6138488270080416,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 63,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.0699343080050312,
+        "saved_trajopt_validation_seconds": 0.05544410400034394,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 23,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0071_S4_clutter_pear",
+        "candidate_checks": 25,
+        "postprocessing_seconds": 0.40173278700967785,
+        "planning_seconds": 6.342244886007393,
+        "opening_seconds": 3.188456153991865,
+        "candidate_search_seconds": 2.614054239995312,
+        "decode_seconds": 0.1885975939949276,
+        "other_request_seconds": 0.35113689802528825,
+        "postprocess_plus_plan_seconds": 6.743977673017071,
+        "batched_grasp_IK_GPU_seconds": 1.175857000350952,
+        "batched_grasp_IK_wall_seconds": 1.1792723230173578,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 63,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.0690802489843918,
+        "saved_trajopt_validation_seconds": 0.05465592700056732,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 24,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0072_S4_clutter_potato",
+        "candidate_checks": 2,
+        "postprocessing_seconds": 0.3017096789990319,
+        "planning_seconds": 9.61834892600018,
+        "opening_seconds": 3.5936789980041794,
+        "candidate_search_seconds": 5.657671816996299,
+        "decode_seconds": 0.10499270301079378,
+        "other_request_seconds": 0.2620054079889087,
+        "postprocess_plus_plan_seconds": 9.920058604999213,
+        "batched_grasp_IK_GPU_seconds": 2.592433177947998,
+        "batched_grasp_IK_wall_seconds": 2.6291595159855206,
+        "batched_grasp_IK_calls": 3,
+        "batched_grasp_IK_targets": 24,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 1
+        },
+        "saved_trajopt_solve_seconds": 0.6418772920005722,
+        "saved_trajopt_validation_seconds": 0.43090676800056826,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 0,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0074_S4_clutter_scissors",
+        "candidate_checks": 648,
+        "postprocessing_seconds": 0.409259487001691,
+        "planning_seconds": 43.12431761198968,
+        "opening_seconds": 4.388101328004268,
+        "candidate_search_seconds": 37.941848926013336,
+        "decode_seconds": 0.4118511630076682,
+        "other_request_seconds": 0.3825161949644098,
+        "postprocess_plus_plan_seconds": 43.53357709899137,
+        "batched_grasp_IK_GPU_seconds": 25.940734235763554,
+        "batched_grasp_IK_wall_seconds": 26.058575107963406,
+        "batched_grasp_IK_calls": 84,
+        "batched_grasp_IK_targets": 1318,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 42,
+          "pure_kinematic_fallback": 42
+        },
+        "saved_trajopt_solve_seconds": 0.05031720700208098,
+        "saved_trajopt_validation_seconds": 0.061767819002852775,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 647,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0078_S4_clutter_teapot",
+        "candidate_checks": 4,
+        "postprocessing_seconds": 0.2996114439883968,
+        "planning_seconds": 6.896024123998359,
+        "opening_seconds": 2.863190994001343,
+        "candidate_search_seconds": 3.4547231099859346,
+        "decode_seconds": 0.156488006003201,
+        "other_request_seconds": 0.42162201400788035,
+        "postprocess_plus_plan_seconds": 7.195635567986756,
+        "batched_grasp_IK_GPU_seconds": 2.106184663772583,
+        "batched_grasp_IK_wall_seconds": 2.1098532720207004,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 28,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.13708324200706556,
+        "saved_trajopt_validation_seconds": 0.05643845100712497,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 3,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0079_S4_clutter_tomato",
+        "candidate_checks": 2,
+        "postprocessing_seconds": 0.1704685690056067,
+        "planning_seconds": 6.01043488799769,
+        "opening_seconds": 3.7826307880022796,
+        "candidate_search_seconds": 1.827147005009465,
+        "decode_seconds": 0.10446390201104805,
+        "other_request_seconds": 0.2961931929748971,
+        "postprocess_plus_plan_seconds": 6.180903457003296,
+        "batched_grasp_IK_GPU_seconds": 0.4663687472343445,
+        "batched_grasp_IK_wall_seconds": 0.46878734801430255,
+        "batched_grasp_IK_calls": 3,
+        "batched_grasp_IK_targets": 32,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 1
+        },
+        "saved_trajopt_solve_seconds": 0.04456898901844397,
+        "saved_trajopt_validation_seconds": 0.05498624299070798,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 0,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0081_S5_occluded_apple",
+        "candidate_checks": 65,
+        "postprocessing_seconds": 0.24721006999607198,
+        "planning_seconds": 10.253622582007665,
+        "opening_seconds": 3.0395424270100193,
+        "candidate_search_seconds": 6.844996360014193,
+        "decode_seconds": 0.09880503299064003,
+        "other_request_seconds": 0.2702787619928131,
+        "postprocess_plus_plan_seconds": 10.500832652003737,
+        "batched_grasp_IK_GPU_seconds": 3.6351875400543214,
+        "batched_grasp_IK_wall_seconds": 3.6598974380176514,
+        "batched_grasp_IK_calls": 10,
+        "batched_grasp_IK_targets": 156,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 5,
+          "pure_kinematic_fallback": 5
+        },
+        "saved_trajopt_solve_seconds": 0.1838330250029685,
+        "saved_trajopt_validation_seconds": 0.2202447379968362,
+        "saved_trajopt_reports": 4,
+        "candidate_rejected": {
+          "grasp_ik": 63,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0082_S5_occluded_avocado",
+        "candidate_checks": 50,
+        "postprocessing_seconds": 0.24953859600645956,
+        "planning_seconds": 12.887892208003905,
+        "opening_seconds": 3.226369933996466,
+        "candidate_search_seconds": 9.299183023002115,
+        "decode_seconds": 0.10488434799481183,
+        "other_request_seconds": 0.25745490301051177,
+        "postprocess_plus_plan_seconds": 13.137430804010364,
+        "batched_grasp_IK_GPU_seconds": 6.921365480422973,
+        "batched_grasp_IK_wall_seconds": 6.941643893995206,
+        "batched_grasp_IK_calls": 8,
+        "batched_grasp_IK_targets": 111,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 4,
+          "pure_kinematic_fallback": 4
+        },
+        "saved_trajopt_solve_seconds": 0.172496091996436,
+        "saved_trajopt_validation_seconds": 0.11187891699955799,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 48,
+          "pre_or_lift_ik": 1,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "candidate_checks": 280,
+        "postprocessing_seconds": 0.6067777529970044,
+        "planning_seconds": 28.825289946995326,
+        "opening_seconds": 2.1089057700010017,
+        "candidate_search_seconds": 26.003961563983466,
+        "decode_seconds": 0.3553306120011257,
+        "other_request_seconds": 0.3570920010097325,
+        "postprocess_plus_plan_seconds": 29.43206769999233,
+        "batched_grasp_IK_GPU_seconds": 17.11090310096741,
+        "batched_grasp_IK_wall_seconds": 17.16252210899256,
+        "batched_grasp_IK_calls": 36,
+        "batched_grasp_IK_targets": 567,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 18,
+          "pure_kinematic_fallback": 18
+        },
+        "saved_trajopt_solve_seconds": 0.19746924299397506,
+        "saved_trajopt_validation_seconds": 0.11433382000541314,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 279,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0085_S5_occluded_bar_soap",
+        "candidate_checks": 226,
+        "postprocessing_seconds": 0.309480590003659,
+        "planning_seconds": 32.766872539999895,
+        "opening_seconds": 4.179147900009411,
+        "candidate_search_seconds": 28.158856066016597,
+        "decode_seconds": 0.1302037260029465,
+        "other_request_seconds": 0.2986648479709402,
+        "postprocess_plus_plan_seconds": 33.076353130003554,
+        "batched_grasp_IK_GPU_seconds": 21.57690375900269,
+        "batched_grasp_IK_wall_seconds": 21.634016880067065,
+        "batched_grasp_IK_calls": 32,
+        "batched_grasp_IK_targets": 480,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 16,
+          "pure_kinematic_fallback": 16
+        },
+        "saved_trajopt_solve_seconds": 0.0679974399972707,
+        "saved_trajopt_validation_seconds": 0.05493536900030449,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 225,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0086_S5_occluded_bell_pepper",
+        "candidate_checks": 6,
+        "postprocessing_seconds": 0.2620151480077766,
+        "planning_seconds": 6.800437170997611,
+        "opening_seconds": 2.7220900599932065,
+        "candidate_search_seconds": 3.6025613980018534,
+        "decode_seconds": 0.15667198799201287,
+        "other_request_seconds": 0.3191137250105385,
+        "postprocess_plus_plan_seconds": 7.062452319005388,
+        "batched_grasp_IK_GPU_seconds": 2.259861434936524,
+        "batched_grasp_IK_wall_seconds": 2.275065760986763,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 36,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.11692609199963044,
+        "saved_trajopt_validation_seconds": 0.10655814199708402,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 5,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0089_S5_occluded_bowl",
+        "candidate_checks": 150,
+        "postprocessing_seconds": 0.39328378399659414,
+        "planning_seconds": 20.566805980008212,
+        "opening_seconds": 3.222169749002205,
+        "candidate_search_seconds": 16.53652474100818,
+        "decode_seconds": 0.35081394300505053,
+        "other_request_seconds": 0.4572975469927769,
+        "postprocess_plus_plan_seconds": 20.960089764004806,
+        "batched_grasp_IK_GPU_seconds": 13.367166971206666,
+        "batched_grasp_IK_wall_seconds": 13.393184129003203,
+        "batched_grasp_IK_calls": 20,
+        "batched_grasp_IK_targets": 317,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 10,
+          "pure_kinematic_fallback": 10
+        },
+        "saved_trajopt_solve_seconds": 0.20930874400073662,
+        "saved_trajopt_validation_seconds": 0.11429185599263292,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 147,
+          "pre_or_lift_ik": 2,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0092_S5_occluded_broccoli",
+        "candidate_checks": 139,
+        "postprocessing_seconds": 0.20482691400684416,
+        "planning_seconds": 24.47449364599015,
+        "opening_seconds": 2.673395158999483,
+        "candidate_search_seconds": 21.303422876022523,
+        "decode_seconds": 0.23088210099376738,
+        "other_request_seconds": 0.26679350997437723,
+        "postprocess_plus_plan_seconds": 24.679320559996995,
+        "batched_grasp_IK_GPU_seconds": 14.875005237579348,
+        "batched_grasp_IK_wall_seconds": 14.934062136962893,
+        "batched_grasp_IK_calls": 18,
+        "batched_grasp_IK_targets": 287,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 9,
+          "pure_kinematic_fallback": 9
+        },
+        "saved_trajopt_solve_seconds": 0.2400478799972916,
+        "saved_trajopt_validation_seconds": 0.11705661201267503,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 138,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0095_S5_occluded_carrot",
+        "candidate_checks": 76,
+        "postprocessing_seconds": 0.42768373199214693,
+        "planning_seconds": 11.286035465003806,
+        "opening_seconds": 3.20266741499654,
+        "candidate_search_seconds": 7.5935109599959105,
+        "decode_seconds": 0.15532863599946722,
+        "other_request_seconds": 0.33452845401188824,
+        "postprocess_plus_plan_seconds": 11.713719196995953,
+        "batched_grasp_IK_GPU_seconds": 4.3552889804840085,
+        "batched_grasp_IK_wall_seconds": 4.3659241270506755,
+        "batched_grasp_IK_calls": 12,
+        "batched_grasp_IK_targets": 190,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 6,
+          "pure_kinematic_fallback": 6
+        },
+        "saved_trajopt_solve_seconds": 0.13154813899018336,
+        "saved_trajopt_validation_seconds": 0.098562099999981,
+        "saved_trajopt_reports": 3,
+        "candidate_rejected": {
+          "grasp_ik": 74,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0098_S5_occluded_croissant",
+        "candidate_checks": 64,
+        "postprocessing_seconds": 0.34764525599894114,
+        "planning_seconds": 7.365371870007948,
+        "opening_seconds": 2.1150759539887076,
+        "candidate_search_seconds": 4.655864314001519,
+        "decode_seconds": 0.2929437720013084,
+        "other_request_seconds": 0.30148783001641277,
+        "postprocess_plus_plan_seconds": 7.713017126006889,
+        "batched_grasp_IK_GPU_seconds": 2.744816511154175,
+        "batched_grasp_IK_wall_seconds": 2.7518792360060615,
+        "batched_grasp_IK_calls": 8,
+        "batched_grasp_IK_targets": 127,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 4,
+          "pure_kinematic_fallback": 4
+        },
+        "saved_trajopt_solve_seconds": 0.05164749798132107,
+        "saved_trajopt_validation_seconds": 0.05892039199534338,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 63,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "candidate_checks": 22,
+        "postprocessing_seconds": 0.5535204580082791,
+        "planning_seconds": 7.52991440500773,
+        "opening_seconds": 2.917756790993735,
+        "candidate_search_seconds": 4.080333375983173,
+        "decode_seconds": 0.20086616100161336,
+        "other_request_seconds": 0.33095807702920865,
+        "postprocess_plus_plan_seconds": 8.08343486301601,
+        "batched_grasp_IK_GPU_seconds": 1.954638729095459,
+        "batched_grasp_IK_wall_seconds": 1.9583595309959492,
+        "batched_grasp_IK_calls": 4,
+        "batched_grasp_IK_targets": 52,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 2,
+          "pure_kinematic_fallback": 2
+        },
+        "saved_trajopt_solve_seconds": 0.0901039800082799,
+        "saved_trajopt_validation_seconds": 0.14873087700107135,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 21,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      },
+      {
+        "id": "M0100_S5_occluded_donut",
+        "candidate_checks": 256,
+        "postprocessing_seconds": 0.3196423430053983,
+        "planning_seconds": 32.0829800979991,
+        "opening_seconds": 2.6984775650053052,
+        "candidate_search_seconds": 28.676699533025385,
+        "decode_seconds": 0.38205427599314135,
+        "other_request_seconds": 0.32574872397526633,
+        "postprocess_plus_plan_seconds": 32.402622441004496,
+        "batched_grasp_IK_GPU_seconds": 21.41084348869324,
+        "batched_grasp_IK_wall_seconds": 21.45540205598809,
+        "batched_grasp_IK_calls": 32,
+        "batched_grasp_IK_targets": 511,
+        "batched_grasp_IK_solver_stages": {
+          "full_world_ik": 16,
+          "pure_kinematic_fallback": 16
+        },
+        "saved_trajopt_solve_seconds": 0.11003066900593694,
+        "saved_trajopt_validation_seconds": 0.21585588899324648,
+        "saved_trajopt_reports": 2,
+        "candidate_rejected": {
+          "grasp_ik": 255,
+          "pre_or_lift_ik": 0,
+          "path": 0,
+          "local_approach": 0
+        }
+      }
+    ]
+  },
+  "new_IK_calls": 0,
+  "planning_requests": 0,
+  "simulation_instances": 0,
+  "physical_grasps": 0,
+  "missing_timing_scope": "PRM, sequential pre/lift IK and all per-window binding times are not separately accumulated in the saved records",
+  "grasp_batch_IK_time_is_inside_candidate_search": true,
+  "rejected_branch_counts_are_not_unique_candidate_counts": true
+}

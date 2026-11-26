@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T10:55:42.745Z",
+  "generatedAt": "2026-11-26T11:23:34.926Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1415,7 +1415,7 @@
     },
     {
       "file": "media/sam3-v8-indexed-planning-plan.md",
-      "sha256": "5ffda3bf7dedfd4217d85570af8bf7b11bb72cb9a00972911c5784ae319d9f14"
+      "sha256": "27db0b1f1e5727eab57cdec9cab85636282717a448ff8e07c41023ed656c518b"
     },
     {
       "file": "media/sam3-v8-indexed-planning-config.json",
@@ -1591,7 +1591,7 @@
     },
     {
       "file": "media/sam3-v8-funnel-review.md",
-      "sha256": "6c9995ebdfe9693fc5bb945ed607abad38c6fafd63169b5834084f0427370596"
+      "sha256": "55ee2ce114513c5b0d493a5a4408d4e9e805437491201f31740fd43c6da4c7cb"
     },
     {
       "file": "media/sam3-v8-funnel-source-review.json",
@@ -1632,6 +1632,14 @@
     {
       "file": "media/sam3-v7-planning69-20261126-01-report.md",
       "sha256": "740e56f949f91159301677da64f8c83bcf49ffc7f7aefe7c82400734ee1770ab"
+    },
+    {
+      "file": "media/sam3-v8-full69-funnel-diagnosis.json",
+      "sha256": "6ab125268cfb6407f315d476c12eb50724888ad8c255b9845df6a539bbe5a2dd"
+    },
+    {
+      "file": "media/sam3-v8-full69-funnel-diagnosis.md",
+      "sha256": "817cc6d5dc7ceadee1b800301add38ad84ff8e58d64d89f995c24f7435fc60b2"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
