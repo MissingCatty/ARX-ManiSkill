@@ -6,6 +6,69 @@ import shutil
 from arx_project.layout import ROOT,now,read_json,sha256,write_json
 
 
+def planning_section(website,site):
+    active=ROOT/'tmp/graspgenx_postprocessing/planning_active.json'
+    if not active.exists():return '',None,[]
+    pointer=read_json(active);run=ROOT/pointer['run']
+    if not run.resolve().is_relative_to(ROOT/'tmp/graspgenx_postprocessing'):
+        raise ValueError('Wrong V7 planning publication root')
+    reg=read_json(run/'registration.json');progress=read_json(run/'progress.json')
+    if progress.get('results') and not progress.get('summaries'):
+        from modules.pipeline.experiments.graspgenx_postprocessing.planning import summaries
+        progress={**progress,'summaries':summaries(progress['results'])}
+    review=read_json(run/'planning_review.json') if (run/'planning_review.json').exists() else None
+    status=('规划对照已完成并核验' if review and review['passed'] else
+        '本批规划停止，记录保留' if (run/'STOP').exists() else
+        '规划结果核验中' if progress['phase']=='complete' else
+        '规划模型预热中' if progress['phase']=='warming' else
+        '等待通过CUDA核验的显卡' if progress['phase']=='waiting_for_gpu' else '规划对照进行中')
+    name='sam3-v7-'+run.name.replace('_','-')+'-results.json'
+    target=website/'resources/media'/name
+    if target.is_symlink() or target.exists() and target.stat().st_nlink!=1:
+        raise ValueError('V7 planning results must be a standalone resource')
+    snapshot={'at':now(),'run':pointer['run'],'status':status,'registration':{k:reg[k] for k in
+        ['phase','gpu','planning_requests','variants','same_backend','same_scheduler','geometry_hard_filter_enabled']},
+        'progress':progress,'independent_review':review,'physical_grasps':0}
+    write_json(target,snapshot);site['localAssets'][name]='../../resources/media/'+name
+    phase='五场景先导' if reg['phase']=='pilot' else '完整69场景'
+    lines=['## NMS候选顺序的实际规划对照','',f"{phase}：{status}，完成{progress['completed_requests']}/{reg['planning_requests']}次规划。",'',
+        '两组使用同一批量16 IK、同一卡、同一个常驻模型池和相同16/64双臂轮换。'
+        '原候选组按原评分顺序搜索；NMS组先检查15毫米/15°代表，其余原候选作为后备。',
+        '几何硬筛选关闭，抓点、评分、开度、碰撞规则与成功判据保持。','']
+    if progress.get('summaries'):
+        lines+=['| 方法 | 规划通过 | 实际检查候选中位数 | 后处理耗时中位数 | 完整规划耗时中位数 / P90 | 后处理＋规划中位数 / P90 |',
+            '| --- | ---: | ---: | ---: | ---: | ---: |']
+        for mode,v in progress['summaries'].items():
+            plan=v['planning_request_seconds'];total=v['postprocessing_plus_planning_seconds']
+            label='原候选，批量16' if mode=='control' else 'NMS15＋后备，批量16'
+            lines.append(f"| {label} | {v['successes']}/{v['requests']} | {v['candidate_checks']['median']:.0f} | "
+                f"{v['postprocessing_seconds']['median']*1000:.1f}毫秒 | {plan['median']:.2f} / {plan['p90']:.2f}秒 | "
+                f"{total['median']:.2f} / {total['p90']:.2f}秒 |")
+        lines+=['','表格按已经完成的配对场景统计。完整规划耗时包含开爪检查、双臂搜索、IK、碰撞和路径。','']
+    if review:
+        lines.append(f"已核查{review['checked_endpoints']}个预抓取、抓取和抬升终点，以及{review['checked_original_candidate_rows']:,}行原候选来源。")
+    lines += ['',f'[本批逐例规划与延时](/media/{name})','']
+    from website.tools.graspgenx_postprocessing_planning_report import write_report
+    report=write_report(run,reg,progress,review)
+    if report:
+        report_name='sam3-v7-'+run.name.replace('_','-')+'-report.md';target=website/'resources/media'/report_name
+        if target.is_symlink() or target.exists() and target.stat().st_nlink!=1:
+            raise ValueError('Planning report must be an independent copy')
+        shutil.copy2(report,target);site['localAssets'][report_name]='../../resources/media/'+report_name
+        lines+=[f'[本批完整规划报告](/media/{report_name})','']
+    plan=ROOT/'modules/pipeline/docs/mainline_versions/V7_候选后处理规划对照方案.md'
+    if plan.exists():
+        plan_name='sam3-v7-NMS-planning-plan.md';target=website/'resources/media'/plan_name
+        if target.is_symlink() or target.exists() and target.stat().st_nlink!=1:
+            raise ValueError('Planning method must be an independent copy')
+        shutil.copy2(plan,target);site['localAssets'][plan_name]='../../resources/media/'+plan_name
+        lines+=[f'[规划对照实施方案](/media/{plan_name})','']
+    batch={'id':run.name,'title':phase+'NMS规划对照','date':'2026-11-26','status':status,
+        'summary':f"完成{progress['completed_requests']}/{reg['planning_requests']}次纯规划，同批量16后端。",
+        'outputs':[pointer['run']],'artifacts':[{'label':'逐例规划与延时','url':'/media/'+name}]}
+    return '\n'.join(lines),status,[batch]
+
+
 def table(summaries,raw_total,cases,priority_successes):
     labels={'control':'原候选','nms':'仅NMS','geometry_nms':'几何＋NMS','geometry_empty_nms':'几何＋空区＋NMS'}
     lines=['## 完整离线比较进度','',f'已处理{cases}/69份观测。下表的优先候选数为每场景中位数，耗时为CPU后处理耗时。','',
@@ -81,6 +144,8 @@ def publish():
         url=attach(diagnosis,'sam3-v7-selected-grasp-diagnosis.json')
         body=body.replace('## 本轮输入与分组',f'[原抓法被筛除的逐例定位]({url})\n\n## 本轮输入与分组',1)
     body+='\n## 参考方法\n\n[ZeroGrasp](/papers/zerograsp/) · [GraspGenX](/papers/graspgenx/)\n'
+    planning,planning_status,planning_batches=planning_section(website,site)
+    if planning:body=planning+'\n'+body
     (website/'内容/迭代/sam3-graspgenx-v7.md').write_text(body)
     group=next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version=next(v for v in group['iterations'] if v['code']=='V7')
@@ -94,6 +159,10 @@ def publish():
         'status':status,'summary':version['resultSummary'],'outputs':[str(run.relative_to(ROOT))],
         'artifacts':[{'label':'逐例候选与耗时','url':data_url}]}
     version['batches']=[v for v in version['batches'] if v['id']!=run.name]+[batch]
+    for item in planning_batches:
+        version['batches']=[v for v in version['batches'] if v['id']!=item['id']]+[item]
+    if planning_status:
+        version.update(status=planning_status,resultSummary=planning_batches[-1]['summary'])
     write_json(site_path,site);write_json(registry_path,registry)
     print(f'Published V7 offline comparison: {completed}/69; current version remains {group["current"]}.')
 

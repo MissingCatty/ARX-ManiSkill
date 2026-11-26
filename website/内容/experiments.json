@@ -606,11 +606,11 @@
           "sourceId": "sam3-graspgenx",
           "title": "GraspGenX候选筛选与NMS",
           "date": "2026-11-25",
-          "status": "离线比较与记录核验已完成",
+          "status": "规划对照进行中",
           "change": "在GraspGenX后比较碰撞筛选、空抓筛选、宽度深度修正与NMS，保住可执行抓法并减少规划工作量。",
           "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX → 候选后处理 → 双臂cuRobo → 抓取",
           "scenes": "最终V6的69份冻结候选观测，共166008个原始候选。",
-          "resultSummary": "离线比较69/69份；候选来源、成功抓法保留与CPU耗时分组记录。",
+          "resultSummary": "完成14/138次纯规划，同批量16后端。",
           "settings": [
             [
               "候选分组",
@@ -637,6 +637,22 @@
           },
           "batches": [
             {
+              "id": "planning_pilot_20261126_01",
+              "title": "五场景先导NMS规划对照",
+              "date": "2026-11-26",
+              "status": "规划对照已完成并核验",
+              "summary": "完成10/10次纯规划，同批量16后端。",
+              "outputs": [
+                "tmp/graspgenx_postprocessing/planning_pilot_20261126_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "逐例规划与延时",
+                  "url": "/media/sam3-v7-planning-pilot-20261126-01-results.json"
+                }
+              ]
+            },
+            {
               "id": "offline69_20261126_01",
               "title": "69份冻结观测的候选后处理离线比较",
               "date": "2026-11-26",
@@ -649,6 +665,22 @@
                 {
                   "label": "逐例候选与耗时",
                   "url": "/media/sam3-v7-offline69-results.json"
+                }
+              ]
+            },
+            {
+              "id": "planning69_20261126_01",
+              "title": "完整69场景NMS规划对照",
+              "date": "2026-11-26",
+              "status": "规划对照进行中",
+              "summary": "完成14/138次纯规划，同批量16后端。",
+              "outputs": [
+                "tmp/graspgenx_postprocessing/planning69_20261126_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "逐例规划与延时",
+                  "url": "/media/sam3-v7-planning69-20261126-01-results.json"
                 }
               ]
             }

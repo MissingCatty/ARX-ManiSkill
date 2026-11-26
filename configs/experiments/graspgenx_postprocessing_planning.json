@@ -1,0 +1,30 @@
+{
+  "version": "V7",
+  "phase": "NMS15_planning_comparison",
+  "authorization": "2026-11-26：继续；在完成69份离线筛选后开展原候选与NMS15加原候选后备的纯规划对照。",
+  "offline_source": "tmp/graspgenx_postprocessing/offline69_20261126_01",
+  "base_backend": "modules/curobo/indexed_planning/service.py",
+  "common_batch_capacity": 16,
+  "variants": ["control", "nms15"],
+  "NMS": {"position_m": 0.015, "rotation_degrees": 15, "all_original_candidates_retained": true},
+  "geometry_hard_filter": false,
+  "candidate_pose_score_width_metadata_changes": false,
+  "same_gpu_models_scene_and_solver_settings": true,
+  "scheduler": {"first_window": 16, "subsequent_window": 64},
+  "random_seed": 20261126,
+  "minimum_startup_free_mib": 10000,
+  "minimum_request_free_mib": 1536,
+  "pilot": {
+    "run": "tmp/graspgenx_postprocessing/planning_pilot_20261126_01",
+    "cases": ["M0001_S1_open_apple", "M0032_S2_edge_potato", "M0044_S3_sparse_banana", "M0064_S4_clutter_mango", "M0086_S5_occluded_bell_pepper"],
+    "planning_requests": 10,
+    "purpose": "source_mapping_fallback_and_independent_physical_arm_FK_validation"
+  },
+  "full": {"run": "tmp/graspgenx_postprocessing/planning69_20261126_01", "cases": 69, "planning_requests": 138},
+  "full_gate": ["pilot_complete", "record_integrity", "independent_FK_and_limits", "control_successes_retained"],
+  "physical_grasp_budget": 0,
+  "perception_calls": 0,
+  "simulation_instances": 0,
+  "automatic_retries": false,
+  "automatic_default_activation": false
+}

@@ -1,4 +1,6 @@
-# V7 候选后处理离线对照
+# V7 候选后处理与规划对照
+
+- 最新用户“继续”授权独立的纯规划阶段；旧“仅CPU、规划0”只适用于offline69登记。planning_pilot_20261126_01已完成5场景×两组10次，30终点复算通过；完整planning69_20261126_01的138次已在GPU3启动。两组共用B16，候选只重排不删改，原编号与搜索名次分别记录。规划配置为graspgenx_postprocessing_planning.json，实时指针planning_active.json；跟进单元arx-v7-nms-followup-20261126-01.service。新登记运行时源码配置冻结，资源/存档故障停止，领取过的请求不重试。几何硬筛关闭、默认不切换，物理/感知/仿真仍0。
 
 - 实现是可选模块，当前不改默认双臂规划器。69份离线比较与独立核验已完成，服务正常退出；NMS15保留55/55原成功抓法，几何硬筛误删3条，不升默认。定位结果在diagnosis_20261126_01。
 - 当前登记：`tmp/graspgenx_postprocessing/offline69_20261126_01`；后台服务`arx-v7-postprocess69-20261126-01.service`。先读`progress.json`、`STOP`和`independent_review.json`，不要重复运行已经started的登记。

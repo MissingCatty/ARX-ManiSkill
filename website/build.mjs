@@ -62,7 +62,7 @@ for (const [folder, mapping] of [
   ...[...experimentGalleries.values()].map(gallery=>[join(content,'资源'),gallery.assets])
 ]) {
   for (const [name, path] of Object.entries(mapping ?? {})) {
-    if (!/^[a-z0-9][a-z0-9.-]*$/.test(name) || media.has(name) || resolve(folder,path)!==join(folder,path)) {
+    if (!/^[a-z0-9][a-z0-9.-]*$/i.test(name) || media.has(name) || resolve(folder,path)!==join(folder,path)) {
       throw new Error(`非法或重复的素材路径：${name}`);
     }
     const source = snapshotFile('media/'+name,resolve(folder,path));

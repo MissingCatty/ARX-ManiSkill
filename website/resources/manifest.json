@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T09:54:40.135Z",
+  "generatedAt": "2026-11-26T10:17:35.233Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1603,7 +1603,7 @@
     },
     {
       "file": "media/sam3-v7-offline69-results.json",
-      "sha256": "8ef5b4ea3cd11d6e4e315dfee38b17649da3cb8767d5ef4685b7f6c31eff8e63"
+      "sha256": "6ff753e64b6fc09789c8f8ea71c3a7bd9b964ca6e1507bd5695a2ddb8199e9ca"
     },
     {
       "file": "media/sam3-v7-offline69-report.md",
@@ -1612,6 +1612,22 @@
     {
       "file": "media/sam3-v7-selected-grasp-diagnosis.json",
       "sha256": "26a5cb1566889aef41ba9f3b85c95d3502a6400e68b2362b846d6a9b523cd853"
+    },
+    {
+      "file": "media/sam3-v7-planning-pilot-20261126-01-results.json",
+      "sha256": "48de13331ee873193082f1bfeec128c57d58b661a08869d2f4226e3f6d664076"
+    },
+    {
+      "file": "media/sam3-v7-planning-pilot-20261126-01-report.md",
+      "sha256": "5c5ada27596359c830f0c508a6a04d20063bf244234ede078705e6d40b17aa81"
+    },
+    {
+      "file": "media/sam3-v7-NMS-planning-plan.md",
+      "sha256": "83411b9f7a6fd891879f3d0f03e00c336408f9b46223d90f5c11c6d488a9bf3b"
+    },
+    {
+      "file": "media/sam3-v7-planning69-20261126-01-results.json",
+      "sha256": "13d7a8cc595df0617decfa3300b26f7fbc83adbc4357a7bb9b07e0e1074e964e"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

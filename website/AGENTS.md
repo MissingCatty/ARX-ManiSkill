@@ -1,5 +1,7 @@
 # 网站内容与表达约定
 
+- V7已推进NMS15加后备的规划对照，先导10次与30终点独立复算通过，完整69场景138次在后台运行。publish_graspgenx_postprocessing.py从planning_active.json读取最新纯规划登记，与离线表分段展示，保留V8当前指针及旧批次。两组同用B16，只改变候选优先顺序；原编号、优先名次、候选检查数量和后处理＋规划耗时分别记录。结果报告由graspgenx_postprocessing_planning_report.py生成，附件均复制到resources。
+
 - V7的69份离线后处理已完成，发布器为tools/publish_graspgenx_postprocessing.py。展示13组候选数、CPU耗时、原成功抓法同臂保留及仍为代表的数量；NMS15为634个/233ms、55/55含后备保留，几何硬筛52/55，误删来自终点指腹附近的目标点。物理和新规划仍0，不当成抓取成功率提升。配置、报告、897份结果摘要与定位JSON真实复制到resources；保留V8当前指针及旧V6成绩。
 
 - V8已获用户授权开始纯规划实施。publish_indexed_planning_plan.py现在同时读取execution.active_run，生成独立的逐例进度JSON并展示规划次数与同卡对照；物理抓取仍0。工程预热及程序故障保留在运行目录，普通规划失败与资源/记录故障分开。V3交替优化、原四项联调及V6完整74例原成绩保持，V8新增结果不能回填原成绩。
