@@ -56,7 +56,8 @@ def section(website, site, active):
                   'sam3-v8-kernel-layout-plan.md')
     document = ROOT/'modules/pipeline/docs/mainline_versions/V8_网格查询分项与线程排列优化结果.md'
     result_url = attach(document, 'sam3-v8-kernel-layout.md') if document.exists() else None
-    lines = ['## V8当前实验：网格查询定位与线程排列优化', '', status+'。', '',
+    heading = '## 已完成：网格查询定位与线程排列优化' if active.get('physical_run') else '## V8当前实验：网格查询定位与线程排列优化'
+    lines = [heading, '', status+'。', '',
         '原五个场景的10次定位已经完成，30个终点独立核验通过。'
         '用每例首批完整IK的实际球和网格，分开测量最近表面搜索和三方向内外判断。', '',
         '| 场景 | 最近表面搜索 | 三方向内外判断 | 合并查询 | 原完整碰撞派发 |',

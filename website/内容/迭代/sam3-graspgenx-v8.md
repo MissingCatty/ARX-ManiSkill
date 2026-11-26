@@ -1,4 +1,114 @@
-## V8当前实验：网格查询定位与线程排列优化
+## V8当前实验：优化组合实际抓取
+
+实际抓取对照：20/20次，独立核验完成，优化组合未保留全部原成功。
+
+选取10个场景，两组各执行一次。其中包括全部6个此前NMS改变抓法的场景，并覆盖五种布局。两组恢复相同的最终站位、升降和物体状态，使用相同的冻结感知与原始候选，再各自规划、实际抓取。
+
+| 项目 | 当前链路 | 优化组合 |
+| --- | --- | --- |
+| 双臂搜索 | 首轮16、后续64交替 | 相同 |
+| 抓取IK | 单候选 | 每批16个候选 |
+| 候选次序 | 原评分次序 | NMS15代表优先，原候选全部保留 |
+| 配置写出 | 原方式 | C版YAML |
+| 网格查询 | 原线程排列 | 同一网格连续查询 |
+
+本轮现用链路实际成功8/10，优化组合6/10。优化组合更快，但没有保留全部原成功案例，默认链路保持。
+
+| 方法 | 规划通过 | 实际抓取成功 | 初始规划中位数 | 初始规划P90 |
+| --- | ---: | ---: | ---: | ---: |
+| 当前链路 | 10/10（100%） | 8/10（80%） | 49.128秒 | 122.686秒 |
+| 优化组合 | 10/10（100%） | 6/10（60%） | 17.774秒 | 30.860秒 |
+
+包含NMS及共享内存交接的初始规划，累计省时69.75%。原成功变失败2例，原失败变成功0例。
+
+### 失败分布
+
+| 原因 | 当前链路 | 优化组合 |
+| --- | ---: | ---: |
+| 接近动作未到位 | 0 | 1 |
+| 抬升或保持不足 | 0 | 1 |
+| 闭合后未形成双指夹持 | 2 | 2 |
+
+### 逐场景结果与视频
+
+| 场景 | 当前链路 | 优化组合 |
+| --- | --- | --- |
+| M0020 · 甜甜圈 | 成功，初始规划173.17秒 · [第三人称](/media/sam3-v8-physical-m0020-baseline-overview.mp4) · [头部](/media/sam3-v8-physical-m0020-baseline-head.mp4) · [初始图](/media/sam3-v8-physical-m0020-baseline-initial.png) | 接近动作未到位，初始规划29.38秒 · [第三人称](/media/sam3-v8-physical-m0020-optimized-overview.mp4) · [头部](/media/sam3-v8-physical-m0020-optimized-head.mp4) · [初始图](/media/sam3-v8-physical-m0020-optimized-initial.png) |
+| M0034 · 剪刀 | 闭合后未形成双指夹持，初始规划78.58秒 · [第三人称](/media/sam3-v8-physical-m0034-baseline-overview.mp4) · [头部](/media/sam3-v8-physical-m0034-baseline-head.mp4) · [初始图](/media/sam3-v8-physical-m0034-baseline-initial.png) | 抬升或保持不足，初始规划26.39秒 · [第三人称](/media/sam3-v8-physical-m0034-optimized-overview.mp4) · [头部](/media/sam3-v8-physical-m0034-optimized-head.mp4) · [初始图](/media/sam3-v8-physical-m0034-optimized-initial.png) |
+| M0074 · 剪刀 | 成功，初始规划56.62秒 · [第三人称](/media/sam3-v8-physical-m0074-baseline-overview.mp4) · [头部](/media/sam3-v8-physical-m0074-baseline-head.mp4) · [初始图](/media/sam3-v8-physical-m0074-baseline-initial.png) | 闭合后未形成双指夹持，初始规划40.30秒 · [第三人称](/media/sam3-v8-physical-m0074-optimized-overview.mp4) · [头部](/media/sam3-v8-physical-m0074-optimized-head.mp4) · [初始图](/media/sam3-v8-physical-m0074-optimized-initial.png) |
+| M0084 · 香蕉 | 成功，初始规划41.64秒 · [第三人称](/media/sam3-v8-physical-m0084-baseline-overview.mp4) · [头部](/media/sam3-v8-physical-m0084-baseline-head.mp4) · [初始图](/media/sam3-v8-physical-m0084-baseline-initial.png) | 成功，初始规划21.22秒 · [第三人称](/media/sam3-v8-physical-m0084-optimized-overview.mp4) · [头部](/media/sam3-v8-physical-m0084-optimized-head.mp4) · [初始图](/media/sam3-v8-physical-m0084-optimized-initial.png) |
+| M0085 · 香皂 | 成功，初始规划111.74秒 · [第三人称](/media/sam3-v8-physical-m0085-baseline-overview.mp4) · [头部](/media/sam3-v8-physical-m0085-baseline-head.mp4) · [初始图](/media/sam3-v8-physical-m0085-baseline-initial.png) | 成功，初始规划14.33秒 · [第三人称](/media/sam3-v8-physical-m0085-optimized-overview.mp4) · [头部](/media/sam3-v8-physical-m0085-optimized-head.mp4) · [初始图](/media/sam3-v8-physical-m0085-optimized-initial.png) |
+| M0099 · 黄瓜 | 成功，初始规划12.46秒 · [第三人称](/media/sam3-v8-physical-m0099-baseline-overview.mp4) · [头部](/media/sam3-v8-physical-m0099-baseline-head.mp4) · [初始图](/media/sam3-v8-physical-m0099-baseline-initial.png) | 成功，初始规划6.12秒 · [第三人称](/media/sam3-v8-physical-m0099-optimized-overview.mp4) · [头部](/media/sam3-v8-physical-m0099-optimized-head.mp4) · [初始图](/media/sam3-v8-physical-m0099-optimized-initial.png) |
+| M0001 · 苹果 | 成功，初始规划5.71秒 · [第三人称](/media/sam3-v8-physical-m0001-baseline-overview.mp4) · [头部](/media/sam3-v8-physical-m0001-baseline-head.mp4) · [初始图](/media/sam3-v8-physical-m0001-baseline-initial.png) | 成功，初始规划5.02秒 · [第三人称](/media/sam3-v8-physical-m0001-optimized-overview.mp4) · [头部](/media/sam3-v8-physical-m0001-optimized-head.mp4) · [初始图](/media/sam3-v8-physical-m0001-optimized-initial.png) |
+| M0044 · 香蕉 | 成功，初始规划7.29秒 · [第三人称](/media/sam3-v8-physical-m0044-baseline-overview.mp4) · [头部](/media/sam3-v8-physical-m0044-baseline-head.mp4) · [初始图](/media/sam3-v8-physical-m0044-baseline-initial.png) | 成功，初始规划6.08秒 · [第三人称](/media/sam3-v8-physical-m0044-optimized-overview.mp4) · [头部](/media/sam3-v8-physical-m0044-optimized-head.mp4) · [初始图](/media/sam3-v8-physical-m0044-optimized-initial.png) |
+| M0056 · 手机 | 闭合后未形成双指夹持，初始规划117.08秒 · [第三人称](/media/sam3-v8-physical-m0056-baseline-overview.mp4) · [头部](/media/sam3-v8-physical-m0056-baseline-head.mp4) · [初始图](/media/sam3-v8-physical-m0056-baseline-initial.png) | 闭合后未形成双指夹持，初始规划29.81秒 · [第三人称](/media/sam3-v8-physical-m0056-optimized-overview.mp4) · [头部](/media/sam3-v8-physical-m0056-optimized-head.mp4) · [初始图](/media/sam3-v8-physical-m0056-optimized-initial.png) |
+| M0064 · 芒果 | 成功，初始规划9.01秒 · [第三人称](/media/sam3-v8-physical-m0064-baseline-overview.mp4) · [头部](/media/sam3-v8-physical-m0064-baseline-head.mp4) · [初始图](/media/sam3-v8-physical-m0064-baseline-initial.png) | 成功，初始规划6.85秒 · [第三人称](/media/sam3-v8-physical-m0064-optimized-overview.mp4) · [头部](/media/sam3-v8-physical-m0064-optimized-head.mp4) · [初始图](/media/sam3-v8-physical-m0064-optimized-initial.png) |
+
+### 原成功、新失败的同步对比视频
+
+左侧为现用链路，右侧为优化组合。视频标有实际结果和初始规划耗时，较短的一侧结束后停留在最后一帧。
+
+[甜甜圈（M0020）· 同步对比](/media/sam3-v8-physical-m0020-comparison.mp4)
+
+[剪刀（M0074）· 同步对比](/media/sam3-v8-physical-m0074-comparison.mp4)
+
+### 抓法变化与实际抓取
+
+| 场景 | 原候选 → 新候选 | 抓点位置变化 | 抓点朝向变化 | 当前链路 → 优化组合 |
+| --- | ---: | ---: | ---: | --- |
+| M0020 · 甜甜圈 | 375 → 380 | 12.25毫米 | 14.89° | 成功 → 接近动作未到位 |
+| M0034 · 剪刀 | 128 → 145 | 30.00毫米 | 0.00° | 闭合后未形成双指夹持 → 抬升或保持不足 |
+| M0074 · 剪刀 | 166 → 869 | 10.00毫米 | 40.00° | 成功 → 闭合后未形成双指夹持 |
+| M0084 · 香蕉 | 110 → 308 | 56.27毫米 | 148.94° | 成功 → 成功 |
+| M0085 · 香皂 | 261 → 300 | 15.16毫米 | 7.45° | 成功 → 成功 |
+| M0099 · 黄瓜 | 10 → 13 | 70.74毫米 | 12.11° | 成功 → 成功 |
+| M0001 · 苹果 | 1 → 1 | 0.00毫米 | 0.00° | 成功 → 成功 |
+| M0044 · 香蕉 | 0 → 0 | 0.00毫米 | 0.00° | 成功 → 成功 |
+| M0056 · 手机 | 340 → 340 | 0.00毫米 | 0.00° | 闭合后未形成双指夹持 → 闭合后未形成双指夹持 |
+| M0064 · 芒果 | 13 → 13 | 0.00毫米 | 0.00° | 成功 → 成功 |
+
+抓法和选臂未变的4个场景，两组均成功3/4，逐例结果一致。换了抓法的6个场景，成功从5/6降至3/6。
+
+### 两例退步发生在哪里
+
+**甜甜圈 M0020：接近时推偏物体，未通过到位检查。** 抓法由原候选375换成380，位置相差12.25毫米、朝向相差14.89°。接近期间物体最大移动量由0.84增至10.32毫米。优化组接近结束的最大关节误差为0.007430弧度，超过原有0.005弧度门槛；因此在闭合之前结束。当前链路则完成了闭合、抬升和保持。
+
+**杂乱剪刀 M0074：到位后闭合，没有形成双指夹持。** 抓法由原候选166换成869，位置相差10.00毫米、朝向相差40.00°。优化组接近末端位置误差约0.000377毫米，到位检查通过；随后闭合未形成双指夹持，未进入抬升。当前链路成功带起并保持。
+
+| 退步场景 | 旧成功候选仍在池中 | NMS后的所在区域 | 旧成功候选的新优先名次（从0计） | 实际先选中的新候选 |
+| --- | --- | --- | ---: | ---: |
+| M0020 | 是 | 后备区 | 760 | 380 |
+| M0074 | 是 | 后备区 | 909 | 869 |
+
+NMS保留全部后备，保证了候选仍可被查询；先接受新代表后，搜索就结束了，旧成功抓法没有获得实际执行机会。两例都保持了原夹爪进入开度：单指0.044米、总宽0.088米。
+
+本轮证据指向候选重排带来的抓法变化。四个抓法未变的对照逐例一致；B16、配置写出和网格排列也一同改变了，单靠这一轮还不能分别计算各项对物理结果的影响。
+
+### 任务、记录与事件覆盖
+
+| 核验项目 | 本轮结果 |
+| --- | --- |
+| 任务结果 | 20/20完成；中断0，未开始0。两组规划均10/10，实际成功8/10与6/10。 |
+| 记录完整性 | 20条领取与结果、20次初始状态恢复、命令与回执逐项核对；40段原视频解码通过。 |
+| 事件适用性 | 按实际轨迹与阶段报告核对已发生的动作。1例在接近结束，4例在闭合结束；后续未执行的阶段单列。 |
+| 关键事件覆盖 | 初始规划20次，接近重规划20次；抬升重规划15次。逐阶段执行数量见下表。 |
+
+| 实际执行阶段 | 当前链路 | 优化组合 |
+| --- | ---: | ---: |
+| 张开 | 10 | 10 |
+| 到预抓取位 | 10 | 10 |
+| 接近 | 10 | 10 |
+| 闭合 | 10 | 9 |
+| 抬升 | 8 | 7 |
+| 保持 | 8 | 7 |
+
+### 下一步建议
+
+保留当前默认链路。下一轮优先保持原始评分顺序，只叠加B16、C版YAML与新网格排列，将提速和候选重排分开验证；先检查本轮两例退步，再决定更大范围测试。NMS代表优先的抓取质量另设对照。
+
+[实施设置与结果](/media/sam3-v8-physical-pilot.md) · [统计与核验数据](/media/sam3-v8-physical-pilot.json)
+
+## 已完成：网格查询定位与线程排列优化
 
 线程排列优化：138/138次，独立核验完成。
 

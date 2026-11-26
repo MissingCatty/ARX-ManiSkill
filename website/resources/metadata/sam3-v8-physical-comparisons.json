@@ -1,0 +1,46 @@
+{
+  "sam3-v8-physical-m0020-comparison.mp4": {
+    "source": {
+      "source_sha256": [
+        "d9cb8a917d134e1e1b9a6d48c87f1226a69ac444174c2c3e2ab557d418d839ca",
+        "476d889b9457da84a3439cb4814a8a939d445cb7d5090a338f897f6659246f0c"
+      ],
+      "results": [
+        "success",
+        "approach_not_converged"
+      ],
+      "seconds": [
+        173.17393803100276,
+        29.38407003300381
+      ],
+      "settings": "640x480_per_panel_plus80_header_20fps_crf24_v1"
+    },
+    "sha256": "09ef46815659d49613832858c1ff3c47fa0c45504d97cceecae52daf09c75895",
+    "size": 373629,
+    "ends_are_padded_with_last_actual_frame": true,
+    "left": "baseline",
+    "right": "optimized"
+  },
+  "sam3-v8-physical-m0074-comparison.mp4": {
+    "source": {
+      "source_sha256": [
+        "c9c271251d981356c1b74f698f22bcd41fdd6e909ef2a32ee07ea6639bdd3481",
+        "70d539b8ea8d5abb810618b5f60fcec78dc2b3c34ce76f152f1d730260342147"
+      ],
+      "results": [
+        "success",
+        "no_bilateral_target_contact"
+      ],
+      "seconds": [
+        56.62003985600313,
+        40.304276641996694
+      ],
+      "settings": "640x480_per_panel_plus80_header_20fps_crf24_v1"
+    },
+    "sha256": "52d677f8ffef269b73c8c39ae8ce6c64c308aec29e0e62c7b701203564183fab",
+    "size": 408585,
+    "ends_are_padded_with_last_actual_frame": true,
+    "left": "baseline",
+    "right": "optimized"
+  }
+}

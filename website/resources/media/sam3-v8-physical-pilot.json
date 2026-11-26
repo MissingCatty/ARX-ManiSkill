@@ -1,0 +1,1810 @@
+{
+  "run": "tmp/indexed_grasp_planning/execution10_20261127_01",
+  "progress": {
+    "at": "2026-11-27T01:32:40.913792+08:00",
+    "phase": "complete",
+    "completed_requests": 20,
+    "total_requests": 20,
+    "current": null,
+    "groups": {
+      "baseline": {
+        "completed": 10,
+        "registered": 10,
+        "planning_passes": 10,
+        "physical_attempts": 10,
+        "successes": 8
+      },
+      "optimized": {
+        "completed": 10,
+        "registered": 10,
+        "planning_passes": 10,
+        "physical_attempts": 10,
+        "successes": 6
+      }
+    },
+    "results": [
+      {
+        "id": "M0020_S1_open_donut",
+        "variant": "baseline",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": 0.030694523826241493,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0020_S1_open_donut/baseline",
+        "timings": {
+          "restore_seconds": 0.26473060199350584,
+          "initial_planning_with_postprocessing_seconds": 173.17393803100276,
+          "trial_wall_seconds": 211.2494388060004,
+          "motion_and_replanning_seconds": 35.83893956900283
+        }
+      },
+      {
+        "id": "M0020_S1_open_donut",
+        "variant": "optimized",
+        "reason": "approach_not_converged",
+        "planning_success": true,
+        "success": false,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": null,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0020_S1_open_donut/optimized",
+        "timings": {
+          "restore_seconds": 0.26912280199758243,
+          "initial_planning_with_postprocessing_seconds": 29.38407003300381,
+          "trial_wall_seconds": 55.91039795399411,
+          "motion_and_replanning_seconds": 25.247264692996396
+        }
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "variant": "optimized",
+        "reason": "insufficient_hold_height",
+        "planning_success": true,
+        "success": false,
+        "physical_attempt": true,
+        "selected_arm": "left",
+        "minimum_hold_lift_m": 6.491318345069885e-07,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0034_S2_edge_scissors/optimized",
+        "timings": {
+          "restore_seconds": 0.9940582150011323,
+          "initial_planning_with_postprocessing_seconds": 26.39319876799709,
+          "trial_wall_seconds": 74.05571701699228,
+          "motion_and_replanning_seconds": 43.87976502299716
+        }
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "variant": "baseline",
+        "reason": "no_bilateral_target_contact",
+        "planning_success": true,
+        "success": false,
+        "physical_attempt": true,
+        "selected_arm": "left",
+        "minimum_hold_lift_m": null,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0034_S2_edge_scissors/baseline",
+        "timings": {
+          "restore_seconds": 0.3094748870062176,
+          "initial_planning_with_postprocessing_seconds": 78.5814617020078,
+          "trial_wall_seconds": 97.64370999600214,
+          "motion_and_replanning_seconds": 17.6662687479984
+        }
+      },
+      {
+        "id": "M0074_S4_clutter_scissors",
+        "variant": "baseline",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": 0.04207887104712427,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0074_S4_clutter_scissors/baseline",
+        "timings": {
+          "restore_seconds": 0.39137379299791064,
+          "initial_planning_with_postprocessing_seconds": 56.62003985600313,
+          "trial_wall_seconds": 103.11022508899623,
+          "motion_and_replanning_seconds": 43.83195996300492
+        }
+      },
+      {
+        "id": "M0074_S4_clutter_scissors",
+        "variant": "optimized",
+        "reason": "no_bilateral_target_contact",
+        "planning_success": true,
+        "success": false,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": null,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0074_S4_clutter_scissors/optimized",
+        "timings": {
+          "restore_seconds": 0.31879771199601237,
+          "initial_planning_with_postprocessing_seconds": 40.304276641996694,
+          "trial_wall_seconds": 60.06116353299876,
+          "motion_and_replanning_seconds": 18.42992924299324
+        }
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "variant": "optimized",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": 0.029867611825466156,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0084_S5_occluded_banana/optimized",
+        "timings": {
+          "restore_seconds": 0.45704445701267105,
+          "initial_planning_with_postprocessing_seconds": 21.217604101999314,
+          "trial_wall_seconds": 64.08437102699827,
+          "motion_and_replanning_seconds": 36.9395219279977
+        }
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "variant": "baseline",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": 0.028437793254852295,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0084_S5_occluded_banana/baseline",
+        "timings": {
+          "restore_seconds": 0.3339416499948129,
+          "initial_planning_with_postprocessing_seconds": 41.636741510010324,
+          "trial_wall_seconds": 82.69685197599756,
+          "motion_and_replanning_seconds": 39.772078587004216
+        }
+      },
+      {
+        "id": "M0085_S5_occluded_bar_soap",
+        "variant": "baseline",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": 0.029964035376906395,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0085_S5_occluded_bar_soap/baseline",
+        "timings": {
+          "restore_seconds": 0.2819915720028803,
+          "initial_planning_with_postprocessing_seconds": 111.73548159800703,
+          "trial_wall_seconds": 154.15850979198876,
+          "motion_and_replanning_seconds": 40.22362448499189
+        }
+      },
+      {
+        "id": "M0085_S5_occluded_bar_soap",
+        "variant": "optimized",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": 0.030484700575470924,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0085_S5_occluded_bar_soap/optimized",
+        "timings": {
+          "restore_seconds": 0.2819342970033176,
+          "initial_planning_with_postprocessing_seconds": 14.331213312005275,
+          "trial_wall_seconds": 54.02395799801161,
+          "motion_and_replanning_seconds": 38.39540646300884
+        }
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "variant": "optimized",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": 0.02993021532893181,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0099_S5_occluded_cucumber/optimized",
+        "timings": {
+          "restore_seconds": 0.3792510769999353,
+          "initial_planning_with_postprocessing_seconds": 6.124454631994013,
+          "trial_wall_seconds": 40.10190513000998,
+          "motion_and_replanning_seconds": 31.70475867901405
+        }
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "variant": "baseline",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": 0.02992899715900421,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0099_S5_occluded_cucumber/baseline",
+        "timings": {
+          "restore_seconds": 0.3231114430091111,
+          "initial_planning_with_postprocessing_seconds": 12.463641836002353,
+          "trial_wall_seconds": 45.11946590599837,
+          "motion_and_replanning_seconds": 31.311248753991094
+        }
+      },
+      {
+        "id": "M0001_S1_open_apple",
+        "variant": "baseline",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": 0.029894083738327026,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0001_S1_open_apple/baseline",
+        "timings": {
+          "restore_seconds": 0.27649881500110496,
+          "initial_planning_with_postprocessing_seconds": 5.713587557998835,
+          "trial_wall_seconds": 45.33800169099413,
+          "motion_and_replanning_seconds": 38.36010071200144
+        }
+      },
+      {
+        "id": "M0001_S1_open_apple",
+        "variant": "optimized",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": 0.030132457613945007,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0001_S1_open_apple/optimized",
+        "timings": {
+          "restore_seconds": 0.27535972199984826,
+          "initial_planning_with_postprocessing_seconds": 5.022333663990139,
+          "trial_wall_seconds": 47.293608062987914,
+          "motion_and_replanning_seconds": 41.082545714991284
+        }
+      },
+      {
+        "id": "M0044_S3_sparse_banana",
+        "variant": "optimized",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "left",
+        "minimum_hold_lift_m": 0.02875356934964657,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0044_S3_sparse_banana/optimized",
+        "timings": {
+          "restore_seconds": 0.4325138599961065,
+          "initial_planning_with_postprocessing_seconds": 6.0845272290025605,
+          "trial_wall_seconds": 50.144999876996735,
+          "motion_and_replanning_seconds": 40.89928460300143
+        }
+      },
+      {
+        "id": "M0044_S3_sparse_banana",
+        "variant": "baseline",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "left",
+        "minimum_hold_lift_m": 0.026313530281186104,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0044_S3_sparse_banana/baseline",
+        "timings": {
+          "restore_seconds": 0.33039835600357037,
+          "initial_planning_with_postprocessing_seconds": 7.29478563000157,
+          "trial_wall_seconds": 45.40122341401002,
+          "motion_and_replanning_seconds": 36.83433009800501
+        }
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "variant": "baseline",
+        "reason": "no_bilateral_target_contact",
+        "planning_success": true,
+        "success": false,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": null,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0056_S3_sparse_cell_phone/baseline",
+        "timings": {
+          "restore_seconds": 0.4013446489989292,
+          "initial_planning_with_postprocessing_seconds": 117.0759770529985,
+          "trial_wall_seconds": 135.85232453999924,
+          "motion_and_replanning_seconds": 16.303951417008648
+        }
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "variant": "optimized",
+        "reason": "no_bilateral_target_contact",
+        "planning_success": true,
+        "success": false,
+        "physical_attempt": true,
+        "selected_arm": "right",
+        "minimum_hold_lift_m": null,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0056_S3_sparse_cell_phone/optimized",
+        "timings": {
+          "restore_seconds": 0.2993189889966743,
+          "initial_planning_with_postprocessing_seconds": 29.81053131900262,
+          "trial_wall_seconds": 48.694262060991605,
+          "motion_and_replanning_seconds": 17.599188780994155
+        }
+      },
+      {
+        "id": "M0064_S4_clutter_mango",
+        "variant": "optimized",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "left",
+        "minimum_hold_lift_m": 0.028080398216843605,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0064_S4_clutter_mango/optimized",
+        "timings": {
+          "restore_seconds": 0.35116824800206814,
+          "initial_planning_with_postprocessing_seconds": 6.852750131001812,
+          "trial_wall_seconds": 54.56478611700004,
+          "motion_and_replanning_seconds": 42.76264062600967
+        }
+      },
+      {
+        "id": "M0064_S4_clutter_mango",
+        "variant": "baseline",
+        "reason": "success",
+        "planning_success": true,
+        "success": true,
+        "physical_attempt": true,
+        "selected_arm": "left",
+        "minimum_hold_lift_m": 0.026535408571362495,
+        "directory": "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0064_S4_clutter_mango/baseline",
+        "timings": {
+          "restore_seconds": 0.34601598500739783,
+          "initial_planning_with_postprocessing_seconds": 9.00896300599561,
+          "trial_wall_seconds": 52.78864441999758,
+          "motion_and_replanning_seconds": 42.43209212599322
+        }
+      }
+    ]
+  },
+  "acceptance": {
+    "at": "2026-11-27T01:32:40.897633+08:00",
+    "passed": true,
+    "task_complete": true,
+    "record_integrity": true,
+    "completed_slots": 20,
+    "physical_attempts": 20,
+    "groups": {
+      "baseline": {
+        "registered": 10,
+        "completed": 10,
+        "planning_passes": 10,
+        "physical_attempts": 10,
+        "successes": 8,
+        "failure_reasons": {
+          "no_bilateral_target_contact": 2
+        },
+        "planning_total_seconds": 613.3046177800279,
+        "planning_median_seconds": 49.12839068300673,
+        "planning_p90_seconds": 122.68577315079891
+      },
+      "optimized": {
+        "registered": 10,
+        "completed": 10,
+        "planning_passes": 10,
+        "physical_attempts": 10,
+        "successes": 6,
+        "failure_reasons": {
+          "approach_not_converged": 1,
+          "insufficient_hold_height": 1,
+          "no_bilateral_target_contact": 2
+        },
+        "planning_total_seconds": 185.52495983199333,
+        "planning_median_seconds": 17.774408707002294,
+        "planning_p90_seconds": 30.859905851302024
+      }
+    },
+    "baseline_success_losses": [
+      "M0020_S1_open_donut",
+      "M0074_S4_clutter_scissors"
+    ],
+    "optimized_success_gains": [],
+    "planning_total_time_reduction": 0.6974994897257809,
+    "timing_gates": {
+      "total_reduced_5pct": true,
+      "median_reduced": true,
+      "p90_not_more_than_5pct_higher": true
+    },
+    "optimization_accepted": false,
+    "decoded_videos": [
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0020_S1_open_donut/baseline/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0020_S1_open_donut/baseline/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0020_S1_open_donut/optimized/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0020_S1_open_donut/optimized/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0034_S2_edge_scissors/optimized/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0034_S2_edge_scissors/optimized/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0034_S2_edge_scissors/baseline/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0034_S2_edge_scissors/baseline/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0074_S4_clutter_scissors/baseline/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0074_S4_clutter_scissors/baseline/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0074_S4_clutter_scissors/optimized/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0074_S4_clutter_scissors/optimized/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0084_S5_occluded_banana/optimized/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0084_S5_occluded_banana/optimized/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0084_S5_occluded_banana/baseline/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0084_S5_occluded_banana/baseline/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0085_S5_occluded_bar_soap/baseline/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0085_S5_occluded_bar_soap/baseline/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0085_S5_occluded_bar_soap/optimized/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0085_S5_occluded_bar_soap/optimized/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0099_S5_occluded_cucumber/optimized/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0099_S5_occluded_cucumber/optimized/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0099_S5_occluded_cucumber/baseline/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0099_S5_occluded_cucumber/baseline/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0001_S1_open_apple/baseline/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0001_S1_open_apple/baseline/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0001_S1_open_apple/optimized/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0001_S1_open_apple/optimized/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0044_S3_sparse_banana/optimized/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0044_S3_sparse_banana/optimized/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0044_S3_sparse_banana/baseline/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0044_S3_sparse_banana/baseline/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0056_S3_sparse_cell_phone/baseline/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0056_S3_sparse_cell_phone/baseline/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0056_S3_sparse_cell_phone/optimized/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0056_S3_sparse_cell_phone/optimized/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0064_S4_clutter_mango/optimized/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0064_S4_clutter_mango/optimized/head.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0064_S4_clutter_mango/baseline/execution.mp4",
+      "tmp/indexed_grasp_planning/execution10_20261127_01/trials/M0064_S4_clutter_mango/baseline/head.mp4"
+    ],
+    "event_applicability": "executed stages checked against measured state and planner receipts",
+    "key_event_coverage": {
+      "initial_plans": 20,
+      "actual_executions": 20,
+      "videos": 40,
+      "fresh_state_restores": 20
+    },
+    "automatic_default_activation": false
+  },
+  "analysis": {
+    "at": "2026-11-27T01:43:15.473732+08:00",
+    "acceptance_sha256": "4975662fafa82850603645b90a63cedfd6e89ab191fdf5579d5f3c53fe938ae6",
+    "pairs": [
+      {
+        "id": "M0020_S1_open_donut",
+        "label": "甜甜圈",
+        "baseline": {
+          "source_index": 375,
+          "search_priority_rank": 375,
+          "score": 0.4797639846801758,
+          "arm": "right",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.862645149230957e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399985820055008,
+                0.04399966076016426
+              ],
+              "finger_error_m": 3.390014171600342e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.384185791015625e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 1.4592240318752222e-06,
+              "tool_rotation_error_rad": 2.454552706211264e-06
+            },
+            "approach": {
+              "joint_error_rad": 0.004575133323669434,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 0.0010189248114363448,
+              "tool_rotation_error_rad": 0.004744187275316305
+            },
+            "close": {
+              "joint_error_rad": 0.004798263311386108,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.0013776040418648143,
+              "tool_rotation_error_rad": 0.0051707784990697395
+            },
+            "lift": {
+              "joint_error_rad": 0.0007579326629638672,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 0.0002455551821505755,
+              "tool_rotation_error_rad": 0.0007499669057129627
+            },
+            "hold": {
+              "joint_error_rad": 0.0007578432559967041,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.0002455615047903765,
+              "tool_rotation_error_rad": 0.0007499644344601923
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.030694523826241493,
+          "initial_planning_seconds": 173.17393803100276,
+          "object_motion": {
+            "approach": {
+              "maximum_mm": 0.8382375560821121,
+              "last_mm": 0.8381239426119006
+            },
+            "close": {
+              "maximum_mm": 4.811982918860583,
+              "last_mm": 4.577539640992613
+            }
+          }
+        },
+        "optimized": {
+          "source_index": 380,
+          "search_priority_rank": 227,
+          "score": 0.45931094884872437,
+          "arm": "right",
+          "success": false,
+          "reason": "approach_not_converged",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.862645149230957e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399985820055008,
+                0.04399966076016426
+              ],
+              "finger_error_m": 3.390014171600342e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.6226043701171875e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 1.0582613325464034e-06,
+              "tool_rotation_error_rad": 1.7707981143923914e-06
+            },
+            "approach": {
+              "joint_error_rad": 0.007429555058479309,
+              "settled": false,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 0.0015990969646047673,
+              "tool_rotation_error_rad": 0.007633369577710046
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": null,
+          "initial_planning_seconds": 29.38407003300381,
+          "object_motion": {
+            "approach": {
+              "maximum_mm": 10.324886891509708,
+              "last_mm": 8.236955788115063
+            },
+            "close": {
+              "maximum_mm": null,
+              "last_mm": null
+            }
+          }
+        },
+        "pose_difference": {
+          "translation_mm": 12.254787703943267,
+          "rotation_deg": 14.891734869436009
+        },
+        "same_grasp_and_arm": false,
+        "old_candidate_in_optimized_order": {
+          "retained": true,
+          "representative": false,
+          "deferred": true,
+          "priority_rank": 760
+        }
+      },
+      {
+        "id": "M0034_S2_edge_scissors",
+        "label": "剪刀",
+        "baseline": {
+          "source_index": 128,
+          "search_priority_rank": 128,
+          "score": 0.9223806858062744,
+          "arm": "left",
+          "success": false,
+          "reason": "no_bilateral_target_contact",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.4901161193847656e-07,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399964213371277,
+                0.04399965703487396
+              ],
+              "finger_error_m": 3.5762786865234375e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 6.9141387939453125e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 5.714354213149411e-07,
+              "tool_rotation_error_rad": 7.4355229812282996e-06
+            },
+            "approach": {
+              "joint_error_rad": 0.0015256404876708984,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 0.00043412244860056354,
+              "tool_rotation_error_rad": 0.00011246919312982102
+            },
+            "close": {
+              "joint_error_rad": 0.0015707612037658691,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.0004472119640961685,
+              "tool_rotation_error_rad": 0.0005876964353843788
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": null,
+          "initial_planning_seconds": 78.5814617020078
+        },
+        "optimized": {
+          "source_index": 145,
+          "search_priority_rank": 85,
+          "score": 0.9167653322219849,
+          "arm": "left",
+          "success": false,
+          "reason": "insufficient_hold_height",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.4901161193847656e-07,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399964213371277,
+                0.04399965703487396
+              ],
+              "finger_error_m": 3.5762786865234375e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 6.9141387939453125e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 6.364258557857219e-07,
+              "tool_rotation_error_rad": 6.7788658113507955e-06
+            },
+            "approach": {
+              "joint_error_rad": 0.0015447735786437988,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 0.0004331336988309161,
+              "tool_rotation_error_rad": 0.00014572042996885905
+            },
+            "close": {
+              "joint_error_rad": 0.001556396484375,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.0004442081387027272,
+              "tool_rotation_error_rad": 0.00013884023996899082
+            },
+            "lift": {
+              "joint_error_rad": 9.298324584960938e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 3.641625978793661e-05,
+              "tool_rotation_error_rad": 1.2347479561906134e-05
+            },
+            "hold": {
+              "joint_error_rad": 9.298324584960938e-06,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 3.64013942124707e-05,
+              "tool_rotation_error_rad": 1.2408564613438287e-05
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 6.491318345069885e-07,
+          "initial_planning_seconds": 26.39319876799709
+        },
+        "pose_difference": {
+          "translation_mm": 30.000020255651624,
+          "rotation_deg": 0.0023255966664945038
+        },
+        "same_grasp_and_arm": false,
+        "old_candidate_in_optimized_order": {
+          "retained": true,
+          "representative": false,
+          "deferred": true,
+          "priority_rank": 844
+        }
+      },
+      {
+        "id": "M0074_S4_clutter_scissors",
+        "label": "剪刀",
+        "baseline": {
+          "source_index": 166,
+          "search_priority_rank": 166,
+          "score": 0.9171509146690369,
+          "arm": "right",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6298145055770874e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.043999869376420975,
+                0.04399966076016426
+              ],
+              "finger_error_m": 3.390014171600342e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 1.6689300537109375e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 5.271626453448663e-06,
+              "tool_rotation_error_rad": 2.146661039311339e-06
+            },
+            "approach": {
+              "joint_error_rad": 3.337860107421875e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 1.6839505518393819e-06,
+              "tool_rotation_error_rad": 2.6238913515258017e-06
+            },
+            "close": {
+              "joint_error_rad": 0.00019630789756774902,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 1.927372323690275e-05,
+              "tool_rotation_error_rad": 0.00019983402746826166
+            },
+            "lift": {
+              "joint_error_rad": 2.777576446533203e-05,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 6.500820422565297e-06,
+              "tool_rotation_error_rad": 2.8685256242731e-05
+            },
+            "hold": {
+              "joint_error_rad": 2.777576446533203e-05,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 6.503128814392512e-06,
+              "tool_rotation_error_rad": 2.8839788099939773e-05
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.04207887104712427,
+          "initial_planning_seconds": 56.62003985600313,
+          "object_motion": {
+            "approach": {
+              "maximum_mm": 0.0,
+              "last_mm": 0.0
+            },
+            "close": {
+              "maximum_mm": 12.567117814626734,
+              "last_mm": 11.30685530087065
+            }
+          }
+        },
+        "optimized": {
+          "source_index": 869,
+          "search_priority_rank": 323,
+          "score": 0.541583240032196,
+          "arm": "right",
+          "success": false,
+          "reason": "no_bilateral_target_contact",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6298145055770874e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.043999869376420975,
+                0.04399966076016426
+              ],
+              "finger_error_m": 3.390014171600342e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 1.6689300537109375e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 4.583312288962087e-06,
+              "tool_rotation_error_rad": 2.374858853652417e-06
+            },
+            "approach": {
+              "joint_error_rad": 1.5497207641601562e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 3.769169121633462e-07,
+              "tool_rotation_error_rad": 1.192911508255624e-06
+            },
+            "close": {
+              "joint_error_rad": 2.86102294921875e-06,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 6.959273025862435e-07,
+              "tool_rotation_error_rad": 2.6177453819597105e-06
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": null,
+          "initial_planning_seconds": 40.304276641996694,
+          "object_motion": {
+            "approach": {
+              "maximum_mm": 0.0,
+              "last_mm": 0.0
+            },
+            "close": {
+              "maximum_mm": 0.0,
+              "last_mm": 0.0
+            }
+          }
+        },
+        "pose_difference": {
+          "translation_mm": 10.00000536441803,
+          "rotation_deg": 40.00000046651265
+        },
+        "same_grasp_and_arm": false,
+        "old_candidate_in_optimized_order": {
+          "retained": true,
+          "representative": false,
+          "deferred": true,
+          "priority_rank": 909
+        }
+      },
+      {
+        "id": "M0084_S5_occluded_banana",
+        "label": "香蕉",
+        "baseline": {
+          "source_index": 110,
+          "search_priority_rank": 110,
+          "score": 0.9003587365150452,
+          "arm": "right",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6298145055770874e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399986192584038,
+                0.04399966076016426
+              ],
+              "finger_error_m": 3.390014171600342e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 3.337860107421875e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 2.831450919813164e-06,
+              "tool_rotation_error_rad": 2.911637041137251e-07
+            },
+            "approach": {
+              "joint_error_rad": 0.003231056034564972,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 0.0012004132222028223,
+              "tool_rotation_error_rad": 0.004183742875253249
+            },
+            "close": {
+              "joint_error_rad": 0.004659675061702728,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.000936537296708873,
+              "tool_rotation_error_rad": 0.005477960013616099
+            },
+            "lift": {
+              "joint_error_rad": 0.00048226118087768555,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 2.3919918428122937e-05,
+              "tool_rotation_error_rad": 0.000488890687630107
+            },
+            "hold": {
+              "joint_error_rad": 0.0004801750183105469,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 2.395782772044412e-05,
+              "tool_rotation_error_rad": 0.0004872042231589284
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.028437793254852295,
+          "initial_planning_seconds": 41.636741510010324
+        },
+        "optimized": {
+          "source_index": 308,
+          "search_priority_rank": 139,
+          "score": 0.8434337973594666,
+          "arm": "right",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6298145055770874e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399986192584038,
+                0.04399966076016426
+              ],
+              "finger_error_m": 3.390014171600342e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.6226043701171875e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 1.1544811937156643e-06,
+              "tool_rotation_error_rad": 2.5581415209529925e-06
+            },
+            "approach": {
+              "joint_error_rad": 1.6689300537109375e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 8.218311246755212e-07,
+              "tool_rotation_error_rad": 7.289003978727953e-07
+            },
+            "close": {
+              "joint_error_rad": 0.0008996725082397461,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 6.0330176965987925e-05,
+              "tool_rotation_error_rad": 0.000902821528527715
+            },
+            "lift": {
+              "joint_error_rad": 0.0008301734924316406,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 2.1126868392196334e-05,
+              "tool_rotation_error_rad": 0.0008351056019625948
+            },
+            "hold": {
+              "joint_error_rad": 0.0008312463760375977,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 2.1126868392196334e-05,
+              "tool_rotation_error_rad": 0.0008362791113363307
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.029867611825466156,
+          "initial_planning_seconds": 21.217604101999314
+        },
+        "pose_difference": {
+          "translation_mm": 56.27363295283459,
+          "rotation_deg": 148.94294045773975
+        },
+        "same_grasp_and_arm": false,
+        "old_candidate_in_optimized_order": {
+          "retained": true,
+          "representative": false,
+          "deferred": true,
+          "priority_rank": 1050
+        }
+      },
+      {
+        "id": "M0085_S5_occluded_bar_soap",
+        "label": "香皂",
+        "baseline": {
+          "source_index": 261,
+          "search_priority_rank": 261,
+          "score": 0.7312857508659363,
+          "arm": "right",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.979060471057892e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399985820055008,
+                0.04399965703487396
+              ],
+              "finger_error_m": 3.427267074584961e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.6226043701171875e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 1.050589068274789e-06,
+              "tool_rotation_error_rad": 2.097240942809503e-06
+            },
+            "approach": {
+              "joint_error_rad": 1.6689300537109375e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 5.752374177044397e-07,
+              "tool_rotation_error_rad": 1.7611725040185131e-06
+            },
+            "close": {
+              "joint_error_rad": 0.0011856555938720703,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 3.9124065512077236e-05,
+              "tool_rotation_error_rad": 0.001188096351769591
+            },
+            "lift": {
+              "joint_error_rad": 0.001170039176940918,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 3.135611992985697e-05,
+              "tool_rotation_error_rad": 0.0011785739325887604
+            },
+            "hold": {
+              "joint_error_rad": 0.0011699199676513672,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 3.13511463175422e-05,
+              "tool_rotation_error_rad": 0.0011785471669858488
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.029964035376906395,
+          "initial_planning_seconds": 111.73548159800703
+        },
+        "optimized": {
+          "source_index": 300,
+          "search_priority_rank": 112,
+          "score": 0.6762389540672302,
+          "arm": "right",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.979060471057892e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399985820055008,
+                0.04399965703487396
+              ],
+              "finger_error_m": 3.427267074584961e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.384185791015625e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 1.2607155938283156e-06,
+              "tool_rotation_error_rad": 1.772666928500215e-06
+            },
+            "approach": {
+              "joint_error_rad": 1.6689300537109375e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 7.094517803682684e-07,
+              "tool_rotation_error_rad": 5.095552582344575e-07
+            },
+            "close": {
+              "joint_error_rad": 0.0011861324310302734,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 5.139661973163611e-05,
+              "tool_rotation_error_rad": 0.0011935030156256042
+            },
+            "lift": {
+              "joint_error_rad": 0.0011821985244750977,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 3.0271918271793486e-05,
+              "tool_rotation_error_rad": 0.001199713410675826
+            },
+            "hold": {
+              "joint_error_rad": 0.0011823177337646484,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 3.0269151639041877e-05,
+              "tool_rotation_error_rad": 0.0011998200538459597
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.030484700575470924,
+          "initial_planning_seconds": 14.331213312005275
+        },
+        "pose_difference": {
+          "translation_mm": 15.162965331606442,
+          "rotation_deg": 7.454944137835727
+        },
+        "same_grasp_and_arm": false,
+        "old_candidate_in_optimized_order": {
+          "retained": true,
+          "representative": false,
+          "deferred": true,
+          "priority_rank": 658
+        }
+      },
+      {
+        "id": "M0099_S5_occluded_cucumber",
+        "label": "黄瓜",
+        "baseline": {
+          "source_index": 10,
+          "search_priority_rank": 10,
+          "score": 0.8893799781799316,
+          "arm": "right",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6298145055770874e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399985074996948,
+                0.04399965703487396
+              ],
+              "finger_error_m": 3.427267074584961e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.384185791015625e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 1.4965016221319956e-06,
+              "tool_rotation_error_rad": 2.214621531113363e-06
+            },
+            "approach": {
+              "joint_error_rad": 2.1457672119140625e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 1.1223178811608958e-06,
+              "tool_rotation_error_rad": 2.2042787676806625e-06
+            },
+            "close": {
+              "joint_error_rad": 0.0011702775955200195,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.00028035059909555855,
+              "tool_rotation_error_rad": 0.0016864218275100796
+            },
+            "lift": {
+              "joint_error_rad": 0.0010682344436645508,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 4.336994065910889e-05,
+              "tool_rotation_error_rad": 0.0010758346505539125
+            },
+            "hold": {
+              "joint_error_rad": 0.0010685920715332031,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 4.336147150296972e-05,
+              "tool_rotation_error_rad": 0.001076144777262289
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.02992899715900421,
+          "initial_planning_seconds": 12.463641836002353
+        },
+        "optimized": {
+          "source_index": 13,
+          "search_priority_rank": 10,
+          "score": 0.8875038027763367,
+          "arm": "right",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6298145055770874e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399985074996948,
+                0.04399965703487396
+              ],
+              "finger_error_m": 3.427267074584961e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.6226043701171875e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 1.0590272794056141e-06,
+              "tool_rotation_error_rad": 1.8462530564230269e-06
+            },
+            "approach": {
+              "joint_error_rad": 2.6226043701171875e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 1.1129531555110628e-06,
+              "tool_rotation_error_rad": 2.1202667900633177e-06
+            },
+            "close": {
+              "joint_error_rad": 0.0007929801940917969,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 4.910658350443244e-05,
+              "tool_rotation_error_rad": 0.0007974233904583174
+            },
+            "lift": {
+              "joint_error_rad": 0.0008662939071655273,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 3.31891386006568e-05,
+              "tool_rotation_error_rad": 0.0008854145921478924
+            },
+            "hold": {
+              "joint_error_rad": 0.0008662939071655273,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 3.323618228149996e-05,
+              "tool_rotation_error_rad": 0.0008854166815142185
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.02993021532893181,
+          "initial_planning_seconds": 6.124454631994013
+        },
+        "pose_difference": {
+          "translation_mm": 70.74429121714675,
+          "rotation_deg": 12.106107059086186
+        },
+        "same_grasp_and_arm": false,
+        "old_candidate_in_optimized_order": {
+          "retained": true,
+          "representative": false,
+          "deferred": true,
+          "priority_rank": 932
+        }
+      },
+      {
+        "id": "M0001_S1_open_apple",
+        "label": "苹果",
+        "baseline": {
+          "source_index": 1,
+          "search_priority_rank": 1,
+          "score": 0.7182736992835999,
+          "arm": "right",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.862645149230957e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.043999895453453064,
+                0.04399965703487396
+              ],
+              "finger_error_m": 3.427267074584961e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.384185791015625e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 1.1998200320009662e-06,
+              "tool_rotation_error_rad": 1.961968212113078e-06
+            },
+            "approach": {
+              "joint_error_rad": 2.384185791015625e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 7.976520741555096e-07,
+              "tool_rotation_error_rad": 1.2754219748119012e-06
+            },
+            "close": {
+              "joint_error_rad": 0.0012293457984924316,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.0001014291976568317,
+              "tool_rotation_error_rad": 0.0012993013075392845
+            },
+            "lift": {
+              "joint_error_rad": 0.0012148618698120117,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 4.4358564157801656e-05,
+              "tool_rotation_error_rad": 0.0012162559638440845
+            },
+            "hold": {
+              "joint_error_rad": 0.0012148618698120117,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 4.4358564157801656e-05,
+              "tool_rotation_error_rad": 0.0012162559638440845
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.029894083738327026,
+          "initial_planning_seconds": 5.713587557998835
+        },
+        "optimized": {
+          "source_index": 1,
+          "search_priority_rank": 1,
+          "score": 0.7182736992835999,
+          "arm": "right",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.862645149230957e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.043999895453453064,
+                0.04399965703487396
+              ],
+              "finger_error_m": 3.427267074584961e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.384185791015625e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 1.1229029432945293e-06,
+              "tool_rotation_error_rad": 2.0773669856559336e-06
+            },
+            "approach": {
+              "joint_error_rad": 2.384185791015625e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 8.072813238927589e-07,
+              "tool_rotation_error_rad": 1.425226659815041e-06
+            },
+            "close": {
+              "joint_error_rad": 0.0011754631996154785,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.00014957813466988913,
+              "tool_rotation_error_rad": 0.0013197493643151061
+            },
+            "lift": {
+              "joint_error_rad": 0.0011968016624450684,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 4.428597281461051e-05,
+              "tool_rotation_error_rad": 0.001198292782224477
+            },
+            "hold": {
+              "joint_error_rad": 0.0011968612670898438,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 4.426887298074241e-05,
+              "tool_rotation_error_rad": 0.001198291442908904
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.030132457613945007,
+          "initial_planning_seconds": 5.022333663990139
+        },
+        "pose_difference": {
+          "translation_mm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "same_grasp_and_arm": true,
+        "old_candidate_in_optimized_order": {
+          "retained": true,
+          "representative": true,
+          "deferred": false,
+          "priority_rank": 1
+        }
+      },
+      {
+        "id": "M0044_S3_sparse_banana",
+        "label": "香蕉",
+        "baseline": {
+          "source_index": 0,
+          "search_priority_rank": 0,
+          "score": 0.9697191715240479,
+          "arm": "left",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6391277313232422e-07,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399965703487396,
+                0.04399966076016426
+              ],
+              "finger_error_m": 3.427267074584961e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 7.62939453125e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 5.135430487056828e-07,
+              "tool_rotation_error_rad": 7.1789604093054884e-06
+            },
+            "approach": {
+              "joint_error_rad": 4.76837158203125e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 2.2182023910741498e-06,
+              "tool_rotation_error_rad": 1.8588665018774842e-06
+            },
+            "close": {
+              "joint_error_rad": 0.0021219253540039062,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.00014284779715825085,
+              "tool_rotation_error_rad": 0.002221745001495661
+            },
+            "lift": {
+              "joint_error_rad": 0.0018677711486816406,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 5.892251761050823e-05,
+              "tool_rotation_error_rad": 0.0019071430451440207
+            },
+            "hold": {
+              "joint_error_rad": 0.0018677711486816406,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 5.8926864827651046e-05,
+              "tool_rotation_error_rad": 0.0019071452866449908
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.026313530281186104,
+          "initial_planning_seconds": 7.29478563000157
+        },
+        "optimized": {
+          "source_index": 0,
+          "search_priority_rank": 0,
+          "score": 0.9697191715240479,
+          "arm": "left",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6391277313232422e-07,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399965703487396,
+                0.04399966076016426
+              ],
+              "finger_error_m": 3.427267074584961e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 7.3909759521484375e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 7.567088422169613e-07,
+              "tool_rotation_error_rad": 6.7560371080560275e-06
+            },
+            "approach": {
+              "joint_error_rad": 4.76837158203125e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 2.2182023910741498e-06,
+              "tool_rotation_error_rad": 1.8383152115459873e-06
+            },
+            "close": {
+              "joint_error_rad": 0.0020791292190551758,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.00023556630041147037,
+              "tool_rotation_error_rad": 0.00236854747288045
+            },
+            "lift": {
+              "joint_error_rad": 0.0019223690032958984,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 4.643928033150323e-05,
+              "tool_rotation_error_rad": 0.0019486532774585844
+            },
+            "hold": {
+              "joint_error_rad": 0.0019249916076660156,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 4.6924766759512884e-05,
+              "tool_rotation_error_rad": 0.0019518291305804366
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.02875356934964657,
+          "initial_planning_seconds": 6.0845272290025605
+        },
+        "pose_difference": {
+          "translation_mm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "same_grasp_and_arm": true,
+        "old_candidate_in_optimized_order": {
+          "retained": true,
+          "representative": true,
+          "deferred": false,
+          "priority_rank": 0
+        }
+      },
+      {
+        "id": "M0056_S3_sparse_cell_phone",
+        "label": "手机",
+        "baseline": {
+          "source_index": 340,
+          "search_priority_rank": 340,
+          "score": 0.2894020676612854,
+          "arm": "right",
+          "success": false,
+          "reason": "no_bilateral_target_contact",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6298145055770874e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399987682700157,
+                0.04399966076016426
+              ],
+              "finger_error_m": 3.390014171600342e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.384185791015625e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 2.4918626209610162e-06,
+              "tool_rotation_error_rad": 4.6417818082457173e-07
+            },
+            "approach": {
+              "joint_error_rad": 1.6689300537109375e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 2.7444443961955624e-07,
+              "tool_rotation_error_rad": 1.4132880057200209e-06
+            },
+            "close": {
+              "joint_error_rad": 2.1457672119140625e-06,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 8.951133854809183e-07,
+              "tool_rotation_error_rad": 2.2419107319231013e-06
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": null,
+          "initial_planning_seconds": 117.0759770529985
+        },
+        "optimized": {
+          "source_index": 340,
+          "search_priority_rank": 167,
+          "score": 0.2894020676612854,
+          "arm": "right",
+          "success": false,
+          "reason": "no_bilateral_target_contact",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6298145055770874e-09,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399987682700157,
+                0.04399966076016426
+              ],
+              "finger_error_m": 3.390014171600342e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 2.384185791015625e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 2.5371334407285025e-06,
+              "tool_rotation_error_rad": 6.941052621894799e-07
+            },
+            "approach": {
+              "joint_error_rad": 1.6689300537109375e-06,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 2.3114097947389878e-07,
+              "tool_rotation_error_rad": 1.2125234254401956e-06
+            },
+            "close": {
+              "joint_error_rad": 2.1457672119140625e-06,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 8.91353534557257e-07,
+              "tool_rotation_error_rad": 1.9033569727276748e-06
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": null,
+          "initial_planning_seconds": 29.81053131900262
+        },
+        "pose_difference": {
+          "translation_mm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "same_grasp_and_arm": true,
+        "old_candidate_in_optimized_order": {
+          "retained": true,
+          "representative": true,
+          "deferred": false,
+          "priority_rank": 167
+        }
+      },
+      {
+        "id": "M0064_S4_clutter_mango",
+        "label": "芒果",
+        "baseline": {
+          "source_index": 13,
+          "search_priority_rank": 13,
+          "score": 0.7527029514312744,
+          "arm": "left",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6391277313232422e-07,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399966821074486,
+                0.043999671936035156
+              ],
+              "finger_error_m": 3.3155083656311035e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 8.106231689453125e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 9.474800904221644e-07,
+              "tool_rotation_error_rad": 8.117940156972463e-06
+            },
+            "approach": {
+              "joint_error_rad": 0.0009999871253967285,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 0.0003609915988450892,
+              "tool_rotation_error_rad": 0.0014991982443383282
+            },
+            "close": {
+              "joint_error_rad": 0.0027202963829040527,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.000570188313600723,
+              "tool_rotation_error_rad": 0.0035528239195690885
+            },
+            "lift": {
+              "joint_error_rad": 0.0028179287910461426,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 0.00012837164763068504,
+              "tool_rotation_error_rad": 0.002737892633741531
+            },
+            "hold": {
+              "joint_error_rad": 0.002817094326019287,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.0001310998245531982,
+              "tool_rotation_error_rad": 0.002736630053116921
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.026535408571362495,
+          "initial_planning_seconds": 9.00896300599561
+        },
+        "optimized": {
+          "source_index": 13,
+          "search_priority_rank": 11,
+          "score": 0.7527029514312744,
+          "arm": "left",
+          "success": true,
+          "reason": "success",
+          "stages": {
+            "open": {
+              "joint_error_rad": 1.6391277313232422e-07,
+              "settled": true,
+              "planned_seconds": 2.0,
+              "finger_positions_m": [
+                0.04399966821074486,
+                0.043999671936035156
+              ],
+              "finger_error_m": 3.3155083656311035e-07,
+              "finger_opening_passed": true
+            },
+            "pregrasp": {
+              "joint_error_rad": 7.867813110351562e-06,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 9.571238433272502e-07,
+              "tool_rotation_error_rad": 7.914936637057923e-06
+            },
+            "approach": {
+              "joint_error_rad": 0.0009838342666625977,
+              "settled": true,
+              "planned_seconds": 5.0,
+              "tool_position_error_m": 0.0003552365618975778,
+              "tool_rotation_error_rad": 0.001475792095553704
+            },
+            "close": {
+              "joint_error_rad": 0.0031245946884155273,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.0005805433517849597,
+              "tool_rotation_error_rad": 0.0043214861347121
+            },
+            "lift": {
+              "joint_error_rad": 0.002800583839416504,
+              "settled": true,
+              "planned_seconds": 6.0,
+              "tool_position_error_m": 0.00014418857389780236,
+              "tool_rotation_error_rad": 0.0027075758375603503
+            },
+            "hold": {
+              "joint_error_rad": 0.002804398536682129,
+              "settled": true,
+              "planned_seconds": 3.0,
+              "tool_position_error_m": 0.00013729932829883429,
+              "tool_rotation_error_rad": 0.002713349226519315
+            }
+          },
+          "open_finger_m": 0.044,
+          "minimum_hold_lift_m": 0.028080398216843605,
+          "initial_planning_seconds": 6.852750131001812
+        },
+        "pose_difference": {
+          "translation_mm": 0.0,
+          "rotation_deg": 0.0
+        },
+        "same_grasp_and_arm": true,
+        "old_candidate_in_optimized_order": {
+          "retained": true,
+          "representative": true,
+          "deferred": false,
+          "priority_rank": 11
+        }
+      }
+    ],
+    "strata": {
+      "same_grasp": {
+        "pairs": 4,
+        "baseline_successes": 3,
+        "optimized_successes": 3
+      },
+      "changed_grasp": {
+        "pairs": 6,
+        "baseline_successes": 5,
+        "optimized_successes": 3
+      }
+    },
+    "measured_stage_coverage": {
+      "baseline": {
+        "hold": 8,
+        "close": 10,
+        "pregrasp": 10,
+        "open": 10,
+        "lift": 8,
+        "approach": 10
+      },
+      "optimized": {
+        "pregrasp": 10,
+        "open": 10,
+        "approach": 10,
+        "hold": 7,
+        "close": 9,
+        "lift": 7
+      }
+    },
+    "requested_replans": {
+      "approach": 20,
+      "lift": 15
+    },
+    "task": {
+      "registered": 20,
+      "completed": 20,
+      "interrupted": 0,
+      "unstarted": 0
+    },
+    "record_integrity": true,
+    "default_activated": false,
+    "event_applicability": "actual trace and phase-report stages agree; no close/lift/hold required after earlier normal failure"
+  }
+}
