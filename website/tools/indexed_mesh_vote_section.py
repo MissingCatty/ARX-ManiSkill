@@ -55,7 +55,8 @@ def section(website, site, active):
         'geometry_preflight': geometry, 'diagnostic_source': reg['diagnostic_source']}
     write_json(target, snapshot);site['localAssets'][name] = '../../resources/media/'+name
     data_url = '/media/'+name
-    lines = ['## V8当前实验：网格查询优化', '', status+'。', '',
+    heading = '## 上一轮：三方向射线投票优化' if active.get('layout_run') else '## V8当前实验：网格查询优化'
+    lines = [heading, '', status+'。', '',
         f"原五场景10次定位全部通过，30个终点核验一致。五批采样中，碰撞查询占GPU实际内核时间{proof['collision_fraction']:.1%}，"
         f"CUDA Graph重新捕获{proof['CUDA_graph_captures']}次。", '',
         '原实现沿三个方向投票，判断点在网格内部还是外部。新实现当前两票一致时立即返回，意见不一致时继续第三票。'

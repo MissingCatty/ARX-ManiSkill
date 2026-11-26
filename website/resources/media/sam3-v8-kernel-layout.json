@@ -1,0 +1,873 @@
+{
+  "run": "tmp/indexed_grasp_planning/layout69_20261126_01",
+  "completed_requests": 138,
+  "total_requests": 138,
+  "phase": "complete",
+  "gpu": "GPU-b827b8be-c675-83f7-1b4c-39b5811c6d5e",
+  "diagnostic_source": "tmp/indexed_grasp_planning/queryprobe_20261126_01",
+  "component_samples": [
+    {
+      "case": "M0001_S1_open_apple",
+      "actual_sphere_shape": [
+        2048,
+        1,
+        871,
+        4
+      ],
+      "sphere_count": 1783808,
+      "mesh_cache_capacity": 8,
+      "active_meshes": 1,
+      "launched_pairs": 14270464,
+      "actual_narrow_phase_queries": 1783808,
+      "nearest_found": 208056,
+      "timings": {
+        "nearest_point": {
+          "samples_seconds": [
+            0.0009015039801597596,
+            0.000895359992980957,
+            0.0009012479782104493,
+            0.0009039360284805298,
+            0.0009034240245819092,
+            0.0008303359746932984,
+            0.0008131840229034424,
+            0.0008083199858665467
+          ],
+          "median_seconds": 0.0008983039855957032
+        },
+        "three_ray_votes": {
+          "samples_seconds": [
+            0.0009448959827423096,
+            0.0009474560022354127,
+            0.0009231240153312683,
+            0.0009546239972114564,
+            0.0008869119882583619,
+            0.000858240008354187,
+            0.0008633599877357483,
+            0.0008614400029182434
+          ],
+          "median_seconds": 0.000905018001794815
+        },
+        "combined_compact": {
+          "samples_seconds": [
+            0.0018044159412384034,
+            0.0017824000120162963,
+            0.0018197760581970216,
+            0.0018071039915084838,
+            0.0016472320556640625,
+            0.0016520960330963135,
+            0.0016408319473266602,
+            0.0016524800062179565
+          ],
+          "median_seconds": 0.0017174400091171265
+        },
+        "original_collision_dispatch": {
+          "samples_seconds": [
+            0.003317375898361206,
+            0.003302016019821167,
+            0.0033126399517059324,
+            0.0033094398975372316,
+            0.0029872639179229737,
+            0.0029945600032806395,
+            0.0029969921112060548,
+            0.002995840072631836
+          ],
+          "median_seconds": 0.003149504065513611
+        }
+      },
+      "nearest_face_UV_and_ray_sign_bitwise_equal": true,
+      "modes_use_identical_queries": true,
+      "timing_is_standalone_component_not_planning_RPC": true,
+      "query_sha256": "1c5b8a29c60fe2eda4c78848f7df07db0e73221b7833df4abd41e1312eacf089",
+      "mesh_sha256": "3b3de4ebfab00ad08c66d859e5b88b161ec1e0172ecf36e56dfcdb3604a484be",
+      "scene_sha256": "8ce8676fa451eda68ddd26fc6f2b04c0767454e8d0d87402d4e5cc058879b312"
+    },
+    {
+      "case": "M0032_S2_edge_potato",
+      "actual_sphere_shape": [
+        2048,
+        1,
+        871,
+        4
+      ],
+      "sphere_count": 1783808,
+      "mesh_cache_capacity": 8,
+      "active_meshes": 1,
+      "launched_pairs": 14270464,
+      "actual_narrow_phase_queries": 1783808,
+      "nearest_found": 783912,
+      "timings": {
+        "nearest_point": {
+          "samples_seconds": [
+            0.002507904052734375,
+            0.0025267159938812257,
+            0.0025204479694366454,
+            0.0025210878849029543,
+            0.0025199360847473146,
+            0.0025240321159362795,
+            0.002550271987915039,
+            0.0025177600383758545
+          ],
+          "median_seconds": 0.0025207679271698
+        },
+        "three_ray_votes": {
+          "samples_seconds": [
+            0.00084198397397995,
+            0.0008409600257873536,
+            0.0008358399868011474,
+            0.0008340479731559754,
+            0.000840063989162445,
+            0.000843775987625122,
+            0.0008407040238380433,
+            0.0008407040238380433
+          ],
+          "median_seconds": 0.0008407040238380433
+        },
+        "combined_compact": {
+          "samples_seconds": [
+            0.003573888063430786,
+            0.0035921919345855715,
+            0.0036163840293884277,
+            0.0035927040576934815,
+            0.003613055944442749,
+            0.0036064000129699706,
+            0.0036299519538879393,
+            0.003600383996963501
+          ],
+          "median_seconds": 0.0036033920049667358
+        },
+        "original_collision_dispatch": {
+          "samples_seconds": [
+            0.009892224311828613,
+            0.009923199653625488,
+            0.009923583984375,
+            0.009922431945800782,
+            0.009932027816772462,
+            0.009941760063171387,
+            0.00993727970123291,
+            0.009940223693847656
+          ],
+          "median_seconds": 0.009927805900573732
+        }
+      },
+      "nearest_face_UV_and_ray_sign_bitwise_equal": true,
+      "modes_use_identical_queries": true,
+      "timing_is_standalone_component_not_planning_RPC": true,
+      "query_sha256": "1f55e5bcb25585cdb988d018b98f09a1497ef6d6a52eebd0fef94bfde8b9eb06",
+      "mesh_sha256": "267482e8cd2f4e953fb935d524995f3132177397d752b4617b0e4d3e7be52a78",
+      "scene_sha256": "c446505b7b2eba8824d188044940d9d0f40381ba733131b8f3886ee2317bbad9"
+    },
+    {
+      "case": "M0044_S3_sparse_banana",
+      "actual_sphere_shape": [
+        2048,
+        1,
+        871,
+        4
+      ],
+      "sphere_count": 1783808,
+      "mesh_cache_capacity": 8,
+      "active_meshes": 4,
+      "launched_pairs": 14270464,
+      "actual_narrow_phase_queries": 7135232,
+      "nearest_found": 842196,
+      "timings": {
+        "nearest_point": {
+          "samples_seconds": [
+            0.003783936023712158,
+            0.003801599979400635,
+            0.0038014719486236573,
+            0.003802112102508545,
+            0.003786751985549927,
+            0.0038100481033325195,
+            0.0037920000553131102,
+            0.003805056095123291
+          ],
+          "median_seconds": 0.003801535964012146
+        },
+        "three_ray_votes": {
+          "samples_seconds": [
+            0.0007027199864387512,
+            0.0007019519805908203,
+            0.0007027199864387512,
+            0.0006997759938240051,
+            0.000700160026550293,
+            0.0007014399766921997,
+            0.0007046399712562562,
+            0.000701312005519867
+          ],
+          "median_seconds": 0.00070169597864151
+        },
+        "combined_compact": {
+          "samples_seconds": [
+            0.004732800006866455,
+            0.004751872062683105,
+            0.004760960102081299,
+            0.004758272171020508,
+            0.004759424209594727,
+            0.004758528232574463,
+            0.004760575771331787,
+            0.004765312194824219
+          ],
+          "median_seconds": 0.004758976221084595
+        },
+        "original_collision_dispatch": {
+          "samples_seconds": [
+            0.00736729621887207,
+            0.007373055934906006,
+            0.007369984149932862,
+            0.007371391773223877,
+            0.0073697280883789065,
+            0.007372032165527344,
+            0.007370880126953125,
+            0.007383039951324463
+          ],
+          "median_seconds": 0.007371135950088501
+        }
+      },
+      "nearest_face_UV_and_ray_sign_bitwise_equal": true,
+      "modes_use_identical_queries": true,
+      "timing_is_standalone_component_not_planning_RPC": true,
+      "query_sha256": "58f067083f84419049cf2c3f25871723a124f301e6cd0f33d78df3fbbb1a6cd0",
+      "mesh_sha256": "64d1889b354a20e69b625dd0c263d7b914f0346ecea265c1906381d0497aa20e",
+      "scene_sha256": "f8470429ccc0a3dfea8ea23fcceffdf133353ecadf82409846860ae94d1c0420"
+    },
+    {
+      "case": "M0064_S4_clutter_mango",
+      "actual_sphere_shape": [
+        2048,
+        1,
+        871,
+        4
+      ],
+      "sphere_count": 1783808,
+      "mesh_cache_capacity": 8,
+      "active_meshes": 6,
+      "launched_pairs": 14270464,
+      "actual_narrow_phase_queries": 10702848,
+      "nearest_found": 698136,
+      "timings": {
+        "nearest_point": {
+          "samples_seconds": [
+            0.005290112018585205,
+            0.0055054078102111815,
+            0.005319424152374267,
+            0.005318912029266357,
+            0.0053199357986450195,
+            0.005317619800567627,
+            0.00531328010559082,
+            0.005314047813415527
+          ],
+          "median_seconds": 0.005318265914916992
+        },
+        "three_ray_votes": {
+          "samples_seconds": [
+            0.0008020480275154114,
+            0.0008026880025863648,
+            0.0008042240142822265,
+            0.0008046079874038696,
+            0.0008043519854545593,
+            0.0008038359880447387,
+            0.0008046079874038696,
+            0.0008039680123329162
+          ],
+          "median_seconds": 0.0008040960133075714
+        },
+        "combined_compact": {
+          "samples_seconds": [
+            0.006566143989562988,
+            0.006584832191467285,
+            0.006582784175872803,
+            0.006588672161102295,
+            0.006584832191467285,
+            0.0065857281684875485,
+            0.0065866241455078125,
+            0.006592639923095703
+          ],
+          "median_seconds": 0.006585280179977417
+        },
+        "original_collision_dispatch": {
+          "samples_seconds": [
+            0.008308863639831543,
+            0.008308095932006836,
+            0.00831372833251953,
+            0.008312447547912598,
+            0.008314111709594726,
+            0.008311160087585449,
+            0.008312191963195801,
+            0.00831372833251953
+          ],
+          "median_seconds": 0.0083123197555542
+        }
+      },
+      "nearest_face_UV_and_ray_sign_bitwise_equal": true,
+      "modes_use_identical_queries": true,
+      "timing_is_standalone_component_not_planning_RPC": true,
+      "query_sha256": "5ed3f0b900d1a65be6f1b5d25eb18946317cd3a68755acbe3b49697f40a9e823",
+      "mesh_sha256": "a714beb0b3ff7d1b11fc2fed3f59aa8876529504d8541a257b1b6381224428f8",
+      "scene_sha256": "c46382cf07fc5bd1a421517c29a911c89853dff42299f282e9039568c07f155a"
+    },
+    {
+      "case": "M0084_S5_occluded_banana",
+      "actual_sphere_shape": [
+        2048,
+        1,
+        871,
+        4
+      ],
+      "sphere_count": 1783808,
+      "mesh_cache_capacity": 8,
+      "active_meshes": 3,
+      "launched_pairs": 14270464,
+      "actual_narrow_phase_queries": 5351424,
+      "nearest_found": 544644,
+      "timings": {
+        "nearest_point": {
+          "samples_seconds": [
+            0.0019281920194625854,
+            0.0019226880073547363,
+            0.0019327960014343263,
+            0.0019185919761657716,
+            0.0019240959882736205,
+            0.001925503969192505,
+            0.0019344639778137206,
+            0.001920896053314209
+          ],
+          "median_seconds": 0.0019247999787330627
+        },
+        "three_ray_votes": {
+          "samples_seconds": [
+            0.0008976640105247497,
+            0.0008919039964675903,
+            0.0008992000222206116,
+            0.0008907520174980164,
+            0.0008921599984169006,
+            0.0009006080031394958,
+            0.0008949679732322693,
+            0.0008924160003662109
+          ],
+          "median_seconds": 0.00089369198679924
+        },
+        "combined_compact": {
+          "samples_seconds": [
+            0.002844543933868408,
+            0.0028299479484558106,
+            0.0028385279178619383,
+            0.0028334040641784667,
+            0.0028418560028076172,
+            0.002826368093490601,
+            0.0028387839794158935,
+            0.002827903985977173
+          ],
+          "median_seconds": 0.0028359659910202027
+        },
+        "original_collision_dispatch": {
+          "samples_seconds": [
+            0.004664447784423828,
+            0.004658688068389893,
+            0.004668032169342041,
+            0.00465715217590332,
+            0.004654592037200928,
+            0.004656383991241455,
+            0.004659071922302246,
+            0.004657408237457275
+          ],
+          "median_seconds": 0.004658048152923584
+        }
+      },
+      "nearest_face_UV_and_ray_sign_bitwise_equal": true,
+      "modes_use_identical_queries": true,
+      "timing_is_standalone_component_not_planning_RPC": true,
+      "query_sha256": "2118318e7c9a631df0a7f503396d0294711c967c6a186b957216631c2d6af549",
+      "mesh_sha256": "00ebc02814ebe91ad3d5f7d843ff850fa29032d310eb1023a6ea5f87ba07fe56",
+      "scene_sha256": "40b4d59de9589f1988ce1aaae2c3cdc4e20b814b4aaf9efcfeee8a42a68b22ce"
+    }
+  ],
+  "acceptance": {
+    "at": "2026-11-27T00:23:05.225542+08:00",
+    "task_complete": true,
+    "record_integrity": true,
+    "planning_requests": 138,
+    "summaries": {
+      "control": {
+        "requests": 69,
+        "successes": 69,
+        "median_seconds": 6.2406012209976325,
+        "p90_seconds": 19.721072164605722,
+        "total_seconds": 639.9179502599727,
+        "candidate_checks": 6647,
+        "stage_totals": {
+          "resident_world_bind": {
+            "calls": 530,
+            "wall_seconds": 99.24266007392725,
+            "exclusive_seconds": 99.24266007392725
+          },
+          "contact_world_bind": {
+            "calls": 254,
+            "wall_seconds": 26.60310966898396,
+            "exclusive_seconds": 26.60310966898396
+          },
+          "batch_world_bind": {
+            "calls": 254,
+            "wall_seconds": 0.3822557811217848,
+            "exclusive_seconds": 0.3822557811217848
+          },
+          "independent_FK": {
+            "calls": 14549,
+            "wall_seconds": 18.845053051700233,
+            "exclusive_seconds": 18.845053051700233
+          },
+          "grasp_batch_full_world_IK": {
+            "calls": 482,
+            "wall_seconds": 283.3064270500181,
+            "exclusive_seconds": 283.16738811600953
+          },
+          "grasp_batch_kinematic_IK": {
+            "calls": 479,
+            "wall_seconds": 9.242075185888098,
+            "exclusive_seconds": 9.242075185888098
+          },
+          "grasp_endpoint": {
+            "calls": 6647,
+            "wall_seconds": 352.83389290196646,
+            "exclusive_seconds": 2.877399478733423
+          },
+          "pregrasp_scalar_IK": {
+            "calls": 108,
+            "wall_seconds": 2.1625428970291978,
+            "exclusive_seconds": 2.1625428970291978
+          },
+          "lift_scalar_IK": {
+            "calls": 108,
+            "wall_seconds": 1.1584343509020982,
+            "exclusive_seconds": 1.1584343509020982
+          },
+          "PRM_path": {
+            "calls": 177,
+            "wall_seconds": 7.319918805078487,
+            "exclusive_seconds": 7.319918805078487
+          },
+          "trajectory_approach": {
+            "calls": 84,
+            "wall_seconds": 5.621876730991062,
+            "exclusive_seconds": 5.621876730991062
+          },
+          "trajectory_pregrasp": {
+            "calls": 93,
+            "wall_seconds": 7.994757221953478,
+            "exclusive_seconds": 7.994757221953478
+          },
+          "candidate_search": {
+            "calls": 254,
+            "wall_seconds": 380.84071986992785,
+            "exclusive_seconds": 1.2031030209327582
+          },
+          "local_collision_validate": {
+            "calls": 8205,
+            "wall_seconds": 49.138077846568194,
+            "exclusive_seconds": 40.8659152295877
+          }
+        }
+      },
+      "obstacle_major": {
+        "requests": 69,
+        "successes": 69,
+        "median_seconds": 5.275570796002285,
+        "p90_seconds": 13.836232460601606,
+        "total_seconds": 488.7070608799986,
+        "candidate_checks": 6647,
+        "stage_totals": {
+          "resident_world_bind": {
+            "calls": 530,
+            "wall_seconds": 98.46132349380059,
+            "exclusive_seconds": 98.46132349380059
+          },
+          "contact_world_bind": {
+            "calls": 254,
+            "wall_seconds": 26.377606198962894,
+            "exclusive_seconds": 26.377606198962894
+          },
+          "batch_world_bind": {
+            "calls": 254,
+            "wall_seconds": 0.37758859514724463,
+            "exclusive_seconds": 0.37758859514724463
+          },
+          "independent_FK": {
+            "calls": 14549,
+            "wall_seconds": 18.679536631214432,
+            "exclusive_seconds": 18.679536631214432
+          },
+          "grasp_batch_full_world_IK": {
+            "calls": 482,
+            "wall_seconds": 138.36073509496055,
+            "exclusive_seconds": 138.22162464096618
+          },
+          "grasp_batch_kinematic_IK": {
+            "calls": 479,
+            "wall_seconds": 9.1709532191162,
+            "exclusive_seconds": 9.1709532191162
+          },
+          "grasp_endpoint": {
+            "calls": 6647,
+            "wall_seconds": 206.97248179740564,
+            "exclusive_seconds": 2.8483407689491287
+          },
+          "pregrasp_scalar_IK": {
+            "calls": 108,
+            "wall_seconds": 2.161658637007349,
+            "exclusive_seconds": 2.161658637007349
+          },
+          "lift_scalar_IK": {
+            "calls": 108,
+            "wall_seconds": 1.1656238290743204,
+            "exclusive_seconds": 1.1656238290743204
+          },
+          "PRM_path": {
+            "calls": 177,
+            "wall_seconds": 7.068353428985574,
+            "exclusive_seconds": 7.068353428985574
+          },
+          "trajectory_approach": {
+            "calls": 84,
+            "wall_seconds": 5.438812527034315,
+            "exclusive_seconds": 5.438812527034315
+          },
+          "trajectory_pregrasp": {
+            "calls": 93,
+            "wall_seconds": 7.049883765968843,
+            "exclusive_seconds": 7.049883765968843
+          },
+          "candidate_search": {
+            "calls": 254,
+            "wall_seconds": 233.19675298500806,
+            "exclusive_seconds": 0.7753329854022013
+          },
+          "local_collision_validate": {
+            "calls": 8205,
+            "wall_seconds": 48.41572533090948,
+            "exclusive_seconds": 40.23904395614227
+          }
+        }
+      }
+    },
+    "new_planning_requests": 138,
+    "inherited_complete_requests": 0,
+    "latency_excluded_case_ids": [],
+    "planning_groups": {
+      "control": {
+        "requests": 69,
+        "successes": 69
+      },
+      "obstacle_major": {
+        "requests": 69,
+        "successes": 69
+      }
+    },
+    "control_successes_retained": true,
+    "all_original_selections_and_branches_retained": true,
+    "planning_total_time_reduction": 0.2362973086136172,
+    "timing_gate_passed": true,
+    "timing_gates": {
+      "total_time_reduction": true,
+      "median_reduced": true,
+      "p90_within_limit": true
+    },
+    "primary_time_metric": "planning_rpc_seconds",
+    "physical_grasps": 0,
+    "automatic_full_comparison": false,
+    "automatic_default_activation": false
+  },
+  "independent_review": {
+    "at": "2026-11-27T00:23:39.267957+08:00",
+    "passed": true,
+    "record_integrity": true,
+    "checked_requests": 138,
+    "checked_original_candidate_rows": 332016,
+    "checked_endpoints": 414,
+    "control_successes_retained": true,
+    "physical_grasps": 0,
+    "automatic_default_activation": false,
+    "all_original_selections_and_branches_retained": true,
+    "timing_and_arm_receipts_verified": true,
+    "stage_timing_inclusive_and_exclusive": true,
+    "planning_total_time_reduction": 0.2362973086136172,
+    "timing_gate_passed": true,
+    "automatic_full_comparison": false,
+    "actual_collision_spheres_checked": 8919040,
+    "complete_cost_and_gradient_verified": true,
+    "original_and_fast_CUDA_graphs_separate": true,
+    "profiling_enabled": false
+  },
+  "actual_collision_preflight": {
+    "at": "2026-11-27T00:00:31.322349+08:00",
+    "passed": true,
+    "captured_cases": 5,
+    "checked_spheres": 8919040,
+    "cases": [
+      {
+        "case": "M0001_S1_open_apple",
+        "sphere_shape": [
+          2048,
+          1,
+          871,
+          4
+        ],
+        "spheres": 1783808,
+        "active_meshes": 1,
+        "maximum_cost_gradient_difference": [
+          0.0,
+          0.0
+        ],
+        "positive_cost_rows": 132532,
+        "nonzero_gradient_values": 397596,
+        "collision_seconds": {
+          "control": {
+            "samples": [
+              0.003279871940612793,
+              0.0032671999931335447,
+              0.003262079954147339,
+              0.002961280107498169,
+              0.0029725439548492433,
+              0.002982784032821655,
+              0.002975231885910034,
+              0.0029821441173553467
+            ],
+            "median": 0.002982464075088501
+          },
+          "obstacle_major": {
+            "samples": [
+              0.0020687360763549803,
+              0.0020736000537872313,
+              0.0019991040229797364,
+              0.0018775039911270142,
+              0.0018679039478302001,
+              0.0018895360231399535,
+              0.0018828799724578858,
+              0.0018950400352478027
+            ],
+            "median": 0.001892288029193878
+          }
+        },
+        "input_sha256": {
+          "actual_queries.npz": "1c5b8a29c60fe2eda4c78848f7df07db0e73221b7833df4abd41e1312eacf089",
+          "actual_meshes.npz": "3b3de4ebfab00ad08c66d859e5b88b161ec1e0172ecf36e56dfcdb3604a484be",
+          "scene.json": "8ce8676fa451eda68ddd26fc6f2b04c0767454e8d0d87402d4e5cc058879b312",
+          "components.json": "154ef59b84f522d721f80f88f54b97295e787e66f1daaafce33b8a9bf968d85b"
+        }
+      },
+      {
+        "case": "M0032_S2_edge_potato",
+        "sphere_shape": [
+          2048,
+          1,
+          871,
+          4
+        ],
+        "spheres": 1783808,
+        "active_meshes": 1,
+        "maximum_cost_gradient_difference": [
+          0.0,
+          0.0
+        ],
+        "positive_cost_rows": 85280,
+        "nonzero_gradient_values": 255840,
+        "collision_seconds": {
+          "control": {
+            "samples": [
+              0.009911423683166503,
+              0.009932928085327149,
+              0.009926655769348144,
+              0.009928704261779785,
+              0.009929856300354005,
+              0.009955583572387695,
+              0.009966336250305175,
+              0.00996018409729004
+            ],
+            "median": 0.009931392192840578
+          },
+          "obstacle_major": {
+            "samples": [
+              0.003986176013946533,
+              0.003983488082885742,
+              0.003969919919967651,
+              0.003984639883041382,
+              0.0039734959602355955,
+              0.003975807905197143,
+              0.003980544090270996,
+              0.00401471996307373
+            ],
+            "median": 0.003982016086578369
+          }
+        },
+        "input_sha256": {
+          "actual_queries.npz": "1f55e5bcb25585cdb988d018b98f09a1497ef6d6a52eebd0fef94bfde8b9eb06",
+          "actual_meshes.npz": "267482e8cd2f4e953fb935d524995f3132177397d752b4617b0e4d3e7be52a78",
+          "scene.json": "c446505b7b2eba8824d188044940d9d0f40381ba733131b8f3886ee2317bbad9",
+          "components.json": "88f8550d04f28113738a53ce43355a159b4890762a1b3730d62761303ca97793"
+        }
+      },
+      {
+        "case": "M0044_S3_sparse_banana",
+        "sphere_shape": [
+          2048,
+          1,
+          871,
+          4
+        ],
+        "spheres": 1783808,
+        "active_meshes": 4,
+        "maximum_cost_gradient_difference": [
+          0.0,
+          0.0
+        ],
+        "positive_cost_rows": 159640,
+        "nonzero_gradient_values": 478920,
+        "collision_seconds": {
+          "control": {
+            "samples": [
+              0.007337855815887451,
+              0.0073406720161437984,
+              0.0073431038856506346,
+              0.007345791816711426,
+              0.007345407962799072,
+              0.007372416019439697,
+              0.007363711833953858,
+              0.0073734397888183595
+            ],
+            "median": 0.007345599889755249
+          },
+          "obstacle_major": {
+            "samples": [
+              0.0029926400184631346,
+              0.0030242559909820555,
+              0.0030151679515838625,
+              0.0030118401050567628,
+              0.0030215680599212646,
+              0.003016576051712036,
+              0.0030182399749755858,
+              0.0030289919376373293
+            ],
+            "median": 0.003017408013343811
+          }
+        },
+        "input_sha256": {
+          "actual_queries.npz": "58f067083f84419049cf2c3f25871723a124f301e6cd0f33d78df3fbbb1a6cd0",
+          "actual_meshes.npz": "64d1889b354a20e69b625dd0c263d7b914f0346ecea265c1906381d0497aa20e",
+          "scene.json": "f8470429ccc0a3dfea8ea23fcceffdf133353ecadf82409846860ae94d1c0420",
+          "components.json": "734b607f0479edb6b00629d209165a9d069f5cac9424513f6167c654168f5a9b"
+        }
+      },
+      {
+        "case": "M0064_S4_clutter_mango",
+        "sphere_shape": [
+          2048,
+          1,
+          871,
+          4
+        ],
+        "spheres": 1783808,
+        "active_meshes": 6,
+        "maximum_cost_gradient_difference": [
+          0.0,
+          0.0
+        ],
+        "positive_cost_rows": 226048,
+        "nonzero_gradient_values": 678120,
+        "collision_seconds": {
+          "control": {
+            "samples": [
+              0.008262399673461915,
+              0.00827507209777832,
+              0.008274815559387206,
+              0.008273280143737793,
+              0.008273280143737793,
+              0.008277759552001954,
+              0.008272255897521973,
+              0.008275456428527832
+            ],
+            "median": 0.0082740478515625
+          },
+          "obstacle_major": {
+            "samples": [
+              0.0033126399517059324,
+              0.0033155839443206785,
+              0.0033210880756378174,
+              0.003317888021469116,
+              0.003319808006286621,
+              0.0033299200534820557,
+              0.0033164799213409426,
+              0.003336832046508789
+            ],
+            "median": 0.0033188480138778686
+          }
+        },
+        "input_sha256": {
+          "actual_queries.npz": "5ed3f0b900d1a65be6f1b5d25eb18946317cd3a68755acbe3b49697f40a9e823",
+          "actual_meshes.npz": "a714beb0b3ff7d1b11fc2fed3f59aa8876529504d8541a257b1b6381224428f8",
+          "scene.json": "c46382cf07fc5bd1a421517c29a911c89853dff42299f282e9039568c07f155a",
+          "components.json": "2bb4c62778ca0b00b137af5119057fce57e69d76d044eb647252875c6b662260"
+        }
+      },
+      {
+        "case": "M0084_S5_occluded_banana",
+        "sphere_shape": [
+          2048,
+          1,
+          871,
+          4
+        ],
+        "spheres": 1783808,
+        "active_meshes": 3,
+        "maximum_cost_gradient_difference": [
+          0.0,
+          0.0
+        ],
+        "positive_cost_rows": 198728,
+        "nonzero_gradient_values": 596000,
+        "collision_seconds": {
+          "control": {
+            "samples": [
+              0.004635519981384277,
+              0.004628608226776123,
+              0.004627327919006347,
+              0.00463372802734375,
+              0.00462988805770874,
+              0.004631423950195312,
+              0.004629631996154785,
+              0.0046284799575805665
+            ],
+            "median": 0.0046297600269317625
+          },
+          "obstacle_major": {
+            "samples": [
+              0.002496000051498413,
+              0.0025102078914642336,
+              0.0025155839920043945,
+              0.0025207040309906006,
+              0.0025048320293426514,
+              0.0025191679000854494,
+              0.002511615991592407,
+              0.002529536008834839
+            ],
+            "median": 0.002513599991798401
+          }
+        },
+        "input_sha256": {
+          "actual_queries.npz": "2118318e7c9a631df0a7f503396d0294711c967c6a186b957216631c2d6af549",
+          "actual_meshes.npz": "00ebc02814ebe91ad3d5f7d843ff850fa29032d310eb1023a6ea5f87ba07fe56",
+          "scene.json": "40b4d59de9589f1988ce1aaae2c3cdc4e20b814b4aaf9efcfeee8a42a68b22ce",
+          "components.json": "c63d4042abdaf00203313460ad438249ab95ab7a52db9e4d3fad04fd06e0cec0"
+        }
+      }
+    ],
+    "full_collision_cost_and_gradient_equal": true,
+    "contract": {
+      "only_task_index_order_changed": true,
+      "all_original_sphere_obstacle_pairs_preserved": true,
+      "original_SDF_ray_votes_activation_and_accumulation": true,
+      "upstream_collision_kernel_unchanged": true
+    },
+    "microtimings_separate_from_planning_RPC": true,
+    "physical_grasps": 0,
+    "planning_requests": 0
+  }
+}

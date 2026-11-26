@@ -692,8 +692,8 @@
           "sourceId": "sam3-graspgenx",
           "title": "可达性索引与批量IK加速",
           "date": "2026-11-26",
-          "status": "网格查询优化：20/20次，独立核验完成，未扩展69场景",
-          "resultSummary": "网格查询优化：20/20次，独立核验完成，未扩展69场景",
+          "status": "线程排列优化：138/138次，独立核验完成",
+          "resultSummary": "线程排列优化：138/138次，独立核验完成",
           "change": "以现行双臂交替搜索为基线，分别比较原生批量IK、几何IK、关节解索引与模型场景绑定复用，保留原抓姿和评分顺序。",
           "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 双臂交替调度 → 批量IK/几何IK/索引复用对照 → 当前碰撞与路径检查 → 选臂抓取",
           "scenes": "先使用同一套69份有效候选做规划回放，74例总体范围保留5例共同站位失败。",
@@ -712,7 +712,7 @@
             ],
             [
               "当前进度",
-              "网格查询优化：20/20次，独立核验完成，未扩展69场景"
+              "线程排列优化：138/138次，独立核验完成"
             ]
           ],
           "contentFile": "sam3-graspgenx-v8.md",
@@ -1015,6 +1015,58 @@
                 {
                   "label": "实际计时和进度",
                   "url": "/media/sam3-v8-mesh-vote.json"
+                }
+              ]
+            },
+            {
+              "id": "queryprobe_20261126_01",
+              "title": "最近表面搜索与射线分项定位",
+              "date": "2026-11-26",
+              "status": "10/10完成，30终点独立核验通过",
+              "summary": "五批实际IK输入已拆分并核验，最近表面搜索在四例中占主要部分。",
+              "outputs": [
+                "tmp/indexed_grasp_planning/queryprobe_20261126_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "分项计时数据",
+                  "url": "/media/sam3-v8-kernel-layout.json"
+                }
+              ]
+            },
+            {
+              "id": "layoutpilot_20261126_01",
+              "title": "线程排列优化20次先导",
+              "date": "2026-11-26",
+              "status": "20/20完成，独立核验通过",
+              "summary": "累计省时18.84%。",
+              "outputs": [
+                "tmp/indexed_grasp_planning/layoutpilot_20261126_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "方法与结果",
+                  "url": "/media/sam3-v8-kernel-layout.md"
+                }
+              ]
+            },
+            {
+              "id": "layout69_20261126_01",
+              "title": "线程排列优化69场景完整对照",
+              "date": "2026-11-27",
+              "status": "线程排列优化：138/138次，独立核验完成",
+              "summary": "线程排列优化：138/138次，独立核验完成",
+              "outputs": [
+                "tmp/indexed_grasp_planning/layout69_20261126_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "实施方案",
+                  "url": "/media/sam3-v8-kernel-layout-plan.md"
+                },
+                {
+                  "label": "实际计时",
+                  "url": "/media/sam3-v8-kernel-layout.json"
                 }
               ]
             }

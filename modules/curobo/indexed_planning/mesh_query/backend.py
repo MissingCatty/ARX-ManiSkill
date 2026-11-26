@@ -4,14 +4,16 @@ from types import FunctionType, MethodType
 
 
 class MeshVoteSwitch:
-    def __init__(self, scene):
+    def __init__(self, scene, *, mesh_kernel=None, contract=None):
         import torch
         import warp as wp
         from curobo._src.geom.collision.wp_autograd import SphereObstacleCollision
         from curobo._src.geom.collision.wp_collision_kernel import sphere_obstacle_collision_kernel
-        from .kernels import exact_vote_collision, CONTRACT
+        if mesh_kernel is None:
+            from .kernels import exact_vote_collision, CONTRACT
+            mesh_kernel, contract = exact_vote_collision, CONTRACT
         self.enabled = False
-        self.contract = CONTRACT
+        self.contract = contract
         self.original_forward = SphereObstacleCollision
         original_forward = SphereObstacleCollision.forward
 
@@ -22,7 +24,7 @@ class MeshVoteSwitch:
             def launch(*args, **kwargs):
                 if (kwargs.get('kernel') is sphere_obstacle_collision_kernel
                         and hasattr(kwargs['inputs'][0], 'mesh_ids')):
-                    kwargs = dict(kwargs, kernel=exact_vote_collision)
+                    kwargs = dict(kwargs, kernel=mesh_kernel)
                 return wp.launch(*args, **kwargs)
 
         namespace = dict(original_forward.__globals__, wp=WarpProxy())
@@ -55,13 +57,14 @@ class MeshVoteSwitch:
             raise RuntimeError('Original collision module was modified')
 
 
-def mesh_vote_pool(base):
+def mesh_vote_pool(base, switch_factory=None):
+    factory = switch_factory or MeshVoteSwitch
     class MeshVotePool(base):
         def __init__(self, *args, **kwargs):
             super().__init__(*args, **kwargs)
             from curobo.inverse_kinematics import InverseKinematics
             from resident_planner import all_kinematics_params
-            self.mesh_vote = MeshVoteSwitch(self.contexts['open'].planner.scene_collision_checker)
+            self.mesh_vote = factory(self.contexts['open'].planner.scene_collision_checker)
             self.mesh_solver_pairs = {}
             for capacity, engine in self.batch_engines.items():
                 original = engine.full_solver

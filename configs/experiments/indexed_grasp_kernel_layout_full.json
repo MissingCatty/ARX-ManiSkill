@@ -1,0 +1,61 @@
+{
+  "version": "V8",
+  "experiment": "obstacle_major_collision_layout",
+  "phase": "full",
+  "authorization": "2026-11-26：用户授权网格最近点与射线分项定位后做一项优化；先20次ABBA/BAAB，独立核验与三项计时门槛通过才扩138次。",
+  "source_run": "tmp/graspgenx_postprocessing/planning69_20261126_01",
+  "offline_source": "tmp/graspgenx_postprocessing/offline69_20261126_01",
+  "cpu_preflight": "tmp/indexed_grasp_planning/yaml_preflight_20261126_01",
+  "baseline": "NMS15_with_all_original_deferred_B16_and_C_YAML_binding",
+  "batch_capacity": 16,
+  "optimized_group": "obstacle_major",
+  "variants": {
+    "control_1": "control",
+    "obstacle_major_1": "obstacle_major"
+  },
+  "pilot_cases": [
+    "M0001_S1_open_apple",
+    "M0032_S2_edge_potato",
+    "M0044_S3_sparse_banana",
+    "M0064_S4_clutter_mango",
+    "M0084_S5_occluded_banana"
+  ],
+  "planning_requests": 138,
+  "worker_module": "modules.pipeline.experiments.indexed_grasp_planning.layout_worker",
+  "primary_time_metric": "planning_rpc_seconds",
+  "additional_receipts": [
+    "binding_serialization.json",
+    "collision_layout.json"
+  ],
+  "additional_source_files": [
+    "modules/curobo/indexed_planning/kernel_layout/__init__.py",
+    "modules/curobo/indexed_planning/kernel_layout/kernels.py",
+    "modules/curobo/indexed_planning/kernel_layout/ordering.py",
+    "modules/curobo/indexed_planning/kernel_layout/preflight.py",
+    "modules/curobo/indexed_planning/kernel_layout/test_numeric.py",
+    "modules/curobo/indexed_planning/kernel_layout/test_ordering.py",
+    "modules/curobo/indexed_planning/mesh_query/backend.py",
+    "modules/curobo/source/curobo/_src/geom/collision/wp_collision_kernel.py",
+    "modules/curobo/source/curobo/_src/geom/data/data_mesh.py",
+    "modules/curobo/source/curobo/_src/geom/collision/wp_autograd.py",
+    "modules/curobo/source/curobo/_src/geom/collision/checker_collision.py",
+    "environments/curobo/lib/python3.11/site-packages/warp/native/mesh.h",
+    "configs/experiments/indexed_grasp_kernel_layout_full.json"
+  ],
+  "minimum_total_time_reduction_for_full_comparison": 0.05,
+  "require_median_reduction": true,
+  "maximum_p90_increase_fraction": 0.05,
+  "same_gpu_models_scene_and_seed": true,
+  "seed": 20261126,
+  "original_first_passing_branch_required": true,
+  "minimum_startup_free_mib": 10000,
+  "minimum_request_free_mib": 1536,
+  "automatic_retries": false,
+  "automatic_full_comparison": false,
+  "automatic_default_activation": false,
+  "physical_grasp_budget": 0,
+  "simulation_instances": 0,
+  "perception_calls": 0,
+  "diagnostic_source": "tmp/indexed_grasp_planning/queryprobe_20261126_01",
+  "pilot_source": "tmp/indexed_grasp_planning/layoutpilot_20261126_01"
+}

@@ -462,6 +462,10 @@ def publish():
     mesh_vote=mesh_vote_section(website,site,funnel_active)
     if mesh_vote:
         body=mesh_vote['body']+'\n'+body
+    from website.tools.indexed_layout_section import section as layout_section
+    layout=layout_section(website,site,funnel_active)
+    if layout:
+        body=layout['body']+'\n'+body
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version = next(v for v in group['iterations'] if v['code']=='V8')
@@ -510,6 +514,12 @@ def publish():
         version.update(status=status,resultSummary=summary)
         version['settings'][-1]=['当前进度',status]
         for batch in mesh_vote['batches']:
+            version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
+    if layout:
+        status,summary=layout['status'],layout['summary']
+        version.update(status=status,resultSummary=summary)
+        version['settings'][-1]=['当前进度',status]
+        for batch in layout['batches']:
             version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
     if group['current']=='V8':
         entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')

@@ -1,0 +1,57 @@
+{
+  "version": "V8",
+  "experiment": "mesh_query_component_diagnosis",
+  "phase": "pilot",
+  "authorization": "2026-11-26：用户授权继续拆分真实网格查询的最近点和三方向射线，再根据证据做一项修改。此登记仅10次定位。",
+  "source_run": "tmp/graspgenx_postprocessing/planning69_20261126_01",
+  "offline_source": "tmp/graspgenx_postprocessing/offline69_20261126_01",
+  "cpu_preflight": "tmp/indexed_grasp_planning/yaml_preflight_20261126_01",
+  "baseline": "NMS15_with_all_original_deferred_B16_and_C_YAML_binding",
+  "batch_capacity": 16,
+  "optimized_group": "captured",
+  "variants": {
+    "control_1": "control",
+    "captured_1": "captured"
+  },
+  "pilot_cases": [
+    "M0001_S1_open_apple",
+    "M0032_S2_edge_potato",
+    "M0044_S3_sparse_banana",
+    "M0064_S4_clutter_mango",
+    "M0084_S5_occluded_banana"
+  ],
+  "planning_requests": 10,
+  "worker_module": "modules.pipeline.experiments.indexed_grasp_planning.query_probe_worker",
+  "primary_time_metric": "planning_rpc_seconds",
+  "additional_receipts": [
+    "binding_serialization.json",
+    "query_probe.json"
+  ],
+  "additional_source_files": [
+    "modules/curobo/indexed_planning/query_probe/__init__.py",
+    "modules/curobo/indexed_planning/query_probe/capture.py",
+    "modules/curobo/indexed_planning/query_probe/kernels.py",
+    "modules/curobo/indexed_planning/query_probe/measure.py",
+    "modules/curobo/indexed_planning/query_probe/test_components.py",
+    "modules/curobo/source/curobo/_src/geom/data/data_mesh.py",
+    "modules/curobo/source/curobo/_src/geom/collision/wp_collision_kernel.py",
+    "modules/curobo/source/curobo/_src/geom/collision/wp_collision_common.py",
+    "environments/curobo/lib/python3.11/site-packages/warp/native/mesh.h",
+    "modules/pipeline/docs/mainline_versions/V8_网格查询分项定位方案.md"
+  ],
+  "minimum_total_time_reduction_for_full_comparison": 0.05,
+  "require_median_reduction": true,
+  "maximum_p90_increase_fraction": 0.05,
+  "diagnostic_timings_are_not_speedup_results": true,
+  "same_gpu_models_scene_and_seed": true,
+  "seed": 20261126,
+  "original_first_passing_branch_required": true,
+  "minimum_startup_free_mib": 10000,
+  "minimum_request_free_mib": 1536,
+  "automatic_retries": false,
+  "automatic_full_comparison": false,
+  "automatic_default_activation": false,
+  "physical_grasp_budget": 0,
+  "simulation_instances": 0,
+  "perception_calls": 0
+}

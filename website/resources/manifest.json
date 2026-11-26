@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:15:58.319Z",
+  "generatedAt": "2026-11-26T16:26:26.755Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1688,6 +1688,18 @@
     {
       "file": "media/sam3-v8-mesh-vote-analysis.md",
       "sha256": "3890a8f4eb31b32ff63b9f8f370dc6cc4778190c01c998727b7328a57b0cb4e4"
+    },
+    {
+      "file": "media/sam3-v8-kernel-layout.json",
+      "sha256": "853f05908b50c49f912e09b87b6ca909c62d9e036cb861f2fe22905aaa63eb5a"
+    },
+    {
+      "file": "media/sam3-v8-kernel-layout-plan.md",
+      "sha256": "47941a59ec718b6107044eedcb042971fe1d7d59c38733e6387c78208a6f5f0a"
+    },
+    {
+      "file": "media/sam3-v8-kernel-layout.md",
+      "sha256": "76d25ccd5c6aea3c776ff9ecec02258dbeaac1bb790efd212ffe74167939257b"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
