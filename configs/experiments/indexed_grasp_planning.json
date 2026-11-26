@@ -2,7 +2,7 @@
   "version": "V8",
   "parent": "V4",
   "state": "in_progress",
-  "implementation_status": "index_seed_probe_resource_monitor_waiting",
+  "implementation_status": "index_seed_probe_complete",
   "method": "indexed_grasp_planning",
   "user_request": "将借鉴数据库索引、关节解缓存和批量处理的可达性地图规划加速方案作为独立实验版本。",
   "objective": "以已启用的双臂交替搜索为基线，独立比较原生批量IK、几何IK、关节解索引及绑定复用，减少规划总耗时并保留原抓姿与规划效果。",
@@ -104,7 +104,7 @@
     {
       "id": "indexed_reuse",
       "description": "现有地图多分支见证与邻近种子，查询和回退合计计时。",
-      "state": "CPU_diagnosis_complete_IK_probe_unexecuted_resource_gate"
+      "state": "seed_IK_probe_complete_no_total_speedup"
     },
     {
       "id": "combined",
@@ -129,8 +129,8 @@
     "solver_fallback_calls_and_total_cost"
   ],
   "execution": {
-    "current_phase": "index_seed_probe_waiting_for_gpu",
-    "next_stage": "start_once_after_CUDA_verified_original_resource_gate",
+    "current_phase": "index_seed_probe_complete",
+    "next_stage": "analyze_B16_only_combination_from_completed_single_component_results",
     "native_planning_budget": 224,
     "physical_grasp_budget": 0,
     "automatic_retries": false,
@@ -318,11 +318,63 @@
     "seed_probe_run": "tmp/indexed_grasp_planning/index_seed_probe_20261126_02",
     "seed_probe_fixtures": 261,
     "seed_probe_IK_budget": 3132,
-    "seed_probe_state": "waiting_for_gpu",
-    "seed_probe_completed_IK_calls": 0,
-    "seed_probe_unexecuted_IK_calls": 3132,
+    "seed_probe_state": "complete",
+    "seed_probe_completed_IK_calls": 3132,
+    "seed_probe_unexecuted_IK_calls": 0,
     "seed_probe_stop_summary": "tmp/indexed_grasp_planning/index_seed_probe_20261126_01/stop_summary.json",
     "previous_unexecuted_seed_probe": "tmp/indexed_grasp_planning/index_seed_probe_20261126_01",
-    "seed_probe_monitor_config": "configs/experiments/indexed_grasp_seed_watch.json"
+    "seed_probe_monitor_config": "configs/experiments/indexed_grasp_seed_watch.json",
+    "seed_probe_summaries": {
+      "control": {
+        "IK_calls": 783,
+        "successes": 345,
+        "map_seed_calls": 0,
+        "median_ms": 21.58893400337547,
+        "p90_ms": 41.81237620359753,
+        "total_seconds": 19.41457614414685,
+        "total_query_seconds": 0.0
+      },
+      "map3": {
+        "IK_calls": 783,
+        "successes": 345,
+        "map_seed_calls": 0,
+        "median_ms": 23.005900002317503,
+        "p90_ms": 51.527645398164175,
+        "total_seconds": 20.260588532997645,
+        "total_query_seconds": 0.8790095690783346
+      },
+      "map5": {
+        "IK_calls": 783,
+        "successes": 345,
+        "map_seed_calls": 12,
+        "median_ms": 22.499875994981267,
+        "p90_ms": 42.36169120413252,
+        "total_seconds": 19.777947549839155,
+        "total_query_seconds": 0.8364666950656101
+      },
+      "map10": {
+        "IK_calls": 783,
+        "successes": 345,
+        "map_seed_calls": 99,
+        "median_ms": 22.66583900200203,
+        "p90_ms": 41.23218260356226,
+        "total_seconds": 19.453927486916655,
+        "total_query_seconds": 0.8409615516866324
+      }
+    },
+    "seed_probe_control_successes_retained": {
+      "map3": true,
+      "map5": true,
+      "map10": true
+    },
+    "seed_probe_accepted_run": "tmp/indexed_grasp_planning/index_seed_probe_20261126_02",
+    "seed_probe_total_wall_reduction_fraction": {
+      "map3": -0.04357614518954378,
+      "map5": -0.018716422289850376,
+      "map10": -0.0020268968262626696
+    },
+    "include_in_default_combination": false,
+    "full_planning_replay_started": false,
+    "monitor_offline_checks": 19
   }
 }

@@ -23,9 +23,9 @@
       "title": "SAM3＋RGB-D点云＋GraspGenX＋cuRobo",
       "shortTitle": "SAM3＋点云＋GraspGenX",
       "date": "2026-11-26",
-      "status": "V8E：地图索引复用，原目标IK初值对照等待空闲显卡",
+      "status": "V8E：地图索引复用，原目标IK初值对照已完成",
       "summary": "头部SAM3、RaySt3R与GraspGenX生成抓法，研究候选后处理、可达性索引和双臂cuRobo规划。",
-      "metric": "E：原目标IK初值对照0/3,132次，比较3°、5°、10°查询范围。",
+      "metric": "E：原目标IK初值对照3,132/3,132次，比较3°、5°、10°查询范围。",
       "file": "SAM3点云GraspGenX主线.md",
       "workflow": "SAM3点云GraspGenX流程.json"
     },

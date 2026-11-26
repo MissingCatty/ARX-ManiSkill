@@ -69,7 +69,13 @@ def tick(config, state, *, query=inventory, active=unit_active, execute=subproce
     progress = read_json(root/'progress.json')
     if progress.get('phase') in ['complete', 'stopped']:
         return {'state': 'experiment_'+progress['phase'], 'terminal': True}
-    gpus = query()
+    try:
+        gpus = query()
+    except (subprocess.TimeoutExpired, subprocess.CalledProcessError, OSError, ValueError) as error:
+        # A transient NVML query failure is not an experiment failure. With no
+        # fresh inventory, dispatch nothing and poll again on the next tick.
+        return {'state': 'waiting_for_gpu_query', 'terminal': False, 'error': str(error),
+            'task_dispatched': state.get('dispatched', False)}
     if active(config['controller_unit']):
         state['dispatched'] = True
         executing = (root/config.get('readiness_marker', 'preflight/all_ready.json')).exists()

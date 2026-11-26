@@ -298,7 +298,11 @@ def publish():
             body=body.replace('地图批量查询与见证/初值对照 | 待实施 |',
                 '地图批量查询与见证/初值对照 | '+status+' |')
             if snapshot['experiment']=='index_seed_probe' and snapshot.get('acceptance'):
-                body=body.replace('## 优化目标',seed_probe_table(snapshot)+'\n## 优化目标',1)
+                section=seed_probe_table(snapshot)
+                if config.get('index_reuse_implementation',{}).get('include_in_default_combination') is False:
+                    section+=('\n四组解出的终点相同，原成功全部保留。当前地图初值策略没有带来总耗时收益，'
+                        '保留可选接口，本轮未追加完整规划。后续优先保留B批量16。\n\n')
+                body=body.replace('## 优化目标',section+'\n## 优化目标',1)
         elif binding:
             body = body.replace('交替窗口反复绑定世界 | 待适配与测显存 |',
                 '交替窗口反复绑定世界 | 已实现，'+status+' |')

@@ -2,6 +2,7 @@
 import tempfile
 from pathlib import Path
 import unittest
+import subprocess
 from unittest.mock import patch
 from types import SimpleNamespace
 
@@ -111,6 +112,24 @@ class GPUAutoStartTests(unittest.TestCase):
             execute=lambda command,**_:self.calls.append(command))
         self.assertEqual(result['state'],'already_started_not_retried')
         self.assertFalse(self.calls)
+
+    def test_temporary_inventory_timeout_waits_and_can_recover(self):
+        def unavailable():raise subprocess.TimeoutExpired('nvidia-smi',5)
+        state={}
+        result=tick(self.config,state,query=unavailable,active=lambda _:False,
+            execute=lambda command,**_:self.calls.append(command))
+        self.assertEqual(result['state'],'waiting_for_gpu_query')
+        self.assertFalse(result['terminal']);self.assertFalse(self.calls)
+        recovered=self.check_tick(state)
+        self.assertEqual(recovered['state'],'task_dispatched')
+        self.assertEqual(len(self.calls),1)
+
+    def test_failed_inventory_query_never_dispatches(self):
+        def unavailable():raise subprocess.CalledProcessError(1,'nvidia-smi')
+        result=tick(self.config,{},query=unavailable,active=lambda _:False,
+            execute=lambda command,**_:self.calls.append(command))
+        self.assertEqual(result['state'],'waiting_for_gpu_query')
+        self.assertFalse(result['terminal']);self.assertFalse(self.calls)
 
 
 if __name__=='__main__':
