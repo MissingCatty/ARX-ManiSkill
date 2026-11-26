@@ -692,8 +692,8 @@
           "sourceId": "sam3-graspgenx",
           "title": "可达性索引与批量IK加速",
           "date": "2026-11-26",
-          "status": "实际抓取对照：20/20次，独立核验完成，优化组合未保留全部原成功",
-          "resultSummary": "实际抓取对照：20/20次，独立核验完成，优化组合未保留全部原成功",
+          "status": "原序计算优化：规划0/138次",
+          "resultSummary": "原序计算优化：规划0/138次",
           "change": "以现行双臂交替搜索为基线，分别比较原生批量IK、几何IK、关节解索引与模型场景绑定复用，保留原抓姿和评分顺序。",
           "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 双臂交替调度 → 批量IK/几何IK/索引复用对照 → 当前碰撞与路径检查 → 选臂抓取",
           "scenes": "先使用同一套69份有效候选做规划回放，74例总体范围保留5例共同站位失败。",
@@ -712,7 +712,7 @@
             ],
             [
               "当前进度",
-              "实际抓取对照：20/20次，独立核验完成，优化组合未保留全部原成功"
+              "原序计算优化：规划0/138次"
             ]
           ],
           "contentFile": "sam3-graspgenx-v8.md",
@@ -1083,6 +1083,22 @@
                 {
                   "label": "统计与核验",
                   "url": "/media/sam3-v8-physical-pilot.json"
+                }
+              ]
+            },
+            {
+              "id": "raworder69_20261127_01",
+              "title": "保留原顺序的69场景规划对照",
+              "date": "2026-11-27",
+              "status": "原序计算优化：规划0/138次",
+              "summary": "原序计算优化：规划0/138次",
+              "outputs": [
+                "tmp/indexed_grasp_planning/raworder69_20261127_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "本轮核验数据",
+                  "url": "/media/sam3-v8-raw-order.json"
                 }
               ]
             }

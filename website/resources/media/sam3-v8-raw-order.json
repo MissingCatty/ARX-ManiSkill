@@ -1,0 +1,14 @@
+{
+  "planning_run": "tmp/indexed_grasp_planning/raworder69_20261127_01",
+  "physical_run": null,
+  "planning_progress": {
+    "at": "2026-11-27T02:03:01.308821+08:00",
+    "phase": "warming",
+    "completed_requests": 0,
+    "total_requests": 138,
+    "results": []
+  },
+  "planning_review": null,
+  "physical_progress": null,
+  "physical_acceptance": null
+}

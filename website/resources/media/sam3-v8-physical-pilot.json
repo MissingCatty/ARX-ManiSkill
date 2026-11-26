@@ -466,7 +466,7 @@
     "automatic_default_activation": false
   },
   "analysis": {
-    "at": "2026-11-27T01:43:15.473732+08:00",
+    "at": "2026-11-27T02:05:19.769914+08:00",
     "acceptance_sha256": "4975662fafa82850603645b90a63cedfd6e89ab191fdf5579d5f3c53fe938ae6",
     "pairs": [
       {
@@ -1777,20 +1777,20 @@
     },
     "measured_stage_coverage": {
       "baseline": {
-        "hold": 8,
-        "close": 10,
-        "pregrasp": 10,
-        "open": 10,
         "lift": 8,
-        "approach": 10
+        "hold": 8,
+        "open": 10,
+        "approach": 10,
+        "pregrasp": 10,
+        "close": 10
       },
       "optimized": {
         "pregrasp": 10,
         "open": 10,
         "approach": 10,
+        "lift": 7,
         "hold": 7,
-        "close": 9,
-        "lift": 7
+        "close": 9
       }
     },
     "requested_replans": {

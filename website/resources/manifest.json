@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T17:43:27.519Z",
+  "generatedAt": "2026-11-26T18:05:41.590Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1707,7 +1707,7 @@
     },
     {
       "file": "media/sam3-v8-physical-pilot.json",
-      "sha256": "90216372a5fb2c147b8571920a74e30ddb32c083efa4410028213d5f5e27d301"
+      "sha256": "5d32aab2091fcef6b29bc686889e81c9ea202938d97f94e9e84fdd2352a025d4"
     },
     {
       "file": "media/sam3-v8-physical-m0020-baseline-overview.mp4",
@@ -1956,6 +1956,14 @@
     {
       "file": "media/sam3-v8-physical-m0074-comparison.mp4",
       "sha256": "52d677f8ffef269b73c8c39ae8ce6c64c308aec29e0e62c7b701203564183fab"
+    },
+    {
+      "file": "media/sam3-v8-raw-order.md",
+      "sha256": "3a3435227c0294838088fab22c958d135bc0132ab3be4dcefe6c2dba1a1525ef"
+    },
+    {
+      "file": "media/sam3-v8-raw-order.json",
+      "sha256": "9a2f1898e5f02e6aef59654df210b8a4734c73f8c270dae604d3e1496d5df979"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
