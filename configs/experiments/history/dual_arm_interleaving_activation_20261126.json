@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-26T09:20:55.527555+08:00",
+  "variant": "alternating_candidate_windows",
+  "candidate_batch_size": 16,
+  "subsequent_candidate_batch_size": 64,
+  "adapter": "modules/curobo/dual_arm/interleaved_map_service.py",
+  "validation_report": "tmp/dual_arm_interleaving/replay_20261126_02/acceptance.json",
+  "validation_sha256": "227b982045b7130663c39424ecbbb9ca07110e91a59d6c6c54997e166502c150",
+  "source_complete_run": "tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01",
+  "source_acceptance_sha256": "0261a7194a72f21153ee3c0b8f26bbf31ed9b65d289369e0d42984e11a64b906",
+  "physical_robot_camera_scene_and_success_unchanged": true,
+  "additional_physical_grasps": 0,
+  "new_file_hashes": {
+    "configs/modules.json": "c76d7001fffcddd1b6b98bf660a8e7673db810ea656d7a153a5b56731317a324",
+    "configs/experiments/active_experiment.json": "81ec4391d8c6215ac7def94d4cf58b2c1806c24240a717452cf7892ee4d57665",
+    "configs/experiments/dual_arm_interleaving.json": "4b4c1a499936b982d94316b22d116c2a472bbdbbe0ffa45dc67c261b22a862fc"
+  }
+}

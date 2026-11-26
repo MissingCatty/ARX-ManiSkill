@@ -1,5 +1,6 @@
 """One candidate decode per request, shared arm views and asynchronous receipts."""
 from contextvars import ContextVar
+from contextlib import contextmanager
 from pathlib import Path
 import hashlib
 import json
@@ -114,6 +115,20 @@ class CandidateScope:
             'candidates': payload['candidates'][:count], 'search_bound': dict(bound)}
         self.record_view(directory, count, dict(bound))
 
+    @contextmanager
+    def window(self, directory, start, stop):
+        """Temporarily expose an ordered interval without copying its candidates."""
+        payload = self.view(directory)
+        if (type(start) is not int or type(stop) is not int
+                or not 0 <= start < stop <= len(payload['candidates'])):
+            raise ValueError('Candidate window is outside its source pool')
+        key = directory_key(directory)
+        self.views[key] = {**payload, 'candidates':payload['candidates'][start:stop]}
+        try:
+            yield
+        finally:
+            self.views[key] = payload
+
     def __exit__(self, kind, error, traceback):
         try:
             if hashlib.sha256(encode(self.payload)).hexdigest() != self.initial_digest:
@@ -160,3 +175,10 @@ def limit_candidate_view(directory, count, bound):
     if scope is None:
         raise RuntimeError('Candidate prefixing requires one active planner request')
     scope.limit(directory, count, bound)
+
+
+def candidate_window(directory, start, stop):
+    scope = _active.get()
+    if scope is None:
+        raise RuntimeError('Candidate windows require one active planner request')
+    return scope.window(directory, start, stop)

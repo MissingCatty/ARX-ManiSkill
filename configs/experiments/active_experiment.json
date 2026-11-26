@@ -1,7 +1,7 @@
 {
   "profile_id": "arx_sam3_graspgenx_mobile871_20261125_01",
-  "at": "2026-11-25T18:24:40.431212+08:00",
-  "state": "v4_preflight",
+  "at": "2026-11-26T09:20:55.547246+08:00",
+  "state": "interleaved_search_ready_for_new_run",
   "dataset": "/home/zhaoyechong/projects/ARX-ManiSkill/simulation/scenes/mobile100",
   "dataset_freeze_sha256": "099616c6380f029daf947ef7405b3ac3956d584602e4c8ab7d7321afa4f52be3",
   "scene_count": 100,
@@ -44,7 +44,7 @@
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/pipeline.py": "bb5cadfed2dd557bfc362d3abbbf7889ddf8e38c262091dff1a5754d2551b6aa",
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/registry.py": "dd979fc85ed69bfc57829e5a4de6574c822bfb954f03a335758560e7900b1fae",
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/service.py": "c3f6f79a3e62ccf4c1266ecb24d2f153ec71316d95f38b8ada02990a53b1f8c4",
-    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "17b20c59909c9de689494727c4e2ddcc7db8accc5c764fb5aae12ad1fc968a9a",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "c76d7001fffcddd1b6b98bf660a8e7673db810ea656d7a153a5b56731317a324",
     "/home/zhaoyechong/projects/ARX-ManiSkill/configs/path_aliases.json": "4b34e5b4b70abdca3c4f3a69754884a0a29068cb870e16f35a0e44b1e04246b4",
     "/home/zhaoyechong/projects/ARX-ManiSkill/configs/pipelines/sam3_graspgenx.json": "5fa511488c30b7914a34670fe64cd28f912a654aad3c7570c185bd6d6a9421a6",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/arx-sim/config/controllers.yaml": "e9010f093abbfb0912498d247ac28854800edeba97b2debbab19da53ae7a3017",
@@ -121,7 +121,7 @@
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/fingertip_contact_871/planning_worker.py": "c3359fabc690d0a369976d276c8c90ec6815dc5a6c43d20aeee8686a53610d3a",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/dual_arm/model.py": "7f5d5a54274ee4a7e23bf91e7ca5cbe800d1aed383ba2587f9bd5ea0c2841873",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/dual_arm/__init__.py": "9c50c099bc4da365f52ab6ee29f6d5e141e935e2df9c71d3635ddca1b164f595",
-    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/dual_arm/adapter.py": "c561895ca40b519ea0b8e9f17f6189537e4622921a3f51210ecc5749adb25f81",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/dual_arm/adapter.py": "857d201118ce1db6a99931c3c041db450b149d263b863b62558cf3e7986b9aa8",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/dual_arm_grasp/run.py": "da6913f4645255529cac5c62c2df6e9957a2c7f1119505319f1feed0dc76182f",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/arms.py": "546a80dd3f319fba6d4f07b5c2aabd53ce7fe6f9a2e724ea66603c5aa05d3976",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/arx_pipeline/run.py": "d043982f7b492fbfb5b1d4c597b910867096dad7709ae56d3fa45265d7636f89",
@@ -138,10 +138,13 @@
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/json_io.py": "1213feadeb99220d7fd3a3565c089fa482efe0a33a99e72e4232cbf2fa31f075",
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/artifacts.py": "3a1046639c2d7156d5e9ee0750f670c55caf988275b2286c393cb86272dedde9",
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/candidate_rpc.py": "fc203aa019af264e0ca61bd87ef68b7897c88c98319ff8cfb13def38617aa4d5",
-    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/candidate_io/store.py": "a2af26be67cb885ed4a45fd4691fc83350a70e80804c5197167203f26647f30e"
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/candidate_io/store.py": "51b2ead2ff4015ad1e67ff32dbd32296d2de633285a6ddc78edd795be24265a6",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/dual_arm/interleaved_map_service.py": "bd1b94d496fafdae3eb29155de6b56b431b864457aee2613e25bc361ba0cf7a2",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/dual_arm/interleaved_adapter.py": "b1d2abe7d8436fa0a1cbb94a7d286113081f7ada49ed2d158faeab12694be8c8",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/experiments/dual_arm_interleaving.json": "4b4c1a499936b982d94316b22d116c2a472bbdbbe0ffa45dc67c261b22a862fc"
   },
-  "grasp_tests_authorized": true,
-  "physical_grasp_budget": 100,
+  "grasp_tests_authorized": false,
+  "physical_grasp_budget": 0,
   "physical_grasps": 0,
   "verification": "experiments/current_configuration/records/validation_20261124_01",
   "migration": {
@@ -444,5 +447,19 @@
     "candidate_filter_order_and_pose_changes": false,
     "background_recording": true,
     "shared_memory_handoff": true
+  },
+  "planner_variant": "alternating_candidate_windows",
+  "candidate_search_revision": {
+    "at": "2026-11-26T09:20:55.527555+08:00",
+    "variant": "alternating_candidate_windows",
+    "candidate_batch_size": 16,
+    "subsequent_candidate_batch_size": 64,
+    "adapter": "modules/curobo/dual_arm/interleaved_map_service.py",
+    "validation_report": "tmp/dual_arm_interleaving/replay_20261126_02/acceptance.json",
+    "validation_sha256": "227b982045b7130663c39424ecbbb9ca07110e91a59d6c6c54997e166502c150",
+    "source_complete_run": "tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01",
+    "source_acceptance_sha256": "0261a7194a72f21153ee3c0b8f26bbf31ed9b65d289369e0d42984e11a64b906",
+    "physical_robot_camera_scene_and_success_unchanged": true,
+    "additional_physical_grasps": 0
   }
 }

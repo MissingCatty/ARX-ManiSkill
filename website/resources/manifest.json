@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T23:42:56.421Z",
+  "generatedAt": "2026-11-26T01:24:32.352Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1459,11 +1459,11 @@
     },
     {
       "file": "media/sam3-v6-complete74-final-report.md",
-      "sha256": "e851b4e4dd69e0812a45e326af1a0a8606ed5f443dff45ba7fdb6a4ecac890be"
+      "sha256": "508c3406571c377add75a38ef2415ee701afccac3d4e82c1c861259105af920a"
     },
     {
       "file": "media/sam3-v6-complete74-paired-latency.json",
-      "sha256": "929ddf448f2d689356e850c1ae58d9789ac129e2fad6d71ccadd8642e172a9cf"
+      "sha256": "d41ff0e86240233aaa766035073d8ae4292677ac863018116b45b976e420c732"
     },
     {
       "file": "media/sam3-v6-complete74-acceptance.json",
@@ -1488,6 +1488,18 @@
     {
       "file": "media/sam3-v6-complete74-m0060-zerograsp.mp4",
       "sha256": "42136b365c3067c39d73879b4d940d47b1cb98971bab3a61e1e2218373459c25"
+    },
+    {
+      "file": "media/sam3-v6-complete74-latency-analysis.json",
+      "sha256": "a6df2cd2b10c3a87693e745db62f340e29d139a95953a5d02fcd7198c14544aa"
+    },
+    {
+      "file": "media/sam3-v6-interleaving-validation.json",
+      "sha256": "bfa3e1fd57fed7a88441f51e0b47cb36eca8eaa55ef37856cf06799a1c06bb68"
+    },
+    {
+      "file": "media/sam3-v6-interleaving-method.md",
+      "sha256": "3e28576ae4f6976d4efecc99dd1068405e9025bef597910945254c567e0dd993"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

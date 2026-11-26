@@ -193,7 +193,7 @@
       "source": "modules/curobo/dual_arm",
       "role": "motion_planning",
       "environment": "environments/curobo",
-      "adapter": "modules/curobo/dual_arm/placement_service.py",
+      "adapter": "modules/curobo/dual_arm/interleaved_map_service.py",
       "inputs": [
         "state.json",
         "candidates/candidate_pool.json"
@@ -206,16 +206,21 @@
         "endpoint_gate.json"
       ],
       "policies": [
-        "configs/policies/fingertip_table.json"
+        "configs/policies/fingertip_table.json",
+        "configs/experiments/dual_arm_interleaving.json"
       ],
       "source_files": [
         "arx_project/artifacts.py",
         "arx_project/candidate_rpc.py",
         "arx_project/json_io.py",
-        "modules/curobo/candidate_io/store.py"
+        "modules/curobo/candidate_io/store.py",
+        "modules/curobo/dual_arm/interleaved_map_service.py",
+        "modules/curobo/dual_arm/interleaved_adapter.py",
+        "modules/curobo/dual_arm/adapter.py"
       ],
       "candidate_data_delivery": "one request decode; shared arm views; optional shared-memory handoff",
-      "candidate_transport_format": "arx_candidate_json_shm_v1"
+      "candidate_transport_format": "arx_candidate_json_shm_v1",
+      "variant": "alternating_candidate_windows"
     },
     "mobile_manipulation": {
       "source": "modules/mobile_manipulation",

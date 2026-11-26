@@ -87,6 +87,18 @@ class DualArmPlanner:
         write_json(Path(directory)/'plan_result.json', result)
         return result
 
+    def search_arms(self, directory, state, sides, filename, selector):
+        plans = {}
+        for side in sides:
+            work = self.prepare_arm(directory, state, side, filename, planned_open=True)
+            sweep = self.opening_sweep(work, read_json(work/filename))
+            if not sweep['passed']:
+                plans[side] = {'success': False, 'reason': sweep['reason'], 'opening_sweep': sweep}
+                write_json(work/'plan_result.json', plans[side])
+            else:
+                plans[side] = self.pool.request(work, selector=selector)
+        return plans
+
     def _request(self, directory, observe=False, approach=False, lift=False, selector='graspcl', arm=None):
         directory = Path(directory)
         if observe or int(approach)+int(lift) > 1:
@@ -108,15 +120,7 @@ class DualArmPlanner:
             name = 'lift_plan' if lift else 'approach_plan'
         else:
             sides = ['right', 'left'] if arm is None else [get_arm(arm).name]
-            plans = {}
-            for side in sides:
-                work = self.prepare_arm(directory, state, side, filename, planned_open=True)
-                sweep = self.opening_sweep(work, read_json(work/filename))
-                if not sweep['passed']:
-                    plans[side] = {'success': False, 'reason': sweep['reason'], 'opening_sweep': sweep}
-                    write_json(work/'plan_result.json', plans[side])
-                else:
-                    plans[side] = self.pool.request(work, selector=selector)
+            plans = self.search_arms(directory, state, sides, filename, selector)
             chosen = choose_plan(plans, state)
             if chosen is None:
                 result = {'success': False, 'reason': 'no_arm_has_executable_candidate'}

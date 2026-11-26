@@ -600,7 +600,10 @@
     "sam3-v6-complete74-m0042-graspgenx.mp4": "../../resources/media/sam3-v6-complete74-m0042-graspgenx.mp4",
     "sam3-v6-complete74-m0042-zerograsp.mp4": "../../resources/media/sam3-v6-complete74-m0042-zerograsp.mp4",
     "sam3-v6-complete74-m0060-graspgenx.mp4": "../../resources/media/sam3-v6-complete74-m0060-graspgenx.mp4",
-    "sam3-v6-complete74-m0060-zerograsp.mp4": "../../resources/media/sam3-v6-complete74-m0060-zerograsp.mp4"
+    "sam3-v6-complete74-m0060-zerograsp.mp4": "../../resources/media/sam3-v6-complete74-m0060-zerograsp.mp4",
+    "sam3-v6-complete74-latency-analysis.json": "../../resources/media/sam3-v6-complete74-latency-analysis.json",
+    "sam3-v6-interleaving-validation.json": "../../resources/media/sam3-v6-interleaving-validation.json",
+    "sam3-v6-interleaving-method.md": "../../resources/media/sam3-v6-interleaving-method.md"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",

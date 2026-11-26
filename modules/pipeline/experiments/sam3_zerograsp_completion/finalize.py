@@ -65,6 +65,11 @@ def publish_final(root, configuration):
     report_path.write_text('\n'.join(report).rstrip()+'\n')
     report_url = attach(report_path,'sam3-v6-complete74-final-report.md')
     latency_url = attach(root/'paired_latency_summary.json','sam3-v6-complete74-paired-latency.json')
+    if (root/'latency_bottleneck_analysis.json').exists():
+        attach(root/'latency_bottleneck_analysis.json','sam3-v6-complete74-latency-analysis.json')
+    if (root/'interleaving_validation.json').exists():
+        attach(root/'interleaving_validation.json','sam3-v6-interleaving-validation.json')
+        attach(ROOT/'modules/curobo/docs/双臂候选交替搜索.md','sam3-v6-interleaving-method.md')
     acceptance_url = attach(root/'acceptance.json','sam3-v6-complete74-acceptance.json')
     makeup_url = attach(root/'inheritance_verified.json','sam3-v6-complete74-makeup-receipt.json')
     appendix = ['','## 最终完整结果与授权补跑','',*report[2:report.index('## 延时对照')],

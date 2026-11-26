@@ -1,0 +1,46 @@
+{
+  "module": "curobo_dual_arm",
+  "variant": "alternating_candidate_windows",
+  "adapter": "modules/curobo/dual_arm/interleaved_service.py",
+  "map_adapter": "modules/curobo/dual_arm/interleaved_map_service.py",
+  "candidate_batch_size": 16,
+  "subsequent_candidate_batch_size": 64,
+  "selection": "original_candidate_order_then_joint_displacement_then_right",
+  "candidate_changes": "none",
+  "equal_rank_other_arm_checked": true,
+  "opening_collision_checks": "inherited_without_changes",
+  "collision_spheres_per_arm": 871,
+  "tcp_offset_m": 0.043,
+  "fingertip_policy": "configs/policies/fingertip_table.json",
+  "validation": {
+    "source_run": "tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01",
+    "same_gpu_and_shared_memory": true,
+    "physical_grasp_budget": 0,
+    "simulation_instances": 0,
+    "cases": [
+      [
+        "graspgenx",
+        "M0044_S3_sparse_banana"
+      ],
+      [
+        "graspgenx",
+        "M0001_S1_open_apple"
+      ],
+      [
+        "graspgenx",
+        "M0010_S1_open_boxed_food"
+      ],
+      [
+        "graspgenx",
+        "M0069_S4_clutter_orange"
+      ],
+      [
+        "zerograsp",
+        "M0001_S1_open_apple"
+      ]
+    ],
+    "planning_requests": 10
+  },
+  "activation": "active_for_new_run_registrations",
+  "validation_report": "tmp/dual_arm_interleaving/replay_20261126_02/acceptance.json"
+}

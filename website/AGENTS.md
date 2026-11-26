@@ -1,5 +1,9 @@
 # 网站内容与表达约定
 
+- V6耗时分析下单列“交替搜索优化验证”，由latency_report.py读取最终批次interleaving_validation.json生成。旧74例成绩与延时保持原值；新验证是5组输入、19次纯规划，原抓姿和选臂一致。展示首轮同卡基准、固定16批次、首轮16/后续64批次及盒装食品同模型池AB/BA对照。当前已启用curobo_dual_arm_map交替搜索；物理抓取0、V8索引/批量IK仍待实施。验证JSON和中文方法文档均复制到resources/media，后续发布保留这两份独立附件。
+
+- V6的“具体耗时分析”随延时表统一生成，数据源为最终批次的latency_bottleneck_analysis.json。展示65个配对规划场景的平均耗时拆分、香蕉场景右臂3320次搜索与左臂首个候选通过、候选数量及单次轨迹优化耗时，并在下载报告中保留。分析JSON复制到resources/media/sam3-v6-complete74-latency-analysis.json，后续刷新使用同一生成器，避免覆盖丢失。
+
 - V6最终页的延时表与下载报告统一由sam3_zerograsp_completion/latency_report.py生成：同一行两组采用相同场景ID。生成和整次试验69例，首次规划及解码65例，两组都实际执行59例，两组均成功39例另列。执行环节电脑耗时包含仿真、渲染、录像、重规划及收尾；39例成功抓取的仿真动作时长两组均25.15秒。保留各组原始全量统计作为JSON来源，网页主表采用配对统计。启动和资源部分标明仅为两例补跑，历史两条中断单独保留。
 
 - V6共享内存复测最终完整结果为两组各74例：RaySt3R＋GraspGenX规划69、成功55；ZeroGrasp规划59、成功45。ZeroGrasp牛油果与甜甜圈两条旧中断经用户本轮授权各补跑一次，均成功；历史中断另存，最终各场景采用本次完整结果。148条结果独立验收通过，256段录像解码正常。发布入口modules/pipeline/experiments/sam3_zerograsp_completion/finalize.py的publish_final会在基础V6统计后附最终报告、配对延时、两例补跑说明与视频，后续刷新最终页应使用此入口，避免丢失附录。V8最新节点与公网待办保持。

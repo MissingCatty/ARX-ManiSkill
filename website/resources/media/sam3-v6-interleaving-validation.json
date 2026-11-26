@@ -1,0 +1,316 @@
+{
+  "at": "2026-11-26T09:24:04.674547+08:00",
+  "first": {
+    "at": "2026-11-26T09:07:17.552464+08:00",
+    "passed": true,
+    "paired_cases": [
+      {
+        "method": "graspgenx",
+        "id": "M0044_S3_sparse_banana",
+        "source_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01/methods/graspgenx/trials/M0044_S3_sparse_banana",
+        "passed": true,
+        "original_seconds": 428.2343164959966,
+        "interleaved_seconds": 8.546523478995368,
+        "speedup": 50.10625870840467,
+        "original_checks": {
+          "right": 3320,
+          "left": 1
+        },
+        "interleaved_checks": {
+          "right": 16,
+          "left": 1
+        },
+        "original_arm": "left",
+        "interleaved_arm": "left",
+        "original_index": 0,
+        "interleaved_index": 0
+      },
+      {
+        "method": "graspgenx",
+        "id": "M0001_S1_open_apple",
+        "source_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01/methods/graspgenx/trials/M0001_S1_open_apple",
+        "passed": true,
+        "original_seconds": 7.423023782997916,
+        "interleaved_seconds": 5.289478024998971,
+        "speedup": 1.403356578459244,
+        "original_checks": {
+          "right": 2,
+          "left": 2
+        },
+        "interleaved_checks": {
+          "right": 2,
+          "left": 2
+        },
+        "original_arm": "right",
+        "interleaved_arm": "right",
+        "original_index": 1,
+        "interleaved_index": 1
+      },
+      {
+        "method": "graspgenx",
+        "id": "M0010_S1_open_boxed_food",
+        "source_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01/methods/graspgenx/trials/M0010_S1_open_boxed_food",
+        "passed": true,
+        "original_seconds": 11.442911696998635,
+        "interleaved_seconds": 14.237012195997522,
+        "speedup": 0.8037438993144644,
+        "original_checks": {
+          "right": 57,
+          "left": 57
+        },
+        "interleaved_checks": {
+          "right": 57,
+          "left": 57
+        },
+        "original_arm": "right",
+        "interleaved_arm": "right",
+        "original_index": 56,
+        "interleaved_index": 56
+      },
+      {
+        "method": "graspgenx",
+        "id": "M0069_S4_clutter_orange",
+        "source_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01/methods/graspgenx/trials/M0069_S4_clutter_orange",
+        "passed": true,
+        "original_seconds": 82.97581233000528,
+        "interleaved_seconds": 77.17630240300059,
+        "speedup": 1.0751462527541253,
+        "original_checks": {
+          "right": 307,
+          "left": 273
+        },
+        "interleaved_checks": {
+          "right": 288,
+          "left": 273
+        },
+        "original_arm": "left",
+        "interleaved_arm": "left",
+        "original_index": 272,
+        "interleaved_index": 272
+      },
+      {
+        "method": "zerograsp",
+        "id": "M0001_S1_open_apple",
+        "source_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01/methods/zerograsp/trials/M0001_S1_open_apple",
+        "passed": true,
+        "original_seconds": 4.737403898994671,
+        "interleaved_seconds": 6.5040582200017525,
+        "speedup": 0.7283766133005793,
+        "original_checks": {
+          "right": 3,
+          "left": 3
+        },
+        "interleaved_checks": {
+          "right": 3,
+          "left": 3
+        },
+        "original_arm": null,
+        "interleaved_arm": null,
+        "original_index": null,
+        "interleaved_index": null
+      }
+    ],
+    "physical_grasps": 0,
+    "simulation_instances": 0,
+    "model_inference_calls": 0,
+    "resident_loads": {
+      "open": 1,
+      "closed": 1
+    },
+    "same_gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+    "shared_memory": true,
+    "same_selected_arm_index_and_pose": true
+  },
+  "second": {
+    "at": "2026-11-26T09:14:28.200894+08:00",
+    "passed": true,
+    "paired_cases": [
+      {
+        "method": "graspgenx",
+        "id": "M0044_S3_sparse_banana",
+        "source_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01/methods/graspgenx/trials/M0044_S3_sparse_banana",
+        "passed": true,
+        "original_seconds": 428.2343164959966,
+        "interleaved_seconds": 8.546562190000259,
+        "speedup": 50.10603175590812,
+        "original_checks": {
+          "right": 3320,
+          "left": 1
+        },
+        "interleaved_checks": {
+          "right": 16,
+          "left": 1
+        },
+        "original_arm": "left",
+        "interleaved_arm": "left",
+        "original_index": 0,
+        "interleaved_index": 0
+      },
+      {
+        "method": "graspgenx",
+        "id": "M0001_S1_open_apple",
+        "source_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01/methods/graspgenx/trials/M0001_S1_open_apple",
+        "passed": true,
+        "original_seconds": 7.423023782997916,
+        "interleaved_seconds": 6.213555882000946,
+        "speedup": 1.1946498790653004,
+        "original_checks": {
+          "right": 2,
+          "left": 2
+        },
+        "interleaved_checks": {
+          "right": 2,
+          "left": 2
+        },
+        "original_arm": "right",
+        "interleaved_arm": "right",
+        "original_index": 1,
+        "interleaved_index": 1
+      },
+      {
+        "method": "graspgenx",
+        "id": "M0010_S1_open_boxed_food",
+        "source_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01/methods/graspgenx/trials/M0010_S1_open_boxed_food",
+        "passed": true,
+        "original_seconds": 11.442911696998635,
+        "interleaved_seconds": 28.96591328800423,
+        "speedup": 0.39504750232534647,
+        "original_checks": {
+          "right": 57,
+          "left": 57
+        },
+        "interleaved_checks": {
+          "right": 57,
+          "left": 57
+        },
+        "original_arm": "right",
+        "interleaved_arm": "right",
+        "original_index": 56,
+        "interleaved_index": 56
+      },
+      {
+        "method": "graspgenx",
+        "id": "M0069_S4_clutter_orange",
+        "source_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01/methods/graspgenx/trials/M0069_S4_clutter_orange",
+        "passed": true,
+        "original_seconds": 82.97581233000528,
+        "interleaved_seconds": 63.24859930000093,
+        "speedup": 1.3118996032850336,
+        "original_checks": {
+          "right": 307,
+          "left": 273
+        },
+        "interleaved_checks": {
+          "right": 307,
+          "left": 273
+        },
+        "original_arm": "left",
+        "interleaved_arm": "left",
+        "original_index": 272,
+        "interleaved_index": 272
+      },
+      {
+        "method": "zerograsp",
+        "id": "M0001_S1_open_apple",
+        "source_directory": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01/methods/zerograsp/trials/M0001_S1_open_apple",
+        "passed": true,
+        "original_seconds": 4.737403898994671,
+        "interleaved_seconds": 4.828928547001851,
+        "speedup": 0.9810465930244494,
+        "original_checks": {
+          "right": 3,
+          "left": 3
+        },
+        "interleaved_checks": {
+          "right": 3,
+          "left": 3
+        },
+        "original_arm": null,
+        "interleaved_arm": null,
+        "original_index": null,
+        "interleaved_index": null
+      }
+    ],
+    "physical_grasps": 0,
+    "simulation_instances": 0,
+    "model_inference_calls": 0,
+    "resident_loads": {
+      "open": 1,
+      "closed": 1
+    },
+    "same_gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+    "shared_memory": true,
+    "baseline_reference_run": "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/dual_arm_interleaving/replay_20261126_01",
+    "same_selected_arm_index_and_pose": true
+  },
+  "window_policy": {
+    "at": "2026-11-26T09:19:46.561321+08:00",
+    "passed": true,
+    "results": [
+      {
+        "repeat": 0,
+        "mode": "fixed",
+        "seconds": 24.693010719005542,
+        "windows": 8,
+        "candidate_checks": 114,
+        "selected_arm": "right",
+        "selected_index": 56
+      },
+      {
+        "repeat": 0,
+        "mode": "expanded",
+        "seconds": 23.949112968002737,
+        "windows": 4,
+        "candidate_checks": 114,
+        "selected_arm": "right",
+        "selected_index": 56
+      },
+      {
+        "repeat": 1,
+        "mode": "expanded",
+        "seconds": 11.834511332999682,
+        "windows": 4,
+        "candidate_checks": 114,
+        "selected_arm": "right",
+        "selected_index": 56
+      },
+      {
+        "repeat": 1,
+        "mode": "fixed",
+        "seconds": 15.050509063999925,
+        "windows": 8,
+        "candidate_checks": 114,
+        "selected_arm": "right",
+        "selected_index": 56
+      }
+    ],
+    "median_seconds": {
+      "fixed": 19.871759891502734,
+      "expanded": 17.89181215050121
+    },
+    "physical_grasps": 0,
+    "simulation_instances": 0,
+    "same_selected_arm_index_and_pose": true
+  },
+  "activation": {
+    "at": "2026-11-26T09:20:55.527555+08:00",
+    "variant": "alternating_candidate_windows",
+    "candidate_batch_size": 16,
+    "subsequent_candidate_batch_size": 64,
+    "adapter": "modules/curobo/dual_arm/interleaved_map_service.py",
+    "validation_report": "tmp/dual_arm_interleaving/replay_20261126_02/acceptance.json",
+    "validation_sha256": "227b982045b7130663c39424ecbbb9ca07110e91a59d6c6c54997e166502c150",
+    "source_complete_run": "tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01",
+    "source_acceptance_sha256": "0261a7194a72f21153ee3c0b8f26bbf31ed9b65d289369e0d42984e11a64b906",
+    "physical_robot_camera_scene_and_success_unchanged": true,
+    "additional_physical_grasps": 0,
+    "new_file_hashes": {
+      "configs/modules.json": "c76d7001fffcddd1b6b98bf660a8e7673db810ea656d7a153a5b56731317a324",
+      "configs/experiments/active_experiment.json": "81ec4391d8c6215ac7def94d4cf58b2c1806c24240a717452cf7892ee4d57665",
+      "configs/experiments/dual_arm_interleaving.json": "4b4c1a499936b982d94316b22d116c2a472bbdbbe0ffa45dc67c261b22a862fc"
+    }
+  },
+  "planning_requests": 19,
+  "physical_grasps": 0,
+  "offline_checks": 28
+}
