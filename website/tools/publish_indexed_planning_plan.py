@@ -454,6 +454,10 @@ def publish():
     validation=validation_section(website,site,funnel_active)
     if validation:
         body=validation['body']+'\n'+body
+    from website.tools.indexed_serialization_section import section as serialization_section
+    serialization=serialization_section(website,site,funnel_active)
+    if serialization:
+        body=serialization['body']+'\n'+body
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version = next(v for v in group['iterations'] if v['code']=='V8')
@@ -490,6 +494,11 @@ def publish():
         version.update(status=status,resultSummary=summary)
         version['settings'][-1]=['当前进度',status]
         version['batches']=[v for v in version['batches'] if v['id']!=validation['batch']['id']]+[validation['batch']]
+    if serialization:
+        status,summary=serialization['status'],serialization['summary']
+        version.update(status=status,resultSummary=summary)
+        version['settings'][-1]=['当前进度',status]
+        version['batches']=[v for v in version['batches'] if v['id']!=serialization['batch']['id']]+[serialization['batch']]
     if group['current']=='V8':
         entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
         entry.update(status='V8'+status,metric=summary)

@@ -7,7 +7,7 @@ import unittest
 
 from arx_project.layout import sha256
 from .validation_launch import monitor_policy
-from .validation_replay import compare_pair, summarize, request_order
+from .validation_replay import compare_pair, summarize, request_order, latency_gates
 from .validation_review import check_validation_receipt
 
 
@@ -24,6 +24,28 @@ class ValidationRecordTests(unittest.TestCase):
     def test_partial_or_unknown_schedule_stops(self):
         for variants in [['control_1'], ['control_1', 'other'], ['control_1', 'vectorized_1', 'control_2']]:
             with self.assertRaises(ValueError): request_order(variants, 0)
+
+    def test_named_optimization_keeps_balanced_orders(self):
+        variants = ['control_1', 'fast_binding_1', 'fast_binding_2', 'control_2']
+        self.assertEqual(request_order(variants, 0), variants)
+        self.assertEqual(request_order(variants, 1), ['fast_binding_1', 'control_1', 'control_2', 'fast_binding_2'])
+
+    def test_rpc_metric_is_selected_explicitly(self):
+        modes = {'control_1': 'control', 'fast_binding_1': 'fast_binding'}
+        variants = {name: {'success': True, 'planning_request_seconds': 10., 'planning_rpc_seconds': 12.,
+                          'candidate_checks': 1, 'stage_summary': {}} for name in modes}
+        result = summarize([{'variants': variants}], modes, 'planning_rpc_seconds')
+        self.assertEqual(result['fast_binding']['median_seconds'], 12.)
+
+    def test_total_saving_does_not_override_median_or_p90_gate(self):
+        summary = {'control': {'total_seconds': 100., 'median_seconds': 10., 'p90_seconds': 20.},
+                   'fast_binding': {'total_seconds': 90., 'median_seconds': 11., 'p90_seconds': 22.}}
+        reg = {'minimum_total_time_reduction_for_full_comparison': .05,
+               'require_median_reduction': True, 'maximum_p90_increase_fraction': .05}
+        saving, gates = latency_gates(summary, 'fast_binding', reg)
+        self.assertTrue(gates['total_time_reduction']);self.assertFalse(all(gates.values()))
+        summary['fast_binding'].update(median_seconds=9., p90_seconds=20.)
+        self.assertTrue(all(latency_gates(summary, 'fast_binding', reg)[1].values()))
 
     def records(self, root):
         names = {'metrics_sha256': 'metrics.json', 'plan_sha256': 'plan_result.json',
@@ -43,6 +65,14 @@ class ValidationRecordTests(unittest.TestCase):
             check_validation_receipt(root, claim)
             (root/'stage_timings.json').unlink()
             with self.assertRaises((ValueError, FileNotFoundError)): check_validation_receipt(root, claim)
+
+    def test_lost_optimization_sidecar_stops(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder);claim = self.records(root)
+            path = root/'binding_serialization.json';path.write_text('{}')
+            claim['extra_receipts_sha256'] = {path.name: sha256(path)}
+            check_validation_receipt(root, claim);path.unlink()
+            with self.assertRaises(FileNotFoundError): check_validation_receipt(root, claim)
 
     def test_lost_other_arm_or_changed_arm_stops(self):
         with tempfile.TemporaryDirectory() as folder:

@@ -18,6 +18,9 @@ def check_validation_receipt(directory, claim):
     for side, digest in claim['arm_results_sha256'].items():
         if sha256(directory/'arms'/side/'plan_result.json') != digest:
             raise ValueError('Arm validation result changed: '+side)
+    for name, digest in claim.get('extra_receipts_sha256', {}).items():
+        if sha256(directory/name) != digest:
+            raise ValueError('Additional planning receipt changed: '+name)
 
 
 def validate(root):
@@ -28,7 +31,10 @@ def validate(root):
     for case in reg['cases']:
         for variant in reg['variants']:
             directory = root/'plans'/case['id']/variant
-            check_validation_receipt(directory, raw(root/'claims'/(case['id']+'_'+variant+'.json')))
+            claim = raw(root/'claims'/(case['id']+'_'+variant+'.json'))
+            if set(claim.get('extra_receipts_sha256', {})) != set(reg.get('additional_receipts', [])):
+                raise ValueError('Additional planning evidence is incomplete')
+            check_validation_receipt(directory, claim)
             metrics = raw(directory/'metrics.json');trace = raw(directory/'stage_timings.json')
             if trace['stages'] != metrics['stage_summary']:
                 raise ValueError('Timing summary differs from the actual trace')
@@ -48,7 +54,8 @@ def validate(root):
     result = {**reviewed, 'at': now(), 'all_original_selections_and_branches_retained': True,
         'timing_and_arm_receipts_verified': True, 'stage_timing_inclusive_and_exclusive': True,
         'planning_total_time_reduction': accepted['planning_total_time_reduction'],
-        'timing_gate_passed': accepted['timing_gate_passed'], 'automatic_full_comparison': False}
+        'timing_gate_passed': accepted['timing_gate_passed'],
+        'automatic_full_comparison': accepted.get('automatic_full_comparison', False)}
     write_json(root/'independent_review.json', result)
     return result
 

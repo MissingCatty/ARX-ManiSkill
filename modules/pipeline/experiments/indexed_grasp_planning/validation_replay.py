@@ -20,11 +20,21 @@ CONFIG = ROOT/'configs/experiments/indexed_grasp_validation.json'
 
 
 def request_order(variants, ordinal):
-    if set(variants) == {'control_1', 'vectorized_1', 'vectorized_2', 'control_2'}:
-        return ['control_1', 'vectorized_1', 'vectorized_2', 'control_2'] if ordinal%2 == 0 else \
-               ['vectorized_1', 'control_1', 'control_2', 'vectorized_2']
-    if set(variants) == {'control_1', 'vectorized_1'}:
-        return ['control_1', 'vectorized_1'] if ordinal%2 == 0 else ['vectorized_1', 'control_1']
+    groups = {}
+    for name in variants:
+        group, separator, repeat = name.rpartition('_')
+        if not separator or not group or repeat not in ['1', '2']:
+            raise ValueError('Unsupported validation comparison schedule')
+        groups.setdefault(group, set()).add(int(repeat))
+    optimized = [name for name in groups if name != 'control']
+    if len(optimized) != 1 or 'control' not in groups or groups['control'] != groups[optimized[0]]:
+        raise ValueError('Unsupported validation comparison schedule')
+    name = optimized[0]
+    if groups['control'] == {1, 2}:
+        return ['control_1', name+'_1', name+'_2', 'control_2'] if ordinal%2 == 0 else \
+               [name+'_1', 'control_1', 'control_2', name+'_2']
+    if groups['control'] == {1}:
+        return ['control_1', name+'_1'] if ordinal%2 == 0 else [name+'_1', 'control_1']
     raise ValueError('Unsupported validation comparison schedule')
 
 
@@ -46,6 +56,14 @@ def prepare(root, config=CONFIG):
         raise ValueError('Validation request budget differs from its exact schedule')
     request_order(cfg['variants'], 0)
     inputs = {str(source/name): sha256(source/name) for name in ['registration.json', 'planning_review.json']}
+    if cfg.get('cpu_preflight'):
+        preflight = ROOT/cfg['cpu_preflight'];proof = raw(preflight/'acceptance.json')
+        if not proof['passed'] or proof['historical_arm_models_and_scenes'] != 138:
+            raise ValueError('CPU preparation equivalence did not pass')
+        for name in ['registration.json', 'acceptance.json']:
+            inputs[str(preflight/name)] = sha256(preflight/name)
+        for name, digest in raw(preflight/'registration.json')['source_sha256'].items():
+            if sha256(name) != digest: raise ValueError('CPU-preflight implementation changed')
     if full:
         pilot = ROOT/cfg['pilot_source'];checked = raw(pilot/'independent_review.json')
         accepted = raw(pilot/'acceptance.json')
@@ -83,6 +101,7 @@ def prepare(root, config=CONFIG):
                    'modules/pipeline/experiments/indexed_grasp_planning', 'arx_project']:
         sources.update((ROOT/folder).glob('*.py'))
     sources.update(Path(p) for p in current['configuration_hashes'])
+    sources.update(ROOT/p for p in cfg.get('additional_source_files', []))
     sources.update(ROOT/'modules/curobo/source/curobo/_src/solver'/p for p in ['solver_ik.py', 'solver_ik_cfg.py'])
     root.mkdir(parents=True);(root/'claims').mkdir()
     write_json(root/'monitor_config.json', monitor_policy(root))
@@ -106,19 +125,19 @@ def prepare(root, config=CONFIG):
         'completed_requests': 0, 'total_requests': reg['planning_requests'], 'results': []})
 
 
-def compare_pair(pair):
-    return {'control_success_retained': not pair['control']['success'] or pair['vectorized']['success'],
-        'same_original_selection': all(pair['control'][k] == pair['vectorized'][k] for k in
+def compare_pair(pair, optimized='vectorized'):
+    return {'control_success_retained': not pair['control']['success'] or pair[optimized]['success'],
+        'same_original_selection': all(pair['control'][k] == pair[optimized][k] for k in
             ['success', 'selected_arm', 'selected_original_source_index', 'candidate_checks']),
-        'same_joint_endpoints': pair['control']['joint_endpoints'] == pair['vectorized']['joint_endpoints'],
-        'same_candidate_event_decisions': pair['control']['event_decisions'] == pair['vectorized']['event_decisions']}
+        'same_joint_endpoints': pair['control']['joint_endpoints'] == pair[optimized]['joint_endpoints'],
+        'same_candidate_event_decisions': pair['control']['event_decisions'] == pair[optimized]['event_decisions']}
 
 
-def summarize(rows, modes):
+def summarize(rows, modes, time_metric='planning_request_seconds'):
     summary = {}
-    for group in ['control', 'vectorized']:
+    for group in dict.fromkeys(modes.values()):
         entries = [v for row in rows for mode, v in row['variants'].items() if modes[mode] == group]
-        times = [v['planning_request_seconds'] for v in entries]
+        times = [v[time_metric] for v in entries]
         summary[group] = {'requests': len(entries), 'successes': sum(v['success'] for v in entries),
             'median_seconds': float(np.median(times)), 'p90_seconds': float(np.percentile(times, 90)),
             'total_seconds': float(sum(times)), 'candidate_checks': sum(v['candidate_checks'] for v in entries)}
@@ -131,10 +150,23 @@ def summarize(rows, modes):
     return summary
 
 
+def latency_gates(summary, optimized, registration):
+    saving = 1-summary[optimized]['total_seconds']/summary['control']['total_seconds']
+    gates = {'total_time_reduction': saving >= registration['minimum_total_time_reduction_for_full_comparison']}
+    if registration.get('require_median_reduction'):
+        gates['median_reduced'] = summary[optimized]['median_seconds'] < summary['control']['median_seconds']
+    if 'maximum_p90_increase_fraction' in registration:
+        gates['p90_within_limit'] = summary[optimized]['p90_seconds'] <= \
+            summary['control']['p90_seconds']*(1+registration['maximum_p90_increase_fraction'])
+    return saving, gates
+
+
 def run(root):
     if (root/'started.json').exists() or (root/'STOP').exists():
         raise ValueError('Do not repeat an already claimed V8 pilot')
     reg = raw(root/'registration.json');verify(reg)
+    optimized = reg.get('optimized_group', 'vectorized')
+    time_metric = reg.get('primary_time_metric', 'planning_request_seconds')
     if reg['device_assignment_pending']: raise ValueError('CUDA-verified assignment is required')
     write_json(root/'started.json', {'at': now(), 'pid': os.getpid(), 'gpu': reg['gpu']})
     env = dict(os.environ, CUDA_VISIBLE_DEVICES=reg['gpu'], CUDA_DEVICE_ORDER='PCI_BUS_ID',
@@ -142,7 +174,7 @@ def run(root):
     socket_path = root/'rpc.sock'
     if len(str(socket_path).encode()) >= 108: raise ValueError('V8 socket path exceeds UNIX socket limit')
     command = [str(ROOT/'environments/curobo/bin/python'), '-m',
-        'modules.pipeline.experiments.indexed_grasp_planning.validation_worker', '--root', str(root/'resident'),
+        reg.get('worker_module', 'modules.pipeline.experiments.indexed_grasp_planning.validation_worker'), '--root', str(root/'resident'),
         '--socket', str(socket_path), '--warmup-trial', str(root/'warmup'),
         '--descriptor', str(ROOT/'configs/modules.json')]
     log = (root/'resident.log').open('a')
@@ -178,8 +210,10 @@ def run(root):
                     raise ValueError('Native NMS differs from the accepted original source')
                 write_json(directory/'candidate_order.json', manifest)
                 descriptor = publish_candidate_pool(directory, queue)
+                rpc_began = time.perf_counter()
                 response = client.request(directory, candidate_transport=descriptor,
                     validation_variant=reg['variant_modes'][variant])
+                rpc_seconds = time.perf_counter()-rpc_began
                 if response['status'] != 'ok': raise RuntimeError('V8 planner RPC fault: '+str(response))
                 finish_candidate_transport(directory)
                 io = raw(directory/'candidate_io.json')
@@ -194,10 +228,12 @@ def run(root):
                     decisions[side] = [{k: e[k] for k in ['candidate_index', 'kind', 'kinematic_solutions', 'reasons'] if k in e}
                                        for e in arm.get('candidate_events', [])]
                 metrics.update(event_decisions=decisions, postprocessing_seconds=post_seconds,
+                    planning_rpc_seconds=rpc_seconds,
                     candidate_decode_seconds=io['load_seconds'],
                     postprocessing_plus_planning_seconds=post_seconds+metrics['planning_request_seconds'])
                 write_json(directory/'metrics.json', metrics);pair[variant] = metrics;completed += 1
                 write_json(claim, {'at': now(), 'state': 'complete',
+                    'extra_receipts_sha256': {name: sha256(directory/name) for name in reg.get('additional_receipts', [])},
                     'arm_results_sha256': {side: sha256(directory/'arms'/side/'plan_result.json')
                         for side in ['right', 'left']},
                     **{key: sha256(directory/name) for key, name in [
@@ -207,22 +243,22 @@ def run(root):
                 print('V8_VALIDATION_END', case['id'], variant, metrics['success'],
                       round(metrics['planning_request_seconds'], 3), metrics['candidate_checks'], flush=True)
             repeats = [1, 2] if 'control_2' in reg['variants'] else [1]
-            comparisons = [compare_pair({mode: pair[mode+'_'+str(n)] for mode in ['control', 'vectorized']}) for n in repeats]
+            comparisons = [compare_pair({mode: pair[mode+'_'+str(n)] for mode in ['control', optimized]}, optimized) for n in repeats]
             rows.append({'id': case['id'], 'variants': pair, 'comparison': comparisons})
             write_json(root/'progress.json', {'at': now(), 'phase': 'comparing', 'completed_requests': completed,
-                'total_requests': reg['planning_requests'], 'results': rows, 'summaries': summarize(rows, reg['variant_modes'])})
+                'total_requests': reg['planning_requests'], 'results': rows, 'summaries': summarize(rows, reg['variant_modes'], time_metric)})
             if not all(all(c.values()) for c in comparisons):
                 raise RuntimeError('Original decisions, first branch or control success changed; stop scheduling')
         verify(reg)
-        summary = summarize(rows, reg['variant_modes'])
-        saving = 1-summary['vectorized']['total_seconds']/summary['control']['total_seconds']
+        summary = summarize(rows, reg['variant_modes'], time_metric)
+        saving, timing_gates = latency_gates(summary, optimized, reg)
         write_json(root/'acceptance.json', {'at': now(), 'task_complete': completed == reg['planning_requests'],
             'record_integrity': True, 'planning_requests': completed, 'summaries': summary, 'cases': rows,
             'control_successes_retained': all(c['control_success_retained'] for r in rows for c in r['comparison']),
             'all_original_selections_and_branches_retained': all(all(c.values()) for r in rows for c in r['comparison']),
             'planning_total_time_reduction': saving,
-            'timing_gate_passed': saving >= reg['minimum_total_time_reduction_for_full_comparison'],
-            'physical_grasps': 0, 'automatic_full_comparison': False, 'automatic_default_activation': False})
+            'timing_gate_passed': all(timing_gates.values()), 'timing_gates': timing_gates, 'primary_time_metric': time_metric,
+            'physical_grasps': 0, 'automatic_full_comparison': reg.get('automatic_full_comparison', False), 'automatic_default_activation': False})
         write_json(root/'progress.json', {'at': now(), 'phase': 'complete', 'completed_requests': completed,
             'total_requests': reg['planning_requests'], 'results': rows, 'summaries': summary})
     finally:

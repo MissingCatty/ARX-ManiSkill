@@ -38,7 +38,7 @@ class ValidationPlanner(MeasuredPlanner):
         return {key: value for key, value in result.items() if key != 'stage_summary'}
 
 
-def main():
+def main(*, factory=None, planner_type=ValidationPlanner):
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ['root', 'socket', 'warmup-trial', 'descriptor']:
         parser.add_argument('--'+name, type=Path, required=True)
@@ -54,7 +54,7 @@ def main():
     if free/1024**2 < 10000:
         raise RuntimeError('Insufficient original startup CUDA memory')
     torch.zeros(1, device='cuda');torch.cuda.synchronize();began = time.perf_counter()
-    planner = create(args)
+    planner = (factory or create)(args)
     branches = warm_solver_branches(planner, args.warmup_trial/'state.json', args.root/'solver_prewarm')
     rows = verify_row_validation(planner, args.warmup_trial/'state.json', args.root/'validation_prewarm')
     write_json(args.root/'startup.json', {'at': now(), 'passed': True,
@@ -64,7 +64,7 @@ def main():
         'actual_world_row_validation_verified': rows['passed'],
         'actual_world_validation_rows': sum(r['rows'] for r in rows['reports']),
         'simulation_instances': 0, 'physical_grasps': 0})
-    serve(args, worker=ValidationPlanner(planner))
+    serve(args, worker=planner_type(planner))
 
 
 if __name__ == '__main__': main()

@@ -1,5 +1,7 @@
 # 网站内容与表达约定
 
+- V8新增配置准备提速阶段，indexed_serialization_section.py读取funnel_active.json.binding_serialization_run，优先显示先导/完整RPC对照。保留上轮批量分支完整结果。CPU144对配置值一致、中位141→42ms单列，不能当作完整RPC收益；新计时包含留档/SHM提交。方法、CPU核验、进度JSON使用sam3-v8-binding-serialization*真实副本。未获完整GPU结果前写实际进度；默认不切换，物理0。
+
 - V8抓取分支完整对照已138/138、双方69/69、414终点独立核验通过；累计省3.51%，中位9.98→11.01秒，P90近似持平。页面保留原先导5.47%的结果，完整结果优先展示；32场景更快37更慢，注明保留可选、默认不切换。本轮无新增物理抓取。完整报告、JSON继续使用resources真实副本，最终核验由validation_finalization_20261126_01承接，不重跑旧请求。
 
 - V8已进入抓取分支批量复核：先导20次两组10/10、60终点独立通过，累计省5.47%，中位6.06→6.92秒；完整69观测138请求已登记运行。indexed_validation_section.py读取funnel_active.json.validation_run，分开发布先导和完整批次状态与真实附件，保留B/C/D/E、V7与旧定位数据。新计时包括绑定、前后IK及PRM，未新增物理抓取，不把完整批次预热写成已完成结果；不修改默认链路。先导与全量文档分别复制到resources/media。

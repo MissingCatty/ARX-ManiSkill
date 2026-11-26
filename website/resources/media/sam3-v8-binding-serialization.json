@@ -1,0 +1,39 @@
+{
+  "run": "tmp/indexed_grasp_planning/yaml69_20261126_01",
+  "phase": "planning",
+  "gpu": "GPU-b827b8be-c675-83f7-1b4c-39b5811c6d5e",
+  "completed_requests": 16,
+  "total_requests": 138,
+  "current": {
+    "id": "M0011_S1_open_bread",
+    "variant": "control_1"
+  },
+  "primary_time_metric": "planning_rpc_seconds",
+  "summaries": null,
+  "acceptance": null,
+  "independent_review": null,
+  "CPU_preparation": {
+    "at": "2026-11-26T20:45:31.930024+08:00",
+    "passed": true,
+    "pairs": 144,
+    "historical_arm_models_and_scenes": 138,
+    "summaries": {
+      "control": {
+        "calls": 144,
+        "median_seconds": 0.14102942550380249,
+        "p90_seconds": 0.1788887719012564,
+        "total_seconds": 21.50941899594909
+      },
+      "fast_binding": {
+        "calls": 144,
+        "median_seconds": 0.04231185400567483,
+        "p90_seconds": 0.05763746140146396,
+        "total_seconds": 6.889875475098961
+      }
+    },
+    "new_IK_calls": 0,
+    "planning_requests": 0,
+    "physical_grasps": 0,
+    "simulation_instances": 0
+  }
+}
