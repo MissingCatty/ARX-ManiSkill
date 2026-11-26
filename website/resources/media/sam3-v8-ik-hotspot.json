@@ -1,0 +1,69 @@
+{
+  "at": "2026-11-26T23:02:36.745913+08:00",
+  "passed": true,
+  "source": "tmp/indexed_grasp_planning/ikprofile_20261126_01",
+  "sampled_world_batches": 5,
+  "kernel_seconds": 3.5975235850000016,
+  "collision_kernel_seconds": 3.5165282900000006,
+  "CUDA_graph_captures": 0,
+  "cases": [
+    {
+      "case": "M0001_S1_open_apple",
+      "kernel_seconds": 0.2906744869999994,
+      "collision_kernel_seconds": 0.27440620599999993,
+      "collision_fraction": 0.9440326491399311,
+      "CUDA_graph_captures": 0,
+      "LM_host_seconds": 0.026847139990422875,
+      "LBFGS_host_seconds": 0.2855990919924807
+    },
+    {
+      "case": "M0032_S2_edge_potato",
+      "kernel_seconds": 1.2232873869999978,
+      "collision_kernel_seconds": 1.2071021890000004,
+      "collision_fraction": 0.9867690959851305,
+      "CUDA_graph_captures": 0,
+      "LM_host_seconds": 0.005074683009297587,
+      "LBFGS_host_seconds": 1.2118733219977003
+    },
+    {
+      "case": "M0044_S3_sparse_banana",
+      "kernel_seconds": 0.8075715430000019,
+      "collision_kernel_seconds": 0.7913905000000004,
+      "collision_fraction": 0.9799633318679217,
+      "CUDA_graph_captures": 0,
+      "LM_host_seconds": 0.005064804005087353,
+      "LBFGS_host_seconds": 0.7992451469908701
+    },
+    {
+      "case": "M0064_S4_clutter_mango",
+      "kernel_seconds": 0.8856748350000015,
+      "collision_kernel_seconds": 0.8695410489999997,
+      "collision_fraction": 0.9817836237833247,
+      "CUDA_graph_captures": 0,
+      "LM_host_seconds": 0.0048129589995369315,
+      "LBFGS_host_seconds": 0.8749756280012662
+    },
+    {
+      "case": "M0084_S5_occluded_banana",
+      "kernel_seconds": 0.3903153330000006,
+      "collision_kernel_seconds": 0.37408834600000007,
+      "collision_fraction": 0.958425955559372,
+      "CUDA_graph_captures": 0,
+      "LM_host_seconds": 0.00526992799132131,
+      "LBFGS_host_seconds": 0.3821955989988055
+    }
+  ],
+  "device_event_category": "kernel",
+  "GPU_annotation_ranges_excluded": true,
+  "input_sha256": {
+    "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/indexed_grasp_planning/ikprofile_20261126_01/plans/M0001_S1_open_apple/profiled_1/ik_sample_0.trace.json": "906d2e28c9250779ac5a3da01de813a800d3e8bf1f39a8ede8c12f2f116d84ab",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/indexed_grasp_planning/ikprofile_20261126_01/plans/M0032_S2_edge_potato/profiled_1/ik_sample_0.trace.json": "c81c7d1487cb3135d85b3797bc786ec77882ac8267b3aae607ff22b18d0856ce",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/indexed_grasp_planning/ikprofile_20261126_01/plans/M0044_S3_sparse_banana/profiled_1/ik_sample_0.trace.json": "3c6b7122632e999bdd517b2291642b29c530532be94d116a24a91175327676be",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/indexed_grasp_planning/ikprofile_20261126_01/plans/M0064_S4_clutter_mango/profiled_1/ik_sample_0.trace.json": "12d6690c55b621608918745b8ad581ba7ad348a7b1a26282d73c71efe5b29b1f",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/indexed_grasp_planning/ikprofile_20261126_01/plans/M0084_S5_occluded_banana/profiled_1/ik_sample_0.trace.json": "970cef5bb1a72c9a38727f2cbffc29a73e874dd42a666219c668ea689ce61926"
+  },
+  "correctness_requests": 10,
+  "independent_endpoints": 30,
+  "diagnostic_times_are_not_speedup_measurements": true,
+  "collision_fraction": 0.9774858195960928
+}

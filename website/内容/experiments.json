@@ -692,8 +692,8 @@
           "sourceId": "sam3-graspgenx",
           "title": "可达性索引与批量IK加速",
           "date": "2026-11-26",
-          "status": "配置准备提速完整69场景对照：138/138次，独立核验完成",
-          "resultSummary": "配置准备提速完整69场景对照：138/138次，独立核验完成",
+          "status": "网格查询优化：20/20次，独立核验完成，未扩展69场景",
+          "resultSummary": "网格查询优化：20/20次，独立核验完成，未扩展69场景",
           "change": "以现行双臂交替搜索为基线，分别比较原生批量IK、几何IK、关节解索引与模型场景绑定复用，保留原抓姿和评分顺序。",
           "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 双臂交替调度 → 批量IK/几何IK/索引复用对照 → 当前碰撞与路径检查 → 选臂抓取",
           "scenes": "先使用同一套69份有效候选做规划回放，74例总体范围保留5例共同站位失败。",
@@ -712,7 +712,7 @@
             ],
             [
               "当前进度",
-              "配置准备提速完整69场景对照：138/138次，独立核验完成"
+              "网格查询优化：20/20次，独立核验完成，未扩展69场景"
             ]
           ],
           "contentFile": "sam3-graspgenx-v8.md",
@@ -979,6 +979,42 @@
                 {
                   "label": "进度与计时",
                   "url": "/media/sam3-v8-binding-serialization.json"
+                }
+              ]
+            },
+            {
+              "id": "ikprofile_20261126_01",
+              "title": "批量IK的CPU与CUDA内核定位",
+              "date": "2026-11-26",
+              "status": "10/10完成，30终点独立核验通过",
+              "summary": "碰撞查询占采样内核97.75%，Graph重捕获0次。",
+              "outputs": [
+                "tmp/indexed_grasp_planning/ikprofile_20261126_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "内核定位数据",
+                  "url": "/media/sam3-v8-ik-hotspot.json"
+                }
+              ]
+            },
+            {
+              "id": "meshvote_pilot_20261126_03",
+              "title": "网格查询优化五场景先导",
+              "date": "2026-11-26",
+              "status": "网格查询优化：20/20次，独立核验完成，未扩展69场景",
+              "summary": "网格查询优化：20/20次，独立核验完成，未扩展69场景",
+              "outputs": [
+                "tmp/indexed_grasp_planning/meshvote_pilot_20261126_03"
+              ],
+              "artifacts": [
+                {
+                  "label": "方法与结果",
+                  "url": "/media/sam3-v8-mesh-vote.md"
+                },
+                {
+                  "label": "实际计时和进度",
+                  "url": "/media/sam3-v8-mesh-vote.json"
                 }
               ]
             }

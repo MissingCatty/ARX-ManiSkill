@@ -458,6 +458,10 @@ def publish():
     serialization=serialization_section(website,site,funnel_active)
     if serialization:
         body=serialization['body']+'\n'+body
+    from website.tools.indexed_mesh_vote_section import section as mesh_vote_section
+    mesh_vote=mesh_vote_section(website,site,funnel_active)
+    if mesh_vote:
+        body=mesh_vote['body']+'\n'+body
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version = next(v for v in group['iterations'] if v['code']=='V8')
@@ -501,6 +505,12 @@ def publish():
         for previous in serialization.get('history_batches', []):
             version['batches']=[v for v in version['batches'] if v['id']!=previous['id']]+[previous]
         version['batches']=[v for v in version['batches'] if v['id']!=serialization['batch']['id']]+[serialization['batch']]
+    if mesh_vote:
+        status,summary=mesh_vote['status'],mesh_vote['summary']
+        version.update(status=status,resultSummary=summary)
+        version['settings'][-1]=['当前进度',status]
+        for batch in mesh_vote['batches']:
+            version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
     if group['current']=='V8':
         entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
         entry.update(status='V8'+status,metric=summary)

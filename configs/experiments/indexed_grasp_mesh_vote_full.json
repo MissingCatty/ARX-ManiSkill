@@ -1,0 +1,52 @@
+{
+  "version": "V8",
+  "experiment": "exact_mesh_majority",
+  "phase": "full",
+  "authorization": "2026-11-26：用户授权定位IK后做一项针对性修改，五场景20次ABBA/BAAB，三项时延门槛与独立核验通过后完整69场景对照。",
+  "source_run": "tmp/graspgenx_postprocessing/planning69_20261126_01",
+  "offline_source": "tmp/graspgenx_postprocessing/offline69_20261126_01",
+  "cpu_preflight": "tmp/indexed_grasp_planning/yaml_preflight_20261126_01",
+  "baseline": "NMS15_with_all_original_deferred_B16_and_C_YAML_binding",
+  "batch_capacity": 16,
+  "optimized_group": "early_vote",
+  "variants": {
+    "control_1": "control",
+    "early_vote_1": "early_vote"
+  },
+  "planning_requests": 138,
+  "worker_module": "modules.pipeline.experiments.indexed_grasp_planning.mesh_vote_worker",
+  "primary_time_metric": "planning_rpc_seconds",
+  "additional_receipts": [
+    "binding_serialization.json",
+    "mesh_vote.json"
+  ],
+  "additional_source_files": [
+    "modules/curobo/indexed_planning/mesh_query/__init__.py",
+    "modules/curobo/indexed_planning/mesh_query/backend.py",
+    "modules/curobo/indexed_planning/mesh_query/kernels.py",
+    "modules/curobo/indexed_planning/mesh_query/native_contract.py",
+    "modules/curobo/indexed_planning/mesh_query/preflight.py",
+    "modules/curobo/indexed_planning/mesh_query/test_contract.py",
+    "environments/curobo/lib/python3.11/site-packages/warp/native/mesh.h",
+    "modules/curobo/source/curobo/_src/geom/collision/wp_collision_kernel.py",
+    "modules/curobo/source/curobo/_src/geom/data/data_mesh.py",
+    "modules/curobo/source/curobo/_src/geom/collision/wp_autograd.py",
+    "modules/curobo/source/curobo/_src/geom/collision/checker_collision.py"
+  ],
+  "minimum_total_time_reduction_for_full_comparison": 0.05,
+  "require_median_reduction": true,
+  "maximum_p90_increase_fraction": 0.05,
+  "same_gpu_models_scene_and_seed": true,
+  "seed": 20261126,
+  "original_first_passing_branch_required": true,
+  "minimum_startup_free_mib": 10000,
+  "minimum_request_free_mib": 1536,
+  "automatic_retries": false,
+  "automatic_full_comparison": false,
+  "automatic_default_activation": false,
+  "physical_grasp_budget": 0,
+  "simulation_instances": 0,
+  "perception_calls": 0,
+  "diagnostic_source": "tmp/indexed_grasp_planning/ikprofile_20261126_01",
+  "pilot_source": "tmp/indexed_grasp_planning/meshvote_pilot_20261126_03"
+}

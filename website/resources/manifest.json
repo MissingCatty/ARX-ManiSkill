@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T14:12:18.966Z",
+  "generatedAt": "2026-11-26T15:15:58.319Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1672,6 +1672,22 @@
     {
       "file": "media/sam3-v8-binding-serialization-yaml69-20261126-01-stop.json",
       "sha256": "2191865b61232b6f8dea0f1098efec7b6207dbbbd202225060bbd772b043223a"
+    },
+    {
+      "file": "media/sam3-v8-ik-hotspot.json",
+      "sha256": "396b45a3cafebecb677732a429f5f5cff201bdcebd362a773d5a1e125cd51a6d"
+    },
+    {
+      "file": "media/sam3-v8-mesh-vote.md",
+      "sha256": "f2c307fc4b5a1677269b18c6436671365c17946eb896606179c4d264e7c56441"
+    },
+    {
+      "file": "media/sam3-v8-mesh-vote.json",
+      "sha256": "58a83228d9a3edab5e2023fd3056fbc102c7849f92ecaf91434a7e29e389cfff"
+    },
+    {
+      "file": "media/sam3-v8-mesh-vote-analysis.md",
+      "sha256": "3890a8f4eb31b32ff63b9f8f370dc6cc4778190c01c998727b7328a57b0cb4e4"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
