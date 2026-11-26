@@ -1,0 +1,136 @@
+"""Publish the V8 research plan without starting a planner or simulator."""
+import shutil
+
+from arx_project.layout import ROOT,read_json,write_json,sha256
+
+
+def publish():
+    website = ROOT/'website'
+    config = read_json(ROOT/'configs/experiments/indexed_grasp_planning.json')
+    if config['execution']['native_planning_budget'] or config['execution']['physical_grasp_budget']:
+        raise ValueError('This publisher describes a planning proposal with zero execution budget')
+    review = ROOT/'tmp/indexed_grasp_planning/research_20261126_01'
+    site_path,registry_path = website/'内容/网站.json',website/'内容/experiments.json'
+    site,registry = read_json(site_path),read_json(registry_path)
+    attachments = [
+        (ROOT/'configs/experiments/indexed_grasp_planning.json','sam3-v8-indexed-planning-config.json'),
+        (ROOT/'modules/pipeline/docs/mainline_versions/V8_可达性索引与批量IK加速实验方案.md','sam3-v8-indexed-planning-plan.md'),
+        (ROOT/'modules/pipeline/docs/mainline_versions/V8_规划加速方法调研.md','sam3-v8-planning-research.md'),
+        (review/'arm_geometry_review.json','sam3-v8-arm-geometry-review.json'),
+        (review/'source_review.json','sam3-v8-source-review.json')]
+    for source,name in attachments:
+        target = website/'resources/media'/name
+        if target.is_symlink():raise ValueError('Website resource must be a real copy')
+        shutil.copy2(source,target)
+        if target.stat().st_nlink != 1 or sha256(source) != sha256(target):
+            raise ValueError('Independent resource copy failed')
+        site['localAssets'][name] = '../../resources/media/'+name
+    body = '''## 本版进度
+
+方法调研、本地接口与ARX静态几何核查已完成，下一步适配并比较各方法。当前V8规划回放0次、物理抓取0次。
+
+## 优化目标
+
+把候选检查与整次规划请求做快，同时保留原抓姿、评分顺序和规划效果。以已启用的双臂交替搜索为基线，分别测量批量IK、几何IK、地图复用和绑定复用，最后组合有效部分。
+
+双臂交替搜索的香蕉428.23→8.55秒已归入[V3双臂版本](/iterations/sam3-graspgenx/versions/V3/)。V8各组都使用相同的首轮16、后续64调度，比较在此基础上还能节省多少时间。
+
+## 优先比较什么
+
+| 分组 | 具体做法 | 想解决的耗时 | 当前进度 |
+| --- | --- | --- | --- |
+| A：现行基线 | 当前交替搜索、逐候选IK与原碰撞/路径检查 | 建立优化后的真实对照 | 已实现，待完整回放 |
+| B：原生批量IK | 一次处理16或32个目标，各自保留编号与结果 | 逐个调用小规模求解的开销 | 待适配 |
+| C：绑定复用 | 同一请求内复用每臂的模型和场景上下文 | 交替窗口反复绑定世界 | 待适配与测显存 |
+| D：几何IK | 用EAIK/IK-Geo生成关节分支，再走当前检查 | 六轴数值搜索 | 结构已核查，求解待验证 |
+| E：索引复用 | 地图见证直接验证或作为原目标初值 | 重复寻找已知解 | 待扩展接口 |
+| F：有效组合 | 组合单项测得有效的部分 | 最终请求总耗时 | 待各组结果 |
+
+批量IK与地图分开测试，便于看清各自的收益。所有组都按原候选排名决定哪个完整方案先取得执行权。
+
+批量求解同时保留完整场景IK和纯运动学回退两层流程，后者继续经过独立FK、限位与V2近桌检查。
+
+## 本地已经确认的条件
+
+| 核查项 | 结果 | 下一步 |
+| --- | --- | --- |
+| cuRobo接口 | 已有批量目标与种子输入；当前辅助IK配置一次1个目标 | 预热16、32目标的独立求解器 |
+| ARX运动链 | right_joint22/23/24三个连续转轴平行，腕部25/26轴相交 | 验证EAIK自动分解、原限位与工具变换 |
+| 关节见证 | 已有约1056万组前方记录 | 先测命中率和查询/回退合计耗时 |
+| 现有地图查询 | 单目标取8192个位置近邻，再比较旋转 | 测量成批查询成本 |
+| 现有朝向索引 | 用重力方向做允许底盘转向时的必要条件筛选 | 固定站位查询加入完整旋转比较 |
+
+16/64是两只手的轮换窗口，16/32是GPU一次处理的目标数量，两者分别记录。几何求解返回的角度先转换到原限位允许的等价分支，再独立复算FK；最小二乘结果也按原2毫米、0.03弧度门槛检查。
+
+## 地图怎样接
+
+查询原抓姿附近的关节见证，达到原目标容差的结果进入当前场景碰撞检查；邻近记录作为原目标的求解初值。缺少合格记录时调用现有IK。
+
+地图负责提供运动学解，场景碰撞和完整路径继续检查。先测现有地图的收益，再按具体缺口决定是否补数据。成功解缓存与当前场景碰撞结果分别管理，首轮比较使用冻结缓存。
+
+## 已有问题定位数据
+
+交替优化前的65个配对规划场景中，GraspGenX两臂合计检查12452次抓取终点。下表是候选检查次数：
+
+| 检查结果 | 次数 | 比例 |
+| --- | ---: | ---: |
+| 当次未得到运动学解 | 10878 | 87.4% |
+| 有解后碰撞检查未通过 | 1447 | 11.6% |
+| 抓取终点通过 | 127 | 1.0% |
+
+当前交替搜索的完整69份观测耗时将在V8重新测量。地图主要帮助已有解的复用；批量求解也需要覆盖长串当次未解出的候选。
+
+## 怎样实施和比较
+
+| 顺序 | 工作 | 当前进度 |
+| --- | --- | --- |
+| 1 | 更新基线，核查文献、接口和ARX几何 | 已完成 |
+| 2 | 冻结现行交替输入，建立分项计时 | 待实施 |
+| 3 | 原生批量IK与绑定复用分别适配 | 待实施 |
+| 4 | 几何IK适配与FK、限位、多分支检查 | 待实施 |
+| 5 | 地图批量查询与见证/初值对照 | 待实施 |
+| 6 | 全69份观测配对回放，筛选有效组合 | 待登记批次 |
+| 7 | 按规划结果确定物理抓取验证 | 待确定 |
+
+使用相同的69份V6保存观测、GraspGenX原候选和机器人状态。5例共同站位失败在74例总体中保留，SAM失败与原中断单列。同卡、统一预热，交替先后顺序；短时计时多次重复。
+
+总请求耗时统计中位数和P90，并拆出解码、查询、世界绑定、开爪、IK、碰撞、路径与交接。规划通过率、原成功输入保留、选中抓法和手臂变化一并记录。每臂871球、TCP43、指尖2毫米规则及场景物理沿用当前配置。
+
+## 接入位置
+
+头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 双臂交替调度 → 本版待比较的IK/复用模块 → 当前碰撞与路径检查 → 选臂抓取。
+
+[[流程卡片]]
+
+## 参考方法与文件
+
+- [cuRoboV2批量IK](/papers/curobo-v2/)
+- [MoveIt Cached IK](/papers/cached-ik/)
+- [EAIK / IK-Geo几何IK](/papers/eaik/)
+- [VAMP-MR向量化检查](/papers/vamp-mr/)
+- [完整实施方案](/media/sam3-v8-indexed-planning-plan.md)
+- [方法调研](/media/sam3-v8-planning-research.md)
+- [实验配置](/media/sam3-v8-indexed-planning-config.json)
+- [ARX静态几何核查](/media/sam3-v8-arm-geometry-review.json)
+- [本地接口与来源记录](/media/sam3-v8-source-review.json)
+'''
+    (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
+    group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
+    version = next(v for v in group['iterations'] if v['code']=='V8')
+    version.update(status='调研与静态核查完成，待适配',
+        resultSummary='以现行交替搜索为基线，独立比较批量IK、绑定复用、几何IK和地图；V8回放0次。',
+        change='以现行双臂交替搜索为基线，分别比较原生批量IK、几何IK、关节解索引与模型场景绑定复用，保留原抓姿和评分顺序。',
+        pipeline='头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 双臂交替调度 → 批量IK/几何IK/索引复用对照 → 当前碰撞与路径检查 → 选臂抓取')
+    version['settings'] = [['基线','已启用的双臂交替搜索，首轮16、后续64。'],
+        ['对照','批量IK、绑定复用、几何IK、地图复用分别比较。'],
+        ['输入','最终V6的69份有效观测，保留原抓姿与排名。'],
+        ['当前进度','文献与接口调研、ARX静态几何核查完成；待适配。']]
+    if group['current']=='V8':
+        entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
+        entry.update(status='V8调研与方案已更新，适配待开展',metric='批量IK、几何IK、绑定与地图复用分组验证')
+    write_json(site_path,site);write_json(registry_path,registry)
+    print('Published V8 research plan; native and physical execution remain zero.')
+
+
+if __name__=='__main__':
+    publish()

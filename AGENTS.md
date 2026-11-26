@@ -1,5 +1,7 @@
 # ARX-ManiSkill 工程约定
 
+- 用户于2026年11月26日要求交替优化记录到V3，并调研V8的优化方法。V3已单列双臂交替搜索方法与19次纯规划验证，原4项物理联调保留；V6仍保留原74例成绩与计时，并链接V3模块记录。V8方案以现行16/64交替调度为基线，比较原生批量IK、绑定复用、EAIK/IK-Geo几何IK、地图见证与有效组合。当前URDF的22/23/24轴平行、25/26轴线相交，静态核查保存在tmp/indexed_grasp_planning/research_20261126_01；本轮V8原生IK/规划及物理抓取均0，适配器尚未实施。配置与中文方案已更新，原方案副本保留。后续先实现并验证批量完整场景IK与纯运动学回退，再比较其他支路，不改变原抓姿、评分与碰撞规则。
+
 - 2026年11月26日用户要求“先优化交替”已完成并启用：当前curobo_dual_arm_map使用interleaved_map_service.py，首轮各16个、随后每批64个交替检查，各臂保存游标；只剩一臂时直接检查剩余竞争前缀。原抓姿、评分、同名次关节位移比较和全部碰撞/路径门控保持。28项离线检查及72组排序子例通过。tmp/dual_arm_interleaving/replay_20261126_01完成5对/10次同卡规划，香蕉428.23→8.55秒；02新增5次16/64规划，五组输入的规划成败、选中臂及原抓姿仍全部一致。window_sizes_20261126_01追加4次同模型池AB/BA对照，盒装食品固定16批次19.87秒、后续64批次17.89秒，窗口8→4、检查114次保持。合计19次纯规划，0仿真实例、0物理抓取、0感知模型推理。默认切换记录在02/activation和configs/experiments/history/dual_arm_interleaving_activation_20261126.json；current configuration核验通过，新抓取预算0。旧V6完整成绩、录像、STOP及各轮原始记录保留，V8索引/批量IK仍未实施。
 
 - V6完整74例对照已于2026年11月26日完成，最终记录tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01：两组各74条完整结果，新增两例ZeroGrasp补跑均成功；RaySt3R＋GraspGenX规划69/74、抓取55/74，ZeroGrasp规划59/74、抓取45/74。148条完整结果独立验收通过，256段录像全部解码正常，模型服务均已退出。历史两条中断保存在historical_attempts，旧批次和STOP保留，不再追加或重抓。最终报告modules/pipeline/docs/mainline_versions/V6_共享内存对照最终结果.md；公网发布与Git推送状态读取本批final_publication.json、git_push.json及队列status.json。V8仍为已登记待实现方案，未因V6结束自动启动。

@@ -1,5 +1,7 @@
 # 网站内容与表达约定
 
+- 按用户最新要求，双臂候选交替搜索的模块实施与19次纯规划验证记录在V3，内容源为content_sections/双臂候选交替搜索.md，发布器publish_dual_arm_interleaving.py；原4项抓取联调保留。V3基础发布器持续保留该章节与纯规划批次，并防止旧版发布降低当前V8指针。V8研究方案由publish_indexed_planning_plan.py同步文档、配置、静态几何与接口记录，所有附件复制到resources/media；原生规划与抓取0。新增cuRoboV2、Cached IK、EAIK与VAMP-MR方法页，版本页通过/papers/链接访问，论文入口使用项目主页。
+
 - V6耗时分析下单列“交替搜索优化验证”，由latency_report.py读取最终批次interleaving_validation.json生成。旧74例成绩与延时保持原值；新验证是5组输入、19次纯规划，原抓姿和选臂一致。展示首轮同卡基准、固定16批次、首轮16/后续64批次及盒装食品同模型池AB/BA对照。当前已启用curobo_dual_arm_map交替搜索；物理抓取0、V8索引/批量IK仍待实施。验证JSON和中文方法文档均复制到resources/media，后续发布保留这两份独立附件。
 
 - V6的“具体耗时分析”随延时表统一生成，数据源为最终批次的latency_bottleneck_analysis.json。展示65个配对规划场景的平均耗时拆分、香蕉场景右臂3320次搜索与左臂首个候选通过、候选数量及单次轨迹优化耗时，并在下载报告中保留。分析JSON复制到resources/media/sam3-v6-complete74-latency-analysis.json，后续刷新使用同一生成器，避免覆盖丢失。

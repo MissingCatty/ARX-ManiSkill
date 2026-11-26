@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T01:24:32.352Z",
+  "generatedAt": "2026-11-26T01:55:45.089Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1415,11 +1415,11 @@
     },
     {
       "file": "media/sam3-v8-indexed-planning-plan.md",
-      "sha256": "196da7e0e0c5ef9416875c150ab42138f6140353ca106b37aa27d725e610fd4d"
+      "sha256": "d6052bdc600d73d4f98723677a89b695c682e6598b4cb0d26c2c563c4e536ca0"
     },
     {
       "file": "media/sam3-v8-indexed-planning-config.json",
-      "sha256": "bd56e775ea02b13758458c46e5c5e88db8aed784f9848b375be74a8e547782ee"
+      "sha256": "086f6aef67d7cdcd1d1894b01d94cde807c655abab748125d7a07b51ff545d63"
     },
     {
       "file": "media/sam3-v8-indexed-planning-preparation.json",
@@ -1459,7 +1459,7 @@
     },
     {
       "file": "media/sam3-v6-complete74-final-report.md",
-      "sha256": "508c3406571c377add75a38ef2415ee701afccac3d4e82c1c861259105af920a"
+      "sha256": "18e5e296a43872c45ec8d1a7687de2dbba037c96322726a6bebc72e5fb05185b"
     },
     {
       "file": "media/sam3-v6-complete74-paired-latency.json",
@@ -1500,6 +1500,26 @@
     {
       "file": "media/sam3-v6-interleaving-method.md",
       "sha256": "3e28576ae4f6976d4efecc99dd1068405e9025bef597910945254c567e0dd993"
+    },
+    {
+      "file": "media/sam3-v3-interleaving-validation.json",
+      "sha256": "bfa3e1fd57fed7a88441f51e0b47cb36eca8eaa55ef37856cf06799a1c06bb68"
+    },
+    {
+      "file": "media/sam3-v3-interleaving-method.md",
+      "sha256": "3e28576ae4f6976d4efecc99dd1068405e9025bef597910945254c567e0dd993"
+    },
+    {
+      "file": "media/sam3-v8-planning-research.md",
+      "sha256": "7ed77a9d76da5c7f503eab93b366c207304b721044ce044e1e88379054930285"
+    },
+    {
+      "file": "media/sam3-v8-arm-geometry-review.json",
+      "sha256": "1c094d06b2eabeabb66ae932d51bb8538ddd338c7ed79fe78e11354a7db75a26"
+    },
+    {
+      "file": "media/sam3-v8-source-review.json",
+      "sha256": "0903e81ff7b5890d876f7aedcc69830d23534511e04fe9a3d038546f05624d9f"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

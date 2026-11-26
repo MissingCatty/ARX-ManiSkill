@@ -23,9 +23,9 @@
       "title": "SAM3＋RGB-D点云＋GraspGenX＋cuRobo",
       "shortTitle": "SAM3＋点云＋GraspGenX",
       "date": "2026-11-26",
-      "status": "V8 可达性索引与批量IK加速方案已登记",
+      "status": "V8调研与方案已更新，适配待开展",
       "summary": "头部SAM3、RaySt3R与GraspGenX生成抓法，研究候选后处理、可达性索引和双臂cuRobo规划。",
-      "metric": "V8方案已登记，适配与规划回放待开展",
+      "metric": "批量IK、几何IK、绑定与地图复用分组验证",
       "file": "SAM3点云GraspGenX主线.md",
       "workflow": "SAM3点云GraspGenX流程.json"
     },
@@ -603,7 +603,12 @@
     "sam3-v6-complete74-m0060-zerograsp.mp4": "../../resources/media/sam3-v6-complete74-m0060-zerograsp.mp4",
     "sam3-v6-complete74-latency-analysis.json": "../../resources/media/sam3-v6-complete74-latency-analysis.json",
     "sam3-v6-interleaving-validation.json": "../../resources/media/sam3-v6-interleaving-validation.json",
-    "sam3-v6-interleaving-method.md": "../../resources/media/sam3-v6-interleaving-method.md"
+    "sam3-v6-interleaving-method.md": "../../resources/media/sam3-v6-interleaving-method.md",
+    "sam3-v3-interleaving-validation.json": "../../resources/media/sam3-v3-interleaving-validation.json",
+    "sam3-v3-interleaving-method.md": "../../resources/media/sam3-v3-interleaving-method.md",
+    "sam3-v8-planning-research.md": "../../resources/media/sam3-v8-planning-research.md",
+    "sam3-v8-arm-geometry-review.json": "../../resources/media/sam3-v8-arm-geometry-review.json",
+    "sam3-v8-source-review.json": "../../resources/media/sam3-v8-source-review.json"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",

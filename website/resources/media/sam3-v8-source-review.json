@@ -1,0 +1,42 @@
+{
+  "at": "2026-11-26T09:39:36.893922+08:00",
+  "software_review": {
+    "native_batch_API": "modules/curobo/source/curobo/_src/solver/solver_ik.py:631",
+    "batch_configuration": "modules/curobo/source/curobo/_src/solver/solver_ik_cfg.py:40",
+    "current_pure_ik_max_batch_size": 1,
+    "current_pure_ik_configuration": "modules/curobo/fingertip_contact/planning.py:110",
+    "map_query_position_neighbors": 8192,
+    "map_query_implementation": "modules/reachability/工具/能力索引.py",
+    "orientation_index_key": "R transpose times world up; yaw-free necessary prefilter, not full SO3 match",
+    "orientation_index_implementation": "modules/reachability/orientation_index.py",
+    "verified_witness_single_pose_only": "modules/curobo/dual_arm/witness_pool.py"
+  },
+  "native_planning_requests": 0,
+  "physical_grasps": 0,
+  "sources": [
+    {
+      "method": "cuRoboV2",
+      "project": "https://nvlabs.github.io/curobo/latest/",
+      "code": "https://github.com/NVlabs/curobo/blob/main/curobo/_src/solver/solver_ik.py"
+    },
+    {
+      "method": "MoveIt Cached IK",
+      "project": "https://moveit.picknik.ai/main/doc/examples/kinematics_configuration/kinematics_configuration_tutorial.html"
+    },
+    {
+      "method": "IK-Geo",
+      "project": "https://github.com/rpiRobotics/ik-geo",
+      "paper": "https://arxiv.org/html/2211.05737"
+    },
+    {
+      "method": "EAIK",
+      "project": "https://ostermd.github.io/EAIK/",
+      "code": "https://github.com/OstermD/EAIK",
+      "doi": "10.1109/LRA.2025.3597897"
+    },
+    {
+      "method": "VAMP-MR",
+      "project": "https://vamp-mr.github.io/vamp-mr/"
+    }
+  ]
+}

@@ -227,6 +227,86 @@
       ],
       "status": "已接入离线重建评测",
       "verifiedAt": "2026-11-22"
+    },
+    {
+      "id": "curobo-v2",
+      "name": "cuRoboV2",
+      "title": "cuRoboV2: Dynamics-Aware Motion Generation with Depth-Fused Distance Fields for High-DoF Robots",
+      "authors": "Balakumar Sundaralingam, Adithyavairavan Murali, Stan Birchfield",
+      "year": 2026,
+      "venue": "技术报告与官方实现",
+      "status": "批量接口调研完成，待接入",
+      "summary": "提供GPU并行IK与碰撞检查，V8优先比较保持候选排名的原生批次求解。",
+      "source": "https://nvlabs.github.io/curobo/latest/",
+      "fulltext": "https://nvlabs.github.io/curobo/latest/technical_reports.html",
+      "file": "cuRoboV2批量IK方法.md",
+      "modules": [
+        "motion-planning"
+      ],
+      "versions": [
+        "sam3-graspgenx"
+      ],
+      "verifiedAt": "2026-11-26"
+    },
+    {
+      "id": "cached-ik",
+      "name": "MoveIt Cached IK",
+      "title": "MoveIt Cached IK Kinematics Plugin",
+      "authors": "MoveIt 项目维护者",
+      "year": 2026,
+      "venue": "官方工程文档，2026年核查",
+      "status": "调研完成，待对照",
+      "summary": "将邻近已知关节解作为求解初值，回退到原求解路径，并独立比较查表成本。",
+      "source": "https://moveit.picknik.ai/main/doc/examples/kinematics_configuration/kinematics_configuration_tutorial.html",
+      "fulltext": "https://github.com/moveit/moveit2/tree/main/moveit_kinematics/cached_ik_kinematics_plugin",
+      "file": "缓存IK方法.md",
+      "modules": [
+        "motion-planning"
+      ],
+      "versions": [
+        "sam3-graspgenx"
+      ],
+      "verifiedAt": "2026-11-26"
+    },
+    {
+      "id": "eaik",
+      "name": "EAIK / IK-Geo",
+      "title": "Automatic Geometric Decomposition for Analytical Inverse Kinematics",
+      "authors": "Daniel Ostermeier, Jonathan Külz, Matthias Althoff",
+      "year": 2025,
+      "venue": "IEEE Robotics and Automation Letters 10(10), 9964–9971",
+      "status": "ARX几何已核查，求解器待适配",
+      "summary": "利用平行与相交转轴自动分解IK，作为ARX六轴链的几何求解对照。",
+      "source": "https://ostermd.github.io/EAIK/",
+      "fulltext": "https://doi.org/10.1109/LRA.2025.3597897",
+      "file": "几何IK方法.md",
+      "modules": [
+        "motion-planning"
+      ],
+      "versions": [
+        "sam3-graspgenx"
+      ],
+      "verifiedAt": "2026-11-26"
+    },
+    {
+      "id": "vamp-mr",
+      "name": "VAMP-MR",
+      "title": "VAMP-MR: Vector-Accelerated Motion Planning and Execution for Multi-Robot-Arms",
+      "authors": "Philip Huang, Chenrui Gao, Jiaoyang Li",
+      "year": 2026,
+      "venue": "IROS 2026",
+      "status": "实现思路调研参考",
+      "summary": "将FK和碰撞检查组织为向量化操作，为V8数据常驻和成批检查提供参考。",
+      "source": "https://vamp-mr.github.io/vamp-mr/",
+      "fulltext": "https://vamp-mr.github.io/vamp-mr/",
+      "file": "向量化碰撞检查方法.md",
+      "modules": [
+        "motion-planning"
+      ],
+      "versions": [
+        "sam3-graspgenx"
+      ],
+      "verifiedAt": "2026-11-26"
     }
   ]
 }

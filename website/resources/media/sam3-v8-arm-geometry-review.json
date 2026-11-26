@@ -1,0 +1,147 @@
+{
+  "at": "2026-11-26T09:34:44.063864+08:00",
+  "urdf": "simulation/assets/models/arx_x5_lift/robot.urdf",
+  "urdf_sha256": "0ac9f20f13bd2a194d9f5c2002856a84ba406a4a3906ef9ed5ec182002569704",
+  "joints": [
+    {
+      "joint": "right_joint21",
+      "type": "revolute",
+      "axis_at_zero_in_chain": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "joint_origin_at_zero": [
+        0.05994899943470955,
+        -0.25,
+        0.02449999935925007
+      ],
+      "limits": {
+        "lower": "-2.0940000224454822",
+        "upper": "3.1415998441247366",
+        "velocity": "5.499999698015776",
+        "effort": "10000.0"
+      }
+    },
+    {
+      "joint": "right_joint22",
+      "type": "revolute",
+      "axis_at_zero_in_chain": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "joint_origin_at_zero": [
+        0.07994899898767471,
+        -0.25,
+        0.0644999984651804
+      ],
+      "limits": {
+        "lower": "0.0",
+        "upper": "3.6649996815896064",
+        "velocity": "5.499999698015776",
+        "effort": "10000.0"
+      }
+    },
+    {
+      "joint": "right_joint23",
+      "type": "revolute",
+      "axis_at_zero_in_chain": [
+        0.0,
+        -1.0,
+        1.2246467991473532e-16
+      ],
+      "joint_origin_at_zero": [
+        -0.1840509995818138,
+        -0.24997000000075786,
+        0.0644999984651804
+      ],
+      "limits": {
+        "lower": "0.0",
+        "upper": "3.239999917977638",
+        "velocity": "5.499999698015776",
+        "effort": "10000.0"
+      }
+    },
+    {
+      "joint": "right_joint24",
+      "type": "revolute",
+      "axis_at_zero_in_chain": [
+        0.0,
+        1.0,
+        -2.4492935982947064e-16
+      ],
+      "joint_origin_at_zero": [
+        0.06094900518655777,
+        -0.24994000000151573,
+        0.008499996736645699
+      ],
+      "limits": {
+        "lower": "-1.670999893338",
+        "upper": "1.670999893338",
+        "velocity": "19.99999890187555",
+        "effort": "10000.0"
+      }
+    },
+    {
+      "joint": "right_joint25",
+      "type": "revolute",
+      "axis_at_zero_in_chain": [
+        1.4997597826618576e-32,
+        -1.2246467991473532e-16,
+        -1.0
+      ],
+      "joint_origin_at_zero": [
+        0.12869900465011597,
+        -0.2499400000015157,
+        0.09299999661743641
+      ],
+      "limits": {
+        "lower": "-1.670999893338",
+        "upper": "1.670999893338",
+        "velocity": "19.99999890187555",
+        "effort": "10000.0"
+      }
+    },
+    {
+      "joint": "right_joint26",
+      "type": "revolute",
+      "axis_at_zero_in_chain": [
+        -1.0,
+        1.2246467991473532e-16,
+        -2.999519565323715e-32
+      ],
+      "joint_origin_at_zero": [
+        0.0997490044683218,
+        -0.24994000000151567,
+        0.17749999649822712
+      ],
+      "limits": {
+        "lower": "-2.0940000224454822",
+        "upper": "2.0940000224454822",
+        "velocity": "19.99999890187555",
+        "effort": "10000.0"
+      }
+    }
+  ],
+  "parallel_axis_checks": [
+    {
+      "joints": [
+        "right_joint22",
+        "right_joint23",
+        "right_joint24"
+      ],
+      "maximum_cross_norm": 2.4492935982947064e-16
+    }
+  ],
+  "new_IK_solves": 0,
+  "robot_motions": 0,
+  "wrist_axis_intersection": {
+    "joints": [
+      "right_joint25",
+      "right_joint26"
+    ],
+    "line_distance_m": 1.3861957671637754e-17
+  },
+  "interpretation": "Six revolute joints with consecutive axes 2/3/4 parallel; geometric IK family is a candidate for software verification."
+}

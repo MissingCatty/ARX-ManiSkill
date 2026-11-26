@@ -57,13 +57,21 @@ def publish(runs):
     left_success = any(r['selected_arm'] == 'left' and r['success'] for r in rows)
     status = '左右臂实际抓取联调完成' if left_success else '双臂规划已接通，左臂接近未到位'
     summary = f'{total}项联调：规划通过{planning}项，实际执行{physical}项，成功{successes}项。'
-    version.update(status=status, resultSummary=summary, batches=batches)
+    optimization_batches = [v for v in version.get('batches',[]) if v['id']=='dual_arm_interleaving_20261126']
+    optimization = website/'content_sections/双臂候选交替搜索.md'
+    if optimization.exists():
+        status += '；交替搜索优化已验证'
+    version.update(status=status, resultSummary=summary, batches=batches+optimization_batches)
     version['settings'] = [['选臂', '原生抓姿排名优先，同一抓姿比较关节位移。'],
         ['球模型', '左右臂各871球，对应球心和半径逐项一致。'],
         ['执行', '原地张开后执行选中臂轨迹，停放臂真实网格进入规划场景。'],
         ['本轮结果', summary]]
+    if optimization.exists():
+        version['settings'].append(['候选搜索','首轮每臂16个、后续每批64个，保存游标交替续查。'])
+        version['resultSummary'] += ' 交替搜索5组输入结果一致，香蕉规划428.23→8.55秒。'
     entry = next(v for v in site['versions'] if v['id'] == 'sam3-graspgenx')
-    entry.update(status='V3'+status, metric=summary)
+    if experiment['current']=='V3':
+        entry.update(status='V3'+status, metric=summary)
     reasons = {'success': '成功', 'sam3_no_target_mask': 'SAM3未找到目标，未开展规划与抓取',
                'no_arm_has_executable_candidate': '左右臂均规划不出来',
                'no_bilateral_target_contact': '闭合后未形成双指夹持',
@@ -98,11 +106,12 @@ def publish(runs):
             '[原始关节、接触与驱动记录](/media/sam3-v3-left-approach-diagnosis.json)\n')
     page = website/'内容/迭代/sam3-graspgenx-v3.md'
     prefix = page.read_text().split('## 当前设置')[0]
-    page.write_text(prefix+'## 当前设置\n\n沿用当前200场景、TCP43、升降45.2厘米、头部向下45°、1毫米接触偏移和2毫米局部指尖近桌规则。\n\n'+results+
+    extra = '\n'+optimization.read_text()+'\n' if optimization.exists() else ''
+    page.write_text(prefix+'## 当前设置\n\n沿用当前200场景、TCP43、升降45.2厘米、头部向下45°、1毫米接触偏移和2毫米局部指尖近桌规则。\n\n'+results+extra+
         '\n## 参考方法\n\n[SAM3](/papers/sam3/) · [RaySt3R](/papers/rayst3r/) · [GraspGenX](/papers/graspgenx/) · [cuRobo](/papers/curobo/)\n')
     doc = ROOT/'modules/pipeline/docs/mainline_versions/V3_双臂选择与抓取.md'
     doc.write_text(doc.read_text().split('## 当前进度')[0]+'## 当前进度\n\n'+status+'，37项离线检查通过。\n\n'+results+
-        '\n运行目录：\n\n'+'\n'.join('- `'+str(run.relative_to(ROOT))+'`。' for run in runs)+'\n')
+        '\n运行目录：\n\n'+'\n'.join('- `'+str(run.relative_to(ROOT))+'`。' for run in runs)+'\n'+extra)
     config_doc = website/'内容/实验配置/夹爪碰撞球精细化.md'
     base = config_doc.read_text().split('### V3左右臂统一球模型')[0].rstrip()
     config_doc.write_text(base+'\n\n### V3左右臂统一球模型\n\n'
