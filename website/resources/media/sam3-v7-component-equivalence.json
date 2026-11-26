@@ -1,0 +1,115 @@
+{
+  "at": "2026-11-26T17:40:03.626523+08:00",
+  "passed": true,
+  "case": "M0001_S1_open_apple",
+  "raw_candidates": 1592,
+  "equivalence": {
+    "right": {
+      "candidate_count": 1592,
+      "all_masks_and_counts_identical": true,
+      "point_batch_seconds": 1.0997468890127493,
+      "point_reference_seconds": 11.426834251004038,
+      "cavity_batch_seconds": 0.08675782599311788,
+      "cavity_reference_seconds": 2.1802149919967633
+    },
+    "left": {
+      "candidate_count": 1592,
+      "all_masks_and_counts_identical": true,
+      "point_batch_seconds": 0.5795216120022815,
+      "point_reference_seconds": 2.750113678004709,
+      "cavity_batch_seconds": 0.08092394599225372,
+      "cavity_reference_seconds": 2.186400890990626
+    }
+  },
+  "geometry_seconds": 2.5532354329916416,
+  "source_sha256": {
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/graspgenx/postprocessing/geometry.py": "75b79ec6f6b5892a67730842d364540da3672c0202c0ca0bb75250df6b7d2204",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/graspgenx/postprocessing/filters.py": "6875b333e7a3c586ac28e6e5d27233dc0e0cc22ac4b1cb0fbef88fe051b8a897",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/graspgenx/postprocessing/__init__.py": "c8a330b00ea26867069b0f0b0328f15efc95fb678b96fd55dbf8d5cfa63b76ba",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/graspgenx/postprocessing/nms.py": "1f0a2a972548027650492c1cba9e1a9545cf5746b8193705633cfa77163138f5",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/graspgenx/postprocessing/native_geometry.py": "842b17b8dd59aef8a24c0776fac1e1c2608486b43df2e494cf175dbcdcb25d8e",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/graspgenx/postprocessing/test_filters.py": "49e16780c5d2ef76f849cc911638c3d9e6e167a11603070c30c91c051fa3226c",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/graspgenx/postprocessing/native_geometry.cpp": "6a025efd868839adbd733cbc7cb21bd0f1fb6b7d1f3476e3c616832481d64e8e",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/graspgenx_postprocessing/preflight.py": "69da770fe49b54d8e525289bafe12ff187373c955bb88886da1113581ffe6495"
+  },
+  "observations": {
+    "seconds": 0.34416300799057353,
+    "observed_non_table_points": 111269,
+    "observed_target_points": 1491,
+    "completed_target_voxels": 10024,
+    "table_surface_points_removed": 74418,
+    "removed_robot_points": 50,
+    "measured_links_checked": 21
+  },
+  "all_variants_keep_original_selection": true,
+  "variants": {
+    "control": {
+      "representatives": 1592,
+      "deferred": 0,
+      "seconds": 0.0
+    },
+    "nms_p005_r05": {
+      "representatives": 1592,
+      "deferred": 0,
+      "seconds": 0.184490248982911
+    },
+    "nms_p010_r10": {
+      "representatives": 1144,
+      "deferred": 448,
+      "seconds": 0.17983261799963657
+    },
+    "nms_p015_r15": {
+      "representatives": 619,
+      "deferred": 973,
+      "seconds": 0.17421625899442006
+    },
+    "nms_p030_r30": {
+      "representatives": 196,
+      "deferred": 1396,
+      "seconds": 0.17121994198532775
+    },
+    "geometry_nms_p005_r05": {
+      "representatives": 855,
+      "deferred": 0,
+      "seconds": 2.6608701279910747
+    },
+    "geometry_nms_p010_r10": {
+      "representatives": 533,
+      "deferred": 322,
+      "seconds": 2.6637155809876276
+    },
+    "geometry_nms_p015_r15": {
+      "representatives": 243,
+      "deferred": 612,
+      "seconds": 2.6608923799794866
+    },
+    "geometry_nms_p030_r30": {
+      "representatives": 67,
+      "deferred": 788,
+      "seconds": 2.6591767729842104
+    },
+    "geometry_empty_nms_p005_r05": {
+      "representatives": 833,
+      "deferred": 0,
+      "seconds": 2.659199802976218
+    },
+    "geometry_empty_nms_p010_r10": {
+      "representatives": 532,
+      "deferred": 301,
+      "seconds": 2.6626084859890398
+    },
+    "geometry_empty_nms_p015_r15": {
+      "representatives": 237,
+      "deferred": 596,
+      "seconds": 2.659765228978358
+    },
+    "geometry_empty_nms_p030_r30": {
+      "representatives": 66,
+      "deferred": 767,
+      "seconds": 2.6579402499919524
+    }
+  },
+  "seconds_including_reference_checks": 33.55407650899724,
+  "new_IK_calls": 0,
+  "physical_grasps": 0
+}

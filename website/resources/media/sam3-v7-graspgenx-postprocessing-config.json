@@ -1,15 +1,15 @@
 {
   "version": "V7",
   "parent": "V4",
-  "state": "planned",
-  "implementation_status": "source_review_complete_adapter_pending",
+  "state": "in_progress",
+  "implementation_status": "offline_adapter_checks_complete",
   "user_request": "在GraspGenX后接类似ZeroGrasp的碰撞筛选、宽度深度修正和NMS，减少交给规划器的候选，预先建立独立实验版本。",
   "method": "graspgenx_postprocessing",
   "objective": "在保留可执行抓法的前提下减少重复、空抓和碰撞候选，并降低后处理加规划总耗时。",
-  "baseline_run": "tmp/mobile_dual_arm/v4_high100_resume_20261125_02",
+  "baseline_run": "tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01",
   "candidate_io_activation": "tmp/candidate_io/activation_20261125_01",
   "cohort": {
-    "source": "V4_complete_nonterminal_SAM_failure_cases",
+    "source": "V6_final_69_frozen_GraspGenX_observations",
     "paired_scenes": 74,
     "saved_candidate_observations": 69,
     "common_stationing_failures": 5,
@@ -26,26 +26,49 @@
   "variants": [
     {
       "id": "control",
-      "pipeline": ["original_GraspGenX_candidates", "native_score_order", "dual_arm_cuRobo"],
+      "pipeline": [
+        "original_GraspGenX_candidates",
+        "native_score_order",
+        "dual_arm_cuRobo"
+      ],
       "candidate_pose_changes": false,
       "state": "planned"
     },
     {
       "id": "nms_only",
-      "pipeline": ["original_GraspGenX_candidates", "ZeroGrasp_GraspNet_NMS", "native_score_order", "dual_arm_cuRobo"],
+      "pipeline": [
+        "original_GraspGenX_candidates",
+        "ZeroGrasp_GraspNet_NMS",
+        "native_score_order",
+        "dual_arm_cuRobo"
+      ],
       "candidate_pose_changes": false,
       "state": "planned"
     },
     {
       "id": "collision_empty_nms",
-      "pipeline": ["original_GraspGenX_candidates", "ARX_local_collision_filter", "ARX_grasp_cavity_empty_filter", "ZeroGrasp_GraspNet_NMS", "native_score_order", "dual_arm_cuRobo"],
+      "pipeline": [
+        "original_GraspGenX_candidates",
+        "ARX_local_collision_filter",
+        "ARX_grasp_cavity_empty_filter",
+        "ZeroGrasp_GraspNet_NMS",
+        "native_score_order",
+        "dual_arm_cuRobo"
+      ],
       "candidate_pose_changes": false,
       "geometry_source": "current_ARX_geometry_and_observed_pointcloud",
       "state": "planned"
     },
     {
       "id": "width_depth_collision_nms",
-      "pipeline": ["original_GraspGenX_candidates", "ARX_width_depth_refinement", "recheck_refined_geometry", "ZeroGrasp_GraspNet_NMS", "native_score_order", "dual_arm_cuRobo"],
+      "pipeline": [
+        "original_GraspGenX_candidates",
+        "ARX_width_depth_refinement",
+        "recheck_refined_geometry",
+        "ZeroGrasp_GraspNet_NMS",
+        "native_score_order",
+        "dual_arm_cuRobo"
+      ],
       "candidate_pose_changes": true,
       "state": "pending_geometry_and_execution_contract_validation"
     }
@@ -66,7 +89,10 @@
     "robot_profile": "simulation/robots/arx/collision/arx_refined_871.json",
     "finger_pad_geometry": "simulation/robots/arx/finger_pad_geometry.json",
     "table_contact_policy": "configs/policies/fingertip_table.json",
-    "pointcloud_inputs": ["measured_scene_RGBD", "RaySt3R_completed_target_points"],
+    "pointcloud_inputs": [
+      "measured_scene_RGBD",
+      "RaySt3R_completed_target_points"
+    ],
     "robot_self_points": "identify_and_remove_using_measured_robot_state_before_scene_filtering",
     "intentional_finger_target_contact": "distinguish_from_gripper_body_collision",
     "target_mesh_or_simulator_segmentation_input": false,
@@ -90,5 +116,45 @@
     "physical_grasp_budget": 0,
     "automatic_retries": false,
     "output_root": "tmp/graspgenx_postprocessing"
+  },
+  "offline": {
+    "source_run": "tmp/indexed_grasp_planning/native_batch_69_20261126_01",
+    "environment": "environments/geometric_ik",
+    "active_run": "tmp/graspgenx_postprocessing/offline69_20261126_01",
+    "offline_checks": 22,
+    "thresholds": [
+      {
+        "id": "p005_r05",
+        "position_m": 0.005,
+        "rotation_deg": 5
+      },
+      {
+        "id": "p010_r10",
+        "position_m": 0.01,
+        "rotation_deg": 10
+      },
+      {
+        "id": "p015_r15",
+        "position_m": 0.015,
+        "rotation_deg": 15
+      },
+      {
+        "id": "p030_r30",
+        "position_m": 0.03,
+        "rotation_deg": 30
+      }
+    ],
+    "native_NMS_timing_repeats": 3,
+    "candidate_geometry_change": false,
+    "point_collision_margin_m": 0.001,
+    "empty0_is_separate_variant": true,
+    "observed_cloud_voxel_m": 0.002,
+    "completed_cloud_voxel_m": 0.002,
+    "runtime_enabled": false,
+    "new_IK_calls": 0,
+    "planning_requests": 0,
+    "physical_grasps": 0,
+    "component_preflight": "tmp/graspgenx_postprocessing/component_20261126_02",
+    "geometry_implementation": "batched_CPU_exact_convex_halfspaces"
   }
 }

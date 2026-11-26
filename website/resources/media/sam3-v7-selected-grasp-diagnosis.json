@@ -1,0 +1,569 @@
+{
+  "at": "2026-11-26T17:51:35.811163+08:00",
+  "passed": true,
+  "cases": [
+    {
+      "id": "M0032_S2_edge_potato",
+      "historical_physical_success": true,
+      "selected": {
+        "index": 3,
+        "arm": "left"
+      },
+      "table_reason": "",
+      "point_collision": true,
+      "cavity_points": 321,
+      "rejected_by": [
+        "geometry_nms_p005_r05",
+        "geometry_nms_p010_r10",
+        "geometry_nms_p015_r15",
+        "geometry_nms_p030_r30",
+        "geometry_empty_nms_p005_r05",
+        "geometry_empty_nms_p010_r10",
+        "geometry_empty_nms_p015_r15",
+        "geometry_empty_nms_p030_r30"
+      ],
+      "point_detail": {
+        "stage": "grasp",
+        "link": "left_link18",
+        "convex_part": 2,
+        "collision_points": 58,
+        "SAM_target_points": 58,
+        "other_observed_points": 0,
+        "strict_penetration_mm": {
+          "min": 1.011204361450262,
+          "median": 2.48786519201326,
+          "max": 3.5565414755060996
+        },
+        "world_points_m": [
+          [
+            -0.5855518512337929,
+            0.3899667310241921,
+            0.026715474039240072
+          ],
+          [
+            -0.584301573061308,
+            0.38963702219845253,
+            0.029382183194036293
+          ],
+          [
+            -0.5822142834160241,
+            0.38993237825731275,
+            0.030055811424292367
+          ],
+          [
+            -0.5788560089067164,
+            0.3905314829575073,
+            0.030586127902048732
+          ],
+          [
+            -0.5867938441625501,
+            0.38956001942431173,
+            0.03254715506341066
+          ],
+          [
+            -0.581379891461582,
+            0.38992379006559286,
+            0.030890895770555482
+          ],
+          [
+            -0.5801197664926885,
+            0.3902276504851641,
+            0.030736715111210233
+          ],
+          [
+            -0.5847228411686293,
+            0.3898580877578255,
+            0.0332045206239035
+          ],
+          [
+            -0.5838956890723527,
+            0.38984957408418985,
+            0.03403235910425062
+          ],
+          [
+            -0.5826445984244248,
+            0.39015608157436543,
+            0.03386913194234076
+          ],
+          [
+            -0.5763176594853386,
+            0.39113901750310476,
+            0.0302958810861908
+          ],
+          [
+            -0.5754760277266718,
+            0.3911303547938559,
+            0.03113821124438404
+          ],
+          [
+            -0.5780351896826702,
+            0.39106681107588576,
+            0.03423621332774612
+          ],
+          [
+            -0.5876285725322637,
+            0.39059997371991084,
+            0.03736900723455017
+          ],
+          [
+            -0.5805591031875388,
+            0.3904540102613042,
+            0.03454095959025594
+          ],
+          [
+            -0.5805800086261091,
+            0.3909826773214856,
+            0.03734864998578358
+          ],
+          [
+            -0.5826600767826553,
+            0.3906821482109125,
+            0.036682216425022784
+          ],
+          [
+            -0.5867985063180512,
+            0.3900808569725822,
+            0.03537111627540779
+          ],
+          [
+            -0.5851550618588054,
+            0.39006394140188216,
+            0.037015924491213825
+          ],
+          [
+            -0.5868297359035675,
+            0.39109210808737366,
+            0.040997171465672944
+          ]
+        ]
+      }
+    },
+    {
+      "id": "M0034_S2_edge_scissors",
+      "historical_physical_success": false,
+      "selected": {
+        "index": 128,
+        "arm": "left"
+      },
+      "table_reason": "",
+      "point_collision": true,
+      "cavity_points": 201,
+      "rejected_by": [
+        "geometry_nms_p005_r05",
+        "geometry_nms_p010_r10",
+        "geometry_nms_p015_r15",
+        "geometry_nms_p030_r30",
+        "geometry_empty_nms_p005_r05",
+        "geometry_empty_nms_p010_r10",
+        "geometry_empty_nms_p015_r15",
+        "geometry_empty_nms_p030_r30"
+      ],
+      "point_detail": {
+        "stage": "grasp",
+        "link": "left_link18",
+        "convex_part": 2,
+        "collision_points": 3,
+        "SAM_target_points": 0,
+        "other_observed_points": 3,
+        "strict_penetration_mm": {
+          "min": 1.031117048639927,
+          "median": 1.282205323192464,
+          "max": 1.5809819936394922
+        },
+        "world_points_m": [
+          [
+            -0.6137011699808828,
+            0.47875086011038026,
+            0.0020715255615182393
+          ],
+          [
+            -0.6143052345241531,
+            0.47749872221444833,
+            0.0012606173006276533
+          ],
+          [
+            -0.6146863769634683,
+            0.4797396024235802,
+            0.0012702320850844773
+          ]
+        ]
+      }
+    },
+    {
+      "id": "M0038_S2_edge_teapot",
+      "historical_physical_success": false,
+      "selected": {
+        "index": 0,
+        "arm": "left"
+      },
+      "table_reason": "",
+      "point_collision": false,
+      "cavity_points": 0,
+      "rejected_by": [
+        "geometry_empty_nms_p005_r05",
+        "geometry_empty_nms_p010_r10",
+        "geometry_empty_nms_p015_r15",
+        "geometry_empty_nms_p030_r30"
+      ]
+    },
+    {
+      "id": "M0046_S3_sparse_bell_pepper",
+      "historical_physical_success": false,
+      "selected": {
+        "index": 0,
+        "arm": "left"
+      },
+      "table_reason": "",
+      "point_collision": true,
+      "cavity_points": 307,
+      "rejected_by": [
+        "geometry_nms_p005_r05",
+        "geometry_nms_p010_r10",
+        "geometry_nms_p015_r15",
+        "geometry_nms_p030_r30",
+        "geometry_empty_nms_p005_r05",
+        "geometry_empty_nms_p010_r10",
+        "geometry_empty_nms_p015_r15",
+        "geometry_empty_nms_p030_r30"
+      ],
+      "point_detail": {
+        "stage": "grasp",
+        "link": "left_link17",
+        "convex_part": 1,
+        "collision_points": 53,
+        "SAM_target_points": 53,
+        "other_observed_points": 0,
+        "strict_penetration_mm": {
+          "min": 1.00418940440377,
+          "median": 2.007016704132895,
+          "max": 3.8627716517925514
+        },
+        "world_points_m": [
+          [
+            -0.5164412067105509,
+            0.3935848759781231,
+            0.045463638458782485
+          ],
+          [
+            -0.5163031307389946,
+            0.3941711512209366,
+            0.04277116855361368
+          ],
+          [
+            -0.5159193124908441,
+            0.3951274275115304,
+            0.04456831418353552
+          ],
+          [
+            -0.5157830155607968,
+            0.3957188293068097,
+            0.0418740543908917
+          ],
+          [
+            -0.5144992882431435,
+            0.39792245897464873,
+            0.04456959309076347
+          ],
+          [
+            -0.5148830756886447,
+            0.39696874535914395,
+            0.04277243142395537
+          ],
+          [
+            -0.5148200008158582,
+            0.3929804928785928,
+            0.04991685011049807
+          ],
+          [
+            -0.5146598623929385,
+            0.394818057550798,
+            0.0472441653954494
+          ],
+          [
+            -0.5155543259192608,
+            0.39357574753168045,
+            0.0463512551979719
+          ],
+          [
+            -0.5142927075716185,
+            0.3945178805999372,
+            0.0490269387096699
+          ],
+          [
+            -0.5141267345047115,
+            0.3976171182889491,
+            0.046357779171753155
+          ],
+          [
+            -0.5129432016179437,
+            0.4000752568645659,
+            0.04187864023348159
+          ],
+          [
+            -0.5138467923147791,
+            0.39882027022416533,
+            0.040976618715770796
+          ],
+          [
+            -0.5136011738377355,
+            0.3991698396573913,
+            0.045466147827195824
+          ],
+          [
+            -0.5127106731173625,
+            0.3991606739519066,
+            0.046357387499343206
+          ],
+          [
+            -0.5123417547288431,
+            0.3988528166014172,
+            0.04814193989852322
+          ],
+          [
+            -0.5132380437219095,
+            0.39760797121270786,
+            0.047247207404414404
+          ],
+          [
+            -0.5128709353402938,
+            0.39730267758903315,
+            0.04902998579040441
+          ],
+          [
+            -0.5134076367178992,
+            0.39450877078273805,
+            0.04991274400937318
+          ],
+          [
+            -0.5119764718139715,
+            0.3985449876081506,
+            0.04992289598788191
+          ]
+        ]
+      }
+    },
+    {
+      "id": "M0060_S3_sparse_donut",
+      "historical_physical_success": false,
+      "selected": {
+        "index": 288,
+        "arm": "right"
+      },
+      "table_reason": "",
+      "point_collision": true,
+      "cavity_points": 554,
+      "rejected_by": [
+        "geometry_nms_p005_r05",
+        "geometry_nms_p010_r10",
+        "geometry_nms_p015_r15",
+        "geometry_nms_p030_r30",
+        "geometry_empty_nms_p005_r05",
+        "geometry_empty_nms_p010_r10",
+        "geometry_empty_nms_p015_r15",
+        "geometry_empty_nms_p030_r30"
+      ],
+      "point_detail": {
+        "stage": "grasp",
+        "link": "right_link28",
+        "convex_part": 37,
+        "collision_points": 1,
+        "SAM_target_points": 0,
+        "other_observed_points": 1,
+        "strict_penetration_mm": {
+          "min": 1.1504132195806083,
+          "median": 1.1504132195806083,
+          "max": 1.1504132195806083
+        },
+        "world_points_m": [
+          [
+            -0.41508646903345797,
+            0.3730649005107133,
+            0.0011927324572683085
+          ]
+        ]
+      }
+    },
+    {
+      "id": "M0064_S4_clutter_mango",
+      "historical_physical_success": true,
+      "selected": {
+        "index": 13,
+        "arm": "left"
+      },
+      "table_reason": "",
+      "point_collision": true,
+      "cavity_points": 409,
+      "rejected_by": [
+        "geometry_nms_p005_r05",
+        "geometry_nms_p010_r10",
+        "geometry_nms_p015_r15",
+        "geometry_nms_p030_r30",
+        "geometry_empty_nms_p005_r05",
+        "geometry_empty_nms_p010_r10",
+        "geometry_empty_nms_p015_r15",
+        "geometry_empty_nms_p030_r30"
+      ],
+      "point_detail": {
+        "stage": "grasp",
+        "link": "left_link18",
+        "convex_part": 2,
+        "collision_points": 2,
+        "SAM_target_points": 2,
+        "other_observed_points": 0,
+        "strict_penetration_mm": {
+          "min": 1.1444824790694739,
+          "median": 1.2060861140224879,
+          "max": 1.2676897489755021
+        },
+        "world_points_m": [
+          [
+            -0.48373067970821493,
+            0.35708805774177493,
+            0.03645313820966528
+          ],
+          [
+            -0.4833376873960847,
+            0.3595639246558262,
+            0.03825676239254028
+          ]
+        ]
+      }
+    },
+    {
+      "id": "M0065_S4_clutter_milk",
+      "historical_physical_success": false,
+      "selected": {
+        "index": 18,
+        "arm": "left"
+      },
+      "table_reason": "",
+      "point_collision": true,
+      "cavity_points": 513,
+      "rejected_by": [
+        "geometry_nms_p005_r05",
+        "geometry_nms_p010_r10",
+        "geometry_nms_p015_r15",
+        "geometry_nms_p030_r30",
+        "geometry_empty_nms_p005_r05",
+        "geometry_empty_nms_p010_r10",
+        "geometry_empty_nms_p015_r15",
+        "geometry_empty_nms_p030_r30"
+      ],
+      "point_detail": {
+        "stage": "grasp",
+        "link": "left_link18",
+        "convex_part": 2,
+        "collision_points": 10,
+        "SAM_target_points": 5,
+        "other_observed_points": 5,
+        "strict_penetration_mm": {
+          "min": 1.0073124160475122,
+          "median": 1.7314588685436658,
+          "max": 3.0115131137844564
+        },
+        "world_points_m": [
+          [
+            -0.5405671195647114,
+            0.47013901373278694,
+            0.1556689540636163
+          ],
+          [
+            -0.5411489739779546,
+            0.46855622537944264,
+            0.1565043011610016
+          ],
+          [
+            -0.5398323880713467,
+            0.4680217520334038,
+            0.15640816492248683
+          ],
+          [
+            -0.5392487237205326,
+            0.4696045217575046,
+            0.1555746292645876
+          ],
+          [
+            -0.541301851058076,
+            0.4722562754321701,
+            0.15492974320474584
+          ],
+          [
+            -0.5426148789886257,
+            0.4727804958266155,
+            0.155029459110883
+          ],
+          [
+            -0.5399852342019265,
+            0.47172690993268446,
+            0.15483362857190597
+          ],
+          [
+            -0.5385122132391387,
+            0.46748213358232477,
+            0.15631562995726928
+          ],
+          [
+            -0.5366075855313426,
+            0.467457672366441,
+            0.1553922645811493
+          ],
+          [
+            -0.5360202685188918,
+            0.4690429744135147,
+            0.15456233773812256
+          ]
+        ]
+      }
+    },
+    {
+      "id": "M0086_S5_occluded_bell_pepper",
+      "historical_physical_success": true,
+      "selected": {
+        "index": 2,
+        "arm": "right"
+      },
+      "table_reason": "",
+      "point_collision": true,
+      "cavity_points": 473,
+      "rejected_by": [
+        "geometry_nms_p005_r05",
+        "geometry_nms_p010_r10",
+        "geometry_nms_p015_r15",
+        "geometry_nms_p030_r30",
+        "geometry_empty_nms_p005_r05",
+        "geometry_empty_nms_p010_r10",
+        "geometry_empty_nms_p015_r15",
+        "geometry_empty_nms_p030_r30"
+      ],
+      "point_detail": {
+        "stage": "grasp",
+        "link": "right_link28",
+        "convex_part": 33,
+        "collision_points": 2,
+        "SAM_target_points": 2,
+        "other_observed_points": 0,
+        "strict_penetration_mm": {
+          "min": 1.0412418888333386,
+          "median": 1.0662694203432028,
+          "max": 1.091296951853067
+        },
+        "world_points_m": [
+          [
+            -0.38702457124843526,
+            0.2481015946865389,
+            0.05216211107395052
+          ],
+          [
+            -0.39033834623659036,
+            0.253953728984616,
+            0.05166453931210385
+          ]
+        ]
+      }
+    }
+  ],
+  "successful_grasps_rejected": 3,
+  "new_IK_calls": 0,
+  "planning_requests": 0,
+  "physical_grasps": 0
+}

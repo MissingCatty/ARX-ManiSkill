@@ -258,6 +258,26 @@
       "experimental": true,
       "default_enabled": false,
       "variant": "native_endpoint_batches_with_original_contact_gates"
+    },
+    "graspgenx_postprocessing": {
+      "source": "modules/graspgenx/postprocessing",
+      "role": "candidate_postprocessing_library",
+      "environment": "environments/geometric_ik",
+      "entrypoint": "modules/graspgenx/postprocessing/filters.py",
+      "experimental": true,
+      "default_enabled": false,
+      "inputs": [
+        "state.json",
+        "camera/depth_m.npy",
+        "camera/mask.png",
+        "completed_points_world.npy",
+        "candidates/candidate_pool.json"
+      ],
+      "outputs": [
+        "candidate_indices_and_NMS_groups",
+        "geometry_masks"
+      ],
+      "weights": []
     }
   }
 }

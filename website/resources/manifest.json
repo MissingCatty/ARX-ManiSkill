@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T09:05:48.926Z",
+  "generatedAt": "2026-11-26T09:54:40.135Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1299,11 +1299,11 @@
     },
     {
       "file": "media/sam3-v7-graspgenx-postprocessing-plan.md",
-      "sha256": "fb83c376993f411276600df7b4b8216f750471617e4e3f167e2208abca9f5486"
+      "sha256": "22d0fba1e1baf256f6040f62b21d67cd485b7b05f703343c383e75d302702f8a"
     },
     {
       "file": "media/sam3-v7-graspgenx-postprocessing-config.json",
-      "sha256": "10ae5cb36c49912c85ca086738888a3bb6bb1a1da546c020a0813243a1d450ea"
+      "sha256": "9daadbd93160681598fa541337cb2118d7cda68633ef4d60fec179e6fc3e280e"
     },
     {
       "file": "media/sam3-v7-graspgenx-postprocessing-preparation.json",
@@ -1596,6 +1596,22 @@
     {
       "file": "media/sam3-v8-funnel-source-review.json",
       "sha256": "cc42e13fa59a49947f9cb85b466e2c8eb5c2ec7c777a089ec68372bad7edb515"
+    },
+    {
+      "file": "media/sam3-v7-component-equivalence.json",
+      "sha256": "4457e59cf2d6b60993ad859d543a72f1343aeb7a5aa23e329206cc9a6800de10"
+    },
+    {
+      "file": "media/sam3-v7-offline69-results.json",
+      "sha256": "8ef5b4ea3cd11d6e4e315dfee38b17649da3cb8767d5ef4685b7f6c31eff8e63"
+    },
+    {
+      "file": "media/sam3-v7-offline69-report.md",
+      "sha256": "0d677d55b722d46d1e01446decbc8b852e306d6083b91c5d0aa3618a79d1cd8f"
+    },
+    {
+      "file": "media/sam3-v7-selected-grasp-diagnosis.json",
+      "sha256": "26a5cb1566889aef41ba9f3b85c95d3502a6400e68b2362b846d6a9b523cd853"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

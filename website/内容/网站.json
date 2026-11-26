@@ -627,7 +627,11 @@
     "sam3-v8-index-seed-probe-20261126-01-status.json": "../../resources/media/sam3-v8-index-seed-probe-20261126-01-status.json",
     "sam3-v8-index-seed-probe-20261126-02-status.json": "../../resources/media/sam3-v8-index-seed-probe-20261126-02-status.json",
     "sam3-v8-funnel-review.md": "../../resources/media/sam3-v8-funnel-review.md",
-    "sam3-v8-funnel-source-review.json": "../../resources/media/sam3-v8-funnel-source-review.json"
+    "sam3-v8-funnel-source-review.json": "../../resources/media/sam3-v8-funnel-source-review.json",
+    "sam3-v7-component-equivalence.json": "../../resources/media/sam3-v7-component-equivalence.json",
+    "sam3-v7-offline69-results.json": "../../resources/media/sam3-v7-offline69-results.json",
+    "sam3-v7-offline69-report.md": "../../resources/media/sam3-v7-offline69-report.md",
+    "sam3-v7-selected-grasp-diagnosis.json": "../../resources/media/sam3-v7-selected-grasp-diagnosis.json"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",
