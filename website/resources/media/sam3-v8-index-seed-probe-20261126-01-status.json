@@ -1,0 +1,40 @@
+{
+  "at": "2026-11-26T15:53:02.459914+08:00",
+  "phase": "registered",
+  "completed_requests": 0,
+  "total_requests": 0,
+  "current": null,
+  "run": "tmp/indexed_grasp_planning/index_seed_probe_20261126_01",
+  "gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "cases": 69,
+  "experiment": "index_seed_probe",
+  "variants": {
+    "control": null,
+    "map3": 3.0,
+    "map5": 5.0,
+    "map10": 10.0
+  },
+  "physical_grasps": 0,
+  "offline_checks": 16,
+  "model_warmup_complete": false,
+  "stopped": true,
+  "results": [],
+  "completed_IK_calls": 0,
+  "total_IK_calls": 3132,
+  "stop_summary": {
+    "at": "2026-11-26T15:56:24.234792+08:00",
+    "phase": "stopped_before_model_loading",
+    "cause": "CUDA_free_memory_below_registered_10000_MiB_startup_margin",
+    "task_complete": false,
+    "record_integrity": true,
+    "completed_IK_calls": 0,
+    "registered_IK_calls": 3132,
+    "unexecuted_IK_calls": 3132,
+    "IK_failures": 0,
+    "planning_requests": 0,
+    "physical_grasps": 0,
+    "source_and_input_hashes_unchanged": true,
+    "STOP_preserved": true,
+    "automatic_retry": false
+  }
+}

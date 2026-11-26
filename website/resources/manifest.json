@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T07:15:48.375Z",
+  "generatedAt": "2026-11-26T07:57:52.757Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1415,11 +1415,11 @@
     },
     {
       "file": "media/sam3-v8-indexed-planning-plan.md",
-      "sha256": "a7c44c6784335495bcb457fa06558a3d8bc01b93b82898b46446e8277c3730f8"
+      "sha256": "18aba70e0c074336221ce8c19ea46ac72bbf7715def891a14105bccd3eeade9f"
     },
     {
       "file": "media/sam3-v8-indexed-planning-config.json",
-      "sha256": "d09a50d8935f623defdd03ebc77dc5fc114f132e105203d3472528d7ffc87f90"
+      "sha256": "fb86c2940e594ba13ed795a74430923ad88bf6db9c1eb6722bdf0a4fcb9d7dcc"
     },
     {
       "file": "media/sam3-v8-indexed-planning-preparation.json",
@@ -1511,7 +1511,7 @@
     },
     {
       "file": "media/sam3-v8-planning-research.md",
-      "sha256": "5c060d4c0286a053ee838b6037cff94b973799a261fd574f803ca7e7101e228b"
+      "sha256": "22d36597d3164e577bc38a2595d62fce8c9a53600a2fcf29cabf46fa1d93846e"
     },
     {
       "file": "media/sam3-v8-arm-geometry-review.json",
@@ -1572,6 +1572,18 @@
     {
       "file": "media/sam3-v8-geometric-pilot-20261126-01-status.json",
       "sha256": "33a414685aa3fe270cb8702f7c06fdb56e05fc4f3136898cf784183ef30dcb4b"
+    },
+    {
+      "file": "media/sam3-v8-index-reuse-method.md",
+      "sha256": "0714c8f374a6f74ae093882ec043818ade1696fb4b6f90b2bd476ef3a50525fc"
+    },
+    {
+      "file": "media/sam3-v8-index-lookup-20261126-01-status.json",
+      "sha256": "9c25f8d2b0984e0c3661eb5c1090d76ab0400c32c9b6c14f10881e7a95c2305e"
+    },
+    {
+      "file": "media/sam3-v8-index-seed-probe-20261126-01-status.json",
+      "sha256": "812b2583ef08ca4260d653186cd5642b0cd6e3df77dc8dd3b17e178c689bb12a"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

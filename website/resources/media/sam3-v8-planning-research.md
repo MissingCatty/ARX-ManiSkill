@@ -23,7 +23,7 @@
 | cuRobo批量IK | GPU并行处理多个目标及初值 | 一个候选占一个批次行，成批产生解，再按原排名检查路径 | 第一优先 |
 | IK-Geo / EAIK | 利用相交轴、平行轴分解六轴IK | 为原目标产生多个关节分支，独立FK与限位核验后使用原碰撞检查 | 优先验证适配 |
 | MoveIt Cached IK | 邻近缓存解作初值，失败回到原初值 | 比较现有地图和成功解缓存的查询成本与求解收益 | 独立对照 |
-| VAMP / VAMP-MR | 对FK和碰撞检查进行向量化 | 借鉴数据常驻与成批检查方式 | 后续参考 |
+| VAMP / VAMP-MR | 对FK和碰撞检查进行向量化 | 后续借鉴数据常驻与成批检查方式；不属于B、C、D已实施模块 | 尚未实施 |
 
 cuRobo官方实现提供`max_batch_size`、`seed_config`和逐行批量结果。MoveIt采用“缓存初值→原初值回退”；其文档也指出，对本身很快的UR解析IK示例，缓存会增加开销。[cuRobo官方实现](https://github.com/NVlabs/curobo/blob/main/curobo/_src/solver/solver_ik.py)、[MoveIt官方文档](https://moveit.picknik.ai/main/doc/examples/kinematics_configuration/kinematics_configuration_tutorial.html)。
 

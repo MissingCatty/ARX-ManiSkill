@@ -18,16 +18,27 @@ def planning_progress(website, config, relative=None):
     snapshot = {key: progress.get(key) for key in ['at','phase','completed_requests','total_requests','current']}
     binding = registration.get('experiment') == 'binding_reuse'
     geometric = registration.get('experiment') == 'geometric_ik'
-    component = 'binding_reuse_implementation' if binding else 'geometric_ik' if geometric else 'native_batch_implementation'
-    snapshot.update(run=relative,gpu=registration['gpu'],cases=len(registration['cases']),
-        experiment='binding_reuse' if binding else 'geometric_ik' if geometric else 'native_batch',variants=registration['variants'],
+    indexed = registration.get('experiment') in ['index_lookup_diagnosis','index_seed_probe']
+    component = ('index_reuse_implementation' if indexed else 'binding_reuse_implementation' if binding
+        else 'geometric_ik' if geometric else 'native_batch_implementation')
+    snapshot.update(run=relative,gpu=registration.get('gpu','CPU'),cases=len(registration['cases']),
+        experiment=registration.get('experiment','native_batch'),variants=registration.get('variants',{}),
         physical_grasps=0,offline_checks=config.get(component,{}).get('offline_checks',0),
         model_warmup_complete=(run/'startup.json').is_file(),stopped=(run/'STOP').is_file())
     snapshot['results'] = [{'id': row['id'], 'variants': {mode: {key: value.get(key) for key in
         ['seconds','success','selected_arm','selected_source_index','candidate_checks',
          'binding_seconds','full_world_rebinds','binding_cache_hits']} for mode,value in row['variants'].items()},
         'comparison':row['comparison']} for row in progress.get('results',[])]
-    if acceptance:
+    if indexed:
+        for key in ['completed_queries','total_queries','completed_IK_calls','total_IK_calls',
+                    'completed_fixtures','total_fixtures']:
+            if key in progress:snapshot[key]=progress[key]
+        if acceptance:
+            snapshot['acceptance']={k:v for k,v in acceptance.items()
+                if k not in ['cases','direct_witnesses','seed_results']}
+        if (run/'stop_summary.json').is_file():
+            snapshot['stop_summary']=read_json(run/'stop_summary.json')
+    elif acceptance:
         snapshot.update(summaries=acceptance['summaries'],
             control_successes_retained=acceptance['control_successes_retained'],
             record_integrity=acceptance['record_integrity'])
@@ -57,6 +68,41 @@ def result_table(snapshot, title):
     return '\n'.join(lines)
 
 
+def lookup_table(snapshot):
+    accepted=snapshot.get('acceptance')
+    if not accepted:return ''
+    import math
+    lines=['## E地图近邻查询结果','','在69份保存观测中，重放原控制组实际检查过的10,322个候选。'
+        '查询位置范围为2厘米，比较完整三维朝向。','',
+        '| 查询角度范围 | 找到近邻的候选数 | 比例 |','| --- | ---: | ---: |']
+    for angle,hits in accepted['neighborhood_hits_by_angle'].items():
+        degrees=math.degrees(float(angle))
+        lines.append(f"| {degrees:.2f}° | {hits:,} / {accepted['queries']:,} | {hits/accepted['queries']:.2%} |")
+    lines+=['','1.72°用于邻近初值查询过于严格。本轮扩大到3°、5°、10°，取出附近的关节角，'
+        '再让IK求解原抓取位姿。最终位置误差2毫米、朝向误差1.72°与原抓姿保持。','',
+        f"直接满足原抓姿精度的地图记录命中{accepted['direct_hits']}次。"
+        f"近邻查询中位耗时{accepted['neighborhood_timing']['median_ms']:.3f}毫秒；"
+        f"旧8192位置近邻加多分支选择为{accepted['seed_query_timing']['legacy_8192_seconds']['median_ms']:.2f}毫秒。",'',
+        '[地图索引实施说明](/media/sam3-v8-index-reuse-method.md)','']
+    return '\n'.join(lines)
+
+
+def seed_probe_table(snapshot):
+    accepted=snapshot.get('acceptance')
+    if not accepted:return ''
+    labels={'control':'原IK初值','map3':'3°近邻初值','map5':'5°近邻初值','map10':'10°近邻初值'}
+    lines=['## E近邻初值的实际IK对照','','同一261个原始终点，各组重复3次；每目标仍使用32个初值，'
+        '地图最多提供其中8个。逐次核对初值实际进入原生LM，并独立复算返回关节解。','',
+        '| 方法 | 求出合格解 | 使用地图初值的调用 | 中位耗时 | P90耗时 | 合计耗时 |',
+        '| --- | ---: | ---: | ---: | ---: | ---: |']
+    for mode,value in accepted['summaries'].items():
+        lines.append(f"| {labels[mode]} | {value['successes']}/{value['IK_calls']} | {value['map_seed_calls']} | "
+            f"{value['median_ms']:.2f}毫秒 | {value['p90_ms']:.2f}毫秒 | {value['total_seconds']:.2f}秒 |")
+    lines+=['','表中计时包含查询、初值交接和IK。这一项先比较原目标的运动学求解，'
+        '是否值得接入完整规划，按本轮耗时及原成功保留情况确定。','']
+    return '\n'.join(lines)
+
+
 def publish():
     website = ROOT/'website'
     config = read_json(ROOT/'configs/experiments/indexed_grasp_planning.json')
@@ -74,6 +120,8 @@ def publish():
         (ROOT/'modules/pipeline/docs/mainline_versions/V8_上下文复用实施.md','sam3-v8-binding-reuse-method.md'),
         (review/'arm_geometry_review.json','sam3-v8-arm-geometry-review.json'),
         (review/'source_review.json','sam3-v8-source-review.json')]
+    index_doc=ROOT/'modules/pipeline/docs/mainline_versions/V8_地图索引复用实施.md'
+    if index_doc.is_file():attachments.append((index_doc,'sam3-v8-index-reuse-method.md'))
     for source,name in attachments:
         target = website/'resources/media'/name
         if target.is_symlink():raise ValueError('Website resource must be a real copy')
@@ -94,6 +142,10 @@ def publish():
     native_runtime = (planning_progress(website,config,native_run) if native_run else None)
     binding_run=config.get('binding_reuse_implementation',{}).get('full_run')
     binding_runtime=(planning_progress(website,config,binding_run) if binding_run else None)
+    geometric_run=config.get('geometric_ik',{}).get('accepted_run')
+    geometric_runtime=(planning_progress(website,config,geometric_run) if geometric_run else None)
+    lookup_run=config.get('index_reuse_implementation',{}).get('diagnosis_run')
+    lookup_runtime=(planning_progress(website,config,lookup_run) if lookup_run else None)
     geometric_doc=ROOT/'modules/pipeline/docs/mainline_versions/V8_几何IK实施.md'
     if geometric_doc.is_file():
         name='sam3-v8-geometric-ik-method.md'
@@ -200,7 +252,7 @@ def publish():
 - [cuRoboV2批量IK](/papers/curobo-v2/)
 - [MoveIt Cached IK](/papers/cached-ik/)
 - [EAIK / IK-Geo几何IK](/papers/eaik/)
-- [VAMP-MR向量化检查](/papers/vamp-mr/)
+- [VAMP-MR向量化检查](/papers/vamp-mr/)：后续FK与碰撞检查加速参考，尚未接入。
 - [完整实施方案](/media/sam3-v8-indexed-planning-plan.md)
 - [方法调研](/media/sam3-v8-planning-research.md)
 - [实验配置](/media/sam3-v8-indexed-planning-config.json)
@@ -214,12 +266,23 @@ def publish():
         done,total = snapshot['completed_requests'],snapshot['total_requests']
         binding = snapshot['experiment']=='binding_reuse'
         geometric = snapshot['experiment']=='geometric_ik'
-        label = 'C：上下文复用' if binding else 'D：几何IK' if geometric else 'B：原生批量IK'
+        indexed=snapshot['experiment'] in ['index_lookup_diagnosis','index_seed_probe']
+        label = 'E：地图索引复用' if indexed else 'C：上下文复用' if binding else 'D：几何IK' if geometric else 'B：原生批量IK'
         status = ('纯规划对照已完成' if snapshot['phase']=='complete' else
             '纯规划对照停止，保留记录' if snapshot['stopped'] else
             '纯规划对照进行中' if snapshot['model_warmup_complete'] else '常驻模型预热中')
         status = label+'，'+status
         summary = f"{label}：{snapshot['cases']}份观测，规划{done}/{total}次，物理抓取0次。"
+        if indexed:
+            probing=snapshot['experiment']=='index_seed_probe'
+            done=snapshot.get('completed_IK_calls' if probing else 'completed_queries',0)
+            total=snapshot.get('total_IK_calls' if probing else 'total_queries',0)
+            stage='原目标IK初值对照' if probing else 'CPU近邻查询'
+            state='已完成' if snapshot['phase']=='complete' else '已停止' if snapshot['stopped'] else '进行中'
+            status=label+'，'+stage+state
+            summary=f'E：{stage}{done:,}/{total:,}次，比较3°、5°、10°查询范围。'
+            if snapshot.get('stop_summary',{}).get('phase')=='stopped_before_model_loading':
+                summary+='模型加载前可用显存低于10,000 MiB，IK实际0次，未执行3,132次。'
         body = body.replace('方法调研、本地接口与ARX静态几何核查已完成，下一步适配并比较各方法。当前V8规划回放0次、物理抓取0次。',
             summary)
         body = body.replace('## 优化目标', f'[本轮进度与逐例数据](/media/{name})\n\n## 优化目标',1)
@@ -229,7 +292,13 @@ def publish():
             '两种批次容量的混合目标检查与独立FK均通过。\n\n'
             '[实施说明](/media/sam3-v8-native-batch-method.md) · '
             '[接口验证数据](/media/sam3-v8-batch-rows-validation.json)\n\n## 本地已经确认的条件',1)
-        if binding:
+        if indexed:
+            body=body.replace('重复寻找已知解 | 待扩展接口 |','重复寻找已知解 | '+status+' |')
+            body=body.replace('地图批量查询与见证/初值对照 | 待实施 |',
+                '地图批量查询与见证/初值对照 | '+status+' |')
+            if snapshot['experiment']=='index_seed_probe' and snapshot.get('acceptance'):
+                body=body.replace('## 优化目标',seed_probe_table(snapshot)+'\n## 优化目标',1)
+        elif binding:
             body = body.replace('交替窗口反复绑定世界 | 待适配与测显存 |',
                 '交替窗口反复绑定世界 | 已实现，'+status+' |')
             body = body.replace('原生批量IK与绑定复用分别适配 | 待实施 |',
@@ -279,6 +348,19 @@ def publish():
         body=body.replace('原生批量IK与绑定复用分别适配 | 待实施 |',
             '原生批量IK与绑定复用分别适配 | B/C完整对照与独立复算完成 |')
         site['localAssets'][name]='../../resources/media/'+name
+    if geometric_runtime and (not runtime or runtime[0]['experiment']!='geometric_ik'):
+        value,name=geometric_runtime
+        if value.get('summaries'):
+            section=result_table(value,'D几何IK先导结果')
+            section+=('\n\n两组各10/10通过，原抓姿与选臂相同，60个终点独立复算通过。'
+                '累计慢6.14%，当前不纳入组合，也未启动69场景扩展。\n\n'
+                f'[逐次记录](/media/{name}) · [几何IK说明](/media/sam3-v8-geometric-ik-method.md)\n\n')
+            body=body.replace('## 优化目标',section+'## 优化目标',1)
+        site['localAssets'][name]='../../resources/media/'+name
+    if lookup_runtime:
+        value,name=lookup_runtime
+        if value.get('acceptance'):body=body.replace('## 优化目标',lookup_table(value)+'\n## 优化目标',1)
+        site['localAssets'][name]='../../resources/media/'+name
     if config.get('geometric_ik',{}).get('contract_run'):
         body=body.replace('结构已核查，求解待验证 |','27项检查与463个终点核验通过，按队列开展规划对照 |')
         body=body.replace('验证EAIK自动分解、原限位与工具变换','独立CPU适配与463个终点核验通过，测完整规划')
@@ -321,7 +403,10 @@ def publish():
         snapshot,name = runtime
         run = snapshot['run']
         batch = {'id':run.split('/')[-1],'title':('上下文复用纯规划对照' if snapshot['experiment']=='binding_reuse'
-            else '几何IK纯规划对照' if snapshot['experiment']=='geometric_ik' else '原生批量IK纯规划对照'),'date':'2026-11-26',
+            else '几何IK纯规划对照' if snapshot['experiment']=='geometric_ik'
+            else '地图近邻CPU查询' if snapshot['experiment']=='index_lookup_diagnosis'
+            else '地图初值IK对照' if snapshot['experiment']=='index_seed_probe'
+            else '原生批量IK纯规划对照'),'date':'2026-11-26',
             'status':status,'summary':summary,'outputs':[run],
             'artifacts':[{'label':'进度与逐例结果','url':'/media/'+name}]}
         version['batches'] = [v for v in version['batches'] if v['id']!=batch['id']]+[batch]

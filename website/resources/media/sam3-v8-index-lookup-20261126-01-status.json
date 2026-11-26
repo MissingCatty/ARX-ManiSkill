@@ -1,0 +1,77 @@
+{
+  "at": "2026-11-26T15:43:13.775804+08:00",
+  "phase": "complete",
+  "completed_requests": 0,
+  "total_requests": 0,
+  "current": null,
+  "run": "tmp/indexed_grasp_planning/index_lookup_20261126_01",
+  "gpu": "CPU",
+  "cases": 69,
+  "experiment": "index_lookup_diagnosis",
+  "variants": {},
+  "physical_grasps": 0,
+  "offline_checks": 16,
+  "model_warmup_complete": true,
+  "stopped": false,
+  "results": [],
+  "completed_queries": 10322,
+  "total_queries": 10322,
+  "acceptance": {
+    "at": "2026-11-26T15:43:13.759835+08:00",
+    "passed": true,
+    "record_integrity": true,
+    "task_complete": true,
+    "queries": 10322,
+    "direct_hits": 0,
+    "neighborhood_hits_by_angle": {
+      "0.03": 13,
+      "0.05235987755982989": 32,
+      "0.08726646259971647": 142,
+      "0.17453292519943295": 698
+    },
+    "direct_query_timing": {
+      "queries": 10322,
+      "median_ms": 0.27579849847825244,
+      "p90_ms": 0.40186540281865746,
+      "total_seconds": 2.6251557465147926
+    },
+    "neighborhood_timing": {
+      "queries": 10322,
+      "median_ms": 0.5292054993333295,
+      "p90_ms": 0.7326934995944612,
+      "total_seconds": 5.839156582587748
+    },
+    "seed_fixture_queries": 261,
+    "seed_query_timing": {
+      "legacy_8192_seconds": {
+        "queries": 261,
+        "median_ms": 17.37443299498409,
+        "p90_ms": 23.715088987955824,
+        "total_seconds": 4.918346145044779
+      },
+      "position_1024_seconds": {
+        "queries": 261,
+        "median_ms": 3.0026419990463182,
+        "p90_ms": 4.154961003223434,
+        "total_seconds": 0.8546482011734042
+      },
+      "rank_only_8192_seconds": {
+        "queries": 261,
+        "median_ms": 6.434196999180131,
+        "p90_ms": 9.334105998277664,
+        "total_seconds": 1.8704167079995386
+      },
+      "neighborhood_seconds": {
+        "queries": 261,
+        "median_ms": 0.6308029987849295,
+        "p90_ms": 0.9149140096269548,
+        "total_seconds": 0.1778939560026629
+      }
+    },
+    "legacy_seed_equivalence_checks": 32,
+    "planning_requests": 0,
+    "GPU_calls": 0,
+    "physical_grasps": 0,
+    "target_pose_changed": false
+  }
+}

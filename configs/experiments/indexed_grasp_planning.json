@@ -2,7 +2,7 @@
   "version": "V8",
   "parent": "V4",
   "state": "in_progress",
-  "implementation_status": "geometric_pilot_no_material_speedup_index_and_combination_pending",
+  "implementation_status": "index_lookup_complete_seed_probe_resource_gate_stopped",
   "method": "indexed_grasp_planning",
   "user_request": "将借鉴数据库索引、关节解缓存和批量处理的可达性地图规划加速方案作为独立实验版本。",
   "objective": "以已启用的双臂交替搜索为基线，独立比较原生批量IK、几何IK、关节解索引及绑定复用，减少规划总耗时并保留原抓姿与规划效果。",
@@ -67,7 +67,14 @@
     "existing_gravity_index_role": "necessary_yaw_free_prefilter_only",
     "direct_position_tolerance_m": 0.002,
     "direct_rotation_tolerance_rad": 0.03,
-    "map_density_expansion": "measure_existing_direct_hit_rate_and_total_query_cost_first"
+    "map_density_expansion": "measure_existing_direct_hit_rate_and_total_query_cost_first",
+    "seed_position_radius_m": 0.02,
+    "seed_orientation_ranges_degrees": [
+      3,
+      5,
+      10
+    ],
+    "seed_orientation_tolerance_is_final_acceptance": false
   },
   "variants": [
     {
@@ -97,7 +104,7 @@
     {
       "id": "indexed_reuse",
       "description": "现有地图多分支见证与邻近种子，查询和回退合计计时。",
-      "state": "planned"
+      "state": "CPU_diagnosis_complete_IK_probe_unexecuted_resource_gate"
     },
     {
       "id": "combined",
@@ -122,8 +129,8 @@
     "solver_fallback_calls_and_total_cost"
   ],
   "execution": {
-    "current_phase": "geometric_pilot_no_material_speedup",
-    "next_stage": "analyze_geometric_results_then_index_reuse_and_combination",
+    "current_phase": "index_seed_probe_stopped_before_model_loading",
+    "next_stage": "retain_registered_stop_then_resume_with_a_fresh_resource_checked_registration",
     "native_planning_budget": 224,
     "physical_grasp_budget": 0,
     "automatic_retries": false,
@@ -131,7 +138,7 @@
     "output_root": "tmp/indexed_grasp_planning",
     "adapter_reserved_path": "modules/curobo/indexed_planning",
     "orchestration_reserved_path": "modules/pipeline/experiments/indexed_grasp_planning",
-    "active_run": "tmp/indexed_grasp_planning/geometric_pilot_20261126_01",
+    "active_run": "tmp/indexed_grasp_planning/index_seed_probe_20261126_01",
     "user_authorization": "2026-11-26：开始吧，执行V8优化方案。",
     "binding_planning_budget": 158,
     "geometric_planning_budget": 158
@@ -285,5 +292,35 @@
     "accepted_run": "tmp/indexed_grasp_planning/binding_reuse_69_20261126_01",
     "independent_review_passed": true,
     "independent_endpoints": 414
+  },
+  "index_reuse_implementation": {
+    "diagnosis_run": "tmp/indexed_grasp_planning/index_lookup_20261126_01",
+    "offline_checks": 16,
+    "map_directory": "tmp/reachability/products/前方精细_20261121_01",
+    "lookup_module": "modules/curobo/indexed_planning/index_reuse/lookup.py",
+    "seed_angle_comparison_degrees": [
+      3,
+      5,
+      10
+    ],
+    "final_orientation_tolerance_rad": 0.03,
+    "final_position_tolerance_m": 0.002,
+    "default_pipeline_enabled": false,
+    "diagnosis_complete": true,
+    "direct_queries": 10322,
+    "direct_hits": 0,
+    "neighborhood_hits_by_degrees": {
+      "1.72": 13,
+      "3": 32,
+      "5": 142,
+      "10": 698
+    },
+    "seed_probe_run": "tmp/indexed_grasp_planning/index_seed_probe_20261126_01",
+    "seed_probe_fixtures": 261,
+    "seed_probe_IK_budget": 3132,
+    "seed_probe_state": "stopped_before_model_loading",
+    "seed_probe_completed_IK_calls": 0,
+    "seed_probe_unexecuted_IK_calls": 3132,
+    "seed_probe_stop_summary": "tmp/indexed_grasp_planning/index_seed_probe_20261126_01/stop_summary.json"
   }
 }
