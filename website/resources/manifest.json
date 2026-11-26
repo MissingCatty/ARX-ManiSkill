@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T07:02:33.113Z",
+  "generatedAt": "2026-11-26T07:15:48.375Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1415,11 +1415,11 @@
     },
     {
       "file": "media/sam3-v8-indexed-planning-plan.md",
-      "sha256": "5399519821ebdfe046aa67b53547a1fa5f44b0cd1976f6384fb1747526062b42"
+      "sha256": "a7c44c6784335495bcb457fa06558a3d8bc01b93b82898b46446e8277c3730f8"
     },
     {
       "file": "media/sam3-v8-indexed-planning-config.json",
-      "sha256": "102eb3f3caa271f4695609c656e156c2c562b3f384fdb92ff7b46060bd37af25"
+      "sha256": "d09a50d8935f623defdd03ebc77dc5fc114f132e105203d3472528d7ffc87f90"
     },
     {
       "file": "media/sam3-v8-indexed-planning-preparation.json",
@@ -1563,7 +1563,7 @@
     },
     {
       "file": "media/sam3-v8-geometric-ik-method.md",
-      "sha256": "d37edf18447c93599ba5bd28cb997dd2195ca16496276cdbd712ab8c88392743"
+      "sha256": "2f0cbc7e7abcee6dcb2a5ebb10b21f34fdd970226ec57c19ac93cb2da0b37991"
     },
     {
       "file": "media/sam3-v8-geometric-contract.json",
@@ -1571,7 +1571,7 @@
     },
     {
       "file": "media/sam3-v8-geometric-pilot-20261126-01-status.json",
-      "sha256": "8c6929200f45a0b8a7d037b77078c2ae46c24f1463d2a860c65b78640b8284b3"
+      "sha256": "33a414685aa3fe270cb8702f7c06fdb56e05fc4f3136898cf784183ef30dcb4b"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

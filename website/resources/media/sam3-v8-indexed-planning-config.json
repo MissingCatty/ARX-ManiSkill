@@ -2,7 +2,7 @@
   "version": "V8",
   "parent": "V4",
   "state": "in_progress",
-  "implementation_status": "B_C_complete_geometric_IK_comparison_running",
+  "implementation_status": "geometric_pilot_no_material_speedup_index_and_combination_pending",
   "method": "indexed_grasp_planning",
   "user_request": "将借鉴数据库索引、关节解缓存和批量处理的可达性地图规划加速方案作为独立实验版本。",
   "objective": "以已启用的双臂交替搜索为基线，独立比较原生批量IK、几何IK、关节解索引及绑定复用，减少规划总耗时并保留原抓姿与规划效果。",
@@ -92,7 +92,7 @@
     {
       "id": "geometric_ik",
       "description": "独立适配EAIK/IK-Geo，关节分支通过独立FK、原限位和当前场景检查；无合格结果回退原IK。",
-      "state": "pilot_running"
+      "state": "geometric_pilot_no_material_speedup"
     },
     {
       "id": "indexed_reuse",
@@ -122,8 +122,8 @@
     "solver_fallback_calls_and_total_cost"
   ],
   "execution": {
-    "current_phase": "geometric_ik_pilot",
-    "next_stage": "review_geometric_IK_then_index_reuse_and_effective_combination",
+    "current_phase": "geometric_pilot_no_material_speedup",
+    "next_stage": "analyze_geometric_results_then_index_reuse_and_combination",
     "native_planning_budget": 224,
     "physical_grasp_budget": 0,
     "automatic_retries": false,
@@ -206,7 +206,21 @@
     "followup_run": "tmp/indexed_grasp_planning/geometric_followup_20261126_01",
     "full_candidate_fallback": true,
     "default_pipeline_enabled": false,
-    "pilot_run": "tmp/indexed_grasp_planning/geometric_pilot_20261126_01"
+    "pilot_run": "tmp/indexed_grasp_planning/geometric_pilot_20261126_01",
+    "accepted_run": "tmp/indexed_grasp_planning/geometric_pilot_20261126_01",
+    "include_in_default_combination": false,
+    "total_wall_reduction_fraction": -0.061448115121699676,
+    "planning_requests_completed": 20,
+    "independent_endpoints": 60,
+    "full_replay_started": false,
+    "candidate_diagnosis": {
+      "checks": 1434,
+      "no_admitted_geometric_branch": 1200,
+      "geometric_branches_not_admitted_by_endpoint_gate": 198,
+      "accepted_geometric_endpoints": 36,
+      "full_original_candidate_retries": 22,
+      "complete_geometric_candidate_paths": 14
+    }
   },
   "native_batch_implementation": {
     "module": "curobo_indexed_planning",

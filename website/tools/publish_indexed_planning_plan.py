@@ -252,6 +252,14 @@ def publish():
                 f"该207个终点上，几何求解加限位与精度筛选中位耗时约{config['geometric_ik']['contract_query_and_filter_median_ms']:.2f}毫秒。完整规划耗时由本轮对照测量。\n\n"
                 '[几何IK实施说明](/media/sam3-v8-geometric-ik-method.md)\n\n')
             if snapshot.get('summaries'):section+=result_table(snapshot,'D几何IK对照结果')+'\n\n'
+            if config.get('geometric_ik',{}).get('include_in_default_combination') is False:
+                increase=-config['geometric_ik']['total_wall_reduction_fraction']
+                section+=(f'20次规划全部通过，60个终点独立复算通过，抓法与选臂一致。累计耗时增加{increase:.2%}，'
+                    '未达到扩展门槛，因此没有启动69场景对照。\n\n'
+                    '1434个候选中，1200个没有合格几何分支，198个有分支但终点检查未通过；'
+                    '36个几何终点通过，其中22个在后续接近、抬升或路径检查时回到原方法。'
+                    '大量原IK调用仍然存在，又增加了几何检查与回退开销。\n\n'
+                    '当前保留D作为可选实现，下一项是E地图索引复用，B批量16继续优先保留。\n\n')
             body=body.replace('## 优化目标',section+'## 优化目标',1)
         elif not native_runtime or not native_runtime[0].get('summaries'):
             body = body.replace('逐个调用小规模求解的开销 | 待适配 |',
@@ -276,6 +284,11 @@ def publish():
         body=body.replace('验证EAIK自动分解、原限位与工具变换','独立CPU适配与463个终点核验通过，测完整规划')
         body=body.replace('几何IK适配与FK、限位、多分支检查 | 待实施 |',
             '几何IK适配与FK、限位、多分支检查 | CPU核验完成，按队列开展完整规划 |')
+        if config['geometric_ik'].get('include_in_default_combination') is False:
+            body=body.replace('27项检查与463个终点核验通过，按队列开展规划对照',
+                '20次与60个终点复核完成，慢6.14%，未扩69场景')
+            body=body.replace('CPU核验完成，按队列开展完整规划',
+                '先导与60终点复核完成，当前方案未提速')
     if native_runtime and native_runtime[0].get('summaries'):
         native,name = native_runtime
         section = result_table(native,'B原生批量IK完整结果')
