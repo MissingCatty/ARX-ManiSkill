@@ -1,8 +1,8 @@
 {
   "version": "V8",
   "parent": "V4",
-  "state": "planned",
-  "implementation_status": "literature_and_static_geometry_review_complete_adapter_pending",
+  "state": "in_progress",
+  "implementation_status": "native_batch_pilot_accepted_full_replay_running",
   "method": "indexed_grasp_planning",
   "user_request": "将借鉴数据库索引、关节解缓存和批量处理的可达性地图规划加速方案作为独立实验版本。",
   "objective": "以已启用的双臂交替搜索为基线，独立比较原生批量IK、几何IK、关节解索引及绑定复用，减少规划总耗时并保留原抓姿与规划效果。",
@@ -82,7 +82,7 @@
         16,
         32
       ],
-      "state": "planned"
+      "state": "pilot_accepted_full_69_replay_running"
     },
     {
       "id": "binding_reuse",
@@ -122,15 +122,17 @@
     "solver_fallback_calls_and_total_cost"
   ],
   "execution": {
-    "current_phase": "literature_and_static_geometry_review_complete",
-    "next_stage": "implement_separate_native_batch_and_binding_variants_then_geometric_and_indexed_comparisons",
-    "native_planning_budget": 0,
+    "current_phase": "native_batch_full_replay",
+    "next_stage": "analyze_full_batch_replay_before_binding_geometric_and_index_variants",
+    "native_planning_budget": 224,
     "physical_grasp_budget": 0,
     "automatic_retries": false,
     "default_pipeline_enabled": false,
     "output_root": "tmp/indexed_grasp_planning",
     "adapter_reserved_path": "modules/curobo/indexed_planning",
-    "orchestration_reserved_path": "modules/pipeline/experiments/indexed_grasp_planning"
+    "orchestration_reserved_path": "modules/pipeline/experiments/indexed_grasp_planning",
+    "active_run": "tmp/indexed_grasp_planning/native_batch_69_20261126_01",
+    "user_authorization": "2026-11-26：开始吧，执行V8优化方案。"
   },
   "references": [
     {
@@ -190,5 +192,48 @@
     "least_squares_solutions": "same_original_pose_tolerances",
     "no_admitted_solution": "original_IK_fallback",
     "native_queries_executed": 0
+  },
+  "native_batch_implementation": {
+    "module": "curobo_indexed_planning",
+    "adapter": "modules/curobo/indexed_planning/service.py",
+    "configuration": "configs/experiments/indexed_grasp_native_batch.json",
+    "offline_checks": 20,
+    "pilot_run": "tmp/indexed_grasp_planning/native_batch_pilot_20261126_05",
+    "pilot_requests": 15,
+    "full_replay_requests": 207,
+    "default_pipeline_enabled": false,
+    "full_world_and_pure_fallback_batched": true,
+    "contact_and_path_gates": "original implementations through native_grasp_ik hook",
+    "prior_engineering_attempts": [
+      {
+        "run": "tmp/indexed_grasp_planning/native_batch_pilot_20261126_01",
+        "completed_planning_requests": 0,
+        "interrupted_requests": 0
+      },
+      {
+        "run": "tmp/indexed_grasp_planning/native_batch_pilot_20261126_02",
+        "completed_planning_requests": 0,
+        "interrupted_requests": 0
+      },
+      {
+        "run": "tmp/indexed_grasp_planning/native_batch_pilot_20261126_03",
+        "completed_planning_requests": 1,
+        "interrupted_requests": 1
+      },
+      {
+        "run": "tmp/indexed_grasp_planning/native_batch_pilot_20261126_04",
+        "completed_planning_requests": 0,
+        "interrupted_requests": 0,
+        "stage": "solver_mixed_row_contract"
+      }
+    ],
+    "per_target_early_return": true,
+    "kernel_contract": "tmp/indexed_grasp_planning/ik_rows_20261126_04/complete.json",
+    "legacy_interleaving_checks": 11,
+    "total_offline_checks": 31,
+    "full_run": "tmp/indexed_grasp_planning/native_batch_69_20261126_01",
+    "pilot_independent_endpoints": 45,
+    "pilot_all_original_selections_retained": true,
+    "followup_run": "tmp/indexed_grasp_planning/native_batch_followup_20261126_02"
   }
 }

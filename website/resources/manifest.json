@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T01:55:45.089Z",
+  "generatedAt": "2026-11-26T03:30:46.210Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1415,11 +1415,11 @@
     },
     {
       "file": "media/sam3-v8-indexed-planning-plan.md",
-      "sha256": "d6052bdc600d73d4f98723677a89b695c682e6598b4cb0d26c2c563c4e536ca0"
+      "sha256": "4629791bed1388a172ec905e8f837a51c1601647d703ecd8b73bbde0e5aeac07"
     },
     {
       "file": "media/sam3-v8-indexed-planning-config.json",
-      "sha256": "086f6aef67d7cdcd1d1894b01d94cde807c655abab748125d7a07b51ff545d63"
+      "sha256": "ffa5a3c21653fe7634c92f49828038969e68966d0321b72d30611740c4313be5"
     },
     {
       "file": "media/sam3-v8-indexed-planning-preparation.json",
@@ -1511,7 +1511,7 @@
     },
     {
       "file": "media/sam3-v8-planning-research.md",
-      "sha256": "7ed77a9d76da5c7f503eab93b366c207304b721044ce044e1e88379054930285"
+      "sha256": "5c060d4c0286a053ee838b6037cff94b973799a261fd574f803ca7e7101e228b"
     },
     {
       "file": "media/sam3-v8-arm-geometry-review.json",
@@ -1520,6 +1520,26 @@
     {
       "file": "media/sam3-v8-source-review.json",
       "sha256": "0903e81ff7b5890d876f7aedcc69830d23534511e04fe9a3d038546f05624d9f"
+    },
+    {
+      "file": "media/sam3-v8-native-batch-pilot-20261126-01-status.json",
+      "sha256": "c67947da8dd25442621f53473498ec4ef23b1d328480801d50bfa99b6f366b41"
+    },
+    {
+      "file": "media/sam3-v8-native-batch-method.md",
+      "sha256": "2c92df079e7a815bac75fbd2288e9ffd3e3c2f492cbd8e21141b628167acecc1"
+    },
+    {
+      "file": "media/sam3-v8-batch-rows-validation.json",
+      "sha256": "79dc7adab9e9723afecda4da14f74c2f789f573c9688f042cbb273ab0f1f774c"
+    },
+    {
+      "file": "media/sam3-v8-native-batch-pilot-20261126-05-status.json",
+      "sha256": "e1804c92fc2c84ae9c5cd090afe36e3508f688f21b7ab89543f230710fa0d36a"
+    },
+    {
+      "file": "media/sam3-v8-native-batch-69-20261126-01-status.json",
+      "sha256": "be1b3bb3c6096c947159da8bc78bf97683e010d64de6101c8bf6caff8a689c51"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

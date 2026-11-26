@@ -237,6 +237,27 @@
         "stationing/command.json",
         "stationing/receipt.json"
       ]
+    },
+    "curobo_indexed_planning": {
+      "source": "modules/curobo/indexed_planning",
+      "role": "motion_planning",
+      "environment": "environments/curobo",
+      "adapter": "modules/curobo/indexed_planning/service.py",
+      "inputs": [
+        "state.json",
+        "candidates/candidate_pool.json"
+      ],
+      "outputs": [
+        "plan_result.json",
+        "interleaved_search.json"
+      ],
+      "policies": [
+        "configs/experiments/indexed_grasp_native_batch.json",
+        "configs/policies/fingertip_table.json"
+      ],
+      "experimental": true,
+      "default_enabled": false,
+      "variant": "native_endpoint_batches_with_original_contact_gates"
     }
   }
 }

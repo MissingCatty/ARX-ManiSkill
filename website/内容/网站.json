@@ -23,9 +23,9 @@
       "title": "SAM3＋RGB-D点云＋GraspGenX＋cuRobo",
       "shortTitle": "SAM3＋点云＋GraspGenX",
       "date": "2026-11-26",
-      "status": "V8调研与方案已更新，适配待开展",
+      "status": "V8纯规划对照进行中",
       "summary": "头部SAM3、RaySt3R与GraspGenX生成抓法，研究候选后处理、可达性索引和双臂cuRobo规划。",
-      "metric": "批量IK、几何IK、绑定与地图复用分组验证",
+      "metric": "69份观测，三组规划11/207次，物理抓取0次。",
       "file": "SAM3点云GraspGenX主线.md",
       "workflow": "SAM3点云GraspGenX流程.json"
     },
@@ -608,7 +608,12 @@
     "sam3-v3-interleaving-method.md": "../../resources/media/sam3-v3-interleaving-method.md",
     "sam3-v8-planning-research.md": "../../resources/media/sam3-v8-planning-research.md",
     "sam3-v8-arm-geometry-review.json": "../../resources/media/sam3-v8-arm-geometry-review.json",
-    "sam3-v8-source-review.json": "../../resources/media/sam3-v8-source-review.json"
+    "sam3-v8-source-review.json": "../../resources/media/sam3-v8-source-review.json",
+    "sam3-v8-native-batch-pilot-20261126-01-status.json": "../../resources/media/sam3-v8-native-batch-pilot-20261126-01-status.json",
+    "sam3-v8-native-batch-method.md": "../../resources/media/sam3-v8-native-batch-method.md",
+    "sam3-v8-batch-rows-validation.json": "../../resources/media/sam3-v8-batch-rows-validation.json",
+    "sam3-v8-native-batch-pilot-20261126-05-status.json": "../../resources/media/sam3-v8-native-batch-pilot-20261126-05-status.json",
+    "sam3-v8-native-batch-69-20261126-01-status.json": "../../resources/media/sam3-v8-native-batch-69-20261126-01-status.json"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",

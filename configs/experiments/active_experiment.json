@@ -44,7 +44,7 @@
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/pipeline.py": "bb5cadfed2dd557bfc362d3abbbf7889ddf8e38c262091dff1a5754d2551b6aa",
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/registry.py": "dd979fc85ed69bfc57829e5a4de6574c822bfb954f03a335758560e7900b1fae",
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/service.py": "c3f6f79a3e62ccf4c1266ecb24d2f153ec71316d95f38b8ada02990a53b1f8c4",
-    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "c76d7001fffcddd1b6b98bf660a8e7673db810ea656d7a153a5b56731317a324",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "57d3ce9a6cc3732fb17ecb5442a5b5efdf7f718de00729906da1bcb2c538949c",
     "/home/zhaoyechong/projects/ARX-ManiSkill/configs/path_aliases.json": "4b34e5b4b70abdca3c4f3a69754884a0a29068cb870e16f35a0e44b1e04246b4",
     "/home/zhaoyechong/projects/ARX-ManiSkill/configs/pipelines/sam3_graspgenx.json": "5fa511488c30b7914a34670fe64cd28f912a654aad3c7570c185bd6d6a9421a6",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/arx-sim/config/controllers.yaml": "e9010f093abbfb0912498d247ac28854800edeba97b2debbab19da53ae7a3017",
@@ -109,7 +109,7 @@
     "/home/zhaoyechong/projects/ARX-ManiSkill/configs/policies/fingertip_table.json": "71f2041e9abf1fdcd5d71adb8909bc9c5261bcfdd09e476d0ca53015ab70eed8",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/planning_common/contact_execution.py": "1760e7a73bc46150f3102803a5335973d804f003c7940de711afbc866b8b2f1e",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/maniskill/fast_resident_planner.py": "5fbf9025089fe08c890d888901cfad6e9b621ff19e6e45a67ef8b7e520e2da84",
-    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/fingertip_contact/planning.py": "febce5b7dc6632c5ef0d82017430d908f7efa4c8b25af012d1b403b057cd4623",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/fingertip_contact/planning.py": "3ef632eb34ed112649c7322fcd438f50d35bde06269da8dde482761ed27283b0",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/fingertip_contact/validator.py": "1d8b43cc59dd4c9c7884967a38bec5a2197301d05890ca63d54d40d7a2a5ae58",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/fingertip_contact/profile.py": "30d69f71d487f81e65cc725ce83dd60f71f53ba61b2b4ecb42bd6ef7297ad59f",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/fingertip_contact/geometry.py": "9301efbea73fc2f8670085996f72f01aae6a5814c255d1959ec9b90d20da3af4",
@@ -461,5 +461,11 @@
     "source_acceptance_sha256": "0261a7194a72f21153ee3c0b8f26bbf31ed9b65d289369e0d42984e11a64b906",
     "physical_robot_camera_scene_and_success_unchanged": true,
     "additional_physical_grasps": 0
+  },
+  "v8_optional_registration": {
+    "at": "2026-11-26T10:24:59.339719+08:00",
+    "default_enabled": false,
+    "default_equivalent_hook": "native_grasp_ik delegates to context.ik; current active adapter unchanged",
+    "evidence": "tmp/indexed_grasp_planning/implementation_20261126_01/offline_checks.json"
   }
 }

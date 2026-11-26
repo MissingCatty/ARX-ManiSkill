@@ -1,0 +1,19 @@
+{
+  "version": "V8",
+  "stage": "native_batch_IK",
+  "user_authorization": "2026-11-26：开始吧",
+  "source_run": "tmp/sam3_zerograsp_comparison/v6_complete74_20261126_01",
+  "variants": {"control": 0, "batch16": 16, "batch32": 32},
+  "scheduler": {"first_window": 16, "subsequent_window": 64},
+  "same_original_goal_order_and_scores": true,
+  "native_kinematic_fallback_and_contact_gates": "unchanged",
+  "pilot": {
+    "cases": ["M0001_S1_open_apple", "M0004_S1_open_banana", "M0010_S1_open_boxed_food", "M0044_S3_sparse_banana", "M0069_S4_clutter_orange"],
+    "planning_requests": 15
+  },
+  "full_replay": {"candidate_observations": 69, "common_stationing_failures": 5, "planning_requests": 207},
+  "physical_grasp_budget": 0,
+  "simulation_instances": 0,
+  "perception_calls": 0,
+  "automatic_default_activation": false
+}

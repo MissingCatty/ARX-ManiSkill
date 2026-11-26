@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-26T10:24:59.340849+08:00",
+  "user_authorization": "开始吧，执行V8优化方案",
+  "active_adapter_unchanged": "modules/curobo/dual_arm/interleaved_map_service.py",
+  "optional_module": "curobo_indexed_planning",
+  "hook_default_behavior_preserved": true,
+  "new_hashes": {
+    "configs/experiments/active_experiment.json": "96fef71a2ef2324dfc41625a06bea6304456f4908dc85d1156747ddc5ca94b98",
+    "configs/modules.json": "57d3ce9a6cc3732fb17ecb5442a5b5efdf7f718de00729906da1bcb2c538949c",
+    "modules/curobo/fingertip_contact/planning.py": "3ef632eb34ed112649c7322fcd438f50d35bde06269da8dde482761ed27283b0"
+  }
+}

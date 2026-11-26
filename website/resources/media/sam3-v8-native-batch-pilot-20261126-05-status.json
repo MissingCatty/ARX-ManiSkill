@@ -1,0 +1,234 @@
+{
+  "at": "2026-11-26T11:21:55.307677+08:00",
+  "phase": "complete",
+  "completed_requests": 15,
+  "total_requests": 15,
+  "current": null,
+  "run": "tmp/indexed_grasp_planning/native_batch_pilot_20261126_05",
+  "gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "cases": 5,
+  "physical_grasps": 0,
+  "offline_checks": 20,
+  "model_warmup_complete": true,
+  "stopped": false,
+  "results": [
+    {
+      "id": "M0001_S1_open_apple",
+      "variants": {
+        "control": {
+          "seconds": 4.639957909996156,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4
+        },
+        "batch16": {
+          "seconds": 5.779834011998901,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4
+        },
+        "batch32": {
+          "seconds": 7.059866117000638,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8027839381483328
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.657230297728001
+        }
+      }
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "variants": {
+        "control": {
+          "seconds": 7.3653963999968255,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2
+        },
+        "batch32": {
+          "seconds": 8.798616830004903,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2
+        },
+        "batch16": {
+          "seconds": 9.21339385399915,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8371084390082164
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.7994227226919007
+        }
+      }
+    },
+    {
+      "id": "M0010_S1_open_boxed_food",
+      "variants": {
+        "batch16": {
+          "seconds": 19.22727954999573,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114
+        },
+        "control": {
+          "seconds": 12.987709127999551,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114
+        },
+        "batch32": {
+          "seconds": 9.248811435994867,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 56,
+          "candidate_checks": 114
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.6754834501796401
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.404257100264095
+        }
+      }
+    },
+    {
+      "id": "M0044_S3_sparse_banana",
+      "variants": {
+        "batch16": {
+          "seconds": 9.918543232000957,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17
+        },
+        "batch32": {
+          "seconds": 10.930374594994646,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17
+        },
+        "control": {
+          "seconds": 8.83913111500442,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 0,
+          "candidate_checks": 17
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8911723131362732
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.8086759550813684
+        }
+      }
+    },
+    {
+      "id": "M0069_S4_clutter_orange",
+      "variants": {
+        "batch32": {
+          "seconds": 72.60263536599814,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 272,
+          "candidate_checks": 580
+        },
+        "control": {
+          "seconds": 100.00317959300446,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 272,
+          "candidate_checks": 580
+        },
+        "batch16": {
+          "seconds": 64.81276989299658,
+          "success": true,
+          "selected_arm": "left",
+          "selected_source_index": 272,
+          "candidate_checks": 580
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.3774042648572888
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.5429548800044481
+        }
+      }
+    }
+  ],
+  "summaries": {
+    "control": {
+      "requests": 5,
+      "successes": 5,
+      "median_seconds": 8.83913111500442,
+      "p90_seconds": 65.19699140700251,
+      "total_seconds": 133.8353741460014
+    },
+    "batch16": {
+      "requests": 5,
+      "successes": 5,
+      "median_seconds": 9.918543232000957,
+      "p90_seconds": 46.57857375579624,
+      "total_seconds": 108.95182054099132
+    },
+    "batch32": {
+      "requests": 5,
+      "successes": 5,
+      "median_seconds": 9.248811435994867,
+      "p90_seconds": 47.933731057596745,
+      "total_seconds": 108.6403043439932
+    }
+  },
+  "control_successes_retained": {
+    "batch16": true,
+    "batch32": true
+  },
+  "record_integrity": true
+}

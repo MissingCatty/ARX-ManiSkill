@@ -126,8 +126,12 @@ def contact_pool(base, profile):
             q = q[valid]
             return q[torch.argsort((q-start).square().sum(-1), stable=True)]
 
+        def native_grasp_ik(self, context, grasp, start):
+            """Endpoint hook; the default retains the original single-target IK."""
+            return context.ik(grasp, start)
+
         def grasp_endpoint(self, context, state, grasp, start, validator):
-            native = context.ik(grasp, start)
+            native = self.native_grasp_ik(context, grasp, start)
             if native is not None:
                 return native, {'kind': 'native_full_world_ik'}
             solutions = self.unconstrained_ik(context, grasp, start)

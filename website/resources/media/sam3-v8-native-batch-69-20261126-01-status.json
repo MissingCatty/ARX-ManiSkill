@@ -1,0 +1,133 @@
+{
+  "at": "2026-11-26T11:29:00.185235+08:00",
+  "phase": "planning",
+  "completed_requests": 11,
+  "total_requests": 207,
+  "current": {
+    "id": "M0005_S1_open_bar_soap",
+    "variant": "control"
+  },
+  "run": "tmp/indexed_grasp_planning/native_batch_69_20261126_01",
+  "gpu": "GPU-d9e4f8a1-c4f3-232a-4ceb-a9dde26aa45b",
+  "cases": 69,
+  "physical_grasps": 0,
+  "offline_checks": 20,
+  "model_warmup_complete": true,
+  "stopped": false,
+  "results": [
+    {
+      "id": "M0001_S1_open_apple",
+      "variants": {
+        "control": {
+          "seconds": 14.346198188002745,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4
+        },
+        "batch16": {
+          "seconds": 6.043405611002527,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4
+        },
+        "batch32": {
+          "seconds": 6.056040578994725,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 1,
+          "candidate_checks": 4
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.373859891496326
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 2.368907209400527
+        }
+      }
+    },
+    {
+      "id": "M0002_S1_open_avocado",
+      "variants": {
+        "control": {
+          "seconds": 6.076521816001332,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 3,
+          "candidate_checks": 8
+        },
+        "batch32": {
+          "seconds": 5.620989738003118,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 3,
+          "candidate_checks": 8
+        },
+        "batch16": {
+          "seconds": 5.924159103997226,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 3,
+          "candidate_checks": 8
+        }
+      },
+      "comparison": {
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.0810412577198627
+        },
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 1.0257188757643767
+        }
+      }
+    },
+    {
+      "id": "M0004_S1_open_banana",
+      "variants": {
+        "batch16": {
+          "seconds": 8.158038312998542,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2
+        },
+        "control": {
+          "seconds": 6.345983205996163,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2
+        },
+        "batch32": {
+          "seconds": 11.190825669997139,
+          "success": true,
+          "selected_arm": "right",
+          "selected_source_index": 0,
+          "candidate_checks": 2
+        }
+      },
+      "comparison": {
+        "batch16": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.777881025133805
+        },
+        "batch32": {
+          "success_retained": true,
+          "same_selection": true,
+          "speedup": 0.5670701513124174
+        }
+      }
+    }
+  ]
+}

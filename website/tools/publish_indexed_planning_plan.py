@@ -1,14 +1,44 @@
-"""Publish the V8 research plan without starting a planner or simulator."""
+"""Publish V8 methods and recorded planning progress with standalone resources."""
 import shutil
 
 from arx_project.layout import ROOT,read_json,write_json,sha256
 
 
+def planning_progress(website, config):
+    """Copy a compact progress snapshot; never start or reconnect a planner."""
+    relative = config['execution'].get('active_run')
+    if not relative:
+        return None
+    run = (ROOT/relative).resolve()
+    if not run.is_relative_to(ROOT/'tmp/indexed_grasp_planning'):
+        raise ValueError('V8 publication must read its registered planning directory')
+    registration = read_json(run/'registration.json')
+    progress = read_json(run/'progress.json')
+    acceptance = read_json(run/'acceptance.json') if (run/'acceptance.json').is_file() else None
+    snapshot = {key: progress.get(key) for key in ['at','phase','completed_requests','total_requests','current']}
+    snapshot.update(run=relative,gpu=registration['gpu'],cases=len(registration['cases']),
+        physical_grasps=0,offline_checks=config.get('native_batch_implementation',{}).get('offline_checks',0),
+        model_warmup_complete=(run/'startup.json').is_file(),stopped=(run/'STOP').is_file())
+    snapshot['results'] = [{'id': row['id'], 'variants': {mode: {key: value.get(key) for key in
+        ['seconds','success','selected_arm','selected_source_index','candidate_checks']} for mode,value in row['variants'].items()},
+        'comparison':row['comparison']} for row in progress.get('results',[])]
+    if acceptance:
+        snapshot.update(summaries=acceptance['summaries'],
+            control_successes_retained=acceptance['control_successes_retained'],
+            record_integrity=acceptance['record_integrity'])
+    name = 'sam3-v8-'+run.name.replace('_','-')+'-status.json'
+    target = website/'resources/media'/name
+    if target.is_symlink() or target.exists() and target.stat().st_nlink != 1:
+        raise ValueError('V8 progress must be a standalone website resource')
+    write_json(target,snapshot)
+    return snapshot,name
+
+
 def publish():
     website = ROOT/'website'
     config = read_json(ROOT/'configs/experiments/indexed_grasp_planning.json')
-    if config['execution']['native_planning_budget'] or config['execution']['physical_grasp_budget']:
-        raise ValueError('This publisher describes a planning proposal with zero execution budget')
+    if config['execution']['physical_grasp_budget']:
+        raise ValueError('This publisher describes planning-only V8 comparisons')
     review = ROOT/'tmp/indexed_grasp_planning/research_20261126_01'
     site_path,registry_path = website/'内容/网站.json',website/'内容/experiments.json'
     site,registry = read_json(site_path),read_json(registry_path)
@@ -16,6 +46,7 @@ def publish():
         (ROOT/'configs/experiments/indexed_grasp_planning.json','sam3-v8-indexed-planning-config.json'),
         (ROOT/'modules/pipeline/docs/mainline_versions/V8_可达性索引与批量IK加速实验方案.md','sam3-v8-indexed-planning-plan.md'),
         (ROOT/'modules/pipeline/docs/mainline_versions/V8_规划加速方法调研.md','sam3-v8-planning-research.md'),
+        (ROOT/'modules/pipeline/docs/mainline_versions/V8_原生批量IK实施.md','sam3-v8-native-batch-method.md'),
         (review/'arm_geometry_review.json','sam3-v8-arm-geometry-review.json'),
         (review/'source_review.json','sam3-v8-source-review.json')]
     for source,name in attachments:
@@ -25,6 +56,15 @@ def publish():
         if target.stat().st_nlink != 1 or sha256(source) != sha256(target):
             raise ValueError('Independent resource copy failed')
         site['localAssets'][name] = '../../resources/media/'+name
+    before = ROOT/'tmp/indexed_grasp_planning/ik_rows_20261126_03/results.json'
+    after = ROOT/'tmp/indexed_grasp_planning/ik_rows_20261126_04/results.json'
+    if before.is_file() and after.is_file():
+        proof = {'original_interface':read_json(before),'per_target_early_return':read_json(after),
+            'validation':read_json(after.with_name('complete.json')),'physical_grasps':0}
+        proof_name = 'sam3-v8-batch-rows-validation.json'
+        write_json(website/'resources/media'/proof_name,proof)
+        site['localAssets'][proof_name] = '../../resources/media/'+proof_name
+    runtime = planning_progress(website,config)
     body = '''## 本版进度
 
 方法调研、本地接口与ARX静态几何核查已完成，下一步适配并比较各方法。当前V8规划回放0次、物理抓取0次。
@@ -114,22 +154,56 @@ def publish():
 - [ARX静态几何核查](/media/sam3-v8-arm-geometry-review.json)
 - [本地接口与来源记录](/media/sam3-v8-source-review.json)
 '''
+    status = '调研与静态核查完成，待适配'
+    summary = '以现行交替搜索为基线，独立比较批量IK、绑定复用、几何IK和地图；V8回放0次。'
+    if runtime:
+        snapshot,name = runtime
+        done,total = snapshot['completed_requests'],snapshot['total_requests']
+        status = ('纯规划对照已完成' if snapshot['phase']=='complete' else
+            '纯规划对照停止，保留记录' if snapshot['stopped'] else
+            '纯规划对照进行中' if snapshot['model_warmup_complete'] else '批量IK已实现，常驻模型预热中')
+        summary = f"{snapshot['cases']}份观测，三组规划{done}/{total}次，物理抓取0次。"
+        body = body.replace('方法调研、本地接口与ARX静态几何核查已完成，下一步适配并比较各方法。当前V8规划回放0次、物理抓取0次。',
+            f"原生批量IK适配完成，{snapshot['offline_checks']}项新离线检查及11项原交替回归通过。{status}：{summary}")
+        body = body.replace('逐个调用小规模求解的开销 | 待适配 |','逐个调用小规模求解的开销 | 已接通，独立对照中 |')
+        body = body.replace('原生批量IK与绑定复用分别适配 | 待实施 |','原生批量IK与绑定复用分别适配 | 批量IK已接通；绑定复用待实施 |')
+        body = body.replace('## 优化目标', f'[本轮进度与逐例数据](/media/{name})\n\n## 优化目标',1)
+        body = body.replace('## 本地已经确认的条件',
+            '## 批量接口怎样保持逐目标检查\n\n'
+            '先成批产生并检查原32个初值。每个目标已有合格解时先保留，只有未通过的行继续优化；这样其他失败目标不会冲掉该行已通过的初始解。补齐行不参与选择，返回解继续经过原碰撞、接触和路径检查。\n\n'
+            '两种批次容量的混合目标检查与独立FK均通过。\n\n'
+            '[实施说明](/media/sam3-v8-native-batch-method.md) · '
+            '[接口验证数据](/media/sam3-v8-batch-rows-validation.json)\n\n## 本地已经确认的条件',1)
+        if snapshot.get('summaries'):
+            table = ['## 本轮规划结果','','下表为相同保存观测、同一卡和同一常驻模型池的纯规划对照。耗时单位为秒。','',
+                '| 方法 | 完整规划次数 | 规划通过 | 中位耗时 | P90耗时 |','| --- | ---: | ---: | ---: | ---: |']
+            labels = {'control':'现行逐个检查','batch16':'批量16个','batch32':'批量32个'}
+            for mode,value in snapshot['summaries'].items():
+                table.append(f"| {labels[mode]} | {value['requests']} | {value['successes']} | {value['median_seconds']:.2f} | {value['p90_seconds']:.2f} |")
+            body = body.replace('## 优化目标','\n'.join(table)+'\n\n## 优化目标',1)
+        site['localAssets'][name] = '../../resources/media/'+name
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version = next(v for v in group['iterations'] if v['code']=='V8')
-    version.update(status='调研与静态核查完成，待适配',
-        resultSummary='以现行交替搜索为基线，独立比较批量IK、绑定复用、几何IK和地图；V8回放0次。',
+    version.update(status=status,resultSummary=summary,
         change='以现行双臂交替搜索为基线，分别比较原生批量IK、几何IK、关节解索引与模型场景绑定复用，保留原抓姿和评分顺序。',
         pipeline='头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 双臂交替调度 → 批量IK/几何IK/索引复用对照 → 当前碰撞与路径检查 → 选臂抓取')
     version['settings'] = [['基线','已启用的双臂交替搜索，首轮16、后续64。'],
         ['对照','批量IK、绑定复用、几何IK、地图复用分别比较。'],
         ['输入','最终V6的69份有效观测，保留原抓姿与排名。'],
-        ['当前进度','文献与接口调研、ARX静态几何核查完成；待适配。']]
+        ['当前进度',status]]
+    if runtime:
+        snapshot,name = runtime
+        run = snapshot['run']
+        batch = {'id':run.split('/')[-1],'title':'原生批量IK纯规划对照','date':'2026-11-26',
+            'status':status,'summary':summary,'outputs':[run],
+            'artifacts':[{'label':'进度与逐例结果','url':'/media/'+name}]}
+        version['batches'] = [v for v in version['batches'] if v['id']!=batch['id']]+[batch]
     if group['current']=='V8':
         entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
-        entry.update(status='V8调研与方案已更新，适配待开展',metric='批量IK、几何IK、绑定与地图复用分组验证')
+        entry.update(status='V8'+status,metric=summary)
     write_json(site_path,site);write_json(registry_path,registry)
-    print('Published V8 research plan; native and physical execution remain zero.')
+    print('Published V8 methods and recorded progress; physical grasps remain zero.')
 
 
 if __name__=='__main__':
