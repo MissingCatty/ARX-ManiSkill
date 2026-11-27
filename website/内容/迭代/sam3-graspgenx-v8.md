@@ -1,3 +1,140 @@
+## 内存状态更新：完整抓取测试
+
+### 本轮结果
+
+148个登记槽全部处理，147个完整结束、1个程序中断、0个未开始。排除共同站位前提未满足和中断场景后，有68个完整配对场景，双方分别成功53次和53次（77.9%／77.9%）。各阶段规划服务耗时合计平均15.41→11.56秒，减少25.0%。
+
+全登记表里原方法54次成功、内存更新53次，差的一次来自香蕉新方法的程序中断；该条保留且未重抓。
+
+使用同一组74个配对场景，新旧方法每场景各一次，共148个登记槽。69个场景各组重新复位仿真并规划抓取；5个原站位前提未满足的场景单列未执行。
+
+两组沿用同一份冻结头部RGB-D、SAM3分割和15毫米／15度NMS后的候选。本轮实际执行开爪、预抓取、按实测状态重规划接近、闭合、按实测状态重规划抬升与3秒保持。成功判据沿用目标最低保持抬升至少1厘米、双指有效接触、各段到位且无禁止接触。
+
+| 方法 | 完整结束 | 程序中断 | 初始规划通过 | 实际执行 | 抓取成功 | 前提未满足未执行 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 原方法 | 74/74 | 0 | 68/74（91.9%） | 68 | 54/74（73.0%） | 5 |
+| 内存状态更新 | 73/74 | 1 | 68/74（91.9%） | 68 | 53/74（71.6%） | 5 |
+
+### 各段规划计时
+
+| 环节 | 原方法平均／中位／P90 | 内存更新平均／中位／P90 |
+| --- | ---: | ---: |
+| 初始规划完整请求（含交接与返回） | 12.052／8.177／21.894秒（68次） | 8.344／6.346／14.619秒（68次） |
+| 初始规划服务内部 | 12.042／8.171／21.887秒（68次） | 8.317／6.310／14.364秒（68次） |
+| 到预抓取后重规划接近 | 1.638／1.619／2.009秒（67次） | 1.552／1.562／1.860秒（67次） |
+| 实测闭合后重规划抬升 | 2.021／2.002／2.741秒（59次） | 1.981／1.928／2.793秒（59次） |
+| 每场景全部规划服务合计 | 15.410／11.507／25.996秒（68次） | 11.565／9.696／17.335秒（68次） |
+
+主耗时表使用两组同一场景、同一实际发生阶段的配对；中断场景单列，不计入配对时延：M0004_S1_open_banana。
+
+### 失败分布
+
+| 原因 | 原方法 | 内存更新 |
+| --- | ---: | ---: |
+| 接近未到位 | 1 | 1 |
+| 闭合未到位 | 1 | 1 |
+| 物体抬升或保持不足 | 6 | 6 |
+| 规划不出来 | 1 | 1 |
+| 闭合后未形成双指夹持 | 6 | 6 |
+
+### 核验与对照
+
+| 项目 | 结果 |
+| --- | --- |
+| 任务结果 | 148个登记槽已处理；147完整、1中断、0未开始 |
+| 记录完整性 | 272段录像完整解码；完整项命令与回执通过，中断项停止记录单列 |
+| 事件适用性 | 发生过的接近、闭合、抬升、保持按实际记录核验；未执行项单列 |
+| 关键事件覆盖 | 完整项核查137次初始规划、135次接近重规划、119次抬升重规划；独立验算405个末端点和524条命令路径，解码272段录像 |
+| 初始抓法、手臂与关节相同 | 是 |
+| 初始命令轨迹相同 | 是 |
+
+完整配对范围内，原方法成功而内存更新失败的场景为0。
+
+完整配对范围内，内存更新成功而原方法失败的场景为0。
+
+### 逐场景结果
+
+| 场景 | 原方法 | 内存更新 |
+| --- | --- | --- |
+| M0001_S1_open_apple | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0001-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0001-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0001-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0001-optimized-head.mp4) |
+| M0002_S1_open_avocado | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0002-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0002-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0002-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0002-optimized-head.mp4) |
+| M0003_S1_open_baguette | 前提未满足，未执行 | 前提未满足，未执行 |
+| M0004_S1_open_banana | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0004-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0004-baseline-head.mp4) | 程序中断，未重复执行 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0004-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0004-optimized-head.mp4) |
+| M0005_S1_open_bar_soap | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0005-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0005-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0005-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0005-optimized-head.mp4) |
+| M0006_S1_open_bell_pepper | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0006-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0006-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0006-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0006-optimized-head.mp4) |
+| M0007_S1_open_book | 前提未满足，未执行 | 前提未满足，未执行 |
+| M0008_S1_open_bottled_water | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0008-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0008-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0008-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0008-optimized-head.mp4) |
+| M0009_S1_open_bowl | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0009-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0009-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0009-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0009-optimized-head.mp4) |
+| M0010_S1_open_boxed_food | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0010-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0010-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0010-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0010-optimized-head.mp4) |
+| M0011_S1_open_bread | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0011-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0011-baseline-head.mp4) | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0011-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0011-optimized-head.mp4) |
+| M0012_S1_open_broccoli | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0012-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0012-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0012-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0012-optimized-head.mp4) |
+| M0015_S1_open_carrot | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0015-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0015-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0015-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0015-optimized-head.mp4) |
+| M0016_S1_open_cell_phone | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0016-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0016-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0016-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0016-optimized-head.mp4) |
+| M0018_S1_open_croissant | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0018-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0018-baseline-head.mp4) | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0018-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0018-optimized-head.mp4) |
+| M0019_S1_open_cucumber | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0019-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0019-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0019-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0019-optimized-head.mp4) |
+| M0020_S1_open_donut | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0020-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0020-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0020-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0020-optimized-head.mp4) |
+| M0022_S2_edge_keychain | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0022-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0022-baseline-head.mp4) | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0022-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0022-optimized-head.mp4) |
+| M0023_S2_edge_lemon | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0023-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0023-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0023-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0023-optimized-head.mp4) |
+| M0024_S2_edge_mango | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0024-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0024-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0024-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0024-optimized-head.mp4) |
+| M0026_S2_edge_mug | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0026-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0026-baseline-head.mp4) | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0026-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0026-optimized-head.mp4) |
+| M0027_S2_edge_mushroom | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0027-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0027-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0027-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0027-optimized-head.mp4) |
+| M0029_S2_edge_orange | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0029-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0029-baseline-head.mp4) | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0029-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0029-optimized-head.mp4) |
+| M0030_S2_edge_peach | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0030-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0030-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0030-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0030-optimized-head.mp4) |
+| M0031_S2_edge_pear | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0031-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0031-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0031-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0031-optimized-head.mp4) |
+| M0032_S2_edge_potato | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0032-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0032-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0032-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0032-optimized-head.mp4) |
+| M0033_S2_edge_remote_control | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0033-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0033-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0033-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0033-optimized-head.mp4) |
+| M0034_S2_edge_scissors | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0034-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0034-baseline-head.mp4) | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0034-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0034-optimized-head.mp4) |
+| M0036_S2_edge_spatula | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0036-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0036-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0036-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0036-optimized-head.mp4) |
+| M0038_S2_edge_teapot | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0038-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0038-baseline-head.mp4) | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0038-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0038-optimized-head.mp4) |
+| M0039_S2_edge_tomato | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0039-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0039-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0039-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0039-optimized-head.mp4) |
+| M0041_S3_sparse_apple | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0041-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0041-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0041-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0041-optimized-head.mp4) |
+| M0042_S3_sparse_avocado | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0042-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0042-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0042-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0042-optimized-head.mp4) |
+| M0043_S3_sparse_baguette | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0043-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0043-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0043-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0043-optimized-head.mp4) |
+| M0044_S3_sparse_banana | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0044-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0044-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0044-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0044-optimized-head.mp4) |
+| M0045_S3_sparse_bar_soap | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0045-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0045-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0045-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0045-optimized-head.mp4) |
+| M0046_S3_sparse_bell_pepper | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0046-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0046-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0046-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0046-optimized-head.mp4) |
+| M0047_S3_sparse_book | 规划不出来 | 规划不出来 |
+| M0048_S3_sparse_bottled_water | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0048-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0048-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0048-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0048-optimized-head.mp4) |
+| M0050_S3_sparse_boxed_food | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0050-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0050-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0050-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0050-optimized-head.mp4) |
+| M0052_S3_sparse_broccoli | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0052-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0052-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0052-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0052-optimized-head.mp4) |
+| M0055_S3_sparse_carrot | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0055-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0055-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0055-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0055-optimized-head.mp4) |
+| M0056_S3_sparse_cell_phone | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0056-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0056-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0056-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0056-optimized-head.mp4) |
+| M0058_S3_sparse_croissant | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0058-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0058-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0058-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0058-optimized-head.mp4) |
+| M0059_S3_sparse_cucumber | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0059-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0059-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0059-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0059-optimized-head.mp4) |
+| M0060_S3_sparse_donut | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0060-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0060-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0060-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0060-optimized-head.mp4) |
+| M0061_S4_clutter_eggplant | 接近未到位 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0061-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0061-baseline-head.mp4) | 接近未到位 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0061-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0061-optimized-head.mp4) |
+| M0062_S4_clutter_keychain | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0062-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0062-baseline-head.mp4) | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0062-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0062-optimized-head.mp4) |
+| M0063_S4_clutter_lemon | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0063-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0063-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0063-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0063-optimized-head.mp4) |
+| M0064_S4_clutter_mango | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0064-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0064-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0064-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0064-optimized-head.mp4) |
+| M0065_S4_clutter_milk | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0065-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0065-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0065-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0065-optimized-head.mp4) |
+| M0066_S4_clutter_mug | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0066-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0066-baseline-head.mp4) | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0066-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0066-optimized-head.mp4) |
+| M0067_S4_clutter_mushroom | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0067-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0067-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0067-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0067-optimized-head.mp4) |
+| M0069_S4_clutter_orange | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0069-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0069-baseline-head.mp4) | 物体抬升或保持不足 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0069-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0069-optimized-head.mp4) |
+| M0070_S4_clutter_peach | 闭合未到位 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0070-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0070-baseline-head.mp4) | 闭合未到位 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0070-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0070-optimized-head.mp4) |
+| M0071_S4_clutter_pear | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0071-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0071-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0071-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0071-optimized-head.mp4) |
+| M0072_S4_clutter_potato | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0072-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0072-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0072-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0072-optimized-head.mp4) |
+| M0074_S4_clutter_scissors | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0074-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0074-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0074-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0074-optimized-head.mp4) |
+| M0076_S4_clutter_spatula | 前提未满足，未执行 | 前提未满足，未执行 |
+| M0078_S4_clutter_teapot | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0078-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0078-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0078-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0078-optimized-head.mp4) |
+| M0079_S4_clutter_tomato | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0079-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0079-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0079-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0079-optimized-head.mp4) |
+| M0081_S5_occluded_apple | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0081-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0081-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0081-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0081-optimized-head.mp4) |
+| M0082_S5_occluded_avocado | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0082-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0082-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0082-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0082-optimized-head.mp4) |
+| M0084_S5_occluded_banana | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0084-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0084-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0084-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0084-optimized-head.mp4) |
+| M0085_S5_occluded_bar_soap | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0085-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0085-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0085-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0085-optimized-head.mp4) |
+| M0086_S5_occluded_bell_pepper | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0086-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0086-baseline-head.mp4) | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0086-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0086-optimized-head.mp4) |
+| M0087_S5_occluded_book | 前提未满足，未执行 | 前提未满足，未执行 |
+| M0089_S5_occluded_bowl | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0089-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0089-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0089-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0089-optimized-head.mp4) |
+| M0092_S5_occluded_broccoli | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0092-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0092-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0092-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0092-optimized-head.mp4) |
+| M0095_S5_occluded_carrot | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0095-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0095-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0095-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0095-optimized-head.mp4) |
+| M0096_S5_occluded_cell_phone | 前提未满足，未执行 | 前提未满足，未执行 |
+| M0098_S5_occluded_croissant | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0098-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0098-baseline-head.mp4) | 闭合后未形成双指夹持 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0098-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0098-optimized-head.mp4) |
+| M0099_S5_occluded_cucumber | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0099-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0099-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0099-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0099-optimized-head.mp4) |
+| M0100_S5_occluded_donut | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0100-baseline-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0100-baseline-head.mp4) | 抓取成功 · [第三人称](/media/sam3-v8-execution74-20261128-04-m0100-optimized-overview.mp4) · [头部](/media/sam3-v8-execution74-20261128-04-m0100-optimized-head.mp4) |
+
+运行记录：`tmp/state_updates/execution74_20261128_04`。所有视频的路径保存在本轮acceptance.json。
+
+[完整测试报告](/media/sam3-v8-execution74-20261128-04-report.md) · [逐场景统计与核验](/media/sam3-v8-execution74-20261128-04-results.json)
+
 ## 内存状态更新：完整规划对照
 
 机器人固定配置保存在内存中，夹爪仅更新原URDF推导的动态参数；场景几何保留在原容量内，通过实际启停标志切换碰撞对象，并及时更新障碍位姿。不变的YAML文本提前生成，每次只替换两个开度数值。配置与回执由单线程后台写入，全部写入并核验后才结束请求。

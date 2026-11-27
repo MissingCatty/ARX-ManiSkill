@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T16:09:41.192Z",
+  "generatedAt": "2026-11-27T23:34:23.055Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -2342,6 +2342,1102 @@
       "sha256": "5c039aa0d7862b7ddd3c2d69fccb240aa882bd0f14403a5777cf02dfca89b2c7"
     },
     {
+      "file": "media/sam3-v8-execution74-20261128-04-report.md",
+      "sha256": "8a85c812fd5665f511cf3221f04c14dfdfcb5a7f7654372f3c5635b848c2835e"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-results.json",
+      "sha256": "94b06d4163935c800ba3627eab1599f3105466ef72ad92424bd2135f98ec14d8"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0001-baseline-overview.mp4",
+      "sha256": "787e79eaf194e1d98a66fe0c95edfa68e0fc9781137dc19b147f42d35b985afe"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0001-baseline-head.mp4",
+      "sha256": "bfef9d57724afb97fa3a2305f2f139b91e78097f543a6a6cadb66dd63231c6d3"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0002-baseline-overview.mp4",
+      "sha256": "3dda5a248b2a77ed00401a517073da986b0058cced33ae4941ab8aa380465ea2"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0002-baseline-head.mp4",
+      "sha256": "faa39421271f8ac02388a09c797bda882b3507cd7212797f1100e7ad3853667b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0004-baseline-overview.mp4",
+      "sha256": "8896c797123ef6f2b772aa5cfb7b641713f5a41098e1a3db5208dee51836741a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0004-baseline-head.mp4",
+      "sha256": "dc76e9d0f263463e9bf62685afc8bdfe9753950701f353d9439e9846b11d6f8b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0005-baseline-overview.mp4",
+      "sha256": "cbe82ddb79259dd17ae7de9bddd462f1aa89b33fbb365422cb0e45e406443c12"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0005-baseline-head.mp4",
+      "sha256": "ab33706f9b8a3d6cf3026e0f4106bbc402157170521f21cf9342830406a90101"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0006-baseline-overview.mp4",
+      "sha256": "3670718be737d4d7a90f3754575338b6ea5a58a20b156f14083d91c27b7a6fe3"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0006-baseline-head.mp4",
+      "sha256": "f51783e3086ad21d1274a03c612e55d7f7608a522e7b14f26f5e18c44027b267"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0008-baseline-overview.mp4",
+      "sha256": "06031537100091a6ff4df41129c875b612bd0b03955e340c9514e207d1a6349a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0008-baseline-head.mp4",
+      "sha256": "c1d411218e44d6015b102110d8f81a3e377def2ab15a20eb8601edc3276ce42e"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0009-baseline-overview.mp4",
+      "sha256": "615763ba7341ee53777f80015d4a09018ab2188a54c80e324c7fa7144b932716"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0009-baseline-head.mp4",
+      "sha256": "0f8c39136258ac40040d938f1902d3c0e9a57f64b01ee66a912c244a0a951e98"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0010-baseline-overview.mp4",
+      "sha256": "34a04133d2e19d8ce5c0a97007fc20825985fc07e57cfb49d6ad570753c37611"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0010-baseline-head.mp4",
+      "sha256": "a713dc4d75b1b8934ae7cfdfe0acca79612e7fa84a3cd2ad2d7e5acbe21387a8"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0011-baseline-overview.mp4",
+      "sha256": "e5df6f4cac3da97dbd3df7454f7cc07dcb3a2093ac581b6bd3c457aab2945fe1"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0011-baseline-head.mp4",
+      "sha256": "e5cae1480e39db5dc3563e6836b86968b6505ee2714621a6b34979e3f5023f54"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0012-baseline-overview.mp4",
+      "sha256": "d13d6d55e3cbeacf58eebf83587bb49cb97e50fccd4e07061be027497e418e12"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0012-baseline-head.mp4",
+      "sha256": "a0ccf93e2377baec4f7342b7825fda973cf5b4b12d250ae725e519fb1dbab007"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0015-baseline-overview.mp4",
+      "sha256": "1faecd80fcd749e19de507a9d14402f8eef4e0716421584d6508041f32715cb2"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0015-baseline-head.mp4",
+      "sha256": "624626acc26e6a8c7f52c5973200eeba615092a516d38b946f65a83f958e492a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0016-baseline-overview.mp4",
+      "sha256": "493356e2d69d07af1914a958b62164c7d53a94a9ee2100ff014b30a3df176461"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0016-baseline-head.mp4",
+      "sha256": "1466ad069c8d93f9f163c2eecd34e0842eb4af72cc515fd49507dfaa6d5998ca"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0018-baseline-overview.mp4",
+      "sha256": "1b7716879bf6ce805f2ff3367e7e3b1a9b5490e29d3e12b864816eb351603207"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0018-baseline-head.mp4",
+      "sha256": "d0e8b1e59b7053c77892d29aefe1666cf8f1910dc8e5d4fc2607ea34aa709e1a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0019-baseline-overview.mp4",
+      "sha256": "83295fbd212d3d286edfdf0a83b144930777a8579145ba519ba74af629831057"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0019-baseline-head.mp4",
+      "sha256": "ede48be2fc4107ee17b014f1a45fa4828f06ddf49c58f70dfaefc876571a445c"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0020-baseline-overview.mp4",
+      "sha256": "1005e94e2214182d124329646081b7130b23d11f472a2d9638bfbc8812a31dff"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0020-baseline-head.mp4",
+      "sha256": "d0f47d71e71040c15dcad5845b1afe5da5895b3c7542ac175f73a79fe0b0da41"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0022-baseline-overview.mp4",
+      "sha256": "8d4fc8b2236bbb8c31f899bb943da332c6a04437ccb3e26c479a11a8a11a0eac"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0022-baseline-head.mp4",
+      "sha256": "4f069edd8560192d601604e3fa03a8c5ea9ecc5d870540739e7ea3f6777ee442"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0023-baseline-overview.mp4",
+      "sha256": "3411ea10a4e6d83f7185b5af6647a914d43f99a9c5b0622ed54d100c1681b933"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0023-baseline-head.mp4",
+      "sha256": "f591c79dfbfca51ca34dfc26d471e1f2831e2b81c158362870d94ea4dde93f10"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0024-baseline-overview.mp4",
+      "sha256": "406ed99f14e19b54f2bcf6128b416b999db46210c15f746975750a6d68b1dd78"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0024-baseline-head.mp4",
+      "sha256": "b7cbf6639ad1091f744ca27f9ffc1e63571b265a08beb3d3e386747c58271e39"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0026-baseline-overview.mp4",
+      "sha256": "4f5f068b16f0f73f18c4155ef7b4f856659ab5f104e2d029a3c52b4677df8f06"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0026-baseline-head.mp4",
+      "sha256": "9f53dd11be7165127d2da2b6e085358eb8cfeb858c4d9a4052c113f6d46a25f7"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0027-baseline-overview.mp4",
+      "sha256": "7776724ae8a4b7f3e5b92d81865768c5d49ee548e35ba7b86cceba0e5782b593"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0027-baseline-head.mp4",
+      "sha256": "f92b506241aa3da6ddf2eea94cb8c30823d358a601efc967da6fa4100f3bdfa5"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0029-baseline-overview.mp4",
+      "sha256": "4fdc32184744f35d63245ec7b1ebe766cc300b9edeaacf50f12c7f2c225138b6"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0029-baseline-head.mp4",
+      "sha256": "15fd276809006686c3129d5786491f5f82c06890ffe7f8bf740cd160ee6e5d67"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0030-baseline-overview.mp4",
+      "sha256": "4f9d0160f24dce9a4536e965081c45ee6b24e061238984381252fc5303a56de0"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0030-baseline-head.mp4",
+      "sha256": "3ed9023c93ad30e59a468b8b2d601680b6a5eb047ccafd24e3627f6ea3bd3f32"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0031-baseline-overview.mp4",
+      "sha256": "42d43617abbb9a8e52fd31a8814a932be4ea32e59a28a665e6500c6e067496cc"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0031-baseline-head.mp4",
+      "sha256": "e8b6df4f032daf505126e631f40fff77571f32f0c9f47f1e09422c3c946e513b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0032-baseline-overview.mp4",
+      "sha256": "fe25f0e2f97abcd3d87f5e8263d86bb08f10175dac26de46f0b87655e96a8354"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0032-baseline-head.mp4",
+      "sha256": "cb490c277905c9a86625f9c37af8476b90d6f429260c61cbcb73fd852caf3c5b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0033-baseline-overview.mp4",
+      "sha256": "3ffd3c6afa9f144398a13084aa742a70bf27f354f6736c562020e2a05fa7d7c5"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0033-baseline-head.mp4",
+      "sha256": "393faae74ae2ea0a2179e4223a3e85946fac52b9ab413ebf2d58d7229353675d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0034-baseline-overview.mp4",
+      "sha256": "6729f8cc24ced915d9d268b79f8fcdc2d0ce9659f6c6be9a8fc6a79a38b83c72"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0034-baseline-head.mp4",
+      "sha256": "32c05fb4e73ffb2feff740a076908d8fdf99e33eccb2e67dad548d912acf0903"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0036-baseline-overview.mp4",
+      "sha256": "094356d2b7c6bbaa9a20f69b8a1b800cdfbc08b86329fdc155590b4aa86b2921"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0036-baseline-head.mp4",
+      "sha256": "2af158ec8369a85ae3c96382e03fb77b21a63496eb819b4ac5e816f409462adb"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0038-baseline-overview.mp4",
+      "sha256": "964eaf09c7cc4c8516ad01f75c697677ca669afbf0e97a03b5cf82edc861c8f3"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0038-baseline-head.mp4",
+      "sha256": "cb4401faf4f635d409338434be4b961a15647b917d8d106acc9c52b254f93161"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0039-baseline-overview.mp4",
+      "sha256": "34e9eab1954651629a5f8304df1c692ca583a6d71c4173401133614b23ce41d7"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0039-baseline-head.mp4",
+      "sha256": "6a841bae09a1b6dd0261c19eb1b5c18c5e84dd71ffdd314dab3ea6d2ed8b4ef1"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0041-baseline-overview.mp4",
+      "sha256": "28fe63eb354a773f955d465e855076dd4bfb75248be0e209a9f863b0baadb188"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0041-baseline-head.mp4",
+      "sha256": "46b79267fd5f913488ad93e3376a8ea90ba37436c555310b2b588b762cb791da"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0042-baseline-overview.mp4",
+      "sha256": "00599753229d9af2a0181906964f849c20dc2e80d102137ec528e00a707e3fee"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0042-baseline-head.mp4",
+      "sha256": "21d72bed937a6019df4acc72b3aa1fbd0f41401eb60122d1c437cbedb3fd81d5"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0043-baseline-overview.mp4",
+      "sha256": "e06c04742a5d5570c29d7d81a9ba9eb149a39fed79e6c65171a2a7e54e83b9ab"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0043-baseline-head.mp4",
+      "sha256": "d7d8ba16fd05eb5f7eb32f5c8c78f914237aedc8cd4c27f265b2267557a1db40"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0044-baseline-overview.mp4",
+      "sha256": "3bf92025858c49a63a69bc278c027db052bd7291554a78bf352bcbfc4f37bbc0"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0044-baseline-head.mp4",
+      "sha256": "eb9f851ec7d023a0beeb63c4c6159f19a0125e7c914ba79642b9c05b795f77a2"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0045-baseline-overview.mp4",
+      "sha256": "5971faa16bca4fbc3fe4006a5f889d32cf3f215fe47bd2256ff725980c4b8f2b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0045-baseline-head.mp4",
+      "sha256": "f59dec690b730ccdfed0d4aa4bfe91d57cc0c168b499d21014d5170bf9289542"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0046-baseline-overview.mp4",
+      "sha256": "96b1d3002aa5ef78f236948a6075f4193682b6abd86a7b011c3cde96a1c58b47"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0046-baseline-head.mp4",
+      "sha256": "c542de6376ef0f3acb197bb832273517d795e3651262b81fc15b3b8dda60216d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0048-baseline-overview.mp4",
+      "sha256": "f270d09aea954b36e30c7ad708b34e01466c17e9aa91548fe674c89decc91e4d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0048-baseline-head.mp4",
+      "sha256": "4b506cb164f72f7e446925f218be226efd40ab3df8308a6ba21bb8271c2d409d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0050-baseline-overview.mp4",
+      "sha256": "ffe2c78f2608f9812a8ece331ce070492e0b9fe05248ac59eda3304ec83978e8"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0050-baseline-head.mp4",
+      "sha256": "34b4b69adfde600baa65616fa8b29e84664fa080d57cfb03e6076c68b7d3b074"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0052-baseline-overview.mp4",
+      "sha256": "d2dc2da5e509daec0c3750636fc7f23abc8530cbd7c3b36134bcddaf434d5024"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0052-baseline-head.mp4",
+      "sha256": "70a7d32561ef361921a2e0f0a070f5341088264542def3437d2bbb6a413eb511"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0055-baseline-overview.mp4",
+      "sha256": "7c1cc7896152abdfc558615847e6ac0325599f6d6c0ccea326090cc26ceb13b6"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0055-baseline-head.mp4",
+      "sha256": "c7a793245ccfc90b2c2364ddfc7efb3ba3221f90f08ff58b65127d3d69fe3558"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0056-baseline-overview.mp4",
+      "sha256": "f1df2ac97447bb83537346a1f13e372a8d72bd8d6b09c038594ff7b0021828b1"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0056-baseline-head.mp4",
+      "sha256": "13c99f6c0f4b295f149b424384af49a61aede908bd5b21e50f382f92572cd4bc"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0058-baseline-overview.mp4",
+      "sha256": "81a53d8c39541064d56f5e4e8af28ce0d157f523d38030c1a21b35a374b72a6c"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0058-baseline-head.mp4",
+      "sha256": "947edf9fc3f3bd5c3110f87739de7f2f8fa26db35c33ae445c85b1b110e4e101"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0059-baseline-overview.mp4",
+      "sha256": "28feab18d7bb9ae08b75d60db0de8980772efa2a81675ddd6a8b19946497f3ee"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0059-baseline-head.mp4",
+      "sha256": "942a72adcc211c7f7359d1f21b47f1e1c0b93763d602c961196f068aa9ae637e"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0060-baseline-overview.mp4",
+      "sha256": "62bd5336403908babd03221e26b36e3d47e4db375f9ef096ce25a1ab2d836dee"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0060-baseline-head.mp4",
+      "sha256": "2b034ed0dd8f7128981ce17a533225354460cae2c0b3b54e7c2876b6f329654b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0061-baseline-overview.mp4",
+      "sha256": "e8c5c3b16d7a544283a44a14469ec72d600a09de666169305edca722cf90bf4c"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0061-baseline-head.mp4",
+      "sha256": "dbd7e79124fbd1413a08d93cb535039347e26d30834565b7784255c97beb71ed"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0062-baseline-overview.mp4",
+      "sha256": "1c7cba4e9e8cc74645a7f21f0af213e8d784859ac17ed80543c929d34a96ebcd"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0062-baseline-head.mp4",
+      "sha256": "2a967cfbd0524a4f1e7fd4011017b81711228a12aa378c9308e9b7d3c921af2e"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0063-baseline-overview.mp4",
+      "sha256": "ca93a8488293d44ccacc7b803d528a9fd9978697107620b02ecc68bf88e2c3bc"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0063-baseline-head.mp4",
+      "sha256": "c73b4f6d83cab6b1aafb9cf4343d57a0449432d95fd4782fde8a1dd43936ce4a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0064-baseline-overview.mp4",
+      "sha256": "318f73357150921f5098f4d7b9cb2b4a80e67204d1c8b09fe526569abae8dcff"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0064-baseline-head.mp4",
+      "sha256": "f0486563a9bc1e6c12f9682cefc110f078eb0856867420f7c727177b73f4b7bd"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0065-baseline-overview.mp4",
+      "sha256": "9dd7d91ea2c12393ea2d4801192fb5a532bb2c40cc512c6ecf5f192c24d055c6"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0065-baseline-head.mp4",
+      "sha256": "449bdbd0adbebb04fd03351376de1ed46b034203117f3e4c8465cfc08f6f5570"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0066-baseline-overview.mp4",
+      "sha256": "6ef46578d621633182591cdded84dc184be89dbd509654fea0b43a2aba1d1318"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0066-baseline-head.mp4",
+      "sha256": "881f9e08a3d1d29645d05a1287dacedbeea822d300d8a01a964e70984a519220"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0067-baseline-overview.mp4",
+      "sha256": "0a77d3995b1eb16145f4623f803d5d85ca1be4722343c9a49b1bf084817c0d09"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0067-baseline-head.mp4",
+      "sha256": "9df31c7af615dd62f632254c575a8094e2347aa98722b9bf167ef60085842379"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0069-baseline-overview.mp4",
+      "sha256": "ace2ad04f12fde1b4efbd6f5663fb5da37f7010aeae07d80714908b3b72723bd"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0069-baseline-head.mp4",
+      "sha256": "28a38b246dfcb585e5dcdecdc7dcca9cc84103900b434f7b03ea122a070ab4be"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0070-baseline-overview.mp4",
+      "sha256": "4f2eb01b9de5cec429a9a89a7f2d6bf20f8f1cbdeb5236c0b274252492d0cd71"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0070-baseline-head.mp4",
+      "sha256": "513905818bd6d209d373f5a1afe74ebeedcb210c38fc7a4581508617a15f41b7"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0071-baseline-overview.mp4",
+      "sha256": "e428fdddba58c145b24984499476abfd232ca46b4429e4100beffcf63b432318"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0071-baseline-head.mp4",
+      "sha256": "d5fcc09a9e6439fa1cee8cf73f736192d1c0e25b4d48cfd1b9538ba8ffc64c1a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0072-baseline-overview.mp4",
+      "sha256": "be05218dfd711b18f1316fee345d0ed1851dcebc304bce838c890f44878a97a4"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0072-baseline-head.mp4",
+      "sha256": "f4091aefa02d35d200cca3c455640189312e708225373b9c4248ab655ac7700d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0074-baseline-overview.mp4",
+      "sha256": "197e542caee36364edf2a93ea2aec9341906d9bb028e84372bf9525996b6b426"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0074-baseline-head.mp4",
+      "sha256": "14cf6449f29b1b68da94f513915b78b392d9d0483624fe98d3e8d0048a96239e"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0078-baseline-overview.mp4",
+      "sha256": "e672c553ec08cb39b623c3785a851b00a2adc925c4dc3e25ae814b40532134d2"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0078-baseline-head.mp4",
+      "sha256": "4560c9f11032ad35c8fce58b64128aaad8710d61bd889ec4a60f19bc2b57766c"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0079-baseline-overview.mp4",
+      "sha256": "bda7b5406d97f4a1f9769c9c4ec142ddceffaa563f8e55c59d0b3899c2b8504d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0079-baseline-head.mp4",
+      "sha256": "36cf6e36895b96040dfc5c083da3a02ae52f257f68412bf609f00b5f24bbea4b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0081-baseline-overview.mp4",
+      "sha256": "a878ea62064457194e30ec2e1056111070811b671c20212bd2645d19fc2a7bad"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0081-baseline-head.mp4",
+      "sha256": "eafd8dd7ed505201199390972b986f1d3d6df6e7bb48693d7060eeb2b6d1d85f"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0082-baseline-overview.mp4",
+      "sha256": "af79dd653b2e775e493e33cf8a9b35a2e5f04bcf7084c02b1dad41cc6e511b2f"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0082-baseline-head.mp4",
+      "sha256": "e3ea0cca3038c81ea3ccfd14ee5f9296baa2331dfd3b5d3d336f637ebfc97162"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0084-baseline-overview.mp4",
+      "sha256": "7f2a4d5d9434e3c2d905716d8c17ca18237fab7cb63d8a05e5f772faba05bb3c"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0084-baseline-head.mp4",
+      "sha256": "453bf462941a99626d01be73ecf112c9c4a11944946fbfb8fc4e5a3325322069"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0085-baseline-overview.mp4",
+      "sha256": "1a1caddc271056fdbf33ecccb142a4bb28810b1954496c868f10dc48caa8d513"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0085-baseline-head.mp4",
+      "sha256": "8a113c3d9c20967758ee3471b47d95720c387d4e76ea24c36a048878d22d7907"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0086-baseline-overview.mp4",
+      "sha256": "fadd113068e0f649afa1bc62c48f60b3b5cee93c81233307f0009af7aa55fbf6"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0086-baseline-head.mp4",
+      "sha256": "1f4cd0ce361a8078e64158a4499d8e5af347ada0635787e2889af5bc32bc1694"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0089-baseline-overview.mp4",
+      "sha256": "daf6059629843193d90d26a7f8dc91633ffb51de09caaf7f5fe503e1796d8a29"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0089-baseline-head.mp4",
+      "sha256": "6677bc5799167ea80cb1923f9acfd48449a61efeb52995ff3edcf900ea2d86f8"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0092-baseline-overview.mp4",
+      "sha256": "b72f15bd495f90bd9ee16b5f872dbf81617f82f3ae26c3be0fccf103735653e9"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0092-baseline-head.mp4",
+      "sha256": "0fe9f6d6de1edbc8de563431b32382145bdf8653f543d47c48c0e5fc83040d3b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0095-baseline-overview.mp4",
+      "sha256": "f5178c0fc849024db6eb09c0220278d82d5832f2df088cc928587fb8ab4d5bea"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0095-baseline-head.mp4",
+      "sha256": "bb16f9430183109efa4a48f7bc6772e2cbe08e09ce21999989c23002bc3d234f"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0098-baseline-overview.mp4",
+      "sha256": "6b6263fd3bc5a95c4c35db16584709e0d2ecb5507043c62ecc04b3cd1c0357b4"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0098-baseline-head.mp4",
+      "sha256": "88e8cdccc05d067530f81198e85a7ef35b94ba5643510d3d7ca9540aee37006a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0099-baseline-overview.mp4",
+      "sha256": "b926b73331c5119bb8ad2a4771429d6be9808e08a8ddee1de5e7b33af9c28393"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0099-baseline-head.mp4",
+      "sha256": "2a5c71259f85e258623a6c593ad85a9ee9869a8606fa44073cd764d41f14e460"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0100-baseline-overview.mp4",
+      "sha256": "74992a16fa754c3acb40b21a1f705db2528d8e97c8e6c067d1606502a3caeb46"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0100-baseline-head.mp4",
+      "sha256": "2d0d17b4df2288fb1febe5a3fad8cf18bdce66dd5ab684dac67fe143eb7f2ba0"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0001-optimized-overview.mp4",
+      "sha256": "787e79eaf194e1d98a66fe0c95edfa68e0fc9781137dc19b147f42d35b985afe"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0001-optimized-head.mp4",
+      "sha256": "bfef9d57724afb97fa3a2305f2f139b91e78097f543a6a6cadb66dd63231c6d3"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0002-optimized-overview.mp4",
+      "sha256": "3dda5a248b2a77ed00401a517073da986b0058cced33ae4941ab8aa380465ea2"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0002-optimized-head.mp4",
+      "sha256": "faa39421271f8ac02388a09c797bda882b3507cd7212797f1100e7ad3853667b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0004-optimized-overview.mp4",
+      "sha256": "fe8a4ed87ac6c5911ae556726067e9dc3565d172ea45abbd47b92cedf1b56563"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0004-optimized-head.mp4",
+      "sha256": "6dbeca9e97c2208d15e250d029fcfa63263cfffab72622baaf6e0133fb6b7c85"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0005-optimized-overview.mp4",
+      "sha256": "cbe82ddb79259dd17ae7de9bddd462f1aa89b33fbb365422cb0e45e406443c12"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0005-optimized-head.mp4",
+      "sha256": "ab33706f9b8a3d6cf3026e0f4106bbc402157170521f21cf9342830406a90101"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0006-optimized-overview.mp4",
+      "sha256": "3670718be737d4d7a90f3754575338b6ea5a58a20b156f14083d91c27b7a6fe3"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0006-optimized-head.mp4",
+      "sha256": "f51783e3086ad21d1274a03c612e55d7f7608a522e7b14f26f5e18c44027b267"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0008-optimized-overview.mp4",
+      "sha256": "06031537100091a6ff4df41129c875b612bd0b03955e340c9514e207d1a6349a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0008-optimized-head.mp4",
+      "sha256": "c1d411218e44d6015b102110d8f81a3e377def2ab15a20eb8601edc3276ce42e"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0009-optimized-overview.mp4",
+      "sha256": "615763ba7341ee53777f80015d4a09018ab2188a54c80e324c7fa7144b932716"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0009-optimized-head.mp4",
+      "sha256": "0f8c39136258ac40040d938f1902d3c0e9a57f64b01ee66a912c244a0a951e98"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0010-optimized-overview.mp4",
+      "sha256": "34a04133d2e19d8ce5c0a97007fc20825985fc07e57cfb49d6ad570753c37611"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0010-optimized-head.mp4",
+      "sha256": "a713dc4d75b1b8934ae7cfdfe0acca79612e7fa84a3cd2ad2d7e5acbe21387a8"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0011-optimized-overview.mp4",
+      "sha256": "e5df6f4cac3da97dbd3df7454f7cc07dcb3a2093ac581b6bd3c457aab2945fe1"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0011-optimized-head.mp4",
+      "sha256": "e5cae1480e39db5dc3563e6836b86968b6505ee2714621a6b34979e3f5023f54"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0012-optimized-overview.mp4",
+      "sha256": "d13d6d55e3cbeacf58eebf83587bb49cb97e50fccd4e07061be027497e418e12"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0012-optimized-head.mp4",
+      "sha256": "a0ccf93e2377baec4f7342b7825fda973cf5b4b12d250ae725e519fb1dbab007"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0015-optimized-overview.mp4",
+      "sha256": "1faecd80fcd749e19de507a9d14402f8eef4e0716421584d6508041f32715cb2"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0015-optimized-head.mp4",
+      "sha256": "624626acc26e6a8c7f52c5973200eeba615092a516d38b946f65a83f958e492a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0016-optimized-overview.mp4",
+      "sha256": "493356e2d69d07af1914a958b62164c7d53a94a9ee2100ff014b30a3df176461"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0016-optimized-head.mp4",
+      "sha256": "1466ad069c8d93f9f163c2eecd34e0842eb4af72cc515fd49507dfaa6d5998ca"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0018-optimized-overview.mp4",
+      "sha256": "1b7716879bf6ce805f2ff3367e7e3b1a9b5490e29d3e12b864816eb351603207"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0018-optimized-head.mp4",
+      "sha256": "d0e8b1e59b7053c77892d29aefe1666cf8f1910dc8e5d4fc2607ea34aa709e1a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0019-optimized-overview.mp4",
+      "sha256": "83295fbd212d3d286edfdf0a83b144930777a8579145ba519ba74af629831057"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0019-optimized-head.mp4",
+      "sha256": "ede48be2fc4107ee17b014f1a45fa4828f06ddf49c58f70dfaefc876571a445c"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0020-optimized-overview.mp4",
+      "sha256": "1005e94e2214182d124329646081b7130b23d11f472a2d9638bfbc8812a31dff"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0020-optimized-head.mp4",
+      "sha256": "d0f47d71e71040c15dcad5845b1afe5da5895b3c7542ac175f73a79fe0b0da41"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0022-optimized-overview.mp4",
+      "sha256": "8d4fc8b2236bbb8c31f899bb943da332c6a04437ccb3e26c479a11a8a11a0eac"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0022-optimized-head.mp4",
+      "sha256": "4f069edd8560192d601604e3fa03a8c5ea9ecc5d870540739e7ea3f6777ee442"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0023-optimized-overview.mp4",
+      "sha256": "3411ea10a4e6d83f7185b5af6647a914d43f99a9c5b0622ed54d100c1681b933"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0023-optimized-head.mp4",
+      "sha256": "f591c79dfbfca51ca34dfc26d471e1f2831e2b81c158362870d94ea4dde93f10"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0024-optimized-overview.mp4",
+      "sha256": "406ed99f14e19b54f2bcf6128b416b999db46210c15f746975750a6d68b1dd78"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0024-optimized-head.mp4",
+      "sha256": "b7cbf6639ad1091f744ca27f9ffc1e63571b265a08beb3d3e386747c58271e39"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0026-optimized-overview.mp4",
+      "sha256": "4f5f068b16f0f73f18c4155ef7b4f856659ab5f104e2d029a3c52b4677df8f06"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0026-optimized-head.mp4",
+      "sha256": "9f53dd11be7165127d2da2b6e085358eb8cfeb858c4d9a4052c113f6d46a25f7"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0027-optimized-overview.mp4",
+      "sha256": "7776724ae8a4b7f3e5b92d81865768c5d49ee548e35ba7b86cceba0e5782b593"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0027-optimized-head.mp4",
+      "sha256": "f92b506241aa3da6ddf2eea94cb8c30823d358a601efc967da6fa4100f3bdfa5"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0029-optimized-overview.mp4",
+      "sha256": "4fdc32184744f35d63245ec7b1ebe766cc300b9edeaacf50f12c7f2c225138b6"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0029-optimized-head.mp4",
+      "sha256": "15fd276809006686c3129d5786491f5f82c06890ffe7f8bf740cd160ee6e5d67"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0030-optimized-overview.mp4",
+      "sha256": "4f9d0160f24dce9a4536e965081c45ee6b24e061238984381252fc5303a56de0"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0030-optimized-head.mp4",
+      "sha256": "3ed9023c93ad30e59a468b8b2d601680b6a5eb047ccafd24e3627f6ea3bd3f32"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0031-optimized-overview.mp4",
+      "sha256": "42d43617abbb9a8e52fd31a8814a932be4ea32e59a28a665e6500c6e067496cc"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0031-optimized-head.mp4",
+      "sha256": "e8b6df4f032daf505126e631f40fff77571f32f0c9f47f1e09422c3c946e513b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0032-optimized-overview.mp4",
+      "sha256": "fe25f0e2f97abcd3d87f5e8263d86bb08f10175dac26de46f0b87655e96a8354"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0032-optimized-head.mp4",
+      "sha256": "cb490c277905c9a86625f9c37af8476b90d6f429260c61cbcb73fd852caf3c5b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0033-optimized-overview.mp4",
+      "sha256": "3ffd3c6afa9f144398a13084aa742a70bf27f354f6736c562020e2a05fa7d7c5"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0033-optimized-head.mp4",
+      "sha256": "393faae74ae2ea0a2179e4223a3e85946fac52b9ab413ebf2d58d7229353675d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0034-optimized-overview.mp4",
+      "sha256": "6729f8cc24ced915d9d268b79f8fcdc2d0ce9659f6c6be9a8fc6a79a38b83c72"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0034-optimized-head.mp4",
+      "sha256": "32c05fb4e73ffb2feff740a076908d8fdf99e33eccb2e67dad548d912acf0903"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0036-optimized-overview.mp4",
+      "sha256": "094356d2b7c6bbaa9a20f69b8a1b800cdfbc08b86329fdc155590b4aa86b2921"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0036-optimized-head.mp4",
+      "sha256": "2af158ec8369a85ae3c96382e03fb77b21a63496eb819b4ac5e816f409462adb"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0038-optimized-overview.mp4",
+      "sha256": "964eaf09c7cc4c8516ad01f75c697677ca669afbf0e97a03b5cf82edc861c8f3"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0038-optimized-head.mp4",
+      "sha256": "cb4401faf4f635d409338434be4b961a15647b917d8d106acc9c52b254f93161"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0039-optimized-overview.mp4",
+      "sha256": "34e9eab1954651629a5f8304df1c692ca583a6d71c4173401133614b23ce41d7"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0039-optimized-head.mp4",
+      "sha256": "6a841bae09a1b6dd0261c19eb1b5c18c5e84dd71ffdd314dab3ea6d2ed8b4ef1"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0041-optimized-overview.mp4",
+      "sha256": "28fe63eb354a773f955d465e855076dd4bfb75248be0e209a9f863b0baadb188"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0041-optimized-head.mp4",
+      "sha256": "46b79267fd5f913488ad93e3376a8ea90ba37436c555310b2b588b762cb791da"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0042-optimized-overview.mp4",
+      "sha256": "00599753229d9af2a0181906964f849c20dc2e80d102137ec528e00a707e3fee"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0042-optimized-head.mp4",
+      "sha256": "21d72bed937a6019df4acc72b3aa1fbd0f41401eb60122d1c437cbedb3fd81d5"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0043-optimized-overview.mp4",
+      "sha256": "e06c04742a5d5570c29d7d81a9ba9eb149a39fed79e6c65171a2a7e54e83b9ab"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0043-optimized-head.mp4",
+      "sha256": "d7d8ba16fd05eb5f7eb32f5c8c78f914237aedc8cd4c27f265b2267557a1db40"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0044-optimized-overview.mp4",
+      "sha256": "3bf92025858c49a63a69bc278c027db052bd7291554a78bf352bcbfc4f37bbc0"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0044-optimized-head.mp4",
+      "sha256": "eb9f851ec7d023a0beeb63c4c6159f19a0125e7c914ba79642b9c05b795f77a2"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0045-optimized-overview.mp4",
+      "sha256": "5971faa16bca4fbc3fe4006a5f889d32cf3f215fe47bd2256ff725980c4b8f2b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0045-optimized-head.mp4",
+      "sha256": "f59dec690b730ccdfed0d4aa4bfe91d57cc0c168b499d21014d5170bf9289542"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0046-optimized-overview.mp4",
+      "sha256": "96b1d3002aa5ef78f236948a6075f4193682b6abd86a7b011c3cde96a1c58b47"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0046-optimized-head.mp4",
+      "sha256": "c542de6376ef0f3acb197bb832273517d795e3651262b81fc15b3b8dda60216d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0048-optimized-overview.mp4",
+      "sha256": "f270d09aea954b36e30c7ad708b34e01466c17e9aa91548fe674c89decc91e4d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0048-optimized-head.mp4",
+      "sha256": "4b506cb164f72f7e446925f218be226efd40ab3df8308a6ba21bb8271c2d409d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0050-optimized-overview.mp4",
+      "sha256": "ffe2c78f2608f9812a8ece331ce070492e0b9fe05248ac59eda3304ec83978e8"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0050-optimized-head.mp4",
+      "sha256": "34b4b69adfde600baa65616fa8b29e84664fa080d57cfb03e6076c68b7d3b074"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0052-optimized-overview.mp4",
+      "sha256": "d2dc2da5e509daec0c3750636fc7f23abc8530cbd7c3b36134bcddaf434d5024"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0052-optimized-head.mp4",
+      "sha256": "70a7d32561ef361921a2e0f0a070f5341088264542def3437d2bbb6a413eb511"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0055-optimized-overview.mp4",
+      "sha256": "7c1cc7896152abdfc558615847e6ac0325599f6d6c0ccea326090cc26ceb13b6"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0055-optimized-head.mp4",
+      "sha256": "c7a793245ccfc90b2c2364ddfc7efb3ba3221f90f08ff58b65127d3d69fe3558"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0056-optimized-overview.mp4",
+      "sha256": "f1df2ac97447bb83537346a1f13e372a8d72bd8d6b09c038594ff7b0021828b1"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0056-optimized-head.mp4",
+      "sha256": "13c99f6c0f4b295f149b424384af49a61aede908bd5b21e50f382f92572cd4bc"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0058-optimized-overview.mp4",
+      "sha256": "81a53d8c39541064d56f5e4e8af28ce0d157f523d38030c1a21b35a374b72a6c"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0058-optimized-head.mp4",
+      "sha256": "947edf9fc3f3bd5c3110f87739de7f2f8fa26db35c33ae445c85b1b110e4e101"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0059-optimized-overview.mp4",
+      "sha256": "28feab18d7bb9ae08b75d60db0de8980772efa2a81675ddd6a8b19946497f3ee"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0059-optimized-head.mp4",
+      "sha256": "942a72adcc211c7f7359d1f21b47f1e1c0b93763d602c961196f068aa9ae637e"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0060-optimized-overview.mp4",
+      "sha256": "62bd5336403908babd03221e26b36e3d47e4db375f9ef096ce25a1ab2d836dee"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0060-optimized-head.mp4",
+      "sha256": "2b034ed0dd8f7128981ce17a533225354460cae2c0b3b54e7c2876b6f329654b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0061-optimized-overview.mp4",
+      "sha256": "e8c5c3b16d7a544283a44a14469ec72d600a09de666169305edca722cf90bf4c"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0061-optimized-head.mp4",
+      "sha256": "dbd7e79124fbd1413a08d93cb535039347e26d30834565b7784255c97beb71ed"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0062-optimized-overview.mp4",
+      "sha256": "1c7cba4e9e8cc74645a7f21f0af213e8d784859ac17ed80543c929d34a96ebcd"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0062-optimized-head.mp4",
+      "sha256": "2a967cfbd0524a4f1e7fd4011017b81711228a12aa378c9308e9b7d3c921af2e"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0063-optimized-overview.mp4",
+      "sha256": "ca93a8488293d44ccacc7b803d528a9fd9978697107620b02ecc68bf88e2c3bc"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0063-optimized-head.mp4",
+      "sha256": "c73b4f6d83cab6b1aafb9cf4343d57a0449432d95fd4782fde8a1dd43936ce4a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0064-optimized-overview.mp4",
+      "sha256": "318f73357150921f5098f4d7b9cb2b4a80e67204d1c8b09fe526569abae8dcff"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0064-optimized-head.mp4",
+      "sha256": "f0486563a9bc1e6c12f9682cefc110f078eb0856867420f7c727177b73f4b7bd"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0065-optimized-overview.mp4",
+      "sha256": "9dd7d91ea2c12393ea2d4801192fb5a532bb2c40cc512c6ecf5f192c24d055c6"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0065-optimized-head.mp4",
+      "sha256": "449bdbd0adbebb04fd03351376de1ed46b034203117f3e4c8465cfc08f6f5570"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0066-optimized-overview.mp4",
+      "sha256": "6ef46578d621633182591cdded84dc184be89dbd509654fea0b43a2aba1d1318"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0066-optimized-head.mp4",
+      "sha256": "881f9e08a3d1d29645d05a1287dacedbeea822d300d8a01a964e70984a519220"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0067-optimized-overview.mp4",
+      "sha256": "0a77d3995b1eb16145f4623f803d5d85ca1be4722343c9a49b1bf084817c0d09"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0067-optimized-head.mp4",
+      "sha256": "9df31c7af615dd62f632254c575a8094e2347aa98722b9bf167ef60085842379"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0069-optimized-overview.mp4",
+      "sha256": "ace2ad04f12fde1b4efbd6f5663fb5da37f7010aeae07d80714908b3b72723bd"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0069-optimized-head.mp4",
+      "sha256": "28a38b246dfcb585e5dcdecdc7dcca9cc84103900b434f7b03ea122a070ab4be"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0070-optimized-overview.mp4",
+      "sha256": "4f2eb01b9de5cec429a9a89a7f2d6bf20f8f1cbdeb5236c0b274252492d0cd71"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0070-optimized-head.mp4",
+      "sha256": "513905818bd6d209d373f5a1afe74ebeedcb210c38fc7a4581508617a15f41b7"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0071-optimized-overview.mp4",
+      "sha256": "e428fdddba58c145b24984499476abfd232ca46b4429e4100beffcf63b432318"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0071-optimized-head.mp4",
+      "sha256": "d5fcc09a9e6439fa1cee8cf73f736192d1c0e25b4d48cfd1b9538ba8ffc64c1a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0072-optimized-overview.mp4",
+      "sha256": "be05218dfd711b18f1316fee345d0ed1851dcebc304bce838c890f44878a97a4"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0072-optimized-head.mp4",
+      "sha256": "f4091aefa02d35d200cca3c455640189312e708225373b9c4248ab655ac7700d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0074-optimized-overview.mp4",
+      "sha256": "197e542caee36364edf2a93ea2aec9341906d9bb028e84372bf9525996b6b426"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0074-optimized-head.mp4",
+      "sha256": "14cf6449f29b1b68da94f513915b78b392d9d0483624fe98d3e8d0048a96239e"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0078-optimized-overview.mp4",
+      "sha256": "e672c553ec08cb39b623c3785a851b00a2adc925c4dc3e25ae814b40532134d2"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0078-optimized-head.mp4",
+      "sha256": "4560c9f11032ad35c8fce58b64128aaad8710d61bd889ec4a60f19bc2b57766c"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0079-optimized-overview.mp4",
+      "sha256": "bda7b5406d97f4a1f9769c9c4ec142ddceffaa563f8e55c59d0b3899c2b8504d"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0079-optimized-head.mp4",
+      "sha256": "36cf6e36895b96040dfc5c083da3a02ae52f257f68412bf609f00b5f24bbea4b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0081-optimized-overview.mp4",
+      "sha256": "a878ea62064457194e30ec2e1056111070811b671c20212bd2645d19fc2a7bad"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0081-optimized-head.mp4",
+      "sha256": "eafd8dd7ed505201199390972b986f1d3d6df6e7bb48693d7060eeb2b6d1d85f"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0082-optimized-overview.mp4",
+      "sha256": "af79dd653b2e775e493e33cf8a9b35a2e5f04bcf7084c02b1dad41cc6e511b2f"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0082-optimized-head.mp4",
+      "sha256": "e3ea0cca3038c81ea3ccfd14ee5f9296baa2331dfd3b5d3d336f637ebfc97162"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0084-optimized-overview.mp4",
+      "sha256": "7f2a4d5d9434e3c2d905716d8c17ca18237fab7cb63d8a05e5f772faba05bb3c"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0084-optimized-head.mp4",
+      "sha256": "453bf462941a99626d01be73ecf112c9c4a11944946fbfb8fc4e5a3325322069"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0085-optimized-overview.mp4",
+      "sha256": "1a1caddc271056fdbf33ecccb142a4bb28810b1954496c868f10dc48caa8d513"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0085-optimized-head.mp4",
+      "sha256": "8a113c3d9c20967758ee3471b47d95720c387d4e76ea24c36a048878d22d7907"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0086-optimized-overview.mp4",
+      "sha256": "fadd113068e0f649afa1bc62c48f60b3b5cee93c81233307f0009af7aa55fbf6"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0086-optimized-head.mp4",
+      "sha256": "1f4cd0ce361a8078e64158a4499d8e5af347ada0635787e2889af5bc32bc1694"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0089-optimized-overview.mp4",
+      "sha256": "daf6059629843193d90d26a7f8dc91633ffb51de09caaf7f5fe503e1796d8a29"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0089-optimized-head.mp4",
+      "sha256": "6677bc5799167ea80cb1923f9acfd48449a61efeb52995ff3edcf900ea2d86f8"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0092-optimized-overview.mp4",
+      "sha256": "b72f15bd495f90bd9ee16b5f872dbf81617f82f3ae26c3be0fccf103735653e9"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0092-optimized-head.mp4",
+      "sha256": "0fe9f6d6de1edbc8de563431b32382145bdf8653f543d47c48c0e5fc83040d3b"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0095-optimized-overview.mp4",
+      "sha256": "f5178c0fc849024db6eb09c0220278d82d5832f2df088cc928587fb8ab4d5bea"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0095-optimized-head.mp4",
+      "sha256": "bb16f9430183109efa4a48f7bc6772e2cbe08e09ce21999989c23002bc3d234f"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0098-optimized-overview.mp4",
+      "sha256": "6b6263fd3bc5a95c4c35db16584709e0d2ecb5507043c62ecc04b3cd1c0357b4"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0098-optimized-head.mp4",
+      "sha256": "88e8cdccc05d067530f81198e85a7ef35b94ba5643510d3d7ca9540aee37006a"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0099-optimized-overview.mp4",
+      "sha256": "b926b73331c5119bb8ad2a4771429d6be9808e08a8ddee1de5e7b33af9c28393"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0099-optimized-head.mp4",
+      "sha256": "2a5c71259f85e258623a6c593ad85a9ee9869a8606fa44073cd764d41f14e460"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0100-optimized-overview.mp4",
+      "sha256": "74992a16fa754c3acb40b21a1f705db2528d8e97c8e6c067d1606502a3caeb46"
+    },
+    {
+      "file": "media/sam3-v8-execution74-20261128-04-m0100-optimized-head.mp4",
+      "sha256": "2d0d17b4df2288fb1febe5a3fad8cf18bdce66dd5ab684dac67fe143eb7f2ba0"
+    },
+    {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
       "sha256": "dcfa7fab48debcd576c22c202c52b01c783630b6f7d3f4f94c722a25f5652310"
     },
@@ -3359,7 +4455,7 @@
     },
     {
       "file": "optimized/manifest.json",
-      "sha256": "1b78a93dd5613bc3f2f8408e6b76c92d0b0b93b04d29155cbc9efe786713c730"
+      "sha256": "6ef5fd378f89c6e4366e879da86623405a6087ab93a6f78ddb4da2f53ba1461a"
     }
   ]
 }
