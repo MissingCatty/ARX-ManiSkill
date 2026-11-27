@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T09:58:36.934Z",
+  "generatedAt": "2026-11-27T12:12:43.116Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -2308,6 +2308,14 @@
     {
       "file": "media/sam3-v8-windowed5-20261127-02-report.md",
       "sha256": "c8aef953420e5c1af194cd98bf06acdd790594128e54d023259589903da92315"
+    },
+    {
+      "file": "media/sam3-v8-shared-gpu2-20261127-01-results.json",
+      "sha256": "84dbcf8304442442260832454463855eac74fd73846ed7afbd225b21393a18fd"
+    },
+    {
+      "file": "media/sam3-v8-shared-gpu2-20261127-01-report.md",
+      "sha256": "9cb51ee6f5e4bd8211fba5b7e7b80acc4675b05063c654254fa7464c376b21c2"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

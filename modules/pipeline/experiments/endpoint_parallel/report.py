@@ -16,6 +16,7 @@ def create(root):
     paired = read_json(root / 'paired_review.json'); rows = read_json(root / 'progress.json')['results']
     offline_checks = read_json(root / 'registration.json')['config'].get('offline_checks', 42)
     timing_environment = read_json(root / 'timing_environment.json') if (root / 'timing_environment.json').exists() else {'exclusive_timing': True}
+    authorized_shared = timing_environment.get('user_authorized_shared_device', False)
     stopped = read_json(root / 'services_stopped.json')
     if not stopped['all_owned_exited']: raise RuntimeError('Owned GPU workers have not exited')
     groups = accepted['summaries']; stages, counts, adoption = {}, {}, {}
@@ -41,7 +42,7 @@ def create(root):
             adoption[mode] = {'original_successes_retained': retained, 'total_reduction_fraction': reduction,
                 'timing_passed': reduction >= .05 and g['median_seconds'] < baseline['median_seconds'] and
                     g['p90_seconds'] <= baseline['p90_seconds'] * 1.05,
-                'timing_environment_valid': timing_environment['exclusive_timing'], 'default_activated': False}
+                'timing_environment_valid': timing_environment['exclusive_timing'] or authorized_shared, 'default_activated': False}
     write_json(root / 'adoption.json', {'at': now(), 'variants': adoption, 'default_activated': False})
     previous = ROOT / 'tmp/parallel_planning/paths5_20261127_01'
     snapshot = {'at': now(), 'run': str(root.relative_to(ROOT)), 'acceptance': accepted,
@@ -50,6 +51,7 @@ def create(root):
         'startup': read_json(root / 'resident/startup.json'),
         'preflight': read_json(root / 'resident/endpoint_preflight/acceptance.json'), 'results': rows,
         'services_stopped': stopped, 'timing_environment': timing_environment,
+        'GPU_load': read_json(root / 'gpu_load_summary.json') if (root / 'gpu_load_summary.json').exists() else None,
         'previous_serial_collection': read_json(previous / 'acceptance.json')['summaries']}
     write_json(root / 'publication_snapshot.json', snapshot)
     lines = ['# V8 固定候选窗口的批量端点与并行路径', '',
@@ -59,13 +61,21 @@ def create(root):
         '## 完整请求结果', '',
         '五个固定场景，每组重复两次，共30次完整纯规划。各组统一预热，共用原15毫米／15°候选、'
         '数值IK设置、871球、TCP43、V2指尖规则及原接近和收爪检查。', '',
-        *(['本轮GPU2同时运行其他用户的计算任务，以下为共享运行耗时。功能核验单独完成；提速结论另用空闲卡核验。', '']
+        *(['本轮按用户要求在GPU2共享运行。三组在同一卡上交替测试，统一预热，同时记录显存和计算负载。', '']
+          if authorized_shared else ['本轮GPU2同时运行其他用户的计算任务，以下为共享运行耗时。功能核验单独完成；提速结论另用空闲卡核验。', '']
           if not timing_environment['exclusive_timing'] else []),
         '| 方法 | 规划通过 | 平均耗时 | 中位耗时 | P90耗时 | 累计耗时 |', '| --- | ---: | ---: | ---: | ---: | ---: |']
     for mode, name in NAMES.items():
         g = groups[mode]
         lines.append(f"| {name} | {g['successes']}/{g['requests']} | {g['mean_seconds']:.3f}秒 | "
             f"{g['median_seconds']:.3f}秒 | {g['p90_seconds']:.3f}秒 | {g['total_seconds']:.3f}秒 |")
+    if snapshot['GPU_load'] and snapshot['GPU_load'].get('planning'):
+        load = snapshot['GPU_load']['planning']
+        lines += ['', '## GPU2运行负载', '', '| 记录项 | 数值 |', '| --- | ---: |',
+            f"| 规划期间采样数 | {snapshot['GPU_load']['planning_samples']} |",
+            f"| GPU总利用率中位数（含本轮任务） | {load['median_GPU_utilization_percent']:.0f}% |",
+            f"| 最低空余显存 | {load['minimum_free_mib']} MiB |",
+            f"| 同时存在的其他计算进程数上限 | {load['maximum_foreign_compute_contexts']} |", '']
     lines += ['', '## 是否仍在额外串行凑批', '',
         '| 方法 | 实际消费候选数 | 串行抓取终点调用 | 批量计算的抓取终点 | 批量提前算出但未使用 | 为凑批额外串行检查 |',
         '| --- | ---: | ---: | ---: | ---: | ---: |']
@@ -96,7 +106,7 @@ def create(root):
     for mode in ['batched_endpoints', 'batched_paths4']:
         a = adoption[mode]
         conclusion = (f"{'通过' if a['timing_passed'] else '未通过'}累计下降5%、中位下降和P90不增加5%的时延门槛。"
-                      if timing_environment['exclusive_timing'] else '提速判断等待空闲卡对照。')
+                      if timing_environment['exclusive_timing'] or authorized_shared else '提速判断等待空闲卡对照。')
         lines.append(f"- {NAMES[mode]}：累计耗时变化{-a['total_reduction_fraction'] * 100:+.2f}%；"
             f"原成功{'全部保留' if a['original_successes_retained'] else '有丢失'}；" + conclusion)
     lines += ['', '这一轮把端点批量化与路径并行拆开比较，分别查看少做串行IK的收益和并行路径新增的成本。'

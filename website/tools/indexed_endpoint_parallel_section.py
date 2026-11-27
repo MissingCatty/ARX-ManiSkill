@@ -49,6 +49,17 @@ def section(website, site):
     if not data.get('timing_environment', {}).get('exclusive_timing', True):
         summary = '共享GPU下：' + summary
     status = '批量端点功能验证完成，等待空闲卡计时' if waiting else '固定候选窗口的批量端点与路径对照完成'
+    shared_pointer = ROOT / 'tmp/parallel_planning/shared_active.json'
+    if shared_pointer.exists():
+        current = ROOT / read_json(shared_pointer)['run']
+        if not (current / 'acceptance.json').exists() and not (current / 'STOP').exists():
+            progress = read_json(current / 'progress.json')
+            completed, total = progress['completed_requests'], progress['total_requests']
+            phase = '模型预热' if not (current / 'resident/curobo_dual_arm_ready.json').exists() else '规划对照'
+            status = f'GPU2共享运行中：{completed}/{total}'
+            summary = f'已按最新指令取消完全空闲要求，固定GPU2，当前{phase}，完成{completed}/{total}。'
+            body = '\n'.join(['## 当前GPU2对照进度', '', summary,
+                '下面保留上一轮已完成的功能对照结果。', '', body])
     return {'body': body, 'summary': summary, 'status': status, 'batch': {'id': root.name,
         'title': '去掉串行凑批后的端点与路径对照', 'date': '2026-11-27', 'status': status, 'summary': summary,
         'outputs': [str(root.relative_to(ROOT))],

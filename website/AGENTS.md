@@ -1,6 +1,6 @@
 # 网站内容与表达约定
 
-- V8新增indexed_endpoint_parallel_section.py：固定原候选16、精确同开度批量G/P/L，已有多个结果才并行4路径，无串行凑批。windowed5_20261127_02三组各10/10、90终点/60轨迹通过、串行额外0；共享GPU均值6.889/8.970/8.352秒标明运行条件，不确认提速。idle_active.json登记空闲卡同组30次，尚未运行时只显示等待。每批报告/JSON以root.name生成独立媒体名，旧结果链接不覆盖，保留公网待办。
+- V8固定窗口对照最新为shared_gpu2_20261127_01：按用户授权共享GPU2完成30/30，三组各10/10、90终点/60轨迹通过；平均7.198/9.235/8.959秒，新组累计慢28.30%/24.45%，原方法仍最快，默认保持。展示完整请求及分项、98→154次抓取终点计算和56未使用目标的分析，以及异步负载记录。shared_active.json已完成，原idle登记0领取STOP保留，页面不再显示等待空闲卡。indexed_endpoint_parallel_section.py按windowed_active.json发布最新结果；各批报告/JSON以root.name生成独立媒体名，旧链接和公网待办保留。
 
 - V8最新增加indexed_parallel_planning_section.py，读取tmp/parallel_planning/active.json。30个完整纯规划已完成，原/并行4/并行8各10/10、抓法选臂相同；平均4.110/5.615/6.249秒，额外提前检查82/132终点使绑定和IK增加。14个实际并行批次50有效行全通过；整批轨迹优化中位51.5/83.7ms，不能写成完整请求耗时。32离线、90终点、60记录轨迹通过，GPU模型退出、物理0，默认不切。报告及去空白JSON复制到resources/media/sam3-v8-parallel-path-planning-*独立文件，V8置顶并保留旧全部成绩、公网待办。
 
