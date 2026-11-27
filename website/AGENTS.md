@@ -1,5 +1,7 @@
 # 网站内容与表达约定
 
+- V8最新增加indexed_parallel_planning_section.py，读取tmp/parallel_planning/active.json。30个完整纯规划已完成，原/并行4/并行8各10/10、抓法选臂相同；平均4.110/5.615/6.249秒，额外提前检查82/132终点使绑定和IK增加。14个实际并行批次50有效行全通过；整批轨迹优化中位51.5/83.7ms，不能写成完整请求耗时。32离线、90终点、60记录轨迹通过，GPU模型退出、物理0，默认不切。报告及去空白JSON复制到resources/media/sam3-v8-parallel-path-planning-*独立文件，V8置顶并保留旧全部成绩、公网待办。
+
 - V8新增indexed_analytic_planning_section.py记录NMS15与第七项完整接入，读取tmp/analytic_planning/active.json，报告/JSON真实复制为sam3-v8-nms15-analytic-planning-*；JSON去空白后验证全部内容相同。69例候选中位54→151；原30/30和共享世界跟进20/20均通过、150终点核验通过，前30表另列。本轮细原/细解析平均4.240/4.377秒、无收益，84/98抓取终点回退、绑定1.855秒、批量端点11.1ms、共享世界校验0.6ms。NMS15启用，解析保留可选且关闭自动采用，不能写成整段毫秒级或抓取成功率提高。43离线、物理0、模型退出；保留原V8微计时及历史结果、V7、公网待办。
 
 - V8新增indexed_analytic_section.py发布GPU解析IK模块核验，数据来自tmp/analytic_ik/active.json。8192目标、329参考分支、10组场景/手臂与480开度状态通过；固定256×8解析约1.25ms，IK＋871球世界/自碰撞2.26～7.09ms。首次场景装载/capture6.14～6.47秒与查询分开，完整规划/物理0、默认不切，不能替换旧约4秒的完整RPC成绩。报告及逐组JSON独立复制到resources/media/sam3-v8-gpu-analytic-*；保留全部V8历史、V7与公网4条待办，论文方法页同步当前状态。

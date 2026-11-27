@@ -482,6 +482,10 @@ def publish():
     analytic_planning=analytic_planning_section(website,site)
     if analytic_planning:
         body=analytic_planning['body']+'\n'+body
+    from website.tools.indexed_parallel_planning_section import section as parallel_planning_section
+    parallel_planning=parallel_planning_section(website,site)
+    if parallel_planning:
+        body=parallel_planning['body']+'\n'+body
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version = next(v for v in group['iterations'] if v['code']=='V8')
@@ -560,12 +564,18 @@ def publish():
         version['settings'][-1]=['当前进度',status]
         batch=analytic_planning['batch']
         version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
+    if parallel_planning:
+        status,summary=parallel_planning['status'],parallel_planning['summary']
+        version.update(status=status,resultSummary=summary)
+        version['settings'][-1]=['当前进度',status]
+        batch=parallel_planning['batch']
+        version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
     if group['current']=='V8':
         entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
         entry.update(status='V8'+status,metric=summary)
     write_json(site_path,site);write_json(registry_path,registry)
     print('Published V8 methods and recorded progress; '+
-          (analytic_planning['status'] if analytic_planning else analytic['status'] if analytic else raw_order['status'] if raw_order else physical['status'] if physical else 'no physical pilot registered')+'.')
+          (parallel_planning['status'] if parallel_planning else analytic_planning['status'] if analytic_planning else analytic['status'] if analytic else raw_order['status'] if raw_order else physical['status'] if physical else 'no physical pilot registered')+'.')
 
 
 if __name__=='__main__':
