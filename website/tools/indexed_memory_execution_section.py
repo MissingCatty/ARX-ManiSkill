@@ -60,8 +60,8 @@ def section(website, site):
                 break
     body += f'\n[完整测试报告]({report}) · [逐场景统计与核验]({results})\n'
     a, b = accepted['groups']['baseline'], accepted['groups']['optimized']
-    status = '74场景双组完整抓取测试完成'
-    summary = (f"两组各74槽完成，规划通过{a['planning_passes']}/74、{b['planning_passes']}/74；"
+    status = '74场景双组抓取测试结束'
+    summary = (f"148槽已处理，{accepted['completed_slots']}完整、{accepted['interrupted_slots']}中断；规划通过{a['planning_passes']}/74、{b['planning_passes']}/74；"
         f"实际抓取成功{a['successes']}/74、{b['successes']}/74，每组5个原站位前提未满足场景单列未执行。")
     return {'body': body, 'status': status, 'summary': summary,
         'batch': {'id': root.name, 'title': '内存状态更新74场景完整抓取对照',

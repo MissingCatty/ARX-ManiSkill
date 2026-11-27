@@ -13,11 +13,11 @@ def report(root):
         '两组沿用同一份冻结头部RGB-D、SAM3分割和15毫米／15度NMS后的候选。'
         '本轮实际执行开爪、预抓取、按实测状态重规划接近、闭合、按实测状态重规划抬升与3秒保持。'
         '成功判据沿用目标最低保持抬升至少1厘米、双指有效接触、各段到位且无禁止接触。', '',
-        '| 方法 | 登记完成 | 初始规划通过 | 实际执行 | 抓取成功 | 前提未满足未执行 |',
-        '| --- | ---: | ---: | ---: | ---: | ---: |']
+        '| 方法 | 完整结束 | 程序中断 | 初始规划通过 | 实际执行 | 抓取成功 | 前提未满足未执行 |',
+        '| --- | ---: | ---: | ---: | ---: | ---: | ---: |']
     for mode, label in [('baseline', '原方法'), ('optimized', '内存状态更新')]:
         g = groups[mode]
-        text.append(f"| {label} | {g['completed']}/74 | {g['planning_passes']}/74（{g['planning_passes']/74:.1%}） | "
+        text.append(f"| {label} | {g['completed']}/74 | {g['interrupted']} | {g['planning_passes']}/74（{g['planning_passes']/74:.1%}） | "
             f"{g['physical_attempts']} | {g['successes']}/74（{g['successes']/74:.1%}） | {g['common_precondition_unexecuted']} |")
     text += ['', '## 各段完整规划耗时', '', '| 环节 | 原方法平均／中位／P90 | 内存更新平均／中位／P90 |', '| --- | ---: | ---: |']
     def fmt(d):
@@ -29,12 +29,16 @@ def report(root):
     if accepted.get('cross_restart_timing_case'):
         text += ['', f"主耗时表使用同阶段配对。{accepted['cross_restart_timing_case']}的一条初始规划从停止前承接，"
             '该场景仍完整计入任务结果，跨阶段计时另存原始统计。']
+    if accepted.get('interrupted_timing_cases_excluded'):
+        text += ['', '主耗时表使用两组同一场景、同一实际发生阶段的配对；中断场景单列，不计入配对时延：'
+            + '、'.join(accepted['interrupted_timing_cases_excluded']) + '。']
     text += ['', '## 失败分布', '', '| 原因 | 原方法 | 内存更新 |', '| --- | ---: | ---: |']
     reasons = sorted(set(groups['baseline']['failure_reasons']) | set(groups['optimized']['failure_reasons']))
     for reason in reasons:
         text.append(f"| {reason} | {groups['baseline']['failure_reasons'].get(reason,0)} | {groups['optimized']['failure_reasons'].get(reason,0)} |")
-    text += ['', '## 核验与对照', '', '| 项目 | 结果 |', '| --- | --- |', '| 任务结果 | 148/148登记槽完成 |',
-        f"| 记录完整性 | {accepted['key_event_coverage']['decoded_videos']}段录像完整解码，命令、执行账和回执一致 |",
+    text += ['', '## 核验与对照', '', '| 项目 | 结果 |', '| --- | --- |',
+        f"| 任务结果 | 148个登记槽已处理；{accepted['completed_slots']}完整、{accepted['interrupted_slots']}中断、0未开始 |",
+        f"| 记录完整性 | {accepted['key_event_coverage']['decoded_videos']}段录像完整解码；完整项命令与回执通过，中断项停止记录单列 |",
         '| 事件适用性 | 发生过的接近、闭合、抬升、保持按实际记录核验；未执行项单列 |',
         f"| 关键事件覆盖 | {accepted['key_event_coverage']} |",
         f"| 初始抓法、手臂与关节相同 | {accepted['all_initial_selections_and_joints_equal']} |",
@@ -46,6 +50,7 @@ def report(root):
     def result(case, mode):
         r = rows[(case, mode)]
         if r['common_precondition_unexecuted']: return '前提未满足，未执行'
+        if r.get('interrupted'): return '程序中断，未重复执行'
         return '抓取成功' if r['success'] else r['reason']
     for case in reg['cases']: text.append(f"| {case['id']} | {result(case['id'],'baseline')} | {result(case['id'],'optimized')} |")
     text += ['', f"运行记录：`{root.relative_to(ROOT)}`。所有视频的路径保存在本轮acceptance.json。", '']

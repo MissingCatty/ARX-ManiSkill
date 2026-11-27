@@ -30,7 +30,8 @@ def load_record(root, gpu, stop):
 
 def run(root):
     reg = guard(root)
-    inherited = set((reg.get('continuation') or {}).get('completed_slot_ids', []))
+    carried = reg.get('continuation') or {}
+    inherited = set(carried.get('terminal_slot_ids', carried.get('completed_slot_ids', [])))
     claims = {p.stem for p in (root / 'claims').glob('*.json')}
     if (root / 'started.json').exists() or claims != inherited:
         raise RuntimeError('No restarting an already-started comparison')

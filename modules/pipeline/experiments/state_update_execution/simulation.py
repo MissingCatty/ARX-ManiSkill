@@ -17,7 +17,9 @@ def progress(root, reg, rows, phase, current=None):
     groups = {}
     for mode in VARIANTS:
         values = [r for r in rows if r['variant'] == mode]
-        groups[mode] = {'registered': 74, 'completed': len(values),
+        groups[mode] = {'registered': 74, 'processed': len(values),
+            'completed': sum(not r.get('interrupted') for r in values),
+            'interrupted': sum(bool(r.get('interrupted')) for r in values),
             'planning_passes': sum(r['planning_success'] for r in values),
             'physical_attempts': sum(r['physical_attempt'] for r in values),
             'successes': sum(r['success'] for r in values),
@@ -62,6 +64,7 @@ def run(root, socket):
                 for name in CARRY_FILES:
                     target = Path(directory) / name; target.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(source / name, target)
+                shutil.copytree(source / 'arms', Path(directory) / 'arms', dirs_exist_ok=True)
                 write_json(Path(directory) / 'initial_plan_carry.json', {'passed': True,
                     'source': str(source.relative_to(ROOT)), 'new_initial_solver_calls': 0,
                     'prior_motion_samples': 0, 'physical_grasps_repeated': 0})
@@ -87,7 +90,7 @@ def run(root, socket):
         'both_modes_warmed': True, 'frozen_restore_and_handoff_passed': True,
         'physical_grasps': 0, 'prewarm_initial_requests': 2})
     for index, item in enumerate(reg['schedule']):
-        if item['id'] in continuation.get('completed_slot_ids', []): continue
+        if item['id'] in continuation.get('terminal_slot_ids', continuation.get('completed_slot_ids', [])): continue
         guard(root, full=False)
         if gpu_inventory()[reg['gpu']] < 1536: raise RuntimeError('Insufficient CUDA reserve before claiming slot')
         if shutil.disk_usage(root).free < 10 * 1024**3: raise RuntimeError('Insufficient recording disk space')

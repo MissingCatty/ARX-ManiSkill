@@ -47,16 +47,29 @@ def review(root):
         '-c', 'import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())'], text=True, timeout=30).strip()
     cases = {c['id']: c for c in reg['cases']}
     for mode in VARIANTS:
-        group = {'registered': 74, 'completed': 0, 'planning_passes': 0, 'physical_attempts': 0,
+        group = {'registered': 74, 'processed': 0, 'completed': 0, 'interrupted': 0, 'planning_passes': 0, 'physical_attempts': 0,
             'successes': 0, 'common_precondition_unexecuted': 0, 'failure_reasons': Counter()}
         times = {stage: [] for stage in ['initial', 'approach', 'lift']}; totals = []
         for item in [s for s in reg['schedule'] if s['variant'] == mode]:
             case = cases[item['case_id']]; out = root / 'trials' / case['id'] / mode
             claim = read_json(root / 'claims' / (item['id'] + '.json'))
-            if claim['state'] != 'complete': raise ValueError('Incomplete physical claim')
+            if claim['state'] not in ['complete', 'interrupted']: raise ValueError('Unresolved physical claim')
             for name, digest in claim['files_sha256'].items():
                 if sha256(out / name) != digest: raise ValueError('Changed/missing physical record: ' + name)
-            result = read_json(out / 'result.json'); group['completed'] += 1
+            result = read_json(out / 'result.json'); group['processed'] += 1
+            if claim['state'] == 'interrupted':
+                from .continuation import interrupted_before_approach
+                interrupted_before_approach(out)
+                if not (out / 'terminal_interruption.json').exists(): raise ValueError('Undocumented interruption')
+                group['interrupted'] += 1
+                group['planning_passes'] += bool(result.get('planning_success'))
+                group['physical_attempts'] += bool(result.get('physical_attempt'))
+                for name in ['execution.mp4', 'head.mp4']:
+                    subprocess.run([ffmpeg, '-nostdin', '-v', 'error', '-i', str(out / name), '-f', 'null', '-'],
+                        check=True, timeout=180, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+                    videos.append(str((out / name).relative_to(ROOT)))
+                continue
+            group['completed'] += 1
             if case.get('common_precondition_failure'):
                 if result.get('physical_attempt') or result.get('planning_success') or not result['common_precondition_unexecuted']:
                     raise ValueError('Inherited prerequisite was counted as a new grasp')
@@ -137,6 +150,7 @@ def review(root):
             all_planning_per_scene=describe(totals))
         groups[mode] = group
     comparisons = []; losses = []; gains = []
+    interrupted_cases = {row['id'] for row in progress['results'] if row.get('interrupted')}
     for case in reg['cases']:
         if case.get('common_precondition_failure'): continue
         plans = [read_json(root / 'trials' / case['id'] / mode / 'plan_result.json') for mode in VARIANTS]
@@ -147,26 +161,33 @@ def review(root):
         arrays = plans[0].get('paths') == plans[1].get('paths')
         comparisons.append({'id': case['id'], 'same_initial_selection_and_joints': same, 'same_initial_paths': arrays,
             'baseline_success': results[0]['success'], 'optimized_success': results[1]['success']})
-        if results[0]['success'] and not results[1]['success']: losses.append(case['id'])
-        if results[1]['success'] and not results[0]['success']: gains.append(case['id'])
+        if case['id'] not in interrupted_cases:
+            if results[0]['success'] and not results[1]['success']: losses.append(case['id'])
+            if results[1]['success'] and not results[0]['success']: gains.append(case['id'])
     continuation = reg.get('continuation') or {}
-    cross_restart = continuation.get('zero_motion_handoff_slot', '').rsplit('_', 1)[0]
+    cross_restart = (continuation.get('zero_motion_handoff_slot') or '').rsplit('_', 1)[0]
     # The reused initial plan predates the new model process. Keep it in task
     # results, and use only matched-phase pairs for the primary timing table.
     matched = {}
     for mode in VARIANTS:
         stage_values = {s: [] for s in ['initial', 'approach', 'lift']}; total_values = []
         for case in reg['cases']:
-            if case.get('common_precondition_failure') or case['id'] == cross_restart: continue
+            if case.get('common_precondition_failure') or case['id'] == cross_restart or case['id'] in interrupted_cases: continue
             out = root / 'trials' / case['id'] / mode; total = 0.
             for stage in check_requests(out):
                 value = read_json(out / (stage + '_metrics.json'))['seconds']
-                stage_values[stage].append(value); total += value
+                other = 'optimized' if mode == 'baseline' else 'baseline'
+                if (root / 'trials' / case['id'] / other / (stage + '_metrics.json')).exists():
+                    stage_values[stage].append(value)
+                total += value
             total_values.append(total)
         matched[mode] = {'timings': {s: describe(v) for s, v in stage_values.items()},
             'all_planning_per_scene': describe(total_values)}
     checked = {'at': now(), 'passed': True, 'task_complete': True, 'record_integrity': True,
-        'completed_slots': 148, 'groups': groups, 'baseline_success_losses': losses, 'optimized_success_gains': gains,
+        'registered_slots': 148, 'processed_slots': 148,
+        'completed_slots': sum(g['completed'] for g in groups.values()),
+        'interrupted_slots': sum(g['interrupted'] for g in groups.values()), 'not_started_slots': 0,
+        'groups': groups, 'baseline_success_losses': losses, 'optimized_success_gains': gains,
         'all_initial_selections_and_joints_equal': all(r['same_initial_selection_and_joints'] for r in comparisons),
         'all_initial_paths_equal': all(r['same_initial_paths'] for r in comparisons), 'comparisons': comparisons,
         'event_applicability': 'complete simulated grasp execution; frozen perception and candidates',
@@ -176,7 +197,8 @@ def review(root):
         'continuation': {'completed_results_inherited': len(continuation.get('completed_slot_ids', [])),
             'zero_motion_handoff_slot': continuation.get('zero_motion_handoff_slot'),
             'initial_solver_calls_repeated': 0, 'physical_grasps_repeated': 0},
-        'matched_phase_timings': matched, 'cross_restart_timing_case': cross_restart}
+        'matched_phase_timings': matched, 'cross_restart_timing_case': cross_restart,
+        'interrupted_timing_cases_excluded': sorted(interrupted_cases)}
     write_json(root / 'endpoint_review.json', {'passed': True, 'endpoints': endpoints})
     write_json(root / 'acceptance.json', checked)
     return checked
