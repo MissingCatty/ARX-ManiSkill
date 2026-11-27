@@ -174,6 +174,14 @@ def publish():
             ['方案分组','原版逻辑移植、修正后重新验碰撞、ARX实际指腹适配。'],
             ['历史对照','上一轮仅NMS代表优先＋原候选后备的69场景结果继续保留。']]
         version['batches']=[v for v in version['batches'] if v['id']!=native_batch['id']]+[native_batch]
+    from website.tools.gripper_sweep_section import section as sweep_section
+    sweep,sweep_status,sweep_batches=sweep_section(website,site)
+    if sweep:
+        page=website/'内容/迭代/sam3-graspgenx-v7.md'
+        page.write_text(sweep+'\n'+page.read_text())
+        version.update(status=sweep_status,resultSummary=sweep_batches[-1]['summary'])
+        for item in sweep_batches:
+            version['batches']=[v for v in version['batches'] if v['id']!=item['id']]+[item]
     write_json(site_path,site);write_json(registry_path,registry)
     print(f'Published V7 offline comparison: {completed}/69; current version remains {group["current"]}.')
 

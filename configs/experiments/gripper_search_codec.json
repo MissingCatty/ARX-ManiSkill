@@ -1,0 +1,13 @@
+{
+  "authorization": "2026-11-27 优化开合爪后继续检查候选搜索的配置绑定开销",
+  "source_run": "tmp/graspgenx_native_postprocessing/planning5_20261127_04",
+  "source_variant": "native_rechecked",
+  "cases": ["M0001_S1_open_apple", "M0020_S1_open_donut", "M0044_S3_sparse_banana", "M0064_S4_clutter_mango", "M0074_S4_clutter_scissors"],
+  "phase": "candidate_binding_codec",
+  "variants": ["legacy", "batched"],
+  "interpretation": {"legacy":"batched_sweeps_original_YAML", "batched":"batched_sweeps_C_YAML"},
+  "planning_requests": 20,
+  "physical_grasps": 0,
+  "automatic_retries": false,
+  "activate_mainline": false
+}

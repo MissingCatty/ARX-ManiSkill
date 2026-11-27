@@ -39,6 +39,22 @@ def binding_proof(validator,width,model):
 
 def width_pool(base):
     class WidthPool(base):
+        def width_context(self,work,state):
+            context=self.bind(work,state,include_target=False)
+            return context,self.contact_view(context,state)
+
+        def validate_narrowing(self,work,state,width):
+            samples=[];count=max(2,int(np.ceil(abs(.044-width/2)/.0005))+1)
+            for fraction in np.linspace(0,1,count):
+                opening=.044+(width/2-.044)*fraction
+                sample=target_state(state,2*opening)
+                try:self.bind(work/'narrowing'/f'{len(samples):03d}',sample,include_target=True)
+                except AssertionError as error:
+                    if str(error)!=COLLISION_MESSAGE:raise
+                    return {'passed':False,'samples':samples,'first_invalid_sample':len(samples)}
+                samples.append(float(opening))
+            return {'passed':True,'samples':samples,'first_invalid_sample':None}
+
         def select_contact(self,context,state,directory,validator):
             directory=Path(directory);candidates=candidate_pool(directory)['candidates']
             if all(abs(float(c['width'])-.088)<1e-12 for c in candidates):
@@ -54,8 +70,7 @@ def width_pool(base):
                 work=directory/'width_targets'/f'{identity:06d}'
                 try:
                     if current_width is None or abs(width-current_width)>1e-12:
-                        context=self.bind(work,measured,include_target=False)
-                        validator=self.contact_view(context,measured);current_width=width
+                        context,validator=self.width_context(work,measured);current_width=width
                     proof=binding_proof(validator,width,context.model)
                     with candidate_window(directory,index,index+1):
                         result=super().select_contact(context,measured,directory,validator)
@@ -71,24 +86,15 @@ def width_pool(base):
                 if not result['success']:continue
                 # Validate narrowing at the stationary start before permitting
                 # a path that assumes this opening. Target remains an obstacle.
-                sweep=[];sweep_ok=True
-                count=max(2,int(np.ceil(abs(.044-width/2)/.0005))+1)
+                sweep=[]
                 if abs(width-.088)>1e-12:
-                    for fraction in np.linspace(0,1,count):
-                        opening=.044+(width/2-.044)*fraction
-                        sample=target_state(state,2*opening)
-                        try:self.bind(work/'narrowing'/f'{len(sweep):03d}',sample,include_target=True)
-                        except AssertionError as error:
-                            if str(error)!=COLLISION_MESSAGE:raise
-                            sweep_ok=False;break
-                        sweep.append(float(opening))
+                    checked=self.validate_narrowing(work,state,width);sweep=checked['samples']
                     current_width=None
-                    if not sweep_ok:
+                    if not checked['passed']:
                         rejected['candidate_width_narrowing_collision']=rejected.get('candidate_width_narrowing_collision',0)+1
                         events[-1].update(kind='candidate_width_narrowing_collision')
                         continue
-                    context=self.bind(work/'selected',measured,include_target=False)
-                    validator=self.contact_view(context,measured);current_width=width
+                    context,validator=self.width_context(work/'selected',measured);current_width=width
                     proof=binding_proof(validator,width,context.model)
                 proof.update(narrowing_samples=sweep,maximum_finger_step_m=.0005,
                     narrowing_target_collision_checked=True)
@@ -101,17 +107,19 @@ def width_pool(base):
     return WidthPool
 
 
+class WidthSelectionMixin:
+    def request(self,directory,**flags):
+        result=super().request(directory,**flags)
+        if result['success'] and not any(flags.get(k) for k in ['approach','lift','observe']):
+            selected=result['selected'];proof=selected['width_binding']
+            selected['open_finger_m']=proof['open_finger_m']
+            write_json(Path(directory)/'plan_result.json',result)
+        return result
+
+
 def create(args):
     from modules.curobo.dual_arm.adapter import create as original_create
     from modules.curobo.dual_arm.interleaved_adapter import InterleavedDualArmPlanner,configure
     original=original_create(args,pool_extension=width_pool)
-
-    class WidthPlanner(InterleavedDualArmPlanner):
-        def request(self,directory,**flags):
-            result=super().request(directory,**flags)
-            if result['success'] and not any(flags.get(k) for k in ['approach','lift','observe']):
-                selected=result['selected'];proof=selected['width_binding']
-                selected['open_finger_m']=proof['open_finger_m']
-                write_json(Path(directory)/'plan_result.json',result)
-            return result
+    class WidthPlanner(WidthSelectionMixin,InterleavedDualArmPlanner):pass
     return configure(WidthPlanner(original.pool,original.model,original.root))

@@ -1,0 +1,17 @@
+{
+  "authorization": "2026-11-27 优化重复开合爪场景更新，并继续检查候选搜索优化",
+  "source_run": "tmp/graspgenx_native_postprocessing/planning5_20261127_04",
+  "source_variant": "native_rechecked",
+  "cases": ["M0001_S1_open_apple", "M0020_S1_open_donut", "M0044_S3_sparse_banana", "M0064_S4_clutter_mango", "M0074_S4_clutter_scissors"],
+  "phase": "sweep_batch",
+  "variants": ["legacy", "batched"],
+  "repeats": 2,
+  "planning_requests": 20,
+  "maximum_phases": 2,
+  "maximum_total_planning_requests": 40,
+  "physical_grasps": 0,
+  "startup_minimum_free_mib": 10000,
+  "request_minimum_free_mib": 1536,
+  "automatic_retries": false,
+  "activate_mainline": false
+}
