@@ -55,6 +55,11 @@ build/
 /website/resources/.build-*/
 /website/resources/.previous-*/
 
+# Full grasp-suite recordings are independent website resources. Their
+# manifests and reports are versioned; the large clips are deployed separately.
+/website/resources/media/sam3-v8-execution74-*.mp4
+/website/resources/optimized/video/sam3-v8-execution74-*.mp4
+
 # Vendored model repositories must not apply their LFS filters to this repo.
 .gitattributes
 !/.gitattributes
