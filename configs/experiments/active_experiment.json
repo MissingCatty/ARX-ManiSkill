@@ -44,7 +44,7 @@
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/pipeline.py": "bb5cadfed2dd557bfc362d3abbbf7889ddf8e38c262091dff1a5754d2551b6aa",
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/registry.py": "dd979fc85ed69bfc57829e5a4de6574c822bfb954f03a335758560e7900b1fae",
     "/home/zhaoyechong/projects/ARX-ManiSkill/arx_project/service.py": "c3f6f79a3e62ccf4c1266ecb24d2f153ec71316d95f38b8ada02990a53b1f8c4",
-    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "e1193363777e0981487dfc0790ff27b75d06779f740e53c5b6bc6128e679cb24",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "7c457b46ad0b1d316c44a3a3fd8b1acc921704dbfade65b45c12ee38dd053de5",
     "/home/zhaoyechong/projects/ARX-ManiSkill/configs/path_aliases.json": "4b34e5b4b70abdca3c4f3a69754884a0a29068cb870e16f35a0e44b1e04246b4",
     "/home/zhaoyechong/projects/ARX-ManiSkill/configs/pipelines/sam3_graspgenx.json": "5fa511488c30b7914a34670fe64cd28f912a654aad3c7570c185bd6d6a9421a6",
     "/home/zhaoyechong/projects/ARX-ManiSkill/modules/arx_core/arx-sim/config/controllers.yaml": "e9010f093abbfb0912498d247ac28854800edeba97b2debbab19da53ae7a3017",
@@ -479,5 +479,15 @@
     },
     "authorization": "用户授权细化NMS并接入第七项解析端点优化",
     "default_adapter_and_physical_parameters_unchanged": true
+  },
+  "memory_state_optional_registration": {
+    "at": "2026-11-28T00:25:18.124058+08:00",
+    "previous_configuration": "configs/experiments/history/memory_state_optional_20261128_01_previous.json",
+    "registry_before_sha256": "e1193363777e0981487dfc0790ff27b75d06779f740e53c5b6bc6128e679cb24",
+    "registry_sha256": "7c457b46ad0b1d316c44a3a3fd8b1acc921704dbfade65b45c12ee38dd053de5",
+    "new_optional_module": "curobo_memory_state",
+    "default_enabled": false,
+    "active_adapter_and_physical_parameters_unchanged": true,
+    "validated_planning_run": "tmp/state_updates/memory5_20261127_03"
   }
 }

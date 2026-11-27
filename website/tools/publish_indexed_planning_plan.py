@@ -494,6 +494,10 @@ def publish():
     memory_state=memory_state_section(website,site)
     if memory_state:
         body=memory_state['body']+'\n'+body
+    from website.tools.indexed_memory_execution_section import section as memory_execution_section
+    memory_execution=memory_execution_section(website,site)
+    if memory_execution:
+        body=memory_execution['body']+'\n'+body
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version = next(v for v in group['iterations'] if v['code']=='V8')
@@ -591,6 +595,12 @@ def publish():
         for previous in memory_state.get('history_batches', []):
             version['batches']=[v for v in version['batches'] if v['id']!=previous['id']]+[previous]
         batch=memory_state['batch']
+        version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
+    if memory_execution:
+        status,summary=memory_execution['status'],memory_execution['summary']
+        version.update(status=status,resultSummary=summary)
+        version['settings'][-1]=['当前进度',status]
+        batch=memory_execution['batch']
         version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
     if group['current']=='V8':
         entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
