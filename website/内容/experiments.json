@@ -742,6 +742,26 @@
                   "url": "/media/sam3-v7-state-reuse-report.md"
                 }
               ]
+            },
+            {
+              "id": "counts5_20261127_01",
+              "title": "碰撞球数量对完整规划的影响",
+              "date": "2026-11-27",
+              "status": "诊断已完成，保留871球",
+              "summary": "三档各10/10规划通过；平均5.669/4.355/4.381秒，球数继续减半未再提速。",
+              "outputs": [
+                "tmp/sphere_count_diagnosis/counts5_20261127_01"
+              ],
+              "artifacts": [
+                {
+                  "label": "分项数据与核验",
+                  "url": "/media/sam3-v7-sphere-count-results.json"
+                },
+                {
+                  "label": "完整诊断报告",
+                  "url": "/media/sam3-v7-sphere-count-report.md"
+                }
+              ]
             }
           ]
         },

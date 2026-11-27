@@ -190,9 +190,13 @@ def publish():
         history=history.replace('当前优化后','当轮优化后',1).replace('### 当前秒级耗时花在哪里','### 上一轮秒级耗时分布',1)
         history=history.replace('以下为最新优化版10次完整规划的平均值','以下为当轮优化版10次完整规划的平均值',1)
         history=history.replace('下一步优先让固定场景只绑定一次','当轮确定的后续方向是让固定场景只绑定一次',1)
-        page.write_text(reused+'\n'+history)
+        from website.tools.sphere_count_section import section as count_section
+        count_body,count_batches=count_section(website,site)
+        page.write_text(reused+'\n'+count_body+'\n'+history)
         version.update(status=reuse_status,resultSummary=reuse_batches[-1]['summary'])
         for item in reuse_batches:
+            version['batches']=[v for v in version['batches'] if v['id']!=item['id']]+[item]
+        for item in count_batches:
             version['batches']=[v for v in version['batches'] if v['id']!=item['id']]+[item]
     write_json(site_path,site);write_json(registry_path,registry)
     print(f'Published V7 offline comparison: {completed}/69; current version remains {group["current"]}.')

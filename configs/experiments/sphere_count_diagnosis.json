@@ -1,0 +1,46 @@
+{
+  "authorization": "2026-11-27 继续拆完整规划，主要检查碰撞球数量的影响；独立诊断，不改变默认配置",
+  "source_run": "tmp/graspgenx_native_postprocessing/planning5_20261127_04",
+  "source_variant": "native_rechecked",
+  "cases": [
+    "M0001_S1_open_apple",
+    "M0020_S1_open_donut",
+    "M0044_S3_sparse_banana",
+    "M0064_S4_clutter_mango",
+    "M0074_S4_clutter_scissors"
+  ],
+  "phase": "sphere_count_diagnosis",
+  "variants": [
+    "legacy",
+    "batched"
+  ],
+  "repeats": 2,
+  "planning_requests": 32,
+  "maximum_phases": 1,
+  "maximum_total_planning_requests": 32,
+  "physical_grasps": 0,
+  "startup_minimum_free_mib": 10000,
+  "request_minimum_free_mib": 1536,
+  "automatic_retries": false,
+  "activate_mainline": false,
+  "sphere_counts": [
+    512,
+    256,
+    871
+  ],
+  "accepted_fast_source": "tmp/gripper_state_reuse/geometry5_20261127_02",
+  "profile_cases": [
+    "M0001_S1_open_apple",
+    "M0044_S3_sparse_banana"
+  ],
+  "unprofiled_requests": 30,
+  "profiled_requests": 2,
+  "default_activation": false,
+  "fixed_work_counts_interleaved": true,
+  "coarsening": "same_link_conservative_enclosures",
+  "resource_minimum_startup_mib": 10000,
+  "resource_minimum_request_mib": 1536,
+  "maximum_iterations": 1,
+  "fixed_work_RPC_requests": 5,
+  "profiled_timings_in_primary_statistics": false
+}
