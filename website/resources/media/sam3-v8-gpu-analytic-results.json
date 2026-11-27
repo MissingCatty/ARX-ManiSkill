@@ -1,0 +1,1772 @@
+{
+  "run": "tmp/analytic_ik/precise256_20261127_02",
+  "registration": {
+    "at": "2026-11-27T14:06:01.069044+08:00",
+    "config": {
+      "version": "V8",
+      "variant": "GPU_analytic_branches_and_native_collision",
+      "authorization": "2026-11-27 用户要求实现解析IK与cuRobo批量碰撞检测",
+      "source_run": "tmp/gripper_state_reuse/geometry5_20261127_02",
+      "cases": [
+        "M0001_S1_open_apple",
+        "M0020_S1_open_donut",
+        "M0044_S3_sparse_banana",
+        "M0064_S4_clutter_mango",
+        "M0074_S4_clutter_scissors"
+      ],
+      "batch_capacity": 256,
+      "regular_branch_capacity": 8,
+      "random_states_per_arm": 4096,
+      "reference_EAIK_targets_per_arm": 128,
+      "GPU_graph_repeats": 50,
+      "GPU_eager_repeats": 10,
+      "startup_free_mib": 10000,
+      "minimum_request_free_mib": 1536,
+      "collision_spheres": 871,
+      "position_tolerance_m": 0.002,
+      "rotation_tolerance_rad": 0.03,
+      "self_collision": "standalone world-only and world+self masks; active planner setting unchanged",
+      "opening_width": "per-candidate actual command, both prismatic finger coordinates included in FK only",
+      "singular_family": "explicit fallback required; finite branch enumeration does not cover a continuum",
+      "full_planning_requests": 0,
+      "physical_grasps": 0,
+      "simulation_instances": 0,
+      "automatic_default_activation": false,
+      "automatic_retries": false
+    },
+    "gpu": "GPU-3164d5f3-6a9a-17b4-53f9-a70e3a82b834",
+    "cases": [
+      {
+        "case": "M0001_S1_open_apple",
+        "arm": "right",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/right",
+        "real_targets": 207,
+        "padded_targets": 49,
+        "input_candidates": 69
+      },
+      {
+        "case": "M0001_S1_open_apple",
+        "arm": "left",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/left",
+        "real_targets": 207,
+        "padded_targets": 49,
+        "input_candidates": 69
+      },
+      {
+        "case": "M0020_S1_open_donut",
+        "arm": "right",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/right",
+        "real_targets": 63,
+        "padded_targets": 193,
+        "input_candidates": 21
+      },
+      {
+        "case": "M0020_S1_open_donut",
+        "arm": "left",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/left",
+        "real_targets": 63,
+        "padded_targets": 193,
+        "input_candidates": 21
+      },
+      {
+        "case": "M0044_S3_sparse_banana",
+        "arm": "right",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/right",
+        "real_targets": 105,
+        "padded_targets": 151,
+        "input_candidates": 35
+      },
+      {
+        "case": "M0044_S3_sparse_banana",
+        "arm": "left",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/left",
+        "real_targets": 105,
+        "padded_targets": 151,
+        "input_candidates": 35
+      },
+      {
+        "case": "M0064_S4_clutter_mango",
+        "arm": "right",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/right",
+        "real_targets": 117,
+        "padded_targets": 139,
+        "input_candidates": 39
+      },
+      {
+        "case": "M0064_S4_clutter_mango",
+        "arm": "left",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/left",
+        "real_targets": 117,
+        "padded_targets": 139,
+        "input_candidates": 39
+      },
+      {
+        "case": "M0074_S4_clutter_scissors",
+        "arm": "right",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/right",
+        "real_targets": 99,
+        "padded_targets": 157,
+        "input_candidates": 33
+      },
+      {
+        "case": "M0074_S4_clutter_scissors",
+        "arm": "left",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/left",
+        "real_targets": 99,
+        "padded_targets": 157,
+        "input_candidates": 33
+      }
+    ],
+    "source_run": "tmp/gripper_state_reuse/geometry5_20261127_02",
+    "sources": {
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/analytic_ik/model.py": "389fb6ff5786e02d63dc1c96cabbbce700c3e86efd1f17b1006c4b4db387827d",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/analytic_ik/solver.py": "7655d746c7fb5145844c414a3d296327134e1fc2c12bec56a014f2f70326a8e7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/analytic_ik/test_executable.py": "2c6c0dcee1f409f4a5400a2ede99148938f80cc62a2861e9c4f65bffa4dfcff8",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/analytic_ik/test_solver.py": "9fc3abf2ce70a4a664d005d4c6bdd35b7523065da9f258c2a9e258fd4d885efb",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/analytic_ik/session.py": "2943da711e2885dbbe21ce46f8c1c261e032f52e1d3accc1cb469b71e3bd6ac3",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/analytic_ik/__init__.py": "2f7246e2aeb6456c615cfdc6cb5066283912ace58b5eb347ab56791a597995dd",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/analytic_ik/collision.py": "878e1edd297b9c820c19342e7d82a21b805eff484887acd3ee341c1767ab8fa5",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/analytic_ik/test_collision_contract.py": "be0734559ab0f86b97a87830219be35c4c710bd79fcbf86ea54286fbba5f0eb7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/analytic_ik/executable.py": "a67185ff79c6f00d1dc7d91a81f1dd1654107a4c1c5528e9d2fe97ebcf7285fd",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/analytic_ik/report.py": "23e169b6ab93d0f53b1d35001868e6e3d2508e32311a41a671eecc09ed258519",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/analytic_ik/precision_run.py": "5203fd80801195eda1c5af176cd31c6655908aaa7a14e7f02e3c25f0623142ee",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/analytic_ik/__init__.py": "5e229fea887ecf1670b3a0fd3e38b1adbb25e748e9c42a2b54a6927336e7a97a",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/analytic_ik/precision_prepare.py": "61336f59a722d357eea3ea983064d7c12b4f84a3901d369dbb8f80adfd10973e",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/analytic_ik/run.py": "aa2c43859265eef0972cab69a8bc07612202b8133c1683391dce8e03d86f54b6",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/analytic_ik/prepare.py": "8e098ff2cf5be0c3f127acac81b232fec25f6bbca8b3c3652542f8120559f064",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/pipeline/experiments/analytic_ik/timing.py": "f3f505ec9fd8bb12f61864c931c479ee8ee363962d841aa91d05552aaf35ecbf",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/modules/curobo/indexed_planning/geometric/kinematics.py": "eb9c73c1ada056aefe02bd7fedee1243be1836c07429fbbe109826004af79d26",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/configs/experiments/gpu_analytic_ik.json": "9df252754388372f415edb589cf9df61c960bb6931beda975b12ac4884a11e90"
+    },
+    "inputs": {
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/random/right/model.json": "b745d66afef9af47e6ca10a080cd9b51c5c69a1e2c6fa7f0eca1be4b9e34b50a",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/random/right/states.npz": "cd381a9bd7beafa198768c8d6eccf7ba84f7fc16bc8dd857223c262699586519",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/random/right/EAIK_reference.json": "0e9c0c9101353ddc431a95ffe3f232aeec5564aea165156eae1340df21527441",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/simulation/assets/models/arx_x5_lift/robot.urdf": "0ac9f20f13bd2a194d9f5c2002856a84ba406a4a3906ef9ed5ec182002569704",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/random/left/model.json": "07cf4f385d1f808d6f0875f23ccf8d5138b5518bcbbebac381efe60e44abad1a",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/random/left/states.npz": "0a65386333ec336a1be5b2951943d728ae8ca47441868836a7c1f0a5517f8968",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/random/left/EAIK_reference.json": "52dce9d60ae68183b9e97ce28c129aff9ce10fee1ec49ac15cf15b2565a6ade8",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0001_S1_open_apple/batched_1/arms/right/plan/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/right/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0001_S1_open_apple/batched_1/arms/right/plan/scene.json": "712158576a7aa205e7428dbdc6968432b8cc02e89caf6734d0d181162fef2943",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/right/scene.json": "712158576a7aa205e7428dbdc6968432b8cc02e89caf6734d0d181162fef2943",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0001_S1_open_apple/batched_1/state.json": "59f7e9352002e82af0d700252ff96e9120d5f9144b256efff24313dbb26df6e7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0001_S1_open_apple/batched_1/candidates/candidate_pool.json": "9aaa2aca52394019c011365ba4a5b2eace7520f49df53aa0019dcc7f66ef3839",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/right/targets.npz": "6c4032b9d5842de24fdbafa0ca1f22f4d0f43e3b57f001bc4d44370839b78790",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/right/labels.json": "4cbd8456c6151625044083656e20ab5fdacd6367f13b357242a8d737f16ba4bd",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0001_S1_open_apple/batched_1/arms/right/state/parked_arm.ply": "4828927e839a520be185a7739eb13c86864a94d07ad678658bac8e3c750ea183",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0001_S1_open_apple/batched_1/arms/left/plan/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/left/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0001_S1_open_apple/batched_1/arms/left/plan/scene.json": "6b96f7c63084b92d36130cc51d9de2532e62f57492606f2bdad076132fbc0e07",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/left/scene.json": "6b96f7c63084b92d36130cc51d9de2532e62f57492606f2bdad076132fbc0e07",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/left/targets.npz": "e196563bf72a5184d71982e7b0db5fff3912503bc2fa5b43eea4330d9194063e",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/left/labels.json": "4cbd8456c6151625044083656e20ab5fdacd6367f13b357242a8d737f16ba4bd",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0001_S1_open_apple/batched_1/arms/left/state/parked_arm.ply": "70b8d846297d775bfdebd6c22ad2cc4a36e35b3ce3ea1e448141f0732141a315",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0020_S1_open_donut/batched_1/arms/right/plan/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/right/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0020_S1_open_donut/batched_1/arms/right/plan/scene.json": "8f93bb4498e3a21b5358d57b954aac768d050d4742d291cde2adbe471d7ac8a4",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/right/scene.json": "8f93bb4498e3a21b5358d57b954aac768d050d4742d291cde2adbe471d7ac8a4",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0020_S1_open_donut/batched_1/state.json": "0030f6ccd01f620510abf588f2fee10953f7398d7408824e3544d0f5f6791277",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0020_S1_open_donut/batched_1/candidates/candidate_pool.json": "1c7c5b85d3db6501f14ed9b959c4411a478c2d8c2568c7f1361624da42f484b5",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/right/targets.npz": "5cffd885137691c1797698a600c9e2f1400d91b92a3e64ca56ce9bec5004499a",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/right/labels.json": "54ae7c1c1bae993e11bbc45f060d9986a21610b3bbe1c46b64545b883b3c29b2",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0020_S1_open_donut/batched_1/arms/right/state/parked_arm.ply": "36dabcdc429d39f93f5b6d6cf6002145ac24202d098a49c1c2a9e26912656034",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0020_S1_open_donut/batched_1/arms/left/plan/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/left/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0020_S1_open_donut/batched_1/arms/left/plan/scene.json": "060d2b06ee4d4bc4d91e820604a9098edf30bf5ec4839e6c68ea7d3794275f77",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/left/scene.json": "060d2b06ee4d4bc4d91e820604a9098edf30bf5ec4839e6c68ea7d3794275f77",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/left/targets.npz": "fbfb9795e61f8d7da2126ccc7d0d76cec8a6efa277725d45fcc12b3923733e20",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/left/labels.json": "54ae7c1c1bae993e11bbc45f060d9986a21610b3bbe1c46b64545b883b3c29b2",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0020_S1_open_donut/batched_1/arms/left/state/parked_arm.ply": "7e7e0971cb2384321d4ae382ef45a07e1ae5d9eafcc1987f1da07b4ad6d450c1",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0044_S3_sparse_banana/batched_1/arms/right/plan/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/right/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0044_S3_sparse_banana/batched_1/arms/right/plan/scene.json": "a4740697b23921c923225f8b59e4f677f606f70e05771736cbc1d0744068b3e6",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/right/scene.json": "a4740697b23921c923225f8b59e4f677f606f70e05771736cbc1d0744068b3e6",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0044_S3_sparse_banana/batched_1/state.json": "bcbe35fe483f13ccc08a43c05fc32ab9f3a48c29baa28090f4b05b703796bfab",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0044_S3_sparse_banana/batched_1/candidates/candidate_pool.json": "1873a0fa50a92db1fe7935507c124f75077f8d34d3e491e5fb294a237c1b4552",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/right/targets.npz": "8b4a459dad04d190cd567ec48de6ae5bec28f8b051790799a0c16381cc4a39c5",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/right/labels.json": "fa7a9bc532dbf9e5d565a349d9aaa248799ea7810c50d4531a0aab196faaf99e",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/64d3d5523aa22a140a3826b88fb08c385ff0852791839591edb6c08374e0d788.ply": "72e955e80570335cfd0a1dbd9aff9c8d6f4169455f90c1c9d3323985de30a30e",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/f5960056f74894ae57395eabced70446c0132fee351453f590aa58ef109a20d5.ply": "70bfdd939fc5877cf2b079ba44936b8d8d5804add1752ebfcd4172d03d1d99e8",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/54f74e66038fd8f403b27fbcb967e702deb7cc0597ef140479d2d454886572be.ply": "b0e6957505e977681c3467198ff9f8a7da02de133642a8ab60f76fecabda008c",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0044_S3_sparse_banana/batched_1/arms/right/state/parked_arm.ply": "7099e858e9abbd080b1b08eee99fe15347d8e3196e4aa458fb572771ec562010",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0044_S3_sparse_banana/batched_1/arms/left/plan/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/left/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0044_S3_sparse_banana/batched_1/arms/left/plan/scene.json": "6d33edb782bc9012edea3929102541e3210c9ea025248028a72330894ae8b433",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/left/scene.json": "6d33edb782bc9012edea3929102541e3210c9ea025248028a72330894ae8b433",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/left/targets.npz": "8245da629dc00fa5a9b180bfceb9640e897a2df14c98565f152fe894a046a656",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/left/labels.json": "fa7a9bc532dbf9e5d565a349d9aaa248799ea7810c50d4531a0aab196faaf99e",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0044_S3_sparse_banana/batched_1/arms/left/state/parked_arm.ply": "f66546e2f606b053b4afaec11786bfe0ec81f0b1ae7a9209706b3dcffc21a922",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0064_S4_clutter_mango/batched_1/arms/right/plan/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/right/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0064_S4_clutter_mango/batched_1/arms/right/plan/scene.json": "acb9c2986206efcb5912b535d65a1685733feab0f2a045f48fa41e1a748fca04",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/right/scene.json": "acb9c2986206efcb5912b535d65a1685733feab0f2a045f48fa41e1a748fca04",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0064_S4_clutter_mango/batched_1/state.json": "251112cddf0d29ccac428d1e2866acf036745695979baf89223bbdb93bd7bf60",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0064_S4_clutter_mango/batched_1/candidates/candidate_pool.json": "df63470e42224b362a6c8594afcd786ab8ab43de1245c94c6085b705a61e5803",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/right/targets.npz": "02d85372242940cded5cdc73b08461989795301b430aff09a21c4f7224fb3dac",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/right/labels.json": "bafc15e119df27152e29bac107fe37cc5e3058840f9563090addebea61eeb867",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/dc55da0c971ebe691f46bef7eea8f40ddc29e5f449e3416eb514309fcdda95d4.ply": "756bf94b153e83657fbad62f821548a199c29a9cb0c0c6970e4ee32f6213cb45",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/22a78ff3daa25f75792385dc50ec1950dc1a2055fd6688debe8ad8516b50a3fa.ply": "a535b434d64cf01548fdbe67e1372f4241399ea5b3a59019a88c70823849b7e8",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/8c24824d0386667fcc34e1675b7e4b844f92de98f3745b230151df5654079f3c.ply": "873181aaca4cd84bf40d55af0eab4aa872c79321ba28fdac55397dcca9362a5d",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/e557b284ffff87c176dd088ed7b1e6a7debda146931ce2741d2a476eedd4caf3.ply": "caf2cedc674515f0327bcf0dc89d0019c34bee1f5373e7b7c315411af1278fe6",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/7600e93978e2a37fb5b3328531b19a7189fe4cc112e99bbd3cb1949069c89960.ply": "ebaa79e4c6b4f62c1b5d1086821a19da08cfd8f4f642ac900f7606549681982e",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0064_S4_clutter_mango/batched_1/arms/right/state/parked_arm.ply": "03af3f39e586d2dc41d50ae568823964ed9508006c0b6c2c5ce09cc9169caed1",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0064_S4_clutter_mango/batched_1/arms/left/plan/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/left/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0064_S4_clutter_mango/batched_1/arms/left/plan/scene.json": "d366f2ac716635f5432b242da4ea4ecf557467cf51723cfd5087ed0e95daedfe",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/left/scene.json": "d366f2ac716635f5432b242da4ea4ecf557467cf51723cfd5087ed0e95daedfe",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/left/targets.npz": "3c1d84adcdc9f81e65e76249b12077dceec756408c528cdfc1b0e528d6cbf189",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/left/labels.json": "bafc15e119df27152e29bac107fe37cc5e3058840f9563090addebea61eeb867",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0064_S4_clutter_mango/batched_1/arms/left/state/parked_arm.ply": "27af1cd0f0b0bd391521e2800da51bb99d266bc2adfc345277c930763841e661",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0074_S4_clutter_scissors/batched_1/arms/right/plan/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/right/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0074_S4_clutter_scissors/batched_1/arms/right/plan/scene.json": "28014e21d8ed2b6bde336102f533ba161504e3e133982491852d07e6e6377e18",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/right/scene.json": "28014e21d8ed2b6bde336102f533ba161504e3e133982491852d07e6e6377e18",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0074_S4_clutter_scissors/batched_1/state.json": "4fcead14c3c3ea123536827f3aeddd4807526f8e2c76ad72ec6a744fd69aa858",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0074_S4_clutter_scissors/batched_1/candidates/candidate_pool.json": "44fdfe17894bd0eb2510e735a1decd74ca0fa5319e5bd49d58f222513dbea932",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/right/targets.npz": "9c22bb4fb9a364d9b1dd2ac5daad1fa9b0c3efd76cecab508d79a969a60b478f",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/right/labels.json": "1eccaabc607e75df154c3a17b82a9ea3961057fc0a271d20cf23709c17ffb227",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/8049fe9ae2f3ffa5319cea0d0806c77ffe4227b280b100b35c2aab02d2887948.ply": "a9b0a4e82769949de20923635b279a7e875627b41d58e5d18b12fae89ce2fc1e",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/8fe7612757ef5006730dee2b56be9830f60a51f37684c6f2aa588e2120710c39.ply": "de65394d6ad462ad9ff371ff8ff583055a7d56b637fa8b7c53a097800c23552a",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/77b1fb481095c8a571dc16bec503ebddc0fc3d57b7c15dcc1fa79cbc4c8abd42.ply": "905bf8836f5cdd91e30e08244e8c5ae6422d131bce3ff0967726ebe64582b2f5",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/227b3b29c9ff3133824626ecb182bec32dc64540808eb1145a7fe43d4af30890.ply": "e4e618ba4e7be72204df24d16452817221c2c69dc22127e1258a85119b51913d",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/maniskill/cache/arx_scene_collision/1061975fbb5eecc62925c50013ed2da61b7569de291db009a19f9be2d4cc4e30.ply": "e050e89445ac46db6944ae78af809696a12b8b0a290ad0bdc67f47bcf8c910e2",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0074_S4_clutter_scissors/batched_1/arms/right/state/parked_arm.ply": "76cd7398ad75f4638a96e6f29c8fc5d53533c42a74633398a63595f046e47c23",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0074_S4_clutter_scissors/batched_1/arms/left/plan/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/left/arx.yml": "bd0c3a9b7bf44490b639375c0d49816ef45aad6ba04b1b857070e67de01658f7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0074_S4_clutter_scissors/batched_1/arms/left/plan/scene.json": "0738ccf6b63bb828f7f2e323f023a1798f4c2ab00c0466ee33fea36d2d730f3f",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/left/scene.json": "0738ccf6b63bb828f7f2e323f023a1798f4c2ab00c0466ee33fea36d2d730f3f",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/left/targets.npz": "28649ec6f168b1724f679057cf8445de2b229e0adccb3863c56671fc611fce36",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/left/labels.json": "1eccaabc607e75df154c3a17b82a9ea3961057fc0a271d20cf23709c17ffb227",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/gripper_state_reuse/geometry5_20261127_02/plans/M0074_S4_clutter_scissors/batched_1/arms/left/state/parked_arm.ply": "a91c09b3f57d370959fa31cae38ea8de9b487b24d565b23e164ee29a77f48407",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "e453ed7124bf026c3e384229db842407729e6a2f85be36eba7b4b4ab821ee1b7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/configs/experiments/active_experiment.json": "179a1e21877fe4973c3d9774fdc0406a71845bb14530e0875f11ccd14ee9eeb3",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/simulation/robots/arx/collision/arx_refined_871.json": "0888753f7335f63b35737eab04dfe2081c199e471c7d0ba5a6afbc944f6b791e",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/configs/policies/fingertip_table.json": "71f2041e9abf1fdcd5d71adb8909bc9c5261bcfdd09e476d0ca53015ab70eed8"
+    },
+    "production_bytes": {
+      "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "e453ed7124bf026c3e384229db842407729e6a2f85be36eba7b4b4ab821ee1b7",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/configs/experiments/active_experiment.json": "179a1e21877fe4973c3d9774fdc0406a71845bb14530e0875f11ccd14ee9eeb3",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/simulation/robots/arx/collision/arx_refined_871.json": "0888753f7335f63b35737eab04dfe2081c199e471c7d0ba5a6afbc944f6b791e",
+      "/home/zhaoyechong/projects/ARX-ManiSkill/configs/policies/fingertip_table.json": "71f2041e9abf1fdcd5d71adb8909bc9c5261bcfdd09e476d0ca53015ab70eed8"
+    },
+    "planning_requests": 0,
+    "physical_grasps": 0,
+    "simulation_instances": 0,
+    "active_planner_modified": false,
+    "variant": "FP64_algebra_with_verified_FP32_commands",
+    "input_dtype": "float64_original_targets",
+    "command_dtype": "float32_checked_against_original_target",
+    "precision_predecessor": "tmp/analytic_ik/batch256_20261127_01",
+    "rotation_normalization": "internal_only; acceptance uses original raw target"
+  },
+  "acceptance": {
+    "at": "2026-11-27T14:12:09.827633+08:00",
+    "task_complete": true,
+    "record_integrity": true,
+    "collision_cases": 10,
+    "pure_analytic": [
+      {
+        "arm": "right",
+        "targets": 4096,
+        "known_branches_recovered": 4096,
+        "exact_EAIK_reference_branches": 163,
+        "exact_EAIK_branches_matched": 163,
+        "targets_with_valid_branch": 4096,
+        "fallback_required": 0,
+        "independent_FK": {
+          "branches": 5295,
+          "maximum_position_error_m": 1.3892071687571e-07,
+          "maximum_rotation_error_rad": 3.3285047476134534e-07
+        },
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.27948796749115,
+              "p90_ms": 1.8889727711677555,
+              "mean_ms": 1.4663270330429077,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 9.522294509224594,
+              "p90_ms": 10.065129108261317,
+              "mean_ms": 9.468674508389086,
+              "samples": 10
+            }
+          }
+        }
+      },
+      {
+        "arm": "left",
+        "targets": 4096,
+        "known_branches_recovered": 4096,
+        "exact_EAIK_reference_branches": 166,
+        "exact_EAIK_branches_matched": 166,
+        "targets_with_valid_branch": 4096,
+        "fallback_required": 0,
+        "independent_FK": {
+          "branches": 5311,
+          "maximum_position_error_m": 1.331886125289999e-07,
+          "maximum_rotation_error_rad": 2.963331549680526e-07
+        },
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.25491201877594,
+              "p90_ms": 1.2882944345474243,
+              "mean_ms": 1.213501443862915,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 9.592204514774494,
+              "p90_ms": 9.806707594543695,
+              "mean_ms": 9.57057089835871,
+              "samples": 10
+            }
+          }
+        }
+      }
+    ],
+    "cases": [
+      {
+        "case": "M0001_S1_open_apple",
+        "arm": "right",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/right",
+        "real_targets": 207,
+        "padded_targets": 49,
+        "input_candidates": 69,
+        "passed": true,
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.2748799920082092,
+              "p90_ms": 1.397760033607483,
+              "mean_ms": 1.2960563230514526,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 9.441932488698512,
+              "p90_ms": 9.777460689656436,
+              "mean_ms": 9.353528200881556,
+              "samples": 10
+            }
+          },
+          "native_FK_world_2048": {
+            "graph_device": {
+              "median_ms": 0.8714240193367004,
+              "p90_ms": 1.197260844707489,
+              "mean_ms": 0.9834700775146484,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 2.553758502472192,
+              "p90_ms": 2.9146736924303696,
+              "mean_ms": 2.6413593033794314,
+              "samples": 10
+            }
+          },
+          "native_FK_world_self_2048": {
+            "graph_device": {
+              "median_ms": 1.6005120277404785,
+              "p90_ms": 1.7448960542678833,
+              "mean_ms": 1.6170393705368042,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 2.8901785117341205,
+              "p90_ms": 3.028631705092266,
+              "mean_ms": 2.8952760039828718,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world": {
+            "graph_device": {
+              "median_ms": 2.1990400552749634,
+              "p90_ms": 2.315673589706421,
+              "mean_ms": 2.2745087790489196,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 11.859558493597433,
+              "p90_ms": 13.159901613835245,
+              "mean_ms": 11.984989399206825,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world_self": {
+            "graph_device": {
+              "median_ms": 2.7238399982452393,
+              "p90_ms": 2.9978623390197754,
+              "mean_ms": 2.7750195169448855,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 12.475487485062331,
+              "p90_ms": 13.164060792769305,
+              "mean_ms": 12.497850292129442,
+              "samples": 10
+            }
+          }
+        },
+        "initialization_and_graph_capture_seconds": 6.42136814299738,
+        "host_API_with_upload_owned_outputs_and_download": {
+          "median_ms": 3.856117502436973,
+          "p90_ms": 4.87384602020029,
+          "mean_ms": 4.132235108409077,
+          "samples": 10
+        },
+        "analytic_targets_with_legal_branch": 61,
+        "valid_analytic_branches": 61,
+        "world_clear_branches": 52,
+        "world_and_self_clear_branches": 52,
+        "fallback_targets": 146,
+        "native_sphere_count": 871,
+        "native_FK_measured_coordinates": 8,
+        "planning_arm_DOF": 6,
+        "width_equivalence": {
+          "passed": true,
+          "states": 48,
+          "maximum_sphere_difference_m": 1.1920928955078125e-07,
+          "rows": [
+            {
+              "width_m": 0.088,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.06,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.04,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            }
+          ]
+        },
+        "session_contract": {
+          "passed": true,
+          "graph_matches_eager": true,
+          "owned_outputs": true,
+          "empty_input": true,
+          "invalid_width_rejected": true,
+          "invalid_target_rejected": true,
+          "padding_hidden": true
+        },
+        "independent_FK": {
+          "branches": 61,
+          "maximum_position_error_m": 9.017736779223412e-08,
+          "maximum_rotation_error_rad": 2.736783210863729e-07
+        },
+        "V2_table_narrow_phase_not_applied_to_these_native_masks": true,
+        "source_active_self_collision_setting": false,
+        "diagnostic_world_self_mask_also_available": true,
+        "branch_receipt_sha256": "10c5bcce1bb88672cd962085a24a7526d2fb3b56d8a82c0f0848d35b643a7724"
+      },
+      {
+        "case": "M0001_S1_open_apple",
+        "arm": "left",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0001_S1_open_apple/left",
+        "real_targets": 207,
+        "padded_targets": 49,
+        "input_candidates": 69,
+        "passed": true,
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.2636159658432007,
+              "p90_ms": 1.3015039920806886,
+              "mean_ms": 1.2514918446540833,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 10.127393485163338,
+              "p90_ms": 10.659472312545404,
+              "mean_ms": 10.129982797661796,
+              "samples": 10
+            }
+          },
+          "native_FK_world_2048": {
+            "graph_device": {
+              "median_ms": 4.158463954925537,
+              "p90_ms": 4.322406530380249,
+              "mean_ms": 4.217528319358825,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 6.333250508760102,
+              "p90_ms": 8.368090805015527,
+              "mean_ms": 6.715909400372766,
+              "samples": 10
+            }
+          },
+          "native_FK_world_self_2048": {
+            "graph_device": {
+              "median_ms": 4.642815828323364,
+              "p90_ms": 5.3331968784332275,
+              "mean_ms": 4.829020166397095,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 6.670888993539847,
+              "p90_ms": 8.635946901631542,
+              "mean_ms": 7.065415603574365,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world": {
+            "graph_device": {
+              "median_ms": 5.3089280128479,
+              "p90_ms": 5.931417417526246,
+              "mean_ms": 5.624872941970825,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 16.636218497296795,
+              "p90_ms": 17.186680500162765,
+              "mean_ms": 16.51959719893057,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world_self": {
+            "graph_device": {
+              "median_ms": 5.901311874389648,
+              "p90_ms": 6.794751930236817,
+              "mean_ms": 6.171934738159179,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 17.379247001372278,
+              "p90_ms": 18.649077910231426,
+              "mean_ms": 17.52946269698441,
+              "samples": 10
+            }
+          }
+        },
+        "initialization_and_graph_capture_seconds": 6.138543013017625,
+        "host_API_with_upload_owned_outputs_and_download": {
+          "median_ms": 7.381846517091617,
+          "p90_ms": 9.780719107948244,
+          "mean_ms": 7.823199100675993,
+          "samples": 10
+        },
+        "analytic_targets_with_legal_branch": 52,
+        "valid_analytic_branches": 53,
+        "world_clear_branches": 45,
+        "world_and_self_clear_branches": 45,
+        "fallback_targets": 155,
+        "native_sphere_count": 871,
+        "native_FK_measured_coordinates": 8,
+        "planning_arm_DOF": 6,
+        "width_equivalence": {
+          "passed": true,
+          "states": 48,
+          "maximum_sphere_difference_m": 1.1920928955078125e-07,
+          "rows": [
+            {
+              "width_m": 0.088,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.06,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.04,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            }
+          ]
+        },
+        "session_contract": {
+          "passed": true,
+          "graph_matches_eager": true,
+          "owned_outputs": true,
+          "empty_input": true,
+          "invalid_width_rejected": true,
+          "invalid_target_rejected": true,
+          "padding_hidden": true
+        },
+        "independent_FK": {
+          "branches": 53,
+          "maximum_position_error_m": 9.653881703799181e-08,
+          "maximum_rotation_error_rad": 2.0478152874082917e-07
+        },
+        "V2_table_narrow_phase_not_applied_to_these_native_masks": true,
+        "source_active_self_collision_setting": false,
+        "diagnostic_world_self_mask_also_available": true,
+        "branch_receipt_sha256": "031c233eeb12a0f7b15ad2a5940bc95cdeaaf60b7eb5efa277e5955751218e27"
+      },
+      {
+        "case": "M0020_S1_open_donut",
+        "arm": "right",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/right",
+        "real_targets": 63,
+        "padded_targets": 193,
+        "input_candidates": 21,
+        "passed": true,
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.2538880109786987,
+              "p90_ms": 1.3383680582046509,
+              "mean_ms": 1.2550553607940673,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 9.800387502764352,
+              "p90_ms": 10.22796280158218,
+              "mean_ms": 9.8305713996524,
+              "samples": 10
+            }
+          },
+          "native_FK_world_2048": {
+            "graph_device": {
+              "median_ms": 0.45875200629234314,
+              "p90_ms": 0.731340777873993,
+              "mean_ms": 0.520069118142128,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 2.1803815034218132,
+              "p90_ms": 2.6940709067275748,
+              "mean_ms": 2.346890201442875,
+              "samples": 10
+            }
+          },
+          "native_FK_world_self_2048": {
+            "graph_device": {
+              "median_ms": 1.2032000422477722,
+              "p90_ms": 1.3286399841308594,
+              "mean_ms": 1.1665612769126892,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 2.7138264995301142,
+              "p90_ms": 2.8041911107720807,
+              "mean_ms": 2.7105060988105834,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world": {
+            "graph_device": {
+              "median_ms": 1.7382400035858154,
+              "p90_ms": 1.8604032516479494,
+              "mean_ms": 1.7523916888237,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 12.00073299696669,
+              "p90_ms": 12.42019300116226,
+              "mean_ms": 11.84570640034508,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world_self": {
+            "graph_device": {
+              "median_ms": 2.258944034576416,
+              "p90_ms": 2.451558470726013,
+              "mean_ms": 2.3812914991378786,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 12.428098008967936,
+              "p90_ms": 13.029389319126494,
+              "mean_ms": 12.486247005290352,
+              "samples": 10
+            }
+          }
+        },
+        "initialization_and_graph_capture_seconds": 6.446624496980803,
+        "host_API_with_upload_owned_outputs_and_download": {
+          "median_ms": 2.664553001523018,
+          "p90_ms": 3.0569197959266603,
+          "mean_ms": 2.777324998169206,
+          "samples": 10
+        },
+        "analytic_targets_with_legal_branch": 28,
+        "valid_analytic_branches": 28,
+        "world_clear_branches": 27,
+        "world_and_self_clear_branches": 27,
+        "fallback_targets": 35,
+        "native_sphere_count": 871,
+        "native_FK_measured_coordinates": 8,
+        "planning_arm_DOF": 6,
+        "width_equivalence": {
+          "passed": true,
+          "states": 48,
+          "maximum_sphere_difference_m": 1.1920928955078125e-07,
+          "rows": [
+            {
+              "width_m": 0.088,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.06,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.04,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            }
+          ]
+        },
+        "session_contract": {
+          "passed": true,
+          "graph_matches_eager": true,
+          "owned_outputs": true,
+          "empty_input": true,
+          "invalid_width_rejected": true,
+          "invalid_target_rejected": true,
+          "padding_hidden": true
+        },
+        "independent_FK": {
+          "branches": 28,
+          "maximum_position_error_m": 7.301452722448557e-08,
+          "maximum_rotation_error_rad": 2.280307356722939e-07
+        },
+        "V2_table_narrow_phase_not_applied_to_these_native_masks": true,
+        "source_active_self_collision_setting": false,
+        "diagnostic_world_self_mask_also_available": true,
+        "branch_receipt_sha256": "96234539372b9b95616437cb04d975a423d8fef2280427b263ff9211d177320b"
+      },
+      {
+        "case": "M0020_S1_open_donut",
+        "arm": "left",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0020_S1_open_donut/left",
+        "real_targets": 63,
+        "padded_targets": 193,
+        "input_candidates": 21,
+        "passed": true,
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.2544000148773193,
+              "p90_ms": 1.2902400255203248,
+              "mean_ms": 1.2247039914131164,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 9.697709014290012,
+              "p90_ms": 10.422329508583061,
+              "mean_ms": 9.70349890703801,
+              "samples": 10
+            }
+          },
+          "native_FK_world_2048": {
+            "graph_device": {
+              "median_ms": 5.262336015701294,
+              "p90_ms": 5.6535038471221934,
+              "mean_ms": 5.594357748031616,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 8.509217484970577,
+              "p90_ms": 9.84529580164235,
+              "mean_ms": 8.538026292808354,
+              "samples": 10
+            }
+          },
+          "native_FK_world_self_2048": {
+            "graph_device": {
+              "median_ms": 5.880320072174072,
+              "p90_ms": 6.856703996658326,
+              "mean_ms": 6.099783668518066,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 7.845393003663048,
+              "p90_ms": 10.258713801158592,
+              "mean_ms": 8.511701103998348,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world": {
+            "graph_device": {
+              "median_ms": 6.558720111846924,
+              "p90_ms": 6.733721685409546,
+              "mean_ms": 6.649774074554443,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 17.088709500967525,
+              "p90_ms": 17.873547703493387,
+              "mean_ms": 17.149204801535234,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world_self": {
+            "graph_device": {
+              "median_ms": 7.089663982391357,
+              "p90_ms": 7.527219009399415,
+              "mean_ms": 7.276748828887939,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 18.070546007947996,
+              "p90_ms": 19.909896998433396,
+              "mean_ms": 18.220723603735678,
+              "samples": 10
+            }
+          }
+        },
+        "initialization_and_graph_capture_seconds": 6.196367173019098,
+        "host_API_with_upload_owned_outputs_and_download": {
+          "median_ms": 8.344886009581387,
+          "p90_ms": 9.16352600615937,
+          "mean_ms": 8.745432505384088,
+          "samples": 10
+        },
+        "analytic_targets_with_legal_branch": 4,
+        "valid_analytic_branches": 4,
+        "world_clear_branches": 3,
+        "world_and_self_clear_branches": 3,
+        "fallback_targets": 59,
+        "native_sphere_count": 871,
+        "native_FK_measured_coordinates": 8,
+        "planning_arm_DOF": 6,
+        "width_equivalence": {
+          "passed": true,
+          "states": 48,
+          "maximum_sphere_difference_m": 1.1920928955078125e-07,
+          "rows": [
+            {
+              "width_m": 0.088,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.06,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.04,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            }
+          ]
+        },
+        "session_contract": {
+          "passed": true,
+          "graph_matches_eager": true,
+          "owned_outputs": true,
+          "empty_input": true,
+          "invalid_width_rejected": true,
+          "invalid_target_rejected": true,
+          "padding_hidden": true
+        },
+        "independent_FK": {
+          "branches": 4,
+          "maximum_position_error_m": 6.025192631676213e-08,
+          "maximum_rotation_error_rad": 1.7635283498489833e-07
+        },
+        "V2_table_narrow_phase_not_applied_to_these_native_masks": true,
+        "source_active_self_collision_setting": false,
+        "diagnostic_world_self_mask_also_available": true,
+        "branch_receipt_sha256": "e28816af914a6f5aa39d0d42df95faafc201e92bc1ee89bcb8709ca1525a2f7a"
+      },
+      {
+        "case": "M0044_S3_sparse_banana",
+        "arm": "right",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/right",
+        "real_targets": 105,
+        "padded_targets": 151,
+        "input_candidates": 35,
+        "passed": true,
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.191424012184143,
+              "p90_ms": 1.2914688467979432,
+              "mean_ms": 1.2076236748695373,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 9.92313948518131,
+              "p90_ms": 10.328556704916991,
+              "mean_ms": 9.95979990111664,
+              "samples": 10
+            }
+          },
+          "native_FK_world_2048": {
+            "graph_device": {
+              "median_ms": 3.9552000761032104,
+              "p90_ms": 4.060057640075684,
+              "mean_ms": 4.0437554931640625,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 5.927285994403064,
+              "p90_ms": 6.5967624192126095,
+              "mean_ms": 5.972423701314256,
+              "samples": 10
+            }
+          },
+          "native_FK_world_self_2048": {
+            "graph_device": {
+              "median_ms": 4.443648099899292,
+              "p90_ms": 4.701081562042237,
+              "mean_ms": 4.636467208862305,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 5.9832559927599505,
+              "p90_ms": 6.430754603934474,
+              "mean_ms": 6.04354590177536,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world": {
+            "graph_device": {
+              "median_ms": 5.175296068191528,
+              "p90_ms": 5.3304320812225345,
+              "mean_ms": 5.2954112148284915,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 15.959530515829101,
+              "p90_ms": 17.200425997725688,
+              "mean_ms": 16.159946098923683,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world_self": {
+            "graph_device": {
+              "median_ms": 5.705727815628052,
+              "p90_ms": 6.589644765853882,
+              "mean_ms": 5.948989429473877,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 16.236887517152354,
+              "p90_ms": 17.869963104021735,
+              "mean_ms": 16.42391570203472,
+              "samples": 10
+            }
+          }
+        },
+        "initialization_and_graph_capture_seconds": 6.471115414984524,
+        "host_API_with_upload_owned_outputs_and_download": {
+          "median_ms": 6.785228993976489,
+          "p90_ms": 8.68452278955374,
+          "mean_ms": 7.106306398054585,
+          "samples": 10
+        },
+        "analytic_targets_with_legal_branch": 9,
+        "valid_analytic_branches": 9,
+        "world_clear_branches": 2,
+        "world_and_self_clear_branches": 2,
+        "fallback_targets": 96,
+        "native_sphere_count": 871,
+        "native_FK_measured_coordinates": 8,
+        "planning_arm_DOF": 6,
+        "width_equivalence": {
+          "passed": true,
+          "states": 48,
+          "maximum_sphere_difference_m": 1.1920928955078125e-07,
+          "rows": [
+            {
+              "width_m": 0.088,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.06,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.04,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            }
+          ]
+        },
+        "session_contract": {
+          "passed": true,
+          "graph_matches_eager": true,
+          "owned_outputs": true,
+          "empty_input": true,
+          "invalid_width_rejected": true,
+          "invalid_target_rejected": true,
+          "padding_hidden": true
+        },
+        "independent_FK": {
+          "branches": 9,
+          "maximum_position_error_m": 6.466605067399202e-08,
+          "maximum_rotation_error_rad": 1.2012251299020457e-07
+        },
+        "V2_table_narrow_phase_not_applied_to_these_native_masks": true,
+        "source_active_self_collision_setting": false,
+        "diagnostic_world_self_mask_also_available": true,
+        "branch_receipt_sha256": "d01f161251dd5ac4978fb4f771fa83e8b6a46b86cf046766161c3f9a64f3f042"
+      },
+      {
+        "case": "M0044_S3_sparse_banana",
+        "arm": "left",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0044_S3_sparse_banana/left",
+        "real_targets": 105,
+        "padded_targets": 151,
+        "input_candidates": 35,
+        "passed": true,
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.264639973640442,
+              "p90_ms": 1.345740795135498,
+              "mean_ms": 1.2743884778022767,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 13.555230994825251,
+              "p90_ms": 15.453430713387204,
+              "mean_ms": 13.563476200215518,
+              "samples": 10
+            }
+          },
+          "native_FK_world_2048": {
+            "graph_device": {
+              "median_ms": 0.8714240193367004,
+              "p90_ms": 1.1189248323440553,
+              "mean_ms": 0.9421619248390197,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 3.937819492421113,
+              "p90_ms": 5.190802109427749,
+              "mean_ms": 4.2481890035560355,
+              "samples": 10
+            }
+          },
+          "native_FK_world_self_2048": {
+            "graph_device": {
+              "median_ms": 1.6046080589294434,
+              "p90_ms": 1.7685503482818605,
+              "mean_ms": 1.5920332860946655,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 4.144383507082239,
+              "p90_ms": 5.3889801987679675,
+              "mean_ms": 4.253814605181105,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world": {
+            "graph_device": {
+              "median_ms": 2.200576066970825,
+              "p90_ms": 2.3524352073669434,
+              "mean_ms": 2.3007232046127317,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 16.30159049818758,
+              "p90_ms": 18.369217595318332,
+              "mean_ms": 16.168036402086727,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world_self": {
+            "graph_device": {
+              "median_ms": 2.748415946960449,
+              "p90_ms": 2.889523220062256,
+              "mean_ms": 2.8776652669906615,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 17.12151599349454,
+              "p90_ms": 18.336343701230362,
+              "mean_ms": 17.03682349761948,
+              "samples": 10
+            }
+          }
+        },
+        "initialization_and_graph_capture_seconds": 6.177646485011792,
+        "host_API_with_upload_owned_outputs_and_download": {
+          "median_ms": 4.203670992865227,
+          "p90_ms": 5.522473904420622,
+          "mean_ms": 4.547017198638059,
+          "samples": 10
+        },
+        "analytic_targets_with_legal_branch": 54,
+        "valid_analytic_branches": 54,
+        "world_clear_branches": 50,
+        "world_and_self_clear_branches": 50,
+        "fallback_targets": 51,
+        "native_sphere_count": 871,
+        "native_FK_measured_coordinates": 8,
+        "planning_arm_DOF": 6,
+        "width_equivalence": {
+          "passed": true,
+          "states": 48,
+          "maximum_sphere_difference_m": 1.1920928955078125e-07,
+          "rows": [
+            {
+              "width_m": 0.088,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.06,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.04,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            }
+          ]
+        },
+        "session_contract": {
+          "passed": true,
+          "graph_matches_eager": true,
+          "owned_outputs": true,
+          "empty_input": true,
+          "invalid_width_rejected": true,
+          "invalid_target_rejected": true,
+          "padding_hidden": true
+        },
+        "independent_FK": {
+          "branches": 54,
+          "maximum_position_error_m": 8.14111608973072e-08,
+          "maximum_rotation_error_rad": 1.9723022626569309e-07
+        },
+        "V2_table_narrow_phase_not_applied_to_these_native_masks": true,
+        "source_active_self_collision_setting": false,
+        "diagnostic_world_self_mask_also_available": true,
+        "branch_receipt_sha256": "a08655944c70c518b12316359f1120582adf3df0d1d46387bfe35795f70db13f"
+      },
+      {
+        "case": "M0064_S4_clutter_mango",
+        "arm": "right",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/right",
+        "real_targets": 117,
+        "padded_targets": 139,
+        "input_candidates": 39,
+        "passed": true,
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.1929600238800049,
+              "p90_ms": 1.2991487860679627,
+              "mean_ms": 1.2525567936897277,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 10.111622003023513,
+              "p90_ms": 10.463160992367193,
+              "mean_ms": 10.077132700826041,
+              "samples": 10
+            }
+          },
+          "native_FK_world_2048": {
+            "graph_device": {
+              "median_ms": 4.254208087921143,
+              "p90_ms": 4.829491233825683,
+              "mean_ms": 4.446433248519898,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 6.296717008808628,
+              "p90_ms": 6.984802690567449,
+              "mean_ms": 6.274716099142097,
+              "samples": 10
+            }
+          },
+          "native_FK_world_self_2048": {
+            "graph_device": {
+              "median_ms": 4.746239900588989,
+              "p90_ms": 4.90321912765503,
+              "mean_ms": 4.87497724533081,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 6.448600004659966,
+              "p90_ms": 8.87819399649743,
+              "mean_ms": 6.981532103964128,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world": {
+            "graph_device": {
+              "median_ms": 5.424639940261841,
+              "p90_ms": 5.551513433456421,
+              "mean_ms": 5.589811182022094,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 16.213630005950108,
+              "p90_ms": 17.620237308437936,
+              "mean_ms": 16.45593780267518,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world_self": {
+            "graph_device": {
+              "median_ms": 5.986304044723511,
+              "p90_ms": 6.161100959777832,
+              "mean_ms": 6.103900165557861,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 16.218525997828692,
+              "p90_ms": 17.30515580275096,
+              "mean_ms": 16.38384039979428,
+              "samples": 10
+            }
+          }
+        },
+        "initialization_and_graph_capture_seconds": 6.152955634985119,
+        "host_API_with_upload_owned_outputs_and_download": {
+          "median_ms": 7.2139609983423725,
+          "p90_ms": 9.646060480736194,
+          "mean_ms": 8.097143901977688,
+          "samples": 10
+        },
+        "analytic_targets_with_legal_branch": 40,
+        "valid_analytic_branches": 46,
+        "world_clear_branches": 43,
+        "world_and_self_clear_branches": 43,
+        "fallback_targets": 77,
+        "native_sphere_count": 871,
+        "native_FK_measured_coordinates": 8,
+        "planning_arm_DOF": 6,
+        "width_equivalence": {
+          "passed": true,
+          "states": 48,
+          "maximum_sphere_difference_m": 1.1920928955078125e-07,
+          "rows": [
+            {
+              "width_m": 0.088,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.06,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.04,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            }
+          ]
+        },
+        "session_contract": {
+          "passed": true,
+          "graph_matches_eager": true,
+          "owned_outputs": true,
+          "empty_input": true,
+          "invalid_width_rejected": true,
+          "invalid_target_rejected": true,
+          "padding_hidden": true
+        },
+        "independent_FK": {
+          "branches": 46,
+          "maximum_position_error_m": 7.743866733923902e-08,
+          "maximum_rotation_error_rad": 1.9347819210712832e-07
+        },
+        "V2_table_narrow_phase_not_applied_to_these_native_masks": true,
+        "source_active_self_collision_setting": false,
+        "diagnostic_world_self_mask_also_available": true,
+        "branch_receipt_sha256": "9b86107005016e3ffa4a7d987dabdd6f2e90ac99a08cd7a120ac691f6019d875"
+      },
+      {
+        "case": "M0064_S4_clutter_mango",
+        "arm": "left",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0064_S4_clutter_mango/left",
+        "real_targets": 117,
+        "padded_targets": 139,
+        "input_candidates": 39,
+        "passed": true,
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.2620799541473389,
+              "p90_ms": 1.3486079692840578,
+              "mean_ms": 1.296404480934143,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 9.7723600192694,
+              "p90_ms": 9.947287914110348,
+              "mean_ms": 9.764636604813859,
+              "samples": 10
+            }
+          },
+          "native_FK_world_2048": {
+            "graph_device": {
+              "median_ms": 2.0925439596176147,
+              "p90_ms": 2.270412874221802,
+              "mean_ms": 2.1358591985702513,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 3.514135503792204,
+              "p90_ms": 3.777966304915026,
+              "mean_ms": 3.5601490031694993,
+              "samples": 10
+            }
+          },
+          "native_FK_world_self_2048": {
+            "graph_device": {
+              "median_ms": 2.5712640285491943,
+              "p90_ms": 3.0360575914382935,
+              "mean_ms": 2.747514886856079,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 3.8964660052442923,
+              "p90_ms": 5.267115589231253,
+              "mean_ms": 4.165923199616373,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world": {
+            "graph_device": {
+              "median_ms": 3.344383955001831,
+              "p90_ms": 3.6523008346557617,
+              "mean_ms": 3.446702075004578,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 13.171819009585306,
+              "p90_ms": 13.892486202530563,
+              "mean_ms": 13.182348603731953,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world_self": {
+            "graph_device": {
+              "median_ms": 3.853824019432068,
+              "p90_ms": 4.181708908081054,
+              "mean_ms": 4.0190975999832155,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 13.628519503981806,
+              "p90_ms": 14.576061590923928,
+              "mean_ms": 13.868541701231152,
+              "samples": 10
+            }
+          }
+        },
+        "initialization_and_graph_capture_seconds": 6.282558396022068,
+        "host_API_with_upload_owned_outputs_and_download": {
+          "median_ms": 4.80423349654302,
+          "p90_ms": 5.871354622649959,
+          "mean_ms": 5.108662700513378,
+          "samples": 10
+        },
+        "analytic_targets_with_legal_branch": 70,
+        "valid_analytic_branches": 70,
+        "world_clear_branches": 69,
+        "world_and_self_clear_branches": 69,
+        "fallback_targets": 47,
+        "native_sphere_count": 871,
+        "native_FK_measured_coordinates": 8,
+        "planning_arm_DOF": 6,
+        "width_equivalence": {
+          "passed": true,
+          "states": 48,
+          "maximum_sphere_difference_m": 1.1920928955078125e-07,
+          "rows": [
+            {
+              "width_m": 0.088,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.06,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.04,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            }
+          ]
+        },
+        "session_contract": {
+          "passed": true,
+          "graph_matches_eager": true,
+          "owned_outputs": true,
+          "empty_input": true,
+          "invalid_width_rejected": true,
+          "invalid_target_rejected": true,
+          "padding_hidden": true
+        },
+        "independent_FK": {
+          "branches": 70,
+          "maximum_position_error_m": 7.084309989079613e-08,
+          "maximum_rotation_error_rad": 1.9520335974586954e-07
+        },
+        "V2_table_narrow_phase_not_applied_to_these_native_masks": true,
+        "source_active_self_collision_setting": false,
+        "diagnostic_world_self_mask_also_available": true,
+        "branch_receipt_sha256": "3e3b1f2b0f672a5c5974be47be6cf9f87fc36943e9416fe68a44e810f39e54d8"
+      },
+      {
+        "case": "M0074_S4_clutter_scissors",
+        "arm": "right",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/right",
+        "real_targets": 99,
+        "padded_targets": 157,
+        "input_candidates": 33,
+        "passed": true,
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.1284480094909668,
+              "p90_ms": 1.3022207736968996,
+              "mean_ms": 1.2205055999755858,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 9.525675486656837,
+              "p90_ms": 9.961269790073857,
+              "mean_ms": 9.359536992269568,
+              "samples": 10
+            }
+          },
+          "native_FK_world_2048": {
+            "graph_device": {
+              "median_ms": 2.8513280153274536,
+              "p90_ms": 3.1710208654403687,
+              "mean_ms": 3.045396475791931,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 4.799555012141354,
+              "p90_ms": 6.348147292737849,
+              "mean_ms": 5.11231120035518,
+              "samples": 10
+            }
+          },
+          "native_FK_world_self_2048": {
+            "graph_device": {
+              "median_ms": 3.4544639587402344,
+              "p90_ms": 3.709440088272095,
+              "mean_ms": 3.522580456733704,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 5.025245496653952,
+              "p90_ms": 5.878491309704258,
+              "mean_ms": 5.408395905396901,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world": {
+            "graph_device": {
+              "median_ms": 4.127744197845459,
+              "p90_ms": 4.293119812011719,
+              "mean_ms": 4.185108494758606,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 14.636464504292235,
+              "p90_ms": 16.276921701501124,
+              "mean_ms": 14.910380099900067,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world_self": {
+            "graph_device": {
+              "median_ms": 4.708863973617554,
+              "p90_ms": 4.841676950454712,
+              "mean_ms": 4.775526399612427,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 15.083610487636179,
+              "p90_ms": 16.73771570494864,
+              "mean_ms": 15.267841701279394,
+              "samples": 10
+            }
+          }
+        },
+        "initialization_and_graph_capture_seconds": 6.276708134013461,
+        "host_API_with_upload_owned_outputs_and_download": {
+          "median_ms": 6.82726850209292,
+          "p90_ms": 8.594595905742608,
+          "mean_ms": 6.993562501156703,
+          "samples": 10
+        },
+        "analytic_targets_with_legal_branch": 42,
+        "valid_analytic_branches": 45,
+        "world_clear_branches": 33,
+        "world_and_self_clear_branches": 33,
+        "fallback_targets": 57,
+        "native_sphere_count": 871,
+        "native_FK_measured_coordinates": 8,
+        "planning_arm_DOF": 6,
+        "width_equivalence": {
+          "passed": true,
+          "states": 48,
+          "maximum_sphere_difference_m": 1.1920928955078125e-07,
+          "rows": [
+            {
+              "width_m": 0.088,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.06,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.04,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            }
+          ]
+        },
+        "session_contract": {
+          "passed": true,
+          "graph_matches_eager": true,
+          "owned_outputs": true,
+          "empty_input": true,
+          "invalid_width_rejected": true,
+          "invalid_target_rejected": true,
+          "padding_hidden": true
+        },
+        "independent_FK": {
+          "branches": 45,
+          "maximum_position_error_m": 8.045474264645472e-08,
+          "maximum_rotation_error_rad": 2.2115040109415022e-07
+        },
+        "V2_table_narrow_phase_not_applied_to_these_native_masks": true,
+        "source_active_self_collision_setting": false,
+        "diagnostic_world_self_mask_also_available": true,
+        "branch_receipt_sha256": "4a3ddeb71990b7f83c8a1959e59402551facb4d7dda750a9b0111f929cd82bf6"
+      },
+      {
+        "case": "M0074_S4_clutter_scissors",
+        "arm": "left",
+        "directory": "tmp/analytic_ik/precise256_20261127_02/cases/M0074_S4_clutter_scissors/left",
+        "real_targets": 99,
+        "padded_targets": 157,
+        "input_candidates": 33,
+        "passed": true,
+        "timing": {
+          "analytic_256x8": {
+            "graph_device": {
+              "median_ms": 1.132032036781311,
+              "p90_ms": 1.3008896470069886,
+              "mean_ms": 1.2497305631637574,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 9.805604990106076,
+              "p90_ms": 10.03921959490981,
+              "mean_ms": 9.719290805514902,
+              "samples": 10
+            }
+          },
+          "native_FK_world_2048": {
+            "graph_device": {
+              "median_ms": 5.1123199462890625,
+              "p90_ms": 5.69466872215271,
+              "mean_ms": 5.4130278491973876,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 8.051037511904724,
+              "p90_ms": 9.326442910241894,
+              "mean_ms": 7.955051894532517,
+              "samples": 10
+            }
+          },
+          "native_FK_world_self_2048": {
+            "graph_device": {
+              "median_ms": 5.584383964538574,
+              "p90_ms": 5.999308919906616,
+              "mean_ms": 5.816954860687256,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 7.368798498646356,
+              "p90_ms": 9.513915318530053,
+              "mean_ms": 7.9471692006336525,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world": {
+            "graph_device": {
+              "median_ms": 6.385152101516724,
+              "p90_ms": 6.566399908065796,
+              "mean_ms": 6.551162834167481,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 16.727444482967257,
+              "p90_ms": 18.770910310558975,
+              "mean_ms": 17.1404457942117,
+              "samples": 10
+            }
+          },
+          "analytic_and_FK_world_self": {
+            "graph_device": {
+              "median_ms": 6.962687969207764,
+              "p90_ms": 8.694886493682862,
+              "mean_ms": 7.297536001205445,
+              "samples": 50
+            },
+            "eager_host_wall": {
+              "median_ms": 19.289163494249806,
+              "p90_ms": 20.763461122987792,
+              "mean_ms": 18.694475397933275,
+              "samples": 10
+            }
+          }
+        },
+        "initialization_and_graph_capture_seconds": 6.328958685015095,
+        "host_API_with_upload_owned_outputs_and_download": {
+          "median_ms": 8.062088483711705,
+          "p90_ms": 10.50064698792994,
+          "mean_ms": 8.61178100167308,
+          "samples": 10
+        },
+        "analytic_targets_with_legal_branch": 7,
+        "valid_analytic_branches": 9,
+        "world_clear_branches": 3,
+        "world_and_self_clear_branches": 3,
+        "fallback_targets": 92,
+        "native_sphere_count": 871,
+        "native_FK_measured_coordinates": 8,
+        "planning_arm_DOF": 6,
+        "width_equivalence": {
+          "passed": true,
+          "states": 48,
+          "maximum_sphere_difference_m": 1.1920928955078125e-07,
+          "rows": [
+            {
+              "width_m": 0.088,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.06,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            },
+            {
+              "width_m": 0.04,
+              "joint_states": 16,
+              "sphere_coordinate_max_error_m": 1.1920928955078125e-07,
+              "world_masks_equal": true,
+              "self_masks_equal": true
+            }
+          ]
+        },
+        "session_contract": {
+          "passed": true,
+          "graph_matches_eager": true,
+          "owned_outputs": true,
+          "empty_input": true,
+          "invalid_width_rejected": true,
+          "invalid_target_rejected": true,
+          "padding_hidden": true
+        },
+        "independent_FK": {
+          "branches": 9,
+          "maximum_position_error_m": 7.040875944876466e-08,
+          "maximum_rotation_error_rad": 1.9946689103143993e-07
+        },
+        "V2_table_narrow_phase_not_applied_to_these_native_masks": true,
+        "source_active_self_collision_setting": false,
+        "diagnostic_world_self_mask_also_available": true,
+        "branch_receipt_sha256": "d4e691f05a545a8032f47eecb0897303980d2dc9c1c25b435218fe3c70181321"
+      }
+    ],
+    "planning_requests": 0,
+    "physical_grasps": 0,
+    "simulation_instances": 0,
+    "production_defaults_changed": false
+  },
+  "independent_review": {
+    "at": "2026-11-27T14:12:52.714962+08:00",
+    "passed": true,
+    "source_and_input_hashes": true,
+    "case_receipts_and_array_hashes": true,
+    "production_bytes_unchanged": true,
+    "collision_cases": 10,
+    "known_branches_recovered": 8192,
+    "EAIK_reference_branches_matched": 329,
+    "width_equivalence_states": 480,
+    "task_result": "GPU解析求解、原生批量碰撞及常驻接口核验完成",
+    "record_integrity": "登记、输入、代码、逐组回执及数组散列全部通过",
+    "event_applicability": "适用于单次终点解析IK与原生碰撞；完整路径和物理结果尚待接入对照",
+    "key_event_coverage": "左右臂、原限位、近奇异、无解、无效输入、尾批填充、不同开度、世界/自碰撞及输出所有权"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T04:26:24.634Z",
+  "generatedAt": "2026-11-27T06:15:23.528Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -2276,6 +2276,14 @@
     {
       "file": "media/sam3-v7-sphere-fit-report.md",
       "sha256": "3914e59a5fe60c4bba65e475f45016d8de263f5ba2dcc5ff4e239246e3b45347"
+    },
+    {
+      "file": "media/sam3-v8-gpu-analytic-results.json",
+      "sha256": "d9e2d215f12207028382cc2eed54a215deed96e9830fec131642577881188115"
+    },
+    {
+      "file": "media/sam3-v8-gpu-analytic-report.md",
+      "sha256": "1ac81b5a5765c85126e8a0baa871670587e243dbb75ca4623f65ce89c73299b1"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

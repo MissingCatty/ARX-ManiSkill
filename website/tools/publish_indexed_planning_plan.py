@@ -474,6 +474,10 @@ def publish():
     raw_order=raw_order_section(website,site,funnel_active)
     if raw_order:
         body=raw_order['body']+'\n'+body
+    from website.tools.indexed_analytic_section import section as analytic_section
+    analytic=analytic_section(website,site)
+    if analytic:
+        body=analytic['body']+'\n'+body
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version = next(v for v in group['iterations'] if v['code']=='V8')
@@ -540,12 +544,18 @@ def publish():
         version['settings'][-1]=['当前进度',status]
         for batch in raw_order['batches']:
             version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
+    if analytic:
+        status,summary=analytic['status'],analytic['summary']
+        version.update(status=status,resultSummary=summary)
+        version['settings'][-1]=['当前进度',status]
+        batch=analytic['batch']
+        version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
     if group['current']=='V8':
         entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
         entry.update(status='V8'+status,metric=summary)
     write_json(site_path,site);write_json(registry_path,registry)
     print('Published V8 methods and recorded progress; '+
-          (raw_order['status'] if raw_order else physical['status'] if physical else 'no physical pilot registered')+'.')
+          (analytic['status'] if analytic else raw_order['status'] if raw_order else physical['status'] if physical else 'no physical pilot registered')+'.')
 
 
 if __name__=='__main__':

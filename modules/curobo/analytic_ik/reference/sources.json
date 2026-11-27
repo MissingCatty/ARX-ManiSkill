@@ -1,0 +1,14 @@
+[
+  {
+    "file": "IK_3_parallel_2_intersecting.m",
+    "url": "https://raw.githubusercontent.com/rpiRobotics/ik-geo/main/matlab/%2BIK/IK_3_parallel_2_intersecting.m",
+    "sha256": "cd6c3526569e4fc3e6e24c8541f53847b0049772400d596b52a402defa99c7b1",
+    "upstream_sha256": "44706a2bfee97225808c89f61828a6f0e5b60922bcbeeca59d09357f7e47240b",
+    "normalization": "trailing whitespace removed, mathematics unchanged"
+  },
+  {
+    "file": "LICENSE",
+    "url": "https://raw.githubusercontent.com/rpiRobotics/ik-geo/main/LICENSE",
+    "sha256": "47ae63881bac611d2c422e134f1a9d2ecb6f980896276134056e4e602f07a7a8"
+  }
+]
