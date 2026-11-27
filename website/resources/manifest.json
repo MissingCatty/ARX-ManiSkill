@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T03:37:40.454Z",
+  "generatedAt": "2026-11-27T04:26:24.634Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1603,7 +1603,7 @@
     },
     {
       "file": "media/sam3-v7-offline69-results.json",
-      "sha256": "4f790375fafdc3f03096d51fa6f258c4d0ef92d9766db6138b7b95b72927ddf9"
+      "sha256": "a5b38161ce12ca80296156c33de2eda28b2e0ed98bc71084e4ad270ba2e5278f"
     },
     {
       "file": "media/sam3-v7-offline69-report.md",
@@ -1627,7 +1627,7 @@
     },
     {
       "file": "media/sam3-v7-planning69-20261126-01-results.json",
-      "sha256": "8862968b9d8a509394fc7cd515d134b9297279de72e57b1b019116cba1dbb6cb"
+      "sha256": "893794c0d19d895e329bd04ba87299729818dbcc4d1c5c16584b419b891bf700"
     },
     {
       "file": "media/sam3-v7-planning69-20261126-01-report.md",
@@ -2227,7 +2227,7 @@
     },
     {
       "file": "media/sam3-v7-native-postprocessing-results.json",
-      "sha256": "c3b970cc15a577c334c8d6a0b47480e96d72191542f68267f618e60148b33915"
+      "sha256": "33e6af0a62218cf33734c3a28780a679a032587e555008415fc506bc4b4b2c4e"
     },
     {
       "file": "media/sam3-v7-spatial-postprocessing-results.json",
@@ -2264,6 +2264,18 @@
     {
       "file": "media/sam3-v7-sphere-count-report.md",
       "sha256": "8a93a898c61b6503ed746b95c027adc6bea4afe813de782c26147b24dbb89f2f"
+    },
+    {
+      "file": "media/sam3-v7-sphere-fit-results.json",
+      "sha256": "a378e17c79ad7a3ecd64165ee27e380024e5ba3ab8880ca51b59bcffd3d96053"
+    },
+    {
+      "file": "media/sam3-v7-sphere-fit-cross-sections.png",
+      "sha256": "892ad91ff2cc83b953f963fff502f67083407959368f01eb6869cb454772d144"
+    },
+    {
+      "file": "media/sam3-v7-sphere-fit-report.md",
+      "sha256": "3914e59a5fe60c4bba65e475f45016d8de263f5ba2dcc5ff4e239246e3b45347"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
@@ -3283,7 +3295,7 @@
     },
     {
       "file": "optimized/manifest.json",
-      "sha256": "eb7aa81ee03ddf6a81c485b6b262dcc355710a602707d751cb0690571d1d757a"
+      "sha256": "1b78a93dd5613bc3f2f8408e6b76c92d0b0b93b04d29155cbc9efe786713c730"
     }
   ]
 }

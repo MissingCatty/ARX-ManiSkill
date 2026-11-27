@@ -794,7 +794,10 @@
     "sam3-v7-state-reuse-results.json": "../../resources/media/sam3-v7-state-reuse-results.json",
     "sam3-v7-state-reuse-report.md": "../../resources/media/sam3-v7-state-reuse-report.md",
     "sam3-v7-sphere-count-results.json": "../../resources/media/sam3-v7-sphere-count-results.json",
-    "sam3-v7-sphere-count-report.md": "../../resources/media/sam3-v7-sphere-count-report.md"
+    "sam3-v7-sphere-count-report.md": "../../resources/media/sam3-v7-sphere-count-report.md",
+    "sam3-v7-sphere-fit-results.json": "../../resources/media/sam3-v7-sphere-fit-results.json",
+    "sam3-v7-sphere-fit-cross-sections.png": "../../resources/media/sam3-v7-sphere-fit-cross-sections.png",
+    "sam3-v7-sphere-fit-report.md": "../../resources/media/sam3-v7-sphere-fit-report.md"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",

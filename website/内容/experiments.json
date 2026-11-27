@@ -762,6 +762,30 @@
                   "url": "/media/sam3-v7-sphere-count-report.md"
                 }
               ]
+            },
+            {
+              "id": "geometry_fit_20261127_02",
+              "title": "512球与871球几何拟合精度核查",
+              "date": "2026-11-27",
+              "status": "核查完成，保留871球",
+              "summary": "16连杆及4根夹指加密核查；指尖新增外包P95为6.49/2.65毫米，512不直接替换。",
+              "outputs": [
+                "tmp/sphere_count_diagnosis/geometry_fit_20261127_02"
+              ],
+              "artifacts": [
+                {
+                  "label": "拟合报告",
+                  "url": "/media/sam3-v7-sphere-fit-report.md"
+                },
+                {
+                  "label": "逐连杆核验",
+                  "url": "/media/sam3-v7-sphere-fit-results.json"
+                },
+                {
+                  "label": "截面对比",
+                  "url": "/media/sam3-v7-sphere-fit-cross-sections.png"
+                }
+              ]
             }
           ]
         },

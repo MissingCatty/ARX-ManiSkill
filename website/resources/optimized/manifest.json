@@ -26091,8 +26091,77 @@
           "frames_checked": 503
         }
       ]
+    },
+    "media/sam3-v7-sphere-fit-cross-sections.png": {
+      "kind": "image",
+      "source_sha256": "892ad91ff2cc83b953f963fff502f67083407959368f01eb6869cb454772d144",
+      "source_bytes": 290408,
+      "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
+      "width": 1705,
+      "height": 1550,
+      "variants": [
+        {
+          "file": "optimized/media/sam3-v7-sphere-fit-cross-sections-892ad91ff2cc-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 436,
+          "bytes": 21116,
+          "sha256": "206945897910246d783c40c0db0ac6e9e09c8e887ae93b4c10ac1c8094036e95"
+        },
+        {
+          "file": "optimized/media/sam3-v7-sphere-fit-cross-sections-892ad91ff2cc-fc16be0e-w960.webp",
+          "width": 960,
+          "height": 873,
+          "bytes": 60714,
+          "sha256": "ba1edeeacf08559289d73f9b64300d619159d432c2f2451f751d93a4d5d7657b"
+        },
+        {
+          "file": "optimized/media/sam3-v7-sphere-fit-cross-sections-892ad91ff2cc-fc16be0e-w1440.webp",
+          "width": 1440,
+          "height": 1309,
+          "bytes": 95082,
+          "sha256": "b35d36a69f1aa791cdd0af4ac8dbddaf63b063f624f36ab4f8ea9dc03632fdd0"
+        },
+        {
+          "file": "optimized/media/sam3-v7-sphere-fit-cross-sections-892ad91ff2cc-fc16be0e-w1705.webp",
+          "width": 1705,
+          "height": 1550,
+          "bytes": 115220,
+          "sha256": "a456a2d90f5083780364dbe51a143ded28a1b226565db195a71360b63d0ffdda"
+        }
+      ],
+      "files": [
+        {
+          "file": "optimized/media/sam3-v7-sphere-fit-cross-sections-892ad91ff2cc-fc16be0e-w480.webp",
+          "width": 480,
+          "height": 436,
+          "bytes": 21116,
+          "sha256": "206945897910246d783c40c0db0ac6e9e09c8e887ae93b4c10ac1c8094036e95"
+        },
+        {
+          "file": "optimized/media/sam3-v7-sphere-fit-cross-sections-892ad91ff2cc-fc16be0e-w960.webp",
+          "width": 960,
+          "height": 873,
+          "bytes": 60714,
+          "sha256": "ba1edeeacf08559289d73f9b64300d619159d432c2f2451f751d93a4d5d7657b"
+        },
+        {
+          "file": "optimized/media/sam3-v7-sphere-fit-cross-sections-892ad91ff2cc-fc16be0e-w1440.webp",
+          "width": 1440,
+          "height": 1309,
+          "bytes": 95082,
+          "sha256": "b35d36a69f1aa791cdd0af4ac8dbddaf63b063f624f36ab4f8ea9dc03632fdd0"
+        },
+        {
+          "file": "optimized/media/sam3-v7-sphere-fit-cross-sections-892ad91ff2cc-fc16be0e-w1705.webp",
+          "width": 1705,
+          "height": 1550,
+          "bytes": 115220,
+          "sha256": "a456a2d90f5083780364dbe51a143ded28a1b226565db195a71360b63d0ffdda"
+        }
+      ],
+      "pillow_version": "13.0.0"
     }
   },
   "policy_sha256": "fc16be0ed6079e59c19b58db9c858896d8198e9c7f1b12c7c918e32cece03921",
-  "source_count": 603
+  "source_count": 604
 }

@@ -56,4 +56,6 @@ def section(website, site):
         'summary': '三档各10/10规划通过；平均5.669/4.355/4.381秒，球数继续减半未再提速。',
         'outputs': [str(root.relative_to(ROOT))],
         'artifacts': [{'label': '分项数据与核验', 'url': url}, {'label': '完整诊断报告', 'url': report}]}
-    return '\n'.join(lines), [batch]
+    from website.tools.sphere_fit_section import section as fit_section
+    fit, fit_batches = fit_section(website, site)
+    return fit + '\n' + '\n'.join(lines), [batch, *fit_batches]
