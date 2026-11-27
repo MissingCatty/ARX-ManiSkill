@@ -279,6 +279,18 @@
       ],
       "weights": []
     },
+    "curobo_memory_state": {
+      "source": "modules/curobo/state_updates",
+      "role": "motion_planning",
+      "environment": "environments/curobo",
+      "adapter": "modules/curobo/state_updates/runtime.py",
+      "experimental": true,
+      "default_enabled": false,
+      "inputs": ["state.json", "candidates/candidate_pool.json"],
+      "outputs": ["plan_result.json", "stage_timings.json", "memory_state_updates.json"],
+      "policies": ["configs/experiments/in_memory_state_planning.json", "configs/policies/fingertip_table.json"],
+      "variant": "request_scoped_in_memory_scene_and_measured_finger_updates"
+    },
     "curobo_analytic_endpoints": {
       "source": "modules/curobo/analytic_ik",
       "role": "motion_planning",

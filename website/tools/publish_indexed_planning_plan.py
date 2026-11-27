@@ -490,6 +490,10 @@ def publish():
     endpoint_parallel=endpoint_parallel_section(website,site)
     if endpoint_parallel:
         body=endpoint_parallel['body']+'\n'+body
+    from website.tools.indexed_memory_state_section import section as memory_state_section
+    memory_state=memory_state_section(website,site)
+    if memory_state:
+        body=memory_state['body']+'\n'+body
     (website/'内容/迭代/sam3-graspgenx-v8.md').write_text(body)
     group = next(v for v in registry['experiments'] if v['id']=='sam3-graspgenx')
     version = next(v for v in group['iterations'] if v['code']=='V8')
@@ -580,12 +584,19 @@ def publish():
         version['settings'][-1]=['当前进度',status]
         batch=endpoint_parallel['batch']
         version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
+    if memory_state:
+        status,summary=memory_state['status'],memory_state['summary']
+        version.update(status=status,resultSummary=summary)
+        version['settings'][-1]=['当前进度',status]
+        for previous in memory_state.get('history_batches', []):
+            version['batches']=[v for v in version['batches'] if v['id']!=previous['id']]+[previous]
+        batch=memory_state['batch']
+        version['batches']=[v for v in version['batches'] if v['id']!=batch['id']]+[batch]
     if group['current']=='V8':
         entry = next(v for v in site['versions'] if v['id']=='sam3-graspgenx')
         entry.update(status='V8'+status,metric=summary)
     write_json(site_path,site);write_json(registry_path,registry)
-    print('Published V8 methods and recorded progress; '+
-          (endpoint_parallel['status'] if endpoint_parallel else parallel_planning['status'] if parallel_planning else analytic_planning['status'] if analytic_planning else analytic['status'] if analytic else raw_order['status'] if raw_order else physical['status'] if physical else 'no physical pilot registered')+'.')
+    print('Published V8 methods and recorded progress; '+status+'.')
 
 
 if __name__=='__main__':

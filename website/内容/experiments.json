@@ -795,8 +795,8 @@
           "sourceId": "sam3-graspgenx",
           "title": "可达性索引与批量IK加速",
           "date": "2026-11-26",
-          "status": "固定候选窗口的批量端点与路径对照完成",
-          "resultSummary": "共享GPU下：原方法／批量端点／批量端点加并行路径平均7.20／9.24／8.96秒。",
+          "status": "内存状态更新完整规划对照完成",
+          "resultSummary": "共享GPU2下，原方法／内存状态更新平均7.02／4.40秒，原成功10/10、新方法10/10。",
           "change": "以现行双臂交替搜索为基线，分别比较原生批量IK、几何IK、关节解索引与模型场景绑定复用，保留原抓姿和评分顺序。",
           "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 双臂交替调度 → 批量IK/几何IK/索引复用对照 → 当前碰撞与路径检查 → 选臂抓取",
           "scenes": "先使用同一套69份有效候选做规划回放，74例总体范围保留5例共同站位失败。",
@@ -815,7 +815,7 @@
             ],
             [
               "当前进度",
-              "固定候选窗口的批量端点与路径对照完成"
+              "内存状态更新完整规划对照完成"
             ]
           ],
           "contentFile": "sam3-graspgenx-v8.md",
@@ -1318,6 +1318,50 @@
                 {
                   "label": "计时与核验",
                   "url": "/media/sam3-v8-shared-gpu2-20261127-01-results.json"
+                }
+              ]
+            },
+            {
+              "id": "memory5_20261127_02",
+              "title": "第一版内存状态更新对照",
+              "date": "2026-11-27",
+              "status": "已完成，未达到采用门槛",
+              "summary": "原方法／第一版平均6.77／6.49秒。",
+              "outputs": [
+                "tmp/state_updates/memory5_20261127_02"
+              ],
+              "artifacts": [
+                {
+                  "label": "完整报告",
+                  "url": "/media/sam3-v8-memory5-20261127-02-report.md"
+                },
+                {
+                  "label": "计时与核验",
+                  "url": "/media/sam3-v8-memory5-20261127-02-results.json"
+                }
+              ]
+            },
+            {
+              "id": "memory5_20261127_03",
+              "title": "内存状态更新完整规划对照",
+              "date": "2026-11-27",
+              "status": "内存状态更新完整规划对照完成",
+              "summary": "共享GPU2下，原方法／内存状态更新平均7.02／4.40秒，原成功10/10、新方法10/10。",
+              "outputs": [
+                "tmp/state_updates/memory5_20261127_03"
+              ],
+              "artifacts": [
+                {
+                  "label": "实施方法",
+                  "url": "/media/sam3-v8-memory5-20261127-03-method.md"
+                },
+                {
+                  "label": "完整报告",
+                  "url": "/media/sam3-v8-memory5-20261127-03-report.md"
+                },
+                {
+                  "label": "计时与核验",
+                  "url": "/media/sam3-v8-memory5-20261127-03-results.json"
                 }
               ]
             }

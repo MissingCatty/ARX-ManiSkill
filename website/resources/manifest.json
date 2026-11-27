@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:12:43.116Z",
+  "generatedAt": "2026-11-27T16:09:41.192Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -2316,6 +2316,30 @@
     {
       "file": "media/sam3-v8-shared-gpu2-20261127-01-report.md",
       "sha256": "9cb51ee6f5e4bd8211fba5b7e7b80acc4675b05063c654254fa7464c376b21c2"
+    },
+    {
+      "file": "media/sam3-v8-memory5-20261127-03-results.json",
+      "sha256": "894bb9f1d0fb9e2dfe34c5ba08ce2704865dbc3fb2367eaf9944b370ca44beed"
+    },
+    {
+      "file": "media/sam3-v8-memory5-20261127-03-report.md",
+      "sha256": "88f6e0aadef8d753b061a7fa199c9efd19e7b225e3435177ffb6d95fb6207471"
+    },
+    {
+      "file": "media/sam3-v8-memory5-20261127-03-method.md",
+      "sha256": "804887a9ab90eb935b9cc46a4c89b0854f305d92f5a899050df957cd4ada2657"
+    },
+    {
+      "file": "media/sam3-v8-memory5-20261127-03-analysis.md",
+      "sha256": "c43653780227df20119d9ea300d614cea3ec81ebc291fe9bb971c81fb73b8927"
+    },
+    {
+      "file": "media/sam3-v8-memory5-20261127-02-report.md",
+      "sha256": "615ae4f5d05b723260356f430bfc49d5c7737bad724f814d27d98f05e0d36958"
+    },
+    {
+      "file": "media/sam3-v8-memory5-20261127-02-results.json",
+      "sha256": "5c039aa0d7862b7ddd3c2d69fccb240aa882bd0f14403a5777cf02dfca89b2c7"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
