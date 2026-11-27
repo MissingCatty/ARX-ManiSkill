@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-27T08:41:25.460967+08:00",
+  "passed": true,
+  "cases": [
+    {
+      "case": "M0001_S1_open_apple",
+      "output_candidates": 69,
+      "pool_values_exactly_equal": true,
+      "new_complete_postprocessing_seconds": 0.6306377889995929
+    },
+    {
+      "case": "M0020_S1_open_donut",
+      "output_candidates": 21,
+      "pool_values_exactly_equal": true,
+      "new_complete_postprocessing_seconds": 0.8280850929877488
+    },
+    {
+      "case": "M0074_S4_clutter_scissors",
+      "output_candidates": 33,
+      "pool_values_exactly_equal": true,
+      "new_complete_postprocessing_seconds": 0.8224392309930408
+    }
+  ],
+  "only_selected_variant_computed": true,
+  "final_pool_values_exactly_equal": true,
+  "raw_zero_supported": true,
+  "processor_sha256": "9d89cb93d47dc183fb44a1fec68b0405f90cc31fdaa2f0c876eac024384c1ebb"
+}

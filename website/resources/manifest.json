@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T01:33:27.355Z",
+  "generatedAt": "2026-11-27T01:44:22.718Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1603,7 +1603,7 @@
     },
     {
       "file": "media/sam3-v7-offline69-results.json",
-      "sha256": "4e278b6a35e4df6088df6bed2bc75c7cb5ac39c8af07e9ba64ffe021ad086160"
+      "sha256": "527b74df6aa94377780a698e47743721e61ddd2b2451cb9a1f8843ba582d04bd"
     },
     {
       "file": "media/sam3-v7-offline69-report.md",
@@ -1627,7 +1627,7 @@
     },
     {
       "file": "media/sam3-v7-planning69-20261126-01-results.json",
-      "sha256": "6f6786082c497f28f149d7c763a9e0bd6a7c8064ef67abbef6045f50a3837176"
+      "sha256": "e4cec4ca38eeb3438828ecd87b71385d355e5252bd340e36b3ef7f17e6f7a146"
     },
     {
       "file": "media/sam3-v7-planning69-20261126-01-report.md",
@@ -2227,7 +2227,7 @@
     },
     {
       "file": "media/sam3-v7-native-postprocessing-results.json",
-      "sha256": "6aab54909984273a048cead75d892b74872a9ebb8c258669c2c075a9a8316a47"
+      "sha256": "b04abadc1243e3521f2ec60e631652595d5ce22caf38a3536e1fbca6e0e20e8a"
     },
     {
       "file": "media/sam3-v7-spatial-postprocessing-results.json",
@@ -2244,6 +2244,10 @@
     {
       "file": "media/sam3-v7-gripper-sweep-report.md",
       "sha256": "34c4e64db5bec420180e422772f32ad5b5fb353fdc278607671e378a0e4aca89"
+    },
+    {
+      "file": "media/sam3-v7-postprocessing-runtime-results.json",
+      "sha256": "a9271456129e3056cc99c22df38a26c939d9945f993be41f22514a203c021f4b"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
