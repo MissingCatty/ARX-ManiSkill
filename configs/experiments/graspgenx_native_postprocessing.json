@@ -1,0 +1,55 @@
+{
+  "authorization": "2026-11-27 从原始GraspGen输出应用ZeroGrasp完整后处理，并尝试优化",
+  "source": "tmp/graspgenx_postprocessing/planning69_20261126_01",
+  "variants": [
+    "native",
+    "native_rechecked",
+    "arx_observed"
+  ],
+  "offline_cases": 69,
+  "pilot_cases": [
+    "M0001_S1_open_apple",
+    "M0020_S1_open_donut",
+    "M0044_S3_sparse_banana",
+    "M0064_S4_clutter_mango",
+    "M0074_S4_clutter_scissors"
+  ],
+  "planning_requests": 20,
+  "physical_grasps": 0,
+  "maximum_iterations": 2,
+  "automatic_retries": false,
+  "default_activation": false,
+  "native": {
+    "initial_depth_m": 0.04,
+    "finger_width_m": 0.01,
+    "palm_depth_m": 0.02,
+    "height_m": 0.02,
+    "empty_points": 10,
+    "nms_translation_m": 0.03,
+    "nms_rotation_deg": 30
+  },
+  "arx_observed": {
+    "target_voxel_m": 0.002,
+    "empty_points": 10,
+    "width_clearance_per_side_m": 0.0025,
+    "max_axial_correction_m": 0.005,
+    "pad_end_margin_m": 0.003,
+    "strict_point_penetration_m": 0.001,
+    "nms_translation_m": 0.015,
+    "nms_rotation_deg": 15
+  },
+  "optional_runtime": {
+    "variant": "native_rechecked",
+    "use_spatial_crop": true,
+    "enabled_in_mainline": false,
+    "width_aware_planner": "modules.graspgenx.native_postprocessing.width_planning.create",
+    "not_adopted_variants": [
+      "arx_observed"
+    ]
+  },
+  "validated_runs": {
+    "offline": "tmp/graspgenx_native_postprocessing/offline69_20261127_01",
+    "planning": "tmp/graspgenx_native_postprocessing/planning5_20261127_04",
+    "equivalent_detector_acceleration": "tmp/graspgenx_native_postprocessing/spatial69_20261127_01"
+  }
+}

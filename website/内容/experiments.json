@@ -606,27 +606,27 @@
           "sourceId": "sam3-graspgenx",
           "title": "GraspGenX候选筛选与NMS",
           "date": "2026-11-25",
-          "status": "规划对照已完成并核验",
+          "status": "完整后处理规划对照已完成",
           "change": "在GraspGenX后比较碰撞筛选、空抓筛选、宽度深度修正与NMS，保住可执行抓法并减少规划工作量。",
           "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX → 候选后处理 → 双臂cuRobo → 抓取",
           "scenes": "最终V6的69份冻结候选观测，共166008个原始候选。",
-          "resultSummary": "完成138/138次纯规划，同批量16后端。",
+          "resultSummary": "69份离线输入已完成，规划19/20，物理抓取0。",
           "settings": [
             [
-              "候选分组",
-              "原候选、仅NMS、真实ARX几何＋NMS、独立空夹持区组。"
+              "当前候选处理",
+              "从原始GraspGenX数组接入空抓检测、宽深修正、碰撞复检和NMS，真正删除淘汰候选。"
             ],
             [
-              "去重阈值",
-              "5毫米/5°、10毫米/10°、15毫米/15°、30毫米/30°。"
+              "宽度对应",
+              "候选宽度、GPU碰撞模型和规划结果中的开爪命令一致；双臂三种宽度先预检。"
             ],
             [
-              "抓法保留",
-              "保留原位姿、开度、评分和编号；记录代表与后备，并核查原选中手臂。"
+              "方案分组",
+              "原版逻辑移植、修正后重新验碰撞、ARX实际指腹适配。"
             ],
             [
-              "本轮测量",
-              "候选数、原成功抓法保留和CPU后处理耗时。"
+              "历史对照",
+              "上一轮仅NMS代表优先＋原候选后备的69场景结果继续保留。"
             ]
           ],
           "contentFile": "sam3-graspgenx-v7.md",
@@ -681,6 +681,23 @@
                 {
                   "label": "逐例规划与延时",
                   "url": "/media/sam3-v7-planning69-20261126-01-results.json"
+                }
+              ]
+            },
+            {
+              "id": "planning5_20261127_04",
+              "title": "原始候选完整后处理与优化对照",
+              "date": "2026-11-27",
+              "status": "完整后处理规划对照已完成",
+              "summary": "69份离线输入已完成，规划19/20，物理抓取0。",
+              "outputs": [
+                "tmp/graspgenx_native_postprocessing/offline69_20261127_01",
+                "tmp/graspgenx_native_postprocessing/planning5_20261127_04"
+              ],
+              "artifacts": [
+                {
+                  "label": "完整筛选和规划数据",
+                  "url": "/media/sam3-v7-native-postprocessing-results.json"
                 }
               ]
             }

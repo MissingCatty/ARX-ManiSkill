@@ -163,6 +163,17 @@ def publish():
         version['batches']=[v for v in version['batches'] if v['id']!=item['id']]+[item]
     if planning_status:
         version.update(status=planning_status,resultSummary=planning_batches[-1]['summary'])
+    from website.tools.graspgenx_native_postprocessing_section import section as native_section
+    native,native_status,native_batch=native_section(website,site)
+    if native:
+        page=website/'内容/迭代/sam3-graspgenx-v7.md'
+        page.write_text(native+'\n'+page.read_text())
+        version.update(status=native_status,resultSummary=native_batch['summary'])
+        version['settings']=[['当前候选处理','从原始GraspGenX数组接入空抓检测、宽深修正、碰撞复检和NMS，真正删除淘汰候选。'],
+            ['宽度对应','候选宽度、GPU碰撞模型和规划结果中的开爪命令一致；双臂三种宽度先预检。'],
+            ['方案分组','原版逻辑移植、修正后重新验碰撞、ARX实际指腹适配。'],
+            ['历史对照','上一轮仅NMS代表优先＋原候选后备的69场景结果继续保留。']]
+        version['batches']=[v for v in version['batches'] if v['id']!=native_batch['id']]+[native_batch]
     write_json(site_path,site);write_json(registry_path,registry)
     print(f'Published V7 offline comparison: {completed}/69; current version remains {group["current"]}.')
 

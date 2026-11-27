@@ -784,7 +784,10 @@
     "sam3-v8-raw-order-m0074-comparison.mp4": "../../resources/media/sam3-v8-raw-order-m0074-comparison.mp4",
     "sam3-v8-raw-order-physical-analysis.json": "../../resources/media/sam3-v8-raw-order-physical-analysis.json",
     "sam3-v8-raw-order-scissors-hold-diagnosis.json": "../../resources/media/sam3-v8-raw-order-scissors-hold-diagnosis.json",
-    "sam3-v8-raw-order-scissors-command-contact-analysis.json": "../../resources/media/sam3-v8-raw-order-scissors-command-contact-analysis.json"
+    "sam3-v8-raw-order-scissors-command-contact-analysis.json": "../../resources/media/sam3-v8-raw-order-scissors-command-contact-analysis.json",
+    "sam3-v7-native-postprocessing-results.json": "../../resources/media/sam3-v7-native-postprocessing-results.json",
+    "sam3-v7-spatial-postprocessing-results.json": "../../resources/media/sam3-v7-spatial-postprocessing-results.json",
+    "sam3-v7-native-postprocessing-report.md": "../../resources/media/sam3-v7-native-postprocessing-report.md"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",
