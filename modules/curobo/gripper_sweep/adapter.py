@@ -11,6 +11,9 @@ from modules.curobo.indexed_planning.stage_timing import StageTiming,wrap_method
 
 
 def batch_sweep(pool,work,canonical):
+    if getattr(pool,'sphere_reuse_enabled',False) or getattr(pool,'fast_sweep_enabled',False):
+        from .cached_sweep import opening_sweep
+        return opening_sweep(pool,work,canonical)
     return AcceleratedDualArmPlanner.opening_sweep(SimpleNamespace(pool=pool),work,canonical)
 
 

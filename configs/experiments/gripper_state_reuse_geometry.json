@@ -1,0 +1,34 @@
+{
+  "authorization": "2026-11-27 更新耗时页面之后优化机器人/场景重复绑定和开合爪逐采样计算",
+  "source_run": "tmp/graspgenx_native_postprocessing/planning5_20261127_04",
+  "source_variant": "native_rechecked",
+  "cases": [
+    "M0001_S1_open_apple",
+    "M0020_S1_open_donut",
+    "M0044_S3_sparse_banana",
+    "M0064_S4_clutter_mango",
+    "M0074_S4_clutter_scissors"
+  ],
+  "phase": "state_reuse_geometry",
+  "variants": [
+    "legacy",
+    "batched"
+  ],
+  "repeats": 2,
+  "planning_requests": 20,
+  "maximum_phases": 4,
+  "maximum_total_planning_requests": 80,
+  "physical_grasps": 0,
+  "startup_minimum_free_mib": 10000,
+  "request_minimum_free_mib": 1536,
+  "automatic_retries": false,
+  "activate_mainline": false,
+  "minimum_total_saving_fraction": 0.05,
+  "same_batched_grippers_and_C_YAML_in_both_groups": true,
+  "original_sampling_and_collision_results_must_be_exact": true,
+  "maximum_sphere_cache_bytes": 67108864,
+  "binding_revision": "only_URDF_proven_lock_dependent_tensors",
+  "preserved_rejected_run": "tmp/gripper_state_reuse/binding5_20261127_01",
+  "sweep_strategy": "direct_fk",
+  "sphere_memo_in_this_comparison": false
+}

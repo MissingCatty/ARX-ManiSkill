@@ -45,6 +45,8 @@
     "width_aware_planner": "modules.curobo.gripper_sweep.runtime.create",
     "gripper_sweep_batching": true,
     "C_YAML_binding": true,
+    "gripper_native_sweep_fast": true,
+    "not_adopted_planning_changes": ["width_state_reuse", "exact_sphere_memo"],
     "not_adopted_variants": [
       "arx_observed"
     ]
@@ -54,6 +56,7 @@
     "planning": "tmp/graspgenx_native_postprocessing/planning5_20261127_04",
     "equivalent_detector_acceleration": "tmp/graspgenx_native_postprocessing/spatial69_20261127_01",
     "gripper_sweep_batching": "tmp/gripper_sweep_optimization/batch5_20261127_01",
-    "candidate_binding_codec": "tmp/gripper_sweep_optimization/codec5_20261127_01"
+    "candidate_binding_codec": "tmp/gripper_sweep_optimization/codec5_20261127_01",
+    "native_gripper_sweep": "tmp/gripper_state_reuse/geometry5_20261127_02"
   }
 }

@@ -182,6 +182,18 @@ def publish():
         version.update(status=sweep_status,resultSummary=sweep_batches[-1]['summary'])
         for item in sweep_batches:
             version['batches']=[v for v in version['batches'] if v['id']!=item['id']]+[item]
+    from website.tools.gripper_state_reuse_section import section as reuse_section
+    reused,reuse_status,reuse_batches=reuse_section(website,site)
+    if reused:
+        page=website/'内容/迭代/sam3-graspgenx-v7.md'
+        history=page.read_text().replace('## 从抓姿输出到准备执行的耗时','## 上一轮：从抓姿输出到准备执行的耗时',1)
+        history=history.replace('当前优化后','当轮优化后',1).replace('### 当前秒级耗时花在哪里','### 上一轮秒级耗时分布',1)
+        history=history.replace('以下为最新优化版10次完整规划的平均值','以下为当轮优化版10次完整规划的平均值',1)
+        history=history.replace('下一步优先让固定场景只绑定一次','当轮确定的后续方向是让固定场景只绑定一次',1)
+        page.write_text(reused+'\n'+history)
+        version.update(status=reuse_status,resultSummary=reuse_batches[-1]['summary'])
+        for item in reuse_batches:
+            version['batches']=[v for v in version['batches'] if v['id']!=item['id']]+[item]
     write_json(site_path,site);write_json(registry_path,registry)
     print(f'Published V7 offline comparison: {completed}/69; current version remains {group["current"]}.')
 

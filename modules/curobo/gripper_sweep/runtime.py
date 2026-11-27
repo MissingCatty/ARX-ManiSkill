@@ -12,4 +12,9 @@ def create(args):
     planner.pool.batch_sweep_enabled = bool(config.get('gripper_sweep_batching', False))
     if hasattr(planner.pool, 'fast_binding_enabled'):
         planner.pool.fast_binding_enabled = bool(config.get('C_YAML_binding', False))
+    if config.get('gripper_native_sweep_fast',False):
+        from functools import partial
+        from .direct_sweep import native_opening_spheres
+        planner.pool.fast_sweep_enabled=True
+        planner.pool.make_opening_spheres=partial(native_opening_spheres,planner.pool)
     return planner

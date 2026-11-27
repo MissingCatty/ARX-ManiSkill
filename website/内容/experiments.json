@@ -606,11 +606,11 @@
           "sourceId": "sam3-graspgenx",
           "title": "GraspGenX候选筛选与NMS",
           "date": "2026-11-25",
-          "status": "开合爪与候选配置优化已完成",
+          "status": "开合爪计算优化已验证",
           "change": "在GraspGenX后比较碰撞筛选、空抓筛选、宽度深度修正与NMS，保住可执行抓法并减少规划工作量。",
           "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX → 候选后处理 → 双臂cuRobo → 抓取",
           "scenes": "最终V6的69份冻结候选观测，共166008个原始候选。",
-          "resultSummary": "40/40规划通过；批量开合爪累计省72.8%，配置编解码再省22.1%。",
+          "resultSummary": "本轮完整对照结束，最新规划平均4.00秒，新增物理0次。",
           "settings": [
             [
               "当前候选处理",
@@ -719,6 +719,27 @@
                 {
                   "label": "配对数据",
                   "url": "/media/sam3-v7-gripper-sweep-results.json"
+                }
+              ]
+            },
+            {
+              "id": "geometry5_20261127_02",
+              "title": "场景绑定与原生开合爪计算优化",
+              "date": "2026-11-27",
+              "status": "开合爪计算优化已验证",
+              "summary": "本轮完整对照结束，最新规划平均4.00秒，新增物理0次。",
+              "outputs": [
+                "tmp/gripper_state_reuse/binding5_20261127_02",
+                "tmp/gripper_state_reuse/geometry5_20261127_02"
+              ],
+              "artifacts": [
+                {
+                  "label": "配对结果",
+                  "url": "/media/sam3-v7-state-reuse-results.json"
+                },
+                {
+                  "label": "方法与分析",
+                  "url": "/media/sam3-v7-state-reuse-report.md"
                 }
               ]
             }

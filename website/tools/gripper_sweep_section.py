@@ -41,7 +41,7 @@ def latency_tables(evidence, postprocessing):
         '| 环节 | 平均耗时 | 具体在做什么 |', '| --- | ---: | --- |']
     stages = [
         ('机器人与场景绑定', ['world_and_robot_bind'], '候选宽度变化时，更新机器人和碰撞场景'),
-        ('开合爪校验', ['gripper_opening','gripper_narrowing'], '对全部开度采样计算碰撞球，再批量检查'),
+        ('开合爪模型读取、FK与碰撞检查', ['gripper_opening','gripper_narrowing'], '读取模型，对全部开度采样计算碰撞球，再批量检查'),
         ('抓取IK与终点几何检查', ['grasp_IK','grasp_endpoint'], '检查多个候选能否到达、终点是否碰撞'),
         ('接触几何更新', ['contact_validator_update'], '更新夹爪与目标接触检查所需的几何'),
         ('路径搜索＋轨迹优化', ['path_PRM','trajectory_approach','trajectory_pregrasp'], '搜索路径，优化运动轨迹')]

@@ -790,7 +790,9 @@
     "sam3-v7-native-postprocessing-report.md": "../../resources/media/sam3-v7-native-postprocessing-report.md",
     "sam3-v7-gripper-sweep-results.json": "../../resources/media/sam3-v7-gripper-sweep-results.json",
     "sam3-v7-gripper-sweep-report.md": "../../resources/media/sam3-v7-gripper-sweep-report.md",
-    "sam3-v7-postprocessing-runtime-results.json": "../../resources/media/sam3-v7-postprocessing-runtime-results.json"
+    "sam3-v7-postprocessing-runtime-results.json": "../../resources/media/sam3-v7-postprocessing-runtime-results.json",
+    "sam3-v7-state-reuse-results.json": "../../resources/media/sam3-v7-state-reuse-results.json",
+    "sam3-v7-state-reuse-report.md": "../../resources/media/sam3-v7-state-reuse-report.md"
   },
   "assets": {
     "claro-scene-graph.txt": "02_选择一个挡物/resources/I0069_视觉选挡物核验.json",
