@@ -2,13 +2,16 @@
 from arx_project.layout import ROOT, read_json
 
 
-def create(args):
+def create(args,*,pool_extension=None):
     config = read_json(ROOT/'configs/experiments/graspgenx_native_postprocessing.json')['optional_runtime']
+    if pool_extension is None and config.get('GPU_analytic_endpoints',False):
+        from modules.curobo.analytic_ik.planning import analytic_pool
+        pool_extension=analytic_pool
     if config.get('C_YAML_binding', False):
         from .codec_adapter import create as factory
     else:
         from .adapter import create as factory
-    planner = factory(args)
+    planner = factory(args,**({} if pool_extension is None else {'pool_extension':pool_extension}))
     planner.pool.batch_sweep_enabled = bool(config.get('gripper_sweep_batching', False))
     if hasattr(planner.pool, 'fast_binding_enabled'):
         planner.pool.fast_binding_enabled = bool(config.get('C_YAML_binding', False))

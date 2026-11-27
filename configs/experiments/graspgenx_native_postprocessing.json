@@ -25,8 +25,8 @@
     "palm_depth_m": 0.02,
     "height_m": 0.02,
     "empty_points": 10,
-    "nms_translation_m": 0.03,
-    "nms_rotation_deg": 30
+    "nms_translation_m": 0.015,
+    "nms_rotation_deg": 15
   },
   "arx_observed": {
     "target_voxel_m": 0.002,
@@ -46,10 +46,16 @@
     "gripper_sweep_batching": true,
     "C_YAML_binding": true,
     "gripper_native_sweep_fast": true,
-    "not_adopted_planning_changes": ["width_state_reuse", "exact_sphere_memo"],
+    "not_adopted_planning_changes": [
+      "width_state_reuse",
+      "exact_sphere_memo"
+    ],
     "not_adopted_variants": [
       "arx_observed"
-    ]
+    ],
+    "GPU_analytic_endpoints": false,
+    "GPU_analytic_entrypoint": "modules.curobo.analytic_ik.runtime.create",
+    "GPU_analytic_status": "integration_verified_complete_planning_no_speed_gain"
   },
   "validated_runs": {
     "offline": "tmp/graspgenx_native_postprocessing/offline69_20261127_01",

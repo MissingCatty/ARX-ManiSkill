@@ -21,11 +21,12 @@ def unlocked_collision_model(source):
 
 
 class BranchCollisionChecker:
-    def __init__(self, robot_config, scene):
+    def __init__(self, robot_config, scene, *, native_scene=None):
         from curobo.collision_checking import RobotCollisionChecker, RobotCollisionCheckerCfg
         self.config = unlocked_collision_model(robot_config)
+        world={'scene_model':scene} if native_scene is None else {'scene_collision_checker':native_scene}
         self.checker = RobotCollisionChecker(RobotCollisionCheckerCfg.load_from_config(
-            robot_config=self.config, scene_model=scene, n_meshes=8, n_cuboids=8,
+            robot_config=self.config, **world, n_meshes=8, n_cuboids=8,
             collision_activation_distance=0., self_collision_activation_distance=0.))
         if self.checker.kinematics.joint_names != NAMES or self.checker.kinematics.total_spheres != 871:
             raise ValueError('Native collision FK did not retain eight measured coordinates and 871 spheres')

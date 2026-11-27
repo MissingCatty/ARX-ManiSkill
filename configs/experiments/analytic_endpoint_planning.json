@@ -1,0 +1,30 @@
+{
+  "authorization": "2026-11-27 用户授权NMS调细，并将GPU解析IK与批量碰撞接入第七项完整规划",
+  "offline_source": "tmp/graspgenx_native_postprocessing/offline69_20261127_01",
+  "warmup_source": "tmp/gripper_state_reuse/geometry5_20261127_02/warmup",
+  "cases": ["M0001_S1_open_apple", "M0020_S1_open_donut", "M0044_S3_sparse_banana", "M0064_S4_clutter_mango", "M0074_S4_clutter_scissors"],
+  "coarse_nms": {"translation_m": 0.03, "rotation_deg": 30},
+  "fine_nms": {"translation_m": 0.015, "rotation_deg": 15},
+  "variants": ["coarse_numeric", "fine_numeric", "fine_analytic"],
+  "repeats": 2,
+  "planning_requests": 30,
+  "maximum_total_planning_requests": 50,
+  "scene_reuse_followup": {
+    "previous_run": "tmp/analytic_planning/nms15_pilot_20261127_02",
+    "variants": ["fine_numeric", "fine_analytic"],
+    "planning_requests": 20,
+    "native_parent_scene_shared": true
+  },
+  "physical_grasps": 0,
+  "simulation_instances": 0,
+  "startup_free_mib": 10000,
+  "minimum_request_free_mib": 1536,
+  "automatic_retries": false,
+  "request_deadline_seconds": 1800,
+  "activate_mainline": false,
+  "preserve_original_numeric_fallback": true,
+  "collision_spheres": 871,
+  "position_tolerance_m": 0.002,
+  "rotation_tolerance_rad": 0.03,
+  "maximum_fingertip_table_contact_m": 0.002
+}

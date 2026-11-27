@@ -20,8 +20,8 @@ def attach_codec(pool,module=None):
     return pool
 
 
-def create(args):
-    planner=original_create(args);attach_codec(planner.pool)
+def create(args,*,pool_extension=None):
+    planner=original_create(args,**({} if pool_extension is None else {'pool_extension':pool_extension}));attach_codec(planner.pool)
     from modules.curobo.indexed_planning.stage_timing import wrap_method
     wrap_method(planner,'prepare_arm',planner.pool.stage_timing,'physical_arm_mapping')
     return planner

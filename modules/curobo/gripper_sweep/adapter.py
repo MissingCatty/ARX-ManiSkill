@@ -70,10 +70,11 @@ def optimized_pool(base):
     return SweepPool
 
 
-def create(args):
+def create(args,*,pool_extension=None):
     from modules.curobo.dual_arm.adapter import create as original_create,DualArmPlanner
     from modules.curobo.dual_arm.interleaved_adapter import InterleavedDualArmPlanner,configure
-    original=original_create(args,pool_extension=optimized_pool)
+    extension=optimized_pool if pool_extension is None else lambda base:pool_extension(optimized_pool(base))
+    original=original_create(args,pool_extension=extension)
     class SweepPlanner(WidthSelectionMixin,InterleavedDualArmPlanner):
         def opening_sweep(self,work,canonical):
             began=time.perf_counter()

@@ -8,8 +8,25 @@ from .executable import ExecutableAnalyticIK
 from .collision import BranchCollisionChecker
 
 
+def scene_storage(root):
+    """Fingerprint tensor storage used by the native captured scene queries."""
+    stack=[('scene',root)];seen=set();result={}
+    while stack:
+        name,value=stack.pop()
+        if id(value) in seen:continue
+        seen.add(id(value))
+        if isinstance(value,torch.Tensor):
+            result[name]=(value.data_ptr(),tuple(value.shape),value.dtype)
+        elif isinstance(value,dict):stack.extend((name+'.'+str(k),v) for k,v in value.items())
+        elif isinstance(value,(list,tuple)):stack.extend((name+'.'+str(i),v) for i,v in enumerate(value))
+        elif type(value).__module__.startswith('curobo.') and hasattr(value,'__dict__'):
+            stack.extend((name+'.'+k,v) for k,v in vars(value).items())
+        if len(seen)>100000:raise RuntimeError('Unexpected native scene object graph')
+    return result
+
+
 class AnalyticBatchSession:
-    def __init__(self,robot_config,scene,*,capacity=256,device='cuda:0',include_self=False):
+    def __init__(self,robot_config,scene,*,capacity=256,device='cuda:0',include_self=False,native_scene=None):
         if capacity!=256:raise ValueError('This validated endpoint session has fixed capacity 256')
         self.capacity=capacity;self.device=torch.device(device);self.include_self=bool(include_self)
         if self.device!=torch.device('cuda:0'):
@@ -18,7 +35,9 @@ class AnalyticBatchSession:
         self._solver=ExecutableAnalyticIK(device=device)
         # This native checker owns captured scratch buffers. Never resize it or
         # share it with eager diagnostics after graph capture.
-        self._collision=BranchCollisionChecker(robot_config,scene)
+        self._collision=BranchCollisionChecker(robot_config,scene,native_scene=native_scene)
+        self._shared_scene=native_scene
+        self._scene_storage=scene_storage(self._collision.checker.scene_model.data)
         self.targets=torch.eye(4,device=device,dtype=torch.float64)[None].repeat(capacity,1,1)
         self.widths=torch.full((capacity,),.088,device=device,dtype=torch.float32)
         self.real=torch.zeros(capacity,dtype=torch.bool,device=device)
@@ -27,6 +46,27 @@ class AnalyticBatchSession:
         torch.cuda.synchronize();self.graph=torch.cuda.CUDAGraph()
         with torch.cuda.graph(self.graph):self.answer,self.checked=self._compute()
         self.graph.replay();torch.cuda.synchronize()
+
+    def update_scene(self,scene_config):
+        """Replace obstacles in the fixed native cache without rebuilding IK/Graph."""
+        if self._shared_scene is not None:
+            raise RuntimeError('The parent planner owns this shared scene; update it through the parent')
+        if torch.cuda.current_stream(self.device)!=self.stream:
+            raise ValueError('Update the scene on the registered CUDA stream')
+        with self.lock:
+            torch.cuda.synchronize()
+            checker=self._collision.checker
+            before=scene_storage(checker.scene_model.data)
+            checker.clear_scene_cache();checker.update_world(scene_config)
+            torch.cuda.synchronize()
+            if scene_storage(checker.scene_model.data)!=before:
+                raise RuntimeError('Native scene update changed captured tensor storage')
+
+    def verify_shared_scene(self,native_scene):
+        if self._shared_scene is not native_scene or self._collision.checker.scene_model is not native_scene:
+            raise RuntimeError('Analytic graph no longer refers to its parent scene')
+        if scene_storage(native_scene.data)!=self._scene_storage:
+            raise RuntimeError('Parent scene replaced captured tensor storage')
 
     def _compute(self):
         answer=self._solver.solve(self.targets)

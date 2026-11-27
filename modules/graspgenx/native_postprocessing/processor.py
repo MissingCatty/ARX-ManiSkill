@@ -77,7 +77,11 @@ def pad_refinement(eef,target,cavity,empty_threshold=10):
 
 
 class Processor:
-    def __init__(self,grippers,*,use_spatial_crop=True):
+    def __init__(self,grippers,*,use_spatial_crop=True,nms_translation_m=.015,nms_rotation_deg=15):
+        if not 0<nms_translation_m<=.03 or not 0<nms_rotation_deg<=30:
+            raise ValueError('NMS thresholds must be positive and at most 30mm/30deg')
+        self.nms_translation_m=float(nms_translation_m)
+        self.nms_rotation_deg=float(nms_rotation_deg)
         self.grippers=grippers
         if use_spatial_crop:
             from .spatial_crop import detect
@@ -100,10 +104,11 @@ class Processor:
             bad=detected['bad'] if mode=='native' else detected['final_bad']
             # All outputs must respect the real 88mm opening limit.
             stroke_bad=(widths>.088+1e-12)|(widths<=0);bad=bad|stroke_bad
-            ids,nms=hard_nms(out,scores,widths,~bad,.03,30)
+            ids,nms=hard_nms(out,scores,widths,~bad,self.nms_translation_m,self.nms_rotation_deg)
             results[mode]={'poses':out,'widths':widths,'selected':ids,'before_nms':np.flatnonzero(~bad).tolist(),
                 'bad':bad,'empty':detected['counts']<10,'cavity_counts':detected['counts'],
                 'axial_shift_m':shift,'stroke_bad':stroke_bad,'NMS':nms,
+                'nms_parameters':{'translation_m':self.nms_translation_m,'rotation_deg':self.nms_rotation_deg},
                 'seconds':native_time+time.perf_counter()-began}
         if 'arx_observed' not in variants:return results
         began=time.perf_counter();eef=poses.copy();eef[:,:3,3]-=TCP_M*eef[:,:3,2]
@@ -139,4 +144,5 @@ def make_pool(payload,result,source_order,variant):
         candidates.append(candidate)
     return {'candidates':candidates,'raw_count':len(source_order),'retained_count':len(candidates),
         'protocol':'arx_native_postprocessing_v1','variant':variant,'native_score_order':True,
-        'raw_fallback':False,'hard_deletion':True,'refinement_receipt_required':True}
+        'raw_fallback':False,'hard_deletion':True,'refinement_receipt_required':True,
+        'nms_parameters':result.get('nms_parameters')}

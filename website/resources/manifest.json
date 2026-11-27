@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T06:15:23.528Z",
+  "generatedAt": "2026-11-27T07:09:11.670Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -2284,6 +2284,14 @@
     {
       "file": "media/sam3-v8-gpu-analytic-report.md",
       "sha256": "1ac81b5a5765c85126e8a0baa871670587e243dbb75ca4623f65ce89c73299b1"
+    },
+    {
+      "file": "media/sam3-v8-nms15-analytic-planning-results.json",
+      "sha256": "261dc752904b9822723ef11b943a4b403ebd062ae62228a993a6ff9f9c86e821"
+    },
+    {
+      "file": "media/sam3-v8-nms15-analytic-planning-report.md",
+      "sha256": "c3a5456a615b003a5a3ff983c7415c6a056fe7d0ee0249ea6bd2f5625b8bccd5"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",

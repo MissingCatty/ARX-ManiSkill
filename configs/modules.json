@@ -278,6 +278,27 @@
         "geometry_masks"
       ],
       "weights": []
+    },
+    "curobo_analytic_endpoints": {
+      "source": "modules/curobo/analytic_ik",
+      "role": "motion_planning",
+      "environment": "environments/curobo",
+      "adapter": "modules/curobo/analytic_ik/runtime.py",
+      "experimental": true,
+      "default_enabled": false,
+      "inputs": [
+        "state.json",
+        "candidates/candidate_pool.json"
+      ],
+      "outputs": [
+        "plan_result.json",
+        "analytic_endpoint_windows/*.json"
+      ],
+      "policies": [
+        "configs/experiments/analytic_endpoint_planning.json",
+        "configs/policies/fingertip_table.json"
+      ],
+      "variant": "fixed256_analytic_branches_with_original_width_V2_and_path_fallback"
     }
   }
 }
