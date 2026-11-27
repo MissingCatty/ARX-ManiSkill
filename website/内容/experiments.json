@@ -795,8 +795,8 @@
           "sourceId": "sam3-graspgenx",
           "title": "可达性索引与批量IK加速",
           "date": "2026-11-26",
-          "status": "预抓取并行路径对照完成",
-          "resultSummary": "原方法／并行4／并行8平均4.11／5.62／6.25秒；各组10/10、10/10、10/10通过。",
+          "status": "批量端点功能验证完成，等待空闲卡计时",
+          "resultSummary": "共享GPU下：原方法／批量端点／批量端点加并行路径平均6.89／8.97／8.35秒。",
           "change": "以现行双臂交替搜索为基线，分别比较原生批量IK、几何IK、关节解索引与模型场景绑定复用，保留原抓姿和评分顺序。",
           "pipeline": "头部RGB-D → SAM3 → RaySt3R → GraspGenX原候选 → 双臂交替调度 → 批量IK/几何IK/索引复用对照 → 当前碰撞与路径检查 → 选臂抓取",
           "scenes": "先使用同一套69份有效候选做规划回放，74例总体范围保留5例共同站位失败。",
@@ -815,7 +815,7 @@
             ],
             [
               "当前进度",
-              "预抓取并行路径对照完成"
+              "批量端点功能验证完成，等待空闲卡计时"
             ]
           ],
           "contentFile": "sam3-graspgenx-v8.md",
@@ -1278,6 +1278,26 @@
                 {
                   "label": "计时与核验",
                   "url": "/media/sam3-v8-parallel-path-planning-results.json"
+                }
+              ]
+            },
+            {
+              "id": "windowed5_20261127_02",
+              "title": "去掉串行凑批后的端点与路径对照",
+              "date": "2026-11-27",
+              "status": "批量端点功能验证完成，等待空闲卡计时",
+              "summary": "共享GPU下：原方法／批量端点／批量端点加并行路径平均6.89／8.97／8.35秒。",
+              "outputs": [
+                "tmp/parallel_planning/windowed5_20261127_02"
+              ],
+              "artifacts": [
+                {
+                  "label": "完整报告",
+                  "url": "/media/sam3-v8-windowed5-20261127-02-report.md"
+                },
+                {
+                  "label": "计时与核验",
+                  "url": "/media/sam3-v8-windowed5-20261127-02-results.json"
                 }
               ]
             }

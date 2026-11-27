@@ -1,0 +1,19 @@
+{
+  "run": "tmp/parallel_planning/idle_windowed5_20261127_01",
+  "controller_unit": "arx-v8-windowed-idle-20261127-01.service",
+  "status_file": "tmp/parallel_planning/idle_windowed5_20261127_01/monitor/status.json",
+  "readiness_marker": "resident/curobo_dual_arm_ready.json",
+  "poll_interval_seconds": 1,
+  "node": "/home/zhaoyechong/.nvm/versions/node/v22.23.2/bin/node",
+  "excluded_gpu_uuids": ["GPU-2786f56b-9d00-ba9f-5a2f-1e38775dc169"],
+  "admission_plans_mib": [{"planner": 10000}],
+  "require_zero_compute_processes": true,
+  "require_zero_GPU_utilization": true,
+  "cuda_probe_before_dispatch": {
+    "python": "environments/curobo/bin/python",
+    "minimum_free_mib": 10000,
+    "timeout_seconds": 20,
+    "failure_cooldown_seconds": 600
+  },
+  "start_commands": [["/home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/bin/python", "-m", "modules.pipeline.experiments.endpoint_parallel.idle_watch", "--dispatch-root", "/home/zhaoyechong/projects/ARX-ManiSkill/tmp/parallel_planning/idle_windowed5_20261127_01", "--gpu", "{planner_uuid}"]]
+}

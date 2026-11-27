@@ -1,5 +1,7 @@
 # 网站内容与表达约定
 
+- V8新增indexed_endpoint_parallel_section.py：固定原候选16、精确同开度批量G/P/L，已有多个结果才并行4路径，无串行凑批。windowed5_20261127_02三组各10/10、90终点/60轨迹通过、串行额外0；共享GPU均值6.889/8.970/8.352秒标明运行条件，不确认提速。idle_active.json登记空闲卡同组30次，尚未运行时只显示等待。每批报告/JSON以root.name生成独立媒体名，旧结果链接不覆盖，保留公网待办。
+
 - V8最新增加indexed_parallel_planning_section.py，读取tmp/parallel_planning/active.json。30个完整纯规划已完成，原/并行4/并行8各10/10、抓法选臂相同；平均4.110/5.615/6.249秒，额外提前检查82/132终点使绑定和IK增加。14个实际并行批次50有效行全通过；整批轨迹优化中位51.5/83.7ms，不能写成完整请求耗时。32离线、90终点、60记录轨迹通过，GPU模型退出、物理0，默认不切。报告及去空白JSON复制到resources/media/sam3-v8-parallel-path-planning-*独立文件，V8置顶并保留旧全部成绩、公网待办。
 
 - V8新增indexed_analytic_planning_section.py记录NMS15与第七项完整接入，读取tmp/analytic_planning/active.json，报告/JSON真实复制为sam3-v8-nms15-analytic-planning-*；JSON去空白后验证全部内容相同。69例候选中位54→151；原30/30和共享世界跟进20/20均通过、150终点核验通过，前30表另列。本轮细原/细解析平均4.240/4.377秒、无收益，84/98抓取终点回退、绑定1.855秒、批量端点11.1ms、共享世界校验0.6ms。NMS15启用，解析保留可选且关闭自动采用，不能写成整段毫秒级或抓取成功率提高。43离线、物理0、模型退出；保留原V8微计时及历史结果、V7、公网待办。

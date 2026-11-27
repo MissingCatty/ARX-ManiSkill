@@ -17,7 +17,7 @@ from modules.pipeline.experiments.graspgenx_native_postprocessing.offline import
 
 def summarize(rows):
     result = {}
-    for mode in ['control', 'parallel4', 'parallel8']:
+    for mode in dict.fromkeys(r['mode'] for r in rows):
         group = [r for r in rows if r['mode'] == mode]
         if not group: continue
         values = [r['RPC_seconds'] for r in group]
@@ -33,6 +33,8 @@ def summarize(rows):
 
 def run(root):
     reg = guard(root)
+    if reg['gpu'] == 'pending':
+        raise RuntimeError('Assign an admitted GPU before starting this run')
     if (root / 'STOP').exists() or (root / 'started.json').exists():
         raise ValueError('Do not retry a started run')
     from modules.pipeline.experiments.indexed_grasp_planning.physical.controller import environment, wait_ready
@@ -41,10 +43,12 @@ def run(root):
     socket.parent.mkdir(exist_ok=True, parents=True)
     client = Client(socket, timeout=1800, candidate_transport=True)
     rows = []; cases = {c['id']: c for c in reg['cases']}
-    cmd = [str(ROOT / 'environments/curobo/bin/python'), '-u', '-m',
-        'modules.pipeline.experiments.parallel_planning.worker', '--root', str(root / 'resident'),
+    worker_module = reg['config'].get('worker_module', 'modules.pipeline.experiments.parallel_planning.worker')
+    cmd = [str(ROOT / 'environments/curobo/bin/python'), '-u', '-m', worker_module, '--root', str(root / 'resident'),
         '--socket', str(socket), '--warmup-trial', str(root / 'warmup'),
         '--descriptor', str(ROOT / 'configs/modules.json')]
+    if reg['config'].get('require_idle_device'):
+        cmd.append('--strict-idle')
     with (root / 'planner.log').open('x') as log:
         child = subprocess.Popen(cmd, cwd=ROOT, env=environment(reg['gpu']), stdout=log, stderr=subprocess.STDOUT)
         write_json(root / 'planner_process.json', {'pid': child.pid, 'command': cmd})
@@ -76,6 +80,8 @@ def run(root):
                 write_json(root / 'progress.json', {'at': now(), 'phase': 'planning', 'completed_requests': len(rows),
                     'total_requests': len(reg['schedule']), 'results': rows, 'summaries': summarize(rows)})
                 print('PARALLEL_PLAN', len(rows), item['case_id'], item['mode'], row['success'], round(elapsed, 4), flush=True)
+                if row.get('stop_after_request'):
+                    raise RuntimeError('New foreign GPU process appeared; completed request retained and later scheduling stopped')
             guard(root)
             write_json(root / 'acceptance.json', {'at': now(), 'task_complete': True, 'planning_requests': len(rows),
                 'summaries': summarize(rows), 'physical_grasps': 0, 'simulation_instances': 0, 'default_activated': False})
@@ -108,7 +114,7 @@ def review(root):
                 'same_grasp_and_arm': all(identity(p) == identity(plans['control']) for p in plans.values())})
     write_json(root / 'paired_review.json', {'at': now(), 'passed': True, 'pairs': comparisons,
         'original_successes_retained': all(not p['success']['control'] or
-            all(p['success'][m] for m in ['parallel4', 'parallel8']) for p in comparisons)})
+            all(p['success'][m] for m in reg['config']['variants'] if m != 'control') for p in comparisons)})
 
 
 if __name__ == '__main__':

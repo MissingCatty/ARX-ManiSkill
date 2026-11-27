@@ -187,8 +187,10 @@ class RowSafeTest(unittest.TestCase):
     def fixture(self, flags=(True,False,True), fail=False):
         count = len(flags)
         class State:
-            position = torch.zeros((count,6))
-            def clone(self):return self
+            def __init__(self, position=None):
+                self.position = torch.zeros((count,6)) if position is None else position
+            def clone(self):return State(self.position.clone())
+            def __getitem__(self, indices):return State(self.position.index_select(0, indices).clone())
         seeds = torch.arange(count,dtype=torch.float32)[:,None,None].expand(count,2,6).clone()
         seed_solver = SimpleNamespace(solve_batch=lambda **kw:SimpleNamespace(
             js_solution=SimpleNamespace(position=seeds)))
@@ -220,6 +222,13 @@ class RowSafeTest(unittest.TestCase):
         q,valid,info = row_safe_solve(solver,None,state,1,2,lambda indices:None)
         self.assertEqual(info['refined_source_rows'],[])
         self.assertEqual(len(solver.calls),1)
+
+    def test_compacted_goals_keep_their_corresponding_current_states(self):
+        solver,state = self.fixture()
+        state.position = torch.tensor([0.,10.,20.])[:,None].expand(-1,6).clone()
+        row_safe_solve(solver,None,state,1,3,lambda indices:None)
+        self.assertEqual(solver.calls[0]['current_state'].position[:,0].tolist(),[0.,10.,20.])
+        self.assertEqual(solver.calls[1]['current_state'].position[:,0].tolist(),[10.,10.,10.])
 
     def test_resource_error_propagates_and_restores_solver_flags(self):
         solver,state = self.fixture(fail=True)

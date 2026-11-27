@@ -56,7 +56,7 @@ def row_safe_solve(solver, goal, current, returns, real_rows, subset_goal):
             refine_goal = subset_goal(padded)
             refine_seeds = seeds.index_select(0,padded).contiguous()
             solver.config.exit_early = False
-            refined = solver.solve_pose(refine_goal,current_state=current.clone(),seed_config=refine_seeds,
+            refined = solver.solve_pose(refine_goal,current_state=current[padded].clone(),seed_config=refine_seeds,
                 return_seeds=returns,run_optimizer=True)
             q[rows] = refined.solution.reshape(capacity,returns,-1)[:len(rows)].detach().clone()
             valid[rows] = refined.success.reshape(capacity,returns)[:len(rows)].detach().clone()

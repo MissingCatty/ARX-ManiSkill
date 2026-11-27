@@ -9,10 +9,10 @@ from modules.pipeline.experiments.graspgenx_native_postprocessing.offline import
 CONFIG = ROOT / 'configs/experiments/parallel_path_planning.json'
 
 
-def prepare(root, gpu):
+def prepare(root, gpu, config=CONFIG):
     if root.exists():
         raise ValueError('Keep previous runs and STOP markers')
-    cfg = read_json(CONFIG)
+    cfg = read_json(config)
     previous = ROOT / cfg['source_run']
     old = guard(previous, completed=True)
     if not read_json(previous / 'independent_review.json')['passed']:
@@ -23,10 +23,12 @@ def prepare(root, gpu):
     root.mkdir(parents=True)
     inputs = {}
     development = ROOT / cfg['development_source'] / 'resident'
-    checked = read_json(development / 'parallel_preflight/acceptance.json')
-    if not checked['passed'] or checked['batch_queries'] != 12:
+    marker = cfg.get('development_acceptance', 'parallel_preflight/acceptance.json')
+    checked = read_json(development / marker)
+    count = checked.get('batch_queries', checked.get('groups'))
+    if not checked['passed'] or count != cfg.get('development_expected_groups', 12):
         raise RuntimeError('Parallel interface preflight is incomplete')
-    for name in ['startup.json', 'parallel_preflight/acceptance.json']:
+    for name in ['startup.json', marker]:
         path = development / name; inputs[str(path)] = sha256(path)
     for case in cases:
         source = previous / 'offline' / case['id'] / 'fine.json'
@@ -40,15 +42,19 @@ def prepare(root, gpu):
         shutil.copy2(previous / 'warmup' / name, target)
         inputs[str(target)] = sha256(target)
     sources = {Path(p) for p in old['source_sha256'] if Path(p).exists()}
-    sources.add(CONFIG)
-    for folder in ['modules/curobo/parallel_planning', 'modules/pipeline/experiments/parallel_planning']:
+    sources.add(config)
+    if cfg.get('require_idle_device'):
+        sources.add(ROOT / 'modules/pipeline/monitoring/gpu_auto_start.py')
+        sources.add(ROOT / cfg['monitoring_config'])
+    for folder in ['modules/curobo/parallel_planning', 'modules/pipeline/experiments/parallel_planning',
+                   'modules/pipeline/experiments/endpoint_parallel', 'modules/curobo/indexed_planning']:
         sources.update((ROOT / folder).glob('*.py'))
     for path in sources:
         target = root / 'source_registered' / path.relative_to(ROOT)
         target.parent.mkdir(parents=True, exist_ok=True); shutil.copy2(path, target)
     schedule = []
     for i, case in enumerate(cases):
-        modes = cfg['variants']; modes = modes[i % 3:] + modes[:i % 3]
+        modes = cfg['variants']; offset = i % len(modes); modes = modes[offset:] + modes[:offset]
         for mode, repeat in [(m, 1) for m in modes] + [(m, 2) for m in reversed(modes)]:
             schedule.append({'id': case['id'] + '_' + mode + '_' + str(repeat),
                 'case_id': case['id'], 'mode': mode, 'variant': mode + '_' + str(repeat), 'repeat': repeat})
@@ -58,13 +64,16 @@ def prepare(root, gpu):
     write_json(root / 'registration.json', {'at': now(), 'config': cfg, 'gpu': gpu, 'cases': cases,
         'schedule': schedule, 'source_sha256': {str(p): sha256(p) for p in sources},
         'input_sha256': inputs, 'planning_requests': len(schedule),
-        'physical_grasps': 0, 'simulation_instances': 0, 'automatic_retries': False})
+        'physical_grasps': 0, 'simulation_instances': 0, 'automatic_retries': False,
+        'device_assignment_pending': gpu == 'pending'})
     write_json(root / 'progress.json', {'at': now(), 'phase': 'registered', 'completed_requests': 0,
         'total_requests': len(schedule), 'results': []})
-    write_json(ROOT / 'tmp/parallel_planning/active.json', {'at': now(), 'run': str(root.relative_to(ROOT)),
+    pointer = cfg.get('activity_pointer', 'windowed_active.json' if cfg.get('serial_valid_candidate_collection') is False else 'active.json')
+    write_json(ROOT / 'tmp/parallel_planning' / pointer, {'at': now(), 'run': str(root.relative_to(ROOT)),
         'phase': 'registered'})
 
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser(); p.add_argument('--root', type=Path, required=True); p.add_argument('--gpu', required=True)
-    args = p.parse_args(); prepare(ensure_run_path(args.root), args.gpu)
+    p.add_argument('--config', type=Path, default=CONFIG)
+    args = p.parse_args(); prepare(ensure_run_path(args.root), args.gpu, args.config.resolve())

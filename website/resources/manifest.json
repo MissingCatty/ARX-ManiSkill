@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:09:08.568Z",
+  "generatedAt": "2026-11-27T09:58:36.934Z",
   "files": [
     {
       "file": "metadata/claro-paired.json",
@@ -1591,7 +1591,7 @@
     },
     {
       "file": "media/sam3-v8-funnel-review.md",
-      "sha256": "4254cbec1d33bb3b1870d7a9914e0610f78de718560a92f19716f28c23b58bed"
+      "sha256": "233babfb8f20f0a18997109d86da2cf77d4f37ebaed2348010411a977bb16422"
     },
     {
       "file": "media/sam3-v8-funnel-source-review.json",
@@ -2300,6 +2300,14 @@
     {
       "file": "media/sam3-v8-parallel-path-planning-report.md",
       "sha256": "37af450774e3880abefe35cf0f56151c632dd1dba8f8be8ec9546ab24eff4d73"
+    },
+    {
+      "file": "media/sam3-v8-windowed5-20261127-02-results.json",
+      "sha256": "9dc276fe487b734b82a15d1b4ac52705a9514740208f84e38c79730eb0340ae7"
+    },
+    {
+      "file": "media/sam3-v8-windowed5-20261127-02-report.md",
+      "sha256": "c8aef953420e5c1af194cd98bf06acdd790594128e54d023259589903da92315"
     },
     {
       "file": "media/scene-d0001-dcfa7fab48de.jpg",
