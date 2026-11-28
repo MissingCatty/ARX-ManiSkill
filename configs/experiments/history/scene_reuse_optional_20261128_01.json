@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-28T19:47:37.311980+08:00",
+  "previous_sha256": {
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "7c457b46ad0b1d316c44a3a3fd8b1acc921704dbfade65b45c12ee38dd053de5",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/experiments/active_experiment.json": "08671d820079d9aaa67e6ad807362d8bee6cc4983294513f74d1d1fa14919e21"
+  },
+  "current_sha256": {
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/modules.json": "3d5e6eb21ca5d52a8e5c2a40fa7c0c2298f51b16159228e76bc21aefc8772756",
+    "/home/zhaoyechong/projects/ARX-ManiSkill/configs/experiments/active_experiment.json": "99225f6974a93fe7fb3fac379f90b63ba6bc7d76634cb490c683381140d825b5"
+  },
+  "backup": "configs/experiments/history/scene_reuse_optional_20261128_01_previous.json",
+  "only_optional_definition_and_registry_digest_changed": true,
+  "active_planner_unchanged": true
+}

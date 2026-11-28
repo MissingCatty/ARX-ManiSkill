@@ -286,9 +286,19 @@
       "adapter": "modules/curobo/state_updates/runtime.py",
       "experimental": true,
       "default_enabled": false,
-      "inputs": ["state.json", "candidates/candidate_pool.json"],
-      "outputs": ["plan_result.json", "stage_timings.json", "memory_state_updates.json"],
-      "policies": ["configs/experiments/in_memory_state_planning.json", "configs/policies/fingertip_table.json"],
+      "inputs": [
+        "state.json",
+        "candidates/candidate_pool.json"
+      ],
+      "outputs": [
+        "plan_result.json",
+        "stage_timings.json",
+        "memory_state_updates.json"
+      ],
+      "policies": [
+        "configs/experiments/in_memory_state_planning.json",
+        "configs/policies/fingertip_table.json"
+      ],
       "variant": "request_scoped_in_memory_scene_and_measured_finger_updates"
     },
     "curobo_analytic_endpoints": {
@@ -311,6 +321,28 @@
         "configs/policies/fingertip_table.json"
       ],
       "variant": "fixed256_analytic_branches_with_original_width_V2_and_path_fallback"
+    },
+    "curobo_scene_reuse": {
+      "source": "modules/curobo/scene_reuse",
+      "role": "motion_planning",
+      "environment": "environments/curobo",
+      "adapter": "modules/curobo/scene_reuse/runtime.py",
+      "experimental": true,
+      "default_enabled": false,
+      "inputs": [
+        "state.json",
+        "candidates/candidate_pool.json"
+      ],
+      "outputs": [
+        "plan_result.json",
+        "cpu_geometry.json",
+        "stage_timings.json"
+      ],
+      "policies": [
+        "configs/experiments/scene_reuse_cpu.json",
+        "configs/policies/fingertip_table.json"
+      ],
+      "variant": "CPU_prepared_arrays_with_original_native_GPU_loader"
     }
   }
 }

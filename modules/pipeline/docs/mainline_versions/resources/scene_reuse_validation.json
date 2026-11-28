@@ -1,0 +1,205 @@
+{
+  "at": "2026-11-28T21:15:27.303958+08:00",
+  "runs": {
+    "CPU缓存": {
+      "run": "tmp/state_updates/scene_reuse_cpu5_20261128_01",
+      "groups": {
+        "control": {
+          "requests": 10,
+          "successes": 10,
+          "total_RPC_seconds": 39.7146494879853,
+          "mean_RPC_seconds": 3.9714649487985296,
+          "median_RPC_seconds": 3.2371321989921853,
+          "p90_RPC_seconds": 7.475318456493551,
+          "mean_scene_update_seconds": 1.0468671025097138,
+          "mean_contact_scene_update_seconds": 0.4579017420124728,
+          "mean_grasp_IK_seconds": 0.8998202169896103,
+          "mean_CPU_geometry_seconds": 0.9944235078844941,
+          "native_load_calls": 188,
+          "actual_CPU_processing_calls": 188,
+          "mean_CPU_cache_write_seconds": 0.0,
+          "mean_CPU_cache_memory_bytes": 0.0
+        },
+        "cached": {
+          "requests": 10,
+          "successes": 10,
+          "total_RPC_seconds": 37.97516066607204,
+          "mean_RPC_seconds": 3.797516066607204,
+          "median_RPC_seconds": 3.1433194069977617,
+          "p90_RPC_seconds": 7.33103171372204,
+          "mean_scene_update_seconds": 0.8902019395842217,
+          "mean_contact_scene_update_seconds": 0.1748624498170102,
+          "mean_grasp_IK_seconds": 0.9941816059144912,
+          "mean_CPU_geometry_seconds": 0.48604783449845856,
+          "native_load_calls": 188,
+          "actual_CPU_processing_calls": 66,
+          "mean_CPU_cache_write_seconds": 0.026520159415667877,
+          "mean_CPU_cache_memory_bytes": 9529387.2
+        }
+      },
+      "reduction_fraction": 0.04379967705467214,
+      "adopted": false,
+      "planning_requests": 20,
+      "independent_endpoints": 60,
+      "checked_paths": 40,
+      "receipt_sha256": {
+        "acceptance.json": "7cfc1ec1e9aef7549621c0a80db1cc6ac7d9c694f3b722ddb503c5cbf63ab679",
+        "analysis.json": "39f819ee4c6de35e266a41aa7dcf50b3707418aaa9b34cf6df55352548bc6ee4",
+        "independent_review.json": "90e3e02c436230c85fe7e96b179aaf24ff965e92ff6760fd519050e676fb64d7",
+        "trajectory_review.json": "b6910440ca88ab5e6f47ab7502ce904726ea92cd800c77a46ae6bda3fbfa9098",
+        "services_stopped.json": "56427ce8d85b0317adf0ad0b57a71b3e11c10186756840b67b58ad02556fffc1"
+      }
+    },
+    "GPU几何共享": {
+      "run": "tmp/state_updates/scene_reuse_gpu5_20261128_01",
+      "groups": {
+        "control": {
+          "requests": 10,
+          "successes": 10,
+          "total_RPC_seconds": 40.60519588296302,
+          "mean_RPC_seconds": 4.060519588296302,
+          "median_RPC_seconds": 3.5272575425042305,
+          "p90_RPC_seconds": 7.8123101965844395,
+          "mean_scene_update_seconds": 1.0724206257989863,
+          "mean_contact_scene_update_seconds": 0.4510903317597695,
+          "mean_grasp_IK_seconds": 0.9528067306033335,
+          "mean_CPU_geometry_seconds": 1.001067054498708,
+          "native_GPU_mesh_creations": 188,
+          "shared_hits": 0
+        },
+        "cached": {
+          "requests": 10,
+          "successes": 10,
+          "total_RPC_seconds": 33.83712373202434,
+          "mean_RPC_seconds": 3.383712373202434,
+          "median_RPC_seconds": 2.37241947549046,
+          "p90_RPC_seconds": 6.985000253512407,
+          "mean_scene_update_seconds": 0.6603836207796121,
+          "mean_contact_scene_update_seconds": 0.03815120310464408,
+          "mean_grasp_IK_seconds": 1.0570708782062865,
+          "mean_CPU_geometry_seconds": 0.3622125660011079,
+          "native_GPU_mesh_creations": 66,
+          "shared_hits": 122
+        }
+      },
+      "reduction_fraction": 0.16667995323668428,
+      "adopted": true,
+      "planning_requests": 20,
+      "independent_endpoints": 60,
+      "checked_paths": 40,
+      "receipt_sha256": {
+        "acceptance.json": "afddaabf17dab686bfa1c9aabad5bf854317a5450da7130d7da71b071c7811e7",
+        "analysis.json": "3f157114dbb1d9a991b16ce3d45a64170d80f55197f9bacf786590ea4b84e272",
+        "independent_review.json": "106c3b9c32e227b4e2acece4c66b0d004548e43b82880fb92c6cc1c445810a02",
+        "trajectory_review.json": "59525fa820df18bc3556d757e936c4529bb45df83cb3b13ae174f9eae962b40b",
+        "services_stopped.json": "72e5a8a2ec2f31275fca09967a1f5c5698c1606c35f9f75e5679d8a9c40ea88a"
+      }
+    },
+    "固定槽位": {
+      "run": "tmp/state_updates/scene_reuse_slots5_20261128_01",
+      "groups": {
+        "control": {
+          "requests": 10,
+          "successes": 10,
+          "total_RPC_seconds": 32.02599546400597,
+          "mean_RPC_seconds": 3.2025995464005974,
+          "median_RPC_seconds": 2.875596844503889,
+          "p90_RPC_seconds": 6.5881974935007745,
+          "mean_scene_update_seconds": 0.676983960007783,
+          "mean_contact_scene_update_seconds": 0.03863840700068977,
+          "mean_grasp_IK_seconds": 0.903048608393874,
+          "whole_scene_replacements": 96,
+          "slot_replacements": 0,
+          "native_GPU_mesh_creations": 66
+        },
+        "cached": {
+          "requests": 10,
+          "successes": 10,
+          "total_RPC_seconds": 34.35604810999939,
+          "mean_RPC_seconds": 3.4356048109999393,
+          "median_RPC_seconds": 2.758009540499188,
+          "p90_RPC_seconds": 7.084800287880352,
+          "mean_scene_update_seconds": 0.6643336158216698,
+          "mean_contact_scene_update_seconds": 0.062172442997689356,
+          "mean_grasp_IK_seconds": 0.9699204889911925,
+          "whole_scene_replacements": 30,
+          "slot_replacements": 82,
+          "native_GPU_mesh_creations": 66
+        }
+      },
+      "reduction_fraction": -0.07275504202865979,
+      "adopted": false,
+      "planning_requests": 20,
+      "independent_endpoints": 60,
+      "checked_paths": 40,
+      "receipt_sha256": {
+        "acceptance.json": "95da920cc7d3f94aed7c59f5dbbafdd44ea610c7a87bea7feb9186ef979c1809",
+        "analysis.json": "a22ae2da5358faa52cca2120588c389de5de842cb79caaf94f4d5b75501a43eb",
+        "independent_review.json": "771bc07af80270e2df76794d7364b72a5b4b00b6f794d2b88ab6ecbfd1c5276b",
+        "trajectory_review.json": "bb6b65a5144f95e90971e98f5c1c8341e1ddb2fe843cb031933dda8b02ef8bb7",
+        "services_stopped.json": "c0b952417b48c567e2bc06e6164927ea7eb6be3d8b309c990923b6cdcb5dea0d"
+      }
+    },
+    "完整对照": {
+      "run": "tmp/state_updates/scene_reuse_final68_20261128_01",
+      "groups": {
+        "control": {
+          "requests": 68,
+          "successes": 67,
+          "total_RPC_seconds": 294.8325266120373,
+          "mean_RPC_seconds": 4.33577245017702,
+          "median_RPC_seconds": 3.6362104264990194,
+          "p90_RPC_seconds": 6.82669468589884,
+          "mean_scene_update_seconds": 0.9683654568310457,
+          "mean_contact_scene_update_seconds": 0.44219368162542677,
+          "mean_grasp_IK_seconds": 1.1452145694180644,
+          "whole_scene_replacements": 420,
+          "slot_replacements": 0,
+          "native_GPU_mesh_creations": 958
+        },
+        "cached": {
+          "requests": 68,
+          "successes": 67,
+          "total_RPC_seconds": 239.64094508907874,
+          "mean_RPC_seconds": 3.5241315454276285,
+          "median_RPC_seconds": 2.729069480992621,
+          "p90_RPC_seconds": 6.266699167000479,
+          "mean_scene_update_seconds": 0.5747590837174144,
+          "mean_contact_scene_update_seconds": 0.03220452053210465,
+          "mean_grasp_IK_seconds": 1.1381931306164272,
+          "whole_scene_replacements": 420,
+          "slot_replacements": 0,
+          "native_GPU_mesh_creations": 342
+        }
+      },
+      "reduction_fraction": 0.187196379440128,
+      "adopted": true,
+      "planning_requests": 136,
+      "independent_endpoints": 402,
+      "checked_paths": 268,
+      "receipt_sha256": {
+        "acceptance.json": "1f2baee4dc7a78319545fc509714a70ab005b16f993fe1c96f151d32c1ad4a5b",
+        "analysis.json": "9a60e36d42e17dd606c17dfb0b5a402e1a5d65ddd252d6394662763676aa5506",
+        "independent_review.json": "fdd4c8ac574fae7cda67d7462f6f390670d836cf2a751a64eb63a73d9bc3b00a",
+        "trajectory_review.json": "d700c22dfd48ef28e96bdfcde43a95ac71d469e76fbf2907eecf1f770503eb4a",
+        "services_stopped.json": "c9ed0ba47c0045e1c78530ffa76dc253b51af0bd5f2d684ab8945207fccd00f6"
+      }
+    }
+  },
+  "physical_grasps": 0,
+  "all_owned_services_stopped": true,
+  "completed_planning_requests": 196,
+  "independent_endpoints": 582,
+  "checked_paths": 388,
+  "adopted_runtime": {
+    "CPU_array_cache": false,
+    "GPU_immutable_geometry_sharing": true,
+    "fixed_slots": false,
+    "default_mainline_activated": false
+  },
+  "event_applicability": {
+    "formal": "pure planning",
+    "preflight": "native collision, ownership and slot invalidation"
+  },
+  "record_integrity": true
+}

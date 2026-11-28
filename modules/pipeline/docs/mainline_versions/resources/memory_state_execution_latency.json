@@ -1,0 +1,983 @@
+{
+  "at": "2026-11-28T08:05:41.983448+08:00",
+  "run": "tmp/state_updates/execution74_20261128_04",
+  "paired_cases": [
+    "M0001_S1_open_apple",
+    "M0002_S1_open_avocado",
+    "M0005_S1_open_bar_soap",
+    "M0006_S1_open_bell_pepper",
+    "M0008_S1_open_bottled_water",
+    "M0009_S1_open_bowl",
+    "M0010_S1_open_boxed_food",
+    "M0011_S1_open_bread",
+    "M0012_S1_open_broccoli",
+    "M0015_S1_open_carrot",
+    "M0016_S1_open_cell_phone",
+    "M0018_S1_open_croissant",
+    "M0019_S1_open_cucumber",
+    "M0020_S1_open_donut",
+    "M0022_S2_edge_keychain",
+    "M0023_S2_edge_lemon",
+    "M0024_S2_edge_mango",
+    "M0026_S2_edge_mug",
+    "M0027_S2_edge_mushroom",
+    "M0029_S2_edge_orange",
+    "M0030_S2_edge_peach",
+    "M0031_S2_edge_pear",
+    "M0032_S2_edge_potato",
+    "M0033_S2_edge_remote_control",
+    "M0034_S2_edge_scissors",
+    "M0036_S2_edge_spatula",
+    "M0038_S2_edge_teapot",
+    "M0039_S2_edge_tomato",
+    "M0041_S3_sparse_apple",
+    "M0042_S3_sparse_avocado",
+    "M0043_S3_sparse_baguette",
+    "M0044_S3_sparse_banana",
+    "M0045_S3_sparse_bar_soap",
+    "M0046_S3_sparse_bell_pepper",
+    "M0047_S3_sparse_book",
+    "M0048_S3_sparse_bottled_water",
+    "M0050_S3_sparse_boxed_food",
+    "M0052_S3_sparse_broccoli",
+    "M0055_S3_sparse_carrot",
+    "M0056_S3_sparse_cell_phone",
+    "M0058_S3_sparse_croissant",
+    "M0059_S3_sparse_cucumber",
+    "M0060_S3_sparse_donut",
+    "M0061_S4_clutter_eggplant",
+    "M0062_S4_clutter_keychain",
+    "M0063_S4_clutter_lemon",
+    "M0064_S4_clutter_mango",
+    "M0065_S4_clutter_milk",
+    "M0066_S4_clutter_mug",
+    "M0067_S4_clutter_mushroom",
+    "M0069_S4_clutter_orange",
+    "M0070_S4_clutter_peach",
+    "M0071_S4_clutter_pear",
+    "M0072_S4_clutter_potato",
+    "M0074_S4_clutter_scissors",
+    "M0078_S4_clutter_teapot",
+    "M0079_S4_clutter_tomato",
+    "M0081_S5_occluded_apple",
+    "M0082_S5_occluded_avocado",
+    "M0084_S5_occluded_banana",
+    "M0085_S5_occluded_bar_soap",
+    "M0086_S5_occluded_bell_pepper",
+    "M0089_S5_occluded_bowl",
+    "M0092_S5_occluded_broccoli",
+    "M0095_S5_occluded_carrot",
+    "M0098_S5_occluded_croissant",
+    "M0099_S5_occluded_cucumber",
+    "M0100_S5_occluded_donut"
+  ],
+  "excluded_interrupted_cases": [
+    "M0004_S1_open_banana"
+  ],
+  "new_planning_requests": 0,
+  "new_GPU_calls": 0,
+  "timing_scope": "recorded host wall time, mutually exclusive nested stage costs",
+  "groups": {
+    "baseline": {
+      "phases": {
+        "initial": {
+          "service": {
+            "samples": 68,
+            "total_seconds": 818.8822920069506,
+            "mean_seconds": 12.042386647161038,
+            "median_seconds": 8.170554752985481,
+            "p90_seconds": 21.88740551570376
+          },
+          "mean_per_scene_seconds": 12.042386647161038,
+          "mean_groups_per_request_seconds": {
+            "robot_scene": 5.597994915127963,
+            "contact": 1.2477680536189035,
+            "grasp_IK": 2.239441731957092,
+            "endpoint_other": 0.694623953431694,
+            "other_IK": 0.12535917644195518,
+            "path": 0.26617952366017134,
+            "trajectory": 0.46722086591334494,
+            "gripper": 0.5049166724407662,
+            "selection": 0.08671889336726642,
+            "unclassified": 0.8121628612018813
+          },
+          "mean_named_per_request_seconds": {
+            "world_and_robot_bind": 5.597994915127963,
+            "gripper_opening": 0.37574404746812756,
+            "contact_validator_update": 1.2477680536189035,
+            "grasp_IK": 2.239441731957092,
+            "grasp_endpoint": 0.694623953431694,
+            "pregrasp_IK": 0.07717039425059578,
+            "lift_IK": 0.048188782191359414,
+            "path_PRM": 0.26617952366017134,
+            "trajectory_approach": 0.20028119152993895,
+            "trajectory_pregrasp": 0.266939674383406,
+            "candidate_search": 0.08598597791783771,
+            "candidate_width_update": 0.0007329154494287007,
+            "gripper_narrowing": 0.12917262497263865
+          },
+          "group_totals_seconds": {
+            "robot_scene": 380.6636542287015,
+            "gripper": 34.3343337259721,
+            "contact": 84.84822764608543,
+            "grasp_IK": 152.28203777308227,
+            "endpoint_other": 47.234428833355196,
+            "other_IK": 8.524423998052953,
+            "path": 18.10020760889165,
+            "trajectory": 31.771018882107455,
+            "selection": 5.8968847489741165,
+            "unclassified": 55.22707456172793
+          },
+          "calls": {
+            "world_and_robot_bind": 1545,
+            "gripper_opening": 134,
+            "contact_validator_update": 1161,
+            "grasp_IK": 1088,
+            "grasp_endpoint": 1088,
+            "pregrasp_IK": 112,
+            "lift_IK": 112,
+            "path_PRM": 185,
+            "trajectory_approach": 89,
+            "trajectory_pregrasp": 96,
+            "candidate_search": 150,
+            "candidate_width_update": 1011,
+            "gripper_narrowing": 58
+          },
+          "individual_call_wall_times": {
+            "world_and_robot_bind": {
+              "samples": 1545,
+              "total_seconds": 380.6636542287015,
+              "mean_seconds": 0.24638424221922425,
+              "median_seconds": 0.19497441599378362,
+              "p90_seconds": 0.38127339661004955
+            },
+            "gripper_opening": {
+              "samples": 134,
+              "total_seconds": 162.5458038210636,
+              "mean_seconds": 1.2130283867243552,
+              "median_seconds": 1.2188541909999913,
+              "p90_seconds": 1.527385736006545
+            },
+            "contact_validator_update": {
+              "samples": 1161,
+              "total_seconds": 84.84822764608543,
+              "mean_seconds": 0.07308202208965153,
+              "median_seconds": 0.02108123601647094,
+              "p90_seconds": 0.24691784399328753
+            },
+            "grasp_IK": {
+              "samples": 1088,
+              "total_seconds": 152.28203777308227,
+              "mean_seconds": 0.13996510824731825,
+              "median_seconds": 0.13118120648141485,
+              "p90_seconds": 0.2399800909945043
+            },
+            "grasp_endpoint": {
+              "samples": 1088,
+              "total_seconds": 199.51646660643746,
+              "mean_seconds": 0.18337910533679913,
+              "median_seconds": 0.1613172984943958,
+              "p90_seconds": 0.33533768581110057
+            },
+            "pregrasp_IK": {
+              "samples": 112,
+              "total_seconds": 5.247586809040513,
+              "mean_seconds": 0.046853453652147437,
+              "median_seconds": 0.010496105489437468,
+              "p90_seconds": 0.14831619489996234
+            },
+            "lift_IK": {
+              "samples": 112,
+              "total_seconds": 3.27683718901244,
+              "mean_seconds": 0.029257474901896785,
+              "median_seconds": 0.010515671499888413,
+              "p90_seconds": 0.06063655349134934
+            },
+            "path_PRM": {
+              "samples": 185,
+              "total_seconds": 18.10020760889165,
+              "mean_seconds": 0.09783896004806297,
+              "median_seconds": 0.098803664004663,
+              "p90_seconds": 0.15600152099505066
+            },
+            "trajectory_approach": {
+              "samples": 89,
+              "total_seconds": 13.619121024035849,
+              "mean_seconds": 0.15302383173073988,
+              "median_seconds": 0.129675270000007,
+              "p90_seconds": 0.2613415373838507
+            },
+            "trajectory_pregrasp": {
+              "samples": 96,
+              "total_seconds": 18.151897858071607,
+              "mean_seconds": 0.18908226935491257,
+              "median_seconds": 0.19948614199529402,
+              "p90_seconds": 0.3232188810070511
+            },
+            "candidate_search": {
+              "samples": 150,
+              "total_seconds": 533.1105895832006,
+              "mean_seconds": 3.5540705972213376,
+              "median_seconds": 2.441487471500295,
+              "p90_seconds": 7.53415428068838
+            },
+            "candidate_width_update": {
+              "samples": 1011,
+              "total_seconds": 233.1484607492166,
+              "mean_seconds": 0.230611731700511,
+              "median_seconds": 0.21295029201428406,
+              "p90_seconds": 0.40179846101091243
+            },
+            "gripper_narrowing": {
+              "samples": 58,
+              "total_seconds": 36.20296524008154,
+              "mean_seconds": 0.6241890558634748,
+              "median_seconds": 0.5418819115147926,
+              "p90_seconds": 0.904389512288617
+            }
+          }
+        },
+        "approach": {
+          "service": {
+            "samples": 67,
+            "total_seconds": 109.77232758922037,
+            "mean_seconds": 1.6383929490928413,
+            "median_seconds": 1.6189537829777692,
+            "p90_seconds": 2.0092846845975147
+          },
+          "mean_per_scene_seconds": 1.6142989351355936,
+          "mean_groups_per_request_seconds": {
+            "robot_scene": 0.8208660814800793,
+            "contact": 0.3526762039070504,
+            "grasp_IK": 0.0,
+            "endpoint_other": 0.0,
+            "other_IK": 0.0,
+            "path": 0.12227766614654031,
+            "trajectory": 0.1510838307318653,
+            "gripper": 0.0,
+            "selection": 0.0,
+            "unclassified": 0.19148916682730596
+          },
+          "mean_named_per_request_seconds": {
+            "contact_validator_update": 0.3526762039070504,
+            "world_and_robot_bind": 0.8208660814800793,
+            "path_PRM": 0.12227766614654031,
+            "trajectory_approach": 0.1510838307318653
+          },
+          "group_totals_seconds": {
+            "contact": 23.629305661772378,
+            "robot_scene": 54.998027459165314,
+            "path": 8.192603631818201,
+            "trajectory": 10.122616659034975,
+            "unclassified": 12.829774177429499
+          },
+          "calls": {
+            "contact_validator_update": 134,
+            "world_and_robot_bind": 67,
+            "path_PRM": 61,
+            "trajectory_approach": 61
+          },
+          "individual_call_wall_times": {
+            "contact_validator_update": {
+              "samples": 134,
+              "total_seconds": 23.629305661772378,
+              "mean_seconds": 0.1763381019535252,
+              "median_seconds": 0.12274356199486647,
+              "p90_seconds": 0.38380350527586415
+            },
+            "world_and_robot_bind": {
+              "samples": 67,
+              "total_seconds": 78.47721388700302,
+              "mean_seconds": 1.1713016998060153,
+              "median_seconds": 1.1573719619773328,
+              "p90_seconds": 1.3106227191863582
+            },
+            "path_PRM": {
+              "samples": 61,
+              "total_seconds": 8.192603631818201,
+              "mean_seconds": 0.13430497757079018,
+              "median_seconds": 0.13108783899224363,
+              "p90_seconds": 0.20667387399589643
+            },
+            "trajectory_approach": {
+              "samples": 61,
+              "total_seconds": 10.122616659034975,
+              "mean_seconds": 0.165944535394016,
+              "median_seconds": 0.14265314899967052,
+              "p90_seconds": 0.28917195901158266
+            }
+          }
+        },
+        "lift": {
+          "service": {
+            "samples": 59,
+            "total_seconds": 119.23223306206637,
+            "mean_seconds": 2.020885306136718,
+            "median_seconds": 2.0023277059954125,
+            "p90_seconds": 2.7410780676000286
+          },
+          "mean_per_scene_seconds": 1.7534151920892114,
+          "mean_groups_per_request_seconds": {
+            "robot_scene": 0.57488281850928,
+            "contact": 0.22417445225548394,
+            "grasp_IK": 0.0,
+            "endpoint_other": 0.0,
+            "other_IK": 0.04324777867749602,
+            "path": 0.10823046820143521,
+            "trajectory": 0.1492953374251818,
+            "gripper": 0.0,
+            "selection": 0.0,
+            "unclassified": 0.9210544510678412
+          },
+          "mean_named_per_request_seconds": {
+            "contact_validator_update": 0.22417445225548394,
+            "world_and_robot_bind": 0.57488281850928,
+            "other_IK": 0.04324777867749602,
+            "path_PRM": 0.10823046820143521,
+            "trajectory_lift": 0.1492953374251818
+          },
+          "group_totals_seconds": {
+            "contact": 13.226292683073552,
+            "robot_scene": 33.91808629204752,
+            "other_IK": 2.551618941972265,
+            "path": 6.385597623884678,
+            "trajectory": 8.808424908085726,
+            "unclassified": 54.34221261300263
+          },
+          "calls": {
+            "contact_validator_update": 118,
+            "world_and_robot_bind": 59,
+            "other_IK": 59,
+            "path_PRM": 57,
+            "trajectory_lift": 57
+          },
+          "individual_call_wall_times": {
+            "contact_validator_update": {
+              "samples": 118,
+              "total_seconds": 13.226292683073552,
+              "mean_seconds": 0.11208722612774197,
+              "median_seconds": 0.010476243987795897,
+              "p90_seconds": 0.39124425991030876
+            },
+            "world_and_robot_bind": {
+              "samples": 59,
+              "total_seconds": 47.010969114053296,
+              "mean_seconds": 0.7967960866788695,
+              "median_seconds": 0.5898444759950507,
+              "p90_seconds": 1.4631600869994146
+            },
+            "other_IK": {
+              "samples": 59,
+              "total_seconds": 2.551618941972265,
+              "mean_seconds": 0.04324777867749602,
+              "median_seconds": 0.026699997979449108,
+              "p90_seconds": 0.10956930539105088
+            },
+            "path_PRM": {
+              "samples": 57,
+              "total_seconds": 6.385597623884678,
+              "mean_seconds": 0.11202802848920487,
+              "median_seconds": 0.10934461501892656,
+              "p90_seconds": 0.1656482665974181
+            },
+            "trajectory_lift": {
+              "samples": 57,
+              "total_seconds": 8.808424908085726,
+              "mean_seconds": 0.15453377031729343,
+              "median_seconds": 0.13415665601496585,
+              "p90_seconds": 0.22766141659813002
+            }
+          }
+        }
+      },
+      "all_planning": {
+        "samples": 68,
+        "total_seconds": 1047.8868526582373,
+        "mean_seconds": 15.410100774385842,
+        "median_seconds": 11.506637610975304,
+        "p90_seconds": 25.996349169404166
+      },
+      "initial_RPC": {
+        "samples": 68,
+        "total_seconds": 819.5244178288558,
+        "mean_seconds": 12.051829673953762,
+        "median_seconds": 8.17668281951046,
+        "p90_seconds": 21.89359251650462
+      },
+      "trial_wall": {
+        "samples": 68,
+        "total_seconds": 4522.866017203924,
+        "mean_seconds": 66.51273554711652,
+        "median_seconds": 66.86755436052044,
+        "p90_seconds": 90.17125768818953
+      },
+      "trial_other_than_planning": {
+        "samples": 68,
+        "total_seconds": 3474.979164545686,
+        "mean_seconds": 51.10263477273068,
+        "median_seconds": 52.92245961498702,
+        "p90_seconds": 66.57626230800234
+      }
+    },
+    "optimized": {
+      "phases": {
+        "initial": {
+          "service": {
+            "samples": 68,
+            "total_seconds": 565.5609902489523,
+            "mean_seconds": 8.317073386014004,
+            "median_seconds": 6.309600849999697,
+            "p90_seconds": 14.363981157194951
+          },
+          "mean_per_scene_seconds": 8.317073386014004,
+          "mean_groups_per_request_seconds": {
+            "robot_scene": 1.9924035971450982,
+            "contact": 0.6313613930906286,
+            "grasp_IK": 2.515096876953869,
+            "endpoint_other": 0.7491682366256581,
+            "other_IK": 0.10919761007372632,
+            "path": 0.3118420790470897,
+            "trajectory": 0.5746637947043328,
+            "gripper": 0.3294444584141328,
+            "selection": 0.1252936428084949,
+            "unclassified": 0.9786016971509739
+          },
+          "mean_named_per_request_seconds": {
+            "binding_input_snapshot": 0.05538305214662721,
+            "binding_dynamic_robot_update": 0.06803631401827956,
+            "binding_scene_update": 1.5342390404368738,
+            "binding_live_validation": 0.30766471569693427,
+            "binding_receipt_enqueue": 0.001546499172999414,
+            "world_and_robot_bind": 0.02553397567338406,
+            "gripper_opening": 0.25823266062027816,
+            "contact_dynamic_robot_update": 0.006417695700399824,
+            "contact_scene_update": 0.6228196065584437,
+            "contact_state_update": 0.0007837367250912768,
+            "contact_validator_update": 0.0013403541066937202,
+            "grasp_IK": 2.515096876953869,
+            "grasp_endpoint": 0.7491682366256581,
+            "pregrasp_IK": 0.06736336620515966,
+            "lift_IK": 0.04183424386856666,
+            "path_PRM": 0.3118420790470897,
+            "trajectory_approach": 0.28220843611737056,
+            "trajectory_pregrasp": 0.2924553585869623,
+            "candidate_search": 0.124874213244766,
+            "candidate_width_update": 0.0004194295637289007,
+            "gripper_narrowing": 0.07121179779385463
+          },
+          "group_totals_seconds": {
+            "robot_scene": 135.48344460586668,
+            "gripper": 22.40222317216103,
+            "contact": 42.93257473016274,
+            "grasp_IK": 171.02658763286308,
+            "endpoint_other": 50.943440090544755,
+            "other_IK": 7.42543748501339,
+            "path": 21.2052613752021,
+            "trajectory": 39.077138039894635,
+            "selection": 8.519967710977653,
+            "unclassified": 66.54491540626623
+          },
+          "calls": {
+            "binding_input_snapshot": 1545,
+            "binding_dynamic_robot_update": 1545,
+            "binding_scene_update": 1545,
+            "binding_live_validation": 1545,
+            "binding_receipt_enqueue": 1545,
+            "world_and_robot_bind": 1545,
+            "gripper_opening": 134,
+            "contact_dynamic_robot_update": 1161,
+            "contact_scene_update": 1161,
+            "contact_state_update": 1161,
+            "contact_validator_update": 1161,
+            "grasp_IK": 1088,
+            "grasp_endpoint": 1088,
+            "pregrasp_IK": 112,
+            "lift_IK": 112,
+            "path_PRM": 185,
+            "trajectory_approach": 89,
+            "trajectory_pregrasp": 96,
+            "candidate_search": 150,
+            "candidate_width_update": 1011,
+            "gripper_narrowing": 58
+          },
+          "individual_call_wall_times": {
+            "binding_input_snapshot": {
+              "samples": 1545,
+              "total_seconds": 3.7660475459706504,
+              "mean_seconds": 0.0024375712271654695,
+              "median_seconds": 0.001592543994775042,
+              "p90_seconds": 0.0026854216062929532
+            },
+            "binding_dynamic_robot_update": {
+              "samples": 1545,
+              "total_seconds": 4.62646935324301,
+              "mean_seconds": 0.002994478545788356,
+              "median_seconds": 0.0008250329992733896,
+              "p90_seconds": 0.009592613816494124
+            },
+            "binding_scene_update": {
+              "samples": 1545,
+              "total_seconds": 104.32825474970741,
+              "mean_seconds": 0.06752637847877502,
+              "median_seconds": 0.0019954770104959607,
+              "p90_seconds": 0.08715950140031081
+            },
+            "binding_live_validation": {
+              "samples": 1545,
+              "total_seconds": 20.92120066739153,
+              "mean_seconds": 0.013541230205431411,
+              "median_seconds": 0.00539315800415352,
+              "p90_seconds": 0.03518837680458092
+            },
+            "binding_receipt_enqueue": {
+              "samples": 1545,
+              "total_seconds": 0.10516194376396015,
+              "mean_seconds": 6.806598301874444e-05,
+              "median_seconds": 4.582200199365616e-05,
+              "p90_seconds": 6.191439460963012e-05
+            },
+            "world_and_robot_bind": {
+              "samples": 1545,
+              "total_seconds": 135.48344460586668,
+              "mean_seconds": 0.08769154990670983,
+              "median_seconds": 0.017500176007160917,
+              "p90_seconds": 0.11695598281221492
+            },
+            "gripper_opening": {
+              "samples": 134,
+              "total_seconds": 119.89770466083428,
+              "mean_seconds": 0.8947589900062259,
+              "median_seconds": 0.861698084991076,
+              "p90_seconds": 1.1479256880120374
+            },
+            "contact_dynamic_robot_update": {
+              "samples": 1161,
+              "total_seconds": 0.43640330762718804,
+              "mean_seconds": 0.00037588570855054957,
+              "median_seconds": 0.00034999498166143894,
+              "p90_seconds": 0.0005501349805854261
+            },
+            "contact_scene_update": {
+              "samples": 1161,
+              "total_seconds": 42.351733245974174,
+              "mean_seconds": 0.03647866773985717,
+              "median_seconds": 0.000238505017478019,
+              "p90_seconds": 0.2644507920194883
+            },
+            "contact_state_update": {
+              "samples": 1161,
+              "total_seconds": 0.05329409730620682,
+              "mean_seconds": 4.5903615250824135e-05,
+              "median_seconds": 4.201501724310219e-05,
+              "p90_seconds": 6.178999319672585e-05
+            },
+            "contact_validator_update": {
+              "samples": 1161,
+              "total_seconds": 42.93257473016274,
+              "mean_seconds": 0.036978961869218556,
+              "median_seconds": 0.0007148010190576315,
+              "p90_seconds": 0.26485259900800884
+            },
+            "grasp_IK": {
+              "samples": 1088,
+              "total_seconds": 171.02658763286308,
+              "mean_seconds": 0.1571935548096168,
+              "median_seconds": 0.151145939991693,
+              "p90_seconds": 0.2568084047961748
+            },
+            "grasp_endpoint": {
+              "samples": 1088,
+              "total_seconds": 221.97002772340784,
+              "mean_seconds": 0.20401656959872044,
+              "median_seconds": 0.20253340198541991,
+              "p90_seconds": 0.34601712990552186
+            },
+            "pregrasp_IK": {
+              "samples": 112,
+              "total_seconds": 4.580708901950857,
+              "mean_seconds": 0.04089918662456122,
+              "median_seconds": 0.011340670476783998,
+              "p90_seconds": 0.12224807550082915
+            },
+            "lift_IK": {
+              "samples": 112,
+              "total_seconds": 2.8447285830625333,
+              "mean_seconds": 0.02539936234877262,
+              "median_seconds": 0.011447546989074908,
+              "p90_seconds": 0.06741888867982201
+            },
+            "path_PRM": {
+              "samples": 185,
+              "total_seconds": 21.2052613752021,
+              "mean_seconds": 0.11462303446055189,
+              "median_seconds": 0.10715637900284491,
+              "p90_seconds": 0.1767755760170985
+            },
+            "trajectory_approach": {
+              "samples": 89,
+              "total_seconds": 19.190173655981198,
+              "mean_seconds": 0.21561992871888985,
+              "median_seconds": 0.15989046898903325,
+              "p90_seconds": 0.320547695789719
+            },
+            "trajectory_pregrasp": {
+              "samples": 96,
+              "total_seconds": 19.886964383913437,
+              "mean_seconds": 0.2071558789990983,
+              "median_seconds": 0.20100125249882694,
+              "p90_seconds": 0.3379955590062309
+            },
+            "candidate_search": {
+              "samples": 150,
+              "total_seconds": 328.4873045219865,
+              "mean_seconds": 2.1899153634799102,
+              "median_seconds": 1.3487930580013199,
+              "p90_seconds": 4.2882413849816645
+            },
+            "candidate_width_update": {
+              "samples": 1011,
+              "total_seconds": 22.93466750200605,
+              "mean_seconds": 0.022685131060342284,
+              "median_seconds": 0.011796362028690055,
+              "p90_seconds": 0.04615887798718177
+            },
+            "gripper_narrowing": {
+              "samples": 58,
+              "total_seconds": 7.383325895818416,
+              "mean_seconds": 0.12729872234169684,
+              "median_seconds": 0.12031730300805066,
+              "p90_seconds": 0.21263247758615764
+            }
+          }
+        },
+        "approach": {
+          "service": {
+            "samples": 67,
+            "total_seconds": 103.96576939604711,
+            "mean_seconds": 1.551727901433539,
+            "median_seconds": 1.562475203012582,
+            "p90_seconds": 1.860108307201881
+          },
+          "mean_per_scene_seconds": 1.528908373471281,
+          "mean_groups_per_request_seconds": {
+            "robot_scene": 0.7131391822885194,
+            "contact": 0.3299817189994727,
+            "grasp_IK": 0.0,
+            "endpoint_other": 0.0,
+            "other_IK": 0.0,
+            "path": 0.11350130138844043,
+            "trajectory": 0.12815308723722085,
+            "gripper": 0.0,
+            "selection": 0.0,
+            "unclassified": 0.2669526115198856
+          },
+          "mean_named_per_request_seconds": {
+            "binding_input_snapshot": 0.011791051837177808,
+            "binding_dynamic_robot_update": 0.003985656836719961,
+            "binding_scene_update": 0.6788854811782775,
+            "contact_dynamic_robot_update": 0.0006156450140971079,
+            "contact_scene_update": 0.32902378379236974,
+            "contact_state_update": 0.00012907633121792616,
+            "contact_validator_update": 0.00021321386178788633,
+            "binding_live_validation": 0.01707475479395101,
+            "binding_receipt_enqueue": 0.0005135464033723544,
+            "world_and_robot_bind": 0.0008886912390207455,
+            "path_PRM": 0.11350130138844043,
+            "trajectory_approach": 0.12815308723722085
+          },
+          "group_totals_seconds": {
+            "robot_scene": 47.7803252133308,
+            "contact": 22.10877517296467,
+            "path": 7.604587193025509,
+            "trajectory": 8.586256844893796,
+            "unclassified": 17.885824971832335
+          },
+          "calls": {
+            "binding_input_snapshot": 67,
+            "binding_dynamic_robot_update": 67,
+            "binding_scene_update": 67,
+            "contact_dynamic_robot_update": 134,
+            "contact_scene_update": 134,
+            "contact_state_update": 134,
+            "contact_validator_update": 134,
+            "binding_live_validation": 67,
+            "binding_receipt_enqueue": 67,
+            "world_and_robot_bind": 67,
+            "path_PRM": 61,
+            "trajectory_approach": 61
+          },
+          "individual_call_wall_times": {
+            "binding_input_snapshot": {
+              "samples": 67,
+              "total_seconds": 0.7900004730909131,
+              "mean_seconds": 0.011791051837177808,
+              "median_seconds": 0.011675574991386384,
+              "p90_seconds": 0.013087303604697809
+            },
+            "binding_dynamic_robot_update": {
+              "samples": 67,
+              "total_seconds": 0.2670390080602374,
+              "mean_seconds": 0.003985656836719961,
+              "median_seconds": 0.0010945459944196045,
+              "p90_seconds": 0.013285886612720788
+            },
+            "binding_scene_update": {
+              "samples": 67,
+              "total_seconds": 45.48532723894459,
+              "mean_seconds": 0.6788854811782775,
+              "median_seconds": 0.6866046439972706,
+              "p90_seconds": 0.7732619789952878
+            },
+            "contact_dynamic_robot_update": {
+              "samples": 134,
+              "total_seconds": 0.04124821594450623,
+              "mean_seconds": 0.00030782250704855394,
+              "median_seconds": 0.0002683369966689497,
+              "p90_seconds": 0.0004749074811115861
+            },
+            "contact_scene_update": {
+              "samples": 134,
+              "total_seconds": 22.044593514088774,
+              "mean_seconds": 0.16451189189618487,
+              "median_seconds": 0.11477830649528187,
+              "p90_seconds": 0.34932614088465924
+            },
+            "contact_state_update": {
+              "samples": 134,
+              "total_seconds": 0.008648114191601053,
+              "mean_seconds": 6.453816560896308e-05,
+              "median_seconds": 6.208800186868757e-05,
+              "p90_seconds": 8.706471708137542e-05
+            },
+            "contact_validator_update": {
+              "samples": 134,
+              "total_seconds": 22.10877517296467,
+              "mean_seconds": 0.16499085949973635,
+              "median_seconds": 0.1154500234988518,
+              "p90_seconds": 0.349716049208655
+            },
+            "binding_live_validation": {
+              "samples": 67,
+              "total_seconds": 23.1990154061059,
+              "mean_seconds": 0.34625396128516267,
+              "median_seconds": 0.3403011189948302,
+              "p90_seconds": 0.39126955381943845
+            },
+            "binding_receipt_enqueue": {
+              "samples": 67,
+              "total_seconds": 0.03440760902594775,
+              "mean_seconds": 0.0005135464033723544,
+              "median_seconds": 0.0004961840168107301,
+              "p90_seconds": 0.0007010995876044035
+            },
+            "world_and_robot_bind": {
+              "samples": 67,
+              "total_seconds": 69.83533204824198,
+              "mean_seconds": 1.0423183887797312,
+              "median_seconds": 1.0498782350041438,
+              "p90_seconds": 1.1683146548166405
+            },
+            "path_PRM": {
+              "samples": 61,
+              "total_seconds": 7.604587193025509,
+              "mean_seconds": 0.12466536382009032,
+              "median_seconds": 0.12317960301879793,
+              "p90_seconds": 0.21825170199736021
+            },
+            "trajectory_approach": {
+              "samples": 61,
+              "total_seconds": 8.586256844893796,
+              "mean_seconds": 0.14075830893268518,
+              "median_seconds": 0.13232158299069852,
+              "p90_seconds": 0.21691296799690463
+            }
+          }
+        },
+        "lift": {
+          "service": {
+            "samples": 59,
+            "total_seconds": 116.86521034387988,
+            "mean_seconds": 1.9807662770149133,
+            "median_seconds": 1.928036894008983,
+            "p90_seconds": 2.793118706997484
+          },
+          "mean_per_scene_seconds": 1.7186060344688219,
+          "mean_groups_per_request_seconds": {
+            "robot_scene": 0.4610528379971738,
+            "contact": 0.19890248281506318,
+            "grasp_IK": 0.0,
+            "endpoint_other": 0.0,
+            "other_IK": 0.049025010002848014,
+            "path": 0.10869098559240968,
+            "trajectory": 0.14949382498359182,
+            "gripper": 0.0,
+            "selection": 0.0,
+            "unclassified": 1.0136011356238268
+          },
+          "mean_named_per_request_seconds": {
+            "binding_input_snapshot": 0.012086400440578364,
+            "binding_dynamic_robot_update": 0.0032823525252752006,
+            "binding_scene_update": 0.4211697365755168,
+            "contact_dynamic_robot_update": 0.0006576609986210716,
+            "contact_scene_update": 0.19777380593093427,
+            "contact_state_update": 0.00026479974671235403,
+            "contact_validator_update": 0.00020621613879546018,
+            "binding_live_validation": 0.02296855911697356,
+            "binding_receipt_enqueue": 0.0005310860169475298,
+            "world_and_robot_bind": 0.0010147033218823184,
+            "other_IK": 0.049025010002848014,
+            "path_PRM": 0.10869098559240968,
+            "trajectory_lift": 0.14949382498359182
+          },
+          "group_totals_seconds": {
+            "robot_scene": 27.202117441833252,
+            "contact": 11.735246486088727,
+            "other_IK": 2.892475590168033,
+            "path": 6.412768149952171,
+            "trajectory": 8.820135674031917,
+            "unclassified": 59.80246700180578
+          },
+          "calls": {
+            "binding_input_snapshot": 59,
+            "binding_dynamic_robot_update": 59,
+            "binding_scene_update": 59,
+            "contact_dynamic_robot_update": 118,
+            "contact_scene_update": 118,
+            "contact_state_update": 118,
+            "contact_validator_update": 118,
+            "binding_live_validation": 59,
+            "binding_receipt_enqueue": 59,
+            "world_and_robot_bind": 59,
+            "other_IK": 59,
+            "path_PRM": 57,
+            "trajectory_lift": 57
+          },
+          "individual_call_wall_times": {
+            "binding_input_snapshot": {
+              "samples": 59,
+              "total_seconds": 0.7130976259941235,
+              "mean_seconds": 0.012086400440578364,
+              "median_seconds": 0.012078277999535203,
+              "p90_seconds": 0.01318763240124099
+            },
+            "binding_dynamic_robot_update": {
+              "samples": 59,
+              "total_seconds": 0.19365879899123684,
+              "mean_seconds": 0.0032823525252752006,
+              "median_seconds": 0.0012813339999411255,
+              "p90_seconds": 0.00917733179521747
+            },
+            "binding_scene_update": {
+              "samples": 59,
+              "total_seconds": 24.84901445795549,
+              "mean_seconds": 0.4211697365755168,
+              "median_seconds": 0.6363830069894902,
+              "p90_seconds": 0.8871651768044103
+            },
+            "contact_dynamic_robot_update": {
+              "samples": 118,
+              "total_seconds": 0.03880199891864322,
+              "mean_seconds": 0.0003288304993105358,
+              "median_seconds": 0.0002660864993231371,
+              "p90_seconds": 0.0005783006199635565
+            },
+            "contact_scene_update": {
+              "samples": 118,
+              "total_seconds": 11.668654549925122,
+              "mean_seconds": 0.09888690296546714,
+              "median_seconds": 0.001631076491321437,
+              "p90_seconds": 0.3709218552015955
+            },
+            "contact_state_update": {
+              "samples": 118,
+              "total_seconds": 0.015623185056028888,
+              "mean_seconds": 0.00013239987335617701,
+              "median_seconds": 9.635700553189963e-05,
+              "p90_seconds": 0.0002590755961136892
+            },
+            "contact_validator_update": {
+              "samples": 118,
+              "total_seconds": 11.735246486088727,
+              "mean_seconds": 0.09945124140753159,
+              "median_seconds": 0.002443334989948198,
+              "p90_seconds": 0.3716149779036641
+            },
+            "binding_live_validation": {
+              "samples": 59,
+              "total_seconds": 13.041468626906862,
+              "mean_seconds": 0.22104184113401462,
+              "median_seconds": 0.3203141500125639,
+              "p90_seconds": 0.4520322125928942
+            },
+            "binding_receipt_enqueue": {
+              "samples": 59,
+              "total_seconds": 0.03133407499990426,
+              "mean_seconds": 0.0005310860169475298,
+              "median_seconds": 0.0005063119751866907,
+              "p90_seconds": 0.0006877694104332478
+            },
+            "world_and_robot_bind": {
+              "samples": 59,
+              "total_seconds": 38.888441080838675,
+              "mean_seconds": 0.6591261200142148,
+              "median_seconds": 0.9791111120139249,
+              "p90_seconds": 1.363466545403935
+            },
+            "other_IK": {
+              "samples": 59,
+              "total_seconds": 2.892475590168033,
+              "mean_seconds": 0.049025010002848014,
+              "median_seconds": 0.04628250701352954,
+              "p90_seconds": 0.08610691340873025
+            },
+            "path_PRM": {
+              "samples": 57,
+              "total_seconds": 6.412768149952171,
+              "mean_seconds": 0.11250470438512582,
+              "median_seconds": 0.10770876199239865,
+              "p90_seconds": 0.16786576300510206
+            },
+            "trajectory_lift": {
+              "samples": 57,
+              "total_seconds": 8.820135674031917,
+              "mean_seconds": 0.15473922235143714,
+              "median_seconds": 0.13873822599998675,
+              "p90_seconds": 0.23678268160438165
+            }
+          }
+        }
+      },
+      "all_planning": {
+        "samples": 68,
+        "total_seconds": 786.3919699888793,
+        "mean_seconds": 11.564587793954107,
+        "median_seconds": 9.696488609493827,
+        "p90_seconds": 17.335062993897022
+      },
+      "initial_RPC": {
+        "samples": 68,
+        "total_seconds": 567.3909236721229,
+        "mean_seconds": 8.343984171648867,
+        "median_seconds": 6.346201475491398,
+        "p90_seconds": 14.619048363692142
+      },
+      "trial_wall": {
+        "samples": 68,
+        "total_seconds": 4125.437032209098,
+        "mean_seconds": 60.66819165013379,
+        "median_seconds": 63.13085544799105,
+        "p90_seconds": 78.9961193372001
+      },
+      "trial_other_than_planning": {
+        "samples": 68,
+        "total_seconds": 3339.045062220219,
+        "mean_seconds": 49.10360385617969,
+        "median_seconds": 52.26193714850524,
+        "p90_seconds": 63.81963852970512
+      }
+    }
+  },
+  "reduction_fraction": 0.24954495994105497,
+  "initial_share_of_net_savings": 0.9687428647630763,
+  "one_time_startup_and_preflight_seconds": 149.135686
+}

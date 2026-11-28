@@ -1,0 +1,640 @@
+{
+  "at": "2026-11-28T12:25:03.205044+08:00",
+  "source_run": "tmp/state_updates/execution74_20261128_04",
+  "paired_scenes": 68,
+  "new_planning_requests": 0,
+  "new_GPU_calls": 0,
+  "new_physical_grasps": 0,
+  "accounting": "one timing covers planner scene + independent checker scene + seed reset",
+  "operation_groups": {
+    "replace_geometry": {
+      "calls": 143,
+      "total_seconds": 95.47916191277909,
+      "mean_seconds": 0.6676864469425111,
+      "median_seconds": 0.685677953006234,
+      "mean_per_scene_seconds": 1.4041053222467514
+    },
+    "reuse_scene": {
+      "calls": 1145,
+      "total_seconds": 2.2357949699799065,
+      "mean_seconds": 0.001952659362427866,
+      "median_seconds": 0.0018539720040280372,
+      "mean_per_scene_seconds": 0.032879337793822155
+    },
+    "update_poses": {
+      "calls": 189,
+      "total_seconds": 6.255311153043294,
+      "mean_seconds": 0.03309688440763648,
+      "median_seconds": 0.01193161599803716,
+      "mean_per_scene_seconds": 0.0919898698976955
+    },
+    "update_enabled": {
+      "calls": 68,
+      "total_seconds": 0.35798671390512027,
+      "mean_seconds": 0.00526451049860471,
+      "median_seconds": 0.0023018079809844494,
+      "mean_per_scene_seconds": 0.00526451049860471
+    }
+  },
+  "per_case": [
+    {
+      "case": "M0001_S1_open_apple",
+      "binding_calls": 6,
+      "replacement_pairs": 2,
+      "seconds": 1.2434086499852128
+    },
+    {
+      "case": "M0002_S1_open_avocado",
+      "binding_calls": 6,
+      "replacement_pairs": 2,
+      "seconds": 1.3049126430123579
+    },
+    {
+      "case": "M0005_S1_open_bar_soap",
+      "binding_calls": 16,
+      "replacement_pairs": 2,
+      "seconds": 1.497303804004332
+    },
+    {
+      "case": "M0006_S1_open_bell_pepper",
+      "binding_calls": 10,
+      "replacement_pairs": 2,
+      "seconds": 1.2947866909671575
+    },
+    {
+      "case": "M0008_S1_open_bottled_water",
+      "binding_calls": 38,
+      "replacement_pairs": 2,
+      "seconds": 1.2780010889400728
+    },
+    {
+      "case": "M0009_S1_open_bowl",
+      "binding_calls": 12,
+      "replacement_pairs": 1,
+      "seconds": 0.7166065279743634
+    },
+    {
+      "case": "M0010_S1_open_boxed_food",
+      "binding_calls": 63,
+      "replacement_pairs": 2,
+      "seconds": 1.8141029199468903
+    },
+    {
+      "case": "M0011_S1_open_bread",
+      "binding_calls": 23,
+      "replacement_pairs": 2,
+      "seconds": 1.6966499850095715
+    },
+    {
+      "case": "M0012_S1_open_broccoli",
+      "binding_calls": 29,
+      "replacement_pairs": 2,
+      "seconds": 1.4346087129670195
+    },
+    {
+      "case": "M0015_S1_open_carrot",
+      "binding_calls": 11,
+      "replacement_pairs": 2,
+      "seconds": 1.3629919010272715
+    },
+    {
+      "case": "M0016_S1_open_cell_phone",
+      "binding_calls": 16,
+      "replacement_pairs": 2,
+      "seconds": 1.4355588700273074
+    },
+    {
+      "case": "M0018_S1_open_croissant",
+      "binding_calls": 12,
+      "replacement_pairs": 2,
+      "seconds": 1.4405596950091422
+    },
+    {
+      "case": "M0019_S1_open_cucumber",
+      "binding_calls": 11,
+      "replacement_pairs": 2,
+      "seconds": 1.2706029250111897
+    },
+    {
+      "case": "M0020_S1_open_donut",
+      "binding_calls": 23,
+      "replacement_pairs": 2,
+      "seconds": 1.338205685140565
+    },
+    {
+      "case": "M0022_S2_edge_keychain",
+      "binding_calls": 14,
+      "replacement_pairs": 2,
+      "seconds": 1.5361918110284023
+    },
+    {
+      "case": "M0023_S2_edge_lemon",
+      "binding_calls": 13,
+      "replacement_pairs": 2,
+      "seconds": 1.479905836895341
+    },
+    {
+      "case": "M0024_S2_edge_mango",
+      "binding_calls": 6,
+      "replacement_pairs": 2,
+      "seconds": 1.335137519025011
+    },
+    {
+      "case": "M0026_S2_edge_mug",
+      "binding_calls": 13,
+      "replacement_pairs": 2,
+      "seconds": 1.5028962548822165
+    },
+    {
+      "case": "M0027_S2_edge_mushroom",
+      "binding_calls": 18,
+      "replacement_pairs": 2,
+      "seconds": 1.5475043340120465
+    },
+    {
+      "case": "M0029_S2_edge_orange",
+      "binding_calls": 20,
+      "replacement_pairs": 2,
+      "seconds": 1.288930380018428
+    },
+    {
+      "case": "M0030_S2_edge_peach",
+      "binding_calls": 6,
+      "replacement_pairs": 2,
+      "seconds": 1.4090928800287656
+    },
+    {
+      "case": "M0031_S2_edge_pear",
+      "binding_calls": 19,
+      "replacement_pairs": 2,
+      "seconds": 1.4666402819566429
+    },
+    {
+      "case": "M0032_S2_edge_potato",
+      "binding_calls": 6,
+      "replacement_pairs": 2,
+      "seconds": 1.4748748930287547
+    },
+    {
+      "case": "M0033_S2_edge_remote_control",
+      "binding_calls": 14,
+      "replacement_pairs": 2,
+      "seconds": 1.5094351009756792
+    },
+    {
+      "case": "M0034_S2_edge_scissors",
+      "binding_calls": 20,
+      "replacement_pairs": 2,
+      "seconds": 1.4789922110212501
+    },
+    {
+      "case": "M0036_S2_edge_spatula",
+      "binding_calls": 15,
+      "replacement_pairs": 2,
+      "seconds": 1.620679156971164
+    },
+    {
+      "case": "M0038_S2_edge_teapot",
+      "binding_calls": 26,
+      "replacement_pairs": 2,
+      "seconds": 1.6066343509592116
+    },
+    {
+      "case": "M0039_S2_edge_tomato",
+      "binding_calls": 20,
+      "replacement_pairs": 2,
+      "seconds": 1.6394266569695901
+    },
+    {
+      "case": "M0041_S3_sparse_apple",
+      "binding_calls": 6,
+      "replacement_pairs": 2,
+      "seconds": 1.4773694169998635
+    },
+    {
+      "case": "M0042_S3_sparse_avocado",
+      "binding_calls": 8,
+      "replacement_pairs": 2,
+      "seconds": 1.7778028980246745
+    },
+    {
+      "case": "M0043_S3_sparse_baguette",
+      "binding_calls": 30,
+      "replacement_pairs": 2,
+      "seconds": 1.3421156360127497
+    },
+    {
+      "case": "M0044_S3_sparse_banana",
+      "binding_calls": 25,
+      "replacement_pairs": 2,
+      "seconds": 1.4007850550406147
+    },
+    {
+      "case": "M0045_S3_sparse_bar_soap",
+      "binding_calls": 14,
+      "replacement_pairs": 2,
+      "seconds": 1.7821445930167101
+    },
+    {
+      "case": "M0046_S3_sparse_bell_pepper",
+      "binding_calls": 6,
+      "replacement_pairs": 2,
+      "seconds": 1.5382664279604796
+    },
+    {
+      "case": "M0047_S3_sparse_book",
+      "binding_calls": 8,
+      "replacement_pairs": 2,
+      "seconds": 1.2379604350426234
+    },
+    {
+      "case": "M0048_S3_sparse_bottled_water",
+      "binding_calls": 67,
+      "replacement_pairs": 2,
+      "seconds": 1.805705040023895
+    },
+    {
+      "case": "M0050_S3_sparse_boxed_food",
+      "binding_calls": 93,
+      "replacement_pairs": 2,
+      "seconds": 1.6507564698113129
+    },
+    {
+      "case": "M0052_S3_sparse_broccoli",
+      "binding_calls": 23,
+      "replacement_pairs": 2,
+      "seconds": 1.5406627539778128
+    },
+    {
+      "case": "M0055_S3_sparse_carrot",
+      "binding_calls": 15,
+      "replacement_pairs": 2,
+      "seconds": 1.6678581640298944
+    },
+    {
+      "case": "M0056_S3_sparse_cell_phone",
+      "binding_calls": 14,
+      "replacement_pairs": 2,
+      "seconds": 1.3680681229452603
+    },
+    {
+      "case": "M0058_S3_sparse_croissant",
+      "binding_calls": 16,
+      "replacement_pairs": 2,
+      "seconds": 1.4310749659780413
+    },
+    {
+      "case": "M0059_S3_sparse_cucumber",
+      "binding_calls": 15,
+      "replacement_pairs": 2,
+      "seconds": 1.648231595987454
+    },
+    {
+      "case": "M0060_S3_sparse_donut",
+      "binding_calls": 108,
+      "replacement_pairs": 2,
+      "seconds": 1.6902495931426529
+    },
+    {
+      "case": "M0061_S4_clutter_eggplant",
+      "binding_calls": 11,
+      "replacement_pairs": 2,
+      "seconds": 1.3527214530331548
+    },
+    {
+      "case": "M0062_S4_clutter_keychain",
+      "binding_calls": 24,
+      "replacement_pairs": 6,
+      "seconds": 2.00692130002426
+    },
+    {
+      "case": "M0063_S4_clutter_lemon",
+      "binding_calls": 6,
+      "replacement_pairs": 2,
+      "seconds": 1.0650424689811189
+    },
+    {
+      "case": "M0064_S4_clutter_mango",
+      "binding_calls": 6,
+      "replacement_pairs": 2,
+      "seconds": 1.7944355760409962
+    },
+    {
+      "case": "M0065_S4_clutter_milk",
+      "binding_calls": 32,
+      "replacement_pairs": 2,
+      "seconds": 1.597355160076404
+    },
+    {
+      "case": "M0066_S4_clutter_mug",
+      "binding_calls": 6,
+      "replacement_pairs": 4,
+      "seconds": 1.445178060006583
+    },
+    {
+      "case": "M0067_S4_clutter_mushroom",
+      "binding_calls": 17,
+      "replacement_pairs": 2,
+      "seconds": 1.6839982249366585
+    },
+    {
+      "case": "M0069_S4_clutter_orange",
+      "binding_calls": 28,
+      "replacement_pairs": 2,
+      "seconds": 1.8107728130125906
+    },
+    {
+      "case": "M0070_S4_clutter_peach",
+      "binding_calls": 15,
+      "replacement_pairs": 2,
+      "seconds": 1.5673707040550653
+    },
+    {
+      "case": "M0071_S4_clutter_pear",
+      "binding_calls": 15,
+      "replacement_pairs": 2,
+      "seconds": 1.756201141019119
+    },
+    {
+      "case": "M0072_S4_clutter_potato",
+      "binding_calls": 6,
+      "replacement_pairs": 2,
+      "seconds": 1.9106631510076113
+    },
+    {
+      "case": "M0074_S4_clutter_scissors",
+      "binding_calls": 15,
+      "replacement_pairs": 2,
+      "seconds": 1.821065715950681
+    },
+    {
+      "case": "M0078_S4_clutter_teapot",
+      "binding_calls": 13,
+      "replacement_pairs": 5,
+      "seconds": 1.7968889320036396
+    },
+    {
+      "case": "M0079_S4_clutter_tomato",
+      "binding_calls": 11,
+      "replacement_pairs": 2,
+      "seconds": 1.9899415910767857
+    },
+    {
+      "case": "M0081_S5_occluded_apple",
+      "binding_calls": 32,
+      "replacement_pairs": 2,
+      "seconds": 1.840700736065628
+    },
+    {
+      "case": "M0082_S5_occluded_avocado",
+      "binding_calls": 13,
+      "replacement_pairs": 1,
+      "seconds": 0.7853643389535137
+    },
+    {
+      "case": "M0084_S5_occluded_banana",
+      "binding_calls": 55,
+      "replacement_pairs": 2,
+      "seconds": 1.8993441768107004
+    },
+    {
+      "case": "M0085_S5_occluded_bar_soap",
+      "binding_calls": 53,
+      "replacement_pairs": 2,
+      "seconds": 1.4389417088823393
+    },
+    {
+      "case": "M0086_S5_occluded_bell_pepper",
+      "binding_calls": 22,
+      "replacement_pairs": 2,
+      "seconds": 1.7395780009683222
+    },
+    {
+      "case": "M0089_S5_occluded_bowl",
+      "binding_calls": 60,
+      "replacement_pairs": 2,
+      "seconds": 1.6027515630121343
+    },
+    {
+      "case": "M0092_S5_occluded_broccoli",
+      "binding_calls": 97,
+      "replacement_pairs": 2,
+      "seconds": 1.5919923721812665
+    },
+    {
+      "case": "M0095_S5_occluded_carrot",
+      "binding_calls": 25,
+      "replacement_pairs": 2,
+      "seconds": 1.555767107900465
+    },
+    {
+      "case": "M0098_S5_occluded_croissant",
+      "binding_calls": 15,
+      "replacement_pairs": 2,
+      "seconds": 1.7055658879689872
+    },
+    {
+      "case": "M0099_S5_occluded_cucumber",
+      "binding_calls": 19,
+      "replacement_pairs": 2,
+      "seconds": 1.2602104759716894
+    },
+    {
+      "case": "M0100_S5_occluded_donut",
+      "binding_calls": 15,
+      "replacement_pairs": 2,
+      "seconds": 1.9257891549787018
+    }
+  ],
+  "replacement_count_distribution": {
+    "2": 63,
+    "1": 2,
+    "6": 1,
+    "4": 1,
+    "5": 1
+  },
+  "CPU_only_union_replay": {
+    "M0062_S4_clutter_keychain": [
+      {
+        "arm": "right",
+        "source": "tmp/state_updates/execution74_20261128_04/trials/M0062_S4_clutter_keychain/optimized/arms/right/opening_batch_start/scene.json",
+        "source_sha256": "cdf09fa3680efcd9442c3c38895bef58064877477f6b045e8729de0f6aacf2af",
+        "operation": "replace_geometry",
+        "updated_obstacles": 10,
+        "obstacle_count": 10,
+        "resident_obstacles": 10,
+        "enable_flag_updates": 0
+      },
+      {
+        "arm": "left",
+        "source": "tmp/state_updates/execution74_20261128_04/trials/M0062_S4_clutter_keychain/optimized/arms/left/opening_batch_start/scene.json",
+        "source_sha256": "cd1c82d77fde53719c3d55f07eff6077f81b62d8e3245aad7f7341c96b5af5fd",
+        "operation": "replace_geometry",
+        "updated_obstacles": 10,
+        "obstacle_count": 10,
+        "resident_obstacles": 10,
+        "enable_flag_updates": 0
+      },
+      {
+        "arm": "right",
+        "source": "tmp/state_updates/execution74_20261128_04/trials/M0062_S4_clutter_keychain/optimized/arms/right/opening_batch_start/scene.json",
+        "source_sha256": "cdf09fa3680efcd9442c3c38895bef58064877477f6b045e8729de0f6aacf2af",
+        "operation": "replace_geometry",
+        "updated_obstacles": 10,
+        "obstacle_count": 10,
+        "resident_obstacles": 10,
+        "enable_flag_updates": 0
+      }
+    ],
+    "M0066_S4_clutter_mug": [
+      {
+        "arm": "right",
+        "source": "tmp/state_updates/execution74_20261128_04/trials/M0066_S4_clutter_mug/optimized/arms/right/opening_batch_start/scene.json",
+        "source_sha256": "09da0d851868a10e9a5fb975fcbc5e3d1ba46e8404dbbd41dcb0b20bfc3707e8",
+        "operation": "replace_geometry",
+        "updated_obstacles": 10,
+        "obstacle_count": 10,
+        "resident_obstacles": 10,
+        "enable_flag_updates": 0
+      },
+      {
+        "arm": "left",
+        "source": "tmp/state_updates/execution74_20261128_04/trials/M0066_S4_clutter_mug/optimized/arms/left/opening_batch_start/scene.json",
+        "source_sha256": "49cfe02d7fbb7b74c89434713ae6277b4e5341f06f0c07aca32666b425cf899c",
+        "operation": "replace_geometry",
+        "updated_obstacles": 10,
+        "obstacle_count": 10,
+        "resident_obstacles": 10,
+        "enable_flag_updates": 0
+      },
+      {
+        "arm": "right",
+        "source": "tmp/state_updates/execution74_20261128_04/trials/M0066_S4_clutter_mug/optimized/arms/right/opening_batch_start/scene.json",
+        "source_sha256": "09da0d851868a10e9a5fb975fcbc5e3d1ba46e8404dbbd41dcb0b20bfc3707e8",
+        "operation": "replace_geometry",
+        "updated_obstacles": 10,
+        "obstacle_count": 10,
+        "resident_obstacles": 10,
+        "enable_flag_updates": 0
+      }
+    ],
+    "M0078_S4_clutter_teapot": [
+      {
+        "arm": "right",
+        "source": "tmp/state_updates/execution74_20261128_04/trials/M0078_S4_clutter_teapot/optimized/arms/right/opening_batch_start/scene.json",
+        "source_sha256": "ab397cb715b89ef71dfca543a382b4fbb177dfdb9a16bfdda5d1d59037b96954",
+        "operation": "replace_geometry",
+        "updated_obstacles": 10,
+        "obstacle_count": 10,
+        "resident_obstacles": 10,
+        "enable_flag_updates": 0
+      },
+      {
+        "arm": "left",
+        "source": "tmp/state_updates/execution74_20261128_04/trials/M0078_S4_clutter_teapot/optimized/arms/left/opening_batch_start/scene.json",
+        "source_sha256": "85f15e4392793d6e7609f3ab2bdabf91484e5f6f12e41b355f0d8618d891e554",
+        "operation": "replace_geometry",
+        "updated_obstacles": 10,
+        "obstacle_count": 10,
+        "resident_obstacles": 10,
+        "enable_flag_updates": 0
+      },
+      {
+        "arm": "right",
+        "source": "tmp/state_updates/execution74_20261128_04/trials/M0078_S4_clutter_teapot/optimized/arms/right/opening_batch_start/scene.json",
+        "source_sha256": "ab397cb715b89ef71dfca543a382b4fbb177dfdb9a16bfdda5d1d59037b96954",
+        "operation": "replace_geometry",
+        "updated_obstacles": 10,
+        "obstacle_count": 10,
+        "resident_obstacles": 10,
+        "enable_flag_updates": 0
+      }
+    ]
+  },
+  "CPU_only_union_control": [
+    {
+      "arm": "right",
+      "source": "tmp/state_updates/execution74_20261128_04/trials/M0001_S1_open_apple/optimized/arms/right/opening_batch_start/scene.json",
+      "source_sha256": "6854dd20e4e8594faa6d6a82bb6fa00d04c6b3f0bd67aa67640def80da0d49be",
+      "operation": "replace_geometry",
+      "updated_obstacles": 4,
+      "obstacle_count": 4,
+      "resident_obstacles": 4,
+      "enable_flag_updates": 0
+    },
+    {
+      "arm": "left",
+      "source": "tmp/state_updates/execution74_20261128_04/trials/M0001_S1_open_apple/optimized/arms/left/opening_batch_start/scene.json",
+      "source_sha256": "743ddb2b8ad7c188d654ec43b47665d785ae928274eee37e18a27b0790e739ef",
+      "operation": "replace_geometry",
+      "updated_obstacles": 5,
+      "obstacle_count": 4,
+      "resident_obstacles": 5,
+      "enable_flag_updates": 1
+    },
+    {
+      "arm": "right",
+      "source": "tmp/state_updates/execution74_20261128_04/trials/M0001_S1_open_apple/optimized/arms/right/opening_batch_start/scene.json",
+      "source_sha256": "6854dd20e4e8594faa6d6a82bb6fa00d04c6b3f0bd67aa67640def80da0d49be",
+      "operation": "update_poses",
+      "updated_obstacles": 3,
+      "obstacle_count": 4,
+      "resident_obstacles": 5,
+      "enable_flag_updates": 2
+    }
+  ],
+  "CPU_mesh_profile": [
+    {
+      "name": "parked_robot_arm",
+      "source": "tmp/state_updates/execution74_20261128_01/trials/M0001_S1_open_apple/optimized/arms/right/state/parked_arm.ply",
+      "sha256": "4828927e839a520be185a7739eb13c86864a94d07ad678658bac8e3c750ea183",
+      "bytes": 6330139,
+      "ply_header": "ply\nformat binary_little_endian 1.0\ncomment https://github.com/mikedh/trimesh\nelement vertex 387546\nproperty float x\nproperty float y\nproperty float z\nelement face 129182\nproperty list uchar int vertex_indices\n",
+      "processed_vertices": 64026,
+      "faces": 129182,
+      "cpu_seconds": [
+        0.16858452299493365,
+        0.15390591899631545,
+        0.16941426999983378,
+        0.1558734540012665,
+        0.15635062899673358
+      ],
+      "calls": 5,
+      "total_seconds": 0.804128794989083,
+      "mean_seconds": 0.1608257589978166,
+      "median_seconds": 0.15635062899673358,
+      "cpu_profile": "         1944 function calls (1861 primitive calls) in 0.159 seconds\n\n   Ordered by: cumulative time\n   List reduced from 260 to 20 due to restriction <20>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.159    0.159 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/load.py:74(load)\n        1    0.000    0.000    0.144    0.144 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/load.py:158(load_scene)\n        3    0.000    0.000    0.140    0.047 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/base.py:98(__init__)\n        1    0.000    0.000    0.140    0.140 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/load.py:402(_load_kwargs)\n        1    0.000    0.000    0.140    0.140 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/load.py:460(handle_mesh)\n        3    0.000    0.000    0.136    0.045 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/base.py:255(process)\n        1    0.000    0.000    0.127    0.127 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/base.py:1155(merge_vertices)\n        1    0.011    0.011    0.127    0.127 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/grouping.py:24(merge_vertices)\n        1    0.001    0.001    0.106    0.106 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/grouping.py:463(unique_rows)\n        1    0.002    0.002    0.105    0.105 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/grouping.py:282(unique_ordered)\n        1    0.000    0.000    0.101    0.101 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/numpy/lib/_arraysetops_impl.py:145(unique)\n        1    0.017    0.017    0.101    0.101 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/numpy/lib/_arraysetops_impl.py:350(_unique1d)\n        3    0.081    0.027    0.081    0.027 {method 'argsort' of 'numpy.ndarray' objects}\n        1    0.000    0.000    0.015    0.015 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/scene/scene.py:953(to_mesh)\n        2    0.000    0.000    0.014    0.007 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/base.py:3283(copy)\n     77/7    0.000    0.000    0.011    0.002 /home/zhaoyechong/projects/ARX-ManiSkill/environments/runtime_bundle/python/lib/python3.11/copy.py:128(deepcopy)\n     11/7    0.000    0.000    0.011    0.002 /home/zhaoyechong/projects/ARX-ManiSkill/environments/runtime_bundle/python/lib/python3.11/copy.py:227(_deepcopy_dict)\n        8    0.011    0.001    0.011    0.001 {method '__deepcopy__' of 'numpy.ndarray' objects}\n      6/2    0.000    0.000    0.010    0.005 /home/zhaoyechong/projects/ARX-ManiSkill/environments/runtime_bundle/python/lib/python3.11/copy.py:259(_reconstruct)\n        1    0.001    0.001    0.008    0.008 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/base.py:1384(remove_infinite_values)\n\n\n"
+    },
+    {
+      "name": "target",
+      "source": "tmp/maniskill/cache/arx_scene_collision/30534a0816ecd1b3034f8f87a86789ae48ef8674c5761f6d8137beea16054357.ply",
+      "sha256": "152877b06aec8241625effa5c693059c2eb641567c3a901715849bcc3798aca6",
+      "bytes": 128172,
+      "ply_header": "ply\nformat ascii 1.0\nelement vertex 1380\nproperty double x\nproperty double y\nproperty double z\nelement face 2632\nproperty list uchar int vertex_indices\n",
+      "processed_vertices": 1292,
+      "faces": 2632,
+      "cpu_seconds": [
+        0.011584870022488758,
+        0.009989582991693169,
+        0.009080128016648814,
+        0.00906494801165536,
+        0.008865156007232144
+      ],
+      "calls": 5,
+      "total_seconds": 0.048584685049718246,
+      "mean_seconds": 0.009716937009943648,
+      "median_seconds": 0.009080128016648814,
+      "cpu_profile": "         13950 function calls (13850 primitive calls) in 0.013 seconds\n\n   Ordered by: cumulative time\n   List reduced from 252 to 20 due to restriction <20>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.013    0.013 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/load.py:74(load)\n        1    0.000    0.000    0.012    0.012 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/load.py:158(load_scene)\n        1    0.000    0.000    0.011    0.011 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/ply.py:69(load_ply)\n        1    0.000    0.000    0.011    0.011 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/ply.py:858(_ply_ascii)\n        1    0.001    0.001    0.006    0.006 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/ply.py:877(<listcomp>)\n     4012    0.006    0.000    0.006    0.000 {built-in method numpy.fromstring}\n        2    0.001    0.000    0.004    0.002 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/numpy/_core/shape_base.py:218(vstack)\n        2    0.003    0.001    0.003    0.002 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/numpy/_core/shape_base.py:78(atleast_2d)\n        3    0.000    0.000    0.001    0.000 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/base.py:98(__init__)\n        1    0.000    0.000    0.001    0.001 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/load.py:402(_load_kwargs)\n        1    0.000    0.000    0.001    0.001 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/exchange/load.py:460(handle_mesh)\n        1    0.000    0.000    0.001    0.001 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/scene/scene.py:953(to_mesh)\n        3    0.000    0.000    0.001    0.000 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/base.py:255(process)\n        2    0.000    0.000    0.001    0.000 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/base.py:3283(copy)\n        1    0.000    0.000    0.001    0.001 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/base.py:1155(merge_vertices)\n        1    0.000    0.000    0.001    0.001 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/grouping.py:24(merge_vertices)\n        1    0.000    0.000    0.001    0.001 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/scene/scene.py:895(dump)\n        1    0.000    0.000    0.000    0.000 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/util.py:1492(concatenate)\n        1    0.000    0.000    0.000    0.000 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/grouping.py:463(unique_rows)\n        1    0.000    0.000    0.000    0.000 /home/zhaoyechong/projects/ARX-ManiSkill/environments/curobo/lib/python3.11/site-packages/trimesh/grouping.py:282(unique_ordered)\n\n\n"
+    }
+  ],
+  "source_sha256": {
+    "tmp/state_updates/execution74_20261128_04/registration.json": "9941670c8adc8d3b4bf3ea39d418e9042fc14564127a7b27d27c6547bd4de61c",
+    "tmp/state_updates/execution74_20261128_04/acceptance.json": "c79719b9378bdee7df5f32bc84c8838fe3d12e0a8487d38daba65fdb6ac6c7cb",
+    "tmp/state_updates/execution74_20261128_04/progress.json": "5a600a1ed12da96a984217e273affc7f3714ee1c36dc87da4066827e5426fdcc",
+    "modules/pipeline/experiments/state_update_execution/scene_update_diagnosis.py": "56d530b2a90d237c937635ba4de695a96a6e170fa2491a0b4d420e2a05ba79d1",
+    "modules/curobo/state_updates/binding.py": "fa5f0009f16eeb68ff0affa72704ffba5e060460425967950a64359c7a3f3fe7",
+    "modules/curobo/state_updates/scenes.py": "6c3754daba64c5d47edadd6622a7c8a07c854f055b14858b8523444252101dbe",
+    "modules/curobo/dual_arm/model.py": "7f5d5a54274ee4a7e23bf91e7ca5cbe800d1aed383ba2587f9bd5ea0c2841873",
+    "modules/curobo/source/curobo/_src/geom/data/data_mesh.py": "44eaf0ca5d40d55379d81f83b47a33efa8effd2c3b01886b8ad957626f17228e"
+  }
+}
